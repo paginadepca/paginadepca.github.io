@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Ácido débil">
+<meta name="keywords" content="ácido, débil">
+<title>Ácido débil</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Ácido débil</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Un ácido débil es aquel que no está totalmente disociado en
+agua:</p>
+
+<blockquote>
+     <p>
+     $
+     \ce{
+       HA + H2O &lt;=&gt; A- \! + H3O+
+     }
+     $
+     </p>
+</blockquote>
+
+<p>$K$, la constante de equilibrio, es el producto de las
+actividades de los productos dividido por el producto de las
+actividades de los reactivos:</p>
+
+<blockquote>
+     <p>
+     $
+     K = \dfrac{
+                 a_{\ce{A-}} \! \cdot a_{\ce{H_{3}O+}}
+               }{
+                 a_{\ce{HA}} \! \cdot a_{\ce{H2O}}
+               } \:
+     $
+     donde
+     $
+      \: a_i = \gamma_i \, [ \, i \, ]
+     $
+     </p>
+</blockquote>
+
+<p>Para soluciones diluidas, concentraciones inferiores a $\pu{e-1 M}$,
+puede considerarse al coeficiente de actividad $\gamma_i
+\approx 1$. También en condiciones diluidas se puede tomar la
+concentración de $\ce{H2O}$ como constante ($\, \sim \pu{1000 g/l}
+= \pu{55,5 mol/l} \,$). Así pues, se define la constante de acidez
+$\ce{Ka}$ como:</p>
+
+<blockquote>
+     <p>
+     $
+     \ce{Ka} = K [\ce{H2O}]
+             = \dfrac{
+                       [\ce{A-}][\ce{H3O+}]
+                     }{ 
+                       [\ce{HA}]
+                     }       
+     $
+     </p>
+</blockquote>
+
+<p>Ejemplos:</p>
+
+<p>
+$
+\begin{array}{l}
+  \begin{aligned}
+    \ce{\underbrace{CH3CO}_{\normalsize Ac}OH + H2O &lt;=&gt; AcO- \! + H3O+} \quad
+    \ce{Ka} = \dfrac{
+                      [\ce{AcO-}][\ce{H3O+}]
+                    }{
+                      [\ce{AcOH}]
+                    }
+            = 10^{-4,7}
+  \end{aligned} \\[1ex]
+  
+  \begin{aligned}
+    &amp;\ce{H2CO3 + H2O &lt;=&gt; HCO3^- \! + H3O+} \mspace{-18mu}
+    &amp;&amp;\ce{K_{a1}} = \dfrac{
+                                    \ce{[HCO3^-][H3O+]}
+                                  }{
+                                    \ce{[H2CO3]}
+                                  }
+                          = 10^{-6,4} \\[1ex]
+     
+    &amp;\ce{HCO3^- \! + H2O &lt;=&gt; CO3^2- \! + H3O+} \mspace{-18mu}
+    &amp;&amp;\ce{K_{a2}} = \dfrac{
+                                    \ce{[CO3^2-][H3O+]}
+                                  }{
+                                    \ce{[HCO3^-]}
+                                  }
+                          = 10^{-10{,}3}
+  \end{aligned}
+\end{array}     
+$
+</p>
+
+<p>En los ácidos dipróticos, como el ácido carbónico del
+ejemplo, siempre en la primera cesión el ácido es más fuerte.
+La segunda cesión es mucho más difícil.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="acido_base_fuertes.htm" title="Anterior">&lt;</a></li>
+  <li><a href="acido_base_conjugados.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+  
+</div>
+</body>
+</html>

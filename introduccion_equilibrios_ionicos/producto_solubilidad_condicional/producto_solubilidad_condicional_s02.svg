@@ -1,0 +1,20 @@
+<?xml version="1.0" ?><svg height="36.01875mm" version="1.0" viewBox="0 0 423 136" width="112.02891mm" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linecap="round" transform="translate(-83,-22)">
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="61.7" x="89.30" y="92.51">CaCO<tspan dy="7" font-size="75%">3</tspan> <tspan dy="-7">↓</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="270.30" y="45.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="231.30" y="92.51">Ca<tspan dy="-8" font-size="75%">2+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="273.00" y="94.00">+</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="296.30" y="92.51">CO<tspan dy="7" font-size="75%">3</tspan><tspan dy="-15" font-size="75%">2−</tspan></text>
+    <polyline fill="none" points="285.00,53.01 301.99,76.01" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="323.00,105.00 333.36,119.49" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="338.01,126.00 334.64,116.12 333.36,119.49 329.75,119.61" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="96" x="336.00" y="142.76">HCO<tspan dy="7" font-size="75%">3</tspan><tspan dy="-15" font-size="75%">−</tspan><tspan dy="8">, H</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">CO</tspan><tspan dy="7" font-size="75%">3</tspan></text>
+    <polyline fill="none" points="176.00,97.49 168.00,92.49 213.31,92.49" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="168.00,86.49 213.31,86.49 205.31,81.49" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="401.30" y="93.00">↑ CO<tspan dy="8" font-size="75%">2</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="448.00" y="94.00">+</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="468.30" y="93.00">H<tspan dy="8" font-size="75%">2</tspan><tspan dy="-8">O</tspan></text>
+    <polyline fill="none" points="413.00,126.00 421.03,111.95" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="425.00,105.00 417.43,112.19 421.03,111.95 422.64,115.17" stroke="#000000" stroke-width="1"/>
+  </g>
+</svg>

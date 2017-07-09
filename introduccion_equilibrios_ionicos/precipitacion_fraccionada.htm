@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Precipitación fraccionada">
+<meta name="keywords" content="precipitación, fraccionada">
+<title>Precipitación fraccionada</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Precipitación fraccionada</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Si se tienen diferentes iones en una solución capaces de
+precipitar en presencia de un tercero, cuando se añade a la
+solución este ion común precipitará primero aquel que dé la
+sal más insoluble. A continuación, siguiendo el mismo criterio,
+lo harán el resto. Se habla de precipitación fraccionada cuando
+han precipitado el $\pu{99,9\%}$ de los iones de una especie antes de
+que empiece a precipitar la siguiente. Cuando se produce una
+precipitación del $\pu{99,9\%}$ del ion se considera que la
+precipitación es cuantitativa. Si se da esto, permite la
+separación de los distintos iones.</p>
+
+<p>Ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{BaSO4 \! v \! &lt;=&gt; Ba^2+ \! + SO4^2-} \quad
+      \ce{$K$_{ps,BaSO_4}} \! = [\ce{Ba^2+}] [\ce{SO4^2-}] = \pu{1,1e-10} \\[1ex]
+      \ce{SrSO4 \! v \! &lt;=&gt; Sr^2+ \! + SO4^2-} \quad
+      \ce{$K$_{ps,SrSO_4}} \! = [\ce{Sr^2+}] [\ce{SO4^2-}] = \pu{2,8e-7}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Empieza la precipitación cuando se alcanza o sobrepasa el $K_{\rm ps}$.</p>
+
+<center>
+  <object data="precipitacion_fraccionada/precipitacion_fraccionada.svg" type="image/svg+xml" width="142" height="179">
+  </object>
+</center>
+
+<p>Dado que su $K_{\rm ps}$ es más pequeña, el $\ce{BaSO4}$
+será el primero que precipite. La precipitación comenzará en
+el momento que $[\ce{SO4^2-}]$ llegue a $\pu{1,1e-9 M}$.</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{SO4^2-}] = \dfrac{\ce{$K$_{ps,BaSO_4}}}{[\ce{Ba^2+}]}
+    = \dfrac{\pu{1,1e-10}}{0{,}1} = \pu{1,1e-9 M}
+    $
+    </p>
+</blockquote>
+
+<p>Después lo hará el $\ce{SrSO4}$, cuando $[\ce{SO4^2-}]$
+alcance un valor de $\pu{2,8e-6 M}$.</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{SO4^2-}] = \dfrac{\ce{$K$_{ps,SrSO_4}}}{[\ce{Sr^2+}]}
+    = \dfrac{\pu{2,8e-7}}{0{,}1} = \pu{2,8e-6 M}
+    $
+    </p>
+</blockquote>
+
+<p>Cuando ha precipitado el $\pu{99,9 \%}$ de $\ce{Ba^2+}$ queda pues,
+áun sin precipitar, el $\pu{0,1 \%}$. Por tanto queda una milésima parte de la
+concentración inicial. Esto es, $[\ce{Ba^2+}] =$ $0{,}1\mathbin{/}1000 = \pu{e-4 M}$,
+y entonces $[\ce{SO4^2-}] = \pu{1,1e-10}\mathbin{/}10^{-4} = \pu{1,1e-6 M}$. A esta
+concentración de $\ce{SO4^2-}\mspace{-1mu}$ el $\ce{SrSO4}$ aún no ha empezado a
+precipitar, ya que $\pu{2,8e-6 M} &gt; \pu{1,1e-6 M}$. No se ha alcanzado el mínimo
+necesario. Así pues, este es un ejemplo de precipitación fraccionada.</p>
+
+<p>También pueden hacerse los cálculos mirando si a la
+concentración necesaria de $\ce{SO4^2-}\mspace{-1mu}$ para que
+precipite el $\ce{SrSO4}$ la concentración de $\ce{Ba^2+}\mspace{-1mu}$
+es $\le \pu{0,1\%}$ de la inicial. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{Ba^2+}] = \dfrac{\ce{$K$_{ps,BaSO_4}}}{[\ce{SO4^2-}]}
+    = \dfrac{\pu{1,1e-10}}{\pu{2,8e-6}} = \pu{3,9e-5 M}
+    $
+    </p>
+</blockquote>
+
+<p>Como $\pu{3,9e-5 M} &lt; \pu{e-4 M}$ la precipitación del
+$\ce{Ba^2+}\mspace{-1mu}$ ha sido cuantitativa en el momento
+que se inicia la del $\ce{Sr^2+}$.</p>
+
+<p>Otro ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Cl- \! + Ag+ &lt;=&gt; AgCl v} \quad
+      K_{\rm ps,AgCl} \! = [\ce{Ag+}] [\ce{Cl-}] = \pu{1,8e-10} \\[1ex]
+      \ce{CrO4^2- \! + 2 Ag+ &lt;=&gt; Ag2CrO4 \! v} \quad
+      K_{\rm ps,Ag_2CrO_4} \! = [\ce{Ag+}]^2 [\ce{CrO4^2-}] = \pu{1,2e-12}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En la solución la concentración de $\ce{Cl-}\mspace{-1mu}$ es $\pu{0,1 M}$ y
+la de $\ce{CrO4^2-} \ \pu{0,01 M}$.</p>
+
+<p>Lo primero es ver quién es más insoluble:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      S_{\ce{AgCl}} = \sqrt{K_{\rm ps,AgCl} \Space{0em}{0.75em}{0em}} =
+      \sqrt{\pu{1,8e-10} \Space{0em}{1em}{0em}} = \pu{1,3e-5 M} \\[1ex]
+      S_{\ce{Ag2CrO4}} =
+      \sqrt[\scriptstyle 3]{\dfrac{K_{\rm ps,Ag_2CrO_4} \Space{0em}{0.75em}{0em}}{4}} =
+      \sqrt[\scriptstyle 3]{\dfrac{\pu{1,2e-12} \Space{0em}{1em}{0em}}{4}} = \pu{6,7e-5 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, al adicionar $\ce{Ag+}\mspace{-2mu}$ a la solución primero
+precipitará el $\ce{AgCl}$.</p>
+
+<p>En esta solución, los $\ce{Cl-}\mspace{-1mu}$ empiezan a precipitar
+cuando la concentración de $\ce{Ag+}\mspace{-1mu}$ es igual a $\pu{1,8e-9 M}$.
+Los $\ce{CrO4^2-}\mspace{-1mu}$ lo harán en el momento que
+la concentración de $\ce{Ag+}$ llegue a $\pu{1,1e-5 M}$. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{Ag+}] = \dfrac{K_{\rm ps,AgCl}}{[\ce{Cl-}]}
+    = \dfrac{\pu{1,8e-10}}{0{,}1} = \pu{1,8e-9 M} \\[1ex]
+    [\ce{Ag+}] = \sqrt{\dfrac{K_{\rm ps,Ag_2CrO_4} \Space{0em}{1em}{0em}}{[\ce{CrO4^2-}]}}
+    = \sqrt{\dfrac{\pu{1,2e-12} \Space{0em}{1em}{0em}}{0{,}01}} = \pu{1,1e-5 M}
+    $
+    </p>
+</blockquote>
+
+<p>Cuando $[\ce{Ag+}] = \pu{1,1e-5 M}$ la concentración de
+$\ce{Cl-}\mspace{-1mu}$ es:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{Cl-}] = \dfrac{K_{\rm ps,AgCl}}{[\ce{Ag+}]} = \dfrac{\pu{1,8e-10}}{\pu{1,1e-5}} =
+    \pu{1,6e-5 M}
+    $
+    </p>
+</blockquote>
+
+<p>Esta concentración de $\ce{Cl-}\mspace{-1mu}$ es inferior al
+$\pu{0,1 \%}$ de la inicial ($0{,}1 \mathbin{/} 1000 = \pu{e-4 M}$).
+Así que éste también es un caso de precipitación fraccionada, ya que al
+menos el $\pu{99,9 \%}$ ha precipitado.</p>
+
+<p>Esto tiene utilidad para saber el cloruro que hay en una solución,
+esto es, mediante una valoración con $\ce{Ag+}$ en la que se emplea el
+$\ce{CrO4^2-}$ como indicador, al tener el precipitado de cromato de
+plata, que se forma alcanzado el punto final, coloración rojiza.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="diagrama_logaritmico_precipitacion.htm" title="Anterior">&lt;</a></li>
+  <li><a href="producto_solubilidad_condicional.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

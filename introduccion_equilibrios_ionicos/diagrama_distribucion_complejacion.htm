@@ -1,0 +1,731 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Diagrama de distribución de complejación">
+<meta name="keywords" content="diagrama, distribución, complejación">
+<title>Diagrama de distribución de complejación</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+  
+<h3>Diagrama de distribución de complejación</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Consiste en representar la fracción, respecto a la total,
+de cada una de las especies del metal frente al logaritmo de
+la concentración de ligando.</p>
+
+<p>Así pues, por ejemplo, para un complejo $\ce{ML2}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\upalpha{\smash{\unicode{x03B1}}}
+    \begin{array}{l}
+      \upalpha_0 = \upalpha_{\ce{M}} = \dfrac{[\ce{M}]}{c_{\ce{M}}} = 
+      \dfrac{1}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2} \\[1ex]
+      \upalpha_1 = \upalpha_{\ce{ML}} = \dfrac{[\ce{ML}]}{c_{\ce{M}}} =
+      \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2} \\[1ex]
+      \upalpha_2 = \upalpha_{\ce{ML2}} = \dfrac{[\ce{ML2}]}{c_{\ce{M}}} =
+      \dfrac{\beta_2 [\ce{L}]^2}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<hr>
+
+<p>Ejemplo de cálculo del diagrama de distribución para un complejo
+$\ce{ML}$ tal que:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{M + L &lt;=&gt; ML} \quad k_1 = 10^8
+    $
+    </p>
+</blockquote>
+
+<p>Las expresiones de las $\upalpha$ para este sistema:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\ce{M}} = [\ce{M}] + [\ce{ML}] \\[1ex]
+      \beta_1 = \dfrac{[\ce{ML}]}{[\ce{M}][\ce{L}]} \,
+      \Rightarrow \, [\ce{ML}] = \beta_1 [\ce{M}] [\ce{L}] \\[1ex]
+      \Rightarrow \, c_{\ce{M}} = [\ce{M}] + \beta_1 [\ce{M}] [\ce{L}] \,
+      \Rightarrow \, [\ce{M}] = \dfrac{c_{\ce{M}}}{1 + \beta_1 [\ce{L}]} \\[1ex]
+      \Rightarrow \, \upalpha_{\ce{M}} = \dfrac{[\ce{M}]}{c_{\ce{M}}}
+      = \dfrac{1}{1 + \beta_1 [\ce{L}]} \\[1em]
+      [\ce{ML}] = c_{\ce{M}} - [\ce{M}] = c_{\ce{M}} - \dfrac{c_{\ce{M}}}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{c_{\ce{M}} \beta_1 [\ce{L}]}{1 + \beta_1 [L]} \\[1ex]
+      \Rightarrow \, \upalpha_{\ce{ML}} = \dfrac{[\ce{ML}]}{c_{\ce{M}}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Teniendo en cuenta esto, a continuación pueden plantearse los
+siguientes casos:</p>
+
+<p>a) $[\ce{L}] = 0{,}01 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1} - 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \Rightarrow \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{1}{1 + \! \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{1{,}01}
+      = 0{,}99 \approx 1 \\[1em]
+      \Rightarrow \upalpha_{\ce{ML}} = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [L]}
+      = \dfrac{
+        \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}
+      }{
+        1 + \! \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}
+      } = \dfrac{0{,}01}{1{,}01} = 0{,}01 \approx 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>b) $[\ce{L}] = 0{,}1 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1} - 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \Rightarrow \, \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{1}{1 + \! \cancel{k_1} 0{,}1 \dfrac{1}{\cancel{k_1}}}
+      = \dfrac{1}{1{,}1} = 0{,}9 \\[1ex]
+      \Rightarrow \, \upalpha_{\ce{ML}} = \, 0{,}1
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>c) $[\ce{L}] = (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}$</sub></p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \Rightarrow \, \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{1}{1 + \! \cancel{k_1} \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{2} = 0{,}5 \\[1ex]
+      \Rightarrow \, \upalpha_{\ce{ML}} = \, 0{,}5
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>d) $[\ce{L}] = 10 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1} + 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \Rightarrow \, \alpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{1}{1 + \! \cancel{k_1} 10 \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{11} = 0{,}1 \\[1ex]
+      \Rightarrow \, \alpha_{\ce{ML}} = \, 0{,}9
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>e) $[\ce{L}] = 100 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1} + 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \Rightarrow \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}]}
+      = \dfrac{1}{1 + \! \cancel{k_1} 100 \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{101}
+      = 0{,}01 \approx 0 \\[1ex]
+      \Rightarrow \, \upalpha_{\ce{ML}} = \, 0{,}99 \approx 1
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Todos estos datos pueden resumirse en la siguiente tabla:</p>
+
+<center>
+<table border="1">
+    <tr>
+        <th>$\boldsymbol{\log[\ce{L}]}$</th>
+        <th>${\bf \upalpha}_{\ce{M}}$</th>
+        <th>${\bf \upalpha}_{\ce{ML}}$</th>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} - 2$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+        <td align="center">${\sim}\mspace{2mu} 0 \ (0{,}01)$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} - 1$</td>
+        <td align="center">$0{,}9$</td>
+        <td align="center">$0{,}1$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1}$</td>
+        <td align="center">$0{,}5$</td>
+        <td align="center">$0{,}5$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} + 1$</td>
+        <td align="center">$0{,}1$</td>
+        <td align="center">$0{,}9$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} + 2$</td>
+        <td align="center">${\sim}\mspace{2mu} 0 \ (0{,}01)$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+    </tr>
+</table>
+</center>
+
+<p>Siendo la representación del diagrama de distribución para
+este sistema:</p>
+
+<center>
+  <object data="diagrama_distribucion_complejacion/diagrama_distribucion_complejacion_s01.svgz"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<hr>
+
+<p>Diagrama de distribución de un sistema $\ce{ML2}$ partiendo de:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + L &lt;=&gt; ML} \quad k_1 = 10^8 \\[1ex]
+      \ce{ML + L &lt;=&gt; ML2} \quad k_2 = 10^3
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En este ejemplo, la primera constante sucesiva es mayor
+que la segunda. Por tanto, la primera reacción es más fácil,
+hay una mayor facilidad para adquirir el ligando. En cambio,
+el orden de las constantes globales es al revés, la $\beta_2$
+es mayor que la $\beta_1$.</p>
+
+<p>Aquí también, para llevar a cabo la representación del
+diagrama de distribución, se pueden plantear distintos casos:</p>
+
+<p>a) $[\ce{L}] = 0{,}01 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}
+- 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{1}{1 + \! \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}}
+      = \dfrac{1}{1{,}01} = 0{,}99 \approx 1 \\[1em]
+      \upalpha_{\ce{ML}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{
+        \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}
+      }{
+        1 + \! \cancel{k_1} 0{,}01 \dfrac{1}{\cancel{k_1}}
+      } = \dfrac{0{,}01}{1{,}01} = 0{,}01 \approx 0 \\[1ex]
+      \upalpha_{\ce{ML2}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>b) $[\ce{L}] = 0{,}1 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}
+- 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_{2} [\ce{L}]^2}}
+      = \dfrac{1}{1 \! + \cancel{k_1} 0{,}1 \dfrac{1}{\cancel{k_1}}}
+      = \dfrac{1}{1{,}1} = 0{,}9 \\[1em]
+      \upalpha_{\ce{ML}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{
+        \cancel{k_1} 0{,}1 \dfrac{1}{\cancel{k_1}}
+      }{
+        1 + \! \cancel{k_1} 0{,}1 \dfrac{1}{\cancel{k_1}}
+      } = \dfrac{0{,}1}{1{,}1} = 0{,}1 \\[1ex]
+      \upalpha_{\ce{ML2}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>c) $[\ce{L}] = (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{1}{1 + \! \cancel{k_1} \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{2} = 0{,}5 \\[1em]
+      \upalpha_{\ce{ML}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_{1}[\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{\cancel{k_1} \dfrac{1}{\cancel{k_1}}}{1 + \! \cancel{k_1} \dfrac{1}{\cancel{k_1}}}
+      = \dfrac{1}{2} = 0{,}5 \\[1ex]
+      \upalpha_{\ce{ML2}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>d) $[\ce{L}] = 10 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}
++ 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_{1} [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{1}{1 + \! \cancel{k_1} 10 \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{11} = 0{,}1 \\[1em]
+      \upalpha_{\ce{ML}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{
+        \cancel{k_1} 10 \dfrac{1}{\cancel{k_1}}
+      }{
+        1 + \! \cancel{k_1} 10 \dfrac{1}{\cancel{k_1}}
+      } = \dfrac{10}{11} = 0{,}9 \\[1ex]
+      \upalpha_{\ce{ML2}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>e) $[\ce{L}] = 100 (k_1)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$1}
++ 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{M}} = \dfrac{1}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{1}{1 + \! \cancel{k_1} 100 \dfrac{1}{\cancel{k_1}}} = \dfrac{1}{101}
+      = 0{,}01 \approx 0 \\[1em]
+      \upalpha_{\ce{ML}}
+      = \dfrac{\beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \! \cancel{\beta_2 [\ce{L}]^2}}
+      = \dfrac{
+        \cancel{k_1} 100 \dfrac{1}{\cancel{k_1}}
+      }{
+        1 + \! \cancel{k_1} 100 \dfrac{1}{\cancel{k_1}}
+      } = \dfrac{100}{101} = 0{,}99 \approx 1 \\[1ex]
+      \upalpha_{\ce{ML2}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>f) $[\ce{L}] = 0{,}01 (k_2)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$2}
+- 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{ML}} =
+      \dfrac{
+        \beta_1 \! \cancel{[\ce{L}]}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_{1} \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}01 \!
+        \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{1,01} = 0{,}99 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{ML2}} =
+      \dfrac{
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2[\ce{L}]^{\cancel{2}}
+      }
+      = \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}01 \!
+        \dfrac{1}{\cancel{k_2}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}01 \!
+        \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{0{,}01}{1{,}01} = 0{,}01 \approx 0 \\[1ex]
+      
+      \upalpha_{\ce{M}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>g) $[\ce{L}] = 0{,}1 (k_2)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$2}
+- 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{ML}} =
+      \dfrac{
+        \beta_1 \! \cancel{[\ce{L}]}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}1 \!
+        \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{1{,}1} = 0{,}9 \\[1em]
+      
+      \upalpha_{\ce{ML2}} =
+      \dfrac{
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! + 
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}1 \!
+        \dfrac{1}{\cancel{k_2}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 0{,}1 \!
+        \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{0{,}1}{1{,}1} = 0{,}1 \\[1ex]
+      
+      \upalpha_{\ce{M}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>h) $[\ce{L}] = (k_2)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$2}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{ML}} =
+      \dfrac{
+        \beta_1 \! \cancel{[\ce{L}]}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}} =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} \! \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{2} = 0{,}5 \\[1em]
+      
+      \upalpha_{\ce{ML2}} =
+      \dfrac{
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} \! \dfrac{1}{\cancel{k_2}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} \! \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{2} = 0{,}5 \\[1ex]
+      
+      \upalpha_{\ce{M}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>i) $[\ce{L}] = 10 (k_2)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$2}
++ 1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{ML}} =
+      \dfrac{
+        \beta_1 \! \cancel{[\ce{L}]}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 10 \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{11} = 0{,}1 \\[1em]
+      
+      \upalpha_{\ce{ML2}} =
+      \dfrac{
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 10 \dfrac{1}{\cancel{k_2}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 10 \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{10}{11} = 0{,}9 \\[1ex]
+      
+      \upalpha_{\ce{M}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>j) $[\ce{L}] = 100 (k_2)^{-1}$ ; ${}\log[\ce{L}] = \ce{p$k$2}
++ 2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{ML}} =
+      \dfrac{
+        \beta_1 \! \cancel{[\ce{L}]}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 100 \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{1}{101} = 0{,}01 \approx 0\\[1em]
+      
+      \upalpha_{\ce{ML2}} =
+      \dfrac{
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      }{
+        \color{blue}{\cancel{\color{#222}{1}}} \! + \beta_1 \! \cancel{[\ce{L}]} \! +
+        \beta_2 [\ce{L}]^{\cancel{2}}
+      } =
+      \dfrac{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 100 \dfrac{1}{\cancel{k_2}}
+      }{
+        \color{red}{\cancel{\color{#222}{k_1}}} \! + \!
+        \color{red}{\cancel{\color{#222}{k_1}}} \! \cancel{k_2} 100 \dfrac{1}{\cancel{k_2}}
+      } = \dfrac{100}{101} = 0{,}99 \approx 1 \\[1ex]
+      
+      \upalpha_{\ce{M}} \! = 0
+    \end{array}    
+    $
+    </p>
+</blockquote>
+
+<p>Tabla resumen de lo anterior:</p>
+
+<center>
+<table border="1">
+    <tr>
+        <th>$\boldsymbol{\log[\ce{L}]}$</th>
+        <th>${\bf\upalpha}_{\ce{M}}$</th>
+        <th>${\bf\upalpha}_{\ce{ML}}$</th>
+        <th>${\bf\upalpha}_{\ce{ML2}}$</th>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} - 2$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+        <td align="center">${\sim} \mspace{2mu} 0 \ (0{,}01)$</td>
+        <td align="center">$0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} - 1$</td>
+        <td align="center">$0{,}9$</td>
+        <td align="center">$0{,}1$</td>
+        <td align="center">$0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1}$</sub></td>
+        <td align="center">$0{,}5$</td>
+        <td align="center">$0{,}5$</td>
+        <td align="center">$0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} + 1$</td>
+        <td align="center">$0{,}1$</td>
+        <td align="center">$0{,}9$</td>
+        <td align="center">$0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$1} + 2$</td>
+        <td align="center">${\sim} \mspace{2mu} 0 \ (0{,}01)$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+        <td align="center">$0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$2} - 2$</td>
+        <td align="center">$0$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+        <td align="center">${\sim} \mspace{2mu} 0 \ (0{,}01)$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$2} - 1$</td>
+        <td align="center">$0$</td>
+        <td align="center">$0{,}9$</td>
+        <td align="center">$0{,}1$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$2}$</td>
+        <td align="center">$0$</td>
+        <td align="center">$0{,}5$</td>
+        <td align="center">$0{,}5$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$2} + 1$</td>
+        <td align="center">$0$</td>
+        <td align="center">$0{,}1$</td>
+        <td align="center">$0{,}9$</td>
+    </tr>
+    <tr>
+        <td>$\ce{p$k$2} + 2$</td>
+        <td align="center">$0$</td>
+        <td align="center">${\sim} \mspace{2mu} 0 \ (0{,}01)$</td>
+        <td align="center">${\sim} 1 \ (0{,}99)$</td>
+    </tr>
+</table>
+</center>
+
+<p>La representación del diagrama de distribución de este
+sistema:</p>
+
+<center>
+  <object data="diagrama_distribucion_complejacion/diagrama_distribucion_complejacion_s02.svgz"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Este gráfico es el típico de un sistema $\ce{ML2}$ en
+que $k_1 \mspace{2mu} {\gg} \, k_2$. El gráfico cambia cuando ambas constantes
+sucesivas se juntan. Esto es:</p>
+
+<p>1) $k_1\mspace{2mu} {\gg} \, k_2$</p>
+
+<center>
+  <object data="diagrama_distribucion_complejacion/diagrama_distribucion_complejacion_s03.svgz"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>2) $k_1 \mspace{2mu} {&gt;} \, k_2$</p>
+
+<center>
+  <object data="diagrama_distribucion_complejacion/diagrama_distribucion_complejacion_s04.svgz"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>En este caso $\ce{ML}$ no llega a predominar de forma total nunca.</p>
+
+<p>3) $k_1 \! = k_2$</sub></p>
+
+<center>
+  <object data="diagrama_distribucion_complejacion/diagrama_distribucion_complejacion_s05.svgz"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Aquí, en esta situación, $\ce{ML}$ nunca está en superioridad.</p>
+
+<p>En general, esto todavía se puede complicar más según vayan
+aumentando el número de ligandos, por tanto de constantes. Este
+tipo de esquemas pueden tener una distribución de especies muy
+amplia, y sirven de ayuda para conocer que especie o especies se
+tienen en función de la concentración de ligando libre.</p>
+
+  </div>
+
+  <div id="foot">
+  
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="estabilidad_complejos.htm" title="Anterior">&lt;</a></li>
+  <li><a href="reacciones_parasitas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

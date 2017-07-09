@@ -1,0 +1,760 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Producto de solubilidad condicional">
+<meta name="keywords" content="producto, solubilidad, condicional">
+<title>Producto de solubilidad condicional</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Producto de solubilidad condicional</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<ul>
+    <li><a href="#acidez">Precipitación y acidez</a>. Ej. $\ce{ZnS}$,
+        $\ce{CaCO3}$</li>
+    <li><a href="#complejacion">Precipitación y complejación</a>.
+        Ej. $\ce{AgCl + Cl-}$</li>
+    <li><a href="#complejacion_acidez">Precipitación,
+        complejación y acidez</a>. Ej. $\ce{AgCl + NH3 + H+}$</li>
+</ul>
+
+<p><a name="acidez"></a>- Precipitación y acidez:</p>
+
+<center>
+  <object style="margin-bottom:-10px;margin-top:-10px" data="producto_solubilidad_condicional/producto_solubilidad_condicional_s01.svg" type="image/svg+xml" width="463" height="188">
+  </object>
+</center>
+
+<p>Si el medio es ácido el equilibrio se desplazará a la
+derecha. Lo mismo sucedería en medio básico. Por tanto, en ambos
+casos el $\ce{ZnS}$ será mucho más soluble.</p>
+
+<p>Así pues, para conseguir redisolver una sal lo que se hace es
+retirar los iones implicados en el equlibrio de precipitación.</p>
+
+<p>Aquí el producto de solubilidad condicional va a permitir
+calcular la solubilidad en determinadas condiciones de $\ce{pH}$.</p>
+
+<p>Ejemplo:</p>
+
+<center>
+  <object data="producto_solubilidad_condicional/producto_solubilidad_condicional_s02.svg" type="image/svg+xml" width="423" height="136">
+  </object>
+</center>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      K_{\rm ps} = [\ce{Ca^2+}] [\ce{CO3^2-}] = \pu{2,5e-8} \\[1ex]
+      \ce{pK_{a1}} = 6{,}3 \\[1ex]
+      \ce{pK_{a2}} = 10{,}3 \\
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>¿Cuál es la solubilidad de esta sal en una solución $\ce{0,1 M}$
+de ácido acético?</p>
+
+<p>El $\ce{pH}$ de una solución $\pu{0,1 M}$ de ácido acético, cuyo $\ce{pKa}
+= 4{,}75$, es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H+}] = \sqrt{\ce{Ka} \, c_{\rm a} \Space{0em}{0.75em}{0em}} =
+      \sqrt{10^{-4{,}75} \! \cdot 0{,}1 \Space{0em}{1em}{0em}} = \pu{1,3e-3 M} \\
+      \ce{pH} = \dfrac{1}{2} \ce{pKa} - \dfrac{1}{2} \log c_{\rm a} = 2{,}88
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>A este $\ce{pH}$ ácido el calcio no formará hidroxocomplejos.
+Además, esto se une a la poca tendencia que ya tiene de por sí a
+reaccionar en ese sentido.</p>
+
+<p>Lo que sí se formará es ácido carbónico, liberándose $\ce{CO2}\mspace{-1mu}$,
+desplazando la reacción de solubilidad del $\ce{CaCO3}$ hacia la derecha.
+Por tanto se disuelve la sal.</p>
+
+<p>Para hallar la solubilidad de este caso, se define la siguiente
+constante de producto de solubilidad condicional:</p>
+
+<blockquote>
+    <p>
+    $
+      K'_{\rm ps} = [\ce{Ca^2+}] [\ce{CO3^2-'}]
+    $
+    </p>
+</blockquote>
+
+<p>Donde $[\ce{CO3^2-'}]$ es la concentración
+global de todas las especies en solución del carbonato.</p>
+
+<p>El coeficiente de reacción parásita es aquí:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{CO3^2-}} = \dfrac{[\ce{CO3^2-'}]}{[\ce{CO3^2-}]}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = [\ce{Ca^2+}] [\ce{CO3^2-}] \, \alpha_{\ce{CO3^2-}} \mspace{-1mu} =
+    K_{\rm ps} \, \alpha_{\ce{CO3^2-}}
+    $
+    </p>
+</blockquote>
+
+<p>Se necesita calcular el valor del coeficiente.</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{CO3^2-}} \mspace{-1mu}= 
+    \dfrac{[\ce{CO3^2-}] + [\ce{HCO3-}] + [\ce{H2CO3}]}{[\ce{CO3^2-}]} =
+    1 + \dfrac{[\ce{HCO3-}]}{[\ce{CO3^2-}]} + \dfrac{[\ce{H2CO3}]}{[\ce{CO3^2-}]}
+    $
+    </p>
+</blockquote>
+
+<p>Haciendo uso de las constantes de protonación globales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{H+ \! + CO3^2- \! &lt;=&gt; HCO3-} &amp;&amp;
+      \beta_1 = \dfrac{[\ce{HCO3-}]}{[\ce{H+}] [\ce{CO3^2-}]} =
+      \dfrac{1}{\ce{K_{a2}}} \\[1ex]
+      &amp;\ce{2 H+ \! + CO3^2- \! &lt;=&gt; H2CO3} &amp;\qquad&amp;
+      \beta_2 = \dfrac{[\ce{H2CO3}]}{[\ce{H+}]^2 [\ce{CO3^2-}]} =
+      \dfrac{1}{\ce{K_{a1}} \ce{K_{a2}}}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{CO3^2-}} \mspace{-1mu} = 1 + \beta_1 [\ce{H+}] + \beta_2 [\ce{H+}]^2 =
+    1 + \dfrac{[\ce{H+}]}{\ce{K_{a2}}} + \dfrac{[\ce{H+}]^2}{\ce{K_{a1}} \ce{K_{a2}}}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo, se calculó anteriormente, $[\ce{H+}] = \pu{1,3e-3
+M}$, y considerando que no varíe (irreal<a href="#star">${}^{(\star)}$</a>),
+queda que:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{CO3^2-}} = \cancel{1 + \dfrac{\pu{1,3e-3}}{10^{-10,3}}} \! +
+    \dfrac{(\pu{1,3e-3})^2}{10^{-6,3} 10^{-10,3}} = \pu{6,7e10}
+    $
+    </p>
+</blockquote>
+
+<p>Dado lo elevado de este coeficiente la reacción parásita es
+importante. Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = (\pu{2,5e-8}) (\pu{6,7e10}) = \pu{1,7e3}
+    $
+    </p>
+</blockquote>
+
+<p>Con este valor hallado para el producto de solubilidad condicional
+se calcula ahora la solubilidad:</p>
+
+<blockquote>
+    <p>
+    $
+    S'_{\ce{CaCO3}} = [\ce{Ca^2+}] = [\ce{CO3^2-'}] = 
+    \sqrt{K'_{\rm ps} \Space{0em}{0.75em}{0em}} =
+    \sqrt{\pu{1,7e3} \Space{0em}{1em}{0em}} = \pu{41 M}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, en estas condiciones es muy soluble.</p>
+
+<p><a name="star"></a>$(\star)$ Irreal ya que los protones
+procedentes del acético pueden reaccionar con carbonato y
+bicarbonato, en una reacción típica ácido-base donde estos
+últimos actúan de bases.</p>
+
+<p>Debido a que el acético es un ácido más fuerte que
+bicarbonato y carbónico, el equilibrio de aquél estará
+desplazado hacia el acetato (i.e. $[\ce{AcO-}] &gt; [\ce{AcOH}]
+\, \Rightarrow$ $\ce{pH} &gt; \ce{pKa}$), y el carbónico
+estará más presente que carbonato y bicarbonato (i.e. $[\ce{H2CO3}]
+&gt; [\ce{HCO3-}] + [\ce{CO3^2-}] \, \Rightarrow \, \ce{pH} &lt;
+\ce{pK_{a1}}\mspace{-1mu}$).</p>
+
+<p>Si se plantea el balance de cargas:</p>
+
+<blockquote>
+    <p>
+    $
+    2 [\ce{Ca^2+}] + [\ce{H3O+}] = [\ce{HCO3-}] + 2 [\ce{CO3^2-}] + [\ce{AcO-}] + [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>Pueden hacerse simplificaciones:</p>
+
+<blockquote>
+    <p>
+    $
+    2 [\ce{Ca^2+}] + \! \cancel{[\ce{H3O+}]} \! =
+    [\ce{HCO3-}] + \! \cancel{2 [\ce{CO3^2-}]} \! + [\ce{AcO-}] + \! \cancel{[\ce{OH-}]}
+    $
+    </p>
+</blockquote>
+
+<p>Donde se ha considerado que la primera protonación del
+carbonato es muy favorable, de tal modo que $[\ce{HCO3-}] \gg
+[\ce{CO3^2-}]$, pero no tanto la segunda, $[\ce{AcO-}]
+\mathrel{{\gg}\llap{\unicode{x0338}\;}} [\ce{HCO3-}]$. Por el
+rango de $\ce{pH}$ que se espera en la solución, también pueden
+despreciarse $[\ce{H3O+}]$ y $[\ce{OH-}]$.</p>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+        \begin{array}{l}
+          [\ce{HCO3-}] = \dfrac{
+            c_{\ce{CO3^2-}} \ce{K_{a1}} [\ce{H3O+}]
+          }{
+            [\ce{H3O+}]^2 + \ce{K_{a1}} [\ce{H3O+}] + \ce{K_{a1}} \ce{K_{a2}} \,
+          } \\[1ex]
+          c_{\ce{CO3^2-}} \! = [\ce{CO3^2-'}] = [\ce{Ca^2+}]
+        \end{array}
+      \right\} \,
+      \Rightarrow \\[1em]
+      \Rightarrow \, [\ce{HCO3-}] = \dfrac{
+        [\ce{Ca^2+}] \ce{K_{a1}} [\ce{H3O+}]
+      }{
+        [\ce{H3O+}]^2 + \ce{K_{a1}} [\ce{H3O+}] + \ce{K_{a1}} \ce{K_{a2}}
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Donde, por el $\ce{pH}$ esperado:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{HCO3-}] = \dfrac{
+      [\ce{Ca^2+}] \ce{K_{a1}} \! \cancel{[\ce{H3O+}]}
+    }{
+      [\ce{H3O+}]^{\cancel{2}} \! + \ce{K_{a1}} \! \cancel{[\ce{H3O+}]} \! +
+      \! \cancel{\ce{K_{a1}} \ce{K_{a2}}}
+    } = \dfrac{[\ce{Ca^2+}] \ce{K_{a1}}}{[\ce{H3O+}] + \ce{K_{a1}}}
+    $
+    </p>
+</blockquote>
+
+<p>También:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{AcO-}] = \dfrac{c_{\ce{AcOH}} \ce{Ka}}{[\ce{H3O+}] + \ce{Ka}}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    2 [\ce{Ca^2+}] = \dfrac{[\ce{Ca^2+}] \ce{K_{a1}}}{[\ce{H3O+}] + \ce{K_{a1}}} +
+    \dfrac{c_{\ce{AcOH}} \ce{Ka}}{[\ce{H3O+}] + \ce{Ka}}
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = (S'_{\ce{CaCO3}})^2 = [\ce{Ca^2+}]^2 = K_{\rm ps} \, \alpha_{\ce{CO3^2-}}
+    \Rightarrow \, [\ce{Ca^2+}] = \sqrt{\strut K_{\rm ps} \, \alpha_{\ce{CO3^2-}}}
+    $
+    </p>
+</blockquote>
+
+<p>Entonces, reemplazando:</p>
+
+<blockquote>
+    <p>
+    $
+    2 \sqrt{\strut K_{\rm ps} \, \alpha_{\ce{CO3^2-}}} =
+    \dfrac{\ce{K_{a1}}}{[\ce{H3O+}] + \ce{K_{a1}}} \sqrt{\strut K_{\rm ps} \, \alpha_{\ce{CO3^2-}}}
+    + \dfrac{c_{\ce{AcOH}} \ce{Ka}}{[\ce{H3O+}] + \ce{Ka}}
+    $
+    </p>
+</blockquote>
+
+<p>Igualdad cuya unica variable es ahora la concentración de
+$\ce{H3O+}$.</p>
+
+<p>Si se hace el siguiente razonamiento, donde se plantean dos
+parejas tampón $\ce{AcOH} \mathbin{/} \ce{AcO-}$ y $\ce{H2CO3}
+\mathbin{/} \ce{HCO3-}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    \left.
+    \begin{array}{l}
+      \left.
+        \begin{array}{l}
+          c_{\ce{AcOH}} = [\ce{AcOH}] + [\ce{AcO-}] \, \Rightarrow \\
+          \Rightarrow \, \ce{pKa} - 1{,}3 &lt; \ce{pH} &lt; \ce{pKa} + 1{,}3 \\[1ex]
+          [\ce{AcO-}] > [\ce{AcOH}] \, \Rightarrow \, \ce{pH} &gt; \ce{pKa}
+        \end{array} \,
+      \right\} \, \Rightarrow
+      \begin{aligned}
+        \\
+        \ce{pKa} &amp;&lt; \ce{pH} &lt; \ce{pKa} + 1{,}3 \\
+        4{,}75 &amp;&lt; \ce{pH} &lt; 6{,}05
+      \end{aligned} \\[1em]
+      \left.
+        \begin{array}{l}
+          c_{\ce{CO3^2-}} = [\ce{H2CO3}] + [\ce{HCO3-}] \, \Rightarrow \\
+          \Rightarrow \, \ce{pK_{a1}} - 1{,}3 &lt; \ce{pH} &lt; \ce{pK_{a1}} + 1{,}3 \\[1ex]
+          [\ce{H2CO3}] &gt; [\ce{HCO3-}] \, \Rightarrow \, \ce{pH} &lt; \ce{pK_{a1}}
+        \end{array} \,
+      \right\} \, \Rightarrow
+      \begin{aligned}
+        \\
+        \ce{pK_{a1}} - 1{,}3 &amp;&lt; \ce{pH} &lt; \ce{pK_{a1}} \\
+        5{,}0 &amp;&lt; \ce{pH} &lt; 6{,}3
+      \end{aligned}
+    \end{array}
+    \right\} \, \Rightarrow \\[1em]
+    \Rightarrow \, 5{,}0 &lt; \ce{pH} &lt; 6{,}05
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Puede construirse una tabla donde mediante un método de
+prueba y error hallar la solución:</p>
+
+<center>
+  <p>
+  $
+  \begin{array}{c|c|c|c|c|c}
+    \ce{pH}	&amp; \alpha_{\ce{CO3^2-}}	&amp; \text{Izquierda}	&amp; \text{Derecha}	&amp; \text{Ratio (Izq./Der.)}	&amp; S'_{\ce{CaCO3}} \\[1ex]
+    \hline 5{,}0 &amp; \pu{4,2e6}  &amp; 0{,}6466 &amp; 0{,}0794 &amp; 8{,}1396 &amp; \pu{3,2e-1} \\
+    5{,}1 &amp; \pu{2,7e6}  &amp; 0{,}5168 &amp; 0{,}0845 &amp; 6{,}1185 &amp; \pu{2,6e-1} \\
+    5{,}2 &amp; \pu{1,7e6}  &amp; 0{,}4136 &amp; 0{,}0890 &amp; 4{,}6458 &amp; \pu{2,1e-1} \\
+    5{,}3 &amp; \pu{1,1e6}  &amp; 0{,}3317 &amp; 0{,}0931 &amp; 3{,}5629 &amp; \pu{1,7e-1} \\
+    5{,}4 &amp; \pu{7,1e5}  &amp; 0{,}2665 &amp; 0{,}0966 &amp; 2{,}7589 &amp; \pu{1,3e-1} \\
+    5{,}5 &amp; \pu{4,6e5}  &amp; 0{,}2148 &amp; 0{,}0996 &amp; 2{,}1564 &amp; \pu{1,1e-1} \\
+    5{,}6 &amp; \pu{3,0e5}  &amp; 0{,}1736 &amp; 0{,}1021 &amp; 1{,}7008 &amp; \pu{8,7e-2} \\
+    5{,}7 &amp; \pu{2,0e5}  &amp; 0{,}1408 &amp; 0{,}1040 &amp; 1{,}3534 &amp; \pu{7,0e-2} \\
+    \color{red}{5{,}8} &amp; \pu{1,3e5}  &amp; 0{,}1147 &amp; 0{,}1056 &amp; \color{red}{1{,}0864} &amp; \pu{5,7e-2} \\
+    \color{red}{5{,}9} &amp; \pu{8,8e4}  &amp; 0{,}0939 &amp; 0{,}1068 &amp; \color{red}{0{,}8797} &amp; \pu{4,7e-2} \\
+    6{,}0 &amp; \pu{6,0e4}  &amp; 0{,}0773 &amp; 0{,}1076 &amp; 0{,}7186 &amp; \pu{3,9e-2} \\
+  \end{array}
+  $
+  </p>
+</center>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>Izquierda $=$ Izquierda del balance de cargas (con las simplificaciones).</p>
+    <p>Derecha $=$ Derecha del balance de cargas (con las simplificaciones).</p>
+    <p>$S'_{\ce{CaCO3}} \! = [\ce{Ca^2+}] = \sqrt{\strut K_{\rm ps} \, \alpha_{\ce{CO3^2-}}}$</p>
+    <p>$\alpha_{\ce{CO3^2-}} \! \approx \beta_1 [\ce{H3O+}] + \beta_2 [\ce{H3O+}]^2$</p>
+</blockquote>
+
+<p>Afinando más:</p>
+
+<center>
+  <p>
+  $
+  \begin{array}{c|c|c|c|c|c}
+  \ce{pH}	&amp; \alpha_{\ce{CO3^2-}}	&amp; \text{Izquierda}	&amp; \text{Derecha}	&amp; \text{Ratio (Izq./Der.)}	&amp; S'_{\ce{CaCO3}} \\[1ex]
+  \hline 5{,}80 &amp; \pu{1,32e5}  &amp; 0{,}1147 &amp; 0{,}1056 &amp; 1{,}0864 &amp; \pu{5,7e-2} \\
+  5{,}81 &amp; \pu{1,26e5}  &amp; 0{,}1124 &amp; 0{,}1057 &amp; 1{,}0633 &amp; \pu{5,6e-2} \\
+  5{,}82 &amp; \pu{1,21e5}  &amp; 0{,}1102 &amp; 0{,}1059 &amp; 1{,}0408 &amp; \pu{5,5e-2} \\
+  \color{red}{5{,}83} &amp; \pu{1,17e5}  &amp; 0{,}1080 &amp; 0{,}1060 &amp; \color{red}{1{,}0189} &amp; \pu{5,4e-2} \\
+  \color{red}{5{,}84} &amp; \pu{1,12e5}  &amp; 0{,}1058 &amp; 0{,}1061 &amp; \color{red}{0{,}9975} &amp; \pu{5,3e-2} \\
+  5{,}85 &amp; \pu{1,08e5}  &amp; 0{,}1037 &amp; 0{,}1062 &amp; 0{,}9766 &amp; \pu{5,2e-2} \\
+  5{,}86 &amp; \pu{1,03e5}  &amp; 0{,}1017 &amp; 0{,}1063 &amp; 0{,}9562 &amp; \pu{5,1e-2} \\
+  5{,}87 &amp; \pu{9,94e4}  &amp; 0{,}0997 &amp; 0{,}1065 &amp; 0{,}9364 &amp; \pu{5,0e-2} \\
+  5{,}88 &amp; \pu{9,55e4}  &amp; 0{,}0977 &amp; 0{,}1066 &amp; 0{,}9170 &amp; \pu{4,9e-2} \\
+  5{,}89 &amp; \pu{9,18e4}  &amp; 0{,}0958 &amp; 0{,}1067 &amp; 0{,}8982 &amp; \pu{4,8e-2} \\
+  5{,}90 &amp; \pu{8,82e4}  &amp; 0{,}0939 &amp; 0{,}1068 &amp; 0{,}8797 &amp; \pu{4,7e-2} 
+  \end{array}
+  $
+  </p>
+</center>
+
+<p>Solución:</p>
+
+<blockquote>
+    <p>
+    $
+    S'_{\ce{CaCO3}} = \pu{5,3e-2 M}
+    $
+    </p>
+</blockquote>
+
+<p>Se ha considerado la disolución un sistema cerrado. La única
+fuente de carbonatos, de sus distintas especies, es el precipitado.</p>
+
+<p>Por convención, al escribir $\ce{H2CO3}$ se engloba tanto al
+$\ce{CO2_{(aq)}}$, la forma mayoritaria en la que el carbónico está
+en solución, como la forma hidratada ($\ce{H2CO3}$). Por tanto,
+aunque se escriba esta última, en realidad es la suma de las dos,
+$\ce{CO2_{(aq)}}$ y $\ce{H2CO3}$. Este es el caso, por ejemplo, siendo
+consistentes, del denominador de $\ce{K_{a1}}$.</p>
+
+<p><a name="complejacion"></a>- Precipitación y complejación:</p>
+
+<center>
+  <object style="margin-bottom:-15px;margin-top:-15px" data="producto_solubilidad_condicional/producto_solubilidad_condicional_s03.svg" type="image/svg+xml" width="452" height="171">
+  </object>
+</center>
+
+<p>Al añadir cloruro en exceso se forman complejos de cloro y
+plata.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{Ag+ \! + Cl- &lt;=&gt; AgCl_{(aq)}} &amp;&amp; \beta_1 = 10^{2{,}9} \\[1ex]
+      &amp;\ce{Ag+ \! + 2 Cl- &lt;=&gt; [AgCl2]-} &amp;&amp; \beta_2 = 10^{4{,}7} \\[1ex]
+      &amp;\ce{Ag+ \! + 3 Cl- &lt;=&gt; [AgCl3]^2-} &amp;&amp; \beta_3 = 10^{5{,}0} \\[1ex]
+      &amp;\ce{Ag+ \! + 4 Cl- &lt;=&gt; [AgCl4]^3-} &amp;\qquad&amp; \beta_4 = 10^{5{,}9}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>El producto de solubilidad condicional pues:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = K_{\rm ps}  \, \alpha_{\ce{Ag+}} 
+    $
+    </p>
+</blockquote>
+
+<p>El cálculo del coeficiente de reacción parásita:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \alpha_{\ce{Ag+}} &amp;= 1 + \beta_1 [\ce{Cl-}] + \beta_2 [\ce{Cl-}]^2 +
+      \beta_3 [\ce{Cl-}]^3 + \beta_4 [\ce{Cl-}]^4 = \\[1ex]
+      &amp;= \cancel{1} + 10^{1{,}9} + 10^{2{,}7} + 10^{2{,}0} + 10^{1{,}9} = 10^{2{,}9}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Se considera, como se verá más adelante también, que la
+concentración de cloruros no varía.</p>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = 10^{-9{,}5} \cdot 10^{2{,}9} = 10^{-6{,}6} = \pu{3e-7}
+    $
+    </p>
+</blockquote>
+
+<p>El producto de solubilidad ha aumentado de forma apreciable.
+Evidencia que el exceso de cloruro provoca un aumento en la
+solubilidad de la sal.</p>
+
+<p>Teniendo en cuenta que el valor de $[\ce{Ag+'}]$ debe ser
+igualmente bajo, cabe considerar que la concentración de $\ce{Cl-}\mspace{-1mu}$
+inicial, $\pu{0,1 M}$, resta prácticamente inalterada. Así pues, el
+efecto del ion común en la concentración global de plata (y en
+la solubilidad de la sal):</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      K'_{\rm ps} = [\ce{Ag+'}] [\ce{Cl-}] \\[1ex]
+      \Rightarrow \, S'_{\ce{AgCl}} = [\ce{Ag+'}] = \dfrac{K'_{\rm ps}}{[\ce{Cl-}]} =
+      \dfrac{\pu{3e-7}}{0{,}1} = \pu{3e-6 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><a name="complejacion_acidez"></a>- Precipitación,
+complejación y acidez:</p>
+
+<center>
+  <object data="producto_solubilidad_condicional/producto_solubilidad_condicional_s04.svg" type="image/svg+xml" width="324" height="195">
+  </object>
+</center>
+
+<p>&bull; Primero, sólo $\ce{NH3}$:</p>
+
+<p>La reacción parasita se produce sobre la plata:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = K_{\rm ps} \, \alpha_{\ce{Ag+}}
+    $
+    </p>
+</blockquote>
+
+<p>El cálculo del coeficiente de reacción parásita, suponiendo
+que la concentración de $\ce{NH3}$ no varía (irreal<a href="#ast">${}^{(\ast)}$</a>):</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{Ag+}} = 1 + \beta_1 [\ce{NH3}] + \beta_2 [\ce{NH3}]^2 =
+    \cancel{1 + \pu{2,5e3}} \! + \pu{2,5e7} \approx \pu{2,5e7}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto el valor de la constante de solubilidad condicional:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} = (\pu{3,2e-10}) \, (\pu{2,5e7}) = \pu{8,0e-3}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo pues la solubilidad condicional:</p>
+
+<blockquote>
+    <p>
+    $
+    S'_{\ce{AgCl}} = [\ce{Ag+'}] = [\ce{Cl-}] = \sqrt{K'_{\rm ps} \Space{0em}{0.75em}{0em}} =
+    \sqrt{\pu{8,0e-3} \Space{0em}{1em}{0em}} = \pu{8,9e-2 M}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, en este caso el $\ce{AgCl}$ es soluble hasta la
+concentración anterior.</p>
+
+<p><a name="ast"></a>$(\ast)$ Irreal porque, obviamente, disminuye por
+complejación con la plata. Teniendo en cuenta que a esta concentración
+de amoniaco prácticamente la totalidad de la plata presente en la solución
+estará en forma de la especie más complejada, entonces mediante iteración:</p>
+
+<center>
+    <p>
+    $
+    \begin{array}{lcl}
+      \!
+      \begin{split} [\ce{NH3}]_0 = c_{\ce{NH3}} \! = \pu{1 M} \\ {} \end{split} &amp;
+      \begin{split} \Rightarrow \\ {} \end{split} &amp;
+      \begin{split}
+        S'_{0,\ce{AgCl}} &amp;\approx [\ce{Ag(NH3)2+}] = \\
+        &amp;= \pu{8,9e-2 M}
+      \end{split} \\[1ex]
+      \!
+      \begin{split}
+        [\ce{NH3}]_1 &amp;\approx c_{\ce{NH3}} \! - 2 [\ce{Ag(NH3)2+}] = \\
+        &amp;= c_{\ce{NH3}} \! - 2 S'_{0,\ce{AgCl}} = \\
+        &amp;= \pu{0,82 M}
+      \end{split} &amp;
+      \begin{split} \\ \\ \Rightarrow \end{split} &amp;
+      \begin{split} \\ \\ S'_{1,\ce{AgCl}} = \pu{7,3e-2 M} \end{split} \\[1ex]
+      [\ce{NH3}]_2 = \pu{0,85 M} &amp;
+      \Rightarrow &amp;
+      S'_{2,\ce{AgCl}} = \pu{7,6e-2 M} \\[1ex]
+      [\ce{NH3}]_3 = \pu{0,85 M} &amp;
+      \Rightarrow &amp;
+      \underline{S'_{3,\ce{AgCl}} = \pu{7,6e-2 M}}
+    \end{array}
+    $
+    </p>
+</center>
+
+<p>Otra manera, más directa, sin iteración, de obtener una solución más
+rigurosa, con la misma premisa de considerar que la plata en solución
+estará en forma del complejo de segundo orden:<p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      K'_{\rm ps} = [\ce{Ag+'}] [\ce{Cl-}] = (S'_{\ce{AgCl}})^2 \\[1ex]
+      K'_{\rm ps} = K_{\rm ps} \, \alpha_{\ce{Ag+}} \! \approx
+      K_{\rm ps} \, \beta_2 [\ce{NH3}]^2 \approx
+      K_{\rm ps} \, \beta_2 (c_{\ce{NH3}} - 2 S'_{\ce{AgCl}})^2 \\[1ex]
+      \Rightarrow \, (S'_{\ce{AgCl}})^2 =
+      K_{\rm ps} \, \beta_2 (c_{\ce{NH3}} - 2 S'_{\ce{AgCl}})^2 \\[1ex]
+      \Rightarrow \, S'_{\ce{AgCl}} = \dfrac{
+        c_{\ce{NH3}} (K_{\rm ps} \, \beta_2)^{1/2}
+      }{
+        1 + 2 (K_{\rm ps} \, \beta_2)^{1/2}
+      } = \pu{7,6e-2 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>&bull; Segundo, se acidifica el medio, que era básico al ser el $\ce{NH3}\mspace{-1mu}$
+una base, hasta $\ce{pH} = 4$:</p>
+
+<p>Ahora los protones reaccionan con el $\ce{NH3}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        [\ce{NH3}] =
+        \dfrac{c_{\ce{NH3}} K_{{\rm a},\ce{NH4^+}}}{[\ce{H3O+}] + K_{{\rm a},\ce{NH4^+}}} \\[1ex]
+        K_{{\rm a}, \ce{NH4^+}} = 10^{-9{,}25}
+      \end{array}
+    \right\}
+    \Rightarrow [\ce{NH3}] = \dfrac{10^{-9{,}25}}{10^{-4} + \! \cancel{10^{-9{,}25}}} =
+    \pu{10^{-5,25} M}
+    $
+    </p>
+</blockquote>
+
+<p>De tal modo que $\alpha_{\ce{Ag+}}\mspace{-1mu}$ será diferente:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{Ag+}} =
+    1 + \! \cancel{(\pu{2,5e3}) \, (10^{-5{,25}}) + (\pu{2,5e7}) \, (10^{-5{,}25})^2} \!
+    \approx 1
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    K'_{\rm ps} \approx K_{\rm ps}
+    $
+    </p>
+</blockquote>
+
+<p>La consecuencia es, pues, que volverá a precipitar el $\ce{AgCl}$.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="precipitacion_fraccionada.htm" title="Anterior">&lt;</a></li>
+</ul>
+
+  </div>
+  
+</div>
+</body>
+</html>

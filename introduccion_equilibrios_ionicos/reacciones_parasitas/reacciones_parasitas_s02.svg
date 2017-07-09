@@ -1,0 +1,26 @@
+<?xml version="1.0" ?><svg height="58.53047mm" version="1.0" viewBox="0 0 414 221" width="109.64531mm" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linecap="round" transform="translate(-86,-66)">
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="168.30" y="191.50">M</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="207.00" y="193.00">+</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="245.30" y="191.50">L</text>
+    <polyline fill="none" points="299.00,195.50 291.00,190.50 351.41,190.50" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="291.00,184.50 351.41,184.50 343.41,179.50" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="378.30" y="191.50">ML</text>
+    <polyline fill="none" points="209.00,143.00 241.88,175.51" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="133.99,143.01 166.88,175.52" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="261.00,197.00 282.81,219.19" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="288.42,224.90 283.55,215.67 282.81,219.19 279.27,219.87" stroke="#000000" stroke-width="1"/>
+    <polyline fill="none" points="187.00,198.00 238.79,250.22" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="244.42,255.90 239.51,246.69 238.79,250.22 235.25,250.91" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="71" x="291.00" y="238.75">HL, H<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">L,...</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="116.30" y="135.50">OH<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="196.30" y="135.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="248" x="247.00" y="271.75">M(OH), M(OH)<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">, M(OH)</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">,..., M(OH)</tspan><tspan dy="7" font-size="75%" font-style="italic">n</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="150.30" y="243.00">NH<tspan dy="8" font-size="75%">3</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="108" x="94.00" y="266.75">sistema amoniacal</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="207" x="190.00" y="85.75">M(NH<tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">), M(NH</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">,..., M(NH</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="7" font-size="75%" font-style="italic">n</tspan></text>
+    <polyline fill="none" points="175.80,175.90 191.72,101.00" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="193.38,93.17 188.37,102.33 191.72,101.00 194.24,103.58" stroke="#000000" stroke-width="1"/>
+    <polyline fill="none" points="164.50,227.00 170.78,197.46" stroke="#000000" stroke-width="1.0"/>
+  </g>
+</svg>

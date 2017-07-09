@@ -1,0 +1,517 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Diagrama de distribución">
+<meta name="keywords" content="diagrama, distribución">
+<title>Diagrama de distribución</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Diagrama de distribución</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Un diagrama de distribución consiste en representar la
+fracción de una especie respecto a la total de soluto (concentración
+analítica) en función del $\ce{pH}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \def\upalpha{\smash{\unicode{x03B1}}}
+    \upalpha = \dfrac{\text{concentración de la especie}}{\text{conc. analítica}}
+    $
+    </p>
+</blockquote>
+
+<p>Se representa $\upalpha$, cuyo valor como máximo puede ser $1$,
+frente al $\ce{pH}$.</p>
+
+<p>A continuación, ejemplo de un ácido diprótico $\ce{H2A}$ con $\ce{p$K$1}
+\! = 4$ y $\ce{p$K$2} = 10$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{[\ce{H2A}]}{c_{\rm a}} \\[1ex]
+      \upalpha_{\ce{HA-}} = \dfrac{[\ce{HA-}]}{c_{\rm a}} \\[1ex]
+      \upalpha_{\ce{A^{2-}}} = \dfrac{[\ce{A^{2-}}]}{c_{\rm a}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+        \begin{split}
+          \upalpha_{\ce{H2A}} &amp;= \dfrac{[\ce{H2A}]}{c_{\rm a}} =
+          \dfrac{
+            \cancel{c_{\rm a}} \mspace{-1mu} [\ce{H3O+}]^2
+          }{
+              \cancel{c_{\rm a}} \mspace{-5mu}
+              \left( [\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2 \right)
+          } = \\[1ex]
+          &amp;= \dfrac{[\ce{H3O+}]^2}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+        \end{split} \\[1em]
+        
+        \begin{split}
+          \upalpha_{\ce{HA-}} &amp;= \dfrac{[\ce{HA-}]}{c_{\rm a}} =
+          \dfrac{
+            \cancel{c_{\rm a}} \mspace{-1mu} K_1 [\ce{H3O+}]
+          }{
+            \cancel{c_{\rm a}} \mspace{-4mu}
+            \left( [\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2 \right)
+          } = \\[1ex]
+          &amp;= \dfrac{K_1 [\ce{H3O+}]}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+        \end{split} \\[1em]
+        
+        \begin{split}
+          \upalpha_{\ce{A^{2-}}} &amp;= \dfrac{[\ce{A^{2-}}]}{c_{\rm a}} =
+          \dfrac{
+            \cancel{c_{\rm a}} \mspace{-1mu} K_1 K_2
+          }{
+            \cancel{c_{\rm a}} \mspace{-5mu}
+            \left( [\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2 \right)
+          } = \\[1ex]
+          &amp;= \dfrac{K_1 K_2}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2} 
+        \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Con estas expresiones pueden calcularse los valores de las $\upalpha$ a
+distintos $\ce{pH}$.</p>
+
+<p><em>a)</em> $\ce{pH} = \ce{p$K$1} - 2\,$ ; $\,[\ce{H3O+}] = 100 K_1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        100^2 \! \cancel{(K_1)^2}
+      }{
+        100^2 \! \cancel{(K_1)^2} \! + 100 \! \cancel{(K_1)^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{10000}{10100} = 0{,}99 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = \dfrac{
+        100 \! \cancel{(K_1)^2}
+      }{
+        100^2 \! \cancel{(K_1)^2} \! + 100 \! \cancel{(K_1)^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{100}{10100} = 0{,}01 \approx 0 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>b)</em> $\ce{pH} = \ce{p$K$1} - 1$ ; $\,[\ce{H3O+}] = 10 K_1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        10^2 \! \cancel{(K_1)^2}
+      }{
+        10^2 \! \cancel{(K_1)^2} \! + 10 \! \cancel{(K_1)^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{100}{110} = 0{,}9 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = \dfrac{
+        10 \! \cancel{(K_1)^2}
+      }{
+        10^2 \! \cancel{(K_1)^2} \! + 10 \! \cancel{(K_1)^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{10}{110} = 0{,}1 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto $\ce{H2A}$ está presente con un valor del $\pu{90\%}$ de la
+$c_{\rm a}$, y $\ce{HA-}\!$ del $\pu{10\%}$, cuando el $\ce{pH}$
+está una unidad por debajo de $\ce{p$K$1}\!$. Cuando el $\ce{pH}$ está dos unidades
+por debajo del valor del equilibrio entonces las cantidades son del $\pu{99\%}$ y $\pu{1\%}$
+respectivamente. Esto es así porque el equilibrio se desplaza a la izquierda,
+hacia especie más protonada, a $\ce{pH}$ más bajo.</p>
+
+<p><em>c)</em> $\ce{pH} = \ce{p$K$1}$ ; $\,[\ce{H3O+}] = K_1$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        [\ce{H3O+}]^2
+      }{
+        [\ce{H3O+}]^2 + [\ce{H3O+}]^2 + \! \cancel{K_1 K_2}
+      } = 0{,}5 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = 0{,}5 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Es lógico que siga siendo $\upalpha_{\ce{A^{2-}}} \! \approx 0$ ya que el
+segundo equilibrio es más difícil que se dé. Esto se ve en la expresión:</p>
+
+<blockquote>
+    <p>
+    $
+    \upalpha_{\ce{A^{2-}}} = \dfrac{[\ce{H3O+}] K_2}{[\ce{H3O+}]^2 + [\ce{H3O+}]^2 + K_1 K_2}
+    $
+    </p>
+</blockquote>
+
+<p>El númerador es $10^{-6}$ veces más pequeño que en los otros.</p>
+
+<p><em>d)</em> $\ce{pH} = \ce{p$K$1} + 1$ ; $\,K_1 = 10 [\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 10 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{1}{11} = 0{,}1 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = \dfrac{
+        10 \! \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 10 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{10}{11} = 0{,}9 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>e)</em> $\ce{pH} = \ce{p$K$1} + 2\,$ ; $\,K_1 = 100 [\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 100 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{1}{101} = 0{,}01 \approx 0 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = \dfrac{
+        100 \! \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 100 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{100}{101} = 0{,}99 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>f)</em> $\ce{pH} = \ce{p$K$1} + 3\,$ ; $\,K_1 = 1000 [\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{H2A}} = \dfrac{
+        \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 1000 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{1}{1001} = 0{,}001 \approx 0 \\[1em]
+      
+      \upalpha_{\ce{HA-}} = \dfrac{
+        1000 \! \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + 1000 \! \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{1000}{1001} = 0{,}999 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{
+        \cancel{1000} \! \cancel{[\ce{H3O+}]} \! K_2
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + \! \cancel{1000} \! [\ce{H3O+}]^{\cancel{2}} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{K_2}{[\ce{H3O+}]} = 0{,}001 \approx 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En este punto se acaba el $\ce{H2A}$ y empieza a ser
+significativo $\ce{A^{2-}}\!$. Esto es así porque al estar ya a $3$
+unidades del $\ce{p$K$2}\!$ empieza a influir su
+equilibrio, en el que las especies implicadas son como especie
+ácida el $\ce{HA-}\!$ y básica el $\ce{A^{2-}}\!$.</p>
+
+<p><em>g)</em> $\ce{pH} = \ce{p$K$2} - 2$ ; $\,[\ce{H3O+}]
+= 100 K_2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{HA-}} = \dfrac{
+        100 \! \cancel{K_1 K_2}
+      }{
+        \cancel{100^{\mspace{2mu} 2} (K_2)^2} \! + 100 \cancel{K_1 K_2} \! + \! \cancel{K_1 K_2}
+      } = \dfrac{100}{101} = 0{,}99 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{
+        \cancel{K_1 K_2}
+      }{
+        \cancel{100^{\mspace{2mu} 2} (K_2)^2} \! + 100 \! \cancel{K_1 K_2} + \cancel{K_1 K_2}
+      } = \dfrac{1}{101} = 0{,}01 \approx 0 \\[1em]
+      
+      \upalpha_{\ce{H2A}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>h)</em> $\ce{pH} = \ce{p$K$2} - 1$ ; $\,[\ce{H3O+}] = 10 K_2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{HA-}} = \dfrac{10}{11} = 0{,}9 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{1}{11} = 0{,}1 \\[1em]
+      
+      \upalpha_{\ce{H2A}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>i)</em> $\ce{pH} = \ce{p$K$2}$ ; $\,[\ce{H3O+}] = K_2$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{HA-}} = \dfrac{1}{2} = 0{,}5 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{1}{2} = 0{,}5 \\[1em]
+      
+      \upalpha_{\ce{H2A}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>j)</em> $\ce{pH} = \ce{p$K$2} + 1$ ; $\,K_2 = 10 [\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{HA-}} = \dfrac{
+        \cancel{K_1 [\ce{H3O+}]}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 [\ce{H3O+}]} \! + 10 \! \cancel{K_1 [\ce{H3O+}]}
+      } = \dfrac{1}{11} = 0{,}1 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{
+        10 \! \cancel{K_1 [\ce{H3O+}]}
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1 [\ce{H3O+}]} \! + 10 \! \cancel{K_1 [\ce{H3O+}]}
+      } = \dfrac{10}{11} = 0{,}9 \\[1em]
+      
+      \upalpha_{\ce{H2A}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><em>k)</em> $\ce{pH} = \ce{p$K$2} + 2\,$ ; $\,K_2 = 100 [\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \upalpha_{\ce{HA-}} = \dfrac{1}{101} = 0{,}01 \approx 0 \\[1em]
+      
+      \upalpha_{\ce{A^{2-}}} = \dfrac{100}{101} = 0{,}99 \approx 1 \\[1em]
+      
+      \upalpha_{\ce{H2A}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Teniendo en cuenta lo visto, puede construirse la siguiente
+tabla:</p>
+
+<center>
+<table border=1>
+    <tr>
+        <th></th>
+        <th>$\vphantom{()} {\bf \upalpha}_{\ce{H2A}}$</th>
+        <th>$\vphantom{() {\bf \upalpha}_{\ce{H2A}}} \smash{{\bf \upalpha}_{\ce{HA-}}}$</th>
+        <th>$\vphantom{() {\bf \upalpha}_{\ce{H2A}}} \smash{{\bf \upalpha}_{\ce{A^{2-}}}}$</th>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1} - 2$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 2} \smash{\sim 1 \ (0{,}99)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 2} \smash{\sim 0 \ (0{,}01)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 2} \smash{0}$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1} - 1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 1} 0{,}9$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 1} 0{,}1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} - 1} 0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1}} 0{,}5$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1}} 0{,}5$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1}} 0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1} + 1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 1} 0{,}1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 1} 0{,}9$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 1} 0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1} + 2$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 2} \smash{\sim 0 \ (0{,}01)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 2} \smash{\sim 1 \ (0{,}99)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 2} \smash{0}$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$1} + 3$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 3} 0$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 3} 1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$1} + 3} 0$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$2} - 2$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 2} \smash{0}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 2} \smash{\sim 1 \ (0{,}99)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 2} \smash{\sim 0 \ (0{,}01)}$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$2} - 1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}9$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}1$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$2}$</sub></td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}5$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}5$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$2} + 1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}1$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} - 1} 0{,}9$</td>
+    </tr>
+    <tr>
+        <td>$\ce{pH} = \ce{p$K$2} + 2$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} + 2} \smash{0}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} + 2} \smash{\sim 0 \ (0{,}01)}$</td>
+        <td align="center">$\vphantom{\ce{pH} = \ce{p$K$2} + 2} \smash{\sim 1 \ (0{,}99)}$</td>
+    </tr>
+</table>
+</center>
+
+<p>La representación del diagrama de distribución para este
+ejemplo:</p>
+
+<center>
+  <object style="margin-bottom:1em" data="diagrama_distribucion/diagrama_distribucion.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="metodo_grafico_calculo_ph.htm" title="Anterior">&lt;</a></li>
+  <li><a href="disolucion_amortiguadora.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

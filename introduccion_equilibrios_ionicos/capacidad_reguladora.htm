@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Capacidad reguladora o amortiguadora de una solución tampón">
+<meta name="keywords" content="capacidad, reguladora, amortiguadora, solución, tampón">
+<title>Capacidad reguladora o amortiguadora de una solución tampón</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Capacidad reguladora o amortiguadora de una
+solución tampón</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>La capacidad reguladora o amortiguadora, $\def\upbeta{\unicode{x03B2}} \upbeta$,
+es la cantidad de ácido ($\ce{A}$) o base <span style="white-space:nowrap">($\ce{B}$)
+</span> fuertes necesaria para que varíe el $\ce{pH}$ en una unidad en
+la solución tampón.</p>
+
+<blockquote>
+    <p>
+    $
+    \upbeta = - \dfrac{d c_{\ce{A}}}{d \ce{pH}} =
+    \dfrac{d c_{\ce{B}}}{d \ce{pH}}
+    $
+    </p>
+</blockquote>
+
+<p>Si el valor de $\upbeta$ es alto la reacción tampón es
+buena.</p>
+
+<p>Ejemplo de cálculo de $\upbeta$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+    &amp;\text{Reacción tampón:} &amp;
+    &amp;\ce{HA + H2O &lt;=&gt; H3O+ \! + A-} &amp;
+    &amp;c_{\ce{HA}},\ K_{\ce{HA}} \\[1ex]
+    &amp;\text{Base fuerte:} &amp;
+    &amp;\ce{B + H2O -&gt; BH+ \! + OH-} &amp;
+    &amp;c_{\ce{B}} \\[1ex]
+    &amp;\text{Autoprotólisis $\ce{H2O}$:} &amp;
+    &amp;\ce{2H2O &lt;=&gt; H3O+ \! + OH-} &amp;
+    &amp;\ce{Kw}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{BH+}] + [\ce{H3O+}] = [\ce{OH-}] + [\ce{A-}]
+    $
+    </p>
+</blockquote>
+
+<p>De donde, ya que $[\ce{BH+}] = c_{\ce{B}}$, se deduce:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+    &amp;c_{\ce{B}} + [\ce{H3O+}] = [\ce{OH-}] + [\ce{A-}] \\[1ex]
+    \llap{\Rightarrow \, {}} &amp;c_{\ce{B}} = -[\ce{H3O+}] + [\ce{OH-}] + [\ce{A-}]
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Derivando:</p>
+
+<blockquote>
+    <p>
+    $
+    \upbeta = \dfrac{d c_{\rm{B}}}{d \ce{pH}} = 
+    -\dfrac{d[\ce{H3O+}]}{d \ce{pH}} + \dfrac{d[\ce{OH-}]}{d \ce{pH}} + \dfrac{d[\ce{A-}]}{d \ce{pH}}
+    $
+    </p>
+</blockquote>
+
+<p>Resolviendo por partes:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{split}
+        \dfrac{d[\ce{H3O+}]}{d \ce{pH}} &amp;=
+        \dfrac{d[\ce{H3O+}]}{-d \! \log[\ce{H3O+}]} \underset{\ast}{=}
+        -2{,}3 \dfrac{d[\ce{H3O+}]}{d \! \ln[\ce{H3O+}]} \underset{\ast\ast}{=}
+        -2{,}3 [\ce{H3O+}] \dfrac{d[\ce{H3O+}]}{d[\ce{H3O+}]} = \\[1ex]
+        &amp;= -2{,}3 [\ce{H3O+}]
+      \end{split} \\[1ex] \qquad
+      
+      \begin{aligned}
+        \ast \ln{x} \underset{\star}{=} 2{,}3 \log{x} \, &amp;\Rightarrow \,
+        \dfrac{d \! \ln{x}}{d \! \log{x}} = 2{,}3 \, \Rightarrow \,
+        \dfrac{d \! \ln{x}}{d \! \log{x}} \, d \! \log{x} = 2{,}3 \, d \! \log{x} \, \Rightarrow \\[1ex]
+        &amp;\Rightarrow \, d \! \ln{x} = 2{,}3 \, d \! \log{x}
+      \end{aligned} \\[1ex] \qquad\qquad
+      \star \ln{x} = \ln(10^{\normalsize \log{x}}) = \log{x} \cdot \ln(10)
+      \approx 2{,}3 \log{x} \\[1ex] \qquad
+      \ast\!\ast d \! \ln{x} = \dfrac{d \! \ln{x}}{dx} \, dx = \dfrac{1}{x} \, dx \\[1em]
+      
+      \begin{split}
+        \dfrac{d[\ce{OH-}]}{d \ce{pH}} &amp;= -2{,}3 [\ce{H3O+}] \dfrac{d[\ce{OH-}]}{d[\ce{H3O+}]}
+        = - 2{,}3 [\ce{H3O+}] \dfrac{d(\ce{Kw} [\ce{H3O+}]^{-1})}{d[\ce{H3O+}]} = \\[1ex]
+        &amp;= \dfrac{2{,}3 \! \cancel{[\ce{H3O+}]} \! \ce{Kw}}{[\ce{H3O+}]^{\mspace{-1mu}\cancel{2}}}
+        = 2{,}3 [\ce{OH-}]
+      \end{split} \\[1em]
+      
+      \begin{split}
+        \dfrac{d[\ce{A-}]}{d \ce{pH}} &amp;= - 2{,}3 [\ce{H3O+}] \dfrac{d[\ce{A-}]}{d[\ce{H3O+}]}
+        = -2{,}3 [\ce{H3O+}] \dfrac{
+          d\!\left( \dfrac{c_{\ce{HA}} K_{\ce{HA}}}{[\ce{H3O+}] + K_{\ce{HA}}} \right)
+        }{
+          d[\ce{H3O+}]
+        } = \\[1ex]
+        &amp;= 2{,}3 [\ce{H3O+}] \dfrac{c_{\ce{HA}} K_{\ce{HA}}}{([\ce{H3O+}] + K_{\ce{HA}})^{\mspace{1mu} 2}}
+      \end{split}
+    \end{array}
+    $
+    </p>  
+</blockquote>
+
+<p>Multiplicando y dividiendo la última expresión por $c_{\ce{HA}}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d[\ce{A-}]}{d \ce{pH}}
+    = 2{,}3 \dfrac{c_{\ce{HA}} [\ce{H3O+}]}{[\ce{H3O+}] + K_{\ce{HA}}} \cdot
+    \dfrac{c_{\ce{HA}} K_{\ce{HA}}}{[\ce{H3O+}] + K_{\ce{HA}}} \cdot \dfrac{1}{c_{\ce{HA}}}
+      = 2{,}3 \dfrac{[\ce{HA}] [\ce{A-}]}{c_{\ce{HA}}}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote> 
+    <p>
+    $
+    \begin{array}{l}
+      \upbeta =
+      2{,}3 [\ce{H3O+}] + 2{,}3[\ce{OH-}] + 2{,}3 \dfrac{[\ce{HA}][\ce{A-}]}{c_{\ce{HA}}} \\[1ex]
+      \llap{\Rightarrow {} \,} \upbeta =
+      2{,}3 \! \left( [\ce{H3O+}] + [\ce{OH-}] + \dfrac{[\ce{HA}] [{\ce{A-}}]}{c_{\ce{HA}}} \right)
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>¿Cuándo será $\upbeta$ máxima?</p>
+
+<p>1) La $[\ce{H3O+}]$ muy elevada.</p>
+
+<p>2) La $[\ce{OH-}]$ muy elevada.</p>
+
+<p>3) El producto $[\ce{HA}][\ce{A-}]$ sea máximo.</p>
+
+<p>Para este último caso:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\ce{HA}} = [\ce{HA}] + [\ce{A-}] \\[1ex]
+      [\ce{HA}] = c_{\ce{HA}} - [\ce{A-}] \\[1ex]
+      \llap{\Rightarrow {} \,} [\ce{HA}] [\ce{A-}] = (c_{\ce{HA}} - [\ce{A-}]) [\ce{A-}]
+      = c_{\ce{HA}} [\ce{A-}] - [\ce{A-}]^2            
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Derivando respecto a $[\ce{A-}]$:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d}{d[\ce{A-}]} (c_{\ce{HA}} [\ce{A-}] - [\ce{A-}]^2) = c_{\ce{HA}} - 2 [\ce{A-}]
+    $
+    </p>
+</blockquote>
+
+<p>Igualando la derivada a cero se encuentra el máximo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\ce{HA}} - 2 [\ce{A-}] = 0 \\[1ex]
+      \Rightarrow \, [\ce{A-}] = \dfrac{c_{\ce{HA}}}{2}  \, \Rightarrow \, [\ce{HA}] = [\ce{A-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto el producto $\ce{[HA][A-]}$ es máximo cuando
+las concentraciones de $\ce{HA}$ y $\ce{A-}\!$ son iguales, siendo en este
+caso el $\ce{pH} = \ce{p$K$_{\ce{HA}}}$.</p>
+
+<p>Para representar $\upbeta$ frente al $\ce{pH}$ se emplea su expresión
+en función de la $[\ce{H3O+}]$.</p>
+
+<blockquote>
+    <p>
+    $
+    \upbeta = 2{,}3 \!
+    \left(
+      [\ce{H3O+}] + \dfrac{\ce{Kw}}{[\ce{H3O+}]}
+      + \dfrac{[\ce{H3O+}] \, c_{\ce{HA}} K_{\ce{HA}}}{([\ce{H3O+}] + K_{\ce{HA}})^{\mspace{1mu} 2}}
+    \right)
+    $
+    </p>
+</blockquote>
+
+<p>Para el ácido acético, cuyo $\ce{p$K$_{\ce{HA}}} \!= 4{,}75$, y siendo
+$c_{\ce{HA}} \!= 0{,}1\!$ ó $\pu{0,2 M}$:</p>
+
+<center>
+  <object data="capacidad_reguladora/capacidad_reguladora.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>La $\upbeta$ es alta a un $\ce{pH} = \ce{p$K$_{\ce{HA}}} \mspace{-1mu}
+\pm 1$ y a $\ce{pH}$ extremos, donde ya entran en juego las altas
+concentraciones de iones $\ce{H3O+}\!$ u $\ce{OH-}\!$.
+También, como se observa en la gráfica, y en el último sumando
+de la expresión de $\upbeta$, el valor del máximo depende de 
+$c_{\ce{HA}}$.</p>
+
+<p>Para las disoluciones tampón, por tanto, se escogen ácidos
+débiles cuyo $\ce{pKa}\mspace{-1mu}$ sea igual, muy parecido, al
+$\ce{pH}$ que se quiera. Para un $\ce{pH}$ mayor de $7$ se usan bases, por
+ejemplo para un $\ce{pH} = 9$ el $\ce{NH3}$.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="disolucion_amortiguadora.htm" title="Anterior">&lt;</a></li>
+  <li><a href="equilibrios_complejacion.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

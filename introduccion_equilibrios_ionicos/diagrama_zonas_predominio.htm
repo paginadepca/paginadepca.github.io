@@ -1,0 +1,859 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Diagrama de zonas de predominio">
+<meta name="keywords" content="diagrama, zonas, predominio">
+<title>Diagrama de zonas de predominio</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Diagrama de zonas de predominio</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>En un diagrama de zonas de predominio se representan las zonas
+(condiciones) donde predomina una especie sobre el resto.</p>
+
+<p>
+  <span style="display:inline-block;line-height:0;border-bottom:1px solid black">
+    Ejemplo sistema $\ce{Hg^2+}$-$\,\ce{Cl-}\!$:
+  </span>
+</p>
+
+<p>Las reacciones que tienen lugar en este sistema a $\ce{pH}$ ácido:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{Hg^2+ \! + Cl- \! &lt;=&gt; HgCl+} &amp;&amp; \log k_1^{\ce{Cl}} = 6{,}74 \\[1ex]
+      &amp;\ce{HgCl+ \! + Cl- \! &lt;=&gt; HgCl2} &amp;&amp; \log k_2^{\ce{Cl}} = 6{,}48 \\[1ex]
+      &amp;\ce{HgCl2 + Cl- \! &lt;=&gt; HgCl3^-} &amp;&amp; \log k_3^{\ce{Cl}} = 0{,}85 \\[1ex]
+      &amp;\ce{HgCl3^- \! + Cl- \! &lt;=&gt; HgCl4^2-} &amp;\quad&amp; \log k_4^{\ce{Cl}} = 1{,}00 
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Al disminuir la acidez entran en juego los hidroxocomplejos:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{Hg^2+ \! + OH- \! &lt;=&gt; HgOH+} &amp;&amp; \log k_1^{\ce{OH}} = 10{,}30 \\[1ex]
+      &amp;\ce{HgOH+ \! + OH- \! &lt;=&gt; Hg(OH)2} &amp;\quad&amp; \log k_2^{\ce{OH}} = 11{,}40
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>La representación, pues, del diagrama de zonas de predominio,
+consistirá en la representación de ${\rm pCl}$ frente al $\ce{pH}$.</p>
+
+<p>Empezando por la zona más ácida, en la que predominan los
+clorocomplejos, lo primero, por ser lo más comprensible
+visualmente, es construir el diagrama de distribución para este
+sistema. </p>
+
+<p>Balance de masas:</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\ce{M}} = [\ce{M}] +
+    {\displaystyle\sum_{i=1}^n} [\ce{ML_$i$}]
+    $
+    </p>
+</blockquote>
+
+<p>Donde $\textit{n}$ es el número máximo de coordinación
+alcanzado. Aquí, en este ejemplo, sería $4$. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\ce{Hg}} = [\ce{Hg^2+}] + [\ce{HgCl+}] + [\ce{HgCl2}] + [\ce{HgCl3^-}] + [\ce{HgCl4^2-}]
+    $
+    </p>
+</blockquote>
+
+<p>Las reacciones globales y sus constantes:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{Hg^2+ \! + Cl- \! &lt;=&gt; HgCl+} &amp;
+      &amp; \log \beta_1^{\ce{Cl}} = \log k_1^{\ce{Cl}} = 6{,}74 \\[1ex]
+      &amp;\ce{Hg^2+ \! + 2 Cl- \! &lt;=&gt; HgCl2} &amp;
+      &amp; \log \beta_2^{\ce{Cl}} = \log \beta_1^{\ce{Cl}} + \log k_2^{\ce{Cl}} = 13{,}22 \\[1ex]
+      &amp;\ce{Hg^2+ \! + 3 Cl- \! &lt;=&gt; HgCl3^-} &amp;
+      &amp; \log \beta_3^{\ce{Cl}} = \log \beta_2^{\ce{Cl}} + \log k_3^{\ce{Cl}} = 14{,}07 \\[1ex]
+      &amp;\ce{Hg^2+ \! + 4 Cl- &lt;=&gt; HgCl4^2-} &amp;\quad
+      &amp; \log \beta_4^{\ce{Cl}} = \log \beta_3^{\ce{Cl}} + \log k_4^{\ce{Cl}} = 15{,}07
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Teniendo en cuenta que la expresión para las constantes
+globales es:</p>
+
+<blockquote>
+    <p>
+    $
+    \beta_i^\ce{L} = \dfrac{[\ce{ML_$i$}]}{[\ce{M}][\ce{L}]^i} \qquad i = 1,\dotsc, \textit{n}
+    $
+    </p>
+</blockquote>
+
+<p>A partir de ésta y el balance de masas pueden hallarse las
+concentraciones de las distintas especies:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    c_{\ce{M}} = [\ce{M}] + {\displaystyle\sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{M}] [\ce{L}]^i
+    = [\ce{M}] \left( 1 + {\displaystyle\sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{L}]^i \right) \\[1ex]
+    \llap{\Rightarrow {} \,} [\ce{M}] = \dfrac{
+      c_{\ce{M}}
+    }{
+      1 + {\displaystyle\sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{L}]^i
+    } \\[1ex]
+    \llap{\Rightarrow {} \,} [\ce{ML_$i$}] = \beta_i^{\ce{L}} [\ce{M}] [\ce{L}]^i =
+    \dfrac{
+      c_{\ce{M}} \beta_i^{\ce{L}} [\ce{L}]^i
+    }{
+      1 + {\displaystyle\sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{L}]^i
+    }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Haciendo uso de estas expresiones generales, entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{Hg^2+}] = \dfrac{
+        c_{\ce{Hg}}
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      [\ce{HgCl+}] = \dfrac{
+        c_{\ce{Hg}} \beta_1^{\ce{Cl}} [\ce{Cl-}]
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      [\ce{HgCl2}] = \dfrac{
+        c_{\ce{Hg}} \beta_2^{\ce{Cl}} [\ce{Cl-}]^2
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      [\ce{HgCl3^-}] = \dfrac{
+        c_{\ce{Hg}} \beta_3^{\ce{Cl}} [\ce{Cl-}]^3
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      [\ce{HgCl_4^2-}] = \dfrac{
+        c_{\ce{Hg}} \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo la fracción de cada especie:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{ML_${\large i}$}} = \dfrac{[\ce{ML_$i$}]}{c_{\ce{M}}} \qquad
+    i = 0,1,\dotsc,\textit{n} 
+    $
+    <p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \alpha_{\ce{M}} = \dfrac{
+        1
+      }{
+        1 + {\displaystyle \sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{L}]^i
+      } \\[1em]
+      
+      \alpha_{\ce{ML_${\large i}$}} = \dfrac{
+        \beta_i^{\ce{L}} [\ce{L}]^i
+      }{
+        1 + {\displaystyle \sum_{i=1}^n} \beta_i^{\ce{L}} [\ce{L}]^i
+      } \qquad i = 1,\dotsc,\textit{n}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Resultando para este ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \alpha_{\ce{Hg^2+}} = \dfrac{
+        1
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      \alpha_{\ce{HgCl+}} = \dfrac{
+        \beta_1^{\ce{Cl}} [\ce{Cl-}]
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      \alpha_{\ce{HgCl2}} = \dfrac{
+        \beta_2^{\ce{Cl}} [\ce{Cl-}]^2
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      \alpha_{\ce{HgCl3^-}} = \dfrac{
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      } \\[1em]
+      
+      \alpha_{\ce{HgCl_4^2-}} = \dfrac{
+        \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      }{
+        1 + \beta_{1}^{\ce{Cl}} [\ce{Cl-}] + \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 +
+        \beta_3^{\ce{Cl}} [\ce{Cl-}]^3 + \beta_4^{\ce{Cl}} [\ce{Cl-}]^4
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>A partir de estas expresiones se construye el diagrama de
+distribución:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s01.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Cuando $k_i &gt; k_{i+1}\!$, como ya se vio en el apartado
+dedicado a los diagramas de distribución de complejación,
+y es observable en el gráfico recién construido, la frontera
+que separa el dominio de una especie sobre la siguiente en
+el proceso de complejación por etapas la marca la correspondiente
+constante sucesiva. En el límite entre ambas zonas de predominio
+la concentración de ambas especies es la misma. Esto es:</p>
+
+<p>- $\ce{Hg^2+}$</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        k_1^{\ce{Cl}} = \dfrac{[\ce{HgCl+}]}{[\ce{Hg^2+}][\ce{Cl-}]} \\[1ex]
+        [\ce{Hg^2+}] = [\ce{HgCl+}]
+      \end{array} \,
+    \right\} \Rightarrow {\rm pCl} = \log k_1^{\ce{Cl}}
+    $
+    </p>
+</blockquote>
+
+<p>Por lo que la zona de predominio del $\ce{Hg^2+}\mspace{-1mu}$ se
+corresponde con:</p>
+
+<blockquote>
+    <p>
+    $
+    {\rm pCl} &gt; \log k_1^{\ce{Cl}}
+    $
+    </p>
+</blockquote>
+
+<p>- $\ce{HgCl+}$</p>
+
+<p>El límite superior ya ha sido definido. Falta el que será el
+inferior en la representación.</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        k_2^{\ce{Cl}} = \dfrac{[\ce{HgCl2}]}{[\ce{HgCl+}][\ce{Cl-}]} \\[1ex]
+        [\ce{HgCl+}] = [\ce{HgCl2}]
+      \end{array} \,
+    \right\} \Rightarrow {\rm pCl} = \log k_2^{Cl}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto la zona de predominio del $\ce{HgCl+}\mspace{-1mu}$
+coincide con:</p>
+
+<blockquote>
+    <p>
+    $
+    \log k_1^{\ce{Cl}} &gt; {\rm pCl} &gt; \log k_2^{\ce{Cl}}
+    $
+    </p>
+</blockquote>
+
+<p>- $\ce{HgCl2}$</p>
+
+<p>Al igual que antes, falta definir el que será el límite
+inferior en el gráfico para esta zona. De momento:</p>
+
+<blockquote>
+    <p>
+    $
+    \log k_2^{\ce{Cl}} &gt; {\rm pCl} &gt; {} ?
+    $
+    </p>
+</blockquote>
+
+<p>Como también se vio en el capítulo dedicado a los diagramas
+de distribución de complejación, conforme se acercan los
+valores de dos constantes sucesivas tanto el predominio de la
+especie intermedia como el intervalo de éste se reducen. Hasta
+el punto que si se igualaran ambas constantes la especie
+intermedia nunca llegaría a ser superior a las otras. Como se
+observa en el diagrama de distribución del ejemplo, al ser $k_3 \mspace{-1mu}$
+incluso inferior a $k_4 \mspace{-1mu}$ se da que $\ce{HgCl3^-}\mspace{-1mu}$
+siempre está en minoría. En este caso, pues, el cambio de zona
+cabe considerar que se produce de $\ce{HgCl2}\mspace{-1mu}$ a
+$\ce{HgCl4^2-}\mspace{-1mu}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{HgCl2 + 2 Cl- \! &lt;=&gt; HgCl4^2-} \\[1ex]
+      \dfrac{[\ce{HgCl4^2-}]}{[\ce{HgCl2}][\ce{Cl-}]^2} =
+      \dfrac{[\ce{HgCl3^-}]}{[\ce{HgCl2}][\ce{Cl-}]} \dfrac{[\ce{HgCl4^2-}]}{[\ce{HgCl3-}][\ce{Cl-}]}
+      = k_3^{\ce{Cl}} k_4^{\ce{Cl}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En la unión de dos zonas las concentraciones son iguales:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{HgCl2}] = [\ce{HgCl4^2-}] \, \Rightarrow \, {\rm pCl} =
+    \dfrac{1}{2} ( \log k_3^{\ce{Cl}} + \log k_4^{\ce{Cl}} )
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto el rango de esta zona:</p>
+
+<blockquote>
+    <p>
+    $
+    \log k_2^{\ce{Cl}} &gt; {\rm pCl} &gt;
+    \dfrac{1}{2} ( \log k_3^{\ce{Cl}} + \log k_4^{\ce{Cl}} )
+    $
+    </p>
+</blockquote>
+
+<p>- $\ce{HgCl_4^2-}$</p>
+
+<p>Como se observa en el diagrama de distribución anteriormente
+construido es la última especie. Por tanto su zona, definidas
+el resto, es:</p>
+
+<blockquote>
+    <p>
+    $
+    {\rm pCl} &lt; \dfrac{1}{2} ( \log k_3^{\ce{Cl}} + \log k_4^{\ce{Cl}} )
+    $
+    </p>
+</blockquote>
+
+<p>Una vez ya establecidas todas las zonas de predominio, en la
+zona de $\ce{pH}$ más ácido, tabla resumen, ya incorporando los
+valores, para este sistema $\ce{Hg^2+}$-$\,\ce{Cl-}\!$:</p>
+
+<center>
+<table border="1">
+    <tr>
+        <th>Zona</th>
+        <th>Intervalo</th>
+    </tr>
+    <tr>
+        <td>$\ce{Hg^2+}$</sup></td>
+        <td align="center">${\rm pCl} &gt; 6{,}74$</td>
+    </tr>
+    <tr>
+        <td>$\ce{HgCl+}$</td>
+        <td align="center">$6{,}74 &gt; {\rm pCl} &gt; 6{,}48$</td>
+    </tr>
+    <tr>
+        <td>$\ce{HgCl2}$</td>
+        <td align="center">$6{,}48 &gt; {\rm pCl} &gt; 0{,}93$</td>
+    </tr>
+    <tr>
+        <td>$\ce{HgCl4^2-}$</td>
+        <td align="center">${\rm pCl} &lt; 0{,}93$</td>
+    </tr>
+</table>
+</center>
+
+<p>Llevando a cabo la representación:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s02.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Sólo se ha dibujado la región del diagrama a un $\ce{pH}$ más
+ácido, ya que al aumentar el $\ce{pH}$ aparecen los hidroxocomplejos.
+Así pues, las zonas recién definidas daran paso al aumentar el $\ce{pH}$
+a las zonas de predominio de estos últimos.</p>
+
+<p>A $\ce{pH}$ menos ácido se dan las reacciones de formación de los
+hidroxocomplejos (ya presentadas más arriba):</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{2}
+      &amp;\ce{Hg^2+ \! + OH- \! &lt;=&gt; HgOH+} &amp;&amp; \log k_1^{\ce{OH}} = 10{,}30 \\[1ex]
+      &amp;\ce{HgOH+ \! + OH- \! &lt;=&gt; Hg(OH)2} &amp;\quad&amp; \log k_2^{\ce{OH}} = 11{,}40
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Al ser la primera constante sucesiva menor que la segunda, la especie
+$\ce{HgOH+}$ siempre será minoritaria. Esto implica el paso directo de
+la zona de predominio del $\ce{Hg^2+}$ a la del $\ce{Hg(OH)2}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{Hg^2+ \! + 2 OH- &lt;=&gt; Hg(OH)2} \quad
+    \log \beta_2^{\ce{OH}} = \log k_1^{\ce{OH}} + \log k_2^{\ce{OH}} = 21{,}70
+    $
+    </p>
+</blockquote>
+
+<p>- Frontera entre las zonas $\ce{Hg^2+}\mspace{-1mu}$ y $\ce{Hg(OH)2}$</p>
+
+<p>Haciendo uso de la expresión de la constante de equilibro
+global:</p>
+
+<blockquote>
+    <p>
+    $
+    \beta_2^{\ce{OH}} = \dfrac{[\ce{Hg(OH)2}]}{[\ce{Hg^2+}][\ce{OH-}]^2}
+    $
+    </p>
+</blockquote>
+
+<p>Además, teniendo en cuenta que en el límite de ambas zonas
+las concentraciones son iguales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+        \begin{array}{l}
+          \beta_2^{\ce{OH}} = \dfrac{[\ce{Hg(OH)2}]}{[\ce{Hg^2+}][\ce{OH-}]^2} \\[1ex]
+          [\ce{Hg^2+}] = [\ce{Hg(OH)2}]
+        \end{array}
+      \right\} \Rightarrow \beta_2^{\ce{OH}} = \dfrac{1}{[\ce{OH-}]^2}
+      = \dfrac{[\ce{H3O+}]^2}{(\ce{Kw})^2} \\[1ex]
+      \llap{\Rightarrow {} \,} [\ce{H3O+}] = (\beta_2^{\ce{OH}})^{1/2} \ce{Kw} \, \Rightarrow \,
+      \ce{pH} = \ce{pKw} - \dfrac{1}{2} \log \beta_2^{\ce{OH}} = 14 - \dfrac{1}{2} 21{,}70 =
+      3{,}15
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{pH} &lt; 3{,}15 \, \Rightarrow \, \ce{Hg^2+} \\[1ex]
+      \ce{pH} &gt; 3{,}15 \, \Rightarrow \, \ce{Hg(OH)2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Pudiendo completar parcialmente el diagrama:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s03.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>- Frontera entre las zonas $\ce{HgCl+}\mspace{-1mu}$ y $\ce{Hg(OH)2}$</p>
+
+<p>Para resolver se hará uso de la correspondiente constante
+global del clorocomplejo. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \beta_2^{\ce{OH}} = \dfrac{[\ce{Hg(OH)2}]}{[\ce{Hg^2+}][\ce{OH-}]^2} \\[1ex]
+      \beta_1^{\ce{Cl}} = \dfrac{[\ce{HgCl+}]}{[\ce{Hg^2+}][\ce{Cl-}]} \, \Rightarrow \,
+      [\ce{Hg^2+}] = \dfrac{[\ce{HgCl+}]}{\beta_1^{\ce{Cl}} [\ce{Cl-}]} \\[1ex]
+      \llap{\Rightarrow {} \,} \beta_2^{\ce{OH}} =
+      \dfrac{[\ce{Hg(OH)2}]}{\dfrac{[\ce{HgCl+}]}{\beta_1^{\ce{Cl}} [\ce{Cl-}]}[\ce{OH-}]^2} =
+      \dfrac{\beta_1^\ce{Cl} [\ce{Cl-}] [\ce{Hg(OH)2}]}{[\ce{HgCl+}][\ce{OH-}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>A continuación, teniendo presente que en la
+línea de unión ambas concentraciones son iguales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+        \begin{array}{l}
+          \beta_2^{\ce{OH}} =
+          \dfrac{\beta_1^{\ce{Cl}} [\ce{Cl-}] [\ce{Hg(OH)2}]}{[\ce{HgCl+}] [\ce{OH-}]^2} \\[1ex]
+          [\ce{HgCl+}] = [\ce{Hg(OH)2}]
+        \end{array} \,
+      \right\} \Rightarrow [\ce{Cl-}] =
+      \dfrac{\beta_2^{\ce{OH}} [\ce{OH-}]^2}{\beta_1^{\ce{Cl}}} =
+      \dfrac{\beta_2^{\ce{OH}} (\ce{Kw})^2}{\beta_1^{\ce{Cl}} [\ce{H3O+}]^2} \\[1em]
+      \begin{split}
+        \llap{\Rightarrow {} \,} {\rm pCl} &amp;= \log \beta_1^{\ce{Cl}}
+        - \log \beta_2^{\ce{OH}} + 2 \ce{pKw} - 2 \ce{pH} = \\[1ex]
+        &amp;= 6{,}74 - 21{,}70 + 28 - 2 \ce{pH} = \\[1ex]
+        &amp;= 13{,}04 - 2 \ce{pH}
+      \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En la esquina inferior derecha de la zona de predominio del $\ce{Hg^2+}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        [\ce{Hg^2+}] = [\ce{Hg(OH)2}] \\[1ex]
+        [\ce{Hg^2+}] = [\ce{HgCl+}]
+      \end{array}
+    \right\} \Rightarrow [\ce{HgCl+}] = [\ce{Hg(OH)2}]
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, una recta que parta desde la esquina inferior
+derecha de la zona del $\ce{Hg^2+}\mspace{-1mu}$, con pendiente $-2$, y que
+intersecte la línea inferior de la zona de predominio del $\ce{HgCl+}\mspace{-1mu}$,
+que viene definida por ${\rm pCl} = 6{,}48$, delimitará la separación
+entre las zonas de $\ce{HgCl+}\mspace{-1mu}$ y $\ce{Hg(OH)2}$. Puede
+calcularse de manera sencilla esta intersección:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+     \begin{array}{l}
+       {\rm pCl} = 13{,}04 - 2 \ce{pH} \\[1ex]
+       {\rm pCl} = 6{,}48
+     \end{array} \,
+    \right\} \Rightarrow \ce{pH} = \dfrac{13{,}04 - 6{,}48}{2} = 3{,}28
+    $
+    </p>
+</blockquote>
+
+<p>Completando otro fragmento del diagrama:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s04.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>- Frontera entre las zonas $\ce{HgCl2}\mspace{-1mu}$ y $\ce{Hg(OH)2}$</p>
+
+<p>Operando de forma análoga a lo anteriormente visto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \beta_2^{\ce{OH}} = \dfrac{[\ce{Hg(OH)2}]}{[\ce{Hg^2+}][\ce{OH-}]^2} \\[1ex]
+      \beta_2^{\ce{Cl}} = \dfrac{[\ce{HgCl2}]}{[\ce{Hg^2+}][\ce{Cl-}]^2} \, \Rightarrow \,
+      [\ce{Hg^2+}] = \dfrac{[\ce{HgCl2}]}{\beta_2^{\ce{Cl-}} [\ce{Cl-}]^2} \\[1ex]
+      \llap{\Rightarrow {} \,} \beta_2^{\ce{OH}} =
+      \dfrac{[\ce{Hg(OH)2}]}{\dfrac{[\ce{HgCl2}]}{\beta_2^{\ce{Cl}} [\ce{Cl-}]^2} [\ce{OH-}]^2} =
+      \dfrac{\beta_2^{\ce{Cl}} [\ce{Cl-}]^2 [\ce{Hg(OH)2}]}{[\ce{HgCl2}][\ce{OH-}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{split}
+        \left.
+          \begin{array}{l}
+            \beta_2^{\ce{OH}} =
+              \dfrac{
+                \beta_2^{\ce{Cl}} [\ce{Cl-}]^2 [\ce{Hg(OH)2}]
+              }{
+                [\ce{HgCl2}][\ce{OH-}]^2
+              } \\[1ex]
+            [\ce{HgCl2}] = [\ce{Hg(OH)2}]
+            \end{array} \, 
+        \right\} \Rightarrow [\ce{Cl-}] &amp;=
+        \left(
+          \dfrac{\beta_2^{\ce{OH}} [\ce{OH-}]^2}{\beta_2^{\ce{Cl}}}
+        \right)^{1/2} \! = \\[1ex]
+        &amp;=
+        \left(
+          \dfrac{\beta_2^{\ce{OH}}}{\beta_2^{\ce{Cl}}}
+        \right)^{1/2} \dfrac{\ce{Kw}}{[\ce{H3O+}]}
+      \end{split} \\[1em]
+      \begin{split}
+        \llap{\Rightarrow \, {}} {\rm pCl} &amp;= \dfrac{1}{2} ( \log \beta_2^{\ce{Cl}} -
+        \log \beta_2^{\ce{OH}} ) + \ce{pKw} - \ce{pH} = \\[1ex]
+        &amp;= \dfrac{1}{2} ( 13{,}22 - 21{,}70 ) + 14 - \ce{pH} = \\[1ex]
+        &amp;= 9{,}76 - \ce{pH}
+      \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Esta vez una línea con pendiente $-1$, que parte desde la
+esquina inferior derecha de la zona de predominio del $\ce{HgCl+}\mspace{-1mu}$,
+y que intersecciona con la recta que marca en la representación
+el límite inferior de la zona del $\ce{HgCl2}$, que viene
+dada por ${\rm pCl} = 0{,}93$. El cálculo del valor del $\ce{pH}$
+en este punto:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        {\rm pCl} = 9{,}76 - \ce{pH} \\[1ex]
+        {\rm pCl} = 0{,}93
+      \end{array} \,
+    \right\} \Rightarrow \ce{pH} = 9{,}76 - 0{,}93 = 8{,}83
+    $
+    </p>
+</blockquote>
+
+<p>Incorporando esto al gráfico:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s05.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>- Frontera entre las zonas $\ce{HgCl_4^2-}\mspace{-1mu}$ y $\ce{Hg(OH)2}$</p>
+
+<p>De forma igual a como ya se ha hecho previamente:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \beta_2^{\ce{OH}} = \dfrac{[\ce{Hg(OH)2}]}{[\ce{Hg^2+}][\ce{OH-}]^2} \\[1ex]
+      \beta_4^{\ce{Cl}} = \dfrac{[\ce{HgCl4^2-}]}{[\ce{Hg^2+}][\ce{Cl-}]^4} \,
+      \Rightarrow \, [\ce{Hg^2+}] = \dfrac{[\ce{HgCl4^2-}]}{\beta_4^{\ce{Cl}} [\ce{Cl-}]^4} \\[1ex]
+      \llap{\Rightarrow \, {}} \beta_2^{\ce{OH}} =
+      \dfrac{[\ce{Hg(OH)2}]}{\dfrac{[\ce{HgCl4^2-}]}{\beta_4^{\ce{Cl}} [\ce{Cl-}]^4} [\ce{OH-}]^2} =
+      \dfrac{\beta_4^{\ce{Cl}} [\ce{Cl-}]^4 [\ce{Hg(OH)2}]}{[\ce{HgCl4^2-}] [\ce{OH-}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{split}
+        \left.
+          \begin{array}{l}
+            \beta_2^{\ce{OH}} = \dfrac{
+              \beta_4^{\ce{Cl}} [\ce{Cl-}]^4 [\ce{Hg(OH)2}]
+            }{
+              [\ce{HgCl4^2-}] [\ce{OH-}]^2
+            } \\[1ex]
+            [\ce{HgCl4^2-}] = [\ce{Hg(OH)2}]
+          \end{array} \,
+        \right\} \Rightarrow [\ce{Cl-}] &amp;=
+        \left(
+          \dfrac{\beta_2^{\ce{OH}} [\ce{OH-}]^2}{\beta_4^{\ce{Cl}}}
+        \right)^{1/4} = \\[1ex]
+        &amp;=
+        \left(
+          \dfrac{\beta_2^{\ce{OH}}}{\beta_4^{\ce{Cl}}}
+        \right)^{1/4}
+        \left(
+          \dfrac{\ce{Kw}}{[\ce{H3O+}]}
+        \right)^{1/2}
+      \end{split} \\[1em]
+      \begin{split}
+        \llap{\Rightarrow \, {}} {\rm pCl} &amp;=
+        \dfrac{1}{4} ( \log \beta_4^{\ce{Cl}} - \log \beta_2^{\ce{OH}} ) +
+        \dfrac{1}{2} ( \ce{pKw} - \ce{pH} ) = \\[1ex]
+        &amp;= \dfrac{1}{4} ( 15{,}07 - 21{,}70 ) + \dfrac{1}{2} ( 14 - \ce{pH} ) = \\[1ex]
+        &amp;= 5{,}34 - \dfrac{1}{2} \ce{pH}
+      \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En esta ocasión la recta que falta para delimitar la última zona
+tiene una pendiente de $-0{,}5$. Parte desde el vértice inferior
+derecho de la zona del $\ce{HgCl2}$. El cálculo del $\ce{pH}$ para 
+${\rm pCl} = 0$, es en donde está situado el eje de abscisas
+en esta representación, es el siguiente:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        {\rm pCl} = 5{,}34 - \dfrac{1}{2} \ce{pH} \\[1ex]
+        {\rm pCl} = 0
+      \end{array} \,
+    \right\} \Rightarrow \ce{pH} = 2 \cdot 5{,}34 = 10{,}68
+    $
+    </p>
+</blockquote>
+
+<p>Pudiendo ya completar en su totalidad la representación del
+diagrama de zonas de predominio para este ejemplo:</p>
+
+<center>
+  <object class="plot" data="diagrama_zonas_predominio/diagrama_zonas_predominio_s06.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Así pues, dependiendo de la concentración de ligando libre
+y del pH se tendrá una especie u otra de forma predominante.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="reacciones_parasitas.htm" title="Anterior">&lt;</a></li>
+  <li><a href="equilibrios_heterogeneos_precipitacion.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+  
+</div>
+</body>
+</html>

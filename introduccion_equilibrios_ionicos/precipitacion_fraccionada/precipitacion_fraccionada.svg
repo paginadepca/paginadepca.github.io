@@ -1,0 +1,13 @@
+<?xml version="1.0" ?><svg height="47.40703mm" version="1.0" viewBox="0 0 142 179" width="37.60781mm" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linecap="round" transform="translate(-86,-39)">
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="111.30" y="70.50">Sr<tspan dy="-8" dx="1" font-size="75%">2+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="176.30" y="70.50">Ba<tspan dy="-8" font-size="75%">2+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" textLength="44" x="102.00" y="97.75">0,1 M</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" textLength="44" x="167.00" y="98.23">0,1 M</text>
+    <rect fill="none" height="63.00" stroke="#000000" stroke-width="1.0" width="130.23" x="91.94" y="45.00"/>
+    <polyline fill="none" points="156.65,119.00 156.65,171.41" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="156.65,179.41 159.65,169.41 156.65,171.41 153.65,169.41" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="163.30" y="154.00">SO<tspan dy="8" font-size="75%">4</tspan><tspan dy="-16" font-size="75%">2−</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" textLength="64.7" x="125.30" y="201.50">MSO<tspan dy="8" font-size="75%">4</tspan> <tspan dy="-8">↓</tspan></text>
+  </g>
+</svg>

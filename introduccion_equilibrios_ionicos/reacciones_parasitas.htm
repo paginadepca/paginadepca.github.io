@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Reacciones parásitas">
+<meta name="keywords" content="reacciones, parásitas">
+<title>Reacciones parásitas</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Reacciones parásitas</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Las reacciones parásitas son aquellas distintas a la
+principal. Debido a que habitualmente se tiene una disolución
+acuosa:</p>
+
+<center>
+  <object data="reacciones_parasitas/reacciones_parasitas_s01.svg" type="image/svg+xml" width="515" height="174">
+  </object>
+</center>
+
+<p>Los protones compiten con el metal por reaccionar con el
+ligando. Los hidróxidos compiten con el ligando por reaccionar
+con el metal. Por tanto estas reacciones parásitas implican una
+menor formación del complejo.</p>
+
+<p>Otros parásitos también podrían ser otros ligandos presentes.</p>
+
+<center>
+  <object data="reacciones_parasitas/reacciones_parasitas_s02.svg" type="image/svg+xml" width="414" height="221">
+  </object>
+</center>
+
+<p>Ante esta situación pretender calcular todas las especies es
+muy complicado. Igualmente esto tampoco es necesario ya que el
+interés se centra en el cálculo de la concentración de
+complejo. Para ello se define la constante condicional $k'$.</p>
+
+<blockquote>
+    <p>
+    $
+    k' = \dfrac{[\ce{ML}]}{[\ce{M'}][\ce{L'}]}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $[\ce{M'}]$ y $[\ce{L'}]$ representan las concentraciones totales sin
+reaccionar (vía la reacción principal). Se conocen como
+concentraciones condicionales. Por ejemplo:</p>
+
+<center>
+  <object data="reacciones_parasitas/reacciones_parasitas_s03.svg" type="image/svg+xml" width="415" height="100">
+  </object>
+</center>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{split}
+        [\ce{Ni^{2+}{}'}] &amp;=
+        [\ce{Ni^2+}] + [\ce{Ni(NH3)^2+}] + [\ce{Ni(NH3)2^2+}] + [\ce{Ni(NH3)3^2+}] + {} \\[1ex]
+        &amp;\quad+ [\ce{Ni(NH3)4^2+}] + [\ce{Ni(NH3)5^2+}] + [\ce{Ni(NH3)6^2+}] + [\ce{Ni(OH)+}]
+      \end{split} \\[1em]
+      
+      \begin{split}
+        &amp; [\ce{Y^{4-}{}'}] =
+        [\ce{Y^4-}] + [\ce{HY^3-}] + [\ce{H2Y^2-}] + [\ce{H3Y-}] + [\ce{H4Y}]
+      \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Para calcular la constante condicional se definen, designados
+con la letra griega $\alpha$, los coeficientes de reacciones
+parásitas, que permiten delimitar la extensión de éstas.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \alpha_{\ce{M}} = \dfrac{[\ce{M'}]}{[\ce{M}]} \\[1ex]
+      \alpha_{\ce{L}} = \dfrac{[\ce{L'}]}{[\ce{L}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la constante condicional:</p>
+
+<blockquote>
+    <p>
+    $
+    k' = \dfrac{[\ce{ML}]}{[\ce{M'}] [\ce{L'}]}
+    = \dfrac{[\ce{ML}]}{\alpha_\ce{M} [\ce{M}] \, \alpha_{\ce{L}} [\ce{L}]}
+    = \dfrac{\beta_1}{\alpha_{\ce{M}} \alpha_{\ce{L}}}
+    $
+    </p>
+</blockquote>
+
+<p>Los coeficientes se calculan. La constante condicional da una
+medida de la cantidad de complejo principal que se forma.</p>
+
+<p>Ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + \textit{n} L &lt;=&gt; ML_{\normalsize \textit{n}}} \\[1ex]
+      k' = \dfrac{
+        [\ce{ML_{\smash{\normalsize \textit{n}}}}]
+      }{
+        [\ce{M'}] [\ce{L'}]^{\smash{\normalsize \textit{n}}}
+      } = \dfrac{
+        \beta_{\smash{\normalsize \textit{n}}}
+      }{
+        \alpha_{\ce{M}} (\alpha_{\ce{L}})^{\smash{\normalsize \textit{n}}}
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Suponiendo que para este ejemplo se tienen para $\ce{M}$ sólo $\ce{OH-}\mspace{-1mu}$
+como parásitos, cálculo del coeficiente:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \alpha_{\ce{M}} &amp;= \dfrac{[\ce{M'}]}{[\ce{M}]}
+      = \dfrac{
+        [\ce{M}] + [\ce{M(OH)}] + [\ce{M(OH)2}] + \dotsb + [\ce{M(OH)_{\smash{\normalsize \textit{n}}}}]
+      }{[\ce{M}]} = \\[1ex]
+      &amp;= 1 + \dfrac{[\ce{M(OH)}]}{[\ce{M}]} + \dfrac{[\ce{M(OH)2}]}{[\ce{M}]} + \dotsb
+      + \dfrac{[\ce{M(OH)_{\smash{\normalsize \textit{n}}}}]}{[\ce{M}]}        
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Mediante las tablas de las constantes de complejación pueden
+saberse los hidroxocomplejos que se forman, por tanto a incluir
+en la expresión anterior.</p>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + \textit{n} OH &lt;=&gt; M(OH)_{\normalsize \textit{n}}} \\[1ex]
+      \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{OH}}
+      = \dfrac{
+        [\ce{M(OH)_{\smash{\normalsize \textit{n}}}}]
+      }{
+        [\ce{M}][\ce{OH-}]^{\smash{\normalsize \textit{n}}}
+      } \,
+      \Rightarrow \, \dfrac{[\ce{M(OH)_{\smash{\normalsize \textit{n}}}}]}{[\ce{M}]}
+      = \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{OH}}
+      [\ce{OH-}]^{\smash{\normalsize \textit{n}}}      
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{M}} = 1 + \beta_{1}^{\ce{OH}} [\ce{OH-}] + \beta_2^{\ce{OH}} [\ce{OH-}]^2
+    \mspace{-2mu} + \dotsb + \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{OH}}
+    [\ce{OH-}]^{\normalsize \textit{n}}
+    $
+    </p>
+</blockquote>
+
+<p>Si, por ejemplo, además de con $\ce{OH-}\!$, también
+reaccionara $\ce{M}$ con amoniaco presente:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \alpha_{\ce{M}} &amp;= \dfrac{[\ce{M'}]}{\ce{M}} =
+      \dfrac{
+        \left(
+          \begin{split}
+            &amp;[\ce{M}] + [\ce{M(OH)}] + \dotsb + [\ce{M(OH)_{\smash{\normalsize \textit{n}}}}] + {} \\[1ex]
+            &amp;\quad + [\ce{M(NH3)}] + [\ce{M(NH3)2}] + \dotsb + [\ce{M(NH3)_{\smash{\normalsize \textit{m}}}}]
+          \end{split}
+        \right)
+      }{[\ce{M}]} = \\[1ex]
+      &amp;= 1 + \beta_1^{\ce{OH}} [\ce{OH-}] + \dotsb +
+      \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{OH}} [\ce{OH-}]^{\normalsize \textit{n}} + {} \\[1ex]
+      &amp;\quad + \beta_1^{\ce{NH3}} [\ce{NH3}] + \beta_2^{\ce{NH3}} [\ce{NH3}]^2 + \dotsb +
+      \beta_{\smash{\normalsize \textit{m}} \vphantom{m}}^{\ce{NH3}} [\ce{NH3}]^{\normalsize \textit{m}} = \\[1ex]
+      &amp;= \alpha_{\ce{M(OH)}} + \alpha_{\ce{M(NH3)}} - \cancel{1}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Normalmente el $1$ se tacha, es despreciable, ya que los
+coeficientes son de un valor grande, si no ya probablemente ni se
+calcularían.</p>
+
+<p>Para el coeficiente del ligando, en principio, sólo se va a
+contar con los protones.</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{L}} = \dfrac{[\ce{L'}]}{[\ce{L}]} =
+    \dfrac{[\ce{L}] + [\ce{LH}] + \dotsb + [\ce{LH_{\smash{\normalsize \textit{n}}}}]}{[\ce{L}]} =
+    1 + \dfrac{[\ce{LH}]}{[\ce{L}]} + \dotsb + \dfrac{[\ce{LH_{\smash{\normalsize \textit{n}}}}]}{[\ce{L}]}
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{L + \textit{n} H &lt;=&gt; LH_{\normalsize \textit{n}}} \\[1ex]
+      \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{H}} =
+      \dfrac{
+        [\ce{LH_{\smash{\normalsize \textit{n}}}}]
+      }{
+        [\ce{L}] [\ce{H+}]^{\smash{\normalsize \textit{n}}}
+      } \,
+      \Rightarrow \, \dfrac{[\ce{LH_{\smash{\normalsize \textit{n}}}}]}{[\ce{L}]} =
+      \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{H}} 
+      [\ce{H+}]^{\normalsize \textit{n}} 
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \alpha_{\ce{L}} = 1 + \beta_1^{\ce{H}} [\ce{H+}] + \beta_2^{\ce{H}} [\ce{H+}]^2 + \dotsb +
+    \beta_{\smash{\normalsize \textit{n}} \vphantom{n}}^{\ce{H}} [\ce{H+}]^{\normalsize \textit{n}}
+    $
+    </p>
+</blockquote>
+
+<p>Si los únicos parásitos presentes para este ejemplo fueran
+los $\ce{OH-}\!$, compitiendo por el metal, y los $\ce{H+}\!$,
+por el ligando, a partir del conocimiento del $\ce{pH}$ y las
+$\beta$ podrían hallarse $k' \mspace{-1mu}$ y la concentración de
+$\ce{ML_{\normalsize \textit{n}}}$.</p>
+
+<p>Como ya se ha dicho $k' \mspace{-1mu}$ da una idea de la extensión
+en la que el complejo está presente en el medio que se encuentra.</p>
+
+<blockquote>
+    <p>
+    $
+    k' = \dfrac{\beta_{\ce{ML}}}{\alpha_{\ce{M}} \alpha_{\ce{L}}} \quad \text{(Estequiometría 1:1)}
+    $
+    </p>
+</blockquote>
+
+<p>Por ejemplo, si el ligando tiene tendencia a reaccionar con el
+protón habría una competencia entre los protones y el metal. En ese
+caso, siendo el $\alpha_{\ce{L}}\!$ importante, de tal modo que $k' \mspace{-1mu}$
+sería más pequeña, disminuiría la complejación. Lo mismo sucedería
+si la reacción parásita fuera entre el $\ce{OH-}\mspace{-1mu}$ (u otro ligando
+p. ej. $\ce{NH3}$) y el metal, en donde la competencia se establecería
+entre el $\ce{OH-}\mspace{-1mu}$ y el ligando.</p>
+
+<p>En general, en medio muy ácido, o en el extremo contrario muy básico,
+menos complejo principal, debido a las reacciones parásitas ya
+comentadas. Aunque también todo depende de lo grande que sea
+$\beta_{\ce{ML}}$. Se considera que el valor de $k'$ es suficientemente
+importante cuando es superior a $10^7$.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="diagrama_distribucion_complejacion.htm" title="Anterior">&lt;</a></li>
+  <li><a href="diagrama_zonas_predominio.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

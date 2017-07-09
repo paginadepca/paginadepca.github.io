@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Estabilidad de los complejos">
+<meta name="keywords" content="estabilidad, complejos">
+<title>Estabilidad de los complejos</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Estabilidad de los complejos</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Las constantes de equilibrio dan la medida de la estabilidad
+del complejo. Cuanto mayor es el valor de la constante más
+estable es el complejo.</p>
+
+<p>Hay dos tipos de constantes de complejación:</p>
+
+<p>- Sucesivas:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + L &lt;=&gt; ML} \quad k_1 = \dfrac{[\ce{ML}]}{[\ce{M}] [\ce{L}]} \\[1ex]
+      \ce{ML + L &lt;=&gt; ML2} \quad k_2 = \dfrac{[\ce{ML2}]}{[\ce{ML}] [\ce{L}]} \\[1ex]
+      \vdots \\[1ex]
+      \ce{ML_{\normalsize \textit{n} \small - 1} + L &lt;=&gt; ML_{\normalsize \textit{n}}} \quad
+      k_{\smash{\normalsize \textit{n}}} = \dfrac{
+        [\ce{ML_{\smash{\normalsize \textit{n}}}}]
+      }{
+        [\ce{ML_{\normalsize \textit{n} \small - 1}}] [\ce{L}]
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Estas constantes sucesivas son las reales, estos equilibrios
+son los que se dan en el proceso de complejación, pero no se
+utilizan en los cálculos.</p>
+
+<p>- Globales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + L &lt;=&gt; ML} \quad \beta_1 = \dfrac{[\ce{ML}]}{[\ce{M}] [\ce{L}]} \\[1ex]
+      \ce{M + 2 L &lt;=&gt; ML2} \quad \beta_2 = \dfrac{[\ce{ML2}]}{[\ce{M}][\ce{L}]^2} \\[1ex]
+      \vdots \\[1ex]
+      \ce{M + \textit{n} L &lt;=&gt; ML_{\normalsize \textit{n}}} \quad
+      \beta_{\smash{\normalsize \textit{n}}} = \dfrac{
+        [\ce{ML_{\smash{\normalsize \textit{n}}}}]
+      }{
+        [\ce{M}] [\ce{L}]^{\smash{\normalsize \textit{n}}}
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Estas constantes globales son las que se utilizan en los
+cálculos.</p>
+
+<p>Relación entre constantes:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \beta_1 = k_1 \\[1ex]
+      \beta_2 = k_1 k_2 \\[1ex]
+      \vdots \\[1ex]
+      \beta_{\smash{\normalsize \textit{n}}} = k_1 k_2 \dotsm k_{\smash{\normalsize \textit{n}}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Comprobación:</p>
+
+<blockquote>
+  <p>
+  $
+  k_1 k_2 =
+  \dfrac{\smash{\cancel{[\ce{ML}]}}}{[\ce{M}][\ce{L}]}
+  \dfrac{[\ce{ML2}]}{\smash{\cancel{[\ce{ML}]}\!} [\ce{L}]} =
+  \dfrac{[\ce{ML2}]}{[\ce{M}][\ce{L}]^2} =
+  \beta_2
+  $
+  </p>
+</blockquote>
+
+<p>Los ligandos, al tener pares de electrones libres, pueden actuar
+además como bases. Así pues, también pueden definirse las
+constantes de protonación sucesivas y globales. Por ejemplo, para
+el carbonato:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+      \begin{alignedat}{2}
+        &amp;\ce{H2CO3 &lt;=&gt; H+ \! + HCO3^- &amp;\quad&amp;K_{a1}} \\[1ex]
+        &amp;\ce{HCO3^- &lt;=&gt; H+ \! + CO3^{2-} &amp;&amp;K_{a2}}
+      \end{alignedat}
+      \right\} \text{Constantes de acidez}
+      \\[1em]
+      \left.
+      \begin{alignedat}{2}
+        &amp;\ce{H+ \! + CO3^{2-} &lt;=&gt; HCO3^-} &amp;&amp;k_1 =
+        \dfrac{1}{\ce{K_{a2}}} \\[1ex]
+        &amp;\ce{H+ \! + HCO3^- &lt;=&gt; H2CO3} \, &amp;\quad&amp;k_2 =
+        \dfrac{1}{\ce{K_{a1}}}
+      \end{alignedat}
+      \right\}
+      \begin{split}
+        &amp; \\
+        &amp;\smash{\text{Constantes de protonación}} \\
+        &amp;\smash{\text{sucesivas}}
+      \end{split}
+      \\[1em]
+      \left.
+      \begin{alignedat}{2}
+        &amp;\ce{H+ \! + CO3^{2-} &lt;=&gt; HCO3^-} &amp;&amp;\beta_1 = k_1 =
+        \dfrac{1}{\ce{K_{a2}}} \\[1ex]
+        &amp;\ce{2 H+ \! + CO3^{2-} &lt;=&gt; H2CO3} \, &amp;\quad&amp;\beta_2 = k_1 k_2 =
+        \dfrac{1}{\ce{K_{a2}} \ce{K_{a1}}}
+      \end{alignedat}
+      \right\}
+      \begin{split}
+        &amp; \\
+        &amp;\smash{\text{Constantes de}} \\
+        &amp;\smash{\text{protonación globales}}
+      \end{split}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, un ligando, además de participar en el proceso de
+complejación, también, al aceptar protones, puede hacerlo en
+reacciones del tipo ácido/base.</p>
+
+<p>A continuación, ejemplo de cálculo empleando las constantes de
+complejación globales, estando presentes las especies:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{M \quad L \quad ML \quad ML2}
+    $
+    </p>
+</blockquote>
+
+<p>Equilibrios y constantes:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{M + L &lt;=&gt; ML} \quad k_1 = \dfrac{[\ce{ML}]}{[\ce{M}][\ce{L}]} \\[1ex]
+      \ce{ML + L &lt;=&gt; ML2} \quad k_2 = \dfrac{[\ce{ML2}]}{[\ce{ML}][\ce{L}]} \\[1ex]
+      \beta_1 =
+      \dfrac{[\ce{ML}]}{[\ce{M}][\ce{L}]} \qquad \beta_2 =
+      \dfrac{[\ce{ML2}]}{[\ce{M}][\ce{L}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Balance de masas:</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\ce{M}} = [\ce{M}] + [\ce{ML}] + [\ce{ML2}]
+    $
+    </p>
+</blockquote>
+
+<p>Utilizando las constantes globales en el balance de masas se
+hallan las concentraciones de las distintas especies en función
+de $[\ce{L}]$. Esto es:</p>
+
+<p>$\bullet \ [\ce{M}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\ce{M}} = [\ce{M}] + \beta_1 [\ce{M}] [\ce{L}] + \beta_2 [\ce{M}] [\ce{L}]^2 =
+      [\ce{M}] (1 + \beta_1 [L] + \beta_2 [\ce{L}]^2) \\[1ex]
+      \Rightarrow \, [\ce{M}] = \dfrac{c_{\ce{M}}}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>$\bullet \ [\ce{ML}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{aligned}
+        c_{\ce{M}} &amp;= \dfrac{[\ce{ML}]}{\beta_1 [\ce{L}]} + [\ce{ML}] + \beta_2 [\ce{M}] [\ce{L}]^2 =
+        \dfrac{[\ce{ML}]}{\beta_1 [\ce{L}]} + [\ce{ML}]
+        + \beta_2 \dfrac{[\ce{ML}]}{\beta_1 [\ce{L}]} [\ce{L}]^2 \! = \\[1ex]
+        &amp;= [\ce{ML}] \! \left( \dfrac{1}{\beta_1 [\ce{L}]} + \dfrac{\beta_1 [\ce{L}]}{\beta_1 [\ce{L}]}
+        + \dfrac{\beta_2 [\ce{L}]^2}{\beta_1 [\ce{L}]} \right)
+      \end{aligned} \\[1ex]
+      \begin{aligned}
+        \Rightarrow \, [\ce{ML}] =
+        \dfrac{c_{\ce{M}} \beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+      \end{aligned}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>O, más simple, usando $\beta_1$ y aprovechando directamente la
+expresión encontrada anteriormente para $[\ce{M}]$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{ML}] = \beta_1 [\ce{M}] [\ce{L}] \\[1ex]
+      \llap{\Rightarrow \, {}} [\ce{ML}] =
+      \dfrac{c_{\ce{M}} \beta_1 [\ce{L}]}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>$\bullet \ [\ce{ML2}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{aligned}
+        c_{\ce{M}} &amp;= \dfrac{[\ce{ML2}]}{\beta_2 [\ce{L}]^2} + \beta_1 [\ce{M}] [\ce{L}] + [\ce{ML2}]
+        = \dfrac{[\ce{ML2}]}{\beta_2 [\ce{L}]^2} + \beta_1 \dfrac{[\ce{ML2}]}{\beta_2 [\ce{L}]^2} [\ce{L}]
+        + [\ce{ML2}] = \\[1ex]
+        &amp;= [\ce{ML2}] \! \left( \dfrac{1}{\beta_2 [\ce{L}]^2} + \dfrac{\beta_1 [\ce{L}]}{\beta_2 [\ce{L}]^2}
+        + \dfrac{\beta_2 [\ce{L}]^2}{\beta_2 [\ce{L}]^2} \right)
+      \end{aligned} \\[1ex]
+      \begin{aligned}
+        \Rightarrow \, [\ce{ML2}] =
+        \dfrac{c_{\ce{M}} \beta_2 [\ce{L}]^2}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+      \end{aligned}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>O de forma más directa y sencilla:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{ML2}] = \beta_2 [\ce{M}] [\ce{L}]^2 \\[1ex]
+      \llap{\Rightarrow \, {}} [\ce{ML2}] =
+      \dfrac{c_{\ce{M}} \beta_2 [\ce{L}]^2}{1 + \beta_1 [\ce{L}] + \beta_2 [\ce{L}]^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="tipo_ligandos.htm" title="Anterior">&lt;</a></li>
+  <li><a href="diagrama_distribucion_complejacion.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

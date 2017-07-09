@@ -1,0 +1,1321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Método gráfico para el cálculo del pH: Diagrama logarítmico">
+<meta name="keywords" content="método, gráfico, cálculo, pH, diagrama, logarítmico">
+<title>Método gráfico para el cálculo del pH: Diagrama logarítmico</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3 class="long">Método gráfico para el cálculo del pH: Diagrama
+logarítmico</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Consiste en representar el logaritmo de la concentración en
+función del $\ce{pH}$.</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_01.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Para llevar a cabo la representación gráfica, hay que buscar
+para cada una de las distintas especies la ecuación que relaciona
+el logaritmo de su concentración con el $\ce{pH}$.</p>
+
+<p><a href="#ha">Ácido débil $\ce{HA}$</a></p>
+
+<p><a href="#h2a">Ácido diprótico $\ce{H2A}$</a></p>
+
+<p><a href="#na2a">Sal sódica de un ácido diprótico $\ce{Na2A}$</a></p>
+
+<p><a href="#nh4a2">Sal amónica de un ácido diprótico $\ce{(NH4)2A}$</a></p>
+
+<p><a href="#hahb">Dos ácidos débiles $\ce{HA}$ y $\ce{HB}$</a></p>
+
+<p><a name="ha"></a>$\color{red}\ast$ Sistema de ácido débil $\ce{HA \pu{0,1 M}}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    \ce{HA + H2O &lt;=&gt; A- \! + H3O+} \\[1ex]
+
+    \ce{2 H2O &lt;=&gt; H3O+ \! + OH-} \\[1em]
+
+    \ce{Ka} = \dfrac{[\ce{A-}] [\ce{H3O+}]}{[\ce{HA}]} = 10^{-5} \\[1ex]
+
+    \ce{Kw} = [\ce{H3O+}][\ce{OH-}] = 10^{-14}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>&bull; $[\ce{H3O+}]$</p>
+
+<blockquote>
+    <p>$\ce{pH} = -\log [\ce{H3O+}]  \, \Rightarrow \, \log [\ce{H3O+}] = -\ce{pH}$</p>
+</blockquote>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_02.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>&bull; $[\ce{OH-}]$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    \ce{pH} = -\log [\ce{H3O+}] = -\log \dfrac{\ce{Kw}}{[\ce{OH-}]}
+            = \log [\ce{OH-}] - \log \ce{Kw} \\[1ex]
+    
+    \Rightarrow \log [\ce{OH-}] = \ce{pH} + \log \ce{Kw}  = \ce{pH} - 14
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_03.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>&bull; $[\ce{HA}]$ y $[\ce{A-}]$</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{HA}] = 
+    \dfrac{c_{\rm a} [\ce{H3O+}]}{[\ce{H3O+}] + \ce{Ka}}
+    \qquad
+    [\ce{A-}] =
+    \dfrac{
+      c_{\rm a} \ce{Ka}
+    }{
+      [\ce{H3O+}] + \ce{Ka}
+    }
+    $
+    </p>
+</blockquote>
+
+<p>Tres situaciones:</p>
+
+<p><em style="color:#FF4500">1)</em> $[\ce{H3O+}] \gg \ce{Ka}$ ó $\,\ce{pH}
+\ll \ce{Ka}$</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{HA}] = 
+    \dfrac{
+      c_{\rm a} \! \cancel{[\ce{H3O+}]}
+    }{
+      \cancel{[\ce{H3O+}] + \ce{Ka}}
+    } =
+    c_{\rm a} = \pu{0,1 M} \,
+    \Rightarrow \, \log [\ce{HA}] = \log c_{\rm a} = -1
+    $
+    </p>
+    <p>
+    $
+    \begin{align}
+    [\ce{A-}] =
+    \dfrac{
+      c_{\rm a} \ce{Ka}
+    }{
+      [\ce{H3O+}] + \! \cancel{\ce{Ka}}
+    } \,
+    \Rightarrow \, \log[\ce{A-}]
+    &amp;= \log{c_{\rm a} \ce{Ka}}
+    - \log[\ce{H3O+}] \\[1ex]
+    \Rightarrow \, \log[\ce{A-}]
+    &amp;= \log{c_{\rm a} \ce{Ka}}
+    + \ce{pH} = \\[1ex] 
+    &amp;= \log 10^{-6} + \ce{pH} = -6 + \ce{pH}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Esto es así cuando el valor de $\ce{Ka}$ no
+llega al $\pu{5\%}$ del valor de $[\ce{H3O+}]$.</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] &gt; 20 \ce{Ka} \,
+    \Rightarrow \, \ce{pH} &lt; -1{,}3 + \ce{pKa}
+    $    
+    </p>
+</blockquote>
+
+<p>En este ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{pH} &lt; 5 - 1{,}3 = 3{,}7
+    $
+    </p>
+</blockquote>
+
+<p><em style="color:#FF4500">2)</em> $[\ce{H3O+}] = \ce{Ka}$ ó $\,\ce{pH} =
+\ce{pKa}$</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{HA}] =
+    \dfrac{
+      c_{\rm a} \! \cancel{[\ce{H3O+}]}
+    }{
+      2 \! \cancel{[\ce{H3O+}]}
+    } =
+    \dfrac{c_{\rm a}}{2} \,
+    \Rightarrow \, \log [\ce{HA}] = \log \dfrac{c_{\rm a}}{2} =
+    \log{c_{\rm a}} - 0{,}3
+    $
+    </p>
+    <p>
+    $
+    [\ce{A-}] =
+    \dfrac{
+      c_{\rm a} \! \cancel{\ce{Ka}}
+    }{
+      2 \! \cancel{\ce{Ka}}
+    } =
+    \dfrac{c_{\rm a}}{2} \,
+    \Rightarrow \, \log[\ce{A-}] = \log \dfrac{c_{\rm a}}{2} =
+    \log{c_{\rm a}} - 0{,}3
+    $
+    </p>
+</blockquote>
+
+<p>Como se observa, cuando el $\ce{pH}$ del sistema es igual al $\ce{pKa}$
+se tiene la misma concentración de especie $\ce{HA}$ sin disociar y
+disociada. Para el ejemplo:</p>
+
+<blockquote>
+    <p>$\log [\ce{HA}] = \log [\ce{A-}] = -1{,}3$</p>
+</blockquote>
+
+<p><em style="color:#FF4500">3)</em> $[\ce{H3O+}] \ll \ce{Ka}$ ó $\,\ce{pH}
+\gg \ce{pKa}$</p>
+
+<blockquote>
+   <p>
+   $
+   \begin{align}
+   [\ce{HA}] =
+   \dfrac{
+     c_{\rm a} [\ce{H3O+}]
+   }{
+     \cancel{[\ce{H3O+}]} \! + K_{\rm a}
+   } \,
+   \Rightarrow \, \log [\ce{HA}] &amp;=
+   \log \dfrac{c_{\rm a}}{\ce{Ka}} + \log [\ce{H3O+}] \\[1ex]
+   \Rightarrow \, \log [\ce{HA}] &amp;=
+   \log \dfrac{c_{\rm a}}{\ce{Ka}} - \ce{pH} = \\[1ex]
+   &amp;= \log 10^{\:\!4} - \ce{pH} = 4 - \ce{pH}
+   \end{align}
+   $
+   </p>
+   <p>
+   $
+   [\ce{A-}] =
+   \dfrac{
+     c_{\rm a} \! \cancel{\ce{Ka}}
+   }{
+     \cancel{[\ce{H3O+}] + \ce{Ka}}
+   } =
+   c_{\rm a} = \pu{0,1 M} \, \Rightarrow \, \log [\ce{A-}] =
+   \log c_{\rm a} = -1
+   $
+   </p>
+</blockquote>
+
+<p>Al igual que antes, esto es así cuando el valor de $[\ce{H3O+}]$
+no llega al $\pu{5\%}$ del valor de $\ce{Ka}$.</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] &lt; \dfrac{\ce{Ka}}{20} \,
+    \Rightarrow \, \ce{pH} &gt; \ce{pKa} + 1{,}3
+    $
+    </p>
+</blockquote>
+
+<p>Para este ejemplo:</p>
+
+<blockquote>
+    <p>$\ce{pH} &gt; 5 + 1{,}3 = 6{,}3$</p>
+</blockquote>
+
+<p>Teniendo en cuenta todos estos datos y ecuaciones, el diagrama
+logarítmico para este sistema es el siguiente:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_04.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>El punto $\text{S}$ se conoce como <em>punto del sistema</em>, y con
+él es suficiente para dibujar directamente el diagrama
+logarítmico. Las coordenadas de este punto corresponden con los
+dos valores que definen el sistema: el $\ce{pKa}$ y
+el $\log c_{\rm a}$. Así pues, para un sistema de un
+ácido débil $\ce{HA}$, a partir de este punto, y fuera del intervalo de
+$\ce{pKa} \pm 1{,}3$, se dibujan las rectas de pendiente
+$0$, a ambos lados, y las de pendiente $+1$, a la izquierda, y $-1$, a
+la derecha. Los segmentos, de forma suavizada, se unen pasando $0{,}3$
+unidades por debajo del punto $\text{S}$. Sabiendo que a un $\ce{pH}$ ácido la
+especie predominante es la protonada $\ce{HA}$ y a un $\ce{pH}$ básico lo es
+la desprotonada $\ce{A-}\!$, se identifica a qué especie
+corresponde cada una de las dos líneas. Previamente, en el
+diagrama, se habrán dibujado dos rectas de pendiente $-1$ y $+1$ que
+pasan por el centro del diagrama <span style="white-space:nowrap">
+($\ce{pH} = -\log c = 7$)</span>, correspondiendo la primera a los $\ce{H3O+}\!$
+y la segunda a los $\ce{OH-}$.</p>
+
+<p>A continuación, para encontrar el $\ce{pH}$ a partir del diagrama
+logarítmico del sistema, es necesario recurrir a la expresión
+del balance protónico.</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = [\ce{A-}] + [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>Observando el diagrama a $\ce{pH}$ ácido, que es el esperable, $[\ce{OH-}]
+\ll [\ce{A-}]$. Esto permite establecer la siguiente
+igualdad:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = [\ce{A-}] + \mspace{-5mu} \cancel{[\ce{OH-}]} = [\ce{A-}]
+    $
+    </p>
+</blockquote>
+
+<p>Éste es el punto en el que en el diagrama logarítmico se
+entrecruzan las líneas correspondientes a $\ce{H3O+}\!$
+y $\ce{A-}\!$. Así pues, el balance protónico se emplea, en general,
+para buscar una igualdad entre dos especies, despreciando las
+demás. Esto corresponde a un punto en el que las líneas de
+ambas especies se cruzan, lo que permite obtener el $\ce{pH}$ gráfico.</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_05.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Por tanto un $\ce{pH} = 3$.</p>
+
+<p>Más allá de para averiguar el $\ce{pH}$ de un sistema sencillo, el
+diagrama logarítmico es una herramienta sobre todo útil para
+resolver de forma relativamente simple sistemas complicados.
+Además, permite conocer cómo cambian las concentraciones de
+las especies con el $\ce{pH}$ y, en general, facilita una mejor
+compresión del sistema.</p>
+
+<p><a name="h2a"></a>$\color{red}\ast$ Sistema de un ácido diprótico $\ce{H2A}
+\: \pu{0,1 M}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \def\eqarrow#1#2{
+      \;
+      \Newextarrow{\xrightleftharpoons}{10,10}{0x21CC} 
+      \overset{#1}{
+        \underset{#2}{
+          \Rule{0pt}{0.4em}{0pt}
+          \smash{
+            \xrightleftharpoons[\hphantom{#2}]{\hphantom{#1}}
+          }
+        }
+      }
+      \;
+    }
+    \ce{
+      H2A + H2O $\eqarrow{\normalsize K_1}{}$ H3O+ \! + HA-
+    } \\
+    \ce{
+      HA- \! + H2O $\eqarrow{\normalsize K_2}{}$ H3O+ \! + A^{2-}
+    } \\
+    \ce{
+      2H2O $\eqarrow{\normalsize \ce{Kw}}{}$ H3O+ \! + OH-
+    }
+    $
+    </p>
+</blockquote>
+
+<p>Especies presentes y ecuaciones de equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{H2A \quad HA- \quad A^{2-} \quad H3O+ \quad OH-} \\[1em]
+    K_1 = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{[\ce{H2A}]} = 10^{-6} \\[1em]
+    K_2 = \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{[\ce{HA-}]} = 10^{-10} \\[1em]
+    \ce{Kw} = [\ce{H3O+}] [\ce{OH-}] = 10^{-14}
+    $
+    </p>
+</blockquote>
+
+<p>Balance de masas (las concentraciones por separado han de
+sumar la total):</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}]
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = [\ce{HA-}] + 2[\ce{A^{2-}}] + [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>La concentración de $\ce{A^{2-}}\!$ se multiplica por dos en
+el balance protónico porque esta especie ha perdido dos protones
+respecto al $\ce{H2A}$. Es decir, por cada $\ce{A^{2-}}\!$ se
+generan dos iones $\ce{H3O+}\!$.</p>
+
+<p>Para llevar a cabo la representación del diagrama
+logarítmico, se necesitan las expresiones de la concentración de
+cada especie en función de la concentración de $\ce{H3O+}\!$.</p>
+
+<p>&bull; $\ce{H2A}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}] \\[1em]
+
+    K_1 = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{[\ce{H2A}]} \: \Rightarrow \:
+    [\ce{HA-}] = \dfrac{K_1 [\ce{H2A}]}{[\ce{H3O+}]} \\[1em]
+
+    K_2 = \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{[\ce{HA-}]} \: \Rightarrow \:
+    [\ce{A^{2-}}] = \dfrac{K_2 [\ce{HA-}]}{[\ce{H3O+}]}
+                  = \dfrac{K_1 K_2 [\ce{H2A}]}{[\ce{H3O+}]^2} \\[1em]
+    
+    \begin{aligned}
+    c_{\rm a} &amp;=
+    [\ce{H2A}] + \dfrac{K_1 [\ce{H2A}]}{[\ce{H3O+}]} + \dfrac{K_1 K_2 [\ce{H2A}]}{[\ce{H3O+}]^2}
+    =
+    \\[1ex]
+    &amp;= 
+    [\ce{H2A}] \left( 1 + \dfrac{K_1}{[\ce{H3O+}]} + \dfrac{K_1 K_2}{[\ce{H3O+}]^2} \right) =
+    \\[1ex]
+    &amp;= [\ce{H2A}] \left( \dfrac{[\ce{H3O+}]^2}{[\ce{H3O+}]^2} +
+    \dfrac{K_1 [\ce{H3O+}]}{[\ce{H3O+}]^2} + \dfrac{K_1 K_2}{[\ce{H3O+}]^2} \right)
+    \end{aligned} \\[1em]
+    
+    \Rightarrow \: [\ce{H2A}] =
+    \dfrac{c_{\rm a} [\ce{H3O+}]^2}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>&bull; $\ce{HA-}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}] \\[1em]
+    
+    K_1 = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{[\ce{H2A}]} \: \Rightarrow \:
+    [\ce{H2A}] = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{K_1} \\[1em]
+
+    K_2 = \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{[\ce{HA-}]} \: \Rightarrow \:
+    [\ce{A^{2-}}] = \dfrac{K_2 [\ce{HA-}]}{[\ce{H3O+}]} \\[1em]
+
+    \begin{aligned}
+    c_{\rm a} &amp;= \dfrac{[\ce{H3O+}] [\ce{HA-}]}{K_1} + [\ce{HA-}]
+    + \dfrac{K_2 [\ce{HA-}]}{[\ce{H3O+}]} = 
+    \\[1ex]
+    &amp;= [\ce{HA-}] \left( \dfrac{[\ce{H3O+}]}{K_1} + 1 + \dfrac{K_2}{[\ce{H3O+}]} \right) =
+    \\[1ex]
+    &amp;= [\ce{HA-}] \left( \dfrac{[\ce{H3O+}]^2}{K_1 [\ce{H3O+}]}
+    + \dfrac{K_1 [\ce{H3O+}]}{K_1 [\ce{H3O+}]} + \dfrac{K_1 K_2}{K_1 [\ce{H3O+}]} \right)
+    \end{aligned} \\[1em]
+
+    \Rightarrow \: [\ce{HA-}] = 
+    \dfrac{c_{\rm a} K_1 [\ce{H3O+}]}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>&bull; $\ce{A^{2-}}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}]  \\[1em]
+    
+    K_2 = \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{[\ce{HA-}]} \: \Rightarrow \:
+    [\ce{HA-}] = \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{K_2} \\[1em]
+
+    K_1 = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{[\ce{H2A}]} \: \Rightarrow \:
+    [\ce{H2A}] = \dfrac{[\ce{H3O+}] [\ce{HA-}]}{K_1} =
+    \dfrac{[\ce{H3O+}]^2 [\ce{A^{2-}}]}{K_1 K_2} \\[1em]
+    
+    \begin{align}
+    c_{\rm a} &amp;= \dfrac{[\ce{H3O+}]^2 [\ce{A^{2-}}]}{K_1 K_2} +
+    \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{K_2} + [\ce{A^{2-}}] =
+    \\[1ex]
+    &amp;= [\ce{A^{2-}}] \left( \dfrac{[\ce{H3O+}]^2}{K_1 K_2} + \dfrac{[\ce{H3O+}]}{K_2}
+    + 1 \right) =
+    \\[1ex]
+    &amp;= [\ce{A^{2-}}] \left( \dfrac{[\ce{H3O+}]^2}{K_1 K_2}
+    + \dfrac{K_1 [\ce{H3O+}]}{K_1 K_2} + \dfrac{K_1 K_2}{K_1 K_2} \right)
+    \end{align} \\[1em]
+
+    \Rightarrow \: [\ce{A^{2-}}] =
+    \dfrac{c_{\rm a} K_1 K_2}{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Al ser un ácido diprótico, por tanto con dos $\ce{Ka}\mspace{-1mu}$,
+se tienen dos puntos del sistema: $\text{S}_1$ y $\text{S}_2$.
+Esto divide en tres partes o zonas el diagrama logarítmico.</p>
+
+<p><em style="color:#FF4500">1)</em> $[\ce{H3O+}] \gg K_1$ ó $\,\ce{pH} \ll \ce{p$K$1}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{array}{l}
+      [\ce{H2A}] =
+      \dfrac{
+        c_{\rm a} \! \cancel{[\ce{H3O+}]^2}
+      }{
+        \cancel{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+      }
+      = c_{\rm a} \\[1em]
+      \Rightarrow \: \log[\ce{H2A}] = \log c_{\rm a}
+      \end{array}
+    \\[1em]
+      \begin{array}{l}
+      [\ce{HA-}] =
+      \dfrac{
+        c_{\rm a} K_1 \! \cancel{[\ce{H3O+}]}
+      }{
+        [\ce{H3O+}]^{\mspace{-2mu}\cancel{2}} \! + \! \cancel{K_1 [\ce{H3O+}] + K_1 K_2}
+      }
+      = \dfrac{c_{\rm a} K_1}{[\ce{H3O+}]} \\[1em]
+      \begin{split}
+        \Rightarrow \: \log[\ce{HA-}] &amp;= \log{c_{\rm a} K_1}
+        - \log[\ce{H3O+}] = \\[1ex]
+        &amp;= \log{c_{\rm a} K_1} + \ce{pH}
+      \end{split}
+      \end{array}
+    \\[1em]
+      \begin{array}{l}
+      [\ce{A^{2-}}] =
+      \dfrac{
+        c_{\rm a} K_1 K_2
+      }{
+        [\ce{H3O+}]^2 + \! \cancel{K_1 [\ce{H3O+}] + K_1 K_2}
+      }
+      = \dfrac{c_{\rm a} K_1 K_2}{[\ce{H3O+}]^2} \\[1em]
+      \begin{split}
+        \Rightarrow \: \log[\ce{A^{2-}}] &amp;= \log{c_{\rm a} K_1 K_2}
+        - 2 \log[\ce{H3O+}] = \\[1ex]
+        &amp;= \log{c_{\rm a} K_1 K_2} + 2 \ce{pH}
+      \end{split}
+      \end{array}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p style="margin-top:2em"><em style="color:#FF4500">2)</em> $K_1 \gg [\ce{H3O+}] \gg K_2$ ó
+$\,\ce{p$K$1} \!\ll \ce{pH} \ll \ce{p$K$2}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{array}{l}
+        [\ce{H2A}] =
+        \dfrac{
+          c_{\rm a} [\ce{H3O+}]^{\mspace{-2mu}\cancel{2}}
+        }{
+          \cancel{[\ce{H3O+}]^2} + \, K_1 \! \cancel{[\ce{H3O+}]} + \cancel{K_1 K_2}
+        }
+        = \dfrac{c_{\rm a} [\ce{H3O+}]}{K_1} \\[1em]
+        \begin{split}
+          \Rightarrow \: \log[\ce{H2A}] &amp;= \log \dfrac{c_{\rm a}}{K_1}
+          + \log[\ce{H3O+}] =\\[1ex] &amp;= \log \dfrac{c_{\rm a}}{K_1} - \ce{pH}
+        \end{split}
+      \end{array}
+    \\[1em]
+      \begin{array}{l}
+        [\ce{HA-}] =
+        \dfrac{
+          c_{\rm a} \! \cancel{K_1 [\ce{H3O+}]}
+        }{
+          \cancel{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+        }
+        = c_{\rm a} \\[1em]
+        \Rightarrow \: \log[\ce{HA-}] = \log c_{\rm a}
+      \end{array}
+    \\[1em]
+      \begin{array}    
+        [\ce{A^{2-}}] =
+        \dfrac{
+          c_{\rm a} \! \cancel{K_1} \! K_2
+        }{
+          \cancel{[\ce{H3O+}]^2} + \cancel{K_1} \! [\ce{H3O+}] \, + \cancel{K_1 K_2}
+        }
+        = \dfrac{c_{\rm a} K_2}{[\ce{H3O+}]} \\[1em]
+        \begin{split}    
+          \Rightarrow \: \log[\ce{A^{2-}}] &amp;= \log{c_{\rm a} K_2}
+          - \log[\ce{H3O+}] =\\[1ex] &amp;= \log{c_{\rm a} K_2} + \ce{pH}
+        \end{split}
+      \end{array}    
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p style="margin-top:2em"><em style="color:#FF4500">3)</em> $[\ce{H3O+}] \ll K_2$ ó $\,\ce{pH}
+\gg \ce{p$K$2}$</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{array}{l}
+        [\ce{H2A}] =
+        \dfrac{
+          c_{\rm a} [\ce{H3O+}]^2
+        }{
+          \cancel{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}]} \! + K_1 K_2
+        }
+        = \dfrac{c_{\rm a} [\ce{H3O+}]^2}{K_1 K_2} \\[1em]
+        \begin{split}
+          \Rightarrow \: \log[\ce{H2A}] &amp;= \log \dfrac{c_{\rm a}}{K_1 K_2}
+          + 2 \log[\ce{H3O+}] =\\[1ex] &amp;= \log \dfrac{c_{\rm a}}{K_1 K_2}
+          - 2 \ce{pH}
+        \end{split}
+      \end{array}
+    \\[1em]
+      \begin{array}{l}
+        [\ce{HA-}] =
+        \dfrac{
+          c_{\rm a} \! \cancel{K_1} \! [\ce{H3O+}]
+        }{
+          \cancel{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}]} \! + \! \cancel{K_1} \! K_2
+        }
+        = \dfrac{c_{\rm a} [\ce{H3O+}]}{K_2} \\[1em]
+        \begin{split}
+          \Rightarrow \: \log[\ce{HA-}] &amp;= \log \dfrac{c_{\rm a}}{K_2}
+          + \log[\ce{H3O+}] =\\[1ex] &amp;= \log \dfrac{c_{\rm a}}{K_2} - \ce{pH}
+        \end{split}
+      \end{array}
+    \\[1em]
+      \begin{array}{l}
+        [\ce{A^{2-}}] =
+        \dfrac{
+          c_{\rm a} \! \cancel{K_1 K_2}
+        }{
+          \cancel{[\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2}
+        }
+        = c_{\rm a} \\[1em]
+        \Rightarrow \: \log[\ce{A^{2-}}] = \log c_{\rm a}
+      \end{array}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Además:</p>
+
+<blockquote>
+    <p>$[\ce{H3O+}] = K_1$ ó $\,\ce{pH} = \ce{p$K$1}$</p>
+  <blockquote>
+    <p>
+    $
+    [\ce{H2A}] = [\ce{HA-}] = \dfrac{c_{\rm a}}{2}
+    \: \Rightarrow \: \log[\ce{H2A}] = \log[\ce{HA-}] = \log c_{\rm a} - 0{,}3
+    $
+    </p>
+  </blockquote>
+    <p>$[\ce{H3O+}] = K_2$ ó $\,\ce{pH} = \ce{p$K$2}$</p>
+  <blockquote>
+    <p>
+    $
+    [\ce{HA-}] = [\ce{A^{2-}}] = \dfrac{c_{\rm a}}{2}
+    \: \Rightarrow \: \log[\ce{HA-}] = \log[\ce{A^{2-}}] = \log c_{\rm a} - 0{,}3
+    $
+    </p>
+  </blockquote> 
+</blockquote>
+
+<p>Al igual que anteriormente, aquí también las líneas de las
+especies implicadas en cada equilibrio se cruzan $0{,}3$ unidades por
+debajo de los respectivos puntos del sistema de la
+representación gráfica. Recordar también que las
+simplificaciones hechas se aplican por encima y debajo de $\ce{pH} = \ce{pKa}
+\pm 1{,}3$. Teniendo en cuenta esto, y todos los datos precedentes, la
+representación del diagrama logarítmico para este sistema es la
+siguiente:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_06.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Como se ve en el gráfico, no es necesario suavizar las líneas
+al unir las rectas con pendiente. Se unen directamente al llegar
+al correspondiente valor de $\ce{pKa}$. Aquí también
+con la señalización de los puntos del sistema $\text{S}_1$
+y $\,\text{S}_2$ es suficiente para dibujar el sistema, sin
+necesidad de las ecuaciones.</p>
+
+<p>El cambio de pendiente $\pm 1$ a $\,\pm 2$ se debe a que en esos
+intervalos de $\ce{pH}$ más extremos la pérdida o ganancia de dos
+protones se produce de golpe, en una sola etapa.</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{H2A + 2 H2O $\eqarrow{\normalsize K_1 K_2}{}$ 2 H3O+ \! + A^{2-}}
+    $
+    </p>
+    <p>
+    $
+    K_1 K_2 = \dfrac{[\ce{H3O+}] \! \cancel{[\ce{HA-}]}}{[\ce{H2A}]}
+    \cdot \dfrac{[\ce{H3O+}] [\ce{A^{2-}}]}{\cancel{[\ce{HA-}]}}
+    = \dfrac{[\ce{H3O+}]^2 [\ce{A^{2-}}]}{[\ce{H2A}]}
+    $
+    </p>
+    <p>
+    $
+    \begin{array}{l}
+    \ce{pH} \ll \ce{p$K$1} \\[1ex]
+    [\ce{H2A}] = c_{\rm a} \\[1ex]
+    \Rightarrow \: [\ce{A^{2-}}] = \dfrac{c_{\rm a} K_1 K_2}{[\ce{H3O+}]^2} \:
+    \Rightarrow \: \log[\ce{A^{2-}}] = \log{c_{\rm a} K_1 K_2} + 2\ce{pH}
+    \end{array}
+    $
+    </p>
+    <p>
+    $
+    \begin{array}{l}
+    \ce{pH} \gg \ce{p$K$_2} \\[1ex]
+    [\ce{A^{2-}}] = c_{\normalsize \text{a}} \\[1ex]
+    \Rightarrow \: [\ce{H2A}] = \dfrac{c_{\normalsize \text{a}} [\ce{H3O+}]^2}{K_1 K_2} \:
+    \Rightarrow \: \log[\ce{H2A}] = \log \dfrac{c_{\normalsize \text{a}}}{K_1 K_2} - 2 \ce{pH}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Estas expresiones coinciden exactamente con las que ya se
+habían hallado antes para llevar a cabo la representación.</p>
+
+<p>Puede observarse por la gráfica que, aunque con diferencias,
+el diagrama logarítmico de un ácido poliprótico puede
+considerarse como la combinación de diagramas logarítmicos
+monopróticos individuales.</p>
+
+<p>Para el cálculo del $\ce{pH}$ gráfico se utiliza el balance
+protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = [\ce{HA-}] + \! \cancel{2 [\ce{A^{2-}}]} \! + \! \cancel{[\ce{OH-}]} \!
+    = [\ce{HA-}]
+    $
+    </p>
+</blockquote>
+
+<p>Los $\ce{OH-}\!$ se pueden despreciar ya que se presume
+medio ácido, por lo que su concentración será muy baja.
+También es factible despreciar los $\ce{A^{2-}}\!$ dada la poca
+tendencia a ceder su protón por parte del $\ce{HA-}\!$. Ambas
+suposiciones se evidencian con la simple observación de la
+representación del diagrama logarítmico a $\ce{pH}$ ácido.</p>
+
+<p>Se busca en la gráfica la igualdad anteriormente establecida
+(donde se cruzan las líneas de $\ce{H3O+}$ y $\,\ce{HA-}$).</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_07.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Por tanto $\ce{pH} = 3{,}5$.</p>
+
+<p><a name="na2a"></a>$\color{red}\ast$ Sistema de la sal sódica de un ácido
+diprótico:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{Na2A} \quad c_{\rm a} = \pu{10^{-2} M} \quad \ce{p$K$1} = 4
+    \quad \ce{p$K$2} = 10
+    $
+    </p>
+</blockquote>
+
+<p>En solución:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{Na2A -> 2 Na+ \! + A^{2-}}
+    $
+    </p>
+</blockquote>
+
+<p>Equilibrios que tienen lugar:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{A^{2-} \! + H2O &lt;=&gt; HA- \! + OH-} \\[1ex]
+      \ce{HA- \! + H2O &lt;=&gt; H2A + OH-} \\[1ex]
+      \ce{2 H2O &lt;=&gt; H3O+ \! + OH-}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Especies a tener en cuenta:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{H2A \quad HA- \quad A^{2-} \quad H3O+ \quad OH-}
+    $
+    </p>
+</blockquote>
+
+<p>Concentración analítica:</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}]
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] + 2 [\ce{H2A}] + [\ce{HA-}] = [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>Diagrama logarítmico:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_08.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Despreciando sumandos en el balance protónico se halla el $\ce{pH}$
+gráfico. Considerando que el $\ce{pH}$ será básico la concentración
+de $\ce{H3O+}\!$ será muy baja. Además, el segundo
+equilibrio que tiene lugar es todavía más débil que el primero,
+por lo que la concentracion de $\ce{H2A}$ será mucho menor
+que la de $\ce{HA-}\!$. Todo esto se observa muy bien en el
+gráfico, donde en la zona de $\ce{pH}$ básico las líneas que
+representan los logarítmos de $\ce{H2A}$ y $\ce{H3O+}\!$
+quedan muy por debajo de la línea del logaritmo de $\ce{HA-}\!$.</p>
+
+<blockquote>
+    <p>
+    $
+    \underset{\normalsize \cancel{\pu{10^{-11} M}}}{\cancel{[\ce{H3O+}]}} \! + \!
+    \underset{\normalsize \cancel{\pu{10^{-10} M}}}{\cancel{2 [\ce{H2A}]}} \! +
+    \underset{
+      \normalsize \vphantom{\cancel{\pu{10^{-3} M}}} \pu{10^{-3} M}
+    }{
+      \vphantom{\cancel{[\ce{HA-}]}} [\ce{HA-}]
+    } = [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>El punto en el que se cruzan las líneas de $\ce{HA-}\!$ y
+$\ce{OH-}\!$ indica el $\ce{pH}$. Esto es:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_09.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Por tanto $\ce{pH} \approx 11$.</p>
+
+<p>De forma analítica puede precisarse más:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{HA-}] = [\ce{OH-}] \\[1ex]
+      [\ce{HA-}] = \dfrac{
+        c_{\rm a} K_1 [\ce{H3O+}]
+      }{
+        [\ce{H3O+}]^2 + K_1 [\ce{H3O+}] + K_1 K_2
+      } \\[1ex]
+      [\ce{OH-}] = \dfrac{\ce{Kw}}{[\ce{H3O+}]} \\[1ex]
+      \Rightarrow \: \dfrac{
+        c_{\rm a} \! \cancel{K_1} \! [\ce{H3O+}]
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1} \! [\ce{H3O+}] \, + \! \cancel{K_1} \! K_2
+      } = \dfrac{\ce{Kw}}{[\ce{H3O+}]} \\[1ex]
+      \Rightarrow \: c_{\rm a} [\ce{H3O+}]^2 - \ce{Kw} [\ce{H3O+}] - \ce{Kw} K_2
+      = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo la solución de la ecuación de segundo grado:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{
+        \ce{Kw} + \sqrt{(\ce{Kw})^2 + 4 c_{\rm a} \ce{Kw} K_2}
+      }{
+        2 c_{\rm a}
+      } \\[1ex]
+      \begin{split}
+        [\ce{H3O+}] &amp;= \dfrac{
+          10^{-14} + \sqrt{\cancel{10^{-28}} \! + \, 4 \cdot 10^{-2} \cdot 10^{-14}
+          \cdot 10^{-10}}
+        }{
+          2 \cdot 10^{-2}
+        } = \\[1ex]
+        &amp;= \dfrac{10^{-14} + 2 \cdot 10^{-13}}{2 \cdot 10^{-2}} = 10^{-10{,}98}
+      \end{split} \\[1ex]
+      \Rightarrow \: \ce{pH} = 10{,}98
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><a name="nh4a2"></a>$\color{red}\ast$ Sistema de la sal amónica de un ácido
+diprótico:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{(NH4)2A} \quad c_{\rm a} = \pu{e-2 M} \quad \ce{p$K$1} = 4 \quad
+    \ce{p$K$2} = 10 \quad \ce{p$K$_{\ce{NH4^+}}} = 9{,}25
+    $
+    </p>
+</blockquote>
+
+<p>En solución:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{(NH4)2A -> 2 NH4^+ \! + A^{2-}}
+    $
+    </p>
+</blockquote>
+
+<p>Reacciones de equilibrio que tienen lugar:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{A^{2-} \! + H2O &lt;=&gt; HA- \! + OH-} \\[1ex]
+      \ce{HA- \! + H2O &lt;=&gt; H2A + OH-} \\[1ex]
+      \ce{NH4^+ + H2O &lt;=&gt; H3O+ \! + NH3} \\[1ex]
+      \ce{2H2O &lt;=&gt; H3O+ \! + OH-}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Especies presentes a tener en cuenta:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{H2A \quad HA- \quad A^{2-} \quad NH4^+ \quad NH3 \quad H3O+ \quad OH-}
+    $
+    </p>
+</blockquote>
+
+<p>Concentraciones:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\rm a} = [\ce{H2A}] + [\ce{HA-}] + [\ce{A^{2-}}] \\[1ex]
+      2 c_{\rm a} = [\ce{NH4^+}] + [\ce{NH3}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] + 2 [\ce{H2A}] + [\ce{HA-}] = [\ce{OH-}] + [\ce{NH3}]
+    $
+    </p>
+</blockquote>
+
+<p>El diagrama logarítmico del sistema resulta de superponer
+sobre el gráfico del ejemplo anterior la representación
+correspondiente al par $\ce{NH4^+ \! / NH3}$:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_10.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Para hallar el $\ce{pH}$ se hacen simplificaciones en el balance
+protónico que permitan establecer una igualdad entre dos
+concentraciones. Son despreciables en el mismo las concentraciones
+de $\ce{H3O+}\!$, ya que cabe pensar que el $\ce{pH}$ será básico,
+aunque no tanto como en el caso anterior, de $\ce{H2A}$, debido a
+que la segunda protonación es más difícil, y, como se observa
+en el gráfico, de $\ce{OH-}\!$, siendo por tanto la principal fuente
+de protones la desprotonación del ion amonio ($\ce{NH4^+}\mspace{-2mu}$).</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \cancel{[\ce{H3O+}]} \! + \mspace{-5mu} \cancel{2 [\ce{H2A}]} \! + [\ce{HA-}] = \!
+      \cancel{[\ce{OH-}]} \! + [\ce{NH3}] \\[1ex]
+      \Rightarrow \: [\ce{HA-}] = [\ce{NH3}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Buscando este punto en el diagrama logarítmico se encuentra
+el $\ce{pH}$.</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_11.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Un $\ce{pH} \approx 9{,}15$. Puede comprobarse en el
+gráfico como las suposiciones hechas al despreciar en el
+balance protónico se cumplen. Aquí el $\ce{pH}$ es muy inferior
+respecto al ejemplo anterior por la presencia de los iones amonio.
+Esto es, $\ce{pH Na2A} &gt;$ $\ce{pH (NH4)2A}$.</p>
+
+<p>Afinando más el valor del $\ce{pH}$ mediante cálculo analítico:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{HA-}] = [\ce{NH3}] \\[1ex]
+      [\ce{HA-}] = \dfrac{
+        c_{\rm a} \! \cancel{K_1} \! [\ce{H3O+}]
+      }{
+        \cancel{[\ce{H3O+}]^2} \! + \! \cancel{K_1} \! [\ce{H3O+}] \, + \! \cancel{K_1} \! K_2
+      } = \dfrac{c_{\rm a} [\ce{H3O+}]}{[\ce{H3O+}] + K_2} \\[1ex]
+      [\ce{NH3}] = \dfrac{
+        2 c_{\rm a} \ce{$K$_{\ce{NH4^+}}}
+      }{
+        [\ce{H3O+}] + \ce{$K$_{\ce{NH4^+}}}
+      } \\[1ex]
+      \Rightarrow \: \dfrac{
+        \cancel{c_{\rm a}} \mspace{-2mu} [\ce{H3O+}]
+      }{
+        [\ce{H3O+}] + K_2
+      } = \dfrac{
+        2 \! \cancel{c_{\rm a}} \! \ce{$K$_{\ce{NH4^+}}}
+      }{
+        [\ce{H3O+}] + \ce{$K$_{\ce{NH4^+}}}
+      } \\[1ex]
+      \Rightarrow \: [\ce{H3O+}]^2 - \ce{$K$_{\ce{NH4^+}}} [\ce{H3O+}] - 2 K_2 \ce{$K$_{\ce{NH4^+}}} \! = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Se resuelve la ecuación de segundo grado:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{
+        \ce{$K$_{\ce{NH4^+}}} + \sqrt{\left(\ce{$K$_{\ce{NH4^+}}}\right)^2 + \, 8 K_2 \ce{$K$_{\ce{NH4^+}}}}
+      }{2} \\[1ex]
+      [\ce{H3O+}] = \dfrac{
+        10^{-9{,}25} + \sqrt{10^{-18{,}50} + \, 8 \cdot 10^{-10} \cdot 10^{-9.25}}
+      }{2} = 10^{-9{,}14} \\[1ex]
+      \Rightarrow \ce{pH} = 9{,}14
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><a name="hahb"></a>$\color{red}\ast$ Sistema de dos ácidos débiles:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{HA} \quad \ce{p$K$_{\ce{HA}}} \! = 4{,}0 \quad c_{\ce{HA}} = \pu{e-2 M} \\[1ex]
+      \ce{HB} \quad \ce{p$K$_{\ce{HB}}} = 7{,}0 \quad c_{\ce{HB}} = \pu{e-1 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Reacciones:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{HA + H2O &lt;=&gt; H3O+ \! + A- \quad $K$_{\ce{HA}}} \\[1ex]
+      \ce{HB + H2O &lt;=&gt; H3O+ \! + B- \quad $K$_{\ce{HB}}} \\[1ex]
+      \ce{2 H2O &lt;=&gt; H3O+ \! + OH- \quad \ce{Kw}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Especies en el sistema:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{HA \quad A- \quad HB \quad B- \quad H3O+ \quad OH-}
+    $
+    </p>
+</blockquote>
+
+<p>Concentraciones analíticas:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\ce{HA}} = [\ce{HA}] + [\ce{A-}] \\[1ex]
+      c_{\ce{HB}} = [\ce{HB}] + [\ce{B-}]
+    \end{array} 
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = [\ce{A-}] + [\ce{B-}] + [\ce{OH-}]
+    $
+    </p>
+</blockquote>
+
+<p>Diagrama logarítmico del sistema:</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_12.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Se presupone $\ce{pH}$ ácido. Observando el diagrama, en esta zona
+pueden hacerse simplificaciones en el balance protónico. Así pues, se
+pueden despreciar la concentración de $\ce{OH-}\!$ y la
+concentración de $\ce{B-}\!$. Para esta última se aprecia
+como la línea del $\log[\ce{A-}]$ se mantine más allá de $1{,}3$
+unidades por encima de la línea del $\log[\ce{B-}]$. Esto es,
+$\log[\ce{A-}] &gt; \log[\ce{B-}] + 1{,}3\,$ ó $\,[\ce{A-}]
+&gt; 20[\ce{B-}]$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = [\ce{A-}] + \mspace{-5mu} \cancel{[\ce{B-}]} \! + \! \cancel{[\ce{OH-}]} \\[1ex]
+      \Rightarrow \: [\ce{H3O+}] = [\ce{A-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Con el punto en el que se cruzan las líneas que corresponden
+a $\ce{H3O+}\!$ y $\ce{A-}\!$ se halla el $\ce{pH}$ del
+sistema.</p>
+
+<center>
+  <object data="metodo_grafico_calculo_ph/metodo_grafico_calculo_ph_13.svgz" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Por tanto $\ce{pH} \approx 3$.</p>
+
+<p>Se puede afinar más mediante método analítico. Aquí se
+aplica la fórmula del ácido más fuerte.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = [\ce{A-}] \\[1ex]
+      [\ce{A-}] = \dfrac{
+        c_{\ce{HA}} K_{\ce{HA}}
+      }{
+        [\ce{H3O+}] + K_{\ce{HA}}
+      } \\[1ex]
+      \Rightarrow \: [\ce{H3O+}] = \dfrac{
+        c_{\ce{HA}} K_{\ce{HA}}
+      }{
+        [\ce{H3O+}] + K_{\ce{HA}}
+      } \\[1ex]
+      \Rightarrow \: 
+      [\ce{H3O+}]^2 + [\ce{H3O+}] K_{\ce{HA}} - c_{\ce{HA}} K_{\ce{HA}} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>    
+
+<p>No se puede despreciar en el denominador $K_{\ce{HA}}\mspace{-2mu}$,
+ya que el $\ce{pH}$, como hemos visto gráficamente, queda a una unidad
+del $\ce{p$K$_{\ce{HA}}}\mspace{-2mu}$ (menos de $1{,}3$ unidades
+logarítmicas). Resolviendo la ecuación de segundo grado:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{
+        -K_{\ce{HA}} + \sqrt{\left(K_{\ce{HA}}\right)^2
+        + 4 c_{\ce{HA}} K_{\ce{HA}}}
+      }{2} \\[1ex]
+      \begin{split}
+        [\ce{H3O+}] &amp;= \dfrac{
+          -10^{-4} + \sqrt{\cancel{10^{-8}} \! + 4 \cdot 10^{-2} \cdot 10^{-4}}
+        }{2} = \\[1ex]
+        &amp;= \dfrac{-10^{-4} + 2 \cdot 10^{-3}}{2} = 10^{-3{,}02}
+      \end{split} \\[1ex]
+      \Rightarrow \: \ce{pH} = 3{,}02
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En estos casos el $\ce{pH}$ viene determinado por el ácido más
+fuerte.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="calculos_ph_metodo_analitico.htm" title="Anterior">&lt;</a></li>
+  <li><a href="diagrama_distribucion.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?><svg height="45.28828mm" version="1.0" viewBox="0 0 452 171" width="119.70938mm" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-linecap="round" transform="translate(-40,-7)">
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="109.30" y="92.51">AgCl ↓</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="200.30" y="45.50">Cl<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="231.30" y="92.51">Ag<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="271.00" y="94.00">+</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="297.30" y="92.51">Cl<tspan dy="-8" font-size="75%">−</tspan></text>
+    <polyline fill="none" points="217.00,53.01 233.99,76.01" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="250.50,101.00 266.85,123.99" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="271.49,130.51 268.14,120.62 266.85,123.99 263.25,124.10" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="204" x="268.00" y="147.74">AgCl<tspan dy="7" font-size="75%">(aq)</tspan><tspan dy="-7">, AgCl</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-15" font-size="75%">−</tspan><tspan dy="8">, AgCl</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-15" font-size="75%">2−</tspan><tspan dy="8">, AgCl</tspan><tspan dy="7" font-size="75%">4</tspan><tspan dy="-15" font-size="75%">3−</tspan></text>
+    <polyline fill="none" points="177.00,97.49 169.00,92.49 214.31,92.49" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="169.00,86.49 214.31,86.49 206.31,81.49" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="100" x="362.00" y="93.75">sol. NaCl 0,1 M</text>
+    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="174" x="63.00" y="147.75">p<tspan font-style="italic">K</tspan><tspan dy="7" font-size="75%">ps</tspan> <tspan dy="-7" xml:space="preserve">= 9,5  (25 ºC,</tspan> <tspan font-style="italic">I</tspan> = 0,1)</text>
+  </g>
+</svg>
