@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg5272" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" height="275.77" width="379.12" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata5315">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Tipo de ligandos</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+<!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs id="defs5274">
+  <marker id="se_marker_end_svg_15" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_1" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_16" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_11" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_17" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_13" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_18" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_14" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_20" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_21" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_19" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_22" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+  <marker id="se_marker_end_svg_23" orient="auto" refX="50" markerUnits="strokeWidth" refY="50" markerWidth="5" viewBox="0 0 100 100" markerHeight="5">
+   <path id="svg_24" d="m100 50-100 40 30-40-30-40 100 40z" stroke="#000" stroke-width="10"/>
+  </marker>
+ </defs>
+ <title id="title5290">Tipo de ligandos</title>
+ <text id="text5334" style="word-spacing:0px;letter-spacing:0px" font-weight="bold" xml:space="preserve" font-size="19px" line-height="125%" y="68.016113" x="4.6010742" font-family="&apos;Times New Roman&apos;" fill="#000000"><tspan id="tspan5336" x="4.6010742" y="68.016113">ligandos</tspan></text>
+ <text id="text5338" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="19px" line-height="125%" y="18.192383" x="132.44678" font-family="&apos;Times New Roman&apos;" fill="#000000"><tspan id="tspan5340" x="132.44678" y="18.192383">monoatómicos</tspan></text>
+ <g id="g5364" font-size="19px" transform="translate(-356.14 -411.81)" font-family="&apos;Times New Roman&apos;" fill="#000000">
+  <text id="text5356" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="500.95496" x="658.70544" xml:space="preserve"><tspan id="tspan5358" y="500.95496" x="658.70544">neutros</tspan></text>
+  <text id="text5360" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="560.95496" x="658.13953" xml:space="preserve"><tspan id="tspan5362" y="560.95496" x="658.13953">aniónicos</tspan></text>
+ </g>
+ <text id="text5388" style="word-spacing:0px;letter-spacing:0px" font-size="19px" line-height="125%" y="118.19238" x="132.66943" font-family="&apos;Times New Roman&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5390" y="118.19238" x="132.66943">poliatómicos</tspan></text>
+ <text id="text5392" style="word-spacing:0px;letter-spacing:0px" font-size="19px" line-height="125%" y="197.61104" x="32.984863" font-family="&apos;Times New Roman&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5394" y="197.61104" x="32.984863">monodentados</tspan></text>
+ <g id="g5521" font-size="19px" transform="translate(-374.57 -413.34)" font-family="&apos;Times New Roman&apos;" fill="#000000">
+  <g id="g5515">
+   <text id="text5501" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="661.95496" x="594.41797"><tspan id="tspan5503" x="594.41797" y="661.95496">bidentados,</tspan></text>
+   <text id="text5507" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="680.95496" x="594.18604"><tspan id="tspan5509" x="594.18604" y="680.95496">tridentados, etc.</tspan></text>
+  </g>
+  <text id="text5511" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="610.95496" x="594.43652" xml:space="preserve"><tspan id="tspan5513" y="610.95496" x="594.43652">polidentados</tspan></text>
+ </g>
+ <g stroke="#000" stroke-width="2" fill="none">
+  <polyline id="polyline4192" marker-end="url(#se_marker_end_svg_20)" se:connector="svg_4 svg_8" transform="translate(3.3892 3.1092)" points="188.98 121 218.52 148 248.05 175"/>
+  <polyline id="polyline4194" marker-end="url(#se_marker_end_svg_19)" se:connector="svg_4 svg_7" transform="translate(3.3892 3.1092)" points="165.36 121 134.14 148 102.92 175"/>
+  <polyline id="polyline4196" marker-end="url(#se_marker_end_svg_18)" se:connector="svg_4 svg_6" transform="translate(1.3892 3.6481)" points="226.5 119.8 260.5 126.26 294.5 132.72"/>
+  <polyline id="polyline4198" marker-end="url(#se_marker_end_svg_17)" se:connector="svg_4 svg_5" transform="translate(1.3892 3.6481)" points="226.5 100.73 260.5 93.955 294.5 87.178"/>
+  <polyline id="polyline4200" marker-end="url(#se_marker_end_svg_16)" se:connector="svg_2 svg_4" transform="translate(3.3892 3.2129)" points="66.04 71 99.901 83 133.76 95"/>
+  <polyline id="polyline4202" marker-end="url(#se_marker_end_svg_15)" se:connector="svg_2 svg_3" transform="translate(3.3892 3.2129)" points="68.333 49 103.18 37.5 138.03 26"/>
+  <line id="line4204" y2="230.11" marker-end="url(#se_marker_end_svg_23)" x2="257.39" y1="204.11" x1="257.39"/>
+ </g>
+</svg>
