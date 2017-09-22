@@ -37,7 +37,7 @@
 body {
     background-color: #D3D3D3;
     text-align: center;
-    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
     }
     
 #all {
