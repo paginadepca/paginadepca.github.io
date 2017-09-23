@@ -36,17 +36,17 @@
   <polyline se:connector="svg_4 svg_5" stroke-width="2" id="svg_17" points="226.5,100.733 260.5,93.9554 294.5,87.1777" stroke="#000000" fill="none" marker-end="url(#se_marker_end_svg_17)"/>
   <polyline se:connector="svg_2 svg_4" stroke-width="2" id="svg_16" points="66.0396,71 99.901,83 133.762,95" stroke="#000000" fill="none" marker-end="url(#se_marker_end_svg_16)"/>
   <polyline se:connector="svg_2 svg_3" stroke-width="2" id="svg_15" points="68.3333,49 103.182,37.5 138.03,26" stroke="#000000" fill="none" marker-end="url(#se_marker_end_svg_15)"/>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="35" y="66" id="svg_2" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="bold" font-style="normal">ligandos</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="185" y="16" id="svg_3" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">monoatómicos</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="177.5" y="116" id="svg_4" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">poliatómicos</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="328" y="86" id="svg_5" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">neutros</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="335" y="146" id="svg_6" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">aniónicos</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="85" y="196" id="svg_7" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">monodentados</text>
-  <text fill="#000000" stroke="#000000" stroke-width="0" x="265" y="196" id="svg_8" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">polidentados</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="35" y="66" id="svg_2" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="bold" font-style="normal">ligandos</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="185" y="16" id="svg_3" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">monoatómicos</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="177.5" y="116" id="svg_4" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">poliatómicos</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="328" y="86" id="svg_5" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">neutros</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="335" y="146" id="svg_6" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">aniónicos</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="85" y="196" id="svg_7" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">monodentados</text>
+  <text fill="#000000" stroke="#000000" stroke-width="0" x="265" y="196" id="svg_8" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">polidentados</text>
   <line stroke-width="2" fill="none" stroke="#000000" x1="254" y1="203" x2="254" y2="228.999999" id="svg_23" marker-end="url(#se_marker_end_svg_23)"/>
   <g id="svg_26">
-   <text fill="#000000" stroke="#000000" stroke-width="0" x="260" y="247" id="svg_9" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">bidentados,</text>
-   <text fill="#000000" stroke="#000000" stroke-width="0" x="276.5" y="266" id="svg_10" font-size="19" font-family="&apos;Times New Roman&apos;, Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">tridentados, etc.</text>
+   <text fill="#000000" stroke="#000000" stroke-width="0" x="260" y="247" id="svg_9" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">bidentados,</text>
+   <text fill="#000000" stroke="#000000" stroke-width="0" x="276.5" y="266" id="svg_10" font-size="19" font-family="Tinos" text-anchor="middle" xml:space="preserve" font-weight="normal">tridentados, etc.</text>
   </g>
  </g>
 </svg>
