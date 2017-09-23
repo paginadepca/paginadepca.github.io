@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="275.77" width="379.12" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 379.11621 275.7746">
+ <defs id="defs4">
+  <marker id="marker5522" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5524" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker5426" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5428" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker5218" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5220" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker5146" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5148" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4950" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4952" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4668" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4670" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4572" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4574" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-87.585 -188.76)">
+  <text id="text5334" style="word-spacing:0px;letter-spacing:0px" font-weight="bold" xml:space="preserve" font-size="19px" line-height="125%" y="256.77673" x="92.185791" font-family="&apos;Times New Roman&apos;" fill="#000000"><tspan id="tspan5336" x="92.185791" y="256.77673">ligandos</tspan></text>
+  <text id="text5338" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="19px" line-height="125%" y="206.953" x="220.03149" font-family="&apos;Times New Roman&apos;" fill="#000000"><tspan id="tspan5340" x="220.03149" y="206.953">monoatómicos</tspan></text>
+  <g id="g5364" font-size="19px" transform="translate(-268.55 -223.05)" font-family="&apos;Times New Roman&apos;" fill="#000000">
+   <text id="text5356" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="500.95496" x="658.70544" xml:space="preserve"><tspan id="tspan5358" y="500.95496" x="658.70544">neutros</tspan></text>
+   <text id="text5360" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="560.95496" x="658.13953" xml:space="preserve"><tspan id="tspan5362" y="560.95496" x="658.13953">aniónicos</tspan></text>
+  </g>
+  <text id="text5388" style="word-spacing:0px;letter-spacing:0px" font-size="19px" line-height="125%" y="306.953" x="220.25415" font-family="&apos;Times New Roman&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5390" y="306.953" x="220.25415">poliatómicos</tspan></text>
+  <text id="text5392" style="word-spacing:0px;letter-spacing:0px" font-size="19px" line-height="125%" y="386.37164" x="120.56958" font-family="&apos;Times New Roman&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5394" y="386.37164" x="120.56958">monodentados</tspan></text>
+  <g id="g5521" font-size="19px" transform="translate(-286.98 -224.58)" font-family="&apos;Times New Roman&apos;" fill="#000000">
+   <g id="g5515">
+    <text id="text5501" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="661.95496" x="594.41797"><tspan id="tspan5503" x="594.41797" y="661.95496">bidentados,</tspan></text>
+    <text id="text5507" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="680.95496" x="594.18604"><tspan id="tspan5509" x="594.18604" y="680.95496">tridentados, etc.</tspan></text>
+   </g>
+   <text id="text5511" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="610.95496" x="594.43652" xml:space="preserve"><tspan id="tspan5513" y="610.95496" x="594.43652">polidentados</tspan></text>
+  </g>
+  <g stroke="#000" stroke-width="2" fill="none">
+   <path id="path4226" marker-end="url(#marker4668)" d="m153.23 241.36 80.338-24.975"/>
+   <path id="path4948" marker-end="url(#marker4950)" d="m153.23 263.45 80.338 24.975"/>
+   <path id="path5144" marker-end="url(#marker5146)" d="m314.96 292.46 70.116-14.023"/>
+   <path id="path5216" marker-end="url(#marker5218)" d="m314.96 312.35 70.116 14.023"/>
+   <path id="path5424" marker-end="url(#marker5426)" d="m256.36 313.28-65.11 55.1"/>
+   <path id="path5520" marker-end="url(#marker5522)" d="m281.52 313.28 65.108 55.091"/>
+   <path id="path5878" marker-end="url(#marker4572)" d="m346.01 391.41v29.048"/>
+  </g>
+ </g>
+</svg>
