@@ -1,0 +1,110 @@
+<?xml version="1.0" ?><svg height="69.12422mm" version="1.0" viewBox="0 0 245 261" width="64.88672mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
+  <g stroke-linecap="round" transform="translate(-177,-77)">
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="258.83" x2="233.00" y1="118.52" y2="133.44"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="267.00" x2="289.60" y1="189.36" y2="195.44"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="263.56" x2="278.65" y1="235.00" y2="261.17"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="217.00" x2="198.00" y1="211.32" y2="222.28"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="264.70" x2="278.65" y1="177.00" y2="152.84"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="210.01" x2="239.01" y1="167.83" y2="167.83"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="224.51" x2="224.51" y1="146.00" y2="197.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="258.83" x2="233.00" y1="295.49" y2="280.58"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="211.42" x2="200.41" y1="247.60" y2="258.53"/>
+      <line x1="208.58" x2="197.59" y1="244.79" y2="255.69"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="289.60" x2="289.60" y1="195.44" y2="218.58"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="239.01" x2="210.01" y1="246.18" y2="246.18"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="251.00" x2="239.01" y1="234.47" y2="246.18"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="267.00" x2="289.60" y1="224.63" y2="218.58"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="251.00" x2="239.01" y1="179.53" y2="167.83"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="198.00" x2="210.01" y1="179.53" y2="167.83"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="224.51" x2="224.51" y1="266.00" y2="215.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="260.72" x2="266.52" y1="294.83" y2="311.34"/>
+      <line x1="256.95" x2="262.75" y1="296.16" y2="312.66"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="278.65" x2="258.83" y1="152.84" y2="118.52"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="256.90" x2="262.01" y1="117.99" y2="99.47"/>
+      <line x1="260.76" x2="265.86" y1="119.05" y2="100.53"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="198.00" x2="210.01" y1="234.47" y2="246.18"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="238.38" x2="251.00" y1="215.00" y2="222.29"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="278.65" x2="258.83" y1="261.17" y2="295.49"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="217.00" x2="198.00" y1="202.66" y2="191.70"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="240.00" x2="251.00" y1="198.04" y2="191.69"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="208.58" x2="197.37" y1="169.23" y2="157.37"/>
+      <line x1="211.46" x2="200.28" y1="166.46" y2="154.63"/>
+    </g>
+    <g>
+      <text fill="#000" font-family="Tinos" font-size="8pt" x="291.607079646" y="224.56460177">2</text>
+    </g>
+    <g>
+      <text fill="#000" font-family="Tinos" font-size="8pt" x="291.607079646" y="195.415339233">1</text>
+    </g>
+    <g>
+      <text fill="#000" font-family="Tinos" font-size="8pt" x="280.997050147" y="264.172861357">3</text>
+    </g>
+    <g>
+      <text fill="#000" font-family="Tinos" font-size="8pt" x="249.451917404" y="304.157522124">4</text>
+    </g>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="218.30" y="210.99">Co</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="252.30" y="191.17">N</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="252.30" y="230.81">N</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="259.30" y="96.21">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="218.30" y="142.35">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="184.30" y="151.90">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="183.30" y="191.17">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="183.30" y="230.81">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="184.30" y="268.99">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="218.30" y="279.67">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="261.30" y="325.81">O</text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" textLength="103" x="314.00" y="142.24">[Co(EDTA)]<tspan dy="-8" font-size="75%">−</tspan></text>
+  </g>
+</svg>
