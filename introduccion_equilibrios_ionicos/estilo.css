@@ -36,6 +36,15 @@
     font-style: italic;
     }
 
+@font-face {
+    font-family: "STIX Two Math";
+    src: local("STIXTwoMath"),
+         local("STIX2Math"),
+         url("fonts/STIX2Math.woff2"),
+         url("fonts/STIX2Math.woff");
+    unicode-range: U+2248;
+    }
+
 body {
     background-color: #D3D3D3;
     text-align: center;
