@@ -1,21 +1,24 @@
 <?xml version="1.0" ?><svg height="46.08281mm" version="1.0" viewBox="0 0 515 174" width="136.39453mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
   <g stroke-linecap="round" transform="translate(-54,-44)">
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="112.30" y="122.50">M</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="151.00" y="124.00">+</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="190.30" y="122.50">L</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="112.30" y="122.50">M</text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="151.00" y="124.00">+</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="190.30" y="122.50">L</text>
     <polyline fill="none" points="243.00,126.50 235.00,121.50 295.41,121.50" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="235.00,115.50 295.41,115.50 287.41,110.50" stroke="#000000" stroke-width="1.0"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="322.30" y="122.50">ML</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="322.30" y="122.50">ML</text>
     <polyline fill="none" points="153.00,74.00 185.88,106.51" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="77.99,74.01 110.88,106.52" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="205.00,128.00 226.81,150.19" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="232.42,155.90 227.55,146.67 226.81,150.19 223.27,150.87" stroke="#000000" stroke-width="1"/>
     <polyline fill="none" points="131.00,129.00 182.79,181.22" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="188.42,186.90 183.51,177.69 182.79,181.22 179.25,181.91" stroke="#000000" stroke-width="1"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="71" x="235.00" y="169.75">HL, H<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">L,...</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="60.30" y="66.50">OH<tspan dy="-8" font-size="75%">−</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="140.30" y="66.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="248" x="191.00" y="202.75">M(OH), M(OH)<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">, M(OH)</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">,..., M(OH)</tspan><tspan dy="7" font-size="75%" font-style="italic">n</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="108" x="455.00" y="202.75">hidroxocomplejos</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="71" x="235.00" y="169.75">HL, H<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">L,...</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="60.30" y="66.50">OH<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="140.30" y="66.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="248" x="191.00" y="202.75">M(OH), M(OH)<tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">, M(OH)</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">,..., M(OH)</tspan><tspan dy="7" font-size="75%" font-style="italic">n</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="108" x="455.00" y="202.75">hidroxocomplejos</text>
   </g>
 </svg>

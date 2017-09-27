@@ -1,20 +1,23 @@
 <?xml version="1.0" ?><svg height="26.48438mm" version="1.0" viewBox="0 0 415 100" width="109.91016mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
   <g stroke-linecap="round" transform="translate(-71,-73)">
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="115.30" y="96.02">Ni<tspan dy="-7" font-size="75%">2+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="161.00" y="97.00">+</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="196.30" y="96.02">Y<tspan dy="-7" font-size="75%">4−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="115.30" y="96.02">Ni<tspan dy="-7" font-size="75%">2+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="161.00" y="97.00">+</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="196.30" y="96.02">Y<tspan dy="-7" font-size="75%">4−</tspan></text>
     <polyline fill="none" points="251.99,100.02 243.99,95.02 304.41,95.02" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="243.99,89.02 304.41,89.02 296.41,84.02" stroke="#000000" stroke-width="1.0"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="38" x="330.00" y="96.02">NiY<tspan dy="-8" font-size="75%">2−</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="78" x="402.00" y="96.02">(Y = EDTA)</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="38" x="330.00" y="96.02">NiY<tspan dy="-8" font-size="75%">2−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="78" x="402.00" y="96.02">(Y = EDTA)</text>
     <polyline fill="none" points="95.41,140.31 112.56,110.61" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="116.56,103.68 108.96,110.84 112.56,110.61 114.16,113.84" stroke="#000000" stroke-width="1"/>
     <polyline fill="none" points="134.91,138.99 129.02,111.36" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="127.36,103.53 126.51,113.94 129.02,111.36 132.38,112.69" stroke="#000000" stroke-width="1"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="125.30" y="157.49">NH<tspan dy="7" font-size="75%">3</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="125.30" y="157.49">NH<tspan dy="7" font-size="75%">3</tspan></text>
     <polyline fill="none" points="193.51,140.61 199.37,112.98" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="201.02,105.16 196.02,114.32 199.37,112.98 201.89,115.56" stroke="#000000" stroke-width="1"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="185.30" y="157.49">H<tspan dy="-8" font-size="75%">+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="77.30" y="157.49">OH<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="185.30" y="157.49">H<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="77.30" y="157.49">OH<tspan dy="-8" font-size="75%">−</tspan></text>
   </g>
 </svg>
