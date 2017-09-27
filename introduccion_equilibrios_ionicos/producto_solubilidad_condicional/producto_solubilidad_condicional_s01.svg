@@ -1,19 +1,22 @@
 <?xml version="1.0" ?><svg height="49.79063mm" version="1.0" viewBox="0 0 463 188" width="122.62266mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
   <g stroke-linecap="round" transform="translate(-94,-12)">
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="110.30" y="92.51">ZnS ↓</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="270.30" y="45.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="199.30" y="45.50">OH<tspan dy="-8" font-size="75%">−</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="232.30" y="92.51">Zn<tspan dy="-8" font-size="75%">2+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="273.00" y="94.00">+</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="304.30" y="92.51">S<tspan dy="-8" font-size="75%">2−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="110.30" y="92.51">ZnS <tspan font-family="Stix Two Math">↓</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="270.30" y="45.50">H<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="199.30" y="45.50">OH<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="232.30" y="92.51">Zn<tspan dy="-8" font-size="75%">2+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="273.00" y="94.00">+</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="304.30" y="92.51">S<tspan dy="-8" font-size="75%">2−</tspan></text>
     <polyline fill="none" points="217.00,53.01 233.99,76.01" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="250.00,99.00 287.35,151.50" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="291.98,158.02 288.63,148.13 287.35,151.50 283.74,151.61" stroke="#000000" stroke-width="1"/>
     <polyline fill="none" points="285.00,53.01 301.99,76.01" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="318.00,99.00 333.25,119.57" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="338.01,126.00 334.47,116.18 333.25,119.57 329.65,119.75" stroke="#000000" stroke-width="1"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="72" x="336.00" y="142.76">HS<tspan dy="-8" font-size="75%">−</tspan><tspan dy="8">, H</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">S ↑</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="254" x="288.00" y="174.74">Zn(OH)<tspan dy="-8" font-size="75%">+</tspan><tspan dy="8">, Zn(OH)</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">, Zn(OH)</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-15" font-size="75%">−</tspan><tspan dy="8">, Zn(OH)</tspan><tspan dy="7" font-size="75%">4</tspan><tspan dy="-15" font-size="75%">2−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="72" x="336.00" y="142.76">HS<tspan dy="-8" font-size="75%">−</tspan><tspan dy="8">, H</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">S <tspan font-family="Stix Two Math">↑</tspan></tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="254" x="288.00" y="174.74">Zn(OH)<tspan dy="-8" font-size="75%">+</tspan><tspan dy="8">, Zn(OH)</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-7">, Zn(OH)</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-15" font-size="75%">−</tspan><tspan dy="8">, Zn(OH)</tspan><tspan dy="7" font-size="75%">4</tspan><tspan dy="-15" font-size="75%">2−</tspan></text>
     <polyline fill="none" points="173.00,97.49 165.00,92.49 210.31,92.49" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="165.00,86.49 210.31,86.49 202.31,81.49" stroke="#000000" stroke-width="1.0"/>
   </g>

@@ -1,19 +1,22 @@
 <?xml version="1.0" ?><svg height="51.64453mm" version="1.0" viewBox="0 0 324 195" width="85.80938mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
   <g stroke-linecap="round" transform="translate(-101,-26)">
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="109.30" y="92.51">AgCl ↓</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="199.30" y="45.50">NH<tspan dy="7" font-size="75%">3</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="231.30" y="92.51">Ag<tspan dy="-8" font-size="75%">+</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="14pt" x="271.00" y="94.00">+</text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" x="297.30" y="92.51">Cl<tspan dy="-8" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="109.30" y="92.51">AgCl <tspan font-family="Stix Two Math">↓</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="199.30" y="45.50">NH<tspan dy="7" font-size="75%">3</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="231.30" y="92.51">Ag<tspan dy="-8" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="271.00" y="94.00">+</text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" x="297.30" y="92.51">Cl<tspan dy="-8" font-size="75%">−</tspan></text>
     <polyline fill="none" points="217.00,53.01 233.99,76.01" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="250.49,101.00 266.84,123.97" stroke="#000000" stroke-width="1.0"/>
     <polygon fill="#000000" fill-rule="evenodd" points="271.48,130.49 268.13,120.61 266.84,123.97 263.24,124.09" stroke="#000000" stroke-width="1"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="138" x="268.00" y="147.74">Ag(NH<tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="-8" font-size="75%">+</tspan><tspan dy="8">, Ag(NH</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-15" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="138" x="268.00" y="147.74">Ag(NH<tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="-8" font-size="75%">+</tspan><tspan dy="8">, Ag(NH</tspan><tspan dy="7" font-size="75%">3</tspan><tspan dy="-7">)</tspan><tspan dy="7" font-size="75%">2</tspan><tspan dy="-15" font-size="75%">+</tspan></text>
     <polyline fill="none" points="177.01,97.49 169.01,92.49 214.32,92.49" stroke="#000000" stroke-width="1.0"/>
     <polyline fill="none" points="169.01,86.49 214.32,86.49 206.32,81.49" stroke="#000000" stroke-width="1.0"/>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="60" x="359.00" y="93.75">NH<tspan dy="7" font-size="75%">3</tspan> <tspan dy="-7">1 M</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="97" x="109.00" y="147.74"><tspan font-style="italic">K</tspan><tspan dy="7" font-size="75%">ps</tspan> <tspan dy="-7">= 3,2·10</tspan><tspan dy="-8" font-size="75%">−10</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="78" x="109.00" y="176.74"><tspan font-style="italic">β</tspan><tspan dy="7" font-size="75%">1</tspan> <tspan dy="-7">= 2,5·10</tspan><tspan dy="-8" font-size="75%">3</tspan></text>
-    <text fill="#000000" font-family="Times New Roman" font-size="12pt" textLength="78" x="109.00" y="205.74"><tspan font-style="italic">β</tspan><tspan dy="7" font-size="75%">2</tspan> <tspan dy="-7">= 2,5·10</tspan><tspan dy="-8" font-size="75%">7</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="60" x="359.00" y="93.75">NH<tspan dy="7" font-size="75%">3</tspan> <tspan dy="-7">1 M</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="97" x="109.00" y="147.74"><tspan font-style="italic">K</tspan><tspan dy="7" font-size="75%">ps</tspan> <tspan dy="-7">= 3,2·10</tspan><tspan dy="-8" font-size="75%">−10</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="78" x="109.00" y="176.74"><tspan font-style="italic">β</tspan><tspan dy="7" font-size="75%">1</tspan> <tspan dy="-7">= 2,5·10</tspan><tspan dy="-8" font-size="75%">3</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="12pt" textLength="78" x="109.00" y="205.74"><tspan font-style="italic">β</tspan><tspan dy="7" font-size="75%">2</tspan> <tspan dy="-7">= 2,5·10</tspan><tspan dy="-8" font-size="75%">7</tspan></text>
   </g>
 </svg>
