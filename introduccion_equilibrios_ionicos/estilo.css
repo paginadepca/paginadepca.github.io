@@ -68,7 +68,7 @@ a {
     }
     
 a:hover {
-    color:red;
+    color: red;
     }
     
 #title {
@@ -152,7 +152,7 @@ a:hover {
     }
     
 blockquote {
-    margin-right:0;
+    margin-right: 0;
     }
     
 hr {
@@ -171,7 +171,7 @@ table {
 
 th, td {
     padding: 0px 5px;
-    height:2em;
+    height: 2em;
     }
     
 object {
