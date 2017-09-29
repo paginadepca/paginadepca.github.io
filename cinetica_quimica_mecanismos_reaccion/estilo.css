@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Tinos:400,400i,700,700i');
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIXTwoText"),
+         local("STIX2Text-Regular"),
+         url("fonts/STIX2Text-Regular.woff2"),
+         url("fonts/STIX2Text-Regular.woff");
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIXTwoText-Bold"),
+         local("STIX2Text-Bold"),
+         url("fonts/STIX2Text-Bold.woff2"),
+         url("fonts/STIX2Text-Bold.woff");
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIXTwoText-Italic"),
+         local("STIX2Text-Italic"),
+         url("fonts/STIX2Text-Italic.woff2"),
+         url("fonts/STIX2Text-Italic.woff");
+    font-style: italic;
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIXTwoText-BoldItalic"),
+         local("STIX2Text-BoldItalic"),
+         url("fonts/STIX2Text-BoldItalic.woff2"),
+         url("fonts/STIX2Text-BoldItalic.woff");
+    font-weight: bold;
+    font-style: italic;
+    }
+    
+@font-face {
+    font-family: "STIX Two Math";
+    src: local("STIXTwoMath"),
+         local("STIX2Math"),
+         url("fonts/STIX2Math.woff2"),
+         url("fonts/STIX2Math.woff");
+    unicode-range: U+2192, U+221E, U+2260;
+    }
+
+body {
+    background-color: #D3D3D3;
+    border: 3px solid gray;
+    margin: 25px auto;
+    width: 734px;
+    text-align: left;
+    color: #222;
+    line-height: 130%;
+    font-size: 19px;
+    font-family: "STIX Two Text", "Times New Roman", Times, serif;
+    -webkit-text-size-adjust: none;
+    }
+    
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: red;
+    }
+
+#title {
+    padding: 1.75em 2em;
+    background-color: #fcec97;
+    border-bottom: 2px solid gray;
+    position: relative;
+    }
+
+#title h3 {
+    padding: 0;
+    margin: 0;
+    }
+    
+#title ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 2em;
+    bottom: 0;
+    }
+    
+#title ul li {
+    display: inline;
+    }
+    
+#title ul li a {
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 2px;
+    color: #222;
+    }
+    
+#title ul li a:hover {
+    text-decoration: underline;
+    background-color: #FFFACD;
+    } 
+    
+#content {
+    background-color: #fff;
+    padding: 0.5em 2em;
+    }
+        
+#foot { 
+    border-top: 2px solid gray;
+    padding: 0.5em 1.9em;
+    background-color: #fcec97;
+    position: relative;
+    }
+    
+#foot a {
+    display: inline-block;
+    padding: 0.1em;
+    color: #222;
+    }
+    
+#foot a:hover {
+    text-decoration: underline;
+    background-color: #FFFACD;
+    }
+    
+#foot ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 2em;
+    bottom: 0.5em;
+    }
+    
+#foot ul li {
+    display: inline;
+    }
+    
+#foot ul li a {
+    margin-left: 0.5em;
+    }
+    
+#foot ul li a:hover {
+    text-decoration: none;
+    }
+    
+blockquote {
+    margin-right: 0;
+    }
+    
+table {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    }
+
+th, td {
+    border: 1px solid silver;
+    padding: 0px 5px;
+    height: 2em;
+    }
+
+th {
+    border-bottom: 2px solid red;
+    font-weight: normal;
+    background-color: #FFEFD5;
+    }
+    
+object {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
