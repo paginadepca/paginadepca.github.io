@@ -1,0 +1,16 @@
+<?xml version="1.0" ?><svg height="28.60313mm" version="1.0" viewBox="0 0 101 108" width="26.74922mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
+  <g stroke-linecap="round" transform="translate(-296,-138)">
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="302.30" y="192.99">A</text>
+    <polyline fill="none" points="319.01,185.98 364.37,159.78" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="371.30,155.78 361.14,158.18 364.37,159.78 364.14,163.38" stroke="#000000" stroke-width="1"/>
+    <polyline fill="none" points="319.01,193.99 364.37,220.19" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="371.30,224.20 364.14,216.60 364.37,220.19 361.14,221.79" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="377.30" y="159.00">B</text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" x="376.30" y="234.00">C</text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" textLength="15" x="328.00" y="162.25"><tspan font-style="italic">k</tspan><tspan dy="8" font-size="75%">1</tspan></text>
+    <text fill="#000000" font-family="Tinos" font-size="14pt" textLength="15" x="344.00" y="200.77"><tspan font-style="italic">k</tspan><tspan dy="8" font-size="75%">2</tspan></text>
+  </g>
+</svg>

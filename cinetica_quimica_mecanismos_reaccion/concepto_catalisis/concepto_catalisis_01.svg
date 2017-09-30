@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="179.18" width="304.73" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 304.72507 179.17554">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker5832" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5834" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker5780" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5782" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4904" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4906" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow2Mstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4191" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4194" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4475" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4477" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-321.8 368.45)">
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px">
+    <path id="path4153" d="m527.62-226.35h48.98"/>
+    <path id="path4159" d="m405.23-252.17c32.127-70.952 99.8-45.891 122.39 25.814"/>
+    <path id="path4473" marker-end="url(#marker4475)" d="m349.16-199.14v-158.69"/>
+   </g>
+   <path id="path4958" marker-end="url(#Arrow2Mend)" d="m457.24-292.52v39.166" marker-start="url(#Arrow2Mstart)"/>
+   <path id="path4977" d="m405.23-252.17 83.089-0.12631" stroke-dasharray="2,2"/>
+   <path id="path4153-9" d="m356.25-252.17h48.98" stroke-width="1px"/>
+  </g>
+  <g fill="#000000">
+   <g font-family="&apos;Tinos&apos;">
+    <g font-size="16.25px" font-style="italic">
+     <text id="text4996" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-236.37057" x="375.11215"><tspan id="tspan4998" font-size="16.25px" font-style="normal" line-height="125%" y="-236.37057" x="375.11215" font-family="&apos;Tinos&apos;">R</tspan></text>
+     <text id="text5000" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-210.57098" x="547.74036"><tspan id="tspan5002" font-size="16.25px" font-style="normal" line-height="125%" y="-210.57098" x="547.74036" font-family="&apos;Tinos&apos;">P</tspan></text>
+     <text id="text5004" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-267.84048" x="430.19684"><tspan id="tspan5006" font-style="normal" line-height="125%" y="-267.84048" x="430.19684" font-family="&apos;Tinos&apos;"><tspan id="tspan6914" font-size="16.25px" font-style="italic" line-height="125%" font-family="&apos;Tinos&apos;">E<tspan id="tspan6920" dy="4" font-size="65%">a</tspan></tspan><tspan id="tspan6922" font-size="65%">,c</tspan></tspan></text>
+    </g>
+    <text id="text5230" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="15px" line-height="125%" y="-339.83902" x="327.16098"><tspan id="tspan5232" y="-339.83902" x="327.16098"><tspan id="tspan5340" font-size="16.25px" font-style="italic" line-height="125%" font-family="&apos;Tinos&apos;">E</tspan><tspan id="tspan5342" dy="4" font-size="65%">p</tspan></tspan></text>
+   </g>
+  </g>
+  <g stroke="#000" fill="none">
+   <path id="path4902" marker-end="url(#marker4904)" d="m349.16-199.14h234.69" stroke-width="1px"/>
+   <path id="path5632" d="m405.23-252.17c55.687-148.93 109.87-76.619 122.39 25.814" stroke-width="1px"/>
+   <path id="path5778" marker-end="url(#marker5832)" d="m469.6-334.73v81.382" marker-start="url(#marker5780)"/>
+  </g>
+  <text id="text6898" style="word-spacing:0px;letter-spacing:0px" font-size="16.25px" line-height="125%" y="-305.84048" x="474.19684" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan6900" y="-305.84048" x="474.19684"><tspan id="tspan6906" font-size="16.25px" font-style="italic" line-height="125%" font-family="&apos;Tinos&apos;">E<tspan id="tspan6908" dy="4" font-size="65%">a</tspan></tspan><tspan id="tspan6910" font-size="65%">,0</tspan></tspan></text>
+  <g id="g4249">
+   <text id="text7026" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" font-style="italic" y="-282.99155" x="542.11035" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan7028" font-size="18.75px" font-style="normal" line-height="125%" y="-282.99155" x="542.11035" font-family="&apos;Tinos&apos;">R</tspan></text>
+   <text id="text7030" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" font-style="italic" y="-282.99155" x="611.11035" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan7032" font-size="18.75px" font-style="normal" line-height="125%" y="-282.99155" x="611.11035" font-family="&apos;Tinos&apos;">P</tspan></text>
+   <g id="g4225" fill-rule="evenodd">
+    <path id="path7038" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m582.44-307.51c-7.5675-0.11384-16.231 3.7531-26.682 14.166l0.70508 0.70898c11.821-11.778 21.064-14.911 28.992-13.604 7.9282 1.3078 14.672 7.137 21.307 13.607l0.69726-0.7168c-6.6609-6.4963-13.535-12.507-21.842-13.877-1.0383-0.17128-2.0967-0.2689-3.1777-0.28516z"/>
+    <path id="path4229" stroke-linejoin="round" d="m602.56-301.63 5.5182 9.5553-9.6897-5.2275c3.1964-0.52737 3.681-1.0908 4.1715-4.3278z" stroke="#000" stroke-width=".6875"/>
+   </g>
+   <g id="g4233" fill-rule="evenodd">
+    <path id="path7600" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m606.76-286.61c-6.6344 6.4704-13.378 12.298-21.307 13.605-7.9282 1.3078-17.171-1.8233-28.992-13.602l-0.70508 0.70704c11.944 11.9 21.553 15.251 29.859 13.881 8.3066-1.3702 15.181-7.3806 21.842-13.877l-0.69726-0.71484z"/>
+    <path id="path4239" stroke-linejoin="round" d="m598.36-281.97 9.6897-5.2275-5.5182 9.5553c-0.44726-3.2086-0.94773-3.7565-4.1714-4.3278z" stroke="#000" stroke-width=".6875"/>
+   </g>
+   <text id="text7750" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" font-style="italic" y="-314.99155" x="575.85803" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan7752" font-size="16.25px" font-style="italic" line-height="125%" y="-314.99155" x="575.85803" font-family="&apos;Tinos&apos;">v<tspan id="tspan7768" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">0</tspan></tspan></text>
+   <text id="text7788" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="-258.99155" x="575.85803" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000"><tspan id="tspan7790" font-size="16.25px" font-style="italic" line-height="125%" y="-258.99155" x="575.85803" font-family="&apos;Tinos&apos;">v<tspan id="tspan7792" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">c</tspan></tspan></text>
+  </g>
+  <text id="text7798" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="-342.99155" x="541.38586" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000"><tspan id="tspan7800" x="541.38586" y="-342.99155">v = v<tspan id="tspan7804" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">0</tspan><tspan dy="-4"> + v</tspan><tspan id="tspan7802" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">c</tspan></tspan></text>
+ </g>
+</svg>

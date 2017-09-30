@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="110.16" width="260.26" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 260.25733 110.15727">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-17.443 -196.31)">
+  <path id="path8091" d="m57.785 246.11h30" fill-rule="evenodd" stroke="#f00" stroke-width="1.0046px" fill="#f00"/>
+  <g>
+   <circle id="path4155" cx="57.719" stroke-linecap="square" stroke="#000" cy="246.11" r="29.566" fill="none"/>
+   <path id="path8093" d="m87.785 246.11h45" fill-rule="evenodd" stroke="#00f" fill="#00f"/>
+   <ellipse id="path8089" stroke-linecap="square" rx="44.309" ry="44.309" stroke="#000" cy="246.11" cx="132.59" fill="none"/>
+  </g>
+  <g font-family="&apos;Tinos&apos;" fill="#000000">
+   <text id="text8095" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="220.68491" x="22.296019"><tspan id="tspan8097" x="22.296019" y="220.68491">A</tspan></text>
+   <text id="text8099" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="219.24619" x="174.05196"><tspan id="tspan8101" x="174.05196" y="219.24619">B</tspan></text>
+   <g font-style="italic">
+    <text id="text8107" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16.25px" line-height="125%" y="239.97084" x="65.705986"><tspan id="tspan8109" x="65.705986" y="239.97084">r<tspan id="tspan8111" dy="4" font-size="10.562px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">A</tspan></tspan></text>
+    <text id="text8113" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16.25px" line-height="125%" y="239.97084" x="103.7269"><tspan id="tspan8115" x="103.7269" y="239.97084">r<tspan id="tspan8117" dy="4" font-size="10.562px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">B</tspan></tspan></text>
+    <text id="text8125" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="297.71231" x="171.43974"><tspan id="tspan8127" x="171.43974" y="297.71231">r<tspan id="tspan8133" dy="4" font-size="12.188px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">A</tspan><tspan dy="-4"> + r</tspan><tspan id="tspan8131" dy="4" font-size="12.188px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">B</tspan><tspan dy="-4"> = d</tspan><tspan id="tspan8129" dy="4" font-size="12.188px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">AB</tspan></tspan></text>
+    <flowRoot id="flowRoot8717" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16.25px" transform="translate(16.38 196.31)" line-height="125%"><flowRegion id="flowRegion8719"><rect id="rect8721" y="1.8566" width="242.23" x="2.527" height="118.41"/></flowRegion><flowPara id="flowPara8723"/></flowRoot>
+   </g>
+  </g>
+ </g>
+</svg>

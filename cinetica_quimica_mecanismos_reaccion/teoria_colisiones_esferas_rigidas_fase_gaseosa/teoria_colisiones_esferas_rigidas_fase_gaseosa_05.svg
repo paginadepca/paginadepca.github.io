@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="120.01" width="172.98" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 172.98448 120.01073">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4615" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4617" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.8 0 0 .8 10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4163" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.8 0 0 .8 10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4166" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.8 0 0 -.8 -10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-321.88 -282.28)">
+  <g stroke="#000" stroke-linecap="square" fill="none">
+   <path id="path4157" d="m351.02 289.1 137.03 85.131" marker-start="url(#Arrow1Lstart)"/>
+   <path id="path4155" d="m488.05 374.23h-137.03" marker-start="url(#marker4615)"/>
+   <path id="rect4150" marker-end="url(#Arrow1Lend)" d="m351.02 374.23v-85.131"/>
+  </g>
+  <g id="g5867" font-size="18.75px" transform="translate(385.24 180.2)" fill="#000000">
+   <text id="text5819" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="142.53441" x="32.949474" font-family="sans-serif" xml:space="preserve"><tspan id="tspan5823" y="142.53441" x="32.949474" font-family="&apos;Tinos&apos;"><tspan id="tspan5825" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5829" dy="4" font-size="65%" line-height="125%">AB</tspan></tspan></text>
+   <text id="text5831" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-style="italic" y="142.53441" x="32.166325" font-family="&apos;Tinos&apos;" xml:space="preserve"><tspan id="tspan5833" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="142.53441" x="32.166325" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+  </g>
+  <g id="g5875" font-size="18.75px" transform="translate(246.25 192.95)" fill="#000000">
+   <text id="text5839" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="142.53441" x="80.949478" font-family="sans-serif"><tspan id="tspan5841" y="142.53441" x="80.949478" font-family="&apos;Tinos&apos;"><tspan id="tspan5843" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5845" dy="4" font-size="65%" line-height="125%">A</tspan></tspan></text>
+   <text id="text5847" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="142.53441" x="80.166321" font-family="&apos;Tinos&apos;" font-style="italic"><tspan id="tspan5849" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="142.53441" x="80.166321" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+  </g>
+  <g id="g5883" font-size="18.75px" transform="translate(295.51 251)" fill="#000000">
+   <text id="text5855" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="142.53441" x="116.94948" font-family="sans-serif" xml:space="preserve"><tspan id="tspan5857" y="142.53441" x="116.94948" font-family="&apos;Tinos&apos;"><tspan id="tspan5859" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5861" dy="4" font-size="65%" line-height="125%">B</tspan></tspan></text>
+   <text id="text5863" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-style="italic" y="142.53441" x="116.16632" font-family="&apos;Tinos&apos;" xml:space="preserve"><tspan id="tspan5865" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="142.53441" x="116.16632" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="312.25" width="308.2" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 308.19959 312.25105">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4670" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4672" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(1.1,0,0,1.1,1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4212" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(1.1,0,0,1.1,1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4215" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-523.55 218.78)">
+  <g stroke-linejoin="round" stroke="#000" fill="none">
+   <path id="path4172" d="m698.44-212.1v148.33" marker-start="url(#Arrow2Lstart)" stroke-width=".99994"/>
+   <path id="path4184" marker-end="url(#Arrow2Lend)" d="m698.44-63.775h-148.33" stroke-width=".99994"/>
+   <path id="path4188" d="m821.69 7.4023-123.25-71.177" marker-start="url(#marker4670)"/>
+  </g>
+  <g font-size="18.75px" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000">
+   <text id="text4716" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-71.524971" x="571.69147"><tspan id="tspan4718" x="571.69147" y="-71.524971">r<tspan id="tspan5419" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">YZ</tspan></tspan></text>
+   <text id="text4720" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-15.331188" x="802.03156"><tspan id="tspan4722" x="802.03156" y="-15.331188">r<tspan id="tspan5421" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">XY</tspan></tspan></text>
+   <text id="text4724" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-181.71127" x="704.74359"><tspan id="tspan4726" x="704.74359" y="-181.71127">E<tspan id="tspan4728" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">p</tspan></tspan></text>
+   <text id="text4730" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-180.03458" x="528.97095"><tspan id="tspan4732" x="528.97095" y="-180.03458">E<tspan id="tspan4734" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">p</tspan><tspan dy="-4">, r</tspan><tspan id="tspan5413" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">XY</tspan><tspan dy="-4">, r</tspan><tspan id="tspan5411" dy="4" font-size="65%" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">YZ</tspan><tspan dy="-4">, θ = </tspan><tspan id="tspan5409" font-size="18.75px" font-style="normal" line-height="125%" font-family="&apos;Tinos&apos;">cte.</tspan></tspan></text>
+  </g>
+  <g stroke="#00f" stroke-width="2" fill="none">
+   <path id="path5423" d="m655.94 5.9243s5.9881-1.056 30.671 2.8782c25.618 4.0832 46.054 78.213 65.734 78.671 32.128 0.74892 40.775-212.66 40.775-212.66"/>
+   <path id="path5425" d="m629.94-12.076s22.727-1.7268 46.671 1.9188c28.427 4.328 51.889 52.686 64.841 52.686s27.505-172.45 27.505-172.45"/>
+   <path id="path5427" d="m607.94-28.076s30.85 2.3875 58.671 2.8782c29.965 0.5285 45.808 29.579 58.76 29.579s24.384-137.99 24.384-137.99"/>
+   <path id="path5429" d="m581.94-44.076 75.468 2.8782c28.238 1.0769 40.605 11.351 53.557 11.351s18.708-107.45 18.708-107.45"/>
+  </g>
+ </g>
+</svg>

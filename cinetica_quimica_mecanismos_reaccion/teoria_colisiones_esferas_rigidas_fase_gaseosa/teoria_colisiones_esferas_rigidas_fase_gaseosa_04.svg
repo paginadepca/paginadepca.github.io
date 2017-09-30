@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="303.35" width="571.09" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 571.09364 303.35217">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker25025" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path25027" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.8 0 0 -.8 -10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4170" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.8 0 0 .8 10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4173" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.8 0 0 -.8 -10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lend-6" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4173-5" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.8 0 0 -.8 -10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lstart-2" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4170-0" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.8 0 0 .8 10 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-28.082 356.33)">
+  <flowRoot id="flowRoot8717" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16.25px" transform="translate(16.38 196.31)" line-height="125%" font-style="italic" font-family="&apos;Tinos&apos;" fill="#000000"><flowRegion id="flowRegion8719"><rect id="rect8721" y="1.8566" width="242.23" x="2.527" height="118.41"/></flowRegion><flowPara id="flowPara8723"/></flowRoot>
+  <g id="g25345">
+   <g id="g18929" transform="translate(-.27333 1.08)">
+    <g id="g4914" transform="translate(-2.3059)">
+     <circle id="path4155" stroke-linecap="square" stroke="#000" cy="-304.5" cx="126.59" r="29.566" fill="none"/>
+     <ellipse id="path8089" stroke-linecap="square" rx="44.309" ry="44.309" stroke="#000" cy="-304.5" cx="201.46" fill="none"/>
+     <text id="text8095" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-329.9238" x="91.165581" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan8097" y="-329.9238" x="91.165581">A</tspan></text>
+     <text id="text8099" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-331.36252" x="242.92152" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan8101" y="-331.36252" x="242.92152">B</tspan></text>
+    </g>
+    <path id="path6234" d="m259.53-304.5h48.217" marker-start="url(#Arrow1Lstart)" stroke="#000" stroke-width="1px" fill="none"/>
+    <text id="text9892" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="-233.53772" x="152.9563" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000"><tspan id="tspan9894" font-size="16.25px" font-style="normal" line-height="125%" y="-233.53772" x="152.9563" font-family="&apos;Tinos&apos;">180 º</tspan></text>
+    <g id="g18822" font-size="18.75px" fill="#000000">
+     <text id="text5839" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="43.631718" font-family="sans-serif"><tspan id="tspan5841" y="-312.8186" x="43.631718" font-family="&apos;Tinos&apos;"><tspan id="tspan5843" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5845" dy="4" font-size="65%" line-height="125%">A</tspan></tspan></text>
+     <text id="text5847" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="42.84856" font-family="&apos;Tinos&apos;" font-style="italic"><tspan id="tspan5849" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="42.84856" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+    </g>
+    <path id="path11680" marker-end="url(#Arrow1Lend)" d="m33.356-304.5h48.217" stroke="#000" stroke-width="1px" fill="none"/>
+    <g id="g18814" font-size="18.75px" fill="#000000">
+     <text id="text5855" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="-312.8186" x="281.98853" font-family="sans-serif" xml:space="preserve"><tspan id="tspan5857" y="-312.8186" x="281.98853" font-family="&apos;Tinos&apos;"><tspan id="tspan5859" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5861" dy="4" font-size="65%" line-height="125%">B</tspan></tspan></text>
+     <text id="text5863" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-style="italic" y="-312.8186" x="281.20535" font-family="&apos;Tinos&apos;" xml:space="preserve"><tspan id="tspan5865" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="281.20535" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+    </g>
+   </g>
+   <g id="g25268">
+    <text id="text9892-0" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="-235.56157" x="471.90384" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000"><tspan id="tspan9894-1" font-size="16.25px" font-style="normal" line-height="125%" y="-235.56157" x="471.90384" font-family="&apos;Tinos&apos;">90 º</tspan></text>
+    <g id="g25244">
+     <circle id="path4155-7" stroke-linecap="square" stroke="#000" cy="-306.52" cx="466.36" r="29.566" fill="none"/>
+     <ellipse id="path8089-7" stroke-linecap="square" rx="44.309" ry="44.309" stroke="#000" cy="-306.52" cx="541.24" fill="none"/>
+     <text id="text8095-1" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-331.94763" x="430.93915" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan8097-3" y="-331.94763" x="430.93915">A</tspan></text>
+     <text id="text8099-2" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-333.38635" x="582.69513" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan8101-8" y="-333.38635" x="582.69513">B</tspan></text>
+     <path id="path6234-9" d="m541.24-250.97v48.217" marker-start="url(#Arrow1Lstart-2)" stroke="#000" stroke-width="1px" fill="none"/>
+     <g id="g18822-7" font-size="18.75px" transform="translate(342.08 -2.0239)" fill="#000000">
+      <text id="text5839-7" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="-312.8186" x="43.631718" font-family="sans-serif" xml:space="preserve"><tspan id="tspan5841-4" y="-312.8186" x="43.631718" font-family="&apos;Tinos&apos;"><tspan id="tspan5843-9" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5845-5" dy="4" font-size="65%" line-height="125%">A</tspan></tspan></text>
+      <text id="text5847-9" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-style="italic" y="-312.8186" x="42.84856" font-family="&apos;Tinos&apos;" xml:space="preserve"><tspan id="tspan5849-2" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="42.84856" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+     </g>
+     <path id="path11680-6" marker-end="url(#Arrow1Lend-6)" d="m375.44-306.52h48.217" stroke="#000" stroke-width="1px" fill="none"/>
+     <g id="g18814-3" font-size="18.75px" transform="translate(265.84 95.996)" fill="#000000">
+      <text id="text5855-2" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="281.98853" font-family="sans-serif"><tspan id="tspan5857-1" y="-312.8186" x="281.98853" font-family="&apos;Tinos&apos;"><tspan id="tspan5859-5" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan5861-8" dy="4" font-size="65%" line-height="125%">B</tspan></tspan></text>
+      <text id="text5863-9" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="281.20535" font-family="&apos;Tinos&apos;" font-style="italic"><tspan id="tspan5865-4" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="281.20535" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="g25193" transform="translate(-19.832 3.372)">
+   <g id="g24782" transform="translate(159.69 172)">
+    <circle id="circle24784" stroke-linecap="square" stroke="#000" cy="-304.5" cx="126.59" r="29.566" fill="none"/>
+    <ellipse id="ellipse24786" stroke-linecap="square" rx="44.309" ry="44.309" stroke="#000" cy="-304.5" cx="201.46" fill="none"/>
+    <text id="text24788" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-329.9238" x="91.165581" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan24790" y="-329.9238" x="91.165581">A</tspan></text>
+    <text id="text24792" style="word-spacing:0px;letter-spacing:0px" font-size="18.75px" line-height="125%" y="-331.36252" x="242.92152" font-family="&apos;Tinos&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan24794" y="-331.36252" x="242.92152">B</tspan></text>
+   </g>
+   <path id="path24796" marker-end="url(#marker25025)" d="m421.53-132.5h48.217" stroke="#000" stroke-width="1px" fill="none"/>
+   <text id="text24798" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="18.75px" line-height="125%" y="-61.53772" x="314.9563" font-family="&apos;Tinos&apos;" font-style="italic" fill="#000000"><tspan id="tspan24800" font-size="16.25px" font-style="normal" line-height="125%" y="-61.53772" x="314.9563" font-family="&apos;Tinos&apos;">0 º</tspan></text>
+   <g id="g24802" font-size="18.75px" transform="translate(162,172)" fill="#000000">
+    <text id="text24804" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="43.631718" font-family="sans-serif"><tspan id="tspan24806" y="-312.8186" x="43.631718" font-family="&apos;Tinos&apos;"><tspan id="tspan24808" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan24810" dy="4" font-size="65%" line-height="125%">A</tspan></tspan></text>
+    <text id="text24812" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="-312.8186" x="42.84856" font-family="&apos;Tinos&apos;" font-style="italic"><tspan id="tspan24814" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="42.84856" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+   </g>
+   <path id="path24816" marker-end="url(#Arrow1Lend)" d="m195.36-132.5h48.217" stroke="#000" stroke-width="1px" fill="none"/>
+   <g id="g24818" font-size="18.75px" transform="translate(150,172)" fill="#000000">
+    <text id="text24820" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="-312.8186" x="281.98853" font-family="sans-serif" xml:space="preserve"><tspan id="tspan24822" y="-312.8186" x="281.98853" font-family="&apos;Tinos&apos;"><tspan id="tspan24824" font-size="18.75px" font-style="italic" line-height="125%">v</tspan><tspan id="tspan24826" dy="4" font-size="65%" line-height="125%">B</tspan></tspan></text>
+    <text id="text24828" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-style="italic" y="-312.8186" x="281.20535" font-family="&apos;Tinos&apos;" xml:space="preserve"><tspan id="tspan24830" dy="-9" font-size="65%" font-style="normal" line-height="125%" y="-312.8186" x="281.20535" font-family="&apos;Stix Two Math&apos;">→</tspan></text>
+   </g>
+  </g>
+ </g>
+</svg>
