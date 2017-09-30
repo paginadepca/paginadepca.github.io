@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+      
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Mecanismos de secuencia cerrada: estructura general">
+<meta name="keywords" content="mecanismo, secuencia, cerrada">
+<title>Mecanismos de secuencia cerrada: estructura general</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Mecanismos de secuencia cerrada: estructura general</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>En un mecanismo de secuencia cerrada los intermedios se
+generan, desaparecen y vuelven a aparecer. Este tipo de reacción
+se conoce como reacción en cadena.</p>
+
+<p>Estructura general del mecanismo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+      \begin{array}{l}
+        \ce{A + M -&gt; I_$i$ + M}
+      \end{array} \  
+      \right\} \smash{\text{Iniciación}} \\[1ex]
+      \left.
+      \begin{array}{l}
+        \ce{I_$i$ + A -&gt; I_{$i$+1} + P} \\[1ex]
+        \ce{I_{$i$+1} + B -&gt; I_{$i$+2} + Q} \\[1ex]
+        \vdots \\[1ex]
+        \ce{I_{$i+n$} + \dotsb -&gt; I_$i$ + \dotsb}
+      \end{array} \ 
+      \right\} \smash{\text{Propagación}} \\[1ex]
+      \left.
+      \begin{array}{l}
+        \ce{I_$i$ + I_$i$ -&gt; X}
+      \end{array} \ 
+      \right\} \smash{\text{Terminación}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Normalmente la suma de las etapas de propagación daría como
+resultado la reacción global.</p>
+
+<p>Lo expuesto es un mecanismo típico de lo que se conoce como
+reacción en cadena lineal, en el que por cada intermedio que
+desaparece en una etapa de la propagación únicamente aparece
+otro (balance neto cero). En el caso que en la propagación
+aparecieran más intermedios que los que desaparecen (balance
+neto positivo) sería una reacción en cadena ramificada (explosiones).
+En este caso no podría aplicarse la aproximación del estado
+estacionario. Una etapa de ramificación en la propagación
+puede escribirse como:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{I_$i$ -&gt; $\alpha$ I_$j$} \quad \alpha &gt; 1
+    $
+    </p>
+</blockquote>
+
+<p>En la etapa de iniciación se genera el intermedio que va a
+dar inicio a la cadena, las etapas de propagación. En este tipo
+de reacciones los intermedios suelen ser radicales, que son
+inestables y muy reactivos.</p>
+
+<p>La etapa de iniciación puede producirse de tres maneras:</p>
+
+<blockquote>
+    <p>1. Iniciación térmica: Se calienta el sistema a una
+    temperatura tal que se producen una serie de choques del reactivo,
+    con lo que se conoce como tercer cuerpo ($\ce{M}$), de suficiente
+    energía cinética para generar radicales o intermedios de
+    reacción.</p>
+
+    <p>2. Iniciación fotoquímica: Sin necesidad de aumentar la
+    temperatura, se produce la rotura de enlaces del reactivo
+    mediante radiación, produciéndose su disociación en radicales.</p>
+
+    <p>3. Mediante un iniciador, que es una sustancia que reacciona
+    con el reactivo para dar un intermedio que inicie la cadena.</p>
+</blockquote>
+
+<p>En la propagación el intermedio generado en la etapa de iniciación
+se consume para volver a aparecer. Todos los intermedios presentes
+en las etapas de propagación se conocen como propagadores.</p>
+
+<p>En la etapa de terminación o ruptura el intermedio inicial
+desaparece, de manera que la cadena se detiene. Puede ser porque:</p>
+
+<blockquote>
+    <p>1. El intermedio o radical se recombine con él mismo y
+    desaparezca.</p>
+
+    <p>2. Se recombine con un tercero.</p>
+
+    <p>3. Se desactive sobre la pared del reactor (en general un
+    cuerpo extraño).</p>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="mecanismos_secuencia_abierta.htm" title="Anterior">&lt;</a></li>
+  <li><a href="reacciones_cadena_lineal_ejemplos.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

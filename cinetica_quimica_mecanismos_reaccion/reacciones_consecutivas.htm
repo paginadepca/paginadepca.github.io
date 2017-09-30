@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Reacciones consecutivas">
+<meta name="keywords" content="reacciones, consecutivas, sucesivas">
+<title>Reacciones consecutivas</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Reacciones consecutivas</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>No es extraño que el producto de una reacción sea a
+continuación el reactivo de otra reacción. Esto es típico en
+mecanismo de reacción.</p>
+
+<p>Aquí se estudiará el caso más sencillo de reacciones
+consecutivas o sucesivas, con coeficientes estequiométricos
+iguales a uno, en el que un reactivo a través de una reacción
+irreversible de primer orden da lugar a una única especie, que a
+su vez experimenta otra reacción irreversible de primer orden
+para dar un único producto final:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\rarrow#1#2{
+      \,
+      \overset{#1}{
+        \underset{\smash{#2}}{
+          \Rule{0pt}{0.3em}{0pt}
+          \smash{
+            \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+          }
+        } 
+      }
+      \,
+    }
+    \ce{A \rarrow{\large k_1}{} B \rarrow{\large k_2}{} C}
+    $
+    </p>
+</blockquote>
+
+<p>Las distintas especies varían con el tiempo según las
+siguientes ecuaciones:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      -\dfrac{d[\ce{A}]}{dt} = k_1 [\ce{A}] \\[1ex]
+      \dfrac{d[\ce{B}]}{dt} = k_1 [\ce{A}] - k_2 [\ce{B}] \\[1ex]
+      \dfrac{d[\ce{C}]}{dt} = k_2 [\ce{B}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Puede integrarse, tras separar variables, la ecuación de
+velocidad de desaparición de $\ce{A}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      - {\displaystyle \int_{\ce{[A]_0}}^{[\ce{A}]}} \dfrac{d[\ce{A}]}{[\ce{A}]} =
+      {\displaystyle \int_0^{\normalsize t}} k_1 dt \\[1ex]
+      \ln \dfrac{[\ce{A}]_0}{[\ce{A}]} = k_1 t \\[1ex]
+      \Rightarrow [\ce{A}] = [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si se introduce esta igualdad en la ecuación de la velocidad
+de aparición de $\ce{B}$, pudiendo así integrarla, resulta que:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d[\ce{B}]}{dt} =
+    k_1 [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t} - k_2 [\ce{B}]
+    $
+    </p>
+</blockquote>
+
+<p>Que es una ecuación diferencial del tipo:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{dy}{dx} = f(x) + g(x) \mspace{1mu} y
+    $
+    </p>
+</blockquote>
+
+<p>Cuya solución general es:</p>
+
+<blockquote>
+    <p>
+    $
+    y = e^{w(x)} \! \left( {\displaystyle \int} e^{-w(x)} f(x) \, dx + c \right)
+    \enspace$
+    con
+    $
+    \enspace
+    w(x) = {\displaystyle \int} g(x) \, dx
+    $
+    </p>
+</blockquote>
+
+<p>Puede comprobarse:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \dfrac{dy}{dx} &amp;=
+      \dfrac{d}{dx} \left(
+      e^{w(x)} \! \left( {\displaystyle \int} e^{-w(x)} f(x) \, dx + c \right)
+      \right) = \\[1ex]
+      &amp;= \underbrace{w'\mspace{-1mu} (x)}_{\large g(x)} \,
+      \underbrace{e^{w(x)} \! \left( {\displaystyle \int} e^{-w(x)} f(x) \, dx + c \right)}_{\large y}
+      + \underbrace{e^{w(x)} \mspace{1mu} e^{-w(x)}\!}_{\large 1} \, f(x) = \\[1ex]
+      &amp;= f(x) + g(x) \mspace{1mu} y
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+      \begin{array}{l}
+        y = [\ce{B}] \\
+        x = t
+      \end{array}
+      \right\} \Rightarrow \dfrac{dy}{dx} = \dfrac{d[\ce{B}]}{dt} \\[1ex]
+      f(x) = k_1 [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t} \\[1ex]
+      g(x) = -k_2 \Rightarrow w(x) = -k_2 t
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, sustituyendo en la solución general:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      [\ce{B}] &amp;= e^{-k_2 \normalsize t} \!
+      \left(
+      {\displaystyle \int} e^{k_2 \normalsize t} k_1 [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t} dt + c
+      \right) = e^{-k_2 \normalsize t} \!
+      \left(
+      {\displaystyle \int} k_1 [\ce{A}]_0 \mspace{1mu} e^{(k_2 - k_1) \normalsize t} dt + c
+      \right) = \\[1ex]
+      &amp;= e^{-k_2 \normalsize t} \!
+      \left(
+      \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1} e^{(k_2 - k_1) \normalsize t} + c
+      \right)
+      = \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1} e^{-k_1 \normalsize t} + e^{-k_2 \normalsize t} c
+      \quad \smash{\text{si}} \; k_1 \! \neq k_2
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Si se considera que a $t_0 = 0$ sólo se tiene especie
+$\ce{A}$, por tanto $[\ce{B}] = [\ce{B}]_0 = 0$, el valor de la constante
+de integración $c$ es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      0 = \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1} + c \\[1ex]
+      \Rightarrow c = - \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues para la especie $\ce{B}$:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{B}] = \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1}
+    (e^{-k_1 \normalsize t} - e^{-k_2 \normalsize t})
+    $
+    </p>
+</blockquote>
+
+<p>En todo momento se cumple que:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{[A]0 = [A] + [B] + [C]}
+    $
+    </p>
+</blockquote>
+
+<p>De tal modo que puede hallarse de forma sencilla la expresión
+para $[\ce{C}]$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      [\ce{C}] &amp;= [\ce{A}]_0 - [\ce{A}] - [\ce{B}] =
+      [\ce{A}]_0 - [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t} -
+      \dfrac{k_1 [\ce{A}]_0}{k_2 - k_1} (e^{-k_1 \normalsize t} - e^{-k_2 \normalsize t} ) = \\[1ex]
+      &amp;= [\ce{A}]_0
+      \left(
+      1 - e^{-k_1 \normalsize t} \left( 1 + \dfrac{k_1}{k_2 - k_1} \right) +
+      \dfrac{k_1}{k_2 - k_1} e^{-k_2 \normalsize t}
+      \right) = \\[1ex]
+      &amp;= [\ce{A}]_0
+      \left(
+      1 - \dfrac{k_2}{k_2 - k_1} e^{-k_1 \normalsize t} +
+      \dfrac{k_1}{k_2 - k_1} e^{-k_2 \normalsize t}
+      \right)
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Ejemplo de la representación de las concentraciones de las
+tres especies frente al tiempo:</p>
+
+<center>
+  <object data="reacciones_consecutivas/reacciones_consecutivas_01.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>La concentración de $\ce{A}$ decrece exponencialmente. La de $\ce{B}$
+alcanza un máximo y después decrece. La concentración de $\ce{C}$
+aumenta de forma continua. Siendo la velocidad de formación de $\ce{C}$
+proporcional a la concentración de $\ce{B}$, tal como queda reflejado
+en la pendiente de su representación, la velocidad al inicio es
+cero, alcanza un valor máximo cuando $[\ce{B}]$ es máxima y desciende
+luego progresivamente. Durante los primeros instantes hay
+aparentemente un intervalo de tiempo, conocido como tiempo de
+inducción, hasta que arranca la formación de $\ce{C}$. Este tiempo de
+inducción es indicativo de que el producto no es resultado de
+una reacción elemental, sino que transcurre a través de alguna
+etapa intermedia.</p>
+
+<p>El momento en el que la concentración de $\ce{B}$ es máxima se
+puede averiguar derivando la ecuación de su concentración
+frente al tiempo e igualando a cero:</p>
+
+<blockquote>
+  <p>
+  $
+  \begin{array}{l}
+    \dfrac{d[\ce{B}]}{dt} = \dfrac{k_1 [\ce{A_0}]}{k_2 - k_1}
+    \left(
+    -k_1 e^{-k_1 \normalsize t_{\rm max}} + k_2 e^{-k_2 \normalsize t_{\rm max}}
+    \right) = 0 \\[1ex]
+    -k_1 e^{-k_1 \normalsize t_{\rm max}} + k_2 e^{-k_2 \normalsize t_{\rm max}} = 0 \\[1ex]
+    k_1 e^{-k_1 \normalsize t_{\rm max}} = k_2 e^{-k_2 \normalsize t_{\rm max}} \\[1ex]
+    \dfrac{k_1}{k_2} =
+    \dfrac{e^{-k_2 \normalsize t_{\rm max}}}{e^{-k_1 \normalsize t_{\rm max}}} =
+    e^{(k_1 - k_2) \mspace{1mu} \normalsize t_{\rm max}} \\[1ex]
+    \ln \dfrac{k_1}{k_2} = (k_1 - k_2) \mspace{1mu} t_{\rm max} \\[1ex]
+    \Rightarrow t_{\rm max} = \dfrac{1}{k_1 - k_2} \ln \dfrac{k_1}{k_2}
+  \end{array}
+  $
+  </p>
+</blockquote>
+
+<p>Igualando a cero la velocidad de desaparición $\ce{B}$, en el
+máximo la velocidad es cero, puede también calcularse $[\ce{B}]_{\rm max}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{d[\ce{B}]}{dt} = k_1 [\ce{A}] - k_2 [\ce{B}] =
+      k_1 [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t} - k_2 [\ce{B}] \\[1ex]
+      \dfrac{d[\ce{B}]}{dt} =
+      k_1 [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t_{\rm max}} -
+      k_2 [\ce{B}]_{\rm max} = 0 \\[1ex]
+      [\ce{B}]_{\rm max} =
+      \dfrac{k_1}{k_2} [\ce{A}]_0 \mspace{1mu} e^{-k_1 \normalsize t_{\rm max}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>A continuación se sustituye $t_{\rm max}\!$ por el valor
+anteriormente calculado:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      [\ce{B}]_{\rm max} &amp;=
+      \dfrac{k_1}{k_2} [\ce{A}]_0 \mspace{1mu}
+      e^{\frac{\scriptstyle -k_1}{\scriptstyle k_1 - k_2} \ln \! \frac{\scriptstyle k_1}{\scriptstyle k_2}} =
+      \dfrac{k_1}{k_2} [\ce{A}]_0
+      \left( e^{\ln \! \frac{\scriptstyle k_1}{\scriptstyle k_2}} \right)^{\! \frac{\scriptstyle -k_1}{\scriptstyle k_1 - k_2}} =
+      \dfrac{k_1}{k_2} [\ce{A}]_0
+      \left( \dfrac{k_1}{k_2} \right)^{\! \frac{\scriptstyle -k_1}{\scriptstyle k_1 - k_2}} = \\[1ex]
+      &amp;= [\ce{A}]_0
+      \left( \dfrac{k_1}{k_2} \right)^{\! \frac{\scriptstyle -k_1}{\scriptstyle k_1 - k_2} + 1} =
+      [\ce{A}]_0 \left( \dfrac{k_1}{k_2} \right)^{\! \frac{\scriptstyle k_2}{\scriptstyle k_2 - k_1}}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Ejemplos con dos valores de $k_1 \mspace{-1mu} / \mspace{2mu} k_2$:</p>
+
+<center>
+  <object data="reacciones_consecutivas/reacciones_consecutivas_02.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+
+  <object data="reacciones_consecutivas/reacciones_consecutivas_03.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Cuando $k_1 \gg k_2$ se acumula de forma rápida especie $\ce{B}$,
+ya que desaparece para dar la especie $\ce{C}$ más lentamente de lo que
+aparece a partir de $\ce{A}$. Por tanto en esta situación el máximo de $\ce{B}$
+será grande, y su concentración se acercará y superará a la de $\ce{A}$ en poco
+tiempo.</p>
+
+<p>Cuando $k_2 \gg k_1$ no da tiempo a que se acumule de forma importante
+la especie $\ce{B}$, ya que reacciona más rápido para dar $\ce{C}$ de lo que
+se genera a partir de $\ce{A}$. Así pues, en este caso el máximo será más bajo,
+quedando por debajo de la concentración de $[\ce{A}]$.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="reacciones_paralelas.htm" title="Anterior">&lt;</a></li>
+  <li><a href="metodos_experimentales_reacciones_rapidas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

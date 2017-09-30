@@ -1,0 +1,688 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Teoría de colisiones de esferas rígidas en fase gaseosa">
+<meta name="keywords" content="teoría, colisiones, esferas, rígidas, fase, gaseosa">
+<title>Teoría de colisiones de esferas rígidas en fase gaseosa</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Teoría de colisiones de esferas rígidas en fase
+gaseosa</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Desarrollada por Lewis a principios del siglo XX ($1918$).</p>
+
+<p>Suposiciones:</p>
+
+<blockquote>
+<p>1) Las moléculas son esferas rígidas. No se deforman al
+chocar.</p>
+
+<p>2) Las moléculas deben chocar para que se pueda dar la
+reacción.</p>
+
+<p>3) No todos los choques conducen a producto. Para que tenga
+lugar la reacción se necesita un mínimo de energía cinética
+denominado energía umbral.</p>
+
+<p>4) Durante la reacción se mantiene la distribución de
+velocidades de Maxwell-Boltzmann.</p>
+</blockquote>
+
+<p>El tratamiento será no riguroso.</p>
+
+<p>Caso de una reacción homogénea bimolecular elemental:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{A + B -&gt; P}
+    $
+    </p>
+</blockquote>
+
+<p>El primer paso va a ser encontrar el número de colisiones de $\ce{A}$
+con $\ce{B}$ por unidad de tiempo y volumen.</p>
+
+<p>Cuando ambas moléculas chocan la distancia entre centros es
+la suma de sus radios:</p>
+
+<center>
+  <object data="teoria_colisiones_esferas_rigidas_fase_gaseosa/teoria_colisiones_esferas_rigidas_fase_gaseosa_01.svg"
+  type="image/svg+xml" width="260" height="110">
+  </object>
+</center>
+
+<p>Si $d_{\ce{AB}}\mspace{-2mu}$, diámetro de colisión,
+es el radio de una esfera centrada en $\ce{A}$, siempre que el
+centro de una molécula $\ce{B}$ se encuentre dentro de esta
+esfera las dos moléculas chocarán. Esta esfera al desplazarse
+genera un cilindro. Si se considera una única molécula de $\ce{A}$
+que se desplaza rodeada de moléculas de $\ce{B}$ en reposo y
+uniformemente distribuidas, la molécula de $\ce{A}$ chocará
+con todas las moléculas de $\ce{B}$ que se encuentre a su paso
+cuyo centro esté dentro de ese cilindro.</p>
+
+<center>
+  <object data="teoria_colisiones_esferas_rigidas_fase_gaseosa/teoria_colisiones_esferas_rigidas_fase_gaseosa_02.svg"
+  type="image/svg+xml" width="648" height="250">
+  </object>
+</center>
+
+<p>Donde $d_{\ce{A}}$ y $d_{\ce{B}}$ son los respectivos
+diámetros de $\ce{A}$ y $\ce{B}$.</p>
+
+<p>La velocidad media relativa de las moléculas de $\ce{A}$
+respecto a las moléculas de $\ce{B}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v}_{\mspace{-1mu}\ce{AB}}
+    $
+    </p>
+</blockquote>
+
+<p>Para un tiempo $dt$ la molécula $\ce{A}$ recorrerá
+(espacio $=$ velocidad $\times$ tiempo) una distancia:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v}_{\mspace{-1mu}\ce{AB}} \, dt
+    $
+    </p>
+</blockquote>
+
+<p>Esto implica que durante este tiempo barre un cilindro de
+volumen (base $\times$ longitud):</p>
+
+<blockquote>
+    <p>
+    $
+    V_{\rm cil} = \pi (d_{\ce{AB}})^2 \overline{v}_{\mspace{-1mu}\ce{AB}} \, dt
+    $
+    </p>
+</blockquote>
+
+<p>Como las moléculas de $\ce{B}$ están uniformemente
+distribuidas por el volumen total del recipiente, el número de
+moléculas de $\ce{B}$ con su centro en el interior del
+cilindro, por regla de tres, es:</p>
+
+<blockquote>
+    <p>
+    $
+    V_{\rm cil} \dfrac{N_{\ce{B}}}{V}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $V$ es el volumen del recipiente y $N_{\ce{B}}$
+el número total de moléculas de $\ce{B}$. Este número
+hallado de moléculas de $\ce{B}$ con su centro situado dentro
+del cilindro equivale al número de colisiones que se producen
+entre la molécula de $\ce{A}$ y las moléculas de $\ce{B}$
+en el tiempo $dt$. Si $z_{(\ce{A})\ce{B}}\!$ es el número de
+colisiones entre una molécula de $\ce{A}$ y
+las moléculas de $\ce{B}$ por unidad de tiempo, entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    z_{(\ce{A})\ce{B}} = V_{\rm cil} \dfrac{N_{\ce{B}}}{V} \dfrac{1}{dt} =
+    \pi (d_{\ce{AB}})^2 \overline{v}_{\mspace{-1mu}\ce{AB}} \dfrac{N_{\ce{B}}}{V}    
+    $
+    </p>
+</blockquote>
+
+<p>El número total de choques entre moléculas de $\ce{A}$ y $\ce{B}$
+por unidad de tiempo resultará de multiplicar $z_{(\ce{A})\ce{B}}\!$
+por el número total de moléculas de $A$. Si $Z_{\ce{AB}}$
+es el número total de colisiones entre moléculas de $\ce{A}$
+y $\ce{B}$ por unidad de tiempo y unidad de volumen, entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    Z_{\ce{AB}} = \dfrac{N_{\ce{A}} z_{(\ce{A})\ce{B}}}{V} =
+    \pi (d_{\ce{AB}})^2 \overline{v}_{\mspace{-1mu}\ce{AB}} \dfrac{N_{\ce{B}}}{V} \dfrac{N_{\ce{A}}}{V}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $N_{\ce{A}}$ es el número total de
+moléculas de $\ce{A}$.</p>
+
+<p>Puede también calcularse la velocidad media relativa de las
+moléculas de $\ce{A}$ respecto a las de $\ce{B}$. Por
+definición:</p>
+
+<center>
+  <object data="teoria_colisiones_esferas_rigidas_fase_gaseosa/teoria_colisiones_esferas_rigidas_fase_gaseosa_03.svg"
+  type="image/svg+xml" width="657" height="159">
+  </object>
+</center>
+
+<p>Por tanto estos vectores forman un triángulo. En una
+colisión las moléculas pueden chocar desde cualquier ángulo
+entre $0$ y $\pu{180º}$. Esto es:</p>
+
+<center>
+  <object data="teoria_colisiones_esferas_rigidas_fase_gaseosa/teoria_colisiones_esferas_rigidas_fase_gaseosa_04.svg"
+  type="image/svg+xml" width="571" height="303">
+  </object>
+</center>
+
+<p>Para calcular la velocidad media relativa se toma el ángulo
+medio de aproximación entre ambas moléculas, esto es $\pu{90º}$, y como
+módulo de los vectores sus respectivas velocidades medias. Esto
+da un triángulo rectángulo entre los vectores de velocidad, lo
+que permite emplear el teorema de Pitágoras. Así pues:</p>
+
+<center>
+<table style="border:none">
+  <tr>
+    <td style="border:none;padding-top:1em" valign="top">
+      $
+      \overline{v}_{\ce{AB}} =
+      \left(
+      (\mspace{1mu}\overline{v}_{\ce{A}})^2 + (\mspace{1mu}\overline{v}_{\ce{B}})^{2}
+      \right)^{\! 1/\mspace{2mu} 2} \quad$
+    </td>
+    <td style="border:none">
+      <object data="teoria_colisiones_esferas_rigidas_fase_gaseosa/teoria_colisiones_esferas_rigidas_fase_gaseosa_05.svg"
+      type="image/svg+xml" width="173" height="120" style="display:inline;margin:0">
+      </object>
+    </td>
+  </tr>
+</table>
+</center>
+
+<p>Siendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \overline{v}_{\ce{A}} =
+      \left( \dfrac{8kT}{\pi m_{\ce{A}}} \right)^{\! 1/\mspace{2mu} 2} \\[1ex]
+      \overline{v}_{\ce{B}} =
+      \left( \dfrac{8kT}{\pi m_{\ce{B}}} \right)^{\! 1/\mspace{2mu} 2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \overline{v}_{\ce{AB}} =
+      \left(
+      \dfrac{8kT}{\pi m_{\ce{A}}} + \dfrac{8kT}{\pi m_{\ce{B}}}
+      \right)^{\! 1 /\mspace{2mu} 2} =
+      \left(
+      \dfrac{8kT}{\pi} \dfrac{m_{\ce{B}} + m_{\ce{A}}}{m_{\ce{A}} m_{\ce{B}}}
+      \right)^{\! 1 /\mspace{2mu} 2} =
+      \left( \dfrac{8kT}{\pi \mu} \right)^{1 /\mspace{2mu} 2} \\[1em]
+      \mu = \dfrac{m_{\ce{A}} m_{\ce{B}}}{m_{\ce{A}} + m_{\ce{B}}} \quad
+      (\smash{\text{masa reducida}})
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la expresión encontrada anteriormente para $Z_{\ce{AB}}$:</p>
+
+<blockquote>
+    <p>
+    $
+    Z_{\ce{AB}} =
+    \pi (d_{\ce{AB}})^2 \dfrac{N_{\ce{B}}}{V} \dfrac{N_{\ce{A}}}{V}
+    \left( \dfrac{8kT}{\pi \mu} \right)^{1 /\mspace{2mu} 2}
+    $
+    </p>
+</blockquote>
+
+<p>Fórmula que da el número de colisiones $\ce{A{-}B}$
+por unidad de volumen y unidad de tiempo.</p>
+
+<p>Caso de una reacción elemental tal que:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{A + A -&gt; P}
+    $
+    </p>
+</blockquote>
+
+<p>La velocidad relativa aquí:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v}_{\ce{AA}} =
+    \left(
+    (\overline{v}_{\ce{A}})^2 + (\overline{v}_{\ce{A}})^2
+    \right)^{\! 1/\mspace{2mu}2} = \sqrt{2} \, \overline{v}_{\ce{A}}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto el número de colisiones de una molécula $\ce{A}$
+con otras moléculas de $\ce{A}$ por unidad de tiempo:</p>
+
+<blockquote>
+    <p>
+    $
+    z_{(\ce{A})\ce{A}} =
+    \pi (d_{\ce{A}})^2 \overline{v}_{\ce{AA}} \dfrac{N_{\ce{A}}}{V} =
+    \sqrt{2} \pi (d_{\ce{A}})^2 \overline{v}_{\ce{A}} \dfrac{N_{\ce{A}}}{V}
+    $
+    </p>
+</blockquote>
+
+<p>El número de colisiones totales $\ce{A{-}A}$ por
+unidad de tiempo y unidad de volumen $Z_{\ce{AA}}$
+resultará de multiplicar $z_{(\ce{A})\ce{A}}$
+por la mitad del número total de moléculas de $\ce{A}$, para
+no contar dos veces una misma colisión, y dividir por el volumen
+del recipiente:</p>
+
+<blockquote>
+    <p>
+    $
+    Z_{\ce{AA}} = z_{(\ce{A})\ce{A}} \dfrac{N_{\ce{A}}}{2} \dfrac{1}{V} =
+    \dfrac{1}{\sqrt{2}} \pi (d_{\ce{A}})^2 \overline{v}_{\ce{A}}
+    \left( \dfrac{N_{\ce{A}}}{V} \right)^{\! 2}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo la velocidad media de $\ce{A}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v}_{\ce{A}} =
+    \left( \dfrac{8kT}{\pi m_{\ce{A}}} \right)^{\! 1/\mspace{2mu}2} =
+    \left( \dfrac{8RT}{\pi M_{\ce{A}}} \right)^{\! 1/\mspace{2mu}2}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    Z_{\ce{AA}} = \dfrac{1}{\sqrt{2}} \pi (d_{\ce{A}})^2
+    \left( \dfrac{8RT}{\pi M_{\ce{A}}} \right)^{\! 1/\mspace{2mu}2}
+    \left( \dfrac{N_{\ce{A}}}{V} \right)^{\! 2}
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando la expresión de la ley de los gases ideales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      P_{\ce{A}} V = \dfrac{N_{\ce{A}}}{N_0} RT \\[1ex]
+      \Rightarrow V = \dfrac{N_{\ce{A}} RT}{P_{\ce{A}} N_0} \\[1ex]
+      \Rightarrow Z_{\ce{AA}} =
+      \dfrac{1}{\sqrt{2}} \pi (d_{\ce{A}})^2
+      \left( \dfrac{8RT}{\pi M_{\ce{A}}} \right)^{\! 1/\mspace{2mu}2}
+      \left( \dfrac{P_{\ce{A}} N_0}{RT} \right)^{\! 2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Haciendo la suposición para la reacción $\ce{A{-}B}$ que todas las
+colisiones dan producto, la velocidad de reacción, según el
+desarrollo anteriormente llevado a cabo, es:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm r} = \dfrac{Z_{\ce{AB}}}{N_0} =
+    \dfrac{
+      \smash{\text{nº colisiones}} \mspace{2mu}/\mspace{2mu} (\pu{dm3 s})
+    }{
+      \smash{\text{número de Avogadro}}
+    } \equiv \dfrac{\pu{mol}}{\pu{dm3 s}}
+    $
+    </p>
+</blockquote>
+
+<p>Entonces sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm r} = \pi (d_{\ce{AB}})^2 \dfrac{N_{\ce{A}}}{V} \dfrac{N_{\ce{B}}}{V}
+    \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2} \dfrac{1}{N_0}
+    $
+    </p>
+</blockquote>
+
+<p>Multiplicando y dividiendo por el número de Avogadro:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm r} = \pi (d_{\ce{AB}})^2 \dfrac{N_{\ce{A}}}{N_0 V} \dfrac{N_{\ce{B}}}{N_0 V}
+    \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2} N_0 =
+    \pi (d_{\ce{AB}})^2 [\ce{A}] [\ce{B}] N_0
+    \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo que para la reacción elemental:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{A + B -&gt; P} \\[1ex]
+      v_{\rm r} = k_{\rm exp} [\ce{A}] [\ce{B}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, comparando las velocidades teórica y experimental,
+la constante de velocidad teórica $k_{\rm t}$, según
+la teoría de colisiones, si se considera que todos los choques
+conducen a reacción, es:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm t} =
+    \pi (d_{\ce{AB}})^2 N_0 \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2}
+    $
+    </p>
+</blockquote>
+
+<p>Experimentalmente se encuentra que esta $k_{\rm \normalsize t}$
+es muy distinta a la $k_{\rm exp}$. Aquí, por esta
+discrepancia, se echa mano de la tercera suposición planteada al
+inicio de todo este desarrollo. Esto es, la reacción tendrá
+lugar sólo en las colisiones que superen una energía cinética
+mínima, denominada energía umbral. Teniendo en cuenta esto,
+entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v_{\rm r} = \dfrac{Z_{\ce{AB}}}{N_0} F \\[1ex]
+      \Rightarrow k_{\rm t} =
+      \pi (d_{\ce{AB}})^2 N_0
+      \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2} F
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $F$ es la fracción de moléculas con energía
+cinética superior a la energía umbral. Para calcular su valor,
+dado que la colisión se produce en dos dimensiones, se empleará
+la distribución de velocidades de un gas bidimensional:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{dN_{v}}{N} =
+    \dfrac{m}{kT} e^{-mv^2/\mspace{2mu} 2k \normalsize t} v \, dv
+    $
+    </p>
+</blockquote>
+
+<p>Siendo para una molécula su energía cinética y su
+diferencial:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \varepsilon = \dfrac{1}{2} m v^2 \\[1ex]
+      d\varepsilon = mv \, dv
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la expresión de la distribución de
+velocidades de un gas bidimensional:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{dN_{\varepsilon}}{N} =
+    \dfrac{1}{kT} e^{-\varepsilon \mspace{1mu} / kT} d\varepsilon
+    $
+    </p>
+</blockquote>
+
+<p>Integrando entre $\varepsilon_{\rm umb} \mspace{-2mu}$ hasta $\infty$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      F = \dfrac{N_{\varepsilon \mspace{1mu} &gt; \varepsilon_{\rm umb}}}{N} =
+      {\displaystyle \int_{\varepsilon_{\rm umb}}^\infty}
+      \dfrac{1}{kT} e^{-\varepsilon \mspace{1mu} / kT} d\varepsilon \\[1ex]
+      F = e^{-\varepsilon_{\rm umb} \mspace{1mu} / kT} =
+      e^{-E_{\rm umb} \mspace{1mu} / N_0 kT} =
+      e^{-E_{\rm umb} \mspace{1mu} / RT}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $E_{\rm umb}$ es la energía umbral
+por mol. Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm t} = \pi (d_{\ce{AB}})^2 N_0
+    \left( \dfrac{8kT}{\pi \mu} \right)^{\! 1/\mspace{2mu}2}
+    e^{-E_{\rm umb} \mspace{1mu} / RT}
+    $
+    </p>
+</blockquote>
+
+<p>Esta igualdad puede simplificarse como:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_{\rm t} = A' T^{1/\mspace{2mu}2} e^{-E_{\rm umb} \mspace{1mu} / RT} \\[1ex]
+      \ln k_{\rm t} = \ln A' + \dfrac{1}{2} \ln T - \dfrac{E_{\rm umb}}{RT}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Dado que la teoría de colisiones no permite hallar la $E_{\rm umb}$,
+se compara con la constante experimental:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_{\rm exp} = A e^{-E_{\large a}/RT} \\[1ex]
+      \ln k_{\rm exp} = \ln A - \dfrac{E_a}{RT}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Derivando con la temperatura el $\ln k_{\rm t}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d \ln k_{\rm t}}{dT} = \dfrac{1}{2T} + \dfrac{E_{\rm umb}}{RT^2}
+    $
+    </p>
+</blockquote>
+
+<p>Por definición:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d \ln k_{\rm exp}}{dT} = \dfrac{E_a}{RT^2}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{2T} + \dfrac{E_{\rm umb}}{RT^2} = \dfrac{E_a}{RT^2} \\[1ex]
+      \Rightarrow E_{\rm umb} = E_a - \dfrac{RT}{2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La mayor parte de las veces $RT/\mspace{2mu}2$ es muy pequeño, por lo que:</p>
+
+<blockquote>
+    <p>
+    $
+    E_{\rm umb} \approx E_a
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm t}
+    = A' T^{1 /\mspace{2mu} 2} e^{-(E_{\large a} - RT\mspace{2mu}/\mspace{2mu}2)/RT}
+    \approx A' T^{1/\mspace{2mu}2} e^{-E_{\large a}/RT}
+    = A'' e^{-E_{\large a} / RT}
+    $
+    </p>
+</blockquote>
+
+<p>Ahora las constantes de velocidad son más parecidas, pero
+aún se necesita mejorar la aproximación. Para ello se introduce
+otro factor más. Éste es el conocido como factor estérico $p$,
+cuyo valor está comprendido entre $0$ y $1$.</p>
+
+<blockquote>
+  <p>
+  $
+  k_{\rm t} = A' T^{1/\mspace{2mu}2} e^{-E_{\large a}/RT} p \qquad p = (0,1)
+  $
+  </p>
+</blockquote>
+
+<p>La existencia de este factor $p$ se justifica en que
+para que las moléculas al chocar den productos necesitan hacerlo
+en la posición adecuada. Por tanto representa la fracción de
+colisiones en las que las moléculas tienen una orientación
+adecuada. Su valor se calcula de la relación:</p>
+
+<blockquote>
+    <p>
+    $
+    p = \dfrac{A_{\rm exp}}{A''} = \dfrac{A_{\rm exp}}{A' T^{1/\mspace{2mu}2}}
+    $
+    </p>
+</blockquote>
+
+<p>Cuanto más se acerca el valor del factor estérico a uno más
+colisiones con la orientación adecuada se producen.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="distribucion_velocidades_gas_ideal.htm" title="Anterior">&lt;</a></li>
+  <li><a href="introduccion_teoria_estado_transicion_teoria_complejo_activado.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

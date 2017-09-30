@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","color.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Métodos experimentales para reacciones rápidas">
+<meta name="keywords" content="métodos, experimentales, reacciones, rápidas, flujo, relajación">
+<title>Métodos experimentales para reacciones rápidas</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Métodos experimentales para reacciones rápidas</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<blockquote>
+  <p>$\pu{E1 s} &gt; t_{1/2} &gt; \pu{1 ms} \Rightarrow$ métodos de flujo</p>
+
+  <p>$t_{1/2} &lt; \pu{1 ms} \Rightarrow$ métodos de relajación</p>
+</blockquote>
+
+<p>- Métodos de flujo:</p>
+
+<p>Se basan en minimizar el tiempo de mezclado.</p>
+
+<p>En el método de flujo lineal el reactor es un tubo lineal de
+sección uniforme. Por uno de los extremos entran los reactivos
+separadamente, mezclándose en este punto de forma rápida. La
+mezcla reaccionante se desplaza por el tubo, a lo largo del cual
+van variando las concentraciones.</p>
+
+<p>Siendo la velocidad del flujo conocida, según la fórmula de
+la velocidad igual a la distancia partida del tiempo, diferentes
+posiciones de observación a lo largo del tubo corresponderán a
+diferentes tiempos de reacción. Otra posibilidad es variar la
+velocidad del flujo y mantener la posición de observación de
+tal modo que el tiempo iría cambiando. La observación o
+análisis se hace mediante espectroscopia.</p>
+
+<p>Este método anterior con un flujo continuo consume mucho
+reactivo, lo que puede resultar un inconveniente importante.
+Existe una variante que se denomina de flujo parado o detenido.
+Consiste en detener el flujo, y en un punto fijo, próximo a la
+cámara de mezclado, se empieza a medir en el mismo instante, de
+forma continua, por espectroscopia la concentración frente al
+tiempo.</p>
+
+<p>- Métodos de relajación:</p>
+
+<p>Consisten en perturbar el sistema ya en equilibrio mediante un
+cambio, p. ej., de temperatura o presión, y estudiar, mediante
+una técnica instrumental registrada electrónicamente, como
+vuelve al nuevo equilibrio. Este regreso al equilibrio se conoce
+como relajación.</p>
+
+<p>Estudio de un ejemplo sencillo mediante el método conocido
+como salto de temperatura:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\eqarrow#1#2{
+      \Newextarrow{\xrightleftharpoons}{10,10}{0x21CC} 
+      \overset{#1}{
+        \underset{#2}{
+          \Rule{0pt}{0.4em}{0pt}
+          \smash{
+            \xrightleftharpoons[\hphantom{#2}]{\hphantom{#1}}
+          }
+        }
+      }
+    }
+    \begin{alignat}{5}
+      &amp;\ce{&amp;&amp;A &amp;\enspace\eqarrow{\large k_1}{\large k_{-1}}\enspace&amp; &amp;&amp;B} &amp;&amp;
+      \quad\smash{\text{(reacción extraordinariamente rápida)}} \\
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{1mu} a &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} &amp;&amp; \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{-\,x} &amp;&amp; &amp;&amp;\mspace{1mu} x &amp;&amp; \\[1ex]
+      &amp;\color{#9400d3} t \mathbin{=} \infty &amp;\color{#9400d3} a\,&amp;
+      \color{#9400d3} \rlap{-\,x_{\rm e}} &amp;&amp; &amp;&amp;\color{#9400d3} x_{\rm e} &amp;&amp;
+      \;\llap{
+        \bbox[3px,border:2px solid black]{
+          \mathstrut
+          \hphantom{t_0 = 0 \quad a\,{\rm A} \enspace\eqarrow{\large k_1}{\large k_{-1}}\enspace x_{\rm e}}
+        }
+      } \enspace T_1 \\[1ex]
+      &amp;\color{#009e73} t \mathbin{=} \infty &amp;\color{#009e73} a\,&amp;
+      \color{#009e73} \rlap{-\,x_{\rm e}'} &amp;&amp; &amp;&amp;\color{#009e73} x_{\rm e}' &amp;&amp;
+      \;\llap{
+        \bbox[3px,border:2px solid black]{
+          \mathstrut
+          \hphantom{t_0 = 0 \quad a\,{\rm A} \enspace\eqarrow{\large k_1}{\large k_{-1}} \enspace x_{\rm e}'}
+        } 
+      }\enspace T_2
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Para el estudio de la relajación se tomará como $t = 0$ el
+momento en que se perturba el equilibrio de partida.</p>
+
+<p>Lo que se pretende es conocer las constantes de velocidad $k_1$
+y $k_{-1}$ a la temperatura $T_2$. Para ello al sistema en equilibrio
+a una temperatura $T_1$ se le suministra la cantidad de energía necesaria
+para que prácticamente instantáneamente adquiera la nueva temperatura $T_2$.
+El sistema fuera del equilibrio se relaja, evoluciona hacia el
+nuevo equilibrio. Esto puede representarse gráficamente:</p>
+
+<center>
+  <object data="metodos_experimentales_reacciones_rapidas/metodos_experimentales_reacciones_rapidas.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>La dificultad experimental estriba en conseguir calentar
+instantáneamente y homogéneamente el sistema a la temperatura $T_2$.
+El estudio será mejor cuanto más se acerque a la idealidad esto.
+Tecnología compleja.</p>
+
+<p>Estudio cinético de la relajación:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      x = x_{\rm e}' - \Delta x \\[1ex]
+      \llap{\Rightarrow {}} \dfrac{dx}{dt} = - \dfrac{d \Delta x}{dt} = k_1(a - x) - k_{-1} x
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En el equilibrio se cumple la condición que la velocidad
+total es cero:</p>
+
+<blockquote>
+    <p>
+    $
+    0 = k_1 (a - x_{\rm e}') - k_{-1} x_{\rm e}'
+    $
+    </p>
+</blockquote>
+
+<p>Restando esta última ecuación a la que la precede:</p>
+
+<blockquote>
+  <p>
+  $
+  -\dfrac{d{\Delta x}}{dt} = k_1 (x_{\rm e}' - x) + k_{-1} (x_{\rm e}' - x) =
+  (k_1 + k_{-1} \mspace{-1mu}) \Delta x
+  $
+  </p>
+</blockquote>
+
+<p>Separando variables e integrando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      -\dfrac{d{\Delta x}}{\Delta x} = (k_1 + k_{-1} \mspace{-1mu} ) \, dt \\[1ex]
+      -{\displaystyle \int_{(\Delta x)_0}^{\Delta x}} \dfrac{d{\Delta x}}{\Delta x} =
+      {\displaystyle \int_0^{\normalsize t}} (k_1 + k_{-1} \mspace{-1mu} ) \, dt \\[1ex]
+      \Rightarrow \ln \dfrac{(\Delta x)_0}{\Delta x} =
+      (k_1 + k_{-1} \mspace{-1mu} ) \mspace{1mu} t
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La representación del primer término de esta expresión
+frente al tiempo daría como pendiente $k_1 \mspace{-2mu} + k_{-1} \mspace{-1mu}$.
+Siendo la constante de equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    K = \dfrac{x_{\rm e}'}{a - x_{\rm e}'}
+    $
+    </p>
+</blockquote>
+
+<p>De la condición de equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_1 (a - x_{\rm e}') = k_{-1} x_{\rm e}' \\[1ex]
+      \dfrac{k_1}{k_{-1}} = \dfrac{x_{\rm e}'}{a - x_{\rm e}'}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    K = \dfrac{k_1}{k_{-1}}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, con el dato de la constante de equilibrio y el
+estudio experimental anterior, puede calcularse el valor
+individual de cada constante de velocidad.</p>
+
+<p>Se define el tiempo de relajación $\tau$ como aquel en el que:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{(\Delta x)_0}{\Delta x} = e
+    $
+    </p>
+</blockquote>
+
+<p>Esto es, el tiempo de relajación es aquel en el que $\Delta x \mspace{1mu}$
+es $1 / \mspace{1mu} e \mspace{1mu}$ el valor de $(\Delta x)_0$ ($1 / \mspace{1mu} e$ veces
+la distancia inicial hasta el nuevo equilibrio). Así pues, para el ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ln e = 1 = (k_1 + k_{-1} \mspace{-1mu}) \mspace{1mu} \tau \\[1ex]
+      \tau = \dfrac{1}{k_1 + k_{-1}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>El tiempo de relajación es también una medida de la rapidez
+de la reacción.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="reacciones_consecutivas.htm" title="Anterior">&lt;</a></li>
+  <li><a href="tratamiento_general_reacciones_compuestas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

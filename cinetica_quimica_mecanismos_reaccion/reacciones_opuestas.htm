@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Reacciones opuestas">
+<meta name="keywords" content="reacción, opuesta, reversible, bidireccional">
+<title>Reacciones opuestas</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Reacciones opuestas</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Hasta ahora no se había considerado la reacción inversa,
+hecho que no era real ya que sólo se daría si la constante de
+equilibrio fuera infinita. Siendo pues esta simplificación sólo
+aceptable durante el principio de la reacción.</p>
+
+<p>Así pues, en las reacciones opuestas, reversibles o
+bidireccionales la reacción se produce en sentido de reactivos a
+productos y de productos a reactivos.</p>
+
+<p>Aquí se considerará el caso de una reacción con un único
+reactivo y producto, ambos con coeficientes estequiométricos
+iguales a uno y de primer orden tanto para la reacción directa
+como inversa.</p>
+
+<blockquote>
+    <p>
+    $
+    \def\eqarrow#1#2{
+      \,
+      \Newextarrow{\xrightleftharpoons}{10,10}{0x21CC} 
+      \overset{#1}{
+        \underset{#2}{
+          \Rule{0pt}{0.4em}{0pt}
+          \smash{
+            \xrightleftharpoons[\hphantom{#2}]{\hphantom{#1}}
+          }
+        }
+      }
+      \,
+    }
+    \ce{A $\eqarrow{\large k_1}{\large k_{-1}}$ B}
+    $
+    </p>
+</blockquote>
+
+<p>Es una reacción compleja, ya que la describen dos etapas o
+reacciones elementales:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\rarrow#1#2{
+      \,
+      \overset{#1}{
+        \underset{\smash{#2}}{
+          \Rule{0pt}{0.3em}{0pt}
+          \smash{
+            \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+          }
+        } 
+      }
+      \,
+    }
+    \begin{array}{l}
+      \ce{A $\rarrow{\large k_1}{}$ B} \quad \smash{\text{reacción en sentido directo (d)}} \\
+      \ce{B $\rarrow{\large k_{-1}}{}$ A} \quad \smash{\text{reacción en sentido inverso (i)}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto pueden escribirse las velocidades en un sentido y
+otro como:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v_{\rm d} = k_1 [\ce{A}] \\[1ex]
+      v_{\rm i} = k_{-1} [\ce{B}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La velocidad de reacción (en el sentido de $\ce{A}$ a $\ce{B}$) es en este
+caso igual a la de desaparición de $\ce{A}$ o la de aparición de $\ce{B}$:</p>
+
+<blockquote>
+    <p>
+    $
+    v = - \dfrac{d[\ce{A}]}{dt} = \dfrac{d[\ce{B}]}{dt} =
+    k_1 [\ce{A}] - k_{-1} [\ce{B}]
+    $
+    </p>
+</blockquote>
+
+<p>Aparecen tantos términos en la ecuación de velocidad como en
+reacciones elementales aparece la especie que se considera.</p>
+
+<p>Siendo que la reacción se produce de izquierda a derecha, de
+$\ce{A}$ a $\ce{B}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignedat}[b]{4}
+      &amp;\ce{&amp;&amp;A &amp;\;\eqarrow{\large k_1}{\large k_{-1}}\:&amp; &amp;&amp;B} \\
+      &amp; t_0 = 0 &amp;&amp;\mspace{1mu} a &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} \\[1ex]
+      &amp; t = t &amp;a\,&amp;\rlap{-\,x} &amp;&amp; &amp;&amp;\mspace{1mu} x \\[1ex]
+      &amp; t \mathbin{\to} \infty \quad &amp;a\,&amp;\rlap{-\,x_{\rm e}} &amp;&amp; &amp;&amp;x_{\rm e}
+    \end{alignedat}
+    \qquad K_{\rm eq} = \dfrac{x_{\rm e}}{a-x_{\rm e}}
+    $
+    </p>
+</blockquote>
+
+<p>En el límite de $t \mathbin{\to} \infty$ es seguro
+que la reacción ha alcanzado el equilibrio.</p>
+
+<p>La ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k_1 (a-x) - k_{-1} x
+    $
+    </p>
+</blockquote>
+
+<p>En el equilibrio las velocidades en sentido directo e inverso
+son iguales. Por tanto, aunque a nivel molecular siga habiendo
+transformación, la velocidad global de la reacción es cero:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \smash{\text{Eq.}} \Rightarrow v_{\rm d} = v_{\rm i} \Rightarrow v = 0 \\[1ex]
+      \Rightarrow 0 = k_1 (a - x_{\rm e}) - k_{-1} x_{\rm e}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si se resta esta última ecuación a la de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \dfrac{dx}{dt} &amp;= k_1 (a-x) - k_1 (a - x_{\rm e}) - k_{-1} x + k_{-1} x_{\rm e}
+      = k_1 (x_{\rm e} - x) + k_{-1} (x_{\rm e} - x) = \\[1ex]
+      &amp;= (k_1 + k_{-1}) (x_{\rm e} - x)
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Separar variables e integrar:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      {\displaystyle \int_0^x} \dfrac{dx}{x_{\rm e} - x} =
+      {\displaystyle \int_0^{\normalsize t}} (k_1 + k_{-1}) \, dt \\[1em]
+      \ln \dfrac{x_{\rm e}}{x_{\rm e} - x} = (k_1 + k_{-1}) \mspace{1mu} t
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>A partir de los datos recopilados experimentalmente, entre
+ellos $x_{\rm e}$, puede llevarse a cabo la siguiente
+representación:</p>
+
+<center>
+  <object data="reacciones_opuestas/reacciones_opuestas_01.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Una vez hallada la pendiente, puede encontrarse el valor
+respectivo de cada constante de velocidad mediante la condición
+de equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \smash{\text{Eq.}} \Rightarrow  v_{\rm d} = v_{\rm i} \Rightarrow
+      k_{1} (a - x_{\rm e}) = k_{-1} x_{\rm e} \\[1ex]
+      \Rightarrow \dfrac{k_1}{k_{-1}} = \dfrac{x_{\rm e}}{a - x_{\rm e}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, para este caso estudiado, no en otros, la constante
+de equilibrio puede expresarse como:</p>
+
+<blockquote>
+    <p>
+    $
+   K_{\rm eq} = \dfrac{k_1}{k_{-1}}
+    $
+    </p>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica.htm" title="Anterior">&lt;</a></li>
+  <li><a href="reacciones_paralelas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

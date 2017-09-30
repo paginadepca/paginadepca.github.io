@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+      
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Reacciones en cadena lineal: ejemplos">
+<meta name="keywords" content="reacciones, cadena, lineal, ejemplos">
+<title>Reacciones en cadena lineal: ejemplos</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Reacciones en cadena lineal: ejemplos</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>- Ejemplo 1:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\rarrow#1#2{
+      \,
+      \overset{#1}{
+        \underset{\smash{#2}}{
+          \Rule{0pt}{0.3em}{0pt}
+          \smash{
+            \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+          }
+        } 
+      }
+      \,
+    }
+    \begin{array}{l}
+      \left.
+      \ce{H2 + M \smash{\rarrow{\large k_1}{}} 2 H^. + M} \ 
+      \right\} \smash{\text{Iniciación}} \\[1ex]
+      \left.
+      \ce{H^. + p-H2 \smash{\rarrow{\large k_2}{}} o-H2 + H^.} \ 
+      \right\} \smash{\text{Propagación}} \\[1ex]
+      \left.
+      \ce{2 H^. + M \smash{\rarrow{\large k_3}{}} H2 + M} \ 
+      \right\} \smash{\text{Terminación}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La reacción global, según la etapa de propagación, es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{3}
+      \ce{&amp;p-H2 &amp;-&gt;&amp; &amp;&amp;o-H2} \\
+      pa&amp;\rlap{ra\ce{{-}H2}} &amp;&amp; &amp;\llap{o}&amp;rto\ce{{-}H2}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Al igual que para la iniciación se considera la
+participación de un tercer cuerpo, puede hacerse con la
+terminación escribiendo la reacción inversa.</p>
+
+<p>En las reacciones en cadena lo más aconsejable es expresar la
+velocidad de la reacción en función del producto:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{d[\ce{o-H2}]}{dt} = k_2 [\ce{H^.}][\ce{p-H2}]
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando la aproximación del estado estacionario al único
+intermedio:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v = \dfrac{d[\ce{H^.}]}{dt} = \!
+      \cancel{2} k_1 [\ce{H2}] \! \cancel{[\ce{M}]} -
+      \cancel{2} k_3 [\ce{H^.}]^2 \! \cancel{[\ce{M}]} \! = 0 \\[1ex]
+      \Rightarrow [\ce{H^.}] = \left( \dfrac{k_1}{k_3} [\ce{H2}] \right)^{\! 1/2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{d[\ce{o-H2}]}{dt} =
+    k_2 \left( \dfrac{k_1}{k_3} \right)^{\! 1/2} [\ce{H2}]^{1/2} [\ce{p-H2}]
+    $
+    </p>
+</blockquote>
+
+<p>Según esta expresión de la ecuación de velocidad el orden
+de la reacción es $3/ \mspace{2mu} 2$. Cuando en este tipo de reacciones aparece
+un reactivo cuyo orden parcial en la ecuación de velocidad es $1/ \mspace{2mu} 2$
+es indicativo de la escisión de la molécula en dos.</p>
+
+<p>- Ejemplo 2:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{Br2 + H2 -&gt; 2 HBr}
+    $
+    </p>
+</blockquote>
+
+<p>Se encuentra que la ecuación de velocidad experimental es:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm exp} =
+    \dfrac{k [\ce{H2}][\ce{Br2}]^{1/2}}{1 + k' \dfrac{[\ce{HBr}]}{[\ce{Br2}]}}
+    $
+    </p>
+</blockquote>
+
+<p>Según esta ecuación, es una reacción que no tiene orden y
+que es inhibida por el $\ce{HBr}$.</p>
+
+<p>Primero se plantea la iniciación, que debe ser a partir del
+$\ce{Br2} \mspace{-2mu}$ o del $\ce{H2}$. Si la iniciación es térmica:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Br2 + M -&gt; 2 Br^. + M} \quad \Delta H = \pu{193 kJ/mol} \\[1ex]
+      \smash{\text{ó}} \\[1ex]
+      \ce{H2 + M -&gt; 2H^. + M} \quad \Delta H = \pu{432 kJ/mol}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Ambas disociaciones son endotérmicas, pero dado que la
+disociación del $\ce{Br2} \mspace{-2mu}$ necesita menos aporte de energía,
+calor, será la etapa de iniciación del mecanismo. Además
+también se tiene el hecho, indicativo de su disociación, que
+esté su concentración elevada a $1/ \mspace{2mu} 2$ en el numerador de la
+expresión experimental de la ecuación de velocidad. Siendo así
+la etapa de iniciación, la propagación debe ser:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Br^. + H2 -&gt; H^. + HBr} \quad \Delta H = \pu{69 kJ/mol} \\[1ex]
+      \ce{H^. + Br2 -&gt; Br^. + HBr} \quad \Delta H = \pu{-173 kJ/mol}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La propagación es exotérmica.</p>
+
+<p>En el denominador de la velocidad experimental se observa la
+inhibición por el producto $\ce{HBr}$, por tanto debe haber una etapa
+en la que se destruye, siendo está inhibición contrarrestada por
+el $\ce{Br2}$. Esto último es indicativo que ambas especies
+compiten entre sí por la misma especie. Con una entalpía exotérmica,
+y demostrado empíricamente, la etapa elemental que explica esta
+inhibición es:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{H^. + HBr -&gt; Br^. + H2}
+    $
+    </p>
+</blockquote>
+
+<p>Que es la reacción inversa de la primera etapa de la
+propagación.</p>
+
+<p>La etapa de terminación puede ser:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{2 Br^. + M -&gt; Br2 + M} \quad \smash{\text{(más probable)}} \\[1ex]
+      \smash{\text{ó}} \\[1ex]
+      \ce{Br^. + H^. + M -&gt; HBr + M} \quad \smash{\text{(menos probable)}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Cabe pensar que la segunda etapa de la propagación (exotérmica)
+es más rápida que la primera (endotérmica), siendo pues la
+concentración de radicales hidrógeno menor que la de radicales
+bromo. Sin olvidar la etapa de inhibición que también reduce el
+número de radicales hidrógeno. Por tanto la segunda de las
+propuestas para la terminación es menos probable, y no se
+considera. Así que la etapa de terminación es la reacción
+inversa de la etapa de iniciación.</p>
+
+<p>Por consiguiente, tras todo este planteamiento, el mecanismo
+queda así:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+      \begin{array}{l}
+        \ce{Br2 + M \smash{\rarrow{\large k_1}{}} 2 Br^. + M}
+      \end{array} \ 
+      \right\} \smash{\text{Iniciación}} \\[1ex]
+      \left.
+      \begin{array}{l}
+        \ce{Br^. + H2 \smash{\rarrow{\large k_2}{}} H^. + HBr} \\[1ex]
+        \ce{H^. + Br2 \smash{\rarrow{\large k_3}{}} Br^. + HBr}
+      \end{array} \ 
+      \right\} \smash{\text{Propagación}} \\[1ex]
+      \left.
+      \begin{array}{l}
+        \ce{H^. + HBr \smash{\rarrow{\large k_4}{}} Br^. + H2}
+      \end{array} \ 
+      \right\} \smash{\text{Inhibición}} \\[1ex]
+      \left.
+      \begin{array}{l}
+        \ce{2 Br^. + M \smash{\rarrow{\large k_5}{}} Br2 + M}
+      \end{array} \ 
+      \right\} \smash{\text{Terminación}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Normalmente se escoge el producto para hallar la ecuación de
+velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d[\ce{HBr}]}{dt} =
+    k_2 [\ce{Br^.}] [\ce{H2}] + k_3 [\ce{H^.}] [\ce{Br2}] - k_4 [\ce{H^.}] [\ce{HBr}]
+    $
+    </p>
+</blockquote>
+
+<p>Empleando la aproximación del estado estacionario con los
+intermedios:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{aligned}
+        \dfrac{d[\ce{H^.}]}{dt} &amp;=
+        k_2 [\ce{Br^.}] [\ce{H2}] - k_3 [\ce{H^.}] [\ce{Br2}] -
+        k_4 [\ce{H^.}] [\ce{HBr}] = 0
+      \end{aligned} \\[1ex]
+      \begin{aligned}
+        \dfrac{d[\ce{Br^.}]}{dt} &amp;= 
+        2 k_1 [\ce{Br2}] [\ce{M}] - k_2 [\ce{Br^.}] [\ce{H2}] + k_3 [\ce{H^.}] [\ce{Br2}] +
+        k_4 [\ce{H^.}] [\ce{HBr}] - {}\\[1ex]
+        &amp;\hphantom{\mathrel{=}{}}- 2 k_5 [\ce{Br^.}]^2 [\ce{M}] = 0
+      \end{aligned}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sumando las dos ecuaciones anteriores:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{d[\ce{H^.}]}{dt} + \dfrac{d[\ce{Br^.}]}{dt} = \!
+      \cancel{2} k_1 [\ce{Br2}] \! \cancel{[\ce{M}]} -
+      \cancel{2} k_5 [\ce{Br^.}]^2 \! \cancel{[\ce{M}]} = 0 \\[1ex]
+      \Rightarrow [\ce{Br^.}] =
+      \left( \dfrac{k_1}{k_5} [\ce{Br2}] \right)^{\! 1/2}      
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Despejando en la ecuación de velocidad del radical hidrógeno:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_2 \left( \dfrac{k_1}{k_5} [\ce{Br2}] \right)^{\! 1/2} [\ce{H2}] -
+      k_3 [\ce{H^.}] [\ce{Br2}] - k_4 [\ce{H^.}] [\ce{HBr}] = 0 \\[1ex]
+      \Rightarrow [\ce{H^.}] =
+      \dfrac{
+        k_2 \left( \dfrac{k_1}{k_5} \right)^{\! 1/2} [\ce{H2}] [\ce{Br2}]^{1/2}
+      }{k_3 [\ce{Br2}] + k_4 [\ce{HBr}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Restando a la expresión de la velocidad del HBr la del
+radical hidrógeno:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{d[\ce{HBr}]}{dt} - \underbrace{\dfrac{d[\ce{H^.}]}{dt}}_{\large 0} =
+      2 k_3 [\ce{Br_2}] [\ce{H^.}] \\[1ex]
+      \Rightarrow v = \dfrac{1}{2} \dfrac{d[\ce{HBr}]}{dt} = k_3 [\ce{Br2}] [\ce{H^.}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_3 [\ce{Br_2}]
+    \dfrac{
+      k_2 \left( \dfrac{k_1}{k_5} \right)^{\! 1/2} [\ce{H2}] [\ce{Br2}]^{1/2}
+    }{k_3 [\ce{Br2}] + k_4 [\ce{HBr}]} =
+    \dfrac{
+      k_2 \left( \dfrac{k_1}{k_5} \right)^{\! 1/2} [\ce{H2}] [\ce{Br2}]^{1/2}
+    }{1 + \dfrac{k_4 [\ce{HBr}]}{k_3 [\ce{Br2}]}}
+    $
+    </p>
+</blockquote>
+
+<p>Comparando con la hallada experimentalmente:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k = k_2 \left( \dfrac{k_1}{k_5} \right)^{\! 1/2} \\[1ex]
+      k' = \dfrac{k_4}{k_3}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="mecanismos_secuencia_cerrada_estructura_general.htm" title="Anterior">&lt;</a></li>
+  <li><a href="dependencia_constante_velocidad_temperatura.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

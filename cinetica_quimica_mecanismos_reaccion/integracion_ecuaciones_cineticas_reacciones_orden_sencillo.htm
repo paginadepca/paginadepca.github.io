@@ -1,0 +1,1184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Integración de las ecuaciones cinéticas para reacciones de orden sencillo">
+<meta name="keywords" content="integración, ecuación, cinética">
+<title>Integración de las ecuaciones cinéticas para reacciones de orden sencillo</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Integración de las ecuaciones cinéticas para
+reacciones de orden sencillo</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>- <a href="#orden_uno">Reacciones de primer orden</a>.</p>
+
+<p>- <a href="#orden_dos">Reacciones de segundo orden</a>.</p>
+
+<p>- <a href="#orden_tres">Reacciones de tercer orden</a>.</p>
+
+<p>- <a href="#orden_cero">Reacciones de orden cero</a>.</p>
+
+<p>- <a href="#orden_n">Reacciones de orden $n$</a>.</p>
+
+<p><a name="orden_uno"></a><font color="red">-</font> Reacciones de primer orden:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;[\ce{&amp;A}]_0 &amp;&amp; &amp;&amp;\mspace{2mu}\smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;[\ce{&amp;A}] &amp;&amp;[\ce{&amp;&amp;P}]
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = - \dfrac{d[\ce{A}]}{dt} = k [\ce{A}]
+    $
+    </p>
+</blockquote>
+
+<p>Separando variables:</p>
+
+<blockquote>
+    <p>
+    $
+    - \dfrac{d[\ce{A}]}{[\ce{A}]} = k\,dt
+    $
+    </p>
+</blockquote>
+
+<p>Integrando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      {\displaystyle\int_{[\ce{A}]_0}^{[\ce{A}]}} \! - \dfrac{d[\ce{A}]}{[\ce{A}]} = 
+      {\displaystyle\int_0^{\normalsize t}} k \, dt \\[1em]
+      \Rightarrow \ln \dfrac{[\ce{A}]_0}{[\ce{A}]} = kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Esta expresión anterior equivale a:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{A}] = [\ce{A}]_0 \mspace{1mu} e^{\normalsize -kt}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, según esto último, la concentración de reactivo
+se reduce exponencialmente durante la reacción.</p>
+
+<p>Para comprobar que esta suposición se ajusta a los resultados
+experimentales se representa el $\ln([\ce{A}]_0 \lower 1px {/} [\ce{A}])$ frente a
+$t$. De ser correcta, la representación ha de ser una recta que
+pase por el origen, y cuya pendiente positiva será $k$.
+Esto es:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_01.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Otra manera consiste en representar $\ln [\ce{A}]$ frente a $t$, ya que
+de la ecuación ya vista resulta que:</p>
+
+<blockquote>
+    <p>
+    $
+    \ln [\ce{A}] = \ln [\ce{A}]_0 - kt
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto en este caso la representacían se ajustaría a una
+recta con ordenada en el origen $\ln [\ce{A}]_0$ y pendiente
+negativa $-k$.</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_02.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Todo lo anterior también puede hacerse teniendo en cuenta
+como variable la cantidad de reactivo que desaparece, o lo que es
+lo mismo, de producto que se genera:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\mspace{2mu}\smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{-\,x} &amp;&amp; &amp;&amp;\mspace{1mu} x
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)
+    $
+    </p>
+</blockquote>
+
+<p>Separar variables e integrar:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{a-x} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{a-x} = {\displaystyle \int_0^{\normalsize t} k \, dt} \\[1ex]
+      \Rightarrow \ln \dfrac{a}{a-x} = kt \\[1ex]
+      \Rightarrow \ln (a-x) = \ln a - kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto aquí las gráficas serían:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_03.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_04.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>En general, para cualquier estequiometría:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;$m$ A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\rlap{[\ce{A}]_0} &amp;&amp; &amp;&amp;\mspace{1mu}\smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;&amp;[\ce{A}] &amp;&amp; &amp;\llap{[}&amp;\ce{P}]
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = - \dfrac{1}{m} \dfrac{d[\ce{A}]}{dt} = k[\ce{A}]
+    $
+    </p>
+</blockquote>
+
+<p>Separando variables y resolviendo la integral:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    - \dfrac{d[\ce{A}]}{[\ce{A}]} = mk \, dt \\[1ex]
+    {\displaystyle \int_{[\ce{A}]_0}^{[\ce{A}]}} \! - \dfrac{d[\ce{A}]}{[\ce{A}]} =
+    {\displaystyle \int_0^{\normalsize t}} mk \, dt \\[1ex]
+    \Rightarrow \ln \dfrac{[\ce{A}]_0}{[\ce{A}]} = mkt \\[1ex]
+    \Rightarrow \ln [\ce{A}] = \ln [\ce{A}]_0 - mkt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Las representaciones serían pues:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_05.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_06.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Aquí también, al igual que antes, puede usarse como variable
+el avance intensivo de la reacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;$m$A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\;a &amp;&amp; &amp;&amp;\mspace{1mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{-\,mx} &amp;&amp; &amp;&amp;x
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k (a - mx)
+    $
+    </p>
+</blockquote>
+
+<p>La velocidad de la reacción, por definición, no es más que
+la variación del avance intensivo con el tiempo.</p>
+
+<p>Se separan variables y se resuelve la integral:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{a - mx} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{a - mx} =
+      {\displaystyle \int_0^{\normalsize t}} k\, dt \\[1ex]
+      -\dfrac{1}{m} \, \ln \dfrac{a-mx}{a} = kt \\[1ex]
+      \Rightarrow \ln \dfrac{a}{a-mx} = mkt \\[1ex]
+      \Rightarrow \ln (a - mx) = \ln a - mkt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Que gráficamente queda como:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_07.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_08.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>A veces se trabaja con el tiempo de semirreacción (semiperiodo,
+semivida o vida media), que es el tiempo en el cual la
+concentración inicial de reactivo se ha reducido a la mitad.
+Para el caso que se analiza se encuentra la siguiente relación:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow [\ce{A}] = [\ce{A}]_0 \mspace{1mu} / \mspace{2mu} 2 \\[1ex]
+      \ln \dfrac{\cancel{[\ce{A}]_0}}{\cancel{[\ce{A}]_0} \! / \mspace{2mu} 2} = mkt_{1/2} \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{\ln 2}{mk}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, para una reacción de orden uno el tiempo de
+semirreacción no depende de la concentración inicial. Además,
+como puede observarse, el tiempo de semirreacción es
+inversamente proporcional a la constante de velocidad.</p>
+
+<p>En general, se define el tiempo de vida fraccionario $t_{\normalsize \alpha} \mspace{-2mu}$
+como el tiempo transcurrido para que la concentración inicial se
+reduzca hasta una fracción $\alpha$ de la misma. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    t_{\normalsize \alpha} \Rightarrow [\ce{A}] = \alpha [\ce{A}]_0
+    $
+    </p>
+</blockquote>
+
+<p><a name="orden_dos"></a><font color="red">-</font> Reacciones de segundo orden:</p>
+
+<p>a) <a href="#orden_dos_1r">Un solo reactivo</a>.</p>
+
+<p>b) <a href="#orden_dos_2r">Dos reactivos</a>.</p>
+
+<p><a name="orden_dos_1r"></a>a) Un solo reactivo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;$m$A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\;a &amp;&amp; &amp;&amp;\mspace{1mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{-\,mx} &amp;&amp; &amp;&amp;x
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-mx)^2
+    $
+    </p>
+</blockquote>
+
+<p>Se separan variables y se integra:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{(a-mx)^2} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{(a-mx)^2} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \dfrac{1}{m} \left(\dfrac{1}{a-mx} - \dfrac{1}{a}\right) = kt \\[1ex]
+      \Rightarrow \dfrac{1}{a-mx} - \dfrac{1}{a} = mkt \\[1ex]
+      \Rightarrow \dfrac{1}{a-mx} = \dfrac{1}{a} + mkt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Cuya representación es:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_09.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_10.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Estas expresiones también pueden escribirse como:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{[\ce{A}]} - \dfrac{1}{[\ce{A}]_0} = mkt \\[1ex]
+      \dfrac{1}{[\ce{A}]} = \dfrac{1}{[\ce{A}]_0} + mkt    
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La expresión para el tiempo de semirreacción aquí:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow [\ce{A}] = [\ce{A}]_0 \mspace{1mu} / \mspace{2mu} 2 \\[1ex]
+      \dfrac{1}{[\ce{A}]_0 \mspace{1mu} / \mspace{2mu} 2} - \dfrac{1}{[\ce{A}]_0} = mkt_{1/2} \\[1ex]
+      \dfrac{1}{[\ce{A}]_0} = mkt_{1/2} \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{1}{mk[\ce{A}]_0}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Aquí el tiempo de semirreacción sí depende de la
+concentración inicial. Es inversamente proporcional a ésta.</p>
+
+<p><a name="orden_dos_2r"></a>b) Dos reactivos. Diferentes casos:</p>
+
+<p>1. <a href="#orden_dos_2r_1">Estequiometría $1\mspace{-1mu}{:}1\mspace{-1mu}$, igual
+concentración inicial</a>.</p>
+
+<p>2. <a href="#orden_dos_2r_2">Estequiometría $1\mspace{-1mu}{:}1\mspace{-1mu}$, diferente
+concentración inicial</a>.</p>
+
+<p>3. <a href="#orden_dos_2r_3">Estequiometría diferente de uno
+en uno de los reactivos</a>.</p>
+
+<p>4. <a href="#orden_dos_2r_4">Estequiometría diferente de uno
+en ambos reactivos</a>.</p>
+
+<p><a name="orden_dos_2r_1"></a>1. Estequiometría $1\mspace{-1mu}{:}1\mspace{-1mu}$ y la
+concentración inicial de ambos reactivos es la misma:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;A &amp;+&amp; &amp;&amp;B &amp;-&gt;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\smash{\text{-}} \,} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-}\,x &amp;&amp; &amp;a\,&amp;{-}\,x &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{x \mspace{2mu}}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)^2
+    $
+    </p>
+</blockquote>
+
+<p>Separación de variables e integración:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{(a-x)^2} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{(a-x)^2} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \Rightarrow \dfrac{1}{a-x} - \dfrac{1}{a} = kt \\[1ex]
+      \Rightarrow \dfrac{1}{a-x} = \dfrac{1}{a} + kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La expresión para el tiempo de semirreacción:</p>
+
+<blockquote>
+  <p>
+  $
+  \begin{array}{l}
+    t_{1/2} \Rightarrow a-x = a \mspace{1mu} \lower 1px / \mspace{2mu} 2 \\[1ex]
+    \Rightarrow t_{1/2} = \dfrac{1}{ak}
+  \end{array}
+  $
+  </p>
+</blockquote>
+
+<p>Mostrando el comportamiento característico de las reacciones
+de orden dos, al ser inversamente proporcional a la concentración
+inicial.</p>
+
+<p><a name="orden_dos_2r_2"></a>2. Estequiometría $1\mspace{-1mu}{:}1\mspace{-1mu}$ y la
+concentración inicial de ambos reactivos es distinta:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;A &amp;+&amp; &amp;&amp;B &amp;-&gt;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\mspace{2mu} b &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\smash{\text{-}} \,} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-}\,x &amp;&amp; &amp;b\,&amp;{-}\,x &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{x \mspace{2mu}}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)(b-x)
+    $
+    </p>
+</blockquote>
+
+<p>Separar variables:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{dx}{(a-x)(b-x)} = k\,dt
+    $
+    </p>
+</blockquote>
+
+<p>Por fracciones parciales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{(a-x)(b-x)} = \dfrac{R}{a-x} + \dfrac{S}{b-x} =
+      \dfrac{R(b-x) + S(a-x)}{(a-x)(b-x)} = \dfrac{Rb - Rx + Sa - Sx}{(a-x)(b-x)} \\[1em]
+      \Rightarrow Rb - Rx + Sa - Sx = 1 \Rightarrow
+      \left\{
+        \begin{array}{l}
+          Rb + Sa = 1 \\
+          -Rx - Sx = 0 \Rightarrow R = -S
+        \end{array}
+      \right\}
+      \Rightarrow
+      \left\{
+        \begin{array}{l}
+          R = \dfrac{1}{b-a} \\
+          S = - \dfrac{1}{b-a}
+        \end{array}
+      \right. \\[1em]
+      \Rightarrow
+      \dfrac{dx}{(a-x)(b-x)} = \dfrac{dx}{(b-a)(a-x)} - \dfrac{dx}{(b-a)(b-x)} = k\,dt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Integrando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{b-a} {\displaystyle \int_0^x} \dfrac{dx}{a-x} -
+      \dfrac{1}{b-a} {\displaystyle \int_0^x} \dfrac{dx}{b-x} = 
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1em]
+      \dfrac{1}{b-a} \, \ln \dfrac{a}{a-x} - \dfrac{1}{b-a} \, \ln \dfrac{b}{b-x} = kt \\[1em]
+      \Rightarrow \, \dfrac{1}{b-a} \, \ln \dfrac{a(b-x)}{b(a-x)} = kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>El análisis de los datos experimentales se haría
+representando el primer miembro de la igualdad anterior frente al
+tiempo. De este modo la gráfica sería la de una recta que
+pasaría por el origen y con pendiente $k$.</em></p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_11.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Aquí no puede usarse el tiempo de semirreacción ya que las
+concentraciones iniciales son distintas.</p>
+
+<p><a name="orden_dos_2r_3"></a>3. Estequiometría diferente de
+uno en uno de los reactivos:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;A &amp;+&amp; &amp;$n$\,&amp;B &amp;-&gt;&amp; &amp;&amp;\hphantom{\,nx}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\!\!b &amp;&amp; &amp;&amp;\hphantom{\,nx}\llap{\smash{\text{-}} \,} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-}\,x &amp;&amp; &amp;b\,{-}&amp;\,nx &amp;&amp; &amp;&amp;\hphantom{\,nx}\llap{x \mspace{2mu}}
+    \end{alignat}    
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)(b-nx) = k\,(a-x)\,n\!\left(\dfrac{b}{n}-x\right) =
+    k'(a-x)(b' \mspace{-1mu} - x)
+    $
+    </p>
+</blockquote>
+
+<p>Esta última expresión es análoga a la del caso expuesto
+anteriormente. Por tanto su integración conduce a:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{1}{b' \mspace{-1mu} - a} \, \ln \dfrac{a(b' \mspace{-1mu} - x)}{b'(a-x)} = k't
+    $
+    </p>
+</blockquote>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      b' \mspace{-1mu} = b \mspace{1mu} \lower 1px / \mspace{1mu} n \\[1ex]
+      k' \mspace{-1mu} = nk
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La representación gráfica del primer término de la igualdad
+frente al tiempo es una recta que pasa por el origen y con
+pendiente la pseudoconstante $k' \mspace{-2mu}$.</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_12.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p><a name="orden_dos_2r_4"></a>4. Estequiometría diferente de
+uno en ambos reactivos:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;$m$\,&amp;A &amp;+&amp; &amp;$n$\,&amp;B &amp;-&gt;&amp; &amp;&amp;\hphantom{\,nx}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\!\!a &amp;&amp; &amp;&amp;\!\!b &amp;&amp; &amp;&amp;\hphantom{\,nx}\llap{\smash{\text{-}} \,} \\[1ex]
+      &amp;t = t &amp;a\,{-}&amp;\,mx &amp;&amp; &amp;b\,{-}&amp;\,nx &amp;&amp; &amp;&amp;\hphantom{\,nx}\llap{x \mspace{2mu}}
+    \end{alignat}    
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-mx)(b-nx) =
+    km\!\left(\dfrac{a}{m}-x\right)\!n\!\left(\dfrac{b}{n}-x\right) =
+    k'(a' \! - x)(b' \mspace{-2mu} - x)
+    $
+    </p>
+</blockquote>
+
+<p>De nuevo otra expresión ya vista. Así pues su integración:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{1}{b' \mspace{-2mu} - a'} \, \ln \dfrac{a'(b' \mspace{-2mu} - x)}{b'(a' \mspace{-2mu} - x)} = k't
+    $
+    </p>
+</blockquote>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      a' = a \mspace{1mu} \lower 1px / \mspace{1mu} m \\[1ex]
+      b' = b \mspace{1mu} \lower 1px / \mspace{1mu} n \\[1ex]
+      k' = mnk
+    \end{array}
+    $  
+    </p>
+</blockquote>
+
+<p>Gráficamente:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_13.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>A continuación, caso particular en el cual las concentraciones iniciales
+están presentes en la proporción estequiométrica: $a \mspace{1mu} \lower 1px / 
+\mspace{1mu} b = m \mspace{1mu} \lower 1px / \mspace{1mu} n$. Ecuación de
+velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      v &amp;= \dfrac{dx}{dt} = k(a-mx)(b-nx) = k(a-mx)\!\left(\dfrac{na}{m} - nx\right) = \\[1ex]
+      &amp;= k(a-mx) \mspace{1mu} \dfrac{n}{m} \mspace{1mu} (a-mx) = k'(a-mx)^2
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Cuya integración, ya vista para una expresión como la
+anterior, da:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{1}{a-mx} - \dfrac{1}{a} = mk't = \cancel{m} \! \dfrac{n}{\cancel{m}} kt = nkt
+    $
+    </p>
+</blockquote>
+
+<p>También se puede escribir como:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{1}{a-mx} = \dfrac{1}{a} + nkt
+    $
+    </p>
+</blockquote>
+
+<p>Llevadas a una gráfica:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_14.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_15.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p><a name="orden_tres"></a><font color="red">-</font> Reacciones de tercer orden:</p>
+
+<p>Son muy poco frecuentes. Casos:</p>
+
+<p>a) <a href="#orden_tres_1r">$v = k[\ce{A}]^3$</a></p>
+
+<p>b) <a href="#orden_tres_2r">$v = k[\ce{A}][\ce{B}]^2$</a></p>
+
+<p>c) <a href="#orden_tres_3r">$v = k[\ce{A}][\ce{B}][\ce{C}]$</a></p>
+
+<p><a name="orden_tres_1r"></a>
+    $
+    \rlap{\smash{\text{a)}}}\hspace{40px}
+    \begin{alignedat}[t]{4}
+        &amp;\ce{&amp;&amp;$m$A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+        &amp;t_0 = 0 \quad &amp;&amp;\;a &amp;&amp; &amp;&amp;\mspace{1mu} \smash{\text{-}} \\[1ex]
+        &amp;t = t &amp;a\,&amp;\rlap{-\,mx} &amp;&amp; &amp;&amp;x
+    \end{alignedat}
+    $
+</p>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-mx)^3
+    $
+    </p>
+</blockquote>
+
+<p>Separación de variables e integración:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{(a-mx)^3} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{(a-mx)^3} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \dfrac{1}{2m} \left(\dfrac{1}{(a-mx)^2} - \dfrac{1}{a^2}\right) = kt \\[1ex]
+      \Rightarrow \dfrac{1}{(a-mx)^2} - \dfrac{1}{a^2} = 2mkt \\[1ex]
+      \Rightarrow \dfrac{1}{(a-mx)^2} = \dfrac{1}{a^2} + 2mkt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La expresión para el tiempo de semirreacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow a - mx = a \mspace{1mu} \lower 1px / \mspace{2mu} 2 \\[1ex]
+      \dfrac{1}{(a \mspace{1mu} \lower 1px / \mspace{2mu} 2)^2} - \dfrac{1}{a^2} = 2mkt_{1/2} \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{3}{2mka^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p style="margin-top:2em"><a name="orden_tres_2r"></a>
+    $
+    \rlap{\smash{\text{b)}}}\hspace{40px}
+    \begin{alignedat}[t]{6}
+      &amp;\ce{&amp;&amp;A &amp;+&amp; &amp;2\,&amp;B &amp;-&gt;&amp; &amp;&amp;\hphantom{\,2x}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{1mu} a &amp;&amp; &amp;&amp;\!\!b &amp;&amp; &amp;&amp;\hphantom{\,2x}\llap{\smash{\text{-}}\,} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-}\,x &amp;&amp; &amp;b\,{-}&amp;\,2x &amp;&amp; &amp;&amp;\hphantom{\,2x}\llap{x \mspace{2mu}}
+    \end{alignedat}
+    $
+</p>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)(b-2x)^2
+    $
+    </p>
+</blockquote>
+
+<p>Separar variables e integrar por fracciones parciales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{(a-x)(b-2x)^2} = k\,dt \\[1ex]
+      \begin{aligned}
+        \dfrac{1}{(a-x)(b-2x)} &amp;= \dfrac{R}{a-x} + \dfrac{S}{b-2x} =
+        \dfrac{R(b-2x) + S(a-x)}{(a-x)(b-2x)} = \\[1ex]
+        &amp;= \dfrac{Rb - 2Rx + Sa -Sx}{(a-x)(b-2x)}
+      \end{aligned} \\[1em]
+      \begin{aligned}
+        \Rightarrow Rb -2Rx + Sa - Sx = 1 &amp;\Rightarrow
+        \left\{
+        \begin{array}{l}
+            Rb + Sa = 1 \\
+            -2Rx - Sx = 0 \Rightarrow 2R = -S
+        \end{array}
+        \right\} \Rightarrow \\[1ex]
+        &amp;\Rightarrow
+        \left\{
+        \begin{array}{l}
+          R = \dfrac{1}{b-2a} \\[1ex]
+          S = -\dfrac{2}{b-2a}
+        \end{array}
+        \right.
+      \end{aligned} \\[1em]
+      \begin{aligned}
+        \Rightarrow \dfrac{dx}{(a-x)(b-2x)^2} &amp;=
+        \dfrac{dx}{(b-2a)(a-x)(b-2x)} - \dfrac{2dx}{(b-2a)(b-2x)^2} = \\[1ex]
+        &amp;=
+        \begin{aligned}[t]
+          &amp;\dfrac{dx}{(b-2a)^2 (a-x)} - \dfrac{2dx}{(b-2a)^2 (b-2x)} - {} \\[1ex]
+          &amp;- \dfrac{2dx}{(b-2a)(b-2x)^2} = k\,dt
+        \end{aligned}
+      \end{aligned} \\[1em]
+      \dfrac{1}{(b-2a)^2} {\displaystyle \int_0^x} \! \dfrac{dx}{a-x} -
+      \dfrac{2}{(b-2a)^2} {\displaystyle \int_0^x} \! \dfrac{dx}{b-2x} -
+      \dfrac{2}{b-2a} {\displaystyle \int_0^x} \! \dfrac{dx}{(b-2x)^2} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \dfrac{1}{(b-2a)^2} \, \ln \dfrac{a}{a-x} -
+      \dfrac{1}{(b-2a)^2} \, \ln \dfrac{b}{b-2x} -
+      \dfrac{1}{b-2a} \left( \dfrac{1}{b-2x} - \dfrac{1}{b} \right) = kt \\[1ex]
+      \Rightarrow \dfrac{1}{(2a-b)^2}
+      \left(
+      \dfrac{2(2a-b)x}{b(b-2x)} + \ln \dfrac{a(b-2x)}{b(a-x)}
+      \right) = kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p style="margin-top:2em"><a name="orden_tres_3r"></a>
+    $
+    \rlap{\smash{\text{c)}}}\hspace{40px}
+    \begin{alignedat}[t]{8}
+      &amp;\ce{&amp;&amp;A &amp;+&amp; &amp;&amp;B &amp;+&amp; &amp;&amp;C &amp;-&gt;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\ce{P}}} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\mspace{1mu} b &amp;&amp; &amp;&amp;\mspace{2mu} c &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{\smash{\text{-}}\,} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-}\,x &amp;&amp; &amp;b\,&amp;{-}\,x &amp;&amp; &amp;c\,&amp;{-}\,x &amp;&amp; &amp;&amp;\hphantom{{-}\,x}\llap{x \mspace{2mu}}
+    \end{alignedat}
+    $
+</p>
+
+<p>Si $\mspace{1mu} a = b = c$, la ecuación de velocidad es:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} = k(a-x)^3
+    $
+    </p>
+</blockquote>
+
+<p>Separación de variables e integración:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dx}{(a-x)^3} = k\,dt \\[1ex]
+      {\displaystyle \int_0^x} \dfrac{dx}{(a-x)^3} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \dfrac{1}{2} \left( \dfrac{1}{(a-x)^2} - \dfrac{1}{a^2} \right) = kt \\[1ex]
+      \Rightarrow \dfrac{1}{(a-x)^2} - \dfrac{1}{a^2} = 2kt \\[1ex]
+      \Rightarrow \dfrac{1}{(a-x)^2} = \dfrac{1}{a^2} + 2kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Que gráficamente corresponden a:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_16.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_17.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Puede calcularse, gracias a la igualdad planteada en las
+concentraciones iniciales, el tiempo de semirreacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow a - x = a \mspace{1mu} \lower 1px / \mspace{2mu} 2 \\[1ex]
+      \dfrac{1}{(a \mspace{1mu} \lower 1px / \mspace{2mu} 2)^2} - \dfrac{1}{a^2} = 2kt_{1/2} \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{3}{2ka^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p><a name="orden_cero"></a><font color="red">-</font> Reacciones de orden cero:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;$m$ A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\rlap{[\ce{A}]_0} &amp;&amp; &amp;&amp;\mspace{1mu}\smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;&amp;[\ce{A}] &amp;&amp; &amp;\llap{[}&amp;\ce{P}]
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = - \dfrac{1}{m} \dfrac{d[\ce{A}]}{dt} = k [\ce{A}]^0 = k
+    $
+    </p>
+</blockquote>
+
+<p>Se integra:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      -d[\ce{A}] = mk\,dt \\[1ex]
+      {\displaystyle \int_{[\ce{A}]_0}^{[\ce{A}]}} \! -d[\ce{A}] =
+      {\displaystyle \int_{0}^{\normalsize t}} mk\,dt \\[1ex]
+      [\ce{A}]_0 - [\ce{A}] = mkt \\[1ex]
+      \Rightarrow [\ce{A}] = [\ce{A}]_0 - mkt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La representación es una recta con pendiente negativa de
+valor $-mk$ y cuya ordenada en el origen es $[\ce{A}]_0$.</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_18.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>El tiempo de semirreacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow [\ce{A}] = [\ce{A}]_0 \mspace{1mu} / \mspace{2mu} 2 \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{[\ce{A}]_0}{2mk}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto éste depende directamente de la concentración
+inicial.</p>
+
+<p><a name="orden_n"></a><font color="red">-</font> Reacciones de orden $n$, excepto $n = 1$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;$m$&amp;\,A &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\! a &amp;&amp; &amp;&amp;\mspace{1mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,{-}&amp;\rlap{\,mx} &amp;&amp; &amp;&amp;x
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{dx}{dt} =  k(a-mx)^n
+    $
+    </p>
+</blockquote>
+
+<p>Tras separar variables, se integra:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      {\displaystyle \int_0^x} \dfrac{dx}{(a-mx)^n} =
+      {\displaystyle \int_0^{\normalsize t}} k\,dt \\[1ex]
+      \dfrac{1}{m(n-1)} \left( \dfrac{1}{(a-mx)^{n-1}} - \dfrac{1}{a^{n-1}} \right) = kt  \\[1ex]
+      \Rightarrow \dfrac{1}{(a-mx)^{n-1}} - \dfrac{1}{a^{n-1}} = m(n-1)kt \quad n \neq 1 \\[1ex]
+      \Rightarrow \dfrac{1}{(a-mx)^{n-1}} = \dfrac{1}{a^{n-1}} + m(n-1)kt \quad n \neq 1
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por ejemplo para el orden de reacción fraccionario $n = 1 / \mspace{2mu} 2$:</p>
+
+<blockquote>
+    <p>
+    $
+    \sqrt{a-mx} - \sqrt{a} = -\dfrac{mkt}{2}
+    $
+    </p>
+</blockquote>
+
+<p>La representación de las expresiones:</p>
+
+<center>
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_19.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+  
+  <object data="integracion_ecuaciones_cineticas_reacciones_orden_sencillo/integracion_ecuaciones_cineticas_reacciones_orden_sencillo_20.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Puede hallarse el tiempo de semirreacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_{1/2} \Rightarrow a - mx = a \mspace{1mu} \lower 1px / \mspace{2mu} 2 \\[1ex]
+      \dfrac{1}{(a \mspace{1mu} \lower 1px / \mspace{2mu} 2)^{n-1}} -
+      \dfrac{1}{a^{n-1}} = m(n-1)kt_{1/2} \\[1ex]
+      \Rightarrow t_{1/2} = \dfrac{2^{n-1} - 1}{m(n-1)ka^{n-1}} \quad n \neq 1
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>En el logaritmo de esta última igualdad se basa el que se
+conoce como método de los tiempos de semirreacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \log t_{1/2} = \log \left( \dfrac{2^{n-1} - 1}{m(n-1)k} \right) - (n-1) \log a \quad n \neq 1 
+    $
+    </p>
+</blockquote>
+
+<p>Para $n = 1$ el tiempo de semirreacción, como se vio, es independiente de la
+concentración inicial. La representación del logoritmo de $t_{1/2} \mspace{-1mu}$
+frente al logaritmo de la concentración inicial da una recta de
+pendiente $1-n$. Esto permite encontrar el orden de la reacción.</p>
+
+<p>El método consiste primero en, a través de la
+experimentación, representar $[\ce{A}]$ frente al tiempo. A
+continuación se escogen sucesivamente valores de $[\ce{A}]$ como si
+fueran la concentración inicial. El intervalo de tiempo
+transcurrido hasta que alcanzan la mitad de su valor es el tiempo
+de semirreacción para cada concentración inicial escogida. Esto
+es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \left.
+      \begin{array}{l}
+        [\ce{A}]' \Rightarrow t_0' \\[1ex]
+        [\ce{A}]'\mspace{-1mu} / \mspace{2mu} 2 \Rightarrow t'
+      \end{array}
+      \right\} \Rightarrow t' \! - t_0' = t_{1/2}' \\[1ex]
+      \left.
+      \begin{array}{l}
+        [\ce{A}]'' \Rightarrow t_0'' \\[1ex]
+        [\ce{A}]''\mspace{-1mu} / \mspace{2mu} 2 \Rightarrow t''
+      \end{array}
+      \right\} \Rightarrow t'' \! - t_0'' = t_{1/2}'' \\[1ex]
+      \begin{array}{l}
+        \smash{\text{etc.}}
+      \end{array}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si se llevara a cabo un único experimento, con este método
+del tiempo de semirreacción podría ser necesario, para tener un
+número suficiente de datos, seguir la reacción hasta que se
+haya ejecutado un buen trecho de la misma. Esto podría suponer,
+según el caso, un elevado tiempo.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="metodos_determinacion_orden_reaccion.htm" title="Anterior">&lt;</a></li>
+  <li><a href="comparacion_diferentes_metodos.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

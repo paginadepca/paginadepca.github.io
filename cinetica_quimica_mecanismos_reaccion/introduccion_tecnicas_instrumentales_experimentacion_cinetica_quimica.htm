@@ -1,0 +1,649 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Introducción a las técnicas instrumentales de experimentación en cinética química">
+<meta name="keywords" content="introducción, técnicas, instrumentales, métodos, físicos, cinética, química">
+<title>Introducción a las técnicas instrumentales de experimentación en cinética química</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Introducción a las técnicas instrumentales de
+experimentación en cinética química</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>La finalidad es estudiar la velocidad de una reacción a lo
+largo del tiempo, además de aquellos factores que influyen en
+ésta.</p>
+
+<p>Lo más básico es conocer, controlar la temperatura, el
+tiempo y las concentraciones. Por tanto el estudio experimental
+siempre consiste en saber al menos estas tres cosas:</p>
+
+<p>a) La temperatura:</p>
+
+<p>La constante de velocidad depende de la temperatura, siendo
+pues un deber conocerla. La mayoría de las reacciones se
+realizan isotérmicamente. Esto se consigue mediante un
+termostato (un baño de, p. ej, agua con una resistencia y motor,
+que mueve el líquido, con una temperatura fijada).</p>
+
+<p>b) El tiempo:</p>
+
+<p>Para controlar el tiempo el dispositivo será más complejo
+cuanto más rápida sea la reacción. Se emplea el tiempo de
+semirreacción para clasificar las reacciones por su rapidez:</p>
+
+<center>
+<table>
+    <tr>
+        <th>Reacciones</th>
+        <th>$t_{1/2} \, (\pu{s})$</th>
+    </tr>
+    <tr>
+        <td>Muy lentas</td>
+        <td align="center">$\pu{4E7}$ ($1$ año)</td>
+    </tr>
+    <tr>
+        <td>Lentas</td>
+        <td align="center">$\pu{E5}$ ($1$ día)</td>
+    </tr>
+    <tr>
+        <td>Algo rápidas</td>
+        <td align="center">$\pu{4E3}$ ($1$ hora)</td>
+    </tr>
+    <tr>
+        <td>Rápidas</td>
+        <td align="center">$\pu{E2}$ - $\color{red}{\pu{E-1}}$</td>
+    </tr>
+    <tr>
+        <td>Muy rápidas</td>
+        <td align="center">$\color{red}{&lt; \pu{E-4}}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Para los tiempos de semirreacción escritos en rojo se emplea
+un osciloscopio, para el resto un cronómetro.</p>
+
+<p>c) La concentración:</p>
+
+<p>Para el control de la concentración lo primero que hay que
+tener en cuenta es la naturaleza de la substancia. Existen
+métodos químicos y métodos físicos (técnicas o métodos
+instrumentales).</p>
+
+<p>Los métodos químicos consisten en ir extrayendo muestras de
+la reacción para determinar, a continuación, la concentración
+por valoración. Se &quot;para&quot; la reacción en las muestras
+bajando su temperatura. Se utilizan con $t_{1/2} &gt; 30$
+minutos.</p>
+
+<p>En los métodos físicos se estudia una propiedad física del
+sistema que esté directamente relacionada con la concentración.
+Esto es:</p>
+
+<blockquote>
+    <p>Para los gases: La presión.</p>
+    <p>Para una solución de iones: La conductividad.</p>
+    <p>Cambio en las propiedades ópticas: Medición de, p. ej.,
+    la absorvancia (método espectroscópico).</p>
+</blockquote>
+
+<p>Los métodos físicos se realizan en continuo. Son más
+exactos.</p>
+
+<p>En resumen:</p>
+
+<blockquote>
+    <p>$t_{1/2} &gt; 30$ minutos $\;\Rightarrow\,$ método químico</p>
+    <p>$30$ minutos $&gt; t_{1/2} &gt; 1$ minuto $\;\Rightarrow\,$ método físico</p>
+    <p>$1$ minuto $&gt; t_{1/2} &gt; \pu{1 ms} \,\Rightarrow\,$ técnicas de flujo</p>
+    <p>$t_{1/2} &lt; \pu{1 ms} \,\Rightarrow\,$ técnicas de relajación</p>
+</blockquote>
+
+<p>Para poder seguir una reacción mediante una técnica
+instrumental ha de cumplirse que la propiedad que se mide sea
+directamente proporcional a la concentración:</p>
+
+<blockquote>
+    <p>
+    $
+    Y = \smash{\text{cte}}[\smash{\text{conc}}]
+    $
+    </p>
+</blockquote>
+
+<p>Métodos instrumentales:</p>
+
+<p>- Medición de la presión a lo largo del tiempo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;A &amp;-&gt;&amp; &amp;&amp;B &amp;+&amp; &amp;&amp;C} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{2mu} a &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{{-}\,x} &amp;&amp; &amp;&amp;\mspace{1mu} x &amp;&amp; &amp;&amp;\mspace{1mu} x
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Para gases esto puede escribirse en presiones parciales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;\;A &amp;\;-&gt;\,&amp; &amp;&amp;B &amp;\;+\,&amp; &amp;&amp;C} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\rlap{P_{\ce{A},0}} &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;&amp;\mspace{2mu} \rlap{P_{\ce{A}}} &amp;&amp; &amp;&amp;\rlap{\! P_{\ce{B}}} &amp;&amp; &amp;&amp;\! P_{\ce{C}}
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Suponiendo que la reacción es de orden uno, se cumple que:</p>
+
+<blockquote>
+    <p>
+    $
+    \ln \dfrac{a}{a-x} = kt
+    $
+    </p>
+</blockquote>
+
+<p>Si también se supone comportamiento de gas ideal, puede
+encontrarse una relación directa entre las concentraciones y las
+presiones parciales:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    a = \dfrac{P_{\ce{A},0}}{R \cdot T} \\[1ex]
+    a-x = \dfrac{P_{\ce{A}}}{R \cdot T} \\[1ex]
+    x = \dfrac{P_{\ce{B}}}{R \cdot T} = \dfrac{P_{\ce{C}}}{R \cdot T} \quad (P_{\ce{B}} = P_{\ce{C}})
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la expresión para una reacción de orden uno:</p>
+
+<blockquote>
+    <p>
+    $
+    \ln \dfrac{P_{\ce{A},0}}{P_{\ce{A}}} = kt
+    $
+    </p>
+</blockquote>
+
+<p>Esta transformación desde una expresión en concentraciones a
+una en presiones ha sido posible debido a la relación directa
+entre presión y concentración.</p>
+
+<p>Normalmente van a utilizarse avances de presión. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      a-x = \dfrac{P_{\ce{A}}}{RT} \\[1ex]
+      P_{\ce{A}} = aRT - xRT = P_{\ce{A},0} - P
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{6}
+      &amp;\ce{&amp;&amp;\!A &amp;\ -&gt; \ &amp; &amp;&amp;B &amp;\ + \ &amp; &amp;&amp;C} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\rlap{\!\!\!P_{\ce{A},0}} &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;P_{\ce{A},0}&amp;\rlap{\mspace{2mu}{-}\,P} &amp;&amp; &amp;&amp;P &amp;&amp; &amp;&amp;P
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto $P$ y $x$ serían equivalentes.</p>
+
+<p>Suponiendo reacción de primer orden:</p>
+
+<blockquote>
+    <p>
+    $
+    \ln \dfrac{P_{\ce{A},0}}{P_{\ce{A},0} - P} = kt
+    $
+    </p>
+</blockquote>
+
+<p>Experimentalmente lo que se mide, con un manómetro, en todo
+momento, es la presión total $P_{\rm T}$, que es la suma de
+todas las presiones parciales. Basándose en esto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      P_{\rm T} = P_{\ce{A}} + P_{\ce{B}} + P_{\ce{C}} =
+      (P_{\ce{A},0} - P) + P + P = P_{\ce{A},0} + P \\[1ex]
+      \Rightarrow P = P_{\rm T} - P_{\ce{A},0}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo pues la presión parcial para $\ce{A}$:</p>
+
+<blockquote>
+    <p>
+    $
+    P_{\ce{A}} = P_{\ce{A},0} - P = P_{\ce{A},0} - (P_{\rm T} - P_{\ce{A},0}) =
+    2 P_{\ce{A},0} - P_{\rm T}
+    $
+    </p>
+</blockquote>
+
+<p>Con esto, para esta reacción, la ecuación resultante de
+suponer orden uno queda:</p>
+
+<blockquote>
+    <p>
+    $
+    \ln \dfrac{P_{\ce{A},0}}{2 P_{\ce{A},0} - P_{\rm T}} = kt
+    $
+    </p>
+</blockquote>
+
+<p>Donde tanto $P_{\ce{A},0}$ como $P_{\rm T}$ son
+determinables experimentalmente.</p>
+
+<p>En una ecuación de velocidad de primer orden las unidades de $k$
+serán $\pu{t-1}\mspace{-2mu}$, pero en una de orden $n$ la constante de
+velocidad tendrá unidades, por ejemplo si se emplean atmósferas
+como unidades de presión, de $\pu{atm^{1-\it n} t-1}$.</p>
+
+<p>- Medida de la absorvancia:</p>
+
+<center>
+  <object data="introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica/introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica_1.svg" type="image/svg+xml" width="" height="">
+  </object>
+</center>
+
+<p>Tres posibilidades:</p>
+
+<p>a) Entra en la solución $I_0$ (intensidad de entrada)
+y no sale nada de radiación. El sistema es opaco.</p>
+
+<p>b) Entra $I_0$ y sale la misma intensidad de
+radiación. El sistema es transparente.</p>
+
+<p>c) Entra $I_0$ y sale $I$ (intensidad de salida), con
+una intensidad menor. La especie presente en la solución absorve
+parte de la intensidad de la radiación.</p>
+
+<p>Existe una relación entre $I_0$, $I$ y la
+concentración. Puede aprovecharse para observar como varía la
+concentración.</p>
+
+<p>La radiación transmitida y/o reflejada, dentro del espectro
+visible, es la que vemos.</p>
+
+<p>Un espectrofotómetro es un instrumento que mide la radiación
+absorvida por el sistema, i.e. soluciones coloreadas. Esta
+técnica instrumental se conoce como espectrofotometría.</p>
+
+<p>Ley de Lambert-Beer:</p>
+
+<center>
+  <object data="introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica/introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica_2.svg" type="image/svg+xml" width="" height="">
+  </object>
+</center>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      -\dfrac{dI}{I} = \alpha [c] \, dl \\[1ex]
+      -{\displaystyle \int_{I_0}^I} \dfrac{dI}{I} =
+      {\displaystyle \int_0^l} \alpha [c] \, dl \\[1ex]
+      \ln \dfrac{I_0}{I} = \alpha [c] l
+    \end{array}
+    $
+    </p>
+    <p>ó</p>
+    <p>
+    $
+    \begin{array}{l}
+      \log \dfrac{I_0}{I} = \varepsilon [c] l \\[1ex]
+      \log \dfrac{I_0}{I} = A \quad \smash{\text{(absorvancia)}} \\[1ex]
+      \Rightarrow A = \varepsilon [c] l
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto la absorvancia es proporcional a la concentración,
+donde $\varepsilon\mspace{1mu}$ es el coeficiente de extinción, que
+es una propiedad característica de la especie en el sistema.</p>
+
+<p>A una longitud de onda concreta, la absorvancia total es igual
+a la suma de las absorvancias de las distintas especies:</p>
+
+<blockquote>
+    <p>
+    $
+    A_{\rm T} = \sum \varepsilon_i [c_i] l
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto interesa una longitud de onda en la que sólo
+absorva la especie que se quiera seguir.</p>
+
+<p>Experimentalmente consiste en determinar, medir, la
+absorvancia frente al tiempo.</p>
+
+<p>Ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{4}
+      &amp;\ce{&amp;&amp;R &amp;-&gt;&amp; &amp;&amp;P} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;\mspace{1mu} a &amp;&amp; &amp;&amp;\mspace{2mu} \smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;\rlap{-\,x} &amp;&amp; &amp;&amp;\mspace{1mu} x \\[1ex]
+      &amp;t = \infty &amp;&amp;\mspace{2mu} \smash{\text{-}} &amp;&amp; &amp;&amp; a
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Si sólo absorve el producto, la absorvancia para cada momento:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      t_0 = 0 \,\Rightarrow\, A_{0} = 0 \\[1ex]
+      t = t \,\Rightarrow\, A_{\normalsize t} = x \varepsilon_{\ce{P}} l
+      \,\Rightarrow\, x = \dfrac{A_{\normalsize t}}{\varepsilon_{\ce{P}} l} \\[1ex]
+      t = \infty \,\Rightarrow\, A_\infty \mspace{-1mu} = a \varepsilon_{\ce{P}} l
+      \,\Rightarrow\, a = \dfrac{A_\infty}{\varepsilon_{\ce{P}} l}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Suponiendo reacción de orden uno y sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ln \dfrac{a}{a-x} = kt \\[1ex]
+      \Rightarrow \ln \dfrac{A_\infty}{A_\infty \mspace{-1mu} - A_{\normalsize t}} = kt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La representación del primer término de esta última
+expresión vs. el tiempo sería un recta de pendiente $k$
+que pasaría por el origen.</p>
+
+<p>- Método de la conductometría:</p>
+
+<p>Se mide la conductividad de la solución. Se emplea cuando en
+la misma hay iones, eletrolitos, que pueden conducir la corriente
+eléctrica.</p>
+
+<center>
+  <object data="introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica/introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica_3.svg" type="image/svg+xml" width="" height="">
+  </object>
+</center>
+
+<p>Partiendo de la definición de resistencia:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      R = \rho \dfrac{l}{S} \\[1ex]
+      R \equiv \smash{\text{Resistencia}} \\[1ex]
+      \rho \equiv \smash{\text{Conductividad}} \\[1ex]
+      l \equiv \smash{\text{Distancia entre placas}} \\[1ex]
+      S \equiv \smash{\text{Superficie entre placas}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La conductancia es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      G = \dfrac{1}{R} = \dfrac{1}{\rho} \dfrac{S}{l} = \kappa \dfrac{S}{l} \\[1ex]
+      \Rightarrow \kappa = \! \underbrace{\boxed{\dfrac{l}{S}}}_{\smash{\normalsize \text{cte}}}
+      G = \smash{\text{cte}} \cdot G \\[1ex]
+      \kappa \equiv \smash{\text{conductividad}} \\[1ex]
+      G \equiv \smash{\text{conductancia}} \\[1ex]
+      \smash{\text{cte}} = \dfrac{l}{S}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La constante ($\smash{\text{cte}}$) es propia de la célula de conductividad.
+Es una constante de la célula de conductividad en cuestión.</p>
+
+<p>El instrumento mide conductancias, por lo que hay que
+calibrarlo para poder calcular la conductividad. Las unidades son
+la inversa de las de la resistencia. Esto es: $1/\mspace{2mu}\Omega =
+\pu{{\Omega}-1}$, mho o siemens. Por tanto la medida de la conductividad es:</p>
+
+<blockquote>
+    <p>
+    $
+    \kappa \equiv \pu{{\Omega}-1 {cm}-1} \equiv \smash{\pu{{mho} {cm}-1}} \equiv
+    \smash{\pu{{siemens} {cm}-1}}
+    $
+    </p>
+</blockquote>
+
+<p>Si se cambia la célula de conductividad cambia la constante,
+y por tanto cambia el valor de la conductancia, pero no el de la
+conductividad que es intrínseco de la solución:</p>
+
+<blockquote>
+    <p>
+    $
+    \kappa = \sum \lambda_i c_i
+    $
+    </p>
+</blockquote>
+
+<p>Donde $\lambda_i$ es la conductividad
+molar del ión $i$, y $c_i$ su concentración.</p>
+
+<p>Ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{alignat}{8}
+      &amp;\ce{&amp;Ac&amp;OEt &amp;+&amp; &amp;Na&amp;OH &amp;-&gt;&amp; &amp;Ac&amp;ONa &amp;+&amp; &amp;Et&amp;OH} \\[1ex]
+      &amp;t_0 = 0 \quad &amp;&amp;a &amp;&amp; &amp;&amp;a &amp;&amp; &amp;&amp;\mspace{2mu}\smash{\text{-}} &amp;&amp; &amp;&amp;\mspace{2mu}\smash{\text{-}} \\[1ex]
+      &amp;t = t &amp;a\,&amp;{-\,x} &amp;&amp; &amp;a\,&amp;{-\,x} &amp;&amp; &amp;&amp;\mspace{1mu}x &amp;&amp; &amp;&amp;\mspace{1mu}x \\[1ex]
+      &amp;t = \infty &amp;&amp;\mspace{2mu}\smash{\text{-}} &amp;&amp; &amp;&amp;\mspace{2mu}\smash{\text{-}} &amp;&amp; &amp;&amp;a &amp;&amp; &amp;&amp;a
+    \end{alignat}
+    $
+    </p>
+</blockquote>
+
+<p>Según esto, las conductividades son:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \kappa_0 = (\lambda_{\ce{Na+}} + \lambda_{\ce{OH-}}) \mspace{1mu} a \\[1ex]
+      \kappa_{\normalsize t} = (\lambda_{\ce{Na+}} + \lambda_{\ce{OH-}}) (a-x) +
+      (\lambda_{\ce{AcO-}} \mspace{-1mu} + \lambda_{\ce{Na+}}) \mspace{1mu} x \\[1ex]
+      \kappa_\infty = (\lambda_{\ce{AcO-}} \mspace{-1mu} + \lambda_{\ce{Na+}}) \mspace{1mu} a
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Restando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \kappa_0 - \kappa_{\normalsize t} =
+      (\lambda_{\ce{OH-}} \mspace{-1mu} - \lambda_{\ce{AcO-}}) \mspace{1mu} x \\[1ex]
+      \Rightarrow x =
+      \dfrac{\kappa_0 - \kappa_{\normalsize t}}{\lambda_{\ce{OH-}} \mspace{-1mu} - \lambda_{\ce{AcO-}}} \\[1ex]
+      \kappa_0 - \kappa_\infty =
+      (\lambda_{\ce{OH-}} \mspace{-1mu} - \lambda_{\ce{AcO-}}) \mspace{1mu} a \\[1ex]
+      \Rightarrow a =
+      \dfrac{\kappa_0 - \kappa_\infty}{\lambda_{\ce{OH-}} \mspace{-1mu} - \lambda_{\ce{AcO-}}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>De $x \mspace{1mu} \lower 1px /a$:</p>
+
+<blockquote>
+    <p>
+    $
+    x = \dfrac{\kappa_0 - \kappa_{\normalsize t}}{\kappa_0 - \kappa_\infty} \mspace{1mu} a
+    $
+    </p>
+</blockquote>
+
+<p>Suponiendo una ecuación de velocidad tal que:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k[\ce{AcOEt}][\ce{NaOH}]
+    $
+    </p>
+</blockquote>
+
+<p>Integrando para una ecuación de segundo orden:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{1}{a-x} - \dfrac{1}{a} = kt
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{a - \dfrac{\kappa_0 - \kappa_{\normalsize t}}{\kappa_0 - \kappa_\infty} \mspace{1mu} a} -
+      \dfrac{1}{a} = kt \\[1ex]
+      \dfrac{\kappa_0 - \kappa_\infty}{\kappa_{\normalsize t} - \kappa_\infty} - 1 = akt \\[1ex]
+      \Rightarrow \dfrac{\kappa_0 - \kappa_{\normalsize t}}{\kappa_{\normalsize t} - \kappa_\infty} = akt
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Cabe señalar, como se observa, que en la expresión
+encontrada para una reacción de orden dos aparece la
+concentración inicial. La representación del primer término de
+la igualdad frente al tiempo:</p>
+
+<center>
+  <object data="introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica/introduccion_tecnicas_instrumentales_experimentacion_cinetica_quimica_4.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="comparacion_diferentes_metodos.htm" title="Anterior">&lt;</a></li>
+  <li><a href="reacciones_opuestas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

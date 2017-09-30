@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Reacciones paralelas">
+<meta name="keywords" content="reacciones, paralelas, competitivas">
+<title>Reacciones paralelas</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Reacciones paralelas</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Con frecuencia una especie puede reaccionar de más de una
+manera al mismo tiempo, dando diferentes productos.</p>
+
+<p>Aquí se estudiará el caso más sencillo, con coeficientes
+estequiométricos iguales a la unidad, de un único reactivo que
+a través de dos reacciones paralelas, o competitivas,
+irreversibles, y de primer orden, da origen por separado a dos
+productos distintos.</p>
+
+<blockquote>
+  <object data="reacciones_paralelas/reacciones_paralelas_01.svg"
+  type="image/svg+xml" width="101" height="108">
+  </object>
+</blockquote>
+
+<p>Según este esquema de reacción, la variación de la
+concentración con el tiempo para cada especie:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      -\dfrac{d[\ce{A}]}{dt} = k_1 [\ce{A}] + k_2 [\ce{A}] = (k_1 + k_2) [\ce{A}] \\[1ex]
+      \dfrac{d[\ce{B}]}{dt} = k_1 [\ce{A}] \\[1ex]
+      \dfrac{d[\ce{C}]}{dt} = k_2 [\ce{A}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Integrando para el reactivo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      - {\displaystyle \int_{[\ce{A}]_0}^{[\ce{A}]}} \dfrac{d[\ce{A}]}{[\ce{A}]} =
+      {\displaystyle \int_0^{\normalsize t}} (k_1 + k_2) \, dt \\[1ex]
+      \ln \dfrac{[\ce{A}]_0}{[\ce{A}]} = (k_1 + k_2) \mspace{1mu} t \\[1ex]
+      \Rightarrow [\ce{A}] = [\ce{A}]_0 \mspace{1mu} e^{-(k_1 + k_2) \mspace{1mu} \normalsize t}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Análoga a la que se halla para una reacción elemental de
+orden uno. Esta expresión encontrada para el reactivo puede
+introducirse en las ecuaciones de velocidad de aparición de los
+productos, para así poder integrarlas:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{d[\ce{B}]}{dt} = k_1 [\ce{A}] =
+      k_1 [\ce{A}]_0 \mspace{1mu} e^{-(k_1 + k_2) \mspace{1mu} \normalsize t} \\[1ex]
+      {\displaystyle \int_0^{[\ce{B}]}} d[\ce{B}] =
+      {\displaystyle \int_0^{\normalsize t}} k_1 [\ce{A}]_0 \mspace{1mu}
+      e^{-(k_1 + k_2) \mspace{1mu} \normalsize t} \mspace{2mu} dt \\[1ex]
+      \Rightarrow [\ce{B}] = \dfrac{k_1 [\ce{A}]_0}{k_1 + k_2}
+      (1 - e^{-(k_1 + k_2) \mspace{1mu} \normalsize t})
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Operando del mismo modo para $\ce{C}$ se obtiene que:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{C}] = \dfrac{k_2 [\ce{A}]_0}{k_1 + k_2}
+    (1 - e^{-(k_1 + k_2) \mspace{1mu} \normalsize t})
+    $
+    </p>
+</blockquote>
+
+<p>Si se dividen entre sí las ecuaciones halladas para las
+concentraciones de $\ce{B}$ y $\ce{C}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{[\ce{B}]}{[\ce{C}]} = \dfrac{k_1}{k_2}
+    $
+    </p>
+</blockquote>
+
+<p>Relación esta que se cumple para cualquier instante de la
+reacción. Por tanto la medición experimental de $[\ce{B}]$ y $[\ce{C}]$
+permite determinar un valor que relaciona, a través de la
+igualdad anterior, ambas constantes de velocidad.</p>
+
+<p>Ejemplo:</p>
+
+<center>
+  <object data="reacciones_paralelas/reacciones_paralelas_02.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Donde además en cualquier momento también se cumple que $[\ce{A}]_0 = [\ce{A}] + {}$
+$[\ce{B}] + [\ce{C}]$. En el límite de $t \mathbin{\to} \infty$
+las pendientes de la representación se hacen cero. Por tanto cuando la pend.
+$\approx 0$ la reacción se acaba.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="reacciones_opuestas.htm" title="Anterior">&lt;</a></li>
+  <li><a href="reacciones_consecutivas.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

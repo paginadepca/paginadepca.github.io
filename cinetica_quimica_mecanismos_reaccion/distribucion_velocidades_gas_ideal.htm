@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Distribución de velocidades en un gas ideal">
+<meta name="keywords" content="distribución, velocidades, gas, ideal">
+<title>Distribución de velocidades en un gas ideal</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Distribución de velocidades en un gas ideal</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El número de moléculas que tienen una velocidad entre $v$ y $v
++ dv$ tiene un valor $dN_{\normalsize v}$, esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+    \begin{array}{l}
+      v \\[1ex]
+      v + dv
+    \end{array}
+    \right\} \Rightarrow dN_{\normalsize v}
+    $
+    </p>
+</blockquote>
+
+<p>La fracción de moléculas respecto al total $N$ con
+una velocidad dentro del intervalo anterior es $dN_{\normalsize v}
+\mspace{1mu}/\mspace{1mu} N$. Esta fracción, para un gas ideal en ausencia de
+campos externos, viene dada por la ley de distribución de
+Maxwell-Boltzmann:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{dN_{\normalsize v}}{N} = G(v) \, dv =
+    \left( \dfrac{m}{2\pi kT} \right)^{\! 3/2} e^{-mv^2 / \mspace{1mu} 2kT} 4\pi v^2 dv
+    $
+    </p>
+</blockquote>
+
+<p>Donde $m$ es la masa de la molécula y $k$ la
+constante de Boltzmann. Como se observa de la expresión, la
+fracción de moléculas dentro de un determinado intervalo de
+velocidades es proporcional al tamaño de éste, algo lógico, y
+también depende de la localización del mismo, no es lo mismo un
+intervalo de velocidades entorno a una velocidad que a otra, por
+tanto del valor de $v$.</p>
+
+<p>La representación de $G(v)$, que da la probabilidad
+por unidad del intervalo de velocidad, frente a $v$, a una
+determinada temperatura, tiene forma de campana de Gauss que
+crece más rápido de lo que decrece:</p>
+
+<center>
+  <object data="distribucion_velocidades_gas_ideal/distribucion_velocidades_gas_ideal_01.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>$v_{\rm mp}$ es la velocidad más probable y coincide con el
+máximo de la representación. Por tanto su valor se halla
+igualando a cero la derivada de $G(v)$ con la velocidad. </p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{dG(v)}{dv} =
+      \left( \dfrac{m}{2 \pi k T} \right)^{\! 3/2} e^{-mv^2/ \mspace{1mu} 2kT} 4 \pi v
+      \left(2 - \dfrac{m}{kT}v^2 \right) = 0 \\[1ex]
+      \Rightarrow 2 - \dfrac{m}{kT} v_{\rm mp}^2 = 0 \\[1ex]
+      \Rightarrow v_{\rm mp} =
+      \sqrt{\dfrac{\strut 2kT}{m}} = \sqrt{\dfrac{\strut 2RT}{M}} \qquad
+      (k = R \mspace{1mu}/\mspace{1mu }N_0 \enspace ; \enspace M = N_0 \mspace{-2mu} \cdot m)
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>El valor de la velocidad media $\overline{v}$ se
+obtendría de la suma total de cada valor de la velocidad
+multiplicado por la probabilidad que se dé. Dado que la
+velocidad es una variable continua que puede adquirir cualquier
+valor, desde cero hasta un valor máximo, y la probabilidad es
+la función continua $G(v)\,dv$, el cálculo de la velocidad
+media resulta de la siguiente integral:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v} = {\displaystyle \int_0^\infty} v G(v) \, dv =
+    4 \pi \left( \dfrac{m}{2\pi kT} \right)^{\! 3/2}
+    {\displaystyle \int_0^\infty} e^{-mv^2 / \mspace{1mu} 2kT} v^3 dv
+    $
+    </p>
+</blockquote>
+
+<p>Si, consultando una tabla de integrales resueltas:</p>
+
+<blockquote>
+    <p>
+    $
+    {\displaystyle \int_0^\infty} x^{2n+1} e^{-ax^2} dx = \dfrac{n!}{2a^{n+1}} 
+    $
+    </p>
+</blockquote>
+
+<p>Siendo para este caso:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      n = 1 \\[1ex]
+      a = \dfrac{m}{2kT}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v} =  4 \pi \left( \dfrac{m}{2\pi kT} \right)^{\! 3/2}
+    \dfrac{1}{2 \left( \dfrac{m}{2kT} \right)^2} =
+    \sqrt{\dfrac{\strut 8kT}{\pi m}} = \sqrt{\dfrac{\strut 8RT}{\pi M}}
+    $
+    </p>
+</blockquote>
+
+<p>$v_{\rm cm}$ es la velocidad cuadrática media, siendo, como
+ya se vio en otro tema, su valor:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm cm} = \sqrt{\dfrac{\strut 3kT}{m}} = \sqrt{\dfrac{\strut 3RT}{M}}
+    $
+    </p>
+</blockquote>
+
+<p>Representando para un mismo gas a distintas temperaturas:</p>
+
+<center>
+  <object data="distribucion_velocidades_gas_ideal/distribucion_velocidades_gas_ideal_02.svg"
+  type="image/Svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<blockquote>
+    <p>
+    $
+    T_1 &lt; T_2 &lt; T_3
+    $
+    </p>
+
+    <p>
+    $
+    v_{{\rm mp},1} &lt; v_{{\rm mp},2} &lt; v_{{\rm mp},3}
+    $
+    </p>
+</blockquote>
+
+
+<p>Conforme aumenta la temperatura la curva se ensancha, el
+máximo es más bajo, y se desplaza hacia velocidades mayores. El
+valor de $v_{\rm mp}$ al subir la temperatura, tal como era de
+esperar, también lo hace. Al disminuir el máximo la fracción
+de moléculas a esa velocidad será menor, a la vez que la
+campana, distribución de velocidades, es más amplia.</p>
+
+<p>Del mismo modo una representación a $T = \smash{\text{cte.}}$ para distintos
+gases, por tanto con masa molecular distinta, daría como
+resultado un gráfico análogo al anterior donde cuanto más
+ligero fuera el gas mayor sería $v_{\rm mp}$, con un máximo
+más bajo y una distribución de velocidades más ancha. Esto es:</p>
+
+<blockquote>
+    <p>$T = \smash{\text{cte.}}$</p>
+
+    <p>$m_1 &gt; m_2 &gt; m_3$</p>
+
+    <p>$v_{{\rm mp},1} &lt; v_{{\rm mp},2} &lt; v_{{\rm mp},3}$</p>
+</blockquote>
+
+<p>En este punto cabe recordar que la energía cinética, como se
+vio, para una temperatura constante es también constante, y dado
+que:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{E_{\rm c}} = \dfrac{1}{2} m \overline{v^2}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto a $T = \smash{\text{cte.}}$ las moléculas de los gases
+más ligeros deben tener una mayor velocidad.</p>
+
+<p>La distribución de Maxwell también puede expresarse en
+función de la energía cinética de las moléculas ($\varepsilon$).
+Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+    \begin{array}{l}
+      \varepsilon \\[1ex]
+      \varepsilon + d\varepsilon
+    \end{array}
+    \right\} dN_\varepsilon
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \varepsilon = \dfrac{1}{2} m v^2 \\[1ex]
+      \Rightarrow v^2 = \dfrac{2\varepsilon}{m}
+      \Rightarrow v = \left( \dfrac{2\varepsilon}{m} \right)^{\! 1/2}  \\[1ex]
+      \dfrac{d\varepsilon}{dv} = mv \\[1ex]
+      \Rightarrow dv = \dfrac{d\varepsilon}{mv}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyento en la expresión de la ley de distribución de
+Maxwell-Boltzmann:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \dfrac{dN_\varepsilon}{N} &amp;=
+      \left( \dfrac{m}{2\pi kT} \right)^{\! 3/2}
+      e^{-\!\cancel{m} \mspace{-1mu} {\large \frac{\cancel{2} \! \varepsilon}{\cancel{m}}} / \mspace{-1mu} \cancel{2} \! kT}
+      4\pi \dfrac{2\varepsilon}{m} \dfrac{d\varepsilon}{mv} = \\[1em]
+      &amp;= \left( \dfrac{\cancel{m}}{\cancel{2} \! \pi kT} \right)^{\! 3/2}
+      e^{-\varepsilon \mspace{1mu}/ kT}
+      2^{\mspace{-2mu} \cancel{3}} \pi \dfrac{
+        \varepsilon
+      }{
+        \cancel{m^2} \! \left( \dfrac{\cancel{2} \! \varepsilon}{\cancel{m}} \right)^{\! 1/2}
+      } \, d\varepsilon = \\[1em]
+      &amp;= 2 \pi \left( \dfrac{1}{\pi kT} \right)^{\! 3/2} \varepsilon^{1/2}
+      e^{-\varepsilon \mspace{1mu}/ kT} \mspace{1mu} d\varepsilon
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Expresión que no depende de la masa molecular del gas. Por
+tanto la distribución de la energía cinética es independiente
+del gas, es igual para todos los gases, solamente depende de la
+temperatura.</p>
+
+<center>
+  <object data="distribucion_velocidades_gas_ideal/distribucion_velocidades_gas_ideal_03.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>La forma de la curva es diferente a la de la distribución de
+velocidades. Se pierde la simetría.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="teoria_cinetica_gases.htm" title="Anterior">&lt;</a></li>
+  <li><a href="teoria_colisiones_esferas_rigidas_fase_gaseosa.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

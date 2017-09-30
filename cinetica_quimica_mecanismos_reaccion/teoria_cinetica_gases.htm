@@ -1,0 +1,492 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Teoría cinética de los gases">
+<meta name="keywords" content="teoría, cinética, gases">
+<title>Teoría cinética de los gases</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Teoría cinética de los gases</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se toma el modelo del gas ideal. Suposiciones:</p>
+
+<blockquote>
+<p>1. El gas está constituido por moléculas que se mueven al
+azar y en movimiento rectilíneo.</p>
+
+<p>2. El tamaño de las moléculas es despreciable.</p>
+
+<p>3. Las moléculas no interaccionan a través de fuerzas
+intermoleculares. No hay fuerzas de atracción o repulsión.</p>
+
+<p>4. Las moléculas cuando chocan lo hacen de forma elástica.
+No hay pérdida de energía en el choque.</p>
+
+<p>5. Todas las direcciones de movimiento de una molécula tienen
+igual probabilidad.</p>
+</blockquote>
+
+<p>Con este modelo, para este gas (ideal) van a estudiarse la
+presión, la temperatura, junto con la energía cinética, y la
+velocidad de las moléculas.</p>
+
+<p>- Presión:</p>
+
+<p>La presión se debe al choque de las moléculas del gas con la
+pared de su recipiente. Viene dada por la fuerza media ejercida
+por las moléculas que impactan sobre la pared del recipiente.</p>
+<p>Se supone un recipiente en forma de cubo cuya arista mide $l$.
+Si una molécula $i$ choca con una de las paredes de forma
+elástica y perpendicularmente, en general para cualquier ángulo
+sólo cambia el sentido (signo) de la componente perpendicular a
+la pared, la representación de este choque de forma esquemática:</p>
+
+<center>
+  <object data="teoria_cinetica_gases/teoria_cinetica_gases.svg"
+  type="image/svg+xml" width="202" height="131">
+  </object>
+</center>
+
+<p>Donde $m$ es la masa de la molécula y $v_{x,i}$
+es la velocidad de la molécula $i$ sobre el eje $x$.</p>
+
+<p>La presión sobre la pared es:</p>
+
+<blockquote>
+    <p>
+    $
+    P = \dfrac{F_{\rm T}}{l^2}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $F_{\rm T}$ es la fuerza en conjunto
+que aplican las moléculas de gas sobre la pared. Esto es, es la
+suma total de las fuerzas que ejercen de forma individual las
+moléculas al impactar con la pared del recipiente:</p>
+
+<blockquote>
+    <p>
+    $
+    F_{\rm T} = {\displaystyle \sum} F_i
+    $
+    </p>
+</blockquote>
+
+<p>Para una molécula:</p>
+
+<blockquote>
+    <p>
+    $
+    F_i = m a_{x,i} = m \dfrac{dv_{x,i}}{dt} = \dfrac{d(mv_{x,i})}{dt}
+    $
+    </p>
+</blockquote>
+
+<p>Para el intervalo de tiempo entre choque y choque de $i$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      F_i = \dfrac{\Delta (mv_{x,i})}{\Delta t} \\[1ex]
+      \Delta t \rightarrow \smash{\text{ciclo entre choque y choque}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Observando el esquema dibujado anteriormente, el incremento de
+la cantidad de movimineto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \Delta(mv_{x,i}) = mv_{x,i} - (-mv_{x,i}) = 2mv_{x,i}
+    $
+    </p>
+</blockquote>
+
+<p>La distancia que recorre sobre la dirección $x$ la
+molécula hasta que vuelve a impactar sobre la pared es dos veces
+la arista del cubo, $2l$. Esto es, recorre el espacio
+hasta la pared opuesta, rebota y regresa. El intervalo de tiempo
+para hacer este recorrido, siendo $v =$ distancia $/$ tiempo, es
+entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    \Delta t = \dfrac{2l}{v_{x,i}}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto, sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    F_i = \dfrac{\cancel{2} \! mv_{x,i}}{\cancel{2} \! l \mspace{2mu}/\mspace{2mu} v_{x,i}} =
+    \dfrac{m(v_{x,i})^2}{l}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    F_{\rm T} = {\displaystyle \sum_{i=1}^N} \dfrac{m(v_{x,i})^2}{l} =
+    \dfrac{m}{l} {\displaystyle \sum_{i=1}^N} (v_{x,i})^2
+    $
+    </p>
+</blockquote>
+
+<p>Siendo $N$ el número total de moléculas del gas. El
+valor medio de $v_x^2$ para todas las moléculas es:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v_x^2} = \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} (v_{x,i})^2
+    $
+    </p>
+</blockquote>
+
+<p>Quedando que:</p>
+
+<blockquote>
+    <p>
+    $
+    F_{\rm T} = \dfrac{Nm}{l} \, \overline{v_x^2}
+    $
+    </p>
+</blockquote>
+
+<p>Dado que las moléculas se mueven en todas direcciones,
+aplicando el teorema de Pitágoras:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v_i^2 = (v_{x,i})^2 + (v_{y,i})^2 + (v_{z,i})^2 \\[1ex]
+      \overline{v^2} = \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} v_i^2 =
+      \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} \!
+      \left( (v_{x,i})^2 + (v_{y,i})^2 + (v_{z,i})^2 \right) =
+      \overline{v_x^2} + \overline{v_y^2} + \overline{v_z^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Como todas las direcciones son igual de probables:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \overline{v_x^2} = \overline{v_y^2} = \overline{v_z^2} \\[1ex]
+      \Rightarrow \overline{v^2} = 3 \overline{v_x^2}
+    \end{array}  
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    F_{\rm T} = \dfrac{1}{3} \dfrac{Nm}{l} \, \overline{v^2}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la expresión inicialmente planteada para la
+presión:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      P = \dfrac{F_{\rm T}}{l^2} = \dfrac{1}{3} \dfrac{Nm}{l^3} \, \overline{v^2} \\[1ex]
+      \Rightarrow P = \dfrac{1}{3} \dfrac{Nm}{V} \, \overline{v^2} \\[1ex]
+      \Rightarrow PV = \dfrac{1}{3} Nm \overline{v^2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $V$ es el volumen del recipiente. Siendo estas
+ecuaciones para un gas ideal, desde un punto de vista
+microscópico, según la teoría cinética de los gases.</p>
+
+<p>- Temperatura:</p>
+
+<p>La energía cinética media de las moléculas del gas es:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{E_{\rm c}} =
+    \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} E_{{\rm c},i} =
+    \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} \dfrac{1}{2} m v_{i}^2 =
+    \dfrac{1}{2} m \dfrac{1}{N} {\displaystyle \sum_{i=1}^N} v_{i}^2 =
+    \dfrac{1}{2} m \overline{v^2}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, la fórmula hallada con anterioridad para la
+presión puede escribirse como:</p>
+
+<blockquote>
+    <p>
+    $
+    PV = \dfrac{2}{3} N \overline{E_{\rm c}}
+    $
+    </p>
+</blockquote>
+
+<p>Si $\mspace{1mu} N = N_0 = \pu{6,022e23}$ (número de Avogadro):</p>
+
+<blockquote>
+    <p>
+    $
+    PV = \dfrac{2}{3} N_0 \overline{E_{\rm c}} = \dfrac{2}{3} E_{\rm c}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $E_{\rm c}$ es la energía cinética
+total para $\pu{1 mol}$ de moléculas del gas. La ecuación del gas
+ideal para $\pu{1 mol}$:</p>
+
+<blockquote>
+    <p>
+    $
+    PV = RT
+    $
+    </p>
+</blockquote>
+
+<p>Igualando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{2}{3} E_{\rm c} = RT \\[1ex]
+      \Rightarrow T = \dfrac{2}{3} \dfrac{E_{\rm c}}{R} \quad \smash{\text{ó}} \quad
+      E_{\rm c} = \dfrac{3}{2} RT
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Encontrando una relación entre la energía cinética de las
+moléculas del gas y la temperatura. Por tanto una cesión o
+ganancia de energía cinética implica una transferencia de calor.</p>
+
+<p>Como se vió:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v^2} = \overline{v_x^2} + \overline{v_y^2} + \overline{v_z^2}
+    $
+    </p>
+</blockquote>
+
+<p>Multiplicando por $m\mspace{1mu}/\mspace{1mu}2$ y luego por el número de Avogadro:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{1}{2} m \overline{v^2} =
+      \dfrac{1}{2} m \overline{v_x^2} + \dfrac{1}{2} m \overline{v_y^2} +
+      \dfrac{1}{2} m \overline{v_z^2} \\[1ex]
+      \Rightarrow \overline{E_{\rm c}} =
+      \overline{E_{{\rm c},x}} + \overline{E_{{\rm c},y}} + \overline{E_{{\rm c},z}} \\[1ex]
+      N_0 \overline{E_{\rm c}} =
+      N_0 \overline{E_{{\rm c},x}} + N_0 \overline{E_{{\rm c},y}} + N_0 \overline{E_{{\rm c},z}} \\[1ex]
+      \Rightarrow E_{\rm c} = E_{{\rm c},x} + E_{{\rm c},y} + E_{{\rm c},z}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Dado que no existe preferencia de dirección, son igual de
+probables, la energía cinética del gas se reparte por igual
+entre las tres direcciones del espacio:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      E_{{\rm c},x} = E_{{\rm c},y} = E_{{\rm c},z} \\[1ex]
+      \Rightarrow E_{\rm c} = 3 E_{{\rm c},x} = \dfrac{3}{2} RT \\[1ex]
+      \Rightarrow E_{{\rm c},x} = E_{{\rm c},y} = E_{{\rm c},z} = \dfrac{1}{2} RT
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>- Velocidad:</p>
+
+<p>La energía cinética total para $\pu{1 mol}$ de moléculas es:</p>
+
+<blockquote>
+    <p>
+    $
+    E_{\rm c} = \dfrac{3}{2} RT = \dfrac{1}{2} m N_0 \overline{v^2}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v^2} = \dfrac{3RT}{N_0 m} = \dfrac{3kT}{m}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $k$ es la constante de Boltzmann:</p>
+
+<blockquote>
+    <p>
+    $
+    k = \dfrac{R}{N_0}
+    $
+    </p>
+</blockquote>
+
+<p>O también:</p>
+
+<blockquote>
+    <p>
+    $
+    \overline{v^2} = \dfrac{3RT}{N_0 m} = \dfrac{3RT}{M}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $M$ es la masa molar:</p>
+
+<blockquote>
+    <p>
+    $
+    M = N_0 \mspace{-2mu} \cdot m \quad (\pu{g/mol})
+    $
+    </p>
+</blockquote>
+
+<p>Se define la velocidad cuadrática media $v_{\rm cm}$ como:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm cm} = \left( \overline{v^2} \right)^{\! 1/2}
+    $
+    </p>
+</blockquote>
+
+<p>Por consiguiente:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm cm} = \left( \dfrac{3RT}{M} \right)^{\! 1/2}
+    $
+    </p>
+</blockquote>
+
+<p>Que permite estimar la velocidad de las moléculas. Hay que
+recalcar que:</p>
+
+<blockquote>
+    <p>
+    $
+    v_{\rm cm} \neq \overline{v}
+    $
+    </p>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="dependencia_constante_velocidad_temperatura.htm" title="Anterior">&lt;</a></li>
+  <li><a href="distribucion_velocidades_gas_ideal.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

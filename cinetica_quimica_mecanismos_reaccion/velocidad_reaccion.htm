@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Velocidad de reacción">
+<meta name="keywords" content="velocidad, reacción">
+<title>Velocidad de reacción</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Velocidad de reacción</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se define de forma específica la velocidad absoluta para una
+especie como la variación de los moles de ésta con el tiempo. </p>
+
+<blockquote>
+    <p>
+    $v_{{\rm ab},i} = \dfrac{dn_i}{dt}$
+    </p>
+</blockquote>
+
+<p>Donde $n_i$ son los moles de especie $i$.</p>
+
+<p>Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{\nu_A \! A + \nu_B \! B -&gt; \nu_L \! L + \nu_M \! M} \\[1em]
+      v_{\rm{ab},\ce{A}} = - \dfrac{dn_{\ce{A}}}{dt} \\[1ex]
+      v_{\rm{ab},\ce{B}} = - \dfrac{dn_{\ce{B}}}{dt} \\[1ex]
+      v_{\rm{ab},\ce{L}} = \dfrac{dn_{\ce{L}}}{dt} \\[1ex]
+      v_{\rm{ab}, \ce{M}} = \dfrac{dn_{\ce{M}}}{dt}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por conveniencia se usa el signo negativo en los reactivos para
+que el valor resultante sea positivo.</p>
+
+<p>Se trabaja habitualmente con propiedades intensivas. Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      v_i
+      = \dfrac{v_{{\rm ab},i}}{V} = \dfrac{dn_i}{V dt} &amp;= \dfrac{d(n_i \,/\, V)}{dt}
+      = \dfrac{d[i]}{dt} \\[1ex]
+      V &amp;= \rm{cte.}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>El <em>avance de la reacción</em> se define como la
+variación de los moles de una especie dividida por el
+coeficiente estequiométrico.</p>
+
+<blockquote>
+    <p>
+    $
+    d\xi = \dfrac{dn_i}{\nu_i}
+    $
+    </p>
+</blockquote>
+
+<p>El avance de la reacción es exactamente el mismo para
+reactivos y productos:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{alignedat}{8}
+        &amp;\ce{&amp;&amp;\nu_A \! A &amp;&amp;+ &amp;&amp;\nu_B \! B &amp;&amp;-&gt; 
+        &amp;&amp;\nu_L \! L &amp;&amp;+ &amp;&amp;\nu_M \! M} \\
+        &amp;t=0 &amp;\quad&amp; \,n_{\ce{A},0} &amp;&amp; &amp;&amp; \,n_{\ce{B},0} &amp;&amp;
+        &amp;&amp;\;\;\text{-} &amp;&amp; &amp;&amp;\;\;\;\text{-} \\
+        &amp;t=t &amp;&amp; \;n_{\ce{A}} &amp;&amp; &amp;&amp; \;n_{\ce{B}} &amp;&amp;
+        &amp;&amp;\;n_{\ce{L}} &amp;&amp; &amp;&amp;\;\;n_{\ce{M}}
+      \end{alignedat} \\[1.5em]
+      -\dfrac{n_{\ce{A}} - n_{\ce{A},0}}{\nu_{\ce{A}}} =
+      -\dfrac{n_{\ce{B}} - n_{\ce{B},0}}{\nu_{\ce{B}}} = \xi 
+      \quad \text{ó} \quad
+      \dfrac{n_{\ce{A},0} - n_{\ce{A}}}{\nu_{\ce{A}}} =
+      \dfrac{n_{\ce{B},0} - n_{\ce{B}}}{\nu_{\ce{B}}} = \xi \\[1em]
+      \dfrac{n_{\ce{L}}}{\nu_{\ce{L}}} = \xi \\[1em]
+      \dfrac{n_{\ce{M}}}{\nu_{\ce{M}}} = \xi
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por convenio a los coeficientes estequiométricos de los
+reactivos se les considera negativos. Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    d\xi
+    = - \dfrac{dn_{\ce{A}}}{\nu_{\ce{A}}} = -\dfrac{dn_{\ce{B}}}{\nu_{\ce{B}}}
+    = \dfrac{dn_{\ce{L}}}{\ce{\nu_L}} = \dfrac{dn_{\ce{M}}}{\ce{\nu_M}}
+    $
+    </p>
+</blockquote>
+
+<p>Se define la <em>velocidad de conversión</em> de una reacción
+como:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d\xi}{dt}
+    = - \dfrac{dn_{\ce{A}}}{\nu_{\ce{A}} dt} = -\dfrac{dn_{\ce{B}}}{\nu_{\ce{B}} dt}
+    = \dfrac{dn_{\ce{L}}}{\ce{\nu_L} dt} = \dfrac{dn_{\ce{M}}}{\ce{\nu_M} dt}
+    $
+    </p>
+</blockquote>
+
+<p>Al trabajar habitualmente con propiedades intensivas, y
+considerando el $V = \text{cte.}$, se define la <em>velocidad de reacción</em>
+como la velocidad de conversión por unidad de volumen. Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{1}{V} \dfrac{d\xi}{dt} = \dfrac{1}{V} \dfrac{d(n_i \,/\, V)}{\nu_i \, dt}
+    = \dfrac{d[i]}{\nu_i \, dt}
+    $
+    </p>
+</blockquote>
+
+<p>Que tiene unidades de $\pu{mol dm-3 s-1}$.</p>
+
+<p>Del mismo modo que se ha definido un avance extensivo $\xi$
+puede definirse un avance intensivo $x$:</p>
+
+<blockquote>
+    <p>
+    $
+    dx = \dfrac{d[i]}{\nu_i} \quad (\pu{mol dm-3})
+    $
+    </p>
+</blockquote>
+
+<p>Por ejemplo, representación de las concentraciones de un
+reactivo y un producto (especies de control) a lo largo del
+tiempo:</p>
+
+<center>
+  <object data="velocidad_reaccion/velocidad_reaccion.svg" type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Donde la pendiente sería la velocidad específica en un
+momento dado para esa especie. La velocidad de reacción para ese
+momento resultaría de dividir la pendiente por el coeficiente
+estequiométrico correspondiente.</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{d[i]}{\nu_i \, dt} = - \dfrac{d[\ce{R}]}{\nu_{\ce{R}} dt}
+    = \dfrac{d[\ce{P}]}{\nu_{\ce{P}} dt} \quad (\pu{mol dm-3 s-1})
+    $
+    </p>
+</blockquote>
+
+<p>Como se observa, la velocidad de reacción es única para cada
+punto de la representación. Cuando empieza la reacción la
+velocidad es muy grande, y a medida que aumenta el tiempo la
+velocidad disminuye. También, de la representación, la
+velocidad de desaparación es negativa y la de aparición
+positiva.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="introduccion.htm" title="Anterior">&lt;</a></li>
+  <li><a href="ecuacion_velocidad_orden_constante_velocidad.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+      
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description"
+content="Dependencia de la constante de velocidad con la temperatura">
+<meta name="keywords"
+content="dependencia, constante, velocidad, temperatura, energía, activación">
+<title>Dependencia de la constante de velocidad con la temperatura</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Dependencia de la constante de velocidad con la
+temperatura</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Experimentalmente se halla que cuando se modifica la
+temperatura la mayoría de reacciones varían su velocidad. Lo
+más normal es que cuando aumente la temperatura también lo haga
+la velocidad. A veces a medida que aumenta la temperatura la
+velocidad disminuye, siendo este el caso de reacciones
+catalizadas debido a la disminución, destrucción del
+catalizador. Aunque es muy poco frecuente que la velocidad
+disminuya con el aumento de la temperatura.</p>
+
+<p>Para muchas reacciones, a temperatura ambiente:</p>
+
+<blockquote>
+    <p>
+    coeficiente de temperatura $= \dfrac{k(T_1 + 10)}{k(T_1)} \approx 2$
+    </p>
+</blockquote>
+
+<p>Esto quiere decir que, a temperatura ambiente, la constante de
+velocidad aproximadamente se dobla por cada $10º$ que aumenta la
+temperatura.</p>
+
+<p>Hood empíricamente encontró una relación entre la constante
+de velocidad y la temperatura:</p>
+
+<blockquote>
+    <p>
+    $\ln k = B - \dfrac{A'}{T} \quad B$ y $A' \mspace{-1mu}$ son constantes
+    </p>
+</blockquote>
+
+<p>Arrhenius posteriormente estableció que:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      B = \ln A \\[1ex]
+      A' = \dfrac{E_a}{R}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Donde $A$ es el factor preexponencial, $E_a$
+es la energía de activación de la reacción y $R$ es la
+constante de los gases. Quedando la expresión como:</p>
+
+<blockquote>
+    <p>
+    $
+    k = A e^{-E_{\large a}/RT}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo que $A$ tiene las mismas unidades que la
+constante de velocidad. Para $E_a$ son $\pu{kJ/mol}$ o 
+$\pu{kcal/mol}$.</p>
+
+<p>Si esta ecuación se cumple para una reacción determinada, la
+representación del $\ln k$ frente a $1/\mspace{1mu}T$ consistirá en
+una recta donde la pendiente es igual a $-E_a / R$ y la ordenada
+en el origen es $\ln A$.</p>
+
+<center>
+  <object data="dependencia_constante_velocidad_temperatura/dependencia_constante_velocidad_temperatura_01.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Para casi todas las reacciones elementales y para muchas de
+las complejas la ecuación de Arrhenius se cumple. Para rangos de
+temperatura pequeños puede considerarse la energía de
+activación como constante, pero para intervalos de temperatura
+mayores ($200$ ó $300º$) puede ya ser apreciable una dependencia
+de la temperatura.</p>
+
+<p>Para explicar el concepto de energía de activación,
+supóngase una reacción elemental tal como:</p>
+
+<blockquote>
+    <p>Reactivos $\ce{-&gt;}$ Productos</p>
+</blockquote>
+
+<p>La energía de activación es la energía mínima necesaria,
+proveniente de las colisiones entre moléculas (por tanto de su
+energía cinética), para que el reactivo o reactivos inicien,
+sin vuelta atrás, la ruptura y/o reorganización de los enlaces
+para dar el producto o productos. Esto puede representarse:</p>
+
+<center>
+  <object data="dependencia_constante_velocidad_temperatura/dependencia_constante_velocidad_temperatura_02.svg"
+  type="image/svg+xml" width="269" height="150">
+  </object>
+</center>
+
+<p>De la ecuación de Arrhenius se desprende que este tipo de
+reacción será tanto más lenta cuanto mayor sea la energía de
+activación. El efecto de aumentar la velocidad al subir la
+temperatura se explica por un aumento de la energía cinética de
+las moléculas, y por tanto un mayor número de colisiones con
+suficiente energía como para superar la barrera de la energía
+de activación.</p>
+
+<p>Diferentes casos:</p>
+
+<p>$E_a &gt; 0$ </p>
+
+<blockquote>
+    <p>Este es el caso de reacciones químicas elementales ($0\smash{\text{-}}\pu{100
+    kcal/mol}$), las unimoleculares suelen tener mayor energía de
+    activación que las bimoleculares, y de la mayoría de
+    compuestas. Aquí se cumple que:</p>
+    <blockquote>
+      <p>
+      $
+      \begin{array}{l}
+        \ln k = \ln A - \dfrac{E_a}{RT} \\[1ex]
+        {T \uparrow} \Rightarrow k \uparrow v \uparrow \\[1ex]
+        {T \downarrow} \Rightarrow k \downarrow v \downarrow
+      \end{array}
+      $
+      </p>
+    </blockquote>
+</blockquote>
+
+<p>$E_a = 0$</p>
+
+<blockquote>
+    <p>Este suele ser el caso de la recombinación de radicales,
+    donde no se requiere la ruptura de enlaces. Aquí un cambio
+    de temperatura no influye en la constante de velocidad.</p>
+</blockquote>
+
+<p>La expresión general que define a la energía de activación
+es:</p>
+
+<blockquote>
+    <p>
+    $
+    E_a = RT^2 \dfrac{d \mspace{-2mu} \ln k}{dT}
+    $
+    </p>
+</blockquote>
+
+<p>Si $E_a$ es independiente de $T$ la integración conduce a
+la ecuación de Arrhenius, donde el factor preexponencial $A$
+tampoco depende de $T$. Si $E_a$ varía con $T$, se calcula su
+valor a partir de la pendiente de la representación de $\ln k$
+frente a $1/\mspace{1mu}T$, según se deduce de la expresión general:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      E_a = RT^2 \dfrac{d \mspace{-2mu} \ln k}{dT} =
+      R \dfrac{d \mspace{-2mu} \ln k}{(1/\mspace{1mu}T^2 \mspace{-1mu}) \, dT} =
+      R \dfrac{d \mspace{-2mu} \ln k}{- \dfrac{d(1/\mspace{1mu}T)}{dT} \, dT} =
+      - R \dfrac{d \mspace{-2mu} \ln k}{d(1/\mspace{1mu}T)} \\[1ex]
+      \Rightarrow \dfrac{d \mspace{-2mu} \ln k}{d(1/\mspace{1mu}T)} =
+      - \dfrac{E_a}{R}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Independientemente de si la energía de activación es
+función de la temperatura o no, se define el factor
+preexponencial $A$ como:</p>
+
+<blockquote>
+    <p>
+    $
+    A = k \mspace{1mu} e^{\mspace{1mu} E_{\large a}/RT}
+    $
+    </p>
+</blockquote>
+
+<p>Para una reacción compuesta por dos etapas, siendo válida la
+aproximación de la etapa determinante, donde la segunda es la
+etapa lenta y la primera puede considerarse en equilibrio, el
+valor de $k_{\rm exp}$ es:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm exp} = k_2 \dfrac{k_1}{k_{-1}}
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando la ecuación de Arrhenius:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm exp} = A_2 e^{-E_{{\large a}\normalsize, 2}\mspace{1mu}/RT}
+    \dfrac{
+      A_1 e^{-E_{{\large a}\normalsize, 1}/RT}
+    }{
+      A_{-1} e^{-E_{{\large a}\normalsize, -1}/RT}
+    } = A_2 \dfrac{A_1}{A_{-1}}
+    e^{-(E_{{\large a}\normalsize, 1} - E_{{\large a}\normalsize, -1} +
+    E_{{\large a}\normalsize, 2})\mspace{1mu}/RT}
+    $
+    </p>
+</blockquote>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm exp} = A e^{-E_{\large a}/RT}
+    $
+    </p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      A = A_2 \dfrac{A_1}{A_{-1}} \\[1ex]
+      E_{a} = E_{a,1} - E_{a,-1} + E_{a,2}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La reacción sigue la ecuación de Arrhenius, lo que la hace
+una reacción arrheniana. Es una reacción compuesta cuya
+energía de activación es la combinación lineal de las
+energías de activación de las etapas elementales. En general:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_{\rm exp} = \dfrac{k_1 \dotsm k_n}{k_{-1} \dotsm k_{-n+1}} \\[1ex]
+      \Rightarrow E_a = E_{a,1} + \dotsb + E_{a,n} - E_{a,-1} - \dotsb - E_{a,-n+1}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Situación de reacciones competitiva o paralelas:</p>
+
+<blockquote>
+    <p>
+    $
+    \def\rarrow#1#2{
+      \,
+      \overset{#1}{
+        \underset{\smash{#2}}{
+          \Rule{0pt}{0.3em}{0pt}
+          \smash{
+            \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+          }
+        } 
+      }
+      \,
+    }
+    \begin{array}{l}
+      \ce{A \rarrow{\large k_1}{} C} \\
+      \ce{A \rarrow{\large k_2}{} D}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La velocidad global de desparición de $A$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v = - \dfrac{d[\ce{A}]}{dt} = (k_1 + k_2) [\ce{A}] \\[1ex]
+      \Rightarrow k_{\rm exp} = k_1 + k_2
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando la ecuación de Arrhenius:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm exp} = A_1 e^{-E_{{\large a}\normalsize, 1}/RT} +
+    A_2 e^{-E_{{\large a}\normalsize, 2}\mspace{1mu}/RT}
+    $
+    </p>
+</blockquote>
+
+<p>Según esta igualdad no es una reacción arrheniana, ya que la
+$k_{\rm exp}$ no puede expresarse en forma de una
+ecuación como la de Arrhenius. Si ambos valores de la energía
+de activación son significativamente diferentes, a bajas
+temperaturas dominará la reacción con menor energía de
+activación.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="reacciones_cadena_lineal_ejemplos.htm" title="Anterior">&lt;</a></li>
+  <li><a href="teoria_cinetica_gases.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>

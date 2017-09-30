@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js","extpfeil.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Diferentes ejemplos de catálisis">
+<meta name="keywords" content="diferentes, ejemplos, catálisis">
+<title>Diferentes ejemplos de catálisis</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Diferentes ejemplos de catálisis</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>- Catálisis ácido-base:</p>
+
+<p>Cuando la reacción se encuentra catalizada sólo por protones
+o hidróxidos se llama catálisis ácida específica o básica
+específica. En caso que sea cualquier otro ácido o base se
+conoce como catálisis ácida general o básica general.</p>
+
+<p>Caso de catálisis ácida o básica específica, en medio
+acuoso procedentes los $\ce{H+}$ y $\ce{OH-}$ de la
+hidrólisis del agua:</p>
+
+<blockquote>
+    <p>
+    $
+    v = v_0 \mspace{-1mu} + v_{\ce{H+}} \mspace{-2mu} + v_{\ce{OH-}}
+    $
+    </p>
+</blockquote>
+
+<p>Normalmente el orden del catalizador es $1$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      v = k_0 [\ce{R}] \qquad [\ce{R}] \equiv \smash{\text{reactivos}} \\[1ex]
+      v_{\ce{H+}} \! = k_{\ce{H+}} [\ce{H+}] [\ce{R}] \\[1ex]
+      v_{\ce{OH-}} \! = k_{\ce{OH-}} [\ce{OH-}] [\ce{R}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Si se tiene en cuenta una ecuación de velocidad experimental
+tal que $v = k_{\rm exp} [\ce{R}]$, e igualando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \begin{aligned}
+        v = k_{\rm exp} [\ce{R}] &amp;= k_0[\ce{R}] + k_{\ce{H+}}[\ce{H+}][\ce{R}] +
+        k_{\ce{OH-}}[\ce{OH-}][\ce{R}] = \\[1ex]
+        &amp;= (k_0 + k_{\ce{H+}}[\ce{H+}] + k_{\ce{OH-}}[\ce{OH-}]) [\ce{R}]
+      \end{aligned} \\[1ex]
+      \Rightarrow k_{\rm exp} = k_0 + k_{\ce{H+}}[\ce{H+}] + k_{\ce{OH-}}[\ce{OH-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Dos posibles situaciones:</p>
+
+<p>1. Se tienen muchos protones:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_{\rm exp} =
+      \cancel{k_0} \! + k_{\ce{H+}}[\ce{H+}] + \! \cancel{k_{\ce{OH-}}[\ce{OH-}]} \! \approx
+      k_{\ce{H+}}[\ce{H+}] \\[1ex]
+      \Rightarrow k_{\rm exp} = k_{\ce{H+}}[\ce{H+}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sacando logaritmos y representando frente al $\ce{pH}$ (a,
+lógicamente, valores de éste bajos):</p>
+
+<blockquote>
+    <p>
+    $
+    \log k_{\rm exp} = \log k_{\ce{H+}} \mspace{-2mu} + \log [\ce{H+}] =
+    \log k_{\ce{H+}} \mspace{-2mu} - \ce{pH}
+    $
+    </p>
+</blockquote>
+
+<center>
+  <object data="diferentes_ejemplos_catalisis/diferentes_ejemplos_catalisis_01.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>2. Se tienen muchos hidróxidos:</p>
+
+<blockquote>
+    <p>
+    $
+    k_{\rm exp} = k_{\ce{OH-}}[\ce{OH-}] = k_{\ce{OH-}} \dfrac{\ce{Kw}}{[\ce{H+}]}
+    $
+    </p>
+</blockquote>
+
+<p>Sacando logaritmos y representando, obviamente, a un $\ce{pH}$
+alto:</p>
+
+<blockquote>
+    <p>
+    $
+    \log k_{\rm exp} = \log k_{\ce{OH-}} \! + \log \ce{Kw} - \log [\ce{H+}] =
+    \log k_{\ce{OH-}} \! + \log \ce{Kw} + \ce{pH}
+    $
+    </p>
+</blockquote>
+
+<center>
+  <object data="diferentes_ejemplos_catalisis/diferentes_ejemplos_catalisis_02.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>En conjunto quedaría tal que:</p>
+
+<center>
+  <object data="diferentes_ejemplos_catalisis/diferentes_ejemplos_catalisis_03.svg"
+  type="image/svg+xml" width="600" height="400">
+  </object>
+</center>
+
+<p>Si se observa una zona plana, i.e. independiente del $\ce{pH}$,
+puede hallarse $k_0$.
+
+<p>Mecanismos:</p>
+
+<p>
+    $
+    \def\eqarrow#1#2{
+      \,
+      \Newextarrow{\xrightleftharpoons}{10,10}{0x21CC} 
+      \overset{#1}{
+        \underset{#2}{
+          \Rule{0pt}{0.4em}{0pt}
+          \smash{
+            \xrightleftharpoons[\hphantom{#2}]{\hphantom{#1}}
+          }
+        }
+      }
+      \;
+    }
+    \def\rarrow#1#2{
+      \,
+      \overset{#1}{
+        \underset{\smash{#2}}{
+          \Rule{0pt}{0.3em}{0pt}
+          \smash{
+            \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+          }
+        } 
+      }
+      \,
+    }
+    \rlap{\smash{\text{A)}}}\hspace{40px}
+    \begin{array}[t]{l}
+      \ce{S + BH \eqarrow{\large k_1}{\large k_{-1}} SH+ + B-} \\
+      \ce{SH+ + H2O \rarrow{\large k_2}{} P + H3O+}
+    \end{array}
+    $
+</p>
+
+<p>La velocidad de la reacción puede expresarse como:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{d[\ce{P}]}{dt} = k_2[\ce{H2O}][\ce{SH+}] = k_2'[\ce{SH+}]
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando estado estacionario:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \dfrac{d[\ce{SH+}]}{dt} = k_1[\ce{S}][\ce{BH}] - k_{-1}[\ce{SH+}][\ce{B-}] -
+      k_2'[\ce{SH+}] = 0 \\[1ex]
+      \Rightarrow [\ce{SH+}] = \dfrac{k_1[\ce{S}][\ce{BH}]}{k_{-1}[\ce{B-}] + k_2'}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2' \dfrac{k_1 [\ce{S}] [\ce{BH}]}{k_1 [\ce{B-}] + k_2'}
+    $
+    </p>
+</blockquote>
+
+<p>Dos casos límites:</p>
+
+<p>
+    $
+    \smash{\text{a) }} k_2' \ll k_{-1}[\ce{B-}]
+    \Rightarrow
+    v = k_2' \dfrac{k_1 [\ce{S}] [\ce{BH}]}{k_{-1} [\ce{B-}]}
+    $
+</p>
+
+<p>Siendo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{BH + H2O &lt;=&gt; B- + H3O+} \\[1ex]
+      K_{\ce{BH}} = \dfrac{[\ce{B-}][\ce{H3O+}]}{[\ce{BH}]} \quad
+      \smash{\text{constante de acidez}} 
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2' \dfrac{k_1}{k_{-1}} \dfrac{1}{K_{\ce{BH}}} [\ce{S}][\ce{H3O+}]
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de velocidad que corresponde con una catálisis
+específica (aparecen sólo hidronios).</p>
+
+<p>
+    $
+    \smash{\text{b) }} k_2' \gg k_{-1}[\ce{B-}]
+    \Rightarrow v = k_1[\ce{S}][\ce{BH}]
+    $
+</p>
+
+<p>En esta ecuación de velocidad no aparecen los hidronios. Por
+tanto es una catálisis ácida general.</p>
+
+<p>
+    $
+    \rlap{\smash{\text{B)}}}\hspace{40px}
+    \begin{array}[t]{l}
+      \ce{S + BH \eqarrow{\large k_1}{\large k_{-1}} SH+ + B-} \\
+      \ce{SH+ + B- \rarrow{\large k_2}{} P + BH} \quad \smash{\text{lenta}}
+    \end{array}
+    $
+</p>
+
+<p>Empleando etapa determinante:</p>
+
+<blockquote>
+    <p>
+    $
+    v = v_2 = k_2[\ce{SH+}][\ce{B-}]
+    $
+    </p>
+</blockquote>
+
+<p>La primera etapa se considera en equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    K_1 = \dfrac{[\ce{SH+}][\ce{B-}]}{[\ce{S}][\ce{BH}]}
+    \Rightarrow [\ce{SH+}][\ce{B-}] = K_1[\ce{S}][\ce{BH}]
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2 K_1 [\ce{S}][\ce{BH}]
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación que corresponde con una catálisis general.</p>
+
+<p>- Catálisis enzimática:</p>
+
+<p>Las enzimas actúan enlazándose con su centro activo al
+sutrato. Se forma un complejo enzima-sustrato, normalmente en un
+proceso bidireccional. El mecanismo más simple que puede
+plantearse:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{E + S \eqarrow{\large k_1}{\large k_{-1}} ES} \\
+      \ce{ES \rarrow{\large k_2}{} E + P}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Cada enzima cataliza una reacción, y por tanto hay un número
+grande.</p>
+
+<p>Una catálisis enzimática es inhibida por unos venenos
+fisiológicos que se enlazan al centro activo de la enzima,
+impidiendo que ésta actúe.</p>
+
+<p>Aplicando la aproximación de la etapa limitante, siendo la
+lenta la segunda reacción:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2 [\ce{ES}]
+    $
+    </p>
+</blockquote>
+
+<p>Si se define la fracción de saturación de la enzima como:</p>
+
+<blockquote>
+    <p>
+    $
+    Y = \dfrac{[\ce{ES}]}{[\ce{E}]_0} \enspace
+    $
+    donde
+    $
+    \enspace
+    [\ce{E}]_0 = [\ce{E}] + [\ce{ES}]
+    $
+    </p>
+</blockquote>
+
+<p>Entonces puede escribirse la ecuación de velocidad tal que:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2 [\ce{E}]_0 Y
+    $
+    </p>
+</blockquote>
+
+<p>Dado que la primera etapa se supone en equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    K_1 = \dfrac{[\ce{ES}]}{[\ce{E}][\ce{S}]}
+    \Rightarrow [\ce{ES}] = K_1 [\ce{E}] [\ce{S}]
+    $
+    </p>
+</blockquote>
+
+<p>Resulta de esto que:</p>
+
+<blockquote>
+    <p>
+    $
+    Y = \dfrac{[\ce{ES}]}{[\ce{E}]_0} = \dfrac{[\ce{ES}]}{[\ce{E}] + [{\ce{ES}}]} =
+    \dfrac{
+      K_1 \! \cancel{[\ce{E}]} \! [\ce{S}]
+    }{
+      \cancel{[\ce{E}]} \! + K_1 \! \cancel{[\ce{E}]} \! [\ce{S}]
+    } = \dfrac{K_1 [\ce{S}]}{1 + K_1 [\ce{S}]} =
+    \dfrac{[\ce{S}]}{\dfrac{1}{K_1} + [\ce{S}]}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo, la ecuación de velocidad queda de la siguiente
+forma:</p>
+
+<blockquote>
+    <p>
+    $
+    v = k_2 [\ce{E}]_0 \dfrac{[\ce{S}]}{\dfrac{1}{K_1} + [\ce{S}]} =
+    \dfrac{a[\ce{S}]}{b + [\ce{S}]}
+    $
+    </p>
+</blockquote>
+
+<p>Si se usa la aproximación del estado estacionario:</p>
+
+<blockquote>
+    <p>
+    $
+    \dfrac{d[\ce{ES}]}{dt} = k_1[\ce{E}][\ce{S}] - k_{-1}[\ce{ES}] - k_2[\ce{ES}] =
+    0
+    $
+    </p>
+</blockquote>
+
+<p>Dado que:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{E}]_0 = [\ce{E}] + [\ce{ES}] \Rightarrow [\ce{E}] = [\ce{E}]_0 - [\ce{ES}]
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo y despejando:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      k_1([\ce{E}]_0 - [\ce{ES}])[\ce{S}] - k_{-1}[\ce{ES}] - k_2[\ce{ES}] = 0  \\[1em]
+      \Rightarrow
+      [\ce{ES}] = \dfrac{k_1 [\ce{E}]_0 [\ce{S}]}{k_{-1} + k_2 + k_1 [\ce{S}]} =
+      \dfrac{[\ce{E}]_0 [\ce{S}]}{\dfrac{k_{-1} + k_2}{k_1} + [\ce{S}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Siendo la velocidad de la reacción:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{d[\ce{P}]}{dt} = k_2 [\ce{ES}]
+    $
+    </p>
+</blockquote>
+
+<p>Tras sustituir:</p>
+
+<blockquote>
+    <p>
+    $
+    v = \dfrac{k_2 [\ce{E}]_0 [\ce{S}]}{\dfrac{k_{-1} + k_2}{k_1} + [\ce{S}]} =
+    \dfrac{a[\ce{S}]}{b' + [\ce{S}]}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues, para el mecanismo más sencillo planteado, tanto la
+aproximación de la etapa determinante como la aproximación del
+estado estacionario coinciden en la forma de la ecuación de
+velocidad que se obtiene.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="tipos_catalisis.htm" title="Anterior">&lt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>
