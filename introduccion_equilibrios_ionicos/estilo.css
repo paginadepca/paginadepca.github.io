@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: "STIX Two Text";
-    src: local("STIXTwoText"),
-         local("STIX2Text-Regular"),
+    src: local("STIX Two Text"),
+         local("STIXTwoText"),
          url("fonts/STIX2Text-Regular.woff2"),
          url("fonts/STIX2Text-Regular.woff");
     }
 
 @font-face {
     font-family: "STIX Two Text";
-    src: local("STIXTwoText-Bold"),
-         local("STIX2Text-Bold"),
+    src: local("STIX Two Text Bold"),
+         local("STIXTwoText-Bold"),
          url("fonts/STIX2Text-Bold.woff2"),
          url("fonts/STIX2Text-Bold.woff");
     font-weight: bold;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: "STIX Two Text";
-    src: local("STIXTwoText-Italic"),
-         local("STIX2Text-Italic"),
+    src: local("STIX Two Text Italic"),
+         local("STIXTwoText-Italic"),
          url("fonts/STIX2Text-Italic.woff2"),
          url("fonts/STIX2Text-Italic.woff");
     font-style: italic;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: "STIX Two Text";
-    src: local("STIXTwoText-BoldItalic"),
-         local("STIX2Text-BoldItalic"),
+    src: local("STIX Two Text Bold Italic"),
+         local("STIXTwoText-BoldItalic"),
          url("fonts/STIX2Text-BoldItalic.woff2"),
          url("fonts/STIX2Text-BoldItalic.woff");
     font-weight: bold;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: "STIX Two Math";
-    src: local("STIXTwoMath"),
-         local("STIX2Math"),
+    src: local("STIX Two Math"),
+         local("STIXTwoMath"),
          url("fonts/STIX2Math.woff2"),
          url("fonts/STIX2Math.woff");
     unicode-range: U+2191, U+2193, U+2248;
