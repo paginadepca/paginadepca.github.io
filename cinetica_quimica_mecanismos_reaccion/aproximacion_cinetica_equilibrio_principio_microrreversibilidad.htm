@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js","extpfeil.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Aproximación cinética al equilibrio: principio de microrreversibilidad">
+<meta name="keywords" content="cinética, equilibrio, principio, microrreversibilidad, reversibilidad, microscópica">
+<title>Aproximación cinética al equilibrio: principio de microrreversibilidad</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="title">
+
+<h3>Aproximación cinética al equilibrio: principio de
+microrreversibilidad</h3>
+
+<ul>
+  <li><a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El principio de microrreversibilidad, o de reversibilidad
+microscópica, establece que en una reacción reversible el
+&quot;camino&quot; por el que transcurre la reacción es el mismo,
+recorrido en dirección contraria, en el sentido de reactivos a
+productos que en el sentido de productos a reactivos. Esto es, el
+mecanismo de una reacción reversible en un sentido es
+exactamente el inverso en el sentido contrario. Dado que una
+reacción es reversible salvo que la $K_{\rm eq} \mspace{-1mu}$ fuera
+infinita, siendo sólo aceptable considerar una reacción como
+irreversible al inicio de la misma, es un principio general,
+menos cuando la reacción es iniciada fotoquímicamente.</p>
+
+<p>Aproximación cinética al equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{A + B &lt;=&gt; C + D} \quad
+    $ (reacción compuesta)
+    </p>
+</blockquote>
+
+<p>Como consecuencia del principio de microrreversibilidad, a la
+hora de plantear un mecanismo las etapas elementales han de ser
+reversibles:</p>
+
+<blockquote>
+    <p>
+    $
+		\def\ieqarrow#1#2{
+			\stackrel{
+				\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+				\overset{#1}{
+					\Rule{0pt}{0.4em}{0pt}
+					\smash{
+						\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}{
+				\Rule{0pt}{1.5mu}{0pt}
+				\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+				\underset{#2}{
+					\smash{
+						\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}
+		}
+    \begin{array}{l}
+      \ce{A \ieqarrow{\large k_1}{\large k_{-1}} I + C} \\
+      \ce{I + B \ieqarrow{\large k_2}{\large k_{-2}} D}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>También, una vez alcanzado el equilibrio las reacciones
+elementales que constituyen el mecanismo deben estar en el
+equilibrio:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      K_1 = \dfrac{k_1}{k_{-1}} =
+      \dfrac{[\ce{I}]_{\rm eq} [\ce{C}]_{\rm eq}}{[\ce{A}]_{\rm eq}} \\[1ex]
+      K_2 = \dfrac{k_2}{k_{-2}} =
+      \dfrac{[\ce{D}]_{\rm eq}}{[\ce{I}]_{\rm eq} [\ce{B}]_{\rm eq}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Multiplicando ambas constantes:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{Keq} = K_1 K_2 = \dfrac{k_1 k_2}{k_{-1} k_{-2}} =
+    \dfrac{[\ce{C}]_{\rm eq} [\ce{D}]_{\rm eq}}{[\ce{A}]_{\rm eq} [\ce{B}]_{\rm eq}}
+    $
+    </p>
+</blockquote>
+
+<p>Aplicando el método del estado estacionario para hallar la
+expresión de la velocidad de reacción:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    - \dfrac{d[\ce{A}]}{dt} = k_1 [\ce{A}] - k_{-1} [\ce{I}][\ce{C}] \\[1ex]
+    - \dfrac{d[\ce{B}]}{dt} = k_2 [\ce{I}][\ce{B}] - k_{-2} [\ce{D}] \\[1ex]
+    \dfrac{d[\ce{I}]}{dt} = k_1 [\ce{A}] - k_{-1} [\ce{I}][\ce{C}] -
+    k_2 [\ce{I}][\ce{B}] + k_{-2} [\ce{D}] = 0 \\[1ex]
+    \Rightarrow [\ce{I}] =
+    \dfrac{k_1 [\ce{A}] + k_{-2} [\ce{D}]}{k_{-1} [\ce{C}] + k_2 [\ce{B}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Según la aproximación del estado estacionario la velocidad
+de aparición del intermedio $\ce{I}$ es igual a la de su desaparición,
+siendo así que su concentración permanece constante en el
+tiempo. Esto implica que:</p>
+
+<blockquote>
+    <p>
+    $
+    - \dfrac{d[\ce{A}]}{dt} = - \dfrac{d[\ce{B}]}{dt} 
+    \quad$
+    ó
+    $\quad
+    -\dfrac{d[\ce{A}]}{dt} + \dfrac{d[\ce{B}]}{dt} = 0
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo pues sólo, ya que es indiferente, en la
+expresión de $\ce{A}$ para obtener la ecuación de velocidad:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      v = -\dfrac{d[\ce{A}]}{dt} &amp;= k_1[\ce{A}] -
+      k_{-1} [\ce{C}] \dfrac{k_1 [\ce{A}] + k_{-2}[\ce{D}]}{k_{-1} [\ce{C}] + k_2 [\ce{B}]} = \\[1ex]
+      &amp;= \dfrac{
+        \cancel{k_1 k_{-1} [\ce{A}][\ce{C}]} \! + k_1 k_2 [\ce{A}][\ce{B}] - \!
+        \cancel{k_1 k_{-1} [\ce{A}][\ce{C}]} \! - k_{-1} k_{-2} [\ce{C}][\ce{D}]
+        }{k_{-1} [\ce{C}] + k_2 [\ce{B}]} = \\[1ex]
+      &amp;= \dfrac{k_1 k_2 [\ce{A}] [\ce{B}]}{k_{-1} [\ce{C}] + k_2 [\ce{B}]} -
+      \dfrac{k_{-1} k_{-2} [\ce{C}][\ce{D}]}{k_{-1} [\ce{C}] + k_2 [\ce{B}]}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Partiendo de que a $t = 0$ sólo están presentes $\ce{A}$ y $\ce{B}$ como
+reactivos, al inicio de la reacción, lejos del equilibrio, el
+segundo término de la ecuación anterior puede ser innecesario,
+pesa poco, dada la poca cantidad de producto que se habrá
+generado. Del mismo modo si la $\ce{Keq} \mspace{-1mu}$ es muy elevada, $k_1 k_2
+\gg k_{-1} k_{-2}$, tendrá el mismo efecto de quitar peso al segundo
+término cuando todavía se esté lejos del equilibrio.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="cinetica_quimica_mecanismos_reaccion.htm">Temario</a>
+
+<ul>
+  <li><a href="metodos_aproximados_etapa_determinante_estado_estacionario.htm" title="Anterior">&lt;</a></li>
+  <li><a href="mecanismos_secuencia_abierta.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+</div>
+</body>
+</html>
