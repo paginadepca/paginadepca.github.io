@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="123.19" width="237.15" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 237.14995 123.1882">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="Arrow2Mstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4316" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4889" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4891" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4700" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4702" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4319" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-201.19 -273.91)">
+  <g fill="none">
+   <g stroke="#ccc" stroke-width="1px">
+    <path id="path4219" d="m206.69 336.74 8.8479-8.14"/>
+    <path id="path4221" d="m206.69 345.24 15.218-16.634"/>
+    <path id="path4223" d="m206.69 352.67 23.005-24.066"/>
+    <path id="path4225" d="m206.69 360.46 30.083-31.852"/>
+    <path id="path4227" d="m206.69 368.6 38.223-39.992"/>
+    <path id="path4229" d="m206.69 377.45 46.717-48.84"/>
+    <path id="path4231" d="m215.18 377.8 46.363-49.194"/>
+    <path id="path4233" d="m224.03 377.8 45.301-49.194"/>
+    <path id="path4235" d="m231.81 377.8 46.01-49.2"/>
+    <path id="path4237" d="m239.95 377.8 44.6-46.36"/>
+    <path id="path4239" d="m248.45 377.8 36.099-36.453"/>
+    <path id="path4241" d="m256.23 377.8 28.32-28.31"/>
+    <path id="path4243" d="m264.02 377.8 20.527-19.819"/>
+    <path id="path4245" d="m271.81 377.8 12.741-12.033"/>
+    <path id="path4247" d="m279.59 377.8 4.9548-4.247"/>
+   </g>
+   <g stroke="#000">
+    <path id="path4255" d="m206.69 328.6h77.861" stroke-dasharray="8, 4"/>
+    <path id="rect4217" d="m284.55 328.6v49.194h-77.861v-49.194"/>
+    <path id="rect4249" d="m206.69 328.6v-49.194h77.861v49.194"/>
+   </g>
+  </g>
+  <g>
+   <text id="text4257" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="307.42154" x="216.28748" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4259" x="216.28748" y="307.42154">orgánica</tspan></text>
+   <rect id="rect4284" stroke-dasharray="8, 4" height="13.449" width="51.318" stroke="#fff" y="346.73" x="219.96" fill="#fff"/>
+   <text id="text4261" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="357.2438" x="222.27109" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4263" x="222.27109" y="357.2438">acuosa</tspan></text>
+  </g>
+  <path id="path4286" marker-end="url(#Arrow2Mend)" d="m249.86 360.81c2.9564 15.073 9.096 27.15 27.959 27.252" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4688" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="13px" line-height="125%" y="391.9556" x="279.59335" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4690" x="279.59335" y="391.9556">1ª fase</tspan></text>
+  <path id="path4692" marker-end="url(#marker4700)" d="m248.45 294.27c5.9202-5.0883 29.889-4.247 46.009-4.247" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4854" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="293.2131" x="296.22739" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4856" font-size="13px" y="293.2131" x="296.22739">2ª fase <tspan id="tspan4865" font-size="13px" line-height="125%" font-family="&apos;STIX Two Math&apos;">→ </tspan>extractante</tspan></text>
+  <text id="text4875" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="310.90887" x="308.61447" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4877" font-size="15px" y="310.90887" x="308.61447">[A]<tspan id="tspan5745" dy="4" font-size="65%">o</tspan></tspan></text>
+  <path id="path4881" marker-end="url(#marker4889)" d="m286.67 339.75 7.6092-11.148-7.2553-11.148" marker-start="url(#Arrow2Mstart)" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4967" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="331.91968" x="297.05872" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4969" font-size="13px" line-height="125%" y="331.91968" x="297.05872" font-family="&apos;STIX Two Text&apos;">(pueden estar invertidas)</tspan></text>
+  <text id="text4971" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="357.39532" x="308.61447" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4973" font-size="15px" y="357.39532" x="308.61447">[A]<tspan id="tspan5747" dy="5" font-size="65%">aq</tspan></tspan></text>
+ </g>
+</svg>

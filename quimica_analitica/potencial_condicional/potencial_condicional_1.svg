@@ -1,0 +1,23 @@
+<?xml version="1.0" ?><svg height="29.57500mm" version="1.0" viewBox="0 0 296 112" width="78.16250mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-115,-78)">
+    <polyline fill="none" points="319.01,160.02 345.30,114.46" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="349.30,107.53 341.70,114.69 345.30,114.46 346.90,117.69" stroke="#000000" stroke-width="1"/>
+    <polyline fill="none" points="135.00,159.00 161.30,113.46" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="165.30,106.53 157.70,113.69 161.30,113.46 162.90,116.69" stroke="#000000" stroke-width="1"/>
+    <rect fill="#ffffff" height="17.00" stroke="#ffffff" width="18.00" x="140.00" y="127.00"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="16" x="142.00" y="139.25">ox</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="169.00" y="140.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="30" x="195.00" y="139.25"><tspan font-style="italic">n</tspan> <tspan font-style="italic">e</tspan><tspan dy="-6" font-size="75%">−</tspan></text>
+    <polyline fill="none" points="250.00,143.00 242.00,138.00 302.59,138.00" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="242.00,132.00 302.59,132.00 294.59,127.00" stroke="#000000" stroke-width="1.0"/>
+    <rect fill="#ffffff" height="17.00" stroke="#ffffff" width="24.00" x="324.00" y="127.00"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="22" x="326.00" y="139.25">red</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="9" x="127.00" y="175.25">L</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="45" x="165.00" y="100.25">oxL, ...</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="12" x="310.00" y="175.25">L'</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="54" x="347.00" y="100.25">redL', ...</text>
+  </g>
+</svg>

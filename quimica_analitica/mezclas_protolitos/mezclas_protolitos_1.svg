@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="207.16" width="356.38" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 356.38052 207.16085">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4814" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4816" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-53.029 -480.68)">
+  <path id="path4149" d="m158.42 485.68v176.13h245.99" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4151" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="509.32941" x="127.20918" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4153" x="127.20918" y="509.32941">pH<tspan id="tspan5394" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;"/></tspan></text>
+  <path id="path5396" d="m158.24 640.73c40.564-1.7766 90.132-6.0964 100.45-21.053 10.32-14.956 11.312-91.065 16.869-102.32 5.5573-11.259 62.409-16.934 102.69-20.477" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path5609" d="m268.26 571.1v90.667" stroke="#000" stroke-dasharray="4, 4" fill="none"/>
+  <text id="text5611" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="679.29102" x="253.98375" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5613" x="253.98375" y="679.29102"><tspan id="tspan5619" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">f</tspan> = 1</tspan></text>
+  <text id="text5615" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="676.36932" x="282.46902" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5617" x="282.46902" y="676.36932"/></text>
+  <path id="path4680" d="m268.26 665.38v-3.1142" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text5636" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="644.51306" x="57.069107" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5638" x="57.069107" dy="0 0 0 -4" y="644.51306"><tspan id="tspan5640" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan5648" dy="4" font-size="65%">A</tspan><tspan id="tspan5642" font-size="65%" line-height="125%" dy="4" font-family="&apos;STIX Two Text&apos;" font-style="italic">1</tspan><tspan dy="-8"> + </tspan><tspan id="tspan5646" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan5652" dy="4" font-size="65%">A</tspan><tspan id="tspan5644" font-size="65%" line-height="125%" dy="4" font-family="&apos;STIX Two Text&apos;" font-style="italic">2</tspan></tspan></text>
+  <path id="path4812" marker-end="url(#marker4814)" d="m127.86 640.75h19.774" stroke="#000" stroke-width="1px" fill="none"/>
+ </g>
+</svg>

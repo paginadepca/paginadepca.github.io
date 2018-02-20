@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="204.92" width="656.17" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 656.16744 204.92211">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4172" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4174" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker4814" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4816" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-99.947 -479.92)">
+  <path id="path4149" d="m158.42 485.68v176.13h225.99" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4151" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="509.32941" x="133.20918" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4153" x="133.20918" y="509.32941">pH<tspan id="tspan5394" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;"/></tspan></text>
+  <path id="path5396" d="m158.11 646.73c40.564-1.7766 98.437-1.5544 106.05-17.053 7.61-15.498 1.3119-101.07 6.8692-112.32 5.5573-11.259 66.951-16.934 107.23-20.477" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path5609" d="m268.26 573.1v88.667" stroke="#000" stroke-dasharray="4, 4" fill="none"/>
+  <text id="text5611" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="679.29102" x="253.98375" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5613" x="253.98375" y="679.29102"><tspan id="tspan5619" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">f</tspan> = 1</tspan></text>
+  <text id="text5615" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="676.36932" x="282.46902" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5617" x="282.46902" y="676.36932"/></text>
+  <path id="path4680" d="m268.26 665.38v-3.1142" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text5636" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="648.51306" x="111.06911" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5638" x="111.06911" dy="0 0 0" y="648.51306"><tspan id="tspan5640" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan5648" dy="4" font-size="65%">A</tspan><tspan id="tspan5642" font-size="65%" line-height="125%" dy="4" font-family="&apos;STIX Two Text&apos;" font-style="italic">1</tspan></tspan></text>
+  <g stroke="#000" fill="none">
+   <path id="path4812" marker-end="url(#marker4814)" d="m135.86 646.75h13.774" stroke-width="1px"/>
+   <path id="path4164" d="m268.26 573.1c-2.1789 19.453-8.4767 25.948-54.995 30.785-53.399 5.5527-54.274 14.337-54.858 22.785" stroke-width="1px"/>
+   <path id="path4166" d="m213.21 603.89h-55.125" stroke-dasharray="4, 4"/>
+   <path id="path4170" marker-end="url(#marker4172)" d="m135.86 603.89h13.774" stroke-width="1px"/>
+  </g>
+  <g fill="#000000">
+   <g font-size="16px" font-family="&apos;STIX Two Text&apos;">
+    <text id="text4176" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="606.80298" x="101.59482"><tspan id="tspan4178" x="101.59482" y="606.80298">p<tspan id="tspan4180" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">K</tspan><tspan id="tspan4182" dy="4" font-size="65%">a,2</tspan></tspan></text>
+    <text id="text4184" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="593.91534" x="198.5687"><tspan id="tspan4186" x="198.5687" y="593.91534">HA<tspan id="tspan4188" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan></tspan></text>
+    <text id="text4190" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="635.91534" x="198.5687" xml:space="preserve"><tspan id="tspan4192" y="635.91534" x="198.5687">HA<tspan id="tspan4194" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan></tspan></text>
+   </g>
+   <text id="text4196" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="19px" line-height="125%" y="578.91803" x="384.40961" font-family="&apos;STIX Two Math&apos;"><tspan id="tspan4198" font-size="19px" line-height="125%" y="578.91803" x="384.40961" font-family="&apos;STIX Two Math&apos;">&#x21D2;</tspan></text>
+  </g>
+  <path id="path4200" d="m424.96 485.68v176.13h327.47" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4202" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="509.32941" x="399.75162" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan4204" y="509.32941" x="399.75162">pH<tspan id="tspan4206" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;"/></tspan></text>
+  <path id="path4246" d="m531.77 626.67c0.58376-8.4489 1.459-17.233 54.858-22.785 46.519-4.8373 52.914-12.507 55.093-31.96 0.0714-24.736-0.11379-48.943 2.6648-54.572 5.5573-11.259 66.951-16.934 107.23-20.477m-326.96 149.86c40.564-1.7766 98.437-1.5544 106.05-17.053 0.58228-0.92711 0.81532-1.9706 1.0704-3.0068" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4297" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="529.36151" x="455.42828" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4299" x="455.42828" y="529.36151">valorante NaOH</tspan></text>
+  <g stroke="#000" fill="#2b2200">
+   <circle id="path4307" cx="478.44" cy="644.44" r="2.0778"/>
+   <g stroke-width="1.2434">
+    <circle id="circle4318" cy="626.67" cx="531.77" r="1.8783"/>
+    <circle id="circle4320" cx="586.62" cy="603.89" r="1.8783"/>
+    <circle id="circle4322" cy="571.93" cx="641.72" r="1.8783"/>
+    <circle id="circle4324" cx="751.61" cy="496.88" r="1.8783"/>
+   </g>
+  </g>
+  <g font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4327" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="13px" line-height="125%" y="620.11572" x="478.69031"><tspan id="tspan4329" style="text-anchor:middle;text-align:center" line-height="125%" y="620.11572" x="478.69031">NaA<tspan id="tspan4343" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan><tspan dy="-4">/HA</tspan><tspan id="tspan4347" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan></tspan><tspan id="tspan4333" style="text-anchor:middle;text-align:center" line-height="125%" y="636.36572" x="478.69031">HA<tspan id="tspan4349" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan></tspan></text>
+   <text id="text4351" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-size="13px" line-height="125%" y="631.26624" x="550.04279" xml:space="preserve"><tspan id="tspan4353" style="text-anchor:middle;text-align:center" line-height="125%" y="631.26624" x="550.04279">NaA<tspan id="tspan4355" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan></tspan><tspan id="tspan4359" style="text-anchor:middle;text-align:center" line-height="125%" y="647.51624" x="550.04279">HA<tspan id="tspan4361" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan></tspan></text>
+   <text id="text4363" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-size="13px" line-height="125%" y="580.11572" x="586.48657" xml:space="preserve"><tspan id="tspan4365" style="text-anchor:middle;text-align:center" line-height="125%" y="580.11572" x="586.48657">NaA<tspan id="tspan4367" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan><tspan dy="-4">/HA</tspan><tspan id="tspan4369" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan></tspan><tspan id="tspan4371" style="text-anchor:middle;text-align:center" line-height="125%" y="596.36572" x="586.48657">NaA<tspan id="tspan4373" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan></tspan></text>
+   <text id="text4375" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="13px" line-height="125%" y="566.80371" x="660.47876"><tspan id="tspan4377" style="text-anchor:middle;text-align:center" line-height="125%" y="566.80371" x="660.47876">NaA<tspan id="tspan4379" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">1</tspan></tspan><tspan id="tspan4381" style="text-anchor:middle;text-align:center" line-height="125%" y="583.05371" x="660.47876">NaA<tspan id="tspan4383" dy="4" font-size="65%" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">2</tspan></tspan></text>
+   <text id="text4385" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="13px" line-height="125%" y="490.63089" x="648.08453"><tspan id="tspan4387" line-height="125%" dy="0 0 0 -4" y="490.63089" x="648.08453" font-family="&apos;STIX Two Text&apos;"><tspan id="tspan4421" font-size="13px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan4415" dy="4" font-size="65%">A</tspan><tspan id="tspan4391" font-size="65%" line-height="125%" dy="4" font-family="&apos;STIX Two Text&apos;" font-style="italic">1</tspan><tspan dy="-8"> + </tspan><tspan id="tspan4423" font-size="13px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan4419" dy="4" font-size="65%">A</tspan><tspan id="tspan4393" font-size="65%" line-height="125%" dy="4" font-family="&apos;STIX Two Text&apos;" font-style="italic">2</tspan><tspan id="tspan4389" font-size="13px" line-height="125%" dy="-8" font-family="&apos;STIX Two Math&apos;"> ≡</tspan> NaOH</tspan></text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="123.8" viewBox="0 0 384.97471 123.79762" width="384.97" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4887" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4889" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4484" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path id="path4451" marker-end="url(#Arrow2Mend)" d="m49.125 24.128c6.2087-11.198 16.4-10.45 26.316-10.526" stroke="#000" stroke-width="1px" fill="none"/>
+ <text id="text4576" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="49.782612" x="94.582924" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4578" x="94.582924" y="49.782612">Mg<tspan id="tspan4580" dy="-5" font-size="65.001%">2+</tspan></tspan></text>
+ <text id="text4566" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="18.095654" x="77.205765" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4568" x="77.205765" y="18.095654">C<tspan id="tspan4570" dy="5" font-size="65.001%">2</tspan><tspan dy="-5">O</tspan><tspan id="tspan4572" dy="5" font-size="65.001%">4</tspan><tspan id="tspan4574" dy="-10" font-size="65.001%">2−</tspan></tspan></text>
+ <g fill="none">
+  <path id="path4877" d="m132.23 46.638a27.69 19.139 0 0 1 -27.684 19.139 27.69 19.139 0 0 1 -27.696 -19.13 27.69 19.139 0 0 1 27.672 -19.147 27.69 19.139 0 0 1 27.709 19.122" stroke="#f00" stroke-dasharray="2, 2"/>
+  <path id="path4879" marker-end="url(#marker4887)" d="m121.37 63.908c4.752 8.2306 16.606 7.0421 22.391 7.0421" stroke="#000" stroke-width="1px"/>
+  <path id="rect4345" stroke="#000" d="m36.515 37.668c8.5846-0.19645 21.344 4.8134 25.453 3.9666 17.649-3.6368 20.408 2.9943 19.417 8.3524-1.764 9.5356-10.856 12.515-1.8789 37.353 3.2239 8.9201-6.0257 11.88-14.824 12.736-25.892 2.5216-19.774-7.5975-26.915-4.8017-9.2037 3.6036-16.523 0.68052-14.824-5.8471 1.0738-4.1253 4.555-13.951-3.5491-34.639-2.0626-5.2654 7.9577-16.911 17.121-17.121z"/>
+ </g>
+ <g fill="#000000">
+  <text id="text4447" font-size="16px" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="72.780365" x="36.955204" font-family="&apos;STIX Two Text&apos;" xml:space="preserve"><tspan id="tspan4449" font-size="19px" y="72.780365" x="36.955204" font-family="&apos;STIX Two Text&apos;" line-height="125%">ppt</tspan></text>
+  <text id="text4865" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="75.039467" x="294.71582" font-family="&apos;STIX Two Text&apos;"><tspan id="tspan4867" y="75.039467" x="294.71582" font-size="16px">(localmente)</tspan></text>
+  <g font-size="16px" font-family="&apos;STIX Two Math&apos;">
+   <text id="text6202" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="40.762367" x="12.326009"><tspan id="tspan6204" font-size="16px" line-height="125%" y="40.762367" x="12.326009" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6198" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="52.662163" x="4.1840405"><tspan id="tspan6200" font-size="16px" line-height="125%" y="52.662163" x="4.1840405" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6194" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="68.737335" x="5.227879"><tspan id="tspan6196" font-size="16px" line-height="125%" y="68.737335" x="5.227879" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6190" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="82.724823" x="8.1506395"><tspan id="tspan6192" font-size="16px" line-height="125%" y="82.724823" x="8.1506395" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6186" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="97.756134" x="7.1068006"><tspan id="tspan6188" font-size="16px" line-height="125%" y="97.756134" x="7.1068006" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6182" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="109.65592" x="18.171513"><tspan id="tspan6184" font-size="16px" line-height="125%" y="109.65592" x="18.171513" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6178" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="109.65592" x="34.246662"><tspan id="tspan6180" font-size="16px" line-height="125%" y="109.65592" x="34.246662" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6174" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="113.6225" x="50.321812"><tspan id="tspan6176" font-size="16px" line-height="125%" y="113.6225" x="50.321812" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6170" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="111.74359" x="66.188202"><tspan id="tspan6172" font-size="16px" line-height="125%" y="111.74359" x="66.188202" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6166" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="103.8104" x="79.131836"><tspan id="tspan6168" font-size="16px" line-height="125%" y="103.8104" x="79.131836" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6162" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="87.735229" x="80.175674"><tspan id="tspan6164" font-size="16px" line-height="125%" y="87.735229" x="80.175674" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6158" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="72.703918" x="78.296753"><tspan id="tspan6160" font-size="16px" line-height="125%" y="72.703918" x="78.296753" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6154" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="58.716423" x="82.263351"><tspan id="tspan6156" font-size="16px" line-height="125%" y="58.716423" x="82.263351" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6150" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="44.728951" x="80.38443"><tspan id="tspan6152" font-size="16px" line-height="125%" y="44.728951" x="80.38443" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6146" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="35.751915" x="69.319717"><tspan id="tspan6148" font-size="16px" line-height="125%" y="35.751915" x="69.319717" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6142" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="36.795753" x="54.28841"><tspan id="tspan6144" font-size="16px" line-height="125%" y="36.795753" x="54.28841" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6138" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="34.916832" x="38.213261"><tspan id="tspan6140" font-size="16px" line-height="125%" y="34.916832" x="38.213261" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+   <text id="text6134" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="34.708061" x="24.434559"><tspan id="tspan6136" font-size="16px" line-height="125%" y="34.708061" x="24.434559" font-family="&apos;STIX Two Math&apos;">⊝</tspan></text>
+  </g>
+  <text id="text4374" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" line-height="125%" y="75.039467" x="215.22458" font-family="&apos;STIX Two Text&apos;"><tspan id="tspan4378" x="215.22458" y="75.039467">[C<tspan id="tspan4386" dy="5" font-size="65.001%">2</tspan><tspan dy="-5">O</tspan><tspan id="tspan4388" dy="5" font-size="65.001%">4</tspan><tspan id="tspan4390" dy="-10" font-size="65.001%">2−</tspan><tspan dy="5">][Mg</tspan><tspan id="tspan4392" dy="-5" font-size="65.001%">2+</tspan><tspan dy="5">] &gt; </tspan><tspan id="tspan4396" font-family="&apos;STIX Two Text&apos;" font-style="italic">K</tspan><tspan id="tspan4394" dy="5" font-size="65.001%">s</tspan></tspan><tspan id="tspan4382" style="text-anchor:middle;text-align:center" font-size="16px" line-height="125%" y="95.039589" x="215.22458" font-family="&apos;STIX Two Math&apos;">⇓</tspan><tspan id="tspan4384" x="215.22458" y="115.03967">MgC<tspan id="tspan4398" dy="5" font-size="65.001%">2</tspan><tspan dy="-5">O</tspan><tspan id="tspan4400" dy="5" font-size="65.001%">4</tspan></tspan></text>
+ </g>
+</svg>

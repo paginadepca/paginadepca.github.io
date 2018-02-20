@@ -1,0 +1,95 @@
+<?xml version="1.0" ?><svg height="38.55313mm" version="1.0" viewBox="0 0 246 146" width="64.95938mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+  </style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-60,-121)">
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="156.48" x2="176.00" y1="202.22" y2="202.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="124.00" x2="143.26" y1="225.17" y2="225.17"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="143.26" x2="156.48" y1="225.17" y2="202.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="190.00" x2="209.53" y1="204.22" y2="204.22"/>
+      <line x1="190.00" x2="209.53" y1="200.22" y2="200.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="103.50" x2="110.88" y1="202.22" y2="215.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="242.00" x2="222.75" y1="179.24" y2="179.24"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="143.26" x2="153.22" y1="179.24" y2="162.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="209.53" x2="222.79" y1="202.22" y2="225.17"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="262.55" x2="252.60" y1="202.19" y2="185.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="113.43" x2="103.50" y1="185.00" y2="202.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="103.50" x2="84.00" y1="204.22" y2="204.22"/>
+      <line x1="103.50" x2="84.00" y1="200.22" y2="200.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="224.52" x2="217.13" y1="226.17" y2="239.00"/>
+      <line x1="221.06" x2="213.67" y1="224.18" y2="237.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="262.55" x2="282.00" y1="200.19" y2="200.19"/>
+      <line x1="262.55" x2="282.00" y1="204.19" y2="204.19"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="156.48" x2="143.26" y1="202.22" y2="179.24"/>
+      <line x1="149.62" x2="139.71" y1="202.34" y2="185.10"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="222.79" x2="242.00" y1="225.17" y2="225.17"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="143.26" x2="124.00" y1="179.24" y2="179.24"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="255.16" x2="262.55" y1="215.00" y2="202.19"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="144.99" x2="152.40" y1="224.17" y2="237.00"/>
+      <line x1="141.53" x2="148.94" y1="226.17" y2="239.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="222.75" x2="209.53" y1="179.24" y2="202.22"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="221.02" x2="211.06" y1="180.24" y2="163.00"/>
+      <line x1="224.48" x2="214.53" y1="178.24" y2="161.00"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="203.30" y="160.29">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="283.30" y="206.19">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="204.30" y="252.12">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="151.30" y="252.12">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="71.30" y="206.22">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="243.30" y="183.24">NH</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="243.30" y="229.17">NH</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="99.30" y="183.24">HN</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="99.30" y="229.17">HN</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="177.30" y="206.22">N</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="151.30" y="160.29">O</text>
+    <g>
+      <ellipse cx="167.952662722" cy="147.65443787" fill="none" rx="5.0" ry="5.0" stroke="#000" stroke-width="1"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="164.952662722" x2="170.952662722" y1="147.65443787" y2="147.65443787"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="116.30" y="149.00">NH<tspan dy="6" font-size="75%">4</tspan></text>
+    <g>
+      <ellipse cx="147.010650888" cy="137.013017751" fill="none" rx="5.0" ry="5.0" stroke="#000" stroke-width="1"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="144.010650888" x2="150.010650888" y1="137.013017751" y2="137.013017751"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="147.010650888" x2="147.010650888" y1="134.013017751" y2="140.013017751"/>
+    </g>
+  </g>
+</svg>

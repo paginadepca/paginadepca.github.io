@@ -1,0 +1,121 @@
+<?xml version="1.0" ?><svg height="38.02500mm" version="1.0" viewBox="0 0 342 144" width="90.30938mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-23,-79)">
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="34.30" y="146.50">Na</text>
+    <g>
+      <ellipse cx="59.0165680473" cy="136.482840237" fill="none" rx="5.0" ry="5.0" stroke="#000" stroke-width="1"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="56.0165680473" x2="62.0165680473" y1="136.482840237" y2="136.482840237"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="59.0165680473" x2="59.0165680473" y1="133.482840237" y2="139.482840237"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="272.44" x2="259.14" y1="211.39" y2="188.40"/>
+      <line x1="275.97" x2="266.00" y1="205.51" y2="188.27"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="182.68" x2="169.43" y1="142.43" y2="165.38"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="169.43" x2="142.92" y1="165.38" y2="165.38"/>
+      <line x1="166.12" x2="146.23" y1="159.38" y2="159.38"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="213.00" x2="226.00" y1="140.47" y2="140.47"/>
+      <line x1="213.00" x2="226.00" y1="144.47" y2="144.47"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="312.20" x2="298.94" y1="188.40" y2="211.39"/>
+      <line x1="305.34" x2="295.40" y1="188.28" y2="205.52"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="272.44" x2="259.14" y1="165.42" y2="188.40"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="129.67" x2="142.92" y1="142.39" y2="165.38"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="240.00" x2="259.18" y1="142.47" y2="142.47"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="182.68" x2="199.00" y1="142.43" y2="142.45"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="142.92" x2="129.63" y1="165.38" y2="188.36"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="142.92" x2="169.43" y1="119.48" y2="119.48"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="142.92" x2="129.63" y1="211.35" y2="188.36"/>
+      <line x1="146.45" x2="136.48" y1="205.47" y2="188.23"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="272.44" x2="298.94" y1="119.56" y2="119.56"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="298.94" x2="312.20" y1="165.42" y2="188.40"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="298.94" x2="312.16" y1="165.42" y2="142.50"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="259.18" x2="272.44" y1="142.47" y2="119.56"/>
+      <line x1="266.03" x2="275.97" y1="142.61" y2="125.42"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="272.44" x2="262.89" y1="119.56" y2="103.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="169.43" x2="178.95" y1="119.48" y2="103.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="182.72" x2="169.43" y1="188.36" y2="211.35"/>
+      <line x1="175.87" x2="165.90" y1="188.23" y2="205.47"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="142.92" x2="129.67" y1="119.48" y2="142.39"/>
+      <line x1="146.46" x2="136.52" y1="125.35" y2="142.53"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="169.43" x2="182.72" y1="165.38" y2="188.36"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="298.94" x2="272.44" y1="165.42" y2="165.42"/>
+      <line x1="295.63" x2="275.75" y1="159.42" y2="159.42"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="129.67" x2="110.00" y1="142.39" y2="142.39"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="312.16" x2="298.94" y1="142.50" y2="119.56"/>
+      <line x1="305.31" x2="295.40" y1="142.63" y2="125.42"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="298.94" x2="308.51" y1="119.56" y2="103.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="272.44" x2="259.18" y1="165.42" y2="142.47"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="169.43" x2="142.92" y1="211.35" y2="211.35"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="169.43" x2="182.68" y1="119.48" y2="142.43"/>
+      <line x1="165.89" x2="175.83" y1="125.35" y2="142.56"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="298.94" x2="272.44" y1="211.39" y2="211.39"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="83.30" y="146.39">O<tspan dy="6" font-size="75%">3</tspan><tspan dy="-6">S</tspan></text>
+    <g>
+      <ellipse cx="76.1869822485" cy="136.482840237" fill="none" rx="5.0" ry="5.0" stroke="#000" stroke-width="1"/>
+      <line fill="#000" stroke="#000" stroke-width="1" x1="73.1869822485" x2="79.1869822485" y1="136.482840237" y2="136.482840237"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="227.30" y="146.47">N</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="200.30" y="146.47">N</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="241.30" y="100.57">HO</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="177.30" y="100.53">OH</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="307.30" y="100.60">COOH</text>
+  </g>
+</svg>
