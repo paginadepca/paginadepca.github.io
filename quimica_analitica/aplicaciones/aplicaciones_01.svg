@@ -1,0 +1,75 @@
+<?xml version="1.0" ?><svg height="39.87344mm" version="1.0" viewBox="0 0 405 151" width="106.94531mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+  </style>
+  <g ont-size="12pt" stroke-linecap="round" transform="translate(-180,-132)">
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="278.40" x2="270.00" y1="210.00" y2="218.34"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="236.85" x2="236.77" y1="194.00" y2="215.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="236.88" x2="236.88" y1="178.00" y2="161.51"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="291.00" x2="299.00" y1="199.13" y2="193.32"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="313.00" x2="326.00" y1="225.06" y2="225.06"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="291.00" x2="299.00" y1="209.70" y2="217.66"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="278.00" x2="270.00" y1="198.62" y2="192.82"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="256.00" x2="243.00" y1="188.02" y2="188.02"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="230.00" x2="210.37" y1="188.02" y2="188.02"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="236.72" x2="236.72" y1="231.00" y2="251.57"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="339.00" x2="359.46" y1="225.06" y2="225.06"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="230.00" x2="210.22" y1="225.06" y2="225.06"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="332.82" x2="332.91" y1="194.00" y2="215.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="339.00" x2="359.31" y1="188.02" y2="188.02"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="332.95" x2="332.95" y1="231.00" y2="251.57"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="313.00" x2="326.00" y1="188.02" y2="188.02"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="256.00" x2="243.00" y1="225.06" y2="225.06"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="332.80" x2="332.80" y1="178.00" y2="161.51"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="257.30" y="229.06">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="257.30" y="192.02">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="300.30" y="192.02">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="300.30" y="229.06">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="280.30" y="207.59">B</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="231.30" y="192.02">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="327.30" y="192.02">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="327.30" y="229.06">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="231.30" y="229.06">C</text>
+    <polyline fill="none" points="205.03,144.44 192.57,144.44 192.57,270.81 205.03,270.81 " stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="363.66,144.44 376.12,144.44 376.12,270.81 363.66,270.81 " stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="383.30" y="157.45">−</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="408.30" y="211.60">H<tspan dy="-6" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="90" x="485.00" y="211.36">Complejo 1:2</text>
+  </g>
+</svg>

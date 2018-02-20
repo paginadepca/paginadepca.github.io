@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="205.6" width="610.91" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 610.91493 205.59541">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4474" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4476" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker6118" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path6120" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="TriangleInL" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4978" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker5823" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5825" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="TriangleOutL" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4987" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-65.327 -373.14)">
+  <g id="g3482">
+   <g id="g3440">
+    <g font-size="17.812px" font-family="&apos;STIX Two Text&apos;">
+     <text id="text3336" opacity=".95" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="462.42188" x="90.227364" fill="#000000"><tspan id="tspan3338" x="90.227364" y="462.42188">Ca<tspan id="tspan3340" dy="-6" font-size="65%">2+</tspan></tspan></text>
+     <text id="text3342" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="508.65997" x="90.86274" fill="#000000"><tspan id="tspan3344" x="90.86274" y="508.65997">Mg</tspan></text>
+     <text id="text3346" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="500.45749" x="91.207054" fill="none"><tspan id="tspan3348" x="91.207054" y="500.45749">Y</tspan></text>
+    </g>
+    <rect id="rect3350" height="23.496" width="17.857" stroke="#000" y="491.06" x="118.22" stroke-width=".89552" fill="none"/>
+    <text id="text3352" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="508.65997" x="121.3812" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan3354" y="508.65997" x="121.3812" fill="#d45500">Y</tspan></text>
+    <path id="path4837" marker-end="url(#marker5823)" d="m146.64 504.9h34.348" marker-start="url(#TriangleInL)" stroke="#000" stroke-width="1px" fill="none"/>
+    <text id="text5240" opacity=".95" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="508.65997" x="190.60016" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5242" x="190.60016" y="508.65997">NET</tspan></text>
+    <path id="path5373" marker-end="url(#TriangleOutL)" d="m126.63 485.88-11.95-16.05" stroke="#000" stroke-width="1px" fill="none"/>
+    <text id="text5440" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="536.42188" x="163.42664" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5442" x="163.42664" y="536.42188">pH = 10</tspan></text>
+   </g>
+   <rect id="rect6030" opacity=".95" height="130.72" width="174.63" stroke="#000" y="428.73" x="70.827" fill="none"/>
+  </g>
+  <g id="g3526" transform="translate(-16.697)">
+   <g id="g6377" fill-rule="evenodd">
+    <path id="path6110" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m275.58 504.4v1h65.625v-1h-65.625z"/>
+    <path id="path6373" d="m345.82 504.9-6.92 4v-8l6.92 4z" stroke="#000" stroke-width=".8pt"/>
+   </g>
+   <text id="text6333" style="word-spacing:0px;letter-spacing:0px" font-size="17.812px" line-height="125%" y="499.30466" x="295.61865" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan6335" y="499.30466" x="295.61865">+Y</tspan></text>
+  </g>
+  <g id="g3502" transform="translate(-28.96)">
+   <g id="g3458" font-size="17.812px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+    <text id="text6467" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="480.42188" x="396.51553"><tspan id="tspan6469" x="396.51553" y="480.42188">Ca<tspan id="tspan6471" fill="#d45500">Y</tspan>, CaY</tspan></text>
+    <text id="text6475" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="508.65997" x="396.51553"><tspan id="tspan6477" x="396.51553" y="508.65997">Mg-NET</tspan></text>
+    <text id="text6479" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="536.42188" x="396.51553"><tspan id="tspan6481" x="396.51553" y="536.42188">pH = 10</tspan></text>
+   </g>
+   <rect id="rect6494" opacity=".95" height="111.91" width="121.16" stroke="#000" y="448.47" x="372.52" fill="none"/>
+  </g>
+  <g id="g3533" transform="translate(-43.433)">
+   <g id="g3406" fill-rule="evenodd" transform="translate(246)">
+    <path id="path3408" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m275.58 504.4v1h65.625v-1h-65.625z"/>
+    <path id="path3410" d="m345.82 504.9-6.92 4v-8l6.92 4z" stroke="#000" stroke-width=".8pt"/>
+   </g>
+   <text id="text3412" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="499.30466" x="541.61865" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan3414" x="541.61865" y="499.30466">+Y</tspan></text>
+  </g>
+  <text id="text3424" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="469.92294" x="630.17889" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan3428" x="630.17889" y="469.92294"/></text>
+  <g id="g3471" font-size="17.812px" transform="translate(-48 14)" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text3416" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="536.42188" x="628.19873"><tspan id="tspan3418" x="628.19873" y="536.42188">pH = 10</tspan></text>
+   <text id="text3420" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="508.65997" x="628.19873"><tspan id="tspan3422" x="628.19873" y="508.65997">NET</tspan></text>
+   <text id="text3430" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="480.42188" x="628.19873" xml:space="preserve"><tspan id="tspan3432" y="480.42188" x="628.19873">MgY</tspan></text>
+   <text id="text3434" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="452.42188" x="628.19873"><tspan id="tspan3436" x="628.19873" y="452.42188">Ca<tspan id="tspan3438" fill="#d45500">Y</tspan>, CaY</tspan></text>
+  </g>
+  <rect id="rect3469" height="137.62" width="107.92" stroke="#000" y="435.61" x="562.82" fill="none"/>
+  <path id="path3582" marker-end="url(#marker6118)" d="m152.46 423.29 25.663-23.683" stroke="#000" fill="none"/>
+  <text id="text4462" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.813px" line-height="125%" y="390.71506" x="178.00067" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4464" x="178.00067" y="390.71506">rojo</tspan></text>
+  <path id="path4472" marker-end="url(#marker4474)" d="m621.87 429.29-31.67-29.68" stroke="#000" fill="none"/>
+  <text id="text5078" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="17.812px" line-height="125%" y="390.71506" x="561.9809" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5080" x="561.9809" y="390.71506">azul</tspan></text>
+ </g>
+</svg>

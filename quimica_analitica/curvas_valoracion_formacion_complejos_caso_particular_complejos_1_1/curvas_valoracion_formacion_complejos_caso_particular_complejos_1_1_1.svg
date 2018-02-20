@@ -1,0 +1,37 @@
+<?xml version="1.0" ?><svg height="47.00313mm" version="1.0" viewBox="0 0 656 178" width="173.22500mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+  </style>
+  <g font-family="Helvetica" font-size="12pt" stroke-linecap="round" transform="translate(-45,-27)">
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="109.30" y="109.81"><tspan font-weight="bold">M</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="152.00" y="111.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="195.30" y="109.81"><tspan font-weight="bold">L</tspan></text>
+    <polyline fill="none" points="238.17,113.81 230.17,108.81 290.76,108.81" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="230.17,102.81 290.76,102.81 282.76,97.81" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="314.30" y="109.81"><tspan font-weight="bold">ML</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="27" x="257.00" y="126.87"><tspan font-style="italic">K</tspan><tspan dy="6" font-size="75%">ML</tspan></text>
+    <polyline fill="none" points="96.49,153.64 112.13,116.34" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="121.56,94.45 134.11,64.52" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="137.20,57.15 130.57,65.21 134.11,64.52 136.10,67.53" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="35" x="88.00" y="80.48">+[X]</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="84" x="131.00" y="49.39">MX, ..., MX<tspan dy="6" font-size="75%" font-style="italic">n</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="72" x="57.00" y="170.72">equilibrios</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="86" x="57.00" y="189.81">concurrentes</text>
+    <polyline fill="none" points="206.47,100.20 230.35,76.32" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="236.00,70.67 226.81,75.61 230.35,76.32 231.05,79.86" stroke="#000000" stroke-width="1"/>
+    <polyline fill="none" points="172.38,134.21 191.13,115.28" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="45" x="175.00" y="80.48">+[H<tspan dy="-6" font-size="75%">+</tspan><tspan dy="6">]</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="77" x="241.00" y="67.45">HL, ..., H<tspan dy="6" font-size="75%" font-style="italic">n</tspan><tspan dy="-6">L</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="116" x="141.00" y="148.68">reacción parásita</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="98" x="141.00" y="167.73">(o secundaria)</text>
+    <polyline fill="none" points="287.85,122.62 378.12,122.62" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="386.12,122.62 376.12,119.62 378.12,122.62 376.12,125.62" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="31" x="403.00" y="126.65"><tspan font-style="italic">K</tspan><tspan font-style="italic">'</tspan><tspan dy="6" font-size="75%">ML</tspan></text>
+    <ellipse cx="417.74" cy="122.87" fill="none" rx="26.58" ry="17.86" stroke="#c0c0c0" stroke-width="1.0"/>
+    <polyline fill="none" points="472.39,122.85 458.31,122.85" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="450.31,122.85 460.31,125.85 458.31,122.85 460.31,119.85" stroke="#000000" stroke-width="1"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="187" x="480.00" y="127.10">cte. condicional (o efectiva)</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="212" x="479.00" y="146.68">que depende de las condiciones</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="103" x="479.00" y="165.73">experimentales</text>
+  </g>
+</svg>

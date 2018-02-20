@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ width="625" height="400"
+ viewBox="0 0 625 400"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<style type="text/css">
+	@import url('../estilo.css');
+</style>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 5.0 patchlevel 3 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="625" height="400" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="white" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M66.4,325.2 L61.9,325.2 M66.4,294.3 L57.4,294.3  '/>	<g transform="translate(53.2,299.9)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="end">
+		<text xml:space="preserve"><tspan font-family="Stix Two Text"  xml:space="preserve">pM</tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="12.0" dy="4.50px" xml:space="preserve">f</tspan><tspan font-family="Stix Two Text"  font-size="7.2" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-size="12.0" xml:space="preserve">=</tspan><tspan font-family="Stix Two Text"  font-size="7.2" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-size="12.0" xml:space="preserve">0</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M66.4,351.4 L66.4,360.4  '/>	<g transform="translate(66.4,374.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M245.7,351.4 L245.7,360.4  '/>	<g transform="translate(245.7,374.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" > 1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M425.0,351.4 L425.0,360.4  '/>	<g transform="translate(425.0,374.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="13.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" > 2</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M66.4,16.7 L66.4,351.4 L425.0,351.4 M425.0,16.7 M66.4,16.7  '/>	<g transform="translate(156.1,39.4)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" >antes del punto</tspan></text>
+	</g>
+	<g transform="translate(156.1,63.4)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" >de equivalencia</tspan></text>
+	</g>
+	<g transform="translate(335.4,39.4)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" >después del P.E.</tspan></text>
+	</g>
+	<g transform="translate(81.6,339.5)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text><tspan font-family="Stix Two Text" >p</tspan><tspan font-family="Stix Two Text"  font-style="italic" >C</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px">M</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+	<g transform="translate(81.6,315.4)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text xml:space="preserve"><tspan font-family="Stix Two Text"  xml:space="preserve">log</tspan><tspan font-family="Stix Two Text"  font-size="9.0" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="15.0" xml:space="preserve">α</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px" xml:space="preserve">M</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+	<g transform="translate(440.2,202.8)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text xml:space="preserve"><tspan font-family="Stix Two Text"  xml:space="preserve">log</tspan><tspan font-family="Stix Two Text"  font-size="9.0" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="15.0" xml:space="preserve">K</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px" xml:space="preserve">ML</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+	<g transform="translate(449.1,71.6)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text xml:space="preserve"><tspan font-family="Stix Two Text"  xml:space="preserve">log</tspan><tspan font-family="Stix Two Text"  font-size="9.0" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="15.0" xml:space="preserve">α</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px" xml:space="preserve">L</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+	<g transform="translate(220.8,172.9)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="end">
+		<text><tspan font-family="Stix Two Text" >P.E.</tspan></text>
+	</g>
+	<g transform="translate(456.0,110.2)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text xml:space="preserve"><tspan font-family="Stix Two Text"  xml:space="preserve">pM</tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="12.0" dy="4.50px" xml:space="preserve">f</tspan><tspan font-family="Stix Two Text"  font-size="7.2" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-size="12.0" xml:space="preserve">=</tspan><tspan font-family="Stix Two Text"  font-size="7.2" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-size="12.0" xml:space="preserve">2</tspan><tspan font-family="Stix Two Text"  font-size="15.0" dy="-4.50px" xml:space="preserve"> = log</tspan><tspan font-family="Stix Two Text"  font-size="9.0" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="15.0" xml:space="preserve">K</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px" xml:space="preserve">ML</tspan><tspan font-family="Stix Two Text"  font-size="15.0" dy="-4.50px" xml:space="preserve"> − log</tspan><tspan font-family="Stix Two Text"  font-size="9.0" xml:space="preserve"> </tspan><tspan font-family="Stix Two Text"  font-style="italic"  font-size="15.0" xml:space="preserve">α</tspan><tspan font-family="Stix Two Text"  font-size="12.0" dy="4.50px" xml:space="preserve">L</tspan><tspan font-size="15.0" dy="-4.50"></tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black' stroke-dasharray='2.5,4.0'  d='M245.7,351.4 L245.7,16.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black' stroke-dasharray='2.5,4.0'  d='M425.0,351.4 L425.0,89.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '75.4,332.9 71.0,332.9 75.4,325.2 79.8,332.9 75.4,332.9 '/>
+		<polygon fill = 'black' points = '75.4,343.7 79.8,343.7 75.4,351.4 71.0,343.7 75.4,343.7 '/>
+	</g>
+	<path stroke='black'  d='M75.4,343.7 L75.4,332.9  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '75.4,302.0 71.0,302.0 75.4,294.3 79.8,302.0 75.4,302.0 '/>
+		<polygon fill = 'black' points = '75.4,317.5 79.8,317.5 75.4,325.2 71.0,317.5 75.4,317.5 '/>
+	</g>
+	<path stroke='black'  d='M75.4,317.5 L75.4,302.0  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '434.0,50.6 429.6,50.6 434.0,42.9 438.4,50.6 434.0,50.6 '/>
+		<polygon fill = 'black' points = '434.0,343.7 438.4,343.7 434.0,351.4 429.6,343.7 434.0,343.7 '/>
+	</g>
+	<path stroke='black'  d='M434.0,343.7 L434.0,50.6  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '442.9,50.6 438.5,50.6 442.9,42.9 447.3,50.6 442.9,50.6 '/>
+		<polygon fill = 'black' points = '442.9,81.5 447.3,81.5 442.9,89.2 438.5,81.5 442.9,81.5 '/>
+	</g>
+	<path stroke='black'  d='M442.9,81.5 L442.9,50.6  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '235.7,187.3 238.1,183.5 242.1,191.4 233.3,191.0 235.7,187.3 '/>
+	</g>
+	<path stroke='black'  d='M218.8,176.3 L235.7,187.3  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '431.4,92.8 429.9,95.4 425.9,89.6 432.9,90.2 431.4,92.8 '/>
+	</g>
+	<path stroke='black'  d='M451.9,104.6 L431.4,92.8  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(48.4,22.8)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text"  font-weight="bold" >pM</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(432.1,393.4)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text"  font-weight="bold"  font-style="italic" >f</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	<g id="gnuplot_plot_1" ><title>ML</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M66.4,294.2 L115.6,292.2 L164.0,289.1 L194.4,286.0 L213.5,282.8 L225.5,279.7 L233.0,276.6 L237.7,273.5
+		L240.7,270.4 L242.6,267.3 L243.7,264.1 L244.5,261.0 L244.9,257.9 L245.2,254.8 L245.4,251.7 L245.5,248.6
+		L245.6,245.5 L245.6,242.3 L245.7,239.2 L245.7,236.1 L245.7,233.0 L245.7,229.9 L245.7,226.8 L245.7,223.6
+		L245.7,220.5 L245.7,217.4 L245.7,214.3 L245.7,211.2 L245.7,208.1 L245.7,204.9 L245.7,201.8 L245.7,198.7
+		L245.7,195.6 L245.7,192.5 L245.7,189.4 L245.7,186.2 L245.7,183.1 L245.7,180.0 L245.7,176.9 L245.7,173.8
+		L245.7,170.7 L245.7,167.6 L245.7,164.4 L245.7,161.3 L245.7,158.2 L245.7,155.1 L245.7,152.0 L245.7,148.9
+		L245.7,145.7 L245.8,142.6 L245.8,139.5 L245.9,136.4 L245.9,133.3 L246.1,130.2 L246.3,127.0 L246.7,123.9
+		L247.3,120.8 L248.2,117.7 L249.7,114.6 L252.1,111.5 L256.0,108.3 L262.0,105.2 L271.7,102.1 L287.1,99.0
+		L311.7,95.9 L350.7,92.8 L412.9,89.6 L425.0,89.3  '/></g>
+	</g>
+<g fill="none" color="white" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M66.4,16.7 L66.4,351.4 L425.0,351.4 M425.0,16.7 M66.4,16.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+</g>
+</svg>
+

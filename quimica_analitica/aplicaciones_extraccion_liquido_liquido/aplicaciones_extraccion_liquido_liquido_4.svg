@@ -1,0 +1,19 @@
+<?xml version="1.0" ?><svg height="29.57500mm" version="1.0" viewBox="0 0 306 112" width="80.80313mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-31,-127)">
+    <polyline fill="none" points="154.52,168.49 146.52,163.49 207.11,163.49" stroke="#000000" stroke-width="1.0"/>
+    <polyline fill="none" points="146.52,157.49 207.11,157.49 199.11,152.49" stroke="#000000" stroke-width="1.0"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="219.30" y="164.49">HA<tspan dy="6" font-size="75%">(o)</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="20" x="172.00" y="179.25"><tspan font-style="italic">K</tspan><tspan dy="6" font-size="75%">D</tspan></text>
+    <polyline fill="none" points="78.92,195.03 110.31,139.51" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="74.98,202.00 82.52,194.77 78.92,195.03 77.29,191.82" stroke="#000000" stroke-width="1"/>
+    <rect fill="#ffffff" height="14.00" stroke="#ffffff" width="26.00" x="89.00" y="152.00"/>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="90.30" y="164.49">HA<tspan dy="6" font-size="75%">(aq)</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="86.30" y="220.01">H<tspan dy="-6" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="42.30" y="220.50">A<tspan dy="-6" font-size="75%">−</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="66.00" y="221.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="119" x="208.00" y="220.26"><tspan font-style="italic">D</tspan> = <tspan font-style="italic">f</tspan>(<tspan font-style="italic">K</tspan><tspan dy="6" font-size="75%">D</tspan><tspan dy="-6">,</tspan><tspan font-style="italic">K</tspan><tspan dy="6" font-size="75%">a</tspan><tspan dy="-6">,H</tspan><tspan dy="-6" font-size="75%">+</tspan><tspan dy="6">)</tspan></text>
+  </g>
+</svg>

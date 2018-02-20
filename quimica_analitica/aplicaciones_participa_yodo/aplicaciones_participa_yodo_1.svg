@@ -1,0 +1,54 @@
+<?xml version="1.0" ?><svg height="21.38906mm" version="1.0" viewBox="0 0 292 81" width="77.10625mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-71,-109)">
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="93.54" x2="83.75" y1="155.00" y2="171.96"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="126.97" x2="136.76" y1="155.00" y2="171.96"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="128.13" x2="136.76" y1="141.00" y2="126.04"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="92.38" x2="83.75" y1="141.00" y2="126.04"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="104.00" x2="117.00" y1="151.00" y2="151.00"/>
+      <line x1="104.00" x2="117.00" y1="147.00" y2="147.00"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="92.30" y="153.00">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="118.30" y="153.00">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="148.00" y="154.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="174.30" y="153.00">X<tspan dy="6" font-size="75%">2</tspan></text>
+    <polyline fill="none" points="207.00,149.00 259.59,149.00" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="267.59,149.00 257.59,146.00 259.59,149.00 257.59,152.00" stroke="#000000" stroke-width="1"/>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="328.51" x2="328.51" y1="150.00" y2="163.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="296.00" x2="279.04" y1="140.54" y2="130.75"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="335.00" x2="351.47" y1="140.25" y2="130.75"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="333.13" x2="341.76" y1="136.00" y2="121.04"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="297.38" x2="288.75" y1="136.00" y2="121.04"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="309.00" x2="322.00" y1="144.00" y2="144.00"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="302.00" x2="302.00" y1="150.00" y2="163.00"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="297.30" y="148.00">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="323.30" y="148.00">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="297.30" y="174.51">X</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="323.30" y="174.51">X</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="214.58" width="286.85" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 286.84845 214.58118">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-122.56 -480.68)">
+  <path id="path4149" d="m158.42 485.68v176.13h245.99" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4151" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="509.32941" x="127.20918" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4153" x="127.20918" y="509.32941">pH<tspan id="tspan5394" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;"/></tspan></text>
+  <text id="text4155" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="687.06335" x="377.35059" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4157" x="377.35059" y="687.06335"><tspan id="tspan4833" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">V</tspan><tspan id="tspan4159" dy="4" font-size="65%">R</tspan></tspan></text>
+  <path id="path5396" d="m158.24 640.73c40.564-1.7766 99.614-1.2569 112.91-21.053 7.3379-10.112 12.37-94.846 16.869-102.32 6.5955-14.998 49.948-16.934 90.23-20.477" stroke="#000" stroke-width="1px" fill="none"/>
+  <rect id="rect4726" stroke-dasharray="2, 4" height="99.331" width="41.057" stroke="#000" stroke-linecap="square" y="518.23" x="259.7" fill="none"/>
+  <text id="text4728" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="563.1153" x="317.94846" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4730" x="317.94846" y="563.1153">A es</tspan><tspan id="tspan4732" x="317.94846" y="583.1153">un ácido</tspan></text>
+ </g>
+</svg>

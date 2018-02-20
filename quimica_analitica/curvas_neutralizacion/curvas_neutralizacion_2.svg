@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="220.91" width="421.32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 421.31839 220.90613">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker4814" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path4816" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker4748" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4750" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-26.546 -181.06)">
+  <path id="path4692" d="m141.62 192.36v175.68" stroke="#000" stroke-linecap="square" stroke-width="1px" fill="none"/>
+  <path id="path4147" d="m141.62 368.04h244.86" stroke="#000" stroke-linecap="square" stroke-width="1px" fill="none"/>
+  <g stroke="#000" stroke-linecap="square">
+   <circle id="path4149" cx="196.45" cy="345.81" r="2.1622"/>
+   <circle id="circle4151" cy="280.65" cx="252.69" r="2.1622"/>
+   <circle id="circle4153" cx="365.14" cy="215.5" r="2.1622"/>
+   <circle id="circle4155" cy="359.52" cx="141.28" r="2.1622"/>
+  </g>
+  <g stroke="#000" fill="none">
+   <path id="path4178" d="m141.28 359.52c1.0502-13.356 17.43-13.71 55.169-13.71 45.95 0 56.236-3.4543 56.236-65.155s13.619-65.155 112.45-65.155" stroke-width="1px"/>
+   <path id="path4186" d="m365.14 215.5h-224.08" stroke-dasharray="2, 2"/>
+   <path id="path4188" d="m252.69 280.65h-111.64" stroke-dasharray="2, 2"/>
+   <g stroke-dasharray="3, 3">
+    <path id="path4190" d="m365.14 215.5v155.29"/>
+    <path id="path4192" d="m252.69 280.65v88.131"/>
+    <path id="path4194" d="m196.45 345.81v22.449"/>
+   </g>
+   <path id="path4196" d="m365.26 345.81h-168.81-55.4" stroke-dasharray="2, 2"/>
+  </g>
+  <g id="g5046" fill-rule="evenodd" transform="translate(2)">
+   <path id="path4198" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m372.63 219.5v122.55h1v-122.55h-1z"/>
+   <path id="path5027" d="m373.14 216.5 4 6.92h-8l4-6.92z" stroke="#000" stroke-width=".8pt"/>
+   <path id="path5029" d="m373.14 345.31-4-6.92h8l-4 6.92z" stroke="#000" stroke-width=".8pt"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4592" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="266.33188" x="384.8421"><tspan id="tspan4594" x="384.8421" y="266.33188">nos da</tspan><tspan id="tspan4596" x="384.8421" y="286.33188">una idea</tspan><tspan id="tspan4598" x="384.8421" y="306.33188">del salto</tspan></text>
+   <text id="text4648" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="386.67798" x="137.66162"><tspan id="tspan4650" x="137.66162" y="386.67798">0</tspan></text>
+   <text id="text4652" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="349.30359" x="83.368423"><tspan id="tspan4654" x="83.368423" y="349.30359">p<tspan id="tspan4656" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">K</tspan><tspan id="tspan4658" dy="4" font-size="65%">a</tspan></tspan></text>
+   <text id="text4660" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="219.26534" x="30.361973"><tspan id="tspan4662" x="30.361973" y="219.26534">14 + log <tspan id="tspan4664" font-size="16px" font-style="italic" line-height="125%" font-family="&apos;STIX Two Text&apos;">C</tspan><tspan id="tspan4666" dy="4" font-size="65%">A</tspan></tspan></text>
+   <text id="text4668" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="196.57272" x="107.89473"><tspan id="tspan4670" x="107.89473" y="196.57272">pH</tspan></text>
+   <text id="text4672" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="393.41486" x="383.6842"><tspan id="tspan4674" font-size="16px" font-style="italic" line-height="125%" y="393.41486" x="383.6842" font-family="&apos;STIX Two Text&apos;">f</tspan></text>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path id="path4680" d="m252.69 371.9v-3.1142"/>
+   <path id="path4682" d="m365.14 371.9v-3.1142"/>
+   <path id="path4684" d="m141.62 371.9v-3.1142"/>
+   <path id="path4694" d="m196.45 371.9v-3.1142"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4696" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="386.67798" x="186.72366"><tspan id="tspan4698" x="186.72366" y="386.67798">0,5</tspan></text>
+   <text id="text4700" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="386.67798" x="248.68864"><tspan id="tspan4702" x="248.68864" y="386.67798">1</tspan></text>
+   <text id="text4704" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="386.67798" x="361.11914"><tspan id="tspan4706" x="361.11914" y="386.67798">2</tspan></text>
+  </g>
+  <path id="path4708" marker-end="url(#marker4748)" d="m112.12 215.5h19.774" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path4812" marker-end="url(#marker4814)" d="m112.12 345.81h19.774" stroke="#000" stroke-width="1px" fill="none"/>
+ </g>
+</svg>

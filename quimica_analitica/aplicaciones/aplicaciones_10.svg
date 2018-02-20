@@ -1,0 +1,87 @@
+<?xml version="1.0" ?><svg height="40.66563mm" version="1.0" viewBox="0 0 657 154" width="173.48906mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-38,-93)">
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="50.89" x2="73.84" y1="176.93" y2="190.18"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="96.79" x2="113.00" y1="176.93" y2="186.29"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="50.89" x2="73.84" y1="150.46" y2="137.16"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="153.00" x2="166.00" y1="137.20" y2="137.20"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="148.25" x2="148.25" y1="129.00" y2="117.00"/>
+      <line x1="144.25" x2="144.25" y1="129.00" y2="117.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="96.79" x2="73.84" y1="176.93" y2="190.18"/>
+      <line x1="90.92" x2="73.71" y1="173.39" y2="183.33"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="50.89" x2="50.89" y1="150.46" y2="176.93"/>
+      <line x1="56.89" x2="56.89" y1="153.77" y2="173.62"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="96.79" x2="96.79" y1="150.46" y2="176.93"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="butt" stroke-width="1.0">
+      <line x1="127.00" x2="140.00" y1="137.20" y2="137.20"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="73.84" x2="96.79" y1="137.16" y2="150.46"/>
+      <line x1="73.70" x2="90.91" y1="144.02" y2="153.99"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="96.79" x2="113.00" y1="150.46" y2="141.09"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="114.30" y="194.18">COOH</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="114.30" y="141.20">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="141.30" y="141.20">C</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="167.30" y="141.20">CH<tspan dy="6" font-size="75%">3</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="140.30" y="114.69">O</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="206.00" y="169.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="56.7" x="232.30" y="169.48">2 NaOH</text>
+    <polyline fill="none" points="299.89,164.47 340.44,164.47" stroke="#000000" stroke-width="1.0"/>
+    <polygon fill="#000000" fill-rule="evenodd" points="348.44,164.47 338.44,161.47 340.44,164.47 338.44,167.47" stroke="#000000" stroke-width="1"/>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="411.23" x2="411.23" y1="149.96" y2="176.44"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="388.28" x2="411.23" y1="136.67" y2="149.96"/>
+      <line x1="388.14" x2="405.35" y1="143.53" y2="153.49"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="411.23" x2="427.00" y1="149.96" y2="140.86"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="365.33" x2="388.28" y1="176.44" y2="189.69"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="365.33" x2="388.28" y1="149.96" y2="136.67"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="411.23" x2="428.00" y1="176.44" y2="186.12"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="411.23" x2="388.28" y1="176.44" y2="189.69"/>
+      <line x1="405.36" x2="388.15" y1="172.90" y2="182.84"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="365.33" x2="365.33" y1="149.96" y2="176.44"/>
+      <line x1="371.33" x2="371.33" y1="153.27" y2="173.13"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="64.7" x="429.30" y="193.69">COO<tspan dy="-6" font-size="75%">−</tspan><tspan dy="6">Na</tspan><tspan dy="-6" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="428.30" y="140.71">OH</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="503.00" y="169.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="94.7" x="527.30" y="169.48">CH<tspan dy="6" font-size="75%">3</tspan><tspan dy="-6">COO</tspan><tspan dy="-6" font-size="75%">−</tspan><tspan dy="6">Na</tspan><tspan dy="-6" font-size="75%">+</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="14pt" x="631.00" y="169.00">+</text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="654.30" y="169.48">H<tspan dy="6" font-size="75%">2</tspan><tspan dy="-6">O</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" textLength="139" x="52.00" y="231.92">ácido acetilsalicílico</text>
+  </g>
+</svg>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="196.35" width="472.5" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 472.49665 196.35012" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ 
+ <defs id="defs4">
+  <marker id="marker5831" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5833" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5426" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5420" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-159.48 -163.51)">
+  <use id="use4606" xlink:href="#rect4153" transform="translate(-31.557 -80.839)" height="100%" width="100%" y="0" x="0"/>
+  <g id="g5185">
+   <path id="rect4147" d="m222.37 354.86v-27.624h6.906v27.624" stroke="#000" fill="none"/>
+   <g id="g4642" transform="translate(-27.485 -86)">
+    <rect id="rect4153" height="1.8069" width="1.8069" stroke="#000" y="406.48" x="254.02" stroke-width=".19313"/>
+    <use id="use4312" xlink:href="#rect4153" transform="translate(-10.086 -2.6287)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4314" xlink:href="#rect4153" transform="translate(-9.8277 -2.2757)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4316" xlink:href="#rect4153" transform="translate(-9.928 -4.1043)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4318" xlink:href="#rect4153" transform="translate(-2.8046 -6.0933)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4320" xlink:href="#rect4153" transform="translate(-.80264 -2.943)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4322" xlink:href="#rect4153" transform="translate(-3.9789 -5.9721)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4324" xlink:href="#rect4153" transform="translate(-1.7137 -3.1804)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4326" xlink:href="#rect4153" transform="translate(2.8015 -12.76)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4328" xlink:href="#rect4153" transform="translate(-7.1282 -8.7311)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4330" xlink:href="#rect4153" transform="translate(-1.2328 -12.963)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4332" xlink:href="#rect4153" transform="translate(2.912 -4.4884)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4334" xlink:href="#rect4153" transform="translate(5.0748 -8.8463)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4336" xlink:href="#rect4153" transform="translate(-.37548 -2.2647)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4338" xlink:href="#rect4153" transform="translate(6.5478 -.77491)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4340" xlink:href="#rect4153" transform="translate(-9.0533 -1.4312)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4342" xlink:href="#rect4153" transform="translate(-7.2326 -8.2055)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4344" xlink:href="#rect4153" transform="translate(.40929 -10.193)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4346" xlink:href="#rect4153" transform="translate(-2.5769 -8.0466)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4348" xlink:href="#rect4153" transform="translate(-10.351 -13.703)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4350" xlink:href="#rect4153" transform="translate(-5.7319 -11.623)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4352" xlink:href="#rect4153" transform="translate(-.83291 -15.696)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4354" xlink:href="#rect4153" transform="translate(-4.0951 -20.581)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4356" xlink:href="#rect4153" transform="translate(2.1607 -13.085)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4358" xlink:href="#rect4153" transform="translate(-.013770 -2.7925)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4360" xlink:href="#rect4153" transform="translate(-5.3143 3.5632)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4362" xlink:href="#rect4153" transform="translate(2.8571 2.4903)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4364" xlink:href="#rect4153" transform="translate(3.9704 3.8331)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4366" xlink:href="#rect4153" transform="translate(-2.9315 -6.4149)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4368" xlink:href="#rect4153" transform="translate(-4.0433 -4.1328)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4370" xlink:href="#rect4153" transform="translate(-5.8854 -.76274)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4372" xlink:href="#rect4153" transform="translate(-8.9577 .84832)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4374" xlink:href="#rect4153" transform="translate(-7.785 -6.2314)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4376" xlink:href="#rect4153" transform="translate(-4.2098 -12.538)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4378" xlink:href="#rect4153" transform="translate(-.61380 -20.48)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4380" xlink:href="#rect4153" transform="translate(2.9164 -19.875)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4382" xlink:href="#rect4153" transform="translate(10.421 -22.674)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4384" xlink:href="#rect4153" transform="translate(6.8431 -15.317)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4386" xlink:href="#rect4153" transform="translate(4.6674 -3.0018)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4388" xlink:href="#rect4153" transform="translate(9.2399 -4.2722)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4390" xlink:href="#rect4153" transform="translate(2.47 -4.4823)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4392" xlink:href="#rect4153" transform="translate(5.941 -10.749)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4394" xlink:href="#rect4153" transform="translate(.53683 -12.326)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4396" xlink:href="#rect4153" transform="translate(-5.6037 -11.29)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4398" xlink:href="#rect4153" transform="translate(-10.711 -17.529)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4400" xlink:href="#rect4153" transform="translate(-8.2335 -16.899)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4402" xlink:href="#rect4153" transform="translate(-4.3833 -18.069)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4404" xlink:href="#rect4153" transform="translate(5.5109 -10.793)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4406" xlink:href="#rect4153" transform="translate(1.1609 -17.035)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4408" xlink:href="#rect4153" transform="translate(2.8976 -4.7301)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4410" xlink:href="#rect4153" transform="translate(-.82049 -8.18)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4412" xlink:href="#rect4153" transform="translate(-14.778 -10.225)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4414" xlink:href="#rect4153" transform="translate(-11.877 -12.104)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4416" xlink:href="#rect4153" transform="translate(-12.153 -11.346)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4418" xlink:href="#rect4153" transform="translate(-9.0534 -14.099)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4420" xlink:href="#rect4153" transform="translate(-8.6211 -10.741)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4422" xlink:href="#rect4153" transform="translate(-7.4203 -10.937)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4424" xlink:href="#rect4153" transform="translate(-9.1268 -8.4562)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4428" xlink:href="#rect4153" transform="translate(-11.583 -12.43)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4430" xlink:href="#rect4153" transform="translate(5.6814 -15.352)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4432" xlink:href="#rect4153" transform="translate(11.234 -20.641)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4434" xlink:href="#rect4153" transform="translate(10.561 -13.942)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4436" xlink:href="#rect4153" transform="translate(9.2693 -13.934)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4438" xlink:href="#rect4153" transform="translate(6.7245 -15.364)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4440" xlink:href="#rect4153" transform="translate(11.172 -9.0737)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4442" xlink:href="#rect4153" transform="translate(5.1359 -8.1172)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4444" xlink:href="#rect4153" transform="translate(3.2159 -6.5177)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4446" xlink:href="#rect4153" transform="translate(8.2643 -12.484)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4448" xlink:href="#rect4153" transform="translate(-4.1005 -12.125)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4450" xlink:href="#rect4153" transform="translate(-8.65 -14.481)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4452" xlink:href="#rect4153" transform="translate(-5.1837 -.72736)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4454" xlink:href="#rect4153" transform="translate(-6.53 .14643)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4456" xlink:href="#rect4153" transform="translate(-3.3304 -.52768)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4458" xlink:href="#rect4153" transform="translate(.55560 -.33675)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4460" xlink:href="#rect4153" transform="translate(-1.147 2.4782)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4462" xlink:href="#rect4153" transform="translate(2.3253 2.4605)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4464" xlink:href="#rect4153" transform="translate(4.1172 1.3972)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4466" xlink:href="#rect4153" transform="translate(-2.4108 -3.2763)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4468" xlink:href="#rect4153" transform="translate(4.8345 -1.5968)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4470" xlink:href="#rect4153" transform="translate(.051507 .61018)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4472" xlink:href="#rect4153" transform="translate(-5.4485 -2.9419)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4474" xlink:href="#rect4153" transform="translate(-6.2589 -5.9166)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4476" xlink:href="#rect4153" transform="translate(-4.5987 -13.913)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4478" xlink:href="#rect4153" transform="translate(-4.9861 -14.367)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4480" xlink:href="#rect4153" transform="translate(-9.2529 -17.814)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4482" xlink:href="#rect4153" transform="translate(-8.2837 -11.258)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4484" xlink:href="#rect4153" transform="translate(-9.6741 -19.666)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4486" xlink:href="#rect4153" transform="translate(-10.069 -17.858)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4488" xlink:href="#rect4153" transform="translate(-5.7741 -23.021)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4490" xlink:href="#rect4153" transform="translate(-1.4848 -18.646)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4492" xlink:href="#rect4153" transform="translate(-3.9036 -20.927)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4494" xlink:href="#rect4153" transform="translate(-1.6021 -23.937)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4496" xlink:href="#rect4153" transform="translate(-3.911 -21.39)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4498" xlink:href="#rect4153" transform="translate(3.0779 -24.024)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4500" xlink:href="#rect4153" transform="translate(1.9712 -21.881)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4502" xlink:href="#rect4153" transform="translate(3.2696 -22.921)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4504" xlink:href="#rect4153" transform="translate(5.5815 -18.934)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4506" xlink:href="#rect4153" transform="translate(4.633 -19.087)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4508" xlink:href="#rect4153" transform="translate(.23813 -19.825)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4510" xlink:href="#rect4153" transform="translate(8.3057 -15.493)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4512" xlink:href="#rect4153" transform="translate(10.911 -16.711)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4514" xlink:href="#rect4153" transform="translate(8.1367 -17.093)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4516" xlink:href="#rect4153" transform="translate(-9.8562 -11.316)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4518" xlink:href="#rect4153" transform="translate(-7.27 -3.6129)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4520" xlink:href="#rect4153" transform="translate(-11.941 -5.1152)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4522" xlink:href="#rect4153" transform="translate(4.7608 -11.931)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4524" xlink:href="#rect4153" transform="translate(10.488 -6.867)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4526" xlink:href="#rect4153" transform="translate(6.2341 -10.866)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4528" xlink:href="#rect4153" transform="translate(-7.0563 -12.354)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4530" xlink:href="#rect4153" transform="translate(-8.336 -11.841)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4532" xlink:href="#rect4153" transform="translate(-11.142 -8.2709)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4534" xlink:href="#rect4153" transform="translate(-14.332 -15.418)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4536" xlink:href="#rect4153" transform="translate(-9.068 -10.722)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4538" xlink:href="#rect4153" transform="translate(-13.01 -18.055)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4540" xlink:href="#rect4153" transform="translate(-7.9327 -15.661)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4542" xlink:href="#rect4153" transform="translate(-11.213 -13.887)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4544" xlink:href="#rect4153" transform="translate(-11.344 -18.105)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4546" xlink:href="#rect4153" transform="translate(-9.1658 -18.656)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4548" xlink:href="#rect4153" transform="translate(-10.589 -13.532)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4550" xlink:href="#rect4153" transform="translate(-4.88 -18.84)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4552" xlink:href="#rect4153" transform="translate(-4.349 -23.19)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4554" xlink:href="#rect4153" transform="translate(-4.017 -23.934)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4556" xlink:href="#rect4153" transform="translate(-6.7965 -23.428)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4558" xlink:href="#rect4153" transform="translate(-10.228 -22.683)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4560" xlink:href="#rect4153" transform="translate(-10.306 -20.492)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4562" xlink:href="#rect4153" transform="translate(-10.841 -25.961)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4564" xlink:href="#rect4153" transform="translate(-8.2568 -21.429)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4566" xlink:href="#rect4153" transform="translate(1.2178 -26.745)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4568" xlink:href="#rect4153" transform="translate(-6.7889 -30.607)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4570" xlink:href="#rect4153" transform="translate(.062446 -29.707)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4572" xlink:href="#rect4153" transform="translate(.59739 -27.839)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4574" xlink:href="#rect4153" transform="translate(2.887 -27.817)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4576" xlink:href="#rect4153" transform="translate(4.5407 -23.675)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4578" xlink:href="#rect4153" transform="translate(5.1226 -29.772)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4580" xlink:href="#rect4153" transform="translate(11.555 -28.366)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4582" xlink:href="#rect4153" transform="translate(5.2442 -22.254)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4584" xlink:href="#rect4153" transform="translate(7.3534 -28.797)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4586" xlink:href="#rect4153" transform="translate(8.251 -30.969)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4588" xlink:href="#rect4153" transform="translate(3.7588 -27.471)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4590" xlink:href="#rect4153" transform="translate(-10.804 -29.099)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4592" xlink:href="#rect4153" transform="translate(-.61390 -24.362)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4594" xlink:href="#rect4153" transform="translate(-7.1523 -1.577)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4596" xlink:href="#rect4153" transform="translate(-8.8985 -6.8423)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4598" xlink:href="#rect4153" transform="translate(.71027 3.5709)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4600" xlink:href="#rect4153" transform="translate(1.9209 3.4948)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4602" xlink:href="#rect4153" transform="translate(-8.5391 -1.422)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4604" xlink:href="#rect4153" transform="translate(-3.9638 -0.547)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4608" xlink:href="#rect4153" transform="translate(-1.9511 3.1691)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4610" xlink:href="#rect4153" transform="translate(-3.1108 3.8906)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4612" xlink:href="#rect4153" transform="translate(-8.3346 -.93315)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4614" xlink:href="#rect4153" transform="translate(-.47642 -.59573)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4616" xlink:href="#rect4153" transform="translate(-5.1815 -.40222)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4618" xlink:href="#rect4153" transform="translate(-5.6473 2.45)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4620" xlink:href="#rect4153" transform="translate(-3.182 .53593)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4622" xlink:href="#rect4153" transform="translate(11.211 -10.898)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4624" xlink:href="#rect4153" transform="translate(9.5185 -3.2014)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4626" xlink:href="#rect4153" transform="translate(8.471 -9.8233)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4628" xlink:href="#rect4153" transform="translate(5.122 -5.1789)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4630" xlink:href="#rect4153" transform="translate(5.8285 -2.5876)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4632" xlink:href="#rect4153" transform="translate(9.8703 -17.36)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4634" xlink:href="#rect4153" transform="translate(9.7005 -19.211)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4636" xlink:href="#rect4153" transform="translate(8.6666 -20.451)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4638" xlink:href="#rect4153" transform="translate(10.745 -23.024)" height="100%" width="100%" y="0" x="0"/>
+    <use id="use4640" xlink:href="#rect4153" transform="translate(-5.7749 -23.615)" height="100%" width="100%" y="0" x="0"/>
+   </g>
+  </g>
+  <path id="path5005" d="m278.02 193.67-28.398 40.928c-1.9638-0.33419-3.9514-0.50924-5.9434-0.52344-20.434-0.00009-36.999 16.564-37 36.998-0.00009 20.435 16.565 37 37 37 20.435 0.00009 37-16.565 37-37-0.016-7.556-2.345-14.926-6.6738-21.119l27.591-39.776z" stroke="#000" stroke-width="1.0003" fill="#fff"/>
+  <g id="g4998" stroke="#000" fill="none">
+   <path id="path4992" d="m277.62 213.27 0.56582-43.558" stroke-width="1px"/>
+   <path id="path4994" d="m328.49 201.14-45.332 15.24-11.409 14.175-10.372 4.8403 16.249-22.127" stroke-width="1px"/>
+   <ellipse id="path4996" rx="29.655" ry="5.5722" transform="rotate(32)" cy="-3.4968" cx="355.51"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text5014" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="346.3566" x="164.35645"><tspan id="tspan5016" x="164.35645" y="346.3566">bunsen</tspan></text>
+   <text id="text5353" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="295.44556"><tspan id="tspan5355" x="295.44556" y="271.13449">muestra</tspan></text>
+   <text id="text5357" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="356.71539"><tspan id="tspan5361" x="356.71539" y="271.13449">+</tspan></text>
+   <text id="text5365" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="373.93823"><tspan id="tspan5367" x="373.93823" y="271.13449">H<tspan id="tspan5369" dy="4" font-size="65%">2</tspan><tspan dy="-4">SO</tspan><tspan id="tspan5371" dy="4" font-size="65%">4</tspan></tspan></text>
+   <text id="text5373" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="422.63977"><tspan id="tspan5375" x="422.63977" y="271.13449">+</tspan></text>
+   <text id="text5377" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="439.89459"><tspan id="tspan5379" x="439.89459" y="271.13449">K<tspan id="tspan5381" dy="4" font-size="65%">2</tspan><tspan dy="-4">SO</tspan><tspan id="tspan5383" dy="4" font-size="65%">4</tspan></tspan></text>
+   <text id="text5385" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="487.37738"><tspan id="tspan5387" x="487.37738" y="271.13449">+</tspan></text>
+   <text id="text5389" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="271.13449" x="504.37622"><tspan id="tspan5391" x="504.37622" y="271.13449">Cu, Hg, Se</tspan></text>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path id="path5393" marker-end="url(#Arrow2Lend)" d="m291.17 267.78-47.525 17.822"/>
+   <path id="path5789" marker-end="url(#Arrow2Mend)" d="m460.78 300.45v-16.832"/>
+   <path id="path5829" marker-end="url(#marker5831)" d="m540.09 300.45v-16.832"/>
+  </g>
+  <flowRoot id="flowRoot6063" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" transform="translate(159.48 163.51)" line-height="125%" font-family="&apos;STIX Two Text&apos;" fill="#000000"><flowRegion id="flowRegion6065"><rect id="rect6067" y="152.79" width="93.069" x="255.45" height="17.822"/></flowRegion><flowPara id="flowPara6069"/></flowRoot>
+  <g id="g6111" font-size="16px" transform="translate(-16.969 -2)" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text6057" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" line-height="125%" y="318.38129" x="454.74045" xml:space="preserve"><tspan id="tspan6059" style="text-anchor:middle;text-align:center" font-size="13px" line-height="125%" y="318.38129" x="454.74045" font-family="&apos;STIX Two Text&apos;">aumentar el punto</tspan><tspan id="tspan6061" y="334.63129" x="454.74045"><tspan id="tspan6071" style="text-anchor:middle;text-align:center" font-size="13px" line-height="125%" font-family="&apos;STIX Two Text&apos;">de ebullición.</tspan></tspan></text>
+   <text id="text6085" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" line-height="125%" y="318.38129" x="582.93115" xml:space="preserve"><tspan id="tspan6087" style="text-anchor:middle;text-align:center" font-size="13px" line-height="125%" y="318.38129" x="582.93115" font-family="&apos;STIX Two Text&apos;">en forma de sales para</tspan><tspan id="tspan6089" y="334.63129" x="582.93115"><tspan id="tspan6091" style="text-anchor:middle;text-align:center" font-size="13px" line-height="125%" font-family="&apos;STIX Two Text&apos;">favorecer la cinética.</tspan></tspan></text>
+  </g>
+ </g>
+</svg>
