@@ -1,0 +1,1099 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Cálculos de pH mediante método analítico">
+<meta name="keywords" content="cálculos, ph, método, analítico">
+<title>Cálculos de pH mediante método analítico</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+  
+<h3>Cálculos de pH mediante método analítico</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p><a href="#acido_fuerte_ha">Ácido fuerte $\ce{HA}$</a></p>
+
+<p><a href="#base_fuerte_naoh">Base fuerte $\ce{NaOH}$</a></p>
+
+<p><a href="#acido_debil_ha">Ácido débil $\ce{HA}$</a></p>
+
+<p><a href="#base_debil_b">Base débil $\ce{B}$</a></p>
+
+<p><a href="#resumen">Resumen</a></p>
+
+<p><a name="acido_fuerte_ha"></a><font color="red">&bull;</font> Ácido fuerte $\ce{HA}$:</p>
+
+<blockquote>
+    <p>$\ce{HA} \enspace c_{\rm{a}} \quad$ ($c_{\rm{a}}$,
+    concentración analítica, es la concentración total)</p>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>
+    $
+		\def\ieqarrow#1#2{
+			\stackrel{
+				\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+				\overset{#1}{
+					\Rule{0pt}{0.4em}{0pt}
+					\smash{
+						\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}{
+				\Rule{0pt}{1.5mu}{0pt}
+				\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+				\underset{#2}{
+					\smash{
+						\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}
+		}
+    \begin{array}{l}
+      \ce{
+        HA + H2O -&gt; A- \! + H3O+
+      } \\[1ex]
+
+      \ce{
+        2 H2O $\ieqarrow{}{\color{red}\leftarrow}$ H3O+ \! + OH-
+      }
+    \end{array}    
+    $
+    </p>
+  </blockquote>
+</blockquote>
+
+<p>El aumento de la concentración de iones $\ce{H3O+ \!}$
+procedentes de la disociación de $\ce{HA}$ provoca un desplazamiento
+hacia la izquierda del equilibrio de autoprotólisis del agua.</p>
+
+<p>Debido a que en las reacciones ácido-base los protones que se
+ganan por un lado son iguales a los que se pierden por otro, se
+establece lo que se conoce como condición de balance protónico.
+Se define el <em>balance protónico</em> tal que <em>la suma de
+las concentraciones de las especies que han ganado protones es
+igual a la suma de las concentraciones de las especies que han
+perdido protones.</em></p>
+
+<blockquote>
+    <p>$\ce{[H3O+] = [A-] + [OH-]} \quad$ (balance protónico)</p>
+</blockquote>
+
+<p>A partir de esta expresión será posible el cálculo del $\ce{pH}$,
+teniendo en cuenta algunas relaciones adicionales.</p>
+
+<p>Dado que $\ce{HA}$ está totalmente disociado $[\ce{A-}] = c_{\rm{a}}$,
+por lo que:</p>
+
+<blockquote>
+    <p>$\ce{[H3O+] = $c_{\rm{a}}$ + [OH-]}$</p>
+</blockquote>
+
+<p>En este punto, para concentraciones relativamente altas de
+ácido fuerte, son las habituales de trabajo, se pueden
+considerar despreciables los iones $\ce{H3O+} \!$
+provenientes del equilibrio de autoprotólisis del $\ce{H2O}$,
+y simplificar la expresión anterior eliminando de la misma la
+concentración de $\ce{OH-} \!$ ($c_{\rm{a}} &gt; 20[\ce{OH-}]$).</p>
+
+<blockquote>
+    <p>$\ce{[H3O+] = $c_{\rm a}$ + \!\! $\cancel{[\ce{OH-}]}$ \! \approx
+    $c_{\rm a}$ \qquad [OH-] \! \ll $c_{\rm a}$}$</p>
+</blockquote>
+
+<p>Si no se tiene en cuenta la simplificación anterior, es
+necesario para desarrollar una ecuación general emplear la
+expresión de $\ce{Kw}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Kw = [H3O+][OH-]} \\[1ex]
+      
+      [\ce{OH-}] = \dfrac{\ce{Kw}}{[\ce{H3O+}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Sustituyendo en la expresión de balance protónico, y
+reordenando, queda una ecuación de segundo grado:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = c_{\rm a} + \dfrac{\ce{Kw}}{[\ce{H3O+}]} \\[1ex]
+
+      [\ce{H3O+}]^2 - c_{\rm a}[\ce{H3O+}] - \ce{Kw} = 0
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Cuya única solución, al no tener sentido físico una que
+fuera negativa:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \dfrac{c_{\rm a}}{2}
+                  +
+                  \sqrt{
+                    \dfrac{{c_{\rm a}}^2}{4}
+                    +
+                    \ce{Kw}
+                  }
+    $
+    </p>
+</blockquote>
+
+<p>Ésta es la expresión general para un ácido fuerte $\ce{HA}$.
+Siendo $c_{\rm a}$ y $\ce{Kw}$ conocidas, puede
+calcularse la concentración de $\ce{H3O+} \!$ y, por tanto, el $\ce{pH}$.</p>
+
+<p>Para concentraciones altas de $\ce{HA}$, donde $\dfrac{{c_{\rm a}}^2}{4}
+\gg \ce{Kw}$, puede realizarse una simplificación de la expresión general,
+coincidiendo el resultado con la que ya se hizo anteriormente directamente
+sobre la expresión del balance protónico.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{c_{\rm a}}{2}
+                    +
+                    \sqrt{
+                      \dfrac{{c_{\rm a}}^2}{4}
+                      +
+                      \! \cancel{\ce{Kw}}
+                    }
+                  \approx c_{\rm a}
+      \qquad
+      \dfrac{{c_{\rm a}}^2}{4} \gg \ce{Kw}
+
+      \\[1ex]
+    
+      \dfrac{{c_{\rm a}}^2}{4} &gt; 20 \ce{Kw}
+      \: \Rightarrow \:
+      c_{\rm a} &gt; \ce{10^{-6} M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplos:</p>
+
+<blockquote>
+  <blockquote>
+    <p>
+    $
+    \ce{
+      HA + H2O -&gt; H3O+ \! + A-
+    }
+    $
+    </p>
+  </blockquote>
+</blockquote>
+
+<ol>
+  <li>
+  $
+  \ce{HA} \enspace c_{\rm a} = \ce{10^{-1} M} 
+  $
+  </li>
+</ol>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{[H3O+] = [A-] + \!\! $\cancel{[\ce{OH-}]}$ = $c_{\rm a}$} \\[1ex]
+      \ce{[H3O+] = 10^{-1} M $\: \Rightarrow \:$ pH = -\log 10^{-1} = 1} \\[1ex]
+      \ce{[OH-]} = \dfrac{\ce{Kw}}{[\ce{H3O+}]} = \pu{e-13 M} \ll c_{\rm a} \Rightarrow
+      \text{Simplificación absolutamente válida.}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<ol start="2" style="margin-top:2em">
+  <li>
+  $
+  \ce{HA} \enspace c_{\rm a} = \pu{e-4 M}
+  $
+  </li>
+</ol>
+
+<blockquote>
+    <p>
+    $
+    \ce{[H3O+] = \pu{e-4 M} $\: \Rightarrow \:$ pH = 4}
+    $
+    </p>
+</blockquote>
+
+<ol start="3" style="margin-top:2em">
+    <li>
+    $
+    \ce{HA} \enspace c_{\rm a} = \ce{10^{-7} M}
+    $
+    </li>
+</ol>
+
+<blockquote>
+    <p>Suponiendo primero que sí fuera adecuado despreciar la
+    concentración de $\ce{OH-} \!$ en el balance protónico:</p>
+</blockquote>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{[H3O+] = $c_{\rm a}$ = 10^{-7} M $\Rightarrow$ pH = 7} \\[1ex]
+      \ce{[OH-] = 10^{-7} M \cancel{\ll} $c_{\rm a} \Rightarrow \;$}
+      \text{mal}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<blockquote>
+    <p>No se cumple la suposición, por tanto el cálculo no es
+    correcto. Según la expresión general, sin hacer simplificaciones:</p>
+</blockquote>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{c_{\rm a}}{2}
+                    +
+                    \sqrt{
+                      \dfrac{{c_{\rm a}}^2}{4}
+                      +
+                      \ce{Kw}
+                    }
+    \\[1ex]
+
+      [\ce{H3O+}] = \dfrac{10^{-7}}{2}
+                    +
+                    \sqrt{
+                      \dfrac{10^{-14}}{4}
+                      +
+                      10^{-14}
+                    }
+                  = \pu{1,62e-7 M} \: \Rightarrow \: \ce{pH} = 6{,}79
+    \end{array}
+    $    
+    </p>
+</blockquote>
+
+</div>
+
+<hr>
+
+<p><a name="base_fuerte_naoh"></a><font color="red">&bull;</font> Base fuerte $\ce{NaOH}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{
+    NaOH \enspace $c_{\rm b}$
+    }
+    $
+    </p>
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{NaOH -&gt; Na+ \! + OH-} \\[1ex]
+      \ce{2 H2O &lt;=&gt; H3O+ \! + OH-}
+    \end{array}
+    $
+    </p>
+</blockquote>
+</blockquote>
+
+<p>Dado que en la solución el número de cargas positivas ha de
+ser igual al número de cargas negativas:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{[Na+] + [H3O+] = [OH-]}
+    $
+    </p>
+</blockquote>
+
+<p>Esto se conoce como <em>balance de cargas</em>, y a partir de esta
+expresión se puede calcular el $\ce{pH}$.</p>
+
+<p>Considerando que el $\ce{NaOH}$ está completamente disociado, por lo
+que la concentración de $\ce{Na+} \!$ es igual a $c_{\rm b}$,
+y que la concentración de $\ce{H3O+ \!}$, en las concentraciones
+habituales de base fuerte, es despreciable:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{Na+}] = c_{\rm b} \quad \enspace [\ce{H3O+}] \ll c_{\rm b} \\[1ex]
+      [\ce{OH-}] = c_{\rm b} + \! \cancel{[\ce{H3O+}]} \approx c_{\rm b} \\[1ex]
+      [\ce{H3O+}] = \dfrac{\ce{Kw}}{[\ce{OH-}]} = \dfrac{\ce{Kw}}{c_{\rm b}} \\[1ex]
+      \Rightarrow \ce{pH} = -\log[\ce{H3O+}] = \log c_{\rm b} + \ce{pKw} = \log c_{\rm b}
+      + 14
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{NaOH} \enspace c_{\rm b} = \pu{e-1 M} \\[1ex]
+      \ce{pH} = \log 10^{-1} + 14 = 14 - 1 = 13 \\[1ex]
+      [\ce{H3O+}] = \pu{e-13 M} \ll c_{\rm b} \, \Rightarrow \, \text{Simplificación válida}
+    \end{array}  
+    $
+    </p>
+</blockquote>
+
+</div>
+
+<hr>
+
+<p><a name="acido_debil_ha"></a><font color="red">&bull;</font> Ácido débil $\ce{HA}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{
+        HA + H2O $\ieqarrow{\displaystyle \ce{Ka}}{}$ H3O+ \! + A-
+      } \\
+      \ce{
+        2 H2O $\ieqarrow{\displaystyle \ce{Kw}}{}$ H3O+ \! + OH-
+      }
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Para resolver el sistema, hay que observar tanto las especies
+como las constantes de equilibrio presentes.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{
+        HA \quad A- \quad H3O+ \quad OH-
+      } \\[1ex]
+
+      \ce{Ka} = \dfrac{[\ce{H3O+}][\ce{A-}]}{[\ce{HA}]} \\[1ex]
+    
+      \ce{Kw} = [\ce{H3O+}][\ce{OH-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>La concentración analítica $c_{\rm a}$ es la
+concentración total del ácido:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{
+      $c_{\rm a}$ = [HA] + [A-]
+    }
+    $
+    </p>
+</blockquote>
+
+<p>El balance protónico se basa en que la suma de los protones ($\ce{H+}\!$)
+que se ganan es igual a la suma de los que se pierden. Nunca los
+reactivos aparecen en la expresión del balance protónico, sólo
+aparecen los productos.</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{
+      [H3O+] = [A-] + [OH-]
+    }
+    $
+    </p>
+</blockquote>
+
+<p>La principal especie a determinar es el $\ce{H3O+} \!$, para encontrar
+el $\ce{pH}$.</p>
+
+<p>¿Cómo se calcula el $\ce{pH}$?</p>
+
+<p>1ª hipótesis:</p>
+
+<blockquote>
+    <p>Los $\ce{H3O+} \!$ procedentes de la autoionización del $\ce{H2O}$ son
+    despreciables.</p>
+</blockquote>
+
+<p>Observando las reacciones, podemos desglosar los $\ce{H3O+}$ entre los que
+provienen del $\ce{HA}$ y los que lo hacen del $\ce{H2O}$.</p>
+
+<blockquote>
+   <p>
+   $
+   [\ce{H3O+}] = [\ce{A-}] + \! \cancel{[\ce{OH-}]} \approx [\ce{A-}]
+   $
+   </p>
+</blockquote>
+
+<p>2ª hipótesis:</p>
+
+<blockquote>
+    <p>La mayoría del ácido no está disociado.</p>
+</blockquote>
+
+<p>Esto es:</p>
+
+<blockquote>
+    <p>
+    $
+      [\ce{A-}] \ll c_{\rm a} \: \Rightarrow \:
+
+      c_{\rm a} = [\ce{HA}] + \! \cancel{[\ce{A-}]} \approx [\ce{HA}]
+    $
+    </p>
+</blockquote>
+
+<p>Partiendo de la ecuación de la $\ce{Ka}$ e
+incorporando las hipótesis:</p>
+
+<blockquote>
+  <blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{HA}]}{[\ce{A-}]}
+    $
+    </p>
+  </blockquote>
+    <p>&rarr; 1ª hipótesis
+  <blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{HA}]}{[\ce{H3O+}]}
+    \: \Rightarrow \:
+    [\ce{H3O+}]^2 = \ce{Ka} [\ce{HA}]
+    $
+    </p>
+  </blockquote>
+    <p>&rarr; 2ª hipótesis
+  <blockquote>
+    <p>
+    $
+    [\ce{H3O+}]^2 = \ce{Ka} c_{\rm a}
+    \: \Rightarrow \:
+    [\ce{H3O+}] = \sqrt{\ce{Ka} c_{\rm a}}
+    $
+    </p>
+  </blockquote>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    \ce{pH} = \dfrac{1}{2} \ce{pKa} - \dfrac{1}{2} \log c_{\rm a}
+    $
+    </p>
+</blockquote>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo en que se supone:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Ka} = \pu{4e-5} \\
+      c_{\rm a} = \pu{e-1 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \sqrt{\pu{4e-5} \cdot 10^{-1}} = 2 \cdot 10^{-3} \: \Rightarrow \:
+    \ce{pH} = 2{,}7
+    $
+    </p>
+</blockquote>
+
+<p>Comprobación de las hipótesis:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{OH-}] = \dfrac{\ce{Kw}}{[\ce{H3O+}]} = \dfrac{10^{-14}}{\pu{2e-3}}
+                 = \pu{0,5e-11 M}
+                 = [\ce{H3O+}]_{\ce{H2O}} \\[1ex]
+    
+      [\ce{H3O+}] = [\ce{H3O+}]_{\ce{HA}} + [\ce{H3O+}]_{\ce{H2O}} \\[1ex]
+
+      \pu{2e-3} \! = [\ce{H3O+}]_{\ce{HA}} \! + \pu{0,5e-11} \Rightarrow
+      [\ce{H3O+}]_{\ce{HA}} \! = \pu{2e-3} \! - \! \cancel{\pu{0,5e-11}}
+    \end{array}
+    $
+    </p>
+  <blockquote>
+    <p>$\Rightarrow$ 1ª hipótesis correcta
+  </blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{A-}] = [\ce{H3O+}] = \pu{2e-3 M} \\[1ex]
+    
+      c_{\rm a} = [\ce{HA}] + [\ce{A-}] \\[1ex]
+    
+      10^{-1} = [\ce{HA}] + \pu{2e-3} \Rightarrow [\ce{HA}] = 10^{-1} - \cancel{\pu{2e-3}}
+    \end{array}
+    $
+    </p>
+  <blockquote>
+  <p>$\Rightarrow$ 2ª hipótesis correcta</p>
+  </blockquote>
+</blockquote>
+
+<p>Caso de una $c_{\rm a}\!$ mucho más pequeña:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\rm a} = \pu{e-3 M} \\[1ex]
+
+      [\ce{H3O+}] = \sqrt{\ce{Ka} c_{\rm a}}
+                  = \sqrt{\pu{4e-5} \cdot 10^{-3}} = \pu{2e-4 M} \\[1ex]
+
+      \Rightarrow \ce{pH} = 3{,}7 \approx 4
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Comprobación de las hipótesis:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}]_{\ce{H2O}} = [\ce{OH-}] \approx \pu{e-10 M}
+    $
+    </p>
+  <blockquote>
+    <p>
+    $\Rightarrow$ 1ª hipótesis se cumple
+    </p>
+  </blockquote>
+    <p>
+    $
+    [\ce{HA}] = c_{\rm a} -[\ce{A-}] \approx 10^{-3} - 10^{-4}
+    \Rightarrow [\ce{A-}] \approx \pu{10\%}
+    $ de $c_{\rm a}$
+    <p>
+  <blockquote>
+    <p>
+    $\Rightarrow$ 2ª hipótesis no se cumple
+    </p>
+  </blockquote>
+</blockquote>
+
+<p>Hay que rehacer los cálculos teniendo en cuenta sólo la
+primera hipótesis:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{HA}]}{[\ce{A-}]} \\[1ex]
+      [\ce{A-}] = [\ce{H3O+}] \Leftarrow \text{1ª hipótesis} \\[1ex]
+      [\ce{HA}] = c_{\rm a} - [\ce{A-}] = c_{\rm a} - [\ce{H3O+}]
+    \end{array}
+    $
+</blockquote>
+
+<p>Sustituyendo en la primera igualdad:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = 
+    \ce{Ka} \dfrac{c_{\rm a} - [\ce{H3O+}]}{[\ce{H3O+}]}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de segundo grado, que al resolver da como resultado
+un $\ce{pH} = 3{,}74$. Así pues, la fórmula más sencilla, resultado de
+tener en cuenta las dos hipótesis, es una aproximación muy
+cercana.</p>
+
+<p>Como se observa en esta última ecuación, si fuera $c_{\rm a}
+\gg [\ce{H3O+}]$ la consiguiente simplificación conduciría a la expresión
+resultado de tener en consideración las dos hipótesis. Este es el caso de ácidos
+débiles, están poco disociados, cuando su concentración no es excesivamente baja.</p>
+
+</div>
+
+<hr>
+
+<p>Dejando los ejemplos y volviendo a la teoría, si no se tienen
+en cuenta hipótesis previas:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Ka} = \dfrac{[\ce{H3O+}] [\ce{A-}]}{[\ce{HA}]}
+      \: \Rightarrow \:
+      [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{HA}]}{[\ce{A-}]} \\[1ex]
+
+      [\ce{H3O+}] = [\ce{A-}] + [\ce{OH-}]
+      \: \Rightarrow \: 
+      [\ce{A-}] = [\ce{H3O+}] - [\ce{OH-}] \\[1em]
+
+      c_{\rm a} = [\ce{HA}] + [\ce{A-}] 
+      \: \Rightarrow \:
+      [\ce{HA}] = c_{\rm a} - [\ce{A-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+Sustituyendo:
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \ce{Ka}
+    \dfrac{c_{\rm a} - [\ce{A-}]}{[\ce{A-}]}
+                = \ce{Ka}
+    \dfrac{c_{\rm a} - ([\ce{H3O+}] - [\ce{OH-}])}{[\ce{H3O+}] - [\ce{OH-}]}
+    $
+    </p>
+</blockquote>
+
+<p>Si sobre esta expresión general se hace la sustitución $[\ce{OH-}] = \ce{Kw} \big/
+[\ce{H3O+}]$ se obtendría una ecuación de tercer grado. Así pues, para resolver
+de forma sencilla, es conveniente recurrir a simplificaciones análogas a las ya vistas.
+La primera, al ser un medio ácido, sería considerar la concentración de $\ce{OH-} \!$ mucho
+menor que la de $\ce{H3O+}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{OH-}] \ll [\ce{H3O+}] \\
+    
+      \Rightarrow [\ce{H3O+}] = \ce{Ka}
+      \dfrac{
+        c_{\rm a} - ([\ce{H3O+}] - \! \cancel{[\ce{OH-}]})
+      }{
+        [\ce{H3O+}] - \! \cancel{[\ce{OH-}]}
+      }
+      \approx \ce{Ka} \dfrac{c_{\rm a} - [\ce{H3O+}]}{[\ce{H3O+}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Ecuación de segundo grado que aún es posible simplificar más.
+Al ser un ácido débil estará poco disociado, de tal modo que, segunda
+hipótesis, $c_{\rm a}$ es mucho mayor que $[\ce{H3O+}]$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\rm a} \gg [\ce{H3O+}] \\
+
+      \Rightarrow [\ce{H3O+}] = \ce{Ka}
+      \dfrac{
+        c_{\rm a} - \! \cancel{[\ce{H3O+}]}
+      }{
+        [\ce{H3O+}]
+      }
+      \approx \ce{Ka} \dfrac{c_{\rm a}}{[\ce{H3O+}]} \\[1ex]
+
+      \Rightarrow [\ce{H3O+}] = \sqrt{\ce{Ka} c_{\rm a}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Obteniéndose la misma ecuación sencilla ya vista
+anteriormente. En realidad, se han aplicado las mismas
+aproximaciones que entonces.</p>
+
+<p>Como es posible observar, ambas simplificaciones aplicadas
+sobre la expresión general son contradictorias, ya que cuanto
+más fuerte es el ácido débil más válida sería la primera
+simplificación, $[\ce{OH-}] \ll [\ce{H3O+}]$, y menos lo sería
+la segunda, $c_{\rm a} \gg [\ce{H3O+}]$,
+al aumentar $[\ce{H3O+}]$ al estar $\ce{HA}$ más
+disociado. Al revés sucede si el ácido fuese excesivamente
+débil.</p>
+
+<p>Llegado este punto, también se pueden averiguar $[\ce{HA}]$ y $[\ce{A-}]$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\rm a} = [\ce{HA}] + [\ce{A-}] \\[1ex]
+ 
+      [\ce{A-}] = \dfrac{\ce{Ka} [\ce{HA}]}{[\ce{H3O+}]} \\[1ex]
+
+      \qquad
+      \begin{array}{l}
+        \Rightarrow c_{\rm a}
+        = [\ce{HA}] + \dfrac{\ce{Ka} [\ce{HA}]}{[\ce{H3O+}]}
+        = [\ce{HA}] \left( 1 + \dfrac{\ce{Ka}}{[\ce{H3O+}]} \right) \\[1ex]
+    
+        \Rightarrow [\ce{HA}]
+        = \dfrac{c_{\rm a} [\ce{H3O+}]}{[\ce{H3O+}] + \ce{Ka}}
+      \end{array} \\[1em]
+
+      [\ce{HA}] = \dfrac{[\ce{H3O+}] [\ce{A-}]}{\ce{Ka}} \\[1ex]
+
+      \qquad
+      \begin{array}{l}
+        \Rightarrow c_{\rm a}
+        = \dfrac{[\ce{H3O+}] [\ce{A-}]}{\ce{Ka}} + [\ce{A-}]
+        =  [\ce{A-}] \left( \dfrac{[\ce{H3O+}]}{\ce{Ka}} + 1\right) \\[1ex]
+
+        \Rightarrow [\ce{A-}]
+        = \dfrac{
+          c_{\rm a} \ce{Ka}
+        }{
+          [\ce{H3O+}] + \ce{Ka}
+        }
+      \end{array}
+    \end{array}
+    $
+    </p>
+  </blockquote>
+</blockquote>
+
+<p>Con estas últimas expresiones, para un $\ce{pH}$ determinado, ya se
+pueden calcular todas las especies del sistema.</p>
+
+<p><a name="base_debil_b"></a><font color="red">&bull;</font> Base débil $\ce{B}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{B + H2O &lt;=&gt; BH+ \! + OH-} \\[1ex]
+    
+      \ce{2 H2O &lt;=&gt; H3O+ \! + OH-}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Especies y constantes de equilibrio del sistema:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{B} \, \quad \ce{BH+} \quad \ce{OH-} \quad \ce{H3O+} \\[1ex]
+   
+      \ce{Kb} = \dfrac{[\ce{BH+}] [\ce{OH-}]}{[\ce{B}]} \qquad
+      \ce{Kb} \cdot \ce{Ka} = \ce{Kw} \\[1ex]
+
+      \ce{Kw} = [\ce{H3O+}][\ce{OH-}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Balance protónico:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{OH-}] = [\ce{BH+}] + [\ce{H3O+}]
+    $
+    </p>
+</blockquote>
+
+<p>Concentración analítica:</p>
+
+<blockquote>
+    <p>
+    $
+    c_{\rm b} = [\ce{B}] + [\ce{BH+}]
+    $
+    </p>
+</blockquote>
+
+<p>Al igual que con el ácido débil, para simplificar
+los cálculos, también se aplican hipótesis previas
+razonables.</p>
+
+<p>1ª hipótesis: Los iones $\ce{OH-} \!$ procedentes de la
+autoionización del agua son despreciables.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] \ll [\ce{BH+}] \\[1ex]
+    
+      \Rightarrow [\ce{OH-}] = [\ce{BH+}] + \mspace{-5mu} \cancel{[\ce{H3O+}]} \! \approx [\ce{BH+}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>2ª hipótesis: Base débil que mayoritariamente no estará
+protonada.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{B}] \gg [\ce{BH+}] \\[1ex]
+
+      \Rightarrow c_{\rm{b}} = [\ce{B}] + \mspace{-5mu} \cancel{[\ce{BH+}]} \! \approx [\ce{B}]
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Teniendo en cuenta esto y empleando la ecuación de la $\ce{Kb}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{OH-}] = \ce{Kb} \dfrac{[\ce{B}]}{[\ce{BH+}]}
+                \overset{\large 1ª}{=} \ce{Kb} \dfrac{[\ce{B}]}{[\ce{OH-}]}
+                \overset{\large 2ª}{=} \ce{Kb} \dfrac{c_{\rm b}}{[\ce{OH-}]} \\[1ex]
+
+      \Rightarrow [\ce{OH-}]^2 = \ce{Kb} c_{\rm b} \:
+      \Rightarrow \: [\ce{OH-}] = \sqrt{\ce{Kb} c_{\rm b}}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Así pues:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \dfrac{\ce{Kw}}{[\ce{OH-}]}
+                  = \dfrac{\ce{Kw}}{\sqrt{\ce{Kb} c_{\rm b}}} \\
+    
+      \Rightarrow
+      \ce{pH} = \ce{pKw} - \dfrac{1}{2}\ce{pKb} + \dfrac{1}{2}\log c_{\rm b}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>También, es otra manera, se puede calcular el $\ce{pH}$ sin aplicar
+hipótesis previas y, para poder resolver de forma sencilla, simplificar
+al final. De las ecuaciones del balance protónico, para la
+concentración analítica y de la constante de basicidad:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{BH+}] = [\ce{OH-}] - [\ce{H3O+}] \\[1em]
+    
+      [\ce{B}] = c_{\rm b} - [\ce{BH+}] \\[1ex]
+
+      [\ce{OH-}] =
+      \ce{Kb} \dfrac{[\ce{B}]}{[\ce{BH+}]} =
+      \ce{Kb} \dfrac{c_{\rm b} - [\ce{BH+}]}{[\ce{BH+}]} =
+      \ce{Kb} \dfrac{c_{\rm b} - ([\ce{OH-}] - [\ce{H3O+}])}{[\ce{OH-}] - [\ce{H3O+}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>1ª simplificación: Medio básico, por lo que la concentración de iones
+$\ce{OH-} \!$ es mucho mayor que la de iones $\ce{H3O+}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{OH-}] \gg [\ce{H3O+}] \\
+
+      \Rightarrow [\ce{OH-}]
+      = \ce{Kb}
+      \dfrac{
+        c_{\rm b} - ([\ce{OH-}] - \! \cancel{[\ce{H3O+}]})
+      }{
+        [\ce{OH-}] - \! \cancel{[\ce{H3O+}]}
+      }
+      \approx \ce{Kb} \dfrac{c_{\rm b} - [\ce{OH-}]}{[\ce{OH-}]}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>2ª simplificación: Base débil, por lo que el equilibrio
+estará poco desplazado hacia la base protonada.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      c_{\rm b} \gg [\ce{OH-}] \\
+
+      \Rightarrow [\ce{OH-}]
+      = \ce{Kb} \dfrac{c_{\rm b} - \! \cancel{[\ce{OH-}]}}{[\ce{OH-}]}
+      \approx \ce{Kb} \dfrac{c_{\rm b}}{[\ce{OH-}]} \\[1ex]
+
+      \Rightarrow [\ce{OH-}]^2 = \ce{Kb} c_{\rm b} \:
+      \Rightarrow \: [\ce{OH-}] = \sqrt{\ce{Kb} c_{\rm b}} \\[1ex]
+
+      \Rightarrow \ce{pH} = \ce{pKw} - \dfrac{1}{2} \ce{pKb} + \dfrac{1}{2} \log c_{\rm b}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Obviamente, el resultado es el mismo ya sea planteando los
+cálculos de una manera o de otra. De esta última manera primero
+se ha obtenido la expresión general, pero, dado que es una
+ecuación de tercer grado, es conveniente, para resolver más
+sencillamente, aplicar simplificaciones sobre la misma, cuya
+validez hay que comprobar a posteriori.</p>
+
+<p><a name="resumen"></a><font color="red">&bull;</font> Resumen:</p>
+
+<blockquote>
+    <p>- Ácido fuerte $\ce{HA}$</p>
+    <blockquote>
+        <p>$\ce{pH} = -\log c_{\rm a}$</p>
+    </blockquote>
+    <p>- Base fuerte del tipo $\ce{NaOH}$ (monohidróxido)</p>
+    <blockquote>
+        <p>$\ce{pH} = \ce{pKw} + \log c_{\rm b}$</p>
+    </blockquote>
+    <p>- Ácido débil $\ce{HA}$</p>
+    <blockquote>
+        <p>$\ce{pH} = {1/2} \, \ce{pKa} - {1/2} \log c_{\rm a}$</p>
+    </blockquote>
+    <p>- Base débil $\ce{B}$</p>
+    <blockquote>
+        <p>$\ce{pH} = \ce{pKw} - {1/2} \, \ce{pKb} + {1/2} \log c_{\rm b}$</p>
+    </blockquote>
+</blockquote>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="ph_sales.htm" title="Anterior">&lt;</a></li>
+  <li><a href="metodo_grafico_calculo_ph.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>

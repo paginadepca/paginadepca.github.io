@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+    disabled: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+</script>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta name="description" content="Disoluciones tampón o amortiguadoras">
+<meta name="keywords" content="disoluciones, tampón, amortiguadoras">
+<title>Disoluciones tampón o amortiguadoras</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102174465-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="all">
+
+  <div id="title">
+
+<h3>Disoluciones tampón o amortiguadoras</h3>
+
+<ul>
+  <li><a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a></li>
+  <li><a href="../index.htm">Inicio</a></li>
+</ul>
+
+  </div>
+  
+  <div id="content">
+
+<p>Para tener un $\ce{pH}$ concreto se emplean disoluciones
+amortiguadoras, reguladoras o tampón de $\ce{pH}$. Consiguen que no
+cambie el $\ce{pH}$ en el medio aunque se añada ácido o base. Están
+formadas por un ácido débil y su base conjugada, habitualmente
+de igual concentración, o al revés una base débil y su ácido
+conjugado. Nunca por un ácido o base fuerte.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \underset{\vphantom{\bbox[4mu]{\ce{A-}}} \ce{HA}}{\ce{CH3COOH}} \qquad 
+      \underset{\bbox[4mu]{\ce{A-}}}{\ce{CH3COO-}} \qquad
+      \ce{pKa} = 4{,}75 \\[1em]
+      
+      \underset{\vphantom{\bbox[4mu]{\ce{BH+}}} \ce{B}}{\vphantom{\ce{NH4^+}} \ce{NH3}} \qquad
+      \underset{\bbox[4mu]{\ce{BH+}}}{\ce{NH4^+}} \qquad
+      \ce{pKa} = 9{,}25
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Ejemplo con ácido acético/acetato ($\ce{HAc}$/$\ce{Ac-}$):</p>
+
+<blockquote>
+    <p>
+    $
+		\def\ieqarrow#1#2{
+			\stackrel{
+				\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+				\overset{#1}{
+					\Rule{0pt}{0.4em}{0pt}
+					\smash{
+						\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}{
+				\Rule{0pt}{1.5mu}{0pt}
+				\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+				\underset{#2}{
+					\smash{
+						\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+					}
+				}
+			}
+		}
+    \begin{array}{l}
+      \left.
+      \begin{array}{l}
+        \ce{HAc} \\
+        \hphantom{\ce{H}} + \\
+        \ce{NaAc -&gt; Na+ \! + Ac-}
+      \end{array}
+      \right\} \;
+      \begin{array}{l}
+        \ce{HAc + H2O $\ieqarrow{\large \ce{Ka}}{}$ H3O+ \! + Ac-} \\
+        \ce{Ac- \! + H2O $\ieqarrow{\large \ce{Kb}}{}$ OH- \! + HAc}
+      \end{array} \\[-1ex]
+      \hfill \color{red}{\longleftarrow} \hphantom{\ H3O+ \! + Ac-} \\
+      \ce{Ka} = 10^{-4{,}75} \\[1ex]
+      \ce{Ka} \ce{Kb} = \ce{Kw} \, \Rightarrow \,
+      \ce{Kb} = 10^{-9{,}25}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Ambos equilibrios se desplazan hacia la izquierda por la
+presencia de $\ce{Ac-}\!$ y $\ce{HAc}$ respectivamente.</p>
+
+<p>Para calcular el $\ce{pH}$ de esta disolución se aplica la
+expresión de la $\ce{Ka}$:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      \ce{Ka} = \dfrac{[\ce{H3O+}] [\ce{Ac-}]}{[\ce{HAc}]} \\[1ex]
+      
+      [\ce{H3O+}] = \dfrac{\ce{Ka} [\ce{HAc}]}{[\ce{Ac-}]} \, \Rightarrow \,
+      \ce{pH} = \ce{pKa} + \log\dfrac{[\ce{Ac-}]}{\ce{[HAc]}} 
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Debido a que los equilibrios están desplazados a la izquierda:</p>
+
+<blockquote>
+    <p>
+    $
+    \left.
+      \begin{array}{l}
+        [\ce{HAc}] = c_{\rm a} \\[1ex]
+        [\ce{Ac-}] = c_{\rm b}
+      \end{array}
+    \right\} \Rightarrow \,
+    \ce{pH} = \ce{pKa} + \log\dfrac{c_{\rm b}}{c_{\rm a}}
+    $
+    </p>
+</blockquote>
+
+<p>Si $c_{\rm a} \mspace{-2mu} = c_{\rm b}$, lo
+habitual, entonces $\ce{pH} = \ce{pKa}$.</p>
+
+<p>¿Qué sucede si se añade una pequeña cantidad de un ácido
+o una base fuertes sobre una solución tampón?</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+    \pu{100 ml} \enspace \ce{HAc} + \ce{NaAc} \quad
+    c_{\rm a} = c_{\rm b} = \pu{e-1 M} \\
+    \enspace + \\
+    \pu{1 ml} \enspace \ce{NaOH} \enspace \pu{e-1 M}
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>Antes de añadir la base fuerte:</p>
+
+<blockquote>
+    <p>
+    $
+    [\ce{H3O+}] = \dfrac{
+      \ce{Ka} \! \cancel{c_{\rm a}}
+    }{
+      \cancel{c_{\rm b}}
+    } = 10^{-4{,}75} \, \Rightarrow \, \ce{pH} = 4{,}75
+    $
+    </p>
+</blockquote>
+
+<p>La concentración de $\ce{NaOH}$ sería:</p>
+
+<blockquote>
+    <p>
+    $
+    1 \cancel{\ce{ml NaOH}} \dfrac{\ce{0,1 mol NaOH}}{\cancel{1000} \! \cancel{\ce{ml NaOH}}}
+    \dfrac{1}{(100 + \! \cancel{1}\!) \cancel{\pu{ml}}}
+    \dfrac{\cancel{1000} \! \cancel{\pu{ml}}}{\pu{1 dm^3}}
+    = \pu{0,001 M}
+    $
+    </p>
+</blockquote>
+
+<p>Cuando se añade el $\ce{NaOH}$ tiene lugar lo siguiente:</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{align}
+      \ce{HAc + NaOH -&gt; \:&amp;NaAc + H2O} \\
+      &amp;\;\downarrow \\
+       &amp;\hspace{-1em}\ce{Na+\! + Ac-}
+    \end{align}
+    $
+    </p>
+</blockquote>
+
+<p>Por tanto aumenta el acetato, y disminuye el acético, en una
+cantidad igual a la concentración de $\ce{NaOH}$.</p>
+
+<blockquote>
+    <p>
+    $
+    \begin{array}{l}
+      [\ce{H3O+}] = \ce{Ka} \dfrac{
+        c_{\rm a} - c_{\ce{NaOH}}
+      }{
+        c_{\rm{b}} + c_{\ce{NaOH}}
+      } = 10^{-4{,}75} \dfrac{0{,}1 - 0{,}001}{0{,1} + 0{,}001} \approx 10^{-4{,}75} \\[1ex]
+      \Rightarrow \, \ce{pH} = 4{,}75
+    \end{array}
+    $
+    </p>
+</blockquote>
+
+<p>De no ser por la capacidad amortiguadora de la
+solución tampón habría sido un $\ce{pH} = 11$.</p>
+
+  </div>
+  
+  <div id="foot">
+
+<a href="introduccion_a_los_equilibrios_ionicos.htm">Temario</a>
+
+<ul>
+  <li><a href="diagrama_distribucion.htm" title="Anterior">&lt;</a></li>
+  <li><a href="capacidad_reguladora.htm" title="Siguiente">&gt;</a></li>
+</ul>
+
+  </div>
+
+</div>
+</body>
+</html>
