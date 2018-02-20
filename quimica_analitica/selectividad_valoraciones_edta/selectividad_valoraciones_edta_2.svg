@@ -8,6 +8,10 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
 >
 
+<style type="text/css">
+  @import url('../estilo.css');
+</style>
+	
 <title>Gnuplot</title>
 <desc>Produced by GNUPLOT 5.0 patchlevel 3 </desc>
 
