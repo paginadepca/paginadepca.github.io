@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Curvas de valoración de precipitación">
+    <meta name="keywords" content="curvas, valoración, precipitación">
+    <title>Curvas de valoración de precipitación</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+   
+			<h3>Curvas de valoración de precipitación</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+			<p style="margin-left:30px">
+				$
+				\ce{
+					\underset{
+						\displaystyle
+						\overbrace{
+							\ce{X-}
+							\rlap{
+								: \ce{Cl-, Br-, I-}
+							}
+						}
+					}{A} \mspace{-6mu} + \mspace{-9mu}
+					$\overbrace{\ce{R}}^{\displaystyle \ce{Ag+}}$	&lt;=&gt; P_{(s)}
+				}
+				$
+			</p>
+			
+    <p>Normalmente se quieren determinar los haluros (es menos habitual
+    al revés, determinar la plata). Por tanto en las valoraciones la
+    variable principal es el $\ce{{p}Ag}$.</p>
+    
+    <center>
+			<object data="curvas_valoracion_precipitacion/curvas_valoracion_precipitacion_1.svg"
+			type="image/svg+xml" width="300" height="250"></object>
+		</center>
+		
+		<p>Ejemplo:</p>
+		
+		<p style="margin-left:30px;display:inline">
+			$
+			\begin{aligned}[t]
+				&amp;[\ce{X-}] = \pu{0,1 M} \\[1em]
+				&amp;\ce{Ag+ + X- &lt;=&gt; AgX_{(s)}} \\[1ex]
+				&amp;\quad \ce{X^-{: } Cl-, Br-, I-} \\[1em]
+				&amp;\ce{2 Ag+ + CrO4^2- &lt;=&gt; Ag2CrO4_{(s)}}
+			\end{aligned} \qquad
+			$
+			<table style="display:inline-table">
+				<tr style="vertical-align:baseline">
+					<th><b>Anión</b></th>
+					<th>$\boldsymbol{\ce{p$K$_{ps}}}$</th>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\ce{I-}$</td>
+					<td>15,8</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\ce{Br-}$</td>
+					<td>12,0</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\ce{Cl-}$</td>
+					<td>9,5</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\ce{CrO4^2-}$</td>
+					<td>11,7</td>
+				</tr>	
+			</table>
+		</p>
+		
+		<p style="margin-left:30px">
+			$
+			\begin{gather}
+				\begin{aligned}
+					&amp;K_{\rm ps} = [\ce{X-}] [\ce{Ag+}]
+					&amp;&amp;K_{\rm ps} = [\ce{Ag+}]^2 [\ce{CrO4^2-}] \\[1ex]				
+					&amp;\ce{{p}Ag} = \ce{p$K$_{ps}} + \log [\ce{X-}]
+					&amp;&amp;\ce{{p}Ag} = \dfrac{1}{2} \ce{p$K$_{ps}} +
+					\dfrac{1}{2} \log [\ce{CrO4^2-}]
+				\end{aligned} \\[1em]
+				f = \dfrac{\text{moles } \ce{Ag+}}{\text{moles totales } \ce{X-}} =
+				\dfrac{\text{moles $\ce{X-}$ precip.}}{\text{moles totales } \ce{X-}}
+			\end{gather}
+			$
+		</p>
+		
+    <p>Se dibuja el diagrama logarítmico de precipitación, donde además
+    también aparecerá el cromato, que sirve de indicador al formar un
+    complejo insoluble rojo con el $\ce{Ag+}$.</p>
+    
+		<center>
+			<object data="curvas_valoracion_precipitacion/curvas_valoracion_precipitacion_2.svg"
+			type="image/svg+xml" width="660" height="400"></object>
+		</center>
+		
+    <p>Según esta representación, se pueden valorar potenciométricamente,
+    con un electrodo sensible a los iones $\ce{Ag+}$, los tres haluros a
+    la vez, con un error inferior, al menos, al $\pu{1\%}$. También el
+    cromato permitiría observar el punto final para el cloruro (no así para
+    el yoduro, ya experimentalmente, por motivos de reacción rédox). Con una
+    concentración, por ejemplo, $\pu{0,01 M}$ de cromato se produciría el
+    viraje muy cerca del punto de equivalencia.</p>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="aplicaciones_participa_yodo.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="volumetrias_precipitacion.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul> 
+   
+		</div>
+  </body>
+</html>

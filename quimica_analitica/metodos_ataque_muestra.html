@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Métodos de ataque de muestra">
+    <meta name="keywords" content="métodos, ataque, muestra">
+    <title>Métodos de ataque de muestra</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+    <div id="title">
+    
+      <h3>Métodos de ataque de muestra (de disolución de muestra)</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+      <p>En caso de que la muestra no sea ya una disolución, se puede decir que
+      ella misma condiciona la forma de disolverla.</p>
+    
+      <p>Es imprescindible conocer la naturaleza del analito y de la matriz de la
+      muestra.</p>
+    
+      <p>1. La muestra es de naturaleza inorgánica:</p>
+      
+      <blockquote>
+        <p>$\ast$ Se ha de recurrir a disolventes acuosos de menos a más
+        agresivos:</p>
+        
+          <p style="margin-left:30px">
+            $
+            \boxed{1} \ \ce{H2O}, \boxed{2} \ \ce{HCl}, \boxed{3} \ \ce{HNO3, H2SO4},
+            \boxed{4} \ \smash{\text{Agua regia}} \equiv
+            \left(
+              \begin{aligned}
+                \ce{HCl &amp;+ HNO3} \\
+                3&amp;:1
+              \end{aligned}
+            \right)
+            $
+          </p>
+    
+        <p>Temperatura $\,\leq \pu{100 ºC}$</p>
+    
+        <p>$\ast$ Si esto no funciona es necesario utilizar la disgregación, donde
+        se utilizan reactivos sólidos o líquidos a temperaturas elevadas:</p>
+    
+          <p style="margin-left:30px">
+            - reactivo sólido (fundente) $\rightarrow$ fusión $\rightarrow$ el
+            producto sólido es más fácil de disolver.</p>
+    
+          <p style="margin-left:30px">
+            <span style="white-space:nowrap">- ácidos: se necesitan recipientes que
+            soporten elevadas presiones ya que se</span>
+            <span style="white-space:nowrap">trabaja a temperaturas superiores a la
+            de ebullición $\rightarrow \Space{0ex}{4ex}{0ex}
+            \left\{
+              \begin{array}{l}
+                \smash{\text{bombas teflón}} \\
+                \smash{\text{hornos microondas}}
+              \end{array}
+            \right.$</span></p>
+        
+        <p>Compuestos que son insolubles en agua regia:</p>
+        
+          <p style="margin-left:30px">
+            - sales de $\ce{Ag}$, como por ejemplo $\ce{AgX}$</p>
+        
+          <p style="margin-left:30px">
+            - sulfatos $\rightarrow \ce{SrSO4, BaSO4, PbSO4, CaSO4}$</p>
+          
+          <p style="margin-left:30px">
+            - óxidos naturales de $\ce{Al, Cr, Fe, Sn, Ti},$ ...</p>
+    
+          <p style="margin-left:30px">
+            - $\ce{Si, SiO2},$ silicatos.</p>
+    
+          <p style="margin-left:30px">
+            - sales calcinadas (previamente calcinadas) $\rightarrow \ce{CaF2,
+            PbCrO4},$ fosfatos.</p>
+          
+          <p style="margin-left:30px">
+            - elementos $\rightarrow \ce{C, Ir, Fe{-}Si, Fe{-}Cr}$</p>
+    
+        <p>Las disgregaciones pueden ser:</p>
+        
+          <p style="margin-left:30px">
+            - alcalina: $\ce{Na2CO3}$ (fundente más importante)</p>
+    
+          <p style="margin-left:30px">
+            Ejemplo:</p>
+          
+            <p style="margin-left:60px">
+              $
+              \def\rarrow#1#2{
+                \,
+                \overset{#1}{
+                  \underset{\smash{#2}}{
+                    \Rule{0pt}{0.3em}{0pt}
+                    \smash{
+                      \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+                    }
+                  } 
+                }
+                \,
+              }
+
+              \begin{array}{l}
+                \ce{
+                  Na2CO3_{(s)} \! (\smash{\text{exceso}}) + BaSO4_{(s)}
+                  \rarrow{}{T \mspace{3mu} &gt; \mspace{3mu} \pu{750ºC}} BaCO3_{(s)}
+                  + Na2SO4_{(s)}
+                } \\[1ex]
+                \ce{
+                  BaCO3_{(s)} + Na2SO4_{(s)} \rarrow{\ce{+H2O}}{} 2 Na+_{(aq)}
+                  + SO4^2-_{(aq)} + BaCO3_{(s)}
+                } \\[1ex]
+                \ce{
+                  BaCO3_{(s)} \rarrow{\ce{HCl_{(aq)}}} Ba^2+_{(aq)} + CO2 \! ^ \! +
+                  Cl-_{(aq)}
+                }
+              \end{array}
+              $
+            </p>
+
+          <p style="margin-left:30px">
+            - ácida: $\ce{K2S2O7}, \sim \pu{500 ºC}$</p>
+    
+        <p>$\ast$ Alternativas a la disgregación.</p>
+      </blockquote>
+    
+    <p>2. La muestra es de naturaleza orgánica: $T &lt; \pu{100 ºC}$</p>
+    
+    <blockquote>
+      <p>$\ast$ solubles en agua:</p>
+    
+        <p style="margin-left:30px">
+          $\ce{R-COOH, R-OH},$ sales$, \ce{R2CO, R-CHO, R-O-R'}$</p>
+          
+      <p>Todos ellos con nº $\,\ce{C} &lt; 5$.</p>
+    
+      <p>$\ast$ solubles en medio ácido diluido:</p>
+    
+        <p style="margin-left:30px">
+          $\ce{R-NH2 \! ($\smash{\text{base orgánica}}$) \rarrow{\ce{H+}}{}}$ sal
+          amónica</p>
+    
+      <p>$\ast$ solubles en medio básico diluido:</p>
+      
+        <p style="margin-left:30px">
+          $\ce{R-COOH ($\smash{\text{ácido orgánico}}$) \rarrow{\ce{OH-}}{}}$
+          sal</p>
+      
+      <p>$\ast$ Si lo anterior no funciona hemos de recurrir a disolventes
+      orgánicos:</p>
+    
+        <p style="margin-left:30px">
+          Éter etílico, acetona o $\ce{Cl2CH2}$ sobre hidrocarburos saturados,
+          insaturados o aromáticos.</p>
+    </blockquote>
+    
+    <p>3. Determinar materia inorgánica (elementos metálicos) dentro de una matriz
+    orgánica:</p>
+    
+    <p>Lo primero que se ha de hacer es destruir la materia orgánica. A esto se le
+    puede llamar mineralización, se convierte materia orgánica en inorgánica. Se
+    lleva a cabo de la siguiente manera:</p>
+    
+      <p style="margin-left:30px">
+        Mat. Org. $\ce{\rarrow{+Q \smash{\text{ (calor)}}}{\smash{\text{oxidantes}}}
+        CO2 + H2O + \dotsb}$</p>
+    
+    <p>Se puede realizar por dos vías:</p>
+    
+    <blockquote>
+      <p>a) vía seca:</p>
+        
+        <p style="margin-left:30px">
+          $\bullet$ calcinación (abierto), también llamada incineración seca, $T
+          &gt; \pu{550 ºC}$</p>
+          
+        <p style="margin-left:30px">
+          $\bullet$ combustión en tubo (abierto), $\ce{O2}$ como oxidante y $T 
+          \uparrow$</p>
+          
+          <p style="margin-left:60px">
+            $\Rightarrow$ Para determinar: $\ce{C, H, N, O, S, X}$ (sobre todo los dos
+            últimos).</p>
+            
+        <p style="margin-left:30px">
+          $\bullet$ combustión en recipiente cerrado $(\ce{O2}) \Rightarrow$ método
+          Schöniger</p>
+        
+      <center>
+        <object data="metodos_ataque_muestra/metodos_ataque_muestra_1.svg"
+        type="image/svg+xml" width="201" height="157">
+        </object>
+        <p>Esquema dispositivo método Schöniger</p>
+      </center>
+          
+      <p>b) vía húmeda:</p>
+    
+        <p style="margin-left:30px">
+          $\bullet \; \ce{H2SO4}$ (concentrado y caliente) $\rightarrow$ Método
+          Kjeldahl, para la determinación de $\ce{N}$.</p>
+    
+        <p style="margin-left:30px">
+          $\bullet \; \ce{H2SO4 + HNO3}$</p>
+          
+        <p style="margin-left:30px">
+          $\bullet \; \ce{HClO4 + HNO3}$ (nítrico para evitar el peligro de
+          explosión debido al perclórico y azúcares).</p>
+          
+      <p>Normalmente, la vía humeda, se realiza en recipientes abiertos, aunque se
+      puede también hacer en cerrados.</p>
+    </blockquote>
+   
+    </div>
+  
+    <div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="sistematica_general_proceso_analitico.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="evaluacion_resultados_errores_sistematicos_aleatorios.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+    </div>
+  </body>
+</html>

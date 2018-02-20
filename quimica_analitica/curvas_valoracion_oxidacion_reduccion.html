@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Curvas de valoración de oxidación-reducción">
+    <meta name="keywords" content="curvas, valoración, oxidación, reducción">
+    <title>Curvas de valoración de oxidación-reducción</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Curvas de valoración de oxidación-reducción</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Puede ser necesario, por tal de oxidar o reducir completamente el
+    analito antes de proceder a la determinación rédox, llevar a cabo una
+    oxidación o reducción previa mediante:</p>
+    
+    <p>- Oxidantes: Halógenos ($\ce{I2, Br2, Cl2}$), $\ce{HNO3}$, agua regia
+    ($\ce{HCl + HNO3}$, 3:1), $\ce{H2O2}$, persulfatos alcalinos o de
+    amonio ($\ce{Mn^2+ -&gt; MnO4-}$), $\ce{NaBiO3}$, $\ce{ClO3-}$
+    ($\ce{BrO3-}$), $\ce{HClO4}$.</p>
+    
+    <p>- Reductores: Metales ($\ce{Zn, Cd, Al}$, ...), $\ce{H2SO3}$ 
+    ($\ce{Cu^2+ -&gt; Cu+, CuSCN \! v}$), $\ce{SnCl2}$ ($\ce{Hg^2+ -&gt;
+		Hg2Cl2 + Hg^0}$), hidroxilamina, ácido ascórbico.</p>
+		
+    <p>Reacción analítica:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{A_{ox} + B_{red} -&gt; A_{red} + B_{ox}} \qquad
+				n_{\ce{A}} = n_{\ce{B}} \qquad
+				E°_{\!\! \lower 2mu {\ce{A_{ox}/A_{red}}}} &gt;
+				E°_{\!\! \lower 2mu {\ce{B_{ox}/B_{red}}}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">Se supone que el analito es $\ce{A_{ox}}$
+			y el valorante es $\ce{B_{red}}$.</p>
+			
+    <p>Inicialmente, por tanto, la concentración de $\ce{B_{red}}$ es cero.
+    La fracción de analito valorada es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				f =
+				\dfrac{
+					\text{moles $\ce{B_{red}}$}
+				}{
+					\text{moles totales iniciales $\ce{A_{ox}}$}
+				}
+				$
+			</p>
+			
+    <p>Si la reacción no fuera mol a mol, es decir, el número de $e^⁻$ no
+    fuera igual ($n_{\ce{A}} \neq n_{\ce{B}}$), entonces, por ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{2 A_{ox} + 3 B_{red} -&gt;}$ ...</p>
+					
+			<p style="margin-left:30px">
+				$
+				f =
+				\dfrac{
+					(\text{moles $\ce{B_{red}}$}) \mathbin{/} 3
+				}{
+					(\text{moles totales iniciales $\ce{A_{ox}}$}) \mathbin{/} 2
+				}
+				$
+			</p>
+			
+    <p>Siempre se cumple que $E_{\ce{A}} = E_{\ce{B}} = {"}E{"}$ (ó
+    $E_{\rm eq}$), antes y después del punto de equivalencia. Antes del
+    punto de equivalencia:</p>
+		
+			<p style="margin-left:30px">
+				$
+				E_{\ce{A}} = E°_{\!\! \lower 2mu {\ce{A}}} +
+				\dfrac{0{,}059}{n_{\ce{A}}}
+				\log \dfrac{[\ce{A_{ox}}]}{[\ce{A_{red}}]}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\ce{B_{red}} \rightarrow f \cdot C_{\ce{A}} &amp;=
+					[\ce{B_{ox}}] = [\ce{A_{red}}] \\[1ex]
+					&amp;\mspace{1mu} \downarrow \\[1ex]
+					C_{\ce{A}} &amp;= [\ce{A_{ox}}] + [\ce{A_{red}}] \rightarrow
+					[\ce{A_{ox}}] = C_{\ce{A}} (1 - f)
+				\end{align}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}}
+				\boxed{
+					E = E°_{\!\! \lower 2mu {\ce{A}}} + \dfrac{0{,}059}{n_{\ce{A}}}
+					\log \dfrac{1 - f}{f}
+				} \quad 0 &lt; f &lt; 1
+				$
+			</p>
+    
+    <p>Después del punto de equivalencia:</p>
+    
+			<p style="margin-left:30px">
+				$
+				E_{\ce{B}} = E°_{\!\! \lower 2mu {\ce{B}}} +
+				\dfrac{0{,}059}{n_{\ce{B}}}
+				\log \dfrac{[\ce{B_{ox}}]}{[\ce{B_{red}}]}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$[\ce{B_{ox}}] = [\ce{A_{ox}}]_{\rm inicial} = C_{\ce{A}}$</p>
+				
+			<p style="margin-left:30px">
+				$[\ce{B_{red}}] = C_{\ce{A}} (\, f - 1) \qquad f &gt; 1$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}}
+				\boxed{
+					E = E°_{\!\! \lower 2mu {\ce{B}}} + \dfrac{0{,}059}{n_{\ce{B}}}
+					\log \dfrac{1}{f - 1}
+				} \quad f &gt; 1
+				$
+			</p>				
+				
+		<p>Sumando:</p>
+		
+			<p style="margin-left:30px">
+				$
+				(n_{\ce{A}} + n_{\ce{B}}) E =
+				n_{\ce{A}} E°_{\!\! \lower 2mu {\ce{A}}} +
+				n_{\ce{B}} E°_{\!\! \lower 2mu {\ce{B}}} + 0{,}059 \log
+				\dfrac{[\ce{A_{ox}}] [\ce{B_{ox}}]}{[\ce{A_{red}}] [\ce{B_{red}}]}
+				$
+			</p>
+    
+    <p>En el punto de equivalencia:</p>
+    
+			<p style="margin-left:30px">
+				$[\ce{A_{ox}}] = [\ce{B_{red}}]$</p>
+				
+			<p style="margin-left:30px">
+				$[\ce{A_{red}}] = [\ce{B_{ox}}]$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}}
+				\boxed{
+					E_{\rm (P.E.)} =
+					\dfrac{
+						n_{\ce{A}} E°_{\!\! \lower 2mu \ce{A}} +
+						n_{\ce{B}} E°_{\!\! \lower 2mu \ce{B}}
+					}{n_{\ce{A}} + n_{\ce{B}}} =
+					\dfrac{
+						E°_{\!\! \lower 2mu \ce{A}} + E°_{\!\! \lower 2mu \ce{B}}
+					}{2}
+				} \quad f = 1
+				$
+			</p>
+				
+    <p>Mirando las expresiones:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					f = 0{,}5 \rightarrow E = E°_{\!\! \lower 2mu {\ce{A}}} \\[1ex]
+					f = 2 \rightarrow E = E°_{\!\! \lower 2mu {\ce{B}}}
+				\end{array}
+				$
+				<object data="curvas_valoracion_oxidacion_reduccion/curvas_valoracion_oxidacion_reduccion_1.svg"
+				type="image/svg+xml" width="300" height="250"
+				style="display:inline;margin:0 1em;vertical-align:middle"></object>
+			</p>
+    
+    <p>Ejemplo:</p>
+    
+    <p style="text-align:center">
+			$
+			\def\rarrow#1#2{
+				\stackrel{#1}{
+					\underset{#2}{
+						\Rule{0pt}{0.3em}{0pt}
+						\smash{
+							\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+						}
+					} 
+				}
+			}
+			\begin{align}
+				&amp;\ce{Fe^3+ \rarrow{\large +1e^-}{} Fe^2+}
+				&amp;&amp;C_{\ce{A}} = \pu{0,1 M} \\[1ex]
+				&amp;\ce{Ti^4+ \rarrow{\large +1e^-}{} Ti^3+}
+				&amp;&amp;\ce{
+					\underbrace{Fe^3+}_{{Analito}} + \negthickspace
+					\underbrace{Ti^3+}_{{Valorante}} \negthickspace\negthickspace
+					-&gt; Fe^2+ + Ti^4+
+				} \\[1ex]
+				&amp;E°_{\!\! \ce{Fe^3+ \mspace{-2mu}/ Fe^2+}} = \pu{0,72 v} 
+				\rlap{\quad {\rm p}e°_{\!\! \lower 2mu {\ce{Fe}}} = 12{,}2}
+				&amp;&amp; \\[1ex]
+				&amp;E°_{\!\! \ce{Ti^4+ \mspace{-2mu}/ Ti^3+}} = \pu{0,12 v}
+				\rlap{\quad {\rm p}e°_{\!\! \lower 2mu {\ce{Ti}}} = 2{,}0}
+			\end{align}
+			$
+		</p>
+    
+    <p>Se puede dibujar la curva de valoración, de forma esquemática, a
+    partir del diagrama logarítmico:</p>
+    
+		<center>
+			<object data="curvas_valoracion_oxidacion_reduccion/curvas_valoracion_oxidacion_reduccion_2.svg"
+			type="image/svg+xml" width="600" height="400"></object>
+		</center>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="dismutacion.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="deteccion_punto_final_indicadores_redox.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

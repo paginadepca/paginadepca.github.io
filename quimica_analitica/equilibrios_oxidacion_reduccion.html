@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Equilibrios de oxidación-reducción">
+    <meta name="keywords" content="equilibrios, oxidación, reducción">
+    <title>Equilibrios de oxidación-reducción</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+    
+			<h3>Equilibrios de oxidación-reducción</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+			<p style="margin-left:30px">
+				$\ce{A_{ox} + B_{red} &lt;=&gt; A_{red} + B_{ox}}$</p>
+				
+    <p>Hay dos semirreacciones, una que implica al sistema $\ce{A}$ y
+    otra que implica al sistema $\ce{B}$:</p>
+    
+		<center>
+			<table style="border:none">
+				<tr>
+					<td style="border:none">
+						<object data="equilibrios_oxidacion_reduccion/equilibrios_oxidacion_reduccion_1.svg"
+						type="image/svg+xml" width="187" height="116">
+						</object>
+					</td>
+					<td style="border:none">
+						$
+						\qquad
+						\def\ieqarrow#1#2{
+							\stackrel{
+								\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+								\overset{#1}{
+									\Rule{0pt}{0.4em}{0pt}
+									\smash{
+										\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+									}
+								}
+							}{
+								\Rule{0pt}{1.5mu}{0pt}
+								\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+								\underset{#2}{
+									\smash{
+										\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+									}
+								}
+							}
+						}
+						\begin{array}{l}
+							\ce{A_{ox} \ieqarrow{+n_{\ce{A}}e}{} A_{red}} \\[1ex]
+							\ce{B_{red} \ieqarrow{\smash[t]{-n_{\ce{B}}e}}{} B_{ox}}
+						\end{array}
+						$
+					</td>
+				</tr>
+			</table>
+		</center>
+		
+    <p>En las celdas electrolíticas se ha de suministrar energía para
+    que se produzca la reacción química. En las celdas galvánicas (pilas)
+    la reacción química tiene lugar de forma espontánea, y como resultado
+    produce energía.</p>
+    
+			<p style="margin-left:30px">
+				$E \leftarrow$ potencial o fuerza electromotriz de la pila.</p>
+				
+			<p style="margin-left:30px">
+				$\rlap{E = E_{\ce{A}} - E_{\ce{B}}}{\hphantom{\Delta G = -nFE;}}
+				\quad E_{\ce{A}}, E_{\ce{B}} \leftarrow$ potencial de los
+				electrodos $\ce{A}$ y $\ce{B}$.
+			</p>
+			
+			<p style="margin-left:30px">
+				$\Delta G = -nFE; \quad$Estado estándar: $\Delta G° = -nFE° =
+				-RT \ln K$
+			</p>
+			
+			<p style="margin-left:30px">
+				Ecuación de Nernst: $\,E_{\ce{A}} =
+				\rlap{\hphantom{E}°} E_{\lower 2mu {\ce{A}}} +
+				\dfrac{RT}{n_{\ce{A}}F} \ln	\dfrac{\ce{A_{ox}}}{\ce{A_{red}}}$
+			</p>
+    
+    <p>Para poder calcular los potenciales de electrodo se asigna
+    arbitrariamente que $E_{\ce{H+/\,H2}} = 0$, y a partir de este valor
+    haciendo combinaciones se pueden encontrar otros potenciales de
+    electrodo:</p>
+    
+    <p style="text-align:center">
+			$
+			\underbrace{
+				\ce{Pt, H2 | H+} \rlap{\ce{\| Zn^2+ | Zn}}
+			}_{
+				\begin{subarray}{c}
+						\displaystyle \ce{NHE} \\
+						\downarrow \\
+						\text{electrodo normal de hidrógeno}
+				\end{subarray}
+			}
+			\qquad\qquad
+			\begin{aligned}[t]
+				&amp;a_{\ce{H+}} = 1 &amp;&amp; a_{\ce{Zn^2+}} = 1 \\[1ex]
+				&amp;P_{\ce{H2}} = 1 &amp;&amp; \\[2ex]
+				&amp;E_{\ce{NHE}} = 0
+				&amp;&amp; \rlap{\hphantom{E}°}E_{\ce{Zn^2+/Zn}} \\[1ex]
+				&amp; &amp;&amp;\ce{Zn^2+ + 2 $e^-$ -&gt; Zn}
+			\end{aligned}
+			$
+		</p>
+    
+    <p>Para calcular los potenciales de electrodo se considera la
+    semirreacción de reducción. Cuando la especie que se enfrenta al
+    hidrógeno es más reductora que él el $E°$ de aquélla es negativo,
+    y si es menos reductora que el hidrógeno su $E°$ es positivo.</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{
+					\underset{
+						\begin{gathered}
+							\strut \text{Oxidación} \\
+							\text{Ánodo} \\
+							(-)
+						\end{gathered}
+					}{Pt | B_{red}, B_{ox}}
+				\mathord{\|}
+					\underset{
+						\begin{gathered}
+							\strut \text{Reducción} \\
+							\text{Cátodo} \\
+							(+)
+						\end{gathered}
+					}{A_{ox}, A_{red} | Pt}
+				}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$E_{\rm r} = 0 \rightarrow E_{\ce{A}} = E_{\ce{B}} \rightarrow$
+				Situación	de equilibrio termodinámico, (r $\equiv$ reacción).</p>
+    
+    <p>Si cuando se está en la situación de equilibrio termodinámico se
+    altera la composición (por ejemplo añadir $\ce{A_{ox}}$) el sistema
+    evolucionará hasta que $E_{\ce{A}}$ y $E_{\ce{B}}$ se vuelvan a
+		igualar, y por tanto se vuelva a estar en una situación de equilibrio
+		termodinámico.</p>
+		
+			<p style="margin-left:30px">
+				$
+				\mathop{
+					\vphantom{\underbrace{\ce{$n$_B A_{red} + $n$_A B_{ox}}}}
+					\underbrace{\ce{$n$_B A_{ox}}}
+				}\limits_{\smash[t]{\text{Analito}}}
+				\mathop{
+					\vphantom{\underbrace{\ce{$n$_B A_{red} + $n$_A B_{ox}}}} +
+				}\limits_{+}
+				\mathop{
+					\vphantom{\underbrace{\ce{$n$_B A_{red} + $n$_A B_{ox}}}}
+					\underbrace{\ce{$n$_A B_{red}}}
+				}\limits_{\smash[t]{\text{Reactivo}}}
+				\mathop{
+					\vphantom{\underbrace{\ce{$n$_B A_{red} + $n$_A B_{ox}}}}
+					\ce{&lt;=&gt;}
+				}\limits_{\ce{-&gt;}}
+				\underbrace{
+					\ce{$n$_B A_{red} + $n$_A B_{ox}}
+				}_{\smash[t]{\text{Producto}}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\def\rarrow#1#2{
+					\stackrel{#1}{
+						\underset{#2}{
+							\Rule{0pt}{0.3em}{0pt}
+							\smash{
+								\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+							}
+						} 
+					}
+				}
+				E_{\ce{A}} = \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+				\dfrac{RT}{n_{\ce{A}}F} \ln \dfrac{\{\ce{A_{ox}}\}}{\ce{\{A_{red}\}}}
+				\rarrow{}{T = \pu{25ºC}}
+				E_{\ce{A}} = \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+				\dfrac{0{,}059}{n_{\ce{A}}} \log \dfrac{[\ce{A_{ox}}]}{[\ce{A_{red}}]}
+				$
+			<p>
+				
+			<p style="margin-left:30px">
+				$
+				E_{\ce{B}} = \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}} +
+				\dfrac{0{,}059}{n_{\ce{B}}} \log \dfrac{[\ce{B_{ox}}]}{[\ce{B_{red}}]}
+				$
+			</p>
+		
+    <p>En el equilibro $E_{\ce{A}} = E_{\ce{B}} = E_{\text{eq}}$. Por
+    tanto igualando y agrupando términos:</p>
+    
+			<p style="margin-left:30px">
+				$
+				n_{\ce{B}} n_{\ce{A}} (\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}}
+				- \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}}) =	0{,}059 \log
+				\dfrac{
+					[\ce{A_{red}}]^{n_{\ce{B}}} [\ce{B_{ox}}]^{n_{\ce{A}}}
+				}{
+					[\ce{A_{ox}}]^{n_{\ce{B}}} [\ce{B_{red}}]^{n_{\ce{A}}}
+				}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}}
+				{\log {}} K =
+				\dfrac{
+					n_{\ce{B}} n_{\ce{A}} (\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}}
+					- \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}})
+				}{0{,}059}
+				$
+			</p>
+			
+    <p>Caso particular:</p>
+    
+			<p style="margin-left:30px">
+				$
+				n_{\ce{A}} = n_{\ce{B}} = n \Rightarrow \log K =
+				\dfrac{
+					n (\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} -
+					\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}})
+				}{0{,}059}
+				$
+			</p>
+				
+    <p>En el equilibrio:</p>
+    
+			<p style="margin-left:30px">
+				$
+				E_{\ce{A}} = E_{\ce{B}} = E_{\text{eq}} \qquad
+				\begin{alignedat}[t]{2}
+					&amp; &amp;n_{\ce{A}} E_{\ce{A}} &amp;=
+					n_{\ce{A}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+					0{,}059 \log \dfrac{[\ce{A_{ox}}]}{[\ce{A_{red}}]} \\[1ex]
+					&amp;+ &amp;n_{\ce{B}} E_{\ce{B}} &amp;=
+					n_{\ce{B}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}} +
+					0{,}059 \log \dfrac{[\ce{B_{ox}}]}{[\ce{B_{red}}]} \\[1ex]
+					\hline
+					&amp; &amp;(n_{\ce{A}} + n_{\ce{B}}) E_{\text{eq}} &amp;=
+					n_{\ce{A}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+					n_{\ce{B}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}} +
+					0{,}059 \log
+					\dfrac{[\ce{A_{ox}}] [\ce{B_{ox}}]}{[\ce{A_{red}}] [\ce{B_{red}}]}
+				\end{alignedat}
+				$
+			</p>
+    
+    <p>Conocidas las concentraciones puede calcularse $E_{\text{eq}}$.</p>
+    
+    <p>Cuando se está en el punto de equivalencia:</p>
+    
+			<p style="margin-left:30px">
+				$[\ce{A_{ox}}] = \dfrac{n_{\ce{B}}}{n_{\ce{A}}} [\ce{B_{red}}]$
+			</p>
+			
+			<p style="margin-left:30px">
+				$[\ce{B_{ox}}] = \dfrac{n_{\ce{A}}}{n_{\ce{B}}} [\ce{A_{red}}]$
+			</p>
+			
+    <p>Así que sustituyendo en la expresión para el potencial de
+    equilibrio:</p>
+    
+			<p style="margin-left:30px">
+				$
+				(n_{\ce{A}} + n_{\ce{B}}) E_{\text{P.E.}} =
+				n_{\ce{A}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+				n_{\ce{B}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}} E_{\text{P.E.}} =
+				\dfrac{
+					n_{\ce{A}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+					n_{\ce{B}} \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}}
+				}{n_{\ce{A}} + n_{\ce{B}}}
+				$
+			</p>
+			
+    <p>Si $n_{\ce{A}} = n_{\ce{B}} \rightarrow E_{\text{P.E.}} =
+    \dfrac{1}{2} (\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+    \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{B}}})$</p>
+   
+		</div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a
+          href="aplicaciones_volumetrias_complejacion.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="diagramas_logaritmicos_concentracion.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

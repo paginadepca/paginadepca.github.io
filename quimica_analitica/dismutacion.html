@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Dismutación (o desproporción)">
+    <meta name="keywords" content="dismutación, desproporción">
+    <title>Dismutación (o desproporción)</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Dismutación (o desproporción)</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+			
+			<p style="margin-left:30px">
+				$\ce{Cu^2+}$ ox</p>
+
+			<p style="margin-left:30px">
+				$\ce{Cu+}$ ion $\leftarrow$ esta especie no es estable en disolución
+				acuosa y da las otras	dos.</p>
+		
+			<p style="margin-left:30px">
+				$\ce{Cu^0}$ red<p>
+
+    <p>Esto pasa cuando $E°_{\!\! \rm \lower 2mu {ox/ion}} &lt;
+    E°_{\!\! \rm \lower 2mu {ion/red}}$. En forma de reacción:</p>
+    
+		<p style="text-align:center">
+				$\ce{2 ion^z+ -&gt; ox^{+(z + n)} + red^{+(z - n)}}$
+		</p>
+			
+		<p>Ejemplo:</p>
+			
+			<p style="margin-left:30px">
+				$\ce{2 Cu+ -&gt; Cu^0 + Cu^2+} \qquad
+				\underbrace{
+					E°_{\!\! \ce{Cu^2+ \mspace{-1mu}/ Cu+}} = \pu{0,17 v} \quad
+					E°_{\!\! \ce{Cu+ / Cu^0}} = \pu{0,57 v}
+				}_{\text{más oxidante el $\ce{Cu+}$ que el $\ce{Cu^2+}$}}
+				$
+			</p>
+    
+    <p>A esto se le llama desproporción o dismutación.</p>
+    
+    <p>Otros ejemplos son:</p>
+    
+			<p style="margin-left:30px">
+			$
+			\def\rarrow#1#2{
+				\stackrel{#1}{
+					\underset{\raise 0.2em {\smash[t]{#2}}}{
+						\Rule{0pt}{0.3em}{0pt}
+						\smash{
+							\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+						}
+					} 
+				}
+			}
+			\ce{3NO2- + 2 H+ \rarrow{}{+Q} NO3- + 2NO + H2O}
+			$	
+			</p>
+	
+			<p style="margin-left:30px">
+				$\ce{3 ClO- -&gt; 2 Cl- + ClO3-}$</p>
+    
+    <p>En la desproporción del $\ce{Cu+}$, se puede desplazar hacia el
+    $\ce{Cu+}$ la reacción o impedir la desproporción basándose en los
+    potenciales condicionales, como por ejemplo complejando el $\ce{Cu+}$
+    o haciéndolo precipitar.</p>
+    
+    <p>Otro ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{2 Hg^2+ + 2 $e^-$ -&gt; Hg2^2+} \qquad E° = \pu{0,91 v}$</p>
+				
+			<p style="margin-left:30px">
+				$\ce{Hg2^2+ + 2 $e^-$ -&gt; 2 Hg} \qquad E° = \pu{0,81 v}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\ce{Hg2^2+ + 4 CN- -&gt; Hg^0 +
+				\underbrace{
+					[Hg(CN)4]^2-
+				}_{
+						\begin{subarray}{l}
+							\text{estabiliza el} \rlap{\text{$\ce{Hg^2+}$ haciendo}} \\
+							\text{posible la} \rlap{\text{reacción cuantitativamente}}
+						\end{subarray}
+					}}
+				$
+			</p>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="diagramas_potencial_ph.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="curvas_valoracion_oxidacion_reduccion.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+		
+		</div>
+  </body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Indicadores metalocrómicos">
+    <meta name="keywords" content="indicadores, metalocrómicos">
+    <title>Indicadores metalocrómicos</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+    <div id="title">
+
+      <h3>Indicadores metalocrómicos</h3>
+      
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+      
+      <p style="margin-left:30px">
+        $\ce{M + In &lt;=&gt; MIn}$</p>
+        
+    <p>Aquello que cambia es el color. Es decir, los colores de $\ce{In}$ y
+    $\ce{MIn}$ son diferentes.</p>
+    
+    <p>$\bullet$ Negro de eriocromo T (NET)</p>
+    
+    <p style="text-align:center">
+      1-(1-hidroxi-2-naftilazo)-6-nitro-2-naftol-4-sulfonato de sodio
+    </p>
+    
+    <center>
+      <object data="indicadores_metalocromicos/indicadores_metalocromicos_01.svg"
+      type="image/svg+xml" width="340" height="178">
+      </object>
+    </center>
+    
+			<p style="text-align:center">
+				$
+        \def\ieqarrow#1#2{
+          \stackrel{
+            \Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+            \overset{#1}{
+              \Rule{0pt}{0.4em}{0pt}
+              \smash{
+                \xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+              }
+            }
+          }{
+            \Rule{0pt}{1.5mu}{0pt}
+            \Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+            \underset{#2}{
+              \smash{
+                \xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+              }
+            }
+          }
+        }
+        \ce{
+					\underset{{\Large \strut} \text{rojo}}{\smash{\ce{H3In}}}
+					\ieqarrow{\ce{-H+}}{\ce{p$K$1}=1{,}6}
+					\underset{{\Large \strut} \text{rojo}}{\smash{\ce{H2In-}}}
+					\ieqarrow{\ce{-H+}}{\ce{p$K$2}=6{,}3}
+					\underset{{\Large \strut} \text{azul}}{\smash{\ce{HIn^2-}}}
+					\ieqarrow{\ce{-H+}}{\ce{p$K$3}=11{,}6}
+					In^3- \;
+					\llap{\underset{{\Large \strut} \text{anaranjado}}{}}
+				}
+				$
+			</p>
+    
+    <p>El complejo NET-M es rojo. Por tanto el intervalo ideal de $\ce{pH}$
+    para observar el viraje va desde $7{,}3$ hasta $10{,}6$, que es donde
+    $\ce{HIn^2-}$ es la especie mayoritaria.</p>
+    
+    <p>Cálculo del intervalo de viraje del indicador:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{M + In &lt;=&gt; MIn}$</p>
+				
+			<p style="margin-left:30px">
+				$K_{\ce{MIn}} = \dfrac{[\ce{MIn}]}{[\ce{M}][\ce{In}]}$</p>
+				
+    <p>Pero dado que el indicador tiene además equilibrios ácido-base,
+    es adecuado utilizar la constante condicional:</p>
+    
+			<p style="margin-left:30px">
+				$
+				K'_{\ce{MIn}} =
+				\dfrac{
+					[\ce{MIn}]
+				}{
+					\underset{
+						\begin{subarray}{c}
+							\displaystyle \uparrow \\
+							\displaystyle
+							\smash[b]{
+								\text{que}
+								\rlap{
+									\smash[b]{
+										\text{ podría también tener reacciones parásitas 
+										(ser conc. condicional)}
+									}
+								}
+							}
+						\end{subarray}
+					}{
+						\boxed{[\ce{M}]}
+					}[\ce{In'}]
+				} = \dfrac{K_{\ce{MIn}}}{\alpha_{\ce{In}(\ce{H+})}}
+				$
+			</p>
+			
+    <p>Es mejor trabajar con la constante condicional, así que:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{{p}M} = \log K'_{\ce{MIn}} + \log \dfrac{[\ce{In']}}{[\ce{MIn}]}$
+			</p>
+			
+    <p>Trabajando a $\ce{pH} \sim 8\text{-}9$ se tendrá que:
+    $
+    \dfrac{[\ce{In'}]}{[\ce{MIn}]} = \biggl\langle
+    \begin{array}{l}
+			10 \rightarrow \smash{\text{azul}} \\
+			0{,}1 \rightarrow \smash{\text{rojo}}
+    \end{array}
+    $</p>
+    
+    <p>Por tanto el intervalo de viraje del indicador metalocrómico:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{{p}M} = \log K'_{\ce{MIn}} \pm 1$</p>
+				
+    <p>El planteamiento a la hora de escoger un indicador será parecido
+    al ácido-base, aunque se tendrá que tener en cuenta el $\ce{pH}$.</p>
+    
+    <p>Si se representa el $\log K'_{\ce{M{-}NET}}$ frente al $\ce{pH}$
+    la gráfica es la siguiente:</p>
+    
+    <center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_02.svg"
+			type="image/svg+xml' width="450" height="450">
+			</object>
+		</center>
+		
+		<p style="text-align:center">
+			Solución reguladora habitual $\ce{NH4Cl / NH3 ({1:1)}}$
+		</p>
+		
+		<p>Donde:</p>
+		
+			<p style="margin-left:30px">
+				$\log K'_{\ce{M{-}NET}} =
+				\log K_{\ce{M{-}NET}} - \log \alpha_{\ce{NET(H+)}}$
+			</p>
+		
+		<p>Siendo:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\alpha_{\ce{NET(H+)}} &amp;= \dfrac{[\ce{In'}]}{[\ce{In^3-}]} =
+					\dfrac{
+						[\ce{In^3-}]+[\ce{HIn^2-}]+[\ce{H2In-}]+[\ce{H3In}]
+					}{[\ce{In^3-}]} = \\[1ex]
+					&amp;= 1 + \dfrac{[\ce{H+}]}{K_3} + \dfrac{[\ce{H+}]^2}{K_2 K_3}
+					+	\dfrac{[\ce{H+}]^3}{K_1 K_2 K_3}
+				\end{align}
+				$
+			</p>
+			
+		<p>Tomando:</p>
+		
+			<center>
+				<table>
+					<tr style="vertical-align:baseline">
+						<th style="width:6em">$\boldsymbol{\log K_{\ce{Ca{-}NET}}}$</th>
+						<th style="width:6em">$\boldsymbol{\log K_{\ce{Mg{-}NET}}}$</th>
+						<th style="width:6em">$\boldsymbol{\log K_{\ce{Mn{-}NET}}}$</th>
+						<th style="width:6em">$\boldsymbol{\log K_{\ce{Zn{-}NET}}}$</th>
+					</tr>
+					<tr align="center">
+						<td>5,4</td>
+						<td>7,0</td>
+						<td>9,6</td>
+						<td>12,9</td>
+					</tr>
+				</table>
+			</center>
+    
+    <p>Como se observa el $\log K'_{\ce{M{-}NET}}$ aumenta con el $\ce{pH}$,
+    disminuye la competencia de los protones por el indicador, y por tanto
+    el intervalo de viraje del indicador se desplaza hacia arriba en la
+    curva de valoración.</p>
+    
+		<center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_03.svg"
+			type="image/svg+xml" width="450" height="300">
+			</object>
+		</center>
+		
+    <p>$\bullet$ Anaranjado de xilenol (XO)</p>
+    
+    <p style="text-align:center">
+			3,3'-bis[(N,N-dicarboximetil)-aminometil]-<em>o</em>-cresolsulfonftaleína
+		</p>
+		
+		<center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_04.svg"
+			type="image/svg+xml" width="338" height="189">
+			</object>
+		</center>
+    
+    <p style="text-align:center">complejo XO-M rojo-violeta</p>
+
+    <p>Si se hace un gráfico, basándose en datos experimentales, del
+    valor de $\ce{{p}M}$, en relación al $\ce{pH}$, en el que se produce el
+    cambio de color:</p>
+    
+    <center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_05.svg"
+			type="image/svg+xml" width="450" height="450">
+			</object>
+		</center>
+		
+		<p>Donde el $\ce{{p}M}$ en que se observa experimentalmente la
+		transición de color para diferentes valores de $\ce{pH}$:</p>
+		
+		<center>
+			<table>
+				<tr style="vertical-align:baseline">
+					<th>$\boldsymbol{\ce{pH}}$</th>
+					<th style="width:2em"><b>1,0</b></th>
+					<th style="width:2em"><b>2,0</b></th>
+					<th style="width:2em"><b>3,0</b></th>
+					<th style="width:2em"><b>4,0</b></th>
+					<th style="width:2em"><b>4,5</b></th>
+					<th style="width:2em"><b>5,0</b></th>
+					<th style="width:2em"><b>5,5</b></th>
+					<th style="width:2em"><b>6,0</b></th>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Bi}}$</td>
+					<td style="border-right:none">4,0</td>
+					<td style="border-left:none;border-right:none">5,4</td>
+					<td style="border-left:none;border-right:none">6,8</td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Cd}}$</td>
+					<td style="border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none">4,0</td>
+					<td style="border-left:none;border-right:none">4,5</td>
+					<td style="border-left:none;border-right:none">5,0</td>
+					<td style="border-left:none;border-right:none">5,5</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Hg}}$</td>
+					<td style="border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none">7,4</td>
+					<td style="border-left:none;border-right:none">8,2</td>
+					<td style="border-left:none;border-right:none">9,0</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Pb}}$</td>
+					<td style="border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none">4,2</td>
+					<td style="border-left:none;border-right:none">4,8</td>
+					<td style="border-left:none;border-right:none">6,2</td>
+					<td style="border-left:none;border-right:none">7,0</td>
+					<td style="border-left:none;border-right:none">7,6</td>
+					<td style="border-left:none">8,2</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Zn}}$</td>
+					<td style="border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none"></td>
+					<td style="border-left:none;border-right:none">4,1</td>
+					<td style="border-left:none;border-right:none">4,8</td>
+					<td style="border-left:none;border-right:none">5,7</td>
+					<td style="border-left:none">6,5</td>
+				</tr>
+			</table>
+    </center>
+    
+    <p>$\bullet$ Murexida</p>
+    
+    <center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_06.svg"
+			type="image/svg+xml" width="246" height="146">
+			</object>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_07.svg"
+			type="image/svg+xml" width="157" height="99">
+			</object>
+		</center>
+		
+		<p style="text-align:center">
+			complejo metal-indicador
+		</p>
+		
+		<p>Como antes, gráfico a partir de datos experimentales:</p>
+		
+		<center>
+			<object data="indicadores_metalocromicos/indicadores_metalocromicos_08.svg"
+			type="image/svg+xml" width="450" height="450">
+			</object>
+		</center>
+		
+		<p>El cambio de color hayándose experimentalmente en:</p>
+		
+		<center>
+			<table>
+				<tr style="vertical-align:baseline">
+					<th>$\boldsymbol{\ce{pH}}$</th>
+					<th style="width:2em"><b>6,0</b></th>
+					<th style="width:2em"><b>7,0</b></th>
+					<th style="width:2em"><b>8,0</b></th>
+					<th style="width:2em"><b>9,0</b></th>
+					<th style="width:2em"><b>10,0</b></th>
+					<th style="width:2em"><b>11,0</b></th>
+					<th style="width:2em"><b>12,0</b></th>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Ca}}$</td>
+					<td style="border-right:none"></td>
+					<td style="border-left:none;border-right:none">2,6</td>
+					<td style="border-left:none;border-right:none">2,8</td>
+					<td style="border-left:none;border-right:none">3,4</td>
+					<td style="border-left:none;border-right:none">4,0</td>
+					<td style="border-left:none;border-right:none">4,6</td>
+					<td style="border-left:none">5,0</td>
+				</tr>
+				<tr align="center" style="vertical-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Cu}}$</td>
+					<td style="border-right:none">6,4</td>
+					<td style="border-left:none;border-right:none">8,2</td>
+					<td style="border-left:none;border-right:none">10,2</td>
+					<td style="border-left:none;border-right:none">12,2</td>
+					<td style="border-left:none;border-right:none">13,6</td>
+					<td style="border-left:none;border-right:none">15,8</td>
+					<td style="border-left:none">17,9</td>
+				</tr>
+				<tr align="center" style="vertival-align:baseline">
+					<td>$\boldsymbol{{\rm p}\ce{Ni}}$</td>
+					<td style="border-right:none">4,6</td>
+					<td style="border-left:none;border-right:none">5,2</td>
+					<td style="border-left:none;border-right:none">6,2</td>
+					<td style="border-left:none;border-right:none">7,8</td>
+					<td style="border-left:none;border-right:none">9,3</td>
+					<td style="border-left:none;border-right:none">10,3</td>
+					<td style="border-left:none;border-right:none">11,3</td>
+				</tr>
+			</table>
+		</center>
+		
+		<p>$\bullet$ Calcón</p>
+		
+		<center>
+			<table style="border:none">
+				<tr>
+					<td style="border:none">
+						<object data="indicadores_metalocromicos/indicadores_metalocromicos_09.svg"
+						type="image/svg+xml" width="301" height="144">
+						</object>
+					</td>
+					<td style="border:none">
+						Calcón
+					</td>
+				</tr>
+				<tr>
+					<td style="border:none">
+						<object data="indicadores_metalocromicos/indicadores_metalocromicos_10.svg"
+						type="image/svg+xml" width="342" height="144">
+						</object>
+					</td>
+					<td style="border:none">
+						Calcón carboxílico
+					</td>
+				</tr>
+			</table>
+		</center>
+		
+		<p>Para valorar $\ce{Ca^2+}$ en presencia de $\ce{Mg^2+}$ a
+		$\ce{pH} = 12\text{-}13$, siendo con el indicador en forma de complejo
+		el color rojo, y en su forma libre, alcanzado el punto final, el color
+		azul.</p>
+
+    </div>
+   
+    <div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a
+          href="curvas_valoracion_formacion_complejos_caso_particular_complejos_1_1.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="selectividad_valoraciones_edta.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+    
+    </div>
+  </body>
+</html>

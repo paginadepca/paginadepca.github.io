@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Curvas de neutralización">
+    <meta name="keywords" content="curvas, neutralización">
+    <title>Curvas de neutralización</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+    <div id="title">
+      
+      <h3>Curvas de neutralización</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+    
+      <p>La interacción es ácido-base:</p>
+        
+        <p style="margin-left:30px">
+          $\ce{H3O+ + OH- -&gt; 2H2O}$</p>
+
+      <p>El parámetro que varía a lo largo de la valoración es el $\ce{pH}$.</p>
+      
+      <p>El analito puede ser: un ácido, una base o una mezca de ácidos o bases.</p>
+    
+      <p>La construcción de una curva permite medir la fiabilidad, viabilidad del
+      método experimental.</p>
+    
+      <p>La representación gráfica es la siguiente:</p>
+    
+      <center>
+        <object data="curvas_neutralizacion/curvas_neutralizacion_1.svg"
+        type="image/svg+xml" width="287" height="215">
+        </object>
+      </center>
+
+      <p>Una propiedad importante es el salto, la región de máxima pendiente
+      (encuadrada en el gráfico), que cuanto más grande sea mejor, ya que la
+      precisión será mayor en la observación del punto final.</p>
+    
+      <p>Una vez se tiene identificada de forma teórica la zona del salto puede
+      escogerse el indicador más adecuado.</p>
+    
+      <p>Siempre el valorante es un protolito, ácido o base de Brönsted, fuerte.
+      En el caso de la valoración de un ácido fuerte:</p>
+    
+        <p style="margin-left:30px">
+          $\ce{HA + H2O -&gt; A- + H3O+ \quad $C$_A \quad}$ valorado</p>
+    
+        <p style="margin-left:30px">
+          $\ce{H3O+ + B- -&gt; HB + H2O \quad $C$_B \quad}$ valorante</p>
+      
+      <p>B.P. (balance protónico):</p>
+      
+        <p style="margin-left:30px">
+          $[\ce{H3O+}] + [\ce{HB}] = [\ce{OH-}] + [\ce{A-}]$</p>
+          
+      <p>La relación entre $C_{\ce{B}}$ y $C_{\ce{A}}$ viene dada por: $C_{\ce{B}} =
+      f \cdot C_{\ce{A}}$, donde $f$ representa la fracción valorada. Cuando $f = 1
+      \Rightarrow$ punto de equivalencia.</p>
+      
+      <p>A partir de las ecuaciones, para $\,f &lt; 1$:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            [\ce{H3O+}] = C_{\ce{A}} - f C_{\ce{A}} + \! \cancel{[\ce{OH-}]}
+            \Leftarrow
+            \begin{array}[t]{l}
+              C_{\ce{A}} ( 1 - f) \geq \pu{0,447214e-6} \geq 20 [\ce{OH-}] \\[1ex]
+              \begin{aligned}[]
+                [\ce{H3O+}] \geq 20 [\ce{OH-}] &amp;\Rightarrow 20 [\ce{OH-}] \leq
+                \sqrt{\strut 20 \ce{Kw}} \\[1ex]
+                &amp;\Rightarrow [\ce{OH-}] \leq \sqrt{\dfrac{\strut \ce{Kw}}{20}}
+              \end{aligned}
+            \end{array} \\[1ex]
+            \Rightarrow \ce{pH} = \ce{p$C$_A} - \log (1 - f)
+          \end{array}
+          $
+        </p>
+        
+      <p>En el caso que no se negligiera la dilución, se ha de multiplicar
+      $C_{\ce{A}}$ por el siguiente factor corrector: $\frac{\large D}{\large D \;
+      + \; E}$, donde $D$ es el volumen inicial de valorado y $E$ el volumen
+      añadido de valorante.</p>
+      
+      <p>Si $\,f = 1 \Rightarrow [\ce{H3O+}] = [\ce{OH-}] \Rightarrow \ce{pH}$
+      neutro.</p>
+    
+      <p>A partir de $f &gt; 1$:</p>
+    
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            [\ce{OH-}] = \! \cancel{[\ce{H3O+}]} \! + f C_{\ce{A}} - C_{\ce{A}} \;
+            \Leftarrow [\ce{OH-}] \gg [\ce{H3O+}] \\[1ex]
+            \Rightarrow \ce{pH} = \ce{pKw} + \log (f - 1) + \log C_{\ce{A}}
+          \end{array}
+          $
+        </p>
+        
+      <p>Aquí la altura del salto dependerá de la $C_{\ce{A}}$ del valorado. Si es
+      diluido el salto será menor que en uno concentrado.</p>
+      
+      <p>Valoración de un ácido débil:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            \ce{HA +H2O &lt;=&gt; A- + H3O+} \quad \ce{Ka} = 
+            \dfrac{[\ce{A-}][\ce{H3O+}]}{[\ce{HA}]} \\[1ex]
+            \ce{H3O+ + B- -&gt; HB + H2O}
+          \end{array}
+          $
+        </p>
+        
+      <p>Directamente de estas ecuaciones químicas se deduce que para un ácido débil
+      $[\ce{A-}] = C_{\ce{B}} = f C_{\ce{A}}$.</p>
+    
+      <p>Más analíticamente, B.P.:</p>
+    
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            [\ce{A-}] + [\ce{OH-}] = [\ce{HB}] + [\ce{H3O+}] \\[1ex]
+            [\ce{HB}] = C_{\ce{B}} = f C_{\ce{A}} \\[1ex]
+            C_{\ce{A}} = [\ce{HA}] + [\ce{A-}]
+          \end{array}
+          $
+        </p>
+    
+      <p>Mediante estas tres igualdades se halla la siguiente expresión general:</p>
+    
+        <p style="margin-left:30px">
+          $
+          [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{HA}]}{[\ce{A-}]} = \ce{Ka}
+          \dfrac{
+            C_{\ce{A}}(1 - f) - [\ce{H3O+}] + [\ce{OH-}]
+          }{
+            f C_{\ce{A}} + [\ce{H3O+}] - [\ce{OH-}]
+          }
+          $
+        </p>
+        
+      <p>$\ast$ Para $\,f = 0$:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \Rightarrow [\ce{H3O+}] = \ce{Ka}
+          \dfrac{
+            C_{\ce{A}} - [\ce{H3O+}] + [\ce{OH-}]
+          }{
+            [\ce{H3O+}] - [\ce{OH-}]
+          }
+          $
+          </p>
+    
+      <p>Si se hacen las siguiente simplificaciones:</p>
+    
+        <p style="margin-left:30px">
+          $[\ce{OH-}] \ll [\ce{H3O+}] \quad$ normalmente se cumple.</p>
+          
+        <p style="margin-left:30px">
+          $[\ce{H3O+}] \ll C_{\ce{A}} \quad$ no se cumple siempre.</p>
+    
+        <p style="margin-left:30px">
+          $\Rightarrow [\ce{H3O+}] = \sqrt{\strut \ce{Ka} C_{\ce{A}}}$</p>
+          
+      <p>$\ast$ Cuando $\,f = 1$:</p>
+    
+        <p style="margin-left:30px">
+          $
+          \Rightarrow [\ce{H3O+}] = \ce{Ka}
+          \dfrac{
+            [\ce{OH-}] - [\ce{H3O+}]
+          }{
+            C_{\ce{A}} + [\ce{H3O+}] - [\ce{OH-}]
+          }
+          $
+        </p>
+        
+      <p>Haciendo las aproximaciones $[\ce{H3O+}] \ll [\ce{OH-}]$ y $C_{\ce{A}} \gg
+      [\ce{OH-}]$:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \Rightarrow [\ce{H3O+}] = \ce{Ka} \dfrac{[\ce{OH-}]}{C_{\ce{A}}}
+          \Rightarrow [\ce{H3O+}] = \sqrt{\dfrac{\strut \ce{Ka} \ce{Kw}}{C_{\ce{A}}}}
+          $
+        </p>
+    
+      <p>$\ast$ Cuando $\,f &gt; 1$ entonces el $\ce{pH}$ dependerá sólo del
+      valorante. Esto es, $[\ce{OH-}] =$ $(f - 1) C_{\ce{A}}$.</p>
+    
+      <p>$\ast$ Para $0 &lt; f &lt; 1$ si tenemos que $[\ce{OH-}] \ll [\ce{H3O+}]$
+      y $C_{\ce{A}} \gg \ce{K_a}$ entonces $[\ce{H3O+}] =$ $\ce{Ka} \frac{\large 1
+      - \, f}{\large f}$ (disolución amortiguadora). Si se hace la derivada del
+      $\ce{pH}$ frente a $\,f$:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            \begin{aligned}
+              \ce{pH} &amp;= \ce{pKa} - \log (1 - f) + \log f = \\[1ex]
+              &amp;= \ce{pKa} - \log e^{\,\ln (1-f)} + \log e^{\,\ln f} = \\[1ex]
+              &amp;= \ce{pKa} - \log e \, ( \ln (1 - f) - \ln f ) = \\[1ex]
+              &amp;= \ce{pKa} - 0{,}434 \, ( \ln (1 - f) - \ln f ) \\[1ex]
+            \end{aligned} \\[1em]
+            \begin{aligned}
+              \dfrac{d\ce{pH}}{df} &amp;= 0{,}434 \! \left( \dfrac{1}{1-f} +
+              \dfrac{1}{f} \right) = \\[1ex]
+              &amp;= \dfrac{0{,}434}{(1-f) \, f}
+            \end{aligned}
+          \end{array}
+          $
+        </p>
+    
+      <p>Por tanto la pendiente se hace máxima cuando $f = 0$ ó $\,f = 1$. La
+      pendiente en la representación gráfica aumenta al acercarse a estos valores.
+      </p>
+      
+      <p>Puntos necesarios:</p>
+      
+      <center>
+        <table style="border:none">
+          <tr>
+            <td style="border:none">
+              <object data="curvas_neutralizacion/curvas_neutralizacion_2.svg"
+              type="image/svg+xml" width="421" height="221"
+              style="display:inline;margin:0">
+              </object>
+            </td>
+            <td valign="top" style="border:none">
+              $
+              \enspace
+              \begin{array}{l}
+                \ce{HA}, C_{\ce{A}} \smash{\text{ y }} \ce{K_a} \\
+                f = 0{,}5 \Rightarrow \ce{pH} = \ce{pKa} \\
+                f = 2 \Rightarrow [\ce{OH-}] = C_{\ce{A}} \\
+                f = 0 \Rightarrow [\ce{H3O+}] = \sqrt{\strut \ce{Ka} C_{\ce{A}}} \\
+                \begin{aligned}
+                  f = 1 &amp;\Rightarrow \ce{A-} \\
+                  &amp;\Rightarrow [\ce{H3O+}] =
+                  \sqrt{\dfrac{\strut \ce{Ka} \ce{Kw}}{C_{\ce{A}}}} \\
+                  &amp;\hphantom{\Rightarrow {}} (\smash{\text{centro del salto}}) 
+                \end{aligned}
+              \end{array}
+              $
+            </td>
+          </tr>
+        </table>
+      </center>
+    
+    
+      <p>Calculo del salto:</p>
+    
+        <p style="margin-left:30px">
+          $
+          \begin{array}{l}
+            f = 0{,}5 \Rightarrow \ce{pH} = \ce{pKa} \\[1ex]
+            f = 2 \Rightarrow \ce{pH} = \ce{pKw} + \log C_{\ce{A}}
+          \end{array}
+          $
+        </p>
+    
+      <p>Entonces:</p>
+      
+        <p style="margin-left:30px">
+          $\Delta \ce{pH} = \ce{pH}_{\,f\,=\,2} - \ce{pH}_{\,f\,=\,0{,}5} = \ce{pKw} +
+          \log C_{\ce{A}} - \ce{pKa} = \ce{pKw} + \log(C_{\ce{A}} \ce{Ka})$
+        </p>
+    
+      <p>Además:</p>
+      
+        <p style="margin-left:30px">
+          $
+          \ce{pH}_{\,f\,=\,1} = \ce{pH}_{\,f\,=\,0{,}5} + \dfrac{1}{2} \Delta \ce{pH}
+          $
+        </p>
+      
+      <p>Cuanto más grande sea el salto más exacta será la valoración, ya que el
+      indicador vira a $\pm 1$ unidades de $\ce{pH}$ de su propio $\ce{pKa}$. Los
+      errores que se producen en el valor experimental son los siguientes:</p>
+    
+      <center>
+        <table>
+          <tr style="vertical-align:baseline">
+            <th>
+              $\boldsymbol{C_{\ce{A}} \ce{Ka}}$
+            </th>
+            <th>
+              <strong>error</strong>
+            </th>
+          </tr>
+          <tr style="vertical-align:baseline">
+            <td align="center">
+              $\pu{e-8}$
+            </td>
+            <td align="center">
+              $\pu{-0,0003 \%}$
+            </td>
+          </tr>
+          <tr style="vertical-align:baseline">
+            <td align="center">
+              $\pu{e-10}$
+            </td>
+            <td align="center">
+              $- &gt; \pu{0,03 \%}$
+            </td>
+          </tr>
+          <tr style="vertical-align:baseline">
+            <td align="center">
+              $\pu{e-11}$
+            </td>
+            <td align="center">
+              $\pu{-0,3 \%}$
+            </td>
+          </tr>
+          <tr style="vertical-align:baseline">
+            <td align="center">
+              $\pu{e-12}$
+            </td>
+            <td align="center">
+              $\pu{-3 \%}$
+            </td>
+          </tr>
+        </table>
+      </center>
+    <p class="s4s-noindent">Conforme disminuye el salto el error se hace mayor. Además siempre da por debajo del valor calculado (negativo), ya que la fracción valorada en el momento del viraje cada vez está más lejos del punto de equivalencia.</p>
+
+    </div>
+
+    <div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="formas_valorar.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="mezclas_protolitos.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+   
+    </div>
+  </body>
+</html>

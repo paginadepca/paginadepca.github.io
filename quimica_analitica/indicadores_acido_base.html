@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Indicadores ácido-base">
+    <meta name="keywords" content="indicadores, ácido, base">
+    <title>Indicadores ácido-base</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+    <div id="title">
+
+      <h3>Indicadores ácido-base</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Nos sirven para detectar puntos finales. Son normalmente sustancias orgánicas
+    que se comportan como protolitos débiles tales que disueltos dan coloraciones
+    diferentes dependiendo del $\ce{pH}$.</p>
+    
+      <p style="margin-left:30px">
+        $
+				\def\ieqarrow#1#2{
+					\stackrel{
+						\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+						\overset{#1}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}{
+						\Rule{0pt}{1.5mu}{0pt}
+						\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+						\underset{#2}{
+							\smash{
+								\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}
+				}
+        \ce{HIn + H2O \ieqarrow{}{\large \ce{Ka}} In- + H3O+}
+        $
+      </p>
+      
+      <p style="margin-left:30px">
+        color $\ce{HIn} \neq$ color $\ce{In-}$</p>
+    
+      <p style="margin-left:30px">
+        $
+        \ce{Ka} = \dfrac{[\ce{In-}][\ce{H3O+}]}{[\ce{HIn}]} \Rightarrow \ce{pH} =
+        \ce{pKa} + \log \! \boxed{\!\dfrac{[\ce{In-}]}{[\ce{HIn}]}\!}
+        \Biggl\langle
+        \begin{array}{c}
+          10 \\
+          \smash{\text{ó}} \\
+          1/10
+        \end{array}
+        \leftarrow
+        \begin{array}{l}
+          \smash{\text{para poder observarlo}} \\
+          \smash{\text{debido a la sensibilidad}} \\
+          \smash{\text{del ojo humano.}}
+        \end{array}  
+        $
+      </p>
+      
+      <p style="margin-left:30px">
+        $\ce{pH} = \ce{pKa} \pm 1 \leftarrow$ Intervalo de transición de color o
+        intervalo de viraje.</p>
+    
+    <p>- Clasificación de los indicadores:</p>
+    
+      <p style="text-align:center">
+        tipos
+        $
+        \left\{
+          \begin{array}{l}
+            \smash{\text{ftaleínas (F)}} \\
+            \smash{\text{sulfonftaleínas (SF)}} \\
+            \smash{\text{azocolorantes (A)}} \\
+            \smash{\text{deriv. de trifenilmetano}}
+          \end{array}
+        \right.
+        $
+      </p>
+      
+    <center>
+      <table>
+        <tr>
+          <th><b>nombre</b></th>
+          <th><b>p<span style="font-style:italic">K</span><sub>a</sub></b></th>
+          <th><b>tipo</b></th>
+          <th><b>intervalo viraje</b></th>
+        </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              azul de timol (AT)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              1,65
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              SF
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              1,2 - 2,8
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              r - am
+            </td>
+          </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              anaranjado de metilo (AM)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              3,5
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              A
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              3,1 - 4,5
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              r - am
+            </td>
+          </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              verde de bromocresol (VB)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              4,9
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              SF
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              4,0 - 5,6
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              am - az
+            </td>
+          </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              rojo de metilo (RM)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              5,0
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              A
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              4,4 - 6,2
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              r - am
+            </td>
+          </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              rojo de fenol (RF)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              8,0
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              SF
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              6,4 - 8,2
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              am - r
+            </td>
+          </tr>
+          <tr align="center">
+            <td rowspan="2" align="left" style="border-right-style:none">
+              fenolftaleína (F)
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              9,3
+            </td>
+            <td rowspan="2" style="border-left-style:none;border-right-style:none">
+              F
+            </td>
+            <td style="border-bottom-style:none;border-left-style:none">
+              8,0 - 10
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="border-top-style:none;border-left-style:none">
+              inc - r
+            </td>
+          </tr>
+      </table>
+    </center>
+    
+    <center>
+      <p style="margin-top:0">
+      <small>am: amarillo, az: azul, inc: incoloro, r: rojo.</small>
+      </p>
+    </center>
+    
+    <p>- Estructura química de los indicadores:</p>
+    
+    <center>
+      <object data="indicadores_acido_base/indicadores_acido_base_1.svg"
+      type="image/svg+xml" width="658" height="461">
+      </object>
+    </center>
+    
+    <p>Un grupo que da color se denomina cromóforo. En este caso anterior sería un
+    grupo quinoideo (señalado con la flecha roja).</p>
+    
+    <center>
+      <object data="indicadores_acido_base/indicadores_acido_base_2.svg"
+      type="image/svg+xml" width="517" height="295">
+      </object>
+    </center>
+    
+    <p>La forma ácida del anaranjado de metilo adquiere su coloración a causa del
+    grupo quinona-diimina. El color de la forma básica es debido a la conjugación
+    del grupo azo con los dos anillos aromáticos.</p>
+   
+    </div>
+
+    <div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="ejemplos_curvas_neutralizacion.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="soluciones_valorantes.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+    </div>
+  </body>
+</html>

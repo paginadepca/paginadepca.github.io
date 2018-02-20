@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js","cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Ejemplos de curvas de neutralización">
+    <meta name="keywords" content="ejemplos, curvas, neutralización">
+    <title>Ejemplos de curvas de neutralización</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+    <div id="title">
+
+      <h3>Ejemplos de curvas de neutralización</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>- Valoración de un ácido débil:</p>
+    
+      <p style="margin-left:30px">
+        $\ce{HA}$ con $\ce{pKa} = 4$ y $C_{\ce{A}} = \pu{e-1 M}$.</p>
+        
+    <p>Se dibuja el diagrama logarítmico:</p>
+    
+    <center>
+      <table style="border:none">
+        <tr>
+          <td style="border:none">
+            <object
+            data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_01.svg"
+            type="image/svg+xml" width="320" height="300"
+            style="display:inline;margin:0">
+            </object>
+          </td>
+          <td style="border:none">
+          $
+          \quad
+          \begin{array}{l}
+            \ce{HA + H2O &lt;=&gt; H3O+ + A-} \\[1ex]
+            \ce{2H2O &lt;=&gt; H3O+ + OH-} \\[1em]
+            \ce{Ka} = \dfrac{[\ce{H3O+}][\ce{A-}]}{[\ce{HA}]} \\[1ex]
+            \smash{\text{B.M.}} \rightarrow C_{\ce{A}} = [\ce{HA}] +[\ce{A-}] \\[1ex]
+            \smash{\text{(B.M. $\equiv$ Balance de masas)}}
+          \end{array}
+          $
+          </td>
+        </tr>
+      </table>
+    </center>
+    
+    <center>
+      <p>
+      $
+      \begin{array}{l}
+        C_{\ce{A}} = [\ce{HA}] + \dfrac{\ce{Ka}[\ce{HA}]}{[\ce{H3O+}]}
+        \; \Rightarrow \;
+        \boxed{[\ce{HA}] = \dfrac{C_{\ce{A}} [\ce{H3O+}]}{[\ce{H3O+}] + \ce{Ka}}} \\[1ex]
+        C_{\ce{A}} = \dfrac{[\ce{H3O+}][\ce{A-}]}{\ce{Ka}} + [\ce{A-}]
+        \; \Rightarrow \;
+        \boxed{[\ce{A-}] = \dfrac{C_{\ce{A}} \ce{Ka}}{[\ce{H3O+}] + \ce{Ka}}}
+      \end{array}
+      $
+      </p>
+    </center>
+    
+    <p>Puede dibujarse este diagrama de manera que sea útil, o más fácil de
+    interpretar, para representar la valoración:</p>
+    
+    <center>
+      <object data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_02.svg"
+      type="image/svg+xml" width="660" height="390">
+      </object>
+    </center>
+    
+    <p>1) $f = 0 \rightarrow \ce{HA}$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace [\ce{A-}] + \! \cancel{[\ce{OH-}]} \! = [\ce{H3O+}]$</p>
+        
+    <p>2) $f = 0{,}5 \rightarrow \ce{HA + A-}$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace \! \cancel{[\ce{H3O+}]} \! + [\ce{HA}] = [\ce{A-}] + \!
+        \cancel{[\ce{OH-}]}$</p>
+        
+    <p>3) $f = 1 \rightarrow [\ce{A-}]$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace [\ce{HA}] + \! \cancel{[\ce{H3O+}]} = [\ce{OH-}]$</p>
+        
+    <p>4) $f = 2 \rightarrow \ce{A- + OH-}$</p>
+    
+      <p style="margin-left:30px">
+        $[\ce{OH-}] = C_{\ce{A}}$</p>
+        
+    <p>Con estos cuatros primeros puntos se vuelve a demostrar que el salto diminuye con la debilidad y la dilución del ácido.</p>
+    
+    <p>5) $f = 1{,}5$</p>
+    
+      <p style="margin-left:30px">
+        $
+        \begin{array}{l}
+          [\ce{OH-}] = \dfrac{1}{2} C_{\ce{A}} \\[1ex]
+          \Rightarrow \log [\ce{OH-}] = -0{,}3 + \log C_{\ce{A}}
+        \end{array}
+        $
+      </p>
+    
+    <p>Para otros puntos hay que basarse en la fracción valorada $\,f$:</p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{6)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log [\ce{A-}] = -2 \\[1ex]
+        \log [\ce{HA}] \approx -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{A-}]}{C_{\ce{A}}} = 0{,}1 \quad f = 0{,}1}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{7)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{HA}] = -2 \\[1ex]
+        \log[\ce{A-}] \approx -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{HA}]}{C_{\ce{A}}} = 0{,}1 \quad f = 0{,}9}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{8)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{OH-}] = -2 \\[1ex]
+        \log[\ce{A-}] = -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{OH-}]}{C_{\ce{A}}} = 0{,}1 \quad f = 1{,}1}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{9)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{HA}] = -3 \\[1ex]
+        \log[\ce{A-}] = -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{HA}]}{C_{\ce{A}}} = 0{,}01 \quad f = 0{,}99}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{10)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{OH-}] = -3 \\[1ex]
+        \log[\ce{A-}] = -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{OH-}]}{C_{\ce{A}}} = 0{,}01 \quad f = 1{,}01}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{11)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{HA}] = -4 \\[1ex]
+        \log[\ce{A-}] = -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{HA}]}{C_{\ce{A}}} = 0{,}001 \quad f = 0{,}999}
+      $
+    </p>
+    
+    <p>
+      $
+      \rlap{\smash{\text{12)}}}\hspace{30px}
+      \begin{array}[t]{l}
+        \log[\ce{OH-}] = -4 \\[1ex]
+        \log[\ce{\ce{A-}}] = -1
+      \end{array}
+      \lower 2ex
+      {{}\Rightarrow \dfrac{[\ce{OH-}]}{C_{\ce{A}}} = 0{,}001 \quad f= 1{,}001}
+      $
+    </p>
+    
+    <p>- Valoración de una mezcla de protolitos débiles:</p>
+    
+      <p style="margin-left:30px">
+        $
+        \begin{array}{l}
+          \ce{
+            HA_{\it 1}, HA_{\it 2} \! \rightarrow p$K$_{HA_{\smash{\it 1}}} \! &lt;
+            p$K$_{HA_{\smash{\it 2}}}, $C$_{HA_{\smash{\it 1}}} \! = 
+            $C$_{HA_{\smash{\it 2}}} \! = $C$_{A}
+          } \\[1ex]
+          \ce{HA_{\it 1} &lt;=&gt; A_{\it 1}- \! + H+} \\[1ex]
+          \ce{HA_{\it 2} &lt;=&gt; A_{\it 2}- \! + H+}
+        \end{array}
+        $
+    </p>
+
+    <center>
+      <object data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_03.svg"
+      type="image/svg+xml" width="660" height="390">
+      </object>
+    </center>
+    
+    <p>Un $\Delta \ce{pH} \geq 3$ permite visualizar bien el salto.</p>
+    
+    <p>En el caso de un monoprótico débil aislado el $\ce{pKa}$ ha de estar
+    comprendido entre $4$ y $8$ ($4 \leq \ce{pKa} \leq 8$) para poderse visualizar
+    con nitidez el salto. Aunque el valor de $4$, límite inferior, sólo es
+    importante en mezclas con otros protolitos fuertes, ya que el salto podría ser
+    pequeño.</p>
+    
+    <p>- Valoración de una mezcla de protolitos débiles y fuertes:</p>
+    
+      <p style="margin-left:30px">
+        $
+				\def\ieqarrow#1#2{
+					\stackrel{
+						\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+						\overset{#1}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}{
+						\Rule{0pt}{1.5mu}{0pt}
+						\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+						\underset{#2}{
+							\smash{
+								\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}
+				}
+        \begin{array}{l}
+          C_{\ce{A}} \quad \ce{HA_{\it 1} -&gt; H+ + A_{\it 1}-} \\[1ex]
+          C_{\ce{A}} \quad \ce{HA_{\it 2} \ieqarrow{}{\ce{pKa}} H+ + A_{\it 2}-}
+        \end{array}
+        $
+      </p>
+
+    <center>
+      <object
+      data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_04.svg"
+      type="image/svg+xml" width="600" height="400">
+      </object>
+    </center>
+    
+    <p>$\color{blue}{1}$) $\,f = 0 \rightarrow [\ce{H+}] = [\ce{A_{\it 1}-}] =
+    C_{\ce{A}}$</p>
+    
+    <p>$\color{blue}{2}$) $\,f = 0{,}5 \rightarrow [\ce{H+}] = \dfrac{1}{2}
+    C_{\ce{A}}$</p>
+    
+    <p>$\color{blue}{3}$) $\,f = 1 \rightarrow \ce{A_{\it 1}-, HA_{\it 2}}$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace [\ce{A_{\it 2}-}] = [\ce{H3O+}]$</p>
+        
+    <p>$\color{blue}{4}$) $\,f = 1{,}5$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace [\ce{A_{\it 2}-}] = [\ce{HA_{\it 2}}]$</p>
+        
+    <p>$\color{blue}{5}$) $\,f = 2$</p>
+    
+      <p style="margin-left:30px">
+        B.P. $\enspace [\ce{HA_{\it 2}}] = [\ce{OH-}]$</p>
+        
+    <p>$\color{blue}{6}$) $\,f = 3 \rightarrow [\ce{OH-}] = C_{\ce{A}}$</p>
+    
+    <p>- Valoración de especies polipróticas:</p>
+    
+      <p style="margin-left:30px">
+        $
+        \begin{array}{l}
+          \ce{H3PO4} \quad C_{\ce{A}} = \pu{0,1 M} \\[1ex]
+          \ce{pK_{a1}} = 2{,}15 \\[1ex]
+          \ce{pK_{a2}} = 7{,}21 \\[1ex]
+          \ce{pK_{a3}} = 12{,}33
+        \end{array}
+        $
+      </p>
+
+    <center>
+      <object
+      data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_05.svg"
+      type="image/svg+xml" width="660" height="390">
+      </object>
+    </center>
+    
+    <p>En gris, partiendo del diagrama logarítmico, representación de la curva de
+    valoración aproximada, ya que mediante cálculo analítico, trazo negro, se
+    observa como en los extremos de la escala de $\ce{pH}$ los valores, por ejemplo,
+    destacados en la gráfica son, al no ser válidas las simplificaciones hechas en
+    la primera, ligeramente diferentes (no coinciden con el $\ce{pKa}$). Aunque
+    desde un punto de vista práctico, lo importante, y así se refleja, es que los
+    saltos se producen entre los $\ce{pKa}$.</p>
+    
+    <p>- Valoración de una mezcla de base fuerte y débil:</p>
+    
+      <p style="margin-left:30px">
+        $
+        \left.
+        \begin{array}{l}
+          \ce{NaOH} \\
+          \ce{NaAcO} \; (\ce{pKa} = 4{,}75)
+        \end{array}
+        \right\} C_{\ce{B}}
+        $
+      </p>
+    
+    <center>
+      <object
+      data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_06.svg"
+      type="image/svg+xml" width="600" height="400">
+      </object>
+    </center>
+    
+    <p>- Pareja ácido y base débiles:</p>
+    
+      <p style="margin-left:30px">
+        $\ce{NaAcO}$ y $\ce{HAcO}\;$ ($C_{\ce{A}} = C_{\ce{B}}$)</p>
+        
+    <center>
+      <object
+      data="ejemplos_curvas_neutralizacion/ejemplos_curvas_neutralizacion_07.svg"
+      type="image/svg+xml" width="400" height="400">
+      </object>
+    </center>
+    
+    <p>El salto para la base es pequeño a causa de su mayor debilidad
+    ($\ce{pKb} = 9{,}25$).</p>
+   
+    </div>
+   
+    <div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="mezclas_protolitos.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="indicadores_acido_base.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+    </div>
+  </body>
+</html>

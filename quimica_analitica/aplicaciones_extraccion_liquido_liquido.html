@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Aplicaciones de la extracción líquido-líquido">
+    <meta name="keywords" content="aplicaciones, extracción, líquido-líquido">
+    <title>Aplicaciones de la extracción líquido-líquido</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Aplicaciones de la extracción líquido-líquido</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>- Se aplica mucho para extraer iones metálicos de disoluciones
+    acuosas mediante ligandos orgánicos voluminosos que se complejan
+    alrededor del metal formando un complejo neutro, poco soluble en agua
+    pero más en disolvente orgánico. A esta extracción se la denomina
+    extracción de quelatos orgánicos:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}
+					&amp;
+					\mspace{8mu}
+					\begin{gathered}
+						\llap{\text{equilibrio}} \rlap{\text{ heterogéneo}} \\
+						\uparrow
+					\end{gathered} \\
+					\ce{
+						M_{(aq)} + $\ce{R}_{\substack{\rm (aq) \\ \rm (o)}}$ \mspace{-8mu}
+						&amp;&lt;=&gt; MR_{(o)}
+					} \\
+					&amp;\mspace{8mu}
+					K_{\rm ex} \! =
+					f(\ce{$K$_{MR},\! $K$_{D(MR)},\! $K$_{D(R)},\! $K$_{a(R)}})
+				\end{aligned}
+				\text{p.ej.:} \enspace
+				\ce{Ca^2+ + 2
+				\underset{
+					\substack{
+						\uparrow \\ \llap{\text{ox}} \text{i} \rlap{\text{na}}
+					}
+				}{ox} &lt;=&gt; Ca(ox)2}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\def\ieqarrow#1#2{
+					\stackrel{
+						\Newextarrow{\xrightharpoon}{10,10}{0x21C0}
+						\overset{#1}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}{
+						\Rule{0pt}{1.5mu}{0pt}
+						\Newextarrow{\xleftharpoon}{10,10}{0x21BD}
+						\underset{#2}{
+							\smash{
+								\xleftharpoon[\hphantom{#2}]{\hphantom{#1}}
+							}
+						}
+					}
+				}
+				\begin{aligned}
+					&amp;\ce{MR_{(aq)} \ieqarrow{}{\large K_{\rm D}} MR_{(o)}}
+				\end{aligned}
+				$
+			</p>
+			
+    <p>- Purificación de alcaloides (purificación de sustancias orgánicas).
+    En este caso es importante la propiedad ácido-base del analito:</p>
+    
+			<p style="margin-left:30px">
+				<object
+				data="aplicaciones_extraccion_liquido_liquido/aplicaciones_extraccion_liquido_liquido_1.svg"
+				type="image/svg+xml" width="168" height="116"
+				style="margin:-10px;display:inline-block;vertical-align:-1.23em">
+				</object>
+				$\qquad K_{\rm D} = \dfrac{[\ce{B}]_{\rm o}}{[\ce{B}]_{\rm aq}}$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{HB+_{(aq)} &lt;=&gt; B_{(aq)} + H+_{(aq)}} \qquad
+				\ce{Ka} = \dfrac{[\ce{H+}] [\ce{B}]_{\rm aq}}{[\ce{HB+}]_{\rm aq}}
+				$
+			</p>
+
+    <p>Es más práctico trabajar con la $D$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\eqalign{
+					D &amp;= \dfrac{\sum [\ce{B}]_{\rm o}}{\sum [\ce{B}]_{\rm aq}} =
+					\dfrac{
+						\overset{
+							\begin{subarray}{c}
+								\text{no}
+								\rlap{
+									\text{ se consideran equilibrios concurrentes en la fase
+									orgánica.}
+								} \\
+								\downarrow
+							\end{subarray}
+						}{\strut [\ce{B}]}_{\rm o}
+					}{
+						[\ce{HB+}]_{\rm aq} + [\ce{B}]_{\rm aq}
+					} =
+					\dfrac{
+						[\ce{B}]_{\rm o}
+					}{
+						\dfrac{[\ce{H+}] [\ce{B}]_{\rm aq}}{\ce{Ka}} + [\ce{B}]_{\rm aq}
+					} =
+					\dfrac{
+						[\ce{B}]_{\rm o}
+					}{
+						[\ce{B}]_{\rm aq} \left( \dfrac{[\ce{H+}]}{\ce{Ka}} + 1 \right)
+					} = \\[1ex]
+					&amp;= \dfrac{K_{\rm D}}{1 + \dfrac{[\ce{H+}]}{\ce{Ka}}}
+				}
+				$
+			</p>
+			
+    <p>Representación de $\log D$ vs. $\ce{pH}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{pH} \ll \ce{pKa} \Rightarrow \log D = \log (K_{\rm D} \ce{Ka})
+				+ \ce{pH}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\ce{pH} \gg \ce{pKa} \Rightarrow \log D = \log K_{\rm D}$</p>
+				
+		<center>
+			<object data="aplicaciones_extraccion_liquido_liquido/aplicaciones_extraccion_liquido_liquido_2.svg"
+			type="image/svg+xml" width="500" height="400"></object>
+		</center>
+		
+    <p>También como consecuencia:</p>
+    
+    <center>
+			<object data="aplicaciones_extraccion_liquido_liquido/aplicaciones_extraccion_liquido_liquido_3.svg"
+			type="image/svg+xml" width="500" height="400"></object>
+		</center>
+		
+    <p>Se ha planteado una base neutra orgánica, pero también puede ser
+    que sea un ácido orgánico neutro. Como:</p>
+    
+    <center>
+			<object data="aplicaciones_extraccion_liquido_liquido/aplicaciones_extraccion_liquido_liquido_4.svg"
+			type="image/svg+xml" width="306" height="112" style="display:inline-block;vertical-align:middle"></object>
+			<object data="aplicaciones_extraccion_liquido_liquido/aplicaciones_extraccion_liquido_liquido_5.svg"
+			type="image/svg+xml" width="300" height="260"
+			style="display:inline-block;vertical-align:middle;margin:0"></object>
+		</center>
+
+		</div>
+		
+		<div id="foot">
+   
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="extraccion_simple_multiple.html" title="Anterior">&lt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

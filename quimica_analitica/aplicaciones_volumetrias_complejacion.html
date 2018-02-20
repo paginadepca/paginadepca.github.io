@@ -1,0 +1,235 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Aplicaciones de volumetrías de complejación">
+    <meta name="keywords" content="aplicaciones, volumetrías, complejación">
+    <title>Aplicaciones de volumetrías de complejación</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+    
+			<h3>Aplicaciones de volumetrías de complejación</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>
+      <span style="text-decoration:underline">Dureza del agua</span>
+    </p>
+    
+    <p>La dureza del agua se interpreta históricamente como la capacidad
+    que tienen los cationes divalentes de sustituir a los cationes de
+    sodio o potasio que forman parte de las sales orgánicas de los jabones,
+    disminuyendo su solubilidad y por tanto su eficacia.</p>
+    
+    <p>La dureza del agua se expresa como: $\pu{mg \ce{CaCO3}/l}$
+    disolución</p>
+    
+    <p>Aunque en la disolución se tienen más cationes:</p>
+    
+    <p style="text-align:center">
+      $
+			\def\rarrow#1#2{
+        \stackrel{#1}{
+          \underset{#2}{
+            \Rule{0pt}{0.3em}{0pt}
+            \smash{
+              \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+            }
+          } 
+        }
+      }
+      \ce{
+				$\underbrace{\ce{M^{n+}}}_{
+						\begin{subarray}{c}
+							\ce{Ca^2+} \\[0.5ex]
+							\ce{Mg^2+} \\[0.5ex]
+							\llap{
+								\smash{
+									\left.
+									\begin{subarray}{c}
+										\text{en cantidades} \\
+										\text{de trazas}
+									\end{subarray}
+									\right\rbrace
+								}
+								\leftarrow {\large \lbrace}
+							}\ce{M^3+}
+						\end{subarray}
+					}$ + Y
+				\rarrow{}{
+					\begin{subarray}{c}
+						\ce{NET} \\[0.5ex]
+						\ce{pH \mathord{=} 10}
+					\end{subarray}
+				}
+				MY
+			}
+      $
+    </p>
+    
+    <p>De todas formas, se interpreta de la siguiente manera:</p>
+    
+			<p style="margin-left:30px">
+				$V_{\ce{Y}} \rightarrow$ moles $\ce{Y} \rightarrow$ moles
+				$\mspace{-18mu} \overset{
+					\begin{subarray}{c}
+						\smash[t]{\text{metal divalente}} \\
+						\uparrow
+					\end{subarray}
+				}{\boxed{\ce{M^2+}}} \mspace{-18mu} \rightarrow$ moles $\ce{Ca^2+}
+				\rightarrow$ moles $\ce{CaCO3}$</p>
+				
+    <p>Esto sería la determinación de la <em>dureza total</em>.</p>
+    
+    <p>La <em>dureza permanente</em> sería lo siguiente:</p>
+    
+			<p style="margin-left:30px;margin-bottom:-1ex">
+				muestra $\;\rarrow{}{
+					\begin{subarray}{c}
+						+Q \\[0.5ex]
+						\text{ebullición}
+					\end{subarray}
+				}
+				\ce{
+					\mspace{-24mu}
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\text{procedentes de} \\
+							\text{los bicarbonatos}
+						\end{subarray}
+					}{MCO3} \mspace{-27mu} v \! + \boxed{\ce{M}}} \!
+				\rightarrow$ Dureza permanente en $\pu{mg \ce{CaCO3}/l}$</p>
+					
+    <p>La <em>dureza temporal</em>:</p>
+    
+			<p style="margin-left:30px">
+				D. total – D. permanente = Dureza temporal</p>
+				
+    <p>Para discriminar entre calcio y magnesio, se determina el primero:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{
+					Ca^2+ + Y
+					\rarrow{
+						\begin{subarray}{c}
+							\ce{Mg(OH)2_{(s)}} \\
+							\Uparrow \\
+							\ce{pH \mathord{=} 12}
+						\end{subarray}
+					}{
+						\text{murexida}
+					}
+					CaY
+				} \Rightarrow
+				$ moles $\ce{Ca^2+}$
+			</p>
+			
+			<p style="margin-left:30px">
+				Se restan a los moles totales y se tienen por tanto los moles de
+				magnesio.</p>
+    
+    <p>
+      <span style="text-decoration:underline">Método de Liebig</span>
+    </p>
+    
+    <p>El analito aquí son iones de cianuro y el reactivo valorante
+    cationes de plata. La valoración transcurre así:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{
+					2 \underset{\displaystyle \strut A}{\vphantom{\ce{Ag+}} CN-} +
+					\underset{\displaystyle \strut R}{\vphantom{\ce{CN-}} Ag+}
+					&lt;=&gt; [Ag(CN)2]-
+				}
+				$
+			</p>
+    
+    <p style="margin-left:30px">
+			$
+			\ce{
+				[Ag(CN)2]- + Ag+ &lt;=&gt;
+				\mspace{-18mu}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{indicador del punto final} \rlap{\leftarrow \,
+						\text{turbidez}}
+					\end{subarray}
+				}{Ag[Ag(CN)2]_{(s)}}
+			}
+			$
+    </p>
+
+		</div>
+		
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a
+          href="complexometria.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="equilibrios_oxidacion_reduccion.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

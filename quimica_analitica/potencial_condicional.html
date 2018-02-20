@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Potencial condicional">
+    <meta name="keywords" content="potencial, condicional">
+    <title>Potencial condicional</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Potencial condicional</h3>
+			
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">			
+
+    <p>Potencial estándar condicional: Potencial estándar afectado por la
+    presencia de reacciones secundarias o parásitas.</p>
+    
+    <p>En primer lugar se ha de tener en cuenta la presencia de
+    electrolitos inertes que alteran la fuerza iónica, y por tanto afectan
+    sobre el coeficiente de actividad (o la actividad) de las especies
+    reaccionantes.</p>
+    
+				<p style="margin-left:60px">
+					$\ce{ox + $n$ $e$ &lt;=&gt; red}$</p>
+					
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \dfrac{0{,}059}{n}
+				\log \dfrac{\{\rm ox\}}{\{\rm red\}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				E = E° +
+				\overbrace{
+					\boxed{
+						\dfrac{0{,}059}{n} \log \dfrac{\gamma_{\rm ox}}{\gamma_{\rm red}}
+					}
+				}^{\boxed{\displaystyle \gamma}}
+				{}+{} \dfrac{0{,}059}{n} \log \dfrac{[\rm ox]}{[\rm red]}
+				$
+			</p>
+			
+    <p>Normalmente se aproxima que $\gamma_{\rm ox} \approx \gamma_{\rm red}
+    \approx 1$. Esto no se cumple cuando $I$ (fuerza iónica) es elevada, que
+    hace que $\gamma_{\rm ox} {\uparrow}$ y $\gamma_{\rm red} {\uparrow}$, y
+    se han de considerar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\underset{
+					\displaystyle
+					\begin{array}{l}
+						\,\shortparallel \\[-1ex]
+						E° \rlap{{}+ \dfrac{0{,}059}{n} \log \dfrac{\gamma_{\rm ox}}{\gamma_{\rm red}}}
+					\end{array}
+				}{E°{}'_{\!\! \rm ox/red}}
+				\rightarrow \text{potencial formal o condicional}
+				$
+			</p>
+			
+    <p>
+      <span style="text-decoration:underline">Oxidación-reducción y
+      acidez</span>
+    </p>
+    
+    <p>Por ejemplo, el potencial condicional de la siguiente reacción:</p>
+    
+				<p style="margin-left:60px">
+					$\ce{ox + 2m H+ + n $e^-$ -&gt; red + m H2O}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \boxed{\gamma} +
+				\dfrac{0{,}059}{n} \log \dfrac{[\ce{H+}]^{2m} [\rm ox]}{[\rm red]}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} = 
+				\underbrace{
+					E°_{\!\! \rm ox/red} + \boxed{\gamma} - 
+					0{,}059 \dfrac{2m}{n} \ce{pH}
+				}_{
+					\begin{subarray}{c}
+						E°{}' \rightarrow \text{ potencial condicional} \\
+						\text{(incluye la fuerza iónica} \\
+						\text{y, en este caso, el $\ce{pH}$)}
+					\end{subarray}
+				}
+				{} + \dfrac{0{,}059}{n} \log \dfrac{[\rm ox]}{[\rm red]}
+				$
+			</p>
+			
+    <p>Por tanto, en este ejemplo, aunque los $\ce{H+}$ no sufren rédox,
+    el $\ce{pH}$ del medio condiciona el potencial y por consiguiente el
+    poder oxidante o reductor.</p>
+    
+    <p>
+      <span style="text-decoration:underline">Oxidación-reducción y
+      complejos</span>
+    </p>
+    
+    <p>En el caso de los metales se pueden producir reacciones parásitas
+    de complejación:</p>
+    
+    <center>
+			<object data="potencial_condicional/potencial_condicional_1.svg"
+			tyype="image/svg+xml" width="296" height="112"></object>
+    </center>
+    
+    <p>Se puede pues tener coeficientes de reacción:</p>
+    
+			<p style="margin-left:30px">
+				$\alpha_{{\rm ox}(\ce{L})} = \dfrac{[\rm ox']}{[\rm ox]}$</p>
+			
+			<p style="margin-left:30px">
+				$\alpha_{{\rm red}(\ce{L'})} = \dfrac{[\rm red']}{[\rm ox]}$
+			</p>
+    
+    <p>Sin considerar $\gamma$ y sin reacciones parásitas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \dfrac{0{,}059}{n}
+				\log \dfrac{[\rm ox]}{[\rm red]}
+				$
+			</p>
+			
+    <p>Pero con reacciones parásitas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \dfrac{0{,}059}{n}
+				\log \dfrac{[\rm ox'] \alpha_{red}}{[\rm red'] \alpha_{ox}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				E_{\rm ox/red} =
+				\underbrace{
+					E°_{\!\! \rm ox/red} + \dfrac{0{,}059}{n}
+					\log \dfrac{\alpha_{\rm red}}{\alpha_{\rm ox}}
+				}_{\displaystyle E°{}'_{\!\! \rm ox/red}} + 
+				\dfrac{0{,}059}{n} \log \dfrac{[\rm ox']}{[\rm red']}
+				$
+			</p>
+			
+    <p>Casos particulares:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\alpha_{\rm red} \neq 1 \\
+					\alpha_{\rm ox} = 1
+				\end{array}
+				\right\} \Rightarrow
+				$ poder oxidante $\uparrow$
+			</p>
+		
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{l}
+						\alpha_{\rm red} = 1 \\
+						\alpha_{\rm ox} \neq 1
+					\end{array}
+				\right\} \Rightarrow
+				$ poder oxidante $\downarrow$
+			</p>
+		
+    <p>
+      <span style="text-decoration:underline">Oxidación-reducción y
+      precipitación</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\ce{ox + n $e$ &lt;=&gt; red} \\[1ex]
+					\ce{x + red &lt;=&gt; ${\rm red(x)}$ \! v} \quad
+					K_{\rm ps} = [\ce{x}] [\ce{red}]
+				\end{array}
+				$
+			</p>
+			
+			
+			<p style="margin-left:60px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \dfrac{0{,}059}{n}
+				\log \dfrac{\{\rm ox\}}{\{\rm red\}}
+				\underset{
+					\begin{aligned}
+						&amp;\mspace{1mu}\uparrow \\
+						\llap{K_{\rm ps}} \,&amp;=\, \rlap{[\rm x][red]}
+					\end{aligned}
+				}{=} E°_{\!\! \rm ox/red} + \boxed{\gamma} +
+					\dfrac{0{,}059}{n} \log \dfrac{[\rm ox][x]}{K_{\rm ps}}
+				$
+			</p>
+			
+			<p style="margin-left:60px">
+				$
+				E_{\rm ox/red} = E°_{\!\! \rm ox/red} + \boxed{\gamma} +
+				\underset{
+					\scriptstyle
+					\text{cte. $\rightarrow$ positiva y grande}
+				}{
+					\boxed{\dfrac{0{,}059}{n} \log \left( \dfrac{1}{K_{\rm ps}}
+					\right)}
+				} + \dfrac{0{,}059}{n} \log ([\rm ox] [x])
+				$
+			</p>
+			
+			<p style="margin-left:60px">
+				$[x] {\uparrow} \Rightarrow E_{\rm ox/red} {\uparrow} \Rightarrow$
+				poder oxidante $\uparrow$</p>
+				
+			<p style="margin-left:60px">
+				Si $[\rm x] =$ cte. también sería un término constante en la
+				ecuación anterior.</p>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="determinacion_potencial_redox_ph.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="diagramas_potencial_ph.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

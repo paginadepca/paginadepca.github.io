@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Diagramas logarítmicos de concentración">
+    <meta name="keywords" content="diagramas, logarítmicos, concentración">
+    <title>Diagramas logarítmicos de concentración</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Diagramas logarítmicos de concentración</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Con el objetivo de hacer una representación gráfica del $\log C_i$
+    vs. $E$:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{a A_{ox} + $n$_{\ce{A}} $e$ &lt;=&gt; b A_{red}}$</p>
+					
+			<p style="margin-left:30px">
+				$
+				E_{\ce{A}} = \rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}} +
+				\dfrac{0{,}059}{n_{\ce{A}}}
+				\log \dfrac{[\ce{A_{ox}}]^a}{[\ce{A_{red}}]^b}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\!
+					\underset{
+						\begin{subarray}{c}
+							\displaystyle \uparrow \\[0.5ex]
+							\displaystyle \ce{p$e$} \\[1ex]
+							\displaystyle \Downarrow
+						\end{subarray}
+					}
+					{\boxed{\dfrac{E_{\ce{A}}}{0{,}059}}} =
+					\dfrac{\rlap{\hphantom{E}°}E_{\lower 2mu {\ce{A}}}}{0{,}059}
+					+ \dfrac{1}{n_{\ce{A}}}
+					\log \dfrac{[\ce{A_{ox}}]^a}{[\ce{A_{red}}]^b} \\
+					\ce{p$e$_A} = \ce{p$\rlap{\hphantom{e}°}e_{\lower 2mu {\ce{A}}}$}
+					+ \dfrac{1}{n_{\ce{A}}}
+					\log \dfrac{[\ce{A_{ox}}]^a}{[\ce{A_{red}}]^b}
+				\end{array}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\ce{p$e$_A} = \ce{p$\rlap{\hphantom{e}°}e_{\lower 2mu {\ce{A}}}$}
+				+ \dfrac{a}{n_{\ce{A}}} \log [\ce{A_{ox}}]
+				- \dfrac{b}{n_{\ce{A}}} \log [\ce{A_{red}}]
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\Rightarrow \log C_i = f(\ce{p$e$_{\ce{A}}}) \quad
+				i = \ce{A_{ox}} \text{ ó } \ce{A_{red}}$</p>
+				
+    <p>Puede observarse, por ejemplo, que para el caso más sencillo de
+    $a = b = 1$:</p>
+    
+			<p style="margin-left:30px">
+				$\ce{p$e$_A} &lt; \ce{p$\rlap{\hphantom{e}°}e_{\lower 2mu \ce{A}}$} 
+				\rightarrow [\ce{A_{red}}] &gt; [\ce{A_{ox}}]$</p>
+			
+			<p style="margin-left:30px">
+				$\ce{p$e$_A} = \ce{p$\rlap{\hphantom{e}°}e_{\lower 2mu \ce{A}}$} 
+				\rightarrow [\ce{A_{red}}] = [\ce{A_{ox}}]$</p>
+				      
+			<p style="margin-left:30px">
+				$\ce{p$e$_A} > \ce{p$\rlap{\hphantom{e}°}e_{\lower 2mu \ce{A}}$} 
+				\rightarrow [\ce{A_{ox}}] > [\ce{A_{red}}]$</p>				
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{
+					MnO4- + 8H+ + 5 $e^-$ &lt;=&gt; Mn^2+ + 4 H2O
+				} \qquad E° = \pu{1,51 v}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$[\ce{H+}] = 1$</p>
+				
+				<p style="margin-left:60px">
+					$
+					E = E° + \dfrac{0{,}059}{5} \log \dfrac{[\ce{MnO4-}]}{[\ce{Mn^2+}]}
+					$
+				</p>
+				
+				<p style="margin-left:60px">
+					$
+					\dfrac{E}{0{,059}} = \dfrac{E°}{0{,}059} +
+					\dfrac{1}{5} \log [\ce{MnO4-}] - \dfrac{1}{5} \log [\ce{Mn^2+}]
+					$
+				</p>
+    
+				<p style="margin-left:60px">
+					$\ce{p$e$} = 25{,}6 + \dfrac{1}{5} \log [\ce{MnO4-}] -
+					\dfrac{1}{5} \log [\ce{Mn^2+}]$</p>
+    <p>
+      <span style="text-decoration:underline">1ª región</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					[\ce{Mn^2+}] \gg [\ce{MnO4-}] \rightarrow
+					C_{\ce{A}} = [\ce{Mn^2+}] &amp;+ \! \cancel{[\ce{MnO4-}]}
+					\Rightarrow [\ce{Mn^2+}] = C_{\ce{A}} \\
+					&amp;\uparrow \\
+					[\ce{Mn^2+}] &amp;\geq 100 [\ce{MnO4-}] \quad
+					(\text{error} \leq \pu{1\%})
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\ce{p$e$} = \ce{p$e$°} + \dfrac{1}{5}	\log
+				\underbrace{
+					\boxed{\dfrac{[\ce{MnO4-}]}{[\ce{Mn^2+}]}}
+				}_{\large \leq \frac{1}{100}} \Rightarrow
+				\begin{aligned}[t]
+					&amp;\ce{p$e$} \leq \ce{p$e$°} + \dfrac{1}{5} \log \dfrac{1}{100} =
+					\ce{p$e$°} - \dfrac{2}{5} \\[1ex]
+					&amp;\ce{pe} \leq 25{,}6 - 0{,}4 = 25{,}2
+				\end{aligned}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{p$e$} = \ce{p$e$°} +
+				\dfrac{1}{5} \log \dfrac{[\ce{MnO4-}]}{C_{\ce{A}}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\log [\ce{MnO4-}] = 5 (\ce{p$e$} - \ce{p$e$°}) + \log C_{\ce{A}}
+				\Rightarrow \log [\ce{MnO4-}] = \text{cte.} + 5 \ce{p$e$}
+				$
+			</p>
+			
+    <p>
+      <span style="text-decoration:underline">2ª región</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				[\ce{Mn^2+}] \ll [\ce{MnO4-}] \rightarrow
+				\begin{array}[t]{l}
+					C_{\ce{A}} = \cancel{[\ce{Mn^2+}]} \! + [\ce{MnO4-}] \\[1ex]
+					[\ce{MnO4-}] \geq 100 [\ce{Mn^2+}] \quad
+					(\text{error} \leq \pu{1 \%}) \\[1ex]
+					\ce{p$e$} \geq \ce{p$e$°} + 2/5 \quad \text{y} \quad 
+					\log [\ce{Mn^2+}] = \text{cte.}{}' - 5 \ce{p$e$}
+				\end{array}
+				$
+			</p>
+			
+    <p>
+      <span style="text-decoration:underline">3º, punto del sistema</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}
+					\ce{p$e$} =
+					\ce{p$e$°} &amp;\Rightarrow [\ce{MnO4-}] = [\ce{Mn^2+}] \\[1em]
+					&amp;\Rightarrow [\ce{MnO4-}] = [\ce{Mn^2+}] =
+					\dfrac{C_{\ce{A}}}{2} \\[1ex]
+					&amp;\hphantom{\Rightarrow {}} \log [\ce{MnO4-}] =
+					\log [\ce{Mn^2+}] = \log C_{\ce{A}} - 0{,}3
+				\end{aligned}
+				$
+			</p>
+			
+    <p>Con todo esto, la gráfica, para $C_{\ce{A}} = \pu{0,1M}$, queda
+    así:</p>
+    
+		<center>
+			<object data="diagramas_logaritmicos_concentracion/diagramas_logaritmicos_concentracion_1.svg"
+			type="image/svg+xml" width="600" height="400">
+			</object>
+		</center>
+		
+    <p>Otro ejemplo, con un sistema con más de dos estados de oxidación:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\begin{align}
+				&amp;\ce{Fe^3+ + $e^-$ &lt;=&gt; Fe^2+} \quad
+				\rlap{\hphantom{E}°}E_{\ce{Fe^3+/\mspace{1mu}Fe^2+}} = \pu{0,77v}
+				&amp;&amp; C_{\ce{A}} = \pu{0,1M} \\[1ex]
+				&amp;\ce{Fe^2+ + 2 $e^-$ &lt;=&gt; Fe} \quad
+				\rlap{\hphantom{E}°}E_{\ce{Fe^2+/\mspace{1mu}Fe}} = \pu{-0,44v}
+				&amp;&amp;[\ce{Fe^3+}] + [\ce{Fe^2+}] = \pu{0,1 M} \\[1ex]
+				&amp;\ce{p$\rlap{\hphantom{e}°}e_{\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}
+				= 13{,}05 \quad
+				\ce{p$e°_{\!\!\ce{Fe^2+/\mspace{1mu}Fe}}$} = -7{,}46
+				&amp;&amp;
+			\end{align}
+			$
+		</p>
+		
+    <p>Zonas y puntos del diagrama:</p>
+    
+    <p>
+			<span style="display:inline-block;border-bottom:1px solid black">
+				$\ce{p$e$} &gt; \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}$
+			</span>
+    </p>
+    
+    <p>Se considera que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\dfrac{[\ce{Fe^3+}]}{[\ce{Fe^2+}]} \geq 100 \Rightarrow
+				\ce{p$e$} - \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} \geq 2
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\dfrac{[\ce{Fe^3+}]}{[\ce{Fe^2+}]} \geq 100 \Rightarrow
+				[\ce{Fe^3+}] + \! \cancel{[\ce{Fe^2+}]} \! = \pu{0,1 M} = C_{\ce{A}}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\ce{p$e$} = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+				\log C_{\ce{A}} - \log [\ce{Fe^2+}] \Rightarrow
+				\log [\ce{Fe^2+}] = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}
+				+ \log C_{\ce{A}} - \ce{p$e$}
+				$
+			</p>
+			
+    <p>
+      <span style="display:inline-block;border-bottom:1px solid black">
+				$\ce{p$e$} = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}$
+			</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$[\ce{Fe^3+}] = [\ce{Fe^2+}] = C_{\ce{A}} /\mspace{1mu} 2$</p>
+			
+			<p style="margin-left:30px">
+				$\log [\ce{Fe^3+}] = \log [\ce{Fe^2+}] = \log C_{\ce{A}} - 0{,}3$
+			</p>
+			
+    <p>
+      <span style="display:inline-block;border-bottom:1px solid black">
+				$\ce{p$e$} &lt; \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}$
+			</span>
+    </p>
+    
+    <p>Se considera que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\dfrac{[\ce{Fe^3+}]}{[\ce{Fe^2+}]} \leq 0{,}01 \Rightarrow
+					\cancel{[\ce{Fe^3+}]} \! + [\ce{Fe^2+}] =
+					\pu{0,1 M} = C_{\ce{A}} \\[1ex]
+					\hphantom{\dfrac{[\ce{Fe^3+}]}{[\ce{Fe^2+}]}} \Downarrow \\[1ex]
+					\ce{p$e$} - \ce{p$e°_{\!\!\ce{Fe^3+}/\mspace{1mu}\ce{Fe^2+}}$}
+					\leq \log \dfrac{1}{100} = -2 \\[1ex]
+					\ce{p$e$} = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+					\log [\ce{Fe^3+}] - \log C_{\ce{A}} \Rightarrow
+					\log[\ce{Fe^3+}] = \ce{p$e$} -
+					\underbrace{
+						\ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} + \log C_{\ce{A}}
+					}_{\text{cte.}}
+				\end{array}
+				$
+			</p>
+    
+    <p>Comenzará a aparecer $\ce{Fe}$ metálico cuando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{p$e$} = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+				\dfrac{1}{2} \log [\ce{Fe^2+}] \quad
+				\begin{array}[t]{l}
+					\smash[b]{\text{La especie $\ce{Fe}$ es un sólido y no aparece
+					en la}} \\
+					\smash[t]{\text{expresión	de $\ce{p$e$}$.}}
+				\end{array}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\ce{p$e$} = \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+				\dfrac{1}{2} \log C_{\ce{A}}$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\ce{p$e$} = -7{,}46 + \dfrac{1}{2} \log 0{,}1 = -7{,}96$</p>
+
+    <p>Por tanto a $\ce{p$e$} &lt; −7{,}96$ predominio de $\ce{Fe}$.</p>
+    
+    <p>
+      <span style="display:inline-block;border-bottom:1px solid black">
+				$\ce{p$e$} \lt \ce{p$e°_{\!\!\ce{Fe^2+/\mspace{1mu}Fe}}$}$
+			</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$\log\{\ce{Fe}\} = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\log [\ce{Fe^2+}] =
+				2 \ce{p$e$} - 2 \ce{p$e°_{\!\!\ce{Fe^2+/\mspace{1mu}Fe}}$}$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\ce{p$e$} &amp;= \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$}
+					+ \log [\ce{Fe^3+}] - \log [\ce{Fe^2+}] = \\[1ex]
+					&amp;= \ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+					2 \ce{p$e°_{\!\!\ce{Fe^2+/\mspace{1mu}Fe}}$} - 2 \ce{p$e$}
+					+ \log [\ce{Fe^3+}]
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\Rightarrow \log [\ce{Fe^3+}] =
+				-(\ce{p$e°_{\!\!\ce{Fe^3+/\mspace{1mu}Fe^2+}}$} +
+				2 \ce{p$e°_{\!\!\ce{Fe^2+/\mspace{1mu}Fe}}$}) + 3 \ce{p$e$}
+				$
+			</p>
+			
+    <p>La gráfica, teniendo en cuenta lo visto, queda así:</p>
+    
+    <center>
+			<object data="diagramas_logaritmicos_concentracion/diagramas_logaritmicos_concentracion_2.svg"
+			type="image/svg+xml" width="600" height="400">
+			</object>
+    </center>
+
+		</div>
+  
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="equilibrios_oxidacion_reduccion.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="electrodos_indicadores_referencia.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Complexometría">
+    <meta name="keywords" content="complexometría">
+    <title>Complexometría</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Complexometría</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Reactivo valorante: EDTA $\pu{0,1M}$ o menor (apróx. hasta
+    $\pu{0,02 M}$).</p>
+    
+    <p>Comercialmente el EDTA se presenta como la sal bisódica sólida:
+    $\ce{Na2H2Y.2H2O}$.</p>
+    
+    <p>A partir de esta sal se prepara apróximadamente la disolución
+    $\pu{0,1M}$. A continuación se procede a la estandarización con
+    $\ce{Zn}$ ó $\ce{CaCO3}$.</p>
+    
+    <p>En el caso del $\ce{Zn}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\def\rarrow#1#2{
+          \stackrel{#1}{
+            \underset{#2}{
+              \Rule{0pt}{0.3em}{0pt}
+              \smash{
+                \xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+              }
+            } 
+          }
+        }
+        \ce{
+					Zn \rarrow{\smash{\text{disolución}}}{\ce{HCl} \smash{\text{ diluido}}}
+					Zn^2+ -&gt; pH = {9-10}, NET
+				}
+        $
+			</p>
+			
+    <p>En el caso del $\ce{CaCO3}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\ce{
+					CaCO3 \rarrow{\smash{\text{disolución}}}{\ce{HCl} \smash{\text{ diluido}}}
+					Ca^2+ -&gt; pH = 12, \smash{\text{murexida o calcón}}
+				}
+				$
+			</p>
+			
+    <p>Formas de llevar a cabo la valoración:</p>
+    
+			<p style="margin-left:30px">$\bullet$ Directa:</p>
+			
+				<p style="margin-left:60px">$\ce{Bi^3+ \ pH = {1-2}}$, XO</p>
+					
+				<p style="margin-left:60px">
+					$\ce{Ca^2+ \ pH \mathord{\sim} 12}$, murexida, calcón.</p>
+						
+				<p style="margin-left:60px">
+					$
+					\left.
+					\begin{array}{l}
+						\ce{Mg^2+} \\[1ex]
+						\ce{Mn^2+} \, (\dagger) \\[1ex]
+						\ce{Zn^2+}
+					\end{array} \;
+					\right\} \;
+					\ce{pH} = 8\smash{\text{-}}10$, NET
+				</p>
+				
+				<p style="margin-left:60px">
+					($\dagger$) En estas condiciones $\ce{Mn^2+ \mspace{-9mu}
+					\rarrow{\ce{O2}}{} \mspace{-6mu} MnO2 \! v}\!$ (suspensión que
+					impide ver el viraje). Por tanto se hace necesario un reactivo
+					auxiliar reductor $\rightarrow$ ácido ascórbico.</p>
+					
+			<p style="margin-left:30px">$\bullet$ Indirecta:</p>
+			
+				<p style="margin-left:60px">$\ce{A + M -&gt; AM -&gt; M + R}$</p>
+				
+			<p style="margin-left:30px">
+				El analito $\ce{A}$ no puede dar reacción directa con el EDTA. Se
+				hace reaccionar con un metal $\ce{M}$ que sí puede valorarse.</p>
+				
+				<p style="margin-left:60px">
+					$
+					\ce{PO4^3- \mspace{-9mu} \rarrow{\!\!\ce{Mg^2+{,}\,NH4+}\!\!}{} \mspace{-6mu}
+					MgNH4PO4_{(s)}}
+					\mspace{-1mu}
+					\Biggl\langle
+					\mspace{-1mu}
+					\begin{array}{l}
+						\smash{
+							\rarrow{\!\!\smash{\text{dis.}}\!\!}{} \ce{Mg^2+} \!
+							\leftarrow
+							\smash{\text{se determina}} \Rightarrow \smash{\text{moles }}
+							\ce{PO4^3-}
+						} \\
+						\smash{\text{ ó}} \\
+						\smash{
+							\! \ce{+ Mg^2+ \! {(exc.)}} \mspace{2mu} {\leftarrow}
+							\mspace{2mu} \smash{\text{se determina}} \mspace{2mu}
+							{\Rightarrow} \mspace{2mu} \smash{\text{moles}} \mspace{2mu}
+							\ce{PO4^3-}
+						}
+					\end{array}
+					$
+				</p>
+    
+				<p style="margin-left:60px">
+					$\ce{SO4^2- \rarrow{\ce{Ba^2+}}{} BaSO4 \! v} \! + \,
+					\boxed{\text{exceso } \ce{Ba^2+}} \leftarrow$ se
+					determina $\Rightarrow$ moles $\ce{SO4^2-}$</p>
+					
+			<p style="margin-left:30px">$\bullet$ Retroceso:</p>
+			
+				<p style="margin-left:60px">
+					$\ce{A + R(exceso) -&gt; P} + \boxed{\text{exceso } \ce{R}}
+					\rarrow{}{\ce{M} \smash{\text{ patrón}}}$ moles de $\ce{P}
+					\Rightarrow$ moles $\ce{A}$</p>
+					
+			<p style="margin-left:30px">Motivos para utilizarla:</p>
+    
+				<p style="margin-left:60px">- falta de indicador.</p>
+    
+				<p style="margin-left:60px">- cinética lenta.</p>
+				
+				<p style="margin-left:60px">- $\ce{A}$ es un compuesto poco
+				soluble.</p>
+    
+    <p style="margin-left:30px">Ejemplos:</p>
+    
+				<p style="margin-left:60px">$\ast \; \ce{BaSO4_{(s)}}$</p>
+				
+				<p style="margin-left:60px">
+					$
+					\ast \; \ce{Al^3+} + \,
+					\underset{
+						\overset{\scriptstyle \uparrow}{\smash[b]{\text{patrón}}} \quad
+						\overset{\scriptstyle \downarrow}{V \smash[b]{\text{ medido}}}
+					}{\boxed{\text{EDTA en exceso}}}
+					\rarrow{\ce{pH \mathord{=} {2-7}}}{+Q \, (\smash{\text{ebullición}})}
+					\ce{Al{-}EDTA + {exceso} EDTA}
+					$
+				</p>
+					
+					<p style="margin-left:90px">
+						exceso EDTA
+						$+ \;
+						\underset{
+							\overset{\scriptstyle \uparrow}{\smash[b]{\text{patrón}}}
+						}{
+							\boxed{
+								\begin{array}{l}
+									\ce{Pb^2+} \\
+									\ce{Zn^2+} \\
+									\ce{Mg^2+}
+								\end{array}
+							}
+						}
+						\rarrow{
+							\begin{subarray}{c}
+								\ce{pH \mathord{=} {5-5,5}} \\
+								{\text{XO}}
+							\end{subarray}
+						}{}
+						\ce{M{-}EDTA}
+						$
+					</p>
+					
+			<p style="margin-left:30px">$\bullet$ Desplazamiento:</p>
+    
+			<p style="margin-left:30px">Se emplea cuando no se tiene disponible
+			un indicador adecuado para el metal a determinar. En este método,
+			una solución del complejo de EDTA con magnesio (o zinc) se añade
+			a la de analito. La combinación EDTA y analito es más estable,
+			produciéndose una reacción de desplazamiento tal que:</p>
+    
+				<p style="margin-left:60px">
+					$\ce{MgY^2- + M^2+ -&gt; MY^2- + Mg^2+}$</p>
+					
+			<p style="margin-left:30px">A continuación se valora el magnesio
+			liberado, que equivale a la cantidad de analito, con EDTA.</p>
+			
+			<p style="margin-left:30px">Ejemplo:</p>
+    
+			<p style="margin-left:30px">Debido a la inestabilidad del complejo
+			$\ce{Ca{-}NET}$ se ha de recurrir en este caso a una valoración por
+			sustitución o desplazamiento.</p>
+			
+    <p style="text-align:center">
+			$
+			\ce{
+				Ca^2+ + EDTA
+				\rarrow{}{
+
+						\begin{subarray}{|l}
+							\ce{NET} \\[0.5ex]
+							\ce{pH = {9-10} \; NH4+ \! \mathord{/} NH3}
+						\end{subarray}
+
+				}
+				Ca{-}EDTA
+			}
+			$
+		<p>
+			
+		<p style="text-align:center">
+			<small>
+				No es posible debido a la inestabilidad del complejo $\ce{Ca{-}NET}$
+				<br>que no permite observar el viraje.
+			</small>
+    </p>
+
+			<p style="margin-left:30px">
+				Lo que se hace es añadir un paqueña cantidad de complexonato de
+				magnesio ($\ce{MgY}$) a la solución. Si se tiene en cuenta que:
+			</p>
+			
+				<p style="margin-left:60px">
+					$K_{\ce{MgY}} &lt; K_{\ce{CaY}}$</p>
+    
+				<p style="margin-left:60px">
+					$K_{\ce{Mg{-}NET}} &gt; K_{\ce{Ca{-}NET}}$ ,</p>
+    
+			<p style="margin-left:30px">
+				el proceso esquemáticamente sería el siguiente:</p>
+				
+    <center>
+      <object data="complexometria/complexometria_1.svg" type="image/svg+xml"
+      width="611" height="206">
+      </object>
+    </center>
+   
+    </div>
+   
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a
+          href="selectividad_valoraciones_edta.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="aplicaciones_volumetrias_complejacion.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+    </div>
+  </body>
+</html>

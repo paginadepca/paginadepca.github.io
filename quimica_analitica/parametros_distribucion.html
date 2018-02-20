@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["[mhchem]/mhchem.js","cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Ajax.config.path["mhchem"] =
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Parámetros de distribución">
+    <meta name="keywords" content="parámetros, distribución">
+    <title>Parámetros de distribución</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Parámetros de distribución</h3>
+
+      <ul>
+        <li><a href="quimica_analitica.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+			<p style="margin-left:30px">
+				<object data="parametros_distribucion/parametros_distribucion_1.svg"
+				type="image/svg+xml" width="237" height="123"></object>
+			</p>
+			
+    <p>Se pueden tener equilibrios laterales de $\ce{A}$ en la fase acuosa,
+    siendo su $C_{\ce{A}}$ la suma de todas las especies resultantes de
+    estos equilibrios laterales. En la fase orgánica también pueden existir,
+    pero no es demasiado habitual (polimerización).</p>
+    
+    <p>Debido a estas reacciones "parásitas" es más útil en la práctica
+    trabajar con otro parámetro:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\underset{
+					\begin{subarray}{l}
+						\displaystyle \,\bigl\uparrow\, \\
+						\text{r} \rlap{\text{azón de distribución}}
+					\end{subarray}
+				}{\,D\,} \!= \dfrac{[\ce{A'}]_{\rm o}}{[\ce{A'}]_{\rm aq}} =
+				\dfrac{\sum [\ce{A}]_{\rm o}}{\sum [\ce{A}]_{\rm aq}}
+				$
+			</p>
+    
+    <p>Que es como la $K_{\rm D}'$.</p>
+    
+    <p>También se puede trabajar con retroextracciones, que es el proceso
+    inverso al descrito. Es decir, el analito aislado en el extractante
+    que pase a la otra fase.</p>
+    
+    <p>Otro parámetro es el rendimiento de la extracción $R \: \%$:</p>
+    
+			<p style="margin-left:30px">
+				$[\ce{A}]_{\rm aq}$ inicial $\rightarrow C_{\ce{A}}, V_{\rm aq}
+				\Rightarrow
+				\underset{
+					\begin{subarray}{c}
+						\large \uparrow \\
+						\text{en} \rlap{\text{ masa}}
+					\end{subarray}
+				}{Q_{\ce{A}}} = C_{\ce{A}} V_{\rm aq}$
+			</p>
+			
+			<p style="margin-left:30px">
+				Después de la extracción:</p>
+				
+				<p style="margin-left:60px">
+					$Q_{\ce{A}} = Q_{\ce{A} \rm (aq)} + Q_{\ce{A} \rm (o)}$</p>
+					
+				<p style="margin-left:60px">
+					$\llap{\Rightarrow {}} R = \dfrac{Q_{\ce{A} \rm (o)}}{Q_{\ce{A}}}
+					\times 100$</p>
+					
+    <p>Se establece la relación entre la $K_{\rm D}$ y la $R$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{l}
+						Q_{\ce{A}} = Q_{\ce{A} \rm (aq)} + Q_{\ce{A} \rm (o)} \\[1ex]
+						V_{\rm aq}, V_{\rm o}
+					\end{array}
+				\right\}
+				\Rightarrow \mspace{-34mu}
+				\begin{array}[t]{c}
+						\underbrace{
+							C_{\ce{A}} V_{\rm aq} = [\ce{A}]_{\rm aq} V_{\rm aq} +
+							[\ce{A}]_{\rm o} V_{\rm o}
+						} \\
+						\uparrow \\
+						\text{no se consideran reacciones laterales}
+				\end{array}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				Siendo:</p>
+					
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					K_{\rm D} = \dfrac{[\ce{A}]_{\rm o}}{[\ce{A}]_{\rm aq}}
+					&amp;\Rightarrow		
+					C_{\ce{A}} V_{\rm aq} = [\ce{A}]_{\rm aq} V_{\rm aq} + 
+					K_{\rm D} [\ce{A}]_{\rm aq} V_{\rm o} =
+					[\ce{A}]_{\rm aq} (V_{\rm aq} + K_{\rm D} V_{\rm o}) \\[1ex]
+					&amp;\Rightarrow [\ce{A}]_{\rm aq} =
+					\dfrac{C_{\ce{A}} V_{\rm aq}}{V_{\rm aq} + K_{\rm D} V_{\rm o}}
+					= \dfrac{C_{\ce{A}}}{1 + \dfrac{K_{\rm D} V_{\rm o}}{V_{\rm aq}}}
+					\mspace{-4mu}
+					\underset{
+						\begin{subarray}{c}
+							\large \uparrow \\[.5ex]
+							\large \frac{V_{\rm o}}{V_{\rm aq}} \rlap{{} = \, \beta}
+						\end{subarray}
+					}{{=} \rlap{\smash{\; \dfrac{C_{\ce{A}}}{1 + K_{\rm D} \beta}}}}
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				Entonces:</p>
+				
+			<p style="margin-left:30px">
+				$
+				\eqalign{
+					R &amp;= \dfrac{Q_{\ce{A} \rm (o)}}{Q_{\ce{A}}} \times 100 =
+					\dfrac{Q_{\ce{A}} - Q_{\ce{A} \rm (aq)}}{Q_{\ce{A}}} \times 100
+					= \left( 1 - 
+					\dfrac{
+						[\ce{A}]_{\rm aq} \cancel{V_{\rm aq}}
+					}{
+						C_{\ce{A}} \cancel{V_{\rm aq}}
+					} \right) \times 100 = \\[1ex]
+					&amp;= \left( 1 -
+					\dfrac{
+						\cancel{C_{\ce{A}}}
+					}{
+						(1 + K_{\rm D} \beta) \cancel{C_{\ce{A}}}
+					}	\right) \times 100 = \left(
+					\dfrac{
+						\cancel{1} + K_{\rm D} \beta - \cancel{1}
+					}{
+						1 + K_{\rm D} \beta
+					}	\right) \times 100					
+				}
+				$
+			</p>
+
+			<p style="margin-left:30px">
+				$
+				\llap{\Rightarrow {}} R =
+				\dfrac{K_{\rm D} \beta}{1 + K_{\rm D} \beta} \times 100
+				$
+			</p>
+			
+		<p>
+			Si
+			$
+			\begin{aligned}[t]
+				\beta = 1 &amp;\rightarrow R =
+				\dfrac{K_{\rm D} 100}{1 + K_{\rm D}} \\[1ex]
+				&amp;\rightarrow K_{\rm D} = \dfrac{R}{100 - R}
+			\end{aligned}
+			$
+		</p>
+			
+    <p>Puede construirse, para este caso, la siguiente tabla:</p>
+    
+			<table style="margin-left:30px;text-align:center;border:none">
+				<tr style="vertical-align:baseline">
+					<th style="width:3em">$\boldsymbol{K_{\rm D}}$</th>
+					<th style="width:3em">$\boldsymbol{R}$ <b>(%)</b></th>
+				</tr>
+				<tr>
+					<td style="border-right:none">1</td>
+					<td style="border-left:none">50</td>
+				</tr>
+				<tr>
+					<td style="border-right:none">&gt; 1</td>
+					<td style="border-left:none">&gt; 50</td>
+				</tr>
+				<tr style="vertical-align:baseline">
+					<td style="border:medium solid black;border-right:none">
+						$\ge 10^3$
+					</td>
+					<td style="border:medium solid black;border-left:none">
+						$\ge 99{,}9
+						\rlap{
+							\smash{
+							\enspace
+							\begin{aligned}[t]
+								\rightarrow {}
+								&amp;\text{por tanto lo interesante es trabajar con
+								$K_{\rm D}$ de esta} \\
+								&amp;\text{magnitud.}
+							\end{aligned}
+							}
+						}
+						$
+					</td>
+				</tr>
+				<tr style="vertical-align:baseline">
+					<td style="border-right:none">$\le 10^{-3}$</td>
+					<td style="border-left:none">$\le 0{,}1$</td>
+				</tr>
+			</table>
+    
+    <p>En caso de que hayan reacciones parásitas se tiene que trabajar
+    con la $D$. Las expresiones son similares a las anteriores:</p>
+    
+			<p style="margin-left:30px">
+				$R = \dfrac{D}{1+D} \times 100 \enspace$ si $\,\beta = 1$</p>
+				
+    <p>A diferencia de las $K_{\rm D}$ que están tabuladas, las $D$
+    dependen de las condiciones experimentales y se habrán de calcular.</p>
+
+		</div>
+		
+		<div id="foot">
+
+      <a href="quimica_analitica.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="extraccion_liquido_liquido.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="extraccion_simple_multiple.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>
