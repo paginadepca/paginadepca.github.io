@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="203.84" width="271" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 271.00418 203.84134">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="marker5492" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5494" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker5408" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5410" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4335" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-126.77 -155.03)">
+  <g>
+   <path id="path4233" d="m152.02 222.49-0.006 46.561c-0.12712 1.2022-0.19166 2.4102-0.19336 3.6192 0.0112 1.1072 0.075 2.2133 0.19141 3.3144v0.3164h0.0391c1.0683 10.228 6.595 19.463 15.104 25.238-6.394 5.6153-10.064 13.709-10.076 22.219 0.006 16.359 13.272 29.617 29.631 29.613 16.358-0.003 29.618-13.265 29.619-29.623v-0.0234c-0.0159-8.5082-3.6891-16.599-10.084-22.211 8.4373-5.7126 13.955-14.829 15.104-24.953h0.0195v-0.12305c0.14127-1.2549 0.21429-2.5165 0.21875-3.7793v-0.0274c-0.0137-1.1683-0.086-2.3351-0.21679-3.4961l0.0176-46.645" stroke="#000" fill="#ececec"/>
+   <path id="path4229" fill="#ececec" stroke="#c0c0c0" d="m214.55 313.64a29.625 29.625 0 0 1 -10.329 34 29.625 29.625 0 0 1 -35.533 -0.37329 29.625 29.625 0 0 1 -9.6126 -34.21"/>
+   <path id="path4237" d="m214.55 313.64h-55.693" stroke="#c0c0c0" stroke-width="1px" fill="none"/>
+   <path id="rect4258" d="m200.67 220.49v45.718h-27.941v-45.718" stroke="#000" fill="#fff"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path id="path4260" d="m186.7 222.62v109.47"/>
+   <path id="path4292" d="m152.02 222.49v-7.7708"/>
+   <path id="path4294" d="m172.73 220.49v-5.7708"/>
+   <path id="path4296" d="m186.7 222.62v-7.7708"/>
+   <path id="path4298" d="m200.67 220.49v-5.7708"/>
+   <path id="path4300" d="m221.38 222.49v-7.7708"/>
+   <path id="path4302" marker-end="url(#Arrow2Mend)" d="m147.66 179.08 10.34 24.71"/>
+  </g>
+  <text id="text5130" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="173.15672" x="135.00977" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5132" x="135.00977" y="173.15672">ev || SCE</tspan></text>
+  <path id="path5134" fill="none" stroke="#000" stroke-dasharray="2, 2" d="m153.4 168.78a10.566 8.2464 0 0 1 -10.563 8.2464 10.566 8.2464 0 0 1 -10.568 -8.2428 10.566 8.2464 0 0 1 10.559 -8.2501 10.566 8.2464 0 0 1 10.573 8.2391"/>
+  <path id="path5400" marker-end="url(#marker5408)" d="m189.22 246.48 48.039-11.765" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text5478" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="15px" line-height="125%" y="231.77397" x="242.94118" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5480" line-height="125%" y="231.77397" x="242.94118">ref. interna:</tspan><tspan id="tspan5482" line-height="125%" y="250.52397" x="242.94118">AgCl/Ag o calomelanos</tspan></text>
+  <path id="path5484" marker-end="url(#marker5492)" d="m238.24 324.95-17.647 5.8431" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text5580" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="15px" line-height="125%" y="322.02512" x="243.82022" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan5582" line-height="125%" y="322.02512" x="243.82022">bulbo de pared</tspan><tspan id="tspan5584" line-height="125%" y="340.77512" x="243.82022">fina de vidrio</tspan></text>
+ </g>
+</svg>
