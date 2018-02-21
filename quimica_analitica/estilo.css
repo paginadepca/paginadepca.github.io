@@ -40,7 +40,7 @@
          local("STIXTwoMath"),
          url("fonts/STIX2Math.woff2"),
          url("fonts/STIX2Math.woff");
-    unicode-range: U+21CC, U+21D2-21D3, U+2215, U+223C, U+226A-226B,U+229D, U+2264;
+    unicode-range: U+21CC, U+21D2-21D3, U+2203, U+2215, U+223C, U+226A-226B,U+229D, U+2264;
     }
 
 body {
