@@ -1,0 +1,1700 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Diagonalización de matrices">
+    <meta name="keywords" content="diagonalización, matrices">
+    <title>Diagonalización de matrices</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Diagonalización de matrices</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+			
+			<p style="margin-left:30px">
+				$
+				\rm A \in M_{n}(\mathbb{R})
+				\qquad A:
+				\begin{pmatrix}
+					λ_{11} &amp; \dotso &amp; λ_{\rm n1} \\
+					\vdots &amp; &amp; \vdots \\
+					λ_{\rm 1n} &amp; \dotso &amp; λ_{\rm nn}
+				\end{pmatrix} 
+				$
+			</p>
+		
+			<p style="margin-left:30px">
+				$
+				λ_{\rm ij}
+				\:
+				\left\lvert
+				\:
+				\begin{array}{l}
+					\rm i \leftarrow \text{columna} \\
+					\rm j \leftarrow \text{fila}
+				\end{array}
+				\right.
+				$
+			</p>
+
+    <p>Se dirá que $\rm A$ es invertible si existe $\rm B \in M_{n}(\mathbb{R})$
+    tal que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A \cdot B = B \cdot A = Id =
+				\begin{pmatrix}
+					1 &amp;&amp; \LARGE 0 \\
+					&amp; \ddots  &amp; \\
+					\LARGE 0 &amp;&amp; 1
+				\end{pmatrix}
+				\qquad
+				\begin{array}{l}
+					\rm B = A^{-1} \\
+					\rm A = B^{-1}
+				\end{array}
+				$
+			</p>
+			
+		<p>$\bullet \: \rm A \in M_{1}(\mathbb{R}) \quad A = (λ)$</p>
+		
+		<p>$\hphantom{\bullet \:} \rm A \rightarrow$ invertible $\Leftrightarrow
+		λ \neq 0$</p>
+		
+		<p>$\hphantom{\bullet \:} \rm A^{-1} = (λ^{-1})$</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; 4 \\
+					3 &amp; 2
+				\end{pmatrix}
+				\in M_{2}(\mathbb{R})
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A^{-1} =
+				\begin{pmatrix}
+					-\dfrac{2}{10} &amp; \dfrac{4}{10} \\[1ex]
+					\dfrac{3}{10} &amp; -\dfrac{1}{10}
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm A \cdot A^{-1} =
+				\begin{pmatrix}
+					1 &amp; 4 \\
+					3 &amp; 2
+				\end{pmatrix}
+				\begin{pmatrix}
+					-\dfrac{2}{10} &amp; \dfrac{4}{10} \\[1ex]
+					\dfrac{3}{10} &amp; -\dfrac{1}{10}
+				\end{pmatrix} =
+				\begin{pmatrix}
+					-\dfrac{2}{10} + \dfrac{12}{10} &amp; \dfrac{4}{10} -
+					\dfrac{4}{10} \\[1ex]
+					-\dfrac{6}{10} + \dfrac{6}{10} &amp; \dfrac{12}{10} -
+					\dfrac{2}{10}
+				\end{pmatrix} =
+				\begin{pmatrix}
+					1 &amp; 0 \\
+					0 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+		
+    <p>Ejemplo:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\begin{gather}
+				\rm
+				\underset{
+					\displaystyle \strut
+					A \in M_{3}(\mathbb{R})
+				}{
+					A =
+					\begin{pmatrix}
+						1 &amp; -1 &amp; 1 \\
+						0 &amp; 1 &amp; 1 \\
+						1 &amp; 0 &amp; 1
+					\end{pmatrix}
+				}
+				\qquad
+				A^{-1} =
+				\begin{pmatrix}
+					-1 &amp; -1 &amp; 2 \\
+					-1 &amp; 0 &amp; 1 \\
+					1 &amp; 1 &amp; -1
+				\end{pmatrix} \\[1em]
+				\rm
+				A \cdot A^{-1} =
+				\begin{pmatrix}
+					1 &amp; 0 &amp; 0 \\
+					0 &amp; 1 &amp; 0 \\
+					0 &amp; 0 &amp; 1
+				\end{pmatrix}
+			\end{gather}
+			$
+		</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>• Observaciones:</p>
+    
+			<ol>
+				<li>La inversa si existe es única.</li>
+				<li>Si $\rm A \cdot B = Id \Rightarrow B \cdot A = Id$</li>
+				<li>
+					$\rm A \cdot B = Id$
+					<p>$\rm \det(A \cdot B) = \det(A) \cdot \det(B) = \det(Id) = 1$</p>
+					<p>Por tanto:</p>
+					<p style="margin-left:2em">
+						$\rm \det(A^{-1}) = 1 \mathbin{/} \det(A) \mathrel{;} \det(A)
+						\neq 0$
+					</p>
+					<p>Entonces:</p>
+					<p style="margin-left:2em">
+						$\rm A$ es invertible $\Leftrightarrow \det({\rm A}) \neq 0$
+					</p>
+				</li>
+			</ol>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -2 \\
+					2 &amp; -4
+				\end{pmatrix}
+				\mathrel{;}
+				\det(A) = 1 \cdot (-4) - 2 \cdot (-2) = 0 \Rightarrow A
+				$ no es invertible.
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>• Método de trabajo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; 4 \\
+					3 &amp; 2
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \det(A) = 2 - 12 = -10 \Rightarrow det(A) \neq 0 \Rightarrow
+				A$ es invertible.</p>
+					
+			<p style="margin-left:30px">
+				1º. Transponer:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rightarrow
+				\begin{pmatrix}
+					1 &amp; 3 \\
+					4 &amp; 2
+				\end{pmatrix}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				2º. Adjuntos:</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rightarrow
+				\begin{pmatrix}
+					2 &amp; -4 \\
+					-3 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				3º. Dividir por $\rm \det(A)$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rightarrow
+				\begin{pmatrix}
+					-\dfrac{2}{10} &amp; \dfrac{4}{10} \\[1ex]
+					\dfrac{3}{10} &amp; -\dfrac{1}{10}
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				Entonces:</p>
+				
+			<p style="margin-left:30px">
+				$
+				\DeclareMathOperator{\adj}{Adj}
+				\boxed{\rm A^{-1} =\dfrac{\adj(A^t)}{\det(A)}}
+				$
+			</p>
+
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -1 &amp; 1 \\
+					0 &amp; 1 &amp; 1 \\
+					1 &amp; 0 &amp; 1
+				\end{pmatrix}
+				\qquad
+				\det(A) = -1 \neq 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\xrightarrow[]{\smash[b]{\text{transp.}}}
+				\begin{pmatrix}
+					1 &amp; 0 &amp; 1 \\
+					-1 &amp; 1 &amp; 0 \\
+					1 &amp; 1 &amp; 1
+				\end{pmatrix}
+				\xrightarrow[]{\smash[b]{\text{adjuntos}}}
+				\begin{pmatrix}
+					1 &amp; 1 &amp; -2 \\
+					1 &amp; 0 &amp; -1 \\
+					-1 &amp; -1 &amp; 1
+				\end{pmatrix}
+				\xrightarrow[]{\smash[b]{\text{div. det.}}}
+				\begin{pmatrix}
+					-1 &amp; -1 &amp; 2 \\
+					-1 &amp; 0 &amp; 1 \\
+					1 &amp; 1 &amp; -1
+				\end{pmatrix}
+				$
+			</p>
+						
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Definición:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A, B \in M_{n}(\mathbb{R})$</p>
+			
+			<p style="margin-left:30px">
+				$\rm A$ y $\rm B$ son equivalentes si $\rm \exists \: C \in 
+				M_{n}(\mathbb{R})$, invertible, tal que	$\rm A = C \cdot B \cdot
+				C^{-1}$ $\mathrel{;}$ $\rm (B = C^{-1} \! \cdot A \cdot C)$.</p>
+    
+			<p style="margin-left:30px">
+				• $\rm A, B \in M_{1}(\mathbb{R}) \rightarrow A$ y $\rm B$ son
+				equivalentes si $\rm A = B$, pero si $\rm n \geq 2$ no.</p>
+				
+			<p style="margin-left:30px">
+				•
+				$
+				\begin{aligned}[t]
+					\rm \det(A) &amp;= \rm \det(C \cdot B \cdot C^{-1}) = \det(C) \cdot 
+					\det(B) \cdot \det(C^{-1}) = \\[1ex]
+					&amp;\rm = \det(C) \cdot (1 \mathbin{/} \det(C)) \cdot \det(B) =
+					\det(B)
+				\end{aligned}
+				$
+			</p>
+				
+			<p style="margin-left:30px">
+				Consecuencias:</p>
+				
+			<p style="margin-left:30px">
+				$\rm A$ y $\rm B$ eq.
+				$
+				\DeclareMathOperator{\rg}{rg}
+				\Rightarrow
+				\begin{array}[t]{l}
+					1.\: \rm A \smash{\text{ invertible}} \Leftrightarrow B
+					\smash{\text{ invertible.}} \\[1ex]
+					2.\: \rm \rg(A) = \rg(B) \quad (\rg \equiv \smash{\text{rango}})
+				\end{array}
+				$
+			</p>
+
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				A =
+				\begin{pmatrix}
+					2 &amp; -1 \\
+					0 &amp; 3
+				\end{pmatrix}
+				\qquad
+				B =
+				\begin{pmatrix}
+					2 &amp; 0 \\
+					0 &amp; 3
+				\end{pmatrix}
+				=
+				\underset{
+					\displaystyle
+					\begin{gathered}
+						\uparrow \\
+						\rm C^{-1}
+					\end{gathered}
+				}{
+					\begin{pmatrix}
+						1 &amp; 1 \\
+						0 &amp; 1
+					\end{pmatrix}
+				}
+				\begin{pmatrix}
+					2 &amp; -1 \\
+					0 &amp; 3
+				\end{pmatrix}
+				\underset{
+					\displaystyle
+					\begin{gathered}
+						\uparrow \\
+						\rm \vphantom{\rm C^{-1}} C
+					\end{gathered}
+				}{
+					\begin{pmatrix}
+						1 &amp; -1 \\
+						0 &amp; 1
+					\end{pmatrix}
+				}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm A$ y $\rm B$ son equivalentes.</p>
+				
+				<p style="margin-left:60px">
+					$\rm B = C^{-1} \! \cdot A \cdot C \Rightarrow A = C \cdot
+					B \cdot C^{-1}$</p>
+									
+			<p style="margin-left:30px">
+				$\rm A^{10} =$ ?</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{aligned}
+						\rm A^{10} &amp;\rm = (C \cdot B \cdot C^{-1})^{10} = \\[1ex]
+						&amp;\rm = (C \cdot B \cdot C^{-1}) (C \cdot B \cdot C^{-1})
+						\dotsm (C \cdot B \cdot C^{-1}) = \\[1ex]
+						&amp;\rm = C \cdot B^{10} \cdot C^{-1}
+					\end{aligned}
+					$
+				</p>
+				
+				<p style="margin-left:60px">
+					$
+					\rm B^{10} =
+					\begin{pmatrix}
+						2^{10} &amp; 0 \\
+						0 &amp; 3^{10}
+					\end{pmatrix}
+					$
+				</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{align}
+						\llap{\Rightarrow {}}
+						\rm A^{10} &amp;=
+						\begin{pmatrix}
+							1 &amp; -1 \\
+							0 &amp; 1
+						\end{pmatrix}
+						\begin{pmatrix}
+							2^{10} &amp; 0 \\
+							0 &amp; 3^{10}
+						\end{pmatrix}
+						\begin{pmatrix}
+							1 &amp; 1 \\
+							0 &amp; 1
+						\end{pmatrix}
+						=
+						\begin{pmatrix}
+							2^{10} &amp; -3^{10} \\
+							0 &amp; 3^{10}
+						\end{pmatrix}
+						\begin{pmatrix}
+							1 &amp; 1 \\
+							0 &amp; 1
+						\end{pmatrix}
+						= \\[1ex]
+						&amp;=
+						\begin{pmatrix}
+							2^{10} &amp; 2^{10} - 3^{10} \\
+							0 &amp; 3^{10}
+						\end{pmatrix}
+					\end{align}
+					$
+				</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Una matriz es diagonal si es de la forma:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rightarrow
+				\begin{pmatrix}
+					λ_{11} &amp;&amp;\LARGE 0 \\
+					&amp; \ddots  &amp;  \\
+					\LARGE 0 &amp;&amp; λ_{\rm nn}
+				\end{pmatrix}
+				$
+			</p>
+			
+    <p>Definición:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A ∈ M_{n}(\mathbb{R})$ es diagonalizable si es equivalente
+				a una matriz diagonal.</p>
+				
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\rm \bullet \: \exists \: B \in M_{n}(\mathbb{R})
+					\smash{\text{ diagonal}} \\[1ex]
+					\rm \bullet \: \exists \: C \in M_{n}(\mathbb{R})
+					\smash{\text{ invertible}}
+				\end{array}
+				\right\}
+				\Rightarrow
+				$
+				tal que
+				$
+				\rm B =
+				C \cdot A \cdot C^{-1} \mathrel{;} A = C^{-1} \cdot B \cdot C
+				$
+			</p>
+
+    <hr>
+    
+    <p>Cuestiones:</p>
+    
+			<ol>
+				<li>¿Cuándo una matriz es diagonalizable?</li>
+				<li>¿Cuál es la forma diagonal?</li>
+				<li>¿Cuál es la matriz de cambio C?</li>
+			</ol>
+		
+    <hr>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A :
+				\begin{pmatrix}
+					λ_{11} &amp; \dotso &amp; λ_{\rm n1} \\
+					\vdots &amp;&amp; \vdots \\
+					λ_{\rm 1n} &amp; \dotso &amp; λ_{\rm nn}
+				\end{pmatrix}
+				$
+			</p>
+    
+    <p>Cálculo del polinomio característico $\rightarrow
+    \DeclareMathOperator{\pcar}{Pcar} \pcar$</p>
+    
+			<p style="margin-left:30px">
+				$\rm x \rightarrow$ variable</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm λ_{11} - x &amp; \dotso &amp; λ_{\rm n1} \\
+					\vdots &amp; \ddots &amp; \vdots \\
+					λ_{\rm 1n} &amp; \dotso &amp; \rm λ_{nn} - x
+				\end{vmatrix}
+				=
+				$ polinomio característico de $\rm A$
+			</p>
+			
+			<p style="margin-left:30px;margin-top:1em;margin-top:1.5em">
+				$\rm \det(A - x \cdot Id) = \pcar(A)$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplos:</p>
+    
+    <p>
+		•
+		$
+		\rm A =
+		\begin{pmatrix}
+			1 &amp; 3 \\
+			2 &amp; 1
+		\end{pmatrix}
+		$
+		</p>
+		
+			<p style="margin-left:30px">
+				$
+				\rm \pcar(A) = \det(A - x \cdot Id) =
+				\begin{vmatrix}
+					\rm 1 - x &amp; 3 \\
+					\rm 2 &amp; \rm 1 - x
+				\end{vmatrix}
+				= (1 - x)^2 - 6 = x^2 - 2x - 5
+				$
+			</p>
+			
+		<p style="margin-top:1.5em">
+		•
+		$
+		\rm A =
+		\begin{pmatrix}
+			1 &amp; 3 &amp; 2 \\
+			0 &amp; 2 &amp; 1 \\
+			-3 &amp; 4 &amp; 0
+		\end{pmatrix}
+		\qquad
+		A - x \cdot Id =
+		\begin{pmatrix}
+			\rm 1 - x &amp; 3 &amp; 2 \\
+			0 &amp; \rm 2 - x &amp; 1 \\
+			-3 &amp; 4 &amp; \rm -x
+		\end{pmatrix}
+		$
+		</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \det(A - x·Id) &amp;\rm = (1-x)(2-x)(-x) - 9 + 6(2-x) -
+					4(1-x) = \\[1ex]
+					&amp;\rm = -x^3 + 3x^2 - 4x - 1 = \pcar(A)
+				\end{align}
+				$	
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>$\ast \: \rm A$ y $\rm B$ son equivalentes:</p>
+    
+			<p style="margin-left:30px">
+				$\Rightarrow \rm \pcar(A) = \pcar(B)$</p>
+				
+		<p>Demostración:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \pcar(A) &amp;= \rm \det(A - x \cdot Id) = \\[1ex]
+					&amp;= \rm \det \bigl( C^{-1} \cdot B \cdot C - x \cdot
+					(\, \underbrace{C^{-1} \cdot Id \cdot C}_{Id} \,) \bigr) = \\[1ex]
+					&amp;= \rm
+					\det \left( C^{-1} \cdot (B - x \cdot Id) \cdot C \right) = \\[1ex]
+					&amp;= \rm
+					\det(C^{-1}) \cdot \det(B - x \cdot Id) \cdot \det(C) = \\[1ex]
+					&amp;= \rm 
+					\underbrace{(1 {∕} \det(C)) \cdot \det(C)}_1 \cdot
+					\det(B - x \cdot Id) = \\[1ex]
+					&amp;= \rm \det(B - x \cdot Id) = \pcar(B) 
+				\end{align}
+				$
+			</p>
+			
+		<p>Siendo que:</p>
+				
+			<p style="margin-left:30px">
+				$\rm A$ diagonalizable $\Rightarrow \rm A$ es equivalente a
+				$
+				\rm B =
+				\begin{pmatrix}
+					λ_{11} &amp;&amp; \LARGE 0 \\
+					&amp; \ddots &amp; \\
+					\LARGE 0 &amp;&amp; λ_{\rm nn}
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm
+					\pcar(A) = \pcar(B) =
+					\begin{vmatrix}
+						\rm λ_{11} - x &amp;&amp; \LARGE 0 \\
+						&amp; \ddots &amp; \\
+						\LARGE 0 &amp;&amp; \rm λ_{nn} - x 
+					\end{vmatrix}
+					&amp;\rm = (λ_{11} - x) \dotsm (λ_{nn} - x) = \\[1ex]
+					&amp;\rm = (-1)^n (x - λ_{11}) \dotsm (x - λ_{nn})
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \pcar(A)$ descompone totalmente en factores lineales, i.e.
+				tiene $\rm n$ raíces (contando multiplicidades).</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -2 \\
+					3 &amp; 0
+				\end{pmatrix}
+				\qquad
+				\pcar(A) = (1-x)(-x) + 6 = x^2 - x + 6
+				$
+			</p>
+			
+			<p style="text-align:center">
+				$
+				\rm \dfrac{1 \pm \sqrt{1-24}}{2} \notin \mathbb{R} \Rightarrow A
+				$ no diagonaliza.
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Definición:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A \in M_{n}(\mathbb{R}), v \in \mathbb{R}^n$</p>
+				
+			<p style="margin-left:30px">
+				$\rm v$ es un <span style="text-decoration:underline">vector
+				propio</span> de $\rm A$ si $\exists \: λ \in \mathbb{R}$ tal que
+				$\rm A \cdot v = λ \cdot v$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+		<p>Ejemplo:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{array}[t]{l}
+					\rm A =
+					\begin{pmatrix}
+						-3 &amp; -2 &amp; -4 \\
+						4 &amp; 3 &amp; 4 \\
+						2 &amp; 2 &amp; 3
+					\end{pmatrix} \\[1ex]
+					\rm v = (1, -1, -1) \\[1ex]
+					\rm w = (1, 0, -1)
+				\end{array}
+				\qquad
+				\begin{aligned}[t]
+					\rm A \cdot v &amp;\rm =
+					\begin{pmatrix}
+						-3 &amp; -2 &amp; -4 \\
+						4 &amp; 3 &amp; 4 \\
+						2 &amp; 2 &amp; 3
+					\end{pmatrix}
+					\begin{pmatrix}
+						1 \\ -1 \\ -1
+					\end{pmatrix}
+					=
+					\begin{pmatrix}
+						3 \\ -3 \\ -3
+					\end{pmatrix}
+					= \\[1ex]
+					&amp;\rm = 3
+					\begin{pmatrix}
+						1 \\ -1 \\ -1
+					\end{pmatrix}
+					= 3v
+				\end{aligned}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm A \cdot w =
+				\begin{pmatrix}
+					-3 &amp; -2 &amp; -4 \\
+					4 &amp; 3 &amp; 4 \\
+					2 &amp; 2 &amp; 3
+				\end{pmatrix}
+				\begin{pmatrix}
+					1 \\ 0 \\ -1
+				\end{pmatrix}
+				=
+				\begin{pmatrix}
+					1 \\ 0 \\ -1
+				\end{pmatrix}
+				= w
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Definición:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A \in M_{n}(\mathbb{R}), λ \in \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				$λ$ es <span style="text-decoration:underline">valor propio</span>
+				de $\rm A$ si $\exists \: \rm v \neq 0$ tal que $\rm A \cdot v =
+				λ \cdot v$</p>
+				
+		<p style="margin-left:30px">
+			$\rm v$ es vector propio de $\rm A \rightarrow$ VEP de $\rm A$<br>
+			$λ$ es valor propio de $\rm A \rightarrow$ VAP de $\rm A$
+		</p>
+				
+    <p>$λ$ es VAP de $\rm A$ ($\exists \: \rm v \neq 0,
+    A \cdot v = λ \cdot v$):</p>
+    
+			<p style="margin-left:30px">
+				$\rm \Leftrightarrow \bar{x} = (x_{1}, \dotsc, x_{n}) \rightarrow
+				A \cdot \bar{x} = λ \cdot \bar{x} \,$ tiene solución no trivial
+				($\rm \bar{x} \neq 0$).</p>
+				
+			<p style="margin-left:30px">
+				$\rm \Leftrightarrow A \cdot \bar{x} - λ \cdot \bar{x} = 0 \,$
+				tiene solución no trivial.</p>
+    
+			<p style="margin-left:30px">
+				$\rm \Leftrightarrow (A - λ \cdot Id) \bar{x} = 0$ tiene solución
+				no trivial $\rm \Rightarrow (A - λ \cdot Id)$ singular (no
+				invertible).</p>
+				
+				<p style="margin-left:60px">
+					Si $\rm (A - λ \cdot Id)$ fuera invertible, y dado que $\rm
+					\bar{x} \neq 0$, al multiplicar por su inversa a un lado y a
+					otro de la igualdad ésta no se cumpliría.</p>
+			
+			<p style="margin-left:30px">
+				$\rm \Leftrightarrow \det(A - λ \cdot Id) = 0 \Leftrightarrow λ$
+				raíz de $\rm \det(A - x \cdot Id)$</p>
+				
+			<p style="margin-left:30px">
+				$\Leftrightarrow λ$ raíz de $\rm \pcar(A)$</p>
+				
+    <p>Consecuencia:</p>
+			
+			<p style="margin-left:30px">
+				$\rm A$ tiene como mucho $\rm n$ valores propios diferentes.</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+		<p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					-3 &amp; -2 &amp; -4 \\
+					4 &amp; 3 &amp; 4 \\
+					2 &amp; 2 &amp; 3
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm \det(A - x Id) =
+				\begin{vmatrix}
+					\rm -3 - x &amp; -2 &amp; -4 \\
+					4 &amp; \rm 3 - x &amp; 4 \\
+					2 &amp; 2 &amp; \rm 3 - x
+				\end{vmatrix}
+				= -x^3 + 3x^2 + x - 3 = 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$λ = 3 \mathrel{;} λ = 1 \mathrel{;} λ = -1$</p>
+    
+			<p style="margin-left:30px">$-1$ es VAP:</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{pmatrix}
+					-3 &amp; -2 &amp; -4 \\
+					4 &amp; 3 &amp; 4 \\
+					2 &amp; 2 &amp; 3
+				\end{pmatrix}
+				\begin{pmatrix}
+					\rm x_1 \\ \rm x_2 \\ \rm x_3
+				\end{pmatrix}
+				= -
+				\begin{pmatrix}
+					\rm x_1 \\ \rm x_2 \\ \rm x_3
+				\end{pmatrix}
+				\quad
+				$
+				tiene solución no trivial
+			</p>
+			
+			<p style="margin-left:30px;margin-top:1.5em">
+				$
+				\left.
+				\begin{aligned}
+					\rm -3x_1 - 2x_2 - 4x_3 &amp;\rm = -x_1 \\[1ex]
+					\rm 4x_1 + 3x_2 + 4x_3 &amp;\rm = -x_2 \\[1ex]
+					\rm 2x_1 + 2x_2 + 3x_3 &amp;\rm = -x_3
+				\end{aligned}
+				\,
+				\right\}
+				\Rightarrow
+				\left.
+				\begin{aligned}
+					\rm -2x_1 - 2x_2 - 4x_3 &amp;= 0 \\[1ex]
+					\rm 4x_1 + 4x_2 + 4x_3 &amp;= 0 \\[1ex]
+					\rm 2x_1 + 2x_2 + 4x_3 &amp;= 0 \,
+					\llap{\cancel{\phantom{\rm 2x_1 + 2x_2 + 4x_3 = 0}}}
+				\end{aligned}
+				\right\}
+				\Rightarrow
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\Rightarrow
+				\begin{alignedat}{2}
+					&amp;&amp;\rm -2x_1 - 2x_2 - 4x_3 &amp;= 0 \\[1ex]
+					&amp;{+}\, &amp;\rm 4x_1 + 4x_2 + 4x_3 &amp;= 0 \\[1ex]
+					\hline
+					&amp;&amp;\rm 2x_1 + 2x_2 \hphantom{\rm {} + 0x_3} &amp;=0
+				\end{alignedat}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\Rightarrow
+				\left.
+				\begin{array}{l}
+					\rm x_1 = -x_2 \\[1ex]
+					\rm x_3 = 0
+				\end{array} 
+				\right\}
+				\Rightarrow
+				(1,-1,0)
+				$
+			</p>
+			
+    </div>
+    
+    <hr>
+    
+    <p>$λ$ VAP de $\rm A$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm E_λ =$ {sol. del sistema $\rm (A - λ \cdot Id) \bar{x} = 0$}
+				$=$ {vectores propios de valor propio $λ$}</p>
+				
+			<p style="margin-left:30px">
+				$\rm r_λ =$ multiplicidad de $λ$ como raíz de $\rm \pcar(A)$</p>
+				
+    <p>Propiedad:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dim E_λ \leq r_λ$</p>
+				
+    <p>Consecuencia:</p>
+    
+			<p style="margin-left:30px">
+				Si $\rm r_λ = 1$ (raíz simple) $\Rightarrow \rm \dim E_λ \leq 1$</p>
+				
+			<p style="margin-left:30px">
+				Como $\rm 1 \leq \dim E \Rightarrow \dim E_λ = 1$</p>
+    
+    <p>Teorema:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A \in M_{n}(\mathbb{ℝ}), λ_1, \dotsc, λ_s$ los diferentes
+				valores propios, $\rm r_{λ_1}, \dotsc, r_{λ_s}$ sus multiplicidades,
+				entonces $\rm A$ es diagonalizable:</p>
+				
+				<p style="margin-left:60px">
+					$\Leftrightarrow \rm \dim E_{λ_1} \! + \dotsb + \dim E_{λ_s} \!
+					= n$</p>
+					
+				<p style="margin-left:60px">
+					$\Leftrightarrow \rm r_{λ_1} \! + \dotsb + r_{λ_s} \! = n \,$ y
+					$\, \rm \dim E_{λ_i} \! = r_{λ_i}$</p>
+					
+			<p style="margin-left:30px">
+				De ser esto así, la forma diagonal equivalente de la matriz $\rm
+				A$ es:</p>
+				
+			<p style="margin-left:60px">
+				<span style="display:table-cell">
+				$
+				\begin{pmatrix}
+					\rm {λ_1}^{\displaystyle \times \, r_1}
+					&amp;&amp; \LARGE 0 \\
+					&amp; \ddots &amp; \\
+					\LARGE 0 &amp;&amp;
+					\rm {λ_s}^{\displaystyle \times \, r_s}
+				\end{pmatrix}
+				\leftarrow {}
+				$
+				</span>
+				<span style="display:table-cell">
+					en la diagonal aparece tantas veces el valor propio como indique
+					su multiplicidad.
+				</span>
+			</p>
+			
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell;vertical-align:middle">
+				$
+				\rm A =
+				\begin{pmatrix}
+					-3 &amp; -2 &amp; -4 \\
+					4 &amp; 3 &amp; 4 \\
+					2 &amp; 2 &amp; 3
+				\end{pmatrix}
+				\qquad
+				$
+				</span>
+				<span style="display:table-cell;border:none">
+					<span style="display:table-row">
+						<span style="display:table-cell;padding-bottom:1ex">
+							$\rm \pcar(A) = -x^3 + 3x^2 + x - 3$
+						</span>
+					</span>
+					<span style="display:table-row">
+						<span style="display:table-cell;padding-bottom:1ex">
+							raíces $\rightarrow 3, 1, -1$
+						</span>
+					</span>
+					<span style="display:table-row">
+						<span style="display:table-cell;padding-bottom:1ex">
+						multiplicidad $\rightarrow$ nº de veces que aparece cada
+						factor:
+						</span>
+					</span>
+					<span style="display:table-row">
+						<span style="display:table-cell;padding-left:30px">
+							$\rm r_3 = 1 \mathrel{;} r_1 = 1 \mathrel{;} r_{-1} = 1$
+						</span>
+					</span>
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\rm \dim E_3 = 1 = r_3 &amp; \\[1ex]
+					\rm \dim E_1 = 1 = r_1
+					&amp;\quad \rm r_3 + r_1 + r_{-1} = 3 \\[1ex]
+					\rm \dim E_{-1} = 1 = r_{-1}
+					&amp;\quad \rm \dim E_3 + \dim E_1 + \dim E_{-1} = 3 \\[1ex]
+					&amp;\quad \Rightarrow \rm A \smash{\text{ es diagonalizable}}
+				\end{array}
+				$
+			</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{pmatrix}
+					3 &amp; 0 &amp; 0 \\
+					0 &amp; 1 &amp; 0 \\
+					0 &amp; 0 &amp; -1
+				\end{pmatrix}
+				$
+			</p>
+
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+		<p style="margin-left:30px">
+			$
+			\begin{array}{ll}
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; 1 \\
+					0 &amp; 1
+				\end{pmatrix}
+				\quad
+				&amp;
+				\rm \pcar(A) =
+				\begin{vmatrix}
+					\rm 1-x &amp; 1 \\
+					0 &amp; \rm 1-x
+				\end{vmatrix}
+				= (1-x)^2 = (x-1)^2 \\[1ex]
+				&amp;
+				\enspace
+				\text{raíz} \rightarrow 1 \\[1ex]
+				&amp;
+				\enspace
+				\rm r_1 = 2 \quad \dim E_1 \! = ¿1 \text{ ó } 2? \\[1ex]
+				&amp;
+				\rm ¿E_1? \quad (A - 1 \cdot Id) \bar{x} = 0 \\[1ex]
+				&amp;
+				\qquad
+				\begin{pmatrix}
+					0 &amp; 1 \\
+					0 &amp; 0
+				\end{pmatrix}
+				\begin{pmatrix}
+					\rm x_1 \\
+					\rm x_2
+				\end{pmatrix}
+				=
+				\begin{pmatrix}
+					0 \\
+					0
+				\end{pmatrix}
+				\Rightarrow
+				\underset{
+					\displaystyle
+					\begin{array}{c}
+						\Downarrow \\
+						\llap{\langle}(1,0)\rlap{\rangle \rlap{{} = \rm E_1}} \\
+						|| \\
+						\rm \llap{\{}(k, 0)\rlap{, k \in \mathbb{R}\}}
+					\end{array}					
+				}{\rm x_2 = 0} \\[1ex]
+				&amp;
+				\Rightarrow \rm \dim E_1 = 1 &lt; 2 = r_1 \\[1ex]
+				&amp;
+				\Rightarrow \text{No diagonaliza.}
+			\end{array}
+			$
+		</p>
+		
+		</div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					5 &amp; 4 &amp; -2 \\
+					4 &amp; 5 &amp; 2 \\
+					-2 &amp; 2 &amp; 8
+				\end{pmatrix}
+				\qquad
+				\begin{aligned}[t]
+				\rm	\pcar(A) &amp;=
+				\begin{vmatrix}
+					\rm 5-x &amp; 4 &amp; -2 \\
+					4 &amp; \rm 5-x &amp; 2 \\
+					-2 &amp; 2 &amp; \rm 8 - x
+				\end{vmatrix}
+				= \\[1ex]
+				&amp;\rm = -x^3 + 18 x^2 - 81x = \\[1ex]
+				&amp;\rm = -x(x^2 - 18x + 81) = -x(x-9)^2 = 0 
+				\end{aligned}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm λ = 0 \quad r_0 = 1$</p>
+				
+			<p style="margin-left:30px">
+				$\rm λ = 9 \quad r_9 = 2$</p>
+				
+			<p style="margin-left:30px">
+				$\rm E_0 \rightarrow \dim E_0 = 1 = r_0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm E_9 \rightarrow \dim E_9 = ¿1 \text{ ó } 2?$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm (A - 9 \cdot Id)\bar{x} = 0 
+				\rightarrow
+				\underset{
+					\displaystyle
+					\begin{array}{c}
+						\Downarrow \\
+						\rg = 1
+						\rlap{
+							{} \rightarrow
+							\dim = \rm n - \rg \Rightarrow \dim E_9 = 2 = r_9
+						}
+					\end{array}
+				}{
+					\begin{pmatrix}
+						-4 &amp; 4 &amp; -2 \\
+						4 &amp; -4 &amp; 2
+						\llap{\color{red}{\Rule{5em}{.75ex}{-.6ex}}} \\
+						-2 &amp; 2 &amp; -1
+						\llap{\color{red}{\Rule{5em}{.75ex}{-.6ex}}}
+					\end{pmatrix}
+				}
+				\begin{pmatrix}
+					\rm x_1 \\ \rm x_2 \\ \rm x_3
+				\end{pmatrix}
+				=
+				\begin{pmatrix}
+					0 \\ 0 \\ 0
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\Rightarrow$ Es diagonalizable.
+			</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Se tiene:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A$ diagonalizable.</p>
+			
+			<p style="margin-left:30px">
+				$\rm B$ forma diagonal equivalente.</p>
+			
+			<p style="margin-left:30px">
+				$\rm B = C^{-1} \cdot A \cdot C \qquad C \rightarrow$ "matriz de
+				cambio"</p>
+				
+			<p style="margin-left:30px">
+				¿$\rm C$?</p>				
+			
+    <p>Siendo $λ_1, \dotsc, λ_s$ los VAPS diferentes:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{lll}
+					\rm E_{λ_1}
+					&amp; \rm v_1, \dotsc, v_{r_{λ_1}}
+					&amp; \text{vectores l.i. en } \rm E_{λ_1} \, (r_{λ_1}) \\[1ex]
+					\rm E_{λ_2}
+					&amp; \rm v_{(r_{λ_1} + \, 1)}, \dotsc, v_{(r_{λ_1} + \, r_{λ_2})}
+					&amp; \text{vectores l.i. en } \rm E_{λ_2} \, (r_{λ_2}) \\[1ex]
+					\vdots &amp; &amp; \\[1ex]
+					\rm E_{λ_s}
+					&amp; \rm v_{(r_{λ_1} + \, \dotsb \, + \, r_{λ_{s-1}} \, + \, 1)},
+					\dotsc, v_{(r_{λ_1} + \, \dotsb \, + \, r_{λ_s}) \, = \, n}
+					&amp; \text{vectores l.i. en } \rm E_{λ_s} \, (r_{λ_s})
+				\end{array}
+				$
+			</p>
+    
+			<p style="font-size:80%;margin-left:30px">
+				l.i. $\equiv$ linealmente independiente/s</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="text-align:center">
+				$\rm (v_1, \dotsc, v_n) = C$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					-3 &amp; -2 &amp; -4 \\
+					4 &amp; 3 &amp; 4 \\
+					2 &amp; 2 &amp; 3
+				\end{pmatrix}
+				\qquad
+				$
+				raíces $3, 1, -1$
+			</p>
+		
+			<p style="margin-left:30px">
+				$\rm E_3 : (A - 3 \cdot Id) \bar{x} = 0$</p>
+				
+				<p style="margin-left:60px">
+					$
+					\left.
+					\begin{alignedat}{3}
+						\rm -6x_1&amp;
+						&amp;\rm {} - 2x_2&amp;
+						&amp; \rm {} - 4x_3 &amp;= 0 \\[1ex]
+						\rm 4x_1&amp;
+						&amp;&amp;
+						&amp;\rm {} + 4x_3 &amp;= 0 \\[1ex]
+						\rm 2x_1&amp;
+						&amp;\rm {} + 2x_2&amp;
+						&amp;&amp;= 0
+						\,
+					\end{alignedat}
+					\right\}
+					\Rightarrow
+					\enspace
+					\begin{aligned}
+						&amp;\rm x_1 = -x_2 \\[1ex]
+						&amp;\rm x_1 = -x_3 \\[1ex]
+						&amp;\rm (1, -1, -1) : v_1
+					\end{aligned}
+					$
+				</p>
+				
+			<p style="margin-left:30px">
+				$\rm E_1 : (A - Id) \bar{x} = 0$</p>
+				
+				<p style="margin-left:60px">
+					$
+					\left.
+					\begin{aligned}
+						\rm -4x_1 - 2x_2 - 4x_3 &amp;= 0 \\[1ex]
+						\rm 4x_1 + 2x_2 + 4x_3 &amp;= 0 \\[1ex]
+						\rm 2x_1 + 2x_2 + 2x_3 &amp;= 0
+					\end{aligned}
+					\,
+					\right\}
+					\Rightarrow
+					\enspace
+					\begin{aligned}
+						&amp;\rm x_1 = -x_3 \\[1ex]
+						&amp;\rm x_2 = 0 \\[1ex]
+						&amp;\rm (1,0,-1) : v_2
+					\end{aligned}
+					$
+				</p>
+				
+			<p style="margin-left:30px">
+				$\rm E_{-1} : (A + Id) \bar{x} = 0$</p>
+				
+				<p style="margin-left:60px">
+					$
+					\left.
+					\begin{aligned}
+						\rm -2x_1 - 2x_2 - 4x_3 &amp;= 0 \\[1ex]
+						\rm 4x_1 + 4x_2 + 4x_3 &amp;= 0 \\[1ex]
+						\rm 2x_1 + 2x_2 + 4x_3 &amp;= 0
+					\end{aligned}
+					\,
+					\right\}
+					\Rightarrow
+					\enspace
+					\begin{aligned}
+						&amp;\rm x_1 = -x_2 \\[1ex]
+						&amp;\rm x_3 = 0 \\[1ex]
+						&amp;\rm (1,-1,0) : v3
+					\end{aligned}
+					$
+				</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm C =
+				\begin{pmatrix}
+					1 &amp; 1 &amp; 1 \\
+					-1 &amp; 0 &amp; -1 \\
+					-1 &amp; -1 &amp; 0
+				\end{pmatrix}
+				\enspace
+				\leftarrow
+				$
+				los vectores propios se colocan en las columnas.
+			</p>
+    
+    <p>$\rm C^{-1} =$ ?</p>
+    
+    <p>1º. ¿Es posible?</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \det(C) =
+				\begin{vmatrix}
+					1 &amp; 1 &amp; 1 \\
+					-1 &amp; 0 &amp; -1 \\
+					-1 &amp; -1 &amp; 0
+				\end{vmatrix}
+				= 1
+				\quad
+				$
+				Obviamente sí.
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\Rightarrow
+				C^{-1} = \dfrac{\adj(C{}^t)}{\det(C)}
+				\qquad
+				C^{-1} =
+				\begin{pmatrix}
+					-1 &amp; -1 &amp; -1 \\
+					1 &amp; 1 &amp; 0 \\
+					1 &amp; 0 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm B &amp;\rm = C^{-1} \cdot A \cdot C \\[1ex]
+				  &amp;\downarrow \\[1ex]
+					\begin{pmatrix}
+						3 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 \\
+						0 &amp; 0 &amp; -1
+					\end{pmatrix}
+					&amp;=
+					\begin{pmatrix}
+						-1 &amp; -1 &amp; -1 \\
+						1 &amp; 1 &amp; 0 \\
+						1 &amp; 0 &amp; 1
+					\end{pmatrix}
+					\begin{pmatrix}
+						-3 &amp; -2 &amp; -4 \\
+						4 &amp; 3 &amp; 4 \\
+						2 &amp; 2 &amp; 3
+					\end{pmatrix}
+					\begin{pmatrix}
+						1 &amp; 1 &amp; 1 \\
+						-1 &amp; 0 &amp; -1 \\
+						-1 &amp; -1 &amp; 0
+					\end{pmatrix}
+				\end{align}
+				$
+			</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>$\ast$ Otro método para encontrar la matriz inversa, buscando la
+    identidad:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -2 &amp; 0 &amp; 0 \\[1ex]
+					0 &amp; 1 &amp; 0 &amp; 0 \\[1ex]
+					1 &amp; 1 &amp; 0 &amp; 1 \\[1ex]
+					1 &amp; 1 &amp; 1 &amp; 0
+				\end{pmatrix}
+				$
+			</p>
+
+    <p>Procedimiento:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left(
+					\begin{matrix}
+						1 &amp; -2 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp;0 &amp; 0 \\
+						1 &amp; 1 &amp; 0 &amp; 1 \\
+						1 &amp; 1 &amp; 1 &amp; 0
+					\end{matrix}
+				\middle|
+					\begin{matrix}
+						1 &amp; 0 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						0 &amp; 0 &amp; 1 &amp; 0 \\
+						0 &amp; 0 &amp; 0 &amp; 1
+					\end{matrix}
+				\right)
+				\xrightarrow[
+					\begin{gathered}
+						\rm F_3 - F_1 \\
+						\rm F_4 - F_1
+					\end{gathered}
+				]{}
+				\left(
+					\begin{matrix}
+						1 &amp; -2 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						0 &amp; 3 &amp; 0 &amp; 1 \\
+						0 &amp; 3 &amp; 1 &amp; 0
+					\end{matrix}
+				\middle|
+					\begin{matrix}
+						1 &amp; 0 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						-1 &amp; 0 &amp; 1 &amp; 0 \\
+						-1 &amp; 0 &amp; 0 &amp; 1
+					\end{matrix}
+				\right)
+				\rightarrow
+				$
+			</p>
+			
+			<p style="margin-bottom:2em">
+				$
+				\xrightarrow[
+					\begin{gathered}
+						\rm F_1 + 2 F_2 \\
+						\rm F_3 - 3 F_2 \\
+						\rm F_4 - 3 F_2
+					\end{gathered}
+				]{}
+				\left(
+					\begin{matrix}
+						1 &amp; 0 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						0 &amp; 0 &amp; 0 &amp; 1 \\
+						0 &amp; 0 &amp; 1 &amp; 0
+					\end{matrix}
+				\middle|
+					\begin{matrix}
+						1 &amp; 2 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						-1 &amp; -3 &amp; 1 &amp; 0 \\
+						-1 &amp; -3 &amp; 0 &amp; 1
+					\end{matrix}
+				\right)
+				\xrightarrow[\rm F_3 \leftrightarrow F_4]{}
+				\left(
+					\begin{matrix}
+						1 &amp; 0 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						0 &amp; 0 &amp; 1 &amp; 0 \\
+						0 &amp; 0 &amp; 0 &amp; 1
+					\end{matrix}
+				\middle|
+					\smash[b]{
+					\underbrace{
+					\begin{matrix}
+						1 &amp; 2 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						-1 &amp; -3 &amp; 0 &amp; 1 \\
+						-1 &amp; -3 &amp; 1 &amp; 0
+					\end{matrix}
+					}_{\text{matriz inversa}}
+					}
+					\;
+				\right)
+				$
+			</p>
+			
+		<p>Donde, por tal de alcanzar la matriz identidad en el lado izquierdo,
+		se llevan a cabo operaciones de suma o resta a una fila de otra multiplicada
+		por un número o se intercambian filas.</p>
+			
+    <p>$\ast$ Truco para calcular el $\pcar(\rm A)$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \pcar = (-1)^n x^n + (-1)^{n-1} d_{n-1} x^{n-1} + \dotsb +
+				(-1)^0 d_0 x^0$</p>
+				
+    <p>$\rm d_{n-1} \leftarrow$ suma de los menores (determinantes de las
+    submatrices) resultado de suprimir $\rm n-1$ filas y columnas, y cuya
+    diagonal esté sobre la diagonal principal.</p>
+    
+    <p>Por tanto, puede escribirse también como:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\DeclareMathOperator{\tr}{tr}
+				\rm \pcar = (-1)^n x^n + (-1)^{n-1} \tr(A) x^{n-1} +
+				(-1)^{n-2} d_{n-2} x^{n-2} + \dotsb + \det(A)
+				$
+			</p>
+			
+    <p>$\rm \tr(A) \leftarrow$ traza de $\rm A$ (suma de los elementos de
+    la diagonal principal).</p>
+    
+    <hr>
+    
+    <div id="ejemplo" style="margin-bottom:1em">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -2 &amp; 0 &amp; 0 \\
+					0 &amp; 1 &amp; 0 &amp; 0 \\
+					1 &amp; 1 &amp; 0 &amp; 1 \\
+					1 &amp; 1 &amp; 1 &amp; 0
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \pcar(A) &amp;\rm = x^4 - (1+1)x^3 +
+					\left(
+					\begin{vmatrix}
+						1 &amp; -2 \\
+						0 &amp; 1
+					\end{vmatrix}
+					+ 4
+					\begin{vmatrix}
+						1 &amp; 0 \\
+						1 &amp; 0
+					\end{vmatrix}
+					+
+					\begin{vmatrix}
+						0 &amp; 1 \\
+						1 &amp; 0
+					\end{vmatrix}
+					\right)
+					x^2 - \\[1ex]
+					&amp;\quad \rm -
+					\left(
+					2
+					\begin{vmatrix}
+						1 &amp; -2 &amp; 0 \\
+						0 &amp; 1 &amp; 0 \\
+						1 &amp; 1 &amp; 0
+					\end{vmatrix}
+					+ 2
+					\begin{vmatrix}
+						1 &amp; 0 &amp; 0 \\
+						1 &amp; 0 &amp; 1 \\
+						1 &amp; 1 &amp; 0
+					\end{vmatrix}
+					\right)
+					x +
+					\begin{vmatrix}
+						1 &amp; -2 &amp; 0 &amp; 0 \\
+						0 &amp; 1 &amp; 0 &amp; 0 \\
+						1 &amp; 1 &amp; 0 &amp; 1 \\
+						1 &amp; 1 &amp; 1 &amp; 0
+					\end{vmatrix}
+					= \\[1ex]
+					&amp;\rm = x^4 - 2x^3 + 2x - 1
+				\end{align}
+				$
+      </p>
+
+		</div>
+				
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="resolucion_ecuaciones_diferenciales_primer_orden.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

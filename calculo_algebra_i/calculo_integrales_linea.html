@@ -1,0 +1,1525 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"],
+          MultLineWidth: "100%"
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Cálculo de integrales de línea">
+    <meta name="keywords" content="cálculo, integrales, línea">
+    <title>Cálculo de integrales de línea</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Cálculo de integrales de línea</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+			<p style="margin-left:30px">
+				$\rm α : I \to \mathbb{R}^n \quad I \subset \mathbb{R} \quad$
+				(camino)</p>
+				
+			<p style="margin-left:30px">
+				$\rm F : B \subset \mathbb{R}^n \to \mathbb{R}^n \quad α(I) \subset
+				B$</p>
+				
+			<p style="margin-left:30px">
+				$\rm C = α([a,b]) \quad a,b \in I \quad$ (curva)</p>
+				
+    <p>Así, entonces, la integral de línea:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm \displaystyle
+				\int_{C} F \cdot dα 
+				\underset{
+					\large
+					\begin{array}{c}
+						\uparrow \\
+						\rm \llap{F \,} = \rlap{\, F(α(t))} \\
+						\rm \llap{dα \,} = \rlap{\, dα(t)} \\
+						\rm \llap{dα(t) \,} = \rlap{\, α'(t) \, dt}
+					\end{array}
+				}{=} \int_a^b F(α(t)) \cdot α'(t) \, dt
+				$
+				<object data="calculo_integrales_linea/calculo_integrales_linea_01.svg"
+				type="image/svg+xml" width="301" height="109"
+				style="display:inline-block;margin:0 0 0 2em;vertical-align:top">
+				</object>
+			</p>
+			
+			<p style="text-align:center">
+				$
+				\rm
+				\left.
+				\begin{array}{l}
+					\rm F = (f_1, \dotsc, f_n) \\[1ex]
+					\rm α = (α_1, \dotsc, α_n) \\[1ex]
+					\rm α' = (α'_1, \dotsc, α'_n)
+				\end{array}
+				\right\}
+				\Rightarrow
+				\begin{array}[t]{c}
+					\rm F(α(t)) \cdot α'(t) \\
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{Producto escalar} \\
+						\text{en función de t}
+					\end{subarray}
+				\end{array} \! =
+				\displaystyle \sum_{i=1}^n f_i(α(t)) \cdot α'_i(t)
+				$
+			</p>
+        
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_C F \cdot dα =
+				\int_a^b \sum_{i=1}^n f_i(α(t)) \cdot α'_i(t) \, dt =
+				\sum_{i=1}^n \int_a^b f_i(α(t)) \cdot α'_i(t) \, dt
+				$
+			</p>
+			
+    <p>Que representa la suma de todos los sucesivos productos escalares
+    $\rm F \cdot dα$ que recorren el intervalo de la curva $\rm C$.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplos:</p>
+			
+			<p style="margin-left:30px">
+				$\rm F = (f_1, f_2) \quad \mathbb{R}^2 \quad \Rightarrow \quad
+				\displaystyle \int_C (f_1 \, dx + f_2 \, dy)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm F = (f_1, f_2, f_3) \quad \mathbb{R}^3 \quad \Rightarrow \quad
+				\displaystyle \int_C (f_1 \, dx + f_2 \, dy + f_3 \, dz)$</p>
+    
+    <p>Donde $\rm dα = (dx_1, \dotsc, dx_n)$.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>En general, la integral de línea depende del camino elegido.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = (\cos z, e^x, e^y) \quad$ campo vectorial de 
+				$\mathbb{R}^3$</p>
+				
+    <p>Se considera el camino: $\rm \enspace α(t) = (1, t, e^t) \quad t
+    \in [0,2]$</p>
+    
+		<center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_02.svg"
+			type="image/svg+xml" width="300" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dα &amp;
+					= \rm \int_0^2 (\cos e^t, e, e^t) \cdot (0,1,e^t) \, dt
+					= \int_0^2 (e + e^{2t}) \, dt = \\[1ex]
+					&amp;= \rm \left[ et + \dfrac{1}{2} e^{2t} \right]_0^2 =
+					2e + \dfrac{1}{2} e^4 - \dfrac{1}{2}
+				\end{align}
+				$
+			</p>
+			
+    <p>Si se considera otro camino: $\rm \enspace β(t) = (1, 2t, e^{2t})
+    \quad t \in [0,1]$</p>
+    
+		<center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_03.svg"
+			type="image/svg+xml" width="300" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dβ &amp;
+					= \rm \int_0^1 (\cos e^{2t},e,e^{2t}) \cdot (0,2,2e^{2t}) \, dt
+					= \int_0^1 (2e + 2e^{4t}) \, dt = \\[1ex]
+					&amp;= \rm \left[ 2et + \dfrac{1}{2} e^{4t} \right]_0^1 =
+					2e + \dfrac{1}{2} e^4 - \dfrac{1}{2}
+				\end{align}
+				$
+			</p>
+			
+    <p>Otro camino: $\rm \enspace ν(t) = (1, t^2, e^{t^2}) \quad t \in
+    [0,\sqrt{2}]$</p>
+    
+    <center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_04.svg"
+			type="image/svg+xml" width="225" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dν &amp;
+					= \rm \int_0^{\sqrt{2}} (\cos e^{t^2},e,e^{t^2}) \cdot
+					(0,2t,2te^{t^2}) \, dt = \int_0^{\sqrt{2}} (2et + 2te^{2t^2}) \,
+					dt = \\[1ex]
+					&amp;= \rm \left[ et^2 + \dfrac{1}{2} e^{2t^2} \right]_0^{\sqrt{2}}
+					= 2e + \dfrac{1}{2} e^4 - \dfrac{1}{2}
+				\end{align}
+				$
+			</p>
+			
+    <p>$α, β, ν$ son parametrizaciones equivalentes (describen una misma
+    curva $\rm C$).</p>
+    
+    <p>Las integrales de línea a lo largo de una
+    <span style="text-decoration:underline">misma curva</span> no dependen
+    de la parametrización (i.e. el camino).</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Otro tipo de integral de línea es aquel en el que se tienen caminos
+    consecutivos:</p>
+    
+    <center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_05.svg"
+			type="image/svg+xml" width="195" height="104"
+			style="display:inline-block;margin:0 2em 0 0;vertical-align:middle"></object>
+			$\rm C = C_1 + C_2 + C_3 + \dotsb$
+		</center>
+    
+    <p>En este caso:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_C F \cdot dα = \int_{C_1} F\cdot dα_1 +
+				\int_{C_2} F \cdot dα_2 + \int_{C_3} F \cdot dα_3 + \dotsb$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y) = (xy^2, x + 5y)$</p>
+				
+    <p>Integrar a lo largo del triángulo de vértice $(0,0)$, $(0,2)$ y
+    $(2,0)$, recorrido en el sentido de las agujas del reloj.</p>
+    
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\begin{aligned}
+						α_1 : [0,2] &amp;\to \mathbb{R}^2 \\
+						\rm t &amp;\to \rm (0,t)
+					\end{aligned} \\[1ex]
+					\begin{aligned}
+						α_2 : [0,2] &amp;\to \mathbb{R}^2 \\
+						\rm t &amp;\to \rm (t, 2-t)
+					\end{aligned} \\[1ex]
+					\begin{aligned}
+						α_3 :[0,2] &amp;\to \mathbb{R}^2 \\
+						\rm t &amp;\to \rm (2-t,0)
+					\end{aligned}
+				\end{array}
+				$
+				<object data="calculo_integrales_linea/calculo_integrales_linea_06.svg"
+				type="image/svg+xml" width="200" height="200"
+				style="display:inline-block;margin:0 0 0 3em;border:1px solid black;background:white;vertical-align:top">
+				</object>
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dα &amp;= \rm \int_{C_1} F \cdot dα_1 +
+					\int_{C_2} F \cdot dα_2 + \int_{C_3} F \cdot dα_3 = \\[1ex]
+					&amp;= \rm \int_0^2 (0,5t) \cdot (0,1) \, dt +
+					\int_0^2 (t(2-t)^2,t+5(2-t)) \cdot (1,-1) \, dt + {} \\[1ex]
+					&amp;\hphantom{={}} \rm + \int_0^2 (0,2-t) \cdot (-1,0) \, dt
+					= \int_0^2 5t + t(2-t)^2 - t - 5(2-t) \, dt = \\[1ex]
+					&amp;= \rm \int_0^2 5t + 4t - 4t^2 + t^3 - t - 10 + 5t \, dt = \\[1ex]
+					&amp;= \rm \int_0^2 t^3 - 4t^2 + 13t - 10 \, dt =
+					\left[\dfrac{t^4}{4} - \dfrac{4}{3} t^3 +	\dfrac{13}{2} t^2 -
+					10t \right]_0^2 = \\[1ex]
+					&amp;= \rm 4 - \dfrac{4}{3} 8 + 26 - 20 = -\dfrac{2}{3}
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x,y) = (\sqrt{y}, x^3 + y)$</p>
+				
+			<p style="margin-left:60px">
+				$\rm A = (0, 0), B = (1, 1)$</p>
+				
+			<ol>
+				<li>
+					$\rm α(t) = (t^2,t^3) \quad α(0) = A \quad α(1) = B$
+				</li>
+				<li>
+					A lo largo de la recta que una $\rm A$ y $\rm B$.
+					<p>
+						$\Rightarrow \rm β(t) = (t,t) \quad β(0) = A \quad β(1) = B$
+					</p>
+				</li>
+			</ol>
+		
+		<center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_07.svg"
+			type="image/svg+xml" width="200" height="200"
+			style="border:1px solid black;background:white"></object>
+		</center>
+				
+			<p style="margin-left:30px">
+				1.
+				$
+				\begin{aligned}[t]
+					\rm \displaystyle \int_{C_1} f \cdot dα &amp;= \rm \displaystyle
+					\int_0^1 \left( \sqrt{t^3},t^6 + t^3 \right) \cdot (2t,3t^2) \,
+					dt = \int_0^1  2t^{5/2} + 3t^8 + 3t^5 \, dt = \\[1ex]
+					&amp;= \rm
+					\left[
+						\dfrac{4}{7} t^{7/2} + \dfrac{1}{3} t^9 + \dfrac{1}{2} t^6
+					\right]_0^1 = \dfrac{4}{7} + \dfrac{1}{3} + \dfrac{1}{2} =
+					\dfrac{59}{42}
+				\end{aligned}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				2.
+				$
+				\begin{aligned}[t]
+					\rm \displaystyle \int_{C_2} f \cdot dβ &amp;= \rm \displaystyle
+					\int_0^1 \left(\sqrt{t},t^3 + t \right) \cdot (1,1) \, dt =
+					\int_0^1 \sqrt{t} + t^3 + t \, dt = \\[1ex]
+					&amp;= \rm
+					\left[
+						\dfrac{2}{3} t^{3/2} + \dfrac{1}{4} t^4 + \dfrac{1}{2} t^2
+					\right]_0^1 = \dfrac{2}{3} + \dfrac{1}{4} + \dfrac{1}{2} =
+					\dfrac{17}{12}
+				\end{aligned}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_C (x^2 - 2xy) \, dx + (y^2 - 2xy) \, dy$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm C \rightarrow$ el arco de la parábola $\rm y = x^2$ que une
+				$(-2, 4)$ y $(1, 1)$</p>
+				
+		<center>
+			$
+			\begin{array}{l}
+				\rm α(x) = (x,x^2) \\[1ex]
+				\rm x \in [-2,1]
+			\end{array}
+			$
+			<object data="calculo_integrales_linea/calculo_integrales_linea_08.svg"
+			type="image/svg+xml" width="300" height="150"
+			style="display:inline-block;margin:0 0 0 2em;border:1px solid black;background:white;vertical-align:middle">
+			</object>
+		</center>
+				
+			<p style="margin-left:30px">
+				$\rm f(x,y) = (x^2 - 2xy, y^2 - 2xy)$</p>
+				
+				<p style="margin-left:60px">
+					$\rm \displaystyle \int_C f_1 \, dx + f_2 \, dy =
+					\int_C (x^2 - 2xy) \, dx + (y^2 - 2xy) \, dy$</p>
+					
+			<p style="margin-left:30px">
+				Por la parametrización:</p>
+    
+				<p style="margin-left:60px">
+					$\rm y = x^2 \Rightarrow dy = 2x \, dx$</p>
+					
+			<p style="margin-left:30px">Sustituyendo:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm \displaystyle \int_{-2}^1 (x^2 - 2x^3) \, dx +
+						(x^4 - 2x^3) 2x \, dx = \\[1ex]
+						\quad
+						\rm =
+						\displaystyle \int_{-2}^1 x^2 - 2x^3 + 2x^5 - 4x^4 \, dx =
+						\left[
+							\dfrac{1}{3} x^3 - \dfrac{1}{2} x^4 + \dfrac{1}{3} x^6 -
+							\dfrac{4}{5} x^5
+						\right]_{-2}^1 = \\[1ex]
+						\quad
+						=
+						\left(
+							\dfrac{1}{3} - \dfrac{1}{2} + \dfrac{1}{3} - \dfrac{4}{5}
+						\right) -
+						\left(
+							-\dfrac{8}{3} - 8 + \dfrac{64}{3} + \dfrac{128}{5}
+						\right) = \\[1ex]
+						\quad = \dfrac{10-15+10-24}{30} - \dfrac{-80-240+640+768}{30}
+						= - \dfrac{1107}{30}
+					\end{array}
+					$
+				</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+				$
+				\begin{array}[t]{l}
+					\rm α : I \to \mathbb{R}^n \\[1ex]
+					\rm A = α(t_0) \leftarrow \smash{\text{fijo}} \\[1ex]
+					\rm B = α(t)
+				\end{array}
+				\qquad
+				$
+				</span>
+				<span style="display:table-cell;text-align:center">
+					$
+					\rm \displaystyle
+					\underset{
+						\text{long. arco}
+					}{\Lambda(A,B)} = \int_{t_0}^t \lVert α'(x) \rVert \, dx
+					$
+					<object data="calculo_integrales_linea/calculo_integrales_linea_09.svg"
+					type="image/svg+xml" width="170" height="51"
+					style="margin:1em auto 0"></object>
+				</span>
+			</p>
+    
+    <p>Dado que $\rm A$ está fijado, puede definirse:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}[b]
+					\rm \ell : I &amp;\to \mathbb{R} \\
+					\rm t &amp;\to \rm \ell(t) = \Lambda(A,α(t))
+				\end{aligned}
+				\leftarrow
+				$ función longitud de arco.
+			</p>
+
+    <p>Por el primer teorema fundamental del cálculo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \ell'(t) = \lVert α'(t) \rVert$</p>
+				
+    <p>
+      <span style="text-decoration:underline">
+				Integral de un campo escalar
+			</span>:
+		</p>
+		
+			<p style="margin-left:30px">
+				$\rm α : I \to \mathbb{R}^n$</p>
+				
+				<p style="margin-left:60px">
+					$\rm a,b \in I \quad A = α(a), B = α(b)$</p>
+					
+				<p style="margin-left:60px">
+					$\rm C = α([a,b])$</p>
+					
+			<p style="margin-left:30px">
+				$\rm φ : D \subset \mathbb{R}^n \to \mathbb{R} \quad$ (campo escalar)</p>
+				
+				<p style="margin-left:60px">
+					$\rm C \subset D$</p>
+    
+    <p>Entonces la integral de $φ$ a lo largo de $\rm C$ respecto a la
+    longitud de curva $\ell$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}[t]
+					\rm \displaystyle \int_{C} φ \, d\ell &amp;
+					= \rm \displaystyle	\int_a^b φ(α(t)) \lVert α'(t) \rVert \, dt \\
+					&amp;\uparrow \\
+					\rm \ell'(t) &amp;= \rm \dfrac{d\ell}{dt} = \lVert α'(t) \rVert \\[1ex]
+					\rm d\ell &amp;= \rm \dfrac{d\ell}{dt} dt = \lVert α'(t) \rVert \, dt
+				\end{aligned} \leftarrow
+				$
+				Integral de un campo escalar
+			</p>
+			
+		<p>Si $\rm φ = 1 \Rightarrow \displaystyle \int_c d\ell = \int_a^b
+		\lVert α'(t) \rVert \, dt = \Lambda(A,B)$</p>
+		
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm φ(x,y,z) = yz$</p>
+				
+			<p style="margin-left:30px">
+				$\rm α(t) = (t, 3t, 2t) \quad t \in [1,3]$</p>
+				
+				<p style="margin-left:60px">
+					$
+					\rm \displaystyle
+					\int_C φ \, d\ell = \int_C φ(α(t)) \lVert α'(t) \rVert \, dt
+					$
+				</p>
+				
+					<p style="margin-left:90px">
+						$
+						\rm α'(t) = (1, 3, 2) \Rightarrow \lVert α'(t) \rVert = \sqrt{14}
+						$
+					</p>
+					
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_C φ \, d\ell = \int_1^3 6t^2 \sqrt{14} \, dt =
+				\left[ 2 \sqrt{14} t^3	\right]_1^3 = 54 \sqrt{14} - 2 \sqrt{14} =
+				52 \sqrt{14}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Un campo vectorial conservativo es aquel que es gradiente de una
+    función escalar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F = \nabla G$</p>
+    
+			<p style="margin-left:30px">
+				$\rm F : \mathbb{R}^n \to \mathbb{R}^n$</p>
+				
+			<p style="margin-left:30px">
+				$\rm G : \mathbb{R}^n \to \mathbb{R}$</p>
+				
+    <p>Donde $\rm G$ es la función potencial del campo vectorial conservativo
+    $\rm F$.</p>
+    
+    <p>Un campo vectorial conservativo tiene como propiedad que su integral
+    de línea entre dos puntos no depende del camino seguido. Esto es:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F = \nabla φ$</p>
+    
+			<p style="margin-left:30px">
+				$\rm F : B \subset \mathbb{R}^n \to \mathbb{R}^n$</p>
+				
+			<p style="margin-left:30px">
+				$\rm φ : B \subset \mathbb{R}^n \to \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				<object data="calculo_integrales_linea/calculo_integrales_linea_10.svg"
+				type="image/svg+xml" width="111" height="77"
+				style="display:inline-block;margin:0 1em 0 0;vertical-align:middle"></object>
+				$\rm \displaystyle \int_{C_1} F \, dα = \int_{C_2} F \, dβ$
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell;text-align:center">
+					<object data="calculo_integrales_linea/calculo_integrales_linea_11.svg"
+					type="image/svg+xml" width="102" height="76"
+					style="display:inline-block;margin:0;vertical-align:middle"></object>
+					<span style="display:block">
+						<small>camino<br>cerrado</small>
+					</span>
+				</span>
+				<span style="display:table-cell;padding-left:1em">
+					$\rm \displaystyle \int_{C_3} F \, d\nu = 0$
+				</span>
+			</p>
+			
+    <p>Entonces, sea el camino:</p>
+    
+			<p style="margin-left:30px">
+				$\rm α : I \to \mathbb{R}^n$</p>
+				
+			<p style="margin-left:30px">
+				$\rm α(I) \subset B$</p>
+				
+				<p style="margin-left:60px">
+					$\rm a = α(t_1)$</p>
+					
+				<p style="margin-left:60px">
+					$\rm b = α(t_2)$</p>
+    
+    <p>Se demuestra, haciendo primero uso de la regla de la cadena $(1)$
+    y luego del teorema fundamental del cálculo $(2)$, que la integral de
+    línea de un campo vectorial conservativo es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dα &amp;= \rm \int_{t_1}^{t_2} F(α(t)) \cdot
+					α'(t) \, dt = \int_{t_1}^{t_2} \nabla φ (α(t)) \cdot α'(t) \,
+					dt = \\[1ex]
+					&amp;\underset{(1)}{=} \rm \int_{t_1}^{t_2} φ'(α(t)) \, dt
+					\underset{(2)}{=} \bigl[ φ(α(t)) \bigr]_{t_1}^{t_2} =
+					φ(α(t_2)) - φ(α(t_1)) = \\[1ex]
+					&amp;= \rm φ(b) - φ(a)
+				\end{align}
+				$
+			</p>
+    
+    <p>Por tanto, en las condiciones anteriores, la integral no depende
+    del camino, sino sólo de los valores que toma la función potencial en
+    los extremos de la curva. Esto es:</p>
+    
+			<p style="text-align:center">
+					$\rm \displaystyle \int_C F \cdot dα = φ(B) - φ(A)$
+				<span style="display:block;margin:1em auto 0;text-align:center">
+					2º teorema fundamental del cálculo<br>
+					para las integrales de línea
+				</span>
+			</p>
+
+    <p>Donde $φ$ es la función potencial del campo vectorial conservativo
+    $\rm F$, y $\rm A, B$ los extremos de la curva $\rm C$ (con sentido
+    $\rm A \to B$).</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Fuerza gravitatoria. Potencial gravitatorio.</p>
+    
+			<p style="margin-left:30px">
+				<object data="calculo_integrales_linea/calculo_integrales_linea_12.svg"
+				type="image/svg+xml" width="103" height="67"
+				style="display:inline-block;margin:0 2em 0 0;border:1px solid black;background:white;vertical-align:middle"
+				></object>
+				$
+				\begin{array}{c}
+					\hat{θ} \rightarrow \text{vector unitario} \\[1ex]
+					\begin{aligned}
+						&amp;\rm F = - GMm \lVert θ \rVert^{-2} \hat{θ} =
+						- GMm \lVert θ \rVert^{-2} \dfrac{θ}{\lVert θ \rVert} \\[1ex]
+						\Rightarrow {} &amp;\rm F = - GMm \lVert θ \rVert^{-3} θ
+					\end{aligned}
+				\end{array}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}
+					\rm F : \mathbb{R}^3 &amp;\to \mathbb{R}^3 \\
+					θ &amp;\to \rm F(θ)
+				\end{aligned}
+				\qquad
+				\boxed{
+					\rm \mathrel{\exists} φ \mathrel{|} \nabla φ = F \enspace ?
+				}
+				$
+			</p>
+			
+		<p>(1)</p>
+			
+			<p style="margin-left:30px">
+				$\rm f,g$ campos escalares ($\rm \mathbb{R}^n \to \mathbb{R}$)</p>
+    
+			<p style="margin-left:30px">
+				Si $\rm fg(θ) = f(θ) \cdot g(θ)$, entonces:</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \nabla(fg) = f \nabla g + g \nabla f \\[1ex]
+					\llap{\Rightarrow {}} \rm \nabla(f^n) = n f^{n-1} \nabla f
+					\quad n \neq 0
+				\end{array}
+				$
+			</p>
+
+    <p>(2)</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f : \mathbb{R}^n &amp;\to \mathbb{R} \\
+					θ &amp;\to \rm \lVert θ \rVert = \sqrt{x_1^2 + \dotsb + x_n^2}
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\nabla f(θ) = \dfrac{θ}{\lVert θ \Vert}
+				\qquad
+				\left(
+					\nabla(\lVert θ \rVert) = \dfrac{θ}{\lVert θ \rVert}
+				\right)
+				$
+			</p>
+			
+    <p>(1)+(2)</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \nabla(\lVert θ \rVert^n) =
+				n \lVert θ \rVert^{n-1} \nabla(\lVert θ \rVert) =
+				n \lVert θ \rVert^{n-1} \dfrac{θ}{\lVert θ \rVert} =
+				n \lVert θ \rVert^{n-2} θ \quad n \neq 0
+				$
+			</p>
+			
+    <p>A continuación:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(θ) = -GmM \lVert θ \rVert^{-3} θ$</p>
+				
+			<p style="margin-left:30px">
+				$\rm φ(θ) = GmM \lVert θ \rVert^{-1} \quad (φ : \mathbb{R}^3 \to
+				\mathbb{R})$</p>
+				
+				<p style="margin-left:60px">
+					$\Rightarrow \rm \nabla φ(θ) = GmM \nabla(\lVert θ \rVert^{-1})
+					= -GmM \lVert θ \rVert^{-3} θ = F(θ)$</p>
+					
+				<p style="margin-left:60px">
+					$\Rightarrow \rm F = \nabla φ$, donde $φ$ es el potencial de
+					Newton.</p>
+					
+    <p>Para calcular, entonces, el trabajo de un campo gravitatorio:</p>
+    
+			<p style="text-align:center">
+				<object data="calculo_integrales_linea/calculo_integrales_linea_13.svg"
+				type="image/svg+xml" width="106" height="106"
+				style="display:inline-block;margin:0 1em 0 0;border:1px solid black;background:white;vertical-align:middle">
+				</object>
+				$\rm \displaystyle \int_C F \cdot dα = φ(B) - φ(A)$
+			</p>
+		
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Principio de conservación de la energía mecánica.</p>
+    
+    <p>Segunda ley de Newton:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(α(t)) = m·α''(t) \qquad (F = m·a)$</p>
+				
+    <p>Siendo la fuerza gravitatoria $\rm F$ un campo vectorial y $α$ el
+    camino descrito bajo la influencia de $\rm F$ por una masa $\rm m$.</p>
+    
+    <p>El trabajo que se produce entre dos puntos unidos a través de la
+    curva $\rm C$ es tal que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm W = \displaystyle ∫_C F \cdot dα$</p>
+				
+    <p>Integrando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_C F \cdot dα &amp;
+					= \rm \int_{t_1}^{t_2} F(α(t)) \cdot α'(t) \, dt =
+					\int_{t_1}^{t_2} m \cdot α''(t) \cdot α'(t) \, dt = \\[1ex]
+					&amp;= \rm \int_{t_1}^{t_2} m \dfrac{1}{2}
+					\left( α'(t) \cdot α'(t) \right)' \, dt =
+					\int_{t_1}^{t_2} m \dfrac{1}{2}
+					\left( \lVert α'(t) \rVert^2 \right)' \, dt = \\[1ex]
+					&amp;= \rm \dfrac{1}{2} m 
+					\left[ \lVert α'(t) \rVert^2 \right]_{t_1}^{t_2} =
+					\dfrac{1}{2} m \lVert α'(t_2) \rVert^2 -
+					\dfrac{1}{2} m \lVert α'(t_1) \rVert^2
+				\end{align}
+				$
+			</p>
+   
+    <p>Siendo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm α'(t) = \vec{v}(t) \Rightarrow \lVert α'(t) \rVert = v(t)$
+			</p>
+			
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\displaystyle
+				\boxed{
+					\rm
+					W = \int_c F \cdot dα =
+					\dfrac{1}{2} mv^2(t_2) - \dfrac{1}{2} mv^2(t_1) = E_c(B) - E_c(A)
+				}
+				$
+			</p>
+    
+				<p style="margin-left:60px">
+					$\rm E_c(B) \rightarrow$ energía cinética en el punto $\rm B$.
+				</p>
+				
+				<p style="margin-left:60px">
+					$\rm E_c(A) \rightarrow$ energía cinética en el punto $\rm A$.
+				</p>
+				
+    <p>Como se vio, dado que un campo gravitatorio es conservativo, el
+    trabajo también es igual a:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm W = φ(B) - φ(A)
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\displaystyle \rm \llap{E_p} = \rlap{-φ}
+					\end{subarray}
+				}{=}-(E_p(B) - E_p(A))
+        $
+			</p>
+    
+				<p style="margin-left:60px">
+					$\rm E_p(B) \rightarrow$ energía potencial en el punto $\rm B$.
+				</p>
+				
+				<p style="margin-left:60px">
+					$\rm E_p(A) \rightarrow$ energía potencial en el punto $\rm A$.
+				</p>
+				
+    <p>Igualando:</p>
+    
+			<p style="text-align:center">
+				$\rm E_c(B) - E_c(A) = -E_p(B) + E_p(A)$</p>
+				
+    <p>Reordenando:</p>
+			
+			<p style="text-align:center">
+				$
+				\boxed{
+					\rm E_c(A) + E_p(A) = E_c(B) + E_p(B)
+				}
+				$
+			</p>
+			
+			<p style="text-align:center">
+				Principio de conservación de la energía mecánica</p>
+				
+    <p>Por tanto, la suma de las energías cinética y potencial, i.e. la
+    energía mecánica, se mantiene constante. Si, por ejemplo, $\rm A$ se
+    mantiene fijo y B varía, la energía mecánica no cambia, es constante.
+    La nomenclatura de campo conservativo proviene de esta propiedad.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>¿Cuándo las integrales de línea son independientes del camino?
+    Cuando, como se ha visto, el campo vectorial $\rm F$ es gradiente de
+    un campo escalar $φ$. Esto es: $\rm F = \nabla φ$.</p>
+    
+    <p>Definición:</p>
+    
+			<p style="margin-left:30px">
+				Sea $\rm F : B \subset \mathbb{R}^n \to \mathbb{R}^n$ y $\rm B$
+				tal que dados dos puntos cualesquiera $\rm A_1, A_2 \in B$ existe
+				un camino $\rm α : I \to \mathbb{R}^n$ tal que $\rm α(I) \subset B$
+				y $\rm A_1, A_2 \in α(I)$. Entonces se dice que $\rm B$ es conexo
+				(no se rompe en partes independientes).</p>
+				
+			<p style="margin-left:30px;text-align:center">
+				<object data="calculo_integrales_linea/calculo_integrales_linea_14.svg"
+				type="image/svg+xml" width="203" height="78"
+				style="display:inline-block;margin:0"></object>
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm F$ es conservativo si dados los puntos $\rm A_1, A_2$ de
+				$\rm B$ y para cualquier camino $α$ dentro de $\rm B$ que una
+				$\rm A_1$ y $\rm A_2$, $\rm \int_C F \cdot dα$ es constante.</p>
+			
+			<p style="margin-left:30px">
+				Equivalentemente, $\rm F$ es conservativo si dado un punto $\rm A
+				\in B$ y $α$ cualquier camino cerrado con origen y final en el
+				punto $\rm A$, $\rm \oint_C F \cdot dα = 0$.</p>
+				
+			<p style="margin-left:30px">
+				Por tanto, si $\rm F$ es conservativo la integral de línea es
+				independiente del camino. Sólo es función del punto inicial y
+				final.
+			</p>
+			
+    <p>
+      <span style="text-decoration:underline">
+				1er teorema fundamental del cálculo para integrales de línea
+			</span>:
+		</p>
+    
+    <p>Premisa:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F : B \subset \mathbb{R}^n \to \mathbb{R}^n$, $\rm B$ conexo
+				y $\rm F$ se supone que es conservativo.</p>
+    
+    <p>Definición:</p>
+    
+			<p style="margin-left:30px">
+				Sean $\rm A \in B$ fijo y $θ$ cualquier punto de $\rm B$. Sea $α$
+				un camino dentro de $\rm B$ que une $\rm A$ y $θ$ ($\rm B$ es
+				conexo $\Rightarrow$ $α$ existe). Entonces, se define el campo escalar
+				$φ$ como:</p>
+				
+				<p style="margin-left:60px">
+					<span style="display:table-cell">
+						$\rm \displaystyle φ(θ) = \int_C F \cdot dα$
+						<span style="display:block;margin-top:1em">
+							$
+							\begin{aligned}
+								\rm φ : B \subset \mathbb{R}^n &amp;\to \mathbb{R} \\
+								θ &amp;\to φ(θ)
+							\end{aligned}
+							$
+						</span>
+					</span>
+					<span style="display:table-cell;vertical-align:middle">
+						<object data="calculo_integrales_linea/calculo_integrales_linea_15.svg"
+						type="image/svg+xml" width="193" height="81"
+						style="display:inline-block;margin:0 2em"></object>
+					</span>
+				</p>
+				
+			<p style="margin-left:30px">
+				El campo escalar $φ$ que así se obtiene es sólo función de $θ$,
+				ya que $\rm A$ es fijo, aunque depende de cuál sea éste.</p>
+				
+			<p style="margin-left:30px">
+				Además, $\rm \nabla φ = F$.</p>
+				
+    <hr>
+    
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm F : B \subset \mathbb{R}^2 &amp;\to \mathbb{R}^2
+					\text{ conservativo} \\[1ex]
+					\rm (x,y) &amp;\to \rm F(x,y) = (F_1(x,y),F_2(x,y))
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \displaystyle φ = \int_C F \cdot dα$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm φ : B \subset \mathbb{R}^2 &amp;\to \mathbb{R} \\
+					\rm (x,y) &amp;\to \rm φ(x,y)
+				\end{align}
+				$
+			</p>
+			
+    <p>Donde $\rm B$ es abierto (para cualquier punto $\rm a \in B$ existe
+    en todas las direcciones posibles otro punto $\rm b$ tal que el segmento
+    $\rm \overline{ab} \subset B$) y conexo.</p>
+    
+    <p>Dado que $\rm F$ es conservativo la integral de línea es independiente
+    del camino $\rm C$. Entonces por conveniencia se escoge éste tal que:</p>
+    
+    <center>
+			<object data="calculo_integrales_linea/calculo_integrales_linea_16.svg"
+			type="image/svg+xml" width="168" height="148"></object>
+		</center>
+		
+			<p style="text-align:center">
+				$\rm C = C_1 + C_2$</p>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_C F \cdot dα = \int_{C_1} F \cdot dα + \int_{C_2} F \cdot dα
+				= \int_{(x_0,y_0)}^{(x_1,y)} F \cdot dα +
+				\int_{(x_1,y)}^{(x,y)} F \cdot dα
+				$
+			</p>
+			
+    <p>Derivando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\dfrac{\partial φ}{\partial x} =
+				\dfrac{\partial}{\partial x} \int_C F \cdot dα =
+				\dfrac{\partial}{\partial x} \int_{(x_0,y_0)}^{(x_1,y)} F \cdot dα
+				+ \dfrac{\partial}{\partial x} \int_{(x_1,y)}^{(x,y)} F \cdot dα
+				$
+			</p>
+			
+    <p>El resultado de la primera integral no depende de $\rm x$, así que
+    su derivada ha de ser $0$. Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\dfrac{\partial φ}{\partial x} = 0 +
+				\dfrac{\partial}{\partial x} \int_{(x_1,y)}^{(x,y)} (F_1 \, dx +
+				F_2 \, dy)
+				$
+			</p>
+			
+    <p>Dado que $\rm y$ es constante en $\rm C_2$, en la segunda integral
+    $\rm dy = 0$. Por lo que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\dfrac{\partial φ(x,y)}{\partial x} =
+				\dfrac{\partial}{\partial x} \int_{(x_1,y)}^{(x,y)} F_1(x,y) \, dx
+				= F_1(x,y)
+				$
+			</p>
+			
+    <p>Donde se ha hecho uso del primer teorema fundamental del cálculo.</p>
+    
+    <p>También con un planteamiento análogo puede encontrarse que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial φ(x,y)}{\partial y} = F_2(x,y)$</p>
+				
+    <p>Demostrándose que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \nabla φ(x,y) =
+				\left(
+					\dfrac{\partial φ(x,y)}{\partial x},
+					\dfrac{\partial φ(x,y)}{\partial y}
+				\right)
+				= (F_1(x,y), F_2(x,y)) = F(x,y)
+				$
+			</p>
+			
+    <hr>
+    
+    <p>Son equivalentes a la hora de concluír que un campo $\rm F$ es
+    conservativo:</p>
+    
+			<p style="margin-left:30px">
+				- La integral de línea de $\rm F$ es independiente del camino.</p>
+				
+			<p style="margin-left:30px">
+				- $\rm \mathrel{\exists} φ \mathrel{|} F = \nabla φ$</p>
+				
+			<p style="margin-left:30px">
+				- La integral de línea de $\rm F$ para un camino cerrado, puntos
+				inicial y final son el mismo, es cero.</p>
+				
+    <p>Otra condición más puede establecerse:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{ll}
+						\rm F : B \subset \mathbb{R}^n \to \mathbb{R}^n &amp;
+						\rm \quad F = (f_1, \dotsc, f_n) \\[1ex]
+						\rm φ : B \subset \mathbb{R}^n \to \mathbb{R} &amp; 
+						\rm \quad \nabla φ = F \Leftrightarrow f_i =
+						\dfrac{\partial φ}{\partial x_i}
+					\end{array}
+					$
+				</p>
+    
+			<p style="margin-left:30px">
+				Por el teorema de igualdad de las derivadas cruzadas:</p>
+				
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					\rm \dfrac{\partial^2 φ}{\partial x_i \partial x_j} =
+					\dfrac{\partial^2 φ}{\partial x_j \partial x_i} \\
+					\Downarrow \\
+					\rm \dfrac{\partial(\partial φ {∕} x_i)}{\partial x_j} =
+					\dfrac{\partial(\partial φ {∕} x_j)}{\partial x_i} \\
+					\Downarrow \\
+					\boxed{
+						\rm \dfrac{\partial f_i}{\partial x_j} =
+						\dfrac{\partial f_j}{\partial x_i}
+					}
+				\end{array}
+				$
+			</p>
+			
+			<p style="text-align:center">
+				$\uparrow$
+			</p>
+			
+			<p style="text-align:center">
+				Condición necesaria, aunque no suficiente,<br>
+				de campo conservativo.
+			</p>
+			
+    <p>Sí es condición suficiente si el campo vectorial $\rm F$ está
+    definido en un subconjunto $\rm B$ convexo (todo par de puntos de
+    $\rm B$ pueden unirse con una línea recta contenida en $\rm B$).</p>
+    
+    <p>Criterio:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F = (f_1, \dotsc, f_n)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm F$ es conservativo
+				$\Leftrightarrow \rm \dfrac{\partial f_i}{\partial x_j} =
+				\dfrac{\partial f_j}{\partial x_i} \mathrel{\forall} i,j \quad$
+				(en buenas condiciones)</p>
+				
+    <p>("<em>en buenas condiciones</em>": aquéllas para que el criterio
+    sea correcto).</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplos:</p>
+    
+    <p>Para que el criterio sea válido las buenas condiciones se cumplirán
+    en todos los ejemplos.</p>
+    
+    <p>1. $\rm F(x,y,z) = (xy, x^2 z + 1, xy)$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\begin{array}{l}
+					\rm \dfrac{\partial f_1}{\partial y} = x \\[1ex]
+					\rm \dfrac{\partial f_2}{\partial x} = 2xz
+				\end{array}
+				\quad
+				x \neq 2xz \Rightarrow F
+				$ no es conservativo.
+			</p>
+    
+    <p>2. $\rm F(x,y,z) = (y, x, x)$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f_1}{\partial y} = \dfrac{\partial f_2}{\partial x}
+				= 1
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f_2}{\partial z} = \dfrac{\partial f_3}{\partial y}
+				= 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f_1}{\partial z} = 0 \neq
+				\dfrac{\partial f_3}{\partial x} = 1 \Rightarrow F
+				$ no es conservativo.
+			</p>
+    
+    <p>3. $\rm F(x,y) = (x, y)$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f_1}{\partial y} = \dfrac{\partial f_1}{\partial x}
+				= 0
+				$
+			</p>
+    
+    <p>Este campo es conservativo $\Rightarrow \rm \nabla φ = F$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial φ}{\partial x} = f_1 = x \enspace	\Rightarrow
+				\enspace φ = \dfrac{1}{2} x^2 + g(y)
+				$
+			</p>
+
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial φ}{\partial y} = g'(y) = f_2 = y \enspace
+				\Rightarrow \enspace g(y) = \dfrac{1}{2} y^2 + C \quad
+				(C = \text{cte.})
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \Rightarrow φ = \dfrac{1}{2} x^2 + \dfrac{1}{2} y^2 + k$</p>
+
+    <p>4. $\rm F(x,y,z) = (x + z, -y - z, x - y)$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+					\begin{array}{l}
+						\rm \dfrac{\partial f_1}{\partial y} =
+						\dfrac{\partial f_2}{\partial x} = 0 \\[1ex]
+						\rm \dfrac{\partial f_1}{\partial z} =
+						\dfrac{\partial f_3}{\partial x} = 1 \\[1ex]
+						\rm \dfrac{\partial f_2}{\partial z} =
+						\dfrac{\partial f_3}{\partial y} = -1 
+					\end{array}
+				\right\}
+				\Rightarrow F
+				$ es conservativo.
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial φ}{\partial x} = f_1 = x + z \enspace
+				\Rightarrow \enspace φ = \dfrac{1}{2} x^2 + zx + g(y,z)
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial φ}{\partial y} = \dfrac{\partial g(y,z)}{\partial y}
+				= f_2 = -y - z \enspace \Rightarrow \enspace g(y,z) =
+				-\dfrac{1}{2} y^2 - zy + h(z)
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\Rightarrow φ = \dfrac{1}{2} x^2 + zx - \dfrac{1}{2} y^2 - zy +
+				h(z)
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial φ}{\partial z} = x - y + h'(z) = f_3 = x - y
+				\enspace \Rightarrow \enspace h'(z) = 0 \enspace \Rightarrow
+				\enspace h(z) = C \quad (C = \text{cte.})
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm \Rightarrow
+				φ = \dfrac{1}{2} x^2 + zx - \dfrac{1}{2} y^2 - zy + C
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+		Para $\rm F = (f_1, f_2)$ si $\rm \partial f_1 {∕} \partial y =
+    \partial f_2 {∕} \partial x$ la función potencial se calcula tal que:
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					φ &amp;\rm = \int f_1 \, dx + \int
+					\left(
+						f_2 - \int \dfrac{\partial f_2}{\partial x} \, dx
+					\right) \, dy = \\[1ex]
+					&amp;= \rm \int f_2 \, dy + \int
+					\left(
+						f_1 - \int \dfrac{\partial f_1}{\partial y} \, dy
+					\right) \, dx
+				\end{align}
+				$
+			</p>
+
+    <hr>
+    
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{multline}
+					\shoveleft
+					\rm \dfrac{\partial φ}{\partial x} = f_1
+					\tag{1} \label{1}
+				\end{multline}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{multline}
+					\shoveleft
+					\rm \dfrac{\partial φ}{\partial y} = f_2
+					\tag{2} \label{2}
+				\end{multline}
+				$
+			</p>
+
+    <p>Integrando $\eqref{1}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{multline}
+					\shoveleft
+					\rm	φ = \int f_1 \, dx + g(y) 
+					\tag{3} \label{3}
+				\end{multline}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm g(y)$ ?</p>
+				
+    <p>Derivando $φ$ respecto a $\rm y$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\dfrac{\partial φ}{\partial y} = \dfrac{\partial}{\partial y}
+				\left( \int f_1 \, dx \right) + g'(y) = f_2
+				$
+			</p>
+    
+    <p>Despejando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				g'(y) = f_2 - \dfrac{\partial}{\partial y}
+				\left( \int f_1 \, dx \right)
+				$
+			</p>
+    
+    <p>Aplicando la regla de Leibniz para la derivada de una integral,
+    puede escribirse como:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				g'(y) = f_2 - \int \dfrac{\partial f_1}{\partial y} \, dx
+				$
+			</p>
+    
+    <p>Integrando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				g(y) = \int \left( f_2 - \int \dfrac{\partial f_1}{\partial y}
+				\, dx \right) \, dy \quad (+ \: C, \text{cte.})
+				$
+			</p>
+			
+    <p>Sustituyendo en $\eqref{3}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				φ = \int f_1 \, dx + \int
+				\left( f_2 - \int \dfrac{\partial f_1}{\partial y} \, dx \right)
+				\, dy
+				$
+			</p>
+
+    <p>De forma análoga, si se parte de la integración de $\eqref{2}$, se
+    hallará también que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				φ = \int f_2 \, dy + \int
+				\left( f_1 - \int \dfrac{\partial f_2}{\partial x} \, dy \right)
+				\, dx
+				$
+			</p>
+			
+    <p>Entonces ya que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f_1}{\partial y} = \dfrac{\partial f_2}{\partial x}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\llap{\Rightarrow {}} φ &amp;= \rm \int f_1 dx +
+					\int \left( f_2 - \int \dfrac{\partial f_2}{\partial x} \, dx \right)
+					\, dy = \\[1ex]
+					&amp;= \rm \int f_2 \, dy +
+					\int \left( f_1 - \int \dfrac{\partial f_1}{\partial y} \, dy \right)
+					\, dx
+				\end{align}
+				$
+			</p>    
+    
+    <p>Quedando demostrado.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y) = (\sin y - y \sin x + x, \cos x + x \cos y + y)$</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+					\begin{array}{l}
+						\rm \dfrac{\partial f_1}{\partial y} = \cos y - \sin x \\[1ex]
+						\rm \dfrac{\partial f_2}{\partial x} = - \sin x + \cos y
+					\end{array}
+				\right\}
+				\Rightarrow \dfrac{\partial f_1}{\partial y} =
+				\dfrac{\partial f_2}{\partial x} {{} \Rightarrow} \mathrel{\exists} φ
+				\leftarrow
+				$ función potencial
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					φ &amp;= \rm \int (\sin y - y \sin x + x) \, dx + {} \\[1ex]
+					&amp;\hphantom{= {}} \rm + \int
+					\left(
+						\cos x + x \cos y + y - \int (-\sin x + \cos y) \, dx
+					\right) \, dy = \\[1ex]
+					&amp;= \rm x \sin y + y \cos x + \dfrac{1}{2} x^2 + {} \\[1ex]
+					&amp;\hphantom{= {}} \rm + \int
+					\left(
+						\cancel{\cos x} + \cancel{x \cos y} + y - \cancel{\cos x} -
+						\cancel{x \cos y}
+					\right) \, dy = \\[1ex]
+					&amp;= \rm x \sin y + y \cos x + \dfrac{1}{2} x^2 +
+					\dfrac{1}{2} y^2 + C 
+				\end{align}
+				$
+			</p>
+			
+    </div>
+
+		</div>
+		
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="teorema_fundamental_calculo.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="calculo_integrales_dobles_triples.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

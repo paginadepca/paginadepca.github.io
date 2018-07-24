@@ -1,0 +1,1379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Cálculo de integrales dobles y triples">
+    <meta name="keywords" content="cálculo, integrales, dobles, triples">
+    <title>Cálculo de integrales dobles y triples</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Cálculo de integrales dobles y triples</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>
+      <span style="text-decoration:underline">Integral doble</span>:
+    </p>
+    
+			<p style="margin-left:30px">
+				$\rm S = [a,b] \times [c,d] = \{(x,y) \in \mathbb{R}^2 \mathrel{|}
+				a \leq x \leq b, c \leq y \leq d\}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm S \Rightarrow$ rectángulo</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_01.svg"
+			type="image/svg+xml" width="250" height="250"></object>
+		</center>
+		
+			<p style="margin-left:30px">
+				$\rm f : S \to \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \displaystyle V = \iint_S f$</p>
+    
+			<p style="margin-left:30px">
+				$\rm V \rightarrow$ volumen definido por $\rm f$ sobre la superficie
+				$\rm S$</p>
+				
+    <p>Esto es:</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_02.svg"
+			type="image/svg+xml" width="473" height="256"></object>
+		</center>
+		
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S f = \int_a^b \! \int_c^d f(x,y) \, dy \, dx =
+				\int_c^d \! \int_a^b f(x,y) \, dx \, dy
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm S = [-1,1] \times [-1,0] =
+				\{(x,y) \mathrel{|} -1 \leq x \leq 1, -1 \leq y \leq 0\}
+				$
+			</p>
+			
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_03.svg"
+			type="image/svg+xml" width="225" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p style="margin-left:30px">
+			$\rm f(x,y) = x + y + 1$</p>
+			
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_04.svg"
+			type="image/svg+xml" width="225" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+
+    <p>Las integrales múltiples, en este caso doble, se resuelven de
+    dentro hacia fuera:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm \displaystyle
+				\int_a^b \! \int_c^d f(x,y) \, dy \, dx =
+				\int_a^b \! \left( \int_c^d f(x,y) \, dy \right) \, dx
+				$
+			</p>
+			
+    <p>Fijando $\rm x$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;=
+					\rm \int_{-1}^1 \int_{-1}^0 (x+y+1) \, dy \, dx =
+					\int_{-1}^1 \left[ xy + y^2{∕}2 + y \right]_{-1}^0 \,	dx = \\[1ex]
+					&amp;= \rm \int_{-1}^1 (x - 1{∕}2 + 1) \, dx =
+					\int_{-1}^1 (x + 1{∕}2) \, dx = \\[1ex]
+					&amp;= \rm \left[ x^2{∕}2 + x{∕}2 \right]_{-1}^1 =
+					1{∕}2 + \cancel{1{∕}2} - \cancel{1{∕}2} + 1{∕}2 = 1
+				\end{align}
+				$
+			</p>
+    
+    <p>Fijando $\rm y$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;=
+					\rm \int_{-1}^0 \int_{-1}^1 (x+y+1) \, dx \, dy =
+					\int_{-1}^0 \left[ x^2{∕}2 + yx + x \right]_{-1}^1 \, dy = \\[1ex]
+					&amp;= \rm \int_{-1}^0 \left( \cancel{1{∕}2} + y + 1 -
+					\cancel{1{∕}2} + y + 1 \right) \, dy =
+					\int_{-1}^0 (2y + 2) \, dy = \\[1ex]
+					&amp;= \rm \left[ y^2 + 2y \right]_{-1}^0 = -1 + 2 = 1
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_{-1}^1 \int_{0}^{π{∕}2} (x \sin y - y e^x) \, dy \, dx
+				\quad \leftarrow
+				$ Integrar esto.
+			</p>
+			
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x,y) = x \sin y - y e^x$</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+				<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_05.svg"
+				type="image/svg+xml" width="150" height="150"
+				style="display:inline-block;margin:0 1em 0 0;border:1px solid black;background:white">
+				</object>
+				</span>
+				<span style="display:table-cell;vertical-align:middle">
+					Rectángulo:
+					<span style="display:block;margin-top:1ex">
+						$[-1,1] \times [0,π{∕}2]$
+					</span>
+				</span>
+			</p>
+				
+    <p>Resolviendo:</p>
+    
+			<p style="margin-left:10px;margin-top:0em">
+				$
+				\begin{align}
+					\rm \iint_{S} f &amp;=
+					\rm \int_{-1}^1 \int_0^{π{∕}2} (x \sin y - y e^x) \, dy \, dx =
+					\int_{-1}^1	\left[ -x \cos y + \dfrac{y^2}{2} e^x \right]_0^{π{∕}2}
+					\, dx = \\[1ex]
+					&amp;= \rm \int_{-1}^1
+					\left(
+						\left(
+							\cancel{-x \cos(π{∕}2)} \! - {} \dfrac{π^2}{8} e^x
+						\right)
+						- (-x \cos 0 - 0)
+					\right) \, dx = \\[1ex]
+					&amp;= \rm \int_{-1}^1 \left( -\dfrac{π^2 e^x}{8} + x \right) \,
+					dx = \left[ -\dfrac{π^2 e^x}{8} + \dfrac{x^2}{2} \right]_{-1}^1
+					= \\[1ex]
+					&amp;= \rm -\dfrac{π^2 e}{8} + \dfrac{1}{2} - 
+					\left( -\dfrac{π^2 e^{-1}}{8} + \dfrac{1}{2} \right) =
+					{} \dfrac{π^2}{8} \left( -e + \dfrac{1}{e} \right) 
+				\end{align}
+				$
+			</p>
+			
+    <p>Si se invierte el orden de integración:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;= \rm \int_{0}^{π{∕}2} \! \int_{-1}^1
+					(x \sin y - y e^x) \, dx \, dy =
+					\int_0^{π{∕}2} \left[ \dfrac{x^2}{2} \sin y - y e^x \right]_{-1}^1
+					\, dy = \\[1ex]
+					&amp;= \rm \int_0^{π{∕}2}
+					\left(
+						\left(
+							\cancel{\dfrac{1}{2} \sin y} \! - y e
+						\right)
+						-
+						\left(
+							\cancel{\dfrac{1}{2} \sin y} \! - y e^{-1}
+						\right)
+					\right) \, dy = \\[1ex]
+					&amp;= \rm \int_0^{π{∕}2} y \left( -e + \dfrac{1}{e} \right) \,
+					dy =
+					\left[
+						\dfrac{y^2}{2} \left( -e + \dfrac{1}{e} \right)
+					\right]_0^{π{∕}2} =
+					{} \dfrac{π^2}{8} \left( -e + \dfrac{1}{e} \right)
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Cuando $\rm S$ ya no es un rectángulo:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell">
+						<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_06.svg"
+						type="image/svg+xml" width="240" height="172"
+						style="display:inline-block;margin:0 1em 0 0"></object>
+					</span>
+					<span style="display:table-cell;vertical-align:bottom;text-align:left">
+						$\rm S = \{(x,y) \mathrel{|} a \leq x \leq b, h_1(x) \leq y
+						\leq h_2(x) \}$
+						<span style="display:block;margin-top:1em">
+							$\rm f : S \subset \mathbb{R}^2 \to \mathbb{R}$
+							<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_07.svg"
+							type="image/svg+xml" width="160" height="110"
+							style="display:inline-block;margin:0;vertical-align:middle"></object>
+						</span>
+					</span>
+				</span>
+			</p>
+    
+    <p>Se fija la $\rm x$:</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_08.svg"
+			type="image/svg+xml" width="161" height="120"></object>
+		</center>
+    
+    <p>Se fija $\rm x$, y a partir del plano perpendicular al eje "$\rm x$"
+    y paralelo al eje "$\rm y$" se define una sección del volumen, de la
+    cual se obtiene el área y de ésta, junto con el grosor de la sección,
+    su volumen particular. Luego se desplaza este plano a lo largo de $\rm x$,
+    para calcular el volumen como la suma de las sucesivas secciones contiguas.
+    Esto, para secciones infinitesimales, es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				V = \iint_S f = \int_a^b \! \int_{h_1(x)}^{h_2(x)} f(x,y) \, dy \, dx
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x) = x \cos(x+y)$</p>
+			
+			<p style="margin-left:30px">
+				$\rm S$ es el triángulo con vértices: $(0, 0), (π, 0), (π, π)$</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_09.svg"
+			type="image/svg+xml" width="250" height="250"
+			style="border:1px solid black;background:white"></object>
+		</center>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm S &amp;= \rm \{ (x,y) \mathrel{|} a \leq x \leq b,
+					h_1(x) \leq y \leq h_2(x) \} = \\[1ex]
+					&amp;= \rm \{ (x,y) \mathrel{|} 0 \leq x \leq π,
+					0 \leq y \leq x \}
+				\end{align}
+				$
+			</p>
+    
+    <p>Integrando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;= \rm \int_0^π \! \int_0^x x \cos(x+y) \, dy \,
+					dx = \int_0^π [x \sin(x+y)]_0^x \, dx = \\[1ex]
+					&amp;= \rm \int_0^π (x \sin(2x) - x \sin x) \, dx =
+					\int_0^π x (\sin(2x) - \sin x) \, dx
+				\end{align}
+				$
+			</p>
+    
+    <p>La integral resultante se resuelve por partes:</p>
+    
+			<p style="margin-left:30px">
+				$\rm d(u \cdot v) = u \cdot dv + v \cdot du$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \displaystyle u \cdot v = \int d(u \cdot v) = \int u \cdot dv
+				+ \int v \cdot du$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int u \cdot dv = u \cdot v - \int v \cdot du$
+			</p>
+			
+    <p>Si:</p>
+    
+			<p style="margin-left:30px">
+				$\rm u = x \Rightarrow du = dx$</p>
+				
+			<p style="margin-left:30px">
+				$\rm dv = ( \sin(2x) - \sin x) \, dx \Rightarrow v = -\dfrac{1}{2}
+				\cos(2x) + \cos x$</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f = &amp;\rm \int_0^π x (\sin(2x) - \sin x) \, dx =
+					\left[
+						x \left( -\dfrac{1}{2} \cos(2x) + \cos x \right)
+					\right]_0^π - {} \\[1ex]
+					&amp;{} - \rm \int_0^π \left( -\dfrac{1}{2} \cos(2x) +
+					\cos x \right) \, dx = π \left( -\dfrac{1}{2} \cos(2π) +
+					\cos π \right) - {} \\[1ex]
+					&amp;{} - \rm \cancelto{\mspace{1mu} 0}{\left[-\dfrac{1}{4} \sin(2x) + \sin x
+					\right]_0^π \,} \! = -\dfrac{3}{2} π
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_0^π \! \int_0^{\sin x} y \, dy \, dx \enspace \Rightarrow
+				\enspace f(x,y) = y
+				$
+			</p>
+			
+			<p style="text-align:center">
+				<span style="display:inline-table;border:1px solid black;background:white">
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_10.svg"
+					type="image/svg+xml" width="250" height="125"
+					style="display:inline-block;margin:0;vertical-align:middle">
+					</object>
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_11.svg"
+					type="image/svg+xml" width="240" height="250"
+					style="display:inline-block;margin:0;vertical-align:middle">
+					</object>
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;= \rm \int_0^π \int_0^{\sin x} y \, dy \, dx
+					= \int_0^π \left[ \dfrac{y^2}{2} \right]_0^{\sin x} \, dx =
+					\int_0^π \dfrac{\sin^2 x}{2} \, dx
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\rm \large \llap{\sin^2 x} \, = \,
+							\rlap{\frac{\Large 1 - \cos(2x)}{\Large 2}}
+						\end{subarray}
+					}{=} \\[1ex]
+					&amp;= \rm \int_0^π \dfrac{1 - \cos(2x)}{4} \, dx =
+					\left[ \dfrac{2x - \sin(2x)}{8} \right]_0^π = {} \dfrac{π}{4}
+				\end{align}
+				$
+			</p>
+    
+    <p>Donde se ha hecho uso de una fórmula trigonométrica para encontrar
+    la solución de la integral.</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="margin-left:30px">
+				$\rm S = \left\{(x,y) \in \mathbb{R}^2 \mathrel{|} c \leq y \leq d,
+				g_1(y) \leq x \leq g_2(y) \right\}$</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_12.svg"
+			type="image/svg+xml" width="209" height="160"></object>
+		</center>
+				
+			<p style="margin-left:30px">
+				$\rm f : S \subset \mathbb{R}^2 \to \mathbb{R}$</p>
+				
+    <p>Aquí se fija $\rm y$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle V = \iint_S f = \int_c^d \! \int_{g_1(y)}^{g_2(y)}
+				f(x,y) \, dx \, dy
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = \left\{(x,y) \mathrel{|} -1 \leq y \leq 2, y \leq x \leq
+				y^2 \right\}$</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_13.svg"
+			type="image/svg+xml" width="300" height="200"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+			<p style="margin-left:30px">
+				$\rm f(x,y) =1$</p>
+		
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_14.svg"
+			type="image/svg+xml" width="375" height="300"
+			style="border:1px solid black;background:white"></object>
+		</center>
+				
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_{-1}^2 \int_y^{y^2} dx \, dy &amp;= \rm
+					\int_{-1}^2 [x]_y^{y^2} \, dy = \int_{-1}^2 (y^2 - y) \, dy
+					= \\[1ex]
+					&amp;= \rm \left[ y^3{∕}3 - y^2{∕}2 \right]_{-1}^2 =
+					8{∕}3 - 2 + 1{∕}3 + 1{∕}2 = 3{∕}2
+				\end{align}
+				$
+			</p>
+
+    <p>Como $\rm f(x,y) = 1$ el resultado de la integral también es el
+    área de $\rm S$.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_1^{\ln 8} \! \int_0^{\ln y} e^{x+y} \, dx \, dy
+				$
+			</p>
+
+			<p style="margin-left:30px">
+				$\rm f(x,y) = e^{x+y}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm S = \{ (x,y) \mathrel{|} 1 \leq y \leq \ln 8,
+				0 \leq x \leq \ln y \}$</p>
+				
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_15.svg"
+			type="image/svg+xml" width="300" height="180"
+			style="margin-left:30px;border:1px solid black;background:white"></object>
+				
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_1^{\ln 8} \! \int_0^{\ln y} e^{x+y} \, dx \, dy &amp;=
+					\rm \int_{1}^{\ln 8} \left[ e^{x+y} \right]_0^{\ln y} \, dy =
+					\int_1^{\ln 8} \left( e^{\ln y \, + \, y} - e^y \right) \, dy
+					= \\[1ex]
+					&amp;= \rm \int_1^{\ln 8} e^y \left( e^{\ln y} - 1 \right) \, dy
+					= \int_1^{\ln 8} e^y (y-1) \, dy
+				\end{align}
+				$
+			</p>
+			
+    <p>Integrando por partes:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int u \cdot dv = u \cdot v - \int v \cdot du$
+			</p>
+			
+				<p style="margin-left:60px">
+					$\rm u = (y - 1) \enspace \Rightarrow \enspace du = dy$</p>
+					
+				<p style="margin-left:60px">
+					$\rm dv = e^y \, dy \enspace \Rightarrow \enspace v = e^y$</p>
+					
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int e^y (y - 1) \, dy = (y - 1) e^y -
+				\int e^y \, dy = (y - 1) e^y - e^y = e^y (y - 2)$</p>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_1^{\ln 8} e^y (y-1) \, dy = \left[ e^y (y-2) \right]_1^{\ln 8}
+				= 8(\ln 8 - 2) + e = 8 \ln 8 - 16 + e
+				$
+			</p>
+			
+    </div>
+    
+    <hr>
+    
+    <p>Cuando $\rm S$ está delimitido exclusivamente por funciones:</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_16.svg"
+			type="image/svg+xml" width="300" height="300"></object>
+		</center>
+		
+    <p>Si se hace en un proceso a trozos:</p>
+    
+    <p style="text-align:center">
+			<span style="display:inline-table">
+				<span style="display:table-cell">
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_17.svg"
+					type="image/svg+xml" width="200" height="200"
+					style="display:inline-block;margin:0"></object>
+					<small style="display:block">
+							$
+							\begin{array}{c}
+								\rm S_1 = \{ (x,y) \mathrel{|} 0 \leq x \leq π, \\
+								\rm -\sin x \leq y \leq π + \sin x \}
+							\end{array}
+							$
+					</small>
+				</span>
+				<span style="display:table-cell">
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_18.svg"
+					type="image/svg+xml" width="200" height="200"
+					style="display:inline-block;margin:0"></object>
+					<small style="display:block">
+						$
+						\begin{array}{c}
+							\rm S_2 = \{ (x,y) \mathrel{|} 0 \leq y \leq π, \\
+							\rm 0 \leq x \leq \sin y \}
+						\end{array}
+						$
+					</small>
+				</span>
+				<span style="display:table-cell">
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_19.svg"
+					type="image/svg+xml" width="200" height="200"
+					style="display:inline-block;margin:0"></object>
+					<small style="display:block">
+						$
+						\begin{array}{c}
+							\rm S_3 = \{ (x,y) \mathrel{|} 0 \leq y \leq π, \\
+							\rm π - \sin y \leq x \leq π \}
+						\end{array}
+						$
+					</small>
+				</span>
+			</span>
+		</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = S_1 - S_2 - S_3$</p>
+				
+    <p>Esto es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;= \rm \iint_{S_1} f - \iint_{S_2} f -
+					\iint_{S_3} f = \\[1ex]
+					&amp;= \rm \int_0^π \! \int_{-\sin x}^{π + \sin x} f(x,y) \,
+					dy \, dx - \int_0^π \! \int_0^{\sin y} f(x,y) \, dx \, dy - {}
+					\\[1ex]
+					&amp;\rm \hphantom{={}} - \int_0^π \! \int_{π - \sin y}^π f(x,y)
+					\, dx \, dy
+				\end{align}
+				$
+			</p>
+    
+    <hr>
+    
+    <p>Si:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm S &amp;= \rm \{(x,y) \mathrel{|} a \leq x \leq b,
+					h_1(x) \leq y \leq h_2(x) \} = \\[1ex]
+					&amp;= \rm \{(x,y) \mathrel{|} c \leq y \leq d, g_1(y) \leq x
+					\leq g_2(y)\}
+				\end{align}
+				$
+			</p>
+			
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S f = \int_a^b \! \int_{h_1(x)}^{h_2(x)} f(x,y) \, dy \, dx
+				= \int_c^d \! \int_{g_1(y)}^{g_2(y)} f(x,y) \, dx \, dy
+				$
+			</p>
+
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S f = \int_0^π \int_x^π \dfrac{\sin y}{y} \, dy \, dx
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm f = \dfrac{\sin y}{y}$</p>
+			
+			<p style="margin-left:30px">
+				$\rm S = \{(x,y) \mathrel{|} 0 \leq x \leq π , x \leq y \leq π\}$
+			</p>
+			
+				<p style="margin-left:60px">
+					<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_20.svg"
+					type="image/svg+xml" width="200" height="200"
+					style="display:inline-block;margin:0;border:1px solid black;background:white"></object>
+				</p>
+		
+    <p>Por tanto también:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = \{(x,y) \mathrel{|} 0 \leq y \leq π, 0 \leq x \leq y \}$
+			</p>
+			
+    <p>Integración:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_0^π \int_x^π \dfrac{\sin y}{y} \, dy \, dx &amp;=
+					\rm \int_0^π \int_0^y \dfrac{\sin y}{y} \, dx \, dy =
+					\int_0^π \left[ \dfrac{x \sin y}{y} \right]_0^y \, dy = \\[1ex]
+					&amp;= \rm \int_0^π \sin y \, dy = [ -\cos y ]_0^π =
+					-\cos π + \cos 0 = 2
+				\end{align}
+				$
+			</p>
+    
+    <p>La ventaja aquí está en que con el cambio la nueva integral es de
+    resolución sencilla.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S F = \int_0^2 \! \int_1^{e^x} dy \, dx
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm f(x,y) = 1$</p>
+			
+			<p style="margin-left:30px">
+				$\rm S = \{(x,y) \mathrel{|} 0 \leq x \leq 2, 1 \leq y \leq e^x \}$
+			</p>
+			
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_21.svg"
+			type="image/svg+xml" width="300" height="300"
+			style="border:1px solid black;background:white"></object>
+		</center>
+			
+    <p>Así que también:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = \{(x,y) \mathrel{|} 1 \leq y \leq e^2, \ln y \leq x \leq
+				2\}$</p>
+				
+    <p>Integrando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iint_S f &amp;= \rm \int_0^2 \int_1^{e^x} dy \, dx =
+					\int_0^2 [y]_1^{e^x} \, dx = \int_0^2 (e^x - 1) \, dx = \\[1ex]
+					&amp;= \rm \left[ e^x - x \right]_0^2 = e^2 - 2 - 1 = e^2 - 3
+				\end{align}
+				$
+			</p>
+    
+    <p>ó</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S f = \int_1^{e^2} \! \int_{\ln y}^2 dx \, dy =
+				\int_1^{e^2} [x]_{\ln y}^2 \, dy = \int_1^{e^2} (2 - \ln y) \, dy
+				$
+			</p>
+
+    <p>La integral del logaritmo se resuelve por partes:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int \ln y \, dy$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int u \cdot dv = u \cdot v - \int v \cdot du$</p>
+				
+				<p style="margin-left:60px">
+					$\rm u = \ln y \enspace \Rightarrow \enspace du = (1{∕}y) \, dy$
+				</p>
+				
+				<p style="margin-left:60px">
+					$\rm dv = dy \enspace \Rightarrow \enspace v = y$</p>
+					
+		<p>Sustituyendo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int \ln y \, dy = y \cdot \ln y - \int y \cdot (1{∕}y) \, dy =
+				y \cdot \ln y - \int dy = y \cdot \ln y - y
+				$
+			</p>
+				
+    <p>Por tanto: </p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_1^{e^2} (2 - \ln y) \, dy &amp;= \rm [2y - y \ln y +
+					y ]_1^{e^2} = \\[1ex]
+					&amp;= \rm \cancel{2e^2} \! - \! \cancel{e^2 \ln e^2} \! +
+					e^2 - 2 +	\! \cancelto{0}{\ln 1 \,} \!\! - 1 = e^2 - 3
+				\end{align}
+				$
+			</p>
+
+    <p>Así pues, es mejor la primera manera de calcular la integral sobre
+    $\rm S$. La segunda no supone ningún beneficio (es más laboriosa).</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iint_S f = \int_0^2 \int_0^{4-x^2} \dfrac{x e^{2y}}{4-y} \, dy
+				\, dx
+				$
+			</p>
+
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x,y) = \dfrac{x e^{2y}}{4-y}$</p>
+
+			<p style="margin-left:30px">
+				$\rm S = \left\{ (x,y) \mathrel{|} 0 \leq x \leq 2, 0 \leq y \leq
+				4 - x^2 \right\}$</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_22.svg"
+			type="image/svg+xml" width="320" height="225"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p>Así pues también:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = \left\{ (x,y) \mathrel{|} 0 \leq y \leq 4, 0 \leq x \leq
+				\sqrt{4-y} \right\}$</p>
+				
+    <p>Si se invierte el orden de de integración puede resolverse de forma
+    sencilla la integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_0^2 \int_0^{4-x^2} \dfrac{xe^{2y}}{4-y} \, dy \, dx &amp;=
+					\rm \int_0^4 \int_0^{\sqrt{4-y}} \dfrac{xe^{2y}}{4-y} \, dx \, dy =
+					\\[1ex]
+					&amp;= \rm
+					\int_0^4 \left[ \dfrac{x^2 e^{2y}}{2(4-y)} \right]_0^{\sqrt{4-y}} \,
+					dy = \\[1ex]
+					&amp;= \rm
+					\int_0^4 \biggl( \dfrac{\cancel{(4-y)} e^{2y}}{2 \cancel{(4-y)}}
+					- 0 \biggr) = \int_0^4 \dfrac{e^{2y}}{2} \, dy = \\[1ex]
+					&amp;= \rm \left[ \dfrac{e^{2y}}{4} \right]_0^4 = \dfrac{e^8}{4}
+					- \dfrac{1}{4} = \dfrac{e^8 - 1}{4}
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Cálculo del área de $\rm S$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \iint_S 1 \, dx \, dy =$ área de $\rm S$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x,y) = 1 \leftarrow$ Esto es lo que se levanta sobre la
+				superficie.</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_23.svg"
+			type="image/svg+xml" width="270" height="103"></object>
+			<p>
+				Volumen = (Área de $\rm S$) × 1 = Área de $\rm S$
+			</p>
+		</center>
+		
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+    <p>Calcular el área de la región del plano delimitada por el eje
+    "$\rm y$", y las rectas $\rm y = 2x$ é $\rm y = 4$.</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_24.svg"
+			type="image/svg+xml" width="300" height="200"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p>Superficie:</p>
+    
+			<p style="margin-left:30px">
+				$\rm S = \{(x,y) \mathrel{|} 0 \leq x \leq 2, 2x \leq y \leq 4 \}
+				= \{ (x,y) \mathrel{|} 0 \leq y \leq 4, 0 \leq x \leq y{∕}2 \}$</p>
+				
+    <p>Área:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm A &amp;= \rm \int_0^2 \int_{2x}^4 dy \, dx =
+					\int_0^2 [y]_{2x}^4 \, dx = \int_0^2 (4 - 2x) \, dx = \\[1ex]
+					&amp;= \rm [ 4x - x^2 ]_0^2 = 8 - 4 = 4
+				\end{align}
+				$
+			</p>
+    
+    <p>Al revés:</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				A = \int_0^4 \int_0^{y∕2} dx \, dy = \int_0^4 [x]_0^{y∕2} \, dy =
+				\int_0^4 \dfrac{y}{2} \, dy = \left[ \dfrac{y^2}{4} \right]_0^4 =
+				4
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Integral triple</span>:
+    </p>
+      
+			<p style="margin-left:30px">
+				$\rm W \subset \mathbb{R}^3$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x,y,z) : W \rightarrow \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \displaystyle \iiint_W f \leftarrow$ integral triple</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm W = [1,2] \times [-1,1] \times [0,1]$</p>
+				
+		<p style="text-align:center">
+			<span style="display:inline-table">
+				<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_25.svg"
+				type="image/svg+xml" width="300" height="225"
+				style="display:inline-block;margin:0 1em 0 0;vertical-align:middle;border:1px solid black;background:white"></object>
+				$\rm W \rightarrow$ rectángulo tridimensional
+			</span>
+		</p>
+		
+			<p style="margin-left:30px">
+				$\rm W = \{ (x,y,z) \mathrel{|} 1 \leq x \leq 2, -1 \leq y \leq 1,
+				0 \leq z \leq 1 \}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x,y,z) = 2x + 3y + z$</p>
+		
+    <p>Siendo aquí el orden de integración indiferente, por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iiint_W f &amp;= \rm \int_1^2 \int_{-1}^1 \int_0^1 (2x+3y+z)
+					\, dz \, dy \, dx = \\[1ex]
+					&amp;= \rm
+					\int_1^2 \int_{-1}^1 \left[ 2xz + 3yz + z^2{∕}2 \right]_0^1 \,
+					dy \, dx = \\[1ex]
+					&amp;= \rm \int_1^2 \int_{-1}^1 (2x + 3y + 1{∕}2) \, dy \, dx =
+					\\[1ex]
+					&amp;= \rm \int_1^2 \left[ 2xy + 3y^2{∕}2 + y{∕}2 \right]_{-1}^1
+					\, dx = \\[1ex]
+					&amp;= \rm \int_1^2 (2x + \cancel{3{∕}2} + 1{∕}2 + 2x -
+					\cancel{3{∕}2} + 1{∕}2 ) \, dx = \\[1ex]
+					&amp;= \rm \int_1^2 (4x+1) \, dx = \left[ 2x^2 + x \right]_1^2 =
+					8 + 2 - 2 - 1 = 7
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\iiint_W f = \int_0^1 \int_0^x \int_0^y (y+xz) \, dz \, dy \, dx
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x,y,z) = y + xz$</p>
+    
+			<p style="margin-left:30px">
+				$\rm W = \{(x,y,z) \in \mathbb{R}^3 \mathrel{|} 0 \leq x \leq 1,
+				0 \leq y \leq x, 0 \leq z \leq y \}$</p>
+				
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_26.svg"
+			type="image/svg+xml" width="250" height="250"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \iiint_W f &amp;= \rm \int_0^1 \int_0^x \int_0^y (y+xz) \,
+					dz \, dy \, dx = \int_0^1 \int_0^x \left[ yz +xz^2{∕}2 \right]_0^y
+					\, dy \, dx = \\[1ex]
+					&amp;\rm = \int_0^1 \int_0^x (y^2 + xy^2{∕}2) \, dy \, dx =
+					\int_0^1 \left[ y^3{∕}3 + xy^{3}{∕}6 \right]_0^x \, dy = \\[1ex]
+					&amp;= \rm \int_0^1 (x^3{∕}3 + x^4{∕}6) \, dx =
+					\left[ x^4{∕}12 + x^5{∕}30 \right]_0^1 = \\[1ex]
+					&amp;= 1{∕}12 + 1{∕}30 = 7{∕}60
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Cuando:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \iiint_W 1 =$ Volumen de $\rm W$</p>
+				
+    <hr>
+    
+		<div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>$\rm W$ es la región limitada por los planos $\rm x = 0, y = 0,
+    z = 0, x + y + z = 1$.</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_27.svg"
+			type="image/svg+xml" width="448" height="305"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p style="text-align:center">
+			$\rm W = \{ (x,y,z) \mathrel{|} 0 \leq x \leq 1, 0 \leq y \leq 1 - x,
+			0 \leq z \leq 1 - x - y \}$</p>
+			
+    <p>El volumen para $\rm W$ es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm V &amp;= \rm \int_0^1 \int_0^{1-x} \int_0^{1-x-y} 1 \, dz
+					\, dy \, dx = \int_0^1 \int_0^{1-x} [z]_0^{1-x-y} \, dy \, dx =
+					\\[1ex]
+					&amp;= \rm \int_0^1 \int_0^{1-x} (1-x-y) \, dy \, dx =
+					\int_0^1 \left[ y - xy - y^2{∕}2 \right]_0^{1-x} \, dx = \\[1ex]
+					&amp;= \rm \int_0^1 \left( 1 - x - x + x^2 - (1-x)^2{∕}2 \right)
+					\, dx = \\[1ex]
+					&amp;= \rm \int_0^1 \left( 1 - 2x + x^2 - \dfrac{1-2x+x^2}{2}
+					\right) \, dx = \int_0^1 \left( 1{∕}2 - x + x^2{∕}2 \right) \,
+					dx \\[1ex]
+					&amp;= \rm \left[ x{∕}2 - x^2{∕}2 + x^3{∕}6 \right]_0^1 = \!
+					\cancel{1{∕}2} - \cancel{1{∕}2} + 1{∕}6 = 1{∕}6
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Calcular el volumen de la región delimitada por el paraboloide
+    $\rm z = x^2 + y^2$, los planos de coordenadas y el plano paralelo al
+    eje $\rm z$ que contiene la recta $\rm x + y = 1$.</p>
+    
+		<center>
+			<object data="calculo_integrales_dobles_triples/calculo_integrales_dobles_triples_28.svg"
+			type="image/svg+xml" width="400" height="300"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+			<p style="text-align:center">
+				$\rm W = \left\{ (x,y,z) \mathrel{|} 0 \leq y \leq 1, 0 \leq x \leq
+				1-y, 0 \leq z \leq x^2 + y^2 \right\}$</p>
+				
+    <p>Cálculo del volumen:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \text{Vol} &amp;= \rm \iiint_W 1 =
+					\int_0^1 \int_0^{1-y} \int_0^{x^2+y^2} 1 \, dz \, dx \, dy =
+					\int_0^1 \int_0^{1-y} [z]_0^{x^2+y^2} \, dx \, dy = \\[1ex]
+					&amp;= \rm \int_0^1 \int_0^{1-y} (x^2 + y^2) \, dx \, dy =
+					\int_0^1 [x^3/3 + xy^2]_0^{1-y} \, dy = \\[1ex]
+					&amp;= \rm \int_0^1 \left( (1-y)^3{∕}3 + (1-y)y^2 \right) \, dy =
+					\int_0^1 \left( (1-y)^3{∕}3 + y^2 - y^3 \right) \, dy = \\[1ex]
+					&amp;= \rm \left[ -(1-y)^4{∕}12 + y^3{∕}3 - y^4{∕}4 \right]_0^1 =
+					1{∕}3 - 1{∕}4 + 1{∕}12 = 1{∕}6
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Aplicaciones físicas de las integrales dobles y triples: </p>
+    
+    <p style="text-align:center">
+			<span style="display:inline-table;border:1px solid black;padding:1ex;text-align:left">
+				<span style="display:table-row">
+					<span style="display:table-cell;padding:5px 1em 5px 1ex">
+						$\rm S \rightarrow$ superficie plana
+					</span>
+					<span style="display:table-cell;padding:5px 1ex 5px 1em">
+						$\rm W \rightarrow$ cuerpo de $\mathbb{R}^3$
+					</span>
+				</span>
+				<span style="display:table-row">
+					<span style="display:table-cell;padding:5px 1em 5px 1ex">
+						<span style="display:table-cell">
+							$\rm ρ(x,y) \rightarrow {}$
+						</span>
+						<span style="display:table-cell">
+							función densidad de $\rm S$<br>
+							<small>(masa por unidad de área)</small>
+						</span>
+					</span>
+					<span style="display:table-cell;padding:5px 1ex 5px 1em">
+						<span style="display:table-cell">
+							$\rm ρ(x,y,z) \rightarrow {}$
+						</span>
+						<span style="display:table-cell">
+							función densidad de $\rm W$<br>
+							<small>(masa por unidad de volumen)</small>
+						</span>
+					</span>
+				<span>
+			</span>
+		</p>
+		
+		<p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>
+			<span style="display:table-cell">
+				$\rm \displaystyle m(S) =  \iint_S ρ(x,y) \enspace \leftarrow$ masa
+				de $\rm S$
+				<span style="display:block;margin-top:1ex">
+					$\rm \displaystyle m(W) = \iiint_W ρ(x,y,z) \enspace \leftarrow$
+					masa de $\rm W$
+				</span>
+			</span>
+		</p>
+    
+    <p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>	
+			<span style="display:table-cell">
+				$\rm \displaystyle A(S) = \iint_S 1 \enspace \leftarrow$ área de
+				$\rm S$
+				<span style="display:block;margin-top:1ex">
+					$\rm \displaystyle V(W) = \iiint_W 1 \enspace \leftarrow$ volumen
+					de $\rm W$
+				</span>
+			</span>
+		</p>
+		
+    <p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>
+			<span style="display:table-cell">
+				$\rm m(S){∕}A(S) \enspace \leftarrow$ densidad media de $\rm S$
+				<span style="display:block;margin-top:1ex">
+					$\rm m(W){∕}V(W) \enspace \leftarrow$ densidad media de $\rm W$
+				</span>
+			</span>
+		</p>
+
+    <p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>
+			<span style="display:table-cell">
+				$
+				\rm \displaystyle
+				\dfrac{
+					\left( \iint_S x \cdot ρ(x,y), \iint_S y \cdot ρ(x,y) \right)
+				}{m(S)}
+				\enspace \leftarrow
+				$ centro de masas de $\rm S$
+				<span style="display:block;margin-top:1ex">
+					$
+					\rm \displaystyle
+					\dfrac{
+						\left(
+							\iiint_W x \cdot ρ(x,y,z), \iiint_W y \cdot ρ(x,y,z),
+							\iiint_W z \cdot ρ(x,y,z)
+						\right) 
+					}{m(W)}
+					\enspace \leftarrow
+					$ centro de masas de $\rm W$
+				</span>
+			</span>
+		</p>
+
+    <p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>
+			<span style="display:table-cell">
+				$
+				\rm
+				\dfrac{\left( \iint_S x, \iint_S y \right)}{A(S)}
+				\enspace \leftarrow
+				$ centroide de $\rm S$
+				<span style="display:block;margin-top:1ex">
+					$
+					\rm
+					\dfrac{
+						\left( \iiint_W x, \iiint_W y, \iiint_W z \right)
+					}{V(W)}
+					\enspace \leftarrow
+					$ centroide de $\rm W$
+				</span>
+			</span>
+		</p>
+
+    <p>El centroide ($\leftarrow$ centro geométrico) coincide con el
+    centro de masas cuando <span style="white-space:nowrap">$ρ =$ cte.
+    </span></p>
+    
+    <p>
+			<span style="display:table-cell">
+				•&nbsp;
+			</span>
+			<span style="display:table-cell">
+				$\rm \displaystyle I = \iint_S δ^2(x,y) \cdot ρ(x,y)$
+				ó
+				$\rm \displaystyle \iint_W δ^2(x,y,z) \cdot ρ(x,y,z) \enspace
+				\leftarrow$ momento de inercia
+				<span style="display:block;margin-top:1ex">
+					<small>$δ =$ distancia a un punto, eje o plano</small>
+				</span>
+			</span>
+		</p>
+		
+    <p>Por ejemplo, si $\rm L$ es una recta entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle I_L = \iint_S δ^2(x,y) \cdot ρ(x,y) \enspace
+				\leftarrow
+				$ momento de inercia de $\rm S$ respecto a $\rm L$
+			</p>
+    
+    <p>Para $\rm S$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\rm \displaystyle I_x = \iint_S y^2 ρ(x,y), \\[1ex]
+					\rm \displaystyle I_y = \iint_S x^2 ρ(x,y)
+				\end{array}
+				\,
+				\right\}	
+				$
+				momentos de inercia de $\rm S$ respecto a los ejes cartesianos
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm \displaystyle I_o = I_x + I_y = \iint_S (x^2 + y^2) ρ(x,y)
+					\enspace \leftarrow {}$
+				</span>
+				<span style="display:table-cell">
+					momento polar de inercia de $\rm S$ (respecto al origen)
+				</span>
+			</p>
+    
+    <p>Para $\rm W$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\rm \displaystyle I_x = \iiint_W (y^2 + z^2) ρ(x,y,z), \\[1ex]
+					\rm \displaystyle I_y = \iiint_W (x^2 + z^2) ρ(x,y,z), \\[1ex]
+					\rm \displaystyle I_z = \iiint_W (x^2 + y^2) ρ(x,y,z)
+				\end{array}
+				\,
+				\right\} \rightarrow
+				$
+				momentos de inercia de $\rm W$ respecto a los ejes
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$
+					\rm \displaystyle
+					\
+					I_o = (I_x + I_y + I_z){∕}2 = \iiint_W (x^2 + y^2 + z^2) ρ(x,y,z)
+					\enspace \leftarrow
+					$
+				</span>
+				<span style="display:table-cell">
+					momento polar de inercia de $\rm W$
+				</span>
+			</p>
+    
+		</div>
+		
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="calculo_integrales_linea.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="cambios_variables.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Teorema del valor medio (o de los incrementos finitos)">
+    <meta name="keywords" content="teorema, valor, medio, incrementos, finitos">
+    <title>Teorema del valor medio (o de los incrementos finitos)</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Teorema del valor medio (o de los incrementos finitos)</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+		
+		<p>
+      <span style="text-decoration:underline">Teorema de Bolzano</span>
+    </p>
+    
+    <p>Sea $\rm f : [a,b] \rightarrow \mathbb{R}$ continua y con $\rm f(a)$
+    y $\rm f(b)$ de diferente signo, entonces $\mathrel{\exists} \rm c \in
+    (a,b)$ tal que $\rm f(c) = 0$.</p>
+    
+    <hr>
+    
+    <p>Notación:</p>
+    
+			<p style="margin-left:30px">
+				$\rm [a,b] : \{a \leq x \leq b\}$</p>
+			
+			<p style="margin-left:30px">
+				$\rm (a,b) : \{a &lt; x &lt; b\}$</p>
+    
+    <hr>
+    
+    <p>Demostración:</p>
+    
+    <p>Se construye una sucesión de intervalos encajados $(\rm I_1, I_2,
+    \dotsc, I_n)$ tal que los extremos sean de distinto signo:</p>
+    
+    <center>
+			<object data="teorema_valor_medio/teorema_valor_medio_01.svg"
+			type="image/svg+xml" width="281" height="262"></object>
+    </center>
+
+    <p>Reducción al absurdo:</p>
+    
+    <p>Se supone que $\rm \mathrel{∄} c \in (a,b)$ tal que $\rm f(c)
+    = 0$ (ó $\rm \mathrel{\forall} x \in (a,b), f(x) \neq 0$).</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\def\rarrow#1#2{
+					\stackrel{#1}{
+						\underset{#2}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+							}
+						} 
+					}
+				}
+				\mathop{\underline{[a,b]}}\limits_{
+					\begin{gathered} \rm I_1 \end{gathered}
+				},
+				\mathop{\underline{[x_0,b]}}\limits_{
+					\begin{gathered}
+						\rm I_2 \\
+						\rm f(x_0) \cdot f(b) \, &lt; \, 0
+					\end{gathered}
+				},
+				\mathop{\underline{[x_0,x_1]}}\limits_{
+					\begin{gathered}
+						\rm I_3 \\
+						\rm f(x_0) \cdot f(x_1) \, &lt; \, 0
+					\end{gathered}
+				},
+				\dotsc
+				\rarrow{}{\large n \to \infty}
+				c, f(c)
+				\underset{
+					\begin{gathered}
+						\uparrow \\
+						\llap{\text{Contra}}\text{d}\rlap{\text{icción.}}
+					\end{gathered}
+				}{\vphantom{\underline{[a,b]}} \smash{{} \neq {}} } 0
+				$
+			</p>
+    
+    <p>Si $\rm f(c) \neq 0$, por el teorema de la conservación del signo,
+    en su entorno simétrico la función ha de tener su mismo signo. Esto
+    entraría en contradicción con la sucesión de intervalos encajados con
+    los extremos de signo opuesto. Por tanto no es posible $\rm f(c) \neq 0$,
+    así que sólo puede ser $\rm f(c) = 0$.</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_02.svg"
+			type="image/svg+xml" width="90" height="80"></object>
+		</center>
+		
+    <hr>
+    
+    <div id="ejemplo">
+    
+		<p>Ejemplo:</p>
+			
+			<p style="margin-left:30px">
+				$\rm f(x) = x^6 - x^5 + 4x - 2 \enspace$ continua</p>
+				
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell;vertical-align:middle">
+						$
+						\left.
+						\begin{array}{l}
+							\rm f(0) = -2 \\
+							\rm f(1) = 2
+						\end{array}
+						\right\}
+						\rm
+						{\Rightarrow}
+						\mathrel{\exists} c \in (0,1)
+						$ tal que $\rm f(c) = 0$.
+					</span>
+					<span style="display:table-cell">
+						<object data="teorema_valor_medio/teorema_valor_medio_03.svg"
+						type="image/svg+xml" width="110" height="100"
+						style="display:inline-block;margin:0 1em"></object>
+					</span>
+				</span>
+			</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>Ampliación:</p>
+    
+			<p style="margin-left:30px">
+				Teorema de conservación del signo:</p>
+    
+			<p style="margin-left:30px">
+				Si una función es continua en un punto $\rm x = a$ y $\rm f(a)
+				\neq 0$, siempre existe un entorno simétrico en el que los valores
+				que toma la función tienen el mismo signo que $\rm f(a)$.</p>
+    
+			<p style="margin-left:30px">Demostración:</p>
+			
+				<p style="margin-left:60px">
+					<span style="display:table-cell">
+					$
+					\left.
+					\begin{array}{l}
+						\rm f(x) \text{ es continua en } x = a \\
+						\rm f(a) \gt 0
+					\end{array}
+					\right\}
+					\Rightarrow {}
+					$
+					</span>
+					<span style="display:table-cell">
+						$\exists$ un entorno simétrico $\rm (a - δ, a + δ)$ tal que
+						$\rm f(x) \gt 0$
+					</span>
+				</p>
+    
+			<p style="margin-left:30px">Al ser continua, por definición:</p>
+    
+				<p style="margin-left:60px">
+					$\mathrel{\forall} ε$ real positivo $\mathrel{\exists} δ$ real
+					positivo tal que $\rm \lvert x - a \rvert \lt δ \Rightarrow \lvert
+					f(x) - f(a) \rvert \lt ε$.</p>
+				
+			<p style="margin-left:30px">Si se considera que $\rm ε = f(a)$:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{ccc}
+						&amp;\rm \mathrel{\exists} δ \text{ tal que } \lvert x-a \rvert \lt	δ
+						&amp;\quad \Rightarrow
+						&amp;\rm \lvert f(x) - f(a) \rvert \lt f(a) \\[1ex]
+						&amp;\rm -δ \lt x-a \lt δ
+						&amp;
+						&amp;\rm -f(a) \lt f(x)-f(a) \lt f(a) \\[1ex]
+						&amp;\rm {}+a
+						&amp;
+						&amp;\rm {}+f(a) \\[1ex]
+						&amp;\rm a - δ \lt x \lt a + δ
+						&amp;
+						&amp;\rm 0 \lt f(x) \lt 2f(a) \\[1ex]
+						&amp;\rm \Rightarrow x \in (a - δ, a + δ)
+						&amp;
+						&amp;\rm \Rightarrow f(x) \gt 0 \enspace \text{(positivo)}
+					\end{array}
+					$
+				</p>
+    
+			<p style="margin-left:30px">Otra conclusión que puede extraerse, es
+			que si una función es continua en un punto $\rm x = a$ entonces
+			$\exists$ un entorno simétrico de $\rm x = a$ en que la función
+			está acotada:</p>
+			
+			<p style="text-align:center">
+				$\rm (a - δ, a + δ) \Rightarrow (f(a) - ε, f(a) + ε)$</p>
+				
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">
+				Teorema del valor intermedio
+			</span>
+		</p>
+    
+    <p>Siendo $\rm f : [a,b] \rightarrow \mathbb{R}$ continua, se supone
+    que $\rm f(a) \lt f(b)$, y sea $\rm k$ tal que $\rm f(a) \lt k \lt f(b)$,
+    entonces existe $\rm c \in (a,b)$ tal que $\rm f(c) = k$. Es decir,
+    $\rm f(x)$ toma todos los valores entre $\rm f(a)$ y $\rm f(b)$.</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_04.svg"
+			type="image/svg+xml" width="266" height="145"></object>
+		</center>
+		
+    <p>Demostración:</p>
+    
+    <p>Se plantea la función auxiliar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm g(x) = f(x) - k$, continua en $\rm [a,b]$</p>
+			
+		<p>Entonces:</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+				\begin{array}{l}
+					\rm g(a) = f(a) - k \lt 0 \\[1ex]
+					\rm g(b) = f(b) - k \gt 0
+				\end{array}
+				\right\}
+				\underset{\text{Bolzano}}{\Rightarrow}
+				\mathrel{\exists} c \in (a,b)$ tal que $\rm g(c) = f(c) - k = 0
+				\Rightarrow f(c) = k
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+				\begin{array}{r}
+					\rm \text{Sea } a \gt 0 \\
+					\rm n \in \mathbb{N}
+				\end{array}
+				\right\}
+				{\Rightarrow} \mathrel{\exists} b
+				$ tal que $\rm b^n = a$
+			</p>
+    
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				Sea $\rm c \gt 1$ tal que $\rm 0 \lt a \lt c \leq c^n$ y $\rm f(x)
+				= x^n$ continua, entonces:</p>
+				
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_05.svg"
+			type="image/svg+xml" width="330" height="200"></object>
+		</center>
+		
+			<p style="text-align:center">
+				$\rm \mathrel{\exists} b$ tal que $\rm f(b) = a$</p>
+				
+			<p style="text-align:center">
+				$\rm \mathrel{\exists} b \mathrel{|} \rm b^n = a$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">
+				Teorema del máximo-mínimo (o de Weierstrass)
+			</span>
+		</p>
+		
+    <p>Sea $\rm f : [a,b] \rightarrow \mathbb{R}$ continua, entonces
+    $\rm f(x)$ tiene un máximo y un mínimo absolutos en ese intervalo.</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_06.svg"
+			type="image/svg+xml" width="235" height="193"></object>			
+		</center>
+		
+			<p style="text-align:center">
+				$
+				\underset{
+					\begin{subarray}{c}
+						\text{Teorema del} \\
+						\text{valor intermedio}
+					\end{subarray}
+				}{\Rightarrow}
+				\rm f([a,b]) = [m,M]
+				$
+			</p>
+		
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				1. $\rm f(x)$ continua en un intervalo cerrado es acotada en este
+				intervalo.</p>
+    
+			<p style="margin-left:30px">
+				2. Además toma el valor mínimo y máximo.</p>
+    
+    <p>Demostración de 1:</p>
+    
+		<p>Por reducción al absurdo, suponiendo que $\rm f(x)$ es continua en
+		$\rm [a,b]$ y no es acotada en este intervalo.</p>
+		
+    <p>Se construye una sucesión de intervalos encajados tal que cada
+    uno es la mitad del anterior:</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_07.svg"
+			type="image/svg+xml" width="280" height="101"></object>
+		</center>	
+    
+    <p>Si una función no está acotada en el intervalo [a,b], tampoco ha
+    de ser acotada en, al menos, una de las dos mitades de cada uno de
+    estos intervalos. Por tanto, debería verificarse una sucesión de
+    intervalos en que la función no está acotada.</p>
+    
+			<p style="text-align:center">
+				$\rm [a,b], [a,x_1], [x_2,x_1], \dotsc \rarrow{}{\large n \to \infty}
+				c \in \mathbb{R} \enspace$ Contradicción.
+			</p>
+			
+    <p>La suposición de partida no es válida, ya que, como ya se vio, si
+    una función es continua en un punto existe un entorno simétrico a este
+    punto en el que la función está acotada. Por tanto la función está
+    acotada en el intervalo $\rm [a,b]$.</p>
+    
+    <p>Demostración de 2:</p>
+    
+    <p>Por el punto 1, si $\rm f(x)$ es continua en $\rm [a,b]$ está
+    acotada en este intervalo existiendo $\rm m, M \in \mathbb{R}$ tal
+    que:</p>
+    
+			<p style="text-align:center">$\rm m \lt f(x) \lt M$</p>
+			
+			<p style="text-align:center">$\rm m \rightarrow$ la mayor cota
+			inferior posible.</p>
+			
+			<p style="text-align:center">$\rm M \rightarrow$ la menor cota
+			superior posible.</p>
+			
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x)$ tiene un mínimo si $\rm \mathrel{\exists} c \in [a,b]$
+				tal que $\rm f(c) = m$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x)$ tiene un máximo si $\rm \mathrel{\exists} d \in [a,b]$
+				tal que $\rm f(d) = M$</p>
+				
+    <p>Por reducción al absurdo, si $\rm f(x)$ no tiene máximo en $\rm
+    [a,b] \mathrel{∄} d \in [a,b]$ tal que $\rm f(d) = M$. En este caso,
+    la función auxiliar $\rm g(x) = 1{∕}(M - f(x))$ está definida y es
+    continua en $\rm [a,b]$, ya que el denominador no se anula en $\rm
+    [a,b]$. Por el punto 1, $\rm g(x)$ está acotada en $\rm [a,b]$, luego
+    $\rm \mathrel{\exists} K \in \mathbb{R}$ tal que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				g(x) = \underset{(\gt 0)}{\dfrac{1}{M-f(x)}} \lt K
+				$
+			</p>
+    
+    <p>Por tanto:</p>
+			
+			<p style="margin-left:30px">$\rm \dfrac{1}{K} \lt M - f(x)$</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm f(x) \lt M - \dfrac{1}{K} \;
+				\llap{\boxed{\phantom{f(x) \lt M - \dfrac{1}{K}}}}
+				\enspace
+				$ Contradicción.
+			</p>
+			
+    <p>La hipótesis falla, ya que esto es contrario a que $\rm M$ es la
+    menor cota superior en el intervalo $\rm [a,b]$. Luego $\mathrel{\exists}
+    \rm d \in [a,b]$ tal que $\rm f(d) = M$.</p>
+    
+    <p>Con un desarrollo análogo se demuestra la existencia de un mínimo
+    absoluto.</p>
+    
+    <p>
+      <span style="text-decoration:underline">Extremos relativos</span>
+    </p>
+      
+    <p>Sea $\rm f : (a,b) \to \mathbb{R}$ derivable ($\Rightarrow$ continua)
+    con $\rm c \in (a,b)$ tal que $\rm c$ extremo relativo (máximo o mínimo
+    relativos) entonces $\rm f'(c) = 0$.</p>
+    
+    <p>En el extremo relativo existe un entorno tal que:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\left.
+				\begin{array}{l}
+					\rm f(x) \leq f(c) \text{ si es un máximo relativo} \\
+					\rm f(x) \geq f(c) \text{ si es un mínimo relativo}
+				\end{array}
+				\right\}
+				\mathrel{\forall} x \neq c
+				$ del entorno.
+			</p>
+    
+    <p>Demostración:</p>
+    
+    <center>
+			<object data="teorema_valor_medio/teorema_valor_medio_08.svg"
+			type="image/svg+xml" width="185" height="136"></object>
+		</center>
+		
+			<p style="text-align:center">(máximo relativo)</p>
+		
+    <p>En el entorno de $\rm c$ entonces:</p>
+    
+			<p style="text-align:center">
+				$
+				\begin{alignat}{2}
+					&amp;
+					\begin{array}{cc}
+						\rm \underline{x \lt c} &amp;\rm f(x) - f(c) \leq 0 \\[1ex]
+						&amp;\rm \dfrac{f(x)-f(c)}{x-c} \geq 0 \\[1ex]
+						&amp;\rm \lim\limits_{x \to c^-} \dfrac{f(x)-f(c)}{x-c} \geq 0
+					\end{array}
+					&amp; \qquad\qquad &amp;
+					\begin{array}{cc}
+						\rm \underline{x \gt c} &amp; \rm f(x) - f(c) \leq 0 \\[1ex]
+						&amp;\rm \dfrac{f(x)-f(c)}{x-c} \leq 0 \\[1ex]
+						&amp;\rm \lim\limits_{x \to c^+} \dfrac{f(x)-f(c)}{x-c} \leq 0
+					\end{array}
+				\end{alignat}
+				$
+			</p>
+    
+    <p>La función es derivable, por tanto $\rm f′(c)$ debe ser igual a
+    sus derivadas laterales:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				f'(c) = \lim\limits_{x \to c} \dfrac{f(x)-f(c)}{x-c} =
+				\underbrace{
+					\lim\limits_{x \to c^-} \dfrac{f(x)-f(c)}{x-c}
+				}_{\large \geq \, 0} =
+				\underbrace{
+					\lim\limits_{x \to c^+} \dfrac{f(x)-f(c)}{x-c}
+				}_{\large \leq \, 0} = 0
+				$
+			</p>
+		
+    <p>Cabe señalar que, en el sentido inverso, cuando $\rm f'(c) = 0$ no
+    siempre $\rm x = c$ es un extremo relativo. Esto es:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f'(c) = 0 \nRightarrow c$ es un extremo relativo.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">$\rm f(x) = x^3$</p>
+			
+				<p style="margin-left:60px;margin-bottom:1em">
+					$\rm f'(0) = 0$
+					<object data="teorema_valor_medio/teorema_valor_medio_09.svg"
+					type="image/svg+xml" width="100" height="100"
+					style="display:inline-block;margin:-1em 0;vertical-align:middle">
+					</object>
+					Punto de inflexión.
+				</p>
+			
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Teorema de Rolle</span>
+    </p>
+    
+    <p>Sea $\rm f : [a,b] \rightarrow \mathbb{R}$ continua, derivable en
+    $\rm (a,b)$ y con $\rm f(a) = f(b)$, entonces, al menos, $\rm
+    \mathrel{\exists} c \in (a,b)$ tal que $\rm f'(c) = 0$.</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_10.svg"
+			type="image/svg+xml" width="235" height="127"></object>
+		</center>
+		
+    <p>Demostración:</p>
+    
+    <p>Por el teorema del máximo-mínimo:</p>
+    
+			<p style="text-align:center">$\rm f([a,b]) = [m,M]$</p>
+			
+		<p>Dos posibilidades:</p>
+    
+		<p>• $\rm m = M \Rightarrow f(x)$ es constante $\rm \Rightarrow f'(x)
+		= 0 \mathrel{\forall} x$ de $\rm (a,b)$</p>
+			
+		<p>• $\rm m \neq M \Rightarrow f(a) = f(b) \neq m$ ó $\rm M \Rightarrow
+		\exists \; c \in (a,b)$ tal que $\rm f(c) = m$ ó $\rm M \Rightarrow
+		f'(c) = 0$</p>
+		
+    <p>
+      <span style="text-decoration:underline">Teorema del valor medio</span>
+    </p>
+    
+    <p>Sea $\rm f : [a,b] \to \mathbb{R}$ continua y derivable en $\rm
+    (a,b)$, entonces existe al menos $\rm c \in (a,b)$ tal que:</p>
+    
+			<p style="text-align:center">
+				$\rm f'(c) = \dfrac{f(b)-f(a)}{b-a}$</p>
+    
+    <p>En algun momento el valor de la derivada es el valor medio:</p>
+    
+		<center>
+			<object data="teorema_valor_medio/teorema_valor_medio_11.svg"
+			type="image/svg+xml" width="285" height="129"></object>
+		</center>
+		
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					función auxiliar $\rightarrow {}$
+				</span>
+				<span style="display:table-cell">
+					<span style="display:block;margin-bottom:1em">
+						$\rm g(x) = f(x) \bigl( b - a \bigr) - x \bigl( f(b) - f(a) \bigr)$
+					</span>
+					<span style="display:block">
+						$\rm g(x)$ es continua en $\rm [a,b]$ y derivable en $\rm
+						(a,b)$
+					</span>
+				</span>
+			</p>
+    
+    <p>Además:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+				\begin{array}{l}
+					\rm g(a) = f(a) \bigl( b-a \bigr) - a \bigl( f(b)-f(a) \bigr) =
+					f(a) \, b - a \, f(b) \\[1ex]
+					\rm g(b) = f(b) \bigl( b-a \bigr) - b \bigl( f(b)-f(a) \bigr) =
+					-f(b) \, a + b \, f(a) 
+				\end{array}
+				\right\}
+				\Rightarrow g(a) = g(b)
+				$
+			</p>
+    
+    <p>Por tanto, por el teorema de Rolle, existe, al menos, $\rm c \in
+    (a,b)$ tal que $\rm g'(c) = 0$. Entonces:</p>
+    
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm g'(c) = f'(c) \bigl( b-a \bigr) - f(b) + f(a) = 0 \\[1ex]
+					\llap{\Rightarrow {}} \rm f'(c) = \dfrac{f(b)-f(a)}{b-a} 
+				\end{array}
+				$
+			</p>
+			
+    <hr>
+    
+    <div id="ejemplo" style="margin-bottom:1em">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Mostrar que sea $\rm f : [a,b] \to \mathbb{R}$ derivable en $\rm
+    (a,b)$ tal que $\rm f'(x) \gt 0 \mathrel{\forall} x \in (a,b)$, entonces
+    f es creciente en el intervalo.</p>
+    
+    <p>Demostración:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x_0 \lt x_1 \quad x_0, x_1 \in (a,b)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x_0) \lt f(x_1) \enspace$ ?</p>
+				
+    <p>Por el teorema del valor medio $\rm \mathrel{\exists} x_2 \in
+    (x_0,x_1)$ tal que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f'(x_2) = \dfrac{f(x_1) - f(x_0)}{x_1 - x_0}$
+			</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				f(x_1)-f(x_0) = (\underbrace{x_1-x_0}_{\gt \, 0}) \cdot
+				\underbrace{\!f'(x_2)\!}_{\gt \, 0} \gt 0 \Rightarrow f(x_1)
+				\gt f(x_0)
+				$
+			</p>
+    
+    </div>
+
+		</div>
+
+		<div id="foot">
+			
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="resolucion_sistemas_ecuaciones_diferenciales_lineales_coeficientes_constantes.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="calculo_polinomios_taylor_una_variable.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>	
+
+		</div>
+  </body>
+</html>

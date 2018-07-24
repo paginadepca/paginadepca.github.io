@@ -1,0 +1,1520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Cálculo de integrales de superficie">
+    <meta name="keywords" content="cálculo, integrales, superficie">
+    <title>Cálculo de integrales de superficie</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Cálculo de integrales de superficie</h3>
+			
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+			
+    <p>Superficie:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f : B \subset \mathbb{R}^2 \to \mathbb{R}^3 \enspace$
+				inyectiva</p>
+				
+			<p style="margin-left:30px">
+				$\rm S = f(B)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm S$ es una superficie de $\mathbb{R}^3$ parametrizada por 
+				$\rm f$.</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{(x, y) \mathrel{|} x^2 + y^2 \leq 1\}$</p>
+				
+				<p style="margin-left:60px">
+					<object data="calculo_integrales_superficie/calculo_integrales_superficie_01.svg"
+					type="image/svg+xml" width="150" height="150"
+					style="border:1px solid black;background:white"></object>
+				</p>
+
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f : B \subset \mathbb{R}^2 &amp;\to \mathbb{R}^3 \\[1ex]
+					\rm (x, y) &amp;\to \rm \left( x,y,\sqrt{1 - x^2 - y^2} \right)
+				\end{align}
+				$
+			</p>
+			
+				<p style="margin-left:60px">
+					<object data="calculo_integrales_superficie/calculo_integrales_superficie_02.svg"
+					type="image/svg+xml" width="170" height="150"
+					style="border:1px solid black;background:white"></object>
+				</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{ (θ, ω) \mathrel{|} 0 \leq θ \leq 2π, 0 \leq ω \leq
+				π{∕}2 \}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm g : B \subset \mathbb{R}^2 &amp;\to \mathbb{R}^3 \\[1ex]
+					(θ, ω) &amp;\to \rm (\cos θ \cos ω, \sin θ \cos ω, \sin ω) =
+					(x, y, z)
+				\end{align}
+				$
+			</p>
+			
+				<p style="margin-left:60px">
+					<object data="calculo_integrales_superficie/calculo_integrales_superficie_03.svg"
+					type="image/svg+xml" width="250" height="250"
+					style="border:1px solid black;background:white"></object>
+				</p>
+
+    <p>
+			Esta parametrización no es inyectiva. Si $ω = π{∕}2$, por ejemplo:
+    </p>
+    
+			<p style="text-align:center">
+				$
+				\begin{array}{r}
+					\raise 1ex {(π, π{∕}2)} \searrow \\
+					\lower 1ex {(π{∕}2, π{∕}2)} \nearrow
+				\end{array}
+				(0,0,1)
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Sea la siguiente superficie:</p>
+    
+			<p style="text-align:center">
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_04.svg"
+				type="image/svg+xml" width="189" height="216"
+				style="display:inline-block;margin:0;vertical-align:top"></object>
+				$
+				\qquad
+				\begin{array}{l}
+					\\
+					\rm f : B \subset \mathbb{R}^2 \to \mathbb{R}^3 \\[1ex]
+					\rm f(B) = S
+				\end{array}
+				$
+			</p>
+			
+    <p>Siendo que:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\dfrac{\partial f}{\partial x}(x_0,y_0),
+				\dfrac{\partial f}{\partial y}(x_0,y_0) \in \mathbb{R}^3
+				$
+			</p>
+    
+    <p>Si estos dos vectores son linealmente independientes (no
+    proporcionales) se dirá que $\rm P$ es regular. </p>
+    
+    <p>El plano que pasa por $\rm P$ y tiene como vectores directores 
+    $\rm \partial f {∕} \partial x (x_0,y_0)$, $\rm \partial f {∕} \partial
+    y (x_0,y_0)$ es el plano tangente a la superficie $\rm S$ en $\rm P$.
+    </p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \left\{ (x, y) \mathrel{|} x^2 + y^2 \leq 1 \right\}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(x,y) = \left( x, y, \sqrt{1 - x^2 - y^2} \right)$</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-row">
+				<span style="display:table-cell">
+				$
+				\left.
+					\begin{array}{l}
+						\rm \dfrac{\partial f}{\partial x} =
+						\left( 1,0,-x {∕} \sqrt{1-x^2-y^2} \right) \\[1ex]
+						\rm \dfrac{\partial f}{\partial y} =
+						\left(0,1,-y {∕} \sqrt{1-x^2-y^2} \right)
+					\end{array}
+					\:
+				\right\}
+				\leftarrow
+				\;
+				$
+				</span>
+				<span style="display:table-cell;text-align:center">
+					son linealmente independientes<br>
+					$\Downarrow$<br>
+					todos los puntos son regulares
+				</span>
+				</span>
+				<span style="display:table-row">
+					<span style="display:table-cell;text-align:center;padding:1em 0">
+						$\uparrow$
+					</span>
+				</span>
+				<span style="display:table-row">
+					<span style="display:table-cell;text-align:center">
+						Se hace posible que ambos<br>
+						vectores pertenezcan a $\mathbb{R}^3$<br>
+						si $\rm x^2 + y^2 \neq 1$.
+					</span>
+				</span>
+			</p>
+				
+    <p>Se escoge el punto $(0, 0, 1)$. Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial x}(0,0) = (1,0,0)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial y}(0,0) = (0,1,0)$</p>
+				
+    <p>Representando:</p>
+		
+		<center>
+			<object data="calculo_integrales_superficie/calculo_integrales_superficie_05.svg"
+			type="image/svg+xml" width="300" height="150"
+			style="background:white;border:1px solid black"></object>
+		</center>
+		
+    <p>Se tienen pues:</p>
+    
+			<p style="margin-left:30px">
+				$(0, 0, 1) \leftarrow$ punto del plano</p>
+				
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{l}
+						(1,0,0) \\
+						(0,1,0)
+					\end{array}
+				\right\}
+				\leftarrow
+				$ vectores directores del plano
+			</p>
+			
+    <p>Un plano queda determinado por un punto y dos vectores no paralelos
+    pertenecientes a él. La ecuación del plano viene dada por:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \det(\overrightarrow{AX}, \overrightarrow{v}, \overrightarrow{w})
+				= 0$</p>
+				
+				<p style="margin-left:60px">
+					$\rm A = (A_1, A_2, A_3) \rightarrow$ punto del plano $\Rightarrow
+					\rm \overrightarrow{AX} = (x - A_1,y - A_2,z - A_3)$</p>
+				
+				<p style="margin-left:60px">
+					$\rm \overrightarrow{v}, \overrightarrow{w} \rightarrow$ vectores
+					directores o direccionales del plano.</p>
+					
+    <p>Así pues el plano tangente que pasa por $(0, 0, 1)$ es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\begin{vmatrix}
+					\rm x &amp; \rm y &amp; \rm z-1 \\
+					1 &amp; 0 &amp; 0 \\
+					0 &amp; 1 &amp; 0
+				\end{vmatrix}
+				= 0 \Rightarrow z-1 = 0 \Rightarrow \underline{z = 1}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+    <p>Parametrización con coordenadas esféricas:</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{ (θ, ω) \mathrel{|} 0 \leq θ \leq 2π, 0 \leq ω \leq π/2
+				\}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm g : B \subset \mathbb{R}^2 &amp;\to \mathbb{R}^3 \\[1ex]
+					(θ, ω) &amp;\to (\cos θ \cos ω, \sin θ \cos ω, \sin ω)
+				\end{align}
+				$
+			</p>
+			
+    <p>Derivadas parciales:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial g}{\partial θ} = (-\sin θ \cos ω, \cos θ
+				\cos ω, 0)$</p>
+			
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial g}{\partial ω} = ( -\cos θ \sin ω, -\sin θ
+				\sin ω, \cos ω)$</p>
+    
+    <p>Se escoge también el mismo punto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (0, 0, 1) = g(0,π{∕}2)$</p>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-row">
+					<span style="display:table-cell">
+						$
+						\left.
+							\begin{array}{l}
+								\rm \dfrac{\partial g}{\partial θ}(0,π{∕}2) = (0,0,0)
+								\\[1ex]
+								\rm \dfrac{\partial g}{\partial ω}(0,π{∕}2) = (-1,0,0)
+							\end{array}
+							\:
+						\right\}
+						\Rightarrow
+						{}
+						$						
+					</span>
+					<span style="display:table-cell">
+						$\rm P$ no es regular<br>
+						(en cambio si lo era en el ejemplo anterior, con otra
+						parametrización)
+					</span>
+				</span>
+				<span style="display:table-cell;text-align:center;padding:0 0 1ex 0">
+					$\uparrow$
+				</span>
+				<span style="display:block">
+					No puede encontrarse un plano tangente a $\rm P$ ya que sólo se
+					tiene un vector.
+				</span>
+			</p>
+    
+		<center>
+			<object data="calculo_integrales_superficie/calculo_integrales_superficie_06.svg"
+			type="image/svg+xml" width="225" height="150"
+			style="border:1px solid black;background:white"></object>
+		</center>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Para:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f}{\partial x}(x_0,y_0) \quad
+				\dfrac{\partial f}{\partial y}(x_0,y_0)
+				$
+			</p>
+			
+			<p style="text-align:center">
+				<span style="display:inline:table">
+					<span style="display:table-cell;padding-top:2em">
+						$
+						\boxed{
+							\rm
+							\dfrac{\partial f}{\partial x}(x_0,y_0) \times
+							\dfrac{\partial f}{\partial y}(x_0,y_0)
+						}
+						$
+						<span style="display:block">
+							Producto vectorial<br>
+							fundamental en $\rm P$
+						</span>
+					</span>
+					<object data="calculo_integrales_superficie/calculo_integrales_superficie_07.svg"
+					type="image/svg+xml" width="264" height="216"
+					style="display:inline-block;vertical-align:top;margin:0 0 0 2em"></object>
+				</span>
+			</p>
+			
+    <p>En un punto no regular (singular) este producto es cero, ya que
+    cuando dos vectores no son linealmente independientes su producto
+    vectorial da cero.</p>
+    
+    <p>Se tiene una parametrización regular de $\rm S$ cuando su producto
+    vectorial fundamental es distinto de cero.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="text-align:center">
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_08.svg"
+				type="image/svg+xml" width="150" height="125"
+				style="display:inline-block;border:1px solid black;background:white;margin:0;vertical-align:middle">
+				</object>
+				$
+				\quad
+				\begin{array}{l}
+					\rm \dfrac{\partial f}{\partial x} =
+					\left( 1, 0, -x{∕}\sqrt{1-x^2-y^2} \right) \\[1ex]
+					\rm \dfrac{\partial f}{\partial y} =
+					\left( 0, 1, -y{∕}\sqrt{1-x^2-y^2} \right)
+				\end{array}
+				$
+			</p>
+			
+    <p>Cálculo del producto vectorial:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\begin{array}{l}
+					\rm u = (a,b,c) \\[1ex]
+					\rm v = (a',b',c')
+				\end{array}
+				\qquad
+				u \times v =
+				\left(
+					\begin{vmatrix}
+						\rm b &amp; \rm c \\
+						\rm b' &amp; \rm c'
+					\end{vmatrix},
+					-
+					\begin{vmatrix}
+						\rm a &amp; \rm c \\
+						\rm a' &amp; \rm c'
+					\end{vmatrix},
+					\begin{vmatrix}
+						\rm a &amp; \rm b \\
+						\rm a' &amp; \rm b'
+					\end{vmatrix}
+				\right) =
+				\begin{vmatrix}
+					\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+					\rm \overrightarrow{k} \\
+					\rm a &amp; \rm b &amp; \rm c \\
+					\rm a' &amp; \rm b' &amp; \rm c'
+				\end{vmatrix}
+				$
+			</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial f}{\partial x} \times \dfrac{\partial f}{\partial y}
+				=
+				\begin{vmatrix}
+					\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+					\rm \overrightarrow{k} \\
+					1 &amp; 0 &amp; \rm \dfrac{-x}{\sqrt{1-x^2-y^2}} \\
+					0 &amp; 1 &amp; \rm \dfrac{-y}{\sqrt{1-x^2-y^2}}
+				\end{vmatrix}
+				=
+				\left(
+					\rm \dfrac{x}{\sqrt{1-x^2-y^2}},
+					\rm \dfrac{y}{\sqrt{1-x^2-y^2}},
+					1
+				\right)
+				$
+			</p>
+    
+    <p>
+			Entonces el producto vectorial fundamental para $\rm P = (0, 0, 1)$:
+    </p>
+    
+			<p style="margin-left:30px">
+				$(0, 0, 1)$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Se define el área de $\rm S$ como:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-block;border:1px solid black;padding:5px">
+					Área de $\rm \displaystyle S =
+					\iint_B \left\lVert \dfrac{\partial f}{\partial x} \times
+					\dfrac{\partial f}{\partial y} \right\rVert$
+				</span>
+			</p>
+    
+    <p>Siendo $\rm f$ cualquier parametrización regular, (o al menos lo
+    es para casi todas partes), de $\rm S$.</p>
+    
+    <p>Justificación:</p>
+    
+    <p>Dados dos vectores el módulo de su producto vectorial es el área
+    del paralelogramo que tiene por lados a ambos. Si $\rm D$ es un
+    rectángulo de $\rm B$, siendo $\rm (x, y)$ uno de sus vértices, con
+    área $\rm \Delta x \Delta y$, que genera un paralelogramo curvilíneo
+    $\rm f(D)$ en la superficie $\rm S$, puede aproximarse el área de
+    $\rm f(D)$ como la del paralelogramo formado por los vectores
+    $\rm \Delta x(\partial f {∕} \partial x)$ e $\rm \Delta y( \partial f
+    {∕} \partial y)$:</p>
+    
+			<p style="margin-left:30px">
+				Área de
+				$
+				\rm f(D) \approx
+				\left\lVert \Delta x \dfrac{\partial f}{\partial x}(x,y) \times
+				\Delta y \dfrac{\partial f}{\partial y}(x,y) \right\rVert =
+				\left\lVert \dfrac{\partial f}{\partial x}(x,y) \times
+				\dfrac{\partial f}{\partial y}(x,y) \right\rVert \Delta x \Delta y
+				$
+			</p>
+    
+    <p>Cuanto más pequeño sea el rectángulo $\rm D$ mejor será la
+    aproximación:</p>
+    
+			<p style="margin-left:30px">
+				Área de $\rm f(D) =
+				\left\lVert \dfrac{\partial f}{\partial x}(x,y) \times
+				\dfrac{\partial f}{\partial y}(x,y) \right\rVert dx \, dy
+				\Leftrightarrow$ Área de $\rm D$ es infinitesimal
+			</p>
+
+    <p>Intuitivamente, el área total sería la suma de las áreas de
+    porciones de $\rm S$ generadas por rectángulos contiguos
+    infinitesimales de $\rm B$ que cubrieran toda la superficie. Esto es
+    la integral de Riemann, que da lugar a la definición anterior.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+    <p>¿Área de la esfera de radio 1?</p>
+    
+    <p>Coordenadas esféricas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm g : B \subset \mathbb{R}^2 &amp;\to \mathbb{R}^3 \\[1ex]
+					(θ, ω) &amp;\to (\cos θ \cos ω, \sin θ \cos ω, \sin ω)
+				\end{align}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{(θ, ω) \mathrel{|} 0 \leq θ \leq 2π, -π{∕}2 \leq ω \leq
+				π{∕}2 \}$</p>
+				
+    <p>Derivadas:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial g}{\partial θ} = (-\sin θ \cos ω, \cos θ
+				\cos ω, 0 )$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial g}{\partial ω} = (-\cos θ \sin ω, -\sin θ
+				\sin ω, \cos ω)$</p>
+				
+    <p>Cálculo del producto vectorial:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \dfrac{\partial g}{\partial θ} \times
+					\dfrac{\partial g}{\partial ω} &amp;=
+					\begin{vmatrix}
+						\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+						\rm \overrightarrow{k} \\
+						-\sin θ \cos ω &amp; \cos θ \cos ω &amp; 0 \\
+						-\cos θ \sin ω &amp; -\sin θ \sin ω &amp; \cos ω
+					\end{vmatrix}
+					= \\[1ex]
+					&amp;=
+					\left(\cos θ \cos^2 ω, \sin θ \cos^2 ω, \sin ω \cos ω \right)
+				\end{align}
+				$
+			</p>
+    
+    <p>Cálculo del módulo o norma:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \left\lVert \dfrac{\partial g}{\partial θ} \times
+					\dfrac{\partial g}{\partial ω} \right\rVert^2 &amp;=
+					\cos^2 θ \cos^4 ω + \sin^2 θ \cos^4 ω + \sin^2 ω \cos^2 ω = \\[1ex]
+					&amp;= \cos^4 ω + \sin^2 ω \cos^2 ω = \cos^2 ω
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm \left\lVert \dfrac{\partial g}{\partial θ} \times
+					\dfrac{\partial g}{\partial ω} \right\rVert = \cos ω  \quad$
+				</span>
+				<span style="display:table-cell">
+					(como $-π{∕}2 \leq ω \leq π{∕}2$ se cumple que nunca es
+					negativo).
+				</span>
+			</p>
+			
+    <p>Cálculo del área:</p>
+    
+			<p style="margin-left:30px">
+				Área
+				$
+				\begin{array}[t]{l}
+					= \rm \displaystyle
+					\iint_B \left\lVert \dfrac{\partial g}{\partial θ}
+					\times \dfrac{\partial g}{\partial ω} \right\rVert =
+					\iint_B \cos ω = \int_{-π{∕}2}^{π{∕}2} \int_0^{2π} \cos ω \,
+					dθ \, dω = \\[1ex]
+					= \rm \displaystyle
+					\int_{-π{∕}2}^{π{∕}2} 2π \cos ω \, dω =
+					[2π \sin ω]_{-π{∕}2}^{π{∕}2} = 4π
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Calcular el área de :</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(r,θ) = (r \cos θ, r \sin θ, r)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm θ \in [0,2π], r \in [0,1]$</p>
+				
+    <p>Esto es:</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{ (r, θ) \mathrel{|} 0 \leq θ \leq 2π, 0 \leq r \leq 1
+				\}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(B) = S$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\rm x = r \cos θ \\[1ex]
+					\rm y = r \sin θ
+				\end{array}
+				\right\}
+				\leftarrow
+				$ circunferencia de radio $\rm r$
+			</p>
+				
+    <p>Si $\rm r$ viene fijada por la altura, en la gráfica sale un cono:
+    </p>
+    
+		<center>
+			<object data="calculo_integrales_superficie/calculo_integrales_superficie_09.svg"
+			type="image/svg+xml" width="330" height="200"
+			style="border:1px solid black;background:white"></object>
+		</center>
+		
+    <p>Derivadas parciales:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial r} = (\cos θ, \sin θ, 1)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial θ} = (-r \sin θ, r \cos θ, 0)$</p>
+
+    <p>Producto vectorial fundamental:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\partial f {∕} \partial r \times \partial f {∕} \partial θ =
+				\begin{vmatrix}
+					\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+					\rm \overrightarrow{k} \\
+					\cos θ &amp; \sin θ &amp; 1 \\
+					\rm -r \sin θ &amp; \rm r \cos θ &amp; 0
+				\end{vmatrix}
+				= (-r \cos θ, -r \sin θ, r)
+				$
+			</p>
+			
+    <p>Norma:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \left\lVert \partial f {∕} \partial r \times
+				\partial f {∕} \partial θ \right\rVert = \left( r^2 \cos^2 θ +
+				r^2 \sin^2 θ + r^2 \right)^{1{∕}2} = \sqrt{2} r$</p>
+				
+    <p>Área:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_0^{2π} \int_0^1 \sqrt{2} r \, dr \, dθ =
+				\int_0^{2π} \left[ \dfrac{\sqrt{2}}{2} r^2 \right]_0^1 \, dθ =
+				\int_0^{2π} \dfrac{\sqrt{2}}{2} \, dθ =
+				\dfrac{\sqrt{2}}{2} [θ]_0^{2π} = \sqrt{2} π
+				$
+			</p>
+			
+    <p>Si se toma el origen:</p>
+    
+			<p style="margin-left:30px">
+				$\rm P = (0, 0, 0) \Rightarrow r = 0$</p>
+				
+    <p>En éste los vectores tangentes son:</p>
+    
+			<p style="margin-left:30px">
+				$(\cos θ, \sin θ, 1)$</p>
+    
+			<p style="margin-left:30px">
+				$(0, 0, 0)$</p>
+    
+    <p>Los dos vectores no son linealmente independientes, por tanto el
+    origen no es regular.</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="margin-left:30px;margin-bottom:1ex">
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_10.svg"
+				type="image/svg+xml" width="560" height="184"
+				style="margin-bottom:0"></object>
+			</p>
+			
+					<p style="margin-left:90px;margin-top:1ex">
+						<small>
+							Todos estos puntos van a parar a $(0, 0, 0)$, por tanto es un
+							punto singular (aunque lo es independientemente de la
+							parametrización, ya que todo cono es geométricamente singular
+							en su origen).
+						</small>
+					</p>
+						
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					<object data="calculo_integrales_superficie/calculo_integrales_superficie_11.svg"
+					type="image/svg+xml" width="495" height="249"
+					style="display:inline"></object>
+				</span>
+				<span style="display:table-cell;vertical-align:middle;padding-left:1ex">
+					<small>
+						Estos dos puntos no son regulares para esta parametrización.
+					</small>
+				</span>
+			</p>
+						
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>Calcular el área de la siguiente superficie:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm f(r,θ) = (r \cos θ, r \sin θ, θ) \\[1ex]
+					\rm B = \{(r,θ) \mathrel{|} 0 \leq r \leq 1, 0 \leq θ \leq 2π
+					\} \\[1ex]
+					\rm f(B) = S
+				\end{array}
+				\qquad
+				$
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_12.svg"
+				type="image/svg+xml" width="180" height="200"
+				style="display:inline-block;border:1px solid black;background:white;margin:0;vertical-align:middle">
+				</object>
+			</p>
+    
+    <p>El área de $\rm S$ es:</p>
+    
+			<p style="margin-left:30px">
+				Área $\rm \displaystyle = \int_S dS =
+				\iint_B \left\lVert \partial f {∕} \partial r \times
+				\partial f {∕} \partial θ \right\rVert$</p>
+				
+    <p>Derivadas:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial r = (\cos θ, \sin θ, 0)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial θ = (-r \sin θ, r \cos θ, 1)$</p>
+				
+    <p>Producto vectorial:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \partial f {∕} \partial r \times \partial f {∕} \partial θ =
+				\begin{vmatrix}
+					\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+					\rm \overrightarrow{k} \\
+					\cos θ &amp; \sin θ &amp; 0 \\
+					\rm -r \sin θ &amp; \rm r \cos θ &amp; 1
+				\end{vmatrix}
+				= (\sin θ, -\cos θ, r) 
+				$
+			</p>
+    
+    <p>Norma:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \left\lVert \partial f {∕} \partial r \times 
+				\partial f {∕} \partial θ \right\rVert =
+				\sqrt{\sin^2 θ + \cos^2 θ + r^2} = \sqrt{1 + r^2}$</p>
+				
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				Área
+				$
+				\begin{array}[t]{l}
+					\displaystyle
+					= \rm \int_0^1 \int_0^{2π} \sqrt{1+r^2} \, dθ \, dr =
+					\int_0^1 2π \underbrace{\sqrt{1+r^2}}_{\color{red}{\ast}} \,
+					dr = \\[1ex]
+					\rm = 2π \left[ \dfrac{r\sqrt{r^2+1}}{2} +
+					\dfrac{1}{2} \ln \left( r + \sqrt{r^2+1} \right) \right]_0^1 =
+					π \sqrt{2} + π \ln \left( 1 + \sqrt{2} \right)
+				\end{array}
+				$
+			</p>
+
+					<p style="margin-left:90px">
+						$
+						\rm \displaystyle
+						\color{red}{\ast} \rightarrow \int \sqrt{1 + r^2} \, dr =
+						\int \sqrt{a^2 + r^2} \, dr \quad a = 1
+						$
+					</p>
+				
+					<p style="margin-left:90px">
+						Si:</p>
+    
+						<p style="margin-left:120px">
+							$\rm \sec x = \dfrac{\sqrt{a^2 + r^2}}{a} \Rightarrow 
+							\sqrt{a^2 + r^2} = a \cdot \sec x$</p>
+						
+					<p style="margin-left:90px">
+						Además si:</p>
+					
+						<p style="margin-left:120px">
+							$\rm \tan x = \dfrac{r}{a} \Rightarrow r = a \cdot \tan x$</p>
+						
+						<p style="margin-left:120px">
+							$\llap{\Rightarrow {}} \rm \dfrac{dr}{dx} = a \cdot sec^2 x
+							\Rightarrow dr = a \cdot \sec^2 x \, dx$</p>
+						
+					<p style="margin-left:90px">
+						Entonces:</p>
+    
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int \sqrt{a^2 + r^2} \, dr =
+							\int a \cdot \sec x \cdot a \cdot sec^2 x \, dx =
+							a^2 \int \sec^3 x \, dx$</p>
+							
+					<p style="margin-left:90px">
+						Integrando por partes:</p>
+						
+						<p style="margin-left:120px">
+							$\rm d(uv) = u \cdot dv + v \cdot du$</p>
+							
+						<p style="margin-left:120px">
+							$\rm \displaystyle u \cdot v = \int u \cdot dv + \int v \cdot du$
+						</p>
+						
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int u \cdot dv = u \cdot v - \int v \cdot
+							du$</p>
+    
+					<p style="margin-left:90px">
+						Si:</p>
+						
+						<p style="margin-left:120px">
+							$\rm u = \sec x = \dfrac{1}{\cos x} \Rightarrow du =
+							\dfrac{\sin x}{\cos^2 x} \, dx = \sec x \cdot \tan x \, dx$
+						</p>
+						
+						<p style="margin-left:120px">
+							$\rm dv = sec^2 x \, dx \Rightarrow v = \tan x$</p>
+							
+					<p style="margin-left:90px">
+						Entonces:</p>
+						
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \int \sec^3 x \, dx &amp; \rm = \sec x \cdot \tan x -
+								\int \tan x \cdot \sec x \cdot \tan x \, dx = \\[1ex]
+								&amp;= \rm \sec x \cdot \tan x - \int \sec x \cdot
+								\tan^2 x \, dx = \\[1ex]
+								&amp;= \rm \sec x \cdot \tan x - \int \sec x \left(
+								\sec^2 x - 1 \right) \, dx = \\[1ex]
+								&amp;= \rm \sec x \cdot \tan x - \int \left( sec^3 x -
+								\sec x \right) \, dx = \\[1ex]
+								&amp;= \rm \sec x \cdot \tan x - \int \sec^3 x \, dx +
+								\int \sec x \, dx
+							\end{align}
+							$
+						</p>
+						
+					<p style="margin-left:90px">
+						Reordenando:</p>
+						
+						<p style="margin-left:120px">
+							$\rm \displaystyle 2 \int sec^3 x \, dx = \sec x \cdot
+							\tan x + \int \sec x \, dx$</p>
+							
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int \sec^3 x \, dx = 
+							\dfrac{ \sec x \cdot \tan x + \displaystyle \int \sec x \,
+							dx}{2}$</p>
+							
+					<p style="margin-left:90px">Donde:</p>
+					
+						<p style="margin-left:120px">
+							$\rm \int \sec x \, dx$ ?</p>
+							
+					<p style="margin-left:90px">En ésta, se multiplica y divide
+					el integrando por $\rm (\sec x + \tan x)$:</p>
+					
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \int \sec x \, dx &amp;=
+								\rm \int \dfrac{ \sec x ( \sec x + \tan x )}{\sec x +
+								\tan x} \, dx = \\[1ex]
+								&amp;= \rm
+								\int \dfrac{\sec^2 x + \sec x \cdot tan x}{\sec x +
+								\tan x} \, dx
+							\end{align}
+							$
+						</p>
+						
+					<p style="margin-left:90px">
+						Si:</p>
+						
+						<p style="margin-left:120px">
+							$\rm t = \sec x + \tan x$</p>
+							
+						<p style="margin-left:120px">
+							$\rm dt = \left( \sec x \cdot \tan x + \sec^2 x \right) \,
+							dx$</p>
+							
+					<p style="margin-left:90px">
+						Por tanto:</p>
+						
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int \sec x \, dx = \int \dfrac{1}{t} \,
+							dt = \ln t = \ln (\sec x + \tan x)$</p>
+							
+					<p style="margin-left:90px">Siendo pues:</p>
+					
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int \sec^3 x \, dx =
+							\dfrac{\sec x \cdot \tan x + \ln (\sec x + \tan x)}{2}$</p>
+							
+					<p style="margin-left:90px">
+						Por lo que:</p>
+						
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \int \sqrt{a^2 + r^2} \, dr &amp;=
+								\rm a^2 \int \sec^3 x \, dx = \\[1ex]
+								&amp;= \rm a^2 \dfrac{\sec x \cdot \tan x + \ln (\sec x
+								+ \tan x)}{2}
+							\end{align}
+							$
+						</p>
+    
+					<p style="margin-left:90px">
+						Deshaciendo las sustituciones:</p>
+    
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \int \sqrt{a^2 + r^2} \, dr &amp;= \rm
+								a^2 \dfrac{\dfrac{r \sqrt{a^2+r^2}}{a^2} +
+								\ln \left( \dfrac{\sqrt{a^2 + r^2}}{a} + \dfrac{r}{a}
+								\right)}{2} = \\[1ex]
+								&amp;=\rm \dfrac{r \sqrt{a^2+r^2}}{2} +
+								\dfrac{a^2}{2} \ln \left( \dfrac{\sqrt{a^2+r^2}}{a} +
+								\dfrac{r}{a} \right)
+							\end{align}
+							$
+						</p>
+						
+					<p style="margin-left:90px">
+						Como $\rm a = 1$:</p>
+						
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int \sqrt{1 + r^2} \, dr =
+							\dfrac{r \sqrt{r^2 + 1}}{2} + \dfrac{1}{2} \ln \left( r +
+							\sqrt{r^2 + 1} \right)$</p>
+							
+					<p style="margin-left:90px">
+						Quedando resuelta la integral.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Orientación:</p>
+    
+    <p>Una superficie es orientable cuando tiene dos caras. Esto es:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell">
+						<span style="display:table-cell">
+							<span style="display:table-cell">
+								<span style="display:table-cell">
+									<object data="calculo_integrales_superficie/calculo_integrales_superficie_13.svg"
+									type="image/svg+xml" width="180" height="120"
+									style="display:inline-block;margin:0"></object>
+								</span>
+								<span style="display:table-row">
+									$\Big\downarrow$
+								</span>
+							</span>
+							<span style="display:table-cell">
+								<span style="display:table-cell">
+									<span style="display:inline-block;height:120px;vertical-align:middle">
+										$\longrightarrow$
+									</span>
+								</span>
+								<span style="display:table-cell">
+									<span style="display:table-cell">
+										<object data="calculo_integrales_superficie/calculo_integrales_superficie_14.svg"
+										type="image/svg+xml" width="100" height="120"
+										style="display:inline-block;margin:0"></object>
+										<span style="display:block">
+											cilindro
+										</span>
+									</span>
+									<span style="display:table-cell">
+										<object data="calculo_integrales_superficie/calculo_integrales_superficie_15.svg"
+										type="image/svg+xml" width="180" height="120"
+										style="display:inline-block;margin:0"></object>
+										<span style="display:block">
+											toro
+										</span>
+									</span>
+									<span style="display:block">
+										(dos caras: interior o exterior)
+									</span>
+								</span>
+							</span>
+						</span>
+						<span style="display:block">
+							<span style="display:table-cell">
+								<object data="calculo_integrales_superficie/calculo_integrales_superficie_16.svg"
+								type="image/svg+xml" width="180" height="120"
+								style="display:inline-block;margin:0;vertical-align:middle"></object>
+							</span>
+							<span style="display:table-cell;text-align:left;padding-left:1ex">
+								Banda de Moebius<br>
+								(una única cara $\Rightarrow$ no hay orientación $\Rightarrow$<br>
+								superficie no orientable)
+							</span>
+						</span>
+					</span>
+				</span>
+			</p>
+    
+    <p>En un punto de una superficie, un vector normal a ésta y su opuesto
+    apuntan cada uno en un sentido distinto. En una superficie orientable
+    al desplazarse ese vector normal por la misma su sentido se conserva,
+    no así en una no orientable donde puede convertirse en su opuesto (i.e.
+    existe algún camino en el que cuando regresa al punto de partida el
+    vector normal ha cambiado su sentido). </p>
+    
+    <p>Así pues en una superficie orientable, una parametrización determina
+    una orientación.</p>
+    
+    <hr>
+    
+    <p>Campos escalares sobre superficies:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f : B \subset \mathbb{R}^2 \to \mathbb{R}^3$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(B) = S$</p>
+				
+			<p style="margin-left:30px">
+				$\rm φ : S \to \mathbb{R}$</p>
+				
+    <p>Definición:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_S φ \, dS = \iint_B φ(f(x,y))
+				\left\lVert \dfrac{\partial f}{\partial x} \times
+				\dfrac{\partial f}{\partial y} \right\rVert$</p>
+			
+    <p>Esta integral no depende de la parametrización. Si $φ = 1$ se
+    obtiene el área de $\rm S$.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_S z^2 \, dS \quad S =$ esfera de radio
+				$\rm r$</p>
+				
+    <p>Coordenadas esféricas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\def\rarrow#1#2{
+					\stackrel{#1}{
+						\underset{#2}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+							}
+						} 
+					}
+				}
+				\rm
+				(θ, ω) \rarrow{\large f}{} (r \cos θ \cos ω, r \sin θ \cos ω,
+				r \sin ω)
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm B = \{ (θ, ω) \mathrel{|} 0 \leq θ \leq 2π, -π{∕}2 \leq ω
+				\leq π{∕}2 \}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(B) = S$</p>
+				
+    <p>Así pues:</p>
+    
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_S z^2 \, dS &amp;
+					\rm
+					\underset{
+						\begin{subarray}{c}
+							\\[1ex]
+							\uparrow \\
+							\rm \llap{z} \, = \, \rlap{r \sin ω}
+						\end{subarray}
+					}{=}
+					\iint_B r^2 \sin^2 ω
+					\left\lVert \dfrac{\partial f}{\partial θ} \times
+					\dfrac{\partial f}{\partial ω} \right\rVert = \\[1ex]
+					&amp;
+					\rm
+					\underset{
+						\begin{subarray}{c}
+							\\[1ex]
+							\uparrow \\
+							\rm
+							\llap{
+								\left\lVert \tfrac{\partial f}{\partial θ} \times
+								\tfrac{\partial f}{\partial ω} \right\rVert
+							} \, = \, \rlap{r^2 \cos ω}
+						\end{subarray}
+					}{=}
+					\int_0^{2π} \int_{-π{∕}2}^{π{∕}2} r^2 \sin^2 ω \left(r^2 \cos ω
+					\right) dω \, dθ = \\[1ex]
+					&amp;= \rm
+					\int_0^{2π} r^4 \left[ \dfrac{\sin^3 ω}{3} \right]_{-π{∕}2}^{π{∕}2}
+					\, dθ = \int_0^{2π} \dfrac{2r^4}{3} \, dθ = \dfrac{4}{3} πr^4
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_S x^2 \, dS$</p>
+				
+    <p>Donde $\rm S$ es la parte del cilindro $\rm x^2 + y^2 = 4$ entre
+    $\rm z = 0$, $\rm z = x + 3$.</p>
+    
+			<p style="text-align:center">
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_17.svg"
+				type="image/svg+xml" width="175" height="200"
+				style="display:inline-block;border:1px solid black;margin:0 1em 0 0;background:white;vertical-align:middle">
+				</object>
+				Sólo se tienen paredes, no hay tapas.
+			</p>
+    
+    <p>Parametrización de $\rm S$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (θ, z) \smash[b]{\;\rarrow{\large f}{}\;} (2 \cos θ, 2 \sin θ, z) = (x, y,
+				z)$</p>
+				
+			<p style="margin-left:30px">
+				$θ \in [0, 2π]$</p>
+				
+			<p style="margin-left:30px">
+				$\rm z \in [0, 2 \cos θ + 3]$</p>
+				
+    <p>Derivadas parciales:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial θ = (-2 \sin θ, 2 \cos θ, 0)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial z = (0, 0, 1)$</p>
+				
+    <p>Cálculo del producto vectorial:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm \overrightarrow{i} &amp; \rm \overrightarrow{j} &amp;
+					\rm \overrightarrow{k} \\
+					-2 \sin θ &amp; 2 \cos θ &amp; 0 \\
+					0 &amp; 0 &amp; 1
+				\end{vmatrix}
+				= (2 \cos θ, 2 \sin θ, 0) \enspace \leftarrow
+				$ vector plano
+			</p>
+
+    <p>Vector perpendicular a la superficie del cilindro $\Rightarrow$
+    componente $\rm z = 0$.</p>
+    
+    <p>Es un vector plano porque todos los vectores que genera en función
+    de θ se encuentran en un mismo plano.</p>
+    
+    <p>Norma:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \left\lVert \partial f {∕} \partial θ \times
+				\partial f {∕} \partial z \right\rVert = \sqrt{4 \cos^2 θ +
+				4 \sin^2 θ} = \sqrt{4} = 2$</p>
+				
+    <p>Todos los vectores perpendiculares a la superficie del cilindro
+    tienen la misma longitud. Esto es, la norma no varía.</p>
+    
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_S x^2 \, dS &amp;=
+					\rm \int_0^{2π} \int_0^{2 \cos θ \, + \, 3} 8 \cos^2 θ \, dz \,
+					dθ = \int_0^{2π} 8 \cos^2 θ \, [z]_0^{2 \cos θ \, + \, 3} \, dθ
+					= \\[1ex]
+					&amp;= \rm
+					\int_0^{2π} \bigl(16 \, \underbrace{\!\cos^3 θ\!}_{\color{red}{\ast}}
+					+ 24 \, \underbrace{\!\cos^2 θ\!}_{\color{red}{\ast\ast}} \, \bigr)
+					dθ = \\[1ex]
+					&amp;=
+					\left[
+						16 \left( \sin θ - \dfrac{\sin^3 θ}{3} \right) +
+						24 \left( \dfrac{θ + \sin θ \cos θ}{2} \right)
+					\right]_0^{2π} = 24π \\[1em]
+					&amp;
+					\begin{aligned}
+						\rm \color{red}{\ast} \rightarrow \int \cos^3 θ \, dθ &amp;=
+						\rm \int \cos θ \left( 1 - \sin^2 θ \right) dθ = \\[1ex]
+						&amp;= \rm \int \left( \cos θ - \cos θ \sin^2 θ \right) dθ = 
+						\sin θ - \dfrac{\sin^3 θ}{3}
+					\end{aligned} \\[1em]
+					&amp;
+					\begin{aligned}
+						\rm \color{red}{\ast\ast} \rightarrow \int \cos^2 θ \, dθ
+						&amp;= \rm \int \dfrac{1 + \cos 2θ}{2} \, dθ = \dfrac{1}{2} θ
+						+ \dfrac{1}{4} \sin 2θ = \\[1ex]
+						&amp;= \dfrac{1}{2} θ + \dfrac{1}{4} (2 \sin θ \cos θ) =
+						\dfrac{θ + \sin θ \cos θ}{2}
+					\end{aligned}
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Campos vectoriales sobre superficies:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm f: B \subset \mathbb{R}^2 \to \mathbb{R}^3 \\[1ex]
+					\rm f(B) = S \\[1ex]
+					\rm F : S \to \mathbb{R}^3
+				\end{array}
+				$
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_18.svg"
+				type="image/svg+xml" width="165" height="216"
+				style="display:inline-block;margin:0 1em;vertical-align:middle"></object>
+			</p>
+				
+    <p>Definición:</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				\int_S F \cdot dS = \iint_B F(f(x,y)) \cdot
+				\left( \dfrac{\partial f}{\partial x} \times
+				\dfrac{\partial f}{\partial y} \right)
+				$
+			</p>
+
+    <p>Esta integral no depende de la parametrización.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = (x, y, z)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm S =$ esfera de radio 1</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_S F \cdot dS$ ?</p>
+				
+    <p>Parametrización en coordenadas esféricas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f : B &amp;\to \mathbb{R}^3 \\[1ex]
+					(θ, ω) &amp;\to (\cos θ \cos ω, \sin θ \cos ω, \sin ω)
+				\end{align}
+				$
+			</p>
+    
+    <p style="margin-left:30px">
+			$\rm B = \{(θ, ω) \mathrel{|} 0 \leq θ \leq 2π, -π{∕}2 \leq ω \leq
+			π{∕}2\}$</p>
+			
+    <p>Producto vectorial de las derivadas parciales para coordenadas
+    esféricas:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial θ \times \partial f {∕} \partial ω
+				= \left( \cos θ \cos^2 ω, \sin θ \cos^2 ω, \sin ω \cos ω \right)$
+			</p>
+			
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_S F \cdot dS &amp;= \!
+					\begin{aligned}[t]
+						&amp;\rm \iint_B (\cos θ \cos ω, \sin θ \cos ω, \sin ω) \cdot
+						{} \\[1ex]
+						&amp;\cdot \left( \cos θ \cos^2 ω, \sin θ \cos^2 ω, \sin ω
+						\cos ω \right) =
+					\end{aligned} \\[1ex]
+					&amp;= \rm \int_0^{2π} \int_{-π{∕}2}^{π{∕}2}
+					\bigl(
+					\underbrace{
+						\underbrace{
+							\cos^2 θ \cos^3 ω + \sin^2 θ \cos^3 ω
+						}_{cos^3 ω} + \sin^2 ω \cos ω
+					}_{\cos ω}
+					\bigr) \, dω \, dθ = \\[1ex]
+					&amp;= \rm \int_0^{2π} \int_{-π{∕}2}^{π{∕}2} \cos ω \, dω \,
+					dθ = \int_0^{2π} [\sin ω]_{-π{∕}2}^{π{∕}2} \, dθ = \\[1ex]
+					&amp;= \rm \int_0^{2π} 2 \, dθ = [2θ]_0^{2π} = 4π
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_S F \cdot dS$ ?</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = (x, y, -1)$</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					<span style="display:table-cell;vertical-align:top">
+						$\rm S$ superficie del cilindro:
+					</span>
+					<span style="display:table-cell">
+						$
+						\;
+						\left.
+						\begin{array}{l}
+								\rm x^2 + y^2 = 1 \\
+								\rm 0 \leq z \leq 1
+						\end{array}
+						\right\}
+						$
+					</span>
+				</span>
+				<span style="display:table-cell">
+				<object data="calculo_integrales_superficie/calculo_integrales_superficie_19.svg"
+				type="image/svg+xml" width="120" height="90"
+				style="display:inline-block;margin:0 2em;border:1px solid black;background:white;vertical-align:middle">
+				</object>
+				</span>
+			</p>
+			
+    <p>Se harán servir coordenadas cilíndricas:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (θ, z) \smash[b]{\;\rarrow{\large f}{}\;} (\cos θ, \sin θ, z)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm B = \{ (θ, w) \mathrel{|} 0 \leq θ \leq 2π, 0 \leq z \leq 1
+				\}$</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(B) = S$</p>
+				
+    <p>Derivadas parciales y producto vectorial:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial θ = (-\sin θ, \cos θ, 0)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial z = (0, 0, 1)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \partial f {∕} \partial θ \times \partial f {∕} \partial z
+				= (\cos θ, \sin θ, 0)$</p>
+				
+    <p>Integral:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \int_S F \cdot dS &amp;= \rm \iint_B (\cos θ, \sin θ, -1)
+					\cdot (\cos θ, \sin θ, 0) = \\[1ex]
+					&amp;= \rm \int_0^{2π} \int_0^1 \bigl( \underbrace{\cos^2 θ +
+					\sin^2 θ}_1 \bigr) \, dw \, dθ = \int_0^{2π} \int_0^1 1 \, dw
+					\, dθ =	2π
+				\end{align}
+				$
+			</p>
+    
+    </div>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="cambios_variables.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="teoremas_green_stokes_gauss.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

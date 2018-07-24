@@ -1,0 +1,1381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js"],
+          MultLineWidth: "100%"
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Derivación de funciones implícitas">
+    <meta name="keywords" content="derivación, funciones, implícitas">
+    <title>Derivación de funciones implícitas</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Derivación de funciones implícitas</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Una función implícita es de la forma:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x_1, \dotsc, x_n) = 0$</p>
+				
+    <p>Para dos variables:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y) = 0$</p>
+    
+    <p>Para tres variables:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = 0$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-row">
+					<span style="display:table-cell">
+						<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_01.svg"
+						type="image/svg+xml" width="200" height="200"
+						style="margin:0;background:white;border:1px solid black"></object>
+					</span>
+					<span style="display:table-cell;vertical-align:middle;padding-left:2em">
+						$
+						\begin{array}{l}
+							\rm x^2 + y^2 = 1 \quad (x^2 + y^2 - 1 = 0) \\[1ex]
+							\begin{aligned}
+								&amp;\rm y = \sqrt{1-x^2} &amp;&amp;\rm y = -\sqrt{1-x^2} \\[1ex]
+								&amp;\rm h(x) = \sqrt{1-x^2} &amp;&amp;\rm h(x) = -\sqrt{1-x^2}
+							\end{aligned} \\[1ex]
+							\rm x^2 + h^2(x) = 1 \quad (x,h(x)) \in \text{circunferencia}
+						\end{array}
+						$
+					</span>
+				</span>
+				<span style="display:table-cell;text-align:center">
+					<small>
+						<span style="display:block;margin:1em 0 1ex">
+							$\rm y = \sqrt{1-x^2} \quad y = -\sqrt{1-x^2}$
+						</span>
+						<span style="display:block">
+							No se define una
+							<br>
+							única función.
+						</span>
+					</small>
+				</span>
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm g(x) = x^2 + h^2(x)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm x \in [-1, 1]$ y $\rm g(x)$ es constante (igual a 1) $\rm
+				\Rightarrow g'(x) = 0$.</p>
+    
+    <p>Derivando, usando la regla de la cadena cuando sea necesario:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm 0 = g'(x) = 2x + 2h(x)h'(x) \\[1ex]
+					\rm h'(x) = -\dfrac{x}{h(x)} \quad (\text{si } h(x) \neq 0)
+				\end{array}
+				$	
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \ln{x} \cdot y + xy^2 = 2 \quad E = \{(x,y) \in \mathbb{R}^2
+				\mathrel{|} \ln x \cdot y + xy^2 - 2 = 0\}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \mathrel{\exists} h : I \subset \mathbb{R} &amp;\to \mathbb{R} \\
+					\rm x &amp;\to \rm h(x) = y  
+				\end{align}
+				$
+				<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_02.svg"
+				type="image/svg+xml" height="109" width="250"
+				style="margin:0 1em;display:inline-block;background:white;border:1px solid black;vertical-align:middle"></object>
+			</p>
+				
+			<p style="margin-left:30px">
+				$\rm \ln x \cdot h(x) + xh^2(x) - 2 = 0$</p>
+				
+    <p>Derivando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \dfrac{1}{x} \cdot h(x) + \ln x \cdot h'(x) + h^2(x) +
+					2x\,h(x)\,h'(x) = 0 \\[1ex]
+					\rm h'(x)(\ln x + 2x\,h(x)) + \dfrac{1}{x} h(x) + h^2(x) = 0 \\[1ex]
+					\llap{\Rightarrow {}} \rm
+					h'(x) = -\dfrac{\dfrac{1}{x} h(x) + h^2(x)}{\ln x + 2x\,h(x)} \\[1ex]
+					\llap{\Rightarrow {}} \rm
+					y' = -\dfrac{\dfrac{1}{x} y + y^2}{\ln x + 2xy} \quad
+					(\text{si } \ln x + 2x\,h(x) \neq 0)
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Sea:</p>
+    
+			<p style="text-align:center">
+				$\rm C = \left\{(x,y) \in \mathbb{R}^2 \mathrel{|} F(x,y) = 0,
+				F : B \subset \mathbb{ℝ}^2 \to \mathbb{R} \right\} \enspace$
+				(curva de $\mathbb{R}^2$)
+			</p>
+			
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell;vertical-align:middle">
+						<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_03.svg"
+						type="image/svg+xml" width="256" height="91"
+						style="display:inline-block;margin:0"></object>
+					</span>
+					<span style="display:table-cell;padding-left:1em;text-align:left">
+						Entorno a $\rm u_0 = (x_0,y_0)$ se supone que:
+						<span style="display:block;margin-left:30px;margin-top:1ex">
+							$
+							\rm
+							\mathrel{\exists} h : I \subset \mathbb{R} \to \mathbb{R} \\[1ex]
+							\quad \rm h(x_0) = y_0 \\[1ex]
+							\quad \rm F(x,h(x)) = 0 \mathrel{\forall} x \in I
+							$
+						</span>
+					</span>
+				</span>
+			</p>
+			
+    <p>
+			$\rm g(x) = F(x,h(x)) = (F \circ \overline{h})(x)$
+		</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \overline{h} : I \in \mathbb{R} &amp;\to \mathbb{R}^2 \\[1ex]
+					\rm x &amp;\to \rm (x,h(x))
+				\end{align}
+				$
+			</p>
+
+			<p style="margin-left:30px">
+				$\llap{\Rightarrow {}} \rm g(x) = 0 \mathrel{\forall} x \in I
+				\Rightarrow g'(x_0) = 0$</p>
+				
+				<p style="margin-left:60px">
+					$\llap{\Rightarrow}$ Regla de la cadena:</p>
+					
+				<p style="margin-left:60px">
+					$
+					\begin{align}
+						\rm \nabla F(u_0) \cdot \overline{h}{}'(x_0) &amp;=
+						\rm
+						\left(
+							\dfrac{\partial F}{\partial x}(u_0),
+							\dfrac{\partial F}{\partial y}(u_0)
+						\right)
+						\cdot (1,h'(x_0)) = \\[1ex]
+						&amp;= \rm \dfrac{\partial F}{\partial x}(u_0) +
+						\dfrac{\partial F}{\partial y}(u_0) h'(x_0) = 0
+					\end{align}
+					$
+				</p>
+				
+				<p style="margin-left:60px">
+					Si $\rm \dfrac{\partial F}{\partial y}(u_0) \neq 0$ entonces:
+				</p>
+				
+				<p style="margin-left:60px">
+					$
+					\rm h'(x_0) =
+					\dfrac{
+						-\dfrac{\partial F}{\partial x}(u_0)
+					}{
+						\dfrac{\partial F}{\partial y}(u_0)
+					}
+					$
+				</p>
+					
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^x - x^y = 0$</p>
+				
+    <p>Derivada implícita de $\rm y$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y) = y^x - x^y$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm y' =
+				\dfrac{-(y^x \ln y - yx^{y-1})}{xy^{x-1} - x^y \ln x}
+				\quad
+				\begin{subarray}{l}
+					\displaystyle
+					\leftarrow -\text{ derivada parcial respecto de $\rm x$} \\
+					\displaystyle
+					\leftarrow \text{ derivada parcial respecto de $\rm y$}
+				\end{subarray}
+				$
+			</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">
+				Teorema de la función implícita:
+			</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				Si $\rm \dfrac{\partial F}{\partial y}(x_0,y_0) \neq 0$ entonces
+				existe una función $\rm h(x)$ tal que $\rm y_0 = h(x_0)$ y $\rm
+				F(x,h(x)) = 0 \mathrel{\forall} x$ en un entorno de $\rm x_0$.
+			</p>
+			
+			<p style="margin-left:30px">
+				Además también
+				$
+				\rm h'(x_0) =
+				-\dfrac{
+					\dfrac{\partial F}{\partial x}(x_0,y_0)
+				}{
+					\dfrac{\partial F}{\partial y}(x_0,y_0)
+				}
+				$.
+			</p>
+			
+			<p style="text-align:center">
+				<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_04.svg"
+				type="image/svg+xml" width="248" height="200"
+				style="margin:0;display:inline-block;vertical-align:middle"></object>
+				$
+				\quad
+				\begin{array}{l}
+					\rm \dfrac{\partial F}{\partial y}(x_0,y_0) \neq 0 \Rightarrow
+					\text{Sí} \\[1ex]
+					\rm \dfrac{\partial F}{\partial y}(x_1,y_1) = 0 \Rightarrow
+					\text{No}
+				\end{array}
+				$
+			</p>
+		
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x^2 + xy^2 = 2$</p>
+				
+			<p style="margin-left:30px">
+				$\rm F(x,y) = x^2 + xy^2 - 2 = 0$</p>
+				
+				<p style="margin-left:60px">
+					$\rm \dfrac{\partial F}{\partial y} = 2xy$</p>
+					
+			<p style="margin-left:30px">
+				Si $\rm 2xy = 0$ no se puede aplicar el teorema.</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm x = 0 \Rightarrow 2xy = 0 \\[1ex]
+						\rm y = 0 \Rightarrow 2xy = 0
+					\end{array}
+					$
+				</p>
+				
+			<p style="margin-left:30px">
+				<span style="border-bottom:1px solid black">$\rm x = 0$</span>
+			</p>
+			
+				<p style="margin-left:60px">
+					$
+					\rm
+					\left.
+						\begin{array}{l}
+							\rm xy^2 = 0 \\[1ex]
+							\rm x^2 = 0
+						\end{array}
+					\right\}
+					\Rightarrow x^2 + xy^2 = 0 \neq 2 \Rightarrow x \neq 0
+					\enspace
+					$ ($\rm x$ no puede ser $\rm 0$).
+				</p>
+    
+			<p style="margin-left:30px">
+				<span style="border-bottom:1px solid black">$\rm y = 0$</span>
+			</p>
+				
+				<p style="margin-left:60px">
+					$\rm xy^2 = 0 \,\Rightarrow\, x^2 = 2 \,\Rightarrow\, x =
+					\pm\sqrt{2}$
+				</p>
+				
+				<p style="margin-left:60px">
+					$\llap{\Rightarrow {}} (\sqrt{2},0),(-\sqrt{2},0) \leftarrow$ <span
+					style="text-decoration:underline">No</span> cumplen el teorema
+					de la función implícita.
+				</p>
+					
+			<p style="margin-left:30px">
+				Para el resto de puntos:</p>
+				
+				<p style="margin-left:60px">
+					$
+					\rm	y' =
+					-\dfrac{\partial F {∕} \partial x}{\partial F {∕} \partial y}
+					= -\dfrac{2x + y^2}{2xy}
+					$
+				</p>
+					
+    </div>
+    
+    <hr>
+    
+    <p>$\rm F(x,y,z) = 0$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm S =
+				\left\{
+					P = (x,y,z) \in \mathbb{R}^3 \mathrel{|} F(x,y,z) = 0
+				\right\}
+				\enspace
+				$ "superficie de $\rm \mathbb{R}^3$"
+			</p>
+			
+		<center>
+			<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_05.svg"
+			type="image/svg+xml" width="324" height="173"></object>
+		</center>
+		
+			<p style="text-align:center">
+				¿Cuándo se puede hacer $\rm h(x,y) = (x, y, z(x,y))$?</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">$\rm x^2 + y^2 + z^2 = 1$</p>
+    
+			<p style="margin-left:30px">
+				<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_06.svg"
+				type="image/svg+xml" width="300" height="200"
+				style="margin:0;border:1px solid black;background:white">
+				</object>
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Un plano tangente para no ser completamente vertical la derivada
+    respecto de $\rm z$ ha de ser diferente de cero.</p>
+    
+    <p>El teorema de la función implicita establece que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm P = (x_0, y_0, z_0) \in S$</p>
+				
+			<p style="margin-left:30px">
+				Si $\rm \dfrac{\partial F}{\partial z}(x_0,y_0,z_0) \neq 0$
+				entonces:</p>
+				
+				<p style="margin-left:60px">
+					En un entorno de $\rm (x_0, y_0)$ existe una función $\rm h$ tal
+					que $\rm h(x_0,y_0) = z_0$ y $\rm F(x,y,h(x,y)) = 0$. Además
+					$\rm \partial h{∕}\partial x (x_0,y_0), \partial h{∕}\partial
+					y (x_0,y_0)$ se pueden calcular de la siguiente manera:
+				</p>
+					
+					<p style="margin-left:90px">
+					$\rm h(x,y) \quad \overline{h}(x,y) = (x, y, h(x,y))$</p>
+					
+					<p style="margin-left:90px">
+						$\rm F(x,y,h(x,y)) = 0$</p>
+    
+					<p style="margin-left:90px">
+						$\rm (F \circ \overline{h})(x,y) = F(x,y,h(x,y)) = 0$</p>
+						
+					<p style="margin-left:90px">
+						$\llap{\Rightarrow {}} \rm D(F \circ \overline{h})(x_0,y_0) = 0$
+					</p>
+					
+				<p style="margin-left:60px">
+					Aplicando la regla de la cadena:</p>
+					
+					<p style="margin-left:90px">
+						$
+						\def\rarrow#1#2{
+							\stackrel{#1}{
+								\underset{#2}{
+									\Rule{0pt}{0.4em}{0pt}
+									\smash{
+										\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+									}
+								} 
+							}
+						}
+						\begin{array}{l}
+							\mathbb{R}^2 \rarrow{\rm \overline{h}}{} \mathbb{R}^3 \\
+							\mathbb{R}^3 \rarrow{\rm F}{} \mathbb{R}
+						\end{array}
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\begin{array}{l}
+							\rm
+							\nabla F(x_0,y_0,z_0) \cdot D \overline{h}(x_0,y_0) = \\[1ex]
+							\qquad
+							\begin{aligned}
+								= {}&amp;
+								\rm
+								\left(
+									\dfrac{\partial F}{\partial x}(x_0,y_0,z_0),
+									\dfrac{\partial F}{\partial y}(x_0,y_0,z_0),
+									\dfrac{\partial F}{\partial z}(x_0,y_0,z_0)
+								\right)
+								\cdot \\[1ex]
+								&amp;{}\cdot
+								\begin{pmatrix}
+									1 &amp; 0 \\
+									0 &amp; 1 \\
+									\rm \dfrac{\partial h}{\partial x}(x_0,y_0) &amp;
+									\rm \dfrac{\partial h}{\partial y}(x_0,y_0)
+								\end{pmatrix}
+								= 0
+							\end{aligned}
+						\end{array}
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\Rightarrow
+						\left.
+							\begin{array}{l}
+								\rm \dfrac{\partial F}{\partial x}(x_0,y_0,z_0) +
+								\dfrac{\partial F}{\partial z}(x_0,y_0,z_0) \cdot
+								\dfrac{\partial h}{\partial x}(x_0,y_0) = 0 \\[1ex]
+								\rm \dfrac{\partial F}{\partial y}(x_0,y_0,z_0) +
+								\dfrac{\partial F}{\partial z}(x_0,y_0,z_0) \cdot
+								\dfrac{\partial h}{\partial y}(x_0,y_0) = 0
+							\end{array}
+						\right\}
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\Rightarrow
+						\left\{
+							\begin{array}{l}
+								\rm \dfrac{\partial h}{\partial x}(x_0,y_0) =
+								\dfrac{
+									-\dfrac{\partial F}{\partial x}(x_0,y_0,z_0)
+								}{
+									\dfrac{\partial F}{\partial z}(x_0,y_0,z_0)
+								} \\[1ex]
+								\rm \dfrac{\partial h}{\partial y}(x_0,y_0) =
+								\dfrac{
+									-\dfrac{\partial F}{\partial y}(x_0,y_0,z_0)
+								}{
+									\dfrac{\partial F}{\partial z}(x_0,y_0,z_0)
+								}
+							\end{array}
+						\right. \quad
+						$ si $\rm \dfrac{\partial F}{\partial z}(x_0,y_0,z_0) \neq 0$
+					</p>
+
+		<hr>
+		
+		<div id="ejemplo">
+		
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_07.svg"
+				type="image/svg+xml" width="300" height="200"
+				style="margin:0;display:inline-block;border:1px solid black;background:white;vertical-align:middle">
+				</object>
+				$
+				\qquad
+				\begin{array}{l}
+					\rm F(x,y,z) = x^2 + y^2 + z^2 -1 \\[1ex]
+					\rm F(x,y,z) = 0 \\[1ex]
+					\rm \dfrac{\partial F}{\partial z} = 2z \neq 0 \Leftrightarrow
+					z \neq 0
+				\end{array}
+				$
+			</p>
+
+    <p>En este caso según el teorema de la función implícita:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm z = z(x,y) \\[1ex]
+					\rm \dfrac{\partial z}{\partial x} = -\dfrac{2x}{2z} =
+					-\dfrac{x}{z} \\[1ex]
+					\rm \dfrac{\partial z}{\partial y} = -\dfrac{2y}{2z} =
+					-\dfrac{y}{z}
+				\end{array}
+				$
+			</p>
+
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+			
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = zx^2 + e^z x^3 - z^5 \sin{y} - 1$</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y,z) = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm z = z(x,y) \qquad (1, 0 , 0) = P$</p>
+				
+			<p style="margin-left:30px">
+				$\rm F(1,0,0) = 1 - 1 = 0 \Rightarrow P \in S$ (Superficie)</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial F}{\partial z}(x,y,z) = x^2 + x^3 e^z -
+				5z^4 \sin y$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial F}{\partial z}(1,0,0) = 1 + 1 - 0 = 2 \neq 0$
+			</p>
+			
+			<p style="margin-left:30px">				
+				$\rm \dfrac{\partial F}{\partial x}(x,y,z) = 2xz + 3x^2 e^z$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial F}{\partial y}(x,y,z) = -z^5 \cos y$</p>
+				
+    <p>Por el teorema de la función implícita:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial z}{\partial x}(x_0,y_0) =
+				\dfrac{
+					-\dfrac{\partial F}{\partial x}(x_0,y_0,z_0)
+				}{
+					\dfrac{\partial F}{\partial z}(x_0,y_0,z_0)
+				}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial z}{\partial y}(x_0,y_0) =
+				\dfrac{
+					-\dfrac{\partial F}{\partial y}(x_0,y_0,z_0)
+				}{
+					\dfrac{\partial F}{\partial z}(x_0,y_0,z_0)
+				}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\llap{\Rightarrow {}}
+				\dfrac{\partial z}{\partial x}(1,0) =
+				\dfrac{
+					-\dfrac{\partial F}{\partial x}(1,0,0)
+				}{
+					\dfrac{\partial F}{\partial z}(1,0,0)
+				} = -\dfrac{3}{2}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\llap{\Rightarrow {}}
+				\dfrac{\partial z}{\partial y}(1,0) =
+				\dfrac{
+					-\dfrac{\partial F}{\partial y}(1,0,0)
+				}{
+					\dfrac{\partial F}{\partial z}(1,0,0)
+				} = 0
+				$
+			</p>
+			
+    </div>
+    
+    <hr>
+    
+		<p>
+			$
+			\rm
+			\left\{
+				\begin{array}{l}
+					\rm F(x,y,z) = 0 \\[1ex]
+					\rm G(x,y,z) = 0
+				\end{array}
+			\right.
+			\qquad
+			C =
+			\left\{
+				(x,y,z) \in \mathbb{R}^3
+				\,
+			\middle|
+				\,
+				\begin{array}{l}
+					\rm F(x,y,z) = 0 \\[1ex]
+					\rm G(x,y,z) = 0
+				\end{array}
+			\right\}
+			$ Curva de $\mathbb{R}^3$
+		</p>
+		
+		<p style="text-align:center">
+			<span style="display:inline-table">
+				<span style="display:table-cell">
+					<object data="derivacion_funciones_implicitas/derivacion_funciones_implicitas_08.svg"
+					type="image/svg+xml" width="270" height="200"
+					style="margin:0 1em 0 0;display:inline-block"></object>
+				</span>
+				<span style="display:table-cell;vertical-align:middle;text-align:left;white-space:nowrap">
+					<span style="display:block;margin-bottom:1ex">
+						$\rm C = \{h(t), t \in I \subset \mathbb{R}\} \leftarrow$
+						parametrización de $\rm C$
+					</span>
+					$\rm h : I \subset \mathbb{R} \to \mathbb{R}^3$
+				</span>
+			</span>
+		</p>
+    
+    <p>¿Existe parametrización tal que $\rm t = x$?</p>
+    
+			<p style="margin-left:30px">
+				$\rm h(x) = (x, y(x), z(x))$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				\underset{\mathbb{R}^3 \to \mathbb{R}^2}{(F,G)}
+				\circ
+				\underset{\mathbb{R} \to \mathbb{R}^3}{(x,y(x),z(x))} =
+				\bigl(F(x,y(x),z(x)),G(x,y(x),z(x))\bigr) = 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\llap{\Rightarrow {}} D\bigl((F,G) \circ (x,y(x),z(x))\bigr) = 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{pmatrix}
+					\rm \dfrac{\partial F}{\partial x} &amp;
+					\rm \dfrac{\partial F}{\partial y} &amp;
+					\rm \dfrac{\partial F}{\partial z} \\
+					\rm \dfrac{\partial G}{\partial x} &amp;
+					\rm \dfrac{\partial G}{\partial y} &amp;
+					\rm \dfrac{\partial G}{\partial z}
+				\end{pmatrix}
+				\begin{pmatrix}
+					1 \\ \rm y' \\ \rm z'
+				\end{pmatrix}
+				= 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{multline}
+					\shoveleft
+					\left\{
+						\begin{array}{l}
+							\rm \dfrac{\partial F}{\partial x} +
+							\dfrac{\partial F}{\partial y} y' +
+							\dfrac{\partial F}{\partial z} z' = 0 \\[1ex]
+							\rm \dfrac{\partial G}{\partial x} +
+							\dfrac{\partial G}{\partial y} y' +
+							\dfrac{\partial G}{\partial z} z' = 0
+						\end{array}
+					\right.
+					\tag{$\ast$}\label{*}
+				\end{multline}
+				$
+			</p>
+
+    <p>Sistema que tiene solución si:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm \dfrac{\partial F}{\partial y} &amp;
+					\rm \dfrac{\partial F}{\partial z} \\
+					\rm \dfrac{\partial G}{\partial y} &amp;
+					\rm \dfrac{\partial G}{\partial z}
+				\end{vmatrix}
+				\neq 0
+				$
+			</p>
+    
+    <p>Teorema de la función implicita para:</p>
+    
+				<p style="margin-left:60px">
+					$\rm P = (x_0, y_0, z_0) \in C$</p>
+				
+			<p style="margin-left:30px">
+				Si:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{vmatrix}
+						\rm \dfrac{\partial F}{\partial y}(P) &amp;
+						\rm \dfrac{\partial F}{\partial z}(P) \\
+						\rm \dfrac{\partial G}{\partial y}(P) &amp;
+						\rm \dfrac{\partial G}{\partial z}(P)
+					\end{vmatrix}
+					\neq 0
+					$,
+				</p>
+    
+			<p style="margin-left:30px">
+				entonces en un entorno de $\rm P$ sobre $\rm C$ existen funciones
+				$\rm y(x)$, $\rm z(x)$ tales que: $\rm y(x_0) = y_0$, $\rm z(x_0)
+				= z_0$, $\rm (x, y(x), z(x)) \in C$. Además $\rm y'(x_0)$, $\rm
+				z'(x_0)$ satisfacen el sistema $\eqref{*}$.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+					\begin{array}{l}
+						\rm F(x,y,z) = 2x^2 + 3y^2 - z^2 - 25 = 0 \\[1ex]
+						\rm G(x,y,z) = x^2 + y^2 - z^2 = 0
+					\end{array}
+				\right.
+				\quad
+				\rm {"}C{"}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm P = (x,y,z) \in C$</p>
+    
+    <p>Se impone la condición:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm \dfrac{\partial F}{\partial y} &amp;
+					\rm \dfrac{\partial F}{\partial z} \\
+					\rm \dfrac{\partial G}{\partial y} &amp;
+					\rm \dfrac{\partial G}{\partial z}
+				\end{vmatrix}
+				$
+			</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\begin{vmatrix}
+					\rm 6y &amp; \rm -2z \\
+					\rm 2y &amp; \rm -2z
+				\end{vmatrix}
+				= -12yz + 4yz = -8yz \neq 0 \equiv y,z \neq 0
+				$
+			</p>
+    
+    <p>Si y = 0:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+				$
+				\rm
+				\begin{aligned}[b]
+					\rm 2x^2 - z^2 &amp;= 25 \\
+					\rm x^2 - z^2 &amp;= 0 \\
+					\hline
+					\rm x^2 &amp;= 25
+				\end{aligned}
+				\Rightarrow x = 5, z = 5
+				\qquad
+				$
+				</span>
+				<span style="display:table-cell;vertical-align:middle">
+					$\rm (5,0,5) \in C$, pero no se puede aplicar el teorema de la
+					ecuación implicita.
+				</span>
+			</p>
+    
+    <p>¿$\rm P = (\sqrt{7}, 3, 4) \in C$?</p>
+    
+			<p style="margin-left:30px">
+				$14 + 27 - 16 = 25$</p>
+    
+			<p style="margin-left:30px">
+				$7 + 9 - 16 = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\Rightarrow$ Sí pertenece a $\rm C$.</p>
+				
+    <p>En este caso como $\rm y,z \neq 0$ sí se puede aplicar el teorema:</p>
+    
+			<p style="margin-left:30px">
+				En un entorno de este punto $\rm P$ existen funciones $\rm y(x)$,
+				$\rm z(x)$ tales que: $\rm y(\sqrt{7}) = 3$, $\rm z(\sqrt{7}) = 4$,
+				$\rm (x, y(x), z(x)) \in C$.</p>
+				
+    <p>Derivando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{l}
+						\rm 4x + 6yy' - 2zz' = 0 \\
+						\rm 2x + 2yy' - 2zz' = 0
+					\end{array}
+				\right\}
+				$
+			</p>
+    
+    <p>Para el punto P:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{alignedat}{2}
+						4 \sqrt{7} &amp; {}+{} &amp;\rm 18y' - 8z' &amp;= 0 \\
+						2 \sqrt{7} &amp; {}+{} &amp;\rm 6y' - 8z' &amp;= 0
+					\end{alignedat}
+				\right\}
+				$
+			</p>
+    
+    <p>Siendo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					18 &amp; -8 \\
+					6 &amp; -8
+				\end{vmatrix}
+				\neq 0 \Rightarrow \exists
+				$ solución.
+			</p>
+    
+    <p>Así que resolviendo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y'(\sqrt{7}) = -\sqrt{7}{∕}6$</p>
+				
+			<p style="margin-left:30px">
+				$\rm z'(\sqrt{7}) = \sqrt{7}{∕}8$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Generalización</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$\rm n$ "variables"</p>
+    
+			<p style="margin-left:30px">
+				$\rm m$ "ecuaciones" $\quad \rm m \leq n$</p>
+				
+    <p>El conjunto de puntos de $\rm \mathbb{R}^n$ que verifican las
+    $\rm m$ ecuaciones son una <span style="border-bottom: 1px solid black">
+		variedad de $\rm \mathbb{R}^n$ de dimensión $\rm n - m$</span>. La
+		dimensión es el número de parámetros que se necesitan para describir
+		la variedad.</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\mathbb{R}^3 &amp;\rm C \enspace \dim \, 1 \\
+					&amp;\rm S \enspace \dim \, 2
+				\end{array}
+				$
+			</p>
+		
+    <p>¿Puede hacerse que estos $\rm n - m$ parámetros sean las $\rm n - m$
+    primeras variables?</p>
+    
+    <p>Para hacer esto se necesita un teorema de la función implícita. Por
+    tanto, bajo ciertas condiciones de no anulación de unos determinantes
+    de las derivadas parciales en un cierto punto. Se puede hacer
+    considerando unas variables en función de las otras y calcular las
+    derivadas.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (x,y,u,v) \quad P = (1,1,1,1)$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+					\begin{array}{l}
+						\rm F(x,y,u,v) = xu + yvu^2 - 2 = 0 \\
+						\rm G(x,y,u,v) = xu^3 + y^2v^4 - 2 = 0
+					\end{array}
+				\right\}
+				{"}S{"}
+				$
+			</p>
+				
+				<p style="margin-left:60px">
+					$\rm S \subset \mathbb{R}^4 \; \rightarrow \;
+					\dim \, S = 4 - 2 = 2$</p>
+		
+			<p style="margin-left:30px">
+				$
+				\rm
+				S =
+				\bigl\{(x,y,u,v) \,\big|\, F(x,y,u,v) = 0 , G(x,y,u,v) = 0 \bigr\}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm P \in S \enspace$ ($\rm P$ verifica las ecuaciones)</p>
+				
+    <p>¿En un entorno de $\rm P$ sobre $\rm S$ se puede considerar $\rm
+    u = u(x,y), v = v(x,y)$?</p>
+    
+			<p style="margin-left:30px">
+				$\rm h : (x, y) \to (x, y, u(x,y), v(x,y)) \in S \enspace$ (en
+				un entorno de $\rm P$)</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				(F,G) \circ h =
+				\underset{\mathbb{R^2} \to \mathbb{R}^2}{
+					\underline{
+					\underset{
+						\mathbb{R}^4 \to \mathbb{R}^2
+					}{
+						(F,G) \vphantom{(x,y,u(x,y),v(x,y))}
+					} \circ
+					\underset{\mathbb{R}^2 \to \mathbb{R}^4}{(x,y,u(x,y),v(x,y))}
+					}
+				}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\rm \llap{{\large(}}F
+						\rlap{(x,y,u(x,y),v(x,y)),G(x,y,u(x,y),v(x,y)){\large )} \,=\, (0,0)}
+					\end{subarray}
+				}{=} 0
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\llap{\Rightarrow {}}
+				D((F,G) \circ h) = D\bigr((F,G) \circ (x,y,u(x,y),v(x,y))\bigl) = 0
+				$
+			</p>
+    
+    <p>Calcular el diferencial:</p>
+    
+			<p style="text-align:center">
+				$
+				\underset{
+					\begin{gathered}
+						\vphantom{\partial G {∕} \partial x} \\
+						\displaystyle \text{matriz jacobiana}
+					\end{gathered}
+				}{
+					\overset{
+						\begin{gathered}
+							\displaystyle \rm D(F,G) \\
+							\displaystyle \downarrow \\
+							\vphantom{\partial F {∕} \partial x}
+						\end{gathered}
+					}{
+						\begin{pmatrix}
+							\rm
+							\smash{
+								\overset{
+									\partial F {∕} \partial x
+								}{
+									u \vphantom{vu^2}
+								}
+							} &amp;
+							\rm
+							\smash{
+								\overset{
+									\partial F {/} \partial y
+									\vphantom{\partial F {∕} \partial x}
+								}{
+									vu^2
+								}
+							} &amp;
+							\rm
+							\smash{
+								\overset{
+									\partial F {∕} \partial u
+								}{
+									x + 2yvu \vphantom{yu^2}
+								}
+							} &amp;
+							\rm
+							\smash{
+								\overset{
+									\partial F {∕} \partial v
+								}{
+									yu^2
+								}
+							} \\
+							\rm
+							\smash{
+								\underset{
+									\partial G {∕} \partial x
+								}{
+									u^3 \vphantom{2yv^4}
+								}
+							} &amp;
+							\rm
+							\smash{
+								\underset{
+									\partial G {∕} \partial y
+								}{
+									2yv^4
+								}
+							} &amp;
+							\rm
+							\smash{
+								\underset{
+									\partial G {∕} \partial u
+								}{
+									3xu^2 \vphantom{4y^2v^3}
+								}
+							} &amp;
+							\rm
+							\smash{
+								\underset{
+									\partial G {∕} \partial v
+								}{
+									4y^2v^3
+								}
+							}
+						\end{pmatrix}
+					}
+				}
+				\overset{
+					\begin{gathered}
+						\rm \displaystyle Dh \\
+						\rm \displaystyle \downarrow \\
+						\vphantom{\downarrow \partial {∕} \partial x}
+					\end{gathered}
+				}{
+					\begin{pmatrix}
+						\smash{
+							\overset{\downarrow \partial {∕} \partial x}{\strut 1}
+						} &amp;
+						\smash{
+							\overset{\partial {∕} \partial y \downarrow}{\strut 0}
+						} \\
+						0 &amp; 1 \\
+						\rm \partial u {∕} \partial x &amp;
+						\rm \partial u {∕} \partial y \\
+						\rm \partial v {∕} \partial x &amp;
+						\rm \partial v {∕} \partial y
+					\end{pmatrix}
+				}
+				= 0
+				$
+			</p>
+
+    <p>Si se escriben:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\rm \dfrac{\partial u}{\partial x} = u'_x &amp;
+					\rm \dfrac{\partial u}{\partial y} = u'_y \\[1ex]
+					\rm \dfrac{\partial v}{\partial x} = v'_x &amp;
+					\rm \dfrac{\partial v}{\partial y} = v'_y
+				\end{array}				
+				$
+			</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{r}
+						\rm u + (x + 2yvu)u'_x + y u^2 v'_x = 0 \\
+						\rm u^3 + 3x u^2 u'_x + 4 y^2 v^3 v'_x = 0
+					\end{array}
+				\right\}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{r}
+						\rm vu^2 + (x+2yvu)u'_y + y u^2 v'_y = 0 \\
+						\rm 2yv^4 + 3x u^2 u'_y + 4 y^2 v^3 v'_y = 0 
+					\end{array}
+				\right\}
+				$
+			</p>
+    
+    <p>Para resolver debe cumplirse que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm x+2yvu &amp; \rm yu^2 \\
+					\rm 3xu^2 &amp; \rm 4y^2 v^3
+				\end{vmatrix}
+				\neq 0
+				$
+			</p>
+    
+    <p>Sustituyendo para el punto $\rm P$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					3 &amp; 1 \\
+					3 &amp; 4
+				\end{vmatrix}
+				\neq 0
+				$
+			</p>
+    
+    <p>Entonces, pues, en $\rm P$:</p>
+    
+			<p style="text-align:center">
+				$
+				\begin{array}[t]{c}
+					\left.
+						\begin{alignedat}{2}
+							&amp;\rm 1 + 3u'_{x \vphantom y} + {}&amp;\rm v'_x &amp;= 0 \\
+							&amp;\rm 1 + 3u'_{x \vphantom y} + {}&amp;\rm 4v'_x &amp;= 0
+						\end{alignedat}
+					\right\} \\[1ex]
+					\begin{aligned}
+						\rm u'_{x \vphantom{y}} &amp;= -1{∕}3 \\[1ex]
+						\rm v'_{x \vphantom{y}} &amp;= 0
+					\end{aligned}
+				\end{array}
+				\qquad
+				\begin{array}[t]{c}
+					\left.
+						\begin{alignedat}{2}
+							&amp;\rm 1 + 3u'_y + {}&amp;\rm v'_y &amp;= 0 \\
+							&amp;\rm 2 + 3u'_y + {}&amp;\rm 4v'_y &amp;= 0
+						\end{alignedat}
+					\right\} \\[1ex]
+					\begin{aligned}
+						\rm u'_y &amp;= -2{∕}9 \\[1ex]
+						\rm v'_y &amp;= -1{∕}3
+					\end{aligned}
+				\end{array}
+				$
+			</p>
+    
+    <p>Así que en un entorno del punto $\rm P = (1,1,1,1)$ sobre $\rm S$
+    se pueden encontrar funciones $\rm u(x,y), v(x,y)$ tales que:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm (x,y,u(x,y),v(x,y)) \in S,
+				\left\{
+					\begin{array}{l}
+						\rm u(1,1) = 1 \\
+						\rm v(1,1) = 1
+					\end{array}
+				\right.
+				$
+			</p>
+			
+			<p style="text-align:center">
+				y
+			</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					\rm \dfrac{\partial u}{\partial x}(1,1) = -1{∕}3,
+					\dfrac{\partial u}{\partial y}(1,1) = -2{∕}9 \\[1ex]
+					\rm \dfrac{\partial v}{\partial x}(1,1) = 0,
+					\dfrac{\partial v}{\partial y}(1,1) = -1{/}3
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>El determinante anteriormente visto en el último ejemplo es igual
+    a:</p>                           
+    
+			<p style="margin-left:30px">
+				$
+				\begin{vmatrix}
+					\rm \dfrac{\partial F}{\partial u} &amp;
+					\rm \dfrac{\partial F}{\partial v} \\
+					\rm \dfrac{\partial G}{\partial u} &amp;
+					\rm \dfrac{\partial G}{\partial v}
+				\end{vmatrix}
+				$
+			</p>
+			
+    <p>En general:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\left.
+					\begin{array}{l}
+						\rm F_1(x_1, \dotsc, x_n) = 0 \\
+						\vdots \\
+						\rm F_m(x_1, \dotsc, x_n) = 0
+					\end{array}
+				\right\}
+				m \leq n
+				\quad
+				\rightarrow
+				\quad
+				\begin{vmatrix}
+					\rm \dfrac{\partial F_1}{\partial x_{n-m+1}} &amp;
+					\dots &amp;
+					\rm \dfrac{\partial F_1}{\partial x_n} \\
+					\vdots &amp; &amp; \vdots \\
+					\rm \dfrac{\partial F_m}{\partial x_{n-m+1}} &amp;
+					\dots &amp;
+					\rm \dfrac{\partial F_m}{\partial x_n}
+				\end{vmatrix}
+				\neq 0
+				$
+			</p>
+    
+		</div>
+   
+		<div id="foot">
+			
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="calculo_derivadas_direccionales_gradientes.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="teorema_fundamental_calculo.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>			
+
+		</div>
+  </body>
+</html>

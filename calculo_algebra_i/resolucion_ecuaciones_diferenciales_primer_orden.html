@@ -1,0 +1,1023 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Resolución de ecuaciones diferenciales de primer orden (de variables separables, homogéneas y lineales)">
+    <meta name="keywords" content="resolución, ecuaciones, diferenciales, primer, orden, variables, separables, homogéneas, lineales">
+    <title>Resolución de ecuaciones diferenciales de primer orden (de variables separables, homogéneas y lineales)</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Resolución de ecuaciones diferenciales de primer orden (de
+      variables separables, homogéneas y lineales)</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Una ecuación diferencial es aquella en la que interviene una función
+    y sus derivadas.</p>
+    
+			<p style="text-align:center">
+				Ej: $\enspace \rm 2xy^{(2)} + e^x y^{(1)} + yx - 2 = 0$</p>
+
+    <p>El orden de la ecuación corresponde con la máxima derivada de la
+    ecuación. El ejemplo es de orden 2.</p>
+    
+    <p>Ecuación diferencial de primer orden:</p>
+    
+			<p style="text-align:center">
+				$\rm \underline{y' = F(x,y)}$</p>
+    
+    <p>Si:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' = F(x)$</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = \displaystyle \int y' \, dx = \int F(x) \, dx$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+		<p>Ejemplo:</p>
+		
+			<p style="margin-left:30px">
+				$\rm xy' + e^{x}y = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' = -e^{x}y {∕} x = F(x,y)$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+		<p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm e^x = y$</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' = e^x$</p>
+    
+			<p style="margin-left:30px">
+				$\llap{\Rightarrow {}} \rm y' = y$</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>
+			<span style="text-decoration:underline">1.<sup>er</sup> caso: De variables
+			separadas</span>
+    </p>
+    
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\rm
+					\begin{array}[t]{c}
+						\rm y' = p(x) \cdot q(y) \\[1ex]
+						||| \\[1ex]
+						\rm \dfrac{1}{q(y)} \cdot y' = p(x)
+					\end{array}
+					\!
+					\enspace \rightarrow \enspace
+					\underset{\displaystyle \text{Sí}}{y' = x \cdot y} \quad
+					\underset{\displaystyle \text{No}}{y' = x + y} \\[1ex]
+					\rm
+					\llap{\Rightarrow {}}
+					\displaystyle
+					\int \dfrac{1}{q(y)} \cdot y' \, dx = \int p(x) \, dx \\[1ex]
+					\qquad \rm y' \, dx = dy \\[1ex]
+					\rm
+					\llap{\Rightarrow {}}
+					\displaystyle
+					\int \dfrac{1}{q(y)} \, dy = \int p(x) \, dx
+				\end{array}
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm y' = ky \\[1ex]
+						\llap{\Rightarrow {}} \rm \dfrac{1}{y} \cdot y' = k \\[1ex]
+						\llap{\Rightarrow {}} \rm \displaystyle \int \dfrac{1}{y} \cdot y' \, dx
+						= \int k \, dx \\[1ex]
+						\llap{\Rightarrow {}} \rm \displaystyle \int \dfrac{1}{y} \, dy =
+						\int k \, dx \\[1ex]
+						\llap{\Rightarrow {}} \rm \ln y + C = kx + C' \quad C, C' \in \mathbb{R}
+					\end{array}
+					$
+				</p>
+			
+			<p style="margin-left:30px">
+				Que puede escribirse como:</p>
+				
+				<p style="margin-left:60px">
+					$\rm \ln y = kx + C \quad C \in \mathbb{R}$</p>
+				
+				<p style="margin-left:60px">
+					$\llap{\Rightarrow {}} \rm y = e^{\ln y} = e^{kx+C} = e^{kx} e^{C},
+					\enspace C \in \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				O lo que es lo mismo:</p>
+    
+				<p style="margin-left:60px">
+					$\rm y = e^{kx} \cdot C \quad C \in \mathbb{R}$</p>
+					
+		</div>
+		
+		<hr>
+		
+		<div id="ejemplo">
+			
+		<p>Ejemplo:</p>
+		
+				<p style="margin-left:60px">
+					$\rm xy' = 3y$</p>
+					
+				<p style="margin-left:60px">
+					$
+					\rm y' =
+					\begin{array}[t]{c}
+						\rm \dfrac{3}{x} \\
+						\uparrow \\
+						\rm \llap{p}(x\rlap{)}
+					\end{array}
+					\cdot
+					\begin{array}[t]{c}
+						\rm y \vphantom{\rm \dfrac{3}{x}} \\
+						\uparrow \\
+						\rm \llap{q}(y\rlap{)}
+					\end{array}
+					$
+				</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\llap{\Rightarrow {}} \rm \dfrac{1}{y} \cdot y' =
+						\dfrac{3}{x} \\[1ex]
+						\displaystyle \rm \int \dfrac{1}{y} \, dy =
+						\int \dfrac{3}{x} \, dx \\[1ex]
+						\rm \ln y = 3 \ln x + C = \ln x^3 + C = \ln (e^C x^3) \quad
+						C \in \mathbb{R} \\[1ex]
+						\llap{\Rightarrow {}} \rm y = C x^3 \quad C \in \mathbb{R}
+					\end{array}
+					$
+				</p>
+    
+    </div>
+    
+    <hr />
+    
+    <p>
+		<span style="text-decoration:underline">2º. caso. Homogéneas</span>
+		</p>
+		
+			<p style="margin-left:30px">
+				$\rm y' = F(x,y)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x,y) = F(λx,λy) \mathrel{\forall} λ$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p style="margin-left:30px">
+      $
+      \rm
+      \left.
+      \begin{gathered}
+				\text{Mismo} \\
+				\text{grado}
+			\end{gathered}
+			\right]
+      \genfrac{}{}{0pt}{0}{\rightarrow}{\rightarrow}
+      \dfrac{xy^2}{x^3 + y^3}
+      \rightarrow
+      \dfrac{(λx) (λy)^2}{(λx)^3 + (λy)^3} =
+      \dfrac{\cancel{λ^3} \! xy^2}{\cancel{λ^3} \! (x^3 + y^3)} =
+      \dfrac{xy^2}{x^3 + y^3}
+      $
+    </p>
+    
+    <p style="margin-left:30px">
+			Sí, es homogénea.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Si se hace el siguiente cambio de variable:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = v \cdot x$</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm y' = v' \cdot x + v = F(x,vx)
+				\mspace{-20mu}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{homogénea}
+					\end{subarray}
+				}{{} = \rlap{F(1,v)}}
+				$
+			</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm v'=
+				\mathop{
+				\vphantom{\underbrace{\dfrac{1}{x}}}
+				\underbrace{
+					(F(1,v) - v)}
+				}\limits_{
+					\begin{gathered}
+						\displaystyle \uparrow \\
+						\rm \displaystyle q(v)
+					\end{gathered}
+					}
+				\cdot
+				\mspace{-10mu}
+				\underbrace{\dfrac{1}{x}}_{
+					\begin{gathered}
+						\displaystyle \uparrow \\
+						\displaystyle \rm p(x)
+					\end{gathered}
+					}
+				$
+			</p>
+    
+    <p>Quedando una ecuación de variables separables.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x^3 + y^3 = 3xy^2y'$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm y' =
+				\underbrace{\dfrac{x^3 + y^3}{3xy^2}}_{\displaystyle F(x,y)}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\left.
+					\begin{array}{l}
+						\rm x \rightarrow λx \\
+						\rm y \rightarrow λ y
+					\end{array}
+				\right\}
+				\Rightarrow
+				\rm \dfrac{(λx)^3 + (λx)^3}{3(λx)(λy)^2} = \dfrac{x^3+y^3}{3xy^2}
+				$
+			</p>
+
+    <p>Si $\rm y = vx$ entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm v'x + v = \dfrac{x^3 + v^3 x^3}{3x v^2 x^2} =
+					\dfrac{\cancel{x^3} \! (1+v^3)}{\cancel{x^3} \! 3v^2} =
+					\dfrac{1 + v^3}{3v^2} \\[1ex]
+					\rm v' =
+					\left(
+						\dfrac{1+v^3}{3v^2} - v
+					\right)
+					\cdot
+					\dfrac{1}{x} =
+					\underbrace{
+						\vphantom{\dfrac{1}{x}}
+						\smash{\dfrac{1-2v^3}{3v^2}}
+					}_{q(v)}
+					\cdot
+					\!
+					\mathop{
+						\vphantom{
+							\underbrace{
+								\vphantom{\dfrac{1}{x}}
+								\smash{\dfrac{1-2v^3}{3v^2}}
+							}
+						}
+						\underbrace{\dfrac{1}{x}}
+					}\limits_{p(x)} \\[1ex]
+					\Rightarrow \rm \dfrac{3v^2}{1-2v^3} \cdot v' = \dfrac{1}{x}
+				\end{array}
+				$
+			</p>
+			
+    <p>Integrar:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\begin{array}{l}
+				\rm
+				\displaystyle
+				\int \dfrac{3v^2}{1-2v^3} \, dv = \int \dfrac{1}x \, dx \\[1ex]
+				\rm
+				\displaystyle
+				-\dfrac{1}{2} \int - \dfrac{6v^2}{1-2v^3} \, dv =
+				\int \dfrac{1}{x} \, dx \\[1ex]
+				\rm
+				-\dfrac{1}{2} \ln (1-2v^3) = \ln x + C \\[1ex]
+				\rm
+				\ln (1-2v^3) = - 2 \ln x + C = \ln \dfrac{1}{x^2}e^C \equiv
+				\ln \dfrac{1}{x^2} C \quad C \in \mathbb{R} \\[1ex]
+				\rm
+				\Rightarrow 1 - 2v^3 = \dfrac{1}{x^2} C \Rightarrow
+				1 - 2 \dfrac{y^3}{x^3} = \dfrac{1}{x^2} C \Rightarrow
+				x^3 - 2y^3 = xC \\[1ex]
+				\Rightarrow \boxed{\rm 2y^3 - x^3 + Cx = 0}
+			\end{array}
+      $
+    </p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm 2xyy' - x^2 - y^2 = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm y' = \dfrac{x^2+y^2}{2xy}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm \dfrac{(λx)^2 + (λy)^2}{2(λx)(λy)} = \dfrac{x^2 + y^2}{2xy}
+				$
+			</p>
+					
+    <p>Por tanto es homogénea. Si $\rm y = vx$ entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				y' = v'x + v = \dfrac{x^2 + v^2 x^2}{2x vx} =
+				\dfrac{\cancel{x^2} \! (1+v^2)}{\cancel{x^2} \! 2v} =
+				\dfrac{1+v^2}{2v}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				v' = \left( \dfrac{1+v^2}{2v} - v \right) \cdot \dfrac{1}{x} =
+				\underbrace{
+					\vphantom{\dfrac{1}{x}}
+					\smash{\left( \dfrac{1-v^2}{2v} \right)}
+				}_{q(v)}
+				\cdot
+				\!
+				\mathop{
+					\vphantom{
+						\underbrace{
+						\vphantom{\dfrac{1}{x}}
+						\smash{\left( \dfrac{1-v^2}{2v} \right)}
+						}
+					} 
+					\underbrace{\dfrac{1}{x}}
+				}\limits_{p(x)}
+				$
+			</p>
+			
+    <p>Así que separando variables:</p>
+    
+    <p style="margin-left:30px">
+      $
+      \begin{array}{l}
+				\rm \dfrac{2v}{1-v^2} \cdot v' = \dfrac{1}{x} \\[1ex]
+				\rm \displaystyle \int \dfrac{2v}{1-v^2} \, dv =
+				\int \dfrac{1}{x} \, dx \\[1ex]
+				\rm \displaystyle - \int \dfrac{-2v}{1-v^2} \, dv =
+				\int \dfrac{1}{x} \, dx \\[1ex]
+				\rm
+				-\ln (1-v^2) = \ln x + C \equiv \ln Cx \quad C \in \mathbb{R} \\[1ex]
+				\rm \ln (1-v^2)^{-1} = \ln Cx \\[1ex]
+				\rm \dfrac{1}{1-v^2} = Cx \mathbin{;} 1-v^2 = \dfrac{1}{Cx} \\[1ex]
+				\rm v = \dfrac{y}{x} \Rightarrow 1 - \dfrac{y^2}{x^2} =
+				\dfrac{1}{Cx} \equiv \dfrac{C}{x} \quad C \in \mathbb{R} \\[1ex]
+				\Rightarrow \boxed{\rm x^2 - y^2 = Cx}
+      \end{array}
+      $
+    </p>
+
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm 2xyy' - 3x^2 + y^2 = 0$</p>
+			
+			<p style="margin-left:30px">
+				$\rm y' = \dfrac{3x^2 - y^2}{2xy}$</p>
+			
+			<p style="margin-left:30px">
+				$\rm \dfrac{3(λx)^2 - (λy)^2}{2(λx)(λy)} = \dfrac{3x^2 - y^2}{2xy}$
+			</p>
+			
+    <p>Es homogénea. Cambio de variable:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = vx \Rightarrow y' = v'x + v$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm y' = \dfrac{3x^2 - (vx)^2}{2x vx} =
+				\dfrac{\cancel{x^2} \! (3-v^2)}{\cancel{x^2} \! 2v} =
+				\dfrac{3-v^2}{2v}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm v' =
+				\left( \dfrac{3-v^2}{2v} - v \right) \cdot \dfrac{1}{x} =
+				\underbrace{
+					\vphantom{\dfrac{1}{x}}
+					\smash{\left( \dfrac{3 - 3v^2}{2v} \right)}
+				}_{q(v)}
+				\cdot
+				\!
+				\mathop{
+					\vphantom{
+						\underbrace{
+							\vphantom{\dfrac{1}{x}}
+							\smash{\left( \dfrac{3 - 3v^2}{2v} \right)}
+						}
+					}
+					\underbrace{\dfrac{1}{x}}
+				}\limits_{p(x)}
+				$
+			</p>
+			
+    <p>Separar variables e integrar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \displaystyle \int \dfrac{2v}{3-3v^2} \, dv =
+					\int \dfrac{1}{x} \, dx \\[1ex]
+					\rm -\dfrac{1}{3} \displaystyle \int \dfrac{-6v}{3-3v^2} \, dv =
+					\int \dfrac{1}{x} \, dx \\[1ex]
+					\rm \ln(3-3v^2) = -3 \ln xC \equiv \ln \dfrac{1}{x^3} C \quad
+					C \in \mathbb{R} \\[1ex]
+					\rm 3 - 3v^2 = \dfrac{1}{x^3}C \\[1ex]
+					\Rightarrow \rm 3 - \dfrac{3y^2}{x^2} = \dfrac{1}{x^3}C \\[1ex]
+					\Rightarrow \rm 3x^2 - 3y^2 = \dfrac{C}{x} \\[1ex]
+					\Rightarrow \boxed{\rm 3x^2 - 3y^2 - \dfrac{C}{x} = 0}
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+			<span style="text-decoration:underline">
+				3<sup>er</sup>. caso. Ecuaciones diferenciales lineales de primer
+				orden
+			</span>
+		</p>
+		
+    <p style="text-align:center">
+			$\rm y' + h(x)y + g(x) = 0$</p>
+			
+    <p>1) Si $\rm g(x) = 0$ se le dice homogénea (lineal homogénea):</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' + h(x)y = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{y'}{y} = -h(x)$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				\displaystyle
+				\int \dfrac{y'}{y} \, dx = \int \dfrac{1}{y} \, dy = \ln y =
+				- \int h(x) \, dx + C \quad C \in \mathbb{R}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = C \cdot e^{- \! \int h(x) \, dx} \quad C \in \mathbb{R}$
+			</p>
+			
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' + x^2y = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{y'}{y} = -x^2$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle \int \dfrac{y'}{y} \, dx =
+				\int -x^2 \, dx
+				$
+			</p>
+				
+				<p style="margin-left:60px">
+					$\rm y' dx = dy$</p>
+					
+			<p style="margin-left:30px">
+				$
+				\rm
+				\displaystyle
+				\Rightarrow \int \dfrac{1}{y} \, dy = \int -x^2 \, dx
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \ln y = -\dfrac{1}{3} x^3 + C$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \Rightarrow y = C \cdot e^{-(1∕3)x^3} \quad C \in \mathbb{R}$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>2) Toda ecuación diferencial lineal $\eqref{1}$ tiene asociada una
+    homogénea $\eqref{2}$:</p>
+    
+    <p style="text-align:center">
+			$
+			\begin{align}
+				&amp;\rm y' + h(x)y + g(x) = 0 \tag{1} \label{1} \\[1ex]
+				&amp;\rm y' + h(x)y = 0 \tag{2} \label{2}
+			\end{align}
+			$
+		</p>
+    
+    <p>Entonces si $\rm h_1(x)$ y $\rm h_2(x)$ son soluciones de $\eqref{1}$
+    se tiene que $\rm h_1(x) - h_2(x)$ es solución de la homogeneizada
+    $\eqref{2}$. La demostración:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \bigl( h_1(x) - h_2(x) \bigr)' +
+					h(x) \bigl( h_1(x) - h_2(x) \bigr) = \\[1ex] 
+					\qquad \rm = \bigl( h_1'(x) + h(x) h_1(x) \bigr)
+					- \bigl( h_2'(x) + h(x) h_2(x) \bigr) = \\[1ex]
+					\qquad \rm = -g(x) - \bigl( -g(x) \bigr) = 0
+				\end{array}
+				$
+			</p>
+		
+    <p>Ademas si $\rm h_1(x)$ es solución de $\eqref{1}$ y $\rm p(x)$ de
+    $\eqref{2}$ entonces $\rm h_1(x)+p(x)$ es solución de $\eqref{1}$. Se
+    puede hacer la demostración:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\begin{array}{l}
+				\rm \bigl( h_1(x) + p(x) \bigr)' +
+				h(x) \bigl( h_1(x) + p(x) \bigr) + g(x) = \\[1ex]
+				\qquad \rm = 
+				\underbrace{
+					\vphantom{p'(x)+h(x)p(x)}
+					\smash{h_1'(x) + h(x)h_1(x) + g(x)}
+					}_0 + 
+				\underbrace{p'(x) + h(x)p(x)}_0 = 0
+			\end{array}
+			$
+		</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				- sea $\rm h_1(x)$ solución particular de $\eqref{1}$.</p>
+				
+			<p style="margin-left:30px">
+				- sea $\rm p(x)$ solución general de $\eqref{2}$.</p>
+				
+			<p style="margin-left:30px">
+				Entonces:</p>				
+				
+			<p style="text-align:center">
+				$\rm p(x) + h_1(x) =$ solución general de $\eqref{1}$</p>
+				
+    <p>Así que esto da un sistema para resolver $\eqref{1}$. Primero se
+    ha de encontrar la solución general de $\eqref{2}$ (ecuación lineal
+    homogeneizada). Después encontrar una solución particular de $\eqref{1}$.
+    Por último se sumarán.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\underset{
+					\displaystyle
+					\begin{gathered}
+						\vphantom{\uparrow} \\
+						(1)
+					\end{gathered}
+				}{\smash{y' + 2xy} = 4x}
+				\enspace \Rightarrow \enspace
+				y' + \mspace{-8mu}
+				\underset{
+					\displaystyle
+					\begin{gathered}
+						\uparrow \\
+						\rm h(x)
+					\end{gathered}
+				}{2x} \mspace{-8mu} y - \mspace{-8mu}
+				\underset{
+					\displaystyle
+					\begin{gathered}
+						\uparrow \\
+						\rm g(x)
+					\end{gathered}
+				}{4x} \mspace{-8mu} = 0
+				$
+			</p>
+
+    <p>- Resolver la homogeneizada:</p>
+    
+    <p>La homogeneizada $(2)$ es $\rm y' + 2xy = 0$, entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \dfrac{y'}{y} = -2x \\[1ex]
+					\displaystyle \rm \int \dfrac{y'}{y} \, dx = \int -2x \, dx \\[1ex]
+					\quad \rm y' \, dx = dy \\[1ex]
+					\Rightarrow \displaystyle \rm \int \dfrac{1}{y} \, dy =
+					\int -2x \, dx \\[1ex]
+					\Rightarrow \rm \ln y = -x^2 + C \\[1ex]
+					\Rightarrow \boxed{\rm y = C \cdot e^{-x^2}}
+				\end{array}
+				$
+			</p>
+
+    <p>Así que:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-block;border:solid black 1px;padding:5px">
+					solución general de $(2)$: $\enspace \rm y = C \cdot e^{-x^2} \quad
+					C \in \mathbb{R}$
+				</span>
+			</p>
+
+    <p>- Encontrar una solución para $(1)$ mediante el conocido como
+    "método de la variación de las constantes". Para hacerlo se coge la
+    solución de $(2)$ y $\rm C$ como función:</p>
+    
+    <p style="margin-left:30px">
+			$\rm C(x) e^{-x^2}$ ?</p>
+    
+    <p>Se mira si existe, con esta forma, una solución de $(1)$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \bigl( C(x)e^{-x^2} \bigr)' + 2x \bigl( C(x)e^{-x^2} \bigr)
+					= 4x \\[1ex]
+					\rm C'(x)e^{-x^2} + \cancel{C(x)\bigl( -2xe^{-x^2} \bigr)} +
+					\cancel{2xC(x)e^{-x^2}} \! = 4x \\[1ex]
+					\rm C'(x)e^{-x^2} \! = 4x \enspace \Rightarrow \enspace C'(x) =
+					4xe^{x^2}
+				\end{array}
+				$
+			</p>
+				
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\displaystyle \rm \int C'(x) \, dx = \int 4xe^{x^2} dx \\[1ex]
+					\rm C(x) = 2e^{x^2}
+				\end{array}	
+				$
+			</p>
+
+    <p>Ahora se sustituye:</p>
+    
+			<p style="margin-left:30px">
+				$\rm C(x)e^{-x^2} = 2e^{x^2}e^{-x^2} = 2$</p>
+				
+    <p>La solución, solución general de $(2)$ + solución particular de
+    $(1)$, es pues:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-block;border:1px solid black;padding:5px">
+					$\rm 2 + C \cdot e^{-x^2} \leftarrow$ solución general de $(1)$
+				</span>
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Demostración del método de variación de las constantes:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\rm
+			\begin{gathered}[t]
+				\rm y' + h(x)y + g(x) = 0 \\
+				(1)
+			\end{gathered}
+			\enspace \Rightarrow \enspace
+			C \cdot p(x)
+			$
+			solución de la homogénea
+		</p>
+    
+    <p>¿$\rm C(x)$ para que $\rm C(x)p(x)$ sea una solución de $(1)$?</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \bigl( C(x)p(x) \bigr)' + h(x) \bigl( C(x)p(x) \bigr)
+					+ g(x) = \\[1ex]
+					\qquad \rm = C'(x)p(x) + C(x)p'(x) + h(x)C(x)p(x) + g(x) = \\[1ex]
+					\qquad \rm	= C'(x)p(x) + g(x) +
+					C(x) \bigl( \underbrace{p'(x) + h(x)p(x)}_0	 \bigr) = 0
+				\end{array}
+				$
+			</p>
+			
+		<p>Por tanto:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm C'(x)p(x) + g(x) = 0 \\[1ex]
+					\rm C'(x) = \dfrac{-g(x)}{p(x)} \\[1ex]
+					\rm C(x)  = \displaystyle \int \dfrac{-g(x)}{p(x)} \, dx
+				\end{array}
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' \sin x = y \cos x + 2 \cos x \qquad (1)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm y' \sin x - y \cos x - 2 \cos x = 0$</p>
+				
+    <p>- Homogeneizada:</p>
+    
+    <p style="margin-left:30px">
+			$
+			\begin{array}{l}
+				\rm y' \sin x - y \cos x = 0 \\[1ex]
+				\rm \dfrac{y'}{y} = \dfrac{\cos x}{\sin x} \\[1ex]
+				\rm \displaystyle \int \dfrac{y'}{y} \, dx =
+				\int \dfrac{\cos x}{\sin x} \, dx \\[1ex]
+				\rm \ln y = \ln (\sin x) + C \\[1ex]
+				\rm \Rightarrow y = C \sin x \qquad C \in \mathbb{R}
+			\end{array}
+			$
+		</p>
+    
+    <p>- Hace falta una solución particular del tipo $\rm C(x) \sin x$.
+    Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \bigl( C(x) \sin x \bigr)' \sin x = C(x) \sin x \cos x +
+					2 \cos x \\[1ex]
+					\rm \bigl( C'(x) \sin x + \! \cancel{C(x) \cos(x)} \bigr) \sin x
+					= \cancel{C(x) \sin x \cos x} + 2 \cos x \\[1ex]
+					\rm C'(x) \sin^2 x = 2 \cos x \\[1ex]
+					\rm C'(x) = \dfrac{2 \cos x}{\sin^2 x}
+				\end{array}
+				$
+			</p>
+    
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				C(x) = \displaystyle \int \dfrac{2 \cos x}{\sin^2 x} \, dx =
+				-2 \int - \cos x \cdot (\sin x)^{-2} \, dx = \dfrac{-2}{\sin x}
+				$
+			</p>
+    
+    <p>Solución:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{-2}{\cancel{\sin x}} \cancel{\sin x} = -2$</p>
+				
+    <p>Así pues, la solución general de $(1)$:</p>
+    
+			<p style="text-align:center">
+				$\boxed{\rm -2 + C \sin x \quad C \in \mathbb{R}}$</p>
+					
+    <p>Ahora se puede hacer el camino inverso. Es decir, de unas soluciones
+    encontrar la ecuación diferencial, en definitiva el valor de $\rm C$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{c}
+					\rm x = 1 \mathbin{;} y = 10 \\[1ex]
+					\begin{aligned}
+						&amp;\Rightarrow \rm -2 + C \sin (1) = 10 \\[1ex]
+						&amp;\Rightarrow \rm C = 12 {∕} {\sin (1)}
+					\end{aligned}
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo" style="margin-bottom:1em">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm xy' + y - e^x = 0 \qquad (1)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm x = 1 , y = 0 \enspace \leftarrow$ Para encontrar $\rm C$.</p>
+    
+    <p>- Homogénea:</p>
+    
+			<p style="margin-left:30px">
+				$\rm xy' + y = 0 \qquad (2)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm xy' = -y \enspace \Rightarrow \enspace \dfrac{y'}{y} =
+				\dfrac{-1}{x}$</p>
+				
+    <p>Integrando:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}[b]{l}
+					\rlap{\rm \displaystyle \int \dfrac{y'}{y} \, dx =
+					\int \dfrac{-1}{x} \, dx} \\[1ex]
+					\rlap{\rm \ln y = - \ln x + C} \\[1ex]
+					\Rightarrow \rm y = \dfrac{C}{x} \enspace \leftarrow
+				\end{array}
+				$ Solución general de $(2)$
+			</p>
+
+    <p>- Solución de $(1)$ de forma:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm y = \dfrac{C(x)}{x} \\[1ex]
+					\rm x \left( \dfrac{C(x)}{x} \right)' + \dfrac{C(x)}{x} - e^x
+					= 0 \\[1ex]
+					\rm x \left( \dfrac{C'(x)}{x} - \dfrac{C(x)}{x^2} \right) +
+					\dfrac{C(x)}{x} - e^x = 0 \\[1ex]
+					\rm C'(x) - \cancel{\dfrac{C(x)}{x}} + \cancel{\dfrac{C(x)}{x}}
+					- e^x	= 0 \\[1ex]
+					\rm C'(x) - e^x = 0 \enspace \Rightarrow \enspace C'(x) = e^x
+				\end{array}				
+				$
+			</p>
+			
+    <p>Integrar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm C(x) = \displaystyle \int e^x \, dx = e^x$</p>
+				
+			<p style="margin-left:30px">
+				$\rm y = \dfrac{C(x)}{x} = \dfrac{e^x}{x} \enspace \leftarrow$
+				Solución particular de $(1)$.</p>
+				
+    <p>Sumando:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = \dfrac{e^x}{x} + \dfrac{C}{x} = \dfrac{e^x + C}{x}
+				\enspace \leftarrow$ Solución general de $(1)$.</p>
+				
+    <p>Aplicando $\rm x = 1$ é $\rm y = 0$ para saber $\rm C$, entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\boxed{\rm C = -e}$</p>
+    
+    </div>
+
+		</div>
+   
+		<div id="foot">
+   
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="diagonalizacion_matrices.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="resolucion_sistemas_ecuaciones_diferenciales_lineales_coeficientes_constantes.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+		
+		</div>
+  </body>
+</html>

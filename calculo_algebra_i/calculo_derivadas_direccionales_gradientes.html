@@ -1,0 +1,925 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js","enclose.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Cálculo de derivadas direccionales y gradientes">
+    <meta name="keywords" content="cálculo, derivadas, direccionales, gradientes">
+    <title>Cálculo de derivadas direccionales y gradientes</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Cálculo de derivadas direccionales y gradientes</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+			
+		<p>
+			$\rm f :
+			\underset{
+				\begin{subarray}{c}
+					\displaystyle \downarrow \\
+					\displaystyle \rm u_\rlap{0} \mathstrut
+				\end{subarray}
+			}{B} \subset \mathbb{R}^n \to \mathbb{R}
+			$
+		</p>
+		
+		<p>
+			$
+			\rm
+			\begin{gathered}[t]
+					\rm \nabla f(u_0) \\
+					\uparrow \\
+					\text{gradi}\rlap{\text{ente de $\rm f$ en $\rm u_0$}}
+			\end{gathered} =
+			\left(
+			\dfrac{\partial f}{\partial x_1}(u_0), \dotsc,
+			\dfrac{\partial f}{\partial x_n}(u_0)
+			\right) 
+			$
+		</p>
+		
+		<p>
+			<span style="display:table-cell;padding-right:2em">
+			<object data="calculo_derivadas_direccionales_gradientes/calculo_derivadas_direccionales_gradientes_01.svg"
+			type="image/svg+xml" width="210" height="160"
+			style="display:inline-block;margin:0">
+			</object>
+			</span>
+			<span style="display:table-cell;vertical-align:middle">
+				$
+				\begin{array}{l}
+					\begin{aligned}
+						\rm h : \mathbb{R} &amp;\to \rm \mathbb{R}^n \\
+						\rm t &amp;\to \rm u_0 + t \, v
+					\end{aligned} \\[1ex]
+					\rm
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\begin{subarray}{l}
+								\text{fun} \rlap{\text{ción compuesta}} \\
+								\text{de} \rlap{\text{ $\rm h$ y $\rm f$}}
+							\end{subarray}
+						\end{subarray}
+					}{(f \circ h)} = f(h(t))
+					\qquad
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\begin{subarray}{l}
+								\text{der} \rlap{\text{ivada direccional según}} \\
+								\rm v \rlap{\text{ de la función $\rm f$ en $\rm u_0$}}
+							\end{subarray}
+						\end{subarray}
+					}{D_v f(u_0)} = (f \circ h)'(0)
+				\end{array}
+				$
+			</span>
+		</p>
+
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x^2 + y^2 \quad u_0 = (1,1) \quad v = (2,3)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm D_v f(u_0) \enspace ?$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\def\rarrow#1#2{
+					\stackrel{#1}{
+						\underset{#2}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+							}
+						} 
+					}
+				}
+				\begin{align}
+					\mathbb{R} &amp;\rarrow{\large \rm h}{} \mathbb{R}^2 \\
+					\rm t &amp;\rm \rarrow{\hphantom{\large h}}{} (1,1) + t(2,3)
+					= (1+2t,1+3t)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm (f \circ h)(t) = (1+2t)^2 + (1+3t)^2 &amp;=
+					\rm 1 + 4t + 4t^2 + 1 + 6t + 9t^2 = \\[1ex]
+					&amp;= \rm 13t^2 + 10t + 2
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm (f \circ h)'(t) = 26t + 10$</p>
+				
+			<p style="margin-left:30px">
+				$\rm D_{(2,3)} f(1,1) = (f \circ h)'(0) = 10$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Teorema:</p>
+    
+    <p>$\rm D_v f(u_0) = \nabla f(u_0) \cdot v \enspace \leftarrow$ producto
+    escalar</p>
+    
+    <hr>
+    
+		<div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+    <p>$\rm x^2 + y^2$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \nabla f = (2x,2y)$</p>
+				
+		<p>$\rm u_0 = (1,1)$</p>
+		
+			<p style="margin-left:30px">
+				$\rm \nabla f(1,1) = (2,2)$</p>
+				
+    <p>$\rm v = (2,3)$</p>
+    
+			<p style="margin-left:30px">
+				$\rm D_v f(u_0) = D_{(2,3)} f(1,1) = (2,2) \cdot (2,3) = 4 + 6 =
+				\underline{\underline{10}}$</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="text-align:center">
+				<object data="calculo_derivadas_direccionales_gradientes/calculo_derivadas_direccionales_gradientes_02.svg"
+				type="image/svg+xml" width="51" height="57"
+				style="display:inline-block;margin:0;vertical-align:top"></object>
+				$
+				\qquad
+				\begin{array}[t]{l}
+					\rm \dfrac{v}{\lVert v \rVert} \enspace \text{vector normalizado}
+					\\[1ex]
+					\rm \lVert \dfrac{v}{\lVert v \rVert} \rVert = 1
+				\end{array}
+				\qquad
+				\begin{array}[t]{l}
+					\rm v = (x_1, \dotsc, x_n) \\[1ex]
+					\rm \lVert v \rVert = \sqrt{x_1^2 + \dotsb + x_n^2}
+				\end{array}
+				$
+			</p>
+			
+		<p>
+			<span style="display:table-cell">
+				$
+				\rm D_{v{∕}\|v\|} f(u_0): {}
+				$
+			</span>
+			<span style="display:table-cell">
+				derivada direccional de $\rm f$ según la dirección de $\rm v$ en
+				$\rm u_0$ respecto al vector normalizado $\rm \dfrac{v}{\|v\|}$.
+			</span>
+		</p>
+			
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+    <p>$\rm x^2 + y^2$</p>
+    
+    <p>$\rm u_0 = (1, 1) \quad v = (2,3)$</p>
+    
+    <p>$\rm \lVert v \rVert = \sqrt{4 + 9} = \sqrt{13}$</p>
+    
+    <p>
+			$
+			\begin{align}
+				\rm
+				D_{\left(2{∕}\sqrt{13},\,3{∕}\sqrt{13}\right)} f(1,1) &amp;=
+				(2,2) \cdot \left(2{∕}\sqrt{13}, 3{∕}\sqrt{13}\right) = 4{∕}\sqrt{13} +
+				6{∕}\sqrt{13} = \\[1ex]
+				&amp;= 10{∕}\sqrt{13}
+			\end{align}
+			$
+		</p>
+		
+    <p>
+			$\Rightarrow \rm D_{v{∕}\lVert v \rVert} f(u_0) =
+			\dfrac{D_v f(u_0)}{\lVert v \rVert}$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Por definición un producto escalar es tal que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm u_1 \cdot u_2 = \lVert u_1 \rVert \lVert u_2 \rVert
+				\cos α$</p>
+    
+				<p style="margin-left:60px">
+					$α \rightarrow$ ángulo que forman $\rm u_1$ y $\rm u_2$</p>
+					
+				<p style="margin-left:60px">
+					$
+					-1 \leq \cos α \leq 1
+					\quad
+					\begin{aligned}[t]
+						1 &amp;\rightarrow α = 0° \\[1ex]
+						-1 &amp;\rightarrow α = 180°
+					\end{aligned}
+					$
+				</p>
+					
+    <p>Así que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm D_{v{∕}\|v\|} f(u_0) &amp;= \rm \lVert \nabla f(u_0) \rVert
+					\lVert \dfrac{v}{\lVert v \rVert} \rVert \cos α = \\[1ex]
+					&amp;= \rm \lVert \nabla f(u_0) \rVert \cos α
+					\left\{
+					\begin{array}{l}
+						\text{máximo: } \rm \lVert \nabla f(u_0) \rVert \\
+						\text{mínimo: } \rm - \lVert \nabla f(u_0) \rVert
+					\end{array}
+					\right.
+				\end{align}
+				$
+			</p>
+    
+    <p>El valor máximo de la derivada direccional en el punto $\rm u_0$
+    se produce cuando $\rm v = \nabla f(u_0)$ y el mínimo cuando $\rm v =
+    -\nabla f(u_0)$ (sentido opuesto).</p>
+    
+    <p>Siendo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				f :
+				\underset{
+					\begin{subarray}{c}
+						\displaystyle \downarrow \\
+						\displaystyle \rm u\rlap{{}_{0}} \mathstrut
+					\end{subarray}
+				}{B} \subset \mathbb{R}^n \to \mathbb{R}^m
+				\qquad
+				f : \underbrace{(f_1, \dotsc, f_m)}_{\text{vector}}
+				\qquad 
+				f_i :
+				\underset{
+					\begin{subarray}{c}
+						\displaystyle \downarrow \\
+						\displaystyle \rm u\rlap{{}_0} \mathstrut
+					\end{subarray}
+				}{B} \subset \mathbb{R}^n \rightarrow \mathbb{R}
+				$
+			</p>
+    
+    <p>Se pueden encontrar cada una de las derivadas parciales de cada
+    componente del vector respecto a cada variable:</p>
+    
+			<p style="text-align:center">
+				$\rm \dfrac{\partial f_i}{\partial x_j}(u_0), \enspace
+				j = 1, \dotsc, n$</p>
+				
+			<p style="text-align:center">
+				$
+				\underset{
+					\begin{subarray}{l}
+						\rm n \text{ columnas} \\
+						\rm m \text{ filas}
+					\end{subarray}
+				}{
+					\begin{pmatrix}
+						\rm \dfrac{\partial f_1}{\partial x_1}(u_0) &amp; \dots &amp;
+						\rm \dfrac{\partial f_1}{\partial x_n}(u_0) \\
+						\vdots &amp; &amp; \vdots \\
+						\rm \dfrac{\partial f_m}{\partial x_1}(u_0) &amp; \dots &amp;
+						\rm \dfrac{\partial f_m}{\partial x_n}(u_0)
+					\end{pmatrix}
+				}
+				= \rm Df(u_0)
+				\left\langle
+					\begin{array}{l}
+						\text{"diferencial de $\rm f$ en $\rm u_0$"} \\[1em]
+						\text{"matriz jacobiana de $\rm f$ en $\rm u_0$"}
+					\end{array}
+				\right.
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+			<p>Ejemplos:</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\begin{aligned}
+					\rm \mathbb{R}^2 &amp;\rm \rarrow{\large f}{} \mathbb{R}^3 \\
+					\rm (x,y) &amp;\rm \rarrow{\hphantom{\large f}}{}
+					(e^{x+y}, 2x-y, 4y)
+				\end{aligned}
+				\quad
+				\Rightarrow
+				\quad
+				Df =
+				\begin{pmatrix}
+					\rm e^{x+y} &amp; \rm e^{x+y} \\
+					2 &amp; -1 \\
+					0 &amp; 4
+				\end{pmatrix}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\begin{aligned}
+					\mathbb{R} &amp;\rm \rarrow{\large f}{} \mathbb{R}^4 \\
+					\rm t &amp;\rm \rarrow{\hphantom{\large f}}{}
+					(e^t, \sin t, 4t{e}^t, 5t)
+				\end{aligned}
+				\quad
+				\Rightarrow
+				\quad
+				Df =
+				\begin{pmatrix}
+					\rm e^t \\
+					\rm \cos t \\
+					\rm 4e^t + 4t{e}^t \\
+					5
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}
+					\mathbb{R}^4 &amp;\rm \rarrow{\large f}{} \mathbb{R} \\
+					\rm (x,y,z,t) &amp;\rm \rarrow{\hphantom{\large f}}{}
+					2x e^y - 2tz
+				\end{aligned}
+				\quad
+				\Rightarrow
+				\quad
+				\rm Df = (2e^y, 2x e^y, -2t, -2z)
+				$
+			</p>
+
+    </div>
+    
+    <hr>
+    
+    <p>$\rm f : B \subset \mathbb{R}^n \to \mathbb{R}^m$</p>
+    
+    <p>$\rm g : C \subset \mathbb{R}^m \to \mathbb{R}^p$</p>
+    
+			<p style="margin-left:30px">
+				$\rm u_0 \in B \quad f(u_0) \in C$</p>
+				
+			<p style="margin-left:30px">
+				$\rm g(f(u_0)) = g \circ f(u_0)$</p>
+    
+    <p>
+      <span style="text-decoration:underline">Regla de la cadena</span>:
+    </p>
+    
+			<p style="text-align:center">
+				$\rm D(g \circ f(u_0)) = Dg(f(u_0)) \cdot Df(u_0)$</p>
+				
+			<p style="text-align:center">
+				$
+				\rm
+				p) \! \updownarrow
+				\overset{
+					\displaystyle \rm \underleftrightarrow{n)}
+				}{
+					\begin{pmatrix}
+						\enspace &amp; \enspace \\
+						&amp; \\
+						&amp;
+					\end{pmatrix}
+				} =
+				p) \! \updownarrow
+				\overset{
+					\displaystyle \underleftrightarrow{m)}
+				}{
+					\begin{pmatrix}
+						\enspace &amp; \enspace &amp; \enspace &amp; \enspace \\
+						&amp; &amp; &amp; \\
+						&amp; &amp; &amp;
+					\end{pmatrix}
+				}
+				\cdot
+				\overset{
+					\displaystyle \underleftrightarrow{n)}
+				}{
+					\begin{pmatrix}
+						\enspace &amp; \enspace \\
+						&amp; \\
+						&amp; \\
+						&amp;
+					\end{pmatrix}
+				}
+				\updownarrow \! m)
+				$
+			</p>
+				
+    <p style="text-align:center">
+			$\rm g \circ f : B \subset \mathbb{R}^n \to \mathbb{R}^p$</p>
+			
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rm \rarrow{\large f}{} \mathbb{R}^3 \\
+					\rm (x,y) &amp;\rm \rarrow{\hphantom{\large f}}{} (xy,x+y,x)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^3 &amp;\rm \rarrow{\large g}{} \mathbb{R}^2 \\
+					\rm (x,y,z) &amp;\rm \rarrow{\hphantom{\large g}}{} (x+y,y-z)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm u_0 = (1, 1)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm D(g \circ f)(u_0) \enspace ?$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm Df =
+				\begin{pmatrix}
+					\rm y &amp; \rm x \\
+					1 &amp; 1 \\
+					1 &amp; 0
+				\end{pmatrix}
+				\qquad
+				Df(u_0) =
+				\begin{pmatrix}
+					1 &amp; 1 \\
+					1 &amp; 1 \\
+					1 &amp; 0
+				\end{pmatrix}
+				$
+			</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(1,1) = (1,2,1)$</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				Dg(f(u_0)) =
+				\begin{pmatrix}
+					1 &amp; 1 &amp; 0 \\
+					0 &amp; 1 &amp; -1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				D(g \circ f)(1,1) =
+				\begin{pmatrix}
+					1 &amp; 1 &amp; 0 \\
+					0 &amp; 1 &amp; -1
+				\end{pmatrix}
+				\begin{pmatrix}
+					1 &amp; 1 \\
+					1 &amp; 1 \\
+					1 &amp; 0
+				\end{pmatrix}
+				=
+				\begin{pmatrix}
+					2 &amp; 2 \\
+					0 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\large \rm g \: \circ \: f}{}
+					\mathbb{R}^2 \\
+					\rm (x,y) &amp;\rm \rarrow{\large f}{} (xy, x + y, x)
+					\rarrow{\large g}{} (xy + x + y, x + y - x) = (xy + x +y, y)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				D(g \circ f) =
+				\begin{pmatrix}
+					\rm y+1 &amp;\rm x+1 \\
+					0 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				D(g \circ f)(1,1) =
+				\begin{pmatrix}
+					2 &amp; 2 \\
+					0 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rm \rarrow{\large f}{} \mathbb{R}^2 \\
+					\rm (x, y) &amp;\rm \rarrow{\hphantom{\large f}}{} (xy, x + y)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rm \rarrow{\large g}{} \mathbb{R}^3 \\
+					\rm (x, y) &amp;\rm \rarrow{\hphantom{\large g}}{}
+					(e^{xy}, \sin x, xy)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm D(g \circ f) \enspace ?$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				Df =
+				\begin{pmatrix}
+					\rm y &amp; \rm x \\
+					1 &amp; 1
+				\end{pmatrix}
+				\qquad
+				Dg =
+				\begin{pmatrix}
+					\rm ye^{xy} &amp;\rm xe^{xy} \\
+					\rm \cos x &amp; 0 \\
+					\rm y &amp; \rm x
+				\end{pmatrix}
+				$
+			</p>
+				
+			<p style="margin-left:30px;margin-bottom:2em">
+				$
+				\begin{align}
+					\rm D(g \circ f)(x,y) &amp;= \rm Dg(f(x,y)) \cdot Df(x,y) = \\[1ex]
+					&amp;=
+					\begin{pmatrix}
+						\rm (x+y)e^{xy(x+y)} &amp;\rm xye^{xy(x+y)} \\
+						\rm \cos xy &amp; 0 \\
+						\rm x+y &amp; \rm xy
+					\end{pmatrix}
+					\cdot
+					\begin{pmatrix}
+						\rm y &amp; \rm x \\
+						1 &amp; 1
+					\end{pmatrix}
+					= \\[1ex]
+					&amp;=
+					\begin{pmatrix}
+						\rm y(x+y)e^{xy(x+y)} + xye^{xy(x+y)} &amp;
+						\rm x(x+y)e^{xy(x+y)} + xye^{xy(x+y)} \\
+						\rm y \cos xy &amp; \rm x \cos xy \\
+						\smash{
+							\underset{
+								\begin{subarray}{c}
+									\uparrow \\
+									\rm \partial (g \circ f)_3 {∕} \partial x
+								\end{subarray}
+							}{
+								\enclose{roundedbox}{\rm 2xy + y^2}
+							}
+						}
+						\vphantom{
+							\enclose{roundedbox}{\rm 2xy + y^2}
+						} &amp; \rm 2xy + x^2
+					\end{pmatrix}
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\large \rm g \: \circ \: f}{}
+					\mathbb{R}^3 \\
+					\rm (x,y) &amp;\rm \rarrow{\hphantom{\large g \circ f}}{}
+				(e^{xy(x+y)}, \sin xy, xy(x + y))
+				\end{align}
+				$
+			</p>
+		
+				<p style="margin-left:60px">
+					$\rm (g \circ f)_3 = x^2 y + xy^2$</p>
+				
+				<p style="margin-left:60px">
+					$\rm \partial (g \circ f)_3 {∕} \partial x = 2xy + y^2$</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					<object data="calculo_derivadas_direccionales_gradientes/calculo_derivadas_direccionales_gradientes_03.svg"
+					type="image/svg+xml" width="303" height="132"
+					style="display:inline-block;margin:0 2em 0 0"></object>
+				</span>
+				<span style="display:table-cell;vertical-align:middle">
+					<object data="calculo_derivadas_direccionales_gradientes/calculo_derivadas_direccionales_gradientes_04.svg"
+					type="image/svg+xml" width="260" height="127"
+					style="display:inline-block;margin:0"></object>
+				</span>
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\dfrac{\partial (g \circ f)_i}{\partial x_j}(u_0) =
+				\nabla g_i(f(u_0)) \cdot
+				\left(
+				\dfrac{\partial f_k}{\partial x_j}(u_0)
+				\right)_{k=1,\dotsc,m}
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\rm \large f}{} \mathbb{R}^2 \\
+					\rm (x, y) &amp;\rm \rarrow{\hphantom{\large f}}{} (x + y, x - y)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\rm \large g}{} \mathbb{R} \\
+					\rm (x, y) &amp;\rm \rarrow{\hphantom{\large g}}{} e^{xy}
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm g \circ f : \mathbb{R}^2 \to \mathbb{R}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm Dg = (ye^{xy}, xe^{xy})$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \partial (g \circ f) {∕} \partial x &amp;= \rm
+					Dg(f(x,y)) \cdot
+					\left(
+						\dfrac{\partial f_1}{\partial x}(x,y),
+						\dfrac{\partial f_2}{\partial x}(x,y)
+					\right) = \\[1ex]
+					&amp;= \rm
+					\left(
+						(x-y)e^{x^2-y^2},(x+y)e^{x^2-y^2}
+					\right) \cdot (1,1) = \\[1ex]
+					&amp;= \rm
+					(x-y)e^{x^2-y^2} + (x+y)e^{x^2-y^2} = 2xe^{x^2 - y^2}
+				\end{align}
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm (x,y) \rarrow{\large f}{} (x+y,x-y) \rarrow{\large g}{}
+				e^{(x+y)(x-y)} = e^{x^2 - y^2}$</p>
+
+			<p style="margin-left:30px">
+				$\rm \partial (g \circ f){∕}\partial x = 2xe^{x^2 - y^2}$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\rm \large f}{} \mathbb{R}^3 \\
+					\rm (x,y) &amp;\rm \rarrow{\hphantom{\large f}}{} (x+y, xy, x-y)
+				\end{align}
+				$	
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^3 &amp;\rarrow{\rm \large g}{} \mathbb{R}^2 \\
+					\rm (x,y,z) &amp;\rm \rarrow{\hphantom{\large g}}{}
+					(\underbrace{xy}_{\large g_1},yz)
+				\end{align}
+				$
+			</p>
+		
+			<p style="margin-left:30px">
+				$\rm \partial (g \circ f)_1{∕} \partial y \enspace ?$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm \partial (g \circ f)_1 {∕} \partial y =
+				\nabla g_1(f(x,y)) \cdot
+				\left(
+					\dfrac{\partial f_1}{\partial y}(x,y),
+					\dfrac{\partial f_2}{\partial y}(x,y),
+					\dfrac{\partial f_3}{\partial y}(x,y)
+				\right)
+				$
+			</p>
+				
+				<p style="margin-left:60px">
+					$\rm \nabla g_1(x,y,z) = (y, x, 0)$</p>
+					
+				<p style="margin-left:60px">
+					$\rm \nabla g_1(f(x,y)) = (xy, x + y, 0)$</p>
+					
+			<p style="margin-left:30px">
+				$\rm \partial (g \circ f)_1 {∕} \partial y =
+				(xy, x + y, 0) \cdot (1, x, -1) = xy + x^2 + xy = 2xy + x^2$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\mathbb{R}^2 &amp;\rarrow{\rm \large g \circ f}{} \mathbb{R}^2 \\
+					\rm (x,y) &amp;\rm \rarrow{\hphantom{\large g \circ f}}{}
+					(\underbrace{x^2y + xy^2}_{\large (g \circ f)_1},x^2y - xy^2)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \partial (g \circ f)_1 {∕} \partial y = x^2 + 2xy$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Demostración:</p>
+    
+    <object data="calculo_derivadas_direccionales_gradientes/calculo_derivadas_direccionales_gradientes_05.svg"
+    type="image/svg+xml" width="213" height="160"
+    style="margin:0;float:right;position:relative;right:25%"></object></object>
+    
+    <p>
+			$
+			\rm f : 
+			\underset{
+				\begin{subarray}{c}
+					\displaystyle \downarrow \\
+					\displaystyle \rm u\rlap{{}_{0}}
+				\end{subarray}
+			}{B} \subset \mathbb{R}^n \to \mathbb{R}
+			$
+		</p>
+		
+		<p>
+			$
+			\rm h :
+			\underset{
+				\begin{subarray}{c}
+					\displaystyle \downarrow \\
+					\displaystyle \rm t\rlap{{}_0 \quad h(t_0) = u_0}
+				\end{subarray}
+			}{I} \subset \mathbb{R} \to \mathbb{R}^n
+			$
+		</p>
+		
+		<p>$\rm (f \circ h) : I \subset \mathbb{R} \to \mathbb{R}$</p>
+		
+		<p>Aplicando la regla de la cadena:</p>
+		
+			<p style="margin-left:30px">
+				$\rm (f \circ h)'(t_0) = \nabla f(h(t_0)) \cdot h'(t_0)$
+			</p>
+    
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="fundamentos_calculo_varias_variables.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="derivacion_funciones_implicitas.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

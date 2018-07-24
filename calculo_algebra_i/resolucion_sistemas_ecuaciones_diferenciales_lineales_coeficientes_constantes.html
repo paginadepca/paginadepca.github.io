@@ -1,0 +1,1650 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Resolución de sistemas de ecuaciones diferenciales lineales de primer orden con coeficientes constantes y ecuaciones diferenciales de orden superior con coeficientes constantes">
+    <meta name="keywords" content="resolución, sistemas, ecuaciones, diferenciales, lineales, primer, orden, coeficientes, constantes, superior">
+    <title>Resolución de sistemas de ecuaciones diferenciales lineales de primer orden con coeficientes constantes y ecuaciones diferenciales de orden superior con coeficientes constantes</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Resolución de sistemas de ecuaciones diferenciales lineales de
+			primer orden con coeficientes constantes y ecuaciones diferenciales
+			de orden superior con coeficientes constantes</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+		
+		<p>
+      <span style="text-decoration:underline">Resolución de sistemas de
+      ecuaciones diferenciales lineales de primer orden con coeficientes
+      constantes</span>:
+    </p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+				\,
+				\begin{array}{l}
+					\rm y_1' = A_{11}(x)y_1 + \dotsb + A_{n1}(x)y_n + B_1(x) \\
+					\vdots \\
+					\rm y_n' = A_{1n}(x)y_1 + \dotsb + A_{nn}(x)y_n + B_n(x)
+				\end{array}
+				\right.
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\rm A_{ij}(x), B_{j}(x)$ son funciones reales.</p>
+				
+			<p style="margin-left:30px">
+				$\rm y_1, \dotsc, y_n$ son funciones reales a determinar.</p>
+				
+			<p style="margin-left:30px">
+				$\rm A_{ij}(x) \leftarrow$ coeficientes del sistema.</p>
+    
+			<p style="margin-left:30px">
+				$\rm B_{j}(x) \leftarrow$ término independiente.</p>
+				
+			<p style="margin-left:30px">
+				$\rm B_1(x) = \dotsb = B_{n}(x) = 0 \leftrightarrow$ sistema
+				homogéneo.</p>
+    
+    <p>∗ Caso homogéneo:</p>
+    
+      <p style="margin-left:30px">
+				$
+				\left\{
+				\,
+				\begin{array}{l}
+					\rm y_1' = A_{11}(x)y_1 + \dotsb + A_{n1}(x)y_n \\
+					\vdots \\
+					\rm y_n' = A_{1n}(x)y_1 + \dotsb + A_{nn}(x)y_n
+				\end{array}
+				\right.
+				$
+			</p>
+
+    <p>
+			<span style="display:table-cell">Teorema:&nbsp;</span>
+			<span style="display:table-cell">
+				<em>El conjunto de soluciones del sistema es un espacio vectorial
+				de dimensiones $n$.</em>
+			</span>
+		</p>
+    
+    <p>
+			<span style="display:table-cell">$\rightarrow \:$</span>
+			<span style="display:table-cell">
+				Existen $\rm n$ soluciones linealmente independientes que generan
+				todo el conjunto de soluciones.
+			</span>
+		</p>
+    
+    <p>Se supone que $\rm A_{ij}(x)$ son constantes $\Rightarrow \! \rm
+    A_{ij}$. Puede expresarse de forma matricial:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A: (A_{ij})$</p>
+				
+    <p>Se supone que $\rm A$ diagonaliza:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\Rightarrow \exists
+				\left\{
+				\begin{array}{l}
+					\rm v_1, \dotsc, v_n \text{ VEPS l.i.} \\[1ex]
+					\rm λ_1, \dotsc, λ_n \text{ VAPS} 
+				\end{array}
+				\right.
+				$
+			</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm e^{λ_1 x} v_1, \dotsc, e^{λ_n x} v_n$ son $\rm n$ soluciones
+				del sistema linealmente independientes.</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+				\begin{array}{l}
+					\rm y_1' = y_1 - y_2 \\
+					\rm y_2' = -y_1 + y_2
+				\end{array}
+				\right.
+				$
+			</p>
+    
+    <p>Matricialmente:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					1 &amp; -1 \\
+					-1 &amp; 1
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{array}{c}
+					\begin{pmatrix}
+						1 &amp; -1 \\
+						-1 &amp; 1 
+					\end{pmatrix}
+					\begin{pmatrix}
+						\rm y_1 \\
+						\rm y_2
+					\end{pmatrix}
+					=
+					\begin{pmatrix}
+						\rm y_1 - y_2 \\
+						\rm -y_1 + y_2
+					\end{pmatrix}
+					=
+					\begin{pmatrix}
+						\rm y_1' \\
+						\rm y_2'
+					\end{pmatrix} \\[1ex]
+					\rm (A \cdot Y = Y')					
+				\end{array}
+				$
+			</p>
+			
+		<p>Entonces:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\DeclareMathOperator{\pcar}{Pcar}
+				\rm \pcar(A) = x^2 - 2x = x(x-2)
+				$
+			</p>
+			
+			<p style="margin-left:60px">
+				<span style="display:table-row">
+				<span style="display:table-cell;vertical-align:top">
+				$
+				\begin{array}{l}
+					\rm λ_1 = 0 \quad v_1 = (1,1) \\[1ex]
+					\rm λ_2 = 2 \quad v_2 = (1,-1)
+				\end{array}
+				\qquad
+				$
+				</span>
+				<span style="display:table-cell;vertical-align:top">
+				$
+				\begin{array}{l}
+					\rm
+					\left.
+					\begin{alignedat}{2}
+						&amp;\rm v_1 : \enspace &amp;\rm x_1 - x_2 = 0&amp; \\
+						&amp;&amp;\rm -x_1 + x_2 = 0&amp;
+					\end{alignedat}
+					\right\}
+					x_1 = x_2 \\[1ex]
+					\rm
+					\left.
+					\begin{alignedat}{2}
+						&amp;\rm v_2 : \enspace &amp;\rm -x_1 - x_2 = 0&amp; \\
+						&amp;&amp;\rm -x_1 - x_2 = 0&amp;
+					\end{alignedat}
+					\right\}
+					x_1 = -x_2
+				\end{array}
+				$
+				</span>
+				</span>
+			</p>
+    
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm e^{λ_1 x} v_1 = e^{0x} (1, 1) = (1, 1) = (y_1, y_2)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm e^{λ_2 x} v_2 = e^{2x} (1, -1) = (e^{2x}, -e^{2x}) =
+				(y_1, y_2)$</p>
+				
+		<p>
+			<span style="border-bottom:3px double black">
+				Solución general</span>:
+		</p>
+		
+			<p style="margin-left:30px">
+				$
+				\rm C_1 (1, 1) + C_2 (e^{2x}, -e^{2x}) =
+				(C_1 + C_2 e^{2x}, C_1 - C_2 e^{2x}) \mathrel{|} C_1, C_2 \in
+				\mathbb{R}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm
+				\Rightarrow
+				\left\{
+				\begin{array}{l}
+					\rm y_1 = C_1 + C_2 e^{2x} \\
+					\rm y_2 = C_1 - C_2 e^{2x}
+				\end{array}
+				\right.
+				\quad
+				C_1, C_2 \in \mathbb{R}
+				$
+			</p>
+			
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+				\,
+				\begin{array}{l}
+					\rm y_1' = -2y_1 + 8y_2 + 6y_3 \\
+					\rm y_2' = -4y_1 + 10y_2 + 6y_3 \\
+					\rm y_3' = 4y_1 - 8y_2 - 4y_3
+				\end{array}
+				\right.
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				Caso particular donde $\rm y_1(0) = 1, y_2(0) = 0, y_3(0) = 0$.</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-cell;vertical-align:top">
+				$
+				\begin{pmatrix}
+				 -2 &amp; 8 &amp; 6 \\
+				 -4 &amp; 10 &amp; 6 \\
+				 4 &amp; -8 &amp; -4
+				\end{pmatrix}
+				\qquad
+				$
+				</span>
+				<span style="display:table-cell;vertical-align:top">
+					$
+					\qquad
+					\begin{align}
+						\rm
+						\pcar(A) &amp;=
+						\begin{vmatrix}
+							\rm -2-x &amp; 8 &amp; 6 \\
+							-4 &amp; \rm 10-x &amp; 6 \\
+							4 &amp; -8 &amp; \rm -4-x
+						\end{vmatrix} = \\[1ex]
+						&amp;= \rm -x^3 + 4x^2 - 4x = -x(x^2 - 4x + 4) = \\[1ex]
+						&amp;= \rm -x(x-2)^2
+					\end{align}
+					$
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell;vertical-align:top">
+					$
+					\begin{array}{ll}
+						λ_1 = 0 &amp; \rm v_1 = (-1,-1,1) \\[1ex]
+						λ_2 = 2 &amp; \rm v_2 = (2,1,0) \\[1ex]
+						λ_3 = 2 &amp; \rm v_3 = (3,0,2)
+					\end{array}
+					\quad
+					$
+				</span>
+				<span style="display:table-cell;vertical-align:top">
+					$
+					\quad
+					\begin{array}{l}
+						\left.
+						\begin{alignedat}{3}
+							&amp;\rm v_1 : {} &amp; \rm -2x_1 + {}&amp;
+							&amp; \rm 8x_2 + 6x_3 = 0&amp; \\
+							&amp;&amp; \rm -4x_1 + {}&amp; &amp; \rm 10x_2 + 6x_3 =
+							0&amp; \\
+							&amp;&amp; \rm 4x_1 - {}&amp; &amp; \rm 8x_2 - 4x_3 = 0&amp;
+						\end{alignedat}
+						\right\}
+						\Rightarrow (-1,-1,1) \\[1ex]
+						\left.
+						\begin{alignedat}{2}
+							&amp;\rm \hphantom{v_1}\llap{v_2, v_3} : {} &amp;
+							\rm -4x_1 + 8x_2 + 6x_3 &amp;= 0 \;
+							\llap{\cancel{\phantom{\rm -4x_1 + 8x_2 + 6x_3 = 0}}} \\
+							&amp;&amp;\rm -4x_1 + 8x_2 + 6x_3 &amp;= 0 \;
+							\llap{\cancel{\phantom{\rm -4x_1 + 8x_2 + 6x_3 = 0}}} \\
+							&amp;&amp;\rm 4x_1 - 8x_2 - 6x_3 &amp;= 0
+						\end{alignedat}
+						\right\} \\[1ex]
+						\rm \hphantom{v_1 : -} 4x_1 = 8x_2 + 6x_3 \Rightarrow
+						\begin{array}[t]{l}
+							\rm x_2 = x_1{∕}2, x_3 = 0 ; \\[1ex]
+							\rm x_2 = 0, x_3 = 2x_1{∕}3
+						\end{array}
+					\end{array}
+					$
+				</span>
+			</p>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm e^{λ_1x} v_1 = (-1, -1, 1)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm e^{λ_2x} v_2 = (2e^{2x}, e^{2x}, 0)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm e^{λ_3x} v_3 = (3e^{2x}, 0, 2e^{2x})$</p>
+				
+    <p>Solución general: </p>
+    
+			<p style="margin-left:30px">
+				$\rm (y_1, y_2, y_3) = C_1 (-1, -1, 1) + C_2 (2e^{2x}, e^{2x}, 0)
+				+ C_3 (3e^{2x}, 0, 2e^{2x})$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\Rightarrow
+				\begin{array}[t]{l}
+					\rm y_1 = -C_1 + 2C_2 e^{2x} + 3C_3 e^{2x} \\[1ex]
+					\rm y_2 = -C_1 + C_2 e^{2x} \\[1ex]
+					\rm y_3 = C_1 + 2C_3 e^{2x} \\[1ex]
+					\rm C_1, C_2, C_3 \in \mathbb{R}
+				\end{array}
+				$
+			</p>
+			
+    <p>Se busca la solución particular:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{alignedat}{4}
+					&amp;1 = {} &amp;\rm -C_1 + {}&amp; &amp;\rm 2C_2&amp;
+					&amp;\rm {} + 3C_3&amp; \\[1ex]
+					&amp;0 = {} &amp;\rm -C_1 + {}&amp; &amp;\rm C_2&amp; &amp;&amp;\\[1ex]
+					&amp;0 = {} &amp;\rm C_1 \hphantom{{} + {}}&amp; &amp;&amp; &amp;\rm {} + 2C_3&amp;
+				\end{alignedat}
+				\right\}
+				\Rightarrow
+				\rm C_1 = -2, C_2 = -2, C_3 = 1
+				$
+			</p>
+    
+    <p>Solución particular:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+				\begin{array}{l}
+					\rm y_1 = 2 - 4e^{2x} + 3e^{2x} = 2- e^{2x} \\
+					\rm y_2 = 2 - 2e^{2x} \\
+					\rm y_3 = -2 + 2e^{2x}
+				\end{array}
+				\right.
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>∗ Caso no homogéneo a coeficientes constantes:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				{"}S{"}
+				\left\{
+				\begin{array}{l}
+					\rm y_1' = A_{11}y_1 + \dotsb + A_{n1}y_n + B_1(x) \\
+					\vdots \\
+					\rm y_n' = A_{1n}y_1 + \dotsb + A_{nn}y_n + B_n(x)
+				\end{array}
+				\right.
+				$
+			</p>
+    
+    <p>$\rm {"}\bar{S}{"}$ sistema homogeneizado: $\rm Y' = A \cdot Y$</p>
+    
+    <p>Propiedades:</p>
+    
+			<p style="margin-left:30px">
+				1) $\rm \, Y_1, Y_2$ soluciones de $\rm {"}S{"}
+				\Rightarrow Y_1 - Y_2$ solución de $\rm {"}\bar{S}{"}$</p>
+				
+			<p style="margin-left:30px">
+				Demostración:
+			</p>
+					
+				<p style="margin-left:60px">
+				$
+				\begin{array}{l}
+					\rm Y' = AY \Rightarrow Y' - AY = 0 \\[1ex]
+					\rm (Y_1 - Y_2)' - A(Y_1 - Y_2) = Y_1' - AY_1 - (Y_2' - AY_2) =
+					B - B = 0
+				\end{array}
+				$
+				</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					2)
+				</span>
+				<span style="display:table-cell;padding-right:5px;border-right:1px solid black">
+					<span style="display:block;margin-bottom:1ex">
+						$\rm \, Y_1$ solución de $\rm {"}S{"}$
+					</span>
+					<span style="display:block">
+						$\rm \,Y_2$ solución de $\rm {"}\bar{S}{"}$
+					</span>
+				</span>
+				<span style="display:table-cell;vertical-align:middle">
+					$\; \Rightarrow \rm Y_1 + Y_2$ solución de $\rm {"}S{"}$
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				Demostración:
+			</p>
+			
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm Y' = AY + B \Rightarrow Y' - AY - B = 0 \\[1ex]
+						\rm (Y_1 + Y_2)' - A(Y_1 + Y_2) - B =
+						\underbrace{Y_1' - AY_1 - B}_{0} + \underbrace{Y_2' - AY_2}_{0}
+						= 0
+					\end{array}
+					$
+				</p>
+					
+    <p>$\rightarrow$ la solución general de $\rm {"}S{"}$ es igual a:</p>
+    
+			<p style="margin-left:30px">
+				una solución particular de $\rm {"}S{"}$ + la solución general
+				de $\rm {"}\bar{S}{"}$.</p>
+				
+    <p>¿Cómo encontrar una solución particular de $\rm {"}S{"}$?</p>
+    
+    <p>$\rightarrow$ "método de la variación de las constantes"</p>
+    
+			<p style="margin-left:30px">
+				Sea $\rm C_1 Y_1 + \dotsb + C_n Y_n$ la solución general de
+				$\rm {"}\bar{S}{"} \Rightarrow \exists$ solución de $\rm {"}S{"}$
+				de la forma $\rm C_1(x) Y_1 + \dotsb + C_n(x) Y_n$.</p>
+				
+			<p style="margin-left:30px">
+				Para encontrar $\rm (C_1(x), \dotsc, C_n(x)) = C$, se ha de
+				resolver el sistema $\rm \bar{Y} \cdot C' = B$, donde $\rm \bar{Y}$
+				es la matriz de $\rm Y_1, \dotsc, Y_n$ y $\rm C' = (C_1'(x), \dotsc,
+				C_n'(x))$.</p>
+				
+			<p style="margin-left:30px">
+				Demostración:</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm (\bar{Y} C)' = A(\bar{Y} C) + B \\[1ex]
+						\rm \bar{Y}'C + \bar{Y}C' = A(\bar{Y} C) + B \\[1ex]
+						\rm \bar{Y}C' = A(\bar{Y}C) - \bar{Y}'C + B =
+						-(\underbrace{\bar{Y}' - A\bar{Y}}_0)C + B = B
+					\end{array}
+					$
+				</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm {"}S{"}
+				\left\{
+				\begin{array}{l}
+					\rm y_1' = -6y_1 -3y_2 + 14y_3 \\
+					\rm y_2' = 4y_1 + 3y_2 - 8y_3 \\
+					\rm y_3' = -2y_1 - y_2 + 5y_3 + \sin x
+				\end{array}
+				\right.
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm A =
+				\begin{pmatrix}
+					-6 &amp; -3 &amp; 14 \\
+					4 &amp; 3 &amp; -8 \\
+					-2 &amp; -1 &amp; 5
+				\end{pmatrix}
+				\qquad
+				B =
+				\begin{pmatrix}
+					0 \\ 0 \\ \rm \sin x
+				\end{pmatrix}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\rm Y' = AY + B
+				\qquad
+				\begin{array}[t]{l}
+					\rm Y = (y_1, y_2, y_3) \\[1ex]
+					\rm Y' = (y_1', y_2', y_3')
+				\end{array}
+				$
+			</p>  
+    
+   
+    <p>Se tiene un sistema $\rm {"}S{"}$ de ecuaciones diferenciales
+    lineales a coeficientes constantes no homogéneo. Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm {"}\bar{S}{"} \rightarrow Y' = AY$, homogeneizado de
+				$\rm {"}S{"}$.</p>
+    
+    <p>El proceso:</p>
+    
+			<p style="margin-left:30px">
+				1.º Encontrar la solución general de $\rm {"}\bar{S}{"}$.</p>
+    
+			<p style="margin-left:30px">
+				2.º Encontrar solución particular de $\rm {"}S{"}$.</p>
+    
+    <p>1.<sup>er</sup> paso:</p>
+    
+			<p style="margin-left:30px">¿$\rm A$ diagonaliza?</p>
+    
+				<p style="margin-left:60px">
+					$
+					\rm \pcar(A) =
+					\begin{vmatrix}
+						\rm -6-x &amp; -3 &amp; 14 \\
+						4 &amp; \rm 3-x &amp; -8 \\
+						-2 &amp; -1 &amp; \rm 5-x
+					\end{vmatrix}
+					\begin{aligned}[t]
+						&amp;= \rm -x^3 + 2x^2 + x - 2 = \\[1ex]
+						&amp;= \rm -(x-1)(x+1)(x-2)
+					\end{aligned}
+					$
+				</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						λ_1 = 1 \\[1ex]
+						λ_2 = -1 \\[1ex]
+						λ_3 = 2
+					\end{array}
+					\qquad
+					\left.
+					\begin{array}{r}
+						\text{$3$ raíces distintas} \\
+						\text{orden de } \rm A = 3
+					\end{array}
+					\right\}
+					\Rightarrow \rm A \text{ diagonaliza.}
+					$
+				</p>
+    
+			<p style="margin-left:30px">Vectores propios:</p>
+    
+				<p style="margin-left:60px">$λ_1 = 1$</p>
+				
+					<p style="margin-left:90px">
+						$
+						\left.
+						\begin{array}{l}
+							\rm -7x_1 - 3x_2 + 14x_3 = 0 \\
+							\rm \hphantom{-}4x_1 + 2x_2 - \hphantom{14}\llap{8}x_3 = 0 \\
+							\rm \llap{\scriptstyle -\frac{1}{2} \times Ec_2 : \;}
+							{-}2x_1 - \hphantom{3}x_2 + \hphantom{14}\llap{4}x_3 = 0 \;
+							\llap{
+								\cancel{
+									\phantom{
+										{-}2x_1 - \hphantom{3}x_2 + \hphantom{14}\llap{4}x_3
+										= 0
+									}
+								}
+							}
+						\end{array}
+						\right\}
+						\Rightarrow \rm v_1 = (2,0,1)
+						$
+					</p>
+    
+				<p style="margin-left:60px">$λ_2 = -1$</p>
+				
+					<p style="margin-left:90px">
+						$
+						\left.
+						\begin{array}{l}
+							\rm -5x_1 - 3x_2 + 14x_3 = 0 \\
+							\rm \hphantom{-}4x_1 + 4x_2 - \hphantom{14}\llap{8}x_3 = 0 \\
+							\rm -2x_1 - \hphantom{3}x_2 + \hphantom{14}\llap{6}x_3 = 0
+						\end{array}
+						\,
+						\right\}
+						\Rightarrow \rm v_2 = (4,-2,1)
+						$
+					</p>
+				
+				<p style="margin-left:60px">$λ_3 = 2$</p>
+			
+					<p style="margin-left:90px">
+						$
+						\left.
+						\begin{array}{l}
+							\rm -8x_1 - 3x_2 + 14x_3 = 0 \\
+							\rm \hphantom{-}4x_1 + \hphantom{3}x_2 -
+							\hphantom{14}\llap{8}x_3 = 0 \\
+							\rm -2x_1 - \hphantom{3}x_2 + \hphantom{14}\llap{3}x_3 = 0
+						\end{array}
+						\,
+						\right\}
+						\Rightarrow \rm v_3 = (5,-4,2)
+						$
+					</p>
+
+			<p style="margin-left:30px">La solución general de $\rm {"}\bar{S}{"}$
+			es:</p>
+    
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm C_1 e^x (2, 0, 1) + C_2 e^{-x} (4, -2, 1) +
+						C_3 e^{2x} (5, -4, 2) = \\[1ex]
+						\qquad \rm = C_1 (2e^x, 0, e^x) + C_2 (4e^{-x}, -2e^{-x},
+						e^{-x}) + C_3 (5e^{2x}, -4e^{2x}, 2e^{2x}) \\[1ex]
+						\rm C_1,C_2,C_3 \in \mathbb{R}
+					\end{array}
+					$
+				</p>
+				
+			<p style="margin-left:30px">
+				Por tanto:</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm Y_1 = (2e^x, 0 , e^x) \\[1ex]
+						\rm Y_2 = (4e^{-x},-2e^{-x},e^{-x}) \\[1ex]
+						\rm Y_3 = (5e^{2x},-4e^{2x},2e^{2x})
+					\end{array}
+					$
+				</p>
+
+    <p>2.º paso:</p>
+    
+			<p style="margin-left:30px">
+				Encontrar una solución particular de $\rm {"}S{"}$ del tipo:</p>
+				
+				<p style="margin-left:60px">
+					$\rm C_1(x) Y_1 + C_2(x) Y_2 + C_3(x) Y_3$</p>
+					
+			<p style="margin-left:30px">Para ello:</p>
+			
+				<p style="margin-left:60px">$\rm \bar{Y} \cdot C' = B \enspace$ ?</p>
+				
+				<p style="margin-left:60px">
+					$
+					\begin{pmatrix}
+						\rm 2e^x &amp; \rm 4e^{-x} &amp; \rm 5e^{2x} \\
+						\rm 0 &amp; \rm -2e^{-x} &amp; \rm -4e^{2x} \\
+						\rm e^x &amp; \rm e^{-x} &amp; \rm 2e^{2x}
+					\end{pmatrix}
+					\begin{pmatrix}
+						\rm C_1'(x) \\ \rm C_2'(x) \\ \rm C_3'(x)
+					\end{pmatrix}
+					=
+					\begin{pmatrix}
+						0 \\ 0 \\ \rm \sin x
+					\end{pmatrix}
+					$
+				</p>
+    
+			<p style="margin-left:30px">Se plantea el sistema:</p>
+			
+				<p style="margin-left:60px">
+					$
+					\left\{
+					\begin{array}{l}
+						\rm 2e^x a + 4e^{-x} b + 5e^{2x} c = 0 \\
+						\rm \hphantom{2e^x a} - 2e^{-x} b - 4 e^{2x} c = 0 \\
+						\rm \hphantom{2}e^x a + \hphantom{4}e^{-x} b + 2e^{2x} c =
+						\sin x
+					\end{array}
+					\right.
+					\qquad
+					\rm C_1'(x) = a, C_2'(x) = b, C_3'(x) = c
+					$
+				</p>
+
+			<p style="margin-left:30px">
+				Donde $\rm Ec_i$ es, de arriba a abajo, la ecuación $\rm i$ del
+				sistema, resolver:</p>
+			
+				<p style="margin-left:60px">
+					$
+					\begin{align}
+						\rm 2 \times Ec_3 + Ec_2 &amp;: \rm \enspace 2e^x a =
+						2 \sin x \Rightarrow a = e^{-x} \sin x \\[1ex]
+						\rm Ec_1 + 2 \times Ec_2 &amp;: \rm \enspace 2e^x a -
+						3e^{2x} c = 0 \Rightarrow c = \dfrac{2}{3} e^{-2x} \sin x \\[1ex]
+						\rm Ec_2 &amp;: \enspace \rm b = -\dfrac{4}{3} e^x \sin x
+					\end{align}
+					$
+				</p>
+			
+			<p style="margin-left:30px">
+				Por tanto, integrando por partes:</p>
+				
+				<p style="margin-left:60px">
+					$\rm C_1(x) = \displaystyle \int e^{-x} \sin x \, dx$</p>
+					
+					<p style="margin-left:90px">
+						$
+						\begin{align}
+							\rm \displaystyle \int e^{-x} \sin x \, dx &amp;=
+							\rm \displaystyle
+							e^{-x} (-\cos x) - \int (-e^{-x}) (-\cos x) \, dx = \\[1ex]
+							&amp;= \rm \displaystyle
+							-e^{-x} \cos x - \int e^{-x} \cos x \, dx
+						\end{align}
+						$
+					</p>
+					
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \displaystyle \int e^{-x} \cos x \, dx &amp;=
+								\rm \displaystyle
+								e^{-x} \sin x - \int (-e^{-x}) \sin x \, dx = \\
+								&amp;= \rm \displaystyle
+								e^{-x} \sin x + \int e^{-x} \sin x \, dx
+							\end{align}
+							$
+						</p>
+						
+					<p style="margin-left:90px">
+						$
+						\llap{\Rightarrow {}}
+						\rm \displaystyle \int e^{-x} \sin x \, dx =
+						-e^{-x} \cos x - e^{-x} \sin x - \int e^{-x} \sin x \, dx
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$\rm \displaystyle 2 \int e^{-x} \sin x \, dx =
+						-e^{-x} (\cos x + \sin x)$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\llap{\Rightarrow {}}
+						\rm \displaystyle \int e^{-x} \sin x \, dx =
+						-\dfrac{1}{2} e^{-x} (\cos x + \sin x)
+						$
+					</p>
+					
+				<p style="margin-left:60px">
+					$
+					\llap{\rightarrow {}} \rm C_1(x) = -\dfrac{1}{2} e^{-x} (\cos x + \sin x)
+					$
+				</p>
+    
+				<p style="margin-left:60px">
+					$
+					\rm \displaystyle
+					C_2(x) = \int -\dfrac{4}{3} e^{x} \sin x \, dx =
+					-\dfrac{4}{3} \int e^{x} \sin x \, dx
+					$
+				</p>
+    
+					<p style="margin-left:90px">
+						$
+						\rm \displaystyle
+						\int e^{x} \sin x \, dx = e^x \sin x - \int e^x \cos x \, dx
+						$
+					</p>
+					
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \displaystyle	\int e^x \cos x \, dx &amp;=
+								\rm \displaystyle e^x \cos x - \int e^x (-\sin x) \, dx
+							  = \\[1ex]
+							  &amp;= \rm \displaystyle e^x \cos x + \int e^x \sin x \, dx
+							\end{align}
+							$
+						</p>
+						
+					<p style="margin-left:90px">
+						$
+						\llap{\Rightarrow {}} \rm \displaystyle \int e^x \sin x \,dx =
+						e^x \sin x - e^x \cos x - \int e^x \sin x \, dx
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$\rm \displaystyle 2 \int e^x \sin x \, dx =
+						e^x (\sin x - \cos x)$</p>
+						
+					<p style="margin-left:90px">
+						$\llap{\Rightarrow {}} \rm \displaystyle \int e^x \sin x \, dx
+						= \dfrac{1}{2} e^x (\sin x - \cos x)$</p>
+						
+				<p style="margin-left:60px">
+					$\llap{\rightarrow {}} \rm C_2(x) = -\dfrac{4}{3} \displaystyle
+					\int e^x \sin x \, dx = \dfrac{2}{3} e^x (\cos x - \sin x)$</p>
+					
+				<p style="margin-left:60px">
+					$
+					\rm \displaystyle C_3(x) = \int \dfrac{2}{3} e^{-2x} \sin x \, dx
+					= \dfrac{2}{3} \int e^{-2x} \sin x \, dx
+					$
+				</p>
+				
+					<p style="margin-left:90px">
+						$
+						\begin{align}
+							\rm \displaystyle \int e^{-2x} \sin x \, dx &amp;=
+							\rm \displaystyle
+							e^{-2x} (-\cos x) - \int (-2e^{-2x})(-\cos x) \, dx = \\[1ex]
+							&amp;= \rm \displaystyle
+							-e^{-2x} \cos x - 2 \int e^{-2x} \cos x \, dx
+						\end{align}
+						$
+					</p>
+					
+						<p style="margin-left:120px">
+							$
+							\begin{align}
+								\rm \displaystyle \int e^{-2x} \cos x \, dx &amp;=
+								\rm \displaystyle
+								e^{-2x} \sin x - \int (-2e^{-2x}) \sin x \, dx = \\[1ex]
+								&amp;= \rm \displaystyle
+								e^{-2x} \sin x + 2 \int e^{-2x} \sin x \, dx
+							\end{align}
+							$
+						</p>
+				
+					<p style="margin-left:90px">
+						$
+						\llap{\Rightarrow {}} \rm \displaystyle 
+						\int e^{-2x} \sin x \, dx = -e^{-2x} \cos x - 2 e^{-2x} \sin x
+						- 4 \int e^{-2x} \sin x \, dx
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\rm \displaystyle
+						5 \int e^{-2x} \sin x \, dx = -e^{-2x} (\cos x + 2 \sin x)
+						$
+					</p>
+					
+					<p style="margin-left:90px">
+						$
+						\llap{\Rightarrow {}} \rm \displaystyle
+						\int e^{-2x} \sin x \, dx =
+						-\dfrac{1}{5} e^{-2x} ( \cos x + 2\sin x )
+						$
+					</p>
+					
+				<p style="margin-left:60px">
+					$
+					\llap{\rightarrow {}} \rm \displaystyle
+					C_3(x) = \dfrac{2}{3} \int e^{-2x} \sin x \, dx =
+					-\dfrac{2}{15} e^{-2x} (\cos x + 2 \sin x)
+					$
+				</p>
+				
+			<p style="margin-left:30px">Solución particular de $\rm {"}S{"}$:</p>
+			
+				<p style="margin-left:60px">
+					$
+					\begin{array}{l}
+						\rm C_1(x)Y_1 + C_2(x)Y_2 + C_3(x)Y_3 = \\[1ex]
+						\qquad
+						\begin{split}
+							= {} &amp;\rm -\dfrac{1}{2}e^{-x} ( \cos x + \sin x)
+							(2e^x,0,e^x) + {} \\
+							&amp;\rm + \dfrac{2}{3}e^{x} ( \cos x - \sin x)
+							(4e^{-x},-2e^{-x},e^{-x}) - {} \\
+							&amp;\rm - \dfrac{2}{15} e^{-2x} ( \cos x + 2\sin x)
+							(5e^{2x},-4e^{2x},2e^{2x}) = 
+						\end{split} \\[1ex]
+						\qquad
+						\begin{split}
+							= {} &amp;\rm \bigl(-(\cos x + \sin x),0,
+							-\dfrac{1}{2} ( \cos x + \sin x) \bigr) + {} \\
+							&amp;\rm + \bigl( \dfrac{8}{3} (\cos x - \sin x),
+							-\dfrac{4}{3} (\cos x - \sin x),
+							\dfrac{2}{3}(\cos x - \sin x) \bigr) + {} \\
+							&amp;
+							\begin{split}
+								+ \; \bigl( &amp;\rm {-}\dfrac{2}{3} (\cos x + 2\sin x),
+								\dfrac{8}{15} (\cos x + 2\sin x), \\
+								&amp;\rm {-}\dfrac{4}{15} (\cos x + 2\sin x) \bigr) =
+							\end{split}
+						\end{split} \\[1ex]
+						\qquad
+						\begin{split}
+							= {} &amp; \rm \bigl( -\cos x + \dfrac{8}{3} \cos x -
+							\dfrac{2}{3} \cos x - \sin x - \dfrac{8}{3} \sin x -
+							\dfrac{4}{3} \sin x, \\
+							&amp; \rm {-}\dfrac{4}{3} \cos x + \dfrac{8}{15} \cos x +
+							\dfrac{4}{3} \sin x + \dfrac{16}{15} \sin x, \\
+							&amp; \rm {-}\dfrac{1}{2} \cos x + \dfrac{2}{3} \cos x
+							- \dfrac{4}{15} \cos x - \dfrac{1}{2} \sin x
+							- \dfrac{2}{3} \sin x - \dfrac{8}{15} \sin x ) =
+						\end{split} \\[1ex]
+						\qquad
+						= \rm (\cos x - 5 \sin x, -\dfrac{4}{5} \cos x +
+						\dfrac{12}{5} \sin x, -\dfrac{1}{10} \cos x -
+						\dfrac{51}{30} \sin x)
+					\end{array}
+					$
+				</p>
+			
+			<p style="margin-left:30px">Solución general de $\rm {"}S{"}$:</p>
+			
+			<p style="text-align:center">
+				Solución particular de $\rm {"}S{"}$ $+$ Solución general de
+				$\rm {"}\bar{S}{"}$</p>
+				
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\rm y_1 =
+					\cos x - 5 \sin x + 2C_1 e^x + 4C_2 e^{-x} + 5 C_3 e^{2x} \\[1ex]
+					\rm y_2 =
+					{-}\dfrac{4}{5} \cos x + \dfrac{12}{5} \sin x - 2C_2 e^{-x}
+					- 4C_3 e^{2x} \\[1ex]
+					\rm y_3 =
+					{-}\dfrac{1}{10} \cos x - \dfrac{51}{30} \sin x + C_1 e^x +
+					C_2 e^{-x} + 2C_3 e^{2x}
+ 				\end{array}
+				$
+			</p>
+			
+			<p style="text-align:center">
+				$\rm C_1, C_2, C_3 \in \mathbb{R}$
+			</p>
+				
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Ecuaciones diferenciales de
+      orden n con coeficientes constantes</span>:
+    </p>
+    
+			<p style="text-align:center">
+				$\rm y^{(n)} + a_{n-1}(x)y^{(n-1)} + \dotsb + a_1(x)y^{(1)} +
+				a_0(x)y = b(x)$
+			</p>
+			
+		<p>Siendo que:</p>
+		
+			<p style="margin-left:30px">
+				• $\rm b(x) = 0 \Rightarrow$ homogénea</p>
+			
+			<p style="margin-left:30px">
+				• $\rm y^{(1)} + a_0(x)y = b(x)$, ya se ha estudiado.</p>
+				
+    <p>Caso general, pero con $\rm a_{n-1}(x), \dotsc, a_0(x)$
+    constantes:</p>
+    
+			<p style="text-align:center">
+				$
+				\cssId{*}{
+					\leqalignno{
+						&amp;\rm y^{(n)} + a_{n-1} y^{(n-1)} + \dotsb + a_1 y^{(1)} +
+						a_0 y = b(x) &amp; (\ast)
+					}
+				}
+				$
+			</p>
+			
+    <p>Existe un cierto sistema de n ecuaciones diferenciales lineales de
+    orden uno con coeficientes constantes equivalente.</p>
+    
+    <p>Resolución:</p>
+    
+    <p>$\leftarrow$ Las soluciones de la ecuación verifican:</p>
+    
+			<p style="text-align:center">
+				$
+				\cssId{**}{
+					\leqalignno{
+						&amp;\rm y^{(n)} + a_{n-1} y^{(n-1)} + \dotsb + a_1 y^{(1)} +
+						a_0 y = 0 \quad \text{(homogeneizada)}
+						&amp; (\ast\ast)
+					}
+				}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				1) $\rm h_1, h_2$ soluciones de $\href{#*}{(\ast)} \rm \rightarrow
+				h_1 - h_2$ solución de $\href{#**}{(\ast\ast)}$</p>
+				
+			<p style="margin-left:30px">
+				<span style="display:table-cell;vertical-align:top">2)&nbsp;</span>
+				<span style="display:table-cell">
+				$
+				\left.
+				\begin{array}{l}
+					\rm h_1, \text{ solución de } \href{#*}{(\ast)} \\
+					\rm h_2, \text{ solución de } \href{#**}{(\ast\ast)}
+				\end{array}
+				\!
+				\right\}
+				$
+				</span>
+				<span style="display:table-cell">
+					$\rm \, h_1 + h_2$ solución de $\href{#*}{(\ast)}$
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				3) La solución general de $\href{#**}{(\ast\ast)}$ tiene una
+				estructura de espacio vectorial de dimensión n.</p>
+				
+    <p>Para resolver $\href{#*}{(\ast)}$ se ha de:</p>
+    
+			<p style="margin-left:30px">
+				1) Resolver la homogénea encontrando una base de la solución.</p>
+    
+			<p style="margin-left:30px">
+				2) Encontrar una solución particular de $\href{#*}{(\ast)}$.</p>
+			
+			<p style="margin-left:30px">
+				3) Sumar la solución particular de $\href{#*}{(\ast)}$ con la
+				general de $\href{#**}{(\ast\ast)} \Rightarrow$ Solución de
+				$\href{#*}{(\ast)}$.
+			</p>
+			
+		<p>
+			<span style="display:table-cell">1)</span>
+			<span style="display:table-cell;text-align:center;width:100%">
+				$
+				\rm y^{(n)} + a_{n-1} y^{(n-1)} + \dotsb + a_1 y^{(1)} + a_0 y
+				= 0
+				$
+			</span>
+		</p>
+			
+			<p>
+				$\rightarrow$ polinomio característico:</p>
+    
+				<p style="margin-left:30px">
+					$\rm x^n + a_{n-1} x^{n-1} + \dotsb + a_0$</p>
+					
+    <p>Se supone que:</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$
+					\left.
+					\begin{aligned}
+						&amp;\rm λ_1, r_1 \\
+						&amp;\vdots \\
+						&amp;\rm λ_s, r_s
+					\end{aligned}
+					\right\}
+					\:
+					$
+				</span>
+				<span style="display:table-cell;vertical-align:baseline">
+					<span style="display:block">
+						raíces del polinomio
+					</span>
+					<span style="display:block">
+						($\rm λ_i$ raíz de multiplicidad $\rm r_i$)
+					</span>
+				</span>
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm r_1 + \dotsb + r_s = n$</p>
+				
+    <p>Entonces es una base de la solución general:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+					\begin{array}{l}
+						\rm e^{λ_1 x}, x e^{λ_1 x}, \dotsc, x^{r_1 - 1} e^{λ_1 x} \\
+						\vdots \\
+						\rm e^{λ_s x}, x e^{λ_s x}, \dotsc, x^{r_s - 1} e^{λ_s x}
+					\end{array}
+				\right.
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(4)} - y^{(3)} - 3y^{(2)} + 5y^{(1)} - 2y = 0$</p>
+				
+    <p>$\rightarrow \pcar$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x^4 - x^3 - 3x^2 + 5x - 2 = (x - 1)^3 (x + 2)$</p>
+			
+				<p style="margin-left:60px">
+					$\rm λ_1 = 1, \enspace r_1 = 3$</p>
+					
+				<p style="margin-left:60px">
+					$\rm λ_2 = -2, \enspace r_2 = 1$</p>
+					
+    <p>Solución general:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \{C_1 e^x + C_2 x e^x + C_3 x^2 e^x + C_4 e^{-2x} \mathrel{|}
+				C_1, C_2, C_3, C_4 \in \mathbb{R}\}$</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+			<span style="display:table-cell">2)</span>
+			<span style="display:table-cell">
+				$
+				\begin{align}
+					&amp;\rm y^{(n)} + a_{n-1} y^{(n-1)} + \dotsb + a_1 y^{(1)} +
+					a_0 y = b(x) \tag{$\ast$} \label{1}
+				\end{align}
+				$
+			</span>
+		</p>
+
+    <p>⁃ "método de variación de las constantes"</p>
+    
+			<p style="margin-left:30px">
+				$\rm h_1(x), \dotsc, h_n(x) \enspace$ base de la solución de la
+				homogénea.
+			</p>
+    
+    <p>Existe una solución particular de $\eqref{1}$ de la forma:</p>
+			
+			<p style="margin-left:30px">
+				$\rm C_1(x) h_1(x) + \dotsb + C_n(x) h_n(x)$</p>
+				
+    <p>Con $\rm C_1(x), \dotsc, C_n(x)$ tales que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{aligned}
+					&amp;\rm C_1'(x) h_1(x) + \dotsb + C_n'(x) h_n(x) = 0 \\[1ex]
+					&amp;\rm C_1'(x) h_1'(x) + \dotsb + C_n'(x) h_n'(x) = 0 \\[1ex]
+					&amp;\vdots \\[1ex]
+					&amp;\rm C_1'(x) h_1^{(n-2)}(x) + \dotsb + C_n' h_n^{(n-2)}(x)
+					= 0 \\[1ex]
+					&amp;\rm C_1'(x) h_1^{(n-1)}(x) + \dotsb + C_n'(x) h_n^{(n-1)}(x)
+					= b(x)
+				\end{aligned}
+				\right\}
+				$
+			</p>    
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(3)} + 3y^{(2)} + 3y^{(1)} + y = x$</p>
+				
+			<p style="margin-left:30px">
+				$\rm x^3 + 3x^2 + 3x + 1 = (x + 1)^3$</p>
+    
+				<p style="margin-left:60px">
+					$\rm λ_1 = -1, r_1 = 3$</p>
+					
+				<p style="margin-left:60px">
+					$\rm e^{-x}, xe^{-x}, x^2e^{-x}$ base de la homogénea</p>
+					
+			<p style="margin-left:30px">
+				$\exists$ solución particular de la forma:</p>
+				
+				<p style="margin-left:60px">
+					$\rm C_1(x) e^{-x} + C_2(x) xe^{-x} + C_3(x) x^2e^{-x}
+					\enspace$ ?</p>
+					
+    <p>Se plantea el siguiente sistema de ecuaciones:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+					\begin{array}{l}
+						\rm C_1'(x) e^{-x} + C_2'(x) xe^{-x} + C_3'(x) x^2e^{-x}
+						= 0 \\[1ex]
+						\rm C_1'(x) (-e^{-x}) + C_2'(x) (e^{-x} - xe^{-x}) +
+						C_3'(x)(2xe^{-x} - x^2e^{-x}) = 0 \\[1ex]
+						\begin{split}
+							&amp;
+							\rm C_1'(x)(e^{-x})	+ C_2'(x) (-e^{-x} - e^{-x} + xe^{-x})
+							+ {} \\
+							&amp;
+							\rm + C_3'(x) (2e^{-x} - 2xe^{-x} - 2xe^{-x} + x^2e^{-x})
+							= x
+						\end{split}
+					\end{array}
+				\right.
+				$
+			</p>
+			
+    <p>Que puede escribirse:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\left\{
+				\begin{alignedat}{4}
+					\rm e^{-x} C_1'(x) + {}&amp; &amp;\rm xe^{-x} C_2'(x) + {}&amp;
+					&amp;\rm x^2e^{-x} C_3'(x)&amp; &amp;&amp;= 0 \\
+					\rm -e^{-x}C_1'(x) + {}&amp; &amp;\rm (1-x)e^{-x} C_2'(x) + {}&amp;
+					&amp;\rm (2x-x^2) e^{-x} C_3'(x)&amp; &amp;&amp;= 0 \\
+					\rm e^{-x} C_1'(x) + {}&amp; &amp;\rm (-2+x)e^{-x} C_2'(x) + {}&amp;
+					&amp;\rm (2-4x+x^2)e^{-x} C_3'(x)&amp; &amp;&amp;\rm = x
+				\end{alignedat}
+				\right.
+				$
+			</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}
+					\rm Ec_1 + Ec_2 : {} &amp;\enspace \rm C_2'(x) = -2x C_3'(x) \\[1ex]
+					\rm Ec_2 + Ec_3 : {} &amp;\enspace \rm C_3'(x) = \dfrac{1}{2} xe^{x}
+					\quad C_2'(x) = -x^2e^x \\[1ex]
+					\text{De } \rm Ec_1 : {} &amp;\enspace \rm C_1'(x) =
+					\dfrac{1}{2}x^3e^x
+				\end{aligned}
+				$
+			</p>
+
+    <p>Integrando por partes:</p>
+    
+			<p style="margin-left:30px">
+				$\rm C_1(x) = \displaystyle \int \dfrac{1}{2} x^3 e^x \, dx =
+				\dfrac{1}{2} \int x^3 e^x \, dx$</p>
+				
+				<p style="margin-left:60px">
+					$\rm \displaystyle \int x^3 e^x \, dx = x^3 e^x -
+					\int 3x^2 e^x \, dx = x^3 e^x - 3 \int x^2 e^x \, dx$</p>
+					
+					<p style="margin-left:90px">
+						$\rm \displaystyle \int x^2 e^x \, dx = x^2 e^x -
+						\int 2x e^x \, dx = x^2 e^x - 2 \int xe^x \, dx$</p>
+						
+						<p style="margin-left:120px">
+							$\rm \displaystyle \int x e^x \, dx =
+							x e^x - \int e^x \, dx = x e^x - e^x = e^x (x -1)$</p>
+							
+					<p style="margin-left:90px">
+						$\rm \displaystyle \int x^2 e^x \, dx = x^2 e^x - 2e^x (x - 1)
+						= e^x (x^2 - 2x + 2)$</p>
+						
+				<p style="margin-left:60px">
+					$\rm \displaystyle \int x^3 e^x \, dx =	x^3 e^x -
+					3e^x (x^2 - 2x + 2) = e^x (x^3 - 3x^2 + 6x - 6)$</p>
+					
+			<p style="margin-left:30px">
+				$\llap{\rightarrow {}} \rm C_1(x) =
+				\dfrac{1}{2} e^x (x^3 - 3x^2 + 6x - 6)$</p>
+				
+			<p style="margin-left:30px">
+				$\llap{\rightarrow {}} \rm C_2(x) =
+				\displaystyle \int -x^2 e^x \, dx	= -\int x^2 e^x \, dx =
+				-e^x (x^2 - 2x + 2)$</p>
+				
+			<p style="margin-left:30px">
+				$\llap{\rightarrow {}} \rm C_3(x) =
+				\displaystyle \int \dfrac{1}{2} xe^x \, dx =
+				\dfrac{1}{2} \int x e^x \, dx = \dfrac{1}{2} e^x (x - 1)$</p>
+				
+    <p>La solución particular es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm C_1(x) e^{-x} + C_2(x) xe^{-x} + C_3(x) x^2 e^{-x} = \\[1ex]
+					\qquad \rm = \dfrac{1}{2} (x^3 - 3x^2 + 6x - 6) - (x^2 - 2x + 2)x
+					+ \dfrac{1}{2} (x-1) x^2 = \\[1ex]
+					\qquad \rm = \dfrac{1}{2} x^3 - \dfrac{3}{2} x^2 + 3x - 3 - x^3 +
+					2x^2 - 2x + \dfrac{1}{2} x^3 - \dfrac{1}{2} x^2 = \\[1ex]
+					\qquad \rm = x - 3
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>⁃ Otros métodos alternativos al método de variación de las constantes
+    para:</p>
+    
+			<p style="text-align:center">
+				$\rm y^{(n)} + a_{n-1} y^{(n-1)} + \dotsb + a_1 y^{(1)} + a_0 y
+				= b(x)$</p>
+				
+			<p style="margin-left:30px">
+				1) $\rm b(x)$ es un polinomio de grado m.</p>
+				
+				<p style="margin-left:60px">
+					$\Rightarrow$ Existe una solución polinómica de grado m:</p>
+			
+			<p style="text-align:center">
+				$\rm d_m x^m + d_{m-1} x^{m-1} + \dotsb + d_0$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+			
+			<p style="margin-left:30px">
+				$\rm y^{(3)} + 3y^{(2)} + 3y^{(1)} + y = x$</p>
+				
+			<p style="margin-left:30px">
+				$\rm b(x) = x$ polinomio de grado 1.</p>
+					
+			<p style="margin-left:30px">
+				$\Rightarrow$ Existe una solución polinómica de grado 1.</p>
+				
+		<p>Entonces:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm d_1 x + d_0 = y \\[1ex]
+					\rm y^{(1)} = d_1 \\[1ex]
+					\rm y^{(2)} = 0 \\[1ex]
+					\rm y^{(3)} = 0
+				\end{array}
+				$
+			</p>
+			
+		<p>Se sustituye en la ecuación:</p>
+		
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm 0 + 0 + 3d_1 + d_1 x + d_0 = x \\[1ex]
+					\rm d_1 x + (3d_1 + d_0) = x \\[1ex]
+					\Rightarrow
+					\rm
+					\left.
+						\begin{aligned}
+							&amp;\rm d_1 = 1 \\[1ex]
+							&amp;\rm 3 d_1 + d_0 = 0
+						\end{aligned}
+					\right\}
+					\Rightarrow d_0 = -3
+				\end{array}
+				$
+			</p>
+			
+		<p>Así que:</p>
+		
+			<p style="margin-left:30px">
+				$\boxed{\rm x - 3} \enspace$ Solución particular.</p>
+			
+    <p>Solución general de la ecuación diferencial es:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\{
+					\rm
+					\mathop{
+						\underline{
+							\vphantom{C_1 e^{-x} + C_2 xe^{-x} + C_3 x^2e^{-x}}
+							x-3
+						}
+					}\limits_{
+						\begin{subarray}{c}
+							\llap{\text{s}} \text{olució} \rlap{\text{n}} \\
+							\llap{\text{parti}} \rlap{\text{cular}}
+						\end{subarray}
+					}
+					+
+					\mathop{
+						\underline{C_1 e^{-x} + C_2 xe^{-x} + C_3 x^2e^{-x}}
+					}\limits_{
+						\begin{subarray}{c}
+							\text{solución general de} \\
+							\text{la homogénea}
+						\end{subarray}
+					}
+					\mathrel{|} C_1, C_2, C_3 \in \mathbb{R}
+				\}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="margin-left:30px">2) $\rm b(x) = ae^{αx}$</p>
+    
+				<p style="margin-left:60px">
+					$\Rightarrow \exists$ solución particular de la forma:</p>
+					
+					<p style="margin-left:90px">
+							1. $\rm me^{αx}$, $\rm m$ a determinar si $α$ no es raíz del
+							polinomio característico.</p>
+					
+					<p style="margin-left:90px">
+						<span style="display:table-cell;white-space:nowrap">
+							2. $\rm m x^r e^{αx}$,&nbsp;
+						</span>
+						<span style="display:table-cell">
+							$\rm m$ a determinar si $α$ es raíz con multiplicidad
+							$\rm r$ del polinomio característico.
+						</span>
+					</p>
+					
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(2)} - 2y^{(1)} + 5y = 2e^{-x}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm b(x) = 2e^{-x} = ae^{αx}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm α = -1 \enspace \pcar: x^2 - 2x + 5 \Rightarrow -1$ no es
+				raíz.</p>
+				
+			<p style="margin-left:30px">
+				$\Rightarrow \exists$ solución particular $\rm me^{-x} = y$</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(1)} = -me^{-x}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm y^{(2)} = me^{-x}$</p>
+				
+    <p>Sustituyendo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm me^{-x} - 2(-me^{-x}) + 5(me^{-x}) = 2e^{-x}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm e^{-x}(m + 2m + 5m) = 2e^{-x}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm 8m = 2 \Rightarrow m = 1{∕}4$</p>
+				
+		<p>Solución: $\boxed{\rm (1{∕}4)e^{-x}}$</p>
+				
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo" style="margin-bottom:1em">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(3)} + y^{(2)} - 2y^{(1)} = -e^{x}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm b(x) = -e^{x} = ae^{αx}$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm
+				α
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{\text{m}} \text{u} \rlap{\text{ltiplicidad 1}}
+					\end{subarray}
+				}{=} 1 \quad \pcar: x^3 + x^2 - 2x = x(x-1)(x+2)
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$\Rightarrow$ La solución particular tiene la forma $\rm mxe^x$.</p>
+				
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm y = mxe^x$</p>
+    
+			<p style="margin-left:30px">
+				$\rm y^{(1)} = me^x + mxe^x = me^x (1 + x)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm y^{(2)} = me^x + me^x (1 + x) = me^x (2 + x)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm y^{(3)} = me^x + me^x (2 + x) = me^x (3 + x)$</p>
+				
+    <p>Reemplazando:</p>
+    
+			<p style="margin-left:30px">
+				$\rm me^x (3 + x) + me^x (2 + x) - 2me^x (1 + x) = -e^x$</p>
+				
+			<p style="margin-left:30px">
+				$\rm m(3 + x + 2 + x - 2(1 + x)) = -1$</p>
+    
+			<p style="margin-left:30px">
+				$\Rightarrow \rm m = -1{∕}3$</p>
+				
+    <p>Solución:</p>
+    
+			<p style="margin-left:30px">
+				$\boxed{\rm -(1{∕}3)xe^x}$</p>
+			    
+		</div>
+
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="resolucion_ecuaciones_diferenciales_primer_orden.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="teorema_valor_medio.html" title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

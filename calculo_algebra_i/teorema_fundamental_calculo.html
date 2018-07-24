@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Teorema fundamental del cálculo">
+    <meta name="keywords" content="teorema, fundamental, cálculo">
+    <title>Teorema fundamental del cálculo</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+
+			<h3>Teorema fundamental del cálculo</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Siendo $\rm f : [a,b] \to \mathbb{R}$ continua y $\rm c \in (a,b)$,
+    se define la función integral $\rm A$ como:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \mathrel{\forall} x \in [a,b] \quad \displaystyle \int_c^x
+				f(t) \, dt = A(x)$</p>
+				
+    <p">Entonces, en este caso, la derivada de la función integral es la
+    función integrando. Esto es:</p>
+    
+			<p style="margin-left:30px">
+				$\rm A'(x) = f(x) \quad \mathrel{\forall} x \in [a,b]$</p>
+				
+    <p>Esto es lo que se conoce como 1.<sup>er</sup> teorema fundamental del cálculo.</p>
+    
+    <hr>
+    
+    <p>Demostración intuitiva geométrica:</p>
+    
+    <p>Si $\rm f$ es mayor que 0 para todo $\rm x$, $\rm A$ es el área
+    que hay debajo de $\rm f$.</p>
+    
+		<center>
+			<object data="teorema_fundamental_calculo/teorema_fundamental_calculo_01.svg"
+			type="image/svg+xml" width="595" height="250"></object>
+		</center>
+		
+    <p>Cuando $\rm h \to 0$ entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm f(x) \approx \dfrac{A(x+h) - A(x)}{h}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\rm \llap{h} \to \rlap{0}
+					\end{subarray}
+				}{=} A'(x)
+				$
+			</p>
+    
+    <p>Por tanto $\rm A(x)$ debe ser la "antiderivada" de $\rm f(x)$. Esto
+    es, $\rm A(x)$ es primitiva de $\rm f(x)$ (i.e. su integral).</p>
+    
+    <hr>
+    
+    <p>Sea $λ$ una primitiva de $\rm f$ (i.e. $\rm λ' : f$), y siendo
+    $\rm A$ primitiva de $\rm f$, se encuentra que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (A - λ)' = A' - λ' = f - f = 0$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\Rightarrow {}&amp;\rm A - λ = k \: (\text{cte.}) \\[1ex]
+					&amp;\rm A = λ + k
+				\end{align}
+				$
+			</p>
+			
+    <p>Puede escribirse ahora:</p>
+			
+			<p style="margin-left:30px">
+				$\rm \mathrel{\forall} x \in [a,b] \quad \displaystyle \int_c^x
+				f(t) \, dt = λ(x) + k$</p>
+				
+    <p>Para $\rm x = c$ se tiene que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm λ(c) + k = \displaystyle \int_c^c f(t) \, dt = 0 \quad$
+				(área $= 0$)</p>
+				
+			<p style="margin-left:30px">
+				$\Rightarrow \rm k = -λ(c)$</p>
+				
+			<p style="margin-left:30px">
+				$\Rightarrow \rm \displaystyle \int_c^x f(t) \, dt = λ(x) - λ(c)$
+			</p>
+			
+    <p>Así pues si $\rm c,d \in (a,b)$ y $λ$ es primitiva de $\rm f$,
+    entonces:</p>
+    
+			<p style="text-align:center">
+				$
+				\boxed{
+					\rm \displaystyle
+					\int_c^d f(t) \, dt = λ(d) - λ(c)
+				}
+				$ &ensp; Regla de barrow
+			</p>
+			
+			<p style="text-align:center">
+				(2.º teorema fundamental del cálculo)
+			</p>
+    
+    <hr>
+    
+    <p>$\rm F : I \to \mathbb{R}^n \quad a,b \in I \quad$ ($\rm I$,
+    intervalo)</p>
+    
+			<p style="margin-left:30px">
+				$\rm F : (f_1, \dotsc, f_n)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm F(t) = (f_1(t), \dotsc, f_n(t))$</p>
+				
+			<p style="margin-left:30px">
+				$\rm F{}'(t) = (f_1'(t), \dotsc, f_n'(t))$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle \int_a^b F(t) \, dt =
+				\left(
+					\int_a^b f_1(t) \, dt, \dotsc, \int_a^b f_n(t) \, dt
+				\right)
+				$
+			</p>
+    
+    <p>El teorema fundamental del cálculo dice:</p>
+    
+			<p style="margin-left:30px">
+				$\rm c,x \in I$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int_c^x F(t) \, dt = A(x) = (A_1(x), \dotsc,
+				A_n(x))$</p>
+				
+			<p style="margin-left:30px;margin-top:0em">
+				$\rm A'(x) = F(x)$</p>
+				
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm (A_1'(x), \dotsc, A_n'(x)) = (f_1(x), \dotsc, f_n(x))$</p>
+				
+    <hr>
+    
+    <p>Si se calcula el módulo de una integral se cumple la siguiente
+    desigualdad:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm \displaystyle
+				\biggl\lVert \int_a^b F(t) \, dt \biggr\rVert \leq
+				\int_a^b \lVert F(t) \rVert \, dt
+				$
+			</p>
+
+			<p style="text-align:center">
+				desigualdad "triangular" para la integral
+			</p>
+			
+			<p style="text-align:center">
+				($\rm \lVert u_1 + u_2 \rVert \leq \lVert u_1 \rVert +
+				\lVert u_2 \rVert,$ desigualdad triangular en vectores)</p>
+				
+    <p>$\rm h : I \to \mathbb{R}^n \quad$ (curva en $\rm \mathbb{R}^n)$</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell">
+						<object data="teorema_fundamental_calculo/teorema_fundamental_calculo_02.svg"
+							type="image/svg+xml" width="243" height="185"
+							style="display:inline-block;margin:0"></object>
+					</span>
+					<span style="display:table-cell;vertical-align:middle">
+						¿longitud de la curva entre $\rm A,B$?
+						<span style="display:block;margin-top:1ex">
+							$\rm \Lambda(A,B)\,?$
+						</span>
+					</span>
+				</span>
+			</p>
+    
+    <p>Mediante sucesivas triangulaciones puede encontrarse:</p>
+    
+    <center>
+			<object data="teorema_fundamental_calculo/teorema_fundamental_calculo_03.svg"
+			type="image/svg+xml" width="333" height="100"></object>
+		</center>
+    
+			<p style="text-align:center">
+				$
+				l =
+				\rm
+				\lVert \text{pend} \rVert \cdot \Delta t
+				\mspace{-76mu}
+				\underset{
+					\begin{subarray}{l}
+						\displaystyle \hphantom{\text{teorema de}} \uparrow \\
+						\displaystyle
+						\left.
+						\begin{array}{c}
+							\displaystyle \rm \Delta t \, \to \, 0, \\
+							\displaystyle \text{teorema del valor medio}
+						\end{array}
+						\right\}
+						\Rightarrow
+						\left\{
+							\begin{array}{l}
+								\displaystyle \rm \Delta t = dt, \\
+								\displaystyle \smash{\text{pendiente}} = \rm h'(t), \\
+								\displaystyle l = \smash{\text{segmento (infinitesimal)
+								de la curva}}
+							\end{array}
+						\right.
+					\end{subarray}
+				}{\mspace{-321mu} {} = \rlap{\lVert h'(t) \rVert \cdot dt}}
+				$
+			</p>
+			
+    <p>La longitud de la curva entre $\rm A$ y $\rm B$ sería la suma de
+    todos los segmentos continuos infinitesimales que la constituyen. Esto
+    es la integral de Riemann:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm \displaystyle
+				\Lambda(A,B) = \int_{c_1}^{c_2} \lVert h'(t) \rVert \, dt
+				$
+			</p>
+
+    <p>Puede observarse que:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm \displaystyle
+				\Bigl\lVert \overrightarrow{AB} \Bigr\rVert
+				= \lVert h(c_2) - h(c_1) \rVert
+				\mspace{-15mu}
+				\underset{
+					\begin{array}{c}
+						\uparrow \\
+						\begin{subarray}{c}
+							\text{Regla de} \\
+							\text{Barrow}
+						\end{subarray}
+					\end{array}
+				}{=}
+				\mspace{-15mu}
+				\biggl\lVert \int_{c_1}^{c_2} h'(t) \, dt \biggr\rVert
+				\mspace{-24mu}
+				\underset{
+					\begin{array}{c}
+						\downarrow \\
+						\begin{subarray}{c}
+							\text{desigualdad} \\
+							\text{triangular}
+						\end{subarray}
+					\end{array}
+				}{\leq}
+				\mspace{-24mu}
+				\int_{c_1}^{c_2} \lVert h'(t) \rVert \, dt
+				$
+			</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\mathbb{R} \to \mathbb{R}^2 \\[1ex]
+					\rm θ \to (r \cos θ, r \sin θ) \\[1ex]
+					θ = 0 \to θ = 2π
+				\end{array}
+				$
+				<object data="teorema_fundamental_calculo/teorema_fundamental_calculo_04.svg"
+				type="image/svg+xml" width="240" height="180"
+				style="display:inline-block;margin:0 2em;vertical-align:top;border:1px solid black;background:white">
+				</object>
+			</p>
+    
+			<p style="margin-left:30px">
+				$\displaystyle \rm \int_0^{2π} \lVert h'(θ) \rVert \, dθ =$
+				longitud de $\rm C$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm \displaystyle \int_0^{2π} \lVert (-r \sin θ, r \cos θ) \rVert
+					\, dθ = \int_0^{2π} \sqrt{r^2 \sin^2 θ + r^2 \cos^2 θ} \, dθ = \\[1ex]
+					\rm \displaystyle = \int_0^{2π}
+					\sqrt{r^2 (\smash{\underbrace{\sin^2 θ + \cos^2 θ}_1})}
+					\vphantom{\underbrace{\sin^2 θ + \cos^2 θ}_1} \,	dθ =
+					\int_0^{2π} r \, dθ = r [θ]_0^{2π} = r2π
+				\end{array}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\def\rarrow#1#2{
+					\stackrel{#1}{
+						\underset{#2}{
+							\Rule{0pt}{0.4em}{0pt}
+							\smash{
+								\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+							}
+						} 
+					}
+				}
+				\begin{aligned}[b]
+					\mathbb{R} &amp;\rarrow{\rm \large h}{} \mathbb{R}^3 \\
+					θ &amp;\rm \rarrow{\hphantom{\large h}}{} (r \cos θ, r \sin θ,
+					kθ) \quad r,k &gt; 0
+				\end{aligned}
+				\quad
+				$
+				hélice circular
+      </p>
+
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm A = (0,r,kπ{∕}2) = h(π{∕}2) \\[1ex]
+					\rm B = (r,0,4kπ) = h(4π)
+				\end{array}
+				$
+				<object data="teorema_fundamental_calculo/teorema_fundamental_calculo_05.svg"
+				type="image/svg+xml" width="240" height="200"
+				style="display:inline-block;margin:0 2em;border:1px solid black;background:white;vertical-align:middle">
+				</object>
+			</p>
+
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \Lambda(A,B) &amp;= \rm \int_{π{∕}2}^{4π} \lVert h'(θ) \rVert
+					\, dθ = \int_{π{∕}2}^{4π} \lVert (-r \sin θ, r \cos θ, k) \rVert
+					\, dθ = \\[1ex]
+					&amp;= \rm \int_{π{∕}2}^{4π} \sqrt{r^2 \sin^2 θ + r^2 \cos^2 θ + k^2}
+					\, dθ = \int_{π{∕}2}^{4π} \sqrt{r^2 + k^2} \, dθ = \\[1ex]
+					&amp;= \rm \sqrt{r^2 + k^2} [θ]_{π{∕}2}^{4π} = \sqrt{r^2 + k^2}
+					(7π{∕}2)
+				\end{align}
+				$
+      </p>
+
+		</div>
+		
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="derivacion_funciones_implicitas.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="calculo_integrales_linea.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

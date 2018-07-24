@@ -1,0 +1,963 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["cancel.js"],
+          MultLineWidth: "100%"
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Cálculo de polinomios de Taylor en una variable">
+    <meta name="keywords" content="cálculo, polinomios, Taylor, una, variable">
+    <title>Cálculo de polinomios de Taylor en una variable</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Cálculo de polinomios de Taylor en una variable</h3>
+
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+
+    <p>Los polinomios de Taylor permiten una aproximación local de una
+    función.</p>
+    
+    <p>Desarrollo:</p>
+    
+    <p>1) Teorema del valor medio:</p>
+    
+    <p>$\rm f$ derivable, $\rm a$ y $\rm b$ dos puntos del dominio, $\rm
+    \mathrel{\exists} c$ entre $\rm a$ y $\rm b$ tal que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f'(c) = \dfrac{f(b) - f(a)}{b - a}$</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\ast \; \rm f(b) = f(a) + (b - a)f'(c)$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\ast \; \rm f(b) - f(a)
+				\underset{
+					\begin{gathered}
+						\uparrow \\
+						\llap{\text{Teorema }}\text{d}\rlap{\text{e Barrow}}
+					\end{gathered}
+				}{=}
+				\displaystyle \int_a^b f'(t) \, dt = (b-a) f'(c)
+				$
+			</p>
+		
+    <p>Sea $\rm g(x) = f(a)$, función constante:</p>
+    
+    <ul>
+			<li>$\rm g$ es un polinomio de grado 0.</li>
+			<li>
+				$\rm g$ toma el mismo valor que $\rm f$ en $\rm a$:
+				<p>$\rm g(a) = f(a)$</p>
+			</li>
+			<li>
+				La diferencia entre $\rm g(x)$ y $\rm f(x)$ es "controlable":
+				<p>
+					$
+					\rm f(b) - g(b) = f(b) - f(a) =
+					\displaystyle \int_a^b f'(t) \, dt = (b - a) f'(c)
+					$
+				</p>
+			</li>
+		</ul>
+    
+    <p>2) Se define $\rm g(x) = f(a) + (x - a)f'(a)$, entonces:</p>
+    
+    <ul>
+			<li>$\rm g$ es un polinomio de grado 1.</li>
+			<li>
+				$\rm g$ y su primera derivada toman el mismo valor en $\rm a$ que
+				$\rm f$:
+				<p>$\rm g(a) = f(a) + 0 f'(a) = f(a)$</p>
+				<p>$\rm g'(x) = f'(a) \enspace \Rightarrow \enspace g'(a) = f'(a)$</p>
+			</li>
+			<li>
+				La diferencia entre $\rm g(x)$ y $\rm f(x)$ es "controlable":
+				<p>
+					$
+					\rm f(b) - g(b) =
+					\underset{
+						\boxed{1}
+					}{
+						\displaystyle \int_a^b (b-t) f^{(2)}(t) \, dt
+					} =
+					\underset{
+						\boxed{2}
+					}{
+						\vphantom{\displaystyle \int_a^b (b-t) f^{(2)}(t) \, dt}
+						\dfrac{(b-a)^2}{2} f^{(2)}(c)
+					}
+					\quad c 
+					$ entre $\rm a$ y $\rm b$
+				</p>
+			</li>
+		</ul>
+    
+    <p>Demostración de $\boxed{1}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f(b) - g(b) &amp;= \rm f(b) - f(a) - (b-a) f'(a) = \\[1ex]
+					&amp;= \rm \displaystyle \int_a^b f'(t) \, dt + \left[ (b-t)
+					f'(t) \right]_a^b = \left[ (b-t) f'(t) \right]_a^b -
+					\int_a^b -f'(t) \, dt = \\[1ex]
+					&amp;= \rm \displaystyle \int_a^b (b-t) f^{(2)}(t) \, dt
+				\end{align}
+				$
+			</p>
+			
+    <p>Donde se ha usado el método de integración por partes tal que:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int u \, dv = uv - \int v \, du$</p>
+				
+			<p style="margin-left:30px">
+				$\rm u = (b - t) \quad du = -dt$</p>
+				
+			<p style="margin-left:30px">
+				$\rm dv = f^{(2)}(t) \, dt \quad v = f'(t)$</p>
+				
+    <p>Demostración de $\boxed{2}$:</p>
+    
+    <p>Siendo $\rm f$ y $\rm f'$ continuas en $\rm [a,b]$ y existe $\rm f''$
+    en el interior del intervalo, entonces $\mathrel{\exists} \rm c \in
+    (a,b)$ tal que:</p>
+    
+			<p style="text-align:center">
+				$\rm f(b) = f(a) + (b-a)f'(a) + \dfrac{(b-a)^2}{2} f''(c)$</p>
+				
+    <p>Para demostrarlo se aplica el teorema de Rolle a la siguiente
+    función auxiliar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm s(x) = F(x) - \left( \dfrac{b-x}{b-a} \right)^{\! 2} F(a)$</p>
+				
+    <p>Donde:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x) = f(b) - f(x) - (b-x) f'(x)$</p>
+				
+    <p>$\rm s(x)$ es continua en $\rm [a,b]$, derivable en $\rm (a,b)$ y
+    cumple además que $\rm s(a) = s(b)$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm s(a) = F(a) - \left( \dfrac{b-a}{b-a} \right)^{\! 2} F(a) =
+					F(a) - F(a) = 0 \\[1ex]
+					\rm s(b) = F(b) - \left( \dfrac{b-b}{b-a} \right)^{\! 2} F(a) =
+					F(b) = f(b) - f(b) - (b-b)f'(b) = 0
+				\end{array}
+				$
+			</p>
+			
+    <p>La derivada de $\rm s(x)$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm s'(x) &amp;= \rm F'(x) + \dfrac{2(b-x)}{(b-a)^2} F(a) =
+					-f'(x) + f'(x) - (b-x) f''(x) + \dfrac{2(b-x)}{(b-a)^2} F(a)
+					= \\[1ex]
+					&amp;= \rm \dfrac{2(b-x)}{(b-a)^2}
+					\left( F(a) - \dfrac{(b-a)^2}{2} f''(x) \right)					
+				\end{align}
+				$
+			</p>
+			
+    <p>Aplicando el teorema de Rolle:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{l}
+					\rm s'(c) = \dfrac{2(b-c)}{(b-a)^2}
+					\left( F(a) - \dfrac{(b-a)^2}{2} f''(c) \right) = 0 \\[1ex]
+					\llap{\Rightarrow {}} \rm F(a) = \dfrac{(b-a)^2}{2} f''(c) \\[1ex]
+					\llap{\Rightarrow {}}
+					\rm f(b) - f(a) - (b-a)f'(a) = \dfrac{(b-a)^2}{2} f''(c) \;\;
+					\llap{
+						\boxed{
+							\phantom{
+								\rm f(b) - f(a) - (b-a)f'(a) = \dfrac{(b-a)^2}{2} f''(c)
+							}
+						}
+					} \\[1ex]
+					\quad \rm g(b) = f(a) + (b-a) f'(a) \\[1ex]
+					\llap{\Rightarrow {}}
+					\rm f(b) - g(b) = \dfrac{(b-a)^2}{2} f''(c) \:\:
+					\llap{
+						\boxed{
+							\phantom{\rm f(b) - g(b) = \dfrac{(b-a)^2}{2} f''(c)}
+						}
+					}
+				\end{array}
+				$
+			</p>
+
+    <p>3) Se define:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				P_n(x) = f(a) + (x-a)f^{(1)}(a) + \dfrac{(x-a)^2}{2!} f^{(2)}(a) +
+				\dotsb + \dfrac{(x-a)^n}{n!} f^{(n)}(a)
+				$
+			</p>
+			
+		<ul>
+			<li>$\rm P_n(x)$ es un polinomio de grado $\rm n$.</li>
+			<li>
+				$\rm P_n(x)$ toma hasta la derivada n-ésima el mismo valor que
+				$\rm f$ en $\rm a$.
+				<p>$\rm P_n^{(i)}(a) = f^{(i)}(a) \mathrel{\forall} i \leq n$</p>
+			</li>
+			<li>
+				La diferencia entre $\rm P_n(x)$ y $\rm f(x)$ es "controlable":
+				<p>
+					$
+					\rm f(x) - P_n(x) =
+					\underbrace{
+						\displaystyle \int_a^x \dfrac{(x-t)^n}{n!} f^{(n+1)}(t) \, dt
+					}_{\text{forma integral del resto}} =
+					\underbrace{
+						\vphantom{
+							\displaystyle \int_a^x \dfrac{(x-t)^n}{n!} f^{(n+1)}(t) \, dt
+						}
+						\dfrac{(x-a)^{n+1}}{(n+1)!} f^{(n+1)}(c)
+					}_{
+						\begin{subarray}{c}
+							\text{forma de Lagrange} \\
+							\text{del resto}
+						\end{subarray}
+					}
+					\quad c
+					$ entre $\rm a$ y $\rm x$
+				</p>
+			</li>
+		</ul>
+			
+			<p style="margin-left:30px">
+				Esto, abreviadamente, puede escribirse:</p>
+				
+				<p style="margin-left:60px">
+					$\rm f(x) - P_n(x) = R_n(x)$</p>
+					
+			<p style="margin-left:30px">
+				$\rm P_n(x)$ es el polinomio de Taylor de orden $\rm n$ de la
+				función $\rm f$ en $\rm a$ y $\rm R_n(x)$ el resto de orden $\rm n$
+				en $\rm a$.</p>
+				
+    
+			<p style="margin-left:30px">
+				Entonces, según la forma de Lagrange:</p>
+				
+				<p style="margin-left:60px">
+					$\rm R_n(x)$ depende de
+					$
+					\left\{
+						\begin{array}{l}
+							\rm ◦ \; (x-a) \quad \lvert (x-a) \rvert {\downarrow} \Rightarrow
+							\lvert R_n(x) \rvert {\downarrow} \\[1ex]
+							\cssId{*}{
+								\rm ◦ \; n \text{ (orden del polinomio)} \quad n {\uparrow}
+								\Rightarrow \lvert R_n(x) \rvert {\downarrow} \quad (\ast)
+							} \\[1ex]
+							◦ \;
+							\text{El valor en $\rm c$ de la derivada de la $\rm n$-ésima
+							derivada.}
+						\end{array}
+					\right.
+					$
+				</p>
+    
+    <p>Demostración de $\href{#*}{(\ast)}$:</p>
+    
+    <p>Se aplica el criterio de d'Alembert a la serie:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\displaystyle \rm
+				\sum_{n=0}^\infty \dfrac{\lvert x-a \rvert^{n+1}}{(n+1)!} =
+				\sum _{n=0}^\infty F(n)
+				$
+			</p>
+			
+    <p>El criterio dice que sea:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \lim\limits_{n \to \infty} \dfrac{F(n+1)}{F(n)} = k$,</p>
+			
+    <p>entonces la serie converge si $\rm k \lt 1$.</p>
+    
+    <p>Se calcula el límite:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \lim_{n \to \infty}
+					\dfrac{
+						\lvert x-a \rvert^{n+2} {∕} (n+2)!
+					}{
+						\lvert x-a \rvert^{n+1} {∕} (n+1)!
+					} &amp;=
+					\rm \lim_{n \to \infty}
+					\dfrac{
+						\lvert x-a \rvert^{n+2} (n+1)!
+					}{
+						\lvert x-a \rvert^{n+1} (n+2)!
+					} = \\[1ex]
+					&amp;=
+					\rm \lim_{n \to \infty}
+					\dfrac{
+						\lvert x-a \rvert \cancel{\lvert x-a \rvert^{n+1}} \!
+						\cancel{(n+1)!}
+					}{
+						\cancel{\lvert x-a \rvert^{n+1}} (n+2) \cancel{(n+1)!}
+					} = \\[1ex]
+					&amp;= \rm \lim_{n \to \infty} \dfrac{\lvert x-a \rvert}{(n+2)}
+					= 0
+				\end{align}
+				$
+			</p>
+			
+    <p>Por tanto la serie converge. Esto significa que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \lim\limits_{n \to \infty}
+				\dfrac{\lvert x-a \rvert^{n+1}}{(n+1)!} = 0
+				$,
+			</p>
+			
+    <p>ya que:</p>
+    
+			<p style="margin-left:30px">
+				$\displaystyle \rm \sum_{n=0}^\infty F(n)$ converge ${} \Rightarrow
+				\rm \lim\limits_{n \to \infty} F(n) = 0 \quad$ Criterio necesario
+				de convergencia.
+			</p>
+    
+    <p>Si $\rm f$ es indefinidamente derivable en el intervalo $\rm (a,x)$
+    y $\mathrel{\exists} \rm M \gt 0$ tal que $\rm \lvert f^{(n+1)}(c) \rvert
+    \leq M,$ $\rm \mathrel{\forall} c \in (a,x)$ y $\rm n = 0, 1, 2, \dotsc$,
+    entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				0 \leq \lvert R_n(x) \rvert =
+				\dfrac{\lvert x-a \rvert^{n+1}}{(n+1)!} \lvert f^{(n+1)}(c) \rvert
+				\leq \dfrac{\lvert x-a \rvert^{n+1}}{(n+1)!} M
+				$,
+			</p>
+			
+    <p>y dado que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\lim\limits_{n \to \infty} \dfrac{\lvert x-a \rvert^{n+1}}{(n+1)!}
+				= 0
+				$,
+			</p>
+			
+    <p>por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \lim\limits_{n \to \infty} R_n(x) = 0$</p>
+				
+    <p>Quedando demostrado que si $\rm n{\uparrow} \Rightarrow
+    \lvert R_n(x) \rvert {\downarrow}$.</p>
+    
+    <p>- Demostración de la forma integral del resto:</p>
+    
+    <p>Por definición:</p>
+    
+			<p style="margin-left:30px">
+				$\displaystyle \rm \int_a^x f'(t) \, dt = f(x)-f(a)$</p>
+				
+    <p>Reordenando:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle f(x) = f(a) + \int_a^x f'(t) \, dt$</p>
+				
+    <p>Integrando por partes:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{multline}
+					\shoveleft
+					\displaystyle \rm f(x) =
+					f(a) + \left[ t \, f'(t) \right]_a^x - \int_a^x t \, f''(t)
+					\, dt = \\[1ex]
+					\shoveleft
+					\hphantom{\rm f(x)}
+					= \rm f(a) + x \, f'(x) - a \, f'(a) - \int_a^x t \, f''(t)
+					\, dt
+					\tag{$\ast\ast$} \label{**}
+				\end{multline}
+				$
+			</p>
+			
+    <p>Donde:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \displaystyle \int u \, dv = uv - \int v \, du$</p>
+				
+			<p style="margin-left:30px">
+				$\rm u = f'(t) \quad du = f''(t) \, dt$</p>
+				
+			<p style="margin-left:30px">
+				$\rm dv = dt \quad v = t$</p>
+				
+    <p>Sea:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\displaystyle \rm
+				\int_a^x x \, f''(t) \, dt = x \, f'(x) - x \, f'(a)
+				\enspace \Rightarrow \enspace
+				x \, f'(x) = \int_a^x x \, f''(t) \, dt + x \, f'(a) 
+				$
+			</p>
+			
+    <p>Sustituyendo entonces en $\eqref{**}$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f(x) &amp;= \rm f(a) + \int_a^x x \, f''(t) \, dt +
+					x \, f'(a) - a \, f'(a) - \int_a^x t \, f''(t) \, dt = \\[1ex]
+					&amp;= \rm f(a) + (x-a)f'(a) + \int_a^x (x-t) f''(t) \, dt 
+				\end{align}
+				$
+			</p>
+			
+    <p>De nuevo integrando por partes:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f(x) &amp;= \rm f(a) + (x-a) f'(a) +
+					\left[ -\dfrac{(x-t)^2}{2} f''(t) \right]_a^x -
+					\int_a^x -\dfrac{(x-t)^2}{2} f'''(t) \, dt = \\[1ex]
+					&amp;= \rm f(a) + (x-a)f'(a) + \dfrac{(x-a)^2}{2} f''(a) +
+					\int_a^x \dfrac{(x-t)^2}{2} f'''(t) \, dt
+				\end{align}
+				$
+			</p>
+			
+    <p>Donde:</p>
+    
+			<p style="margin-left:30px">
+				$\displaystyle \rm \int u \, dv = uv - \int v \, du$</p>
+				
+			<p style="margin-left:30px">
+				$\rm u = f''(t) \quad du = f'''(t) \, dt$</p>
+				
+			<p style="margin-left:30px">
+				$\rm dv = (x - t) \, dt \quad v = -\dfrac{(x - t)^2}{2}$</p>
+				
+    <p>Repitiendo el proceso sucesivamente la expresión quedaría tal que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f(x) &amp;= 
+					\begin{aligned}[t]
+						&amp;\rm f(a) + \dfrac{(x-a)}{1!} f'(a) +
+						\dfrac{(x-a)^2}{2!} f''(a) + \dotsb + \dfrac{(x-a)^n}{n!}
+						f^{(n)}(a) + {} \\[1ex]
+						&amp;\rm {+ {}} \int_a^x \dfrac{(x-t)^n}{n!} f^{(n+1)}(t) \, dt =
+					\end{aligned} \\[1ex]
+					&amp;= \rm P_n(x) + \int_a^x \dfrac{(x-t)^n}{n!} f^{(n+1)}(t)
+					\, dt
+				\end{align}
+				$
+			</p>
+			
+    <p>Quedando, por tanto, demostrado que:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \displaystyle
+				f(x) - P_n(x) = \int_a^x \dfrac{(x-t)^n}{n!} f^{(n+1)}(t) \, dt
+				$
+			</p>
+			
+    <p>- Demostración de la forma de Lagrange:</p>
+    
+    <p>Siendo $\rm f(x), f'(x), \dotsc, f^{(n)}(x)$ continuas en $\rm [a,b]$
+    y existe $\rm f^{(n+1)}(x)$ en $\rm (a,b)$, entonces $\mathrel{\exists}
+    \rm c \in (a,b)$ tal que:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm f(x) = f(a) + (x-a)f'(a) + \dfrac{(x-a)^2}{2!}f''(a) + \dotsb
+				+ \dfrac{(x-a)^n}{n!} f^{(n)}(a) + \dfrac{(x-a)^{n+1}}{(n+1)!}
+				f^{(n+1)}(c)
+				$
+			</p>
+			
+    <p>Para demostrarlo se emplea el teorema de Rolle sobre la siguiente
+    función auxiliar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm s(x) = F(x) - \left( \dfrac{b-x}{b-a} \right)^{\! n+1} F(a)$</p>
+			
+    <p>Donde:</p>
+    
+			<p style="margin-left:30px">
+				$\rm F(x) = f(b) - f(x) - (b-x) f'(x) - \dfrac{(b-x)^2}{2!} f''(x)
+				- \dotsb - \dfrac{(b-x)^n}{n!} f^{(n)}(x)$</p>
+			
+    <p>$\rm s(x)$ es continua en $\rm [a,b]$, derivable en $\rm (a,b)$ y
+    también $\rm s(a) = s(b)$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm s(a) = F(a) - F(a) = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\rm s(b) = F(b) = 0$</p>
+				
+    <p>Por tanto se cumplen las condiciones del teorema de Rolle para
+    $\rm s(x)$ y por tanto $\mathrel{\exists} \rm c \in (a,b)$ tal que
+    $\rm s'(c) = 0$. </p>
+    
+    <p>Derivar s(x):</p>
+    
+			<p style="margin-left:30px">
+				$\rm s'(x) = F{}'(x) + \dfrac{(n+1)(b-x)^n}{(b-a)^{n+1}} F(a)$</p>
+				
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm F{}'(x) = &amp;\rm \cancel{-f'(x)} \! + \! \cancel{f'(x)}
+					\! - \! \cancel{(b-x) f''(x)} \! + \!
+					\cancel{\dfrac{\cancel{2} (b-x)}{\cancel{2!}} f''(x)} \! - \!
+					\cancel{\dfrac{(b-x)^2}{2!} f'''(x)} \! + \dotsb \\[1ex]
+					&amp;\rm \dotsb + \!
+					\cancel{\dfrac{\cancel{n} (b-x)^{n-1}}{\cancel{n} (n-1)!} f^{n}(x)}
+					\! - \dfrac{(b-x)^n}{n!} f^{(n+1)}(x) =
+					-\dfrac{(b-x)^n}{n!} f^{(n+1)}(x)
+				\end{align}
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+				\llap{\Rightarrow {}} \rm s'(x) &amp;= \rm
+				-\dfrac{(b-x)^n}{n!} f^{(n+1)}(x) +
+				\dfrac{(n+1)(b-x)^n}{(b-a)^{n+1}} F(a) = \\[1ex]
+				&amp;= \rm \dfrac{(n+1)(b-x)^n}{(b-a)^{n+1}}
+				\left( F(a) - \dfrac{(b-a)^{n+1}}{(n+1)!} f^{(n+1)}(x) \right)
+				\end{align}
+				$
+			</p>
+				
+    <p>Entonces existe:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm s'(c) = \dfrac{(n+1)(b-c)^n}{(b-a)^{n+1}}
+				\left( F(a) - \dfrac{(b-a)^{n+1}}{(n+1)!} f^{(n+1)}(c) \right)
+				= 0
+				$
+			</p>
+			
+    <p>Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \dfrac{(b-a)^{n+1}}{(n+1)!} f^{(n+1)}(c) &amp;=
+					\rm F(a) = \\[1ex]
+					&amp;=
+					\begin{aligned}[t]
+						&amp;\rm f(b) - f(a) - (b-a)f'(a) - \dfrac{(b-a)^2}{2!} f''(a)
+						- \dotsb \\[1ex]
+						&amp;{\dotsb} \rm - \dfrac{(b-a)^n}{n!} f^{(n)}(a)
+					\end{aligned}
+				\end{align}
+				$
+			</p>
+			
+    <p>Reordenando:</p>
+    
+			<p style="text-align:center">
+				$
+				\boxed{
+					\rm
+					f(b) = f(a) + (b-a)f'(a) + \dfrac{(b-a)^2}{2!} f''(a) + \dotsb
+					+ \dfrac{(b-a)^n}{n!} f^{(n)}(a) + \dfrac{(b-a)^{n+1}}{(n+1)!}
+					f^{(n+1)}(c)
+				}
+				$
+			</p>
+			
+    <p>Si se hace que $\rm b = x$ entonces:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\boxed{
+					\rm
+					f(x) = P_n(x) + \dfrac{(x-a)^{n+1}}{(n+1)!} f^{(n+1)}(c)
+				}
+				$
+			</p>
+    
+    <p>Quedando demostrada la forma de Lagrange del resto.</p>
+    
+    <hr>
+    
+    <div id="ejemplo" style="margin-bottom:1em">
+			
+    <p>Ejemplos:</p>
+    
+    <p>• $\rm f(x) = e^x \mathrel{;} a = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\rm f^{(i)}(x) = e^x \mathrel{\forall} i \quad f^{(i)}(a) = e^0
+				= 1$</p>
+				
+			<p style="margin-left:30px">
+				$\rm P_n(x) = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + \dotsb
+				+ \dfrac{x^n}{n!}$</p>
+				
+			<p style="margin-left:30px">
+				$\rm e^x \approx 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + \dotsb
+				+ \dfrac{x^n}{n!}$</p>
+				
+    <p>La diferencia con el valor verdadero, el resto, vendría dada por
+    el valor del orden $\rm n$ en $\rm x$. A medida que se cogen órdenes
+    más grandes el resto se hace más pequeño.</p>
+    
+			<p style="margin-left:30px">
+				$\rm e = e^1 = 1 + 1 + \dfrac{1}{2!} + \dfrac{1}{3!} + \dfrac{1}{4!}
+				+ \dotsb + \dfrac{1}{n!}$</p>
+				
+		<p>• $\rm f(x) = \dfrac{1}{1+x} \mathrel{;} a = 0$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f^{(i)}(x) = (-1)^i \dfrac{1}{(1+x)^{i+1}} i!$</p>
+				
+			<p style="margin-left:30px">
+				$\rm f^{(i)}(a) = (-1)^i i!$</p>
+				
+			<p style="margin-left:30px">
+				$\rm P_n(x) = 1 - x + x^2 - x^3 + \dotsb + (-1)^n x^n \approx
+				\dfrac{1}{1+x} \quad$ (localmente)</p>
+				 
+    <p>Aplicando el criterio de d'Alembert (o criterio del cociente):</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm \lim\limits_{n \to \infty}
+				\dfrac{\lvert (-1)^{n+1} x^{n+1} \rvert}{\lvert (-1)^n x^n \rvert}
+				= \lim\limits_{n \to \infty} \lvert x \rvert = \lvert x \rvert
+				\lt 1 \enspace \leftarrow
+				$ para que converja la serie
+			</p>
+    
+    <p>Por tanto converge si:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x \in (-1,1)$</p>
+				
+    <p>¿En el borde $\rm \lvert x \rvert = 1$?</p>
+    
+			<p style="margin-left:30px">
+				$\rm x = 1$</p>
+			
+			<p style="margin-left:30px">
+				$
+				\left.
+				\begin{array}{l}
+					\rm P_n(1) = \displaystyle \sum_{n=0}^\infty (-1)^n 1^n =
+					\sum_{n=0}^\infty (-1)^n \\[1ex]
+					\text{Sucesión } \rm \{(-1)^n\} = 1, -1, 1, -1, \dotsc
+					{\Rightarrow} \mathrel{∄} \lim\limits_{n \to \infty}
+					(-1)^n
+				\end{array} \,
+				\right\} \Rightarrow
+				$ no converge
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm x = -1$</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+				$
+				\left.
+				\begin{array}{l}
+					\rm P_n(-1) = \displaystyle \sum_{n=0}^\infty (-1)^n (-1)^n =
+					\sum_{n=0}^\infty (-1)^{2n} =
+					\sum_{n=0}^\infty \left( (-1)^2 \right)^n =
+					\sum_{n=0}^\infty 1^n \\[1ex]
+					\text{Sucesión } \rm \{1^n\} = 1, 1, 1, 1, \dotsc {\Rightarrow}
+					\lim\limits_{n \to \infty} 1^n = 1 \neq 0
+				\end{array}
+				\right\} \Rightarrow {}
+				$
+				</span>
+				<span style="display:table-cell">no converge</span>
+			</p>
+			
+    <p>• $\rm f(x) = \ln (1+x) \mathrel{;} a = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\rm f'(x) = \dfrac{1}{1+x} \approx 1 - x + x^2 - x^3 + \dotsb +
+				(-1)^nx^n$</p>
+
+    <p>La integral de $\rm f'(x)$ es $\rm f(x)$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f(x) \approx x - \dfrac{x^2}{2} + \dfrac{x^3}{3} -
+				\dfrac{x^4}{4} + \dotsb + \dfrac{(-1)^n x^{n+1}}{n+1}$</p>
+				
+    <p>Localmente, ya que $\rm x \in (-1,1)$</p>
+    
+    <p>Entonces:</p>
+    
+			<p style="margin-left:30px">
+				$\rm P_{n+1}(x) = x - \dfrac{x^2}{2} + \dfrac{x^3}{3} -
+				\dfrac{x^4}{4} + \dotsb + \dfrac{(-1)^n x^{n+1}}{n+1}$</p>
+				
+    <p>$\rm x = 1$</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm \ln 2 = P_{n+1}(1) = 1 - \dfrac{1}{2} + \dfrac{1}{3} -
+					\dfrac{1}{4} + \dotsb + \dfrac{(-1)^n}{n+1} \quad$
+				</span>
+				<span style="display:table-cell">
+					serie convergente (criterio de Leibniz)
+				</span>
+			</p>
+			
+		<p>• $\rm f(x) = \dfrac{1}{1+x^2} \mathrel{;} a = 0$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{1}{1+z} \approx 1 - z + z^2 - z^3 + \dotsb +
+				(-1)^n z^n = P_n(z)$</p>
+				
+    <p>$\rm z = x^2$</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{1}{1+x^2} \approx 1 - x^2 + x^4 - x^6 + \dotsb +
+				(-1)^n x^{2n} = P_{2n}(x)$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \arctan'(x) = \dfrac{1}{1+x^2}$</p>
+				
+		<p>Por tanto $\rm \arctan(x)$ es la integral de $\rm P_{2n}(x)$ de la
+		función $\rm \dfrac{1}{1+x^2}$:</p>
+		
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm \arctan(x) \approx x - \dfrac{x^3}{3} + \dfrac{x^5}{5} +
+					\dotsb + (-1)^n \dfrac{x^{2n+1}}{2n+1} = P_{2n+1}(x) \quad$
+				</span>
+				<span style="display:table-cell">
+					serie de la función $\rm \arctan(x)$ en $\rm a = 0$ (localmente,
+					$\rm \lvert x \rvert \lt 1$).
+				</span>
+			</p>
+    
+    <p>$\rm x = 1$</p>
+    
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm \arctan(1) = \dfrac{π}{4} \, rad \approx 1 - \dfrac{1}{3} +
+					\dfrac{1}{5} + \dotsb + (-1)^n \dfrac{1}{2n+1} \, rad \quad$
+				</span>
+				<span style="display:table-cell">
+					(converge, criterio de Leibniz).
+				</span>
+			</p>
+				
+    <p>• $\rm \sin x$ ($\rm x$ en radianes) ; $\rm a = 0$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\rm f(x) = \sin x &amp; \rm f(0) = 0 \\[1ex]
+					\rm f'(x) = \cos x &amp; \rm f'(0) = 1 \\[1ex]
+					\rm f''(x) = -\sin x &amp; \rm f''(0) = 0 \\[1ex]
+					\rm f'''(x) = -\cos x &amp; \rm f'''(0) = -1 \\[1ex]
+					\rm f^{(4)}(x) = \sin x &amp; \rm f^{(4)}(0) = 0 \\[1ex]
+					\rm f^{(5)}(x) = \cos x &amp; \rm f^{(5)}(0) = 1
+				\end{array}
+				$
+			</p>
+    
+    <p>Las derivadas pares se anulan en cero. Por tanto:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\sin x \approx \dfrac{x}{1!} - \dfrac{x^3}{3!} + \dfrac{x^5}{5!}
+				+ \dotsb + (-1)^n \dfrac{x^{2n+1}}{(2n+1)!}
+				$
+			</p>
+			
+    <p>• $\rm \cos x$ ($\rm x$ en radianes) ; $\rm a = 0$</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\rm f(x) = \cos x &amp; \rm f(0) = 1 \\[1ex]
+					\rm f'(x) = -\sin x &amp; \rm f'(0) = 0 \\[1ex]
+					\rm f''(x) = -\cos x &amp; \rm f''(0) = -1 \\[1ex]
+					\rm f'''(x) = \sin x &amp; \rm f'''(0) = 0 \\[1ex]
+					\rm f^{(4)}(x) = \cos x &amp; \rm f^{(4)}(0) = 1 \\[1ex]
+					\rm f^{(5)}(x) = -\sin x &amp; \rm f^{(5)}(0) = 0 \\[1ex]
+				\end{array}
+				$
+			</p>
+    
+    <p>Las derivadas de orden impar se anulan en $\rm x = 0$. Por tanto:</p>
+    
+			<p style="margin-left:10px">
+				$\rm \cos x \approx 1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} + \dotsb
+				+ (-1)^n \dfrac{x^{2n}}{(2n)!}$</p>
+				
+		<p>
+			• 
+			$ \rm \lim\limits_{x \to 0} \dfrac{\sin x - x}{\arctan x - x} =
+			\dfrac{0}{0}
+			\enspace
+			\begin{gathered}[t]
+				\text{(Regla de l'Hôpital)} \\
+				\Downarrow \\
+				1{∕}2
+			\end{gathered}
+			$
+		</p>
+			
+    <p>Alternativa mediante el empleo de las series de Taylor con $\rm a
+    = 0$:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm \lim_{x \to 0} \dfrac{\sin x - x}{\arctan x - x} &amp;=
+					\rm \lim_{x \to 0}
+					\dfrac{
+						\left( \cancel{x} - \dfrac{x^3}{3!} + \dotsb \right) -
+						\cancel{x}
+					}{
+						\left( \cancel{x} - \dfrac{x^3}{3} + \dotsb \right) -
+						\cancel{x}
+					} =
+					\lim_{x \to 0}
+					\dfrac{
+						-\dfrac{x^3}{3!} + \dfrac{x^5}{5!} + \dotsb
+					}{
+						-\dfrac{x^3}{3} + \dfrac{x^5}{5} + \dotsb
+					} = \\[1ex]
+					&amp;= \rm \lim_{x \to 0}
+					\dfrac{
+						\cancel{x^3}
+						\left( -\dfrac{1}{3!} +
+						\smash{
+							\overbrace{
+								\dfrac{x^2}{5!} + \dotsb
+							}^{\hphantom{0} \, \to \, 0}
+						}
+						\right)
+						\vphantom{
+							\overbrace{
+								\dfrac{x^2}{5!} + \dotsb
+							}^{\hphantom{0} \, \to \, 0}
+						}
+					}{
+						\cancel{x^3}
+						\left( -\dfrac{1}{3} + 
+						\smash{
+							\underbrace{
+								\dfrac{x^2}{5} + \dotsb
+							}_{\hphantom{0} \, \to \, 0}
+						} \right)
+						\vphantom{
+							\underbrace{
+								\dfrac{x^2}{5} + \dotsb
+							}_{\hphantom{0} \, \to \, 0}
+						}
+					} = \dfrac{1{∕}3!}{1{∕}3} = 1{∕}2
+				\end{align}
+				$
+			</p>
+
+		</div>
+		
+		</div>
+   
+		<div id="foot">
+
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="teorema_valor_medio.html" title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="fundamentos_calculo_varias_variables.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>

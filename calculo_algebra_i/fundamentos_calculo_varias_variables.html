@@ -1,0 +1,749 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showMathMenu: false,
+        "HTML-CSS": {
+          availableFonts: ["STIX"],
+          preferredFont: "STIX",
+          webFont: "STIX-Web",
+          matchFontHeight: false,
+          mtextFontInherit: true
+        },
+        tex2jax: {
+          inlineMath: [ ['$','$'] ]
+        },
+        TeX: {
+          extensions: ["extpfeil.js"]
+        },
+        "fast-preview": {
+        disabled: true
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="description" content="Fundamentos de cálculo en varias variables">
+    <meta name="keywords" content="fundamentos, cálculo, varias, variables">
+    <title>Fundamentos de cálculo en varias variables</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-102174465-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+  </head>
+  
+  <body>
+		<div id="title">
+			
+			<h3>Fundamentos de cálculo en varias variables</h3>
+			
+      <ul>
+        <li><a href="calculo_algebra_i.html">Temario</a></li>
+        <li><a href="../index.htm">Inicio</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="content">
+			
+			<p style="margin-left:30px">
+				$
+				\rm f :
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{\text{dom}}\rlap{\text{inio}}
+					\end{subarray}
+				}
+				{B} \subset \mathbb{R}^n \to \mathbb{R}^m
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$
+				\begin{array}{ll}
+					\rm f(x,y,z) : (x-y,xy,x+z) &amp;
+					\mathbb{R}^3 \to \mathbb{R}^3 \\[1ex]
+					\rm f(x,y,z) : e^{xyz} &amp;
+					\mathbb{R}^3 \to \mathbb{R} \\[1ex]
+					\rm f(x,y,z) : (e^z, \ln xy) &amp;
+					\mathbb{R}^3 \to \mathbb{R}^2
+				\end{array}
+				$
+			</p>
+			
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplos:</p>
+    
+    <p>• $\rm \ln (1 + xy) \quad \mathbb{R}^2 \to \mathbb{R}$</p>
+    
+			<p style="margin-left:30px">
+				$\rm 1 + xy \gt 0 \qquad$ Dominio
+				$
+				\begin{array}[t]{l}
+					\rm = \{(x,y) \in \mathbb{R}^2 \mathrel{|} 1 + xy \gt 0 \} = \\[1ex]
+					\rm = \{(x,y) \in \mathbb{R}^2 \mathrel{|} xy \gt -1 \} = \\[1ex]
+					\rm =
+					\left\{
+					\,
+						(x,y) \in \mathbb{R}^2
+					\; \middle| \;
+						\begin{array}{l}
+							\rm x \gt 0, \, y \gt -\dfrac{1}{x} \\
+							\rm x \lt 0, \, y \lt -\dfrac{1}{x} \\
+							\rm x = 0, \, y
+						\end{array}
+					\,
+					\right\}
+				\end{array}
+				$
+			</p>
+    
+    <center>
+			<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_01.svg"
+			type="image/svg+xml" width="400" height="400" style="border:1px solid black"></object>
+		</center>
+		
+    <p>• $\rm \left( (1 - x^2 - y^2)^{1{∕}2}, (-1 + x^2 + y^2)^{1{∕}2},
+    x^2 + y^2 \right) \quad \mathbb{R}^2 \to \mathbb{R}^3$</p>
+    
+			<p style="margin-left:30px">
+				Dominio
+				$
+				\begin{array}[t]{l}
+					\rm =
+					\left\{
+						(x,y) \in \mathbb{R}^2
+					\; \middle| \;
+						\begin{array}{r}
+							\rm 1 - x^2 - y^2 \geq 0 \\
+							\rm -1 + x^2 + y^2 \geq 0
+						\end{array}
+					\right\} = \\[1ex]
+					\rm =
+					\left\{
+						(x,y) \in \mathbb{R}^2
+					\; \middle| \;
+						\begin{array}{l}
+							\rm 1 - x^2 - y^2 \geq 0 \\
+							\rm 1 - x^2 - y^2 \leq 0
+						\end{array}
+					\right\} = \\[1ex]
+					\rm
+					= \{ (x,y) \in \mathbb{R}^2 \mathrel{|} 1 - x^2 - y^2 = 0 \}
+					= \{ (x,y) \in \mathbb{R}^2 \mathrel{|} x^2 + y^2 = 1 \}
+				\end{array}
+				$
+			</p>
+    
+		<center>
+			<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_02.svg"
+			type="image/svg+xml" width="300" height="300" style="border:1px solid black"></object>
+		</center>
+		
+    <p>• $\rm \arccos \sqrt{x{∕}y} \quad \mathbb{R}^2 \to \mathbb{R}$</p>
+    
+    <p style="margin-left:30px">
+			Dominio
+			$
+			\begin{array}[t]{l}
+				\rm =
+				\left\{
+					(x,y) \in \mathbb{R}^2
+				\; \middle| \;
+					\begin{array}{l}
+						\rm \text{signo} (x) = \text{signo} (y) \\
+						\rm \sqrt{x{∕}y} \leq 1
+					\end{array}
+				\right\} = \\[1ex]
+				\rm =
+				\left\{
+					(x,y) \in \mathbb{R}^2
+				\; \middle| \;
+					\begin{array}{l}
+						\rm \text{signo} (x) = \text{signo} (y) \\
+						\rm x{∕}y \leq 1
+					\end{array}
+				\right\} = \\[1ex]
+				\rm =
+				\left\{
+					(x,y) \in \mathbb{R}^2
+				\; \middle| \;
+					\begin{array}{l}
+						\rm \text{signo} (x) = \text{signo} (y) \\
+						\rm y \neq 0 \\
+						\rm y \gt 0, \, x \leq y \\
+						\rm y \lt 0, \, x \geq y
+					\end{array}
+				\right\}
+			\end{array}
+			$
+		</p>
+		
+		<center>
+			<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_03.svg"
+			type="image/svg+xml" width="400" height="400" style="border:1px solid black"></object>
+		</center>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Continuidad</span>
+    </p>
+    
+			<p style="margin-left:30px">
+				$\rm f : B \subset \mathbb{R}^n \to \mathbb{R}^m$</p>
+				
+				<p style="margin-left:60px">
+					$\rm u \in B \quad f(u) :
+					\bigl(f_1(u), f_2(u), \dotsc, f_m(u)\bigr)$</p>
+					
+			<p style="margin-left:30px">
+				$
+				\begin{aligned}[b]
+					\rm f_i : B \subset \mathbb{R}^n &amp;\to \mathbb{R} \\[1ex]
+					\rm u &amp;\to \rm f_i(u) \enspace
+				\end{aligned}	
+				$ funciones componentes de $\rm f$
+			</p>
+			
+			<p style="margin-left:30px">
+				<span style="display:table-cell">
+					$\rm f = (f_1, \dotsc, f_m) \leftarrow {}$
+				</span>
+				<span style="display:table-cell">
+					Para estudiar $\rm f$ sólo se necesita estudiar cada una de las
+					componentes.
+				</span>
+			</p>
+					
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px;margin-bottom:1em">
+				$
+				\begin{aligned}
+					\mathbb{R} &amp;\to \mathbb{R}^3 \\[1ex]
+					\rm t &amp;\to \rm f(t)
+				\end{aligned}
+				$
+				<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_04.svg"
+				type="image/svg+xml" width="282" height="106"
+				style="display:inline-block;border:1px solid black;background:white;margin:-1em 1em;vertical-align:text-top">
+				</object>
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>Esto reduce el problema a estudiar funciones del tipo escalar:</p>
+    
+			<p style="margin-left:30px">
+				$\rm f : B \subset \mathbb{ℝ}^n \to \mathbb{R}$</p>
+				
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					\rm f : \mathbb{R}^2 &amp;\to \mathbb{R} \\[1ex]
+					\rm (x,y) &amp;\to \rm x^2 + y^2
+				\end{align}
+				$
+			</p>
+
+    <p>$\rm x^2 + y^2$ es una función continua en $\rm u_0$, entonces
+    pueden encontrarse diferentes caminos.</p>
+    
+    <p style="text-align:center">
+			<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_05.svg"
+			type="image/svg+xml" width="210" height="205" style="display:inline-block;border:1px solid black;background:white;margin:0 1em 0 0;vertical-align:middle">
+			</object>
+			$
+			\begin{array}{l}
+				\rm f : B \subset \mathbb{R}^2 \to \mathbb{R} \\[1ex]
+				\begin{aligned}
+					\rm h : I \subset \mathbb{R} &amp;\to \mathbb{R}^2 \\
+					\rm t &amp;\to \rm h(t) \\
+					\rm t_0 &amp;\to \rm h(t_0) = u_0
+				\end{aligned}
+			\end{array}
+			$
+		</p>
+    
+    <p>$\rm f(h(t))$, continuidad en $\rm t_0$:</p>
+    
+			<p style="margin-left:30px">
+				$\rm x^2 + y^2 \quad u_0 = (1, 1)$</p>
+				
+		<p>
+			camino vertical:
+			$
+			\enspace
+			\def\rarrow#1#2{
+				\stackrel{#1}{
+					\underset{#2}{
+						\Rule{0pt}{0.4em}{0pt}
+						\smash{
+							\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+						}
+					} 
+				}
+			}
+			\rm
+			t \rarrow{\large h}{} (1,t) \quad t_0 = 1 \rightarrow (1,1)
+			$
+		</p>
+				
+			<p style="margin-left:30px">
+				$\rm f(h(t)) = 1^2 + t^2 \rarrow{}{\large t \to 1} 2 = f(h(1))$</p>
+				
+		<p>
+			camino horizontal:
+			$
+			\enspace
+			\rm t \rarrow{\large h}{} (t,1) \quad t_0 = 1 \rightarrow (1,1)
+			$
+		</p>
+		
+			<p style="margin-left:30px">
+				$\rm f(h(t)) = t^2 + 1^2 \rarrow{}{\large t \to 1} 2 = f(h(1))$</p>
+				
+		<p>
+			camino parabólico:
+			$
+			\enspace
+			\rm t \rarrow{\large h}{} (t+1,t^2+1) \quad t_0 = 0 \rightarrow (1,1)
+			$
+		</p>
+
+			<p style="margin-left:30px">
+				$\rm f(h(t)) = (t + 1)^2 + (t^2 + 1)^2 \rarrow{}{\large t \to 0} 2
+				= f(h(0))$</p>
+
+    <p>En el punto, al ser una función continua, los límites de la función
+    y el valor que toma ésta coinciden.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="text-align:center">
+				$
+				\begin{aligned}
+					\rm (x,y) &amp;\rm \rarrow{\large f}{} x{∕}y, y \neq 0 \\
+					\rm (x,0) &amp;\rm \rightarrow x
+				\end{aligned}
+				$
+				<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_06.svg"
+				type="image/svg+xml" width="210" height="210"
+				style="display:inline-block;border:1px solid black;background:white;margin:0 0 0 1em;vertical-align:middle">
+				</object>
+			</p>
+			
+		<p>
+			camino horizontal:
+			$
+			\enspace
+			\rm
+			t \rarrow{\large h}{} (t,0) \quad
+			f(h(t)) = t \rarrow{}{\large t \to 0} 0
+			$
+		</p>
+		
+		<p>
+			camino vertical:
+			$
+			\enspace
+			\rm
+			t \rarrow{\large h}{} (0,t) \quad
+			f(h(t)) = 0{∕}t = 0 \rarrow{}{\large t \to 0} 0
+			$
+		</p>
+		
+		<p>
+			camino inclinado:
+			$
+			\enspace
+			\rm
+			t \rarrow{\large h}{} (t,t) \quad
+			f(h(t)) = t{∕}t = 1 \rarrow{}{\large t \to 0} 1 \neq f(h(0))
+			$
+		</p>
+		
+		<p>
+			camino parabólico:
+			$
+			\enspace
+			\rm
+			t \rarrow{\large h}{} (t,t^2) \quad
+			f(h(t)) = t{∕}t^2 = 1{∕}t \rarrow{}{\large t \to 0} \infty
+			$
+		</p>
+    
+    <p>Esto quiere decir que esta función no es continua en el punto
+    $(0,0)$.</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>
+      <span style="text-decoration:underline">Derivabilidad</span>
+    </p>
+    
+    <p>Se intentará reproducir la misma idea para estudiar la
+    diferenciabilidad.</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+		
+    <p>Ejemplo:</p>
+    
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell;padding-right:2em">
+						<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_07.svg"
+						type="image/svg+xml" width="210" height="210"
+						style="display:inline-block;border:1px solid black;background:white;margin:0">
+						</object>
+					</span>
+					<span style="display:table-cell;vertical-align:middle;text-align:left;padding-bottom:4em">
+						<span style="display:block;margin-bottom:1em">
+							$\rm x^2 + y^2$
+						</span>
+						<span style="display:table-cell;text-align:center">
+						camino<br>horizontal
+						</span>
+						<span style="display:table-cell">
+						$
+						\;
+						\left\{
+							\begin{array}{l}
+								\rm t \rarrow{\large h}{} (t,1) \quad h(1) = (1,1) \\
+								\rm f(h(t)) = t^2 + 1 \quad f(h(t))' = 2t \\[1ex]
+								\mspace{-38mu}
+								\smash[b]{
+									\underset{
+										\begin{subarray}{c}
+											\uparrow \\
+											\begin{subarray}{l}
+												\text{Derivada de la función $\rm f$} \\
+												\text{en $(1,1)$ siguiendo la} \\
+												\text{dirección horizontal.}
+											\end{subarray}
+										\end{subarray}
+									}
+									{\rm f(h(1))' \rlap{{} = 2}}
+								}
+							\end{array}
+						\right.
+						$
+						</span>
+					</span>
+				</span>
+			</p>
+			
+		<p>
+			camino vertical
+			$
+			\left\{
+				\begin{array}{l}
+					\rm t \rarrow{\large h}{} (1,t) \quad h(1) = (1,1) \\
+					\rm f(h(t)) = 1 + t^2 \quad f(h(t))' = 2t \\[1ex]
+					\rm f(h(1))' = 2
+				\end{array}
+			\right.
+			$
+		</p>
+		
+		<p>
+			camino inclinado
+			$
+			\left\{
+				\begin{array}{l}
+					\rm t \rarrow{\large h}{} (t,t) \quad h(1) = (1,1) \\
+					\rm f(h(t)) = t^2 + t^2 = 2t^2 \\[1ex]
+					\rm f(h(t))' = 4t \quad f(h(1))' = 4
+				\end{array}
+			\right.
+			$
+		</p>
+    
+			<p style="margin-left:30px;margin-top:2em">
+				$
+				\underset{
+					\normalsize
+					\begin{subarray}{c}
+						\color{red}{
+						\left\uparrow
+						\!
+						\hphantom{2,2}
+						\vphantom{
+							\normalsize
+							\begin{subarray}{c}
+								\uparrow \\
+								\text{dirección} \rlap{\text{ de la recta $\rm (t,t)$}}
+							\end{subarray}
+						}
+						\!
+						\right\uparrow} \\
+						\color{red}{
+						\text{valores}
+						}
+						\rlap{
+						\color{red}{
+						\text{ de $\rm f(h(1))'$ según los ejes $\rm x,y$ }
+						}
+						\Rightarrow
+						\begin{aligned}[t]
+							&amp;\text{con esto se pueden encontrar todas las otras
+							derivadas} \\
+							&amp;\text{direccionales, multiplicando por la dirección de
+							la recta.}
+						\end{aligned}
+						}
+					\end{subarray}
+				}{\underline{(2,2)}}
+				\mspace{-5mu}
+				\cdot
+				\mspace{-12mu}
+				\underset{
+					\normalsize
+					\color{blue}{
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{dirección} \rlap{\text{ de la recta $\rm (t,t)$}}
+					\end{subarray}
+					}
+				}{\underline{(1,1)}}
+				\mspace{-10mu} = 2 \cdot 1 + 2 \cdot 1 = 4
+				$
+			</p>
+			
+		<p>
+			<span style="display:table-cell;text-align:center">
+				camino inclinado<br>con dirección $\rm (2,1)$<br>
+				$\Rightarrow (2,2) \cdot (2,1) = 6$&thinsp;
+			</span>
+			<span style="display:table-cell">
+				$
+				\left\{
+					\begin{array}{l}
+						\rm t \rarrow{\large h}{} (1,1) + t(2,1) = (1+2t, 1+t) \quad
+						h(0) = (1,1) \\
+						\rm f(h(t)) = (1+2t)^2 + (1+t)^2 \\[1ex]
+						\rm f(h(t))' = 4(1+2t) + 2(1+t) = 10t + 6 \quad f(h(0))' = 6
+					\end{array}
+				\right.
+				$
+			</span>
+		</p>
+    
+    </div>
+    
+    <hr>
+    
+			<p style="text-align:center">
+				<span style="display:inline-table">
+					<span style="display:table-cell;padding-right:4em">
+					$
+					\rm
+					f :
+					\underset{
+						\begin{subarray}{c}
+							\displaystyle \downarrow \\
+							\displaystyle \rm u \rlap{{}_0 = (a_1, \dotsc, a_n)}
+						\end{subarray}
+					}{B} \subset \mathbb{R}^n \to \mathbb{R}
+					$
+					</span>
+					<span style="display:table-cell">
+						<span style="display:block;text-align:left">
+							$\rm f^i : I \subset \mathbb{R} \to \mathbb{R}$&thinsp;<br>
+							($\rm I \Rightarrow$ donde se pueda definir $\rm f^i$)
+						</span>
+						<span style="display:block;margin-top:1ex">
+							$
+							\rm t \rightarrow
+							\begin{array}[t]{c}
+								\rm	\mspace{-9mu}
+								f(a_1, \dotsc, a_{i-1}, \underset{\llap{(}i\rlap{)}}{t},
+								a_{i+1}, \dotsc, a_n)
+								\mspace{-9mu} \\ \hdashline
+								\rm f^i
+							\end{array}
+							$
+						</span>
+					</span>
+				</span>
+			</p>
+			
+		<center>
+			<object data="fundamentos_calculo_varias_variables/fundamentos_calculo_varias_variables_08.svg"
+			type="image/svg+xml" width="210" height="210"></object>
+		</center>
+		
+			<p style="text-align:center;margin-bottom:1ex">
+				$\rm \dfrac{\partial f}{\partial x_i}(u_0) = (f^i)'(a_i)$</p>
+				
+			<p style="text-align:center;margin-top:1ex">
+				derivada parcial de $\rm f$ respecto $\rm x_i$ en $\rm u_0
+				\Rightarrow f_{x_i}(u_0)$</p>
+    
+    <hr>
+    
+    <div id="ejemplo">
+			
+    <p>Ejemplo:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm x^2 +
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{\text{s}}\text{e}\rlap{\text{ considera constante}}
+					\end{subarray}
+				}{y}^2 \quad \dfrac{\partial f}{\partial x} = 2x
+				$
+			</p>
+    
+			<p style="margin-left:30px">
+				$
+				\rm
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{\text{s}}\text{e}\rlap{\text{ considera constante}}
+					\end{subarray}
+				}{x \vphantom{y}}^2 + y^2 \quad \dfrac{\partial f}{\partial y} = 2y
+				$
+			</p>
+			
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial x}(1,1) = 2$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial y}(1,1) = 2$</p>				
+
+    </div>
+    
+    <hr>
+    
+    <div id="ejemplo">
+    
+    <p>Ejemplo:</p>
+    
+    <p>$\rm f(x, y) = x^2 y + xy^2$</p>
+    
+    <p>Derivadas parciales primeras:</p>
+    
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial x} = f_x = 2xy + y^2$</p>
+				
+			<p style="margin-left:30px">
+				$\rm \dfrac{\partial f}{\partial y} = f_y = x^2 + 2xy$</p>
+				
+    <p>Derivadas parciales segundas:</p>
+    
+			<p style="margin-left:30px">
+				$
+				\begin{align}
+					&amp;\rm \dfrac{\partial(\partial f {∕} \partial x)}{\partial x}
+					= \dfrac{\partial^2 f}{\partial x^2} = f_{xx} = 2y \\[1ex]
+					&amp;\rm \dfrac{\partial(\partial f {∕} \partial y)}{\partial y}
+					= \dfrac{\partial^2 f}{\partial y^2} = f_{yy} = 2x \\[1ex]
+					\text{cruzadas }
+					\left\{
+					\vphantom{
+					\begin{aligned}
+						&amp;\rm \dfrac{\partial (\partial f {∕} \partial x)}{\partial y}
+						= \dfrac{\partial^2 f}{\partial x \partial y} = f_{xy}
+						= 2x + 2y \\[1ex]
+						&amp;\rm \dfrac{\partial (\partial f {∕} \partial y)}{\partial x}
+						= \dfrac{\partial^2 f}{\partial y \partial x} = f_{yx}
+						= 2x + 2y
+					\end{aligned}
+					}
+					\right.
+					&amp;
+					\begin{aligned}
+						&amp;\rm \dfrac{\partial (\partial f {∕} \partial x)}{\partial y}
+						= \dfrac{\partial^2 f}{\partial x \partial y} = f_{xy}
+						= 2x + 2y \\[1ex]
+						&amp;\rm \dfrac{\partial (\partial f {∕} \partial y)}{\partial x}
+						= \dfrac{\partial^2 f}{\partial y \partial x} = f_{yx}
+						= 2x + 2y
+					\end{aligned}
+				\end{align}
+				$
+			</p>
+    
+    </div>
+    
+    <hr>
+    
+    <p>El gradiente de $\rm f$ es el vector que tiene como componentes
+    todas las derivadas parciales:</p>
+    
+			<p style="text-align:center">
+				$
+				\rm
+				\nabla f(u_0) =
+				\underbrace{
+					(\partial f {∕} \partial x_1, \dotsc, \partial f {∕} \partial x_n)
+				}_{\text{vector gradiente}}
+				$
+			</p>
+    
+		</div>
+   
+		<div id="foot">
+			
+      <a href="calculo_algebra_i.html">Temario</a>
+    
+      <ul>
+        <li>
+          <a href="calculo_polinomios_taylor_una_variable.html"
+          title="Anterior">&lt;</a>
+        </li>
+        <li>
+          <a href="calculo_derivadas_direccionales_gradientes.html"
+          title="Siguiente">&gt;</a>
+        </li>
+      </ul>
+
+		</div>
+  </body>
+</html>
