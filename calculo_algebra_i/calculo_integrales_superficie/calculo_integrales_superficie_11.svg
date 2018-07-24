@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg5249" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="248.73" width="494.64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 494.63986 248.73061" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="marker5791" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path5794" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6889" refY="0" refX="0" overflow="visible" orient="auto">
+   <path id="path6891" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6104" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path6106" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <circle id="gpPt5-6" cx="0" stroke="currentColor" cy="0" r="1" stroke-width=".222"/>
+  <use id="gpPt6-8" xlink:href="#gpPt5-6" height="100%" width="100%" y="0" x="0" fill="currentColor"/>
+ </defs>
+ <metadata id="metadata5389">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title5251">Gnuplot</title>
+ <desc id="desc5253">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g fill="none">
+  <g stroke="currentColor">
+   <g id="g5288" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5290" d="m66.4 113" stroke="#000"/>
+    <g id="g5292" style="text-anchor:end;stroke:none" font-size="15px" transform="translate(58.1,118.6)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5294">
+      <tspan id="tspan5296" font-family="&apos;Stix Two Text&apos;">−π/2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5298" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5300" d="m66.4 38.7" stroke="#000"/>
+    <g id="g5302" style="text-anchor:end;stroke:none" font-size="15px" transform="translate(58.1,44.3)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5304">
+      <tspan id="tspan5306" font-family="&apos;Stix Two Text&apos;">π/2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5308" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5310" d="m66.4 113v9m0-83.3v-9" stroke="#000"/>
+    <g id="g5312" style="text-anchor:middle;stroke:none" font-size="15px" transform="translate(66.4,136.6)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5314">
+      <tspan id="tspan5316" font-family="&apos;Stix Two Text&apos;">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5318" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5320" d="m215 113v9m0-83.3v-9" stroke="#000"/>
+    <g id="g5322" style="text-anchor:middle;stroke:none" font-size="15px" transform="translate(215,136.6)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5324">
+      <tspan id="tspan5326" font-family="&apos;Stix Two Text&apos;">2π</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5328" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5330" d="m66.4 113v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m14.8 83.3v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m14.8 83.3v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m14.8 83.3v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m14.8 83.3v9m0-83.3v-9m14.9 83.3v9m0-83.3v-9m0 83.3v9m0-83.3v-9m-148.6 9v9m0 65.3v-9" stroke="#000"/>
+    <g id="g5332" style="text-anchor:middle" font-size="15px" transform="translate(66.4,44.3)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5334"/>
+    </g>
+   </g>
+   <g id="g5336" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5338" d="m81.3 38.7v9m0 65.3v-9m14.8-65.3v9m0 65.3v-9m14.9-65.3v9m0 65.3v-9m14.8-65.3v9m0 65.3v-9m14.9-65.3v9m0 65.3v-9m14.9-65.3v9m0 65.3v-9m14.8-65.3v9m0 65.3v-9m14.9-65.3v9m0 65.3v-9m14.8-65.3v9m0 65.3v-9m14.9-65.3v9m0 65.3v-9m0-65.3v9m0 65.3v-9" stroke="#000"/>
+    <g id="g5340" style="text-anchor:middle" font-size="15px" transform="translate(215,44.3)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5342"/>
+    </g>
+   </g>
+   <g id="g5350" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <g id="g5352" style="text-anchor:middle;stroke:none" font-size="16px" transform="translate(17.9,81.9)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5354">
+      <tspan id="tspan5356" font-family="&apos;Stix Two Text&apos;">ω</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5358" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <g id="g5360" style="text-anchor:middle;stroke:none" font-size="16px" transform="translate(140.7,150.6)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text5362">
+      <tspan id="tspan5364" font-family="&apos;Stix Two Text&apos;">θ</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g5379" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5381" d="m66.4 38.7v74.3h148.6v-74.3h-148.6z" stroke="#000"/>
+   </g>
+   <g id="g5346" style="color:#000000" transform="translate(-8.1948 48.661)">
+    <path id="path5348" d="m66.4 38.7v74.3h148.6v-74.3h-148.6z" stroke="#000"/>
+   </g>
+  </g>
+  <path id="path6102" marker-end="url(#marker6104)" d="m166.81 173.9 80.887 69.332h110l79-69" stroke="#000" stroke-width="1px"/>
+  <path id="path6887" marker-end="url(#marker6889)" d="m246.42 124.53h110" stroke="#000" stroke-width="1px"/>
+ </g>
+ <text id="text6895" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" line-height="125%" y="144.66138" x="302.20035" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan6897" x="302.20035" y="144.66138">coordenadas</tspan><tspan id="tspan6899" x="302.20035" y="164.66138">esféricas</tspan></text>
+ <g id="g5792" transform="translate(-10)">
+  <g id="gnuplot_plot_1a" transform="translate(363.91 43.699)">
+   <title id="title10148">gnuplot_plot_1a</title>
+   <g id="g10150" style="color:#ffffff" stroke="currentColor" fill="none">
+    <g id="g10152" style="shape-rendering:crispEdges" fill="#e5e5e5">
+     <polygon id="polygon10154" points="90 121 94.9 123.3 96.5 122.3"/>
+     <polygon id="polygon10156" points="90 121 92.8 123.9 94.9 123.3"/>
+     <polygon id="polygon10158" points="90 121 90.4 124.2 92.8 123.9"/>
+     <polygon id="polygon10160" points="90 121 88 124.1 90.4 124.2"/>
+     <polygon id="polygon10162" points="90 121 85.7 123.5 88 124.1"/>
+     <polygon id="polygon10164" points="90 121 83.9 122.7 85.7 123.5"/>
+     <polygon id="polygon10166" points="90 121 82.8 121.5 83.9 122.7"/>
+     <polygon id="polygon10168" points="90 121 82.4 120.3 82.8 121.5"/>
+     <polygon id="polygon10170" points="90 121 82.9 119.1 82.4 120.3"/>
+     <polygon id="polygon10172" points="90 121 84.2 118 82.9 119.1"/>
+     <polygon id="polygon10174" points="90 121 86.1 117.2 84.2 118"/>
+     <polygon id="polygon10176" points="90 121 88.4 116.7 86.1 117.2"/>
+     <polygon id="polygon10178" points="90 121 90.8 116.6 88.4 116.7"/>
+     <polygon id="polygon10180" points="90 121 93.2 117 90.8 116.6"/>
+     <polygon id="polygon10182" points="90 121 95.3 117.7 93.2 117"/>
+     <polygon id="polygon10184" points="90 121 96.7 118.7 95.3 117.7"/>
+     <polygon id="polygon10186" points="90 121 97.5 119.9 96.7 118.7"/>
+     <polygon id="polygon10188" points="90 121 97.4 121.1 97.5 119.9"/>
+     <polygon id="polygon10190" points="90 121 96.5 122.3 97.4 121.1"/>
+     <polygon id="polygon10192" points="94.9 123.3 99.8 124.4 102.9 122.5 96.5 122.3"/>
+     <polygon id="polygon10194" points="92.8 123.9 95.6 125.7 99.8 124.4 94.9 123.3"/>
+     <polygon id="polygon10196" points="90.4 124.2 90.8 126.3 95.6 125.7 92.8 123.9"/>
+     <polygon id="polygon10198" points="88 124.1 86 126 90.8 126.3 90.4 124.2"/>
+     <polygon id="polygon10200" points="85.7 123.5 81.5 125 86 126 88 124.1"/>
+     <polygon id="polygon10202" points="83.9 122.7 78 123.2 81.5 125 85.7 123.5"/>
+     <polygon id="polygon10204" points="82.8 121.5 75.7 121 78 123.2 83.9 122.7"/>
+     <polygon id="polygon10206" points="82.4 120.3 75.1 118.6 75.7 121 82.8 121.5"/>
+     <polygon id="polygon10208" points="82.9 119.1 76 116.2 75.1 118.6 82.4 120.3"/>
+     <polygon id="polygon10210" points="84.2 118 78.5 114 76 116.2 82.9 119.1"/>
+     <polygon id="polygon10212" points="86.1 117.2 82.2 112.4 78.5 114 84.2 118"/>
+     <polygon id="polygon10214" points="88.4 116.7 86.8 111.5 82.2 112.4 86.1 117.2"/>
+     <polygon id="polygon10216" points="90.8 116.6 91.6 111.3 86.8 111.5 88.4 116.7"/>
+     <polygon id="polygon10218" points="93.2 117 96.4 112 91.6 111.3 90.8 116.6"/>
+     <polygon id="polygon10220" points="95.3 117.7 100.4 113.4 96.4 112 93.2 117"/>
+     <polygon id="polygon10222" points="96.7 118.7 103.3 115.4 100.4 113.4 95.3 117.7"/>
+     <polygon id="polygon10224" points="97.5 119.9 104.8 117.8 103.3 115.4 96.7 118.7"/>
+     <polygon id="polygon10226" points="97.4 121.1 104.7 120.2 104.8 117.8 97.5 119.9"/>
+     <polygon id="polygon10228" points="96.5 122.3 102.9 122.5 104.7 120.2 97.4 121.1"/>
+     <polygon id="polygon10230" points="99.8 124.4 104.4 124.4 109 121.6 102.9 122.5"/>
+     <polygon id="polygon10232" points="95.6 125.7 98.2 126.3 104.4 124.4 99.8 124.4"/>
+     <polygon id="polygon10234" points="90.8 126.3 91.2 127.1 98.2 126.3 95.6 125.7"/>
+     <polygon id="polygon10236" points="86 126 84.1 126.7 91.2 127.1 90.8 126.3"/>
+     <polygon id="polygon10238" points="81.5 125 77.5 125.2 84.1 126.7 86 126"/>
+     <polygon id="polygon10240" points="78 123.2 72.3 122.6 77.5 125.2 81.5 125"/>
+     <polygon id="polygon10242" points="75.7 121 69.1 119.4 72.3 122.6 78 123.2"/>
+     <polygon id="polygon10244" points="75.1 118.6 68.1 115.8 69.1 119.4 75.7 121"/>
+     <polygon id="polygon10246" points="76 116.2 69.5 112.3 68.1 115.8 75.1 118.6"/>
+     <polygon id="polygon10248" points="78.5 114 73.1 109.1 69.5 112.3 76 116.2"/>
+     <polygon id="polygon10250" points="82.2 112.4 78.5 106.8 73.1 109.1 78.5 114"/>
+     <polygon id="polygon10252" points="86.8 111.5 85.2 105.4 78.5 106.8 82.2 112.4"/>
+     <polygon id="polygon10254" points="91.6 111.3 92.4 105.2 85.2 105.4 86.8 111.5"/>
+     <polygon id="polygon10256" points="96.4 112 99.3 106.2 92.4 105.2 91.6 111.3"/>
+     <polygon id="polygon10258" points="100.4 113.4 105.3 108.3 99.3 106.2 96.4 112"/>
+     <polygon id="polygon10260" points="103.3 115.4 109.6 111.2 105.3 108.3 100.4 113.4"/>
+     <polygon id="polygon10262" points="104.8 117.8 111.7 114.6 109.6 111.2 103.3 115.4"/>
+     <polygon id="polygon10264" points="104.7 120.2 111.5 118.2 111.7 114.6 104.8 117.8"/>
+     <polygon id="polygon10266" points="102.9 122.5 109 121.6 111.5 118.2 104.7 120.2"/>
+     <polygon id="polygon10268" points="104.4 124.4 108.6 123.2 114.5 119.6 109 121.6"/>
+     <polygon id="polygon10270" points="98.2 126.3 100.6 125.7 108.6 123.2 104.4 124.4"/>
+     <polygon id="polygon10272" points="91.2 127.1 91.5 126.7 100.6 125.7 98.2 126.3"/>
+     <polygon id="polygon10274" points="84.1 126.7 82.3 126.2 91.5 126.7 91.2 127.1"/>
+     <polygon id="polygon10276" points="77.5 125.2 73.9 124.2 82.3 126.2 84.1 126.7"/>
+     <polygon id="polygon10278" points="72.3 122.6 67.2 120.9 73.9 124.2 77.5 125.2"/>
+     <polygon id="polygon10280" points="69.1 119.4 63 116.8 67.2 120.9 72.3 122.6"/>
+     <polygon id="polygon10282" points="68.1 115.8 61.7 112.1 63 116.8 69.1 119.4"/>
+     <polygon id="polygon10284" points="69.5 112.3 63.5 107.5 61.7 112.1 68.1 115.8"/>
+     <polygon id="polygon10286" points="73.1 109.1 68.1 103.5 63.5 107.5 69.5 112.3"/>
+     <polygon id="polygon10288" points="78.5 106.8 75.2 100.4 68.1 103.5 73.1 109.1"/>
+     <polygon id="polygon10290" points="85.2 105.4 83.8 98.7 75.2 100.4 78.5 106.8"/>
+     <polygon id="polygon10292" points="92.4 105.2 93.1 98.4 83.8 98.7 85.2 105.4"/>
+     <polygon id="polygon10294" points="99.3 106.2 102.1 99.7 93.1 98.4 92.4 105.2"/>
+     <polygon id="polygon10296" points="105.3 108.3 109.7 102.4 102.1 99.7 99.3 106.2"/>
+     <polygon id="polygon10298" points="109.6 111.2 115.3 106.1 109.7 102.4 105.3 108.3"/>
+     <polygon id="polygon10300" points="111.7 114.6 118.1 110.6 115.3 106.1 109.6 111.2"/>
+     <polygon id="polygon10302" points="111.5 118.2 117.8 115.2 118.1 110.6 111.7 114.6"/>
+     <polygon id="polygon10304" points="109 121.6 114.5 119.6 117.8 115.2 111.5 118.2"/>
+     <polygon id="polygon10306" points="108.6 123.2 112.3 120.9 119.4 116.5 114.5 119.6"/>
+     <polygon id="polygon10308" points="100.6 125.7 102.7 123.8 112.3 120.9 108.6 123.2"/>
+     <polygon id="polygon10310" points="91.5 126.7 91.8 125 102.7 123.8 100.6 125.7"/>
+     <polygon id="polygon10312" points="82.3 126.2 80.8 124.4 91.8 125 91.5 126.7"/>
+     <polygon id="polygon10314" points="73.9 124.2 70.7 122 80.8 124.4 82.3 126.2"/>
+     <polygon id="polygon10316" points="67.2 120.9 62.7 118.1 70.7 122 73.9 124.2"/>
+     <polygon id="polygon10318" points="63 116.8 57.6 113.1 62.7 118.1 67.2 120.9"/>
+     <polygon id="polygon10320" points="61.7 112.1 56.1 107.6 57.6 113.1 63 116.8"/>
+     <polygon id="polygon10322" points="63.5 107.5 58.2 102.1 56.1 107.6 61.7 112.1"/>
+     <polygon id="polygon10324" points="68.1 103.5 63.8 97.2 58.2 102.1 63.5 107.5"/>
+     <polygon id="polygon10326" points="75.2 100.4 72.3 93.6 63.8 97.2 68.1 103.5"/>
+     <polygon id="polygon10328" points="83.8 98.7 82.6 91.5 72.3 93.6 75.2 100.4"/>
+     <polygon id="polygon10330" points="93.1 98.4 93.7 91.2 82.6 91.5 83.8 98.7"/>
+     <polygon id="polygon10332" points="102.1 99.7 104.5 92.7 93.7 91.2 93.1 98.4"/>
+     <polygon id="polygon10334" points="109.7 102.4 113.7 95.9 104.5 92.7 102.1 99.7"/>
+     <polygon id="polygon10336" points="115.3 106.1 120.3 100.4 113.7 95.9 109.7 102.4"/>
+     <polygon id="polygon10338" points="118.1 110.6 123.6 105.7 120.3 100.4 115.3 106.1"/>
+     <polygon id="polygon10340" points="117.8 115.2 123.3 111.3 123.6 105.7 118.1 110.6"/>
+     <polygon id="polygon10342" points="114.5 119.6 119.4 116.5 123.3 111.3 117.8 115.2"/>
+     <polygon id="polygon10344" points="112.3 120.9 115.4 117.4 123.4 112.5 119.4 116.5"/>
+     <polygon id="polygon10346" points="102.7 123.8 104.5 120.8 115.4 117.4 112.3 120.9"/>
+     <polygon id="polygon10348" points="91.8 125 92.1 122.1 104.5 120.8 102.7 123.8"/>
+     <polygon id="polygon10350" points="80.8 124.4 79.5 121.4 92.1 122.1 91.8 125"/>
+     <polygon id="polygon10352" points="70.7 122 68 118.7 79.5 121.4 80.8 124.4"/>
+     <polygon id="polygon10354" points="62.7 118.1 58.9 114.3 68 118.7 70.7 122"/>
+     <polygon id="polygon10356" points="57.6 113.1 53.1 108.6 58.9 114.3 62.7 118.1"/>
+     <polygon id="polygon10358" points="56.1 107.6 51.4 102.3 53.1 108.6 57.6 113.1"/>
+     <polygon id="polygon10360" points="58.2 102.1 53.8 96.1 51.4 102.3 56.1 107.6"/>
+     <polygon id="polygon10362" points="63.8 97.2 60.2 90.5 53.8 96.1 58.2 102.1"/>
+     <polygon id="polygon10364" points="72.3 93.6 69.8 86.4 60.2 90.5 63.8 97.2"/>
+     <polygon id="polygon10366" points="82.6 91.5 81.6 84 69.8 86.4 72.3 93.6"/>
+     <polygon id="polygon10368" points="93.7 91.2 94.2 83.6 81.6 84 82.6 91.5"/>
+     <polygon id="polygon10370" points="104.5 92.7 106.5 85.3 94.2 83.6 93.7 91.2"/>
+     <polygon id="polygon10372" points="113.7 95.9 116.9 89 106.5 85.3 104.5 92.7"/>
+     <polygon id="polygon10374" points="120.3 100.4 124.5 94.1 116.9 89 113.7 95.9"/>
+     <polygon id="polygon10376" points="123.6 105.7 128.3 100.2 124.5 94.1 120.3 100.4"/>
+     <polygon id="polygon10378" points="123.3 111.3 127.9 106.5 128.3 100.2 123.6 105.7"/>
+     <polygon id="polygon10380" points="119.4 116.5 123.4 112.5 127.9 106.5 123.3 111.3"/>
+     <polygon id="polygon10382" points="115.4 117.4 117.7 113 126.6 107.6 123.4 112.5"/>
+     <polygon id="polygon10384" points="104.5 120.8 105.9 116.6 117.7 113 115.4 117.4"/>
+     <polygon id="polygon10386" points="92.1 122.1 92.3 118.1 105.9 116.6 104.5 120.8"/>
+     <polygon id="polygon10388" points="79.5 121.4 78.5 117.4 92.3 118.1 92.1 122.1"/>
+     <polygon id="polygon10390" points="68 118.7 65.9 114.4 78.5 117.4 79.5 121.4"/>
+     <polygon id="polygon10392" points="58.9 114.3 56 109.6 65.9 114.4 68 118.7"/>
+     <polygon id="polygon10394" points="53.1 108.6 49.7 103.3 56 109.6 58.9 114.3"/>
+     <polygon id="polygon10396" points="51.4 102.3 47.8 96.4 49.7 103.3 53.1 108.6"/>
+     <polygon id="polygon10398" points="53.8 96.1 50.4 89.6 47.8 96.4 51.4 102.3"/>
+     <polygon id="polygon10400" points="60.2 90.5 57.4 83.6 50.4 89.6 53.8 96.1"/>
+     <polygon id="polygon10402" points="69.8 86.4 67.9 79.1 57.4 83.6 60.2 90.5"/>
+     <polygon id="polygon10404" points="81.6 84 80.8 76.5 67.9 79.1 69.8 86.4"/>
+     <polygon id="polygon10406" points="94.2 83.6 94.6 76.1 80.8 76.5 81.6 84"/>
+     <polygon id="polygon10408" points="106.5 85.3 108 78 94.6 76.1 94.2 83.6"/>
+     <polygon id="polygon10410" points="116.9 89 119.5 81.9 108 78 106.5 85.3"/>
+     <polygon id="polygon10412" points="124.5 94.1 127.7 87.5 119.5 81.9 116.9 89"/>
+     <polygon id="polygon10414" points="128.3 100.2 131.9 94.1 127.7 87.5 124.5 94.1"/>
+     <polygon id="polygon10416" points="127.9 106.5 131.5 101.1 131.9 94.1 128.3 100.2"/>
+     <polygon id="polygon10418" points="123.4 112.5 126.6 107.6 131.5 101.1 127.9 106.5"/>
+     <polygon id="polygon10420" points="117.7 113 119.4 107.7 128.7 102 126.6 107.6"/>
+     <polygon id="polygon10422" points="105.9 116.6 106.8 111.5 119.4 107.7 117.7 113"/>
+     <polygon id="polygon10424" points="92.3 118.1 92.4 113.1 106.8 111.5 105.9 116.6"/>
+     <polygon id="polygon10426" points="78.5 117.4 77.9 112.3 92.4 113.1 92.3 118.1"/>
+     <polygon id="polygon10428" points="65.9 114.4 64.5 109.2 77.9 112.3 78.5 117.4"/>
+     <polygon id="polygon10430" points="56 109.6 54 104 64.5 109.2 65.9 114.4"/>
+     <polygon id="polygon10432" points="49.7 103.3 47.3 97.5 54 104 56 109.6"/>
+     <polygon id="polygon10434" points="47.8 96.4 45.3 90.2 47.3 97.5 49.7 103.3"/>
+     <polygon id="polygon10436" points="50.4 89.6 48.1 82.9 45.3 90.2 47.8 96.4"/>
+     <polygon id="polygon10438" points="57.4 83.6 55.5 76.6 48.1 82.9 50.4 89.6"/>
+     <polygon id="polygon10440" points="67.9 79.1 66.6 71.8 55.5 76.6 57.4 83.6"/>
+     <polygon id="polygon10442" points="80.8 76.5 80.3 69 66.6 71.8 67.9 79.1"/>
+     <polygon id="polygon10444" points="94.6 76.1 94.9 68.6 80.3 69 80.8 76.5"/>
+     <polygon id="polygon10446" points="108 78 109.1 70.6 94.9 68.6 94.6 76.1"/>
+     <polygon id="polygon10448" points="119.5 81.9 121.2 74.8 109.1 70.6 108 78"/>
+     <polygon id="polygon10450" points="127.7 87.5 129.9 80.8 121.2 74.8 119.5 81.9"/>
+     <polygon id="polygon10452" points="131.9 94.1 134.3 87.7 129.9 80.8 127.7 87.5"/>
+     <polygon id="polygon10454" points="131.5 101.1 133.9 95.1 134.3 87.7 131.9 94.1"/>
+     <polygon id="polygon10456" points="126.6 107.6 128.7 102 133.9 95.1 131.5 101.1"/>
+     <polygon id="polygon10458" points="119.4 107.7 120.2 101.6 129.8 95.8 128.7 102"/>
+     <polygon id="polygon10460" points="106.8 111.5 107.3 105.6 120.2 101.6 119.4 107.7"/>
+     <polygon id="polygon10462" points="92.4 113.1 92.5 107.2 107.3 105.6 106.8 111.5"/>
+     <polygon id="polygon10464" points="77.9 112.3 77.5 106.4 92.5 107.2 92.4 113.1"/>
+     <polygon id="polygon10466" points="64.5 109.2 63.8 103.2 77.5 106.4 77.9 112.3"/>
+     <polygon id="polygon10468" points="54 104 53 97.9 63.8 103.2 64.5 109.2"/>
+     <polygon id="polygon10470" points="47.3 97.5 46.1 91.1 53 97.9 54 104"/>
+     <polygon id="polygon10472" points="45.3 90.2 44 83.6 46.1 91.1 47.3 97.5"/>
+     <polygon id="polygon10474" points="48.1 82.9 46.9 76.3 44 83.6 45.3 90.2"/>
+     <polygon id="polygon10476" points="55.5 76.6 54.5 69.7 46.9 76.3 48.1 82.9"/>
+     <polygon id="polygon10478" points="66.6 71.8 65.9 64.7 54.5 69.7 55.5 76.6"/>
+     <polygon id="polygon10480" points="80.3 69 80 61.9 65.9 64.7 66.6 71.8"/>
+     <polygon id="polygon10482" points="94.9 68.6 95 61.5 80 61.9 80.3 69"/>
+     <polygon id="polygon10484" points="109.1 70.6 109.6 63.5 95 61.5 94.9 68.6"/>
+     <polygon id="polygon10486" points="121.2 74.8 122.1 67.9 109.6 63.5 109.1 70.6"/>
+     <polygon id="polygon10488" points="129.9 80.8 131 74 122.1 67.9 121.2 74.8"/>
+     <polygon id="polygon10490" points="134.3 87.7 135.6 81.1 131 74 129.9 80.8"/>
+     <polygon id="polygon10492" points="133.9 95.1 135.1 88.7 135.6 81.1 134.3 87.7"/>
+     <polygon id="polygon10494" points="128.7 102 129.8 95.8 135.1 88.7 133.9 95.1"/>
+     <polygon id="polygon10496" points="120.2 101.6 120.2 95 129.8 89.2 129.8 95.8"/>
+     <polygon id="polygon10498" points="107.3 105.6 107.3 99 120.2 95 120.2 101.6"/>
+     <polygon id="polygon10500" points="92.5 107.2 92.5 100.6 107.3 99 107.3 105.6"/>
+     <polygon id="polygon10502" points="77.5 106.4 77.5 99.8 92.5 100.6 92.5 107.2"/>
+     <polygon id="polygon10504" points="63.8 103.2 63.8 96.6 77.5 99.8 77.5 106.4"/>
+     <polygon id="polygon10506" points="53 97.9 53 91.3 63.8 96.6 63.8 103.2"/>
+     <polygon id="polygon10508" points="46.1 91.1 46.1 84.5 53 91.3 53 97.9"/>
+     <polygon id="polygon10510" points="44 83.6 44 77.1 46.1 84.5 46.1 91.1"/>
+     <polygon id="polygon10512" points="46.9 76.3 46.9 69.7 44 77.1 44 83.6"/>
+     <polygon id="polygon10514" points="54.5 69.7 54.5 63.1 46.9 69.7 46.9 76.3"/>
+     <polygon id="polygon10516" points="65.9 64.7 65.9 58.1 54.5 63.1 54.5 69.7"/>
+     <polygon id="polygon10518" points="80 61.9 80 55.3 65.9 58.1 65.9 64.7"/>
+     <polygon id="polygon10520" points="95 61.5 95 54.9 80 55.3 80 61.9"/>
+     <polygon id="polygon10522" points="109.6 63.5 109.6 56.9 95 54.9 95 61.5"/>
+     <polygon id="polygon10524" points="122.1 67.9 122.1 61.2 109.6 56.9 109.6 63.5"/>
+     <polygon id="polygon10526" points="131 74 131 67.4 122.1 61.2 122.1 67.9"/>
+     <polygon id="polygon10528" points="135.6 81.1 135.6 74.6 131 67.4 131 74"/>
+     <polygon id="polygon10530" points="135.1 88.7 135.1 82.1 135.6 74.6 135.6 81.1"/>
+     <polygon id="polygon10532" points="129.8 95.8 129.8 89.2 135.1 82.1 135.1 88.7"/>
+     <polygon id="polygon10534" points="120.2 95 119.4 88 128.7 82.3 129.8 89.2"/>
+     <polygon id="polygon10536" points="107.3 99 106.8 91.9 119.4 88 120.2 95"/>
+     <polygon id="polygon10538" points="92.5 100.6 92.4 93.5 106.8 91.9 107.3 99"/>
+     <polygon id="polygon10540" points="77.5 99.8 77.9 92.7 92.4 93.5 92.5 100.6"/>
+     <polygon id="polygon10542" points="63.8 96.6 64.5 89.5 77.9 92.7 77.5 99.8"/>
+     <polygon id="polygon10544" points="53 91.3 54 84.4 64.5 89.5 63.8 96.6"/>
+     <polygon id="polygon10546" points="46.1 84.5 47.3 77.9 54 84.4 53 91.3"/>
+     <polygon id="polygon10548" points="44 77.1 45.3 70.6 47.3 77.9 46.1 84.5"/>
+     <polygon id="polygon10550" points="46.9 69.7 48.1 63.4 45.3 70.6 44 77.1"/>
+     <polygon id="polygon10552" points="54.5 63.1 55.5 57 48.1 63.4 46.9 69.7"/>
+     <polygon id="polygon10554" points="65.9 58.1 66.6 52.2 55.5 57 54.5 63.1"/>
+     <polygon id="polygon10556" points="80 55.3 80.3 49.4 66.6 52.2 65.9 58.1"/>
+     <polygon id="polygon10558" points="95 54.9 94.9 49 80.3 49.4 80 55.3"/>
+     <polygon id="polygon10560" points="109.6 56.9 109.1 51 94.9 49 95 54.9"/>
+     <polygon id="polygon10562" points="122.1 61.2 121.2 55.2 109.1 51 109.6 56.9"/>
+     <polygon id="polygon10564" points="131 67.4 129.9 61.1 121.2 55.2 122.1 61.2"/>
+     <polygon id="polygon10566" points="135.6 74.6 134.3 68.2 129.9 61.1 131 67.4"/>
+     <polygon id="polygon10568" points="135.1 82.1 133.9 75.5 134.3 68.2 135.6 74.6"/>
+     <polygon id="polygon10570" points="129.8 89.2 128.7 82.3 133.9 75.5 135.1 82.1"/>
+     <polygon id="polygon10572" points="119.4 88 117.7 80.9 126.6 75.6 128.7 82.3"/>
+     <polygon id="polygon10574" points="106.8 91.9 105.9 84.5 117.7 80.9 119.4 88"/>
+     <polygon id="polygon10576" points="92.4 93.5 92.3 86 105.9 84.5 106.8 91.9"/>
+     <polygon id="polygon10578" points="77.9 92.7 78.5 85.2 92.3 86 92.4 93.5"/>
+     <polygon id="polygon10580" points="64.5 89.5 65.9 82.3 78.5 85.2 77.9 92.7"/>
+     <polygon id="polygon10582" points="54 84.4 56 77.5 65.9 82.3 64.5 89.5"/>
+     <polygon id="polygon10584" points="47.3 77.9 49.7 71.3 56 77.5 54 84.4"/>
+     <polygon id="polygon10586" points="45.3 70.6 47.8 64.4 49.7 71.3 47.3 77.9"/>
+     <polygon id="polygon10588" points="48.1 63.4 50.4 57.6 47.8 64.4 45.3 70.6"/>
+     <polygon id="polygon10590" points="55.5 57 57.4 51.5 50.4 57.6 48.1 63.4"/>
+     <polygon id="polygon10592" points="66.6 52.2 67.9 47 57.4 51.5 55.5 57"/>
+     <polygon id="polygon10594" points="80.3 49.4 80.8 44.3 67.9 47 66.6 52.2"/>
+     <polygon id="polygon10596" points="94.9 49 94.6 44 80.8 44.3 80.3 49.4"/>
+     <polygon id="polygon10598" points="109.1 51 108 45.8 94.6 44 94.9 49"/>
+     <polygon id="polygon10600" points="121.2 55.2 119.5 49.8 108 45.8 109.1 51"/>
+     <polygon id="polygon10602" points="129.9 61.1 127.7 55.4 119.5 49.8 121.2 55.2"/>
+     <polygon id="polygon10604" points="134.3 68.2 131.9 62.1 127.7 55.4 129.9 61.1"/>
+     <polygon id="polygon10606" points="133.9 75.5 131.5 69 131.9 62.1 134.3 68.2"/>
+     <polygon id="polygon10608" points="128.7 82.3 126.6 75.6 131.5 69 133.9 75.5"/>
+     <polygon id="polygon10610" points="117.7 80.9 115.4 73.7 123.4 68.8 126.6 75.6"/>
+     <polygon id="polygon10612" points="105.9 84.5 104.5 77.1 115.4 73.7 117.7 80.9"/>
+     <polygon id="polygon10614" points="92.3 86 92.1 78.5 104.5 77.1 105.9 84.5"/>
+     <polygon id="polygon10616" points="78.5 85.2 79.5 77.8 92.1 78.5 92.3 86"/>
+     <polygon id="polygon10618" points="65.9 82.3 68 75.1 79.5 77.8 78.5 85.2"/>
+     <polygon id="polygon10620" points="56 77.5 58.9 70.6 68 75.1 65.9 82.3"/>
+     <polygon id="polygon10622" points="49.7 71.3 53.1 64.9 58.9 70.6 56 77.5"/>
+     <polygon id="polygon10624" points="47.8 64.4 51.4 58.6 53.1 64.9 49.7 71.3"/>
+     <polygon id="polygon10626" points="50.4 57.6 53.8 52.4 51.4 58.6 47.8 64.4"/>
+     <polygon id="polygon10628" points="57.4 51.5 60.2 46.9 53.8 52.4 50.4 57.6"/>
+     <polygon id="polygon10630" points="67.9 47 69.8 42.7 60.2 46.9 57.4 51.5"/>
+     <polygon id="polygon10632" points="80.8 44.3 81.6 40.3 69.8 42.7 67.9 47"/>
+     <polygon id="polygon10634" points="94.6 44 94.2 39.9 81.6 40.3 80.8 44.3"/>
+     <polygon id="polygon10636" points="108 45.8 106.5 41.7 94.2 39.9 94.6 44"/>
+     <polygon id="polygon10638" points="119.5 49.8 116.9 45.3 106.5 41.7 108 45.8"/>
+     <polygon id="polygon10640" points="127.7 55.4 124.5 50.4 116.9 45.3 119.5 49.8"/>
+     <polygon id="polygon10642" points="131.9 62.1 128.3 56.5 124.5 50.4 127.7 55.4"/>
+     <polygon id="polygon10644" points="131.5 69 127.9 62.9 128.3 56.5 131.9 62.1"/>
+     <polygon id="polygon10646" points="126.6 75.6 123.4 68.8 127.9 62.9 131.5 69"/>
+     <polygon id="polygon10648" points="115.4 73.7 112.3 66.8 119.4 62.4 123.4 68.8"/>
+     <polygon id="polygon10650" points="104.5 77.1 102.7 69.7 112.3 66.8 115.4 73.7"/>
+     <polygon id="polygon10652" points="92.1 78.5 91.8 70.9 102.7 69.7 104.5 77.1"/>
+     <polygon id="polygon10654" points="79.5 77.8 80.8 70.3 91.8 70.9 92.1 78.5"/>
+     <polygon id="polygon10656" points="68 75.1 70.7 67.9 80.8 70.3 79.5 77.8"/>
+     <polygon id="polygon10658" points="58.9 70.6 62.7 64 70.7 67.9 68 75.1"/>
+     <polygon id="polygon10660" points="53.1 64.9 57.6 59 62.7 64 58.9 70.6"/>
+     <polygon id="polygon10662" points="51.4 58.6 56.1 53.5 57.6 59 53.1 64.9"/>
+     <polygon id="polygon10664" points="53.8 52.4 58.2 48 56.1 53.5 51.4 58.6"/>
+     <polygon id="polygon10666" points="60.2 46.9 63.8 43.1 58.2 48 53.8 52.4"/>
+     <polygon id="polygon10668" points="69.8 42.7 72.3 39.5 63.8 43.1 60.2 46.9"/>
+     <polygon id="polygon10670" points="81.6 40.3 82.6 37.4 72.3 39.5 69.8 42.7"/>
+     <polygon id="polygon10672" points="94.2 39.9 93.7 37.1 82.6 37.4 81.6 40.3"/>
+     <polygon id="polygon10674" points="106.5 41.7 104.5 38.6 93.7 37.1 94.2 39.9"/>
+     <polygon id="polygon10676" points="116.9 45.3 113.7 41.8 104.5 38.6 106.5 41.7"/>
+     <polygon id="polygon10678" points="124.5 50.4 120.3 46.3 113.7 41.8 116.9 45.3"/>
+     <polygon id="polygon10680" points="128.3 56.5 123.6 51.6 120.3 46.3 124.5 50.4"/>
+     <polygon id="polygon10682" points="127.9 62.9 123.3 57.2 123.6 51.6 128.3 56.5"/>
+     <polygon id="polygon10684" points="123.4 68.8 119.4 62.4 123.3 57.2 127.9 62.9"/>
+     <polygon id="polygon10686" points="112.3 66.8 108.6 60.2 114.5 56.6 119.4 62.4"/>
+     <polygon id="polygon10688" points="102.7 69.7 100.6 62.6 108.6 60.2 112.3 66.8"/>
+     <polygon id="polygon10690" points="91.8 70.9 91.5 63.6 100.6 62.6 102.7 69.7"/>
+     <polygon id="polygon10692" points="80.8 70.3 82.3 63.1 91.5 63.6 91.8 70.9"/>
+     <polygon id="polygon10694" points="70.7 67.9 73.9 61.1 82.3 63.1 80.8 70.3"/>
+     <polygon id="polygon10696" points="62.7 64 67.2 57.9 73.9 61.1 70.7 67.9"/>
+     <polygon id="polygon10698" points="57.6 59 63 53.7 67.2 57.9 62.7 64"/>
+     <polygon id="polygon10700" points="56.1 53.5 61.7 49.1 63 53.7 57.6 59"/>
+     <polygon id="polygon10702" points="58.2 48 63.5 44.5 61.7 49.1 56.1 53.5"/>
+     <polygon id="polygon10704" points="63.8 43.1 68.1 40.5 63.5 44.5 58.2 48"/>
+     <polygon id="polygon10706" points="72.3 39.5 75.2 37.4 68.1 40.5 63.8 43.1"/>
+     <polygon id="polygon10708" points="82.6 37.4 83.8 35.6 75.2 37.4 72.3 39.5"/>
+     <polygon id="polygon10710" points="93.7 37.1 93.1 35.4 83.8 35.6 82.6 37.4"/>
+     <polygon id="polygon10712" points="104.5 38.6 102.1 36.6 93.1 35.4 93.7 37.1"/>
+     <polygon id="polygon10714" points="113.7 41.8 109.7 39.3 102.1 36.6 104.5 38.6"/>
+     <polygon id="polygon10716" points="120.3 46.3 115.3 43.1 109.7 39.3 113.7 41.8"/>
+     <polygon id="polygon10718" points="123.6 51.6 118.1 47.5 115.3 43.1 120.3 46.3"/>
+     <polygon id="polygon10720" points="123.3 57.2 117.8 52.2 118.1 47.5 123.6 51.6"/>
+     <polygon id="polygon10722" points="119.4 62.4 114.5 56.6 117.8 52.2 123.3 57.2"/>
+     <polygon id="polygon10724" points="108.6 60.2 104.4 54.2 109 51.4 114.5 56.6"/>
+     <polygon id="polygon10726" points="100.6 62.6 98.2 56 104.4 54.2 108.6 60.2"/>
+     <polygon id="polygon10728" points="91.5 63.6 91.2 56.8 98.2 56 100.6 62.6"/>
+     <polygon id="polygon10730" points="82.3 63.1 84.1 56.4 91.2 56.8 91.5 63.6"/>
+     <polygon id="polygon10732" points="73.9 61.1 77.5 54.9 84.1 56.4 82.3 63.1"/>
+     <polygon id="polygon10734" points="67.2 57.9 72.3 52.4 77.5 54.9 73.9 61.1"/>
+     <polygon id="polygon10736" points="63 53.7 69.1 49.1 72.3 52.4 67.2 57.9"/>
+     <polygon id="polygon10738" points="61.7 49.1 68.1 45.6 69.1 49.1 63 53.7"/>
+     <polygon id="polygon10740" points="63.5 44.5 69.5 42 68.1 45.6 61.7 49.1"/>
+     <polygon id="polygon10742" points="68.1 40.5 73.1 38.9 69.5 42 63.5 44.5"/>
+     <polygon id="polygon10744" points="75.2 37.4 78.5 36.5 73.1 38.9 68.1 40.5"/>
+     <polygon id="polygon10746" points="83.8 35.6 85.2 35.1 78.5 36.5 75.2 37.4"/>
+     <polygon id="polygon10748" points="93.1 35.4 92.4 34.9 85.2 35.1 83.8 35.6"/>
+     <polygon id="polygon10750" points="102.1 36.6 99.3 35.9 92.4 34.9 93.1 35.4"/>
+     <polygon id="polygon10752" points="109.7 39.3 105.3 38 99.3 35.9 102.1 36.6"/>
+     <polygon id="polygon10754" points="115.3 43.1 109.6 40.9 105.3 38 109.7 39.3"/>
+     <polygon id="polygon10756" points="118.1 47.5 111.7 44.4 109.6 40.9 115.3 43.1"/>
+     <polygon id="polygon10758" points="117.8 52.2 111.5 48 111.7 44.4 118.1 47.5"/>
+     <polygon id="polygon10760" points="114.5 56.6 109 51.4 111.5 48 117.8 52.2"/>
+     <polygon id="polygon10762" points="104.4 54.2 99.8 48.9 102.9 47 109 51.4"/>
+     <polygon id="polygon10764" points="98.2 56 95.6 50.2 99.8 48.9 104.4 54.2"/>
+     <polygon id="polygon10766" points="91.2 56.8 90.8 50.7 95.6 50.2 98.2 56"/>
+     <polygon id="polygon10768" points="84.1 56.4 86 50.4 90.8 50.7 91.2 56.8"/>
+     <polygon id="polygon10770" points="77.5 54.9 81.5 49.4 86 50.4 84.1 56.4"/>
+     <polygon id="polygon10772" points="72.3 52.4 78 47.6 81.5 49.4 77.5 54.9"/>
+     <polygon id="polygon10774" points="69.1 49.1 75.7 45.4 78 47.6 72.3 52.4"/>
+     <polygon id="polygon10776" points="68.1 45.6 75.1 43 75.7 45.4 69.1 49.1"/>
+     <polygon id="polygon10778" points="69.5 42 76 40.6 75.1 43 68.1 45.6"/>
+     <polygon id="polygon10780" points="73.1 38.9 78.5 38.4 76 40.6 69.5 42"/>
+     <polygon id="polygon10782" points="78.5 36.5 82.2 36.8 78.5 38.4 73.1 38.9"/>
+     <polygon id="polygon10784" points="85.2 35.1 86.8 35.9 82.2 36.8 78.5 36.5"/>
+     <polygon id="polygon10786" points="92.4 34.9 91.6 35.8 86.8 35.9 85.2 35.1"/>
+     <polygon id="polygon10788" points="99.3 35.9 96.4 36.4 91.6 35.8 92.4 34.9"/>
+     <polygon id="polygon10790" points="105.3 38 100.4 37.8 96.4 36.4 99.3 35.9"/>
+     <polygon id="polygon10792" points="109.6 40.9 103.3 39.8 100.4 37.8 105.3 38"/>
+     <polygon id="polygon10794" points="111.7 44.4 104.8 42.2 103.3 39.8 109.6 40.9"/>
+     <polygon id="polygon10796" points="111.5 48 104.7 44.6 104.8 42.2 111.7 44.4"/>
+     <polygon id="polygon10798" points="109 51.4 102.9 47 104.7 44.6 111.5 48"/>
+     <polygon id="polygon10800" points="99.8 48.9 94.9 44.5 96.5 43.5 102.9 47"/>
+     <polygon id="polygon10802" points="95.6 50.2 92.8 45.1 94.9 44.5 99.8 48.9"/>
+     <polygon id="polygon10804" points="90.8 50.7 90.4 45.4 92.8 45.1 95.6 50.2"/>
+     <polygon id="polygon10806" points="86 50.4 88 45.2 90.4 45.4 90.8 50.7"/>
+     <polygon id="polygon10808" points="81.5 49.4 85.7 44.7 88 45.2 86 50.4"/>
+     <polygon id="polygon10810" points="78 47.6 83.9 43.8 85.7 44.7 81.5 49.4"/>
+     <polygon id="polygon10812" points="75.7 45.4 82.8 42.7 83.9 43.8 78 47.6"/>
+     <polygon id="polygon10814" points="75.1 43 82.4 41.5 82.8 42.7 75.7 45.4"/>
+     <polygon id="polygon10816" points="76 40.6 82.9 40.3 82.4 41.5 75.1 43"/>
+     <polygon id="polygon10818" points="78.5 38.4 84.2 39.2 82.9 40.3 76 40.6"/>
+     <polygon id="polygon10820" points="82.2 36.8 86.1 38.3 84.2 39.2 78.5 38.4"/>
+     <polygon id="polygon10822" points="86.8 35.9 88.4 37.9 86.1 38.3 82.2 36.8"/>
+     <polygon id="polygon10824" points="91.6 35.8 90.8 37.8 88.4 37.9 86.8 35.9"/>
+     <polygon id="polygon10826" points="96.4 36.4 93.2 38.1 90.8 37.8 91.6 35.8"/>
+     <polygon id="polygon10828" points="100.4 37.8 95.3 38.9 93.2 38.1 96.4 36.4"/>
+     <polygon id="polygon10830" points="103.3 39.8 96.7 39.9 95.3 38.9 100.4 37.8"/>
+     <polygon id="polygon10832" points="104.8 42.2 97.5 41.1 96.7 39.9 103.3 39.8"/>
+     <polygon id="polygon10834" points="104.7 44.6 97.4 42.3 97.5 41.1 104.8 42.2"/>
+     <polygon id="polygon10836" points="102.9 47 96.5 43.5 97.4 42.3 104.7 44.6"/>
+     <polygon id="polygon10838" points="94.9 44.5 90 41 90 41 96.5 43.5"/>
+     <polygon id="polygon10840" points="92.8 45.1 90 41 90 41 94.9 44.5"/>
+     <polygon id="polygon10842" points="90.4 45.4 90 41 90 41 92.8 45.1"/>
+     <polygon id="polygon10844" points="88 45.2 90 41 90 41 90.4 45.4"/>
+     <polygon id="polygon10846" points="85.7 44.7 90 41 90 41 88 45.2"/>
+     <polygon id="polygon10848" points="83.9 43.8 90 41 90 41 85.7 44.7"/>
+     <polygon id="polygon10850" points="82.8 42.7 90 41 90 41 83.9 43.8"/>
+     <polygon id="polygon10852" points="82.4 41.5 90 41 90 41 82.8 42.7"/>
+     <polygon id="polygon10854" points="82.9 40.3 90 41 90 41 82.4 41.5"/>
+     <polygon id="polygon10856" points="84.2 39.2 90 41 90 41 82.9 40.3"/>
+     <polygon id="polygon10858" points="86.1 38.3 90 41 90 41 84.2 39.2"/>
+     <polygon id="polygon10860" points="88.4 37.9 90 41 90 41 86.1 38.3"/>
+     <polygon id="polygon10862" points="90.8 37.8 90 41 90 41 88.4 37.9"/>
+     <polygon id="polygon10864" points="93.2 38.1 90 41 90 41 90.8 37.8"/>
+     <polygon id="polygon10866" points="95.3 38.9 90 41 90 41 93.2 38.1"/>
+     <polygon id="polygon10868" points="96.7 39.9 90 41 90 41 95.3 38.9"/>
+     <polygon id="polygon10870" points="97.5 41.1 90 41 90 41 96.7 39.9"/>
+     <polygon id="polygon10872" points="97.4 42.3 90 41 90 41 97.5 41.1"/>
+     <polygon id="polygon10874" points="96.5 43.5 90 41 90 41 97.4 42.3"/>
+    </g>
+   </g>
+  </g>
+  <g id="gnuplot_plot_1b" transform="translate(363.91 43.699)">
+   <title id="title10881">gnuplot_plot_1b</title>
+   <g id="g10885" style="color:#000000" stroke="currentColor" stroke-width=".25" fill="none">
+    <g id="g10887" style="shape-rendering:crispEdges" fill="#e5e5e5">
+     <polygon id="polygon10889" points="90 121 94.9 123.3 96.5 122.3"/>
+     <polygon id="polygon10891" points="90 121 92.8 123.9 94.9 123.3"/>
+     <polygon id="polygon10893" points="90 121 90.4 124.2 92.8 123.9"/>
+     <polygon id="polygon10895" points="90 121 88 124.1 90.4 124.2"/>
+     <polygon id="polygon10897" points="90 121 85.7 123.5 88 124.1"/>
+     <polygon id="polygon10899" points="90 121 83.9 122.7 85.7 123.5"/>
+     <polygon id="polygon10901" points="90 121 82.8 121.5 83.9 122.7"/>
+     <polygon id="polygon10903" points="90 121 82.4 120.3 82.8 121.5"/>
+     <polygon id="polygon10905" points="90 121 82.9 119.1 82.4 120.3"/>
+     <polygon id="polygon10907" points="90 121 84.2 118 82.9 119.1"/>
+     <polygon id="polygon10909" points="90 121 86.1 117.2 84.2 118"/>
+     <polygon id="polygon10911" points="90 121 88.4 116.7 86.1 117.2"/>
+     <polygon id="polygon10913" points="90 121 90.8 116.6 88.4 116.7"/>
+     <polygon id="polygon10915" points="90 121 93.2 117 90.8 116.6"/>
+     <polygon id="polygon10917" points="90 121 95.3 117.7 93.2 117"/>
+     <polygon id="polygon10919" points="90 121 96.7 118.7 95.3 117.7"/>
+     <polygon id="polygon10921" points="90 121 97.5 119.9 96.7 118.7"/>
+     <polygon id="polygon10923" points="90 121 97.4 121.1 97.5 119.9"/>
+     <polygon id="polygon10925" points="90 121 96.5 122.3 97.4 121.1"/>
+     <polygon id="polygon10927" points="94.9 123.3 99.8 124.4 102.9 122.5 96.5 122.3"/>
+     <polygon id="polygon10929" points="92.8 123.9 95.6 125.7 99.8 124.4 94.9 123.3"/>
+     <polygon id="polygon10931" points="90.4 124.2 90.8 126.3 95.6 125.7 92.8 123.9"/>
+     <polygon id="polygon10933" points="88 124.1 86 126 90.8 126.3 90.4 124.2"/>
+     <polygon id="polygon10935" points="85.7 123.5 81.5 125 86 126 88 124.1"/>
+     <polygon id="polygon10937" points="83.9 122.7 78 123.2 81.5 125 85.7 123.5"/>
+     <polygon id="polygon10939" points="82.8 121.5 75.7 121 78 123.2 83.9 122.7"/>
+     <polygon id="polygon10941" points="82.4 120.3 75.1 118.6 75.7 121 82.8 121.5"/>
+     <polygon id="polygon10943" points="82.9 119.1 76 116.2 75.1 118.6 82.4 120.3"/>
+     <polygon id="polygon10945" points="84.2 118 78.5 114 76 116.2 82.9 119.1"/>
+     <polygon id="polygon10947" points="86.1 117.2 82.2 112.4 78.5 114 84.2 118"/>
+     <polygon id="polygon10949" points="88.4 116.7 86.8 111.5 82.2 112.4 86.1 117.2"/>
+     <polygon id="polygon10951" points="90.8 116.6 91.6 111.3 86.8 111.5 88.4 116.7"/>
+     <polygon id="polygon10953" points="93.2 117 96.4 112 91.6 111.3 90.8 116.6"/>
+     <polygon id="polygon10955" points="95.3 117.7 100.4 113.4 96.4 112 93.2 117"/>
+     <polygon id="polygon10957" points="96.7 118.7 103.3 115.4 100.4 113.4 95.3 117.7"/>
+     <polygon id="polygon10959" points="97.5 119.9 104.8 117.8 103.3 115.4 96.7 118.7"/>
+     <polygon id="polygon10961" points="97.4 121.1 104.7 120.2 104.8 117.8 97.5 119.9"/>
+     <polygon id="polygon10963" points="96.5 122.3 102.9 122.5 104.7 120.2 97.4 121.1"/>
+     <polygon id="polygon10965" points="99.8 124.4 104.4 124.4 109 121.6 102.9 122.5"/>
+     <polygon id="polygon10967" points="95.6 125.7 98.2 126.3 104.4 124.4 99.8 124.4"/>
+     <polygon id="polygon10969" points="90.8 126.3 91.2 127.1 98.2 126.3 95.6 125.7"/>
+     <polygon id="polygon10971" points="86 126 84.1 126.7 91.2 127.1 90.8 126.3"/>
+     <polygon id="polygon10973" points="81.5 125 77.5 125.2 84.1 126.7 86 126"/>
+     <polygon id="polygon10975" points="78 123.2 72.3 122.6 77.5 125.2 81.5 125"/>
+     <polygon id="polygon10977" points="75.7 121 69.1 119.4 72.3 122.6 78 123.2"/>
+     <polygon id="polygon10979" points="75.1 118.6 68.1 115.8 69.1 119.4 75.7 121"/>
+     <polygon id="polygon10981" points="76 116.2 69.5 112.3 68.1 115.8 75.1 118.6"/>
+     <polygon id="polygon10983" points="78.5 114 73.1 109.1 69.5 112.3 76 116.2"/>
+     <polygon id="polygon10985" points="82.2 112.4 78.5 106.8 73.1 109.1 78.5 114"/>
+     <polygon id="polygon10987" points="86.8 111.5 85.2 105.4 78.5 106.8 82.2 112.4"/>
+     <polygon id="polygon10989" points="91.6 111.3 92.4 105.2 85.2 105.4 86.8 111.5"/>
+     <polygon id="polygon10991" points="96.4 112 99.3 106.2 92.4 105.2 91.6 111.3"/>
+     <polygon id="polygon10993" points="100.4 113.4 105.3 108.3 99.3 106.2 96.4 112"/>
+     <polygon id="polygon10995" points="103.3 115.4 109.6 111.2 105.3 108.3 100.4 113.4"/>
+     <polygon id="polygon10997" points="104.8 117.8 111.7 114.6 109.6 111.2 103.3 115.4"/>
+     <polygon id="polygon10999" points="104.7 120.2 111.5 118.2 111.7 114.6 104.8 117.8"/>
+     <polygon id="polygon11001" points="102.9 122.5 109 121.6 111.5 118.2 104.7 120.2"/>
+     <polygon id="polygon11003" points="104.4 124.4 108.6 123.2 114.5 119.6 109 121.6"/>
+     <polygon id="polygon11005" points="98.2 126.3 100.6 125.7 108.6 123.2 104.4 124.4"/>
+     <polygon id="polygon11007" points="91.2 127.1 91.5 126.7 100.6 125.7 98.2 126.3"/>
+     <polygon id="polygon11009" points="84.1 126.7 82.3 126.2 91.5 126.7 91.2 127.1"/>
+     <polygon id="polygon11011" points="77.5 125.2 73.9 124.2 82.3 126.2 84.1 126.7"/>
+     <polygon id="polygon11013" points="72.3 122.6 67.2 120.9 73.9 124.2 77.5 125.2"/>
+     <polygon id="polygon11015" points="69.1 119.4 63 116.8 67.2 120.9 72.3 122.6"/>
+     <polygon id="polygon11017" points="68.1 115.8 61.7 112.1 63 116.8 69.1 119.4"/>
+     <polygon id="polygon11019" points="69.5 112.3 63.5 107.5 61.7 112.1 68.1 115.8"/>
+     <polygon id="polygon11021" points="73.1 109.1 68.1 103.5 63.5 107.5 69.5 112.3"/>
+     <polygon id="polygon11023" points="78.5 106.8 75.2 100.4 68.1 103.5 73.1 109.1"/>
+     <polygon id="polygon11025" points="85.2 105.4 83.8 98.7 75.2 100.4 78.5 106.8"/>
+     <polygon id="polygon11027" points="92.4 105.2 93.1 98.4 83.8 98.7 85.2 105.4"/>
+     <polygon id="polygon11029" points="99.3 106.2 102.1 99.7 93.1 98.4 92.4 105.2"/>
+     <polygon id="polygon11031" points="105.3 108.3 109.7 102.4 102.1 99.7 99.3 106.2"/>
+     <polygon id="polygon11033" points="109.6 111.2 115.3 106.1 109.7 102.4 105.3 108.3"/>
+     <polygon id="polygon11035" points="111.7 114.6 118.1 110.6 115.3 106.1 109.6 111.2"/>
+     <polygon id="polygon11037" points="111.5 118.2 117.8 115.2 118.1 110.6 111.7 114.6"/>
+     <polygon id="polygon11039" points="109 121.6 114.5 119.6 117.8 115.2 111.5 118.2"/>
+     <polygon id="polygon11041" points="108.6 123.2 112.3 120.9 119.4 116.5 114.5 119.6"/>
+     <polygon id="polygon11043" points="100.6 125.7 102.7 123.8 112.3 120.9 108.6 123.2"/>
+     <polygon id="polygon11045" points="91.5 126.7 91.8 125 102.7 123.8 100.6 125.7"/>
+     <polygon id="polygon11047" points="82.3 126.2 80.8 124.4 91.8 125 91.5 126.7"/>
+     <polygon id="polygon11049" points="73.9 124.2 70.7 122 80.8 124.4 82.3 126.2"/>
+     <polygon id="polygon11051" points="67.2 120.9 62.7 118.1 70.7 122 73.9 124.2"/>
+     <polygon id="polygon11053" points="63 116.8 57.6 113.1 62.7 118.1 67.2 120.9"/>
+     <polygon id="polygon11055" points="61.7 112.1 56.1 107.6 57.6 113.1 63 116.8"/>
+     <polygon id="polygon11057" points="63.5 107.5 58.2 102.1 56.1 107.6 61.7 112.1"/>
+     <polygon id="polygon11059" points="68.1 103.5 63.8 97.2 58.2 102.1 63.5 107.5"/>
+     <polygon id="polygon11061" points="75.2 100.4 72.3 93.6 63.8 97.2 68.1 103.5"/>
+     <polygon id="polygon11063" points="83.8 98.7 82.6 91.5 72.3 93.6 75.2 100.4"/>
+     <polygon id="polygon11065" points="93.1 98.4 93.7 91.2 82.6 91.5 83.8 98.7"/>
+     <polygon id="polygon11067" points="102.1 99.7 104.5 92.7 93.7 91.2 93.1 98.4"/>
+     <polygon id="polygon11069" points="109.7 102.4 113.7 95.9 104.5 92.7 102.1 99.7"/>
+     <polygon id="polygon11071" points="115.3 106.1 120.3 100.4 113.7 95.9 109.7 102.4"/>
+     <polygon id="polygon11073" points="118.1 110.6 123.6 105.7 120.3 100.4 115.3 106.1"/>
+     <polygon id="polygon11075" points="117.8 115.2 123.3 111.3 123.6 105.7 118.1 110.6"/>
+     <polygon id="polygon11077" points="114.5 119.6 119.4 116.5 123.3 111.3 117.8 115.2"/>
+     <polygon id="polygon11079" points="112.3 120.9 115.4 117.4 123.4 112.5 119.4 116.5"/>
+     <polygon id="polygon11081" points="102.7 123.8 104.5 120.8 115.4 117.4 112.3 120.9"/>
+     <polygon id="polygon11083" points="91.8 125 92.1 122.1 104.5 120.8 102.7 123.8"/>
+     <polygon id="polygon11085" points="80.8 124.4 79.5 121.4 92.1 122.1 91.8 125"/>
+     <polygon id="polygon11087" points="70.7 122 68 118.7 79.5 121.4 80.8 124.4"/>
+     <polygon id="polygon11089" points="62.7 118.1 58.9 114.3 68 118.7 70.7 122"/>
+     <polygon id="polygon11091" points="57.6 113.1 53.1 108.6 58.9 114.3 62.7 118.1"/>
+     <polygon id="polygon11093" points="56.1 107.6 51.4 102.3 53.1 108.6 57.6 113.1"/>
+     <polygon id="polygon11095" points="58.2 102.1 53.8 96.1 51.4 102.3 56.1 107.6"/>
+     <polygon id="polygon11097" points="63.8 97.2 60.2 90.5 53.8 96.1 58.2 102.1"/>
+     <polygon id="polygon11099" points="72.3 93.6 69.8 86.4 60.2 90.5 63.8 97.2"/>
+     <polygon id="polygon11101" points="82.6 91.5 81.6 84 69.8 86.4 72.3 93.6"/>
+     <polygon id="polygon11103" points="93.7 91.2 94.2 83.6 81.6 84 82.6 91.5"/>
+     <polygon id="polygon11105" points="104.5 92.7 106.5 85.3 94.2 83.6 93.7 91.2"/>
+     <polygon id="polygon11107" points="113.7 95.9 116.9 89 106.5 85.3 104.5 92.7"/>
+     <polygon id="polygon11109" points="120.3 100.4 124.5 94.1 116.9 89 113.7 95.9"/>
+     <polygon id="polygon11111" points="123.6 105.7 128.3 100.2 124.5 94.1 120.3 100.4"/>
+     <polygon id="polygon11113" points="123.3 111.3 127.9 106.5 128.3 100.2 123.6 105.7"/>
+     <polygon id="polygon11115" points="119.4 116.5 123.4 112.5 127.9 106.5 123.3 111.3"/>
+     <polygon id="polygon11117" points="115.4 117.4 117.7 113 126.6 107.6 123.4 112.5"/>
+     <polygon id="polygon11119" points="104.5 120.8 105.9 116.6 117.7 113 115.4 117.4"/>
+     <polygon id="polygon11121" points="92.1 122.1 92.3 118.1 105.9 116.6 104.5 120.8"/>
+     <polygon id="polygon11123" points="79.5 121.4 78.5 117.4 92.3 118.1 92.1 122.1"/>
+     <polygon id="polygon11125" points="68 118.7 65.9 114.4 78.5 117.4 79.5 121.4"/>
+     <polygon id="polygon11127" points="58.9 114.3 56 109.6 65.9 114.4 68 118.7"/>
+     <polygon id="polygon11129" points="53.1 108.6 49.7 103.3 56 109.6 58.9 114.3"/>
+     <polygon id="polygon11131" points="51.4 102.3 47.8 96.4 49.7 103.3 53.1 108.6"/>
+     <polygon id="polygon11133" points="53.8 96.1 50.4 89.6 47.8 96.4 51.4 102.3"/>
+     <polygon id="polygon11135" points="60.2 90.5 57.4 83.6 50.4 89.6 53.8 96.1"/>
+     <polygon id="polygon11137" points="69.8 86.4 67.9 79.1 57.4 83.6 60.2 90.5"/>
+     <polygon id="polygon11139" points="81.6 84 80.8 76.5 67.9 79.1 69.8 86.4"/>
+     <polygon id="polygon11141" points="94.2 83.6 94.6 76.1 80.8 76.5 81.6 84"/>
+     <polygon id="polygon11143" points="106.5 85.3 108 78 94.6 76.1 94.2 83.6"/>
+     <polygon id="polygon11145" points="116.9 89 119.5 81.9 108 78 106.5 85.3"/>
+     <polygon id="polygon11147" points="124.5 94.1 127.7 87.5 119.5 81.9 116.9 89"/>
+     <polygon id="polygon11149" points="128.3 100.2 131.9 94.1 127.7 87.5 124.5 94.1"/>
+     <polygon id="polygon11151" points="127.9 106.5 131.5 101.1 131.9 94.1 128.3 100.2"/>
+     <polygon id="polygon11153" points="123.4 112.5 126.6 107.6 131.5 101.1 127.9 106.5"/>
+     <polygon id="polygon11155" points="117.7 113 119.4 107.7 128.7 102 126.6 107.6"/>
+     <polygon id="polygon11157" points="105.9 116.6 106.8 111.5 119.4 107.7 117.7 113"/>
+     <polygon id="polygon11159" points="92.3 118.1 92.4 113.1 106.8 111.5 105.9 116.6"/>
+     <polygon id="polygon11161" points="78.5 117.4 77.9 112.3 92.4 113.1 92.3 118.1"/>
+     <polygon id="polygon11163" points="65.9 114.4 64.5 109.2 77.9 112.3 78.5 117.4"/>
+     <polygon id="polygon11165" points="56 109.6 54 104 64.5 109.2 65.9 114.4"/>
+     <polygon id="polygon11167" points="49.7 103.3 47.3 97.5 54 104 56 109.6"/>
+     <polygon id="polygon11169" points="47.8 96.4 45.3 90.2 47.3 97.5 49.7 103.3"/>
+     <polygon id="polygon11171" points="50.4 89.6 48.1 82.9 45.3 90.2 47.8 96.4"/>
+     <polygon id="polygon11173" points="57.4 83.6 55.5 76.6 48.1 82.9 50.4 89.6"/>
+     <polygon id="polygon11175" points="67.9 79.1 66.6 71.8 55.5 76.6 57.4 83.6"/>
+     <polygon id="polygon11177" points="80.8 76.5 80.3 69 66.6 71.8 67.9 79.1"/>
+     <polygon id="polygon11179" points="94.6 76.1 94.9 68.6 80.3 69 80.8 76.5"/>
+     <polygon id="polygon11181" points="108 78 109.1 70.6 94.9 68.6 94.6 76.1"/>
+     <polygon id="polygon11183" points="119.5 81.9 121.2 74.8 109.1 70.6 108 78"/>
+     <polygon id="polygon11185" points="127.7 87.5 129.9 80.8 121.2 74.8 119.5 81.9"/>
+     <polygon id="polygon11187" points="131.9 94.1 134.3 87.7 129.9 80.8 127.7 87.5"/>
+     <polygon id="polygon11189" points="131.5 101.1 133.9 95.1 134.3 87.7 131.9 94.1"/>
+     <polygon id="polygon11191" points="126.6 107.6 128.7 102 133.9 95.1 131.5 101.1"/>
+     <polygon id="polygon11193" points="119.4 107.7 120.2 101.6 129.8 95.8 128.7 102"/>
+     <polygon id="polygon11195" points="106.8 111.5 107.3 105.6 120.2 101.6 119.4 107.7"/>
+     <polygon id="polygon11197" points="92.4 113.1 92.5 107.2 107.3 105.6 106.8 111.5"/>
+     <polygon id="polygon11199" points="77.9 112.3 77.5 106.4 92.5 107.2 92.4 113.1"/>
+     <polygon id="polygon11201" points="64.5 109.2 63.8 103.2 77.5 106.4 77.9 112.3"/>
+     <polygon id="polygon11203" points="54 104 53 97.9 63.8 103.2 64.5 109.2"/>
+     <polygon id="polygon11205" points="47.3 97.5 46.1 91.1 53 97.9 54 104"/>
+     <polygon id="polygon11207" points="45.3 90.2 44 83.6 46.1 91.1 47.3 97.5"/>
+     <polygon id="polygon11209" points="48.1 82.9 46.9 76.3 44 83.6 45.3 90.2"/>
+     <polygon id="polygon11211" points="55.5 76.6 54.5 69.7 46.9 76.3 48.1 82.9"/>
+     <polygon id="polygon11213" points="66.6 71.8 65.9 64.7 54.5 69.7 55.5 76.6"/>
+     <polygon id="polygon11215" points="80.3 69 80 61.9 65.9 64.7 66.6 71.8"/>
+     <polygon id="polygon11217" points="94.9 68.6 95 61.5 80 61.9 80.3 69"/>
+     <polygon id="polygon11219" points="109.1 70.6 109.6 63.5 95 61.5 94.9 68.6"/>
+     <polygon id="polygon11221" points="121.2 74.8 122.1 67.9 109.6 63.5 109.1 70.6"/>
+     <polygon id="polygon11223" points="129.9 80.8 131 74 122.1 67.9 121.2 74.8"/>
+     <polygon id="polygon11225" points="134.3 87.7 135.6 81.1 131 74 129.9 80.8"/>
+     <polygon id="polygon11227" points="133.9 95.1 135.1 88.7 135.6 81.1 134.3 87.7"/>
+     <polygon id="polygon11229" points="128.7 102 129.8 95.8 135.1 88.7 133.9 95.1"/>
+     <polygon id="polygon11231" points="120.2 101.6 120.2 95 129.8 89.2 129.8 95.8"/>
+     <polygon id="polygon11233" points="107.3 105.6 107.3 99 120.2 95 120.2 101.6"/>
+     <polygon id="polygon11235" points="92.5 107.2 92.5 100.6 107.3 99 107.3 105.6"/>
+     <polygon id="polygon11237" points="77.5 106.4 77.5 99.8 92.5 100.6 92.5 107.2"/>
+     <polygon id="polygon11239" points="63.8 103.2 63.8 96.6 77.5 99.8 77.5 106.4"/>
+     <polygon id="polygon11241" points="53 97.9 53 91.3 63.8 96.6 63.8 103.2"/>
+     <polygon id="polygon11243" points="46.1 91.1 46.1 84.5 53 91.3 53 97.9"/>
+     <polygon id="polygon11245" points="44 83.6 44 77.1 46.1 84.5 46.1 91.1"/>
+     <polygon id="polygon11247" points="46.9 76.3 46.9 69.7 44 77.1 44 83.6"/>
+     <polygon id="polygon11249" points="54.5 69.7 54.5 63.1 46.9 69.7 46.9 76.3"/>
+     <polygon id="polygon11251" points="65.9 64.7 65.9 58.1 54.5 63.1 54.5 69.7"/>
+     <polygon id="polygon11253" points="80 61.9 80 55.3 65.9 58.1 65.9 64.7"/>
+     <polygon id="polygon11255" points="95 61.5 95 54.9 80 55.3 80 61.9"/>
+     <polygon id="polygon11257" points="109.6 63.5 109.6 56.9 95 54.9 95 61.5"/>
+     <polygon id="polygon11259" points="122.1 67.9 122.1 61.2 109.6 56.9 109.6 63.5"/>
+     <polygon id="polygon11261" points="131 74 131 67.4 122.1 61.2 122.1 67.9"/>
+     <polygon id="polygon11263" points="135.6 81.1 135.6 74.6 131 67.4 131 74"/>
+     <polygon id="polygon11265" points="135.1 88.7 135.1 82.1 135.6 74.6 135.6 81.1"/>
+     <polygon id="polygon11267" points="129.8 95.8 129.8 89.2 135.1 82.1 135.1 88.7"/>
+     <polygon id="polygon11269" points="120.2 95 119.4 88 128.7 82.3 129.8 89.2"/>
+     <polygon id="polygon11271" points="107.3 99 106.8 91.9 119.4 88 120.2 95"/>
+     <polygon id="polygon11273" points="92.5 100.6 92.4 93.5 106.8 91.9 107.3 99"/>
+     <polygon id="polygon11275" points="77.5 99.8 77.9 92.7 92.4 93.5 92.5 100.6"/>
+     <polygon id="polygon11277" points="63.8 96.6 64.5 89.5 77.9 92.7 77.5 99.8"/>
+     <polygon id="polygon11279" points="53 91.3 54 84.4 64.5 89.5 63.8 96.6"/>
+     <polygon id="polygon11281" points="46.1 84.5 47.3 77.9 54 84.4 53 91.3"/>
+     <polygon id="polygon11283" points="44 77.1 45.3 70.6 47.3 77.9 46.1 84.5"/>
+     <polygon id="polygon11285" points="46.9 69.7 48.1 63.4 45.3 70.6 44 77.1"/>
+     <polygon id="polygon11287" points="54.5 63.1 55.5 57 48.1 63.4 46.9 69.7"/>
+     <polygon id="polygon11289" points="65.9 58.1 66.6 52.2 55.5 57 54.5 63.1"/>
+     <polygon id="polygon11291" points="80 55.3 80.3 49.4 66.6 52.2 65.9 58.1"/>
+     <polygon id="polygon11293" points="95 54.9 94.9 49 80.3 49.4 80 55.3"/>
+     <polygon id="polygon11295" points="109.6 56.9 109.1 51 94.9 49 95 54.9"/>
+     <polygon id="polygon11297" points="122.1 61.2 121.2 55.2 109.1 51 109.6 56.9"/>
+     <polygon id="polygon11299" points="131 67.4 129.9 61.1 121.2 55.2 122.1 61.2"/>
+     <polygon id="polygon11301" points="135.6 74.6 134.3 68.2 129.9 61.1 131 67.4"/>
+     <polygon id="polygon11303" points="135.1 82.1 133.9 75.5 134.3 68.2 135.6 74.6"/>
+     <polygon id="polygon11305" points="129.8 89.2 128.7 82.3 133.9 75.5 135.1 82.1"/>
+     <polygon id="polygon11307" points="119.4 88 117.7 80.9 126.6 75.6 128.7 82.3"/>
+     <polygon id="polygon11309" points="106.8 91.9 105.9 84.5 117.7 80.9 119.4 88"/>
+     <polygon id="polygon11311" points="92.4 93.5 92.3 86 105.9 84.5 106.8 91.9"/>
+     <polygon id="polygon11313" points="77.9 92.7 78.5 85.2 92.3 86 92.4 93.5"/>
+     <polygon id="polygon11315" points="64.5 89.5 65.9 82.3 78.5 85.2 77.9 92.7"/>
+     <polygon id="polygon11317" points="54 84.4 56 77.5 65.9 82.3 64.5 89.5"/>
+     <polygon id="polygon11319" points="47.3 77.9 49.7 71.3 56 77.5 54 84.4"/>
+     <polygon id="polygon11321" points="45.3 70.6 47.8 64.4 49.7 71.3 47.3 77.9"/>
+     <polygon id="polygon11323" points="48.1 63.4 50.4 57.6 47.8 64.4 45.3 70.6"/>
+     <polygon id="polygon11325" points="55.5 57 57.4 51.5 50.4 57.6 48.1 63.4"/>
+     <polygon id="polygon11327" points="66.6 52.2 67.9 47 57.4 51.5 55.5 57"/>
+     <polygon id="polygon11329" points="80.3 49.4 80.8 44.3 67.9 47 66.6 52.2"/>
+     <polygon id="polygon11331" points="94.9 49 94.6 44 80.8 44.3 80.3 49.4"/>
+     <polygon id="polygon11333" points="109.1 51 108 45.8 94.6 44 94.9 49"/>
+     <polygon id="polygon11335" points="121.2 55.2 119.5 49.8 108 45.8 109.1 51"/>
+     <polygon id="polygon11337" points="129.9 61.1 127.7 55.4 119.5 49.8 121.2 55.2"/>
+     <polygon id="polygon11339" points="134.3 68.2 131.9 62.1 127.7 55.4 129.9 61.1"/>
+     <polygon id="polygon11341" points="133.9 75.5 131.5 69 131.9 62.1 134.3 68.2"/>
+     <polygon id="polygon11343" points="128.7 82.3 126.6 75.6 131.5 69 133.9 75.5"/>
+     <polygon id="polygon11345" points="117.7 80.9 115.4 73.7 123.4 68.8 126.6 75.6"/>
+     <polygon id="polygon11347" points="105.9 84.5 104.5 77.1 115.4 73.7 117.7 80.9"/>
+     <polygon id="polygon11349" points="92.3 86 92.1 78.5 104.5 77.1 105.9 84.5"/>
+     <polygon id="polygon11351" points="78.5 85.2 79.5 77.8 92.1 78.5 92.3 86"/>
+     <polygon id="polygon11353" points="65.9 82.3 68 75.1 79.5 77.8 78.5 85.2"/>
+     <polygon id="polygon11355" points="56 77.5 58.9 70.6 68 75.1 65.9 82.3"/>
+     <polygon id="polygon11357" points="49.7 71.3 53.1 64.9 58.9 70.6 56 77.5"/>
+     <polygon id="polygon11359" points="47.8 64.4 51.4 58.6 53.1 64.9 49.7 71.3"/>
+     <polygon id="polygon11361" points="50.4 57.6 53.8 52.4 51.4 58.6 47.8 64.4"/>
+     <polygon id="polygon11363" points="57.4 51.5 60.2 46.9 53.8 52.4 50.4 57.6"/>
+     <polygon id="polygon11365" points="67.9 47 69.8 42.7 60.2 46.9 57.4 51.5"/>
+     <polygon id="polygon11367" points="80.8 44.3 81.6 40.3 69.8 42.7 67.9 47"/>
+     <polygon id="polygon11369" points="94.6 44 94.2 39.9 81.6 40.3 80.8 44.3"/>
+     <polygon id="polygon11371" points="108 45.8 106.5 41.7 94.2 39.9 94.6 44"/>
+     <polygon id="polygon11373" points="119.5 49.8 116.9 45.3 106.5 41.7 108 45.8"/>
+     <polygon id="polygon11375" points="127.7 55.4 124.5 50.4 116.9 45.3 119.5 49.8"/>
+     <polygon id="polygon11377" points="131.9 62.1 128.3 56.5 124.5 50.4 127.7 55.4"/>
+     <polygon id="polygon11379" points="131.5 69 127.9 62.9 128.3 56.5 131.9 62.1"/>
+     <polygon id="polygon11381" points="126.6 75.6 123.4 68.8 127.9 62.9 131.5 69"/>
+     <polygon id="polygon11383" points="115.4 73.7 112.3 66.8 119.4 62.4 123.4 68.8"/>
+     <polygon id="polygon11385" points="104.5 77.1 102.7 69.7 112.3 66.8 115.4 73.7"/>
+     <polygon id="polygon11387" points="92.1 78.5 91.8 70.9 102.7 69.7 104.5 77.1"/>
+     <polygon id="polygon11389" points="79.5 77.8 80.8 70.3 91.8 70.9 92.1 78.5"/>
+     <polygon id="polygon11391" points="68 75.1 70.7 67.9 80.8 70.3 79.5 77.8"/>
+     <polygon id="polygon11393" points="58.9 70.6 62.7 64 70.7 67.9 68 75.1"/>
+     <polygon id="polygon11395" points="53.1 64.9 57.6 59 62.7 64 58.9 70.6"/>
+     <polygon id="polygon11397" points="51.4 58.6 56.1 53.5 57.6 59 53.1 64.9"/>
+     <polygon id="polygon11399" points="53.8 52.4 58.2 48 56.1 53.5 51.4 58.6"/>
+     <polygon id="polygon11401" points="60.2 46.9 63.8 43.1 58.2 48 53.8 52.4"/>
+     <polygon id="polygon11403" points="69.8 42.7 72.3 39.5 63.8 43.1 60.2 46.9"/>
+     <polygon id="polygon11405" points="81.6 40.3 82.6 37.4 72.3 39.5 69.8 42.7"/>
+     <polygon id="polygon11407" points="94.2 39.9 93.7 37.1 82.6 37.4 81.6 40.3"/>
+     <polygon id="polygon11409" points="106.5 41.7 104.5 38.6 93.7 37.1 94.2 39.9"/>
+     <polygon id="polygon11411" points="116.9 45.3 113.7 41.8 104.5 38.6 106.5 41.7"/>
+     <polygon id="polygon11413" points="124.5 50.4 120.3 46.3 113.7 41.8 116.9 45.3"/>
+     <polygon id="polygon11415" points="128.3 56.5 123.6 51.6 120.3 46.3 124.5 50.4"/>
+     <polygon id="polygon11417" points="127.9 62.9 123.3 57.2 123.6 51.6 128.3 56.5"/>
+     <polygon id="polygon11419" points="123.4 68.8 119.4 62.4 123.3 57.2 127.9 62.9"/>
+     <polygon id="polygon11421" points="112.3 66.8 108.6 60.2 114.5 56.6 119.4 62.4"/>
+     <polygon id="polygon11423" points="102.7 69.7 100.6 62.6 108.6 60.2 112.3 66.8"/>
+     <polygon id="polygon11425" points="91.8 70.9 91.5 63.6 100.6 62.6 102.7 69.7"/>
+     <polygon id="polygon11427" points="80.8 70.3 82.3 63.1 91.5 63.6 91.8 70.9"/>
+     <polygon id="polygon11429" points="70.7 67.9 73.9 61.1 82.3 63.1 80.8 70.3"/>
+     <polygon id="polygon11431" points="62.7 64 67.2 57.9 73.9 61.1 70.7 67.9"/>
+     <polygon id="polygon11433" points="57.6 59 63 53.7 67.2 57.9 62.7 64"/>
+     <polygon id="polygon11435" points="56.1 53.5 61.7 49.1 63 53.7 57.6 59"/>
+     <polygon id="polygon11437" points="58.2 48 63.5 44.5 61.7 49.1 56.1 53.5"/>
+     <polygon id="polygon11439" points="63.8 43.1 68.1 40.5 63.5 44.5 58.2 48"/>
+     <polygon id="polygon11441" points="72.3 39.5 75.2 37.4 68.1 40.5 63.8 43.1"/>
+     <polygon id="polygon11443" points="82.6 37.4 83.8 35.6 75.2 37.4 72.3 39.5"/>
+     <polygon id="polygon11445" points="93.7 37.1 93.1 35.4 83.8 35.6 82.6 37.4"/>
+     <polygon id="polygon11447" points="104.5 38.6 102.1 36.6 93.1 35.4 93.7 37.1"/>
+     <polygon id="polygon11449" points="113.7 41.8 109.7 39.3 102.1 36.6 104.5 38.6"/>
+     <polygon id="polygon11451" points="120.3 46.3 115.3 43.1 109.7 39.3 113.7 41.8"/>
+     <polygon id="polygon11453" points="123.6 51.6 118.1 47.5 115.3 43.1 120.3 46.3"/>
+     <polygon id="polygon11455" points="123.3 57.2 117.8 52.2 118.1 47.5 123.6 51.6"/>
+     <polygon id="polygon11457" points="119.4 62.4 114.5 56.6 117.8 52.2 123.3 57.2"/>
+     <polygon id="polygon11459" points="108.6 60.2 104.4 54.2 109 51.4 114.5 56.6"/>
+     <polygon id="polygon11461" points="100.6 62.6 98.2 56 104.4 54.2 108.6 60.2"/>
+     <polygon id="polygon11463" points="91.5 63.6 91.2 56.8 98.2 56 100.6 62.6"/>
+     <polygon id="polygon11465" points="82.3 63.1 84.1 56.4 91.2 56.8 91.5 63.6"/>
+     <polygon id="polygon11467" points="73.9 61.1 77.5 54.9 84.1 56.4 82.3 63.1"/>
+     <polygon id="polygon11469" points="67.2 57.9 72.3 52.4 77.5 54.9 73.9 61.1"/>
+     <polygon id="polygon11471" points="63 53.7 69.1 49.1 72.3 52.4 67.2 57.9"/>
+     <polygon id="polygon11473" points="61.7 49.1 68.1 45.6 69.1 49.1 63 53.7"/>
+     <polygon id="polygon11475" points="63.5 44.5 69.5 42 68.1 45.6 61.7 49.1"/>
+     <polygon id="polygon11477" points="68.1 40.5 73.1 38.9 69.5 42 63.5 44.5"/>
+     <polygon id="polygon11479" points="75.2 37.4 78.5 36.5 73.1 38.9 68.1 40.5"/>
+     <polygon id="polygon11481" points="83.8 35.6 85.2 35.1 78.5 36.5 75.2 37.4"/>
+     <polygon id="polygon11483" points="93.1 35.4 92.4 34.9 85.2 35.1 83.8 35.6"/>
+     <polygon id="polygon11485" points="102.1 36.6 99.3 35.9 92.4 34.9 93.1 35.4"/>
+     <polygon id="polygon11487" points="109.7 39.3 105.3 38 99.3 35.9 102.1 36.6"/>
+     <polygon id="polygon11489" points="115.3 43.1 109.6 40.9 105.3 38 109.7 39.3"/>
+     <polygon id="polygon11491" points="118.1 47.5 111.7 44.4 109.6 40.9 115.3 43.1"/>
+     <polygon id="polygon11493" points="117.8 52.2 111.5 48 111.7 44.4 118.1 47.5"/>
+     <polygon id="polygon11495" points="114.5 56.6 109 51.4 111.5 48 117.8 52.2"/>
+     <polygon id="polygon11497" points="104.4 54.2 99.8 48.9 102.9 47 109 51.4"/>
+     <polygon id="polygon11499" points="98.2 56 95.6 50.2 99.8 48.9 104.4 54.2"/>
+     <polygon id="polygon11501" points="91.2 56.8 90.8 50.7 95.6 50.2 98.2 56"/>
+     <polygon id="polygon11503" points="84.1 56.4 86 50.4 90.8 50.7 91.2 56.8"/>
+     <polygon id="polygon11505" points="77.5 54.9 81.5 49.4 86 50.4 84.1 56.4"/>
+     <polygon id="polygon11507" points="72.3 52.4 78 47.6 81.5 49.4 77.5 54.9"/>
+     <polygon id="polygon11509" points="69.1 49.1 75.7 45.4 78 47.6 72.3 52.4"/>
+     <polygon id="polygon11511" points="68.1 45.6 75.1 43 75.7 45.4 69.1 49.1"/>
+     <polygon id="polygon11513" points="69.5 42 76 40.6 75.1 43 68.1 45.6"/>
+     <polygon id="polygon11515" points="73.1 38.9 78.5 38.4 76 40.6 69.5 42"/>
+     <polygon id="polygon11517" points="78.5 36.5 82.2 36.8 78.5 38.4 73.1 38.9"/>
+     <polygon id="polygon11519" points="85.2 35.1 86.8 35.9 82.2 36.8 78.5 36.5"/>
+     <polygon id="polygon11521" points="92.4 34.9 91.6 35.8 86.8 35.9 85.2 35.1"/>
+     <polygon id="polygon11523" points="99.3 35.9 96.4 36.4 91.6 35.8 92.4 34.9"/>
+     <polygon id="polygon11525" points="105.3 38 100.4 37.8 96.4 36.4 99.3 35.9"/>
+     <polygon id="polygon11527" points="109.6 40.9 103.3 39.8 100.4 37.8 105.3 38"/>
+     <polygon id="polygon11529" points="111.7 44.4 104.8 42.2 103.3 39.8 109.6 40.9"/>
+     <polygon id="polygon11531" points="111.5 48 104.7 44.6 104.8 42.2 111.7 44.4"/>
+     <polygon id="polygon11533" points="109 51.4 102.9 47 104.7 44.6 111.5 48"/>
+     <polygon id="polygon11535" points="99.8 48.9 94.9 44.5 96.5 43.5 102.9 47"/>
+     <polygon id="polygon11537" points="95.6 50.2 92.8 45.1 94.9 44.5 99.8 48.9"/>
+     <polygon id="polygon11539" points="90.8 50.7 90.4 45.4 92.8 45.1 95.6 50.2"/>
+     <polygon id="polygon11541" points="86 50.4 88 45.2 90.4 45.4 90.8 50.7"/>
+     <polygon id="polygon11543" points="81.5 49.4 85.7 44.7 88 45.2 86 50.4"/>
+     <polygon id="polygon11545" points="78 47.6 83.9 43.8 85.7 44.7 81.5 49.4"/>
+     <polygon id="polygon11547" points="75.7 45.4 82.8 42.7 83.9 43.8 78 47.6"/>
+     <polygon id="polygon11549" points="75.1 43 82.4 41.5 82.8 42.7 75.7 45.4"/>
+     <polygon id="polygon11551" points="76 40.6 82.9 40.3 82.4 41.5 75.1 43"/>
+     <polygon id="polygon11553" points="78.5 38.4 84.2 39.2 82.9 40.3 76 40.6"/>
+     <polygon id="polygon11555" points="82.2 36.8 86.1 38.3 84.2 39.2 78.5 38.4"/>
+     <polygon id="polygon11557" points="86.8 35.9 88.4 37.9 86.1 38.3 82.2 36.8"/>
+     <polygon id="polygon11559" points="91.6 35.8 90.8 37.8 88.4 37.9 86.8 35.9"/>
+     <polygon id="polygon11561" points="96.4 36.4 93.2 38.1 90.8 37.8 91.6 35.8"/>
+     <polygon id="polygon11563" points="100.4 37.8 95.3 38.9 93.2 38.1 96.4 36.4"/>
+     <polygon id="polygon11565" points="103.3 39.8 96.7 39.9 95.3 38.9 100.4 37.8"/>
+     <polygon id="polygon11567" points="104.8 42.2 97.5 41.1 96.7 39.9 103.3 39.8"/>
+     <polygon id="polygon11569" points="104.7 44.6 97.4 42.3 97.5 41.1 104.8 42.2"/>
+     <polygon id="polygon11571" points="102.9 47 96.5 43.5 97.4 42.3 104.7 44.6"/>
+     <polygon id="polygon11573" points="94.9 44.5 90 41 90 41 96.5 43.5"/>
+     <polygon id="polygon11575" points="92.8 45.1 90 41 90 41 94.9 44.5"/>
+     <polygon id="polygon11577" points="90.4 45.4 90 41 90 41 92.8 45.1"/>
+     <polygon id="polygon11579" points="88 45.2 90 41 90 41 90.4 45.4"/>
+     <polygon id="polygon11581" points="85.7 44.7 90 41 90 41 88 45.2"/>
+     <polygon id="polygon11583" points="83.9 43.8 90 41 90 41 85.7 44.7"/>
+     <polygon id="polygon11585" points="82.8 42.7 90 41 90 41 83.9 43.8"/>
+     <polygon id="polygon11587" points="82.4 41.5 90 41 90 41 82.8 42.7"/>
+     <polygon id="polygon11589" points="82.9 40.3 90 41 90 41 82.4 41.5"/>
+     <polygon id="polygon11591" points="84.2 39.2 90 41 90 41 82.9 40.3"/>
+     <polygon id="polygon11593" points="86.1 38.3 90 41 90 41 84.2 39.2"/>
+     <polygon id="polygon11595" points="88.4 37.9 90 41 90 41 86.1 38.3"/>
+     <polygon id="polygon11597" points="90.8 37.8 90 41 90 41 88.4 37.9"/>
+     <polygon id="polygon11599" points="93.2 38.1 90 41 90 41 90.8 37.8"/>
+     <polygon id="polygon11601" points="95.3 38.9 90 41 90 41 93.2 38.1"/>
+     <polygon id="polygon11603" points="96.7 39.9 90 41 90 41 95.3 38.9"/>
+     <polygon id="polygon11605" points="97.5 41.1 90 41 90 41 96.7 39.9"/>
+     <polygon id="polygon11607" points="97.4 42.3 90 41 90 41 97.5 41.1"/>
+     <polygon id="polygon11609" points="96.5 43.5 90 41 90 41 97.4 42.3"/>
+    </g>
+   </g>
+   <g id="g11611" style="color:#000000" stroke="#808080" stroke-width=".25" fill="none">
+    <path id="path11613" d="m90 121m6.5 1.3 0.9-1.2 0.1-1.2-0.8-1.2-1.4-1-2.1-0.7-2.4-0.4-2.4 0.1-2.3 0.5-1.9 0.8-1.3 1.1-0.5 1.2 0.4 1.2 1.1 1.2 1.8 0.8 2.3 0.6 2.4 0.1 2.4-0.3 2.1-0.6 1.6-1m6.4 0.2 1.8-2.3 0.1-2.4-1.5-2.4-2.9-2-4-1.4-4.8-0.7-4.8 0.2-4.6 0.9-3.7 1.6-2.5 2.2-0.9 2.4 0.6 2.4 2.3 2.2 3.5 1.8 4.5 1 4.8 0.3 4.8-0.6 4.2-1.3 3.1-1.9m6.1-0.9 2.5-3.4 0.2-3.6-2.1-3.4-4.3-2.9-6-2.1-6.9-1-7.2 0.2-6.7 1.4-5.4 2.3-3.6 3.2-1.4 3.5 1 3.6 3.2 3.2 5.2 2.6 6.6 1.5 7.1 0.4 7-0.8 6.2-1.9 4.6-2.8m5.5-2 3.3-4.4 0.3-4.6-2.8-4.5-5.6-3.7-7.6-2.7-9-1.3-9.3 0.3-8.6 1.7-7.1 3.1-4.6 4-1.8 4.6 1.3 4.7 4.2 4.1 6.7 3.3 8.4 2 9.2 0.5 9.1-1 8-2.5 5.9-3.6m4.9-3.1 3.9-5.2 0.3-5.6-3.3-5.3-6.6-4.5-9.2-3.2-10.8-1.5-11.1 0.3-10.3 2.1-8.5 3.6-5.6 4.9-2.1 5.5 1.5 5.5 5.1 5 8 3.9 10.1 2.4 11 0.6 10.9-1.2 9.6-2.9 7.1-4.4m4-4 4.5-6 0.4-6.3-3.8-6.1-7.6-5.1-10.4-3.7-12.3-1.7-12.6 0.4-11.8 2.4-9.6 4.1-6.4 5.6-2.4 6.2 1.7 6.3 5.8 5.7 9.1 4.4 11.5 2.7 12.6 0.7 12.4-1.3 10.9-3.4 8-4.9m3.2-4.9 4.9-6.5 0.4-7-4.2-6.6-8.2-5.6l-11.5-3.9-13.4-1.9-13.8 0.4-12.9 2.6-10.5 4.5-7 6-2.6 6.8 1.9 6.9 6.3 6.3 9.9 4.8 12.6 3 13.8 0.7 13.6-1.5 11.8-3.6 8.9-5.4m2.1-5.6 5.2-6.9 0.4-7.4-4.4-6.9-8.7-6-12.1-4.2-14.2-2-14.6 0.4-13.7 2.8-11.1 4.8-7.4 6.3-2.8 7.3 2 7.3 6.7 6.5 10.5 5.2 13.4 3.1 14.5 0.8 14.4-1.6 12.6-3.8 9.3-5.7m1.1-6.2 5.3-7.1 0.5-7.6-4.6-7.1-8.9-6.1-12.5-4.4-14.6-2-15 0.4-14.1 2.8-11.4 5-7.6 6.6-2.9 7.3 2.1 7.5 6.9 6.8 10.8 5.3 13.7 3.2 15 0.8 14.8-1.6 12.9-4 9.6-5.8m0-6.6 5.3-7.1 0.5-7.5-4.6-7.2-8.9-6.2-12.5-4.3-14.6-2-15 0.4-14.1 2.8-11.4 5-7.6 6.6-2.9 7.4 2.1 7.4 6.9 6.8 10.8 5.3 13.7 3.2 15 0.8 14.8-1.6 12.9-4 9.6-5.8m-1.1-6.9 5.2-6.8 0.4-7.3-4.4-7.1-8.7-5.9l-12.1-4.2-14.2-2-14.6 0.4-13.7 2.8-11.1 4.8-7.4 6.4-2.8 7.2 2 7.3 6.7 6.5 10.5 5.1 13.4 3.2 14.5 0.8 14.4-1.6 12.6-3.9 9.3-5.7m-2.1-6.7 4.9-6.6 0.4-6.9-4.2-6.7-8.2-5.6l-11.5-4-13.4-1.8-13.8 0.3-12.9 2.7-10.5 4.5-7 6.1-2.6 6.8 1.9 6.9 6.3 6.2 9.9 4.8 12.6 2.9 13.8 0.8 13.6-1.5 11.8-3.6 8.9-5.3m-3.2-6.8 4.5-5.9 0.4-6.4-3.8-6.1-7.6-5.1-10.4-3.6-12.3-1.8-12.6 0.4-11.8 2.4-9.6 4.2-6.4 5.5-2.4 6.2 1.7 6.3 5.8 5.7 9.1 4.5 11.5 2.7 12.6 0.7 12.4-1.4 10.9-3.4 8-4.9m-4-6.4 3.9-5.2 0.3-5.6-3.3-5.3-6.6-4.5-9.2-3.2-10.8-1.5-11.1 0.3-10.3 2.1-8.5 3.6-5.6 4.9-2.1 5.5 1.5 5.5 5.1 5 8 3.9 10.1 2.4 11 0.6 10.9-1.2 9.6-2.9 7.1-4.4m-4.9-5.8 3.3-4.4 0.3-4.7-2.8-4.4-5.6-3.8-7.6-2.7-9-1.2-9.3 0.2-8.6 1.8-7.1 3.1-4.6 4-1.8 4.6 1.3 4.6 4.2 4.2 6.7 3.2 8.4 2 9.2 0.5 9.1-1 8-2.4 5.9-3.6m-5.5-5.2 2.5-3.4 0.2-3.6-2.1-3.5-4.3-2.9-6-2.1-6.9-1-7.2 0.2-6.7 1.4-5.4 2.4-3.6 3.1-1.4 3.6 1 3.5 3.2 3.3 5.2 2.5 6.6 1.5 7.1 0.4 7-0.8 6.2-1.8 4.6-2.8m-6.1-4.4 1.8-2.4 0.1-2.4-1.5-2.4-2.9-2-4-1.4-4.8-0.6-4.8 0.1-4.6 0.9-3.7 1.6-2.5 2.2-0.9 2.4 0.6 2.4 2.3 2.2 3.5 1.8 4.5 1 4.8 0.3 4.8-0.5 4.2-1.3 3.1-1.9m-6.4-3.5 0.9-1.2 0.1-1.2-0.8-1.2-1.4-1-2.1-0.8-2.4-0.3-2.4 0.1-2.3 0.4-1.9 0.9-1.3 1.1-0.5 1.2 0.4 1.2 1.1 1.1 1.8 0.9 2.3 0.5 2.4 0.2 2.4-0.3 2.1-0.6 1.6-1m-6.5-2.5m0 80 6.5 1.3 6.4 0.2 6.1-0.9 5.5-2 4.9-3.1 4-4 3.2-4.9 2.1-5.6 1.1-6.2v-6.6l-1.1-6.9-2.1-6.7-3.2-6.8-4-6.4-4.9-5.8-5.5-5.2-6.1-4.4-6.4-3.5-6.5-2.5m0 80 7.4 0.1 7.3-0.9 6.8-2 6.3-3 5.5-3.9 4.6-4.8 3.6-5.4 2.4-6 1.2-6.4v-6.6l-1.2-6.6-2.4-6.5-3.6-6.1-4.6-5.7-5.5-5-6.3-4.2-6.8-3.4-7.3-2.3-7.4-1.3m0 80 7.5-1.1 7.3-2.1 6.9-3.2 6.4-4 5.5-4.9 4.7-5.5 3.6-6.1 2.4-6.4 1.3-6.6v-6.5l-1.3-6.4-2.4-6.1-3.6-5.6-4.7-4.9-5.5-4.1-6.4-3.1-6.9-2.2-7.3-1.1-7.5-0.1m0 80 6.7-2.3 6.6-3.3 6.3-4.2 5.7-5.1 5-5.7 4.2-6.3 3.2-6.6 2.2-6.7 1.1-6.8v-6.6l-1.1-6.3-2.2-5.7-3.2-5-4.2-4.1-5-3.2-5.7-2.2-6.3-1.1-6.6 0.1-6.7 1.1m0 80 5.3-3.3 5.1-4.3 4.9-5.1 4.4-5.9 4-6.5 3.2-6.9 2.6-7.1 1.7-7.1 0.9-6.9v-6.7l-0.9-6-1.7-5.4-2.6-4.5-3.2-3.5-4-2.5-4.4-1.3-4.9-0.2-5.1 1.1-5.3 2.1m0 80 3.2-4 3.2-5 2.9-5.8 2.8-6.5 2.4-7 2-7.4 1.5-7.3 1.1-7.4 0.5-7.1v-6.6l-0.5-5.9-1.1-5.2-1.5-4.1-2-3.1-2.4-2-2.8-0.7-2.9 0.5-3.2 1.7-3.2 2.9m0 80 0.8-4.4 0.8-5.3 0.8-6.1 0.7-6.8 0.6-7.2 0.5-7.6 0.4-7.5 0.3-7.5 0.1-7.1v-6.6l-0.1-5.9-0.3-5-0.4-4.1-0.5-2.8-0.6-1.7-0.7-0.5-0.8 0.9-0.8 2-0.8 3.2m0 80-1.6-4.3-1.6-5.2-1.6-6.1-1.4-6.7-1.2-7.2-1-7.5-0.8-7.5-0.5-7.5-0.3-7.1v-6.6l0.3-5.9 0.5-5.1 0.8-4 1-2.9 1.2-1.8 1.4-0.5 1.6 0.8 1.6 2 1.6 3.1"/>
+    <path id="path11615" d="m90 121-3.9-3.8-3.9-4.8-3.7-5.6-3.3-6.4-2.9-6.8-2.5-7.2-1.9-7.3-1.3-7.3-0.7-7.1v-6.6l0.7-5.9 1.3-5.2 1.9-4.3 2.5-3.2 2.9-2.1 3.3-0.9 3.7 0.3 3.9 1.5 3.9 2.7m0 80-5.8-3-5.7-4-5.4-4.9-5-5.6-4.3-6.3-3.6-6.7-2.8-6.9-1.9-7-1-6.9v-6.6l1-6.1 1.9-5.5 2.8-4.6 3.6-3.8 4.3-2.6 5-1.6 5.4-0.5 5.7 0.8 5.8 1.8m0 80-7.1-1.9-6.9-2.9-6.5-3.9-6-4.8-5.3-5.4-4.4-6-3.4-6.5-2.3-6.7-1.2-6.6v-6.6l1.2-6.3 2.3-5.8 3.4-5.2 4.4-4.4 5.3-3.5 6-2.5 6.5-1.4 6.9-0.3 7.1 0.7m0 80-7.6-0.7-7.3-1.7-7-2.8-6.4-3.7-5.6-4.5-4.7-5.3-3.6-5.9-2.5-6.2-1.3-6.6v-6.5l1.3-6.5 2.5-6.2 3.6-5.8 4.7-5.1 5.6-4.4 6.4-3.5 7-2.6 7.3-1.5 7.6-0.5m0 80-7.2 0.5-7.1-0.5-6.6-1.6-6.1-2.6-5.4-3.7-4.5-4.5-3.4-5.3-2.4-5.8-1.2-6.4v-6.6l1.2-6.6 2.4-6.6 3.4-6.4 4.5-5.9 5.4-5.3 6.1-4.6 6.6-3.7 7.1-2.7 7.2-1.7m0 80-6.1 1.7-5.9 0.5-5.7-0.6-5.1-1.7-4.5-2.8-3.8-3.8-2.9-4.7-2-5.6-1-6.1v-6.6l1-6.9 2-6.9 2.9-6.9 3.8-6.6 4.5-6.1 5.1-5.5 5.7-4.8 5.9-3.8 6.1-2.8m0 80-4.3 2.5-4.2 1.5-4 0.2-3.6-1-3.2-2.2-2.7-3.3-2.1-4.3-1.4-5.2-0.7-6v-6.6l0.7-7.1 1.4-7.2 2.1-7.2 2.7-7.2 3.2-6.8 3.6-6.2 4-5.5 4.2-4.7 4.3-3.7m0 80-2 3.1-2 1.9-1.9 0.7-1.8-0.5-1.5-1.8-1.3-3-1-4-0.6-5.1-0.4-5.9v-6.6l0.4-7.1 0.6-7.5 1-7.4 1.3-7.5 1.5-7.2 1.8-6.7 1.9-6 2-5.2 2-4.2m0 80 0.4 3.2 0.4 2.1 0.4 0.8 0.3-0.4 0.3-1.7 0.3-2.9 0.2-4 0.1-5 0.1-5.9v-6.6l-0.1-7.1-0.1-7.5-0.2-7.5-0.3-7.6-0.3-7.3-0.3-6.8-0.4-6.1-0.4-5.3-0.4-4.4m0 80 2.8 2.9 2.8 1.8 2.6 0.6 2.4-0.6 2.1-1.9 1.8-3 1.4-4.2 0.9-5.1 0.5-5.9v-6.6l-0.5-7.1-0.9-7.4-1.4-7.4-1.8-7.4-2.1-7.1-2.4-6.6-2.6-5.8-2.8-5.1-2.8-4.1m0 80 4.9 2.3 4.9 1.1h4.6l4.2-1.2 3.7-2.3 3.1-3.5 2.3-4.4 1.7-5.3 0.8-6.1v-6.6l-0.8-7-1.7-7.1-2.3-7.2-3.1-6.9-3.7-6.6-4.2-6-4.6-5.3-4.9-4.4-4.9-3.5m0 80 6.5 1.3 6.4 0.2 6.1-0.9 5.5-2 4.9-3.1 4-4 3.2-4.9 2.1-5.6 1.1-6.2v-6.6l-1.1-6.9-2.1-6.7-3.2-6.8-4-6.4-4.9-5.8-5.5-5.2-6.1-4.4-6.4-3.5-6.5-2.5"/>
+   </g>
+  </g>
+  <g id="g11625" style="color:#000000" transform="translate(363.91 43.699)" stroke="currentColor" fill="none">
+   <use id="use11627" style="color:#e51e10" xlink:href="#gpPt6-8" transform="matrix(3.38,0,0,3.38,90,121)" height="100%" width="100%" y="0" x="0"/>
+  </g>
+  <g id="gnuplot_plot_1c" transform="translate(363.91 43.699)">
+   <title id="title11632">gnuplot_plot_1c</title>
+   <g stroke="currentColor" stroke-width=".25" fill="none">
+    <g id="g11636" style="color:#000000">
+     <path id="path11638" stroke="#000" d="m45.3 70.6 2.8-7.2"/>
+    </g>
+    <g id="g11640" style="color:#000000">
+     <path id="path11642" stroke="#000" d="m50.4 57.6-2.3 5.8"/>
+    </g>
+    <g id="g11644" style="color:#000000">
+     <path id="path11646" stroke="#000" d="m135.1 88.7 0.5-7.6"/>
+    </g>
+    <g id="g11648" style="color:#000000">
+     <path id="path11650" stroke="#000" d="m135.6 74.6v6.5"/>
+    </g>
+    <g id="g11652" style="color:#000000">
+     <path id="path11654" stroke="#000" d="m131.9 62.1-4.2-6.7"/>
+    </g>
+    <g id="g11656" style="color:#000000">
+     <path id="path11658" stroke="#000" d="m124.5 50.4 3.2 5"/>
+    </g>
+    <g id="g11660" style="color:#000000">
+     <path id="path11662" stroke="#000" d="m62.7 118.1-5.1-5"/>
+    </g>
+    <g id="g11664" style="color:#000000">
+     <path id="path11666" stroke="#000" d="m53.1 108.6 4.5 4.5"/>
+    </g>
+    <g id="g11668" style="color:#000000">
+     <path id="path11670" stroke="#000" d="m47.3 97.5-2-7.3"/>
+    </g>
+    <g id="g11672" style="color:#000000">
+     <path id="path11674" stroke="#000" d="m44 83.6 1.3 6.6"/>
+    </g>
+    <g id="g11676" style="color:#000000">
+     <path id="path11678" stroke="#000" d="m123.4 112.5 4.5-6"/>
+    </g>
+    <g id="g11680" style="color:#000000">
+     <path id="path11682" stroke="#000" d="m131.5 101.1-3.6 5.4"/>
+    </g>
+    <g id="g11684" style="color:#000000">
+     <path id="path11686" stroke="#000" d="m108.6 123.2 5.9-3.6"/>
+    </g>
+    <g id="g11688" style="color:#000000">
+     <path id="path11690" stroke="#808080" d="m119.4 116.5-4.9 3.1"/>
+    </g>
+    <g id="g11692" style="color:#000000">
+     <path id="path11694" stroke="#000" d="m119.4 116.5-4.9 3.1"/>
+    </g>
+    <g id="g11696" style="color:#000000">
+     <path id="path11698" stroke="#000" d="m120.3 46.3-6.6-4.5"/>
+    </g>
+    <g id="g11700" style="color:#000000">
+     <path id="path11702" stroke="#000" d="m109.7 39.3 4 2.5"/>
+    </g>
+    <g id="g11704" style="color:#000000">
+     <path id="path11706" stroke="#000" d="m84.1 126.7-6.6-1.5"/>
+    </g>
+    <g id="g11708" style="color:#000000">
+     <path id="path11710" stroke="#000" d="m73.9 124.2 3.6 1"/>
+    </g>
+    <g id="g11712" style="color:#000000">
+     <path id="path11714" stroke="#000" d="m109.7 39.3-7.6-2.7"/>
+    </g>
+    <g id="g11716" style="color:#000000">
+     <path id="path11718" stroke="#000" d="m99.3 35.9 2.8 0.7"/>
+    </g>
+    <g id="g11720" style="color:#000000">
+     <path id="path11722" stroke="#000" d="m73.9 124.2-6.7-3.3"/>
+    </g>
+    <g id="g11724" style="color:#000000">
+     <path id="path11726" stroke="#000" d="m62.7 118.1 4.5 2.8"/>
+    </g>
+    <g id="g11728" style="color:#000000">
+     <path id="path11730" stroke="#000" d="m135.1 82.1 0.5-7.5"/>
+    </g>
+    <g id="g11732" style="color:#000000">
+     <path id="path11734" stroke="#000" d="m134.3 68.2 1.3 6.4"/>
+    </g>
+    <g id="g11736" style="color:#000000">
+     <path id="path11738" stroke="#000" d="m47.8 64.4 2.6-6.8"/>
+    </g>
+    <g id="g11740" style="color:#000000">
+     <path id="path11742" stroke="#000" d="m53.8 52.4-3.4 5.2"/>
+    </g>
+    <g id="g11744" style="color:#000000">
+     <path id="path11746" stroke="#000" d="m58.2 48 5.6-4.9"/>
+    </g>
+    <g id="g11748" style="color:#000000">
+     <path id="path11750" stroke="#000" d="m68.1 40.5-4.3 2.6"/>
+    </g>
+    <g id="g11752" style="color:#000000">
+     <path id="path11754" stroke="#000" d="m46.1 91.1-2.1-7.5"/>
+    </g>
+    <g id="g11756" style="color:#000000">
+     <path id="path11758" stroke="#000" d="m44 77.1v6.5"/>
+    </g>
+    <g id="g11760" style="color:#000000">
+     <path id="path11762" stroke="#000" d="m68.1 40.5 7.1-3.1"/>
+    </g>
+    <g id="g11764" style="color:#000000">
+     <path id="path11766" stroke="#000" d="m78.5 36.5-3.3 0.9"/>
+    </g>
+    <g id="g11768" style="color:#000000">
+     <path id="path11770" stroke="#000" d="m91.2 127.1 7-0.8"/>
+    </g>
+    <g id="g11772" style="color:#000000">
+     <path id="path11774" stroke="#000" d="m100.6 125.7-2.4 0.6"/>
+    </g>
+    <g id="g11776" style="color:#000000">
+     <path id="path11778" stroke="#000" d="m58.9 114.3-5.8-5.7"/>
+    </g>
+    <g id="g11780" style="color:#000000">
+     <path id="path11782" stroke="#000" d="m49.7 103.3 3.4 5.3"/>
+    </g>
+    <g id="g11784" style="color:#000000">
+     <path id="path11786" stroke="#000" d="m128.3 56.5-3.8-6.1"/>
+    </g>
+    <g id="g11788" style="color:#000000">
+     <path id="path11790" stroke="#000" d="m120.3 46.3 4.2 4.1"/>
+    </g>
+    <g id="g11792" style="color:#000000">
+     <path id="path11794" stroke="#000" d="m126.6 107.6 4.9-6.5"/>
+    </g>
+    <g id="g11796" style="color:#000000">
+     <path id="path11798" stroke="#000" d="m133.9 95.1-2.4 6"/>
+    </g>
+    <g id="g11800" style="color:#000000">
+     <path id="path11802" stroke="#000" d="m91.2 127.1-7.1-0.4"/>
+    </g>
+    <g id="g11804" style="color:#000000">
+     <path id="path11806" stroke="#000" d="m82.3 126.2 1.8 0.5"/>
+    </g>
+    <g id="g11808" style="color:#000000">
+     <path id="path11810" stroke="#000" d="m91.5 126.7-0.3 0.4"/>
+    </g>
+    <g id="g11812" style="color:#000000">
+     <path id="path11814" stroke="#000" d="m112.3 120.9 7.1-4.4"/>
+    </g>
+    <g id="g11816" style="color:#000000">
+     <path id="path11818" stroke="#808080" d="m123.4 112.5-4 4"/>
+    </g>
+    <g id="g11820" style="color:#000000">
+     <path id="path11822" stroke="#000" d="m123.4 112.5-4 4"/>
+    </g>
+    <g id="g11824" style="color:#000000">
+     <path id="path11826" stroke="#000" d="m100.6 125.7 8-2.5"/>
+    </g>
+    <g id="g11828" style="color:#000000">
+     <path id="path11830" stroke="#000" d="m112.3 120.9-3.7 2.3"/>
+    </g>
+    <g id="g11832" style="color:#000000">
+     <path id="path11834" stroke="#000" d="m133.9 75.5 0.4-7.3"/>
+    </g>
+    <g id="g11836" style="color:#000000">
+     <path id="path11838" stroke="#000" d="m131.9 62.1 2.4 6.1"/>
+    </g>
+    <g id="g11840" style="color:#000000">
+     <path id="path11842" stroke="#000" d="m115.3 43.1-5.6-3.8"/>
+    </g>
+    <g id="g11844" style="color:#000000">
+     <path id="path11846" stroke="#000" d="m105.3 38 4.4 1.3"/>
+    </g>
+    <g id="g11848" style="color:#000000">
+     <path id="path11850" stroke="#000" d="m46.1 84.5-2.1-7.4"/>
+    </g>
+    <g id="g11852" style="color:#000000">
+     <path id="path11854" stroke="#000" d="m45.3 70.6-1.3 6.5"/>
+    </g>
+    <g id="g11856" style="color:#000000">
+     <path id="path11858" stroke="#000" d="m51.4 58.6 2.4-6.2"/>
+    </g>
+    <g id="g11860" style="color:#000000">
+     <path id="path11862" stroke="#000" d="m58.2 48-4.4 4.4"/>
+    </g>
+    <g id="g11864" style="color:#000000">
+     <path id="path11866" stroke="#000" d="m99.3 35.9-6.9-1"/>
+    </g>
+    <g id="g11868" style="color:#000000">
+     <path id="path11870" stroke="#000" d="m85.2 35.1 7.2-0.2"/>
+    </g>
+    <g id="g11872" style="color:#000000">
+     <path id="path11874" stroke="#000" d="m91.6 35.8 0.8-0.9"/>
+    </g>
+    <g id="g11876" style="color:#000000">
+     <path id="path11878" stroke="#000" d="m56 109.6-6.3-6.3"/>
+    </g>
+    <g id="g11880" style="color:#000000">
+     <path id="path11882" stroke="#000" d="m47.3 97.5 2.4 5.8"/>
+    </g>
+    <g id="g11884" style="color:#000000">
+     <path id="path11886" stroke="#000" d="m78.5 36.5 6.7-1.4"/>
+    </g>
+    <g id="g11888" style="color:#000000">
+     <path id="path11890" stroke="#000" d="m86.8 35.9-1.6-0.8"/>
+    </g>
+    <g id="g11892" style="color:#000000">
+     <path id="path11894" stroke="#000" d="m128.7 102 5.2-6.9"/>
+    </g>
+    <g id="g11896" style="color:#000000">
+     <path id="path11898" stroke="#000" d="m135.1 88.7-1.2 6.4"/>
+    </g>
+    <g id="g11900" style="color:#000000">
+     <path id="path11902" stroke="#000" d="m70.7 122-8-3.9"/>
+    </g>
+    <g id="g11904" style="color:#000000">
+     <path id="path11906" stroke="#000" d="m58.9 114.3 3.8 3.8"/>
+    </g>
+    <g id="g11908" style="color:#000000">
+     <path id="path11910" stroke="#000" d="m82.3 126.2-8.4-2"/>
+    </g>
+    <g id="g11912" style="color:#000000">
+     <path id="path11914" stroke="#000" d="m70.7 122 3.2 2.2"/>
+    </g>
+    <g id="g11916" style="color:#000000">
+     <path id="path11918" stroke="#000" d="m123.6 51.6-3.3-5.3"/>
+    </g>
+    <g id="g11920" style="color:#000000">
+     <path id="path11922" stroke="#000" d="m115.3 43.1 5 3.2"/>
+    </g>
+    <g id="g11924" style="color:#000000">
+     <path id="path11926" stroke="#000" d="m63.5 44.5 4.6-4"/>
+    </g>
+    <g id="g11928" style="color:#000000">
+     <path id="path11930" stroke="#000" d="m73.1 38.9-5 1.6"/>
+    </g>
+    <g id="g11932" style="color:#000000">
+     <path id="path11934" stroke="#000" d="m105.3 38-6-2.1"/>
+    </g>
+    <g id="g11936" style="color:#000000">
+     <path id="path11938" stroke="#000" d="m96.4 36.4 2.9-0.5"/>
+    </g>
+    <g id="g11940" style="color:#000000">
+     <path id="path11942" stroke="#000" d="m73.1 38.9 5.4-2.4"/>
+    </g>
+    <g id="g11944" style="color:#000000">
+     <path id="path11946" stroke="#000" d="m82.2 36.8-3.7-0.3"/>
+    </g>
+    <g id="g11948" style="color:#000000">
+     <path id="path11950" stroke="#000" d="m115.4 117.4 8-4.9"/>
+    </g>
+    <g id="g11952" style="color:#000000">
+     <path id="path11954" stroke="#000" d="m126.6 107.6-3.2 4.9"/>
+    </g>
+    <g id="g11956" style="color:#000000">
+     <path id="path11958" stroke="#000" d="m126.6 107.6-3.2 4.9"/>
+    </g>
+    <g id="g11960" style="color:#000000">
+     <path id="path11962" stroke="#000" d="m131.5 69 0.4-6.9"/>
+    </g>
+    <g id="g11964" style="color:#000000">
+     <path id="path11966" stroke="#000" d="m128.3 56.5 3.6 5.6"/>
+    </g>
+    <g id="g11968" style="color:#000000">
+     <path id="path11970" stroke="#000" d="m91.5 126.7 9.1-1"/>
+    </g>
+    <g id="g11972" style="color:#000000">
+     <path id="path11974" stroke="#000" d="m102.7 123.8-2.1 1.9"/>
+    </g>
+    <g id="g11976" style="color:#000000">
+     <path id="path11978" stroke="#000" d="m47.3 77.9-2-7.3"/>
+    </g>
+    <g id="g11980" style="color:#000000">
+     <path id="path11982" stroke="#000" d="m47.8 64.4-2.5 6.2"/>
+    </g>
+    <g id="g11984" style="color:#000000">
+     <path id="path11986" stroke="#000" d="m56.1 53.5 2.1-5.5"/>
+    </g>
+    <g id="g11988" style="color:#000000">
+     <path id="path11990" stroke="#000" d="m63.5 44.5-5.3 3.5"/>
+    </g>
+    <g id="g11992" style="color:#000000">
+     <path id="path11994" stroke="#000" d="m91.5 126.7-9.2-0.5"/>
+    </g>
+    <g id="g11996" style="color:#000000">
+     <path id="path11998" stroke="#000" d="m80.8 124.4 1.5 1.8"/>
+    </g>
+    <g id="g12000" style="color:#000000">
+     <path id="path12002" stroke="#000" d="m129.8 95.8 5.3-7.1"/>
+    </g>
+    <g id="g12004" style="color:#000000">
+     <path id="path12006" stroke="#000" d="m135.1 82.1v6.6"/>
+    </g>
+    <g id="g12008" style="color:#000000">
+     <path id="path12010" stroke="#000" d="m54 104-6.7-6.5"/>
+    </g>
+    <g id="g12012" style="color:#000000">
+     <path id="path12014" stroke="#000" d="m46.1 91.1 1.2 6.4"/>
+    </g>
+    <g id="g12016" style="color:#000000">
+     <path id="path12018" stroke="#000" d="m91.8 125-0.3 1.7"/>
+    </g>
+    <g id="g12020" style="color:#000000">
+     <path id="path12022" stroke="#000" d="m102.7 123.8 9.6-2.9"/>
+    </g>
+    <g id="g12024" style="color:#000000">
+     <path id="path12026" stroke="#000" d="m115.4 117.4-3.1 3.5"/>
+    </g>
+    <g id="g12028" style="color:#000000">
+     <path id="path12030" stroke="#000" d="m109.6 40.9-4.3-2.9"/>
+    </g>
+    <g id="g12032" style="color:#000000">
+     <path id="path12034" stroke="#000" d="m100.4 37.8 4.9 0.2"/>
+    </g>
+    <g id="g12036" style="color:#000000">
+     <path id="path12038" stroke="#000" d="m118.1 47.5-2.8-4.4"/>
+    </g>
+    <g id="g12040" style="color:#000000">
+     <path id="path12042" stroke="#000" d="m109.6 40.9 5.7 2.2"/>
+    </g>
+    <g id="g12044" style="color:#000000">
+     <path id="path12046" stroke="#000" d="m68 118.7-9.1-4.4"/>
+    </g>
+    <g id="g12048" style="color:#000000">
+     <path id="path12050" stroke="#000" d="m56 109.6 2.9 4.7"/>
+    </g>
+    <g id="g12052" style="color:#000000">
+     <path id="path12054" stroke="#000" d="m127.9 62.9 0.4-6.4"/>
+    </g>
+    <g id="g12056" style="color:#000000">
+     <path id="path12058" stroke="#000" d="m123.6 51.6 4.7 4.9"/>
+    </g>
+    <g id="g12060" style="color:#000000">
+     <path id="path12062" stroke="#000" d="m69.5 42 3.6-3.1"/>
+    </g>
+    <g id="g12064" style="color:#000000">
+     <path id="path12066" stroke="#000" d="m78.5 38.4-5.4 0.5"/>
+    </g>
+    <g id="g12068" style="color:#000000">
+     <path id="path12070" stroke="#000" d="m49.7 71.3-1.9-6.9"/>
+    </g>
+    <g id="g12072" style="color:#000000">
+     <path id="path12074" stroke="#000" d="m51.4 58.6-3.6 5.8"/>
+    </g>
+    <g id="g12076" style="color:#000000">
+     <path id="path12078" stroke="#000" d="m80.8 124.4-10.1-2.4"/>
+    </g>
+    <g id="g12080" style="color:#000000">
+     <path id="path12082" stroke="#000" d="m68 118.7 2.7 3.3"/>
+    </g>
+    <g id="g12084" style="color:#000000">
+     <path id="path12086" stroke="#000" d="m96.4 36.4-4.8-0.6"/>
+    </g>
+    <g id="g12088" style="color:#000000">
+     <path id="path12090" stroke="#000" d="m86.8 35.9 4.8-0.1"/>
+    </g>
+    <g id="g12092" style="color:#000000">
+     <path id="path12094" stroke="#000" d="m90.8 37.8 0.8-2"/>
+    </g>
+    <g id="g12096" style="color:#000000">
+     <path id="path12098" stroke="#000" d="m117.7 113 8.9-5.4"/>
+    </g>
+    <g id="g12100" style="color:#000000">
+     <path id="path12102" stroke="#000" d="m128.7 102-2.1 5.6"/>
+    </g>
+    <g id="g12104" style="color:#000000">
+     <path id="path12106" stroke="#000" d="m128.7 102-2.1 5.6"/>
+    </g>
+    <g id="g12108" style="color:#000000">
+     <path id="path12110" stroke="#000" d="m82.2 36.8 4.6-0.9"/>
+    </g>
+    <g id="g12112" style="color:#000000">
+     <path id="path12114" stroke="#000" d="m88.4 37.9-1.6-2"/>
+    </g>
+    <g id="g12116" style="color:#000000">
+     <path id="path12118" stroke="#000" d="m129.8 89.2 5.3-7.1"/>
+    </g>
+    <g id="g12120" style="color:#000000">
+     <path id="path12122" stroke="#000" d="m133.9 75.5 1.2 6.6"/>
+    </g>
+    <g id="g12124" style="color:#000000">
+     <path id="path12126" stroke="#000" d="m61.7 49.1 1.8-4.6"/>
+    </g>
+    <g id="g12128" style="color:#000000">
+     <path id="path12130" stroke="#000" d="m69.5 42-6 2.5"/>
+    </g>
+    <g id="g12132" style="color:#000000">
+     <path id="path12134" stroke="#000" d="m53 97.9-6.9-6.8"/>
+    </g>
+    <g id="g12136" style="color:#000000">
+     <path id="path12138" stroke="#000" d="m46.1 84.5v6.6"/>
+    </g>
+    <g id="g12140" style="color:#000000">
+     <path id="path12142" stroke="#000" d="m100.4 37.8-4-1.4"/>
+    </g>
+    <g id="g12144" style="color:#000000">
+     <path id="path12146" stroke="#000" d="m93.2 38.1 3.2-1.7"/>
+    </g>
+    <g id="g12148" style="color:#000000">
+     <path id="path12150" stroke="#000" d="m78.5 38.4 3.7-1.6"/>
+    </g>
+    <g id="g12152" style="color:#000000">
+     <path id="path12154" stroke="#000" d="m86.1 38.3-3.9-1.5"/>
+    </g>
+    <g id="g12156" style="color:#000000">
+     <path id="path12158" stroke="#000" d="m123.3 57.2 0.3-5.6"/>
+    </g>
+    <g id="g12160" style="color:#000000">
+     <path id="path12162" stroke="#000" d="m118.1 47.5 5.5 4.1"/>
+    </g>
+    <g id="g12164" style="color:#000000">
+     <path id="path12166" stroke="#000" d="m91.8 125 10.9-1.2"/>
+    </g>
+    <g id="g12168" style="color:#000000">
+     <path id="path12170" stroke="#000" d="m104.5 120.8-1.8 3"/>
+    </g>
+    <g id="g12172" style="color:#000000">
+     <path id="path12174" stroke="#000" d="m53.1 64.9-1.7-6.3"/>
+    </g>
+    <g id="g12176" style="color:#000000">
+     <path id="path12178" stroke="#000" d="m56.1 53.5-4.7 5.1"/>
+    </g>
+    <g id="g12180" style="color:#000000">
+     <path id="path12182" stroke="#000" d="m111.7 44.4-2.1-3.5"/>
+    </g>
+    <g id="g12184" style="color:#000000">
+     <path id="path12186" stroke="#000" d="m103.3 39.8 6.3 1.1"/>
+    </g>
+    <g id="g12188" style="color:#000000">
+     <path id="path12190" stroke="#000" d="m65.9 114.4-9.9-4.8"/>
+    </g>
+    <g id="g12192" style="color:#000000">
+     <path id="path12194" stroke="#000" d="m54 104 2 5.6"/>
+    </g>
+    <g id="g12196" style="color:#000000">
+     <path id="path12198" stroke="#000" d="m103.3 39.8-2.9-2"/>
+    </g>
+    <g id="g12200" style="color:#000000">
+     <path id="path12202" stroke="#000" d="m95.3 38.9 5.1-1.1"/>
+    </g>
+    <g id="g12204" style="color:#000000">
+     <path id="path12206" stroke="#000" d="m104.5 120.8 10.9-3.4"/>
+    </g>
+    <g id="g12208" style="color:#000000">
+     <path id="path12210" stroke="#000" d="m117.7 113-2.3 4.4"/>
+    </g>
+    <g id="g12212" style="color:#000000">
+     <path id="path12214" stroke="#000" d="m91.8 125-11-0.6"/>
+    </g>
+    <g id="g12216" style="color:#000000">
+     <path id="path12218" stroke="#000" d="m79.5 121.4 1.3 3"/>
+    </g>
+    <g id="g12220" style="color:#000000">
+     <path id="path12222" stroke="#000" d="m128.7 82.3 5.2-6.8"/>
+    </g>
+    <g id="g12224" style="color:#000000">
+     <path id="path12226" stroke="#000" d="m131.5 69 2.4 6.5"/>
+    </g>
+    <g id="g12228" style="color:#000000">
+     <path id="path12230" stroke="#000" d="m76 40.6 2.5-2.2"/>
+    </g>
+    <g id="g12232" style="color:#000000">
+     <path id="path12234" stroke="#000" d="m84.2 39.2-5.7-0.8"/>
+    </g>
+    <g id="g12236" style="color:#000000">
+     <path id="path12238" stroke="#000" d="m68.1 45.6 1.4-3.6"/>
+    </g>
+    <g id="g12240" style="color:#000000">
+     <path id="path12242" stroke="#000" d="m76 40.6-6.5 1.4"/>
+    </g>
+    <g id="g12244" style="color:#000000">
+     <path id="path12246" stroke="#000" d="m119.4 107.7 9.3-5.7"/>
+    </g>
+    <g id="g12248" style="color:#000000">
+     <path id="path12250" stroke="#000" d="m129.8 95.8-1.1 6.2"/>
+    </g>
+    <g id="g12252" style="color:#000000">
+     <path id="path12254" stroke="#000" d="m129.8 95.8-1.1 6.2"/>
+    </g>
+    <g id="g12256" style="color:#000000">
+     <path id="path12258" stroke="#000" d="m92.1 122.1-0.3 2.9"/>
+    </g>
+    <g id="g12260" style="color:#000000">
+     <path id="path12262" stroke="#000" d="m53 91.3-6.9-6.8"/>
+    </g>
+    <g id="g12264" style="color:#000000">
+     <path id="path12266" stroke="#000" d="m47.3 77.9-1.2 6.6"/>
+    </g>
+    <g id="g12268" style="color:#000000">
+     <path id="path12270" stroke="#000" d="m57.6 59-1.5-5.5"/>
+    </g>
+    <g id="g12272" style="color:#000000">
+     <path id="path12274" stroke="#000" d="m61.7 49.1-5.6 4.4"/>
+    </g>
+    <g id="g12276" style="color:#000000">
+     <path id="path12278" stroke="#000" d="m117.8 52.2 0.3-4.7"/>
+    </g>
+    <g id="g12280" style="color:#000000">
+     <path id="path12282" stroke="#000" d="m111.7 44.4 6.4 3.1"/>
+    </g>
+    <g id="g12284" style="color:#000000">
+     <path id="path12286" stroke="#000" d="m79.5 121.4-11.5-2.7"/>
+    </g>
+    <g id="g12288" style="color:#000000">
+     <path id="path12290" stroke="#000" d="m65.9 114.4 2.1 4.3"/>
+    </g>
+    <g id="g12292" style="color:#000000">
+     <path id="path12294" stroke="#000" d="m104.8 42.2-1.5-2.4"/>
+    </g>
+    <g id="g12296" style="color:#000000">
+     <path id="path12298" stroke="#000" d="m96.7 39.9 6.6-0.1"/>
+    </g>
+    <g id="g12300" style="color:#000000">
+     <path id="path12302" stroke="#000" d="m93.2 38.1-2.4-0.3"/>
+    </g>
+    <g id="g12304" style="color:#000000">
+     <path id="path12306" stroke="#000" d="m88.4 37.9 2.4-0.1"/>
+    </g>
+    <g id="g12308" style="color:#000000">
+     <path id="path12310" stroke="#000" d="m90 41 0.8-3.2"/>
+    </g>
+    <g id="g12312" style="color:#000000">
+     <path id="path12314" stroke="#000" d="m126.6 75.6 4.9-6.6"/>
+    </g>
+    <g id="g12316" style="color:#000000">
+     <path id="path12318" stroke="#000" d="m127.9 62.9 3.6 6.1"/>
+    </g>
+    <g id="g12320" style="color:#000000">
+     <path id="path12322" stroke="#000" d="m86.1 38.3 2.3-0.4"/>
+    </g>
+    <g id="g12324" style="color:#000000">
+     <path id="path12326" stroke="#000" d="m90 41-1.6-3.1"/>
+    </g>
+    <g id="g12328" style="color:#000000">
+     <path id="path12330" stroke="#000" d="m95.3 38.9-2.1-0.8"/>
+    </g>
+    <g id="g12332" style="color:#000000">
+     <path id="path12334" stroke="#000" d="m90 41 3.2-2.9"/>
+    </g>
+    <g id="g12336" style="color:#000000">
+     <path id="path12338" stroke="#000" d="m84.2 39.2 1.9-0.9"/>
+    </g>
+    <g id="g12340" style="color:#000000">
+     <path id="path12342" stroke="#000" d="m90 41-3.9-2.7"/>
+    </g>
+    <g id="g12344" style="color:#000000">
+     <path id="path12346" stroke="#000" d="m54 84.4-6.7-6.5"/>
+    </g>
+    <g id="g12348" style="color:#000000">
+     <path id="path12350" stroke="#000" d="m49.7 71.3-2.4 6.6"/>
+    </g>
+    <g id="g12352" style="color:#000000">
+     <path id="path12354" stroke="#000" d="m75.1 43 0.9-2.4"/>
+    </g>
+    <g id="g12356" style="color:#000000">
+     <path id="path12358" stroke="#000" d="m82.9 40.3-6.9 0.3"/>
+    </g>
+    <g id="g12360" style="color:#000000">
+     <path id="path12362" stroke="#000" d="m64.5 109.2-10.5-5.2"/>
+    </g>
+    <g id="g12364" style="color:#000000">
+     <path id="path12366" stroke="#000" d="m53 97.9 1 6.1"/>
+    </g>
+    <g id="g12368" style="color:#000000">
+     <path id="path12370" stroke="#000" d="m63 53.7-1.3-4.6"/>
+    </g>
+    <g id="g12372" style="color:#000000">
+     <path id="path12374" stroke="#000" d="m68.1 45.6-6.4 3.5"/>
+    </g>
+    <g id="g12376" style="color:#000000">
+     <path id="path12378" stroke="#000" d="m111.5 48 0.2-3.6"/>
+    </g>
+    <g id="g12380" style="color:#000000">
+     <path id="path12382" stroke="#000" d="m104.8 42.2 6.9 2.2"/>
+    </g>
+    <g id="g12384" style="color:#000000">
+     <path id="path12386" stroke="#000" d="m120.2 101.6 9.6-5.8"/>
+    </g>
+    <g id="g12388" style="color:#000000">
+     <path id="path12390" stroke="#000" d="m129.8 89.2v6.6"/>
+    </g>
+    <g id="g12392" style="color:#000000">
+     <path id="path12394" stroke="#000" d="m129.8 89.2v6.6"/>
+    </g>
+    <g id="g12396" style="color:#000000">
+     <path id="path12398" stroke="#000" d="m96.7 39.9-1.4-1"/>
+    </g>
+    <g id="g12400" style="color:#000000">
+     <path id="path12402" stroke="#000" d="m90 41 5.3-2.1"/>
+    </g>
+    <g id="g12404" style="color:#000000">
+     <path id="path12406" stroke="#000" d="m105.9 116.6 11.8-3.6"/>
+    </g>
+    <g id="g12408" style="color:#000000">
+     <path id="path12410" stroke="#000" d="m119.4 107.7-1.7 5.3"/>
+    </g>
+    <g id="g12412" style="color:#000000">
+     <path id="path12414" stroke="#000" d="m92.1 122.1 12.4-1.3"/>
+    </g>
+    <g id="g12416" style="color:#000000">
+     <path id="path12418" stroke="#000" d="m105.9 116.6-1.4 4.2"/>
+    </g>
+    <g id="g12420" style="color:#000000">
+     <path id="path12422" stroke="#000" d="m82.9 40.3 1.3-1.1"/>
+    </g>
+    <g id="g12424" style="color:#000000">
+     <path id="path12426" stroke="#000" d="m90 41-5.8-1.8"/>
+    </g>
+    <g id="g12428" style="color:#000000">
+     <path id="path12430" stroke="#000" d="m123.4 68.8 4.5-5.9"/>
+    </g>
+    <g id="g12432" style="color:#000000">
+     <path id="path12434" stroke="#000" d="m123.3 57.2 4.6 5.7"/>
+    </g>
+    <g id="g12436" style="color:#000000">
+     <path id="path12438" stroke="#000" d="m92.1 122.1-12.6-0.7"/>
+    </g>
+    <g id="g12440" style="color:#000000">
+     <path id="path12442" stroke="#000" d="m78.5 117.4 1 4"/>
+    </g>
+    <g id="g12444" style="color:#000000">
+     <path id="path12446" stroke="#000" d="m69.1 49.1-1-3.5"/>
+    </g>
+    <g id="g12448" style="color:#000000">
+     <path id="path12450" stroke="#000" d="m75.1 43-7 2.6"/>
+    </g>
+    <g id="g12452" style="color:#000000">
+     <path id="path12454" stroke="#000" d="m97.5 41.1-0.8-1.2"/>
+    </g>
+    <g id="g12456" style="color:#000000">
+     <path id="path12458" stroke="#000" d="m90 41 6.7-1.1"/>
+    </g>
+    <g id="g12460" style="color:#000000">
+     <path id="path12462" stroke="#000" d="m104.7 44.6 0.1-2.4"/>
+    </g>
+    <g id="g12464" style="color:#000000">
+     <path id="path12466" stroke="#000" d="m97.5 41.1 7.3 1.1"/>
+    </g>
+    <g id="g12468" style="color:#000000">
+     <path id="path12470" stroke="#000" d="m56 77.5-6.3-6.2"/>
+    </g>
+    <g id="g12472" style="color:#000000">
+     <path id="path12474" stroke="#000" d="m53.1 64.9-3.4 6.4"/>
+    </g>
+    <g id="g12476" style="color:#000000">
+     <path id="path12478" stroke="#000" d="m82.4 41.5 0.5-1.2"/>
+    </g>
+    <g id="g12480" style="color:#000000">
+     <path id="path12482" stroke="#000" d="m90 41-7.1-0.7"/>
+    </g>
+    <g id="g12484" style="color:#000000">
+     <path id="path12486" stroke="#000" d="m92.3 118.1-0.2 4"/>
+    </g>
+    <g id="g12488" style="color:#000000">
+     <path id="path12490" stroke="#000" d="m78.5 117.4-12.6-3"/>
+    </g>
+    <g id="g12492" style="color:#000000">
+     <path id="path12494" stroke="#000" d="m64.5 109.2 1.4 5.2"/>
+    </g>
+    <g id="g12496" style="color:#000000">
+     <path id="path12498" stroke="#000" d="m119.4 62.4 3.9-5.2"/>
+    </g>
+    <g id="g12500" style="color:#000000">
+     <path id="path12502" stroke="#000" d="m117.8 52.2 5.5 5"/>
+    </g>
+    <g id="g12504" style="color:#000000">
+     <path id="path12506" stroke="#000" d="m75.7 45.4-0.6-2.4"/>
+    </g>
+    <g id="g12508" style="color:#000000">
+     <path id="path12510" stroke="#000" d="m82.4 41.5-7.3 1.5"/>
+    </g>
+    <g id="g12512" style="color:#000000">
+     <path id="path12514" stroke="#000" d="m63.8 103.2-10.8-5.3"/>
+    </g>
+    <g id="g12516" style="color:#000000">
+     <path id="path12518" stroke="#000" d="m53 91.3v6.6"/>
+    </g>
+    <g id="g12520" style="color:#000000">
+     <path id="path12522" stroke="#000" d="m120.2 95 9.6-5.8"/>
+    </g>
+    <g id="g12524" style="color:#000000">
+     <path id="path12526" stroke="#000" d="m128.7 82.3 1.1 6.9"/>
+    </g>
+    <g id="g12528" style="color:#000000">
+     <path id="path12530" stroke="#000" d="m128.7 82.3 1.1 6.9"/>
+    </g>
+    <g id="g12532" style="color:#000000">
+     <path id="path12534" stroke="#000" d="m97.4 42.3 0.1-1.2"/>
+    </g>
+    <g id="g12536" style="color:#000000">
+     <path id="path12538" stroke="#000" d="m90 41 7.5 0.1"/>
+    </g>
+    <g id="g12540" style="color:#000000">
+     <path id="path12542" stroke="#000" d="m82.8 42.7-0.4-1.2"/>
+    </g>
+    <g id="g12544" style="color:#000000">
+     <path id="path12546" stroke="#000" d="m90 41-7.6 0.5"/>
+    </g>
+    <g id="g12548" style="color:#000000">
+     <path id="path12550" stroke="#000" d="m58.9 70.6-5.8-5.7"/>
+    </g>
+    <g id="g12552" style="color:#000000">
+     <path id="path12554" stroke="#000" d="m57.6 59-4.5 5.9"/>
+    </g>
+    <g id="g12556" style="color:#000000">
+     <path id="path12558" stroke="#000" d="m114.5 56.6 3.3-4.4"/>
+    </g>
+    <g id="g12560" style="color:#000000">
+     <path id="path12562" stroke="#000" d="m111.5 48 6.3 4.2"/>
+    </g>
+    <g id="g12564" style="color:#000000">
+     <path id="path12566" stroke="#000" d="m96.5 43.5-6.5-2.5"/>
+    </g>
+    <g id="g12570" style="color:#000000">
+     <path id="path12572" stroke="#000" d="m97.4 42.3-7.4-1.3"/>
+    </g>
+    <g id="g12596" style="color:#000000">
+     <path id="path12598" stroke="#000" d="m82.8 42.7 7.2-1.7"/>
+    </g>
+    <g id="g12602" style="color:#000000">
+     <path id="path12604" stroke="#000" d="m83.9 43.8 6.1-2.8"/>
+    </g>
+    <g id="g12608" style="color:#000000">
+     <path id="path12610" stroke="#000" d="m85.7 44.7 4.3-3.7"/>
+    </g>
+    <g id="g12614" style="color:#000000">
+     <path id="path12616" stroke="#000" d="m88 45.2 2-4.2"/>
+    </g>
+    <g id="g12620" style="color:#000000">
+     <path id="path12622" stroke="#000" d="m90.4 45.4-0.4-4.4"/>
+    </g>
+    <g id="g12626" style="color:#000000">
+     <path id="path12628" stroke="#000" d="m92.8 45.1-2.8-4.1"/>
+    </g>
+    <g id="g12632" style="color:#000000">
+     <path id="path12634" stroke="#000" d="m94.9 44.5-4.9-3.5"/>
+    </g>
+    <g id="g12638" style="color:#000000">
+     <path id="path12640" stroke="#000" d="m96.5 43.5-6.5-2.5"/>
+    </g>
+    <g id="g12642" style="color:#000000">
+     <path id="path12644" stroke="#000" d="m106.8 111.5 12.6-3.8"/>
+    </g>
+    <g id="g12646" style="color:#000000">
+     <path id="path12648" stroke="#000" d="m120.2 101.6-0.8 6.1"/>
+    </g>
+    <g id="g12650" style="color:#000000">
+     <path id="path12652" stroke="#000" d="m109 51.4 2.5-3.4"/>
+    </g>
+    <g id="g12654" style="color:#000000">
+     <path id="path12656" stroke="#000" d="m104.7 44.6 6.8 3.4"/>
+    </g>
+    <g id="g12658" style="color:#000000">
+     <path id="path12660" stroke="#000" d="m96.5 43.5 0.9-1.2"/>
+    </g>
+    <g id="g12662" style="color:#000000">
+     <path id="path12664" stroke="#000" d="m104.7 44.6-7.3-2.3"/>
+    </g>
+    <g id="g12666" style="color:#000000">
+     <path id="path12668" stroke="#000" d="m102.9 47 1.8-2.4"/>
+    </g>
+    <g id="g12670" style="color:#000000">
+     <path id="path12672" stroke="#000" d="m62.7 64-5.1-5"/>
+    </g>
+    <g id="g12674" style="color:#000000">
+     <path id="path12676" stroke="#000" d="m63 53.7-5.4 5.3"/>
+    </g>
+    <g id="g12678" style="color:#000000">
+     <path id="path12680" stroke="#000" d="m92.3 118.1 13.6-1.5"/>
+    </g>
+    <g id="g12682" style="color:#000000">
+     <path id="path12684" stroke="#000" d="m106.8 111.5-0.9 5.1"/>
+    </g>
+    <g id="g12686" style="color:#000000">
+     <path id="path12688" stroke="#000" d="m75.7 45.4 7.1-2.7"/>
+    </g>
+    <g id="g12690" style="color:#000000">
+     <path id="path12692" stroke="#000" d="m83.9 43.8-1.1-1.1"/>
+    </g>
+    <g id="g12694" style="color:#000000">
+     <path id="path12696" stroke="#000" d="m119.4 88 9.3-5.7"/>
+    </g>
+    <g id="g12698" style="color:#000000">
+     <path id="path12700" stroke="#000" d="m126.6 75.6 2.1 6.7"/>
+    </g>
+    <g id="g12702" style="color:#000000">
+     <path id="path12704" stroke="#000" d="m126.6 75.6 2.1 6.7"/>
+    </g>
+    <g id="g12706" style="color:#000000">
+     <path id="path12708" stroke="#000" d="m63.8 96.6-10.8-5.3"/>
+    </g>
+    <g id="g12710" style="color:#000000">
+     <path id="path12712" stroke="#000" d="m54 84.4-1 6.9"/>
+    </g>
+    <g id="g12714" style="color:#000000">
+     <path id="path12716" stroke="#000" d="m67.2 57.9-4.2-4.2"/>
+    </g>
+    <g id="g12718" style="color:#000000">
+     <path id="path12720" stroke="#000" d="m69.1 49.1-6.1 4.6"/>
+    </g>
+    <g id="g12722" style="color:#000000">
+     <path id="path12724" stroke="#000" d="m69.1 49.1 6.6-3.7"/>
+    </g>
+    <g id="g12726" style="color:#000000">
+     <path id="path12728" stroke="#000" d="m78 47.6-2.3-2.2"/>
+    </g>
+    <g id="g12730" style="color:#000000">
+     <path id="path12732" stroke="#000" d="m92.3 118.1-13.8-0.7"/>
+    </g>
+    <g id="g12734" style="color:#000000">
+     <path id="path12736" stroke="#000" d="m77.9 112.3 0.6 5.1"/>
+    </g>
+    <g id="g12738" style="color:#000000">
+     <path id="path12740" stroke="#000" d="m72.3 52.4-3.2-3.3"/>
+    </g>
+    <g id="g12742" style="color:#000000">
+     <path id="path12744" stroke="#000" d="m102.9 47-6.4-3.5"/>
+    </g>
+    <g id="g12746" style="color:#000000">
+     <path id="path12748" stroke="#000" d="m94.9 44.5 1.6-1"/>
+    </g>
+    <g id="g12750" style="color:#000000">
+     <path id="path12752" stroke="#000" d="m102.9 47-6.4-3.5"/>
+    </g>
+    <g id="g12754" style="color:#000000">
+     <path id="path12756" stroke="#000" d="m77.9 112.3-13.4-3.1"/>
+    </g>
+    <g id="g12758" style="color:#000000">
+     <path id="path12760" stroke="#000" d="m63.8 103.2 0.7 6"/>
+    </g>
+    <g id="g12762" style="color:#000000">
+     <path id="path12764" stroke="#000" d="m78 47.6 5.9-3.8"/>
+    </g>
+    <g id="g12766" style="color:#000000">
+     <path id="path12768" stroke="#000" d="m85.7 44.7-1.8-0.9"/>
+    </g>
+    <g id="g12770" style="color:#000000">
+     <path id="path12772" stroke="#000" d="m92.4 113.1-0.1 5"/>
+    </g>
+    <g id="g12774" style="color:#000000">
+     <path id="path12776" stroke="#000" d="m117.7 80.9 8.9-5.3"/>
+    </g>
+    <g id="g12778" style="color:#000000">
+     <path id="path12780" stroke="#000" d="m123.4 68.8 3.2 6.8"/>
+    </g>
+    <g id="g12782" style="color:#000000">
+     <path id="path12784" stroke="#000" d="m123.4 68.8 3.2 6.8"/>
+    </g>
+    <g id="g12786" style="color:#000000">
+     <path id="path12788" stroke="#000" d="m92.8 45.1 2.1-0.6"/>
+    </g>
+    <g id="g12790" style="color:#000000">
+     <path id="path12792" stroke="#000" d="m99.8 48.9-4.9-4.4"/>
+    </g>
+    <g id="g12794" style="color:#000000">
+     <path id="path12796" stroke="#000" d="m107.3 105.6 12.9-4"/>
+    </g>
+    <g id="g12798" style="color:#000000">
+     <path id="path12800" stroke="#000" d="m120.2 95v6.6"/>
+    </g>
+    <g id="g12802" style="color:#000000">
+     <path id="path12804" stroke="#000" d="m81.5 49.4 4.2-4.7"/>
+    </g>
+    <g id="g12806" style="color:#000000">
+     <path id="path12808" stroke="#000" d="m88 45.2-2.3-0.5"/>
+    </g>
+    <g id="g12810" style="color:#000000">
+     <path id="path12812" stroke="#000" d="m109 51.4-6.1-4.4"/>
+    </g>
+    <g id="g12814" style="color:#000000">
+     <path id="path12816" stroke="#000" d="m99.8 48.9 3.1-1.9"/>
+    </g>
+    <g id="g12818" style="color:#000000">
+     <path id="path12820" stroke="#000" d="m109 51.4-6.1-4.4"/>
+    </g>
+    <g id="g12822" style="color:#000000">
+     <path id="path12824" stroke="#000" d="m64.5 89.5-10.5-5.1"/>
+    </g>
+    <g id="g12826" style="color:#000000">
+     <path id="path12828" stroke="#000" d="m56 77.5-2 6.9"/>
+    </g>
+    <g id="g12830" style="color:#000000">
+     <path id="path12832" stroke="#000" d="m90.4 45.4 2.4-0.3"/>
+    </g>
+    <g id="g12834" style="color:#000000">
+     <path id="path12836" stroke="#000" d="m95.6 50.2-2.8-5.1"/>
+    </g>
+    <g id="g12838" style="color:#000000">
+     <path id="path12840" stroke="#000" d="m86 50.4 2-5.2"/>
+    </g>
+    <g id="g12842" style="color:#000000">
+     <path id="path12844" stroke="#000" d="m90.4 45.4-2.4-0.2"/>
+    </g>
+    <g id="g12846" style="color:#000000">
+     <path id="path12848" stroke="#000" d="m90.8 50.7-0.4-5.3"/>
+    </g>
+    <g id="g12850" style="color:#000000">
+     <path id="path12852" stroke="#000" d="m115.4 73.7 8-4.9"/>
+    </g>
+    <g id="g12854" style="color:#000000">
+     <path id="path12856" stroke="#000" d="m119.4 62.4 4 6.4"/>
+    </g>
+    <g id="g12858" style="color:#000000">
+     <path id="path12860" stroke="#000" d="m119.4 62.4 4 6.4"/>
+    </g>
+    <g id="g12862" style="color:#000000">
+     <path id="path12864" stroke="#000" d="m72.3 52.4 5.7-4.8"/>
+    </g>
+    <g id="g12866" style="color:#000000">
+     <path id="path12868" stroke="#000" d="m81.5 49.4-3.5-1.8"/>
+    </g>
+    <g id="g12870" style="color:#000000">
+     <path id="path12872" stroke="#000" d="m114.5 56.6-5.5-5.2"/>
+    </g>
+    <g id="g12874" style="color:#000000">
+     <path id="path12876" stroke="#000" d="m104.4 54.2 4.6-2.8"/>
+    </g>
+    <g id="g12878" style="color:#000000">
+     <path id="path12880" stroke="#000" d="m114.5 56.6-5.5-5.2"/>
+    </g>
+    <g id="g12882" style="color:#000000">
+     <path id="path12884" stroke="#000" d="m92.4 113.1 14.4-1.6"/>
+    </g>
+    <g id="g12886" style="color:#000000">
+     <path id="path12888" stroke="#000" d="m107.3 105.6-0.5 5.9"/>
+    </g>
+    <g id="g12890" style="color:#000000">
+     <path id="path12892" stroke="#000" d="m112.3 66.8 7.1-4.4"/>
+    </g>
+    <g id="g12894" style="color:#000000">
+     <path id="path12896" stroke="#000" d="m114.5 56.6 4.9 5.8"/>
+    </g>
+    <g id="g12898" style="color:#000000">
+     <path id="path12900" stroke="#000" d="m114.5 56.6 4.9 5.8"/>
+    </g>
+    <g id="g12902" style="color:#000000">
+     <path id="path12904" stroke="#000" d="m108.6 60.2 5.9-3.6"/>
+    </g>
+    <g id="g12906" style="color:#000000">
+     <path id="path12908" stroke="#000" d="m77.5 106.4-13.7-3.2"/>
+    </g>
+    <g id="g12910" style="color:#000000">
+     <path id="path12912" stroke="#000" d="m63.8 96.6v6.6"/>
+    </g>
+    <g id="g12914" style="color:#000000">
+     <path id="path12916" stroke="#000" d="m65.9 82.3-9.9-4.8"/>
+    </g>
+    <g id="g12918" style="color:#000000">
+     <path id="path12920" stroke="#000" d="m58.9 70.6-2.9 6.9"/>
+    </g>
+    <g id="g12922" style="color:#000000">
+     <path id="path12924" stroke="#000" d="m67.2 57.9 5.1-5.5"/>
+    </g>
+    <g id="g12926" style="color:#000000">
+     <path id="path12928" stroke="#000" d="m77.5 54.9-5.2-2.5"/>
+    </g>
+    <g id="g12930" style="color:#000000">
+     <path id="path12932" stroke="#000" d="m95.6 50.2 4.2-1.3"/>
+    </g>
+    <g id="g12934" style="color:#000000">
+     <path id="path12936" stroke="#000" d="m104.4 54.2-4.6-5.3"/>
+    </g>
+    <g id="g12938" style="color:#000000">
+     <path id="path12940" stroke="#000" d="m92.4 113.1-14.5-0.8"/>
+    </g>
+    <g id="g12942" style="color:#000000">
+     <path id="path12944" stroke="#000" d="m77.5 106.4 0.4 5.9"/>
+    </g>
+    <g id="g12946" style="color:#000000">
+     <path id="path12948" stroke="#000" d="m107.3 99 12.9-4"/>
+    </g>
+    <g id="g12950" style="color:#000000">
+     <path id="path12952" stroke="#000" d="m119.4 88 0.8 7"/>
+    </g>
+    <g id="g12954" style="color:#000000">
+     <path id="path12956" stroke="#000" d="m68 75.1-9.1-4.5"/>
+    </g>
+    <g id="g12958" style="color:#000000">
+     <path id="path12960" stroke="#000" d="m62.7 64-3.8 6.6"/>
+    </g>
+    <g id="g12962" style="color:#000000">
+     <path id="path12964" stroke="#000" d="m77.5 54.9 4-5.5"/>
+    </g>
+    <g id="g12966" style="color:#000000">
+     <path id="path12968" stroke="#000" d="m86 50.4-4.5-1"/>
+    </g>
+    <g id="g12970" style="color:#000000">
+     <path id="path12972" stroke="#000" d="m62.7 64 4.5-6.1"/>
+    </g>
+    <g id="g12974" style="color:#000000">
+     <path id="path12976" stroke="#000" d="m73.9 61.1-6.7-3.2"/>
+    </g>
+    <g id="g12978" style="color:#000000">
+     <path id="path12980" stroke="#000" d="m92.5 107.2-0.1 5.9"/>
+    </g>
+    <g id="g12982" style="color:#000000">
+     <path id="path12984" stroke="#000" d="m70.7 67.9-8-3.9"/>
+    </g>
+    <g id="g12986" style="color:#000000">
+     <path id="path12988" stroke="#000" d="m90.8 50.7 4.8-0.5"/>
+    </g>
+    <g id="g12990" style="color:#000000">
+     <path id="path12992" stroke="#000" d="m98.2 56-2.6-5.8"/>
+    </g>
+    <g id="g12994" style="color:#000000">
+     <path id="path12996" stroke="#000" d="m84.1 56.4 1.9-6"/>
+    </g>
+    <g id="g12998" style="color:#000000">
+     <path id="path13000" stroke="#000" d="m90.8 50.7-4.8-0.3"/>
+    </g>
+    <g id="g13002" style="color:#000000">
+     <path id="path13004" stroke="#000" d="m77.5 99.8-13.7-3.2"/>
+    </g>
+    <g id="g13006" style="color:#000000">
+     <path id="path13008" stroke="#000" d="m64.5 89.5-0.7 7.1"/>
+    </g>
+    <g id="g13010" style="color:#000000">
+     <path id="path13012" stroke="#000" d="m98.2 56 6.2-1.8"/>
+    </g>
+    <g id="g13014" style="color:#000000">
+     <path id="path13016" stroke="#000" d="m108.6 60.2-4.2-6"/>
+    </g>
+    <g id="g13018" style="color:#000000">
+     <path id="path13020" stroke="#000" d="m91.2 56.8-0.4-6.1"/>
+    </g>
+    <g id="g13022" style="color:#000000">
+     <path id="path13024" stroke="#000" d="m106.8 91.9 12.6-3.9"/>
+    </g>
+    <g id="g13026" style="color:#000000">
+     <path id="path13028" stroke="#000" d="m117.7 80.9 1.7 7.1"/>
+    </g>
+    <g id="g13030" style="color:#000000">
+     <path id="path13032" stroke="#000" d="m92.5 107.2 14.8-1.6"/>
+    </g>
+    <g id="g13034" style="color:#000000">
+     <path id="path13036" stroke="#000" d="m107.3 99v6.6"/>
+    </g>
+    <g id="g13038" style="color:#000000">
+     <path id="path13040" stroke="#000" d="m73.9 61.1 3.6-6.2"/>
+    </g>
+    <g id="g13042" style="color:#000000">
+     <path id="path13044" stroke="#000" d="m84.1 56.4-6.6-1.5"/>
+    </g>
+    <g id="g13046" style="color:#000000">
+     <path id="path13048" stroke="#000" d="m92.5 107.2-15-0.8"/>
+    </g>
+    <g id="g13050" style="color:#000000">
+     <path id="path13052" stroke="#000" d="m77.5 99.8v6.6"/>
+    </g>
+    <g id="g13054" style="color:#000000">
+     <path id="path13056" stroke="#000" d="m100.6 62.6 8-2.4"/>
+    </g>
+    <g id="g13058" style="color:#000000">
+     <path id="path13060" stroke="#000" d="m112.3 66.8-3.7-6.6"/>
+    </g>
+    <g id="g13062" style="color:#000000">
+     <path id="path13064" stroke="#000" d="m105.9 84.5 11.8-3.6"/>
+    </g>
+    <g id="g13066" style="color:#000000">
+     <path id="path13068" stroke="#000" d="m115.4 73.7 2.3 7.2"/>
+    </g>
+    <g id="g13070" style="color:#000000">
+     <path id="path13072" stroke="#000" d="m77.9 92.7-13.4-3.2"/>
+    </g>
+    <g id="g13074" style="color:#000000">
+     <path id="path13076" stroke="#000" d="m65.9 82.3-1.4 7.2"/>
+    </g>
+    <g id="g13078" style="color:#000000">
+     <path id="path13080" stroke="#000" d="m102.7 69.7 9.6-2.9"/>
+    </g>
+    <g id="g13082" style="color:#000000">
+     <path id="path13084" stroke="#000" d="m115.4 73.7-3.1-6.9"/>
+    </g>
+    <g id="g13086" style="color:#000000">
+     <path id="path13088" stroke="#000" d="m104.5 77.1 10.9-3.4"/>
+    </g>
+    <g id="g13090" style="color:#000000">
+     <path id="path13092" stroke="#000" d="m92.5 100.6v6.6"/>
+    </g>
+    <g id="g13094" style="color:#000000">
+     <path id="path13096" stroke="#000" d="m91.2 56.8 7-0.8"/>
+    </g>
+    <g id="g13098" style="color:#000000">
+     <path id="path13100" stroke="#000" d="m100.6 62.6-2.4-6.6"/>
+    </g>
+    <g id="g13102" style="color:#000000">
+     <path id="path13104" stroke="#000" d="m70.7 67.9 3.2-6.8"/>
+    </g>
+    <g id="g13106" style="color:#000000">
+     <path id="path13108" stroke="#000" d="m82.3 63.1-8.4-2"/>
+    </g>
+    <g id="g13110" style="color:#000000">
+     <path id="path13112" stroke="#000" d="m82.3 63.1 1.8-6.7"/>
+    </g>
+    <g id="g13114" style="color:#000000">
+     <path id="path13116" stroke="#000" d="m91.2 56.8-7.1-0.4"/>
+    </g>
+    <g id="g13118" style="color:#000000">
+     <path id="path13120" stroke="#000" d="m92.5 100.6 14.8-1.6"/>
+    </g>
+    <g id="g13122" style="color:#000000">
+     <path id="path13124" stroke="#000" d="m106.8 91.9 0.5 7.1"/>
+    </g>
+    <g id="g13126" style="color:#000000">
+     <path id="path13128" stroke="#000" d="m91.5 63.6-0.3-6.8"/>
+    </g>
+    <g id="g13130" style="color:#000000">
+     <path id="path13132" stroke="#000" d="m78.5 85.2-12.6-2.9"/>
+    </g>
+    <g id="g13134" style="color:#000000">
+     <path id="path13136" stroke="#000" d="m68 75.1-2.1 7.2"/>
+    </g>
+    <g id="g13138" style="color:#000000">
+     <path id="path13140" stroke="#000" d="m68 75.1 2.7-7.2"/>
+    </g>
+    <g id="g13142" style="color:#000000">
+     <path id="path13144" stroke="#000" d="m80.8 70.3-10.1-2.4"/>
+    </g>
+    <g id="g13146" style="color:#000000">
+     <path id="path13148" stroke="#000" d="m79.5 77.8-11.5-2.7"/>
+    </g>
+    <g id="g13150" style="color:#000000">
+     <path id="path13152" stroke="#000" d="m92.5 100.6-15-0.8"/>
+    </g>
+    <g id="g13154" style="color:#000000">
+     <path id="path13156" stroke="#000" d="m77.9 92.7-0.4 7.1"/>
+    </g>
+    <g id="g13158" style="color:#000000">
+     <path id="path13160" stroke="#000" d="m91.5 63.6 9.1-1"/>
+    </g>
+    <g id="g13162" style="color:#000000">
+     <path id="path13164" stroke="#000" d="m102.7 69.7-2.1-7.1"/>
+    </g>
+    <g id="g13166" style="color:#000000">
+     <path id="path13168" stroke="#000" d="m92.4 93.5 14.4-1.6"/>
+    </g>
+    <g id="g13170" style="color:#000000">
+     <path id="path13172" stroke="#000" d="m105.9 84.5 0.9 7.4"/>
+    </g>
+    <g id="g13174" style="color:#000000">
+     <path id="path13176" stroke="#000" d="m92.4 93.5 0.1 7.1"/>
+    </g>
+    <g id="g13178" style="color:#000000">
+     <path id="path13180" stroke="#000" d="m80.8 70.3 1.5-7.2"/>
+    </g>
+    <g id="g13182" style="color:#000000">
+     <path id="path13184" stroke="#000" d="m91.5 63.6-9.2-0.5"/>
+    </g>
+    <g id="g13186" style="color:#000000">
+     <path id="path13188" stroke="#000" d="m91.8 70.9-0.3-7.3"/>
+    </g>
+    <g id="g13190" style="color:#000000">
+     <path id="path13192" stroke="#000" d="m91.8 70.9 10.9-1.2"/>
+    </g>
+    <g id="g13194" style="color:#000000">
+     <path id="path13196" stroke="#000" d="m104.5 77.1-1.8-7.4"/>
+    </g>
+    <g id="g13198" style="color:#000000">
+     <path id="path13200" stroke="#000" d="m92.4 93.5-14.5-0.8"/>
+    </g>
+    <g id="g13202" style="color:#000000">
+     <path id="path13204" stroke="#000" d="m78.5 85.2-0.6 7.5"/>
+    </g>
+    <g id="g13206" style="color:#000000">
+     <path id="path13208" stroke="#000" d="m92.3 86 13.6-1.5"/>
+    </g>
+    <g id="g13210" style="color:#000000">
+     <path id="path13212" stroke="#000" d="m104.5 77.1 1.4 7.4"/>
+    </g>
+    <g id="g13214" style="color:#000000">
+     <path id="path13216" stroke="#000" d="m92.1 78.5 12.4-1.4"/>
+    </g>
+    <g id="g13218" style="color:#000000">
+     <path id="path13220" stroke="#000" d="m79.5 77.8 1.3-7.5"/>
+    </g>
+    <g id="g13222" style="color:#000000">
+     <path id="path13224" stroke="#000" d="m91.8 70.9-11-0.6"/>
+    </g>
+    <g id="g13226" style="color:#000000">
+     <path id="path13228" stroke="#000" d="m92.3 86 0.1 7.5"/>
+    </g>
+    <g id="g13230" style="color:#000000">
+     <path id="path13232" stroke="#000" d="m92.3 86-13.8-0.8"/>
+    </g>
+    <g id="g13234" style="color:#000000">
+     <path id="path13236" stroke="#000" d="m79.5 77.8-1 7.4"/>
+    </g>
+    <g id="g13238" style="color:#000000">
+     <path id="path13240" stroke="#000" d="m92.1 78.5-12.6-0.7"/>
+    </g>
+    <g id="g13242" style="color:#000000">
+     <path id="path13244" stroke="#000" d="m92.1 78.5-0.3-7.6"/>
+    </g>
+    <g id="g13246" style="color:#000000">
+     <path id="path13248" stroke="#000" d="m92.1 78.5 0.2 7.5"/>
+    </g>
+   </g>
+  </g>
+  <g id="g13261" style="color:#000000" transform="translate(363.91 43.699)" stroke="currentColor" fill="none">
+   <use id="use13263" style="color:#e51e10" xlink:href="#gpPt6-8" transform="matrix(3.38,0,0,3.38,90,41)" height="100%" width="100%" y="0" x="0"/>
+  </g>
+ </g>
+ <path id="path5789" marker-end="url(#marker5791)" d="m166.81 74.832 80.88-69.332h110l79 69" stroke="#000" stroke-width="1px" fill="none"/>
+</svg>

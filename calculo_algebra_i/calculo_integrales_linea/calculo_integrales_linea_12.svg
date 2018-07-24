@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="66.51" width="102.63" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 102.6285 66.510003">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-201.89 -319.6)">
+  <g>
+   <path id="path4255" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m281.11 331.63-12.512 2.7226c1.3678 0.54878 2.4917 1.4729 3.3144 2.6035l-47.182 29.979 0.53516 0.84375 47.18-29.977c0.65244 1.2056 0.99331 2.5789 0.89648 4.0078l7.7676-10.18z" fill-rule="evenodd"/>
+   <circle id="path4687" cx="225" cy="367.36" r="2.4947"/>
+   <circle id="circle4689" cy="331.63" cx="281.11" r="2.4947"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text5807" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="362.61221" x="253.75"><tspan id="tspan5809" x="253.75" y="362.61221">θ</tspan></text>
+   <text id="text5811" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="381.11221" x="206.4375"><tspan id="tspan5813" x="206.4375" y="381.11221">M</tspan></text>
+   <text id="text5815" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="332.36221" x="286.25"><tspan id="tspan5817" x="286.25" y="332.36221">m</tspan></text>
+  </g>
+ </g>
+</svg>
