@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="205" width="210" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 210 205">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <pattern id="Checkerboardwhite" height="2" width="2" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <rect id="rect5234" height="1" width="1" y="0" x="0" fill="#fff"/>
+   <rect id="rect5236" height="1" width="1" y="1" x="1" fill="#fff"/>
+  </pattern>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-295 -292.36)">
+  <path id="path6175" d="m495 328.36c-20 20 0 125-15 140s-140 10-150 0-29.399-130.2-15-135c14.399-4.7998 92.573-23.411 115-20" stroke="#9400d3" fill="#f2f2f2"/>
+  <path id="rect4266" d="m495 328.36c-20 20 0 125-15 140s-140 10-150 0-29.399-130.2-15-135c14.399-4.7998 92.573-23.411 115-20" stroke="#9400d3" fill="url(#Checkerboardwhite)"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path id="path4200" d="m300 397.36h200"/>
+   <path id="path4202" d="m400 492.36v-195"/>
+   <path id="path4204" d="m445 387.36v-70"/>
+   <path id="path4206" d="m410 352.36h70"/>
+   <path id="path4210" d="m433.3 324.99c0.571 2.7288 1.1562 5.318 1.7015 7.3714 1.3528 5.0939 2.2292 10.517 5 15 1.2392 2.005 2.643 5 5 5s3.7608-2.995 5-5c2.7708-4.4833 3.6472-9.9061 5-15 0.54532-2.0534 1.1305-4.6426 1.7015-7.3714"/>
+  </g>
+  <text id="text4269" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="348.86493" x="324.89032" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan4271" y="348.86493" x="324.89032">B</tspan></text>
+  <g id="g4288" transform="translate(179.68 -42.083)">
+   <g id="content" stroke-width="0" xml:space="preserve" transform="matrix(1.063 0 0 -1.063 -186.02 789.27)" stroke="#000" stroke-miterlimit="10.433"><path id="path4291" d="m466.54 405.95v0.75c-0.59 0.03-0.99 0.18-1.39 0.66l-2.92 3.58c1.45 0.34 2.6 1.12 2.6 2.73 0 2.31-2.23 2.92-4.13 2.92h-4.48v-0.74c1.02-0.08 1.31-0.05 1.31-1.16h0.46c0 0.57-0.01 1.19-0.63 1.43h3.34c1.61 0 3.67-0.44 3.67-2.45 0-1.77-1.55-2.15-2.98-2.42l3.41-4.2c0.21-0.25 0.46-0.48 0.76-0.62h-1.61l-3.65 4.73-1.21-0.04v-3.26c0-0.57 0.03-1.18 0.64-1.43h-2.36c0.58 0.24 0.62 0.83 0.62 1.39v6.87h-0.46v-6.65c0-1.18-0.11-1.27-1.31-1.34v-0.75h4.72v0.75c-1.02 0.05-1.37 0.02-1.37 1.16v2.81l0.51 0.02 3.65-4.74z"/><path id="path4293" d="m463.16 413.7h-0.46c0-1.79-1.74-1.98-3.13-2.01v3.56c0 0.28 0.21 0.31 0.43 0.31 1.32 0 2.7-0.22 2.7-1.86h0.46c0 1.75-1.34 2.33-2.87 2.33-0.61 0-1.2-0.02-1.2-0.78v-4.02c1.79 0.02 4.07 0.14 4.07 2.47z"/><path id="path4295" d="m471.3 413.53-0.14 0.06c-0.42-0.64-0.56-0.74-1.07-0.74h-2.66l1.87 1.96c1 1.04 1.43 1.89 1.43 2.76 0 1.11-0.9 1.97-2.06 1.97-0.62 0-1.2-0.24-1.61-0.69-0.36-0.38-0.52-0.74-0.71-1.53l0.23-0.05c0.45 1.09 0.85 1.45 1.62 1.45 0.94 0 1.57-0.64 1.57-1.58 0-0.87-0.51-1.91-1.45-2.9l-1.98-2.11v-0.13h4.35z"/></g>
+  </g>
+  <text id="text4315" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="342.46274" x="459.80804" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4317" font-size="12px" y="342.46274" x="459.80804">h(t)</tspan></text>
+  <g id="g4341" transform="translate(147.86 3.2746)">
+   <g id="g4343" stroke-width="0" xml:space="preserve" transform="matrix(1.063 0 0 -1.063 -186.02 789.27)" stroke="#000" stroke-miterlimit="10.433"><path id="path4345" d="m461.73 406.6h-0.06c-0.55 0-0.69 0.13-0.69 0.68v4.1h-1.88v-0.2c0.74-0.04 0.88-0.16 0.88-0.76v-2.81c0-0.33-0.06-0.5-0.23-0.63-0.32-0.26-0.69-0.41-1.05-0.41-0.47 0-0.85 0.41-0.85 0.91v3.9h-1.74v-0.17c0.57-0.03 0.74-0.21 0.74-0.76v-3.02c0-0.94 0.57-1.55 1.45-1.55 0.44 0 0.9 0.19 1.23 0.51l0.51 0.52v-0.99l0.05-0.03c0.6 0.24 1.03 0.37 1.64 0.54z"/><path id="path4347" d="m464.12 409.66-0.02-0.22c0.7 0 1.08-0.95 1.08-2.69 0-1.75-0.37-2.65-1.09-2.65s-1.09 0.9-1.09 2.64c0 1.77 0.38 2.7 1.1 2.7l0.02 0.22c-0.46 0-0.81-0.14-1.12-0.44-0.48-0.47-0.8-1.43-0.8-2.41 0-0.91 0.28-1.89 0.67-2.36 0.31-0.37 0.74-0.57 1.22-0.57 0.43 0 0.79 0.14 1.09 0.44 0.48 0.46 0.8 1.43 0.8 2.44 0 1.72-0.76 2.9-1.86 2.9z"/></g>
+  </g>
+ </g>
+</svg>

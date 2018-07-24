@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="144.71" width="265.7" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 265.69806 144.7067">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-234.3 -347.25)">
+  <g stroke="#000" fill="none">
+   <path id="rect4198" d="m495 467.36-225-0.00001v-115.11"/>
+   <g stroke-dasharray="2, 2">
+    <path id="rect4203" d="m270 362.36 205.17-0.11-0.17 105.11"/>
+    <path id="rect4270" d="m270 412.36h115v55"/>
+    <path id="rect4273" d="m270 442.36h15v25"/>
+   </g>
+   <g stroke-width="1px">
+    <path id="path4276" d="m385 467.36v3"/>
+    <path id="path4278" d="m285 467.36v3"/>
+    <path id="path4280" d="m475 467.36v3"/>
+    <path id="path4282" d="m270 442.36h-3"/>
+    <path id="path4284" d="m270 412.36h-3"/>
+    <path id="path4286" d="m270 362.36h-3"/>
+    <path id="path4335" d="m285 442.36c36.339-18.856 85.74-11.65 100-30 27.789-35.761 58.561-21.129 90.169-50.108"/>
+   </g>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4337" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="486.80045" x="280.888"><tspan id="tspan4339" x="280.888" y="486.80045">a</tspan></text>
+   <text id="text4341" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="486.80045" x="381.32001"><tspan id="tspan4343" x="381.32001" y="486.80045">c</tspan></text>
+   <text id="text4345" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="486.80045" x="471.04001"><tspan id="tspan4347" x="471.04001" y="486.80045">b</tspan></text>
+   <text id="text4349" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="446.7142" x="239.67018"><tspan id="tspan4351" x="239.67018" y="446.7142">f(a)</tspan></text>
+   <text id="text4353" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="418.01019" x="254.14795"><tspan id="tspan4355" x="254.14795" y="418.01019">k</tspan></text>
+   <text id="text4357" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="366.7142" x="239.01393"><tspan id="tspan4361" x="239.01393" y="366.7142">f(b)</tspan></text>
+  </g>
+ </g>
+</svg>

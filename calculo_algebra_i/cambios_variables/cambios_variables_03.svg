@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ width="300" height="200"
+ viewBox="0 0 300 200"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<style type="text/css">
+	@import url('../estilo.css');
+</style>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 5.0 patchlevel 3 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="300" height="200" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="white" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M53.2,141.7  '/>	<g transform="translate(53.2,156.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" >-1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M219.9,141.7  '/>	<g transform="translate(219.9,156.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text" > 1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M11.5,141.7 L261.6,141.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M136.5,183.4 L136.5,16.7  '/>	<g transform="translate(132.4,156.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="end">
+		<text><tspan font-family="Stix Two Text" >O</tspan></text>
+	</g>
+	<g transform="translate(234.0,111.9)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text><tspan font-family="Stix Two Text" >ángulo θ</tspan></text>
+	</g>
+	<g transform="translate(149.4,46.3)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="start">
+		<text><tspan font-family="Stix Two Text" >módulo u</tspan></text>
+	</g>
+	<g transform="translate(51.5,61.9)" stroke="none" fill="black" font-family="Stix Two Text" font-size="15.00"  text-anchor="end">
+		<text><tspan font-family="Stix Two Text" >S</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(128.4,26.1)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text"  font-weight="bold" >y</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(256.5,154.5)" stroke="none" fill="black" font-family="Stix Two Text" font-size="16.00"  text-anchor="middle">
+		<text><tspan font-family="Stix Two Text"  font-weight="bold" >x</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	<g id="gnuplot_plot_1" ><title> </title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat1' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+			<path style='fill:none; stroke:rgb(229,229,229)' d='M-4,0 L8,12 M0,-4 L12,8'/>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat1)' points = '219.9,141.7 136.5,141.7 136.5,141.7 219.9,139.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '219.9,139.1 136.5,141.7 136.5,141.7 219.7,136.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '219.7,136.4 136.5,141.7 136.5,141.7 219.5,133.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '219.5,133.8 136.5,141.7 136.5,141.7 219.2,131.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '219.2,131.2 136.5,141.7 136.5,141.7 218.9,128.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '218.9,128.6 136.5,141.7 136.5,141.7 218.4,126.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '218.4,126.0 136.5,141.7 136.5,141.7 217.9,123.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '217.9,123.4 136.5,141.7 136.5,141.7 217.2,120.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '217.2,120.8 136.5,141.7 136.5,141.7 216.5,118.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '216.5,118.2 136.5,141.7 136.5,141.7 215.8,115.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '215.8,115.7 136.5,141.7 136.5,141.7 214.9,113.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '214.9,113.2 136.5,141.7 136.5,141.7 213.9,110.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '213.9,110.7 136.5,141.7 136.5,141.7 212.9,108.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '212.9,108.3 136.5,141.7 136.5,141.7 211.8,105.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '211.8,105.9 136.5,141.7 136.5,141.7 210.6,103.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '210.6,103.5 136.5,141.7 136.5,141.7 209.4,101.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '209.4,101.2 136.5,141.7 136.5,141.7 208.1,98.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '208.1,98.9 136.5,141.7 136.5,141.7 206.7,96.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '206.7,96.7 136.5,141.7 136.5,141.7 205.2,94.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '205.2,94.5 136.5,141.7 136.5,141.7 203.7,92.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '203.7,92.3 136.5,141.7 136.5,141.7 202.1,90.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '202.1,90.2 136.5,141.7 136.5,141.7 200.4,88.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '200.4,88.1 136.5,141.7 136.5,141.7 198.7,86.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '198.7,86.1 136.5,141.7 136.5,141.7 196.9,84.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '196.9,84.2 136.5,141.7 136.5,141.7 195.0,82.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '195.0,82.3 136.5,141.7 136.5,141.7 193.1,80.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '193.1,80.5 136.5,141.7 136.5,141.7 191.1,78.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '191.1,78.7 136.5,141.7 136.5,141.7 189.1,77.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '189.1,77.0 136.5,141.7 136.5,141.7 187.0,75.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '187.0,75.4 136.5,141.7 136.5,141.7 184.9,73.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '184.9,73.8 136.5,141.7 136.5,141.7 182.7,72.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '182.7,72.3 136.5,141.7 136.5,141.7 180.5,70.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '180.5,70.9 136.5,141.7 136.5,141.7 178.2,69.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '178.2,69.5 136.5,141.7 136.5,141.7 175.9,68.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '175.9,68.3 136.5,141.7 136.5,141.7 173.6,67.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '173.6,67.0 136.5,141.7 136.5,141.7 171.2,65.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '171.2,65.9 136.5,141.7 136.5,141.7 168.8,64.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '168.8,64.8 136.5,141.7 136.5,141.7 166.3,63.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '166.3,63.9 136.5,141.7 136.5,141.7 163.8,63.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '163.8,63.0 136.5,141.7 136.5,141.7 161.3,62.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '161.3,62.1 136.5,141.7 136.5,141.7 158.8,61.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '158.8,61.4 136.5,141.7 136.5,141.7 156.2,60.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '156.2,60.7 136.5,141.7 136.5,141.7 153.6,60.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '153.6,60.1 136.5,141.7 136.5,141.7 151.0,59.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '151.0,59.6 136.5,141.7 136.5,141.7 148.4,59.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '148.4,59.2 136.5,141.7 136.5,141.7 145.8,58.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '145.8,58.9 136.5,141.7 136.5,141.7 143.2,58.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '143.2,58.6 136.5,141.7 136.5,141.7 140.5,58.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '140.5,58.5 136.5,141.7 136.5,141.7 137.9,58.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '137.9,58.4 136.5,141.7 136.5,141.7 135.2,58.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '135.2,58.4 136.5,141.7 136.5,141.7 132.6,58.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '132.6,58.5 136.5,141.7 136.5,141.7 129.9,58.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '129.9,58.6 136.5,141.7 136.5,141.7 127.3,58.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '127.3,58.9 136.5,141.7 136.5,141.7 124.7,59.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '124.7,59.2 136.5,141.7 136.5,141.7 122.1,59.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '122.1,59.6 136.5,141.7 136.5,141.7 119.5,60.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '119.5,60.1 136.5,141.7 136.5,141.7 116.9,60.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '116.9,60.7 136.5,141.7 136.5,141.7 114.3,61.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '114.3,61.4 136.5,141.7 136.5,141.7 111.8,62.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '111.8,62.1 136.5,141.7 136.5,141.7 109.3,63.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '109.3,63.0 136.5,141.7 136.5,141.7 106.8,63.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '106.8,63.9 136.5,141.7 136.5,141.7 104.3,64.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '104.3,64.8 136.5,141.7 136.5,141.7 101.9,65.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '101.9,65.9 136.5,141.7 136.5,141.7 99.5,67.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '99.5,67.0 136.5,141.7 136.5,141.7 97.2,68.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '97.2,68.3 136.5,141.7 136.5,141.7 94.9,69.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '94.9,69.5 136.5,141.7 136.5,141.7 92.6,70.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '92.6,70.9 136.5,141.7 136.5,141.7 90.4,72.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '90.4,72.3 136.5,141.7 136.5,141.7 88.2,73.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '88.2,73.8 136.5,141.7 136.5,141.7 86.1,75.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '86.1,75.4 136.5,141.7 136.5,141.7 84.0,77.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '84.0,77.0 136.5,141.7 136.5,141.7 82.0,78.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '82.0,78.7 136.5,141.7 136.5,141.7 80.0,80.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '80.0,80.5 136.5,141.7 136.5,141.7 78.1,82.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '78.1,82.3 136.5,141.7 136.5,141.7 76.2,84.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '76.2,84.2 136.5,141.7 136.5,141.7 74.4,86.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '74.4,86.1 136.5,141.7 136.5,141.7 72.7,88.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '72.7,88.1 136.5,141.7 136.5,141.7 71.0,90.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '71.0,90.2 136.5,141.7 136.5,141.7 69.4,92.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '69.4,92.3 136.5,141.7 136.5,141.7 67.9,94.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '67.9,94.5 136.5,141.7 136.5,141.7 66.4,96.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '66.4,96.7 136.5,141.7 136.5,141.7 65.0,98.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '65.0,98.9 136.5,141.7 136.5,141.7 63.7,101.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '63.7,101.2 136.5,141.7 136.5,141.7 62.5,103.5 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '62.5,103.5 136.5,141.7 136.5,141.7 61.3,105.9 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '61.3,105.9 136.5,141.7 136.5,141.7 60.2,108.3 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '60.2,108.3 136.5,141.7 136.5,141.7 59.2,110.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '59.2,110.7 136.5,141.7 136.5,141.7 58.2,113.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '58.2,113.2 136.5,141.7 136.5,141.7 57.3,115.7 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '57.3,115.7 136.5,141.7 136.5,141.7 56.6,118.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '56.6,118.2 136.5,141.7 136.5,141.7 55.9,120.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '55.9,120.8 136.5,141.7 136.5,141.7 55.2,123.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '55.2,123.4 136.5,141.7 136.5,141.7 54.7,126.0 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '54.7,126.0 136.5,141.7 136.5,141.7 54.2,128.6 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '54.2,128.6 136.5,141.7 136.5,141.7 53.9,131.2 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '53.9,131.2 136.5,141.7 136.5,141.7 53.6,133.8 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '53.6,133.8 136.5,141.7 136.5,141.7 53.4,136.4 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '53.4,136.4 136.5,141.7 136.5,141.7 53.2,139.1 '/>
+		<polygon  fill = 'url(#gpPat1)' points = '53.2,139.1 136.5,141.7 136.5,141.7 53.2,141.7 '/>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_2" ><title> </title>
+<g fill="none" color="white" stroke="rgb(229, 229, 229)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(229,  30,  16)'  d='M219.9,141.7 L219.9,139.1 L219.7,136.4 L219.5,133.8 L219.2,131.2 L218.9,128.6 L218.4,126.0 L217.9,123.4
+		L217.2,120.8 L216.5,118.2 L215.8,115.7 L214.9,113.2 L213.9,110.7 L212.9,108.3 L211.8,105.9 L210.6,103.5
+		L209.4,101.2 L208.1,98.9 L206.7,96.7 L205.2,94.5 L203.7,92.3 L202.1,90.2 L200.4,88.1 L198.7,86.1
+		L196.9,84.2 L195.0,82.3 L193.1,80.5 L191.1,78.7 L189.1,77.0 L187.0,75.4 L184.9,73.8 L182.7,72.3
+		L180.5,70.9 L178.2,69.5 L175.9,68.3 L173.6,67.0 L171.2,65.9 L168.8,64.8 L166.3,63.9 L163.8,63.0
+		L161.3,62.1 L158.8,61.4 L156.2,60.7 L153.6,60.1 L151.0,59.6 L148.4,59.2 L145.8,58.9 L143.2,58.6
+		L140.5,58.5 L137.9,58.4 L135.2,58.4 L132.6,58.5 L129.9,58.6 L127.3,58.9 L124.7,59.2 L122.1,59.6
+		L119.5,60.1 L116.9,60.7 L114.3,61.4 L111.8,62.1 L109.3,63.0 L106.8,63.9 L104.3,64.8 L101.9,65.9
+		L99.5,67.0 L97.2,68.3 L94.9,69.5 L92.6,70.9 L90.4,72.3 L88.2,73.8 L86.1,75.4 L84.0,77.0
+		L82.0,78.7 L80.0,80.5 L78.1,82.3 L76.2,84.2 L74.4,86.1 L72.7,88.1 L71.0,90.2 L69.4,92.3
+		L67.9,94.5 L66.4,96.7 L65.0,98.9 L63.7,101.2 L62.5,103.5 L61.3,105.9 L60.2,108.3 L59.2,110.7
+		L58.2,113.2 L57.3,115.7 L56.6,118.2 L55.9,120.8 L55.2,123.4 L54.7,126.0 L54.2,128.6 L53.9,131.2
+		L53.6,133.8 L53.4,136.4 L53.2,139.1 L53.2,141.7  '/></g>
+	</g>
+	<g id="gnuplot_plot_3" ><title> </title>
+<g fill="none" color="white" stroke="rgb(229,  30,  16)" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)'  d='M136.5,141.7 L136.9,141.3 L137.3,140.9 L137.7,140.5 L138.1,140.1 L138.5,139.7 L138.9,139.3 L139.3,138.9
+		L139.7,138.5 L140.1,138.2 L140.5,137.8 L140.9,137.4 L141.3,137.0 L141.7,136.6 L142.1,136.2 L142.5,135.8
+		L142.9,135.4 L143.3,135.0 L143.7,134.6 L144.1,134.2 L144.5,133.8 L144.9,133.4 L145.3,133.0 L145.7,132.6
+		L146.1,132.2 L146.5,131.8 L146.9,131.4 L147.3,131.0 L147.7,130.6 L148.1,130.2 L148.5,129.8 L148.9,129.4
+		L149.3,129.0 L149.6,128.6 L150.0,128.2 L150.4,127.8 L150.8,127.4 L151.2,127.0 L151.6,126.6 L152.0,126.2
+		L152.4,125.8 L152.8,125.5 L153.2,125.1 L153.6,124.7 L154.0,124.3 L154.4,123.9 L154.8,123.5 L155.2,123.1
+		L155.6,122.7 L156.0,122.3 L156.4,121.9 L156.8,121.5 L157.2,121.1 L157.6,120.7 L158.0,120.3 L158.4,119.9
+		L158.8,119.5 L159.2,119.1 L159.6,118.7 L160.0,118.3 L160.4,117.9 L160.8,117.5 L161.2,117.1 L161.6,116.7
+		L162.0,116.3 L162.4,115.9 L162.7,115.5 L163.1,115.1 L163.5,114.7 L163.9,114.3 L164.3,113.9 L164.7,113.5
+		L165.1,113.1 L165.5,112.8 L165.9,112.4 L166.3,112.0 L166.7,111.6 L167.1,111.2 L167.5,110.8 L167.9,110.4
+		L168.3,110.0 L168.7,109.6 L169.1,109.2 L169.5,108.8 L169.9,108.4 L170.3,108.0 L170.7,107.6 L171.1,107.2
+		L171.5,106.8 L171.9,106.4 L172.3,106.0 L172.7,105.6 L173.1,105.2 L173.5,104.8 L173.9,104.4 L174.3,104.0
+		L174.7,103.6 L175.1,103.2 L175.5,102.8 L175.8,102.4  '/></g>
+	</g>
+	<g id="gnuplot_plot_4" ><title> </title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)'  d='M169.9,141.7 L169.9,141.5 L169.9,141.2 L169.9,140.9 L169.9,140.7 L169.9,140.4 L169.9,140.1 L169.8,139.9
+		L169.8,139.6 L169.8,139.3 L169.8,139.1 L169.8,138.8 L169.7,138.6 L169.7,138.3 L169.7,138.0 L169.7,137.8
+		L169.6,137.5 L169.6,137.2 L169.6,137.0 L169.5,136.7 L169.5,136.5 L169.4,136.2 L169.4,135.9 L169.3,135.7
+		L169.3,135.4 L169.2,135.2 L169.2,134.9 L169.1,134.6 L169.1,134.4 L169.0,134.1 L169.0,133.9 L168.9,133.6
+		L168.8,133.4 L168.8,133.1 L168.7,132.8 L168.6,132.6 L168.5,132.3 L168.5,132.1 L168.4,131.8 L168.3,131.6
+		L168.2,131.3 L168.1,131.1 L168.1,130.8 L168.0,130.6 L167.9,130.3 L167.8,130.1 L167.7,129.8 L167.6,129.6
+		L167.5,129.3 L167.4,129.1 L167.3,128.8 L167.2,128.6 L167.1,128.4 L167.0,128.1 L166.9,127.9 L166.8,127.6
+		L166.7,127.4 L166.5,127.2 L166.4,126.9 L166.3,126.7 L166.2,126.4 L166.1,126.2 L165.9,126.0 L165.8,125.7
+		L165.7,125.5 L165.6,125.3 L165.4,125.1 L165.3,124.8 L165.2,124.6 L165.0,124.4 L164.9,124.1 L164.7,123.9
+		L164.6,123.7 L164.5,123.5 L164.3,123.3 L164.2,123.0 L164.0,122.8 L163.9,122.6 L163.7,122.4 L163.6,122.2
+		L163.4,122.0 L163.2,121.7 L163.1,121.5 L162.9,121.3 L162.8,121.1 L162.6,120.9 L162.4,120.7 L162.3,120.5
+		L162.1,120.3 L161.9,120.1 L161.8,119.9 L161.6,119.7 L161.4,119.5 L161.2,119.3 L161.0,119.1 L160.9,118.9
+		L160.7,118.7 L160.5,118.5 L160.3,118.3 L160.1,118.2  '/></g>
+	</g>
+	<g id="gnuplot_plot_5" ><title> </title>
+<g fill="none" color="white" stroke="rgb(148,   0, 211)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(229,  30,  16)'  d='M53.2,141.7 L54.9,141.7 L56.6,141.7 L58.2,141.7 L59.9,141.7 L61.6,141.7 L63.3,141.7 L65.0,141.7
+		L66.7,141.7 L68.3,141.7 L70.0,141.7 L71.7,141.7 L73.4,141.7 L75.1,141.7 L76.8,141.7 L78.4,141.7
+		L80.1,141.7 L81.8,141.7 L83.5,141.7 L85.2,141.7 L86.9,141.7 L88.6,141.7 L90.2,141.7 L91.9,141.7
+		L93.6,141.7 L95.3,141.7 L97.0,141.7 L98.7,141.7 L100.3,141.7 L102.0,141.7 L103.7,141.7 L105.4,141.7
+		L107.1,141.7 L108.8,141.7 L110.4,141.7 L112.1,141.7 L113.8,141.7 L115.5,141.7 L117.2,141.7 L118.9,141.7
+		L120.6,141.7 L122.2,141.7 L123.9,141.7 L125.6,141.7 L127.3,141.7 L129.0,141.7 L130.7,141.7 L132.3,141.7
+		L134.0,141.7 L135.7,141.7 L137.4,141.7 L139.1,141.7 L140.8,141.7 L142.4,141.7 L144.1,141.7 L145.8,141.7
+		L147.5,141.7 L149.2,141.7 L150.9,141.7 L152.5,141.7 L154.2,141.7 L155.9,141.7 L157.6,141.7 L159.3,141.7
+		L161.0,141.7 L162.7,141.7 L164.3,141.7 L166.0,141.7 L167.7,141.7 L169.4,141.7 L171.1,141.7 L172.8,141.7
+		L174.4,141.7 L176.1,141.7 L177.8,141.7 L179.5,141.7 L181.2,141.7 L182.9,141.7 L184.5,141.7 L186.2,141.7
+		L187.9,141.7 L189.6,141.7 L191.3,141.7 L193.0,141.7 L194.7,141.7 L196.3,141.7 L198.0,141.7 L199.7,141.7
+		L201.4,141.7 L203.1,141.7 L204.8,141.7 L206.4,141.7 L208.1,141.7 L209.8,141.7 L211.5,141.7 L213.2,141.7
+		L214.9,141.7 L216.5,141.7 L218.2,141.7 L219.9,141.7  '/></g>
+	</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="white" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'white' points = '140.6,141.7 140.6,141.5 140.6,141.3 140.6,141.1 140.5,140.9 140.5,140.7 140.4,140.5 140.3,140.3 140.3,140.1 140.2,139.9 140.1,139.7 139.9,139.5 139.8,139.3 139.7,139.1 139.5,139.0 139.4,138.8
+139.2,138.7 139.1,138.5 138.9,138.4 138.7,138.3 138.5,138.1 138.3,138.0 138.1,137.9 137.9,137.9 137.7,137.8 137.5,137.7 137.3,137.7 137.1,137.6 136.9,137.6 136.7,137.6 136.5,137.6 136.2,137.6
+136.0,137.6 135.8,137.6 135.6,137.7 135.4,137.7 135.2,137.8 135.0,137.9 134.8,137.9 134.6,138.0 134.4,138.1 134.2,138.3 134.0,138.4 133.8,138.5 133.7,138.7 133.5,138.8 133.4,139.0 133.2,139.1
+133.1,139.3 133.0,139.5 132.8,139.7 132.7,139.9 132.6,140.1 132.6,140.3 132.5,140.5 132.4,140.7 132.4,140.9 132.3,141.1 132.3,141.3 132.3,141.5 132.3,141.7 132.3,142.0 132.3,142.2 132.3,142.4
+132.4,142.6 132.4,142.8 132.5,143.0 132.6,143.2 132.6,143.4 132.7,143.6 132.8,143.8 133.0,144.0 133.1,144.2 133.2,144.4 133.4,144.5 133.5,144.7 133.7,144.8 133.8,145.0 134.0,145.1 134.2,145.2
+134.4,145.4 134.6,145.5 134.8,145.6 135.0,145.6 135.2,145.7 135.4,145.8 135.6,145.8 135.8,145.9 136.0,145.9 136.2,145.9 136.4,145.9 136.7,145.9 136.9,145.9 137.1,145.9 137.3,145.8 137.5,145.8
+137.7,145.7 137.9,145.6 138.1,145.6 138.3,145.5 138.5,145.4 138.7,145.2 138.9,145.1 139.1,145.0 139.2,144.8 139.4,144.7 139.5,144.5 139.7,144.4 139.8,144.2 139.9,144.0 140.1,143.8 140.2,143.6
+140.3,143.4 140.3,143.2 140.4,143.0 140.5,142.8 140.5,142.6 140.6,142.4 140.6,142.2 140.6,142.0 '/>
+	</g>
+	<path stroke='black'  d='M140.6,141.7 L140.6,141.5 L140.6,141.3 L140.6,141.1 L140.5,140.9 L140.5,140.7 L140.4,140.5 L140.3,140.3
+		L140.3,140.1 L140.2,139.9 L140.1,139.7 L139.9,139.5 L139.8,139.3 L139.7,139.1 L139.5,139.0 L139.4,138.8
+		L139.2,138.7 L139.1,138.5 L138.9,138.4 L138.7,138.3 L138.5,138.1 L138.3,138.0 L138.1,137.9 L137.9,137.9
+		L137.7,137.8 L137.5,137.7 L137.3,137.7 L137.1,137.6 L136.9,137.6 L136.7,137.6 L136.5,137.6 L136.2,137.6
+		L136.0,137.6 L135.8,137.6 L135.6,137.7 L135.4,137.7 L135.2,137.8 L135.0,137.9 L134.8,137.9 L134.6,138.0
+		L134.4,138.1 L134.2,138.3 L134.0,138.4 L133.8,138.5 L133.7,138.7 L133.5,138.8 L133.4,139.0 L133.2,139.1
+		L133.1,139.3 L133.0,139.5 L132.8,139.7 L132.7,139.9 L132.6,140.1 L132.6,140.3 L132.5,140.5 L132.4,140.7
+		L132.4,140.9 L132.3,141.1 L132.3,141.3 L132.3,141.5 L132.3,141.7 L132.3,142.0 L132.3,142.2 L132.3,142.4
+		L132.4,142.6 L132.4,142.8 L132.5,143.0 L132.6,143.2 L132.6,143.4 L132.7,143.6 L132.8,143.8 L133.0,144.0
+		L133.1,144.2 L133.2,144.4 L133.4,144.5 L133.5,144.7 L133.7,144.8 L133.8,145.0 L134.0,145.1 L134.2,145.2
+		L134.4,145.4 L134.6,145.5 L134.8,145.6 L135.0,145.6 L135.2,145.7 L135.4,145.8 L135.6,145.8 L135.8,145.9
+		L136.0,145.9 L136.2,145.9 L136.4,145.9 L136.7,145.9 L136.9,145.9 L137.1,145.9 L137.3,145.8 L137.5,145.8
+		L137.7,145.7 L137.9,145.6 L138.1,145.6 L138.3,145.5 L138.5,145.4 L138.7,145.2 L138.9,145.1 L139.1,145.0
+		L139.2,144.8 L139.4,144.7 L139.5,144.5 L139.7,144.4 L139.8,144.2 L139.9,144.0 L140.1,143.8 L140.2,143.6
+		L140.3,143.4 L140.3,143.2 L140.4,143.0 L140.5,142.8 L140.5,142.6 L140.6,142.4 L140.6,142.2 L140.6,142.0
+		L140.6,141.8  '/>	<g transform="translate(180.3,102.4)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
+		<text></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<use xlink:href='#gpPt6' transform='translate(175.8,102.4) scale(2.25)' color='rgb(148,   0, 211)'/>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '178.4,125.4 179.7,129.3 167.4,129.0 177.1,121.3 178.4,125.4 '/>
+	</g>
+	<path stroke='black'  d='M178.4,125.4 L229.9,108.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '164.5,100.8 168.6,100.2 166.0,112.3 160.3,101.4 164.5,100.8 '/>
+	</g>
+	<path stroke='black'  d='M164.5,100.8 L157.7,49.8  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'black' points = '89.1,94.2 92.1,91.2 97.3,102.4 86.1,97.2 89.1,94.2 '/>
+	</g>
+	<path stroke='black'  d='M89.1,94.2 L55.6,60.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+</g>
+</svg>
+

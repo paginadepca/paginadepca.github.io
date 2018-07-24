@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg6260" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="173.2" width="324.06" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 324.05637 173.19892">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs id="defs6262">
+  <marker id="TriangleOutM" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5763" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata6265">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-135.42 -307.36)">
+  <g stroke="#000" fill="none">
+   <path id="path6872" d="m345 397.36h-135v-85" stroke-width="1px"/>
+   <path id="path6874" d="m210 397.36-60 60" stroke-width="1px"/>
+   <path id="path6878" d="m160 447.36h125l50-50" stroke-dasharray="2, 2"/>
+   <path id="path6880" d="m230 337.36c13.399-23.213 29.985 11.114 70 0" stroke-width="1px"/>
+   <path id="path6882" d="m230 372.36c15 46.672 34.663-14.206 75 0" stroke-width="1px"/>
+   <g stroke-dasharray="8, 4">
+    <path id="path6884" d="m235 383.88v-52.571"/>
+    <path id="path6886" d="m255 386.4v-53.587"/>
+    <path id="path6888" d="m275 374.37v-35.425"/>
+    <path id="path6890" d="m295 370.24v-31.698"/>
+   </g>
+   <path id="path6958" marker-end="url(#TriangleOutM)" d="m277 366.36 33-13" stroke-width="1px"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4213" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="466.40717" x="140.44943"><tspan id="tspan4215" x="140.44943" y="466.40717">x</tspan></text>
+   <text id="text4217" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="320.33975" x="198.87642"><tspan id="tspan4219" x="198.87642" y="320.33975">z</tspan></text>
+   <text id="text4221" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="408.54199" x="346.06741"><tspan id="tspan4223" x="346.06741" y="408.54199">y</tspan></text>
+   <text id="text4225" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="391.12625" x="269.10114"><tspan id="tspan4227" x="269.10114" y="391.12625">(u,v)</tspan></text>
+   <text id="text4229" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="326.5195" x="250"><tspan id="tspan4231" x="250" y="326.5195">(x,y,z)</tspan></text>
+   <text id="text4233" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="355.733" x="315.73032"><tspan id="tspan4235" x="315.73032" y="355.733">h(u,v)</tspan></text>
+   <text id="text4237" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="374.76669" x="315.25031"><tspan id="tspan4239" x="315.25031" y="374.76669">&quot;parametrizada&quot; de S</tspan></text>
+   <text id="text4241" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="472.02512" x="231.46068"><tspan id="tspan4243" x="231.46068" y="472.02512">h(u,v) = (x,y,z)</tspan></text>
+  </g>
+ </g>
+</svg>

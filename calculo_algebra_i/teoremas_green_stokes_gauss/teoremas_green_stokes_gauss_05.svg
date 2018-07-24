@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="145" width="240" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 240 145">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="Arrow2Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4296" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="scale(-.6)" stroke="#000" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-150 -327.36)">
+  <path id="path4259" d="m185 332.36v135" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path4261" d="m155 447.36h230" stroke="#000" stroke-width="1px" fill="none"/>
+  <g id="g4607" fill-rule="evenodd" stroke="#000" stroke-width=".8pt">
+   <path id="path4613" d="m200.02 391.98-4.026-6.9049 7.9999-0.0301-3.974 6.935z"/>
+   <path id="path4615" d="m319.58 431.77-6.3532 4.85-1.0204-7.9346 7.3737 3.0846z"/>
+   <path id="path4617" d="m369.75 389.25 4.1971 6.8022-7.9967 0.2298z"/>
+   <path id="path4619" d="m300 347.36 7.1029-3.6654-0.38152 7.9909z"/>
+  </g>
+  <path id="path4685" d="m300 347.36c-16.053 4.0656-35.337 27.096-50 25-27.522-3.9342-48.692-20.645-50 15-1.4665 39.973 31.373 18.239 55 25 23.627 6.7609 39.586 22.625 60 20 11.242-1.4458 25.155-5.7808 36.176-12.587 11.02-6.8 18.82-12.41 18.82-27.41 0-14.625-15.153-18.587-35-25-15.049-4.8627-20.459-23.683-35-20z" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4687" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="400.4747" x="277.34579" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4689" x="277.34579" y="400.4747">B</tspan></text>
+  <text id="text4691" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="354.25043" x="362.79825" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4693" x="362.79825" y="354.25043">D</tspan></text>
+  <path id="path4695" marker-end="url(#Arrow2Mend)" d="m365.8 357.5-8.1377 14.764" stroke="#000" stroke-width="1px" fill="none"/>
+ </g>
+</svg>

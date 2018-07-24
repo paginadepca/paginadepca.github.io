@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4232" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="128.81" width="284.58" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 284.57718 128.80623">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <metadata id="metadata4237">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-235 -471.61)">
+  <g fill="none" stroke-width="1px">
+   <g stroke="#000">
+    <path id="path4304" d="m240 577.36h225"/>
+    <path id="path4306" d="m255 580.36v-6"/>
+    <path id="path4308" d="m445 574.36v6"/>
+   </g>
+   <path id="path4322" d="m255 557.36 190-80v80z" stroke="#5daeff"/>
+   <path id="path4312" d="m255 557.36c13.992-13.215 32.529-21.949 55-20 22.471 1.9492 33.198 1.9486 45-15s15.995-31.707 40-25c24.005 6.7074 46.089-12.53 50-20" stroke="#000"/>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4324" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="595.25537" x="250.888"><tspan id="tspan4326" x="250.888" y="595.25537">a</tspan></text>
+   <text id="text4328" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="595.25537" x="441.04001"><tspan id="tspan4330" x="441.04001" y="595.25537">b</tspan></text>
+   <text id="text4332" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="571.35248" x="332.59348"><tspan id="tspan4334" x="332.59348" y="571.35248">b − a</tspan></text>
+   <text id="text4336" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="521.58765" x="448.19418"><tspan id="tspan4338" x="448.19418" y="521.58765">f(b) − f(a)</tspan></text>
+  </g>
+ </g>
+</svg>

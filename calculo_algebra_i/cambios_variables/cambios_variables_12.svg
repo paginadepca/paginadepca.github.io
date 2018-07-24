@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg4303"
+   viewBox="0 0 328.25388 278.37753"
+   height="278.37753"
+   width="328.25388">
+	<style type="text/css">
+		@import url('../estilo.css');
+	</style>
+  <metadata
+     id="metadata4430">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnuplot</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4428">
+    <marker
+       style="overflow:visible"
+       id="marker5129"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5131" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4728"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4730" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lstart"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4456" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4459" />
+    </marker>
+  </defs>
+  <title
+     id="title4305">Gnuplot</title>
+  <desc
+     id="desc4307">Produced by GNUPLOT 5.0 patchlevel 3 </desc>
+  <g
+     transform="translate(74.629166,0)"
+     id="gnuplot_canvas">
+    <rect
+       style="fill:none"
+       id="rect4310"
+       height="200"
+       width="200"
+       y="0"
+       x="0" />
+    <defs
+       id="defs4312">
+      <circle
+         style="stroke-width:0.5"
+         cy="0"
+         cx="0"
+         r="0.5"
+         id="gpDot" />
+      <path
+         style="stroke:currentColor;stroke-width:0.222"
+         d="M -1,0 1,0 M 0,-1 0,1"
+         id="gpPt0" />
+      <path
+         style="stroke:currentColor;stroke-width:0.222"
+         d="M -1,-1 1,1 M 1,-1 -1,1"
+         id="gpPt1" />
+      <path
+         style="stroke:currentColor;stroke-width:0.222"
+         d="M -1,0 1,0 M 0,-1 0,1 m -1,-2 2,2 m -2,0 2,-2"
+         id="gpPt2" />
+      <rect
+         style="stroke:currentColor;stroke-width:0.222"
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         id="gpPt3" />
+      <rect
+         style="fill:currentColor;stroke:currentColor;stroke-width:0.222"
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         id="gpPt4" />
+      <circle
+         style="stroke:currentColor;stroke-width:0.222"
+         r="1"
+         cy="0"
+         cx="0"
+         id="gpPt5" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="fill:currentColor;stroke:none"
+         id="gpPt6"
+         xlink:href="#gpPt5" />
+      <path
+         style="stroke:currentColor;stroke-width:0.222"
+         d="m 0,-1.33 -1.33,2 2.66,0 z"
+         id="gpPt7" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="fill:currentColor;stroke:none"
+         id="gpPt8"
+         xlink:href="#gpPt7" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="stroke:currentColor"
+         transform="scale(-1,-1)"
+         id="gpPt9"
+         xlink:href="#gpPt7" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="fill:currentColor;stroke:none"
+         id="gpPt10"
+         xlink:href="#gpPt9" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="stroke:currentColor"
+         transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+         id="gpPt11"
+         xlink:href="#gpPt3" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="fill:currentColor;stroke:none"
+         id="gpPt12"
+         xlink:href="#gpPt11" />
+      <path
+         style="stroke:currentColor;stroke-width:0.222"
+         d="M 0,1.33 1.265,0.411 0.782,-1.067 -0.782,-1.076 -1.265,0.411 Z"
+         id="gpPt13" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="fill:currentColor;stroke:none"
+         id="gpPt14"
+         xlink:href="#gpPt13" />
+      <filter
+         width="1"
+         height="1"
+         y="0"
+         x="0"
+         filterUnits="objectBoundingBox"
+         id="textbox">
+        <feFlood
+           id="feFlood4331"
+           result="bgnd"
+           flood-opacity="1"
+           flood-color="white" />
+        <feComposite
+           id="feComposite4333"
+           operator="atop"
+           in2="bgnd"
+           in="SourceGraphic" />
+      </filter>
+      <filter
+         width="1"
+         height="1"
+         y="0"
+         x="0"
+         filterUnits="objectBoundingBox"
+         id="greybox">
+        <feFlood
+           id="feFlood4336"
+           result="grey"
+           flood-opacity="1"
+           flood-color="lightgrey" />
+        <feComposite
+           id="feComposite4338"
+           operator="atop"
+           in2="grey"
+           in="SourceGraphic" />
+      </filter>
+    </defs>
+    <g
+       style="color:#ffffff;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4340" />
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4342">
+      <path
+         style="stroke:#000000"
+         id="path4344"
+         d="m 42,63.5 -4.5,0" />
+      <g
+         style="font-size:15px;font-family:'Stix Two Text';text-anchor:end;fill:#000000;stroke:none"
+         id="g4346"
+         font-size="15.00"
+         transform="translate(33.7,69.1)">
+        <text
+           id="text4348">
+          <tspan
+             style="font-family:'Stix Two Text'"
+             id="tspan4350">2π</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4352">
+      <path
+         style="stroke:#000000"
+         id="path4354"
+         d="m 90.4,160.3 0,4.5" />
+      <g
+         style="font-size:15px;font-family:'Stix Two Text';text-anchor:middle;fill:#000000;stroke:none"
+         id="g4356"
+         font-size="15.00"
+         transform="translate(90.4,179.4)">
+        <text
+           id="text4358">
+          <tspan
+             style="font-family:'Stix Two Text'"
+             id="tspan4360">1</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4362">
+      <path
+         style="stroke:#000000"
+         id="path4364"
+         d="m 138.7,160.3 0,4.5" />
+      <g
+         style="font-size:15px;font-family:'Stix Two Text';text-anchor:middle;fill:#000000;stroke:none"
+         id="g4366"
+         font-size="15.00"
+         transform="translate(138.7,179.4)">
+        <text
+           id="text4368">
+          <tspan
+             style="font-family:'Stix Two Text'"
+             id="tspan4370">2</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4372" />
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4374">
+      <path
+         style="stroke:#000000"
+         id="path4376"
+         d="m 29.9,160.3 145.1,0" />
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4378">
+      <path
+         style="stroke:#000000"
+         id="path4380"
+         d="M 42,172.4 42,27.2" />
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4382">
+      <defs
+         id="defs4384">
+        <pattern
+           height="8"
+           width="8"
+           y="0"
+           x="0"
+           patternUnits="userSpaceOnUse"
+           id="gpPat1">
+          <path
+             id="path4387"
+             d="M-4,0 L8,12 M0,-4 L12,8"
+             style="fill:none; stroke:rgb(211,211,211)" />
+        </pattern>
+      </defs>
+      <g
+         style="stroke:none;shape-rendering:crispEdges"
+         id="g4389">
+        <polygon
+           style="fill:url(#gpPat1)"
+           id="polygon4391"
+           points="138.7,63.5 90.4,63.5 90.4,160.3 138.7,160.3 " />
+      </g>
+      <path
+         style="stroke:#9400d3"
+         id="path4393"
+         d="m 90.4,160.3 0,-96.8 48.3,0 0,96.8 -48.3,0 z" />
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4395">
+      <g
+         style="font-size:16px;font-family:'Stix Two Text';text-anchor:middle;fill:#000000;stroke:none"
+         id="g4397"
+         font-size="16.00"
+         transform="translate(31.5,36.2)">
+        <text
+           id="text4399">
+          <tspan
+             style="font-weight:bold;font-family:'Stix Two Text'"
+             id="tspan4401"
+             font-weight="bold">θ</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4403">
+      <g
+         style="font-size:16px;font-family:'Stix Two Text';text-anchor:middle;fill:#000000;stroke:none"
+         id="g4405"
+         font-size="16.00"
+         transform="translate(172,172.9)">
+        <text
+           id="text4407">
+          <tspan
+             style="font-weight:bold;font-family:'Stix Two Text'"
+             id="tspan4409"
+             font-weight="bold">u</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4411" />
+    <g
+       id="gnuplot_plot_1">
+      <title
+         id="title4414">NaN</title>
+      <g
+         style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+         id="g4416" />
+    </g>
+    <g
+       style="color:#ffffff;fill:none;stroke:#9400d3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4418" />
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4420" />
+    <g
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4422" />
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g4424" />
+  </g>
+  <path
+     id="path4432"
+     d="m 201.31081,182.36328 c 0.85165,1.1866 1.30326,2.55473 1.39648,3.9375 l -27.05859,0 c 0.0878,-1.38682 0.53798,-2.75059 1.39844,-3.91992 l -12.01758,4.41992 12.01758,4.41797 c -0.84763,-1.18101 -1.29818,-2.54185 -1.39453,-3.91797 l 27.05664,0 c -0.091,1.38009 -0.54201,2.73654 -1.39844,3.90039 l 12.01758,-4.41797 -12.01758,-4.41992 z"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+  <text
+     id="text5117"
+     y="236"
+     x="189.13522"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:'STIX Two Text';-inkscape-font-specification:'STIX Two Text, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="236"
+       x="189.13522"
+       id="tspan5119">módulo de todos</tspan><tspan
+       id="tspan5121"
+       y="256"
+       x="189.13522">los vectores</tspan></text>
+  <rect
+     y="206.97089"
+     x="123.42535"
+     height="30.49762"
+     width="21.348333"
+     id="rect5123"
+     style="opacity:1;fill:none;fill-opacity:0.2;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <rect
+     y="218.00247"
+     x="122.73773"
+     height="44.875065"
+     width="132.88248"
+     id="rect5125"
+     style="opacity:1;fill:none;fill-opacity:0.2;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     d="m 189.17898,218.00247 0,-24.70169"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5129)" />
+  <path
+     id="path7275"
+     d="m 47.500006,96.351933 39.63122,-22.8811"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)" />
+  <text
+     id="text7289"
+     y="115.41991"
+     x="47.465378"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:'STIX Two Text';-inkscape-font-specification:'STIX Two Text, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="115.41991"
+       x="47.465378"
+       id="tspan7291">ángulo</tspan><tspan
+       id="tspan7293"
+       y="135.41991"
+       x="47.465378">total</tspan></text>
+  <rect
+     y="96.351929"
+     x="15.5"
+     height="47"
+     width="64"
+     id="rect7297"
+     style="opacity:1;fill:none;fill-opacity:0.2;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     id="path11537"
+     d="m 190,89.37753 69.1454,18.52746"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)" />
+  <text
+     id="text11581"
+     y="114.55524"
+     x="270.03287"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:125%;font-family:'STIX Two Text';-inkscape-font-specification:'STIX Two Text, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="114.55524"
+       x="270.03287"
+       id="tspan11583">S′</tspan><tspan
+       id="tspan11585"
+       y="134.55524"
+       x="270.03287">[1,2] × [0,2π]</tspan></text>
+</svg>

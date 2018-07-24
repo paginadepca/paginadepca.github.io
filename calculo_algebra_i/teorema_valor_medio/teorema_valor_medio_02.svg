@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="80.369" width="89.527" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 89.526734 80.368729">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs id="defs4">
+  <marker id="TriangleOutM" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path5310" d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-137.15 -142.29)">
+  <text id="text5094" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="156.20691" x="165.62657" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5096" y="156.20691" x="165.62657">+</tspan></text>
+  <text id="text5098" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="156.20691" x="186.61757" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan5100" y="156.20691" x="186.61757">−</tspan></text>
+  <g id="g5130" stroke="#000" fill="none">
+   <path id="path5102" d="m174.45 186.1h-5.6303"/>
+   <path id="path5104" d="m168.82 186.1v-20.563"/>
+   <path id="path5106" d="m168.82 165.53h5.6303"/>
+  </g>
+  <g id="g5135" stroke="#000" fill="none">
+   <path id="path5108" d="m189.24 186.1h5.7729"/>
+   <path id="path5110" d="m195.01 186.1v-20.563"/>
+   <path id="path5112" d="m195.01 165.53h-5.7729"/>
+  </g>
+  <path id="path5114" d="m142.15 175.81h79.527" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path5159" marker-end="url(#TriangleOutM)" d="m181.92 198.12v-19" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text11835" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="214.68764" x="170.50409" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan11837" x="170.50409" y="214.68764">f(c)</tspan></text>
+ </g>
+</svg>
