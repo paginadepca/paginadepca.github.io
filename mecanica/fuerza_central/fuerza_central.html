@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Fuerza central">
+<meta name="keywords" content="fuerza, central">
+<title>Fuerza central</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Fuerza central</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Una fuerza central es aquella en la cual su dirección siempre
+va dirigida a un punto o centro de fuerzas, y cuyo valor depende
+de su posición respecto a él. Si su magnitud sólo depende de la
+distancia al centro:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="fuerza_central_1.svg" type="image/svg+xml"
+        width="80" height="120"></object></td>
+        <td>$\qquad \vec{F} (\vec{r}) = f(r) \hat{r} = \dfrac{f(r)}{r}
+        \vec{r}$<br>
+        $\qquad \hat{r} = \dfrac{\vec{r}}{r} \enspace \leftarrow$
+        vector unitario. </td>
+    </tr>
+</table>
+</center>
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><p style="margin-top:1em;margin-bottom:1ex">$f(r) &gt;0 \ 
+        \rightarrow \ $Repulsiva</p></td>
+    </tr>
+    <tr>
+        <td>$f(r) &lt; 0 \ \rightarrow \ $Atractiva</td>
+    </tr>
+</table>
+</center>
+
+<p>Ejemplos:</p>
+
+<ol>
+    <li>Fuerzas gravitatorias: <p align="center">$\vec{F}
+        = - \dfrac{GMm}{r^2} \hat{r} \enspace \leftarrow$
+        atractiva.</p>
+    </li>
+    <li>Fuerza coulombiana:<p align="center">$\vec{F}
+        = k \dfrac{q_1 q_2}{r^2} \hat{r} \enspace \leftarrow$
+        atractiva o repulsiva.</p>
+    </li>
+    <li>Fuerza elástica.</li>
+</ol>
+
+<p>Las fuerzas centrales, de este tipo, son conservativas:</p>
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><object data="fuerza_central_2.svg" type="image/svg+xml"
+        width="300" height="300"></object></td>
+        <td align="center" style="padding-left:2em">$\vec{F}(\vec{r})
+        = f(r) \hat{r}$<p style="margin-top:1ex;margin-bottom:0">$\hat{r}
+        = \dfrac{\vec{r}}{r}$</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p align="center">$\boxed{W_{P_1 \to O_1 \to P_2} = W_{P_1 \to O_2 \to P_2}}$
+</p>
+
+<p>Demostración:</p>
+
+<p align="center">$$\begin{align} W_{P_1 \to O_1 \to P_2} &amp;=
+\int_{P_1}^{O_1} \vec{F} \cdot d\vec{r} + \underbrace{ \int_{O_1}^{P_2}
+\vec{F} \cdot d\vec{l}}_{\substack{0 \\ \vec{F} \, \perp \, d\vec{l}}} =
+\\[1ex] &amp;= \int_{P_1}^{O_1} f(r) \underbrace{\hat{r} \cdot
+d\vec{r}}_{\substack{dr \\ \color{red}{\ast}}} = \int_{r_1}^{r_2} f(r) \,
+dr \\[1ex] \color{red}{\mathrel{\ast}} \hat{r} \cdot d\vec{r} &amp;= \hat{r}
+\cdot (\hat{r} \, dr) = \underbrace{(\hat{r} \cdot \hat{r})}_1 \, dr = dr
+\\[1em] W_{P_1 \to O_2 \to P_2} &amp;= \underbrace{ \int_{P_1}^{O_2} \vec{F}
+\cdot d\vec{l}}_{0} + \int_{O_2}^{P_2} \vec{F} \cdot d\vec{r} = \\[1ex]
+&amp;= \int_{O_2}^{P_2} f(r) \hat{r} \cdot d\vec{r} = \int_{r_1}^{r_2} f(r)
+\, dr \end{align}$$</p>
+
+<p>Así que el trabajo para una fuerza central, conservativa, no depende
+de la trayectoria, sólo depende de las distancias inicial y final
+respecto al centro de fuerzas:</p>
+
+<p align="center">$$W_{(1 \to 2)} = \int_{r_1}^{r_2} f(r) \, dr = g(r_2)
+- g(r_1)$$</p>
+
+<p>Donde $g(r)$ es primitiva (o antiderivada) de $f(r)$.</p>
+
+<p>Para el caso de fuerza gravitatoria terrestre:</p>
+
+<p align="center">$\vec{F} = f(r) \hat{r} = - \dfrac{GMm}{r^2}
+\hat{r}$</p>
+
+<p align="center">$dU = - \vec{F} \cdot d\vec{r} = -f(r) \hat{r} \cdot 
+d\vec{r} = \dfrac{GMm}{r^2} \, dr$</p>
+
+<p>Integrando:</p>
+
+<p align="center">$$U = \int \dfrac{GMm}{r^2} \, dr = - \dfrac{GMm}{r}
++ C$$</p>
+
+<p>La constante $C$ depende de dónde se elija la energía potencial 
+cero:</p>
+
+<center>
+<table>
+    <tr>
+				<td>$U(\infty) = 0 \ \Rightarrow \ C = 0 \ \rightarrow \ U(r) = 
+				- \dfrac{GMm}{r}$<p>$U(R_T) = 0 \ \Rightarrow \ C = 
+				\dfrac{GMm}{R_T} \ \rightarrow \ U(r) = GMm \left( 
+				\dfrac{1}{R_T} - \dfrac{1}{r} \right)$</p> <p 
+				style="margin-bottom:0">$R_T \rightarrow$ Radio terrestre.</p> 
+				</td>
+    </tr>
+</table>
+</center>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../teorema_conservacion_energia_mecanica/teorema_conservacion_energia_mecanica.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../equilibrio_estabilidad/equilibrio_estabilidad.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Ecuaciones del movimiento bajo una fuerza central e integrales primeras">
+<meta name="keywords"
+content="ecuaciones, movimiento, fuerza, central, integrales, primeras">
+<title>Ecuaciones del movimiento bajo una fuerza central e integrales primeras</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Ecuaciones del movimiento bajo una fuerza central e
+integrales primeras</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Partiendo de:</p>
+
+<p align="center">$m \vec{a} = \vec{F}$</p>
+
+<p>Donde $\vec{F}$ es una fuerza central, por tanto
+movimiento en un plano, que en coordenadas polares:</p>
+
+<p align="center">$\vec{F} = F(r) \, \vec{n}$</p>
+
+<p>Siendo $r$ la distancia al origen de la fuerza, el cual se
+toma como centro de coordenadas ($O$).</p>
+
+<p>La aceleración, descompuesta en sus componentes polares:</p>
+
+<p align="center">$\vec{a} = \vec{a}_r + \vec{a}_\theta = a_r \, 
+\vec{n} + a_\theta \, \vec{l}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$m \bigl( a_r \, \vec{n} + a_\theta \, \vec{l}
+\bigr) = F(r) \, \vec{n} \ \Rightarrow \left\{ \begin{array}{l}
+m a_r = F(r) \\[1ex] m a_\theta = 0\end{array} \right.$</p>
+
+<p>Como:</p>
+
+<p align="center">$\begin{array}{l} a_r = \ddot{r} - 
+r\,\dot{\phantom{\theta}}\llap{\theta\;\!}^2 \\[1ex] a_\theta = 
+r\,\ddot{\phantom{\theta}}\llap{\theta\;\!} + 
+2\dot{r}\,\dot{\phantom{\theta}}\llap{\theta\;\!} \end{array}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\boxed{\begin{array}{l} m\ddot{r} - 
+mr\,\dot{\phantom{\theta}}\llap{\theta\;\!}^2 = F(r) \\[1ex] 
+mr\,\ddot{\phantom{\theta}}\llap{\theta\;\!} + 
+2m\dot{r}\,\dot{\phantom{\theta}}\llap{\theta\;\!} = 0 
+\end{array}}$</p>
+
+<p>Son las ecuaciones del movimiento, en las direcciones radial y
+angular respectivamente, para una partícula de masa $m$ sometida
+a una fuerza central $\vec{F} = F(r) \, \vec{n}$.</p>
+
+<p>Siendo:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object
+        data="ecuaciones_movimiento_fuerza_central_integrales_primeras_1.svg"
+        type="image/svg+xml" width="200" height="190"></td>
+        <td>&emsp;$\begin{align} \vec{L} &amp;= m \vec{r} \times 
+        \vec{v} = m \vec{r} \times \left( \vec{v}_r + \vec{v}_\theta 
+        \right) = \\[1ex] &amp;= m \bigl( \underbrace{\! \vec{r} \times 
+        \vec{v}_r \!}_{\substack{\hphantom{\, 0} =\, 0 \\[0.5ex] \left( 
+        \vec{r} \, \parallel \, \vec{v}_{\scriptstyle r} \right)}} \! + 
+        \vec{r} \times \vec{v}_\theta \bigr) = \\[1ex] &amp;= m \vec{r} 
+        \times \vec{v}_\theta \end{align}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Como:</p>
+
+<p align="center">$\left. \begin{array}{l} \vec{r} \perp \vec{v}_\theta 
+\\[1ex] v_\theta = r \, \dot{\phantom{\theta}}\llap{\theta\;\!} 
+\end{array} \right\} \Rightarrow \, L = m r v_\theta = m r^2 \,
+\dot{\phantom{\theta}}\llap{\theta\;\!}$</p>
+
+<p>Si se multiplica la segunda ecuación del movimiento por $r\,$:</p>
+
+<p align="center">$\begin{gather} mr^2 \, 
+\ddot{\phantom{\theta}}\llap{\theta\;\!} + 
+2mr\dot{r}\,\dot{\phantom{\theta}}\llap{\theta\;\!} = 0 \\[1ex] m r^2 
+\dfrac{d\,\dot{\phantom{\theta}}\llap{\theta\;\!}}{dt} + m 
+\dfrac{d\bigl(r^2\bigr)}{dt} \, \dot{\phantom{\theta}}\llap{\theta\;\!} = 
+0 \\[1ex] \boxed{\dfrac{d}{dt} \left( m r^2 \,
+\dot{\phantom{\theta}}\llap{\theta\;\!} \right) = \dfrac{dL}{dt} = 0} 
+\end{gather}$</p>
+
+<p>Expresión que manifiesta la conservación, como cabe esperar,
+del momento angular respecto al origen para una fuerza central.
+Por tanto:</p>
+
+<p align="center">$m r^2 \, \dot{\phantom{\theta}}\llap{\theta\;\!} = L 
+= \text{cte.}$</p>
+
+<p>Esto último es una constante del movimiento o integral
+primera. (Se halla a partir de las ecuaciones del movimiento
+integrando una vez, no contiene segundas derivadas). El valor
+constante de $L$ se calcula a partir de las condiciones iniciales
+($r_0$ y $\rlap{\dot{\phantom{\;\theta}}}\theta_0$).</p>
+
+<p>Dado que la fuerza central es una fuerza conservativa la
+energía mecánica, suma de las energías cinética y potencial,
+se conserva:</p>
+
+<p align="center">$E_{\text{cin}} + V = \dfrac{1}{2}mv^2 + V(r) =
+E$</p>
+
+<p>Siendo el cuadrado de la velocidad en coordenadas polares:</p>
+
+<p align="center">$v^2 = v_r^2 + v_\theta^2 = \dot{r}^2 + r^2 \,
+\dot{\phantom{\theta}}\llap{\theta\;\!}^2$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\dfrac{1}{2}m\dot{r}^2 + \dfrac{1}{2}mr^2 \,
+\dot{\phantom{\theta}}\llap{\theta\;\!}^2 + V(r) = E$</p>
+
+<p>Que es otra integral primera de las ecuaciones del movimiento:</p>
+
+<ol>
+    <li>De multiplicar por $\dot{r}$ la primera ecuación del
+        movimiento:</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\begin{gather} m \dot{r} \ddot{r} - m r \dot{r} 
+    \, \dot{\phantom{\theta}}\llap{\theta\;\!}^2 = F(r) \, \dot{r} 
+    \\[1ex] m \dot{r} \ddot{r} + r \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} ( -m \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} ) = F(r) \, \dot{r} 
+    \\[1ex] m \dot{r} \ddot{r} + r \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} ( m \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} - 2m \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} ) = F(r) \, \dot{r} 
+    \end{gather}$</p>
+</blockquote>
+
+<ol type="1" start="2">
+    <li>De la segunda ecuación del movimiento:</li>
+</ol>
+
+<blockquote>
+    <p align="center">$-2m \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} = m r \, 
+    \ddot{\phantom{\theta}}\llap{\theta\;\!}$</p>
+</blockquote>
+
+<blockquote>
+    <p>Sustituyendo:</p>
+    <p align="center">$\begin{gather} m \dot{r} \ddot{r} + r \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} ( m \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} + m r \, 
+    \ddot{\phantom{\theta}}\llap{\theta\;\!} ) = F(r) \, \dot{r} 
+    \\[1ex] m \dot{r} \ddot{r} + m r \dot{r} \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!}^2 + m r^2 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} \, 
+    \ddot{\phantom{\theta}}\llap{\theta\;\!} = F(r) \, \dot{r} 
+    \end{gather}$</p>
+</blockquote>
+
+<ol type="1" start="3">
+    <li>Siendo:</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\begin{array}{l} \ast \ m \dot{r} \ddot{r} = 
+    \dfrac{1}{2} m \dfrac{d\bigl( \dot{r}^2 \bigr)}{dt} = \dfrac{d}{dt} 
+    \left( \dfrac{1}{2} m \dot{r}^2 \right) \\[1em] \ast \ m r \dot{r} 
+    \;\! \rlap{\;\!\dot{\phantom{\theta}}}\theta\;\!^2 + m r^2 \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!} \, 
+    \ddot{\phantom{\theta}}\llap{\theta\;\!} = \dfrac{1}{2} m 
+    \dfrac{d\bigl( r^2 \bigr)}{dt} \;\! 
+    \rlap{\;\!\dot{\phantom{\theta}}}\theta\;\!^2 + \dfrac{1}{2} m r^2 
+    \dfrac{d\bigl( \dot{\phantom{\theta}}\llap{\theta\;\!}^2 
+    \bigr)}{dt} = \dfrac{d}{dt} \left( \dfrac{1}{2} m r^2 \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!}^2 \right) \\[1em] \ast \ 
+    F(r) \, \dot{r} = - \dfrac{dV(r)}{dr} \dfrac{dr}{dt} = - 
+    \dfrac{dV(r)}{dt} \end{array}$</p>
+</blockquote>
+
+<blockquote>
+    <p>Sustituyendo:</p>
+    <p align="center">$\begin{gather} \dfrac{d}{dt} \left( \dfrac{1}{2} 
+    m \dot{r}^2 \right) + \dfrac{d}{dt} \left( \dfrac{1}{2} m r^2 \mspace{1.5mu} 
+    \rlap{\;\!\dot{\phantom{\theta}}}\theta\;\!^2 \right) = - 
+    \dfrac{dV(r)}{dt} \\[1ex] \boxed{\dfrac{d}{dt} \left( \dfrac{1}{2} 
+    m \dot{r}^2 + \dfrac{1}{2} m r^2 \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!}^2 + V(r) \right) = 0} 
+    \end{gather}$</p>
+</blockquote>
+
+<ol type="1" start="4">
+    <li>Por tanto:</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\dfrac{1}{2}m\dot{r}^2 + \dfrac{1}{2}mr^2 \, 
+    \dot{\phantom{\theta}}\llap{\theta\;\!}^2 + V(r) = \text{cte.$'$} = 
+    E$</p>
+</blockquote>
+
+<p>El valor de $E$ vendría dado por las condiciones iniciales ($r_0,
+\, \dot{r}_0, \, \rlap{\;\!\dot{\phantom{\theta}}}\theta_0$).</p>
+
+<p>Como:</p>
+
+<p align="center">$\dot{\phantom{\theta}}\llap{\theta\;\!} = 
+\dfrac{L}{mr^2}$</p>
+
+<p>Aplicado en la ecuación de la energía:</p>
+
+<p align="center">$\begin{gather} \dfrac{1}{2} m \dot{r}^2 + 
+\dfrac{1}{2} \cancel{m r^2} \! \dfrac{L^2}{\left( mr^2 
+\right)^\cancel{2}} + V(r) = E \\[1ex] \dfrac{1}{2} m \dot{r}^2 + 
+\dfrac{L^2}{2mr^2} +V(r) = E \end{gather}$</p>
+
+<p>Despejando $\dot{r}\,$:</p>
+
+<p align="center">$\begin{gather} \dfrac{1}{2} m \dot{r}^2 = E -
+V(r) - \dfrac{L^2}{2mr^2} \\[1ex] \dot{r}^2 = \dfrac{2}{m} \left(
+E - V(r) - \dfrac{L^2}{2mr^2} \right) \\[1ex] \dot{r} = \dfrac{dr}{dt}
+= \sqrt{\dfrac{2}{m} \left( E - V(r) - \dfrac{L^2}{2mr^2} \right)}
+\end{gather}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\dfrac{dr}{\sqrt{\dfrac{2}{m} \left( E - V(r)
+- \dfrac{L^2}{2mr^2} \right)}} = dt$</p>
+
+<p>Su integral, si $t_0 = 0$:</p>
+
+<p align="center">$\boxed{\displaystyle {\large\int}_{r_0}^r 
+\dfrac{dr}{\sqrt{\dfrac{2}{m} \left( E - V(r) - \dfrac{L^2}{2mr^2} 
+\right)}} = t}$</p>
+
+<p>De su cálculo se despejaría $r = r(t)$, y a continuación
+entonces se encuentra $\theta$ de:</p>
+
+<p align="center">$\rlap{\;\!\dot{\phantom{\theta}}}\theta = 
+\dfrac{d\theta}{dt} = \dfrac{L}{mr^2} \ \Rightarrow \ d\theta = 
+\dfrac{L}{mr^2} dt$</p>
+
+<p>Integrando:</p>
+
+<p align="center">$\boxed{\displaystyle \theta = \theta_0 + \int_0^t
+\dfrac{L}{mr^2} dt}$</p>
+
+<p>Se hallán así las dos incógnitas, $r$ y $\theta$, de las
+ecuaciones del movimiento, siendo $r_0$, $\theta_0$, $L$, $E$
+constantes que dependen de la posición y velocidad iniciales de
+la partícula en el plano.</p>
+
+<p>En el caso de un problema unidimensional, $F = F(x)$, p.ej. un
+muelle, la ecuación de la energía mecánica es:</p>
+
+<p align="center">$\dfrac{1}{2} m \rlap{\:\!\dot{\phantom{x}}}x^2 + 
+V(x) = E$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\dot{x} = \dfrac{dx}{dt} =\sqrt{\dfrac{2}{m} (E - 
+V(x) )}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\displaystyle {\large\int}_{x_0}^x 
+\dfrac{dx}{\sqrt{\dfrac{2}{m} ( E - V(x) )}} = t$</p>
+
+<p>Buscando analogías:</p>
+
+<center>
+<table>
+    <tr>
+        <td>Posición</td>
+        <td align="center">$\hspace{-4em} x \quad \longleftrightarrow
+        \quad r$</td>
+    </tr>
+    <tr>
+        <td>E. cinética</td>
+        <td align="center" 
+        style="padding-top:1em;padding-bottom:1em">$\hspace{-4em} 
+        \dfrac{1}{2} m \rlap{\:\!\dot{\phantom{x}}}x^2 \quad 
+        \longleftrightarrow \quad \dfrac{1}{2} m \dot{r}^2$</td>
+    </tr>
+    <tr>
+        <td>E. potencial</td>
+        <td align="center">$\hspace{-4em} \hphantom{{} + \dfrac{L^2}{2mr^2}
+        = V_{\text{ef}}\:\!(r)} V(x) \quad \longleftrightarrow \quad
+        V(r) + \dfrac{L^2}{2mr^2} = V_{\smash[t]{\text{ef}}}\:\!(r)$</td>
+    </tr>
+</table>
+</center>
+
+<p>Donde a $V_{\smash[t]{\text{ef}}}\:\!(r)$ se le llama energía potencial
+eficaz o efectiva, o simplemente potencial eficaz o efectivo.
+Siendo para el caso unidimensional:</p>
+
+<p align="center">$m \ddot{x} = F(x)$</p>
+
+<p>Fijándose ahora en la primera de las ecuaciones del
+movimiento:</p>
+
+<p align="center">$\left. \begin{array}{l} m \ddot{r} - m r  
+\rlap{\;\!\dot{\phantom{\theta}}}\theta^2 = F(r) \\[1ex] 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta = \dfrac{L}{mr^2} \end{array} 
+\right\} \ \Rightarrow \ m \ddot{r} = F(r) + \dfrac{L^2}{mr^3} = 
+F_{\smash[t]{\text{ef}}}\:\!(r)$</p>
+
+<p>Que es una expresión análoga al caso unidimensional, donde 
+$F_{\smash[t]{\text{ef}}}\:\!(r)$ es una fuerza ficticia que es la suma 
+de una fuerza real $F(r)$ más el término ${L^2}{∕}{mr^3}$ que es como 
+una &quot;fuerza centrífuga&quot;:</p>
+
+<p align="center">$\dfrac{L^2}{mr^3} = m r 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta^2 = m 
+\dfrac{v_\theta^2}{r}$</p>
+
+<p>A los términos $r \:\! \rlap{\;\!\dot{\phantom{\theta}}}\theta^2 = 
+v_\theta^2 {∕} r$ se les conoce como aceleración centrípeta o 
+centrífuga, que es debida al movimiento en la dirección de 
+$\theta$.</p>
+
+<p>Si:</p>
+
+<p align="center">$m \ddot{r} = m \dfrac{d \dot{r}}{dt} = m \dfrac{d
+\dot{r}}{dr} \dfrac{dr}{dt} = m \dot{r} \dfrac{d \dot{r}}{dr}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{gather} m \dot{r} \dfrac{d \dot{r}}{dr} = 
+F_{\smash[t]{\text{ef}}}\:\!(r) \\[1ex] m \dot{r} \, d\dot{r} = 
+F_{\smash[t]{\text{ef}}}\:\!(r) \, dr \end{gather}$</p>
+
+<p>Integrando cada lado de la igualdad:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} 
+\int_{\dot{r}_0}^{\dot{r}} m \dot{r} \, d \dot{r} &amp;= \left[ 
+\dfrac{1}{2} m \dot{r}^2 \right]_{\dot{r}_0}^{\dot{r}} = \\[1ex] &amp;= 
+\dfrac{1}{2} m \dot{r}^2 - \dfrac{1}{2} m \dot{r}_0^2 \end{aligned} 
+\\[1em] \begin{aligned} \int_{r_0}^r F_{\smash[t]{\text{ef}}}\:\!(r) \, 
+dr &amp;= \int_{r_0}^r F(r) \, dr + \int_{r_0}^r \dfrac{L^2}{mr^3} dr = 
+\\[1ex] &amp;= \bigl[ - V(r) \bigr]_{r_0}^r + \left[ - 
+\dfrac{L^2}{2mr^2}\right]_{r_0}^r = \\[1ex] &amp;= V(r_0) + 
+\dfrac{L^2}{2mr_0^2} - \left( V(r) + \dfrac{L^2}{2mr^2} \right) 
+\end{aligned} \end{array}$</p>
+
+<p>Igualando:</p>
+
+<p align="center">$\begin{gather} \dfrac{1}{2} m \dot{r}^2 - 
+\dfrac{1}{2} m \dot{r}_0^2 = V(r_0) + \dfrac{L^2}{2mr_0^2} - \left( 
+V(r) + \dfrac{L^2}{2mr^2} \right) \\[1ex] \dfrac{1}{2} m \dot{r}^2 + 
+V(r) + \dfrac{L^2}{2mr^2} = \dfrac{1}{2} m \dot{r}_0^2 + V(r_0) + 
+\dfrac{L^2}{2mr_0^2} = E \\[1ex] \boxed{ \dfrac{1}{2} m \dot{r}^2 + 
+V_{\smash[t]{\text{ef}}}\:\!(r) = E }\end{gather}$</p>
+
+<p>Llegando a lo ya deducido con anterioridad y, por tanto, haciendo 
+buena la analogía con un movimiento unidimensional, en el cual la 
+partícula posee una energía potencial efectiva 
+$V_{\smash[t]{\text{ef}}}\:\!(r)$ donde $L^2 {∕} 2mr^2$ es un término 
+de energía asociado a la &quot;fuerza centrífuga&quot;.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../coordenadas_polares/coordenadas_polares.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../fuerza_central_inversamente_proporcional_cuadrado_distancia/fuerza_central_inversamente_proporcional_cuadrado_distancia.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

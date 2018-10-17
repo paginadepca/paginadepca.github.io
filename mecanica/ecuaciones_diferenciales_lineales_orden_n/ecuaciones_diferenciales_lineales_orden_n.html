@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Ecuaciones diferenciales lineales de orden n">
+<meta name="keywords"
+content="ecuaciones, diferenciales, lineales, orden, n">
+<title>Ecuaciones diferenciales lineales de orden n</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Ecuaciones diferenciales lineales de orden n</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p align="center">$a_n(t)\dfrac{d^n x}{d t^n} + 
+a_{n-1}(t)\dfrac{d^{n-1}x}{dt^{n-1}} + \dotsb + a_1(t)\dfrac{dx}{dt} + 
+a_0(t)x = b(t)$</p>
+
+<p>Se llama lineal ya que es lineal respecto a la variable
+dependiente y sus derivadas, i.e. cada término del miembro de la
+izquierda de la igualdad es una función lineal<br>
+($f(r) = q \cdot r$), y de orden $n$ en referencia a la mayor derivada
+que aparece en la ecuación.</p>
+
+<p><span style="text-decoration:underline">1.<sup>er</sup> caso:</span></p>
+
+<ul>
+    <li>Coeficientes constantes: &nbsp; $a_0, \dotsc, a_n$ constantes.</li>
+    <li>Homogénea: &nbsp; $b(t) = 0$</li>
+</ul>
+
+<p>La solución general es de la forma:</p>
+
+<p align="center">$x = x(t, C_1, \dotsc, C_n), \quad C_1, \dotsc,
+C_n$ constantes arbitrarias.</p>
+
+<p>Teoremas:</p>
+
+<ol>
+    <li>$x_1(t)$ es solución $\rightarrow Cx_1, C =$ cte., también es
+        solución.</li>
+    <li>$x_1(t), x_2(t)$ son soluciones $\rightarrow x_1 + x_2$
+        también es solución.</li>
+</ol>
+
+<p>Demostración en una ecuación de segundo orden:</p>
+
+<blockquote>
+    <p>1.</p>
+    <p>$a_2\dfrac{d^2(Cx_1)}{dt^2} + a_1\dfrac{d(Cx_1)}{dt} + a_0Cx_1
+    = C\biggl[\,\underbrace{a_2\dfrac{d^2x_1}{dt^2} + a_1\dfrac{dx_1}{dt}
+    + a_0x_1}_{\large\hphantom{0\,}=\,0}\,\biggr] = 0$</p>
+    <p>2.</p>
+    <p>$\begin{multline} a_2\dfrac{d^2(x_1 + x_2)}{dt^2} + a_1\dfrac{d(x_1
+    + x_2)}{dt} + a_0(x_1 + x_2) = \\[1ex] = \biggl[\,\underbrace{a_2\dfrac{d^2x_1}{dt^2}
+    + a_1\dfrac{dx_1}{dt} + a_0 x_1}_{\large\hphantom{0\,}=\,0}\,\biggr]
+    + \biggl[\,\underbrace{a_2\dfrac{d^2x_2}{dt^2} + a_1\dfrac{dx_2}{dt}
+    + a_0 x_2}_{\large\hphantom{0\,}=\,0}\,\biggr] = 0 \end{multline}$</p>
+</blockquote>
+
+<p>Si, por ejemplo, para una ecuación de segundo orden se hallan
+dos soluciones particulares que no sean una el producto de una
+constante por la otra, i.e. linealmente independientes, por los
+teoremas anteriores, también es solución, y además general:</p>
+
+<p align="center">$\left.\begin{array}{l} x_1(t), x_2(t) \text{
+soluciones} \\ x_1(t) \neq \alpha x_2(t), \ \alpha = \text{cte.}
+\end{array}\right\} \Rightarrow \underset{\normalsize\substack{\text{solución
+general} \\ \text{homogénea de orden 2}}}{\boxed{x(t) = C_1 x_1(t)
++ C_2 x_2(t)}}$</p>
+
+<p>Para una ecuación lineal homogénea de orden $n$, la
+solución general:</p>
+
+<p align="center">$x_1(t),\dotsc,x_n(t)$ sol. linealmente
+independientes $\Rightarrow \!\! \underset{\normalsize\substack{\text{solución
+general} \\ \text{homogénea de orden $n$}}}{\boxed{x(t) = \sum\limits_{i=1}^n
+C_i x_i(t)}}$</p>
+
+<p>Las soluciones son linealmente independientes cuando ninguna
+de ellas puede escribirse como combinación lineal del resto, en
+caso contrario serán linealmente dependientes:</p>
+
+<p align="center">$\underset{\normalsize\substack{\text{sol.
+linealmente} \\ \text{independientes}}}{x_1(t),\dotsc,x_n(t)} \Rightarrow
+\left\{\displaystyle \sum\limits_{i=1}^n C_i x_i(t) = 0 \Leftrightarrow C_i =
+0, \ 1 \le i \le n\,\right\}$</p>
+
+<p>Si se toma como una solución de la ecuación diferencial
+homogénea de coeficientes constantes a $x = e^{\:\!pt}$, que
+tiene como propiedad que sus derivadas son proporcionales a ella
+misma, y derivando $x$:</p>
+
+<p align="center">$x = e^{\:\!pt}, \quad \dfrac{dx}{dt} = pe^{\:\!pt},
+\quad \dfrac{d^2x}{dt^2} = p^2e^{\:\!pt}, \quad \dotsc \quad \dfrac{d^nx}{dt^n}
+= p^ne^{\:\!pt}$</p>
+
+<p>Sustituyendo en la ecuación de segundo orden:</p>
+
+<p align="center">$a_2 p^2 e^{\:\!pt} + a_1 p e^{\:\!pt} + a_0 e^{\:\!pt}
+= [a_2 p^2 + a_1 p + a_0]e^{\:\!pt} = 0$</p>
+
+<p>Dado que $e^{\:\!pt} \ne 0$, entonces $e^{\:\!pt}$ es solución
+si:</p>
+
+<p align="center">$\underbrace{a_2 p^2 + a_1 p + 
+a_0}_{\normalsize\substack{\text{polinomio} \\ \text{característico}}} 
+= 0 \ \Rightarrow \ p = \dfrac{-a_1 \pm \sqrt{a_1^2 - 
+4a_2a_0}}{2a_2}$</p>
+
+<p>Se tendrán tantas soluciones como raíces el polinomio
+característico. Para un polinomio de orden 2:</p>
+
+<p>$\bullet \ (a_1^2 - 4a_2a_0) &gt; 0$</p>
+
+<p align="center">$\left.\begin{array}{l} p_1 = \dfrac{-a_1 + 
+\sqrt{a_1^2 - 4a_2a_0}}{2a_2} \ \Rightarrow \ x_1 = e^{\:\!p_1t} 
+\\[1ex] p_2 = \dfrac{-a_1 - \sqrt{a_1^2 - 4a_2a_0}}{2a_2} \ \Rightarrow 
+\ x_2 = e^{\:\!p_2t} \end{array}\right\} \Rightarrow \underset{\large 
+\mathstrut \text{solución general}}{x(t) = C_1 e^{\:\!p_1t} + C_2 
+e^{\:\!p_2t}}$</p>
+
+<p>$\bullet \ (a_1^2 - 4a_2a_0) = 0$</p>
+
+<p align="center">$p = -\dfrac{a_1}{2a_2} \ \Rightarrow \ x_1 = e^{\:\!pt}$
+solución única.</p>
+
+<p>Se necesita una segunda solución (linealmente independiente).
+Si $x = te^{\:\!pt}$ también es solución:</p>
+
+<p align="center">$x = te^{\:\!pt}, \quad \dfrac{dx}{dt} = e^{\:\!pt}
++ pte^{\:\!pt}, \quad \dfrac{d^2x}{dt^2} = pe^{\:\!pt} + pe^{\:\!pt}
++ p^2te^{\:\!pt} = 2pe^{\:\!pt} + p^2te^{\:\!pt}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{multline} a_2(2pe^{\:\!pt} + p^2te^{\:\!pt})
++ a_1(e^{\:\!pt} + pte^{\:\!pt}) + a_0te^{\:\!pt} = \\[1ex] = e^{\:\!pt}\Bigl[(2a_2p
++ a_1) + t(a_2p^2 + a_1p + a_0)\Bigr] = 0 \end{multline}$</p>
+
+<p>Se cumple si:</p>
+
+<p align="center">$\left.\begin{array}{l} 2a_2p + a_1 = 0 \\[1ex]
+a_2p^2 + a_1p + a_0 = 0 \end{array}\right\} \Leftrightarrow p = -\dfrac{a_1}{2a_2}$</p>
+
+<p>La solución general en este caso:</p>
+
+<p align="center">$x(t) = C_1e^{\:\!pt} + C_2te^{\:\!pt} = (C_1 +
+C_2t)e^{\:\!pt}$</p>
+
+<p>$\bullet \ (a_1^2 - 4a_2a_0) &lt; 0$</p>
+
+<blockquote>
+    <p>$\Rightarrow$ las raíces son complejas.</p>
+</blockquote>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p align="center">$m\dfrac{d^2x}{dt^2} + kx = 0$</p>
+
+<p>Polinomio característico:</p>
+
+<p align="center">$\begin{align} mp^2 + k = 0 \ \Rightarrow \
+p^2 = -\dfrac{k}{m} \ \Rightarrow \ &amp;p = \pm\sqrt{\dfrac{-k}{m}} =
+\pm i\omega_0 \\[1ex] &amp;\left.\begin{array}{l} k&gt;0 \\ m&gt;0 \end{array}\right\}
+\rightarrow \sqrt{\dfrac{k}{m}}=\omega_0, \ i=\sqrt{-1} \end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$x(t) = C_1 e^{i\omega_0t} + C_2 e^{-i\omega_0t}$,
+solución general.</p>
+
+<p>Es una solución compleja, pero desde un punto de vista
+físico lo que se necesita es una solución real. Sea pues:</p>
+
+<p align="center">$e^{i\varphi} = \cos\varphi + i\sin\varphi$</p>
+
+<p>Se deduce de los siguientes desarrollos de Taylor:</p>
+
+<p align="center">$\begin{array}{l} \begin{align} e^{i\varphi} &amp;= 1 
++ i\varphi + \dfrac{1}{2!}(i\varphi)^2 + \dfrac{1}{3!}(i\varphi)^3 + 
+\dfrac{1}{4!}(i\varphi)^4 + \dfrac{1}{5!}(i\varphi)^5 + \dotsb = 
+\\[1ex] &amp;= 1 + i\varphi - \dfrac{\varphi^2}{2!} - 
+\dfrac{i\varphi^3}{3!} + \dfrac{\varphi^4}{4!} + \dfrac{i\varphi^5}{5!} - 
+\dotsb \end{align} \\[1em] \left.\begin{array}{l} \cos\varphi = 1 - 
+\dfrac{\varphi^2}{2!} + \dfrac{\varphi^4}{4!} - \dotsb \\[1ex] 
+i\sin\varphi = i\varphi - \dfrac{i\varphi^3}{3!} + \dfrac{i\varphi^5}{5!} 
+- \dotsb \end{array}\right\} \Rightarrow \cos\varphi + i\sin\varphi = 
+e^{i\varphi} \end{array}$</p>
+
+<p>De manera análoga se encuentra que:</p>
+
+<p align="center">$e^{-i\varphi} = 1 - i\varphi - \dfrac{\varphi^2}{2!} +
+\dfrac{i\varphi^3}{3!} + \dfrac{\varphi^4}{4!} - \dfrac{i\varphi^5}{5!} -
+\dotsb = \cos\varphi - i\sin\varphi$</p>
+
+<p>Por tanto si $\varphi =\omega_0t$:</p>
+
+<p align="center">$\begin{array}{l} e^{i\omega_0t} = \cos\omega_0t
++ i\sin\omega_0t \\[1ex] e^{-i\omega_0t} = \cos\omega_0t - i\sin\omega_0t
+\end{array}$</p>
+
+<p>Así que las dos soluciones particulares halladas son
+complejas conjugadas. La suma de un número complejo y su
+conjugado es real:</p>
+
+<p align="center">$\left.\begin{array}{l} C = a + ib \\[1ex] C^\ast
+= a - ib \end{array}\right\} \Rightarrow C + C^\ast = 2a$</p>
+
+<p>Si se elige que $C_1$ y $C_2$ sean también complejos
+conjugados, se logra que la solución general tome valores reales:</p>
+
+<p align="center">$\begin{align}\left.\begin{array}{l} C_1 = C \\[1ex]
+C_2 = C^\ast \end{array}\right\} &amp;\Rightarrow x(t) = C\underbrace{e^{i\omega_0t}}_{\large
+z \vphantom{z^*}} + C^*\underbrace{e^{-i\omega_0t}}_{\large{z^*}}
+= Cz + C^*z^* = \underbrace{Cz + (Cz)^*}_{{\large\hphantom{\mathbb{R}\,}\in\:\mathbb{R}}}
+\\[1ex] &amp;\Rightarrow x(t) = Ce^{i\omega_0t} + C^*e^{-i\omega_0t}
+\enspace \text{solución real} \end{align}$</p>
+
+<p>Si se hace uso de la representación polar de un número
+complejo:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="ecuaciones_diferenciales_lineales_orden_n_1.svg"
+        type="image/svg+xml" width="140" height="175"
+        style="border:1px solid black;background:white"></object></td>
+        <td valign="bottom" style="padding-left:1em;padding-bottom:1em">
+					$r=(a^2+b^2)^{1/2}$<p>$\tan\theta=\dfrac{b}{a}$</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p align="center">$\left.\begin{array}{l} a = r\cos\theta \\[1ex] 
+b=r\sin\theta \end{array}\right\} \Rightarrow \begin{array}{l} 
+C=r\cos\theta+ir\sin\theta = re^{i\theta} \\[1ex] 
+C^*=r\cos\theta-ir\sin\theta = re^{-i\theta} \end{array}$</p>
+
+<p>Reemplazando en la solución real:</p>
+
+<p align="center">$\begin{align} x(t) &amp;= re^{i\theta}e^{i\omega_0t} 
++ re^{-i\theta}e^{-i\omega_0t} = \\[1ex] &amp;= 
+re^{i(\omega_0t+\theta)} + re^{-i(\omega_0t+\theta)} = \\[1ex] &amp;= r 
+\bigl[ \, \cos(\omega_0t+\theta) + \! \cancel{i\sin(\omega_0t+\theta)} 
+\! + \cos(\omega_0t+\theta) - \! \cancel{i\sin(\omega_0t+\theta)} 
+\bigr] = \\[1ex] &amp;= 2r\cos(\omega_0t+\theta) = \\[1ex] &amp;= 
+\underset{\substack {{\large \text{solución}} \\ \mathstrut \smash[t]{
+{\large \text{general real}}}}}{\boxed{A\cos (\omega_0t+\theta)}} 
+\qquad (2r=A) \end{align}$</p>
+
+</div>
+
+<hr>
+
+<p><span style="text-decoration:underline">2.º caso:</span></p>
+
+<ul>
+    <li>No homogénea: &nbsp; $b(t) \ne 0$</li>
+</ul>
+
+<p>Teorema:</p>
+
+<blockquote>
+    <p>$x_p(t)$ solución particular de la no homogénea.</p>
+    <p>$x_h(t)$ solución general de la homogénea.</p>
+    <p>Entonces:</p>
+    <p align="center">$x(t) = x_p(t) + x_h(t)$ es solución
+    general de la no homogénea.</p>
+</blockquote>
+
+<p>Demostración con, por ejemplo, una ecuación de orden 2 y
+coeficientes constantes:</p>
+
+<p align="center">$a_2\dfrac{d^2x}{dt^2}+a_1\dfrac{dx}{dt}+a_0x =
+b(t) \qquad b(t)\ne0$</p>
+
+<p>Sustituyendo con la solución general:</p>
+
+<p align="center">$\begin{multline} 
+a_2\dfrac{d^2(x_p+x_h)}{dt^2}+a_1\dfrac{d(x_p+x_h)}{dt}+a_0(x_p+x_h) = 
+\\[1ex] = \underbrace{a_2\dfrac{d^2x_p}{dt^2}+a_1\dfrac{dx_p}{dt} 
++a_0x_p}_{{\large\hphantom{b(t)\:}=\:b(t)}} + 
+\underbrace{a_2\dfrac{d^2x_h}{dt^2}+a_1\dfrac{dx_h}{dt} 
++a_0x_h}_{{\large\hphantom{0\:}=\:0}} = b(t) \end{multline}$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../movimiento_armonico_simple/movimiento_armonico_simple.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../oscilador_armonico_amortiguado/oscilador_armonico_amortiguado.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

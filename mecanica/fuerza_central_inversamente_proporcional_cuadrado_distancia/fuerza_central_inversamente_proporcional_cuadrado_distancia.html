@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Fuerza central inversamente proporcional al cuadrado de la distancia">
+<meta name="keywords"
+content="fuerza, central, inversamente, proporcional, cuadrado, distancia">
+<title>Fuerza central inversamente proporcional al cuadrado de la distancia</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Fuerza central inversamente proporcional al
+cuadrado de la distancia</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Fuerza central tal que:</p>
+
+<p align="center">$F(r) = \dfrac{K}{r^2}$</p>
+
+<p>Donde si:</p>
+
+<center>
+<table>
+    <tr>
+        <td style="padding-bottom:1ex">$K &lt; 0 \ \rightarrow \,$ 
+        Atracción.</td>
+    </tr>
+    <tr>
+        <td>$K &gt; 0 \ \rightarrow \,$ Repulsión.</td>
+    </tr>
+</table>
+</center>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{align} V(r) &amp;= - \int_{r_{\scriptstyle 
+s}}^r \! F(r) \, dr = \\[1ex] &amp;= - \int_\infty^r \dfrac{K}{r^2} \, 
+dr = - \left[ - \dfrac{K}{r} \right]_\infty^r = \\[1ex] &amp;= 
+\dfrac{K}{r} \end{align}$</p>
+
+<p>Al elegir $r_s = \infty$ se ahorra un término adicional
+constante.</p>
+
+<p>Entonces el potencial efectivo:</p>
+
+<p align="center">$V_{\smash[t]{\text{ef}}}\:\!(r) = \dfrac{K}{r} + 
+\dfrac{L^2}{2mr^2}$</p>
+
+<p>Donde el momento angular $L$ es constante cuando la fuerza es
+central. Además se considerará que $L \neq 0$, ya que en caso
+contrario el movimiento es simplemente unidimensional sobre una
+recta que pasa por el centro de fuerzas.</p>
+
+<p>$\color{red}{\bullet}$ Si $K \! &lt; 0$, fuerza atractiva,
+gráficamente frente a $r \,$:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_1.svg"
+type="image/svg+xml" width="500" height="500"></object></p>
+
+<p>Hay un punto, $r_{\smash[t]{\text{c}}}$, en que la suma es cero:</p>
+
+<p align="center">$\begin{gather} 
+V_{\smash[t]{\text{ef}}}\:\!(r_{\smash[t]{\text{c}}}) = 
+\dfrac{K}{r_{\smash[t]{\text{c}}}} + 
+\dfrac{L^2}{2mr_{\smash[t]{\text{c}}}^{\raise 6mu 2}} = 0 \\[1ex] 
+2mKr_{\smash[t]{\text{c}}} = -L^2 \\[1ex] \boxed{r_{\smash[t]{\text{c}}} = 
+-\dfrac{L^2}{2mK}}\end{gather}$</p>
+
+<p>Donde $r_{\smash[t]{\text{c}}}$ es el punto de corte con el eje $0r$.</p>
+
+<p>La gráfica de $V_{\smash[t]{\text{ef}}}\:\!(r)$ también presenta un
+mínimo en $r_0$. En éste:</p>
+
+<p align="center">$\dfrac{dV_{\smash[t]{\text{ef}}}\:\!(r_0)}{dr} = 0$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$\dfrac{dV_{\smash[t]{\text{ef}}}\:\!(r)}{dr} = 
+-\dfrac{K}{r^2} - \dfrac{L^2}{mr^3}$</p>
+
+<p>Entonces, en $r_0$:</p>
+
+<p align="center">$\begin{gather} -\dfrac{K}{r_0^2} - \dfrac{L^2}{mr_0^3}
+= 0 \\[1ex] mKr_0 = -L^2 \\[1ex] \boxed{r_0 = - \dfrac{L^2}{mK}}
+\end{gather}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\begin{align} V_{\smash[t]{\text{ef}}}\:\!(r_0) 
+&amp;= \dfrac{K}{r_0} + \dfrac{L^2}{2mr_0^2} = \\[1ex] &amp;= - 
+\dfrac{mK^2}{L^2} + \dfrac{mK^2}{2L^2} = \\[1ex] &amp;= - 
+\dfrac{mK^2}{2L^2} \end{align}$</p>
+
+<p>La ecuación de la energía mecánica $E$, la cual aquí, en
+presencia de una fuerza central, se conserva:</p>
+
+<p align="center">$E = \dfrac{1}{2} m \dot{r}^2 + 
+V_{\smash[t]{\text{ef}}}\:\!(r)$</p>
+
+<p>Por lo que:</p>
+
+<p align="center">$\dfrac{1}{2} m \dot{r}^2 = E - 
+V_{\smash[t]{\text{ef}}}\:\!(r)$</p>
+
+<p>Así que el valor de $E$ no puede ser inferior a la energía
+potencial efectiva ya que entonces $\dot{r}\:\!^2 \! &lt; 0$ y la
+velocidad radial sería imaginaria. Además cuando:</p>
+
+<p align="center">$E = V_{\smash[t]{\text{ef}}}\:\!(r) \ \Rightarrow \ 
+\dfrac{1}{2} m \dot{r}^2 = 0 \ \Rightarrow \ \dot{r} = 0$</p>
+
+<p>Casos:</p>
+
+<p>$\ast \ E_0 = V_\text{ef}\:\!(r_0)$:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_2.svg"
+type="image/svg+xml" width="500" height="375"></object></p>
+
+<p>Por tanto aquí:</p>
+
+<p align="center">$\begin{array}{l} \begin{split} r = r_0 = \text{cte.} 
+\end{split} \\[1em] \begin{split} \theta &amp;= \theta_0 + \int_0^t \! 
+\dfrac{L}{mr^2} \, dt = \theta_0 + \int_0^t \! 
+\underbrace{\dfrac{L}{mr_0^2}}_{\displaystyle \text{cte.′}} dt = 
+\theta_0 + \! \underbrace{\dfrac{L}{mr_0^2}}_{\displaystyle 
+\vphantom{\text{cte.′}} \omega_0} t = \\[1ex] &amp;= \theta_0 + 
+\omega_0 t \end{split} \end{array}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\require{cancel} \left. \begin{array}{l} 
+\dfrac{L}{mr_0^2} = \text{cte.′} \\[1ex] \dfrac{L}{mr_0^2} = 
+\dfrac{\cancel{mr_0^2} \!
+\rlap{\;\!\dot{\phantom{\theta}}}\theta}{\cancel{mr_0^2}} = 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta = \omega_0 \end{array} \ 
+\right\} \Rightarrow \omega_0 = \text{cte.′}$</p>
+
+<p>Siendo $\omega_0$ la velocidad angular con la que la
+partícula de masa $m$ gira alrededor del origen (o centro de
+fuerzas). Como:</p>
+
+<p align="center">$\left. \begin{array}{l} r = \text{cte.} \\[1ex] 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta = \omega_0 = \text{cte.′} 
+\end{array} \right\} \Rightarrow \,$ Movimiento circular uniforme.</p>
+
+<p>$\ast \ E_1 \geq 0$:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_3.svg"
+type="image/svg+xml" width="500" height="375"></object></p>
+
+<p>Por tanto, interpretando la gráfica, una partícula con
+energía mecánica $E_1 \geq 0$, que en su movimiento se dirige
+en la dirección radial desde el infinito hacia el centro de
+fuerzas, termina alcanzando una distancia $r_1$ (punto de retorno)
+de máxima aproximación, donde la energía mecánica es igual a
+la energía potencial eficaz, para a continuación volver a
+alejarse hacia el infinito, en una trayectoria abierta tal que:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_4.svg"
+type="image/svg+xml" width="300" height="300"></object></p>
+
+<p>$\ast \ V_\text{ef}\:\!(r_0) &lt; E_2 &lt; 0$:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_5.svg"
+type="image/svg+xml" width="500" height="375"></object></p>
+
+<p>Aquí, además de girar alrededor del centro de fuerzas, la
+partícula fluctúa su distancia radial, i.e. $r$, entre los dos
+puntos de retorno $r_2$ y $r_3$.</p>
+
+<p>Si $E_2$ es sólo ligeramente superior a $V_\text{ef}\:\!(r_0)$,
+tal que el vaivén de la partícula en torno a $r_0$ es pequeño,
+puede hacerse, mediante desarrollo en serie de Taylor, la
+siguiente aproximación:</p>
+
+<p align="center">$V_\text{ef}\:\!(r) \simeq V_\text{ef}\:\!(r_0)
++ \dfrac{1}{2} \, \underbrace{\left( \dfrac{d^2 V_\text{ef}\:\!(r)}{dr^2}
+\right)_{\! r_0}}_{\displaystyle k} \! \left( r - r_0 \right)^2$</p>
+
+<p>Que corresponde con un movimiento armónico simple alrededor
+del punto $r_0$ de energía potencial efectiva mínima, i.e. la
+partícula oscila en torno a $r_0$ en la dirección de $r$ como
+un muelle lo hace sobre su posición de equilibrio, por lo que:</p>
+
+<p align="center">$\omega_r = \sqrt{\dfrac{k}{m}}$</p>
+
+<p>Donde $\omega_r$ es la frecuencia angular del movimiento
+periódico entre los dos puntos de retorno. Siendo:</p>
+
+<p align="center">$k = \left( \dfrac{d^2 
+V_\text{ef}\:\!(r)}{dr^2}\right)_{\! r_0} = \dfrac{2K}{r_0^3} + 
+\dfrac{3L^2}{mr_0^4}$</p>
+
+<p>Haciendo la sustitución $K = - L^2 {∕} mr_0{:}$</p>
+
+<p align="center">$k = - \dfrac{2L^2}{mr_0^4} + \dfrac{3L^2}{mr_0^4}
+= \dfrac{L^2}{mr_0^4}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\omega_r = \sqrt{\dfrac{L^2}{m^2r_0^4}} = 
+\dfrac{L}{mr_0^2}$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$L = m r_0^2 \omega_0$</p>
+
+<p>Que permanece constante si la perturbación causante de la
+oscilación de $r$ se produce en la dirección radial. Así pues,
+sustituyendo en $\omega_r$:</p>
+
+<p align="center">$\begin{gather} \omega_r = \dfrac{\cancel{m r_0^2} \! 
+\omega_0}{\cancel{mr_0^2}} = \omega_0 \\[1ex] 
+\dfrac{\cancel{2\pi}}{T_r} = \dfrac{\cancel{2\pi}}{T_0} \\[1ex] 
+\boxed{T_r = T_0} \end{gather}$</p>
+
+<p>Así que el periodo $T_r$ de una pequeña oscilación de $r$
+es el mismo que el periodo $T_0$ de revolución alrededor del
+centro de fuerzas. Por tanto tras una revolución y completar un
+ciclo de oscilación de $r$ la partícula vuelve al punto de
+partida. Su movimiento sigue una trayectoria cerrada que está
+limitada o acotada entre $r_2$ y $r_3$, estando su centro
+ligeramente desplazado del origen.</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_6.svg"
+type="image/svg+xml" width="320" height="280"></object></p>
+
+<p>Es una elipse. De hecho siempre que la energía es negativa la
+trayectoria (órbita), acotada entre $r_2$ y $r_3$, es elíptica:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_7.svg"
+type="image/svg+xml" width="300" height="300"></object></p>
+
+<p>$\color{red}{\bullet}$ Si $K &gt; 0$, fuerza repulsiva, la
+representación gráfica:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_8.svg"
+type="image/svg+xml" width="500" height="250"></object></p>
+
+<p>Aquí:</p>
+
+<p align="center">$\begin{array}{l} V_\text{ef}\:\!(r) \to \infty
+\ \Rightarrow \ r \to 0 \\[1ex] V_\text{ef}\:\!(r) \to 0 \ \Rightarrow
+\ r \to \infty \end{array}$</p>
+
+<p>Para $K &gt; 0$ no hay movimientos periódicos. La partícula
+viene del infinito y &quot;rebota&quot; de nuevo hacia él cuando
+$E = V_\text{ef}\:\!(r)$. Sólo es posible que el valor de la
+energía mecánica $E$ sea positivo, ya que lo contrario
+implicaría una energía cinética radial (i.e. $\dfrac{1}{2}m\dot{r}^2$)
+negativa.</p>
+
+<p>Gráficamente la trayectoria, para valores positivos de $E$,
+según sea el valor de $K$:</p>
+
+<p align="center"><object
+data="fuerza_central_inversamente_proporcional_cuadrado_distancia_9.svg"
+width="600" height="300"></object></p>
+
+<p>Representando las líneas punteadas la mayor aproximación (pericentro)
+al origen o centro de fuerzas. Si $K = 0$ no hay fuerza y por
+tanto el movimiento es rectilíneo con velocidad uniforme (cuyo
+momento angular es $L = mbv$).</p>
+
+<p>El cálculo de los puntos de retorno se basa en que son
+aquellos donde:</p>
+
+<p align="center">$E = V_{\smash[t]{\text{ef}}}\:\!(r) \ \Rightarrow \ 
+\dot{r} = 0$</p>
+
+<p>Esto es:</p>
+
+<p align="center">$\dfrac{K}{r} + \dfrac{L^2}{2mr^2} = E$</p>
+
+<p>Es una ecuación de segundo grado. Tomando $1{∕}r$ como
+incógnita:</p>
+
+<p align="center">$\boxed{\dfrac{L^2}{2m} \left( \dfrac{1}{r} \right)^2
++ K \left( \dfrac{1}{r} \right) - E = 0}$</p>
+
+<p>Cuya solución:</p>
+
+<p align="center">$\begin{align} \dfrac{1}{r} &amp;= \dfrac{-K \pm
+\sqrt{K^2 + \dfrac{2L^2E}{m}}}{L^2{∕}m} = \\[1ex] &amp;= - \dfrac{mK}{L^2}
+\pm \sqrt{\left( \dfrac{mK}{L^2} \right)^{\! 2} + \dfrac{2mE}{L^2}} \end{align}$</p>
+
+<p>O bien multiplicando por $2mr^2$:</p>
+
+<p align="center">$\begin{gather} 2mr^2 \left( \dfrac{K}{r} + \dfrac{L^2}{2mr^2}
+\right) = 2mr^2 E \\[1ex] \boxed{2mEr^2 - 2mKr - L^2 = 0} \end{gather}$</p>
+
+<p>Cuyas raíces son:</p>
+
+<p align="center">$r = \dfrac{2mK \pm \sqrt{4m^2K^2 + 8mEL^2}}{4mE}$</p>
+
+<p>Distintos casos, reafirmando lo ya visto:</p>
+
+<ol>
+    <li>$E &gt; 0$:</li>
+</ol>
+
+<blockquote>
+    <p>Como $r \geq 0$, entonces la única solución válida:</p>
+    <p align="center">$r = \dfrac{2mK + \sqrt{4m^2K^2 + 8mEL^2}}{4mE}$</p>
+    <p>Además:</p>
+    <p align="center">Atracción &ensp; $r\,(K{&lt;}\,0) \ &lt; \ r\,(K\,{>}\,0)$
+    &ensp; Repulsión</p>
+</blockquote>
+
+<ol type="1" start="2">
+    <li>$E = 0$:</li>
+</ol>
+
+<blockquote>
+    <p>Resolviendo, por más sencillez, con:</p>
+    <p align="center">$\dfrac{1}{r} = - \dfrac{mK}{L^2} \pm \sqrt{\left(
+    \dfrac{mK}{L^2} \right)^{\! 2} + \dfrac{2mE}{L^2}}$</p>
+    <p>Dos soluciones:</p>
+    <p align="center">$\dfrac{1}{r}(E\,{=}\,0) \, \left\{ \begin{array}{l}
+    \, 0 \ \Rightarrow \ r = \infty \\[1ex] - \dfrac{2mK}{L^2} \
+    \Rightarrow \ r = - \dfrac{L^2}{2mK} \end{array} \right.$</p>
+    <p>Para la segunda solución:</p>
+    <blockquote>
+        <p>$K &gt; 0 \ \Rightarrow \ r &lt; 0 \ \rightarrow$ No
+        tiene sentido.</p>
+        <p>$K &lt; 0 \ \Rightarrow \ r &gt; 0$.</p>
+    </blockquote>
+</blockquote>
+
+<ol type="1" start="3">
+    <li>$E &lt; 0$:</li>
+</ol>
+
+<blockquote>
+    <p>Hallando las soluciones con:</p>
+    <p align="center">$r = \dfrac{2mK \pm \sqrt{4m^2K^2 + 8mEL^2}}{4mE}$</p>
+    <p>Si:</p>
+    <blockquote>
+        <p>$K &lt; 0 \ \Rightarrow \ $ Soluciones positivas.</p>
+        <p>$K &gt; 0 \ \Rightarrow \ $ Soluciones negativas, sin
+        sentido físico.</p>
+    </blockquote>
+    <p>Entonces, sólo para $K &lt; 0$:</p>
+    <ol type="a" start="1">
+        <li>$4m^2K^2 &gt; \left\lvert 8mL^2 E \right\rvert$:</li>
+    </ol>
+    <blockquote>
+        <p>Dos soluciones, así que trayectoria acotada entre
+        ambas.</p>
+    </blockquote>
+    <ol type="a" start="2">
+        <li>$4m^2K^2 = \left\lvert 8mL^2 E \right\rvert$:</li>
+    </ol>
+    <blockquote>
+        <p>Una única solución, por tanto trayectoria circular.
+        La energía coincide con el mínimo del potecial eficaz:</p>
+        <p align="center">$\left. \begin{array}{l} \lvert E \rvert
+        = \dfrac{4m^2K^2}{8mL^2} = \dfrac{mK^2}{2L^2} \\[1ex] E
+        &lt; 0 \end{array} \right\} \Rightarrow E = - \lvert E \rvert
+        = - \dfrac{mK^2}{2L^2} = V_{\smash[t]{\text{ef}}}\:\!(r_0)$</p>
+    </blockquote>
+    <ol type="a" start="3">
+        <li>$4m^2K^2 &lt; \left\lvert 8mL^2 E \right\rvert$:</li>
+    </ol>
+    <blockquote>
+        <p>Soluciones complejas (parte real y parte imaginaria).
+        Así que:</p>
+        <p align="center">$E \nless - \dfrac{mK^2}{2L^2} = 
+        V_{\smash[t]{\text{ef}}}\:\!(r_0)$</p>
+        <p>Energías por debajo del mínimo de potencial eficaz
+        no son posibles, ya que entonces $\dfrac{1}{2}m\dot{r}^2
+        {&lt;}\, 0$, i.e. $\dot{r}^2 {&lt;}\, 0$, y la velocidad
+        radial sería imaginaria.</p>
+    </blockquote>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../ecuaciones_movimiento_fuerza_central_integrales_primeras/ecuaciones_movimiento_fuerza_central_integrales_primeras.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../leyes_kepler/leyes_kepler.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

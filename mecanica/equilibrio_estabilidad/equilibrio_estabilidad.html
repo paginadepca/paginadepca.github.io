@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Equilibrio y estabilidad">
+<meta name="keywords" content="equilibrio, estabilidad">
+<title>Equilibrio y estabilidad</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Equilibrio y estabilidad</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Para una dimensión:</p>
+
+<blockquote>
+    <p>$\vec{F} = F_x \, \vec{i}$</p>
+    <p>$F_x = - \dfrac{dU}{dx}$</p>
+</blockquote>
+
+<p>Si la representación de $U$ respecto a $x$ es:</p>
+
+<p align="center"><object data="equilibrio_estabilidad_1.svg"
+type="image/svg+xml" width="414" height="272"></object></p>
+
+<p>Cuando:</p>
+
+<blockquote>
+    <p>$\dfrac{dU}{dx} = 0 \, \Rightarrow \, \vec{F} = 0 \,
+    \rightarrow \,$ Equilibrio. $\, \Rightarrow \,
+    $ Punto de equilibrio.</p>
+    <p>$\left.\begin{array}{l} \dfrac{dU}{dx} &lt; 0 \, \Rightarrow
+    \, F_x &gt; 0 \\[1ex] \dfrac{dU}{dx} &gt; 0 \, \Rightarrow \, F_x
+    &lt; 0 \end{array} \right\} \rightarrow$ Hacia el punto de
+    equilibrio. $\Rightarrow$ Equilibrio estable.</p>
+</blockquote>
+
+<p>Desarrollo en serie de Taylor de $U(x)$ en torno del punto de
+equilibrio $x_0$:</p>
+
+<p align="center">$\begin{align} U(x) = {} &amp;U(x_0) +
+\underbrace{\left(\dfrac{dU}{dx}\right)_{\! x_0}}_{0}(x - x_0) + \dfrac{1}{2}
+\underbrace{\left(\dfrac{d^2U}{dx^2}\right)_{\! x_0}}_{\substack{&gt; \, 0,
+\\ \text{en un mínimo}}} (x - x_0)^2 + \\[1ex] &amp;+
+\dfrac{1}{6}\left(\dfrac{d^3U}{dx^3}\right)_{\! x_0} (x - x_0)^3 + \dotsb
+\end{align}$</p>
+
+<p>Si la diferencia $(x - x_0)$ es suficientemente pequeña los
+términos de orden superior pueden despreciarse:</p>
+
+<p align="center">$\dots$ término $(x - x_0)^4 \ll {}$ término $(x
+- x_0)^3 \ll {}$ término $(x - x_0)^2$</p>
+
+<p>De esta manera se aproxima $U(x)$ alrededor de $x_0$ como una
+parábola:</p>
+
+<p align="center">$U(x) \simeq U(x_0) +
+\dfrac{1}{2} \left(\dfrac{d^2U}{dx^2}\right)_{\! x_0} (x - x_0)^2 =
+U(x_0) + \dfrac{1}{2} k (x - x_0)^2$</p>
+
+<p>Donde:</p>
+
+<p align="center">$k = \left(\dfrac{d^2U}{dx^2}\right)_{\! x_0}$</p>
+
+<p>Por tanto:</p>
+
+<blockquote>
+    <p>$F_x = - \dfrac{dU}{dx} = - k(x - x_0)$</p>
+    <p>$\vec{F} = - k(x - x_0) \, \vec{i}$</p>
+</blockquote>
+
+<p>Esto es una fuerza recuperadora elástica, que sobre una
+partícula desplazada ligeramente del equilibrio da lugar a un
+movimiento armónico simple en torno al punto de energía
+potencial mínima, entre dos puntos de retorno, donde la energía
+mecánica $E$ se conserva.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../fuerza_central/fuerza_central.html" title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../movimiento_armonico_simple/movimiento_armonico_simple.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

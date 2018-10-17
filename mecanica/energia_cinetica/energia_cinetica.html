@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="La energía cinética">
+<meta name="keywords" content="energía, cinética">
+<title>La energía cinética</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>La energía cinética</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p align="center"><object data="energia_cinetica_1.svg" type="image/svg+xml"
+width="100" height="100"></object></p>
+
+<p>El trabajo realizado por $\vec{F}$, la resultante de las fuerzas 
+presentes, sobre una partícula que se desplaza de $1$ a $2$:</p>
+
+<p align="center">$$\begin{align} W &amp;= \int_1^2 \vec{F} \cdot 
+d\vec{r} = \\ &amp;\qquad\qquad\qquad\qquad\qquad d\vec{r} = \vec{v} \, 
+dt \\ &amp;= \int_1^2 \vec{F} \cdot \vec{v} \, dt = \\ 
+&amp;\qquad\qquad\qquad\qquad\qquad \vec{F} = m\vec{a} = 
+m\frac{d\vec{v}}{dt} \\ &amp;= \int_1^2 m\frac{d\vec{v}}{dt} \cdot 
+\vec{v} \, dt = \\ &amp;\qquad\qquad\qquad\qquad\qquad \frac{d(\vec{v} 
+\cdot \vec{v})}{dt} = \frac{d\vec{v}}{dt} \cdot \vec{v} + \vec{v} \cdot 
+\frac{d\vec{v}}{dt} = 2\frac{d\vec{v}}{dt} \cdot \vec{v} \\ &amp;= 
+\frac{1}{2} \int_1^2 m\frac{d(\vec{v} \cdot \vec{v})}{dt} \, dt = \\ 
+&amp;\qquad\qquad\qquad\qquad\qquad \vec{v} \cdot \vec{v} = \lvert 
+\vec{v} \rvert^2 = v^2 \\ &amp;= \frac{1}{2} \int_1^2 
+m\frac{d(v^2)}{dt} \, dt = \\ &amp;\qquad\qquad\qquad\qquad\qquad 
+d(v^2) = \frac{d(v^2)}{dt} \, dt \\ &amp;= \frac{1}{2} \int_1^2 m \, 
+d(v^2) = \\ &amp;\qquad\qquad\qquad\qquad\qquad d(v^2) = 
+\frac{d(v^2)}{dv} \, dv = 2v \, dv \\ &amp;= \int_1^2 mv \, dv = 
+\\[1em] &amp;= \frac{1}{2} m \left[v^2\right]_1^2 = \frac{1}{2} m 
+v_{(2)}^{2} - \frac{1}{2} m v_{(1)}^{2} \end{align}$$</p>
+
+<p>Lo que se llama energía cinética de la partícula es:</p>
+
+<p align="center">$E_{\text{cin}} = \dfrac{1}{2} m v^2$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$W_{1 \to 2} = E_{\text{cin}}^{(2)} - E_{\text{cin}}^{(1)}
+= \Delta E_{\text{cin}}$</p>
+
+<p>Situaciones:</p>
+
+<p align="center">$W_{1 \to 2} &lt; 0 \ \Rightarrow \ 
+E_{\text{cin}}^{(2)} &lt; E_{\text{cin}}^{(1)}$</p>
+
+<p align="center">$W_{1 \to 2} &gt; 0 \  \Rightarrow \ 
+E_{\text{cin}}^{(2)} &gt; E_{\text{cin}}^{(1)}$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../trabajo_producido_fuerza/trabajo_producido_fuerza.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../fuerzas_conservativas_energia_potencial/fuerzas_conservativas_energia_potencial.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Fuerzas conservativas y energía potencial">
+<meta name="keywords"
+content="fuerzas, conservativas, energía, potencial">
+<title>Fuerzas conservativas y energía potencial</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Fuerzas conservativas y energía potencial</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El trabajo realizado por una fuerza conservativa en un camino
+cerrado, aquel en el que la partícula regresa al punto de
+partida, es igual a cero.</p>
+
+<p align="center">$$\oint \vec{F} \cdot d\vec{r} = 0$$</p>
+
+<p align="center"><object
+data="fuerzas_conservativas_energia_potencial_1.svg" type="image/svg+xml"
+width="120" height="120"></object></p>
+
+<p align="center">$\begin{align} &amp; \oint \vec{F} \cdot d\vec{r} = 
+\int_{a,1}^{b,1} \vec{F} \cdot d\vec{r} + \int_{b,2}^{a,2} \vec{F} 
+\cdot d\vec{r} = 0 \\[1ex] &amp; \Rightarrow \int_{a,1}^{b,1} \vec{F} 
+\cdot d\vec{r} = - \int_{b,2}^{a,2} \vec{F} \cdot d\vec{r} = 
+\int_{a,2}^{b,2} \vec{F} \cdot d\vec{r} \end{align}$</p>
+
+<p>Por tanto el trabajo, para una fuerza conservativa, es
+independiente de la trayectoria. Sólo depende de las posiciones
+inicial y final.</p>
+
+<p>Ejemplos de fuerzas conservativas:</p>
+
+<ol>
+    <li>Fuerza peso: $\enspace \vec{F} = m \vec{g}$</li>
+    <li>Fuerza recuperadora elástica: $\enspace F = -kx$</li>
+</ol>
+
+<p>Ambas son fuerzas centrales, i.e. la fuerza se dirige hacia un
+punto fijo y su magnitud es función de la distancia a él. Las
+fuerzas centrales, así definidas, son conservativas.</p>
+
+<p>Ejemplo de fuerza no conservativa:</p>
+
+<ol>
+    <li>Fuerza de rozamiento.</li>
+</ol>
+
+<p>El trabajo realizado por una fuerza conservativa, gracias a su
+independencia de la trayectoria, es igual a la disminución de
+energía potencial:</p>
+
+<p align="center">$$\int_a^b \vec{F} \cdot d\vec{r} = - \int_a^b dU$$</p>
+
+<p>Donde $U$ es la función energía potencial, cuyo valor para
+una partícula sólo depende de su posición.</p>
+
+<p>También, por tanto:</p>
+
+<p align="center">$dU = - \vec{F} \cdot d\vec{r}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} U(x,y,z) \ \Rightarrow \ dU &amp;= 
+\dfrac{\partial U}{\partial x} \, dx + \dfrac{\partial U}{\partial y} 
+\, dy + \dfrac{\partial U}{\partial z} \, dz = \\[1ex] &amp;= - (F_x, 
+F_y, F_z) \cdot (dx,dy,dz) = \\[1ex] &amp;= -(F_x \, dx + F_y \, dy + 
+F_z \, dz ) \end{align}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\begin{align} F_x = - \dfrac{\partial U}{\partial
+x} &amp;&amp; F_y = - \dfrac{\partial U}{\partial y} &amp;&amp; F_z
+= - \dfrac{\partial U}{\partial z} \end{align}$</p>
+
+<p>El gradiente de la función potencial es:</p>
+
+<p align="center">$\overrightarrow{grad}\,U = \vec{\nabla}
+U = \left(\dfrac{\partial U}{\partial x}, \dfrac{\partial U}{\partial
+y}, \dfrac{\partial U}{\partial z}\right)$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\vec{F} = - \vec{\nabla} U$</p>
+
+<p>Para una dimensión:</p>
+
+<p align="center">$U(x) \ \Rightarrow \ F = - \dfrac{dU}{dx}$
+</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../energia_cinetica/energia_cinetica.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../teorema_conservacion_energia_mecanica/teorema_conservacion_energia_mecanica.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
