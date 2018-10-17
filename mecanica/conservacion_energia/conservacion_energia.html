@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Conservación de la energía">
+<meta name="keywords" content="conservación, energía">
+<title>Conservación de la energía</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Conservación de la energía</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Situación en la que la fuerza total que actúa sobre una
+partícula $k$ de un sistema de $N$ partículas sólo depende de
+las posiciones de éstas dentro del mismo:</p>
+
+<p align="center">$\vec{F}_k = \vec{F}_k (\vec{r}_1, \vec{r}_2, \dotsc, 
+\vec{r}_N ), \quad k = 1, \dotsc, N$</p>
+
+<p>En este caso es posible que exista, se considerará que es así, una 
+función potencial $V (\vec{r}_1, \dotsc, \vec{r}_N )$ de $3N$ 
+variables, $\vec{r}_k = (x_k, y_k, z_k )$, tal que:</p>
+
+<p align="center">$\begin{gather} F_{kx} = - \dfrac{\partial 
+V}{\partial x_k}, \quad F_{ky} = - \dfrac{\partial V}{\partial y_k}, 
+\quad F_{kz} = - \dfrac{\partial V}{\partial z_k} \\[1em] \vec{F}_k = 
+\left(F_{kx}, F_{ky}, F_{kz} \right) = -\vec{\nabla}_k V 
+\end{gather}$</p>
+
+<p>Según la segunda ley de Newton:</p>
+
+<p align="center">$\begin{align} \vec{F}_k &amp;= m_k \ddot{\vec{r}}_k 
+= m_k \dfrac{d\vec{v}_k}{dt} = \\[1ex] &amp;= \left(m_k 
+\dfrac{dv_{kx}}{dt}, m_k \dfrac{dv_{ky}}{dt},m_k \dfrac{dv_{kz}}{dt} 
+\right) \end{align}$</p>
+
+<p>En donde:</p>
+
+<p align="center">$\begin{gather} \vec{v}_k = v_{kx}\vec{i} + 
+v_{ky}\vec{j} + v_{kz}\vec{k} \\[1em] \begin{split} 
+\dfrac{d\vec{v}_k}{dt} &amp;= \dfrac{dv_{kx}}{dt}\vec{i} + 
+\dfrac{dv_{ky}}{dt}\vec{j} + \dfrac{dv_{kz}}{dt}\vec{k} \\[1ex] 
+&amp;=\left(\dfrac{dv_{kx}}{dt}, \dfrac{dv_{ky}}{dt}, 
+\dfrac{dv_{kz}}{dt} \right)\end{split}\end{gather}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$m_k \dfrac{dv_{kx}}{dt} = - \dfrac{\partial V}{\partial
+x_k}, \quad m_k \dfrac{dv_{ky}}{dt} = - \dfrac{\partial V}{\partial
+y_k},\quad m_k \dfrac{dv_{kz}}{dt} = - \dfrac{\partial V}{\partial
+z_k}$</p>
+
+<p>Multiplicando las igualdades anteriores, respectivamente, por
+$v_{kx}$, $v_{ky}$, $v_{kz}$:</p>
+
+<p align="center">$\begin{array}{l} m_k v_{kx} \dfrac{dv_{kx}}{dt}
+= - \dfrac{\partial V}{\partial x_k} \underbrace{\dfrac{dx_k}{dt}}_{\displaystyle
+v_{kx}} \\[1ex] m_k v_{ky} \dfrac{dv_{ky}}{dt} = - \dfrac{\partial
+V}{\partial y_k} \underbrace{\dfrac{dy_k}{dt}}_{\displaystyle v_{ky}}
+\\[1ex] m_k v_{kz} \dfrac{dv_{kz}}{dt} = - \dfrac{\partial V}{\partial
+z_k} \underbrace{\dfrac{dz_k}{dt}}_{\displaystyle v_{kz}} \end{array}$</p>
+
+<p>Sumándolas:</p>
+
+<p align="center">$m_k \left( v_{kx} \dfrac{dv_{kx}}{dt} + v_{ky}
+\dfrac{dv_{ky}}{dt} + v_{kz} \dfrac{dv_{kz}}{dt}\right) = - \left(
+\dfrac{\partial V}{\partial x_k} \dfrac{dx_k}{dt} + \dfrac{\partial
+V}{\partial y_k} \dfrac{dy_k}{dt} + \dfrac{\partial V}{\partial z_k}
+\dfrac{dz_k}{dt} \right)$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\begin{align} m_k \left( v_{kx} \dfrac{dv_{kx}}{dt}
++ v_{ky} \dfrac{dv_{ky}}{dt} + v_{kz} \dfrac{dv_{kz}}{dt}\right)
+&amp;= m_k \vec{v}_k \cdot \dfrac{d\vec{v}_k}{dt}
+= \\[1ex] &amp;= \dfrac{1}{2} m_k \dfrac{d}{dt}\left( \vec{v}_k
+\cdot \vec{v}_k \right) = \\[1ex] &amp;= \dfrac{1}{2}
+m_k \dfrac{d}{dt}\left(v_k^2 \right) = \\[1ex] &amp;= \dfrac{d}{dt}\left(\dfrac{1}{2}
+m_k v_k^2 \right)\end{align}$</p>
+
+<p>Así pues:</p>
+
+<p align="center">$\dfrac{d}{dt}\left(\dfrac{1}{2} m_k v_k^2 \right)
+= - \left( \dfrac{\partial V}{\partial x_k} \dfrac{dx_k}{dt} + \dfrac{\partial
+V}{\partial y_k} \dfrac{dy_k}{dt} + \dfrac{\partial V}{\partial z_k}
+\dfrac{dz_k}{dt} \right), \quad k = 1, \dotsc, N$</p>
+
+<p>Sumando, la anterior igualdad, para todas las partículas:</p>
+
+<p align="center">$\displaystyle \dfrac{d}{dt} \sum_{k=1}^N \left(\dfrac{1}{2}
+m_k v_k^2 \right) = - \sum_{k=1}^N \left( \dfrac{\partial V}{\partial
+x_k} \dfrac{dx_k}{dt} + \dfrac{\partial V}{\partial y_k} \dfrac{dy_k}{dt}
++ \dfrac{\partial V}{\partial z_k} \dfrac{dz_k}{dt} \right)$</p>
+
+<p>Donde el término de la izquierda de la igualdad es la
+derivada de la energía cinética total:</p>
+
+<p align="center">$\dfrac{dE_{\smash[b]{\text{cin}}}}{dt} = \displaystyle \dfrac{d}{dt}
+\sum_{k=1}^N \left(\dfrac{1}{2} m_k v_k^2 \right)$</p>
+
+<p>Además, aplicando la regla de la cadena, también:</p>
+
+<p align="center">$\begin{align} &amp;V = V\left(x_1(t), y_1(t),
+z_1(t), \dotsc, x_N(t), y_N(t), z_N(t)\right) \\[1em] &amp;\begin{split}\dfrac{dV}{dt}
+&amp;= \dfrac{\partial V}{\partial x_1} \dfrac{dx_1}{dt} + \dfrac{\partial
+V}{\partial y_1} \dfrac{dy_1}{dt} + \dfrac{\partial V}{\partial z_1}
+\dfrac{dz_1}{dt} + {} \\[1ex] &amp;+ \dotsb + \dfrac{\partial V}{\partial
+x_N} \dfrac{dx_N}{dt} + \dfrac{\partial V}{\partial y_N} \dfrac{dy_N}{dt}
++ \dfrac{\partial V}{\partial z_N} \dfrac{dz_N}{dt} = \\[1ex]
+&amp;= \sum_{k=1}^N \left(\dfrac{\partial V}{\partial x_k} \dfrac{dx_k}{dt}
++ \dfrac{\partial V}{\partial y_k} \dfrac{dy_k}{dt} + \dfrac{\partial
+V}{\partial z_k} \dfrac{dz_k}{dt}\right) \end{split}\end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{align} \dfrac{dE_{\smash[b]{\text{cin}}}}{dt} 
+= - \dfrac{dV}{dt} &amp;\Rightarrow 
+\dfrac{dE_{\smash[b]{\text{cin}}}}{dt} + \dfrac{dV}{dt} = 0 \\[1ex] 
+&amp;\Rightarrow \dfrac{d}{dt}\left(E_{\text{cin}} + V \right) = 
+0\end{align}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\boxed{ E_{\text{cin}} + V = E = \text{cte.}}$</p>
+
+<p>En caso de que las fuerzas internas sí deriven de una
+función potencial $V$, pero no las fuerzas externas, entonces:</p>
+
+<p align="center">$\begin{align} &amp;dW = \sum_{k=1}^N \vec{F}_k \cdot 
+d\vec{r}_k = \sum_{k=1}^N \vec{F}_k \cdot \vec{v}_k\,dt \\[1ex] 
+&amp;\begin{split} \dfrac{dW}{dt} = \sum_{k=1}^N \vec{F}_k \cdot 
+\vec{v}_k &amp;= \sum_{k=1}^N \dfrac{d}{dt} \left( \dfrac{1}{2} m_k 
+v_k^2 \right) = \\[1ex] &amp;= \dfrac{d}{dt} \underbrace{\sum_{k=1}^N 
+\dfrac{1}{2} m_k v_k^2}_{\displaystyle E_{\smash[b]{\text{cin}}}} = 
+\\[1ex] &amp;= \dfrac{dE_{\smash[b]{\text{cin}}}}{dt} \end{split} 
+\\[1em] &amp;dW = dW_{\text{int}} + dW_{\text{ext}} \\[1ex] &amp;dW = 
+\sum_{k=1}^N \vec{F}{}_k^i \cdot d\vec{r}_k + 
+\sum_{k=1}^N \vec{F}{}_k^e \cdot d\vec{r}_k 
+\\[1ex] &amp;\begin{split} \dfrac{dW}{dt} &amp;= 
+\dfrac{\sum\limits_{k=1}^N \vec{F}{}_k^i \cdot 
+d\vec{r}_k}{dt} + \dfrac{\sum\limits_{k=1}^N 
+\vec{F}{}_k^e \cdot d\vec{r}_k}{dt} = \\[1ex] 
+&amp;= \dfrac{\overbrace{\color{blue}{\sum\limits_{k=1}^N -\vec{\nabla}_k 
+V \cdot d\vec{r}_k}}^{\displaystyle \color{blue}{-dV}}}{dt} + \sum_{k=1}^N 
+\vec{F}{}_k^e \cdot \dfrac{d\vec{r}_k}{dt} = 
+\\[1ex] &amp;= - \dfrac{dV}{dt} + \sum_{k=1}^N \vec{F}{}_k^e 
+\cdot \vec{v}_k \end{split} \end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{gather} 
+\dfrac{dE_{\smash[b]{\text{cin}}}}{dt} = - \dfrac{dV}{dt} + 
+\sum_{k=1}^N \vec{F}{}_k^e \cdot \vec{v}_k \\[1ex] 
+\dfrac{d}{dt}\left(E_{\text{cin}} + V \right) = \sum_{k=1}^N 
+\vec{F}{}_k^e \cdot \vec{v}_k \end{gather}$</p>
+
+<p>Integrando se hallaría el trabajo:</p>
+
+<p align="center">$\displaystyle W_{\text{ext},1 \to 2} = \Delta
+E_{1 \to 2} = \int_{t_1}^{t_2} \negmedspace\sum_{k=1}^N \vec{F}{}_k^e
+\cdot \vec{v}_k \, dt$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../conservacion_momento_angular/conservacion_momento_angular.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../problema_dos_cuerpos/problema_dos_cuerpos.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Conservación de la cantidad de movimiento">
+<meta name="keywords"
+content="conservación, cantidad, movimiento">
+<title>Conservación de la cantidad de movimiento</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Conservación de la cantidad de movimiento</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se considera un sistema de $N$ partículas sometidas a fuerzas
+internas, que se ejercen unas sobre otras, y externas,
+provenientes de fuera del sistema.</p>
+
+<p align="center">$N \ \text{partículas} \left\{ \begin{array}{l}
+\text{Fuerzas internas} \\ \text{Fuerzas externas} \end{array}
+\right.$</p>
+
+<p>Para una partícula $k$:</p>
+
+<p align="center">$k = 1, \dotsc, N \ \Rightarrow \left\{ \begin{array}{l}
+m_1, m_2, \dotsc, m_N \\[1ex] \vec{r}_1, \vec{r}_2,
+\dotsc, \vec{r}_N \end{array} \right.$</p>
+
+<p>Así pues, sobre una partícula $k$ del sistema actúa una
+fuerza total que es la suma de las fuerzas externas y de las
+fuerzas internas, siendo estas últimas las ejercidas sobre ella
+por las $N - 1$ partículas restantes. Según la segunda ley de
+Newton, su movimiento responderá a la siguiente ecuación:</p>
+
+<p align="center">$m_k \dfrac{d^2\vec{r}_k}{dt^2} = \vec{F}{}_k^e
++ \vec{F}{}_k^i$</p>
+
+<p>Donde $\vec{F}{}_k^e$ y $\vec{F}{}_k^i$
+son, respectivamente, las sumas de las fuerzas externas e
+internas que actúan sobre $k$.</p>
+
+<p>Es ésta una ecuación vectorial, que implica tres ecuaciones
+escalares (una por coordenada). Por tanto, el problema completo
+es un sistema de $3N$ ecuaciones diferenciales de segundo orden
+con $6N$ condiciones iniciales ($\vec{r}_{0,k}, \vec{v}_{0,k},$
+$k = 1, \dotsc, N$).</p>
+
+<p>El problema sólo puede resolverse analíticamente, de manera
+exacta, cuando $N = 2$, y las fuerzas interiores satisfacen
+determinadas condiciones.</p>
+
+<p>La cantidad de movimiento, o momento lineal, de la partícula
+$k$:</p>
+
+<p align="center">$\vec{p}_k = m_k \vec{v}_k
+= m_k \dfrac{d\vec{r}_k}{dt} \qquad k = 1, \dotsc, N$</p>
+
+<p>Por tanto la ecuación de su movimiento puede reescribirse:</p>
+
+<p align="center">$\dfrac{d\vec{p}_k}{dt} = \dfrac{d}{dt}\left(m_k 
+\dfrac{d\vec{r}_k}{dt}\right) =m_k \dfrac{d^2\vec{r}_k}{d^2t} = 
+\vec{F}{}_k^e + \vec{F}{}_k^i \qquad k = 1, \dotsc, N$</p>
+
+<p>Si se hace la suma de todas ellas:</p>
+
+<p align="center">$\displaystyle\sum_{k=1}^N \dfrac{d\vec{p}_k}{dt}
+= \sum_{k=1}^N \vec{F}{}_k^e + \sum_{k=1}^N \vec{F}{}_k^i$</p>
+
+<p align="center">$\displaystyle\dfrac{d}{dt}\sum_{k=1}^N \vec{p}_k
+= \sum_{k=1}^N \vec{F}{}_k^e + \sum_{k=1}^N \vec{F}{}_k^i$</p>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>$\displaystyle\vec{P} = \sum_{k=1}^N \vec{p}_k$
+    &emsp; Cantidad de movimiento total.</p>
+    <p>$\displaystyle\vec{F} = \sum_{k=1}^N \vec{F}{}_k^e$
+    &emsp; Fuerza externa total.</p>
+    <p>$\displaystyle\sum_{k=1}^N \vec{F}{}_k^i = 0$</p>
+</blockquote>
+
+<p>Que el sumatorio de las fuerzas internas, que se ejercen entre
+sí las partículas, es cero se justifica empleando la
+formulación más general, habitualmente válida, de la tercera
+ley de Newton (acción-reacción):</p>
+
+<p align="center">$\vec{F}{}_{k \to l}^i = -\vec{F}{}_{l \to k}^i \ 
+\Rightarrow \ \vec{F}{}_{k \to l}^i + \vec{F}{}_{l \to k}^i = 0$</p>
+
+<p>Como:</p>
+
+<p align="center">$\begin{align} \displaystyle\sum_{k=1}^N
+\vec{F}{}_k^i &amp;= \sum_{k=1}^N\sum_{l \neq k}\vec{F}{}_{l
+\to k}^i = \\[1ex] &amp;= \left(\color{red}{\cancel{\color{#222}{\vec{F}{}_{2
+\to 1}^i}}} + \color{blue}{\cancel{\color{#222}{\vec{F}{}_{3
+\to 1}^i}}} + \dotsb \right) + \left(\color{red}{\cancel{\color{#222}{\vec{F}{}_{1
+\to 2}^i}}} + \color{lime}{\cancel{\color{#222}{\vec{F}{}_{3
+\to 2}^i}}} + \dotsb \right) + {} \\[1ex] &amp;\hphantom{={}}+ \left(\color{blue}{\cancel{\color{#222}{\vec{F}{}_{1
+\to 3}^i}}} + \color{lime}{\cancel{\color{#222}{\vec{F}{}_{2
+\to 3}^i}}} + \dotsb \right) + \dotsb = \\[1ex] &amp;= 0 \end{align}$</p>
+
+<p>Siendo entonces:</p>
+
+<p align="center">$\boxed{\dfrac{d\vec{P}}{dt} = \vec{F}}$</p>
+
+<p>Éste es el teorema de la cantidad de movimiento para un
+sistema de partículas.</p>
+
+<p>Otra manera de justificar que el sumatorio de las fuerzas
+internas es cero es considerando que el espacio es homogéneo. La
+homogeneidad del espacio implica que las propiedades son las
+mismas en cualquier punto de éste. Por tanto una traslación del
+sistema, sin alterarlo en nada más, de una posición a otra no
+modifica su energía interna, por lo que el trabajo neto de las
+fuerzas internas ha de ser cero. Así si el trabajo realizado por
+la fuerza interna $\vec{F}{}_k^i$ para un pequeño
+desplazamiento es:</p>
+
+<p align="center">$dW_k = \vec{F}{}_k^i \cdot d\vec{r}$</p>
+
+<p>Entonces el trabajo total realizado al desplazar
+simultáneamente $d\vec{r}$ el conjunto del sistema:</p>
+
+<p align="center">$\displaystyle dW = \sum_{k=1}^N dW_k = \sum_{k=1}^N 
+\vec{F}{}_k^i \cdot d\vec{r} = d\vec{r} \cdot \left( \sum_{k=1}^N 
+\vec{F}{}_k^i \right) = 0$</p>
+
+<p>Ya que dentro del sistema $E_0 = E_f$ para cualquier desplazamiento
+$d\vec{r}$ y, lo que es más importante, la distribución de los distintos
+tipos de energía en él no cambia. Por tanto:</p>
+
+<p align="center">$\displaystyle \sum_{k=1}^N \vec{F}{}_k^i = 0$</p>
+
+<p>Como conclusión final, si sobre el sistema de partículas no
+actúan fuerzas externas:</p>
+
+<p align="center">$\boxed{\vec{F} = 0 \ \Rightarrow \
+\dfrac{d\vec{P}}{dt} = 0 \ \Rightarrow \ \vec{P}
+= \text{cte.}}$</p>
+
+<p>Éste es el teorema de la conservación de la cantidad de
+movimiento para un sistema de partículas.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../oscilaciones_anarmonicas/oscilaciones_anarmonicas.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../centro_masas/centro_masas.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

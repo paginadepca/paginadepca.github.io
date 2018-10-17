@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Centro de masas">
+<meta name="keywords" content="centro, masas">
+<title>Centro de masas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Centro de masas</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El centro de masas, $\vec{r}_{\scriptsize\text{CM}}$,
+para un sistema de partículas se define como:</p>
+
+<p align="center">$\begin{align} &amp;M \vec{r}_{\scriptsize\text{CM}}
+= \sum_{k=1}^N m_k \vec{r}_k \\[1ex] &amp;M = \sum_{k=1}^N
+m_k \end{align}$</p>
+
+<p>Sus componentes son:</p>
+
+<p align="center">$\begin{align} &amp;X = \dfrac{1}{M}\sum_{k=1}^N
+m_k x_k \\[1ex] &amp;Y = \dfrac{1}{M}\sum_{k=1}^N m_k y_k \\[1ex]
+&amp;Z = \dfrac{1}{M}\sum_{k=1}^N m_k z_k \end{align}$</p>
+
+<p>La cantidad de movimiento total $\vec{P}$ en
+función del centro de masas:</p>
+
+<p align="center">$\displaystyle\vec{P} = \sum_{k=1}^N m_k 
+\dfrac{d\vec{r}_k}{dt} = M 
+\dfrac{d\vec{r}_{\scriptsize\text{CM}}}{dt}$</p>
+
+<p>Entonces por el teorema de la cantidad de movimiento:</p>
+
+<p align="center">$\dfrac{d\vec{P}}{dt} = \vec{F} \ \Rightarrow \ 
+\boxed{M \dfrac{d^2\vec{r}_{\scriptsize\text{CM}}}{dt^2} = 
+\vec{F}}$</p>
+
+<p>Para un cuerpo continuo el centro de masas:</p>
+
+<p align="center">$\displaystyle\vec{r}_{\scriptsize\text{CM}}
+= \dfrac{1}{M} \int_V \vec{r} \, dm, \quad M = \int_V dm$</p>
+
+<p>Sus componentes:</p>
+
+<p align="center">$\begin{align} &amp;X = \dfrac{1}{M} \int_V x\,dm
+\\[1ex] &amp;Y = \dfrac{1}{M} \int_V y\,dm \\[1ex] &amp;Z = \dfrac{1}{M}
+\int_V z\,dm \end{align}$</p>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>$\rho(x,y,z) = \dfrac{dm}{dV}$ &ensp; Densidad volúmica.</p>
+    <p>$\sigma(x,y,z) = \dfrac{dm}{dS}$ &ensp; Densidad superficial.</p>
+    <p>$\lambda(x,y,z) = \dfrac{dm}{dl}$ &ensp; Densidad lineal.</p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<p align="center">$dm = \rho(x,y,z)\,dV \Rightarrow \left\{ \begin{align}
+&amp;M = \int_V \rho(x,y,z)\,dV \\[1ex] &amp;X = \dfrac{1}{M} \int_V
+x \rho(x,y,z)\,dV \\[1ex] &amp;Y = \dfrac{1}{M} \int_V y \rho(x,y,z)\,dV
+\\[1ex] &amp;Z = \dfrac{1}{M} \int_V z \, \rho(x,y,z)\,dV \end{align}
+\right.$</p>
+
+<p>Si:</p>
+
+<p align="center">$\begin{align} \rho(x,y,z) = \text{cte.}
+\ &amp;\Rightarrow \ M = \rho(x,y,z) \int_V dV = \rho(x,y,z) V \
+\Rightarrow \\[1em] &amp;\Rightarrow \ \left\{\begin{aligned}
+&amp;X = \dfrac {\cancel{\rho(x,y,z)}}{\cancel{\rho(x,y,z)}V} \int_V
+x \, dV = \dfrac{1}{V} \int_V x \, dV \\[1ex] &amp;Y = \dfrac{1}{V}
+\int_V y \, dV \\[1ex] &amp;Z = \dfrac{1}{V} \int_V z \, dV \end{aligned}
+\right.\end{align}$</p>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Hoja de papel.</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><object data="centro_masas_1.svg" type="image/svg+xml" 
+        width="290" height="225" style="border:1px solid 
+        black;background:white"></object></td>
+        <td>$\qquad\sigma =$ cte.</td>
+    </tr>
+</table>
+</center></div>
+
+<p>¿Centro de masas?</p>
+
+<p>Superficie:</p>
+
+<p align="center">$\displaystyle S = \int_S dS = 
+\int_0^{L_2}\negthickspace\int_0^{L_1} \negthickspace dx\,dy = L_1 
+L_2$</p>
+
+<p>Coordenadas centro de masas:</p>
+
+<p align="center">$\begin{align} &amp;X = \dfrac{1}{S}
+\int_S x\,dS = \dfrac{1}{L_1 L_2} \int_0^{L_2}\negthickspace\int_0^{L_1}
+\negthickspace x\,dx\,dy = \dfrac{1}{\cancel{L_1 L_2}} \dfrac{\cancel{L_2}
+L_1^\cancel{2}}{2} = \dfrac{L_1}{2}\\[1ex] &amp;Y = \dfrac{1}{S}
+\int_S y\,dS = \dfrac{1}{L_1 L_2} \int_0^{L_2}\negthickspace\int_0^{L_1}
+\negthickspace y\,dx\,dy = \dfrac{1}{\cancel{L_1 L_2}} \dfrac{\cancel{L_1}
+L_2^\cancel{2}}{2} = \dfrac{L_2}{2} \end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center"><object data="centro_masas_2.svg" type="image/svg+xml"
+width="290" height="225" style="border:1px solid black;background:white">
+</object></p>
+
+</div>
+
+<hr>
+
+<p>Teoremas:</p>
+
+<ol>
+    <li>Si un cuerpo es simétrico respecto de un plano, su
+        centro de masas está contenido en este plano.</li>
+</ol>
+
+<p align="center"><object data="centro_masas_3.svg" width="393"
+height="170" type="image/svg+xml"></object></p>
+
+<ol type="1" start="2">
+    <li>Si un cuerpo tiene dos planos de simetría, el centro de
+        masas estará en la recta de intersección.</li>
+    <li>Si un cuerpo tiene tres planos de simetría que se
+        intersectan en un punto, el centro de masas estará en
+        este punto.</li>
+    <li>En una esfera uniforme, el centro de masas está en su
+        centro (donde se cortan todos los planos de simetría).</li>
+    <li>Si un cuerpo está formado de varias partes, y de cada
+        parte se conoce su centro de masas, puede calcularse el
+        centro de masas del cuerpo considerando las distintas
+        partes como partículas situadas en sus centros de masas.</li>
+</ol>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Filamento semicircular de longitud $L$:</p>
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><object data="centro_masas_4.svg" width="300" height="200"
+        type="image/svg+xml" style="border:1px solid black;background:white">
+        </object></td>
+        <td>$\qquad\lambda =$ cte.</td>
+    </tr>
+</table>
+</center></div>
+
+<p align="center">$Oy$ plano de simetría $\,\Rightarrow 
+\vec{r}_{\scriptsize\text{CM}} \in (0,y)$</p>
+
+<p>Posición del centro de masas:</p>
+
+<p align="center">$\begin{align} &amp;X = \dfrac{1}{L} \int_L x\,dl
+\\[1ex] &amp;Y = \dfrac{1}{L} \int_L y\,dl \end{align}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\begin{array}{l} x = R\cos\theta \\[1ex] y = R\sin\theta
+\\[1ex] dl = R\,d\theta \\[1ex] L = \pi R \end{array}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} &amp;X = \dfrac{R^{ \:\!\!\cancel{2}}}{\pi \!
+\cancel{R}} \int_0^{\pi} \! \cos\theta\,d\theta = \dfrac{R}{\pi}
+\bigl[\sin\theta\bigr]_0^{\pi} = \dfrac{R}{\pi} \left[\sin\pi - \sin
+0\right] = 0 \\[1ex] &amp;Y= \dfrac{R^{\:\!\!\cancel{2}}}{\pi \! \cancel{R}}
+\int_0^{\pi} \! \sin\theta\,d\theta = \dfrac{R}{\pi} \bigl[-\cos\theta\bigr]_0^{\pi}
+= \dfrac{R}{\pi} \left[\cos 0 - \cos\pi \right] = \dfrac{2R}{\pi}
+\end{align}$</p>
+
+<p align="center"><object data="centro_masas_5.svg" type="image/svg+xml"
+width="300" height="200" style="border:1px solid black;background:white">
+</object></p>
+
+</div>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Un cono.</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="centro_masas_6.svg" width="500" height="375"
+        type="image/svg+xml" style="border:1px solid black;background:white">
+        </object></td>
+        <td>$\quad\rho = \text{cte.}$</td>
+    </tr>
+</table>
+</center>
+
+<p align="center">Dos planos de simetría $\,\rightarrow \left\{\begin{array}{l}
+x = 0 \\[1ex] y = 0 \end{array}\right\} \Rightarrow \vec{r}_{\scriptsize\text{CM}}
+\in (0,0,z)$</p>
+
+<p>Así pues, la posición del centro de masas viene dada por:</p>
+
+<p align="center">$\displaystyle Z = \dfrac{1}{V} \int_V z\,dV$</p>
+
+<p>Donde:</p>
+
+<p align="center">$dV = \pi r^2 \, dz$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\displaystyle Z = \dfrac{\pi}{V} \int_0^L \! r^2
+z\,dz$</p>
+
+<p>Como:</p>
+
+<p align="center">$\dfrac{r}{L-z} = \dfrac{R}{L} \ \Rightarrow \
+r = \dfrac{R(L-z)}{L}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} Z &amp;= \dfrac{\pi R^2}{VL^2} 
+\int_0^L (L-z)^2 z\, dz = \\[1ex] &amp;= \dfrac{\pi R^2}{VL^2} \int_0^L 
+\!\left(L^2z - 2Lz^2 + z^3 \right) dz = \\[1ex] &amp;= \dfrac{\pi 
+R^2}{VL^2} \left[\dfrac{1}{2}L^2z^2 - \dfrac{2}{3}Lz^3 + 
+\dfrac{1}{4}z^4 \right]_0^L = \\[1ex] &amp;= \dfrac{\pi R^2}{VL^2} 
+\left[\dfrac{1}{2}L^4 - \dfrac{2}{3}L^4 + \dfrac{1}{4}L^4 \right] = 
+\\[1ex] &amp;= \dfrac{\pi R^2}{V\!\cancel{L^2}} 
+\dfrac{L^{2+\!\cancel{2}}}{12} = \dfrac{\pi R^2 
+L^2}{12V}\end{align}$</p>
+
+<p>El volumen del cono:</p>
+
+<p align="center">$\begin{align} V = \int_V dV =
+\int_0^L \!\pi r^2 \, dz &amp;= \dfrac{\pi R^2}{L^2} \int_0^L (L-z)^2 \,
+dz = \\[1ex] &amp;= \dfrac{\pi R^2}{L^2} \left[-\dfrac{(L-z)^3}{3}
+\right]_0^L = \\[1ex] &amp;= \dfrac{\pi R^2}{\cancel{L^2}}\dfrac{L^{\cancel{3}}}{3}
+= \dfrac{\pi R^2 L}{3} \end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$Z = \dfrac{\cancel{\pi R^2} \! 
+L^\cancel{2}}{12\dfrac{\cancel{\pi R^2 L}}{3}} = \dfrac{L}{4} \ 
+\Rightarrow \ \vec{r}_{\scriptsize\text{CM}} = 
+\left(0,0,\dfrac{L}{4}\right)$</p>
+
+</div>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../conservacion_cantidad_movimiento/conservacion_cantidad_movimiento.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../conservacion_momento_angular/conservacion_momento_angular.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

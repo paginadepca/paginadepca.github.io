@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Cónicas">
+<meta name="keywords" content="cónicas">
+<title>Cónicas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Cónicas</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>$\color{red}{\bullet}$ Elipse: Curva que describe una
+partícula que se mueve de tal manera que la suma de las
+distancias de ella respecto a dos puntos fijos, $F$ y $F'$, es
+constante.</p>
+
+<p align="center"><object data="conicas_1.svg" type="image/svg+xml"
+width="480" height="320"></object></p>
+
+<p align="center">$r' + r = 2a$</p>
+
+<p>Donde $a\varepsilon$ es la distancia del centro al foco y $\varepsilon$
+la excentricidad de la elipse.</p>
+
+<p>Si $\varepsilon = 0$ los focos coinciden y entonces se tiene
+una circunferencia. Si $\varepsilon \to 1$ se deja de tener una
+elipse para convertirse en una parábola, si $F'$ se aleja de $F$
+hacia el infinito, o una recta, si $F'$ se mantiene a una
+distancia finita de $F$. Por tanto una órbita cerrada implica $0
+\leq \varepsilon &lt; 1$.</p>
+
+<p>Aplicando el teorema del coseno:</p>
+
+<p align="center">$\begin{align} r'{}^2 &amp;= r^2 + (2a\varepsilon)^2
+- 2r\;\!(2a\varepsilon)\cos(\pi - \theta) = \\[1ex] &amp;= r^2 +
+4a^2\varepsilon^2 + 4a\varepsilon r \cos\theta \end{align}$</p>
+
+<p>Sustituyendo $r' = 2a - r$:</p>
+
+<p align="center">$\require{cancel} \begin{gather} (2a - r)^2 = r^2 + 
+4a^2\varepsilon^2 + 4a\varepsilon r \cos\theta \\[1ex] 
+\cancel{4}\!a^\cancel{2} \! - \!\cancel{4a}\!r + \!\cancel{r^2} \!=\! 
+\cancel{r^2} \! + \! \cancel{4}\!a^\cancel{2}\!\varepsilon^2 + 
+\!\cancel{4a}\!\varepsilon r \cos\theta \\[1ex] a - r = a\varepsilon^2 
++ r \varepsilon \cos\theta \\[1ex] r + r\varepsilon\cos\theta = a - 
+a\varepsilon^2 \\[1ex] r \left( 1 + \varepsilon\cos\theta \right) = a 
+\! \left( 1 - \varepsilon^2 \right) \\[1ex] \boxed{r = \dfrac{a \! 
+\left( 1 - \varepsilon^2 \right)}{1 + 
+\varepsilon\cos\theta}}\end{gather}$</p>
+
+<p>Que es la ecuación en coordenadas polares de la elipse cuyo
+eje mayor coincide con el eje de las $x$, y con origen (polo) en
+el foco situado más a la derecha. También puede escribirse:</p>
+
+<p align="center">$\dfrac{1}{r} = \dfrac{1}{a \! \left(1 - \varepsilon^2
+\right)} + \dfrac{\varepsilon}{a \! \left(1 -\varepsilon^2 \right)}
+\cos\theta$</p>
+
+<p>Siendo $b$ la longitud del semieje menor:</p>
+
+<p align="center">$a^2 = b^2 + a^2\varepsilon^2 \ \Rightarrow
+\ b^2 = a^2 \! \left(1 - \varepsilon^2 \right)$</p>
+
+<p>En coordenadas cartesianas:</p>
+
+<p align="center">$x^2 + y^2 = r^2$</p>
+
+<p>Entonces siendo $x = r\cos\theta$, y, para simplificar, $\alpha
+= a \! \left( 1 - \varepsilon^2 \right)$:</p>
+
+<p align="center">$\begin{gather} r = \dfrac{\alpha}{1 + \varepsilon\cos\theta}
+\\[1ex] r + \varepsilon r\cos\theta = \alpha \\[1ex] r = \alpha -
+\varepsilon r\cos\theta = \alpha - \varepsilon x \end{gather}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{gather} x^2 + y^2 = ( \alpha - \varepsilon
+x )^2 \\[1ex] x^2 + y^2 = \alpha^2 - 2\alpha\varepsilon x + \varepsilon^2
+x^2 \\[1ex] \left( 1 - \varepsilon^2 \right) x^2 + 2\alpha\varepsilon
+x + y^2 = \alpha^2 \end{gather}$</p>
+
+<p>A continuación, seguidamente, empleando el método de
+completar cuadrados:</p>
+
+<p align="center">$\begin{gather} \left( 1 - \varepsilon^2 \right)
+\left( x^2 + \dfrac{2\alpha\varepsilon}{1 - \varepsilon^2} x \right)
++ y^2 = \alpha^2 \\[1ex] \left( 1 - \varepsilon^2 \right) \left(
+x^2 + \dfrac{2\alpha\varepsilon}{1 - \varepsilon^2} x + \left( \dfrac{\alpha\varepsilon}{1
+- \varepsilon^2} \right)^{\!2} - \left( \dfrac{\alpha\varepsilon}{1 -
+\varepsilon^2} \right)^{\!2} \right) + y^2 = \alpha^2 \\[1ex] \left(
+1 - \varepsilon^2 \right) \left( x^2 + \dfrac{2\alpha\varepsilon}{1
+- \varepsilon^2} x + \left( \dfrac{\alpha\varepsilon}{1 - \varepsilon^2}
+\right)^{\!2} \right) - \left( 1 - \varepsilon^2 \right) \left( \dfrac{\alpha\varepsilon}{1
+- \varepsilon^2} \right)^{\!2} + y^2 = \alpha^2 \\[1ex] \left( 1 - \varepsilon^2
+\right) \left( x + \dfrac{\alpha\varepsilon}{1 - \varepsilon^2} \right)^{\!2}
+- \dfrac{\alpha^2 \varepsilon^2}{1 - \varepsilon^2} + y^2 = \alpha^2
+\\[1ex] \left( 1 - \varepsilon^2 \right) \left( x + \dfrac{\alpha\varepsilon}{1
+- \varepsilon^2} \right)^{\!2} + y^2 = \alpha^2 \left( 1 + \dfrac{\varepsilon^2}{1
+- \varepsilon^2} \right) = \dfrac{\alpha^2}{1 - \varepsilon^2} \\[1ex]
+\dfrac{\left( 1 - \varepsilon^2 \right)^2 \left( x + \dfrac{\alpha\varepsilon}{1
+- \varepsilon^2} \right)^{\!2}}{\alpha^2} + \dfrac{\left(1 - \varepsilon^2
+\right) y^2}{\alpha^2} = 1 \end{gather}$</p>
+
+<p>Deshaciendo la simplificación:</p>
+
+<p align="center">$\begin{gather} \dfrac{\cancel{\left(
+1 - \varepsilon^2 \right)^2} \left( x + \dfrac{a \! \cancel{\left(1
+- \varepsilon^2 \right)} \! \varepsilon}{\cancel{1 - \varepsilon^2}}
+\right)^2}{a^2 \! \cancel{\left( 1 - \varepsilon^2 \right)^2}} +
+\dfrac{\cancel{\left(1 - \varepsilon^2 \right)} \! y^2}{\underbrace{a^2
+\! \left(1 - \varepsilon^2 \right)}_{\displaystyle \hphantom{b^2}
+= b^2}{}^\cancel{2}} = 1 \\[1ex] \dfrac{( x + a \varepsilon )^2}{a^2}
++ \dfrac{y^2}{b^2} = 1 \end{gather}$</p>
+
+<p>Si el centro de la elipse, $\left( x_\text{c},y_\text{c} \right)
+= (-a\varepsilon, 0)$, se toma como origen de otro sistema de
+coordenadas cartesianas $\left( x',y' \right)$, cuya relación
+con $(x,y)$ es una traslación, entonces:</p>
+
+<p align="center">$\begin{array}{l} x' = x - x_\text{c} = x - (-a\varepsilon)
+= x + a\varepsilon \\[1ex] y' = y - y_\text{c} = y - 0 = y \end{array}$</p>
+
+<p>Así que reemplazando:</p>
+
+<p align="center">$\dfrac{x'{}^2}{a^2} + \dfrac{y'{}^2}{b^2} = 1$</p>
+
+<p>Donde, para la elipse:</p>
+
+<p align="center">$\begin{array}{l} -a \leq x' \! \leq a \\[1ex]
+-b \leq y' \! \leq b \end{array}$</p>
+
+<p>Separando variables tal que $y' = f(x')$:</p>
+
+<p align="center">$\begin{gather} \dfrac{y'{}^2}{b^2} = 1 - \dfrac{x'{}^2}{a^2}
+= \dfrac{a^2 - x'{}^2}{a^2} \\[1ex] y' = \pm \dfrac{b}{a} \sqrt{a^2
+- x'{}^2} \end{gather}$</p>
+
+<p>Por simetría, el área de la elipse será el doble del área
+que contiene por encima del eje de abscisas u horizontal. Por
+tanto:</p>
+
+<p align="center">$\displaystyle A_{\text{elipse}} = 2 \int_{-a}^a
+\dfrac{b}{a} \sqrt{a^2 - x'{}^2} \, dx' = \dfrac{b}{a} \underbrace{\int_{-a}^a
+2 \sqrt{a^2 - x'{}^2} \, dx'}_{\displaystyle \hphantom{\ast} = \color{blue}{\ast}}$</p>
+
+<p>La ecuación en coordenadas cartesianas $\left( x',y' \right)$
+de una circunferencia de radio $a$:</p>
+
+<p align="center">$x'{}^2 + y'{}^2 = a^2 \ \Rightarrow \ y' = \pm
+\sqrt{a^2 - x'{}^2}$</p>
+
+<p>El área que encierra es conocida, $\pi a^2$, pudiéndose
+obtener mediante integración como el doble del área de su
+semicírculo:</p>
+
+<p align="center">$\displaystyle A_\text{círculo} = \underbrace{2
+\int_{-a}^a \sqrt{a^2 - x'{}^2} \, dx'}_{\displaystyle \color{blue}{\ast}}
+= \pi a^2$</p>
+
+<p>Teniendo en cuenta esto, así pues el área de la elipse:</p>
+
+<p align="center">$A_{\text{elipse}} = \dfrac{b}{\cancel{a}}
+\pi a^\cancel{2} = \pi ab$</p>
+
+<p>$\color{red}{\bullet}$ Hipérbola: Curva descrita por una
+partícula de tal manera que la diferencia de las distancias
+respecto de dos puntos fijos, $F$ y $F'$, es constante.</p>
+
+<p align="center"><object data="conicas_2.svg" type="image/svg+xml"
+width="400" height="400"></object></p>
+
+<p>Una hipérbola tiene dos ramas:</p>
+
+<blockquote>
+    <p>$r' - r = 2a$ &ensp; (rama $+$)</p>
+    <p>$r' - r = -2a$ &ensp; (rama $-$)</p>
+</blockquote>
+
+<p>Empleando de nuevo el teorema del coseno:</p>
+
+<p align="center">$r'{}^2 = r^2 + 4a^2\varepsilon^2 - 4a\varepsilon
+r \cos\theta$</p>
+
+<p>Donde aquí $\varepsilon &gt; 1$.</p>
+
+<p>Siendo $r' = 2a + r$ para la rama positiva:</p>
+
+<p align="center">$\begin{gather} (r + 2a)^2 = r^2 + 4a^2\varepsilon^2 
+- 4a\varepsilon r \cos\theta \\[1ex] \cancel{r^2} \! + \! 
+\cancel{4a}\!r + \!\cancel{4}\!a^\cancel{2} \!=\! \cancel{r^2} \!+\! 
+\cancel{4}\!a^\cancel{2}\!\varepsilon^2 - \!\cancel{4a}\!\varepsilon r 
+\cos\theta \\[1ex] r + a = a\varepsilon^2 - r\varepsilon\cos\theta 
+\\[1ex] r \left( 1 + \varepsilon \cos\theta \right) = a \! \left( 
+\varepsilon^2 - 1 \right) \\[1ex] r = \dfrac{a \! \left( \varepsilon^2 
+- 1 \right)}{1 + \varepsilon\cos\theta} \end{gather}$</p>
+
+<p>Con $r' = r - 2a$ para la rama negativa:</p>
+
+<p align="center">$\begin{gather} (r - 2a)^2 = r^2 + 4a^2 \varepsilon^2 
+- 4a\varepsilon r \cos\theta \\[1ex] \cancel{r^2} \! - \! 
+\cancel{4a}\!r + \!\cancel{4}\!a^\cancel{2} \!=\! \cancel{r^2} \!+\! 
+\cancel{4}\!a^{\cancel{2}} \! \varepsilon^2 - 
+\!\cancel{4a}\!\varepsilon r \cos\theta \\[1ex] a - r = a\varepsilon^2 
+- r\varepsilon\cos\theta \\[1ex] r \left( -1 + \varepsilon\cos\theta 
+\right) = a \! \left( \varepsilon^2 - 1 \right) \\[1ex] r = \dfrac{a \! 
+\left( \varepsilon^2 - 1 \right)}{-1 + \varepsilon\cos\theta} 
+\end{gather}$</p>
+
+<p>Así que la ecuación de la hipérbola en coordenadas polares:</p>
+
+<p align="center">$\boxed{r = \dfrac{a \! \left( \varepsilon^2 -
+1 \right)}{\pm 1 + \varepsilon\cos\theta}}$</p>
+
+<p>Donde, antes del $1$ en el denominador, el signo $+$
+corresponde a la rama $(+)$, la que rodea a $F$, y el signo $-$ a
+la rama $(-)$.</p>
+
+<p>Las asíntotas de la hipérbola forman con el eje $x$ un
+ángulo $\alpha$, que es el valor de $\theta$ para el que $r = \infty$,
+i.e. $r \to \infty \ \Rightarrow \ \theta \simeq \alpha$ . Esto
+se produce cuando el denominador de la ecuación de la hipérbola
+se hace cero:</p>
+
+<p align="center">$\pm 1 + \varepsilon\cos\alpha = 0 \ \Rightarrow
+\ \boxed{\cos\alpha = \pm \dfrac{1}{\varepsilon}}$</p>
+
+<p>$\color{red}{\bullet}$ Parábola: La partícula traza una
+curva de manera que las distancias a un punto fijo, foco $F$, y a
+una recta fija, $D$ (directriz), son siempre iguales.</p>
+
+<p align="center"><object data="conicas_3.svg" type="image/svg+xml"
+width="400" height="400"></object></p>
+
+<p>Se deduce la ecuación de la parábola de la representación:</p>
+
+<p align="center">$r + r\cos\theta = a \ \Rightarrow \ \boxed{r =
+\dfrac{a}{1 + \cos\theta}}$</p>
+
+<p>Pueden resumirse las cónicas en una ecuación tipo:</p>
+
+<p align="center">$\left.\begin{array}{l} r = \dfrac{a \! \left( 
+\varepsilon^2 - 1 \right)}{\pm 1 + \varepsilon\cos\theta} \quad 
+\text{(Hipérbola)} \\[1ex] r = \dfrac{a \! \left( 1 - \varepsilon^2 
+\right)}{1 + \varepsilon\cos\theta} \quad \text{(Elipse)} \\[1ex] r = 
+\dfrac{a}{1 + \cos\theta} \quad \text{(Parábola)} \end{array} \ 
+\right\} \Rightarrow \underset{\begin{gathered} 
+\smash[b]{\text{Ecuación general}} \\ \smash[t]{\text{de una cónica}} 
+\end{gathered}}{\boxed{\dfrac{1}{r} = B + A \cos\theta}}$</p>
+
+<p>Donde $A &gt; 0$, para los distintos casos:</p>
+
+<blockquote>
+    <p>Elipse:&thinsp; $B = \dfrac{1}{a \! \left( 1 - \varepsilon^2 \right)},
+    \ A = \dfrac{\varepsilon}{a \! \left( 1 - \varepsilon^2 \right)},
+    \ 0 &lt; \varepsilon &lt; 1 \ \Rightarrow \ B &gt; A &gt; 0$</p>
+    <p>Parábola:&thinsp; $B= \dfrac{1}{a}, \ A = \dfrac{1}{a} \ \Rightarrow
+    \ A = B$</p>
+    <p>Hipérbola: $\left\{ \begin{array}{l} (+){:}\,\, B = \dfrac{1}{a
+    \! \left( \varepsilon^2 - 1\right)}, \, A = \dfrac{\varepsilon}{a
+    \! \left( \varepsilon^2 - 1 \right)},\, \varepsilon &gt; \! 1
+    \Rightarrow A &gt; B &gt; 0 \\[1ex] (-){:}\,\, B = \dfrac{-1}{a
+    \! \left( \varepsilon^2 - 1 \right)},\, A = \dfrac{\varepsilon}{a
+    \! \left( \varepsilon^2 - 1 \right)},\, \varepsilon &gt; \! 1
+    \Rightarrow -A &lt; B &lt; 0 \end{array} \right.$</p>
+</blockquote>
+
+<p>En todos los casos:</p>
+
+<p align="center">$\dfrac{A}{\lvert B \rvert} = \varepsilon$</p>
+
+<p>Para una elipse o una hipérbola:</p>
+
+<p align="center">$a = \left\lvert \dfrac{B}{A^2 - B^2} \right\rvert$</p>
+
+<p>Para una orientación arbitraria respecto al eje $x$:</p>
+
+<p align="center">$\dfrac{1}{r} = B + A \cos(\theta - \theta_0)$</p>
+
+<p>Donde $\theta_0$ es el ángulo formado por el eje $x$ y la
+línea (radio vector) que une el foco origen de la coordenada
+radial (polo) con el punto de la curva más próximo a él, en el
+que alcanza $r$ su mínimo (pericentro). La ecuación de la
+órbita para una fuerza inversamente proporcional al cuadrado de
+la distancia tiene la misma forma que esta última ecuación.
+Así que comparando ambas:</p>
+
+<p align="center">$\begin{array}{l} B = -\dfrac{mK}{L^2} \\[1ex]
+A = \left( B^2 + \dfrac{2mE}{L^2} \right)^{\!1/2}\end{array}$</p>
+
+<p>La excentricidad de la órbita, teniendo en cuenta que por
+definición $\lvert B \rvert = \sqrt{B^2}$, es pues:</p>
+
+<p align="center">$\begin{align} \varepsilon &amp;= \dfrac{A}{\lvert
+B \rvert} = \dfrac{\left( B^2 + \dfrac{2mE}{L^2} \right)^{\!1/2}}{\lvert
+B \rvert} = \left( \dfrac{B^2 + \dfrac{2mE}{L^2}}{B^2}\right)^{1/2}
+= \left( 1 + \dfrac{2mE}{B^2L^2} \right)^{\!1/2} = \\[1ex]
+&amp;= \left( 1 + \dfrac{2EL^2}{mK^2} \right)^{\!1/2} \end{align}$</p>
+
+<p>Casos:</p>
+
+<ol>
+    <li>$K &lt; 0$, fuerza atractiva:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="conicas_4.svg" type="image/svg+xml"
+    width="300" height="225"></object></p>
+    <ol type="a" start="1">
+        <li>$ E &lt; 0 \ \Rightarrow \ B &gt; A &gt; 0 \ \Rightarrow$
+            Elipse.</li>
+    </ol>
+    <blockquote>
+        <p>Para cualquier energía negativa posible,
+        independientemente de su valor, la órbita será cerrada.</p>
+    </blockquote>
+    <ol type="a" start="2">
+        <li>$E = 0 \ \Rightarrow \ A = B \ \Rightarrow$ Parábola.</li>
+        <li>$E &gt; 0 \ \Rightarrow \ A &gt; B &gt; 0 \ \Rightarrow$
+            Hipérbola, rama $+$.</li>
+    </ol>
+</blockquote>
+
+<ol type="1" start="2">
+    <li>$K &gt; 0$, fuerza repulsiva:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="conicas_5.svg" type="image/svg+xml"
+    width="300" height="150"></object></p>
+    <p>La energía sólo puede ser positiva, así que:</p>
+    <p align="center">$-A &lt; B &lt; 0 \ \Rightarrow$ Hipérbola,
+    rama $-$.</p>
+</blockquote>
+
+<p>Para órbitas elípticas o hiperbólicas:</p>
+
+<p align="center">$\begin{align} a &amp;= \left\lvert \dfrac{B}{A^2 - 
+B^2} \right\rvert = \left\lvert \dfrac{B}{\cancel{B^2} \! + 
+\dfrac{2mE}{L^2} - \! \cancel{B^2}} \right\rvert = \left\lvert 
+\dfrac{-\!\cancel{m}\!K {∕} \! \cancel{L^2}}{2\!\cancel{m}\!E {∕} 
+\!\cancel{L^2}} \right\rvert = \left\lvert -\dfrac{K}{2E} \right\rvert 
+= \\[1ex] &amp;= \left\lvert \dfrac{K}{2E} \right\rvert 
+\end{align}$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../ecuacion_diferencial_orbita/ecuacion_diferencial_orbita.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../segunda_tercera_leyes_kepler/segunda_tercera_leyes_kepler.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Cálculo de momentos de inercia">
+<meta name="keywords" content="cálculo, momentos, inercia">
+<title>Cálculo de momentos de inercia</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Cálculo de momentos de inercia</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El momento de inercia $I$, respecto a un eje, en una
+distribución continua de masa tal que:</p>
+
+<p align="center"><object data="calculo_momentos_inercia_1.svg"
+type="image/svg+xml" width="300" height="300"></object></p>
+
+<p align="center">$\begin{align} &amp;r = r_1,\,r_2,\, \dotsc ,\,
+r_N \\[1ex] &amp;I = \lim_{\Delta m \to 0} \sum \Delta m(r) \mspace{1mu}
+r^2 = \int_V r^2 dm \end{align}$</p>
+
+<p>Se introduce la densidad:</p>
+
+<p align="center">$\rho(r) = \dfrac{dm}{dV} \ \Rightarrow \ dm =
+\rho(r)\,dV$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\displaystyle I = \int_V \rho(r) r^2 dV$</p>
+
+<p>Si $\rho(r) = \text{cte.}$, (homogénea):</p>
+
+<p align="center">$\displaystyle I = \rho \! \int_V r^2 dV$</p>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplos:</p>
+
+<ol>
+    <li>Un cilindro homogéneo, de radio $R$ y altura $L$, que
+        gira respecto a su eje de simetría:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="calculo_momentos_inercia_2.svg"
+    type="image/svg+xml" width="250" height="375"
+    style="border:1px solid black;background:white"></object></p>
+    <p>Puede considerase el cilindro como una sucesión, serie,
+    de elementos de volumen en forma de &quot;tubería&quot;,
+    cuyo grosor es $dr$, radio interior $r$ y altura $L$. Siendo
+    pues:</p>
+    <p align="center">$dV = 2\pi r L \, dr$</p>
+    <p>Entonces:</p>
+    <p align="center">$\begin{align} I &amp;= 2\pi L \rho \! \int_0^R
+    \! r^3 dr = 2\pi L \rho \left[ \dfrac{r^4}{4} \right]_0^R = 2\pi
+    L \rho \dfrac{R^4}{4} = \\[1ex] &amp;= \dfrac{1}{2} \pi R^4 L
+    \rho \end{align}$</p>
+    <p>El volumen del cilindro es:</p>
+    <p align="center">$\displaystyle V = \int_0^R \! 2\pi r L \,
+    dr = \pi R^2 L$</p>
+    <p>Es un cilindro, con masa $M$, homogéneo:</p>
+    <p align="center">$\rho = \dfrac{M}{V} = \dfrac{M}{\pi R^2 L}
+    \ \Rightarrow{} \ M = \pi R^2 L \rho$</p>
+    <p>Así pues:</p>
+    <p align="center">$I = \dfrac{1}{2} M R^2$</p>
+</blockquote>
+
+<ol type="1" start="2">
+    <li>Barra homogénea, de longitud $l$, que gira alrededor de
+        un eje perpendicular:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="calculo_momentos_inercia_3.svg"
+    type="image/svg+xml" width="320" height="345"
+    style="border:1px solid black;background:white"></object></p>
+    <p>Elemento de volumen:</p>
+    <p align="center">$dV = S \, dx$</p>
+    <p>Entonces:</p>
+		<p align="center">$\begin{align} I &amp;= \rho S \int_{-h}^{l - h} 
+		\! x^2 dx = \rho S \left[ \dfrac{x^3}{3} \right]_{-h}^{l - h} = 
+		\\[1ex] &amp;= \dfrac{1}{3} \rho S \left[ (l - h)^3 - (-h)^3 
+		\right] = \\[1ex] &amp;= \dfrac{1}{3} \rho S \left[ l^3 - 3l^2 h + 
+		3lh^2 - \! \cancel{h^3} \! + \! \cancel{h^3} \right] = \\[1ex] 
+		&amp;= \dfrac{1}{3} \rho S l \left[ l^2 - 3lh + 3h^2 \right] 
+		\end{align}$</p>
+    <p>El volumen de la barra:</p>
+    <p align="center">$\displaystyle V = \int_{-h}^{l - h} \! S
+    \, dx = S l$</p>
+    <p>Siendo pues:</p>
+    <p align="center">$\rho = \dfrac{M}{V} = \dfrac{M}{Sl} \ \Rightarrow
+    \ M = \rho Sl$</p>
+    <p>Por tanto:</p>
+    <p align="center">$I = \dfrac{1}{3} M \left[ l^2 - 3lh + 3h^2
+    \right]$</p>
+    <p>La posición del eje en la barra determina el momento de
+    inercia:</p>
+    <ol type="a" start="1">
+        <li>Situado en un extremo:</li>
+    </ol>
+    <blockquote>
+        <p align="center">$h = 0, \, h = l \ \Rightarrow \ I = \dfrac{1}{3}
+        M l^2$</p>
+    </blockquote>
+    <ol type="a" start="2">
+        <li>En medio (centro de masas):</li>
+    </ol>
+    <blockquote>
+        <p align="center">$\begin{align} h = \dfrac{l}{2} \ \Rightarrow
+        \ I &amp;= \dfrac{1}{3} M \left[ l^2 - \dfrac{3l^2}{2} +
+        \dfrac{3l^2}{4} \right] = \\[1ex] &amp;= \dfrac{1}{3} M \dfrac{4l^2
+        - 6l^2 + 3l^2}{4} = \dfrac{1}{3} M \dfrac{l^2}{4} = \\[1ex]
+        &amp;= \dfrac{1}{12} M l^2 \end{align}$</p>
+    </blockquote>
+    <p>Como $I' = \alpha I$, en el segundo caso es más fácil de
+    hacer girar.</p>
+</blockquote>
+
+<ol type="1" start="3">
+    <li>Esfera homogénea que gira sobre un eje que pasa por su
+        centro:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="calculo_momentos_inercia_4.svg"
+    type="image/svg+xml" width="250" height="175"
+    style="border:1px solid black;background:white"></object></p>
+    <p>Se descompone la esfera en pequeñas secciones
+    cilíndricas (discos):</p>
+    <p align="center"><object data="calculo_momentos_inercia_5.svg"
+    type="image/svg+xml" width="300" height="270"
+    style="border:1px solid black;background:white"></object></p>
+    <p align="center">$r = \sqrt{R^2 - x^2}$</p>
+    <p>El momento de inercia del pequeño cilindro:</p>
+    <p align="center">$dI = \dfrac{1}{2} dm \, r^2 = \dfrac{1}{2}
+    dm \left( R^2 - x^2 \right)$</p>
+    <p>Siendo $\pi r^2 dx$ el volumen del pequeño cilindro:</p>
+    <p align="center">$\begin{gather} dm = \rho \, dV \\[1ex] dm
+    = \rho \pi r^2 dx = \rho \pi \left( R^2 - x^2 \right) dx \end{gather}$</p>
+    <p>Por tanto:</p>
+    <p align="center">$dI = \dfrac{1}{2} \rho \pi \left( R^2 - x^2
+    \right)^2 dx$</p>
+    <p>El momento de inercia total de la esfera será entonces:</p>
+    <p align="center">$\begin{align} I = \int_{-R}^R
+    dI &amp;= \dfrac{1}{2} \rho \pi \int_{-R}^R \left( R^2 - x^2
+    \right)^2 dx = \\[1ex] &amp;= \dfrac{1}{\cancel{2}} \rho \pi
+    \cancel{2} \! \int_0^R \! \left( R^2 - x^2 \right)^2 dx = \\[1ex]
+    &amp;= \rho \pi \int_0^R \! \left( R^4 -2R^2x^2 + x^4 \right)
+    dx = \\[1ex] &amp;= \rho \pi \left[ R^4 x - \dfrac{2}{3} R^2
+    x^3 + \dfrac{x^5}{5} \right]_0^R = \\[1ex] &amp;= \rho \pi \left[
+    R^5 - \dfrac{2R^5}{3} + \dfrac{R^5}{5} \right] = \\[1ex]
+    &amp;= \rho \pi \dfrac{15R^5 - 10R^5 + 3R^5}{15} = \\[1ex]
+    &amp;= \dfrac{8}{15} \pi R^5 \rho \end{align}$</p>
+    <p>El volumen de la esfera:</p>
+    <p align="center">$\displaystyle V = \int_{-R}^R \pi \left( R^2
+    - x^2 \right) dx = \dfrac{4}{3} \pi R^3$</p>
+    <p>Así pues:</p>
+    <p align="center">$\rho = \dfrac{M}{V} = \dfrac{M}{\dfrac{4}{3}
+    \pi R^3} \ \Rightarrow \ M = \dfrac{4}{3} \pi R^3 \rho$</p>
+    <p>Por tanto:</p>
+    <p align="center">$I = \dfrac{2}{5} M R^2$</p>
+</blockquote>
+
+<ol type="1" start="4">
+    <li>Un disco plano homogéneo, de radio $R$, que gira en
+        torno a un eje perpendicular que pasa por su centro:</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="calculo_momentos_inercia_6.svg"
+    type="image/svg+xml" width="350" height="265"
+    style="border:1px solid black;background:white"></object></p>
+    <p>De la definición de densidad superficial:</p>
+    <p align="center">$\sigma = \dfrac{dm}{dS} \ \Rightarrow \ dm
+    = \sigma \, dS$</p>
+    <p>Por tanto:</p>
+    <p align="center">$\displaystyle I = \int_S r^2 dm = \sigma \int_S
+    r^2 dS$</p>
+    <p>Si se considera el disco como una sucesión de anillos de
+    radio $r$ y grosor (infinitesimal) $dr$, entonces la
+    superficie de uno de ellos:</p>
+    <p align="center">$dS = 2\pi r \, dr$</p>
+    <p>Así pues:</p>
+    <p align="center">$\begin{align} I = \sigma \int_S r^2 dS
+    &amp;= 2\pi\sigma \int_0^R \! r^3 dr = \\[1ex] &amp;= 2\pi\sigma
+    \left[ \dfrac{r^4}{4} \right]_0^R = \\[1ex] &amp;= \dfrac{1}{2}
+    \pi\sigma R^4 \end{align}$</p>
+    <p>Partiendo de la superficie del disco plano (círculo):</p>
+    <p align="center">$\displaystyle S = \int_0^R \! 2 \pi r \,
+    dr = \pi R^2 \ \Rightarrow \ \sigma = \dfrac{M}{S} = \dfrac{M}{\pi
+    R^2} \ \Rightarrow \ M = \pi\sigma R^2$</p>
+    <p>Por lo que:</p>
+    <p align="center">$I = \dfrac{1}{2} M R^2$</p>
+</blockquote>
+
+<ol type="1" start="5">
+    <li>Un disco plano homogéneo, de radio $R$, que gira sobre
+        su eje de simetría (i.e. uno de sus diámetros):</li>
+</ol>
+
+<blockquote>
+    <p align="center"><object data="calculo_momentos_inercia_7.svg"
+    type="image/svg+xml" width="500" height="250"
+    style="border:1px solid black;background:white"></object></p>
+    <p>Tomando el elemento de superficie o área:</p>
+    <p align="center">$dS = l \, d\theta \, dl$</p>
+    <p>Siendo:</p>
+    <p align="center">$r = l \sin\theta$</p>
+    <p>Dado que $dm = \sigma \, dS$, en donde $\sigma$ es la
+    densidad superficial, entonces:</p>
+    <p align="center">$\begin{align} I = \int_S r^2 dm &amp;= \sigma
+    \int_S r^2 dS = \\[1ex] &amp;= \sigma \int_0^R \int_0^{2\pi}
+    l^3 \sin^2{\!\theta} \, d\theta \, dl = \\[1ex] &amp;= \sigma
+    \int_0^R l^3 dl \int_0^{2\pi} \sin^2{\!\theta} \, d\theta =
+    \\[1ex] &amp;= \sigma \left[ \dfrac{l^4}{4} \right]_0^R \int_0^{2\pi}
+    \sin^2{\!\theta} \, d\theta = \\[1ex] &amp;= \dfrac{\sigma R^4}{4}
+    \int_0^{2\pi} \sin^2{\!\theta} \, d\theta \underset{\color{red}{\ast}}{=}
+    \\[1ex] &amp;&amp;\color{red}{\ast} \sin^2{\!\theta} = \dfrac{1
+    - \cos{2\theta}}{2} \\[1ex] &amp;= \dfrac{\sigma R^4}{4} \int_0^{2\pi}
+    \dfrac{1 - \cos{2\theta}}{2} \, d\theta = \\[1ex] &amp;= \dfrac{\sigma
+    R^4}{4} \left[ \dfrac{2\theta - \sin{2\theta}}{4} \right]_0^{2\pi}
+    = \\[1ex] &amp;= \dfrac{\sigma \pi R^4}{4} \end{align}$</p>
+    <p>Teniendo en cuenta que:</p>
+    <p align="center">$\left.\begin{array}{l} \displaystyle S = \int_0^R
+    \int_0^{2\pi} l \, d\theta \, dl = \pi R^2 \\[1ex] \sigma = \dfrac{M}{S}
+    \end{array} \ \right\} \Rightarrow \ \sigma = \dfrac{M}{\pi R^2}
+    \ \Rightarrow \ M = \sigma \pi R^2$</p>
+    <p>Es pues:</p>
+    <p align="center">$I = \dfrac{1}{4} M R^2$</p>
+</blockquote>
+
+</div>
+
+<hr>
+
+<p>Entonces, de los dos últimos ejemplos, los momentos de
+inercia respecto a tres ejes que se cruzan perpendicularmente en
+el centro de un disco, con dos de ellos situados en el mismo
+plano que éste, son:</p>
+
+<p align="center"><object data="calculo_momentos_inercia_8.svg"
+type="image/svg+xml" width="350" height="265"></object></p>
+
+<p align="center">$\begin{array}{l} I_x = \dfrac{1}{4}MR^2 \\[1ex]
+I_y = \dfrac{1}{4}MR^2 \\[1ex] I_z = \dfrac{1}{2}MR^2 \end{array}$</p>
+
+<p>Puede observarse que:</p>
+
+<p align="center">$I_z = \dfrac{1}{2}MR^2 = \dfrac{1}{4}MR^2 + \dfrac{1}{4}MR^2
+= I_x + I_y$</p>
+
+<p>Que $I_z$ sea igual a $I_x + I _y$ es un resultado general en
+sistemas bidimensionales contenidos en el plano $z = 0$. Se
+conoce como el teorema de la figura plana o del eje perpendicular:</p>
+
+<p align="center">$\left.\begin{aligned} &amp;I_z = \sigma \int_S
+r^2 dS = \sigma \int_S \left( x^2 + y^2 \right) dS \\[1ex] &amp;I_x
+= \sigma \int_S y^2 dS \\[1ex] &amp;I_y = \sigma \int_S x^2 dS \end{aligned}
+\ \right\} \Rightarrow \ I_z = I_x + I_y$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../dinamica_movimiento_rotacion/dinamica_movimiento_rotacion.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../teorema_steiner/teorema_steiner.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Coordenadas polares">
+<meta name="keywords" content="coordenadas, polares">
+<title>Coordenadas polares</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Coordenadas polares</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se plantea una interacción que tiene lugar a través de una
+fuerza que sólo depende de la distancia al origen y que tiene la
+dirección del vector de posición:</p>
+
+<p align="center">$\vec{F}(\vec{r}) = F(r) \dfrac{\vec{r}}{r} = F(r) \,
+\vec{n}$</p>
+
+<p align="center"><object data="coordenadas_polares_1.svg" width="200"
+height="200" type="image/svg+xml"></object></p>
+
+<p>Según su sentido:</p>
+
+<blockquote>
+    <p>$F(r) &gt; 0 \Rightarrow$ Repulsión.</p>
+    <p>$F(r) &lt; 0 \Rightarrow$ Atracción.</p>
+</blockquote>
+
+<p>En este tipo de fuerza, llamada fuerza central, que es
+conservativa, existe una función potencial tal que:</p>
+
+<p align="center">$\displaystyle V(\vec{r}) = V(r) = - 
+\int_{r_{\scriptstyle s}}^r \! F(r) \, dr$</p>
+
+<p>Donde $\vec{r}_{s}$ es un punto fijo de referencia.</p>
+
+<p>Ejemplos de dos partículas que interaccionan a través de una
+fuerza central:</p>
+
+<center>
+<table style="padding-bottom:1em">
+    <tr>
+        <td>$F(r) = -G \dfrac{m_1 m_2}{r^2}$ &emsp;</td>
+        <td><object data="coordenadas_polares_2.svg" width="140"
+        height="140" type="image/svg+xml"></object></td>
+        <td>&emsp; Atractiva.</td>
+    </tr>
+</table>
+</center>
+
+<center>
+<table style="padding-top:1em">
+    <tr>
+        <td><object data="coordenadas_polares_3.svg" type="image/svg+xml"
+        width="188" height="188"></object></td>
+        <td style="vertical-align:middle">$F(r) = \pm k 
+        \dfrac{\lvert q_1 q_2 \rvert}{r^2} \ \left\{\begin{array}{l} 
+        q_1 q_2 &gt; 0 \Rightarrow + \\[1ex] q_1 q_2 &lt; 0 \Rightarrow 
+        -\end{array}\right. \quad$</td>
+        <td style="vertical-align:middle">Atractiva o repulsiva.</td>
+    </tr>
+</table>
+</center>
+
+<p>El interés está en el estudio de su movimiento relativo, que es 
+análogo al problema de una partícula de masa reducida $\mu$ sometida a 
+una fuerza central con origen en la otra partícula. Se puede describir 
+como un movimiento en el plano. Esto es, siendo que la variación 
+respecto al tiempo del momento angular $\vec{L}$ es igual al momento 
+$\vec{N}$ de la fuerza:</p>
+
+<p align="center">$\dfrac{d\vec{L}}{dt} = \vec{N}$</p>
+
+<p>Siendo aquí, para una fuerza central:</p>
+
+<p align="center">$\vec{N} = \vec{r} \times \vec{F} = 
+\underbrace{\left( \vec{r} \times \vec{n} \right)}_{\displaystyle 
+\begin{gathered} \hphantom{0} = 0 \\ \left( \vec{r} \parallel \vec{n} 
+\right) \end{gathered}} F(r) = 0$</p>
+
+<p>Esto quiere decir que:</p>
+
+<p align="center">$\dfrac{d\vec{L}}{dt} = 0 \ \Rightarrow
+\ \vec{L} =$ cte.</p>
+
+<p>Siendo:</p>
+
+<p align="center">$\vec{L} = m \left( \vec{r} \times \vec{v} \right) \, 
+\Rightarrow \ \vec{L} \perp \vec{r}, \vec{v}$</p>
+
+<p>Como $\vec{L}$ es un vector perpendicular a $\vec{r}$ y $\vec{v}$, 
+si $\vec{L}$ es constante el movimiento tiene lugar sobre un plano 
+fijo.</p>
+
+<p>Describir este tipo de movimiento es más fácil utilizando
+coordenadas polares.</p>
+
+<p><u>Coordenadas polares</u>:</p>
+
+<p align="center"><object data="coordenadas_polares_4.svg" width="200"
+height="190" type="image/svg+xml"></object></p>
+
+<p align="center">$\begin{array}{c} \vec{r} = x \, \vec{i} + y \, 
+\vec{j} \\[1ex] x = r \cos\theta \\[1ex] y = r \sin\theta \\[1ex] r = 
+\left( x^2 + y^2 \right)^{1/2} \\[1ex] \theta = \arctan \dfrac{y}{x} = 
+\arcsin \dfrac{y}{\left( x^2 + y^2 \right)^{1/2}} = \arccos 
+\dfrac{x}{\left( x^2 + y^2 \right)^{1/2}} \end{array}$</p>
+
+<p>Se introducen un par de vectores ortonormales, i.e.
+perpendiculares y unitarios, en las direcciones crecientes de $r$
+y $\theta$ respectivamente:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="coordenadas_polares_5.svg" type="image/svg+xml"
+        width="200" height="190"></object></td>
+        <td style="padding-left:1em">$\vec{n} \ \to \ r$ creciente.<p 
+        style="margin-bottom:0em">$\vec{l} \ \to \ \theta$ 
+        creciente.</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>Ambos dependen del ángulo $\theta$, siendo su relación con
+los vectores unitarios $\vec{i}$ y $\vec{j}$:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="coordenadas_polares_6.svg" type="image/svg+xml"
+        width="150" height="100"></object></td>
+        <td>&emsp;$\begin{array}{l} \vec{n} = \vec{i} \cos\theta + 
+        \vec{j} \sin\theta \\[1ex] \vec{l} = - \vec{i} \sin\theta + 
+        \vec{j} \cos\theta \end{array}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Por tanto, un vector $\vec{A}$ en coordenadas polares se expresa 
+como:</p>
+
+<p align="center">$\vec{A} = A_r \, \vec{n} + A_\theta \, \vec{l}$</p>
+
+<p>Donde $A_r$ y $A_\theta$ son sus componentes.</p>
+
+<p>Derivando respecto a $\theta$:</p>
+
+<p align="center">$\begin{array}{l} \dfrac{d\vec{n}}{d\theta} = - 
+\vec{i} \sin\theta + \vec{j} \cos\theta = \vec{l} \\[1ex] 
+\dfrac{d\vec{l}}{d\theta} = - \vec{i} \cos\theta - \vec{j} \sin\theta = 
+- \vec{n} \end{array}$</p>
+
+<p>Gráficamente:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="coordenadas_polares_7.svg" type="image/svg+xml"
+        width="225" height="100"></object></td>
+        <td>$\enspace d\theta \to 0 \Rightarrow \left\{ 
+        \begin{array}{l} d\vec{n} \perp \vec{n} \Rightarrow d\vec{n} 
+        \parallel \vec{l},\, \smash[t]{\dfrac{d\vec{n}}{\vec{l}}} &gt; 
+        0 \ \ (+) \\[1ex] d\vec{l} \perp \vec{l} \Rightarrow d\vec{l} 
+        \parallel \vec{n},\, \smash[b]{\dfrac{d\vec{l}}{\vec{n}}} &lt; 
+        0 \ \ (-) \end{array} \right. \ (\color{red}{\ast})$</td>
+    </tr>
+</table>
+
+</center>
+
+<p>Como:</p>
+
+<p align="center">$\lvert \vec{n} \rvert = \lvert \vec{l} \rvert = 1 
+\Rightarrow \! \left\{ \begin{array}{l} \lvert d\vec{n} \rvert = 1 \!
+\cdot d\theta \\[1ex] \lvert d\vec{l} \rvert = 1 \! \cdot d\theta 
+\end{array} \right. 
+\underset{\displaystyle\color{red}{\ast}}{\Rightarrow} \left\{ 
+\begin{array}{l} d\vec{n} = \lvert d\vec{n} \rvert \cdot \vec{l} = 
+\vec{l} \, d\theta \Rightarrow \smash[t]{\dfrac{d\vec{n}}{d\theta}} = 
+\vec{l} \\[1ex] d\vec{l} = - \lvert d\vec{l} \rvert \cdot \vec{n} = - 
+\vec{n} \, d\theta \Rightarrow \smash[b]{\dfrac{d\vec{l}}{d\theta}} = - 
+\vec{n} \end{array} \right.$</p>
+
+<p>El vector posición $\vec{r}$ en coordenadas polares:</p>
+
+<p align="center">$\vec{r} = r(t) \, \vec{n}(\theta(t))$</p>
+
+<p>La velocidad:</p>
+
+<p align="center">$\vec{v} = \dfrac{d\vec{r}}{dt} = 
+\underbrace{\dfrac{dr}{dt}}_{\displaystyle \dot{r}} \vec{n} + r 
+\underbrace{\dfrac{d\vec{n}}{d\theta}}_{\displaystyle\vec{l}} \, 
+\underbrace{\dfrac{d\theta}{dt}}_{\displaystyle \vphantom{\vec{l}} 
+\dot{\phantom{\theta}}\llap{\theta\;\!}} = \dot{r} \, \vec{n} + 
+r \;\! \rlap{\;\!\dot{\phantom{\theta}}}\theta \, \vec{l}$</p>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>$v_r = \dot{r} \ \leftarrow$ Componente radial de la
+    velocidad.</p>
+		<p>$v_{\theta} = r \;\! \rlap{\;\!\dot{\phantom{\theta}}}\theta \ 
+		\leftarrow$ Componente angular de la velocidad.</p>
+</blockquote>
+
+<p>La aceleración:</p>
+
+<p align="center">$\begin{align} \vec{a} = \dfrac{d\vec{v}}{dt} &amp;= 
+\ddot{r} \, \vec{n} + \dot{r} 
+\underbrace{\dfrac{d\vec{n}}{d\theta}}_{\displaystyle \vec{l}} \, 
+\underbrace{\dfrac{d\theta}{dt}}_{\displaystyle \vphantom{\vec{l}} 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta \;\!} + \dot{r} \, 
+\dot{\phantom{\theta}\llap{\theta\;\!}} \, \vec{l} + r \Biggl[ 
+\ddot{\phantom{\theta}}\llap{\theta\;\!} \, \vec{l} + 
+\dot{\phantom{\theta}}\llap{\theta\;\!} \! 
+\underbrace{\dfrac{d\vec{l}}{d\theta}}_{\displaystyle 
+-\vec{n}\hphantom{-}} \underbrace{\dfrac{d\theta}{dt}}_{\displaystyle 
+\vphantom{-\vec{n}} \dot{\phantom{\theta}}\llap{\theta\;\!}} \Biggr] = 
+\\[1ex] &amp;= \left( \ddot{r} - r \, 
+\dot{\phantom{\theta}}\llap{\theta\;\!}^2 \right) \vec{n} + \left( r \, 
+\ddot{\phantom{\theta}}\llap{\theta\;\!} + 2 \dot{r} \;\! 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta \;\! \right) \vec{l} 
+\end{align}$</p>
+
+<p>Así que:</p>
+
+<blockquote>
+    <p>$a_r = \ddot{r} - r \, \dot{\phantom{\theta}}\llap{\theta\;\!}^2
+    \ \leftarrow$ Componente radial de la aceleración.</p>
+		<p>$a_{\theta} = r \, \ddot{\phantom{\theta}}\llap{\theta\;\!} + 2 
+		\dot{r} \, \dot{\phantom{\theta}}\llap{\theta\;\!} \ \leftarrow$ 
+		Componente angular de la aceleración.</p>
+</blockquote>
+
+<p>Aplicado, por ejemplo, al movimiento circular uniforme:</p>
+
+<p align="center">$\left. \begin{array}{l} r = \smash{\text{cte.}} \ 
+\Rightarrow \ \dot{r} = \ddot{r} = 0 \\[1ex] 
+\dot{\phantom{\theta}}\llap{\theta\;\!} = \omega = 
+\smash{\text{cte.$'$}} \Rightarrow \ 
+\ddot{\phantom{\theta}}\llap{\theta\;\!} = 0 \end{array} \right\} 
+\Rightarrow \left\{ \begin{array}{l} v_{\theta} = r \omega,\, v_r = 0 
+\\[1ex] a_r = - r \omega^2 = - v_{\theta} \omega = - 
+\smash{\dfrac{v_{\theta}^2}{r}},\, a_{\theta} = 0 \end{array} 
+\right.$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../choques/choques.html" title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../ecuaciones_movimiento_fuerza_central_integrales_primeras/ecuaciones_movimiento_fuerza_central_integrales_primeras.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

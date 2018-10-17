@@ -1,0 +1,652 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js","extpfeil.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Choques">
+<meta name="keywords" content="choques">
+<title>Choques</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Choques</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Colisión de dos partículas, $k=1,2$, con las siguientes
+condiciones:</p>
+
+<ol>
+    <li>$\vec{F}{}_k^e = 0$</li>
+    <li>$\vec{F}{}_k^i (\vec{r}) = 0 \ \Leftrightarrow \ r &gt; R_0$,<br>
+        $\vec{r}$: vector de posición relativa entre $1$ y $2$,<br>
+        $R_0$: tamaño región de interacción.</li>
+</ol>
+
+<p>Esto quiere decir que justo antes y después del choque no actúa 
+ninguna fuerza,<br>($E_p = 0$). Sólo actúan fuerzas en el momento del 
+choque.</p>
+
+<p align="center"><object data="choques_1.svg" type="image/svg+xml"
+width="300" height="300"></object></p>
+
+<p>Las velocidades antes y después del choque, debido a la
+ausencia de fuerzas, son constantes.</p>
+
+<p>Como no actúan fuerzas externas:</p>
+
+<p align="center">$\boxed{\dfrac{d\vec{P}}{dt} = \vec{F}{}^e
+= 0 \ \Rightarrow \ \vec{P} = \text{cte.}}$</p>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>$\vec{P}$, cantidad de movimiento total.</p>
+    <p>$\vec{F}{}^e$, fuerza externa total.</p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<p align="center">$m_1 \vec{v}_{1i} + m_2 \vec{v}_{2i} = m_1 
+\vec{v}_{1f} + m_2 \vec{v}_{2f}$</p>
+
+<p>Si la energía cinética también se conserva el choque es
+elástico:</p>
+
+<p align="center">$E_{\text{cin},i} = E_{\text{cin},f} = E_{\text{total}}$</p>
+
+<p>Toda variación de energía sólo se produce durante el choque.
+Así que las fuerzas que actúan durante el mismo han de ser
+conservativas para que éste sea elástico. Si actúan fuerzas
+disipativas (no conservativas) mientras se produce la colisión,
+entonces $E_{\text{cin},i} &gt; E_{\text{cin},f}$, y el choque es
+inelástico. En un choque completamente inelástico las
+partículas tras el choque permancen juntas:</p>
+
+<p align="center">$\vec{v}_{1f} = \vec{v}_{2f}
+= \vec{v}_{\scriptsize\text{CM}}$</p>
+
+<p>La energía cinética:</p>
+
+<p align="center">$\begin{align} E_{\text{cin}} &amp;= \dfrac{1}{2}
+m_1 v_1^2 + \dfrac{1}{2} m_2 v_2^2 = \\[1ex] &amp;= \dfrac{1}{2}
+M v_{\scriptsize\text{CM}}^2 + \dfrac{1}{2} \mu v^2 \end{align}$</p>
+
+<p>Donde:</p>
+
+<blockquote>
+    <p>$v_{\scriptsize\text{CM}}$, velocidad del centro de masas.</p>
+    <p>$v$, velocidad relativa.</p>
+    <p>$M = m_1 + m_2$, masa total.</p>
+    <p>$\mu = \dfrac{m_1 m_2}{m_1 + m_2}$, masa reducida.</p>
+</blockquote>
+
+<p>Como la cantidad de movimiento es constante:</p>
+
+<p align="center">$\vec{P} = m_1 \vec{v}_1
++ m_2 \vec{v}_2 = M \vec{v}_{\scriptsize\text{CM}}
+= \text{cte.} \ \Rightarrow \ \vec{v}_{\scriptsize\text{CM}}
+= \text{cte.}{}'$</p>
+
+<p>Siendo entonces:</p>
+
+<p align="center">$\dfrac{1}{2} M v_{\scriptsize\text{CM}}^2 = \text{cte.}{}''$</p>
+
+<p>Así pues lo máximo que puede variar la energía mecánica:</p>
+
+<p align="center">$\Delta E_{\text{max}} = - \dfrac{1}{2} \mu v_i^2$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\begin{array}{l} \begin{split} E_{\text{cin},i}
+&amp;= \dfrac{1}{2} M v_{\scriptsize\text{CM}}^2 + \dfrac{1}{2} \mu
+v_i^2 = \\[1ex] &amp;= \dfrac{1}{2} M v_{\scriptsize\text{CM}}^2
++ \dfrac{1}{2} \mu \left|\vec{v}_{1i} - \vec{v}_{2i}
+\right|^2 = \\[1ex] &amp;= \dfrac{1}{2} M v_{\scriptsize\text{CM}}^2
++ \dfrac{1}{2} \mu \left|\vec{v}_{2i} - \vec{v}_{1i}
+\right|^2 \end{split} \\[1em] \begin{split} E_{\text{cin},f} = \dfrac{1}{2}
+M v_{\scriptsize\text{CM}}^2 \end{split} \end{array}$</p>
+
+<p>Éste es el caso del choque completamente inelástico, en el
+que se disipa el máximo de energía.</p>
+
+<p><u>Choques en una dimensión</u>:</p>
+
+<p>Ambas partículas puntuales se desplazan sobre una misma
+línea:</p>
+
+<p align="center"><object data="choques_2.svg" type="image/svg+xml"
+width="200" height="90"></object></p>
+
+<p align="center">$\boxed{v_{2i} &lt; v_{1i}}$</p>
+
+<p>$\color{red}{\bullet}$ Si el choque es elástico:</p>
+
+<p align="center">$\left\{\begin{array}{l} m_1 v_{1i} + m_2 v_{2i}
+= m_1 v_{1f} + m_2 v_{2f} \\[1ex] \dfrac{1}{2} m_1 v_{1i}^2 + \dfrac{1}{2}
+m_2 v_{2i}^2 = \dfrac{1}{2} m_1 v_{1f}^2 + \dfrac{1}{2} m_2 v_{2f}^2
+\end{array}\right.$</p>
+
+<p>Datos:</p>
+
+<blockquote>
+    <p>$m_1, m_2, v_{1i}\;\!, v_{2i}$</p>
+</blockquote>
+
+<p>Incognitas:</p>
+
+<blockquote>
+    <p>$v_{1f}, v_{2f}$</p>
+</blockquote>
+
+<p>De la primera ecuación del anterior sistema de ecuaciones:</p>
+
+<p align="center">$m_1 \left(v_{1i} - v_{1f} \right) = m_2 \left(
+v_{2f} - v_{2i} \right)$</p>
+
+<p>De la segunda ecuación, y teniendo en cuenta esta última
+igualdad:</p>
+
+<p align="center">$\begin{array}{c} \begin{split}
+m_1 \left(v_{1i}^2 - v_{1f}^2 \right) &amp;= m_2 \left( v_{2f}^2
+- v_{2i}^2 \right) \\[1ex] \cancel{m_1 \left( v_{1i} - v_{1f} \right)} \!
+\left( v_{1i} + v_{1f} \right) &amp;= \cancel{m_2 \left( v_{2f} -
+v_{2i} \right)} \! \left( v_{2f} + v_{2i} \right) \\[1ex] v_{1i} + v_{1f}
+&amp;= v_{2f} + v_{2i} \\[1ex] \underbrace{\vphantom{v_{2f} - v_
+{1f}} v_{2i} - v_{1i}}_{\displaystyle v_{2|1i}} &amp;= - \bigl( \underbrace{
+v_{2f} - v_{1f}}_ {\displaystyle v_ {2|1f}} \bigr) \end{split} \\[1ex]
+\quad\negthickspace \boxed{v_{2|1i} = - v_ {2|1f}} \end{array}$</p>
+
+<p>Donde $v_{2|1i}$ y $v_{2|1f}$, de igual valor absoluto pero
+con distinto signo, son, respectivamente, las velocidades
+relativas de $2$ respecto de $1$ antes y después del choque.
+Puede escribirse también como que:</p>
+
+<p align="center">$v_{1|2i} = - v_{1|2f}$</p>
+
+<p>O simplemente:</p>
+
+<p align="center">$\boxed{v_i = - v_f}$</p>
+
+<p>Por tanto, las velocidades relativas $v_i$ y $v_f$, de una
+partícula respecto a la otra, antes y después de la colisión,
+son iguales pero con el signo cambiado.</p>
+
+<p>También la última relación puede deducirse escribiendo la
+energía cinética, que se conserva, en función de la velocidad
+del centro de masas, que no cambia, y la velocidad relativa:</p>
+
+<p align="center">$\begin{align} \bcancel{\dfrac{1}{2} M 
+v_{\scriptsize\text{CM}}^2} \! + \! \bcancel{\dfrac{1}{2} \mu} \! v_i^2 
+&amp;= \! \bcancel{\dfrac{1}{2} M v_{\scriptsize\text{CM}}^2} \! + \! 
+\bcancel{\dfrac{1}{2} \mu} \! v_f^2 \\[1ex] v_i^2 = v_f^2 \ 
+&amp;\Rightarrow \ \lvert v_i \rvert = \lvert v_f \rvert 
+\end{align}$</p>
+
+<p>Como antes de la colisión las particulas se acercan y luego
+de la misma se alejan, se produce un cambio de signo de la
+velocidad relativa, y por tanto:</p>
+
+<p align="center">$\left. \begin{array}{l} v_i &gt; 0 \Rightarrow
+v_f &lt; 0 \\[1ex] v_i &lt; 0 \Rightarrow v_f &gt; 0 \\[1ex] \lvert
+v_i \rvert = \lvert v_f \rvert \end{array} \ \right\} \Leftrightarrow
+v_i = - v_f$</p>
+
+<p>Puede, entonces, en notación matricial, escribirse el
+siguiente sistema de ecuaciones lineales:</p>
+
+<p align="center">$\begin{pmatrix} m_1 &amp; m_2 \\ 1 &amp; -1 \end{pmatrix}
+\begin{pmatrix} v_{1f} \\ v_{2f} \end{pmatrix} = \begin{pmatrix}
+m_1 v_{1i} + m_2 v_{2i} \\ v_{2i} - v_{1i} \end{pmatrix}$</p>
+
+<p>Resolviendo por el método de Cramer:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} v_{1f} = \dfrac{\begin{vmatrix}
+m_1 v_{1i} + m_2 v_{2i} &amp; m_2 \\ v_{2i} - v_{1i} &amp; -1 \end{vmatrix}}{\begin{vmatrix}
+m_1 &amp; m_2 \\ 1 &amp; -1 \end{vmatrix}} &amp;= \dfrac{-\left(
+m_1 v_{1i} + m_2 v_{2i} \right) - m_2 \left( v_{2i} - v_{1i} \right)
+}{ - \left( m_1 + m_2 \right) } = \\[1ex] &amp;= \dfrac{ \left( m_1
+- m_2\right) v_{1i} + 2 m_2 v_{2i} }{ m_1 + m_2 }\end{aligned} \\[1em]
+\begin{aligned} v_{2f} = \dfrac{\begin{vmatrix} m_1 &amp; m_1 v_{1i}
++ m_2 v_{2i} \\ 1&amp; v_{2i} - v_{1i} \end{vmatrix}}{\begin{vmatrix}
+m_1 &amp; m_2 \\ 1 &amp; -1 \end{vmatrix}} &amp;= \dfrac{ m_1 \left(
+v_{2i} - v_{1i} \right) - \left( m_1 v_{1i} + m_2 v_{2i} \right)
+}{ - \left( m_1 + m_2 \right) } = \\[1ex] &amp;= \dfrac{ 2 m_1 v_{1i}
++ \left( m_2 - m_1 \right) v_{2i} }{ m_1 + m_2 } \end{aligned} \end{array}$</p>
+
+<p>Casos:</p>
+
+<ul>
+    <li>$\dfrac{m_2}{m_1} \to 0 \ \Rightarrow \left\{ \begin{array}{l}
+        v_{1f} \simeq v_{1i} \\[1ex] v_{2f} \simeq 2v_{1i} - v_{2i}
+        \end{array} \right.$</li>
+    <li>$m_1 = m_2 \ \Rightarrow \left\{ \begin{array}{l} v_{1f}
+        = v_{2i} \\[1ex] v_{2f} = v_{1i} \end{array} \right.$</li>
+</ul>
+
+<p>Lo visto hasta ahora se basa en un sistema de referencia de un
+observador externo. Para el sistema de referencia del centro de
+masas, por tanto con origen en éste, que cuando no existen
+fuerzas externas se mueve con velocidad constante (sistema de
+referencia inercial), la velocidad $u$ de cada partícula:</p>
+
+<p align="center">$\begin{array}{l} u_1 = v_1 - v_{\scriptsize\text{CM}}
+\\[1ex] u_2 = v_2 - v_{\scriptsize\text{CM}} \end{array}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$ v_{\scriptsize\text{CM}} = \dfrac{m_1 v_1 + m_2
+v_2}{m_1 + m_2}$</p>
+
+<p>En el sistema de referencia del centro de masas la cantidad de
+movimiento total:</p>
+
+<p align="center">$P' = P{}_{1}' + P{}_{2}' = m_1 u_1 + m_2 u_2 = (m_1
++ m_2) \underbrace{u_{\scriptsize\text{CM}}}_ {\hphantom{0 \,} =
+\, 0} \! = 0$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$P{}_{1}' = - P{}_{2}' \ \Rightarrow \ P{}_{1}'{}^2 =
+P{}_{2}'{}^2$</p>
+
+<p>La energía cinética inicial, antes del choque:</p>
+
+<p align="center">$E_{\smash[t]{\text{cin}},i}' = \dfrac{1}{2} m_1 
+u_{1i}^2 + \dfrac{1}{2} m_2 u_{2i}^2 = \dfrac{P{}_{1i}'{}^2}{2m_1} + 
+\dfrac{P{}_{2i}'{}^2}{2m_2} = \dfrac{1}{2} P{}_{1i}'{}^2 \! 
+\left[\dfrac{1}{m_1} + \dfrac{1}{m_2} \right]$</p>
+
+<p>La energía cinética final, tras el choque:</p>
+
+<p align="center">$E_{\smash[t]{\text{cin}},f}' = \dfrac{1}{2} 
+P{}_{1f}'{}^2 \! \left[ \dfrac{1}{m_1} + \dfrac{1}{m_2} \right]$</p>
+
+<p>Al ser un choque elástico:</p>
+
+<p align="center">$E_{\smash[t]{\text{cin}},i}' = 
+E_{\smash[t]{\text{cin}},f}'$</p>
+
+<p>Así que:</p>
+
+<p align="center">$P{}_{1i}'{}^2 = P{}_{1f}'{}^2 \ \Rightarrow \left\{
+\begin{array}{l} P{}_{1f}' = P{}_{1i}' \ \Rightarrow \ u_{1f} = u_{1i}
+\enspace \text{(No hay choque).} \\[1ex] P{}_{1f}' = - P{}_{1i} ' \ \Rightarrow
+\ \boxed{u_{1f} = -u_{1i}} \end{array} \right.$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$
+\def\rarrow#1#2{
+	\stackrel{#1}{
+		\underset{#2}{
+			\Rule{0pt}{0.4em}{0pt}
+			\smash{
+				\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+			}
+		} 
+	}
+}
+P{}_{1i}' = -P{}_{2i}' \rarrow{}{\large P{}_{1i}' \, = \, -P{}_{1f}'} 
+-P{}_{1f}' = -P{}_{2i}' \rarrow{}{\large -P{}_{1f}' \, = \, P{}_{2f}'} 
+P{}_{2f}' = -P{}_{2i}' \!\ \Rightarrow \!\ \boxed{u_{2f}' = 
+-u_{2i}'}$</p>
+
+<p>$\color{red}{\bullet}$ Si el choque es completamente
+inelástico:</p>
+
+<p>En un choque completamente inelástico las partículas al
+colisionar quedan unidas, por lo que la velocidad relativa tras
+el choque, $v_f$, es cero. Entonces, aplicando la conservación
+de la cantidad de movimiento:</p>
+
+<p align="center">$v_f = 0 \ \Rightarrow \ v_{1f} = v_{2f} = \dfrac{m_1
+v_{1i} + m_2 v_{2i}}{m_1 + m_2} = \dfrac{P}{M} = v_{\scriptsize\text{CM}}$</p>
+
+<p><u>Choques en más de una dimensión</u>:</p>
+
+<p>Un choque elástico de dos partículas en el espacio cumple
+que:</p>
+
+<p align="center">$\begin{array}{c} m_1 \vec{v}_{1i} +
+m_2 \vec{v}_{2i} = m_1 \vec{v}_{1f} + m_2 \vec{v}_{2f}
+\!\ \rightarrow \left\{ \begin{array}{l} m_1 v_{1i,x} + m_2 v_{2i,x}
+= m_1 v_{1f,x} + m_2 v_{2f,x} \\[1ex]m_1 v_{1i,y} + m_2 v_{2i,y}
+= m_1 v_{1f,y} + m_2 v_{2f,y} \\[1ex] m_1 v_{1i,z} + m_2 v_{2i,z}
+= m_1 v_{1f,z} + m_2 v_{2f,z} \end{array}\right. \\[1em] \dfrac{1}{2}
+m_1 v_{1i}^2 + \dfrac{1}{2} m_2 v_{2i}^2 = \dfrac{1}{2} m_1 v_{1f}^2
++ \dfrac{1}{2} m_2 v_{2f}^2 \end{array}$</p>
+
+<p>Son cuatro ecuaciones y seis incognitas ($v_{1f,x}, v_{1f,y},
+v_{1f,z}, v_{2f,x}, v_{2f,y}, v_{2f,z}$). A priori, no es
+resoluble.</p>
+
+<p>Si se escoge un sistema de referencia tal que:</p>
+
+<ul>
+    <li>$\vec{v}_{2i} = 0 \Rightarrow$ Sistema de
+        coordenadas con origen situado en $2$ antes del choque.</li>
+    <li>$\vec{v}_{1i} \parallel \vec{i} \Rightarrow$
+        Eje $x$ paralelo a la dirección del movimiento de $1$
+        antes del choque.</li>
+    <li>$\left. \begin{array}{l} \vec{v}_{1f} \perp \vec{k}
+        \\[1ex] \vec{v}_{2f} \perp \vec{k}
+        \end{array} \right\} \Rightarrow$ $1$ y $2$ se mueven en
+        el plano $xy$.</li>
+</ul>
+
+<p>Para partículas puntuales, gráficamente:</p>
+
+<p align="center"><object data="choques_3.svg" type="image/svg+xml"
+width="300" height="250"></object></p>
+
+<p>Siendo el choque oblicuo, y no frontal o directo (unidimensional).
+Los vectores velocidad, a diferencia del choque en una dimensión,
+no están situados sobre una misma línea.</p>
+
+<p>Donde ahora, las ecuaciones de conservación de la cantidad de
+movimiento, descompuesta en sus componentes, y de la energía
+cinética son:</p>
+
+<p align="center">$\begin{array}{l} m_1 v_{1i,x} = m_1 v_{1f,x} +
+m_2 v_{2f,x} \\[1ex] 0 = m_1 v_{1f,y} + m_2 v_{2f,y} \\[1ex] \dfrac{1}{2}
+m_1 v_{1x,i}^2 = \dfrac{1}{2} m_1 \! \left(v_{1f,x}^2 + v_{1f,y}^2 \right)
++ \dfrac{1}{2} m_2 \! \left(v_{2f,x}^2 + v_{2f,y}^2 \right) \end{array}$</p>
+
+<p>Son tres ecuaciones y cuatro incógnitas, i.e. ya sean las
+cuatro componentes $v_{1f,x}, v_{1f,y}, v_{2f,x}, v_{2f,y}$ o
+bien, desde las cuales pueden calcularse, las magnitudes $v_{1f},
+v_{2f}$ y sus direcciones $\varphi, \theta$. Por tanto, falta
+aún un dato. Conociendo, por ejemplo, la dirección ($\theta$ o
+$\varphi$) que toma tras el choque una de las partículas sería
+resoluble.</p>
+
+<p>En caso de que el choque sea entre esferas homogéneas:</p>
+
+<p align="center"><object data="choques_4.svg" type="image/svg+xml"
+width="420" height="300"></object></p>
+
+<p align="center">$\boxed{\sin\theta = \dfrac{b}{R_1 + R_2}}$</p>
+
+<p>Las fuerzas que se realizan las esferas entre sí, iguales
+pero de sentido contrario, se suponen normales a la superficie y
+actuando en la línea que une sus centros. Por tanto $2$,
+inicialmente en reposo, al ser impactada se desplaza en la
+dirección de esta línea, su movimiento tras el choque es a lo
+largo de ella. Conociendo $b$, llamado parámetro de impacto, y
+los radios, $R_1$ y $R_2$, puede calcularse esta dirección, $\theta$.
+Si $b = 0$ entonces el choque es frontal o directo (en una
+dimensión). Si $b &gt; \left( R_1 + R_2 \right)$, no colisionan.</p>
+
+<p>Si $1$ y $2$ tienen la misma masa, $m_1 \! = m_2$, las ecuaciones
+de conservación:</p>
+
+<p align="center">$\begin{array}{l} v_{1i,x} = v_{1f,x} + v_{2f,x}
+\\[1ex] 0 = v_{1f,y} + v_{2f,y} \\[1ex] v_{1i,x}^2 = v_{1f,x}^2 +
+v_{1f,y}^2 + v_{2f,x}^2 + v_{2f,y}^2 \end{array}$</p>
+
+<p>Si se elevan al cuadrado las dos primeras igualdades
+anteriores y luego se suman:</p>
+
+<p align="center">$v_{1i,x}^2 = v_{1f,x}^2 + v_{2f,x}^2 + 2 v_{1f,x}
+v_{2f,x} + v_{1f,y}^2 + v_{2f,y}^2 + 2 v_{1f,y} v_{2f,y}$</p>
+
+<p>Por tanto, teniendo en cuenta la ecuación de conservación de
+la energía cinética, es condición que:</p>
+
+<p align="center">$\begin{align} 2 v_{1f,x} v_{2f,x} + 2 v_{1f,y}
+v_{2f,y} = 0 \ &amp;\Rightarrow \ 2 \left( \vec{v}_{1f}
+\cdot \vec{v}_{2f} \right) = 0 \\[1ex] &amp;\Rightarrow
+\ \vec{v}_{1f} \cdot \vec{v}_{2f} = 0 \end{align}$</p>
+
+<p>Que se satisface si:</p>
+
+<ul>
+    <li>$\vec{v}_{1f} = 0 \ \Rightarrow \,$ Choque
+        frontal, i.e. unidimensional.</li>
+    <li>$\vec{v}_{2f} = 0 \ \Rightarrow \,$ No hay
+        choque.</li>
+    <li>$\boxed{\vec{v}_{1f} \perp \vec{v}_{2f}
+        \ \Rightarrow \ \theta + \varphi = \dfrac{\pi}{2}}$</li>
+</ul>
+
+<p>Así que, cuando $m_1 \! = m_2$:</p>
+
+<p align="center">$\begin{array}{l} \cos\varphi = \cos\left( \dfrac{\pi}{2}
+- \theta \right) = \sin\theta \\[1ex] \sin\varphi = \sin \left( \dfrac{\pi}{2}
+- \theta \right) = \cos\theta \end{array}$</p>
+
+<p>Entonces, en este caso particular, las ecuaciones de
+conservación de la cantidad de movimiento:</p>
+
+<p align="center">$\begin{array}{l} v_{1i,x} = v_{1f} \sin\theta
++ v_{2f} \cos\theta \\[1ex] 0 = v_{1f} \cos\theta - v_{2f} \sin\theta
+\end{array}$</p>
+
+<p>Si, además del dato inicial $v_{1x,i}$, se conoce $\theta$,
+es un sistema resoluble de dos ecuaciones y dos incógnitas.</p>
+
+<p>Dividiendo la primera por $\sin\theta$ y la segunda por $\cos\theta$:</p>
+
+<p align="center">$\begin{array}{l} \dfrac{v_{1i,x}}{\sin\theta}
+= v_{1f} + \dfrac{v_{2f} \cos\theta}{\sin\theta} \\[1ex] 0 = v_{1f}
+- \dfrac{v_{2f} \sin\theta}{\cos\theta} \end{array}$</p>
+
+<p>Restando a la primera la segunda:</p>
+
+<p align="center">$\dfrac{v_{1i,x}}{\sin\theta} = \dfrac{v_{2f} 
+\cos\theta}{\sin\theta} + \dfrac{v_{2f} \sin\theta}{\cos\theta} = 
+v_{2f} \left( \dfrac{\cos^2\theta + \sin^2\theta}{\sin\theta 
+\cos\theta} \right) = \dfrac{v_{2f}}{\sin\theta \cos\theta}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\boxed{v_{2f}= v_{1x,i} \cos\theta = v_{1i} 
+\cos\theta}$</p>
+
+<p>Así pues, también:</p>
+
+<p align="center">$0 = v_{1f} \! \cancel{\cos\theta} \! - v_{1i} \:\!\! 
+\cancel{\cos\theta} \;\!\!\! \sin\theta \ \Rightarrow \ \boxed{v_{1f} = 
+v_{1i} \sin\theta}$</p>
+
+<p>Para el choque entre dos esferas:</p>
+
+<p align="center">$\begin{array}{l} \sin\theta = \dfrac{b}{R_1 + R_2} 
+\\[1em] \cos\theta = \sqrt{1 - \sin^2\theta} = \\[1ex] 
+\hphantom{\cos\theta} = \sqrt{1 - \left( \dfrac{b}{R_1 + R_2} 
+\right)^2} \end{array}$</p>
+
+<p>Así que, si ambas esferas tienen igual masa:</p>
+
+<p align="center">$\begin{array}{l} v_{1f} = v_{1i} \dfrac{b}{R_1
++ R_2} \\[1em] v_{2f} = v_{1i} \sqrt{1 - \left( \dfrac{b}{R_1 + R_2}
+\right)^2} \end{array}$</p>
+
+<p>En general, para cualesquiera masas $m_1$ y $m_2$, las
+distintas ecuaciones de conservación:</p>
+
+<p align="center">$\begin{array}{l} m_1 v_{1i} = m_1 v_{1f} \cos\varphi 
++ m_2 v_{2f} \cos\theta \\[1ex] 0 = m_1 v_{1f} \sin\varphi - m_2 v_{2f} 
+\sin\theta \\[1ex] \cancel{\dfrac{1}{2}} m_1 v_{1i}^2 = \!
+\cancel{\dfrac{1}{2}} m_1 v_{1f}^2 + \! \cancel{\dfrac{1}{2}} m_2 v_{2f}^2 
+\end{array}$</p>
+
+<p>Conocidos antes del choque los datos $m_1,\, m_2,\, v_{1i} = v_{1i,x}$,
+siendo que $v_{2i} = 0$, y tras el mismo una de las direcciones,
+por ejemplo $\theta$, el sistema de ecuaciones puede resolverse (tres
+ecuaciones y tres incógnitas). Si $\,\alpha = m_1{∕}m_2$,
+y se reescriben las anteriores expresiones:</p>
+
+<p align="center">$\begin{array}{l} \alpha v_{1i} = \alpha v_{1f}
+\cos\varphi + v_{2f} \cos\theta \\[1ex] 0 = \alpha v_{1f} \sin\varphi
+- v_{2f} \sin\theta \\[1ex] \alpha v_{1i}^2 = \alpha v_{1f}^2 + v_{2f}^2
+\end{array}$</p>
+
+<p>Reordenando las ecuaciones anteriores:</p>
+
+<p align="center">$\begin{array}{l} \alpha v_{1f} \cos\varphi = \alpha 
+v_{1i} - v_{2f} \cos\theta \quad \color{blue}{(\ast)}\\[1ex] \alpha 
+v_{1f} \sin\varphi = v_{2f} \sin\theta \quad 
+\color{green}{(\ast)}\\[1ex] \alpha v_{1f}^2 = \alpha v_{1i}^2 - 
+v_{2f}^2 \quad \color{red}{(\ast)}\end{array}$</p>
+
+<p>Elevando al cuadrado las dos primeras:</p>
+
+<p align="center">$\begin{array}{l} \alpha^2 v_{1f}^2 \cos^2\varphi
+= \alpha^2 v_{1i}^2 - 2 \alpha v_{1i} v_{2f} \cos\theta + v_{2f}^2
+\cos^2\theta \\[1ex] \alpha^2 v_{1f}^2 \sin^2\varphi = v_{2f}^2 \sin^2\theta
+\end{array}$</p>
+
+<p>Sumándolas:</p>
+
+<p align="center">$\begin{array}{c} \alpha^2 v_{1f}^2 \bigl( 
+\underbrace{\cos^2\varphi + \sin^2\varphi}_{\displaystyle \hphantom{1} 
+= 1} \bigr) = \alpha^2 v_{1i}^2 - 2 \alpha v_{1i} v_{2f} \cos\theta + 
+v_{2f}^2 \bigl( \underbrace{\cos^2\theta + \sin^2\theta}_{\displaystyle 
+\hphantom{1} = 1} \bigr) \\[1ex] \alpha^2 v_{1f}^2 = \alpha^2 v_{1i}^2 
+- 2 \alpha v_{1i} v_{2f} \cos\theta + v_{2f}^2 \end{array}$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$\alpha^2 v_{1f}^2 = \alpha \Bigl(\underbrace{\alpha
+v_{1f}^2}_{\displaystyle\color{red}{\ast}} \Bigr) = \alpha \left(
+\alpha v_{1i}^2 - v_{2f}^2 \right) = \alpha^2 v_{1i}^2 - \alpha v_{2f}^2$</p>
+
+<p>Por tanto, igualando:</p>
+
+<p align="center">$\begin{array}{c} \cancel{\alpha^2 
+v_{1i}^2} \! - \alpha v_{2f}^\cancel{2} = \! \cancel{\alpha^2 v_{1i}^2} \!
+- 2 \alpha v_{1i} \! \cancel{v_{2f}} \!\cos\theta + v_{2f}^\cancel{2}
+\\[1ex] v_{2f} ( 1 + \alpha ) = 2 \alpha v_{1i} \cos\theta \\[1ex]
+\boxed{v_{2f} = 2 \dfrac{\alpha}{1 + \alpha} v_{1i} \cos\theta} \end{array}$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$v_{1f}^2 = \dfrac{\overbrace{\alpha 
+v_{1f}^2}^{\displaystyle\color{red}{\ast}}}{\alpha} = \dfrac{\alpha 
+v_{1i}^2 - v_{2f}^2}{\alpha} = v_{1i}^2 - \dfrac{v_{2f}^2}{\alpha}$</p>
+
+<p>Entonces sustituyendo $v_{2f}$:</p>
+
+<p align="center">$\begin{array}{c} \begin{split} v_{1f}^2 &amp;= 
+v_{1i}^2 - 4 \dfrac{\alpha}{(1 + \alpha)^2} v_{1i}^2 \cos^2 \theta = 
+\\[1ex] &amp;= v_{1i}^2 \left( 1 - 4 \dfrac{\alpha}{(1 + \alpha)^2} 
+\cos^2 \theta \right) \end{split} \\[1ex] \boxed{v_{1f} = v_{1i} \left( 
+1 - 4 \dfrac{\alpha}{(1 + \alpha)^2} \cos^2 \theta 
+\right)^{1/2}}\end{array}$</p>
+
+<p>Ya sólo falta hallar $\varphi$:</p>
+
+<p align="center">$\begin{align} \tan\varphi
+&amp;= \dfrac{\sin\varphi}{\cos\varphi} = \dfrac{\overbrace{\alpha
+v_{1f} \sin\varphi}^{\displaystyle\color{green}{\ast}}}{\underbrace{\alpha
+v_{1f} \cos\varphi}_{\displaystyle\color{blue}{\ast}}} = \dfrac{v_{2f}
+\sin\theta}{\alpha v_{1i} - v_{2f} \cos\theta} = \\[1ex] &amp;= \dfrac{2
+\dfrac{\alpha}{1 + \alpha} v_{1i} \cos\theta \sin\theta}{\alpha v_{1i}
+- 2 \dfrac{\alpha}{1 + \alpha} v_{1i} \cos^2\theta} = \dfrac{\cancel{\dfrac{\alpha
+v_{1i}}{1 + \alpha}} 2 \cos\theta \sin\theta}{\cancel{\dfrac{\alpha
+v_{1i}}{1 + \alpha}} \left( 1 + \alpha - 2 \cos^2\theta \right)}
+= \\[1ex] &amp;= \dfrac{\sin 2\theta}{\alpha - \cos 2\theta}\end{align}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\boxed{\varphi = \arctan \left( \dfrac{2 \cos\theta
+\sin\theta}{1 + \alpha - 2 \cos^2\theta} \right)= \arctan \left(
+\dfrac{\sin 2\theta}{\alpha - \cos 2\theta} \right)}$</p>
+
+<p>Si $\,\alpha \to 0,\ (m_1 \! \ll m_2)$:</p>
+
+<p align="center">$\begin{align} \alpha \to 0 \ \Rightarrow \ \varphi
+&amp;\simeq \arctan \left( - \dfrac{\sin 2\theta}{\cos 2\theta} \right)
+= \arctan (-\tan 2\theta) = \\[1ex] &amp;= \arctan (\tan(\pi - 2\theta))
+= \pi - 2\theta \end{align}$</p>
+
+<p>Si $\,\alpha = 1,\ (m_1 \! = m_2)$:</p>
+
+<p align="center">$\begin{align} \alpha = 1 \ \Rightarrow \ \varphi 
+&amp;= \arctan \left( \dfrac{2 \cos\theta \sin\theta}{2 - 2 
+\cos^2\theta} \right) = \arctan \left( \dfrac{\cancel{2} \! \cos\theta 
+\sin\theta}{\cancel{2} \! \left( 1 - \cos^2\theta \right)} \right) = 
+\\[1ex] &amp;= \arctan \left( \dfrac{\cos\theta 
+\cancel{\sin\theta}}{\sin^\cancel{2}\!\theta} \right) = \arctan \left( 
+\dfrac{1}{\tan\theta} \right) = \\[1ex] &amp;= \arctan \left( 
+\tan\left( \dfrac{\pi}{2} - \theta \right) \right) = \dfrac{\pi}{2} - 
+\theta \end{align}$</p>
+
+<p>Por tanto, cuando chocan dos partículas iguales:</p>
+
+<p align="center">$m_1 \! = m_2 \ \Rightarrow \ \theta + \varphi = 
+\dfrac{\pi}{2}$</p>
+
+<p>Como, por lo ya visto, cabía esperar.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../problema_dos_cuerpos/problema_dos_cuerpos.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../coordenadas_polares/coordenadas_polares.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

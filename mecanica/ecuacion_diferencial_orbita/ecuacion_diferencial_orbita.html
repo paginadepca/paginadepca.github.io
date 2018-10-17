@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Ecuación diferencial de la órbita">
+<meta name="keywords" content="ecuación, diferencial, órbita">
+<title>Ecuación diferencial de la órbita</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Ecuación diferencial de la órbita</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Puede, visto anteriormente, hallarse $r(t)$ resolviendo la
+siguiente integral:</p>
+
+<p align="center">$\displaystyle {\large\int}_{r_0}^r \dfrac{dr}{\left[
+E - V(r) - \dfrac{L^2}{2mr^2} \right]^{1/\:\!2}} = \sqrt{\dfrac{2}{m}}
+t$</p>
+
+<p>Aunque es difícil. Es más asequible hallar la trayectoria,
+que queda descrita al conocer $r(\theta)$.</p>
+
+<p>Se introduce, con $r = r(\theta)$, el siguiente cambio de
+variable:</p>
+
+<p align="center">$u = \dfrac{1}{r}, \quad r = \dfrac{1}{u}$</p>
+
+<p>Teniendo en cuenta que $L = mr^2 
+\rlap{\mspace{2.5mu}\dot{\phantom{\theta}}}\theta$, y haciendo uso de 
+la regla de la cadena, entonces:</p>
+
+<p align="center">$\begin{array}{l} \dot{r} = \dfrac{d}{dt}\left( 
+\dfrac{1}{u} \right) = \dfrac{d}{du} \left(\dfrac{1}{u}\right) \! 
+\dfrac{du}{dt} = - \underbrace{\dfrac{1}{u^2}}_{\displaystyle r^2} 
+\dfrac{du}{d\theta} \underbrace{\dfrac{d\theta}{dt} 
+\vphantom{\dfrac{1}{u^2}}}_{\displaystyle 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta} = -r^2 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta \dfrac{du}{d\theta} = - 
+\dfrac{L}{m} \dfrac{du}{d\theta} \\[1em] \ddot{r} = 
+\dfrac{d\dot{r}}{dt} = - \dfrac{L}{m} 
+\dfrac{d^2u}{d\theta^2}\underbrace{\dfrac{d\theta}{dt}}_{\displaystyle 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta} = - \dfrac{L 
+\rlap{\;\!\dot{\phantom{\theta}}}\theta}{m} \dfrac{d^2u}{d\theta^2} = - 
+\dfrac{L^2}{m^2 r^2} \dfrac{d^2u}{d\theta^2} = - \dfrac{L^2 u^2}{m^2} 
+\dfrac{d^2u}{d\theta^2} \end{array}$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$m \ddot{r} = F(r) + \dfrac{L^2}{mr^3}$</p>
+
+<p>Igualdad que se obtiene combinando la ecuación del movimiento
+en la dirección radial más la integral primera $L$.
+Sustituyendo en ella las expresiones anteriores, con el cambio de
+variable, de $r$ y $\ddot{r}$:</p>
+
+<p align="center">$\begin{gather} m \left( - \dfrac{L^2 u^2}{m^2} 
+\dfrac{d^2u}{d\theta^2} \right) = F\!\left(\dfrac{1}{u}\right) + 
+\dfrac{L^2}{m(1{∕}u)^3} \\[1ex] -\dfrac{L^2u^2}{m} 
+\dfrac{d^2u}{d\theta^2} = F\!\left(\dfrac{1}{u}\right) + 
+\dfrac{L^2u^3}{m} \end{gather}$</p>
+
+<p>Multiplicando por $-m{∕}L^2u^2{:}$</p>
+
+<p align="center">$\dfrac{d^2u}{d\theta^2} = - u - \dfrac{m}{L^2u^2}
+F\!\left( \dfrac{1}{u} \right)$</p>
+
+<p>Si $F$ es una fuerza inversamente proporcional al cuadrado de
+la distancia:</p>
+
+<p align="center">$\left. \begin{array}{l} F(r) = \dfrac{K}{r^2}
+\\[1ex] \dfrac{1}{r} = u \end{array} \ \right\} \Rightarrow F\!\left(
+\dfrac{1}{u} \right) = Ku^2$</p>
+
+<p>Por tanto, en este caso:</p>
+
+<p align="center">$\boxed{ \dfrac{d^2u}{d\theta^2} = -u - \dfrac{mK}{L^2}
+}$</p>
+
+<p>Que es una ecuación diferencial del tipo oscilador armónico
+sometido a una fuerza constante:</p>
+
+<p align="center">$\begin{gather} \dfrac{d^2u}{d\theta^2} + u = -
+\dfrac{mK}{L^2} \\[1em] m \dfrac{d^2x}{dt^2} + kx = p = \text{cte.}
+\end{gather}$</p>
+
+<p>Equivalencias:</p>
+
+<p align="center">$\begin{gather} x \quad \longleftrightarrow \quad u 
+\\[1ex] t \quad \longleftrightarrow \quad \theta \\[1ex] \hphantom{1} m 
+\quad \longleftrightarrow \quad 1 \hphantom{m} \\[1ex] \hphantom{1} k 
+\quad \longleftrightarrow \quad 1 \hphantom{k} \\[1ex] \hphantom{\omega 
+= 1} \omega = \sqrt{\dfrac{k}{m}} \quad \longleftrightarrow \quad 
+\omega = 1 \hphantom{\omega = \sqrt{\dfrac{k}{m}}} \\[1ex] 
+\hphantom{-\dfrac{mK}{L^2}} p \quad \longleftrightarrow \quad 
+-\dfrac{mK}{L^2} \hphantom{p} \end{gather}$</p>
+
+<p>Es una ecuación diferencial lineal de coeficientes constantes
+no homogénea. Por tanto, primero se resuelve su homogénea:</p>
+
+<p align="center">$\dfrac{d^2u}{d\theta^2} + u = 0$</p>
+
+<p>Cuya solución general:</p>
+
+<p align="center">$u = A \cos(\theta - \theta_0)$</p>
+
+<p>Donde $A$ y $\theta_0$ son constantes arbitrarias.</p>
+
+<p>A continuación se busca una solución partícular a la no
+homogénea. Una solución particular obvia:</p>
+
+<p align="center">$u = -\dfrac{mK}{L^2} \ \Rightarrow \ 
+\dfrac{d^2u}{d\theta^2} = 0$</p>
+
+<p>Así, finalmente, la solución general de la ecuación
+diferencial no homogénea, suma de la general de la homogénea y
+la particular de la no homogénea, es:</p>
+
+<p align="center">$u = A \cos(\theta - \theta_0) - \dfrac{mK}{L^2}$</p>
+
+<p>Deshaciendo el cambio de variable:</p>
+
+<center>
+<table>
+    <tr>
+        <td align="center">$\boxed{\dfrac{1}{r} = A \cos(\theta -
+        \theta_0) - \dfrac{mK}{L^2}}$</td>
+    </tr>
+    <tr>
+        <td align="center">Ecuación de la órbita.</td>
+    </tr>
+</table>
+</center>
+
+<p>Es la ecuación de una cónica (cualquier curva resultante de
+cortar con un plano un cono). La constante $\theta_0$ determina
+su orientación. La constante $A$ puede escogerse positiva, ya
+que, si fuera necesario, puede hacerse el cambio $\theta_0 \to \theta_0
++ \pi$, que equivale a un cambio del signo de $A$. Así que el el
+hecho de que $A$ cambie su signo simplemente representa girar la
+orientación de la órbita $180°$.</p>
+
+<p>Los puntos de retorno vienen dados por los extremos de la
+oscilación de $1{∕}r$ en torno a $-mK{∕}L^2$, esto es cuando $\cos(\theta
+- \theta_0) = \pm 1$, y por tanto dependen de la constante $A$:</p>
+
+<p align="center">$\left. \begin{array}{l} \dfrac{1}{r_1} = -\dfrac{mK}{L^2}
++ A \\[1ex] \dfrac{1}{r_2} = -\dfrac{mK}{L^2} - A \end{array} \right\}$</p>
+
+<p>Así que si ambos puntos de retorno existen, y $A &gt; 0$,
+entonces $r_1 \!&lt; r_2$.</p>
+
+<p>Siendo que se consideran solamente valores para $A$ positivos,
+si $A &gt; -mK{∕}L^2$, cosa que sucede forzosamente para $K &gt; 0$,
+sólo puede haber un punto de retorno, $r_1$, pues $r$ no puede
+ser negativo, y, aunque sólo cabe contemplarlo para $K &gt; 0$,
+no es posible $A &lt; mK{∕}L^2$, porque los puntos de retorno
+serían negativos, así que $r$, para cualquier valor de $\theta$,
+no podría ser positivo (sin sentido). De forma esquemática:</p>
+
+<p align="center">$\begin{array}{l} \left. \begin{array}{l}
+K &lt; 0 \\[1ex] A &gt; 0 \end{array} \right\} \Rightarrow \left\{
+\begin{array}{l} A &lt; -\dfrac{mK}{L^2} \Rightarrow r_1, r_2 \\[1ex]
+A &gt; -\dfrac{mK}{L^2} \Rightarrow r_1, \xcancel{r_2} \end{array}\right.
+\\[1em] \left. \begin{array}{l} K &gt; 0 \\[1ex] A &gt; 0\end{array}
+\right\} \Rightarrow \left\{ \begin{array}{l} A &gt; \dfrac{mK}{L^2}
+\Rightarrow r_1, \xcancel{r_2} \\[1ex] A &lt; \dfrac{mK}{L^2} \Rightarrow
+\xcancel{r_1}, \xcancel{r_2} \end{array} \right. \end{array}$</p>
+
+<p>En los puntos de retorno la energía mecánica, $E$, y la
+energía potencial efectiva, $V_{\smash[t]{\text{ef}}}$, son iguales:</p>
+
+<p align="center">$V_{\smash[t]{\text{ef}}}\:\!(r) = \dfrac{K}{r} + \dfrac{L^2}{2mr^2}
+= E$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\dfrac{L^2}{2mK} \left( \dfrac{1}{r} \right)^{\! 2}
++ \left( \dfrac{1}{r} \right) - \dfrac{E}{K} = 0$</p>
+
+<p>Ecuación de segundo grado cuya solución es:</p>
+
+<p align="center">$\begin{align} \dfrac{1}{r_{1,2}} &amp;= \dfrac{-1
+\pm \sqrt{1 + \dfrac{2L^2E}{mK^2}}}{L^2{∕}mK} = \\[1ex] &amp;=
+-\dfrac{mK}{L^2} \pm \sqrt{\dfrac{m^2K^2}{L^4} + \dfrac{2mE}{L^2}
+}\end{align}$</p>
+
+<p>Por comparación con las inversas de los puntos de retorno
+halladas a partir de la ecuación de la órbita:</p>
+
+<p align="center">$A^2 = \dfrac{m^2K^2}{L^4} + \dfrac{2mE}{L^2}$</p>
+
+<p>El valor de $A$ viene dado por las condiciones iniciales $L$ y
+$E$, que determinan pues la órbita (cónica).</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../leyes_kepler/leyes_kepler.html" title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../conicas/conicas.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

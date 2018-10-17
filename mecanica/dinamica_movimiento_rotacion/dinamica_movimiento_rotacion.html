@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Dinámica del movimiento de rotación">
+<meta name="keywords" content="dinámica, movimiento, rotación">
+<title>Dinámica del movimiento de rotación</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Dinámica del movimiento de rotación</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se considera un sólido rígido plano, constituído por $N$
+partículas, que en un punto (partícula) $P_i$ tiene masa $m_i$:</p>
+
+<p align="center"><object data="dinamica_movimiento_rotacion_1.svg"
+type="image/svg+xml" width="275" height="300"></object></p>
+
+<p>Donde:</p>
+
+<blockquote>
+		<p>$\vec{F}_{i} \to$ Fuerza externa que actúa sobre la masa 
+		$m_i$.</p>
+		<p>$\vec{f}_{\!i} \to$ Fuerza debida a las $N-1$ partículas 
+		restantes.</p>
+</blockquote>
+
+<p>El sistema gira alrededor de un eje fijo, que pasa por $O$,
+perpendicular a la superficie. Por tanto no hay movimiento fuera
+del plano. Las componentes de la fuerza fuera del plano son nulas.</p>
+
+<p>Aplicando la segunda ley de Newton a la partícula $m_i$:</p>
+
+<p align="center">$\vec{F}_{i} + \vec{f}_{\!i} = m_i \vec{a}_i$</p>
+
+<p>Interesa hallar una ecuación dinámica del movimiento de
+rotación. Se descomponen las fuerzas en sus componentes radiales
+y tangenciales:</p>
+
+<p align="center">$\begin{array}{l} -F_i \cos\theta_i + f_i \cos\varphi_i
+= m_i a_{i,\smash[t]{\text{r}}} = m_i r_i \omega^2 \quad (\text{radial}) \\[1ex]
+\boxed{ F_i \sin\theta_i + f_i \sin\varphi_i = m_i a_{i,\smash[t]{\text{t}}}
+= m_i r_i \alpha } \quad (\text{tangencial}) \end{array}$</p>
+
+<p>Multiplicando la ecuación del movimiento tangencial, la
+segunda, por $r_i$:</p>
+
+<p align="center">$\underbrace{r_i F_i \sin\theta_i \vphantom{r_i \, 
+f_i \sin\varphi_i}}_{\begin{gathered} \smash[b]{\text{componente}} \\ 
+\smash{\text{momento}} \\ \smash{\text{de la fuerza}} \\ 
+\smash[t]{\text{exterior}} \end{gathered}} + \underbrace{r_i \, f_i 
+\sin\varphi_i}_{\begin{gathered} \smash[b]{\text{componente}} \\ 
+\smash{\text{momento}} \\ \smash{\text{de la fuerza}} \\ 
+\smash[t]{\text{interior}} \end{gathered}} = m_i r_i^2 \alpha$</p>
+
+<p>Sumando la ecuación para todas las partículas:</p>
+
+<p align="center">$\begin{gather} \sum_{i=1}^N \left( r_i F_i \sin\theta_i
++ r_i \, f_i \sin\varphi_i \right) = \sum_{i=1}^N m_i r_i^2 \alpha
+\\[1ex] \sum_{i=1}^N r_i F_i \sin \theta_i + \sum_{i=1}^N r_i \,
+f_i \sin\varphi_i = \alpha \sum_{i=1}^N m_i r_i^2 \end{gather}$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$\displaystyle \sum_{i=1}^N \vec{r}_{i} \times 
+\vec{f}_{\! i} = \sum_{i=1}^N \sum_{j \neq i} \vec{r}_{i} \times 
+\vec{f}_{\! j \to i}$</p>
+
+<p>Según la tercera ley de Newton (acción-reacción):</p>
+
+<p align="center">$\vec{f}_{\! j \to i} = - \vec{f}_{\! i \to j}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} \sum_{i=1}^N \vec{r}_{i} \times 
+\vec{f}_{\! i} &amp;= \sum_{i=1}^N \sum_{j \neq i} \vec{r}_{i} \times 
+\vec{f}_{\! j \to i} = \\[1ex] &amp;= \vec{r}_{1} \times \vec{f}_{\! 2 
+\to 1} + \vec{r}_{1} \times \vec{f}_{\! 3 \to 1} + \dotsb + \\[1ex] 
+&amp;\hphantom{={}} + \vec{r}_{2} \times \vec{f}_{\! 1 \to 2} + 
+\vec{r}_{2} \times \vec{f}_{\! 3 \to 2} + \dotsb + \\[1ex] 
+&amp;\hphantom{={}} + \vec{r}_{3} \times \vec{f}_{\! 1 \to 3} + 
+\vec{r}_{3} \times \vec{f}_{\! 2 \to 3} + \dotsb = \\[1ex] &amp;= 
+\vec{r}_{2} \times \vec{f}_{\! 1 \to 2} + \vec{r}_{1} \times 
+\vec{f}_{\! 2 \to 1} + {} \\[1ex] &amp;\hphantom{={}} + \vec{r}_{3} 
+\times \vec{f}_{\! 1 \to 3} + \vec{r}_{1} \times \vec{f}_{\! 3 \to 1} + 
+\vec{r}_{3} \times \vec{f}_{2 \to 3} + \vec{r}_{2} \times \vec{f}_{\! 3 
+\to 2} + {} \\[1ex] &amp;\hphantom{={}} + \dotsb = \\[1ex] &amp;= 
+\left( \vec{r}_{2} - \vec{r}_{1} \right) \times \vec{f}_{\! 1 \to 2} + 
+{} \\[1ex] &amp;\hphantom{={}} + \left( \vec{r}_{3} - \vec{r}_{1} 
+\right) \times \vec{f}_{\!1 \to 3} + \left( \vec{r}_{3} - \vec{r}_{2} 
+\right) \times \vec{f}_{\! 2 \to 3} + {} \\[1ex] &amp;\hphantom{={}} + 
+\dotsb = \\[1ex] &amp;= \sum_{i=1}^N \sum_{j=1}^{i-1} \left( 
+\vec{r}_{i} - \vec{r}_{j} \right) \! \times \vec{f}_{\! j \to i} 
+\end{align}$</p>
+
+<p>Como:</p>
+
+<p align="center"><object data="dinamica_movimiento_rotacion_2.svg"
+type="image/svg+xml" width="275" height="265"></object></p>
+
+<p>Si además se considera que las fuerzas internas son centrales,
+versión más restrictiva de la tercera ley de Newton, éstas
+actúan sobre la línea que une ambas partículas, entonces:</p>
+
+<p align="center">$\left( \vec{r}_{i} - \vec{r}_{j} \right) \! \parallel
+\vec{f}_{\! j \to i} \ \Rightarrow \left( \vec{r}_{i} - \vec{r}_{j} 
+\right) \! \times \vec{f}_{\! j \to i} = 0$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\displaystyle \sum_{i=1}^N \vec{r}_{i} \times 
+\vec{f}_{\! i} = \sum_{i=1}^N \sum_{j=1}^{i-1} \underbrace{\left( 
+\vec{r}_{i} - \vec{r}_{j} \right) \! \times \vec{f}_{\! j \to 
+i}}_{\displaystyle \hphantom{0} = 0} = 0$</p>
+
+<p>Así pues:</p>
+
+<p align="center">$\begin{gather} \sum_{i=1}^N \underbrace{r_i F_i
+\sin\theta_i}_{\displaystyle I_{i}'} + \overbrace{\sum_{i=1}^N r_i
+\, f_i \sin\varphi_i}^{\displaystyle \hphantom{0} = 0} = \alpha \sum_{i=1}^N
+m_i r_i^2 \\[1ex] \sum_{i=1}^N I_{i}' = \alpha \sum_{i=1}^N m_i r_i^2
+\end{gather}$</p>
+
+<p>Si:</p>
+
+<blockquote>
+    <p>$\displaystyle I' = \sum_{i=1}^N I_{i}'$ &ensp; Momento resultante de la
+    fuerza exterior.</p>
+    <p>$\displaystyle I = \sum_{i=1}^N m_i r_i^2$ &ensp; Momento de inercia
+    respecto al eje de rotación.</p>
+</blockquote>
+
+<p>Por tanto:</p>
+
+<p align="center">$\boxed{I' = I \alpha = I \dfrac{d\omega}{dt}}$</p>
+
+<p>El momento resultante de la fuerza exterior provoca el
+movimiento de rotación del cuerpo. Hace en la rotación el mismo
+papel que, sobre un movimiento lineal, la fuerza resultante en la
+segunda ley de Newton:</p>
+
+<p align="center">$F = Ma$</p>
+
+<p>Buscando analogías entre ambos movimientos (rotacional y
+lineal):</p>
+
+<p align="center">$\begin{array}{ccc} I' &amp; \longleftrightarrow
+&amp; F \\[1ex] \alpha &amp; \longleftrightarrow &amp; a \\[1ex]
+I &amp; \longleftrightarrow &amp; M \end{array}$</p>
+
+<p>El momento de inercia $I$ depende de la distribución de la
+masa en el cuerpo rígido.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo/movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../calculo_momentos_inercia/calculo_momentos_inercia.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg11943" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" height="188" width="188" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 188 188" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <circle id="gpPt5" stroke-width=".222" cy="0" stroke="currentColor" cx="0" r="1"/>
+  <use id="gpPt6" xlink:href="#gpPt5" fill="currentColor"/>
+ </defs>
+ <metadata id="metadata12079">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title11945">Gnuplot</title>
+ <desc id="desc11947">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g id="gnuplot_canvas">
+  <g fill="none">
+   <rect id="rect11950" height="188" width="188" y="0" x="0"/>
+   <g stroke="currentColor" stroke-width="1.5">
+    <g id="g11986" color="black">
+     <g id="g11988" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon11990" points="65.5 120.4 58.2 120.4 68.1 117.8 65.5 127.7" fill="#0072b2"/>
+     </g>
+     <path id="path11992" stroke="#0072b2" d="m65.5 120.4h-7.3l9.9-2.6-2.6 9.9v-7.3m-21.1 21.1l21.1-21.1"/>
+    </g>
+    <g id="g11994" color="black">
+     <g id="g11996" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon11998" points="118.2 67.7 125.5 67.7 115.6 70.3 118.2 60.4" fill="#e69f00"/>
+     </g>
+     <path id="path12000" stroke="#e69f00" d="m118.2 67.7h7.3l-9.9 2.6 2.6-9.9v7.3m21.1-21.1l-21.1 21.1"/>
+    </g>
+    <g id="g12002" color="black">
+     <g id="g12004" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon12006" fill-opacity=".29" points="23.3 162.6 30.6 162.6 20.7 165.2 23.3 155.3" fill="#0072b2"/>
+     </g>
+     <path id="path12008" opacity=".29" stroke="#0072b2" d="m23.3 162.6h7.3l-9.9 2.6 2.6-9.9v7.3m21.1-21.1l-21.1 21.1"/>
+    </g>
+    <g id="g12010" color="black">
+     <g id="g12012" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon12014" fill-opacity=".29" points="160.4 25.5 153.1 25.5 163 22.9 160.4 32.8" fill="#e69f00"/>
+     </g>
+     <path id="path12016" opacity=".29" stroke="#e69f00" d="m160.4 25.5h-7.3l9.9-2.6-2.6 9.9v-7.3m-21.1 21.1l21.1-21.1"/>
+    </g>
+   </g>
+  </g>
+  <g id="gnuplot_plot_1">
+   <title id="title12023">NaN</title>
+  </g>
+  <g stroke="currentColor" fill="none">
+   <g id="g12029" color="black" stroke-width="2">
+    <g id="g12031" font-size="12" transform="translate(48.9,141.5)" stroke="none" font-family="Arial" fill="#000">
+     <text id="text12033"/>
+    </g>
+   </g>
+   <g>
+    <g id="g12037" color="black">
+     <use id="use12039" color="rgb(  0, 255,   0)" xlink:href="#gpPt6" transform="translate(44.4,141.5) scale(3.38)"/>
+    </g>
+    <g id="g12041" color="black">
+     <g id="g12043" font-size="12" transform="translate(48.9,141.5)" stroke="none" font-family="Arial" fill="#000">
+      <text id="text12045"/>
+     </g>
+    </g>
+    <g id="g12047" color="black">
+     <use id="use12049" color="black" xlink:href="#gpPt5" transform="translate(44.4,141.5) scale(3.38)"/>
+    </g>
+    <g id="g12051" color="black">
+     <g id="g12053" font-size="12" transform="translate(143.8,46.6)" stroke="none" font-family="Arial" fill="#000">
+      <text id="text12055"/>
+     </g>
+    </g>
+    <g id="g12057" color="black">
+     <use id="use12059" color="rgb(229,  30,  16)" xlink:href="#gpPt6" transform="translate(139.3,46.6) scale(3.38)"/>
+    </g>
+    <g id="g12061" color="black">
+     <g id="g12063" font-size="12" transform="translate(143.8,46.6)" stroke="none" font-family="Arial" fill="#000">
+      <text id="text12065"/>
+     </g>
+    </g>
+    <g id="g12067" color="black">
+     <use id="use12069" color="black" xlink:href="#gpPt5" transform="translate(139.3,46.6) scale(3.38)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g id="content" xml:space="preserve" stroke="#000" stroke-width="0" fill-rule="evenodd" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -211.23 1391.5)" stroke-miterlimit="10.433" ns0:text="$q_1$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path12731" d="m152.6 705.22h-0.16c-0.37 0-0.58 0.1-0.57 0.29 0 0.03 0.01 0.07 0.02 0.11l1.63 5.75h-0.73l-0.14-0.47c-0.16 0.46-0.36 0.62-0.77 0.62l0.03-0.22c0.33 0 0.59-0.27 0.59-0.61 0-0.83-0.68-2.24-1.36-2.81-0.26-0.22-0.53-0.34-0.77-0.34-0.33 0-0.55 0.3-0.55 0.77 0 0.73 0.51 1.84 1.16 2.5 0.31 0.31 0.64 0.49 0.93 0.49l-0.03 0.22c-1.32 0-2.92-1.84-2.92-3.35 0-0.71 0.39-1.16 1.02-1.16 0.7 0 1.16 0.37 2.05 1.64l-0.89-2.92c-0.13-0.4-0.29-0.48-0.94-0.53v-0.16h2.4z"/><path id="path12733" d="m155.73 710.34-1.26-0.63v-0.1c0.08 0.04 0.16 0.06 0.19 0.08 0.13 0.05 0.24 0.08 0.31 0.08 0.15 0 0.21-0.11 0.21-0.33v-3.16c0-0.23-0.05-0.39-0.16-0.45-0.11-0.07-0.21-0.09-0.5-0.1v-0.1h1.93v0.1c-0.56 0.01-0.67 0.08-0.67 0.42v4.18z"/></g>
+ <g id="g12897" xml:space="preserve" stroke="#000" stroke-width="0" fill-rule="evenodd" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -117.72 1297.5)" stroke-miterlimit="10.433" ns0:text="$q_2$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path12899" d="m152.6 705.22h-0.16c-0.37 0-0.58 0.1-0.57 0.29 0 0.03 0.01 0.07 0.02 0.11l1.63 5.75h-0.73l-0.14-0.47c-0.16 0.46-0.36 0.62-0.77 0.62l0.03-0.22c0.33 0 0.59-0.27 0.59-0.61 0-0.83-0.68-2.24-1.36-2.81-0.26-0.22-0.53-0.34-0.77-0.34-0.33 0-0.55 0.3-0.55 0.77 0 0.73 0.51 1.84 1.16 2.5 0.31 0.31 0.64 0.49 0.93 0.49l-0.03 0.22c-1.32 0-2.92-1.84-2.92-3.35 0-0.71 0.39-1.16 1.02-1.16 0.7 0 1.16 0.37 2.05 1.64l-0.89-2.92c-0.13-0.4-0.29-0.48-0.94-0.53v-0.16h2.4z"/><path id="path12901" d="m157.01 706.59-0.09 0.03c-0.26-0.4-0.35-0.46-0.66-0.46h-1.67l1.17 1.23c0.62 0.65 0.89 1.18 0.89 1.72 0 0.7-0.56 1.23-1.29 1.23-0.38 0-0.74-0.15-1-0.43-0.22-0.24-0.33-0.46-0.45-0.95l0.15-0.04c0.28 0.68 0.53 0.91 1.01 0.91 0.59 0 0.98-0.4 0.98-0.99 0-0.54-0.32-1.19-0.9-1.81l-1.24-1.32v-0.08h2.72z"/></g>
+</svg>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg4720" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" height="300" width="275" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 275 300" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs>
+  <pattern id="pattern6532-818" xlink:href="#Polkadots-med-644" patternTransform="scale(2.8414)"/>
+  <pattern id="Polkadots-med-644" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle6608" cy=".81" cx="2.567" r=".15" fill="#0ff"/>
+   <circle id="circle6610" cy="2.33" cx="3.048" r=".15" fill="#0ff"/>
+   <circle id="circle6612" cy="2.415" cx="4.418" r=".15" fill="#0ff"/>
+   <circle id="circle6614" cy="3.029" cx="1.844" r=".15" fill="#0ff"/>
+   <circle id="circle6616" cy="1.363" cx="6.08" r=".15" fill="#0ff"/>
+   <circle id="circle6618" cy="4.413" cx="5.819" r=".15" fill="#0ff"/>
+   <circle id="circle6620" cy="4.048" cx="4.305" r=".15" fill="#0ff"/>
+   <circle id="circle6622" cy="3.045" cx="5.541" r=".15" fill="#0ff"/>
+   <circle id="circle6624" cy="5.527" cx="4.785" r=".15" fill="#0ff"/>
+   <circle id="circle6626" cy="5.184" cx="2.667" r=".15" fill="#0ff"/>
+   <circle id="circle6628" cy="1.448" cx="7.965" r=".15" fill="#0ff"/>
+   <circle id="circle6630" cy="5.049" cx="7.047" r=".15" fill="#0ff"/>
+   <circle id="circle6632" cy=".895" cx="4.34" r=".15" fill="#0ff"/>
+   <circle id="circle6634" cy=".34" cx="7.125" r=".15" fill="#0ff"/>
+   <circle id="circle6636" cy="1.049" cx="9.553" r=".15" fill="#0ff"/>
+   <circle id="circle6638" cy="2.689" cx="7.006" r=".15" fill="#0ff"/>
+   <circle id="circle6640" cy="2.689" cx="8.909" r=".15" fill="#0ff"/>
+   <circle id="circle6642" cy="4.407" cx="9.315" r=".15" fill="#0ff"/>
+   <circle id="circle6644" cy="3.87" cx="7.82" r=".15" fill="#0ff"/>
+   <circle id="circle6646" cy="5.948" cx="8.27" r=".15" fill="#0ff"/>
+   <circle id="circle6648" cy="7.428" cx="7.973" r=".15" fill="#0ff"/>
+   <circle id="circle6650" cy="8.072" cx="9.342" r=".15" fill="#0ff"/>
+   <circle id="circle6652" cy="9.315" cx="8.206" r=".15" fill="#0ff"/>
+   <circle id="circle6654" cy="9.475" cx="9.682" r=".15" fill="#0ff"/>
+   <circle id="circle6656" cy="6.186" cx="9.688" r=".15" fill="#0ff"/>
+   <circle id="circle6658" cy="6.296" cx="3.379" r=".15" fill="#0ff"/>
+   <circle id="circle6660" cy="8.204" cx="2.871" r=".15" fill="#0ff"/>
+   <circle id="circle6662" cy="8.719" cx="4.59" r=".15" fill="#0ff"/>
+   <circle id="circle6664" cy="9.671" cx="3.181" r=".15" fill="#0ff"/>
+   <circle id="circle6666" cy="7.315" cx="5.734" r=".15" fill="#0ff"/>
+   <circle id="circle6668" cy="6.513" cx="6.707" r=".15" fill="#0ff"/>
+   <circle id="circle6670" cy="9.67" cx="5.73" r=".15" fill="#0ff"/>
+   <circle id="circle6672" cy="8.373" cx="6.535" r=".15" fill="#0ff"/>
+   <circle id="circle6674" cy="7.154" cx="4.37" r=".15" fill="#0ff"/>
+   <circle id="circle6676" cy="7.25" cx=".622" r=".15" fill="#0ff"/>
+   <circle id="circle6678" cy="5.679" cx=".831" r=".15" fill="#0ff"/>
+   <circle id="circle6680" cy="8.519" cx="1.257" r=".15" fill="#0ff"/>
+   <circle id="circle6682" cy="6.877" cx="1.989" r=".15" fill="#0ff"/>
+   <circle id="circle6684" cy="3.181" cx=".374" r=".15" fill="#0ff"/>
+   <circle id="circle6686" cy="1.664" cx="1.166" r=".15" fill="#0ff"/>
+   <circle id="circle6688" cy=".093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6690" cy="10.093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6692" cy="4.451" cx="1.302" r=".15" fill="#0ff"/>
+   <circle id="circle6694" cy="3.763" cx="3.047" r=".15" fill="#0ff"/>
+  </pattern>
+  <pattern id="pattern6532-658" xlink:href="#Polkadots-med-822" patternTransform="scale(2.8414)"/>
+  <pattern id="Polkadots-med-822" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle6698" cy=".81" cx="2.567" r=".15" fill="#0ff"/>
+   <circle id="circle6700" cy="2.33" cx="3.048" r=".15" fill="#0ff"/>
+   <circle id="circle6702" cy="2.415" cx="4.418" r=".15" fill="#0ff"/>
+   <circle id="circle6704" cy="3.029" cx="1.844" r=".15" fill="#0ff"/>
+   <circle id="circle6706" cy="1.363" cx="6.08" r=".15" fill="#0ff"/>
+   <circle id="circle6708" cy="4.413" cx="5.819" r=".15" fill="#0ff"/>
+   <circle id="circle6710" cy="4.048" cx="4.305" r=".15" fill="#0ff"/>
+   <circle id="circle6712" cy="3.045" cx="5.541" r=".15" fill="#0ff"/>
+   <circle id="circle6714" cy="5.527" cx="4.785" r=".15" fill="#0ff"/>
+   <circle id="circle6716" cy="5.184" cx="2.667" r=".15" fill="#0ff"/>
+   <circle id="circle6718" cy="1.448" cx="7.965" r=".15" fill="#0ff"/>
+   <circle id="circle6720" cy="5.049" cx="7.047" r=".15" fill="#0ff"/>
+   <circle id="circle6722" cy=".895" cx="4.34" r=".15" fill="#0ff"/>
+   <circle id="circle6724" cy=".34" cx="7.125" r=".15" fill="#0ff"/>
+   <circle id="circle6726" cy="1.049" cx="9.553" r=".15" fill="#0ff"/>
+   <circle id="circle6728" cy="2.689" cx="7.006" r=".15" fill="#0ff"/>
+   <circle id="circle6730" cy="2.689" cx="8.909" r=".15" fill="#0ff"/>
+   <circle id="circle6732" cy="4.407" cx="9.315" r=".15" fill="#0ff"/>
+   <circle id="circle6734" cy="3.87" cx="7.82" r=".15" fill="#0ff"/>
+   <circle id="circle6736" cy="5.948" cx="8.27" r=".15" fill="#0ff"/>
+   <circle id="circle6738" cy="7.428" cx="7.973" r=".15" fill="#0ff"/>
+   <circle id="circle6740" cy="8.072" cx="9.342" r=".15" fill="#0ff"/>
+   <circle id="circle6742" cy="9.315" cx="8.206" r=".15" fill="#0ff"/>
+   <circle id="circle6744" cy="9.475" cx="9.682" r=".15" fill="#0ff"/>
+   <circle id="circle6746" cy="6.186" cx="9.688" r=".15" fill="#0ff"/>
+   <circle id="circle6748" cy="6.296" cx="3.379" r=".15" fill="#0ff"/>
+   <circle id="circle6750" cy="8.204" cx="2.871" r=".15" fill="#0ff"/>
+   <circle id="circle6752" cy="8.719" cx="4.59" r=".15" fill="#0ff"/>
+   <circle id="circle6754" cy="9.671" cx="3.181" r=".15" fill="#0ff"/>
+   <circle id="circle6756" cy="7.315" cx="5.734" r=".15" fill="#0ff"/>
+   <circle id="circle6758" cy="6.513" cx="6.707" r=".15" fill="#0ff"/>
+   <circle id="circle6760" cy="9.67" cx="5.73" r=".15" fill="#0ff"/>
+   <circle id="circle6762" cy="8.373" cx="6.535" r=".15" fill="#0ff"/>
+   <circle id="circle6764" cy="7.154" cx="4.37" r=".15" fill="#0ff"/>
+   <circle id="circle6766" cy="7.25" cx=".622" r=".15" fill="#0ff"/>
+   <circle id="circle6768" cy="5.679" cx=".831" r=".15" fill="#0ff"/>
+   <circle id="circle6770" cy="8.519" cx="1.257" r=".15" fill="#0ff"/>
+   <circle id="circle6772" cy="6.877" cx="1.989" r=".15" fill="#0ff"/>
+   <circle id="circle6774" cy="3.181" cx=".374" r=".15" fill="#0ff"/>
+   <circle id="circle6776" cy="1.664" cx="1.166" r=".15" fill="#0ff"/>
+   <circle id="circle6778" cy=".093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6780" cy="10.093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6782" cy="4.451" cx="1.302" r=".15" fill="#0ff"/>
+   <circle id="circle6784" cy="3.763" cx="3.047" r=".15" fill="#0ff"/>
+  </pattern>
+  <pattern id="pattern6532-379" xlink:href="#Polkadots-med-305" patternTransform="scale(2.8414)"/>
+  <pattern id="Polkadots-med-305" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle6788" cy=".81" cx="2.567" r=".15" fill="#0ff"/>
+   <circle id="circle6790" cy="2.33" cx="3.048" r=".15" fill="#0ff"/>
+   <circle id="circle6792" cy="2.415" cx="4.418" r=".15" fill="#0ff"/>
+   <circle id="circle6794" cy="3.029" cx="1.844" r=".15" fill="#0ff"/>
+   <circle id="circle6796" cy="1.363" cx="6.08" r=".15" fill="#0ff"/>
+   <circle id="circle6798" cy="4.413" cx="5.819" r=".15" fill="#0ff"/>
+   <circle id="circle6800" cy="4.048" cx="4.305" r=".15" fill="#0ff"/>
+   <circle id="circle6802" cy="3.045" cx="5.541" r=".15" fill="#0ff"/>
+   <circle id="circle6804" cy="5.527" cx="4.785" r=".15" fill="#0ff"/>
+   <circle id="circle6806" cy="5.184" cx="2.667" r=".15" fill="#0ff"/>
+   <circle id="circle6808" cy="1.448" cx="7.965" r=".15" fill="#0ff"/>
+   <circle id="circle6810" cy="5.049" cx="7.047" r=".15" fill="#0ff"/>
+   <circle id="circle6812" cy=".895" cx="4.34" r=".15" fill="#0ff"/>
+   <circle id="circle6814" cy=".34" cx="7.125" r=".15" fill="#0ff"/>
+   <circle id="circle6816" cy="1.049" cx="9.553" r=".15" fill="#0ff"/>
+   <circle id="circle6818" cy="2.689" cx="7.006" r=".15" fill="#0ff"/>
+   <circle id="circle6820" cy="2.689" cx="8.909" r=".15" fill="#0ff"/>
+   <circle id="circle6822" cy="4.407" cx="9.315" r=".15" fill="#0ff"/>
+   <circle id="circle6824" cy="3.87" cx="7.82" r=".15" fill="#0ff"/>
+   <circle id="circle6826" cy="5.948" cx="8.27" r=".15" fill="#0ff"/>
+   <circle id="circle6828" cy="7.428" cx="7.973" r=".15" fill="#0ff"/>
+   <circle id="circle6830" cy="8.072" cx="9.342" r=".15" fill="#0ff"/>
+   <circle id="circle6832" cy="9.315" cx="8.206" r=".15" fill="#0ff"/>
+   <circle id="circle6834" cy="9.475" cx="9.682" r=".15" fill="#0ff"/>
+   <circle id="circle6836" cy="6.186" cx="9.688" r=".15" fill="#0ff"/>
+   <circle id="circle6838" cy="6.296" cx="3.379" r=".15" fill="#0ff"/>
+   <circle id="circle6840" cy="8.204" cx="2.871" r=".15" fill="#0ff"/>
+   <circle id="circle6842" cy="8.719" cx="4.59" r=".15" fill="#0ff"/>
+   <circle id="circle6844" cy="9.671" cx="3.181" r=".15" fill="#0ff"/>
+   <circle id="circle6846" cy="7.315" cx="5.734" r=".15" fill="#0ff"/>
+   <circle id="circle6848" cy="6.513" cx="6.707" r=".15" fill="#0ff"/>
+   <circle id="circle6850" cy="9.67" cx="5.73" r=".15" fill="#0ff"/>
+   <circle id="circle6852" cy="8.373" cx="6.535" r=".15" fill="#0ff"/>
+   <circle id="circle6854" cy="7.154" cx="4.37" r=".15" fill="#0ff"/>
+   <circle id="circle6856" cy="7.25" cx=".622" r=".15" fill="#0ff"/>
+   <circle id="circle6858" cy="5.679" cx=".831" r=".15" fill="#0ff"/>
+   <circle id="circle6860" cy="8.519" cx="1.257" r=".15" fill="#0ff"/>
+   <circle id="circle6862" cy="6.877" cx="1.989" r=".15" fill="#0ff"/>
+   <circle id="circle6864" cy="3.181" cx=".374" r=".15" fill="#0ff"/>
+   <circle id="circle6866" cy="1.664" cx="1.166" r=".15" fill="#0ff"/>
+   <circle id="circle6868" cy=".093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6870" cy="10.093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6872" cy="4.451" cx="1.302" r=".15" fill="#0ff"/>
+   <circle id="circle6874" cy="3.763" cx="3.047" r=".15" fill="#0ff"/>
+  </pattern>
+  <pattern id="pattern6532-227" xlink:href="#Polkadots-med-302" patternTransform="scale(2.8414)"/>
+  <pattern id="Polkadots-med-302" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle6878" cy=".81" cx="2.567" r=".15" fill="#0ff"/>
+   <circle id="circle6880" cy="2.33" cx="3.048" r=".15" fill="#0ff"/>
+   <circle id="circle6882" cy="2.415" cx="4.418" r=".15" fill="#0ff"/>
+   <circle id="circle6884" cy="3.029" cx="1.844" r=".15" fill="#0ff"/>
+   <circle id="circle6886" cy="1.363" cx="6.08" r=".15" fill="#0ff"/>
+   <circle id="circle6888" cy="4.413" cx="5.819" r=".15" fill="#0ff"/>
+   <circle id="circle6890" cy="4.048" cx="4.305" r=".15" fill="#0ff"/>
+   <circle id="circle6892" cy="3.045" cx="5.541" r=".15" fill="#0ff"/>
+   <circle id="circle6894" cy="5.527" cx="4.785" r=".15" fill="#0ff"/>
+   <circle id="circle6896" cy="5.184" cx="2.667" r=".15" fill="#0ff"/>
+   <circle id="circle6898" cy="1.448" cx="7.965" r=".15" fill="#0ff"/>
+   <circle id="circle6900" cy="5.049" cx="7.047" r=".15" fill="#0ff"/>
+   <circle id="circle6902" cy=".895" cx="4.34" r=".15" fill="#0ff"/>
+   <circle id="circle6904" cy=".34" cx="7.125" r=".15" fill="#0ff"/>
+   <circle id="circle6906" cy="1.049" cx="9.553" r=".15" fill="#0ff"/>
+   <circle id="circle6908" cy="2.689" cx="7.006" r=".15" fill="#0ff"/>
+   <circle id="circle6910" cy="2.689" cx="8.909" r=".15" fill="#0ff"/>
+   <circle id="circle6912" cy="4.407" cx="9.315" r=".15" fill="#0ff"/>
+   <circle id="circle6914" cy="3.87" cx="7.82" r=".15" fill="#0ff"/>
+   <circle id="circle6916" cy="5.948" cx="8.27" r=".15" fill="#0ff"/>
+   <circle id="circle6918" cy="7.428" cx="7.973" r=".15" fill="#0ff"/>
+   <circle id="circle6920" cy="8.072" cx="9.342" r=".15" fill="#0ff"/>
+   <circle id="circle6922" cy="9.315" cx="8.206" r=".15" fill="#0ff"/>
+   <circle id="circle6924" cy="9.475" cx="9.682" r=".15" fill="#0ff"/>
+   <circle id="circle6926" cy="6.186" cx="9.688" r=".15" fill="#0ff"/>
+   <circle id="circle6928" cy="6.296" cx="3.379" r=".15" fill="#0ff"/>
+   <circle id="circle6930" cy="8.204" cx="2.871" r=".15" fill="#0ff"/>
+   <circle id="circle6932" cy="8.719" cx="4.59" r=".15" fill="#0ff"/>
+   <circle id="circle6934" cy="9.671" cx="3.181" r=".15" fill="#0ff"/>
+   <circle id="circle6936" cy="7.315" cx="5.734" r=".15" fill="#0ff"/>
+   <circle id="circle6938" cy="6.513" cx="6.707" r=".15" fill="#0ff"/>
+   <circle id="circle6940" cy="9.67" cx="5.73" r=".15" fill="#0ff"/>
+   <circle id="circle6942" cy="8.373" cx="6.535" r=".15" fill="#0ff"/>
+   <circle id="circle6944" cy="7.154" cx="4.37" r=".15" fill="#0ff"/>
+   <circle id="circle6946" cy="7.25" cx=".622" r=".15" fill="#0ff"/>
+   <circle id="circle6948" cy="5.679" cx=".831" r=".15" fill="#0ff"/>
+   <circle id="circle6950" cy="8.519" cx="1.257" r=".15" fill="#0ff"/>
+   <circle id="circle6952" cy="6.877" cx="1.989" r=".15" fill="#0ff"/>
+   <circle id="circle6954" cy="3.181" cx=".374" r=".15" fill="#0ff"/>
+   <circle id="circle6956" cy="1.664" cx="1.166" r=".15" fill="#0ff"/>
+   <circle id="circle6958" cy=".093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6960" cy="10.093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle6962" cy="4.451" cx="1.302" r=".15" fill="#0ff"/>
+   <circle id="circle6964" cy="3.763" cx="3.047" r=".15" fill="#0ff"/>
+  </pattern>
+  <pattern id="pattern6532-437" xlink:href="#Polkadots-med-473" patternTransform="scale(2.8414)"/>
+  <pattern id="Polkadots-med-473" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle6968" cy=".81" cx="2.567" r=".15" fill="#0ff"/>
+   <circle id="circle6970" cy="2.33" cx="3.048" r=".15" fill="#0ff"/>
+   <circle id="circle6972" cy="2.415" cx="4.418" r=".15" fill="#0ff"/>
+   <circle id="circle6974" cy="3.029" cx="1.844" r=".15" fill="#0ff"/>
+   <circle id="circle6976" cy="1.363" cx="6.08" r=".15" fill="#0ff"/>
+   <circle id="circle6978" cy="4.413" cx="5.819" r=".15" fill="#0ff"/>
+   <circle id="circle6980" cy="4.048" cx="4.305" r=".15" fill="#0ff"/>
+   <circle id="circle6982" cy="3.045" cx="5.541" r=".15" fill="#0ff"/>
+   <circle id="circle6984" cy="5.527" cx="4.785" r=".15" fill="#0ff"/>
+   <circle id="circle6986" cy="5.184" cx="2.667" r=".15" fill="#0ff"/>
+   <circle id="circle6988" cy="1.448" cx="7.965" r=".15" fill="#0ff"/>
+   <circle id="circle6990" cy="5.049" cx="7.047" r=".15" fill="#0ff"/>
+   <circle id="circle6992" cy=".895" cx="4.34" r=".15" fill="#0ff"/>
+   <circle id="circle6994" cy=".34" cx="7.125" r=".15" fill="#0ff"/>
+   <circle id="circle6996" cy="1.049" cx="9.553" r=".15" fill="#0ff"/>
+   <circle id="circle6998" cy="2.689" cx="7.006" r=".15" fill="#0ff"/>
+   <circle id="circle7000" cy="2.689" cx="8.909" r=".15" fill="#0ff"/>
+   <circle id="circle7002" cy="4.407" cx="9.315" r=".15" fill="#0ff"/>
+   <circle id="circle7004" cy="3.87" cx="7.82" r=".15" fill="#0ff"/>
+   <circle id="circle7006" cy="5.948" cx="8.27" r=".15" fill="#0ff"/>
+   <circle id="circle7008" cy="7.428" cx="7.973" r=".15" fill="#0ff"/>
+   <circle id="circle7010" cy="8.072" cx="9.342" r=".15" fill="#0ff"/>
+   <circle id="circle7012" cy="9.315" cx="8.206" r=".15" fill="#0ff"/>
+   <circle id="circle7014" cy="9.475" cx="9.682" r=".15" fill="#0ff"/>
+   <circle id="circle7016" cy="6.186" cx="9.688" r=".15" fill="#0ff"/>
+   <circle id="circle7018" cy="6.296" cx="3.379" r=".15" fill="#0ff"/>
+   <circle id="circle7020" cy="8.204" cx="2.871" r=".15" fill="#0ff"/>
+   <circle id="circle7022" cy="8.719" cx="4.59" r=".15" fill="#0ff"/>
+   <circle id="circle7024" cy="9.671" cx="3.181" r=".15" fill="#0ff"/>
+   <circle id="circle7026" cy="7.315" cx="5.734" r=".15" fill="#0ff"/>
+   <circle id="circle7028" cy="6.513" cx="6.707" r=".15" fill="#0ff"/>
+   <circle id="circle7030" cy="9.67" cx="5.73" r=".15" fill="#0ff"/>
+   <circle id="circle7032" cy="8.373" cx="6.535" r=".15" fill="#0ff"/>
+   <circle id="circle7034" cy="7.154" cx="4.37" r=".15" fill="#0ff"/>
+   <circle id="circle7036" cy="7.25" cx=".622" r=".15" fill="#0ff"/>
+   <circle id="circle7038" cy="5.679" cx=".831" r=".15" fill="#0ff"/>
+   <circle id="circle7040" cy="8.519" cx="1.257" r=".15" fill="#0ff"/>
+   <circle id="circle7042" cy="6.877" cx="1.989" r=".15" fill="#0ff"/>
+   <circle id="circle7044" cy="3.181" cx=".374" r=".15" fill="#0ff"/>
+   <circle id="circle7046" cy="1.664" cx="1.166" r=".15" fill="#0ff"/>
+   <circle id="circle7048" cy=".093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle7050" cy="10.093" cx="1.151" r=".15" fill="#0ff"/>
+   <circle id="circle7052" cy="4.451" cx="1.302" r=".15" fill="#0ff"/>
+   <circle id="circle7054" cy="3.763" cx="3.047" r=".15" fill="#0ff"/>
+  </pattern>
+  <circle id="gpPt5" stroke-width=".222" cy="0" stroke="currentColor" cx="0" r="1"/>
+  <use id="gpPt6" xlink:href="#gpPt5" fill="currentColor"/>
+ </defs>
+ <metadata id="metadata4931">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title4722">Gnuplot</title>
+ <desc id="desc4724">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g id="g5043">
+  <title id="title5045" fill="url(#pattern6532-658)"/>
+  <g id="g5049" style="color:#000000" fill="url(#pattern6532-227)">
+   <path id="path5051" d="m197.1 229.3 6.9-8.3 6.6-9.2 6.2-10.1 5.5-11 4.5-11.8 3.4-12.4 2.1-12.8 0.4-13-1.4-12.8-3.4-12.3-5.3-11.4-7.3-10.2-9-8.6-10.5-6.8-11.7-4.8-12.4-2.9-13-0.9-12.9 0.8-12.8 2.4-12.2 3.7-11.6 4.9-10.8 5.6-9.9 6.3-9 6.7-8.1 6.9-7.2 7.1-6.3 7.1-5.6 7-4.9 6.9-4.2 6.7-3.7 6.5-3.1 6.3-2.6 6-2.2 5.7-1.8 5.6-1.4 5.2-1.2 5.1-0.9 4.8-0.6 4.6-0.4 4.4-0.2 4.1-0.1 4 0.1 3.8 0.3 3.7 0.4 3.5 0.5 3.3 0.6 3.2 0.7 3.1 0.9 2.9 0.9 2.8 1 2.7 1 2.7 1.2 2.5 1.2 2.4 1.2 2.3 1.4 2.2 1.4 2.2 1.5 2 1.5 2 1.6 2 1.7 1.8 1.7 1.8 1.8 1.7 1.9 1.7 1.9 1.6 2.1 1.5 2.1 1.5 2.1 1.4 2.3 1.3 2.3 1.2 2.5 1.2 2.5 1.2 2.6 1 2.8 1 2.8 0.9 3 0.7 3.1 0.7 3.2 0.6 3.4 0.5 3.5 0.4 3.7 0.2 3.9 0.1 4-0.1 4.2-0.3 4.5-0.4 4.6-0.7 4.9-1 5.1-1.2 5.3-1.6 5.6-1.9 5.8-2.2 6.1-2.8 6.3-3.2 6.6-3.8 6.7-4.3 6.9-5.1 7.1-5.8 7.1-6.5 7-7.5" fill="url(#pattern6532-437)"/>
+  </g>
+ </g>
+ <g fill="none">
+  <rect id="rect4727" height="300" width="275" y="0" x="0"/>
+  <g id="g4761" style="color:#ffffff" stroke-width=".5">
+   <path id="path4763" d="m198.2 104.5-0.7-0.7-0.8-0.7-0.8-0.6-0.9-0.6-0.8-0.5-0.9-0.5-1-0.5-0.9-0.4-1-0.3-1-0.3-1-0.2-1-0.2-1-0.2h-1l-1-0.1" stroke="#fff"/>
+   <path id="path4765" d="m198.2 104.5-0.7-0.7-0.8-0.7-0.8-0.6-0.9-0.6-0.8-0.5-0.9-0.5-1-0.5-0.9-0.4-1-0.3-1-0.3-1-0.2-1-0.2-1-0.2h-1l-1-0.1v19.6l13.8-13.8" stroke="#009e73"/>
+  </g>
+  <g id="g4767" style="color:#ffffff" stroke-width=".5">
+   <path id="path4769" d="m152.9 118.3 0.1 1.7 0.1 1.6 0.2 1.7 0.3 1.6 0.4 1.6 0.5 1.6 0.5 1.5 0.7 1.5 0.7 1.5 0.8 1.5 0.8 1.4 0.9 1.3 1 1.3 1.1 1.3 1.1 1.2" stroke="#fff"/>
+   <path id="path4771" d="m152.9 118.3 0.1 1.7 0.1 1.6 0.2 1.7 0.3 1.6 0.4 1.6 0.5 1.6 0.5 1.5 0.7 1.5 0.7 1.5 0.8 1.5 0.8 1.4 0.9 1.3 1 1.3 1.1 1.3 1.1 1.2 22.3-22.3h-31.5" stroke="#9400d3"/>
+  </g>
+ </g>
+ <g id="gnuplot_plot_1a">
+  <title id="title4780"/>
+  <g id="g4784" style="color:#000000" stroke="currentColor" stroke-width="1.5" fill="none">
+   <path id="path4786" d="m197.1 229.3 6.9-8.3 6.6-9.2 6.2-10.1 5.5-11 4.5-11.8 3.4-12.4 2.1-12.8 0.4-13-1.4-12.8-3.4-12.3-5.3-11.4-7.3-10.2-9-8.6-10.5-6.8-11.7-4.8-12.4-2.9-13-0.9-12.9 0.8-12.8 2.4-12.2 3.7-11.6 4.9-10.8 5.6-9.9 6.3-9 6.7-8.1 6.9-7.2 7.1-6.3 7.1-5.6 7-4.9 6.9-4.2 6.7-3.7 6.5-3.1 6.3-2.6 6-2.2 5.7-1.8 5.6-1.4 5.2-1.2 5.1-0.9 4.8-0.6 4.6-0.4 4.4-0.2 4.1-0.1 4 0.1 3.8 0.3 3.7 0.4 3.5 0.5 3.3 0.6 3.2 0.7 3.1 0.9 2.9 0.9 2.8 1 2.7 1 2.7 1.2 2.5 1.2 2.4 1.2 2.3 1.4 2.2 1.4 2.2 1.5 2 1.5 2 1.6 2 1.7 1.8 1.7 1.8 1.8 1.7 1.9 1.7 1.9 1.6 2.1 1.5 2.1 1.5 2.1 1.4 2.3 1.3 2.3 1.2 2.5 1.2 2.5 1.2 2.6 1 2.8 1 2.8 0.9 3 0.7 3.1 0.7 3.2 0.6 3.4 0.5 3.5 0.4 3.7 0.2 3.9 0.1 4-0.1 4.2-0.3 4.5-0.4 4.6-0.7 4.9-1 5.1-1.2 5.3-1.6 5.6-1.9 5.8-2.2 6.1-2.8 6.3-3.2 6.6-3.8 6.7-4.3 6.9-5.1 7.1-5.8 7.1-6.5 7-7.5" stroke="#0072b2"/>
+  </g>
+ </g>
+ <g stroke="none" fill="none">
+  <g stroke-width=".75">
+   <g id="g4794" style="color:#000000">
+    <path id="path4796" d="m73.4 229.3 111-111" stroke="#000"/>
+   </g>
+   <g id="g4798" style="color:#000000">
+    <path id="path4800" d="m184.4 118.3 69.3-69.3" stroke="#000" stroke-dasharray="1.9, 3"/>
+   </g>
+   <g id="g4802" style="color:#000000">
+    <path id="path4804" d="m184.4 118.3-77.6-77.5" stroke="#000" stroke-dasharray="1.9, 3"/>
+   </g>
+   <g id="g4806" style="color:#000000">
+    <path id="path4808" d="m226 76.7-41.7-41.6" stroke="#000" stroke-dasharray="0.8, 1.5"/>
+   </g>
+   <g id="g4810" style="color:#000000">
+    <path id="path4812" d="m142.8 76.7 41.6-41.6" stroke="#000" stroke-dasharray="0.8, 1.5"/>
+   </g>
+   <g id="g4814" style="color:#000000">
+    <path id="path4816" d="m126.1 176.6-58.3-58.2" stroke="#000" stroke-dasharray="0.8, 1.5"/>
+   </g>
+   <g id="g4818" style="color:#000000">
+    <path id="path4820" d="m126.1 60-58.3 58.3" stroke="#000" stroke-dasharray="0.8, 1.5"/>
+   </g>
+  </g>
+  <g id="g4824" style="color:#000000" stroke-width="1.5">
+   <g id="g4826" style="shape-rendering:crispEdges">
+    <polygon id="polygon4828" points="184.4 35 189.5 43.9 184.4 38.7 184.4 38.7 179.3 43.9" fill="#009e73"/>
+   </g>
+   <path id="path4830" d="m184.4 38.7-5.1 5.2 5.1-8.9 5.1 8.9-5.1-5.2m0 79.6v-79.6" stroke="#009e73"/>
+  </g>
+  <g id="g4832" style="color:#000000" stroke-width="1.5">
+   <g id="g4834" style="shape-rendering:crispEdges">
+    <polygon id="polygon4836" points="67.8 118.3 76.7 113.2 71.5 118.3 71.5 118.3 76.7 123.4" fill="#f0f"/>
+   </g>
+   <path id="path4838" d="m71.5 118.3 5.2 5.1-8.9-5.1 8.9-5.1-5.2 5.1m112.9 0h-112.9" stroke="#f0f"/>
+  </g>
+  <g stroke-width="1.2">
+   <g id="g4842" style="color:#000000">
+    <g id="g4844" style="shape-rendering:crispEdges">
+     <polygon id="polygon4846" points="126.1 60.1 133.2 62 128 62 128 62 128 67.2" fill="#f0f"/>
+    </g>
+    <path id="path4848" d="m128 62v5.2l-1.9-7.1 7.1 1.9h-5.2m56.4 56.3-56.4-56.3" stroke="#f0f"/>
+   </g>
+   <g id="g4850" style="color:#000000">
+    <g id="g4852" style="shape-rendering:crispEdges">
+     <polygon id="polygon4854" points="126.1 176.6 128 169.5 128 174.7 128 174.7 133.2 174.7" fill="#f0f"/>
+    </g>
+    <path id="path4856" d="m128 174.7h5.2l-7.1 1.9 1.9-7.1v5.2m56.4-56.4-56.4 56.4" stroke="#f0f"/>
+   </g>
+   <g id="g4858" style="color:#000000">
+    <g id="g4860" style="shape-rendering:crispEdges">
+     <polygon id="polygon4862" points="226 76.7 224.1 83.8 224.1 78.6 224.1 78.6 218.9 78.6" fill="#009e73"/>
+    </g>
+    <path id="path4864" d="m224.1 78.6h-5.2l7.1-1.9-1.9 7.1v-5.2m-39.7 39.7 39.7-39.7" stroke="#009e73"/>
+   </g>
+   <g id="g4866" style="color:#000000">
+    <g id="g4868" style="shape-rendering:crispEdges">
+     <polygon id="polygon4870" points="142.7 76.7 149.8 78.6 144.6 78.6 144.6 78.6 144.6 83.8" fill="#009e73"/>
+    </g>
+    <path id="path4872" d="m144.6 78.6v5.2l-1.9-7.1 7.1 1.9h-5.2m39.8 39.7-39.8-39.7" stroke="#009e73"/>
+   </g>
+  </g>
+  <g>
+   <g id="g4878" style="color:#000000">
+    <g id="g4880" font-size="16px" style="text-anchor:end" transform="translate(73.8,247)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text4882">
+      <tspan id="tspan4884" font-family="&apos;Stix Two Text&apos;" font-style="italic">O</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g4886" style="color:#000000">
+    <use id="use4888" style="color:#000000" xlink:href="#gpPt6" transform="matrix(3.38,0,0,3.38,73.4,229.3)" height="100%" width="100%" y="0" x="0"/>
+   </g>
+   <g id="g4890" style="color:#000000">
+    <g id="g4892" font-size="12px" transform="translate(188.9,118.3)" font-family="Arial" fill="#000">
+     <text id="text4894"/>
+    </g>
+   </g>
+   <g id="g4896" style="color:#000000">
+    <use id="use4898" style="color:#e51e10" xlink:href="#gpPt6" transform="matrix(3.38,0,0,3.38,184.4,118.3)" height="100%" width="100%" y="0" x="0"/>
+   </g>
+   <g id="g4900" style="color:#000000">
+    <g id="g4902" font-size="12px" transform="translate(188.9,118.3)" font-family="Arial" fill="#000">
+     <text id="text4904"/>
+    </g>
+   </g>
+   <g id="g4906" style="color:#000000">
+    <use id="use4908" style="color:#000000" xlink:href="#gpPt5" transform="matrix(3.38,0,0,3.38,184.4,118.3)" height="100%" width="100%" y="0" x="0"/>
+   </g>
+  </g>
+ </g>
+ <g id="gnuplot_plot_1b">
+  <title id="title4915">NaN</title>
+ </g>
+ <g stroke-width="0" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433">
+  <g id="content" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -158.14 1449.9)" ns0:text="$r_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path7963" d="m149.91 707.12 0.05 0.16 0.05 0.15 0.04 0.14 0.04 0.13 0.05 0.13 0.03 0.12 0.04 0.12 0.04 0.11 0.03 0.11 0.04 0.1 0.03 0.1 0.03 0.09 0.04 0.09 0.03 0.08 0.03 0.08 0.03 0.08 0.03 0.08 0.03 0.07 0.06 0.14 0.07 0.14 0.06 0.13 0.07 0.13 0.07 0.13 0.08 0.13 0.04 0.07 0.04 0.07c0.33 0.56 0.61 0.87 0.78 0.87 0.06 0 0.11-0.04 0.16-0.14 0.08-0.17 0.16-0.22 0.36-0.22 0.29 0 0.46 0.18 0.46 0.49s-0.2 0.52-0.47 0.52c-0.23 0-0.5-0.15-0.76-0.42-0.41-0.42-0.81-1.01-0.97-1.41l-0.14-0.36 0.53 2.17-0.03 0.02c-0.73-0.13-0.82-0.15-1.54-0.27v-0.17c0.24 0.05 0.27 0.05 0.34 0.05 0.21 0 0.34-0.1 0.34-0.28 0-0.14 0-0.14-0.16-0.82l-0.8-2.91z"/><path id="path7965" d="m154.14 706.42-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01c-0.12-0.12-0.22-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.04 0.13v0.01 0.02l0.62 2.24-0.02 0.02c-0.71-0.14-0.85-0.16-1.12-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.34-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.98 0.8z"/><path id="path7967" d="m154.08 710.19h-0.02-0.01-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02v-0.02l-0.01-0.01v-0.02-0.02l-0.01-0.02v-0.02-0.02c0-0.22 0.13-0.37 0.34-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/></g>
+  <g id="g8769" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -204.12 1377.6)" ns0:text="$\\vec{f}_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon8771" points="156.38 715.44 155.33 716.88 155.04 716.64 155.58 715.64 152.25 715.64 152.16 715.24 155.5 715.24 154.52 714.24 154.71 714"/><path id="path8773" d="m150.56 711.07h0.9l-0.88-4.19c-0.22-1.06-0.55-1.61-0.97-1.61-0.12 0-0.2 0.07-0.2 0.16 0 0.03 0.01 0.06 0.04 0.11 0.04 0.06 0.05 0.1 0.05 0.16 0 0.21-0.18 0.38-0.39 0.38s-0.36-0.18-0.36-0.41c0-0.34 0.34-0.61 0.78-0.61 0.89 0 1.59 0.99 1.99 2.82l0.72 3.19h1.09l0.06 0.32h-1.08c0.29 1.56 0.66 2.27 1.22 2.27 0.13 0 0.22-0.05 0.22-0.12 0-0.03-0.01-0.05-0.04-0.1-0.04-0.09-0.06-0.14-0.06-0.21 0-0.24 0.15-0.4 0.37-0.4s0.41 0.18 0.41 0.4c0 0.37-0.36 0.65-0.85 0.65s-0.88-0.22-1.24-0.69c-0.3-0.39-0.5-0.85-0.8-1.8h-0.91z"/><path id="path8775" d="m154.53 706.42-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01c-0.12-0.12-0.22-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.04 0.13v0.01 0.02l0.62 2.24-0.02 0.02c-0.71-0.14-0.85-0.16-1.12-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.34-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.98 0.8z"/><path id="path8777" d="m154.47 710.19h-0.02-0.01-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02v-0.02l-0.01-0.01v-0.02-0.02l-0.01-0.02v-0.02-0.02c0-0.22 0.13-0.37 0.34-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/></g>
+  <g id="g10427" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -121.51 1373.5)" ns0:text="$\\varphi_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path10429" d="m154.13 710.16-0.29-0.25c0-0.7-0.56-2.07-2.48-2.07l0.19 0.84c0.47 2.09 1.24 2.21 1.53 2.21 0.57 0 0.76-0.35 0.76-0.98l0.29 0.25c0 0.61-0.15 1.36-1.13 1.36-1 0-1.35-0.77-2.16-3.68-0.47 0-1.25 0.13-1.25 1.12 0 1.62 0.87 2.28 0.87 2.4 0 0.02-0.02 0.03-0.07 0.03-0.1 0-1.46-1.02-1.46-2.78 0-1.07 1.06-1.59 1.69-1.59-0.35-1.32-0.69-1.84-0.78-1.96h0.79l0.5 1.95c1.81 0 3 1.53 3 3.15z"/><path id="path10431" d="m155.93 706.42-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01c-0.12-0.12-0.22-0.19-0.28-0.19s-0.12 0.06-0.12 0.11c0 0.06 0.03 0.17 0.07 0.3 0 0.02 0.03 0.07 0.04 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.71-0.14-0.85-0.16-1.12-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.33-1.24c-0.12-0.4-0.16-0.62-0.16-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.98 0.8z"/><path id="path10433" d="m155.87 710.19h-0.02-0.01-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.01l-0.02-0.01h-0.01l-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02v-0.02l-0.01-0.01v-0.02-0.02-0.02-0.02l-0.01-0.02c0-0.22 0.14-0.37 0.34-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/></g>
+  <g id="g11267" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -72.749 1367.9)" ns0:text="$m_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path11269" d="m155.57 708.29-0.01-0.02-0.02-0.03-0.02-0.02-0.02-0.02v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01v-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01v-0.01c-0.28-0.36-0.49-0.53-0.64-0.53-0.08 0-0.13 0.06-0.13 0.16 0 0.05 0.04 0.21 0.1 0.45l0.68 2.5c0 0.04 0.02 0.22 0.02 0.28 0 0.36-0.24 0.63-0.58 0.63-0.19 0-0.39-0.07-0.63-0.22-0.49-0.32-0.9-0.8-1.59-1.9 0.25 0.76 0.4 1.33 0.4 1.52 0 0.35-0.23 0.6-0.56 0.6-0.61 0-1.31-0.66-2.23-2.11l0.58 2.09-0.03 0.02c-0.56-0.12-0.77-0.16-1.59-0.31v-0.16h0.25c0.26 0 0.39-0.07 0.39-0.22 0-0.11-0.23-1.02-0.59-2.28-0.23-0.82-0.26-0.92-0.39-1.43h0.75c0.47 1.59 0.62 1.96 0.96 2.47 0.56 0.85 1.16 1.41 1.5 1.41 0.13 0 0.2-0.09 0.2-0.25 0-0.09-0.32-1.3-0.95-3.63h0.75c0.4 1.56 0.59 2.05 1.1 2.76 0.49 0.68 0.99 1.12 1.28 1.12 0.11 0 0.2-0.1 0.2-0.21 0-0.05-0.02-0.17-0.07-0.35l-0.58-2.29c-0.09-0.37-0.13-0.56-0.13-0.66 0-0.3 0.14-0.46 0.4-0.46 0.47 0 0.91 0.33 1.43 1.07l0.05 0.07z"/><path id="path11271" d="m157.45 706.42-0.01-0.02-0.02-0.01-0.01-0.02-0.02-0.02-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.01-0.01-0.02v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01v-0.01h-0.01l-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.02-0.02-0.01c-0.11-0.12-0.22-0.19-0.28-0.19s-0.11 0.06-0.11 0.11c0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.03 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.7-0.14-0.84-0.16-1.11-0.18v-0.11c0.37-0.01 0.43-0.03 0.43-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.33-1.24c-0.11-0.4-0.16-0.62-0.16-0.76 0-0.26 0.12-0.4 0.33-0.4 0.32 0 0.57 0.21 0.97 0.8z"/><path id="path11273" d="m157.4 710.19h-0.02-0.02-0.02l-0.01-0.01h-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.01l-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02-0.01-0.01v-0.02l-0.01-0.02v-0.01l-0.01-0.02v-0.02-0.02-0.02-0.02c0-0.22 0.13-0.37 0.33-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.34 0.38z"/></g>
+  <g id="g12983" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -129.44 1291.2)" ns0:text="$\\vec{f}_{i,\\rm t}$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon12985" points="152.25 715.64 152.16 715.24 155.5 715.24 154.52 714.24 154.71 714 156.38 715.44 155.33 716.88 155.04 716.64 155.58 715.64"/><path id="path12987" d="m150.56 711.07h0.9l-0.88-4.19c-0.22-1.06-0.55-1.61-0.97-1.61-0.12 0-0.2 0.07-0.2 0.16 0 0.03 0.01 0.06 0.04 0.11 0.04 0.06 0.05 0.1 0.05 0.16 0 0.21-0.18 0.38-0.39 0.38s-0.36-0.18-0.36-0.41c0-0.34 0.34-0.61 0.78-0.61 0.89 0 1.59 0.99 1.99 2.82l0.72 3.19h1.09l0.06 0.32h-1.08c0.29 1.56 0.66 2.27 1.22 2.27 0.13 0 0.22-0.05 0.22-0.12 0-0.03-0.01-0.05-0.04-0.1-0.04-0.09-0.06-0.14-0.06-0.21 0-0.24 0.15-0.4 0.37-0.4s0.41 0.18 0.41 0.4c0 0.37-0.36 0.65-0.85 0.65s-0.88-0.22-1.24-0.69c-0.3-0.39-0.5-0.85-0.8-1.8h-0.91z"/><path id="path12989" d="m154.53 706.42-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01c-0.12-0.12-0.22-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.04 0.13v0.01 0.02l0.62 2.24-0.02 0.02c-0.71-0.14-0.85-0.16-1.12-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.34-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.98 0.8z"/><path id="path12991" d="m154.47 710.19h-0.02-0.01-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02v-0.02l-0.01-0.01v-0.02-0.02l-0.01-0.02v-0.02-0.02c0-0.22 0.13-0.37 0.34-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/><path id="path12993" d="m156.27 705.67v0.03 0.02 0.03 0.02l-0.01 0.03v0.02 0.02l-0.01 0.03v0.02l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.02-0.01 0.01v0.02l-0.01 0.02-0.01 0.01-0.02 0.03-0.01 0.03-0.02 0.03-0.02 0.02-0.03 0.02-0.02 0.02-0.02 0.02-0.02 0.02-0.03 0.02-0.02 0.01-0.02 0.01-0.03 0.01-0.02 0.01-0.02 0.01-0.03 0.01h-0.02l-0.02 0.01h-0.02l-0.02 0.01h-0.02-0.02-0.02-0.01c-0.18 0-0.41-0.1-0.41-0.4 0-0.28 0.25-0.35 0.44-0.35 0.04 0 0.08 0 0.1 0.01 0.03 0.01 0.05 0.02 0.06 0.02 0.05 0 0.1-0.04 0.1-0.1 0-0.13-0.11-0.45-0.57-0.74l0.06-0.13c0.21 0.07 0.78 0.53 0.78 1.02z"/><path id="path12995" d="m158.44 708.77h-0.71v0.81c0 0.07 0 0.09-0.05 0.09-0.04-0.07-0.09-0.13-0.13-0.2-0.27-0.38-0.57-0.72-0.68-0.74-0.08-0.05-0.12-0.1-0.12-0.14 0-0.02 0.01-0.03 0.03-0.05h0.37v-2.09c0-0.59 0.21-0.89 0.62-0.89 0.34 0 0.61 0.17 0.84 0.53l-0.1 0.08c-0.14-0.18-0.26-0.25-0.41-0.25-0.26 0-0.37 0.19-0.37 0.63v1.99h0.71z"/></g>
+  <g id="g13858" xml:space="preserve" ns0:scale="1.4" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -116.03 1411.5)" ns0:text="$\\vec{f}_{i,\\rm r}$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:texconverter="pdflatex"><polygon id="polygon13860" points="156.38 715.44 155.33 716.88 155.04 716.64 155.58 715.64 152.25 715.64 152.16 715.24 155.5 715.24 154.52 714.24 154.71 714"/><path id="path13862" d="m150.56 711.07h0.9l-0.88-4.19c-0.22-1.06-0.55-1.61-0.97-1.61-0.12 0-0.2 0.07-0.2 0.16 0 0.03 0.01 0.06 0.04 0.11 0.04 0.06 0.05 0.1 0.05 0.16 0 0.21-0.18 0.38-0.39 0.38s-0.36-0.18-0.36-0.41c0-0.34 0.34-0.61 0.78-0.61 0.89 0 1.59 0.99 1.99 2.82l0.72 3.19h1.09l0.06 0.32h-1.08c0.29 1.56 0.66 2.27 1.22 2.27 0.13 0 0.22-0.05 0.22-0.12 0-0.03-0.01-0.05-0.04-0.1-0.04-0.09-0.06-0.14-0.06-0.21 0-0.24 0.15-0.4 0.37-0.4s0.41 0.18 0.41 0.4c0 0.37-0.36 0.65-0.85 0.65s-0.88-0.22-1.24-0.69c-0.3-0.39-0.5-0.85-0.8-1.8h-0.91z"/><path id="path13864" d="m154.53 706.42l-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01h-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01c-0.12-0.12-0.22-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.04 0.13v0.01 0.02l0.62 2.24-0.02 0.02c-0.71-0.14-0.85-0.16-1.12-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.06-0.3l-0.34-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.98 0.8z"/><path id="path13866" d="m154.47 710.19h-0.02-0.01-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02v-0.02l-0.01-0.01v-0.02-0.02l-0.01-0.02v-0.02-0.02c0-0.22 0.13-0.37 0.34-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/><path id="path13868" d="m156.27 705.67v0.03 0.02 0.03 0.02l-0.01 0.03v0.02 0.02l-0.01 0.03v0.02l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.02-0.01 0.01v0.02l-0.01 0.02-0.01 0.01-0.02 0.03-0.01 0.03-0.02 0.03-0.02 0.02-0.03 0.02-0.02 0.02-0.02 0.02-0.02 0.02-0.03 0.02-0.02 0.01-0.02 0.01-0.03 0.01-0.02 0.01-0.02 0.01-0.03 0.01h-0.02l-0.02 0.01h-0.02l-0.02 0.01h-0.02-0.02-0.02-0.01c-0.18 0-0.41-0.1-0.41-0.4 0-0.28 0.25-0.35 0.44-0.35 0.04 0 0.08 0 0.1 0.01 0.03 0.01 0.05 0.02 0.06 0.02 0.05 0 0.1-0.04 0.1-0.1 0-0.13-0.11-0.45-0.57-0.74l0.06-0.13c0.21 0.07 0.78 0.53 0.78 1.02z"/><path id="path13870" d="m156.71 708.35h0.01 0.01l0.01 0.01h0.02 0.02l0.01 0.01h0.02 0.01 0.02 0.01 0.01l0.02 0.01h0.01 0.02 0.01 0.02 0.01c0.18 0 0.24-0.11 0.24-0.42v-1.74c0-0.35-0.05-0.4-0.49-0.49v-0.1h1.67v0.1c-0.48 0.03-0.59 0.13-0.59 0.53v1.57c0 0.22 0.3 0.57 0.48 0.57 0.05 0 0.11-0.04 0.19-0.11 0.11-0.09 0.18-0.13 0.27-0.13 0.17 0 0.28 0.11 0.28 0.31 0 0.23-0.15 0.37-0.39 0.37-0.29 0-0.49-0.16-0.83-0.66v0.64l-0.04 0.02c-0.37-0.16-0.62-0.25-1.03-0.38z"/></g>
+  <g id="g14733" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -132.88 1334.6)" ns0:text="$\\vec{F}_{i,\\rm t}$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon14735" points="151.87 715.03 155.2 715.03 154.23 714.03 154.42 713.79 156.09 715.23 155.03 716.67 154.74 716.43 155.28 715.43 151.96 715.43"/><path id="path14737" d="m155.38 713.63h-4.96v-0.16c0.65-0.06 0.77-0.12 0.77-0.41 0-0.15-0.04-0.4-0.11-0.64l-1.23-4.4c-0.17-0.6-0.25-0.66-0.81-0.74v-0.16h2.51v0.16c-0.58 0.03-0.76 0.14-0.76 0.44 0 0.08 0.03 0.23 0.09 0.45l0.62 2.22c0.37-0.02 0.59-0.03 0.8-0.03 0.39 0 0.46-0.01 0.55-0.05 0.15-0.08 0.22-0.21 0.22-0.41 0-0.16-0.02-0.28-0.08-0.59l0.17-0.05 0.76 2.34-0.18 0.05c-0.45-0.9-0.48-0.91-2.15-0.93l0.65 2.32c0.06 0.2 0.2 0.26 0.61 0.26 1.68 0 2.03-0.13 2.03-0.75v-0.24c-0.01-0.06-0.01-0.07-0.03-0.19l0.22-0.02z"/><path id="path14739" d="m156.84 706.42-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.02-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01h-0.01l-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01c-0.12-0.12-0.23-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.03 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.7-0.14-0.84-0.16-1.11-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.07-0.3l-0.33-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.97 0.8z"/><path id="path14741" d="m156.79 710.19h-0.02-0.02-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.02v-0.01-0.02l-0.01-0.02v-0.02-0.02-0.02c0-0.22 0.13-0.37 0.33-0.37 0.19 0 0.35 0.16 0.35 0.36s-0.16 0.38-0.35 0.38z"/><path id="path14743" d="m158.6 705.67v0.03 0.02l-0.01 0.03v0.02 0.03 0.02l-0.01 0.02v0.03l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.01-0.01 0.02-0.01 0.02v0.01l-0.02 0.03-0.02 0.03-0.02 0.03-0.02 0.02-0.02 0.02-0.02 0.02-0.03 0.02-0.02 0.02-0.02 0.02-0.02 0.01-0.03 0.01-0.02 0.01-0.03 0.01-0.02 0.01-0.02 0.01h-0.02l-0.03 0.01h-0.02l-0.02 0.01h-0.02-0.01-0.02-0.02c-0.17 0-0.4-0.1-0.4-0.4 0-0.28 0.25-0.35 0.43-0.35 0.05 0 0.08 0 0.1 0.01 0.03 0.01 0.05 0.02 0.07 0.02 0.05 0 0.09-0.04 0.09-0.1 0-0.13-0.11-0.45-0.57-0.74l0.07-0.13c0.21 0.07 0.78 0.53 0.78 1.02z"/><path id="path14745" d="m160.76 708.77h-0.71v0.81c0 0.07-0.01 0.09-0.05 0.09-0.05-0.07-0.09-0.13-0.14-0.2-0.26-0.38-0.56-0.72-0.67-0.74-0.08-0.05-0.12-0.1-0.12-0.14 0-0.02 0-0.03 0.03-0.05h0.37v-2.09c0-0.59 0.21-0.89 0.62-0.89 0.34 0 0.6 0.17 0.83 0.53l-0.09 0.08c-0.14-0.18-0.26-0.25-0.42-0.25-0.25 0-0.36 0.19-0.36 0.63v1.99h0.71z"/></g>
+  <g id="g15615" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -70.43 1333.8)" ns0:text="$\\theta_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path15617" d="m153.22 711.93v0.01 0.02 0.01 0.02 0.01 0.02 0.04 0.05l-0.01 0.06v0.05l-0.01 0.06-0.01 0.07-0.01 0.07-0.01 0.07-0.02 0.07-0.01 0.08-0.02 0.07-0.03 0.08-0.03 0.07-0.03 0.08-0.03 0.07-0.04 0.07-0.04 0.07-0.05 0.07-0.05 0.06-0.02 0.03-0.03 0.03-0.03 0.03-0.03 0.03-0.04 0.03-0.03 0.02-0.03 0.03-0.04 0.02-0.04 0.02-0.04 0.02-0.04 0.02-0.04 0.01-0.04 0.02-0.05 0.01-0.05 0.01-0.04 0.01-0.05 0.01h-0.05l-0.06 0.01h-0.05l-0.01-0.21c0.4 0 0.56-0.35 0.56-0.92 0-0.54-0.14-1.27-0.34-2.08h-2.16c0.35 1.45 0.98 3 1.94 3l0.01 0.21c-1.77 0-3.02-2.77-3.02-4.68 0-0.36 0.06-1.95 1.32-1.95l0.14 0.22c-0.55 0-0.74 0.48-0.74 1.15 0 0.49 0.11 1.08 0.24 1.69h2.17c-0.31-1.16-0.66-2.84-1.67-2.84l-0.14-0.22c1.99 0 2.9 3.39 2.9 4.92z"/><path id="path15619" d="m154.63 706.42-0.01-0.02-0.02-0.01-0.01-0.02-0.02-0.02-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.01-0.01-0.02v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01v-0.01h-0.01l-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.01c-0.12-0.12-0.23-0.19-0.29-0.19s-0.11 0.06-0.11 0.11c0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.03 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.7-0.14-0.84-0.16-1.11-0.18v-0.11c0.36-0.01 0.44-0.03 0.44-0.17 0-0.05-0.03-0.16-0.07-0.3l-0.33-1.24c-0.11-0.4-0.16-0.62-0.16-0.76 0-0.26 0.12-0.4 0.32-0.4 0.33 0 0.58 0.21 0.98 0.8z"/><path id="path15621" d="m154.57 710.19h-0.01-0.02-0.02l-0.01-0.01h-0.02l-0.02-0.01h-0.01l-0.02-0.01h-0.01l-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02v-0.01l-0.01-0.02-0.01-0.01v-0.02l-0.01-0.02v-0.01l-0.01-0.02v-0.02-0.02-0.02-0.02c0-0.22 0.13-0.37 0.33-0.37 0.18 0 0.34 0.16 0.34 0.36s-0.16 0.38-0.35 0.38z"/></g>
+  <g id="g16499" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -34.056 1331)" ns0:text="$\\vec{F}_{i,\\rm r}$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon16501" points="151.96 715.43 151.87 715.03 155.2 715.03 154.23 714.03 154.42 713.79 156.09 715.23 155.03 716.67 154.74 716.43 155.28 715.43"/><path id="path16503" d="m155.38 713.63h-4.96v-0.16c0.65-0.06 0.77-0.12 0.77-0.41 0-0.15-0.04-0.4-0.11-0.64l-1.23-4.4c-0.17-0.6-0.25-0.66-0.81-0.74v-0.16h2.51v0.16c-0.58 0.03-0.76 0.14-0.76 0.44 0 0.08 0.03 0.23 0.09 0.45l0.62 2.22c0.37-0.02 0.59-0.03 0.8-0.03 0.39 0 0.46-0.01 0.55-0.05 0.15-0.08 0.22-0.21 0.22-0.41 0-0.16-0.02-0.28-0.08-0.59l0.17-0.05 0.76 2.34-0.18 0.05c-0.45-0.9-0.48-0.91-2.15-0.93l0.65 2.32c0.06 0.2 0.2 0.26 0.61 0.26 1.68 0 2.03-0.13 2.03-0.75v-0.24c-0.01-0.06-0.01-0.07-0.03-0.19l0.22-0.02z"/><path id="path16505" d="m156.84 706.42-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.02-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01h-0.01l-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01c-0.12-0.12-0.23-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.03 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.7-0.14-0.84-0.16-1.11-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.07-0.3l-0.33-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.97 0.8z"/><path id="path16507" d="m156.79 710.19h-0.02-0.02-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.02v-0.01-0.02l-0.01-0.02v-0.02-0.02-0.02c0-0.22 0.13-0.37 0.33-0.37 0.19 0 0.35 0.16 0.35 0.36s-0.16 0.38-0.35 0.38z"/><path id="path16509" d="m158.6 705.67v0.03 0.02l-0.01 0.03v0.02 0.03 0.02l-0.01 0.02v0.03l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.02v0.02l-0.01 0.01-0.01 0.02-0.01 0.02v0.01l-0.02 0.03-0.02 0.03-0.02 0.03-0.02 0.02-0.02 0.02-0.02 0.02-0.03 0.02-0.02 0.02-0.02 0.02-0.02 0.01-0.03 0.01-0.02 0.01-0.03 0.01-0.02 0.01-0.02 0.01h-0.02l-0.03 0.01h-0.02l-0.02 0.01h-0.02-0.01-0.02-0.02c-0.17 0-0.4-0.1-0.4-0.4 0-0.28 0.25-0.35 0.43-0.35 0.05 0 0.08 0 0.1 0.01 0.03 0.01 0.05 0.02 0.07 0.02 0.05 0 0.09-0.04 0.09-0.1 0-0.13-0.11-0.45-0.57-0.74l0.07-0.13c0.21 0.07 0.78 0.53 0.78 1.02z"/><path id="path16511" d="m159.03 708.35h0.01l0.01 0.01h0.01 0.02 0.01l0.02 0.01h0.01 0.02 0.01 0.02 0.01l0.02 0.01h0.01 0.02 0.01 0.01 0.02c0.18 0 0.24-0.11 0.24-0.42v-1.74c0-0.35-0.05-0.4-0.5-0.49v-0.1h1.68v0.1c-0.48 0.03-0.6 0.13-0.6 0.53v1.57c0 0.22 0.3 0.57 0.49 0.57 0.04 0 0.11-0.04 0.18-0.11 0.11-0.09 0.19-0.13 0.28-0.13 0.17 0 0.27 0.11 0.27 0.31 0 0.23-0.14 0.37-0.38 0.37-0.29 0-0.5-0.16-0.84-0.66v0.64l-0.03 0.02c-0.37-0.16-0.62-0.25-1.03-0.38z"/></g>
+  <g id="g17403" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -72.408 1271.8)" ns0:text="$\\vec{F}_i$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon17405" points="155.03 716.67 154.74 716.43 155.28 715.43 151.96 715.43 151.87 715.03 155.2 715.03 154.23 714.03 154.42 713.79 156.09 715.23"/><path id="path17407" d="m155.38 713.63h-4.96v-0.16c0.65-0.06 0.77-0.12 0.77-0.41 0-0.15-0.04-0.4-0.11-0.64l-1.23-4.4c-0.17-0.6-0.25-0.66-0.81-0.74v-0.16h2.51v0.16c-0.58 0.03-0.76 0.14-0.76 0.44 0 0.08 0.03 0.23 0.09 0.45l0.62 2.22c0.37-0.02 0.59-0.03 0.8-0.03 0.39 0 0.46-0.01 0.55-0.05 0.15-0.08 0.22-0.21 0.22-0.41 0-0.16-0.02-0.28-0.08-0.59l0.17-0.05 0.76 2.34-0.18 0.05c-0.45-0.9-0.48-0.91-2.15-0.93l0.65 2.32c0.06 0.2 0.2 0.26 0.61 0.26 1.68 0 2.03-0.13 2.03-0.75v-0.24c-0.01-0.06-0.01-0.07-0.03-0.19l0.22-0.02z"/><path id="path17409" d="m156.84 706.42-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.02-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01h-0.01l-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01c-0.12-0.12-0.23-0.19-0.29-0.19-0.05 0-0.11 0.06-0.11 0.11 0 0.06 0.02 0.17 0.07 0.3 0 0.02 0.02 0.07 0.03 0.13v0.01l0.01 0.02 0.61 2.24-0.02 0.02c-0.7-0.14-0.84-0.16-1.11-0.18v-0.11c0.37-0.01 0.44-0.03 0.44-0.17 0-0.05-0.02-0.16-0.07-0.3l-0.33-1.24c-0.11-0.4-0.15-0.62-0.15-0.76 0-0.26 0.11-0.4 0.32-0.4 0.32 0 0.58 0.21 0.97 0.8z"/><path id="path17411" d="m156.79 710.19h-0.02-0.02-0.01l-0.02-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01h-0.02l-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.01-0.01-0.02-0.01-0.01v-0.02l-0.01-0.02v-0.01-0.02l-0.01-0.02v-0.02-0.02-0.02c0-0.22 0.13-0.37 0.33-0.37 0.19 0 0.35 0.16 0.35 0.36s-0.16 0.38-0.35 0.38z"/></g>
+ </g>
+</svg>

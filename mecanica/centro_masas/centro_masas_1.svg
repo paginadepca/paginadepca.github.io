@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg7393" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" height="225" width="290" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 290 225" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <metadata id="metadata7521">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title7395">Gnuplot</title>
+ <desc id="desc7397">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g fill="none">
+  <rect id="rect7400" height="225" width="290" y="0" x="0"/>
+  <g stroke="none">
+   <g id="g7462" style="color:#ffffff">
+    <path id="path7464" d="m37.8 189v-114.9h172.4v114.9h-172.4z" stroke="#e51e10"/>
+   </g>
+   <g id="g7468" style="color:#000000" stroke-width=".5">
+    <g id="g7470" style="shape-rendering:crispEdges">
+     <polygon id="polygon7472" points="267.6 189 257.7 191.6 259.2 189 259.2 189 257.7 186.4" fill="#000"/>
+    </g>
+    <path id="path7474" d="m259.2 189-1.5-2.6 9.9 2.6-9.9 2.6 1.5-2.6m-221.4 0h221.4" stroke="#000"/>
+   </g>
+   <g id="g7476" style="color:#000000" stroke-width=".5">
+    <g id="g7478" style="shape-rendering:crispEdges">
+     <polygon id="polygon7480" points="37.8 16.7 40.4 26.6 37.8 25.1 37.8 25.1 35.2 26.6" fill="#000"/>
+    </g>
+    <path id="path7482" d="m37.8 25.1-2.6 1.5 2.6-9.9 2.6 9.9-2.6-1.5m0 163.9v-163.9" stroke="#000"/>
+   </g>
+   <g id="g7486" style="color:#000000">
+    <g id="g7488" style="text-anchor:middle" font-size="16px" transform="translate(26.7,26.2)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text7490">
+      <tspan id="tspan7492" font-weight="bold" font-family="&apos;Stix Two Text&apos;" font-style="italic">y</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g7494" style="color:#000000">
+    <g id="g7496" style="text-anchor:middle" font-size="16px" transform="translate(263,204.1)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text7498">
+      <tspan id="tspan7500" font-weight="bold" font-family="&apos;Stix Two Text&apos;" font-style="italic">x</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g id="gnuplot_plot_1">
+  <title id="title7505">NaN</title>
+ </g>
+ <g id="content" xml:space="preserve" stroke="#000" stroke-width="0" fill-rule="evenodd" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -58.257 1444.1)" stroke-miterlimit="10.433" ns0:text="$L_1$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path4892" d="m152.97 713.63h-2.72v-0.16c0.62-0.06 0.77-0.14 0.77-0.43 0-0.14-0.04-0.37-0.11-0.62l-1.23-4.4c-0.17-0.58-0.24-0.64-0.8-0.74v-0.16h5.07l0.58 1.79-0.2 0.06c-0.35-0.72-0.62-1.04-1.06-1.26-0.35-0.17-0.76-0.23-1.62-0.23-0.76 0-1.01 0.08-1.01 0.34 0 0.07 0.05 0.31 0.1 0.5l1.23 4.41c0.15 0.51 0.41 0.7 1 0.74z"/><path id="path4894" d="m156.53 710.34-1.26-0.63v-0.1c0.09 0.04 0.16 0.06 0.19 0.08 0.13 0.05 0.25 0.08 0.32 0.08 0.14 0 0.21-0.11 0.21-0.33v-3.16c0-0.23-0.06-0.39-0.17-0.45-0.11-0.07-0.2-0.09-0.5-0.1v-0.1h1.93v0.1c-0.55 0.01-0.66 0.08-0.66 0.42v4.18z"/></g>
+ <g id="g5343" xml:space="preserve" stroke="#000" stroke-width="0" fill-rule="evenodd" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -244.67 1318.4)" stroke-miterlimit="10.433" ns0:text="$L_2$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path5345" d="m152.97 713.63h-2.72v-0.16c0.62-0.06 0.77-0.14 0.77-0.43 0-0.14-0.04-0.37-0.11-0.62l-1.23-4.4c-0.17-0.58-0.24-0.64-0.8-0.74v-0.16h5.07l0.58 1.79-0.2 0.06c-0.35-0.72-0.62-1.04-1.06-1.26-0.35-0.17-0.76-0.23-1.62-0.23-0.76 0-1.01 0.08-1.01 0.34 0 0.07 0.05 0.31 0.1 0.5l1.23 4.41c0.15 0.51 0.41 0.7 1 0.74z"/><path id="path5347" d="m157.81 706.59-0.09 0.03c-0.26-0.4-0.35-0.46-0.66-0.46h-1.67l1.17 1.23c0.62 0.65 0.9 1.18 0.9 1.72 0 0.7-0.57 1.23-1.29 1.23-0.39 0-0.75-0.15-1.01-0.43-0.22-0.24-0.32-0.46-0.44-0.95l0.14-0.04c0.28 0.68 0.53 0.91 1.01 0.91 0.59 0 0.99-0.4 0.99-0.99 0-0.54-0.32-1.19-0.91-1.81l-1.24-1.32v-0.08h2.72z"/></g>
+</svg>
