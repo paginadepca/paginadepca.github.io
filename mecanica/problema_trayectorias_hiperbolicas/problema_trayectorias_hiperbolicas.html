@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Problema de trayectorias hiperbólicas">
+<meta name="keywords"
+content="problema, trayectorias, hiperbólicas">
+<title>Problema de trayectorias hiperbólicas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Problema de trayectorias hiperbólicas</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se considera:</p>
+
+<p align="center">$V = \dfrac{K}{r}, \quad K \gtrless 0$</p>
+
+<p>Es un problema aplicable a cometas o al estudio de choques
+entre partículas cargadas (problema de Rutherford).</p>
+
+<p align="center"><object
+data="problema_trayectorias_hiperbolicas_1.svg" type="image/svg+xml"
+width="600" height="180"></object></p>
+
+<p>Situación inicial:</p>
+
+<p align="center">$r \to \infty \ \left\{ \begin{array}{l} E = 
+\dfrac{1}{2} m v_0^2 \\[1ex] L = m v_0 b \quad ( \, \vec{L} = m 
+(\vec{r} \times \vec{v}_0) \ \Rightarrow \ L = 
+m\color{red}{r}v_0\!\color{red}{\sin\beta} = m\color{red}{b}v_0 \, ) 
+\end{array} \right.$</p>
+
+<p>Donde $b$ es el parámetro de impacto.</p>
+
+<p>Cuando $\dot{r} = 0$ toda la energía mecánica es energía
+potencial eficaz, teniendo lugar cuando la partícula está más
+cerca del centro de fuerzas. Esto es, la distancia mínima se
+halla de la ecuación:</p>
+
+<p align="center">$\dfrac{L^2}{2mr^2} + \dfrac{K}{r} = E$</p>
+
+<p>Sustituyendo $E$, por tanto:</p>
+
+<p align="center">$\dfrac{L^2}{2mr^2} + \dfrac{K}{r} = \dfrac{1}{2}mv_0^2$</p>
+
+<p>Multiplicando por $2mr^2$, y reordenando:</p>
+
+<p align="center">$m^2v_0^2r^2 - 2mKr - L^2 = 0$</p>
+
+<p>Reemplazando $L$, entonces:</p>
+
+<p align="center">$\begin{gather} m^\cancel{2}\!v_0^2
+r^2 - 2\!\cancel{m}\!Kr - m^\cancel{2}\!b^2 v_0^2= 0 \\[1ex] mv_0^2 r^2
+- 2Kr - mb^2 v_0^2 = 0\end{gather}$</p>
+
+<p>Ecuación de segundo grado, cuya solución es:</p>
+
+<p align="center">$\begin{align} r &amp;= \dfrac{2K
+\pm \sqrt{4K^2 + 4m^2 b^2 v_0^4}}{2mv_0^2} = \\[1ex] &amp;= \dfrac{K}{mv_0^2}
+\pm \sqrt{\dfrac{\bcancel{4}\!K^2 + \!\bcancel{4}\!m^2 b^2 v_0^4}{\bcancel{4}\!m^2v_0^4}}
+= \\[1ex] &amp;= \dfrac{K}{mv_0^2} \pm \sqrt{\dfrac{K^2}{m^2 v_0^4}
+\left( 1 + \dfrac{m^2b^2v_0^4}{K^2}\right) } = \\[1ex] &amp;= \dfrac{K}{mv_0^2}
+\pm \dfrac{K}{mv_0^2} \sqrt{1 + \dfrac{m^2b^2v_0^4}{K^2}} = \\[1ex]
+&amp;= \dfrac{K}{mv_0^2} \left( 1 \pm \sqrt{1 + \dfrac{m^2b^2v_0^4}{K^2}}
+\right) \end{align}$</p>
+
+<p>Según sea la interacción de carácter atractivo, $K &lt; 0$,
+o repulsivo, $K &gt; 0$, y teniendo en cuenta que $r$ no puede
+tomar valores negativos:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} K &gt; 0 \ \Rightarrow
+\ r_\text{min} &amp;= \dfrac{K}{mv_0^2} \left( 1 + \sqrt{1 + \dfrac{m^2
+b^2 v_0^4}{K^2}} \right) = \\[1ex] &amp;= \dfrac{K}{2E} \left( 1
++ \sqrt{1 + \dfrac{2L^2 E}{mK^2}} \right) \end{aligned} \\[1em] \begin{aligned}
+K &lt; 0 \ \Rightarrow \ r_\text{min} &amp;= \dfrac{K}{mv_0^2} \left(
+1 - \sqrt{1 + \dfrac{m^2 b^2 v_0^4}{K^2}} \right) = \\[1ex] &amp;=
+\dfrac{K}{2E} \left( 1 - \sqrt{1 + \dfrac{2L^2 E}{mK^2}} \right)
+\end{aligned} \end{array}$</p>
+
+<p>Para $L = 0$, por tanto $b = 0$, resulta:</p>
+
+<p align="center">$\begin{array}{l} K &gt; 0,\, L = 0 \ \Rightarrow
+\ r_\text{min} = \dfrac{K}{E} \\[1ex] K &lt;0,\, L = 0 \ \Rightarrow
+\ r_\text{min} = 0 \end{array}$</p>
+
+<p>En el caso de una colisión donde $K &gt; 0$, en su
+trayectoria la partícula se desvía de una asíntota a la otra:</p>
+
+<p align="center"><object
+data="problema_trayectorias_hiperbolicas_2.svg" type="image/svg+xml"
+width="395" height="425"></object></p>
+
+<p>Así pues:</p>
+
+<p align="center">$\Theta = \pi - 2\alpha \ \Rightarrow \ \dfrac{\Theta}{2}
+= \dfrac{\pi}{2} - \alpha$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\tan{\dfrac{\Theta}{2}} = \operatorname{cotan}\alpha$</p>
+
+<p>Para la asíntota de la rama $(-)$ de la hipérbola:</p>
+
+<p align="center">$\begin{align} \left. \begin{array}{l} \cos\alpha
+= \dfrac{1}{\varepsilon} \\[1ex] \sin\alpha = \sqrt{1 - \cos^2\alpha}
+= \sqrt{1 - \dfrac{1}{\varepsilon^2}} \end{array} \ \right\} \Rightarrow
+\operatorname{cotan}\alpha &amp;= \dfrac{\cos\alpha}{\sin\alpha}
+= \dfrac{1{∕}\varepsilon}{\sqrt{1 - 1{∕}\varepsilon^2}} = \\[1ex]
+&amp;= \left( \varepsilon^2 - 1 \right)^{-1/2} \end{align}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\tan\dfrac{\Theta}{2} = \operatorname{cotan}\alpha
+= \left( \varepsilon^2 - 1 \right)^{-1/2}$</p>
+
+<p>Como:</p>
+
+<p align="center">$\varepsilon = \left( 1 + \dfrac{2EL^2}{mK^2} 
+\right)^{\!1/2} \ \Rightarrow \ \left( \varepsilon^2 - 1 \right) = 
+\dfrac{2EL^2}{mK^2}$</p>
+
+<p>Por lo que:</p>
+
+<p align="center">$\tan\dfrac{\Theta}{2} = \operatorname{cotan}\alpha
+= \left( \varepsilon^2 - 1 \right)^{-1/2} = \sqrt{\dfrac{mK^2}{2EL^2}}$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../segunda_tercera_leyes_kepler/segunda_tercera_leyes_kepler.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo/movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

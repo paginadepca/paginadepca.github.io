@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="El problema de los dos cuerpos">
+<meta name="keywords" content="problema, dos, cuerpos">
+<title>El problema de los dos cuerpos</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>El problema de los dos cuerpos</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se considera un sistema de dos partículas cuyas fuerzas
+interiores satisfacen la tercera ley de Newton:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="problema_dos_cuerpos_1.svg" type="image/svg+xml"
+        width="160" height="120"></object></td>
+        <td>$\quad \begin{array}{l} \vec{F}{}_1^i = - \vec{F}{}_2^i
+        \\[1ex] \vec{F}{}_1^e , \ \vec{F}{}_2^e
+        \end{array}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Sus ecuaciones de movimiento, según la segunda ley de Newton,
+son:</p>
+
+<p align="center">$\begin{array}{l} m_1 \ddot{\vec{r}}_1
+= \vec{F}{}_1^i + \vec{F}{}_1^e = \vec{F}_1(\vec{r}_1,\vec{r}_2)
+\\[1ex] m_2 \ddot{\vec{r}}_2 = \vec{F}{}_2^i
++ \vec{F}{}_2^e = \vec{F}_2(\vec{r}_1,\vec{r}_2)
+\end{array}$</p>
+
+<p>Se introducen ahora las siguientes variables:</p>
+
+<p align="center"><object data="problema_dos_cuerpos_2.svg" width="160"
+height="120" type="image/svg+xml"></object></p>
+
+<blockquote>
+    <p>$\vec{r}_{\scriptsize\text{CM}} = \dfrac{m_1 \vec{r}_1
+    + m_2 \vec{r}_2}{m_1 \! + m_2}$ &emsp; Variable de centro
+    de masas.</p>
+</blockquote>
+
+<blockquote>
+    <p>$\vec{r} = \vec{r}_1 - \vec{r}_2$
+    &emsp; Variable de posición relativa de $1$ respecto de $2$.</p>
+</blockquote>
+
+<p>De donde pueden aislarse $\vec{r}_1$ y $\vec{r}_2$:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} 
+\left.\begin{array}{l} \left(m_1 \! + m_2\right) 
+\vec{r}_{\scriptsize\text{CM}} = m_1 \vec{r}_1 + m_2 \vec{r}_2 \\[1ex] 
+m_2 \vec{r} = m_2 \vec{r}_1 - m_2 \vec{r}_2 \end{array}\right\} 
+&amp;\Rightarrow \left( m_1 \! + m_2 \right) 
+\vec{r}_{\scriptsize\text{CM}} + m_2 \vec{r} = \left( m_1 \! + 
+m_2\right) \vec{r}_1 \\[1ex] &amp;\Rightarrow \vec{r}_1 = 
+\vec{r}_{\scriptsize\text{CM}} + \dfrac{m_2}{m_1 \! + m_2}\vec{r} 
+\end{aligned} \\[1em] \begin{aligned} \left.\begin{array}{l} \left(m_1 
+\! + m_2\right) \vec{r}_{\scriptsize\text{CM}} = m_1 \vec{r}_1 + m_2 
+\vec{r}_2 \\[1ex] -m_1 \vec{r} = -m_1 \vec{r}_1 + m_1 \vec{r}_2 
+\end{array}\right\} &amp;\Rightarrow \left( m_1 \! + m_2 \right) 
+\vec{r}_{\scriptsize\text{CM}} - m_1 \vec{r} = \left( m_1 \! + m_2 
+\right) \vec{r}_2 \\[1ex] &amp;\Rightarrow \vec{r}_2 = 
+\vec{r}_{\scriptsize\text{CM}} - \dfrac{m_1}{m_1 \! + m_2}\vec{r} 
+\end{aligned} \end{array}$</p>
+
+<p>Se suman las ecuaciones de movimiento de ambas partículas:</p>
+
+<p align="center">$\begin{array}{l} m_1 \ddot{\vec{r}}_1 + m_2 
+\ddot{\vec{r}}_2 = \! \bcancel{\vec{F}{}_1^i} \! + \vec{F}{}_1^e + \! 
+\underbrace{\bcancel{\vec{F}{}_2^i}}_{\displaystyle -\vec{F}{}_1^i} \! 
++ \vec{F}{}_2^e \\[1ex] m_1 \ddot{\vec{r}}_1 + m_2 \ddot{\vec{r}}_2 = 
+\vec{F}{}_1^e + \vec{F}{}_2^e \end{array}$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\ddot{\vec{r}}_{\scriptsize\text{CM}} = 
+\dfrac{m_1\ddot{\vec{r}}_1 + m_2\ddot{\vec{r}}_2}{m_1 \! + m_2} \ 
+\Rightarrow \ m_1\ddot{\vec{r}}_1 + m_2\ddot{\vec{r}}_2 = \left( m_1 \! 
++ m_2 \right) \ddot{\vec{r}}_{\scriptsize\text{CM}}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\left( m_1 \! + m_2 \right) 
+\ddot{\vec{r}}_{\scriptsize\text{CM}} = \vec{F}{}_1^e + \vec{F}{}_2^e$ 
+&emsp; Ecuación de movimiento del CM.</p>
+
+<p>Multiplicando las ecuaciones de movimiento de cada partícula
+por la masa de la otra, y luego restándole a la primera la
+segunda:</p>
+
+<p align="center">$\begin{array}{l} m_1 m_2 \ddot{\vec{r}}_1 - m_1 m_2 
+\ddot{\vec{r}}_2 = m_2 \left( \vec{F}{}_1^i + \vec{F}{}_1^e \right) - 
+m_1 \Bigl( \underbrace{\vec{F}{}_2^i}_{\displaystyle -\vec{F}{}_1^i} + 
+\vec{F}{}_2^e \Bigr) \\[1ex] m_1 m_2 \underbrace{\left( 
+{\ddot{\vec{r}}_1 - \ddot{\vec{r}}_2} 
+\right)}_{\displaystyle\ddot{\vec{r}}} = m_2 \vec{F}{}_1^i + m_1 
+\vec{F}{}_1^i + m_2 \vec{F}{}_1^e - m_1 \vec{F}{}_2^e \\[1ex] m_1 m_2 
+\ddot{\vec{r}} = \left( m_1 \! + m_2\right) \vec{F}{}_1^i + m_1 m_2 
+\left( \dfrac{\vec{F}{}_1^e}{m_1} - \dfrac{\vec{F}{}_2^e}{m_2} \right) 
+\end{array}$</p>
+
+<p>Que es la ecuación de movimiento para $\vec{r}$.
+Si se divide por $m_1 \! + m_2$:</p>
+
+<p align="center">$\dfrac{m_1 m_2}{m_1 \! + m_2} \ddot{\vec{r}} = 
+\vec{F}{}_1^i + \dfrac{m_1 m_2}{m_1 \! + m_2} \left( 
+\dfrac{\vec{F}{}_1^e}{m_1} - \dfrac{\vec{F}{}_2^e}{m_2} \right)$</p>
+
+<p>Si se supone que:</p>
+
+<p align="center">$\dfrac{\vec{F}{}_1^e}{m_1} = 
+\dfrac{\vec{F}{}_2^e}{m_2}$</p>
+
+<p>Suposición válida cuando la fuerza externa sea proporcional
+a la masa sobre la cual actúa (p.ej. $\vec{F}{}_k^e =
+m_k \vec{g}$).</p>
+
+<p>Además si:</p>
+
+<blockquote>
+    <p>$M = m_1 \! + m_2$ &emsp; Masa total.</p>
+    <p>$\mu = \dfrac{m_1 m_2}{m_1 \! + m_2}$ &emsp; Masa reducida.</p>
+    <p>$\vec{F} = \vec{F}{}_1^e + \vec{F}{}_2^e$</p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<blockquote>
+    <p>$\boxed{M \ddot{\vec{r}}_{\scriptsize\text{CM}}
+    = \vec{F}}$ &emsp; Movimiento del centro de masas.</p>
+    <p>$\boxed{\mu \ddot{\vec{r}} = \vec{F}{}_1^i}$
+    &emsp; Movimiento relativo.</p>
+</blockquote>
+
+<p>Tienen la forma de las ecuaciones que describen el movimiento
+de una sóla partícula.</p>
+
+<p>Un caso en que se cumpliría la suposición anteriormente hecha sería 
+el sistema <span style="white-space:nowrap">Tierra-Luna</span>, ya que 
+su separación es mucho menor que la distancia que los separa del Sol u 
+otros planetas, pudiéndose aproximar que ambos están igual de distantes 
+respecto a cada uno de estos, de tal modo que:</p>
+
+<p align="center">$\dfrac{\vec{F}{}_L^e}{m_L} = 
+\dfrac{\vec{F}{}_T^e}{m_T}$</p>
+
+<p>La velocidad del centro de masas y la velocidad relativa
+están relacionadas con las velocidades de las partículas según
+las siguientes ecuaciones:</p>
+
+<p align="center">$\left. \begin{array}{l} 
+\vec{v}_{\scriptsize\text{CM}} = \dot{\vec{r}}_{\scriptsize\text{CM}} 
+=\dfrac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 \! + m_2} \\[1ex] \vec{v} = 
+\dot{\vec{r}} = \vec{v}_1 - \vec{v}_2 \end{array} \right\} \ 
+\Rightarrow \ \left\{ \begin{array}{l} \vec{v}_1 = 
+\vec{v}_{\scriptsize\text{CM}} + \dfrac{\mu}{m_1}\vec{v} \\[1ex] 
+\vec{v}_2 = \vec{v}_{\scriptsize\text{CM}} - \dfrac{\mu}{m_2}\vec{v} 
+\end{array} \right.$</p>
+
+<p>Por tanto la energía cinética del sistema:</p>
+
+<p align="center">$\begin{align} E_{\text{cin}} &amp;= \dfrac{1}{2} m_1 
+v_1^2 + \dfrac{1}{2} m_2 v_2^2 = \\[1ex] &amp;\hspace{12em} \vec{b}{}^2 
+= \vec{b} \cdot \vec{b} = b^2 \\[1ex] &amp;= \dfrac{1}{2} m_1 
+\vec{v}{}_1^2 + \dfrac{1}{2} m_2 \vec{v}{}_2^2 = \\[1ex] &amp;= 
+\dfrac{1}{2} m_1 \left( \vec{v}_{\scriptsize\text{CM}} + 
+\dfrac{\mu}{m_1} \vec{v} \right)^{\! 2} + \dfrac{1}{2} m_2 \left( 
+\vec{v}_{\scriptsize\text{CM}} - \dfrac{\mu}{m_2}\vec{v} \right)^{\! 2} = 
+\\[1ex] &amp;= \dfrac{1}{2} \underbrace{\left( m_1 \! + m_2 
+\right)}_{\displaystyle M} \vec{v}{}_{\scriptsize\text{CM}}^2 + \! 
+\cancel{\mu \vec{v}{}_{\scriptsize\text{CM}} \vec{v}} \! - \! 
+\cancel{\mu \vec{v}{}_{\scriptsize\text{CM}} \vec{v}} + \dfrac{1}{2} 
+\mu^{\cancel{2}} \underbrace{\left(\dfrac{1}{m_1} + \dfrac{1}{m_2} 
+\right)}_{\displaystyle 1 {∕} \bcancel\mu} \vec{v}{}^2 = \\[1ex] &amp;= 
+\dfrac{1}{2} M \vec{v}{}_{\scriptsize\text{CM}}^2 + \dfrac{1}{2} \mu 
+\vec{v}{}^2 = \\[1ex] &amp;= \dfrac{1}{2} M v_{\scriptsize\text{CM}}^2 
++ \dfrac{1}{2} \mu v^2 \end{align}$</p>
+
+<p>El momento angular:</p>
+
+<p align="center">$\begin{align} \vec{L} &amp;= m_1 \left( \vec{r}_1 
+\times \vec{v}_1 \right) + m_2 \left( \vec{r}_2 \times \vec{v}_2 
+\right) = \\[1ex] &amp;= m_1 \left( \vec{r}_{\scriptsize\text{CM}} + 
+\dfrac{\mu}{m_1}\vec{r} \right) \times \left( 
+\vec{v}_{\scriptsize\text{CM}} + \dfrac{\mu}{m_1}\vec{v} \right) + {} 
+\\[1ex] &amp;\hphantom{={}} + m_2 \left( \vec{r}_{\scriptsize\text{CM}} 
+- \dfrac{\mu}{m_2}\vec{r} \right) \times \left( 
+\vec{v}_{\scriptsize\text{CM}} - \dfrac{\mu}{m_2}\vec{v} \right) = 
+\\[1ex] &amp;= \underbrace{\left( m_1 \! + m_2 \right)}_{\displaystyle 
+M} \left( \vec{r}_{\scriptsize\text{CM}} \times 
+\vec{v}_{\scriptsize\text{CM}} \right) + \mu\left( \bcancel{ 
+\vec{r}_{\scriptsize\text{CM}} \times \vec{v} } \! - \! \bcancel{ 
+\vec{r}_{\scriptsize\text{CM}} \times \vec{v}} \right) + {} \\[1ex] 
+&amp;\hphantom{={}} + \mu \left( \cancel{\vec{r} \times 
+\vec{v}_{\scriptsize\text{CM}}} \! - \! \cancel{\vec{r} \times 
+\vec{v}_{\scriptsize\text{CM}}} \right) + \underbrace{\left( 
+\dfrac{\mu^2}{m_1} + \dfrac{\mu^2}{m_2} \right)}_{\displaystyle 
+\mu^{\!\bcancel 2} \! {∕} \bcancel\mu}\left( \vec{r} \times \vec{v} \right) 
+= \\[1ex] &amp;= M \left( \vec{r}_{\scriptsize\text{CM}} \times 
+\vec{v}_{\scriptsize\text{CM}} \right) + \mu \left( \vec{r} \times 
+\vec{v} \right)\end{align}$</p>
+
+<p>La cantidad de movimiento:</p>
+
+<p align="center">$\vec{P} = m_1 \vec{v}_1 + m_2 \vec{v}_2 = 
+\underbrace{\vphantom{\dfrac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 + m_ 
+2}}\left( m_1 \! + m_ 2 \right)}_{\displaystyle 
+\vphantom{\vec{v}_{\scriptsize\text{CM}}} M} \underbrace{\dfrac{m_1 
+\vec{v}_1 + m_2 \vec{v}_2}{m_1 \! + m_ 
+2}}_{\displaystyle\vec{v}_{\scriptsize\text{CM}}} = M 
+\vec{v}_{\scriptsize\text{CM}}$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../conservacion_energia/conservacion_energia.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../choques/choques.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

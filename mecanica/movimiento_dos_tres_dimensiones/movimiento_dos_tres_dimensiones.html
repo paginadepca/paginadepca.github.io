@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Movimiento en dos y tres dimensiones">
+<meta name="keywords" content="movimiento, dos, tres, dimensiones">
+<title>Movimiento en dos y tres dimensiones</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Movimiento en dos y tres dimensiones</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Punto material: Un objeto representado por un punto.</p>
+
+<p>Punto en el espacio situado en un sistema de coordenadas
+ortogonales:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="movimiento_dos_tres_dimensiones_1.svg"
+					type="image/svg+xml" width="200" height="200" style="margin:0">
+					</object></td>
+        <td style="padding-left:1em">$\vec{r} = x \vec{i} + y \vec{j} +
+					z \vec{k}$</td>
+    </tr>
+</table>
+</center>
+
+<p>El vector posición $\vec{r}$ viene caracterizado por su
+módulo, dirección y sentido.</p>
+
+<p align="center">$r = \lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}
+\enspace$ módulo</p>
+
+<p>Si $P$ varía con el tiempo:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="movimiento_dos_tres_dimensiones_2.svg"
+					type="image/svg+xml" width="200" height="200" style="margin:0">
+					</object></td>
+        <td style="padding-left:2em">
+					$\vec{r}(t) \enspace$ ($t =$ tiempo)</td>
+    </tr>
+</table>
+</center>
+
+<p>Se define la velocidad media como el cociente entre el vector
+desplazamiento y el intervalo de tiempo transcurrido para el
+cambio de posición:</p>
+
+<center>
+<table>
+    <tr>
+        <td rowspan="2" style="padding-right:2em"><object
+					data="movimiento_dos_tres_dimensiones_3.svg" type="image/svg+xml"
+					width="200" height="200" style="margin:0"></object></td>
+					<td valign="bottom" style="padding-bottom:0.5em">Vector
+					desplazamiento: $\Delta \vec{r} = \vec{r}_2 - \vec{r}_1$</td>
+    </tr>
+    <tr>
+        <td valign="top">$\Delta s \neq \lvert \Delta \vec{r} \rvert$ <span
+					style="vertical-align:baseline;padding-left:0.5em">(trayectoria
+					no recta).</span></td>
+    </tr>
+</table>
+</center>
+
+<p align="center" style="margin-top:0">$\vec{v}_{\rm m} =
+\dfrac{\Delta \vec{r}}{\Delta t} = \dfrac{\vec{r}_2 - \vec{r}_1}{t_2 - t_1}$
+</p>
+
+<p>Siendo la velocidad instantánea:</p>
+
+<p align="center">$\vec{v} = \lim\limits_{\Delta t \to 0}
+\dfrac{\Delta \vec{r}}{\Delta t} = \dfrac{d \vec{r}}{dt}$</p>
+
+<p align="center">$v = \lvert \vec{v} \rvert = \lim\limits_{\Delta{t} \to 0}
+\dfrac{\lvert \Delta \vec{r} \rvert}{\Delta t} \simeq
+\lim\limits_{\Delta t \to 0} \dfrac{\Delta s}{\Delta t} = \dfrac{ds}{dt}$
+</p>
+
+<p>La aceleración media se define como:</p>
+
+<p align="center">$\vec{a}_{\rm m} = \dfrac{\Delta \vec{v}}{\Delta t} =
+\dfrac{\vec{v}_2 - \vec{v}_1}{t_2 - t_1}$</p>
+
+<p>La aceleración instantánea:</p>
+
+<p align="center">$\vec{a} = \lim\limits_{\Delta t \to 0} 
+\dfrac{\Delta \vec{v}}{\Delta t} = \dfrac{d\vec{v}}{dt}$</p>
+
+<p>Movimiento circular uniforme:</p>
+
+<center>
+<table>
+    <tr>
+        <td align="center" style="padding-right:1em">$v =$ cte., $\vec{v}
+          \neq$ cte. $\Rightarrow \vec{a} \neq 0$</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+          <object data="movimiento_dos_tres_dimensiones_4.svg"
+          type="image/svg+xml" width="350" height="200"
+          style="margin:0"></object>
+        </td>
+        <td>Si $\Delta t \to 0 \Rightarrow \Delta \theta \to 0 \Rightarrow$
+        <p style="margin-left:30px">$\Rightarrow \Delta \vec{v} \perp
+          \vec{v}_1 \Rightarrow \vec{a} \perp \vec{v}_1$ ;</p>
+        <p style="margin-left:30px">$\Rightarrow \Delta s = v \cdot \Delta
+          t$ ;</p>
+        <p style="margin-left:30px">$\Rightarrow \Delta{\theta} =
+        \dfrac{\Delta s}{r} \simeq \dfrac{\lvert \Delta \vec{v} \rvert}{v}$,
+        <br>$\hphantom{\Rightarrow}$ (triángulos semejantes).</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>Así pues cuando $\Delta t \to 0$:</p>
+
+<p align="center">$\dfrac{v \cdot \Delta t}{r} =
+\dfrac{\lvert \Delta \vec{v} \rvert}{v} \Rightarrow \dfrac{v^2}{r} = 
+\dfrac{\lvert \Delta \vec{v} \rvert}{\Delta t} = \lvert \vec{a} \rvert =
+a$</p>
+
+<p>Dado que esta aceleración se dirige hacia el centro de la
+circunferencia recibe el nombre de aceleración centrípeta. También
+se conoce como aceleración normal o radial.</p>
+
+<p>Si en un movimiento circular variara además el módulo de la
+velocidad, también existiría una aceleración tangencial a la
+circunferencia:</p>
+
+<p align="center">$a_{\rm t} = \lvert \vec{a}_{\rm t} \rvert = 
+\dfrac{dv}{dt}$</p>
+
+<p>En el caso de un movimiento circular uniforme $a_{\rm t} = 0$.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+	<li>
+	<a href="../vectores/vectores.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

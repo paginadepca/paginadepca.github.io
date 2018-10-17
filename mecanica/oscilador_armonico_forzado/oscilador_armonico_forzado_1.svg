@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" height="191.5" width="293.2" version="1.1" xmlns:cc="http://creativecommons.org/ns#" viewBox="0 0 293.20005 191.4998" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-104.5 -247.36)">
+  <g fill="none">
+   <path id="path4148" stroke-linejoin="round" d="m132.48 350.18h17.5l2.5 15 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 2.5-15h17.5" stroke="#ccc" stroke-width="1px"/>
+   <path id="path4219" d="m132.48 412.71v-140" stroke="#000" stroke-width="2"/>
+   <path id="path4221" d="m132.48 367.71h240" stroke="#000" stroke-width="2"/>
+  </g>
+  <path id="rect4291" opacity=".5" stroke-linejoin="round" d="m391 252.36 0.00003 178c0 1.108-0.892 2-2 2h-276c-1.108 0-2-0.892-2-2v-178" fill-opacity="0" stroke="#00f" stroke-width="3"/>
+  <path id="rect4293" d="m113 262.36c90.871 4.5167 183-5 276 0 1.1064 0.0595 2 0.892 2 2v166c0 1.108-0.892 2-2 2h-276c-1.108 0-2-0.89199-2-2v-166c0-1.108 0.89336-2.055 2-2z" fill-opacity=".097983" fill="#0ff"/>
+  <g>
+   <rect id="rect4155" stroke-linejoin="round" rx="2" ry="2" height="29" width="31" stroke="#808000" y="336.18" x="302.48" stroke-width="3" fill="#fff"/>
+   <text id="text4423" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="354.43115" x="311.20285" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan4425" font-size="16px" font-style="italic" line-height="125%" y="354.43115" x="311.20285" font-family="&apos;STIX Two Text&apos;">m</tspan></text>
+   <rect id="rect4301" stroke-linejoin="round" height="15" width="15" stroke="#ccc" y="316.36" x="211" fill="#fff"/>
+   <text id="text4297" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" font-style="italic" y="329.42221" x="214.164" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan4299" y="329.42221" x="214.164">k</tspan></text>
+  </g>
+  <g id="g4772" fill-rule="evenodd" transform="translate(104.5 244.18)">
+   <path id="path4160" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m236 105.25v2.5h29v-2.5h-29z"/>
+   <path id="path4768" d="m231.38 106.5 6.92-4v8l-6.92-4z" stroke="#000" stroke-width="0.8pt"/>
+  </g>
+  <rect id="rect5451" stroke-linejoin="round" height="20" width="35" stroke="#ccc" y="322.36" x="346" fill="#fff"/>
+  <g id="content" xml:space="preserve" stroke="#000" stroke-width="0" fill-rule="evenodd" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 88.943 1574.2)" stroke-miterlimit="10.433" ns0:text="$\nF(t)\n$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path5518" d="m155.38 713.63h-4.96v-0.16c0.65-0.06 0.77-0.12 0.77-0.41 0-0.15-0.04-0.4-0.11-0.64l-1.23-4.4c-0.17-0.6-0.25-0.66-0.81-0.74v-0.16h2.51v0.16c-0.58 0.03-0.76 0.14-0.76 0.44 0 0.08 0.03 0.23 0.09 0.45l0.62 2.22c0.37-0.02 0.59-0.03 0.8-0.03 0.39 0 0.46-0.01 0.55-0.05 0.15-0.08 0.22-0.21 0.22-0.41 0-0.16-0.02-0.28-0.08-0.59l0.17-0.05 0.76 2.34-0.18 0.05c-0.45-0.9-0.48-0.91-2.15-0.93l0.65 2.32c0.06 0.2 0.2 0.26 0.61 0.26 1.68 0 2.03-0.13 2.03-0.75v-0.24c-0.01-0.06-0.01-0.07-0.03-0.19l0.22-0.02z"/><path id="path5520" d="m158.57 713.86-0.07-0.05-0.06-0.04-0.07-0.04-0.06-0.04-0.05-0.04-0.06-0.04-0.06-0.04-0.05-0.04-0.05-0.03-0.05-0.04-0.04-0.04-0.05-0.03-0.04-0.04-0.05-0.03-0.08-0.07-0.08-0.07-0.07-0.06-0.07-0.07-0.07-0.08-0.07-0.07-0.07-0.07-0.06-0.08-0.07-0.09c-0.71-0.87-1.06-1.86-1.06-3.03 0-1.26 0.37-2.24 1.25-3.25 0.4-0.48 0.66-0.7 1.18-1.02l0.12 0.16c-0.8 0.63-1.07 0.97-1.34 1.72-0.24 0.67-0.35 1.43-0.35 2.42 0 1.05 0.13 1.87 0.4 2.48 0.28 0.62 0.57 0.98 1.29 1.56z"/><path id="path5522" d="m161.9 711.39h-0.79l0.28 1.02c0.01 0.02 0.01 0.04 0.01 0.05 0 0.07-0.03 0.1-0.08 0.1-0.06 0-0.09-0.01-0.15-0.09-0.39-0.51-1.01-1-1.33-1.09-0.25-0.08-0.32-0.14-0.32-0.25 0-0.01 0-0.03 0.01-0.06h0.74l-0.72-2.74c-0.02-0.09-0.03-0.12-0.06-0.21-0.09-0.3-0.17-0.65-0.17-0.73 0-0.22 0.21-0.38 0.48-0.38 0.46 0 0.79 0.28 1.42 1.21l-0.13 0.07c-0.49-0.63-0.65-0.79-0.81-0.79-0.09 0-0.15 0.08-0.15 0.2 0 0.01 0 0.02 0.01 0.05l0.88 3.32h0.83z"/><path id="path5524" d="m162.28 705.36 0.07 0.04 0.06 0.05 0.07 0.04 0.06 0.04 0.06 0.04 0.05 0.04 0.06 0.04 0.05 0.03 0.05 0.04 0.05 0.04 0.05 0.03 0.04 0.04 0.05 0.03 0.04 0.04 0.08 0.06 0.08 0.07 0.07 0.07 0.08 0.07 0.06 0.07 0.07 0.08 0.07 0.07 0.07 0.08 0.07 0.08c0.7 0.87 1.05 1.87 1.05 3.03 0 1.28-0.37 2.25-1.24 3.26-0.41 0.48-0.67 0.7-1.19 1.02l-0.12-0.16c0.8-0.63 1.07-0.98 1.35-1.73 0.23-0.66 0.34-1.42 0.34-2.42 0-1.03-0.12-1.86-0.39-2.47-0.28-0.62-0.58-0.98-1.3-1.56z"/></g>
+ </g>
+</svg>

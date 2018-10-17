@@ -1,0 +1,536 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Oscilador armónico forzado">
+<meta name="keywords" content="oscilador, armónico, forzado">
+<title>Oscilador armónico forzado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Oscilador armónico forzado</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<center>
+<table>
+    <tr>
+        <td><object data="oscilador_armonico_forzado_1.svg"
+        type="image/svg+xml" width="293" height="191"></object></td>
+        <td style="padding-left:1em">$\begin{array}{l} \omega_0 = 
+        \sqrt{\dfrac{k}{m}} \\[1em] \gamma = \dfrac{b}{2m} 
+        \end{array}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Donde $F(t)$ es una fuerza que oscila sinusoidalmente:</p>
+
+<p align="center">$F(t) = F_0 \cos(\omega t + \theta_0)$</p>
+
+<p>La ecuación diferencial:</p>
+
+<p align="center">$m \dfrac{d^2x}{dt^2} = - b \dfrac{dx}{dt} - kx
++ F(t)$</p>
+
+<p align="center">$m \dfrac{d^2x}{dt^2} + b \dfrac{dx}{dt} + kx =
+F(t)$</p>
+
+<p>Es una ecuación diferencial líneal no homogénea, cuya
+solución general es de la forma:</p>
+
+<p align="center">$x(t) = x_h(t) + x_p(t)$</p>
+
+<p>Siendo $x_p(t)$ una solución particular y $x_h(t)$ la
+solución general de la homogeneizada, i.e. $F(t) = 0$, por tanto
+del oscilador armónico amortiguado donde:</p>
+
+<p align="center">$x_h(t) \left\{ \begin{array}{l} (a) \ \omega_0
+&gt; \gamma \\[1ex] (b) \ \omega_0 &lt; \gamma \\[1ex] (c) \ \omega_0
+= \gamma \end{array} \right\} \ \Rightarrow \ t \to \infty,\ x_h(t)
+\to 0$</p>
+
+<p>Entonces, transcurrido un tiempo suficientemente largo:</p>
+
+<p align="center">$x(t) \simeq x_p(t)$</p>
+
+<p>Si, desde consideraciones físicas, ya que tras un tiempo
+suficiente se observa empíricamente una oscilación de la misma
+frecuencia que la fuerza aplicada, se toma como solución:</p>
+
+<p align="center">$x_p = A_p \cos(\omega t + \theta_p)$</p>
+
+<p>Siendo $A_p$ y $\theta_p$ las incognitas a determinar. Una
+manera de hallarlas sería calculando directamente las derivadas
+de $x_p$ y mediante sustitución en la ecuación diferencial.
+Otra es haciendo uso de complejos. Esto es:</p>
+
+<p align="center">$\begin{align} F(t) &amp;= F_0 \cos(\omega t +
+\theta_0) = \\[1ex] &amp;= \operatorname{Re}\left[F_0(\cos(\omega
+t + \theta_0) + i\sin(\omega t + \theta_0))\right] = \\[1ex]
+&amp;= \operatorname{Re}\left[F_0 e^{i(\omega t + \theta_0)}\right]
+= \operatorname{Re}\left[F_0 e^{i\theta_0} e^{i\omega t} \right]
+= \\[1ex] &amp;= \operatorname{Re}\left[\hat{F}_0 e^{i\omega t}\right],
+\quad \hat{F}_0 = F_0 e^{i\theta_0}\end{align}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$m\dfrac{d^2x}{dt^2} + b\dfrac{dx}{dt} + kx = \hat{F}_0
+e^{i\omega t} \ \Rightarrow \ x_p^c$, solución compleja.</p>
+
+<p>Tomando sólo la parte real de la ecuación:</p>
+
+<p align="center">$\operatorname{Re}\left[m\dfrac{d^2x_p^c}{dt^2}\right] + 
+\operatorname{Re}\left[b\dfrac{dx_p^c}{dt}\right] + 
+\operatorname{Re}\left[kx_p^c\right] = \operatorname{Re}\left[\hat{F}_0 
+e^{i\omega t}\right]$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\begin{array}{l} h(t) = f(t) + ig(t) \\[1em] 
+\begin{align} \operatorname{Re}\left[\dfrac{dh}{dt}\right] &amp;= 
+\operatorname{Re}\left[\dfrac{d(\,f+ig)}{dt}\right] = \\[1ex] &amp;= 
+\operatorname{Re}\left[\dfrac{df}{dt} + i\dfrac{dg}{dt}\right] = 
+\\[1ex] &amp;= \dfrac{df}{dt} = \\[1ex] &amp;= 
+\dfrac{d(\operatorname{Re}[\,f + ig])}{dt} = 
+\dfrac{d(\operatorname{Re}[h])}{dt} \end{align}\end{array}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$m\dfrac{d^2\bigl(\operatorname{Re}\left[x_p^c\right]\bigr)}{dt^2} 
++ b\dfrac{d\bigl(\operatorname{Re}\left[x_p^c\right]\bigr)}{dt} + 
+k\bigl(\operatorname{Re}\left[x_p^c\right]\bigr) = F_0\cos(\omega_0 t + 
+\theta_0)$</p>
+
+<p>Por lo que:</p>
+
+<p align="center">$x_p = \operatorname{Re}\left[x_p^c\right]$</p>
+
+<p>Si:</p>
+
+<p align="center">$\begin{array}{l} x_p^c = \hat{x}_0 e^{i\omega t} 
+\\[1em] \dot{}\llap{x}{}_p^{\:\!c} = i\omega\hat{x}_0 e^{i\omega t} 
+\\[1em] \ddot{\vphantom{x}}\llap{x}{}_p^{\:\!c} = -\omega^2\hat{x}_0 
+e^{i\omega t} \end{array}$</p>
+
+<p>Donde las derivadas de $x_p^c$ son sucesivas multiplicaciones
+de ella misma por $i\omega$. Sustituyendo en la ecuación
+diferencial:</p>
+
+<p align="center">$-m\omega^2\hat{x}_0 \! \cancel{e^{i\omega t}} \! + 
+bi\omega\hat{x}_0 \! \cancel{e^{i\omega t}} \! + k\hat{x}_0 \!
+\cancel{e^{i\omega t}} \! = \hat{F}_0 \! \cancel{e^{i\omega t}}$</p>
+
+<p>Aislando $\hat{x}_0$:</p>
+
+<p align="center">$\hat{x}_0 = \dfrac{\hat{F}_0}{k - m\omega^2 +
+ib\omega} = \dfrac{\hat{F}_0{∕}m}{\omega_0^2 - \omega^2 + 2i\gamma\omega}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$x_p^c = \dfrac{(\hat{F}_0{∕}m) e^{i\omega t}}{\omega_0^2
+- \omega^2 + 2i\gamma\omega}$</p>
+
+<p>Su primera derivada:</p>
+
+<p align="center">$\dot{x}{}_p^{\:\!c} = \dfrac{(i\omega\hat{F}_0{∕}m)
+e^{i\omega t}}{\omega_0^2 - \omega^2 + 2i\gamma\omega}$</p>
+
+<p>Teniendo en cuenta, para pasar a polares los términos que no
+lo estén, que:</p>
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><object data="oscilador_armonico_forzado_2.svg" 
+        type="image/svg+xml" width="140" height="175"></object></td>
+        <td style="padding-left:1em">$\begin{array}{l} \tan\alpha = \dfrac{b}{a} \\[1em] r
+        = \sqrt{a^2 + b^2} \end{array}$</td>
+    </tr>
+</table>
+</center>
+
+<p align="center">$\begin{align} a + ib &amp;= r\cos\alpha + ir\sin\alpha
+= \\[1ex] &amp;= \left[a^2 + b^2\right]^{1/2} (\cos\alpha + i\sin\alpha)
+= \\[1ex] &amp;= \left[a^2 + b^2\right]^{1/2} e^{i\alpha}, \quad
+\alpha = \arctan{\dfrac{b}{a}} \end{align}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$i = e^{i\pi/2}$</p>
+
+<p align="center">$\omega_0^2 - \omega^2 + 2i\gamma\omega = \left[(\omega_0^2
+- \omega^2)^2 + 4\gamma^2\omega^2\right]^{1/2} e^{i\alpha}$</p>
+
+<p>Reemplazando:</p>
+
+<p align="center">$\begin{align} \dot{x}{}_p^{\:\!c} &amp;= \dfrac{(\omega
+F_0{∕}m) e^{i\pi/2} e^{i\theta_0}e^{i\omega t}}{\left[(\omega_0^2 -
+\omega^2)^2 + 4\gamma^2\omega^2\right]^{1/2} e^{i\alpha}} = \\[1ex]
+&amp;= \dfrac{\omega F_0{∕}m}{\left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2\right]^{1/2}}
+e^{i(\omega t + \theta_0 + \frac{\scriptstyle\pi}{\scriptstyle 2}
+- \alpha)} = \\[1ex] &amp;= \dfrac{\omega F_0{∕}m}{\left[(\omega_0^2
+- \omega^2)^2 + 4\gamma^2\omega^2\right]^{1/2}} (\cos(\omega t +
+\theta_0 + \beta) + i\sin(\omega t + \theta_0 + \beta)) \end{align}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\beta = \dfrac{\pi}{2} - \alpha = \dfrac{\pi}{2}
+- \arctan{\dfrac{2\gamma\omega}{\omega_0^2 - \omega^2}} = \arctan{\dfrac{\omega_0^2
+- \omega^2}{2\gamma\omega}}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\dot{x}_p = \operatorname{Re}\left[\dot{x}{}_p^{c}\right]
+= \dfrac{\omega F_0{∕}m}{\left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2\right]^{1/2}}
+\cos(\omega t + \theta_0 + \beta)$</p>
+
+<p>Además:</p>
+
+<p align="center">$\begin{align} x_p &amp;= \operatorname{Re}\left[x_p^c\right]
+= \operatorname{Re}\left[\dfrac{\dot{x}{}_p^{\:\!c}}{i\omega}\right]
+\underset{\times\tfrac{i}{i}}{=} \operatorname{Re}\left[\dfrac{-i\;\!\dot{x}{}_p^{\:\!c}}{\omega}\right]
+= \\[1ex] &amp;= \underset{\mbox{solución
+estacionaria}}{\boxed{\dfrac{F_0{∕}m}{\left[(\omega_0^2 - \omega^2)^2
++ 4\gamma^2\omega^2\right]^{1/2}} \sin(\omega t + \theta_0 + \beta)}}
+\end{align}$</p>
+
+<p>La solución estacionaria no depende de las condiciones
+iniciales, i.e. $x_0, v_0$. </p>
+
+<p>Al alcanzarse el estado estacionario ($x \simeq x_p$), si:</p>
+
+<blockquote>
+    <p>$\gamma \to \infty \Rightarrow \beta = 0 \Rightarrow F,x$
+    desfasados $\pi{∕}2$.</p>
+    <p>$\gamma \to 0 \Rightarrow \beta = \pm\dfrac{\pi}{2} \Rightarrow
+    F,x$ están en fase ($\beta=\pi{∕}2$) o contrafase ($\beta=-\pi{∕}2$).</p>
+</blockquote>
+
+<p>En el estado estacionario la fuerza aplicada produce un
+trabajo que compensa la energía que se disipa debido a la fuerza
+de rozamiento. En promedio deben anularse, de tal modo que el
+movimiento es periódico con amplitud constante.</p>
+
+<p>El trabajo por unidad de tiempo es la potencia:</p>
+
+<p align="center">$\begin{multline} P = \dot{W} = \dfrac{dW}{dt}
+= \dfrac{F(t) \, dx_p}{dt} = \dot{x}_p F(t) = \\[1ex] = \dfrac{\omega
+F_0^2 {∕} m}{\left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2 \right]^{1/2}}
+\cos(\omega t + \theta_0) \cos(\omega t + \theta_0 + \beta)\end{multline}$</p>
+
+<p>Usando relaciones trigonométricas:</p>
+
+<p align="center">$\begin{array}{l} \cos(\omega t + \theta_0) \cos(\omega
+t + \theta_0 + \beta) = \\[1ex] \qquad = \cos(\omega t + \theta_0)
+\left[\cos(\omega t + \theta_0)\cos\beta - \sin(\omega t + \theta_0)\sin\beta
+\right] = \\[1ex] \qquad = \cos\beta \cos^2(\omega t + \theta_0)
+- \sin\beta \cos(\omega t + \theta_0) \sin(\omega t + \theta_0) =
+\\[1ex] \qquad = \cos\beta \cos^2(\omega t + \theta_0) - \dfrac{1}{2}\sin\beta
+\sin 2(\omega t + \theta_0) \end{array}$</p>
+
+<p>Sustituyendo:</p>
+
+<p align="center">$P = \hphantom{x}\llap{\dot{}\llap{x}}{}_p F(t) = 
+\dfrac{\omega F_0^2 \cos\beta \cos^2(\omega t + \theta_0)}{m\left 
+[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2 \right]^{1/2}} - 
+\dfrac{\omega F_0^2 \sin\beta \sin 2(\omega t + 
+\theta_0)}{2m\left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2 
+\right]^ {1/2}}$</p>
+
+<p>La potencia media:</p>
+
+<p align="center">$$P_m = \langle \hphantom{x}\llap{\dot{}\llap{x}}{}_p 
+F(t) \rangle = \dfrac{1}{T} \int_0^T \! 
+\hphantom{x}\llap{\dot{}\llap{x}}{}_p F(t) \, dt$$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\begin{array}{l} \dfrac{1}{T} \displaystyle \int_0^T 
+\! \cos^2(\omega t + \theta_0) \, dt = \\[1ex] \qquad = \dfrac{1}{T} 
+\displaystyle \int_0^T \dfrac{1 + \cos 2(\omega t + \theta_0)}{2} \, dt 
+= \\[1ex] \qquad = \dfrac{1}{T}\left[\dfrac{1}{2}t + \dfrac{1}{4\omega} 
+\sin 2(\omega t + \theta_0) \right]_0^T = \\[1ex] \qquad = 
+\dfrac{1}{\cancel{T}} \left[\dfrac{1}{2} \cancel{T} + 
+\cancelto{0}{\dfrac{1}{4\omega} \sin 2(\overbrace{\omega T}^{2\pi} + 
+\theta_0) - \dfrac{1}{4 \omega} \sin 2\theta_0} \right] = \dfrac{1}{2} 
+\\[1em] \dfrac{1}{T} \displaystyle \int_0^T \! \sin 2(\omega t + 
+\theta_0) \, dt = \dfrac{1}{T}\underbrace{\left[-\dfrac{1}{2\omega} \cos 
+2(\omega t + \theta_0) \right]_0^T}_0 = 0 \end{array}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$P_m = \dfrac{\omega F_0^2 \cos\beta}{2m\left[(\omega_0^2
+- \omega)^2 + 4\gamma^2\omega^2\right]^{1/2}} = \dfrac{1}{2} F_0
+\dot{x}_{p,max} \cos\beta$</p>
+
+<p>Donde:</p>
+
+<blockquote>
+		<p>$\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_{p,max} = 
+		\dfrac{\omega F_0}{m\left[(\omega_0^2 - \omega)^2 + 
+		4\gamma^2\omega^2\right]^{1/2}}$ &nbsp; (Valor máximo de 
+		$\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_p$).</p>
+    <p>$\cos\beta = \dfrac{2\gamma\omega}{\left[(\omega_0^2 - \omega)^2
+    + 4\gamma^2\omega^2\right]^{1/2}}$</p>
+</blockquote>
+
+<p>Para el rozamiento o fricción:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} P_f &amp;= F_f 
+\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_p = 
+(-b\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_p)\dot{x}_p = 
+-2m\gamma\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_p^{\:\!2} = 
+\\[1ex] &amp;= -\dfrac{2\gamma\omega^2 F_0^2}{m\left[(\omega_0^2 - 
+\omega^2)^2 + 4\gamma^2\omega^2 \right]} \cos^2(\omega t + \theta_0 + 
+\beta) \end{aligned} \\[1em] \begin{aligned} P_{f\;\!\!,\:\!m} &amp;= 
+\left\langle F_f \hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_p 
+\right\rangle = -\dfrac{2\gamma\omega^2 F_0^2}{m\left[(\omega_0^2 - 
+\omega^2)^2 + 4\gamma^2\omega^2 \right]} 
+\underbrace{\left\langle\cos^2(\omega t + \theta_0 + 
+\beta)\right\rangle}_{\tfrac{1}{2}} = \\[1ex] &amp;= 
+-\dfrac{\gamma\omega^2 F_0^2}{m\left[(\omega_0^2 - \omega^2)^2 + 
+4\gamma^2\omega^2 \right]} = \\[1ex] &amp;= -\dfrac{1}{2} F_0 
+\underbrace{\dfrac{\omega F_0}{m\left[(\omega_0^2 - \omega^2)^2 + 
+4\gamma\omega^2 \right]^{1/2}}}_{\textstyle\dot{x}_{p,max}} 
+\underbrace{\dfrac{2\gamma\omega}{\left[(\omega_0^2 - \omega^2)^2 + 
+4\gamma^2\omega^2 \right]^{1/2}}}_{\textstyle\cos\beta} = \\[1ex] 
+&amp;= -\dfrac{1}{2} F_0 
+\hphantom{x}\llap{\dot{\vphantom{x}}\llap{x}}{}_{p,max} \cos\beta 
+\end{aligned} \end{array}$</p>
+
+<p>Siendo entonces:</p>
+
+<p align="center">$P_m + P_{f\;\!\!,\:\!m} = \dfrac{1}{2} F_0 
+\dot{x}_{p,max} \cos\beta - \dfrac{1}{2} F_0 \dot{x}_{p,max} \cos\beta 
+= 0$</p>
+
+<p>Así que, como se esperaba, en el estado estacionario la
+fuerza externa oscilante, en promedio, suministra tanta potencia
+como se disipa por fricción.</p>
+
+<p>Sustituyendo $\cos\beta$ en la expresión de la potencia media,
+ésta puede reescribirse como:</p>
+
+<p align="center">$\begin{align} P_m &amp;= \dfrac{\omega 
+F_0^2}{\cancel{2}\!m\left[(\omega_0^2 - \omega^2)^2 + 
+4\gamma^2\omega^2]\right]^{1/2}} 
+\dfrac{\cancel{2}\!\gamma\omega}{\left[(\omega_0^2 - \omega^2)^2 + 
+4\gamma^2\omega^2\right]^{1/2}} = \\[1ex] &amp;= \dfrac{\gamma\omega^2 
+F_0^2}{m\left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2\right]} = 
+\dfrac{\gamma F_0^2}{\dfrac{m}{\omega^2}\left[(\omega_0^2 - \omega^2)^2 
++ 4\gamma^2\omega^2\right]} = \\[1ex] &amp;= \dfrac{\gamma 
+F_0^2}{m\left[\left(\dfrac{\omega_0^2}{\omega} - \omega \right)^{\! 2} + 
+4\gamma^2 \right]} \end{align}$</p>
+
+<p>Donde el último denominador tiene su mínimo cuando:</p>
+
+<p align="center">$\dfrac{\omega_0^2}{\omega} - \omega = 0 \ \Rightarrow
+\ \omega = \omega_0$</p>
+
+<p>En este caso la potencia media es máxima:</p>
+
+<p align="center">$\omega = \omega_0 \ \Rightarrow \ 
+P_{m\;\!\!,\:\!max} = \dfrac{\bcancel{\gamma} \! 
+F_0^2}{4m\gamma^{\!\bcancel{2}}} = \dfrac{F_0^2}{4m\gamma}$</p>
+
+<p>Cuando esto sucede se dice que el sistema está en situación
+de resonancia. De forma gráfica:</p>
+
+<p align="center"><object data="oscilador_armonico_forzado_3.svg"
+type="image/svg+xml" width="600" height="400"></object></p>
+
+<p align="center">$\begin{gather} \gamma_1 &gt; \gamma_2 &gt; \gamma_3
+\\[1ex] \lim\limits_{\substack{\omega \to \omega_0 \\ \gamma \to
+0}} P_m = \infty \end{gather}$</p>
+
+<p>Representando $\beta$ frente a $\omega$:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="oscilador_armonico_forzado_4.svg"
+				type="image/svg+xml" width="400" height="320"></object></td> 
+				<td style="padding-left:1em">$\begin{gather} \beta = 
+				\arctan\dfrac{\omega_0^2 - \omega^2}{2\gamma\omega} \\[1em] 
+				\gamma_1 &gt; \gamma_2 &gt; \gamma_3 \end{gather}$</td>
+    </tr>
+</table>
+</center>
+
+<p>Para $\omega = \omega_0$ (resonancia) $\Rightarrow \beta = 0$,
+entonces:</p>
+
+<p align="center">$\begin{array}{l} x_p^R(t) = \dfrac{F_0}{2m\gamma\omega_0}
+\sin(\omega_0 t + \theta_0) = \dfrac{F_0}{2m\gamma\omega_0}\cos(\omega_0
+t + \theta_0 - \pi{∕}2) \\[1em] \dot{x}{}_p^{\:\!R}(t) = \dfrac{F_0}{2m\gamma}
+\cos(\omega_0 t + \theta_0) = \dfrac{F(t)}{2m\gamma} \end{array}$</p>
+
+<p>Por tanto, en el estado estacionario, cuando $\omega = \omega_0$
+la elongación está desfasada $\pi{∕}2$ respecto a $F$, mientras
+que la velocidad está en fase con ésta.</p>
+
+<p>Siendo, en el estado estacionario, la velocidad:</p>
+
+<p align="center">$v = \dot{x}_p = v_0 \cos(\omega t + \theta_0 +
+\beta)$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\begin{align} v_0 = \dot{x}_{p,max} &amp;= \dfrac{\omega
+F_0}{m \left[(\omega_0^2 - \omega^2)^2 + 4\gamma^2\omega^2 \right]^{1/2}}
+= \\[1ex] &amp;= \dfrac{F_0}{m\left[\left(\dfrac{\omega_0^2}{\omega}
+- \omega\right)^2 + 4\gamma^2 \right]^{1/2}} \end{align}$</p>
+
+<p>Entonces cuando $\omega = \omega_0$ el denominador de la
+última expresión es mínimo y, por tanto, $v_0$ es máxima. En
+esta situación:</p>
+
+<p align="center">$\omega = \omega_0 \ \Rightarrow \ v_0 = 
+\dfrac{F_0}{2m\gamma} \ \Rightarrow \ \lim\limits_{\substack{\omega \to 
+\omega_0 \\ \gamma \to 0}} \! v_0 = \infty$</p>
+
+<p>La representación de la amplitud de la velocidad $v_0$ frente
+a $\omega$:</p>
+
+<p align="center"><object data="oscilador_armonico_forzado_5.svg"
+type="image/svg+xml" width="400" height="400"></object></p>
+
+<p align="center">$\gamma_1 &gt; \gamma_2 &gt; \gamma_3$</p>
+
+<p>Siendo en el estado estacionario la elongación:</p>
+
+<p align="center">$\begin{align} x \simeq x_p &amp;= A_p \sin(\omega t 
++ \theta_0 + \beta) = \\[1ex] &amp;= A_p \cos(\omega t + \theta_0 + 
+\beta - \pi{∕}2) = \\[1ex] &amp;= A_p \cos(\omega t + \theta_p) 
+\end{align}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} \theta_p &amp;= 
+\theta_0 + \beta - \pi{∕}2 = \\[1ex] &amp;= \theta_0 + \! 
+\cancel{\pi{∕}2} \! - \alpha - \! \cancel{\pi/2} \! = \\[1ex] &amp;= 
+\theta_0 - \arctan\dfrac{2\gamma\omega}{\omega_0^2 - \omega^2} 
+\end{aligned} \\[1em] A_p = \dfrac{F_0}{m\left[(\omega_0^2 - 
+\omega^2)^2 + 4\gamma^2\omega^2 \right]^{1/2}} \end{array}$</p>
+
+<p>$A_p$ será máxima cuando en su expresión el denominador sea
+mínimo:</p>
+
+<p align="center">$\begin{gather} 
+\dfrac{\partial}{\partial\omega}\left\{(\omega_0^2 - 
+\omega^2)^2 + 4\gamma^2\omega^2\right\} = 0 \\[1em] -4 \! 
+\cancel{\omega} \! (\omega_0^2 - \omega^2) + 8\gamma^2 \!\! 
+\cancel{\omega} \! = 0 \qquad(\omega = 0 \Rightarrow F = \text{cte., no 
+oscilante}) \\[1ex] \bcancel{4} \! \omega_{max}^2 = 4\omega_0^2 - 
+8\gamma^2 = \! \bcancel{4} \! (\omega_0^2 - 2\gamma^2) 
+\\[1ex] \omega_{max} = \sqrt{\omega_0^2 - 2\gamma^2} \end{gather}$</p>
+
+<p>Si:</p>
+
+<p align="center">$\omega_0^2 - 2\gamma^2 = 0 \ \Rightarrow \ \gamma
+= \omega_0 {∕} \sqrt{2}$</p>
+
+<p>Ya que $\omega_{max}$ ha de ser real:</p>
+
+<p align="center">$\gamma &gt; \omega_0 {∕} \sqrt{2} \ \Rightarrow
+\ \omega_{max} = 0$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\gamma \geq \omega_0 {∕} \sqrt{2} \ \Rightarrow
+\left\{\begin{array}{l} \omega_{max} = 0 \\[1ex] A_{p,max} = \dfrac{F_0}{m\omega_0^2}
+= \dfrac{F_0}{k} \end{array} \right.$</p>
+
+<p>Para $\gamma &lt; \omega_0{∕}\sqrt{2}$ por tanto:</p>
+
+<p align="center">$\begin{align} A_{p,max} &amp;= \dfrac{F_0{∕}m}{\left[\left(\omega_0^2
+- \left(\sqrt{\omega_0^2 -2\gamma^2}\right)^2\right)^2 + 4\gamma^2\left(\sqrt{\omega_0^2
+- 2\gamma^2}\right)^2\right]^{1/2}} = \\[1ex] &amp;= \dfrac{F_0{∕}m}{\sqrt{4\gamma^4
++ 4\gamma^2\omega_0^2 - 8\gamma^4}} = \dfrac{F_0{∕}m}{\sqrt{4\gamma^2\omega_0^2
+- 4\gamma^4}} = \\[1ex] &amp;= \dfrac{F_0{∕}m}{\sqrt{4\gamma^2\left(\omega_0^2
+- \gamma^2\right)}} = \\[1ex] &amp;= \dfrac{F_0{∕}m}{2\gamma\sqrt{\omega_0^2
+- \gamma^2}}\end{align}$</p>
+
+<p>Representando $A_p$ en función de $\omega$:</p>
+
+<p align="center"><object data="oscilador_armonico_forzado_6.svg"
+type="image/svg+xml" width="400" height="400"></object></p>
+
+<p align="center">$\gamma_1 &gt; \gamma_2 &gt; \gamma_3$</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\gamma \to 0 \ \Rightarrow \left\{\begin{array}{l}
+\omega_{max} = \omega_0 \\[1ex] A_{p,max} = \infty \end{array} \right.$</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../oscilador_armonico_amortiguado/oscilador_armonico_amortiguado.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../oscilaciones_anarmonicas/oscilaciones_anarmonicas.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

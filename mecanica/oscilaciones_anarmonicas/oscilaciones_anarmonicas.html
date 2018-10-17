@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Oscilaciones anarmónicas">
+<meta name="keywords" content="oscilaciones, anarmónicas">
+<title>Oscilaciones anarmónicas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Oscilaciones anarmónicas</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Para un muelle con una fuerza recuperadora lineal tal que:</p>
+
+<p align="center">$F = -k(x-x_0)$ &ensp; Ley de Hooke.</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{gather}F = -\dfrac{dE_p}{dx} = -k(x-x_0)
+\\[1em] \begin{gathered} \displaystyle\int_{x_0}^x dE_p = \displaystyle\int_{x_0}^x
+k(x-x_0) \, dx \\[1ex] E_p(x) - E_p(x_0) = \dfrac{1}{2}k(x-x_0)^2 \end{gathered}
+\end{gather}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{array}{l} E_p(x) = E_p(x_0) + \dfrac{1}{2}k(x-x_0)^2,
+\\[1ex] E_p(x) = \dfrac{1}{2}kx^2 \quad (E_p(x_0) = 0,\ x_0 = 0)\end{array}$</p>
+
+<p>Representando, donde $E$ es la energía mecánica:</p>
+
+<p align="center"><object data="oscilaciones_anarmonicas_1.svg"
+type="image/svg+xml" width="350" height="200"></object></p>
+
+<p>Ésta puede ser una buena aproximación para movimientos muy
+cercanos al equilibrio, pero puede darse el caso en que no lo sea:</p>
+
+<p align="center"><object data="oscilaciones_anarmonicas_2.svg"
+type="image/svg+xml" width="400" height="190"></object></p>
+
+<p>En esta representación la $E_p$ no es simétrica. </p>
+
+<p>En este último supuesto en el desarrollo en serie de Taylor
+de $E_p(x)$ es necesario incluir más términos para lograr una
+buena aproximación:</p>
+
+<p align="center">$\begin{align} E_p(x) &amp;= E_p(x_0) + 
+\underbrace{\left(\dfrac{dE_p}{dx}\right)_{\! x_0}}_{0}(x-x_0) + 
+\dfrac{1}{2}\left(\dfrac{d^2E_p}{dx^2}\right)_{\! x_0}(x - x_0)^2 + {} 
+\\[1ex] &amp;\hphantom{= {}} + 
+\dfrac{1}{6}\left(\dfrac{d^3E_p}{dx^3}\right)_{\!x_0}(x - x_0)^3 + 
+\dotsb = \\[1ex] &amp;= E_p(x_0) + \dfrac{1}{2}k(x - x_0)^2 + 
+\dfrac{1}{6}k'(x - x_0)^3 + \dotsb \end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$F = -\dfrac{dE_p}{dx} = -k(x - x_0) \ \underbrace{-\ 
+\dfrac{1}{2}k'(x - x_0)^2 - \dotsb}_{\mbox{no lineales}}$</p>
+
+<p>Los términos de $F$ que no son lineales son los responsables
+de las oscilaciones anarmónicas.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../oscilador_armonico_forzado/oscilador_armonico_forzado.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../conservacion_cantidad_movimiento/conservacion_cantidad_movimiento.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

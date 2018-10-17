@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg4413" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 190" height="190" width="300" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs>
+  <pattern id="pattern6821" xlink:href="#Polkadots-med" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle5611" cy=".81" cx="2.567" r=".15"/>
+   <circle id="circle5613" cy="2.33" cx="3.048" r=".15"/>
+   <circle id="circle5615" cy="2.415" cx="4.418" r=".15"/>
+   <circle id="circle5617" cy="3.029" cx="1.844" r=".15"/>
+   <circle id="circle5619" cy="1.363" cx="6.08" r=".15"/>
+   <circle id="circle5621" cy="4.413" cx="5.819" r=".15"/>
+   <circle id="circle5623" cy="4.048" cx="4.305" r=".15"/>
+   <circle id="circle5625" cy="3.045" cx="5.541" r=".15"/>
+   <circle id="circle5627" cy="5.527" cx="4.785" r=".15"/>
+   <circle id="circle5629" cy="5.184" cx="2.667" r=".15"/>
+   <circle id="circle5631" cy="1.448" cx="7.965" r=".15"/>
+   <circle id="circle5633" cy="5.049" cx="7.047" r=".15"/>
+   <circle id="circle5635" cy=".895" cx="4.34" r=".15"/>
+   <circle id="circle5637" cy=".34" cx="7.125" r=".15"/>
+   <circle id="circle5639" cy="1.049" cx="9.553" r=".15"/>
+   <circle id="circle5641" cy="2.689" cx="7.006" r=".15"/>
+   <circle id="circle5643" cy="2.689" cx="8.909" r=".15"/>
+   <circle id="circle5645" cy="4.407" cx="9.315" r=".15"/>
+   <circle id="circle5647" cy="3.87" cx="7.82" r=".15"/>
+   <circle id="circle5649" cy="5.948" cx="8.27" r=".15"/>
+   <circle id="circle5651" cy="7.428" cx="7.973" r=".15"/>
+   <circle id="circle5653" cy="8.072" cx="9.342" r=".15"/>
+   <circle id="circle5655" cy="9.315" cx="8.206" r=".15"/>
+   <circle id="circle5657" cy="9.475" cx="9.682" r=".15"/>
+   <circle id="circle5659" cy="6.186" cx="9.688" r=".15"/>
+   <circle id="circle5661" cy="6.296" cx="3.379" r=".15"/>
+   <circle id="circle5663" cy="8.204" cx="2.871" r=".15"/>
+   <circle id="circle5665" cy="8.719" cx="4.59" r=".15"/>
+   <circle id="circle5667" cy="9.671" cx="3.181" r=".15"/>
+   <circle id="circle5669" cy="7.315" cx="5.734" r=".15"/>
+   <circle id="circle5671" cy="6.513" cx="6.707" r=".15"/>
+   <circle id="circle5673" cy="9.67" cx="5.73" r=".15"/>
+   <circle id="circle5675" cy="8.373" cx="6.535" r=".15"/>
+   <circle id="circle5677" cy="7.154" cx="4.37" r=".15"/>
+   <circle id="circle5679" cy="7.25" cx=".622" r=".15"/>
+   <circle id="circle5681" cy="5.679" cx=".831" r=".15"/>
+   <circle id="circle5683" cy="8.519" cx="1.257" r=".15"/>
+   <circle id="circle5685" cy="6.877" cx="1.989" r=".15"/>
+   <circle id="circle5687" cy="3.181" cx=".374" r=".15"/>
+   <circle id="circle5689" cy="1.664" cx="1.166" r=".15"/>
+   <circle id="circle5691" cy=".093" cx="1.151" r=".15"/>
+   <circle id="circle5693" cy="10.093" cx="1.151" r=".15"/>
+   <circle id="circle5695" cy="4.451" cx="1.302" r=".15"/>
+   <circle id="circle5697" cy="3.763" cx="3.047" r=".15"/>
+  </pattern>
+  <pattern id="pattern6821-569-825" xlink:href="#Polkadots-med-16-702" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med-16-702" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle7167" cy=".81" cx="2.567" r=".15" fill="#666"/>
+   <circle id="circle7169" cy="2.33" cx="3.048" r=".15" fill="#666"/>
+   <circle id="circle7171" cy="2.415" cx="4.418" r=".15" fill="#666"/>
+   <circle id="circle7173" cy="3.029" cx="1.844" r=".15" fill="#666"/>
+   <circle id="circle7175" cy="1.363" cx="6.08" r=".15" fill="#666"/>
+   <circle id="circle7177" cy="4.413" cx="5.819" r=".15" fill="#666"/>
+   <circle id="circle7179" cy="4.048" cx="4.305" r=".15" fill="#666"/>
+   <circle id="circle7181" cy="3.045" cx="5.541" r=".15" fill="#666"/>
+   <circle id="circle7183" cy="5.527" cx="4.785" r=".15" fill="#666"/>
+   <circle id="circle7185" cy="5.184" cx="2.667" r=".15" fill="#666"/>
+   <circle id="circle7187" cy="1.448" cx="7.965" r=".15" fill="#666"/>
+   <circle id="circle7189" cy="5.049" cx="7.047" r=".15" fill="#666"/>
+   <circle id="circle7191" cy=".895" cx="4.34" r=".15" fill="#666"/>
+   <circle id="circle7193" cy=".34" cx="7.125" r=".15" fill="#666"/>
+   <circle id="circle7195" cy="1.049" cx="9.553" r=".15" fill="#666"/>
+   <circle id="circle7197" cy="2.689" cx="7.006" r=".15" fill="#666"/>
+   <circle id="circle7199" cy="2.689" cx="8.909" r=".15" fill="#666"/>
+   <circle id="circle7201" cy="4.407" cx="9.315" r=".15" fill="#666"/>
+   <circle id="circle7203" cy="3.87" cx="7.82" r=".15" fill="#666"/>
+   <circle id="circle7205" cy="5.948" cx="8.27" r=".15" fill="#666"/>
+   <circle id="circle7207" cy="7.428" cx="7.973" r=".15" fill="#666"/>
+   <circle id="circle7209" cy="8.072" cx="9.342" r=".15" fill="#666"/>
+   <circle id="circle7211" cy="9.315" cx="8.206" r=".15" fill="#666"/>
+   <circle id="circle7213" cy="9.475" cx="9.682" r=".15" fill="#666"/>
+   <circle id="circle7215" cy="6.186" cx="9.688" r=".15" fill="#666"/>
+   <circle id="circle7217" cy="6.296" cx="3.379" r=".15" fill="#666"/>
+   <circle id="circle7219" cy="8.204" cx="2.871" r=".15" fill="#666"/>
+   <circle id="circle7221" cy="8.719" cx="4.59" r=".15" fill="#666"/>
+   <circle id="circle7223" cy="9.671" cx="3.181" r=".15" fill="#666"/>
+   <circle id="circle7225" cy="7.315" cx="5.734" r=".15" fill="#666"/>
+   <circle id="circle7227" cy="6.513" cx="6.707" r=".15" fill="#666"/>
+   <circle id="circle7229" cy="9.67" cx="5.73" r=".15" fill="#666"/>
+   <circle id="circle7231" cy="8.373" cx="6.535" r=".15" fill="#666"/>
+   <circle id="circle7233" cy="7.154" cx="4.37" r=".15" fill="#666"/>
+   <circle id="circle7235" cy="7.25" cx=".622" r=".15" fill="#666"/>
+   <circle id="circle7237" cy="5.679" cx=".831" r=".15" fill="#666"/>
+   <circle id="circle7239" cy="8.519" cx="1.257" r=".15" fill="#666"/>
+   <circle id="circle7241" cy="6.877" cx="1.989" r=".15" fill="#666"/>
+   <circle id="circle7243" cy="3.181" cx=".374" r=".15" fill="#666"/>
+   <circle id="circle7245" cy="1.664" cx="1.166" r=".15" fill="#666"/>
+   <circle id="circle7247" cy=".093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7249" cy="10.093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7251" cy="4.451" cx="1.302" r=".15" fill="#666"/>
+   <circle id="circle7253" cy="3.763" cx="3.047" r=".15" fill="#666"/>
+  </pattern>
+  <pattern id="pattern6821-529-886" xlink:href="#Polkadots-med-84-785" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med-84-785" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle7257" cy=".81" cx="2.567" r=".15" fill="#666"/>
+   <circle id="circle7259" cy="2.33" cx="3.048" r=".15" fill="#666"/>
+   <circle id="circle7261" cy="2.415" cx="4.418" r=".15" fill="#666"/>
+   <circle id="circle7263" cy="3.029" cx="1.844" r=".15" fill="#666"/>
+   <circle id="circle7265" cy="1.363" cx="6.08" r=".15" fill="#666"/>
+   <circle id="circle7267" cy="4.413" cx="5.819" r=".15" fill="#666"/>
+   <circle id="circle7269" cy="4.048" cx="4.305" r=".15" fill="#666"/>
+   <circle id="circle7271" cy="3.045" cx="5.541" r=".15" fill="#666"/>
+   <circle id="circle7273" cy="5.527" cx="4.785" r=".15" fill="#666"/>
+   <circle id="circle7275" cy="5.184" cx="2.667" r=".15" fill="#666"/>
+   <circle id="circle7277" cy="1.448" cx="7.965" r=".15" fill="#666"/>
+   <circle id="circle7279" cy="5.049" cx="7.047" r=".15" fill="#666"/>
+   <circle id="circle7281" cy=".895" cx="4.34" r=".15" fill="#666"/>
+   <circle id="circle7283" cy=".34" cx="7.125" r=".15" fill="#666"/>
+   <circle id="circle7285" cy="1.049" cx="9.553" r=".15" fill="#666"/>
+   <circle id="circle7287" cy="2.689" cx="7.006" r=".15" fill="#666"/>
+   <circle id="circle7289" cy="2.689" cx="8.909" r=".15" fill="#666"/>
+   <circle id="circle7291" cy="4.407" cx="9.315" r=".15" fill="#666"/>
+   <circle id="circle7293" cy="3.87" cx="7.82" r=".15" fill="#666"/>
+   <circle id="circle7295" cy="5.948" cx="8.27" r=".15" fill="#666"/>
+   <circle id="circle7297" cy="7.428" cx="7.973" r=".15" fill="#666"/>
+   <circle id="circle7299" cy="8.072" cx="9.342" r=".15" fill="#666"/>
+   <circle id="circle7301" cy="9.315" cx="8.206" r=".15" fill="#666"/>
+   <circle id="circle7303" cy="9.475" cx="9.682" r=".15" fill="#666"/>
+   <circle id="circle7305" cy="6.186" cx="9.688" r=".15" fill="#666"/>
+   <circle id="circle7307" cy="6.296" cx="3.379" r=".15" fill="#666"/>
+   <circle id="circle7309" cy="8.204" cx="2.871" r=".15" fill="#666"/>
+   <circle id="circle7311" cy="8.719" cx="4.59" r=".15" fill="#666"/>
+   <circle id="circle7313" cy="9.671" cx="3.181" r=".15" fill="#666"/>
+   <circle id="circle7315" cy="7.315" cx="5.734" r=".15" fill="#666"/>
+   <circle id="circle7317" cy="6.513" cx="6.707" r=".15" fill="#666"/>
+   <circle id="circle7319" cy="9.67" cx="5.73" r=".15" fill="#666"/>
+   <circle id="circle7321" cy="8.373" cx="6.535" r=".15" fill="#666"/>
+   <circle id="circle7323" cy="7.154" cx="4.37" r=".15" fill="#666"/>
+   <circle id="circle7325" cy="7.25" cx=".622" r=".15" fill="#666"/>
+   <circle id="circle7327" cy="5.679" cx=".831" r=".15" fill="#666"/>
+   <circle id="circle7329" cy="8.519" cx="1.257" r=".15" fill="#666"/>
+   <circle id="circle7331" cy="6.877" cx="1.989" r=".15" fill="#666"/>
+   <circle id="circle7333" cy="3.181" cx=".374" r=".15" fill="#666"/>
+   <circle id="circle7335" cy="1.664" cx="1.166" r=".15" fill="#666"/>
+   <circle id="circle7337" cy=".093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7339" cy="10.093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7341" cy="4.451" cx="1.302" r=".15" fill="#666"/>
+   <circle id="circle7343" cy="3.763" cx="3.047" r=".15" fill="#666"/>
+  </pattern>
+  <pattern id="pattern6821-522-178" xlink:href="#Polkadots-med-944-217" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med-944-217" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle7347" cy=".81" cx="2.567" r=".15" fill="#666"/>
+   <circle id="circle7349" cy="2.33" cx="3.048" r=".15" fill="#666"/>
+   <circle id="circle7351" cy="2.415" cx="4.418" r=".15" fill="#666"/>
+   <circle id="circle7353" cy="3.029" cx="1.844" r=".15" fill="#666"/>
+   <circle id="circle7355" cy="1.363" cx="6.08" r=".15" fill="#666"/>
+   <circle id="circle7357" cy="4.413" cx="5.819" r=".15" fill="#666"/>
+   <circle id="circle7359" cy="4.048" cx="4.305" r=".15" fill="#666"/>
+   <circle id="circle7361" cy="3.045" cx="5.541" r=".15" fill="#666"/>
+   <circle id="circle7363" cy="5.527" cx="4.785" r=".15" fill="#666"/>
+   <circle id="circle7365" cy="5.184" cx="2.667" r=".15" fill="#666"/>
+   <circle id="circle7367" cy="1.448" cx="7.965" r=".15" fill="#666"/>
+   <circle id="circle7369" cy="5.049" cx="7.047" r=".15" fill="#666"/>
+   <circle id="circle7371" cy=".895" cx="4.34" r=".15" fill="#666"/>
+   <circle id="circle7373" cy=".34" cx="7.125" r=".15" fill="#666"/>
+   <circle id="circle7375" cy="1.049" cx="9.553" r=".15" fill="#666"/>
+   <circle id="circle7377" cy="2.689" cx="7.006" r=".15" fill="#666"/>
+   <circle id="circle7379" cy="2.689" cx="8.909" r=".15" fill="#666"/>
+   <circle id="circle7381" cy="4.407" cx="9.315" r=".15" fill="#666"/>
+   <circle id="circle7383" cy="3.87" cx="7.82" r=".15" fill="#666"/>
+   <circle id="circle7385" cy="5.948" cx="8.27" r=".15" fill="#666"/>
+   <circle id="circle7387" cy="7.428" cx="7.973" r=".15" fill="#666"/>
+   <circle id="circle7389" cy="8.072" cx="9.342" r=".15" fill="#666"/>
+   <circle id="circle7391" cy="9.315" cx="8.206" r=".15" fill="#666"/>
+   <circle id="circle7393" cy="9.475" cx="9.682" r=".15" fill="#666"/>
+   <circle id="circle7395" cy="6.186" cx="9.688" r=".15" fill="#666"/>
+   <circle id="circle7397" cy="6.296" cx="3.379" r=".15" fill="#666"/>
+   <circle id="circle7399" cy="8.204" cx="2.871" r=".15" fill="#666"/>
+   <circle id="circle7401" cy="8.719" cx="4.59" r=".15" fill="#666"/>
+   <circle id="circle7403" cy="9.671" cx="3.181" r=".15" fill="#666"/>
+   <circle id="circle7405" cy="7.315" cx="5.734" r=".15" fill="#666"/>
+   <circle id="circle7407" cy="6.513" cx="6.707" r=".15" fill="#666"/>
+   <circle id="circle7409" cy="9.67" cx="5.73" r=".15" fill="#666"/>
+   <circle id="circle7411" cy="8.373" cx="6.535" r=".15" fill="#666"/>
+   <circle id="circle7413" cy="7.154" cx="4.37" r=".15" fill="#666"/>
+   <circle id="circle7415" cy="7.25" cx=".622" r=".15" fill="#666"/>
+   <circle id="circle7417" cy="5.679" cx=".831" r=".15" fill="#666"/>
+   <circle id="circle7419" cy="8.519" cx="1.257" r=".15" fill="#666"/>
+   <circle id="circle7421" cy="6.877" cx="1.989" r=".15" fill="#666"/>
+   <circle id="circle7423" cy="3.181" cx=".374" r=".15" fill="#666"/>
+   <circle id="circle7425" cy="1.664" cx="1.166" r=".15" fill="#666"/>
+   <circle id="circle7427" cy=".093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7429" cy="10.093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7431" cy="4.451" cx="1.302" r=".15" fill="#666"/>
+   <circle id="circle7433" cy="3.763" cx="3.047" r=".15" fill="#666"/>
+  </pattern>
+  <pattern id="pattern6821-665-648" xlink:href="#Polkadots-med-621-950" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med-621-950" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle7437" cy=".81" cx="2.567" r=".15" fill="#666"/>
+   <circle id="circle7439" cy="2.33" cx="3.048" r=".15" fill="#666"/>
+   <circle id="circle7441" cy="2.415" cx="4.418" r=".15" fill="#666"/>
+   <circle id="circle7443" cy="3.029" cx="1.844" r=".15" fill="#666"/>
+   <circle id="circle7445" cy="1.363" cx="6.08" r=".15" fill="#666"/>
+   <circle id="circle7447" cy="4.413" cx="5.819" r=".15" fill="#666"/>
+   <circle id="circle7449" cy="4.048" cx="4.305" r=".15" fill="#666"/>
+   <circle id="circle7451" cy="3.045" cx="5.541" r=".15" fill="#666"/>
+   <circle id="circle7453" cy="5.527" cx="4.785" r=".15" fill="#666"/>
+   <circle id="circle7455" cy="5.184" cx="2.667" r=".15" fill="#666"/>
+   <circle id="circle7457" cy="1.448" cx="7.965" r=".15" fill="#666"/>
+   <circle id="circle7459" cy="5.049" cx="7.047" r=".15" fill="#666"/>
+   <circle id="circle7461" cy=".895" cx="4.34" r=".15" fill="#666"/>
+   <circle id="circle7463" cy=".34" cx="7.125" r=".15" fill="#666"/>
+   <circle id="circle7465" cy="1.049" cx="9.553" r=".15" fill="#666"/>
+   <circle id="circle7467" cy="2.689" cx="7.006" r=".15" fill="#666"/>
+   <circle id="circle7469" cy="2.689" cx="8.909" r=".15" fill="#666"/>
+   <circle id="circle7471" cy="4.407" cx="9.315" r=".15" fill="#666"/>
+   <circle id="circle7473" cy="3.87" cx="7.82" r=".15" fill="#666"/>
+   <circle id="circle7475" cy="5.948" cx="8.27" r=".15" fill="#666"/>
+   <circle id="circle7477" cy="7.428" cx="7.973" r=".15" fill="#666"/>
+   <circle id="circle7479" cy="8.072" cx="9.342" r=".15" fill="#666"/>
+   <circle id="circle7481" cy="9.315" cx="8.206" r=".15" fill="#666"/>
+   <circle id="circle7483" cy="9.475" cx="9.682" r=".15" fill="#666"/>
+   <circle id="circle7485" cy="6.186" cx="9.688" r=".15" fill="#666"/>
+   <circle id="circle7487" cy="6.296" cx="3.379" r=".15" fill="#666"/>
+   <circle id="circle7489" cy="8.204" cx="2.871" r=".15" fill="#666"/>
+   <circle id="circle7491" cy="8.719" cx="4.59" r=".15" fill="#666"/>
+   <circle id="circle7493" cy="9.671" cx="3.181" r=".15" fill="#666"/>
+   <circle id="circle7495" cy="7.315" cx="5.734" r=".15" fill="#666"/>
+   <circle id="circle7497" cy="6.513" cx="6.707" r=".15" fill="#666"/>
+   <circle id="circle7499" cy="9.67" cx="5.73" r=".15" fill="#666"/>
+   <circle id="circle7501" cy="8.373" cx="6.535" r=".15" fill="#666"/>
+   <circle id="circle7503" cy="7.154" cx="4.37" r=".15" fill="#666"/>
+   <circle id="circle7505" cy="7.25" cx=".622" r=".15" fill="#666"/>
+   <circle id="circle7507" cy="5.679" cx=".831" r=".15" fill="#666"/>
+   <circle id="circle7509" cy="8.519" cx="1.257" r=".15" fill="#666"/>
+   <circle id="circle7511" cy="6.877" cx="1.989" r=".15" fill="#666"/>
+   <circle id="circle7513" cy="3.181" cx=".374" r=".15" fill="#666"/>
+   <circle id="circle7515" cy="1.664" cx="1.166" r=".15" fill="#666"/>
+   <circle id="circle7517" cy=".093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7519" cy="10.093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7521" cy="4.451" cx="1.302" r=".15" fill="#666"/>
+   <circle id="circle7523" cy="3.763" cx="3.047" r=".15" fill="#666"/>
+  </pattern>
+  <pattern id="pattern6821-522-580" xlink:href="#Polkadots-med-944-857" patternTransform="scale(2.4516)"/>
+  <pattern id="Polkadots-med-944-857" height="10" width="10" patternUnits="userSpaceOnUse" patternTransform="translate(0) scale(10)">
+   <circle id="circle7527" cy=".81" cx="2.567" r=".15" fill="#666"/>
+   <circle id="circle7529" cy="2.33" cx="3.048" r=".15" fill="#666"/>
+   <circle id="circle7531" cy="2.415" cx="4.418" r=".15" fill="#666"/>
+   <circle id="circle7533" cy="3.029" cx="1.844" r=".15" fill="#666"/>
+   <circle id="circle7535" cy="1.363" cx="6.08" r=".15" fill="#666"/>
+   <circle id="circle7537" cy="4.413" cx="5.819" r=".15" fill="#666"/>
+   <circle id="circle7539" cy="4.048" cx="4.305" r=".15" fill="#666"/>
+   <circle id="circle7541" cy="3.045" cx="5.541" r=".15" fill="#666"/>
+   <circle id="circle7543" cy="5.527" cx="4.785" r=".15" fill="#666"/>
+   <circle id="circle7545" cy="5.184" cx="2.667" r=".15" fill="#666"/>
+   <circle id="circle7547" cy="1.448" cx="7.965" r=".15" fill="#666"/>
+   <circle id="circle7549" cy="5.049" cx="7.047" r=".15" fill="#666"/>
+   <circle id="circle7551" cy=".895" cx="4.34" r=".15" fill="#666"/>
+   <circle id="circle7553" cy=".34" cx="7.125" r=".15" fill="#666"/>
+   <circle id="circle7555" cy="1.049" cx="9.553" r=".15" fill="#666"/>
+   <circle id="circle7557" cy="2.689" cx="7.006" r=".15" fill="#666"/>
+   <circle id="circle7559" cy="2.689" cx="8.909" r=".15" fill="#666"/>
+   <circle id="circle7561" cy="4.407" cx="9.315" r=".15" fill="#666"/>
+   <circle id="circle7563" cy="3.87" cx="7.82" r=".15" fill="#666"/>
+   <circle id="circle7565" cy="5.948" cx="8.27" r=".15" fill="#666"/>
+   <circle id="circle7567" cy="7.428" cx="7.973" r=".15" fill="#666"/>
+   <circle id="circle7569" cy="8.072" cx="9.342" r=".15" fill="#666"/>
+   <circle id="circle7571" cy="9.315" cx="8.206" r=".15" fill="#666"/>
+   <circle id="circle7573" cy="9.475" cx="9.682" r=".15" fill="#666"/>
+   <circle id="circle7575" cy="6.186" cx="9.688" r=".15" fill="#666"/>
+   <circle id="circle7577" cy="6.296" cx="3.379" r=".15" fill="#666"/>
+   <circle id="circle7579" cy="8.204" cx="2.871" r=".15" fill="#666"/>
+   <circle id="circle7581" cy="8.719" cx="4.59" r=".15" fill="#666"/>
+   <circle id="circle7583" cy="9.671" cx="3.181" r=".15" fill="#666"/>
+   <circle id="circle7585" cy="7.315" cx="5.734" r=".15" fill="#666"/>
+   <circle id="circle7587" cy="6.513" cx="6.707" r=".15" fill="#666"/>
+   <circle id="circle7589" cy="9.67" cx="5.73" r=".15" fill="#666"/>
+   <circle id="circle7591" cy="8.373" cx="6.535" r=".15" fill="#666"/>
+   <circle id="circle7593" cy="7.154" cx="4.37" r=".15" fill="#666"/>
+   <circle id="circle7595" cy="7.25" cx=".622" r=".15" fill="#666"/>
+   <circle id="circle7597" cy="5.679" cx=".831" r=".15" fill="#666"/>
+   <circle id="circle7599" cy="8.519" cx="1.257" r=".15" fill="#666"/>
+   <circle id="circle7601" cy="6.877" cx="1.989" r=".15" fill="#666"/>
+   <circle id="circle7603" cy="3.181" cx=".374" r=".15" fill="#666"/>
+   <circle id="circle7605" cy="1.664" cx="1.166" r=".15" fill="#666"/>
+   <circle id="circle7607" cy=".093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7609" cy="10.093" cx="1.151" r=".15" fill="#666"/>
+   <circle id="circle7611" cy="4.451" cx="1.302" r=".15" fill="#666"/>
+   <circle id="circle7613" cy="3.763" cx="3.047" r=".15" fill="#666"/>
+  </pattern>
+  <circle id="gpPt5" stroke-width=".222" stroke="currentColor" cy="0" cx="0" r="1"/>
+  <use id="gpPt6" xlink:href="#gpPt5" fill="currentColor"/>
+ </defs>
+ <metadata id="metadata4547">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title4415">Gnuplot</title>
+ <desc id="desc4417">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g id="gnuplot_plot_1">
+  <title id="title4487" fill="url(#pattern6821-529-886)"/>
+  <g id="g4491" style="color:#000000" fill="url(#pattern6821-665-648)">
+   <path id="path4493" d="m214.7 124.3 3.7-4.5 3.6-4.9 3.3-5.5 2.9-5.9 2.5-6.4 1.8-6.7 1.1-6.9 0.3-7-0.8-6.9-1.8-6.7-2.9-6.1-3.9-5.5-4.9-4.7-5.6-3.6-6.3-2.6-6.8-1.6-7-0.5-7 0.5-6.8 1.3-6.7 2-6.2 2.6-5.8 3-5.4 3.4-4.8 3.6-4.4 3.8-3.9 3.8-3.4 3.8-3 3.8-2.7 3.7-2.2 3.6-2 3.5-1.7 3.4-1.4 3.3-1.2 3.1-0.9 3-0.8 2.8-0.7 2.7-0.4 2.6-0.4 2.5-0.2 2.4-0.1 2.2v2.2 2l0.2 2 0.2 1.9 0.2 1.8 0.4 1.7 0.4 1.7 0.4 1.6 0.5 1.5 0.5 1.4 0.6 1.5 0.6 1.3 0.7 1.3 0.7 1.3 0.7 1.2 0.7 1.1 0.8 1.1 0.9 1.1 0.8 1.1 0.9 1 1 0.9 1 1 1 0.8 1 0.9 1.1 0.8 1.1 0.8 1.2 0.8 1.2 0.7 1.3 0.7 1.3 0.6 1.4 0.6 1.4 0.6 1.5 0.5 1.5 0.5 1.6 0.4 1.7 0.4 1.7 0.3 1.9 0.3 1.9 0.2 1.9 0.1h2.1 2.2l2.3-0.2 2.4-0.2 2.5-0.4 2.6-0.5 2.8-0.7 2.9-0.8 3-1 3.1-1.3 3.3-1.4 3.4-1.8 3.5-2 3.7-2.4 3.7-2.7 3.8-3.1 3.9-3.6 3.8-4" fill="url(#pattern6821-522-580)"/>
+  </g>
+ </g>
+ <g fill="none">
+  <rect id="rect4420" height="190" width="300" y="0" x="0"/>
+  <g stroke="none">
+   <g id="g4454" style="color:#ffffff" stroke-width=".5">
+    <path id="path4456" d="m181.7 124.3-0.1-1.7-0.1-1.8-0.3-1.8-0.3-1.7-0.4-1.7-0.5-1.7-0.6-1.7-0.7-1.6-0.7-1.6-0.9-1.6-0.9-1.5-1-1.5-1.1-1.4-1.2-1.3-1.2-1.3" stroke="#fff"/>
+    <path id="path4458" d="m181.7 124.3-0.1-1.7-0.1-1.8-0.3-1.8-0.3-1.7-0.4-1.7-0.5-1.7-0.6-1.7-0.7-1.6-0.7-1.6-0.9-1.6-0.9-1.5-1-1.5-1.1-1.4-1.2-1.3-1.2-1.3-23.9 23.9h33.9" stroke="#009e73"/>
+   </g>
+   <g id="g4466" style="color:#000000" stroke-width=".5">
+    <path id="path4468" d="m20.7 124.3h254.3" stroke="#000"/>
+   </g>
+   <g id="g4472" style="color:#000000">
+    <path id="path4474" d="m147.8 124.3 60-59.9" stroke="#000"/>
+   </g>
+   <g id="g4476" style="color:#000000">
+    <g id="g4478" style="text-anchor:middle" font-size="16px" transform="translate(272.4,136.9)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text4480">
+      <tspan id="tspan4482" font-weight="bold" font-family="&apos;Stix Two Text&apos;" font-style="italic">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="g4497" style="color:#000000" stroke-width="2">
+    <g id="g4499" style="text-anchor:end" font-size="15px" transform="translate(150.3,138.9)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+     <text id="text4501">
+      <tspan id="tspan4503" font-family="&apos;Stix Two Text&apos;" font-style="italic">O</tspan>
+     </text>
+    </g>
+   </g>
+   <g>
+    <g id="g4507" style="color:#000000">
+     <use id="use4509" style="color:#000000" xlink:href="#gpPt6" transform="matrix(2.25,0,0,2.25,147.8,124.3)" height="100%" width="100%" y="0" x="0"/>
+    </g>
+    <g id="g4511" style="color:#000000">
+     <g id="g4513" style="text-anchor:middle" font-size="15px" transform="translate(208.2,81.7)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+      <text id="text4515">
+       <tspan id="tspan4517" font-family="&apos;Stix Two Text&apos;" font-style="italic">P</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="g4519" style="color:#000000">
+     <use id="use4521" style="color:#e51e10" xlink:href="#gpPt6" transform="matrix(2.25,0,0,2.25,207.8,64.4)" height="100%" width="100%" y="0" x="0"/>
+    </g>
+    <g id="g4523" style="color:#000000">
+     <g id="g4525" font-size="15px" transform="translate(212.3,65.5)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+      <text id="text4527"/>
+     </g>
+    </g>
+    <g id="g4529" style="color:#000000">
+     <use id="use4531" style="color:#000000" xlink:href="#gpPt5" transform="matrix(2.25,0,0,2.25,207.8,64.4)" height="100%" width="100%" y="0" x="0"/>
+    </g>
+    <g id="g4533" style="color:#000000">
+     <g id="g4535" font-size="15px" transform="translate(181.2,112.5)" font-family="&apos;Stix Two Text&apos;" fill="#000">
+      <text id="text4537">
+       <tspan id="tspan4539" font-family="&apos;Stix Two Text&apos;" font-style="italic">θ</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="g6823">
+   <title id="title6825" fill="url(#pattern6821)"/>
+   <g id="g6829" style="color:#000000" stroke="currentColor" stroke-width="1.5" fill="none">
+    <path id="path6831" fill="none" d="m214.7 124.3 3.7-4.5 3.6-4.9 3.3-5.5 2.9-5.9 2.5-6.4 1.8-6.7 1.1-6.9 0.3-7-0.8-6.9-1.8-6.7-2.9-6.1-3.9-5.5-4.9-4.7-5.6-3.6-6.3-2.6-6.8-1.6-7-0.5-7 0.5-6.8 1.3-6.7 2-6.2 2.6-5.8 3-5.4 3.4-4.8 3.6-4.4 3.8-3.9 3.8-3.4 3.8-3 3.8-2.7 3.7-2.2 3.6-2 3.5-1.7 3.4-1.4 3.3-1.2 3.1-0.9 3-0.8 2.8-0.7 2.7-0.4 2.6-0.4 2.5-0.2 2.4-0.1 2.2v2.2 2l0.2 2 0.2 1.9 0.2 1.8 0.4 1.7 0.4 1.7 0.4 1.6 0.5 1.5 0.5 1.4 0.6 1.5 0.6 1.3 0.7 1.3 0.7 1.3 0.7 1.2 0.7 1.1 0.8 1.1 0.9 1.1 0.8 1.1 0.9 1 1 0.9 1 1 1 0.8 1 0.9 1.1 0.8 1.1 0.8 1.2 0.8 1.2 0.7 1.3 0.7 1.3 0.6 1.4 0.6 1.4 0.6 1.5 0.5 1.5 0.5 1.6 0.4 1.7 0.4 1.7 0.3 1.9 0.3 1.9 0.2 1.9 0.1h2.1 2.2l2.3-0.2 2.4-0.2 2.5-0.4 2.6-0.5 2.8-0.7 2.9-0.8 3-1 3.1-1.3 3.3-1.4 3.4-1.8 3.5-2 3.7-2.4 3.7-2.7 3.8-3.1 3.9-3.6 3.8-4" stroke="#0072b2"/>
+   </g>
+  </g>
+ </g>
+</svg>

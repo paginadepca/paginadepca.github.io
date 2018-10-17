@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="191.5" width="293.2" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 293.20005 191.4998">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-104.5 -247.36)">
+  <g fill="none">
+   <path id="path4148" stroke-linejoin="round" d="m132.48 350.18h17.5l2.5 15 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 5-30 5 30 2.5-15h17.5" stroke="#ccc" stroke-width="1px"/>
+   <path id="path4219" d="m132.48 412.71v-140" stroke="#000" stroke-width="2"/>
+   <path id="path4221" d="m132.48 367.71h240" stroke="#000" stroke-width="2"/>
+  </g>
+  <path id="rect4291" opacity=".5" stroke-linejoin="round" d="m391 252.36 0.00003 178c0 1.108-0.892 2-2 2h-276c-1.108 0-2-0.892-2-2v-178" fill-opacity="0" stroke="#00f" stroke-width="3"/>
+  <path id="rect4293" d="m113 262.36c90.871 4.5167 183-5 276 0 1.1064 0.0595 2 0.892 2 2v166c0 1.108-0.892 2-2 2h-276c-1.108 0-2-0.89199-2-2v-166c0-1.108 0.89336-2.055 2-2z" fill-opacity=".097983" fill="#0ff"/>
+  <g>
+   <rect id="rect4155" stroke-linejoin="round" rx="2" ry="2" height="29" width="31" stroke="#808000" y="336.18" x="302.48" stroke-width="3" fill="#fff"/>
+   <text id="text4423" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="354.43115" x="311.20285" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4425" font-size="16px" font-style="italic" line-height="125%" y="354.43115" x="311.20285" font-family="&apos;STIX Two Text&apos;">m</tspan></text>
+   <rect id="rect4301" stroke-linejoin="round" height="15" width="15" stroke="#ccc" y="316.36" x="211" fill="#fff"/>
+   <text id="text4297" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="329.42221" x="214.164" font-family="&apos;STIX Two Text&apos;" font-style="italic" fill="#000000"><tspan id="tspan4299" x="214.164" y="329.42221">k</tspan></text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Momento cinético en la rotación del sólido rígido">
+<meta name="keywords"
+content="momento, cinético, rotación, sólido, rígido">
+<title>Momento cinético en la rotación del sólido rígido</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Momento cinético en la rotación del sólido
+rígido</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Sea un sólido tridimensional que rota alrededor de un eje
+fijo:</p>
+
+<p align="center"><object
+data="momento_cinetico_rotacion_solido_rigido_1.svg" type="image/svg+xml"
+width="300" height="520"></object></p>
+
+<p>El momento angular de una partícula $i$, con masa $m_i$, del
+sólido:</p>
+
+<p align="center">$\begin{align} \vec{L}_i &amp;= \vec{r}_i \times 
+\left( m_i \vec{v}_i \right) = \\[1ex] &amp;= m_i \left( \vec{r}_i 
+\times \vec{v}_i \right) \end{align}$</p>
+
+<p>Donde por definición $\vec{L}_i \perp \vec{r}_i\,, \vec{v}_i$. Su 
+módulo (siendo que $\vec{r}_i \perp \vec{v}_i$):</p>
+
+<p align="center">$L_i = m_i r_i v_i$</p>
+
+<p>Teniendo presente que $v_i = R_i \omega$, su proyección,
+$\mathscr{L}_i$, sobre el eje de rotación:</p>
+
+<p align="center">$\begin{align} \mathscr{L}_i &amp;= m_i r_i
+\sin{\theta_i} \, v_i = \\[1ex] &amp;= m_i R_i v_i = m_i 
+R_i ( R_i \omega ) = \\[1ex] &amp;= m_i R_i^2
+\omega \end{align}$</p>
+
+<p>Que es el momento cinético, o angular, de la partícula $i$
+respecto al eje de rotación, siendo indiferente el punto $O$ que
+se tome en el eje de rotación como origen.</p>
+
+<p>Si se considera la totalidad del sólido:</p>
+
+<p align="center">$\begin{align} \mathscr{L} &amp;= \sum_i \mathscr{L}_i
+= \sum_i m_i R_i^2 \omega = \biggl( \underbrace{\sum_i m_i
+R_i^2}_{\displaystyle I} \biggr) \omega = \\[1ex] &amp;= I \omega
+\end{align}$</p>
+
+<p>Derivando respecto al tiempo:</p>
+
+<p align="center">$\dfrac{d \mathscr{L}}{dt} = \dfrac{d(I\omega)}{dt}
+= I \dfrac{d\omega}{dt} = I \alpha$</p>
+
+<p>Ya que:</p>
+
+<p align="center"><object
+data="momento_cinetico_rotacion_solido_rigido_2.svg" type="image/svg+xml"
+width="300" height="550"></object></p>
+
+<p align="center">$\begin{align} \vec{F}_i &amp;= \vec{F}_{i,\perp}
++ \vec{F}_{i,\parallel} = \\[1ex] &amp;= \left( \vec{F}_{i,\smash{\text{t}}}
++ \vec{F}_{i,\smash{\text{n}}}\right) + \vec{F}_{i,\parallel}
+\end{align}$</p>
+
+<p>Se descompone la fuerza $\vec{F}_i$ en una componente paralela al 
+eje, $\vec{F}_{i,\parallel}$, y otra perpendicular, 
+$\vec{F}_{i,\perp}$. A su vez, esta última se desglosa en una 
+tangencial, $\vec{F}_{i,\smash{\text{t}}}$, y otra normal, 
+$\vec{F}_{i,\smash{\text{n}}}$, a la trayectoria de la partícula $i$. 
+Sólo $\vec{F}_{i,\smash{\text{t}}}$ da lugar a un momento neto 
+coincidente con la dirección del eje, que es fijo. Siendo que 
+$\vec{F}_{i,\parallel}$ y $\vec{F}_{i,\smash{\text{n}}}$ no influyen en 
+la rotación de $i$, del mismo modo, tal como es observable, que unas 
+fuerzas análogas aplicadas sobre el pomo de una puerta no la abren ni 
+la cierran, ni tampoco causan otro movimiento, debido a la reacción, 
+oposición de las bisagras.</p>
+
+<p>Así que, sobre $i$, el momento de fuerza efectivo, que afecta
+a la rotación, es por tanto:</p>
+
+<p align="center">$\vec{N}_{i} = \vec{r}_i \times 
+\vec{F}_{i,\smash{\text{t}}}$</p>
+
+<p>Su módulo, ya que $\vec{r}_i \perp \vec{F}_{i,\smash{\text{t}}}$:</p>
+
+<p align="center">$N_i = r_i F_{i,\smash{\text{t}}}$</p>
+
+<p>Su proyección sobre el eje, que da la medida de su influencia
+en la rotación:</p>
+
+<p align="center">$\Gamma_i = r_i \sin\theta_i \, F_{i,\smash{\text{t}}}
+= R_i F_{i,\smash{\text{t}}}$</p>
+
+<p>Que es indiferente del punto $O$ del eje que se elija como
+referencia.</p>
+
+<p>Según la segunda ley de Newton:</p>
+
+<p align="center">$F_{i,\smash{\text{t}}} = m_i a_{i,\smash{\text{t}}} = m_i
+R_i \alpha$</p>
+
+<p>Donde $\alpha$ es la aceleración angular.</p>
+
+<p>Sustituyendo:</p>
+
+<p align="center">$\Gamma_i = m_i R_i^2 \alpha$</p>
+
+<p>Considerando la totalidad del sólido:</p>
+
+<p align="center">$\begin{align} \Gamma &amp;= \sum_i \Gamma_i =
+\sum_i m_i R_i^2 \alpha = \biggl( \underbrace{\sum_i m_i 
+R_i^2}_{\displaystyle I} \biggr) \alpha = \\[1ex] &amp;= I \alpha
+\end{align}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\dfrac{d\mathscr{L}}{dt} = \Gamma$</p>
+
+<p>Donde, respectivamente, $\Gamma$ y $\mathscr{L}$ son el
+momento y el momento cinético del sólido <u>respecto al eje de
+rotación</u>. Integrando:</p>
+
+<p align="center">$\displaystyle \mathscr{L} - \mathscr{L}_0 = \int_{t_1}^{t_2}
+\! \Gamma \, dt \ \leftarrow$ Impulso angular.</p>
+
+<p>Entonces, si:</p>
+
+<p align="center">$\Gamma = 0 \ \Rightarrow \ \mathscr{L} = \text{cte.}$</p>
+
+<p>En general el vector momento cinético del sistema, $\vec{L}$,
+no coincide, su dirección, con el eje de rotación. En los casos
+particulares en que el eje de rotación es un eje de simetría
+del sólido o perpendicular a un sólido plano:</p>
+
+<p align="center">$\vec{L} \parallel \vec{\omega}
+\ \Rightarrow \ \vec{L} = \mathscr{L} \dfrac{\vec{\omega}}{\omega}
+= I \vec{\omega}$</p>
+
+<p>Se considera, por ejemplo, el caso de un sólido plano que
+rota alrededor de un eje perpendicular:</p>
+
+<p align="center"><object
+data="momento_cinetico_rotacion_solido_rigido_3.svg" type="image/svg+xml"
+width="400" height="400"></object></p>
+
+<p align="center">$\begin{array}{l} \begin{aligned} \left. \begin{array}{l}
+\vec{L}_i = \vec{r}_i \times
+\left( m_i \vec{v}_i \right) \\[1ex] \vec{r}_i \perp \vec{v}_i \end{array} \, \right\}
+\Rightarrow L_i = m_i r_i v_i \end{aligned} \\[1em] \begin{aligned}
+\left. \begin{array}{l} \displaystyle \vec{L} = \sum_i
+\vec{L}_i \\[1ex] \vec{L}_i \parallel \vec{\omega}
+\ \ \forall \ i \end{array} \ \right\} \Rightarrow L &amp;= \sum_i
+L_i = \sum_i m_i r_i v_i = \biggl( \underbrace{\sum_i m_i
+r_i^2}_{\displaystyle I} \biggr) \omega = \\[1ex] &amp;= \underbrace{I
+\omega}_{\displaystyle \mathscr{L}} \end{aligned} \end{array}$</p>
+
+<p>Donde se ha hecho uso de la igualdad $v_i = r_i \omega$.</p>
+
+</div>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../energia_cinetica_asociada_movimiento_rotacion/energia_cinetica_asociada_movimiento_rotacion.html"
+    title="Anterior">&lt;</a>
+  </li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Movimiento de rotación de un cuerpo rígido respecto de un eje fijo">
+<meta name="keywords"
+content="movimiento, rotación, cuerpo, rígido, eje, fijo">
+<title>Movimiento de rotación de un cuerpo rígido respecto de un eje fijo</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Movimiento de rotación de un cuerpo rígido
+respecto de un eje fijo</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Se plantea la situación en que un cuerpo (o sólido) rígido,
+sin traslación, gira alrededor de un eje fijo, siendo ésta la
+rotación más simple posible. Si el eje no fuera fijo el
+movimiento de rotación se complicaría, en su complejidad, mucho.</p>
+
+<p>Un cuerpo rígido se considera que está formado por un gran
+número de partículas, donde la masa está distribuida de forma
+continua o discreta, siendo la distancia entre cualquier par de
+partículas constante, i.e. el cuerpo no se deforma.</p>
+
+<p align="center"><object
+data="movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo_1.svg"
+type="image/svg+xml" width="300" height="190"></object></p>
+
+<p>El ángulo $\theta$ es el formado por la recta $OP$ y el eje $x$,
+que es fijo.</p>
+
+<p align="center"><object
+data="movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo_2.svg"
+type="image/svg+xml" width="300" height="190"></object></p>
+
+<p>El movimiento del sistema queda determinado por la variable $\theta$
+(problema unidimensional):</p>
+
+<p align="center">$\left. \begin{array}{l} t_1,\, \theta_1 \\[1ex] 
+t_2,\, \theta_2 \end{array} \right\} \Rightarrow 
+\underset{\displaystyle \bbox[1ex]{\left( \begin{gathered} 
+\smash[b]{\text{velocidad media}} \\ \smash[t]{\text{de 
+rotación}}\end{gathered} \right)} }{\bar{\omega} = \dfrac{\theta_2 - 
+\theta_1}{t_2 - t_1} = \dfrac{\Delta\theta}{\Delta t} } \Rightarrow 
+\underset{ \displaystyle \bbox[1ex]{\left( \begin{gathered} 
+\smash[b]{\text{velocidad instantánea}} \\ \smash[t]{\text{de 
+rotación}} \end{gathered} \right)} }{ \omega = \lim\limits_{\Delta t 
+\to 0} \dfrac{\Delta\theta}{\Delta t} = \dfrac{d\theta}{dt} 
+\hspace{1ex} (s^{-1})}$</p>
+
+<p>Todos los puntos del sólido giran a la misma velocidad
+angular $\omega$, que es característica del movimiento.</p>
+
+<p>Como $\omega$ puede variar con el tiempo:</p>
+
+<p align="center">$\underset{\displaystyle \bbox[1ex]{\left( 
+\begin{gathered} \smash[b]{\text{aceleración media}} \\ 
+\smash[t]{\text{de rotación}} \end{gathered} \right)} }{ \bar\alpha = 
+\dfrac{\omega_2 - \omega_1}{t_2 - t_1} = \dfrac{\Delta\omega}{\Delta t} 
+} \Rightarrow \hspace{1ex} \underset{ \displaystyle \bbox[1ex]{ \left( 
+\begin{gathered} \smash[b]{\text{aceleración instantánea}} \\ 
+\smash[t]{\text{de rotación}} \end{gathered} \right) } }{\alpha = 
+\lim\limits_{\Delta t \to 0} \dfrac{\Delta\omega}{\Delta t} = 
+\dfrac{d\omega}{dt} = \dfrac{d^2\theta}{dt^2} \hspace{1ex} 
+(s^{-2})}$</p>
+
+<p>En donde $\alpha$ es la aceleración angular.</p>
+
+<p>Si $\omega = \omega(\theta)$, y como $\theta$ depende de $t$,
+entonces empleando la regla de la cadena:</p>
+
+<p align="center">$\alpha = \dfrac{d\omega}{dt} = \dfrac{d\omega}{d\theta}
+\underbrace{\dfrac{d\theta}{dt}}_{\displaystyle \omega} = \omega
+\dfrac{d\omega}{d\theta}$</p>
+
+<p>Para caracterizar adecuadamente la rotación es necesario definir la 
+velocidad angular como un vector $\vec\omega$, cuya dirección es la del 
+eje de rotación, sentido el de avance de un tornillo que lo hace 
+girando hacia la derecha (dextrógiro) y módulo $\omega$.</p>
+
+<p>Como la velocidad angular es un vector, la aceleración angular 
+también lo es. Así que $\vec\alpha$ es un vector con misma dirección 
+que $\vec\omega$, y con mismo sentido si el módulo de la velocidad 
+angular crece, o sentido opuesto si es lo contrario.</p>
+
+<p>Tres posibles planteamientos:</p>
+
+<ol>
+    <li>$\alpha = \alpha(t)$</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\displaystyle \dfrac{d\omega}{dt} = \alpha
+    \ \Rightarrow \int_{\omega_1}^{\omega_2} \! d\omega = \int_{t_1}^{t_2}
+    \! \alpha \, dt \ \Rightarrow \ \omega_2 - \omega_1 = \int_{t_1}^{t_2}
+    \! \alpha \, dt$</p>
+</blockquote>
+
+<ol type="1" start="2">
+    <li>$\alpha = \alpha(\omega)$</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\displaystyle \dfrac{d\omega}{dt} = \alpha
+    \ \Rightarrow \int_{\omega_1}^{\omega_2} \! \dfrac{d\omega}{\alpha}
+    = \int_{t_1}^{t_2} \! dt \ \Rightarrow \int_{\omega_1}^{\omega_2}
+    \! \dfrac{d\omega}{\alpha} = t_2 - t_1$</p>
+</blockquote>
+
+<ol type="1" start="3">
+    <li>$\alpha = \alpha(\theta)$</li>
+</ol>
+
+<blockquote>
+    <p align="center">$\begin{align} \alpha = \omega \dfrac{d\omega}{d\theta}
+    \ &amp;\Rightarrow \int_{\theta_1}^{\theta_2} \! \alpha \, d\theta
+    = \int_{\omega_1}^{\omega_2} \! \omega \, d\omega \ \Rightarrow
+    \\[1ex] &amp;\Rightarrow \int_{\theta_1}^{\theta_2} \! \alpha
+    \, d\theta = \left[ \dfrac{1}{2} \omega^2 \right]_{\omega_1}^{\omega_2}
+    = \dfrac{1}{2} \left( \omega_2^2 - \omega_1^2 \right) \end{align}$</p>
+</blockquote>
+
+<p>Cuando $\alpha$ es constante, es un movimiento de rotación
+uniformemente acelerado. Entonces:</p>
+
+<p align="center">$\alpha = \dfrac{d\omega}{dt}$ &nbsp; (1. y 2.)</p>
+
+<p>Integrando:</p>
+
+<p align="center">$\displaystyle \omega = \int \! \alpha \, dt \
+\Rightarrow \ \omega = \alpha t + C$</p>
+
+<p>Si:</p>
+
+<p align="center">$t = 0, \, \omega = \omega_0 \ \Rightarrow \ C
+= \omega_0$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\boxed{ \omega = \omega_0 + \alpha t}$</p>
+
+<p>Como:</p>
+
+<p align="center">$\omega = \dfrac{d\theta}{dt} \ \Rightarrow \ \omega_0
++ \alpha t = \dfrac{d\theta}{dt}$</p>
+
+<p>Integrando:</p>
+
+<p align="center">$\theta = \omega_0 t + \dfrac{1}{2} \alpha t^2
++ C'$</p>
+
+<p>Si:</p>
+
+<p align="center">$t = 0, \, \theta = \theta_0 \ \Rightarrow \ C'
+= \theta_0$</p>
+
+<p>Así pues:</p>
+
+<p align="center">$\boxed{\theta = \theta_0 + \omega_0 t + \dfrac{1}{2}
+\alpha t^2}$</p>
+
+<p>También:</p>
+
+<p align="center">$\alpha = \omega \dfrac{d\omega}{d\theta}$ &nbsp; (3.)</p>
+
+<p>Entonces, separando variables e integrando:</p>
+
+<p align="center">$\begin{align} \int \alpha \, d\theta &amp;= \int
+\omega \, d\omega \\[1ex] \alpha\theta &amp;= \dfrac{1}{2}\omega^2
++ C'' \end{align}$</p>
+
+<p>Siendo:</p>
+
+<p align="center">$\begin{align} t = 0, \, \theta = \theta_0, \, \omega 
+= \omega_0 \ &amp;\Rightarrow \ \alpha\theta_0 = \dfrac{1}{2}\omega_0^2 
++ C'' \ \Rightarrow \\[1ex] &amp;\Rightarrow \ C'' = \alpha\theta_0 - 
+\dfrac{1}{2} \omega_0^2 \end{align}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$\begin{gather} \alpha\theta = \dfrac{1}{2} \omega^2
++ \alpha \theta_0 - \dfrac{1}{2}\omega_0^2 \\[1ex] \alpha \left(
+\theta - \theta_0 \right) = \dfrac{1}{2} \left( \omega^2 - \omega_0^2
+\right) \\[1ex] 2\alpha \left( \theta - \theta_0 \right) = \omega^2
+- \omega_0^2 \\[1ex] \boxed{\omega^2 = \omega_0^2 + 2\alpha \left(
+\theta - \theta_0 \right)} \end{gather}$</p>
+
+<p>También esta última expresión puede hallarse de otra manera:</p>
+
+<p align="center">$\begin{align} \left. \begin{array}{l} \omega = 
+\omega_0 + \alpha t \ \Rightarrow \ t = \dfrac{\omega - 
+\omega_0}{\alpha} \\[1ex] \theta = \theta_0 + \omega_0 t + \dfrac{1}{2} 
+\alpha t^2 \end{array} \, \right\} \Rightarrow {}&amp;\theta = \theta_0 
++ \omega_0 \dfrac{\omega - \omega_0}{\alpha} + \dfrac{1}{2} \! 
+\cancel{\alpha} \! \dfrac{\left( \omega - \omega_0 
+\right)^2}{\alpha^\cancel{2}} \\[0ex] &amp;\theta = \theta_0 + 
+\dfrac{\omega - \omega_0}{2\alpha} \left( \cancel{2}\! \omega_0 + 
+\omega - \! \cancel{\omega_0} \right) \\[1ex] &amp;\theta = \theta_0 + 
+\dfrac{\left( \omega - \omega_0 \right) \left( \omega + 
+\omega_0\right)}{2\alpha} \\[1ex] &amp;\theta = \theta_0 + 
+\dfrac{\omega^2 - \omega_0^2}{2\alpha} \Rightarrow \\[1ex] 
+&amp;{\Rightarrow \omega^2 = \omega_0^2 + 2\alpha \left( \theta - 
+\theta_0 \right)} \end{align}$</p>
+
+<p>Cualquier punto $P_i$ del sistema describe una circunferencia
+de radio $r_i$, que es igual a la distancia del punto $P_i$ al
+origen:</p>
+
+<p align="center"><object
+data="movimiento_rotacion_cuerpo_rigido_respecto_eje_fijo_3.svg"
+type="image/svg+xml" width="450" height="400"></object></p>
+
+<p>En un intevalo $\Delta t$ el punto $P$ ha recorrido una
+distancia $s$ de la circunferencia:</p>
+
+<p align="center">$s = r \, \underbrace{\left( \theta_2 - \theta_1
+\right)}_{\displaystyle \Delta\theta} = r \Delta\theta$</p>
+
+<p>Si $\Delta\theta \to 0$, entonces:</p>
+
+<p align="center">$ds = r \, d\theta \ \underset{\times 
+\tfrac{1}{dt}}{\Longrightarrow} \ 
+\underbrace{\dfrac{ds}{dt}}_{\displaystyle v} = r 
+\underbrace{\dfrac{d\theta}{dt}}_{\displaystyle \omega} \ \Rightarrow \ 
+v = r \omega$ &nbsp; (velocidad de $P$).</p>
+
+<p>Siendo $\vec{v}$ un vector de módulo $v$ tangente a la 
+circunferencia.</p>
+
+<p>Además:</p>
+
+<p align="center">$\begin{array}{l} a_{\smash[t]{\text{t}}} = 
+\dfrac{dv}{dt} = \dfrac{d}{dt} (r\omega) = r 
+\underbrace{\dfrac{d\omega}{dt}}_{\displaystyle \alpha} = r \alpha 
+\\[1ex] a_{\smash[t]{\text{r}}} = \dfrac{v^2}{r} = \omega^2 r = \omega 
+v \end{array}$</p>
+
+<p>Donde $a_{\smash[t]{\text{t}}}$ es la aceleración tangencial, 
+asociada a cómo varía con el tiempo $v$, el módulo de la velocidad, y 
+$a_{\smash[t]{\text{r}}}$ es la aceleración radial, hacia el centro de 
+la circunferencia, asociada a cómo cambia la dirección de $\vec{v}$, el 
+vector velocidad, con el tiempo.</p>
+
+<p>Recalcar que para cualquier punto del sólido rígido tanto $\omega$
+como $\alpha$ son las mismas.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../problema_trayectorias_hiperbolicas/problema_trayectorias_hiperbolicas.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../dinamica_movimiento_rotacion/dinamica_movimiento_rotacion.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

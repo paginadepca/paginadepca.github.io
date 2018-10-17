@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg4338" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" height="200" width="200" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	@import url('../estilo.css');
+ </style>
+ <defs>
+  <circle id="gpPt5" stroke-width=".222" cy="0" stroke="currentColor" cx="0" r="1"/>
+  <use id="gpPt6" xlink:href="#gpPt5" fill="currentColor"/>
+ </defs>
+ <metadata id="metadata4484">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title4340">Gnuplot</title>
+ <desc id="desc4342">Produced by GNUPLOT 5.0 patchlevel 3</desc>
+ <g id="gnuplot_canvas">
+  <rect id="rect4345" height="200" width="200" y="0" x="0" fill="none"/>
+  <g>
+   <g id="g4377" font-size="16" font-family="Stix Two Text" color="black">
+    <g id="g4379" transform="translate(18.7,174.2)" text-anchor="end">
+     <text id="text4381">
+      <tspan id="tspan4383" font-family="Stix Two Text" font-weight="bold" font-style="italic">x</tspan>
+     </text>
+    </g>
+    <g id="g4385" transform="translate(175 150.1)" text-anchor="end">
+     <text id="text4387">
+      <tspan id="tspan4389" font-family="Stix Two Text" font-weight="bold" font-style="italic">y</tspan>
+     </text>
+    </g>
+    <g id="g4391" transform="translate(67.2,28.9)">
+     <text id="text4393">
+      <tspan id="tspan4395" font-family="Stix Two Text" font-weight="bold" font-style="italic">z</tspan>
+     </text>
+    </g>
+   </g>
+   <g stroke="currentColor" stroke-width=".5" fill="none">
+    <g id="g4399" color="black">
+     <g id="g4401" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon4403" points="26.6 171.3 29.6 172.1 20.7 177.2 25.8 168.3" fill="#000"/>
+     </g>
+     <path id="path4405" stroke="#000" d="m26.6 171.3l3 0.8-8.9 5.1 5.1-8.9 0.8 3m34.4-34.4l-34.4 34.4"/>
+    </g>
+    <g id="g4407" color="black">
+     <g id="g4409" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon4411" points="166.6 136.9 165.1 134.3 175 136.9 165.1 139.5" fill="#000"/>
+     </g>
+     <path id="path4413" stroke="#000" d="m166.6 136.9l-1.5-2.6 9.9 2.6-9.9 2.6 1.5-2.6m-105.6 0h105.6"/>
+    </g>
+    <g id="g4415" color="black">
+     <g id="g4417" stroke="none" shape-rendering="crispEdges">
+      <polygon id="polygon4419" points="61 31.3 58.4 32.8 61 22.9 63.6 32.8" fill="#000"/>
+     </g>
+     <path id="path4421" stroke="#000" d="m61 31.3l-2.6 1.5 2.6-9.9 2.6 9.9-2.6-1.5m0 105.6v-105.6"/>
+    </g>
+   </g>
+   <g stroke="currentColor" stroke-width="2" fill="none">
+    <g id="g4425" color="black">
+     <path id="path4427" stroke="#000" d="m55.9 107.8l5.1-8.9 5.1 8.9m-5.1 29.1v-38"/>
+    </g>
+    <g id="g4429" color="black">
+     <path id="path4431" stroke="#000" d="m90.1 131.8l8.9 5.1-8.9 5.1m-29.1-5.1h38"/>
+    </g>
+    <g id="g4433" color="black">
+     <path id="path4435" stroke="#000" d="m57.5 147.7l-9.9 2.6 2.6-9.9m10.8-3.5l-13.4 13.4"/>
+    </g>
+    <g id="g4437" color="black">
+     <path id="path4439" stroke="#e51e10" d="m100.2 90.4l9.9-2.6-2.6 9.9m-46.5 39.2l49.1-49.1"/>
+    </g>
+   </g>
+  </g>
+  <g id="gnuplot_plot_1">
+   <title id="title4446">NaN</title>
+  </g>
+  <g stroke="currentColor" fill="none">
+   <g id="g4452" color="black" stroke-width="2">
+    <g id="g4454" font-size="15" transform="translate(114.6,88.9)" stroke="none" font-family="Stix Two Text" fill="#000">
+     <text id="text4456">
+      <tspan id="tspan4458" font-family="Stix Two Text" font-style="italic">P</tspan>
+     </text>
+    </g>
+   </g>
+   <g>
+    <g id="g4462" color="black">
+     <use id="use4464" color="rgb(229,  30,  16)" xlink:href="#gpPt6" transform="translate(110.1,87.8) scale(3.38)"/>
+    </g>
+    <g id="g4466" color="black">
+     <g id="g4468" font-size="12" transform="translate(114.6,87.8)" stroke="none" font-family="Arial" fill="#000">
+      <text id="text4470"/>
+     </g>
+    </g>
+    <g id="g4472" color="black">
+     <use id="use4474" color="black" xlink:href="#gpPt5" transform="translate(110.1,87.8) scale(3.38)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g stroke-width="0" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433">
+  <g id="content" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -179.05 1344.8)" ns0:text="$\n\\vec{r}\n$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon4571" points="153.11 713.32 149.78 713.32 149.69 712.93 153.03 712.93 152.05 711.92 152.24 711.68 153.91 713.12 152.86 714.56 152.57 714.32"/><path id="path4573" d="m149.91 707.12 0.05 0.16 0.05 0.15 0.04 0.14 0.04 0.13 0.05 0.13 0.03 0.12 0.04 0.12 0.04 0.11 0.03 0.11 0.04 0.1 0.03 0.1 0.03 0.09 0.04 0.09 0.03 0.08 0.03 0.08 0.03 0.08 0.03 0.08 0.03 0.07 0.06 0.14 0.07 0.14 0.06 0.13 0.07 0.13 0.07 0.13 0.08 0.13 0.04 0.07 0.04 0.07c0.33 0.56 0.61 0.87 0.78 0.87 0.06 0 0.11-0.04 0.16-0.14 0.08-0.17 0.16-0.22 0.36-0.22 0.29 0 0.46 0.18 0.46 0.49s-0.2 0.52-0.47 0.52c-0.23 0-0.5-0.15-0.76-0.42-0.41-0.42-0.81-1.01-0.97-1.41l-0.14-0.36 0.53 2.17-0.03 0.02c-0.73-0.13-0.82-0.15-1.54-0.27v-0.17c0.24 0.05 0.27 0.05 0.34 0.05 0.21 0 0.34-0.1 0.34-0.28 0-0.14 0-0.14-0.16-0.82l-0.8-2.91z"/></g>
+  <g id="g4747" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -221.3 1381.8)" ns0:text="$\n\\vec{i}\n$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon4749" points="151.71 716.43 152.25 715.43 148.92 715.43 148.83 715.03 152.17 715.03 151.19 714.03 151.38 713.79 153.05 715.23 152 716.67"/><path id="path4751" d="m150.92 708.26-0.02-0.03-0.02-0.03-0.02-0.03-0.02-0.02-0.02-0.02-0.02-0.03-0.01-0.02-0.02-0.02-0.01-0.02-0.02-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.02-0.01-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.01-0.01-0.01-0.01-0.01-0.02-0.02-0.02-0.02-0.02-0.02-0.02-0.02-0.02c-0.17-0.17-0.32-0.27-0.41-0.27-0.08 0-0.15 0.08-0.15 0.15 0 0.1 0.03 0.25 0.09 0.44 0 0.03 0.03 0.1 0.06 0.18v0.02 0.02l0.88 3.21-0.03 0.02c-1-0.19-1.2-0.22-1.59-0.25v-0.16c0.53-0.01 0.63-0.04 0.63-0.24 0-0.08-0.03-0.24-0.09-0.44l-0.48-1.76c-0.16-0.58-0.22-0.89-0.22-1.09 0-0.37 0.16-0.57 0.46-0.57 0.46 0 0.82 0.3 1.39 1.14z"/><path id="path4753" d="m150.84 713.64h-0.02-0.03l-0.02-0.01h-0.03l-0.02-0.01-0.02-0.01h-0.02l-0.02-0.01-0.03-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.02-0.02-0.02-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.02-0.02-0.01-0.02-0.01-0.02-0.01-0.03-0.01-0.02-0.01-0.02-0.01-0.03-0.01-0.02v-0.03l-0.01-0.02v-0.03-0.02l-0.01-0.03v-0.03c0-0.32 0.19-0.53 0.48-0.53 0.26 0 0.49 0.23 0.49 0.51 0 0.29-0.23 0.55-0.5 0.55z"/></g>
+  <g id="g4935" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -172.41 1398.6)" ns0:text="$\n\\vec{j}\n$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon4937" points="153.75 715.43 150.42 715.43 150.33 715.03 153.67 715.03 152.69 714.03 152.88 713.79 154.55 715.23 153.5 716.67 153.21 716.43"/><path id="path4939" d="m152.66 711.5-0.03 0.02c-0.89-0.16-1.38-0.24-1.69-0.25v-0.16h0.27l0.07 0.01c0.08 0.01 0.27-0.05 0.32-0.09s0.07-0.13 0.07-0.23-0.05-0.37-0.16-0.8l-0.71-2.91c-0.34-1.36-0.57-1.8-0.97-1.8-0.12 0-0.18 0.04-0.18 0.11 0 0.04 0.01 0.06 0.05 0.11 0.06 0.08 0.08 0.13 0.08 0.21 0 0.21-0.18 0.37-0.41 0.37s-0.39-0.18-0.39-0.42c0-0.35 0.32-0.61 0.78-0.61 0.87 0 1.47 0.76 1.86 2.34z"/><path id="path4941" d="m152.46 713.64h-0.02-0.03l-0.02-0.01h-0.03l-0.02-0.01h-0.02l-0.02-0.01-0.02-0.01-0.03-0.01-0.02-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.02-0.02-0.02-0.01-0.01-0.02-0.02-0.02-0.01-0.02-0.02-0.02-0.01-0.02-0.01-0.02-0.01-0.02-0.01-0.02-0.01-0.03-0.01-0.02-0.01-0.03v-0.02l-0.01-0.03v-0.03-0.02l-0.01-0.03v-0.03c0-0.32 0.19-0.53 0.48-0.53 0.26 0 0.49 0.23 0.49 0.51 0 0.29-0.23 0.55-0.5 0.55z"/></g>
+  <g id="g5131" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -216.3 1345.7)" ns0:text="$\n\\vec{k}\n$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><polygon id="polygon5133" points="152.62 716.64 153.16 715.64 149.83 715.64 149.74 715.24 153.08 715.24 152.1 714.24 152.29 714 153.97 715.44 152.91 716.88"/><path id="path5135" d="m152.84 708.21-0.16-0.26c-0.17-0.31-0.29-0.42-0.44-0.42-0.21 0-0.42 0.33-0.81 1.29-0.05 0.13-0.2 0.48-0.37 0.87 1.47 1.31 1.78 1.51 2.24 1.54v0.16h-1.82v-0.16h0.16c0.25 0 0.39-0.07 0.39-0.18 0-0.2-0.5-0.69-1.43-1.4-0.14-0.11-0.26-0.21-0.43-0.33l1.2 4.56-0.05 0.05c-0.59-0.13-0.97-0.2-1.55-0.27v-0.16c0.47 0.01 0.66-0.06 0.67-0.25-0.02-0.17-0.09-0.44-0.22-0.9-0.04-0.14-0.07-0.25-0.09-0.33l-0.01-0.09-1.27-4.81h0.75l0.47 1.8 0.42 0.31c0.16-0.43 0.42-1.04 0.6-1.4 0.32-0.63 0.5-0.82 0.79-0.82 0.4 0 0.66 0.25 1.1 1.09z"/></g>
+ </g>
+</svg>

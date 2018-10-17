@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["extpfeil.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Oscilador armónico amortiguado">
+<meta name="keywords" content="oscilador, armónico, amortiguado">
+<title>Oscilador armónico amortiguado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Oscilador armónico amortiguado</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p align="center"><object data="oscilador_armonico_amortiguado_1.svg"
+type="image/svg+xml" width="293" height="191"></object></p>
+
+<p>Situado un muelle, con una masa en su extremo, dentro de un
+fluido. Por tanto experimenta una fuerza de rozamiento, de
+fricción, $\vec{F}_{f}$. Siendo ésta tal que $\vec{F}_{f}
+\propto -\vec{v}$ si la velocidad no es muy elevada:</p>
+
+<p align="center">$\vec{F}_{f} = -K\eta\vec{v}$</p>
+
+<center>
+<table>
+    <tr>
+        <td>$K \rightarrow$ coeficiente de fricción (depende de
+        forma geométrica).<p style="margin-bottom:0">$\eta \rightarrow$ coeficiente de
+        viscosidad del fluido.</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>Para una partícula esférica de radio $R$:</p>
+
+<p align="center">$K = 6\pi{R}$ &nbsp; Ley de Stokes.</p>
+
+<p>Según la segunda ley de Newton:</p>
+
+<p align="center">$$\sum\vec{F} = m\vec{a}$$</p>
+
+<p>Por tanto aquí:</p>
+
+<p align="center">$m\dfrac{d^2x}{dt^2} = -kx - b\dfrac{dx}{dt}$</p>
+
+<p>Es una ecuación diferencial de segundo orden con coeficientes
+constantes y homogénea. Así pues:</p>
+
+<p align="center">$m\dfrac{d^2x}{dt^2} + b\dfrac{dx}{dt} + kx = 0
+\enspace \Rightarrow \enspace mp^2 + bp + k = 0$</p>
+
+<p>Cuya solución:</p>
+
+<p align="center">$p = \dfrac{-b \pm \sqrt{b^2 - 4mk}}{2m} = -\dfrac{b}{2m}
+\pm \left[\left(\dfrac{b}{2m}\right)^{\! 2} - \dfrac{k}{m}\right]^{1/2}$</p>
+
+<p>Casos:</p>
+
+<blockquote>
+    <p>a) $\dfrac{k}{m} &gt; \left(\dfrac{b}{2m}\right)^{\! 2} \Rightarrow
+    p$ complejas.</p>
+    <p>b) $\dfrac{k}{m} &lt; \left(\dfrac{b}{2m}\right)^{\! 2} \Rightarrow
+    p$ reales.</p>
+    <p>c) $\dfrac{k}{m} = \left(\dfrac{b}{2m}\right)^{\! 2} \Rightarrow
+    p$ única y real.</p>
+</blockquote>
+
+<p>a) Si:</p>
+
+<blockquote>
+    <p>$\omega_0 = \sqrt{\dfrac{k}{m}}$</p>
+    <p>$\gamma = \dfrac{b}{2m}$, coeficiente de amortiguamiento.</p>
+    <p>$\omega_1 = (\omega_0^2 - \gamma^2)^{1/2}$</p>
+</blockquote>
+
+<p>Aquí:</p>
+
+<blockquote>
+    <p>$\omega_0 &gt; \gamma \ \Rightarrow \ \omega_1 &gt; 0$</p>
+</blockquote>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} p &amp;= -\dfrac{b}{2m} \pm 
+\left[\left(\dfrac{b}{2m}\right)^{\! 2} - \dfrac{k}{m}\right]^{1/2} = 
+-\gamma \pm \Bigl[-(\omega_0^2 -\gamma^2)\Bigr]^{1/2} = \\[1ex] &amp;= 
+-\gamma \pm i\omega_1 \end{align}$</p>
+
+<p>Así pues la solución general de la ecuación diferencial:</p>
+
+<p align="center">$x(t) = C_1 e^{-\gamma t + i\omega_1 t} + C_2 e^{-\gamma
+t - i\omega_1 t}$</p>
+
+<p>Si:</p>
+
+<p align="center">$\left.\begin{array}{l} C_1 = \dfrac{1}{2}Ae^{i\theta}
+\\[1ex] C_2 = \dfrac{1}{2}Ae^{-i\theta} \end{array}\right\} \Rightarrow
+x(t) = \dfrac{1}{2}Ae^{-\gamma t} \!\left[e^{i(\omega_1t + \theta)}
++ e^{-i(\omega_1t + \theta)}\right] = \boxed{Ae^{-\gamma t}\cos(\omega_1t
++ \theta)}$</p>
+
+<p>Esto corresponde con una oscilación con frecuencia 
+$\omega_1{∕}(2\pi)$, menor que sin amortiguamiento, y amplitud 
+$Ae^{-\gamma t}$, desciende exponencialmente con el tiempo. Las 
+constantes $A$ y $\theta$ dependen de las condiciones iniciales. 
+Gráficamente para $\theta = 0$:</p>
+
+<center>
+<table>
+    <tr>
+        <td><object data="oscilador_armonico_amortiguado_2.svg"
+        type="image/svg+xml" width="300" height="280"></td>
+        <td>$\quad t \to \infty, x(t) \to 0$</td>
+    </tr>
+</table>
+</center>
+
+<p>Siendo la energía mecánica:</p>
+
+<p align="center">$E = \underbrace{\dfrac{1}{2}mv^2}_{\large
+E_c} + \underbrace{\dfrac{1}{2}kx^2}_{\large E_p}$</p>
+
+<p>Se halla que:</p>
+
+<p align="center">$\begin{align} v = \dfrac{dx}{dt} &amp;= -A \gamma
+e^{-\gamma t} \! \cos(\omega_1 t + \theta) - A\omega_1 e^{-\gamma
+t} \! \sin(\omega_1 t + \theta) = \\[1ex] &amp;= -Ae^{-\gamma t}
+\bigl[\gamma\cos(\omega_1 t + \theta) + \omega_1 \! \sin(\omega_1t
++ \theta)\bigr] \end{align}$</p>
+
+<p>Sustituyendo en la energía cinética:</p>
+
+<p align="center">$\begin{align} E_c &amp;= \dfrac{1}{2} m A^2 e^{-2\gamma
+t} \bigl[\gamma\cos(\omega_1 t + \theta) + \omega_1 \! \sin(\omega_1t
++ \theta)\bigr]^2 = \\[1ex] &amp;\!\begin{split} {}={} &amp;\dfrac{1}{2}
+m A^2 e^{-2\gamma t} \bigl[\gamma^2\cos^2(\omega_1 t + \theta) +
+2\gamma\omega_1 \! \cos(\omega_1 t + \theta)\sin(\omega_1 t + \theta)
++ {} \\[1ex] &amp;+ \omega_1^2 \sin^2(\omega_1 t + \theta) \bigr] =
+\end{split} \\[1ex] &amp;= \dfrac{1}{2} m A^2 e^{-2\gamma t} \bigl[\gamma^2
+\cos^2(\omega_1 t + \theta) + \gamma\omega_1 \! \sin{2(\omega_1 t
++ \theta)} + \omega_1^2 \sin^2(\omega_1 t + \theta) \bigr] \end{align}$</p>
+
+<p>Para la energía potencial:</p>
+
+<p align="center">$\begin{align} E_p &amp;= \dfrac{1}{2} k A^2 e^{-2\gamma
+t} \cos^2(\omega_1 t + \theta) = \\[1ex] &amp;= \dfrac{1}{2} m \omega_0^2
+A^2 e^{-2\gamma t} \cos^2(\omega_1 t + \theta) = \\[1ex] &amp;= \dfrac{1}{2}m(\omega_1^2
++ \gamma^2)A^2 e^{-2\gamma t} \cos^2(\omega_1 t + \theta) \end{align}$</p>
+
+<p>Reemplazando en la energía mecánica:</p>
+
+<p align="center">$\begin{align}E &amp;= \dfrac{1}{2}m A^2 e^{-2\gamma
+t} \bigl[\gamma^2\cos^2(\omega_1 t + \theta) + \gamma\omega_1 \!
+\sin{2(\omega_1 t + \theta) + \omega_1^2\sin^2(\omega_1 t + \theta)}
+\bigr] + {} \\[1ex] &amp;\hphantom{={}} + \dfrac{1}{2}m (\omega_1^2
++ \gamma^2) A^2 e^{-2\gamma t} \cos^2(\omega_1 t + \theta) = \\[1ex]
+&amp;= \dfrac{1}{2}m A^2 e^{-2\gamma t} \bigl[2\gamma^2\cos^2(\omega_1
+t + \theta) + \gamma\omega_1 \! \sin{2(\omega_1 t + \theta)} +\omega_1^2
+\bigr] = \\[1ex] &amp;= \dfrac{1}{2}m \omega_1^2 A^2 e^{-2\gamma
+t} \! \left[\dfrac{2\gamma^2}{\omega_1^2}\cos^2(\omega_1 t + \theta)
++ \dfrac{\gamma}{\omega_1}\sin{2(\omega_1 t + \theta)} + 1 \right]
+\end{align}$</p>
+
+<p>En el caso que $\gamma \ll \omega_0$, puede despreciarse $\gamma$
+frente a $\omega_0$ y, entonces, $\omega_1 \simeq \omega_0$. Esto
+es:</p>
+
+<p align="center">$\begin{align} E &amp;\simeq \dfrac{1}{2}m \omega_0^2 
+A^2 e^{-2\gamma t} \Bigl[\underset{\displaystyle \gamma \ll 
+\omega_0}{\cancel{\dfrac{2\gamma^2}{\omega_0^2}\cos^2(\omega_0 t + 
+\theta)} + \cancel{\dfrac{\gamma}{\omega_0}\sin{2(\omega_0 t + 
+\theta)}}} + \, 1 \,  \Bigr] \simeq \\[1ex] &amp;\simeq 
+\underbrace{\!\dfrac{1}{2}kA^2\!\!}_{\large E_0} \,\, e^{-2\gamma t} = 
+\boxed{E_0 e^{-2\gamma t}} \end{align}$</p>
+
+<p>Por tanto el ritmo de decaimiento de $E$ es el doble que el de
+la amplitud $A(t) = A e^{-\gamma t}$. Esto es:</p>
+
+<p align="center">$\dfrac{1}{A(t)}\dfrac{dA(t)}{dt} = \dfrac{d\ln{A(t)}}{dt}
+= -\gamma$</p>
+
+<p align="center">$\dfrac{1}{E}\dfrac{dE}{dt} = \dfrac{d\ln E}{dt}
+= -2\gamma$</p>
+
+<p>b) $\dfrac{k}{m} &lt; \left(\dfrac{b}{2m}\right)^{\! 2} \ \Rightarrow
+\ \omega_0 &lt; \gamma$.</p>
+
+<p>El polinomio característico puede ser escrito como:</p>
+
+<p align="center">
+$
+\def\rarrow#1#2{
+	\stackrel{#1}{
+		\underset{#2}{
+			\Rule{0pt}{0.4em}{0pt}
+			\smash{
+				\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+			}
+		} 
+	}
+}
+mp^2 + bp + k = 0 \ \rarrow{}{\large {∕}m} \ p^2 + 2\gamma p + 
+\omega_0^2 = 0
+$
+</p>
+
+<p>Resolviendo:</p>
+
+<p align="center">$\begin{array}{l} p_1 = -\gamma - \left(\gamma^2 - 
+\omega_0^2\right)^{1/2} = -\underbrace{\left [\gamma + \left(\gamma^2 - 
+\omega_0^2\right)^{1/2}\right]}_{\large\gamma_1} = -\gamma_1 \\[1em] 
+p_2 = -\gamma + \left(\gamma^2 - \omega_0^2\right)^{1/2} = 
+-\underbrace{\left[\gamma - \left(\gamma^2 - 
+\omega_0^2\right)^{1/2}\right]}_{\large\gamma_2} = -\gamma_2 
+\end{array}$</p>
+
+<p>Donde:</p>
+
+<p align="center">$\gamma_1 &gt; 0, \quad \gamma_2 &gt;0, \quad \gamma_1
+&gt; \gamma_2$</p>
+
+<p>La solución general es:</p>
+
+<p align="center">$\boxed{x(t) = C_1 e^{-\gamma_1 t} + C_2 e^{-\gamma_2
+t}}$</p>
+
+<p>Cuando $t \to \infty \Rightarrow x \to 0$ (posición de
+equilibrio). El primer término de la solución decae
+exponencialmente a cero más rápidamente que el segundo, por
+tanto transcurrido el suficiente tiempo la solución será
+aproximadamente igual al segundo término. Las constantes $C_1$ y
+$C_2$ se escogen tal que ajusten a las condiciones iniciales, i.e.
+$x_0$ y $v_0$. La expresión de la velocidad:</p>
+
+<p align="center">$v(t) = \dfrac{dx}{dt} = -C_1\gamma_1 e^{-\gamma_1
+t} - C_2 \gamma_2 e^{-\gamma_2 t}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\begin{align} t = 0 &amp;\Rightarrow \left\{\begin{array}{l}
+x_0 = C_1 + C_2 \\[1ex] v_0 = -C_1\gamma_1 - C_2\gamma_2 \end{array}\right.
+\ \rarrow{\displaystyle v_0 + \gamma_2 x_0}{\displaystyle v_0
++ \gamma_1 x_0} \ \left\{\begin{array}{l} v_0 + \gamma_2 x_0 = C_1(\gamma_2
+- \gamma_1) \\[1ex] v_0 + \gamma_1 x_0 = C_2(\gamma_1 - \gamma_2)
+\end{array}\right. \Rightarrow \\[1em] &amp;\Rightarrow \left\{\begin{array}{l}
+C_1 = \dfrac{v_0 + \gamma_2 x_0}{\gamma_2 - \gamma_1} \\[1ex] C_2
+= \dfrac{v_0 + \gamma_1 x_0}{\gamma_1 - \gamma_2} \end{array}\right.
+\end{align}$</p>
+
+<p>Representación gráfica:</p>
+
+<center>
+<table>
+    <tr>
+				<td style="padding-bottom:1em">$t = 0 \rightarrow 
+				\left\{\begin{array}{l} x_0 = A \\[1ex] v_0 = 0 
+				\end{array}\right. \quad \Rightarrow$</td>
+        <td style="padding-left:1em;padding-bottom:1em"><object
+        data="oscilador_armonico_amortiguado_3.svg" type="image/svg+xml"
+        width="230" height="130"></object></td>
+    </tr>
+    <tr>
+        <td>$t = 0 \rightarrow \left\{\begin{array}{l} x_0 = 0 \\[1ex]
+        v_0 &gt; 0 \end{array}\right. \quad \Rightarrow$</td>
+        <td style="padding-left:1em"><object
+        data="oscilador_armonico_amortiguado_4.svg" type="image/svg+xml"
+        width="230" height="130"></td>
+    </tr>
+</table>
+</center>
+
+<p>El muelle vuelve a su posición de equilibrio directamente,
+sin oscilar.</p>
+
+<p>c) $\dfrac{k}{m} = \left(\dfrac{b}{2m}\right)^{\! 2} \Rightarrow \omega_0
+= \gamma$.</p>
+
+<p>El polinomio característico:</p>
+
+<p align="center">$mp^2 + bp + k = 0 \ \rarrow{}{\large {∕}m} \ p^2 + 
+2\gamma p + \omega_0^2 = 0$</p>
+
+<p>Además aquí:</p>
+
+<p align="center">$\gamma^2 - \omega_0^2 = 0$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\underset{\textstyle \text{única}}{\boxed{p =
+-\gamma}} \Rightarrow \! \left\{\begin{array}{l} x = e^{-\gamma t}
+\\[1ex] x = t e^{-\gamma t} \end{array}\right.$</p>
+
+<p>Solución general en este caso:</p>
+
+<p align="center">$x(t) = C_1 e^{-\gamma t} + C_2 t e^{-\gamma t}
+= \boxed{(C_1 + C_2 t) e^{-\gamma t}}$</p>
+
+<p>Para $t \to \infty \Rightarrow x \to 0$, ya que $t \to \infty$
+más lentamente que $e^{\gamma t} \to \infty$.</p>
+
+<p>Siendo que:</p>
+
+<p align="center">$\gamma_1 &gt; \gamma &gt; \gamma_2$</p>
+
+<p>Por lo que este caso (c) vuelve antes al equilibrio que el
+anterior (b), ya que transcurrido un tiempo suficientemente largo
+decae más rápidamente que la solución general de (b) ($\gamma &gt; 
+\gamma_2$).</p>
+
+<p>Las constantes $C_1$ y $C_2$ dependen de las condiciones
+iniciales. La función de la velocidad:</p>
+
+<p align="center">$v = \dfrac{dx}{dt} = C_2 e^{-\gamma t} - (C_1
++ C_2 t) \gamma e^{-\gamma t} = \left[C_2 -\gamma(C_1 + C_2 t)\right]
+e^{-\gamma t}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$t = 0 \Rightarrow \left\{\begin{array}{l} x_0
+= C_1 \\[1ex] v_0 = C_2 - \gamma C_1 \Rightarrow v_0 + \gamma x_0
+= C_2 \end{array}\right.$</p>
+
+<p>Representando gráficamente los tres casos con mismas
+condiciones iniciales:</p>
+
+<center>
+<table>
+    <tr>
+        <td align="center"><object type="image/svg+xml"
+        data="oscilador_armonico_amortiguado_5.svg" width="600"
+        height="320"></object></td>
+    </tr>
+    <tr>
+        <td align="center"><small>a) infraamortiguado, b)
+        sobreamortiguado, c) amortiguamiento crítico.</small></td>
+    </tr>
+</table>
+</center>
+
+<p>Para un valor dado de $\omega_0$, o $\gamma$, el
+amortiguamiento crítico es el que vuelve antes a la situación
+de equilibrio.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../ecuaciones_diferenciales_lineales_orden_n/ecuaciones_diferenciales_lineales_orden_n.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../oscilador_armonico_forzado/oscilador_armonico_forzado.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
