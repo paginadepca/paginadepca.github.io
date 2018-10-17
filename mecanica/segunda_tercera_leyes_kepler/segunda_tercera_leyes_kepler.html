@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Segunda y tercera leyes de Kepler">
+<meta name="keywords" content="segunda, tercera, leyes, Kepler">
+<title>Segunda y tercera leyes de Kepler</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Segunda y tercera leyes de Kepler</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>La velocidad areolar es la variación con el tiempo del área
+barrida por el radio vector.</p>
+
+<p align="center"><object data="segunda_tercera_leyes_kepler_1.svg"
+type="image/svg+xml" width="150" height="240"></object></p>
+
+<p>El área de un triángulo:</p>
+
+<p align="center">$A_\text{triángulo} = \dfrac{\text{base} \times
+\text{altura}}{2}$</p>
+
+<p>Por tanto, cuando $d\theta \to 0$, el área barrida, $dS$,
+puede aproximarse como:</p>
+
+<p align="center">$dS \simeq \dfrac{r \cdot r\,d\theta}{2} = \dfrac{1}{2}
+r^2 d\theta$</p>
+
+<p>Dividiendo por $dt$:</p>
+
+<p align="center">$\dfrac{dS}{dt} = \dfrac{1}{2} r^2 \dfrac{d\theta}{dt}
+= \dfrac{1}{2} r^2 \rlap{\;\!\dot{\phantom{\theta}}}\theta$</p>
+
+<p>Como:</p>
+
+<p align="center">$L = mr^2 \rlap{\;\!\dot{\phantom{\theta}}}\theta \ 
+\Rightarrow \ \rlap{\;\!\dot{\phantom{\theta}}}\theta = \dfrac{L}{mr^2}$</p>
+
+<p>Lo que, ya que para cualquier fuerza central se conserva el
+momento angular $L$, tras sustituir, comporta:</p>
+
+<p align="center">$\boxed{\dfrac{dS}{dt} = \dfrac{L}{2m} = \text{cte.}}$</p>
+
+<p>Demostración de la segunda ley de Kepler. Esto quiere decir
+que la partícula se mueve más rápido cerca del foco que lejos.</p>
+
+<p>Si la órbita es cerrada, integrando para un periodo completo
+$T$:</p>
+
+<p align="center">$\displaystyle S = \int_0^T \! \dfrac{L}{2m} \,
+dt = \dfrac{L}{2m} T$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$T = \dfrac{2mS}{L}$</p>
+
+<p>En el caso de una elipse:</p>
+
+<p align="center">$S = \pi ab$</p>
+
+<p>Donde el semieje mayor $a$:</p>
+
+<p align="center">$a = \left\lvert \dfrac{B}{A^2 - B^2} \right\rvert
+= \left\lvert \dfrac{K}{2E} \right\rvert$</p>
+
+<p>Teniendo en cuenta que para una órbita elíptica $K &lt; 0$ y
+$E &lt; 0$, entonces:</p>
+
+<p align="center">$a = \dfrac{K}{2E}$</p>
+
+<p>El semieje menor $b$:</p>
+
+<p align="center">$b = a \left( 1 - \varepsilon^2 \right)^{1/\:\!2}$</p>
+
+<p>La excentricidad $\varepsilon$:</p>
+
+<p align="center">$\varepsilon = \dfrac{A}{\lvert B \rvert} = \left(
+1 + \dfrac{2EL^2}{mK^2} \right)^{\!1/2}$</p>
+
+<p>Así pues, sustituyendo:</p>
+
+<p align="center">$\begin{align} T &amp;= \dfrac{2m}{L}
+\pi ab = \dfrac{2m}{L} \pi a^2 \left( 1 - \varepsilon^2 \right)^{1/2}
+= \\[1ex] &amp;= \dfrac{2m}{L} \pi a^2 \left( 1 - \left( 1 + \dfrac{2EL^2}{mK^2}
+\right) \right)^{\!1/2} = \\[1ex] &amp;= \dfrac{2m}{L} \pi a^2
+\left( - \dfrac{2EL^2}{mK^2} \right)^{\!1/2} = \\[1ex] &amp;= \dfrac{2m}{L}
+\pi \dfrac{K^2}{4E^2} \left( - \dfrac{2EL^2}{mK^2} \right)^{\!1/2}
+= \\[1ex] &amp;= \left( - \dfrac{\cancel{2} \! \pi^2 \left( m K^2 \right)^\cancel{2}
+\!\! \cancel{E L^2}}{2^\cancel{2} \!\! \cancel{mK^2} \! E^3 \!\! \cancel{E
+L^2}} \right)^{1/2} = \\[1ex] &amp;= \left( - \dfrac{\pi^2 mK^2
+}{2E^3} \right)^{\!1/2} \underset{\llap{E\,}&lt;\rlap{\,0}}{=} \ \ \left( \dfrac{\pi^2
+mK^2}{2 \lvert E \rvert^3} \right)^{\!1/2} \end{align}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} T^2 &amp;= - \dfrac{\pi^2 mK^2
+}{2E^3} \underset{\times {\normalsize\frac{K}{K}}}{=} - \dfrac{\pi^2
+mK^3}{2KE^3} = - \dfrac{4\pi^2m}{K} \underbrace{\left( \dfrac{K}{2E}
+\right)^{\!3}}_{\displaystyle a^3} = \\[1ex] &amp;= - \dfrac{4\pi^2m}{K}
+\, a^3 \ \ \underset{\llap{K\,}&lt;\rlap{\,0}}{=} \ \ \underbrace{\!\dfrac{4\pi^2m}{\lvert K
+\rvert}\!}_{\text{cte.$'$}} \, a^3 \end{align}$</p>
+
+<p>Así que:</p>
+
+<p align="center">$T^2 = \text{cte.$'$} \, a^3$</p>
+
+<p>Que es la tercera ley de Kepler.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../conicas/conicas.html" title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../problema_trayectorias_hiperbolicas/problema_trayectorias_hiperbolicas.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

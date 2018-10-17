@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Sistemas de referencia">
+<meta name="keywords" content="sistemas, referencia">
+<title>Sistemas de referencia</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Sistemas de referencia</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Sistema de referencia: tres ejes perpendiculares que se cruzan
+en el origen.</p>
+
+<p>$\color{red}{*}$ Dos sistemas de referencia en reposo:</p>
+
+<p align="center"><object data="sistemas_referencia_1.svg"
+type="image/svg+xml" width="400" height="200"></object></p>
+
+<p>Posición:</p>
+
+<center>
+<table>
+    <tr>
+        <td align="right" width="45%">
+        $
+        O \left\{
+        \begin{array}{l}
+          \rlap{x} \hphantom{v_x} \\ y \\ z
+        \end{array}
+        \right.
+        $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">
+        $
+        O' \left\{
+        \begin{array}{l}
+          x' = x - x_0 \\ y' = y \\ z' = z
+        \end{array}
+        \right.
+        $
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" width="100%"><p align="left">Velocidad:</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" width="45%">
+          $
+          O \left\{
+          \begin{array}{l}
+            v_x \\ v_y \\ v_z
+          \end{array}
+          \right.
+          $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">
+        $
+        O' \left\{
+        \begin{array}{l}
+          v'_x =
+          \smash[t]{
+            \dfrac{dx'}{dt} =
+            \dfrac{dx}{dt} - \! \cancelto{0}{\dfrac{dx_0}{dt}} \!
+          }
+          = v_x \\
+          v'_y = v_y \\
+          v'_z = v_z
+        \end{array}
+        \right.
+        $</td>
+    </tr>
+    <tr>
+        <td colspan="3"><p align="left">Aceleración:</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" width="45%">
+        $
+        O \left\{
+        \begin{array}{l}
+          a_x \\ a_y \\ a_z
+        \end{array}
+        \right.
+        $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">
+        $
+        O' \left\{
+        \begin{array}{l}
+          a_x' = a_x \\ a_y' = a_y \\ a_z' = a_z
+        \end{array}
+        \right.
+        $
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>En ambos:</p>
+
+<p align="center">$\displaystyle \sum \vec {F} = m \vec{a}$</p>
+
+<p>Las aceleraciones son las mismas, por tanto también las
+fuerzas.</p>
+
+<p>$\color{red}{\mathrel{*}} O'\!$ se mueve con movimiento uniforme rectilíneo:</p>
+
+<center>
+<table>
+    <tr>
+        <td>
+        $ O' \rightarrow \vec{v}_0 = (v_0, 0, 0)$
+        <p style="margin-bottom:0">$t_0 = 0 \rightarrow O' = O$</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>Posición:</p>
+
+<center>
+<table>
+    <tr>
+        <td align="right" width="45%">
+          $
+          O \left\{
+          \begin{array}{l}
+            \rlap{x}\hphantom{v_x} \\ y \\ z
+          \end{array}
+          \right.
+          $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">
+        $
+        O' \left\{
+        \begin{array}{l}
+          x' = x - v_0 t \\ y' = y \\ z' = z
+        \end{array}
+        \right.
+        $
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" width="100%"><p align="left">Velocidad:</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" width="45%">
+        $
+        O \left\{
+        \begin{array}{l}
+          v_x \\ v_y \\ v_z
+        \end{array}
+        \right.
+        $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">
+        $
+        O' \left\{
+        \begin{array}{l}
+          v_x' =
+          \smash[t]{
+            \dfrac{dx'}{dt} = \dfrac{dx}{dt} - v_0 = v_x - v_0
+          } \\
+          v_y' = v_y \\
+          v_z' = v_z
+        \end{array}
+        \right.
+        $
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" width="100%"><p align="left">Aceleración:</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" width="45%">
+        $
+        O \left\{
+        \begin{array}{l}
+          a_x \\ a_y \\ a_z
+        \end{array}
+        \right.
+        $
+        </td>
+        <td width="10%">&nbsp;</td>
+        <td width="45%">$
+        O' \left\{
+        \begin{array}{l}
+          a'_x = 
+          \smash[t]{
+            \dfrac{dv'_x}{dt} =
+            \dfrac{dv_x}{dt} - \! \cancelto{0}{\dfrac{dv_0}{dt}} \!
+          } = a_x \\
+          a'_y = a_y \\
+          a'_z = a_z
+        \end{array}
+        \right.
+        $
+        </td>
+    </tr>
+</table>
+</center>
+
+<p>También aquí:</p>
+
+<p align="center">$\displaystyle \sum \vec{F} = m \vec{a}$</p>
+
+<p>Un sistema de referencia se llama inercial cuando en él se
+cumplen las leyes de Newton. Lo dos casos anteriores, en reposo o
+con movimiento uniforme rectilíneo, son sistemas de referencia
+inerciales. Desde un punto de vista mecánico, estos sistemas de
+referencia son equivalentes. Esto se conoce como principio de
+invariancia de Galileo.</p>
+
+<p>En cambio es imposible determinar una velocidad absoluta de
+una partícula, depende de la velocidad del observador (sistema
+de referencia).</p>
+
+<p>La distancia entre dos puntos $A$ y $B$:</p>
+
+<p align="center">$\lvert \vec{AB} \rvert = \sqrt{\strut (x_B - x_A)^2 +
+(y_B - y_A)^2 + (z_B - z_A)^2}$</p>
+
+<p>Comparando:</p>
+
+<p align="center">
+$
+O \left\{
+\begin{array}{l}
+  x_B - x_A \\ y_B - y_A \\ z_B - z_A
+\end{array}
+\right.
+\quad\qquad
+O' \left\{
+\begin{array}{l}
+  x'_B - x'_A =
+  x_B - \smash{\! \cancel{v_0 t} \! - (x_A - \! \cancel{v_0 t})} =
+  x_B - x_A \\
+  y'_B - y'_A = y_B - y_A \\
+  z'_B - z'_A = z_B - z_A
+\end{array}
+\right.
+$
+</p>
+
+<p>Por tanto en sistemas de referencia inerciales la distancia
+entre dos puntos es la misma.</p>
+
+<p>$\color{red}{*}$ Sistemas no inerciales:</p>
+
+<p>En los sistemas acelerados los postulados de Newton no se
+cumplen estrictamente:</p>
+
+<p align="center">$\displaystyle \sum \vec{F} \neq m \vec{a}$</p>
+
+<p>Ejemplo de sistema con movimiento lineal uniformemente
+acelerado, p.ej. vagón, inicialmente en reposo, que acelera a lo
+largo de una recta situada en un llano:</p>
+
+<p align="center"><object data="sistemas_referencia_2.svg"
+type="image/svg+xml" width="374" height="187"></object></p>
+
+<p>La persona que va dentro, justo al arrancar ($\vec{v}_0 = 0$),
+deja caer un objeto. Éste cae hacia la parte de atrás.</p>
+
+<p>Para un observador exterior inercial, las fuerzas que actúan
+sobre el objeto:</p>
+
+<p align="center">$\left.\begin{array}{l} F_x = 0 \\ F_y = - m \cdot
+g \end{array}\right\}$ movimiento uniformemente acelerado según
+$y$.</p>
+
+<p align="center"><object data="sistemas_referencia_3.svg"
+type="image/svg+xml" width="374" height="187"></object></p>
+
+<p>Desde fuera, para el observador inercial el objeto cae
+verticalmente ($v_{x,0} = 0$) mientras que el vagón es el que
+acelera a su alrededor.</p>
+
+<p>Para alguien situado dentro del vagón, observador no inercial,
+las fuerzas que actúan sobre el objeto:</p>
+
+<center>
+<table>
+    <tr>
+        <td>
+				$F_x = -m \cdot a_c \enspace \leftarrow {}$Fuerza ficticia.
+        <p style="margin-bottom:0">$F_y = -m \cdot g$</p>
+        </td>
+    </tr>
+</table>
+</center>
+
+<p align="center"><object data="sistemas_referencia_4.svg"
+type="image/svg+xml" width="374" height="187"></object></p>
+
+<p>La introducción de fuerzas ficticias (no reales) permite que $\sum
+\vec{F} = m \vec{a}$ sea válida en un sistema de referencia no 
+inercial.</p>
+
+<p>Ejemplo de sistema con movimiento circular uniforme:</p>
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center"><object data="sistemas_referencia_5.svg"
+        type="image/svg+xml" width="200" height="200"></object></td>
+    </tr>
+    <tr>
+        <td align="center">plataforma giratoria</td>
+    </tr>
+</table>
+</center>
+
+<p align="center">$\vec{F}_c \, {:}$ Fuerza centrípeta (fuerza real).</p>
+
+<p align="center">$\vec{F}_{cf} \, {:}$ Fuerza centrífuga (fuerza ficticia).
+</p>
+
+<p align="center">$\vec{F}_c = - \vec{F}_{cf}$</p>
+
+<p align="center">$\lvert \vec{F}_c \rvert = \lvert \vec{F}_{cf} \rvert =
+m \dfrac{v^2}{r} = m \omega^2 r \quad$ ($\omega$, velocidad angular).</p>
+
+<p>Un observador en reposo situado sobre la plataforma que gira,
+por tanto sistema no inercial, para justificar su situación de
+reposo requiere introducir una fuerza centrífuga (ficticia)
+opuesta a la centrípeta para que la equilibre. Esto es, el
+observador siente un fuerza proveniente del suelo, debida al
+rozamiento, que le empuja hacia el centro, pero no cae hacia él,
+así que necesita una &quot;fuerza&quot; de sentido contrario que
+mantenga el equilibrio. Además, si se aumenta progresivamente la
+velocidad de giro llegará un momento que necesitará empujar él
+mismo contra el suelo para no salir despedido. Así que desde su
+punto de vista &quot;existe&quot; una &quot;fuerza&quot; que tira
+de él hacia fuera de la plataforma a la que debe oponerse para
+mantener su posición.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a href="../tercera_ley_newton/tercera_ley_newton.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../teoremas_conservacion_cantidad_movimiento_momento_angular/teoremas_conservacion_cantidad_movimiento_momento_angular.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

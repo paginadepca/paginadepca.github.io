@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Teorema de Steiner">
+<meta name="keywords" content="teorema, Steiner">
+<title>Teorema de Steiner</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Teorema de Steiner</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Si se conoce, con el momento de inercia en torno a un eje que
+pasa por el centro de masas, (CM), puede hallarse el momento de
+inercia respecto a otro paralelo. También es válido en sentido
+contrario.</p>
+
+<blockquote>
+    <p>$\bar{Z} \leftarrow$ Eje que pasa por el centro de masas.</p>
+    <p>$Z \leftarrow$ Eje paralelo a $\bar{Z}$.</p>
+    <p>$\text{d}( \bar{Z}, Z) = a \leftarrow$
+    Distancia que separa ambos ejes.</p>
+</blockquote>
+
+<p>A partir de ellos, se construyen ejes de coordenadas tales que:</p>
+
+<p align="center"><object data="teorema_steiner_1.svg" type="image/svg+xml"
+width="425" height="250"></object></p>
+
+<p>En la representación puede observarse que:</p>
+
+<p align="center">$\begin{gather} x_i = \bar{x}_i \\[1.5ex] y_i =
+\bar{y}_i + a \end{gather}$</p>
+
+<p>Aplicando el teorema de Pitágoras:</p>
+
+<p align="center">$\begin{align} &amp;\begin{aligned} \bar{r}\mspace{1mu}_i^2
+= \bar{x}\mspace{1mu}_i^2 + \bar{y}\mspace{1mu}_i^2 \end{aligned}
+\\[1.5ex] &amp;\begin{aligned} r_i^2 &amp;= x_i^2 + y\mspace{1mu}_i^2
+= \bar{x}\mspace{1mu}_i^2 + \left( \bar{y}_i + a \right)^2 = \\[1ex]
+&amp;= \bar{x}\mspace{1mu}_i^2 + \bar{y}\mspace{1mu}_i^2 + 2a\bar{y}_i
++ a^2 = \\[1ex] &amp;= \bar{r}\mspace{1mu}_i^2 + 2a\bar{y}_i + a^2
+\end{aligned} \end{align}$</p>
+
+<p>Entonces:</p>
+
+<p align="center">$\begin{align} I_z = \sum m_i r_i^2 &amp;= \sum
+m_i \bigl( \bar{r}\mspace{1mu}_i^2 + 2a\bar{y}_i + a^2 \bigr) =
+\\[1ex] &amp;= \underbrace{\sum m_i \bar{r}\mspace{1mu}_i^2}_{\displaystyle
+\hphantom{{}_{\scriptsize\text{CM}}} I_{\scriptsize\text{CM}}} +
+2a \! \sum m_i \bar{y}_i + a^2 \underbrace{\!\sum m_i\!}_{\displaystyle
+M} = \\[1ex] &amp;= I_{\scriptsize\text{CM}} + 2a \sum m_i \bar{y}_i
++ M a^2 \end{align}$</p>
+
+<p>Donde $I_{\scriptsize\text{CM}}$ es el momento de inercia del
+eje paralelo que pasa por el centro de masas, y $M$ la masa total
+del sistema.</p>
+
+<p>Siendo, de la definición de centro de masas, en el sistema de
+coordenadas con origen en éste, que:</p>
+
+<p align="center">$\displaystyle \Bigl( \sum m_i \bar{x}_i, \sum
+m_i \bar{y}_i, \sum m_i \bar{z}_i \Bigr) = M \underbrace{( \bar{x}_{\scriptsize\text{CM}},
+\bar{y}_{\scriptsize\text{CM}}, \bar{z}_{\scriptsize\text{CM}} )}_{\substack{\displaystyle
+0 \\[0.5ex] \text{(origen $=$ CM)}}}$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$\displaystyle 2a \! \sum m_i \bar{y}_i = 2aM 
+\underbrace{\bar{y}_{\smash{\scriptsize\text{CM}}}}_0 = 0$</p>
+
+<p>Así pues, haciendo el cambio $I_z = I$:</p>
+
+<p align="center">$\boxed{ I = I_{\scriptsize{\text{CM}}} + Ma^2
+}$ &nbsp; Teorema de Steiner (o del eje paralelo).</p>
+
+<div id="ejemplo">
+
+<p>Ejemplos:</p>
+
+<ol>
+    <li>
+			<center>
+        <table>
+            <tr>
+                <td align="center" style="padding-right:.5em;padding-bottom:1em">
+									<object data="teorema_steiner_2.svg" type="image/svg+xml"
+									width="250" height="255" style="border:1px solid black;background:white">
+									</object>
+								</td>
+                <td align="center" style="padding-left:.5em;padding-bottom:1em">
+									<object data="teorema_steiner_3.svg" type="image/svg+xml"
+									width="250" height="255" style="border:1px solid black;background:white">
+									</object></td>
+            </tr>
+            <tr>
+                <td align="center">$I = \dfrac{1}{3}Ml^2$</td>
+                <td align="center">$I_{\scriptsize\text{CM}} = \text{?}$</td>
+            </tr>
+        </table>
+      </center>
+    </li>
+</ol>
+
+<blockquote>
+    <p>Aplicando el teorema:</p>
+    <p align="center">$\begin{align} I_{\scriptsize\text{CM}} = I
+    - Ma^2 &amp;= \dfrac{1}{3}Ml^2 - M \left( \dfrac{l}{2} \right)^{\!2}
+    = \\[1ex] &amp;= \dfrac{1}{3}Ml^2 - \dfrac{1}{4}Ml^2 = \\[1ex]
+    &amp;= \dfrac{1}{12}Ml^2 \end{align}$</p>
+</blockquote>
+
+<ol type="1" start="2">
+    <li><center><table>
+            <tr>
+                <td><object data="teorema_steiner_4.svg" type="image/svg+xml"
+                width="250" height="375" style="border:1px solid black;background:white">
+                </object></td>
+            </tr>
+        </table>
+        </center></li>
+</ol>
+
+<blockquote>
+    <p>Conocido $I_{\scriptsize\text{CM}}$, según el teorema de
+    Steiner:</p>
+    <p align="center">$\left.\begin{array}{l} I_{\scriptsize\text{CM}}
+    = \dfrac{1}{2}MR^2 \\[1ex] a = R \\[1ex] I = \text{?} \end{array}
+    \ \right\} \Rightarrow I = I_{\scriptsize\text{CM}} + Ma^2 =
+    \dfrac{1}{2}MR^2 + MR^2 = \dfrac{3}{2}MR^2$</p>
+</blockquote>
+
+</div>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../calculo_momentos_inercia/calculo_momentos_inercia.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a
+    href="../energia_cinetica_asociada_movimiento_rotacion/energia_cinetica_asociada_movimiento_rotacion.html"
+    title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description"
+content="Teorema de conservación de la energía mecánica">
+<meta name="keywords"
+content="teorema, conservación, energía, mecánica">
+<title>Teorema de conservación de la energía mecánica</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Teorema de conservación de la energía mecánica</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>El trabajo realizado sobre una partícula por la resultante de
+las fuerzas es:</p>
+
+<p align="center">$W_{a \to b} = E_{\text{cin}}^{(b)} - E_{\text{cin}}^{(a)}$
+</p>
+
+<p>Cuando sólo están presentes fuerzas conservativas $\vec{F}_{\!\text{c}}$:
+</p>
+
+<p align="center">$\vec{F} = \vec{F}_{\!\text{c}}$</p>
+
+<p align="center">$$W_{a \to b} = \int_a^b \vec{F}_{\!\text{c}}
+\cdot d\vec{r} = U(a) - U(b)$$</p>
+
+<p>Igualando:</p>
+
+<p align="center">$E_{\text{cin}}^{(b)} - E_{\text{cin}}^{(a)}
+= U(a) - U(b)$</p>
+
+<p>Reordenando:</p>
+
+<p align="center">$E_{\text{cin}}^{(a)} + U(a) = E_{\text{cin}}^{(b)}
++ U(b) = E =$ cte.</p>
+
+<p>$E$, la suma de la energía cinética y potencial, que recibe
+el nombre de energía mecánica, permanece, por tanto, constante
+cuando el trabajo sólo lo realizan fuerzas conservativas. Esto
+se conoce como teorema de conservación de la energía mecánica,
+y de aquí el término fuerza conservativa.</p>
+
+<p>Cuando también participan fuerzas no conservativas 
+$\vec{F}_{\!\text{nc}}$:</p>
+
+<p align="center">$\vec{F} =\vec{F}_{\!\text{c}} + 
+\vec{F}_{\!\text{nc}}$</p>
+
+<p align="center">$$\begin{align} W_{a \to b} &amp;= \int_a^b 
+(\vec{F}_{\!\text{c}} + \vec{F}_{\!\text{nc}}) \cdot d\vec{r} = 
+\int_a^b \vec{F}_{\!\text{c}} \cdot d\vec{r} + \int_a^b 
+\vec{F}_{\!\text{nc}} \cdot d\vec{r} = \\[1ex] &amp;= (U(a) - U(b)) + 
+\int_a^b \vec{F}_{\!\text{nc}} \cdot d\vec{r} = E_{\text{cin}}^{(b)} - 
+E_{\text{cin}}^{(a)} \end{align}$$</p>
+
+<p>Por tanto:</p>
+
+<p align="center">$$\underbrace{\left[E_{\text{cin}}^{(b)} + 
+U(b)\right]}_{\displaystyle{E(b)}} - 
+\underbrace{\left[E_{\text{cin}}^{(a)} + 
+U(a)\right]}_{\displaystyle{E(a)}} = \int_a^b \vec{F}_{\!\text{nc}} 
+\cdot d\vec{r}$$</p>
+
+<p align="center">$${\Delta E}_{a \to b} = \int_a^b \vec{F}_{\!\text{nc}}
+\cdot d\vec{r}$$</p>
+
+<p>Así que en este caso la energía mecánica no se conserva,
+siendo su variación igual al trabajo desarrollado por las
+fuerzas no conservativas.</p>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../fuerzas_conservativas_energia_potencial/fuerzas_conservativas_energia_potencial.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../fuerza_central/fuerza_central.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

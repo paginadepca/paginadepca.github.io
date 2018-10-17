@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Vectores">
+<meta name="keywords" content="vectores">
+<title>Vectores</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-102174465-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	
+<div id="title">
+
+<h3>Vectores</h3>
+
+<ul>
+	<li><a href="../mecanica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>$\ast$ Producto escalar:</p>
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="padding-right:1em"><object data="vectores_1.svg"
+        type="image/svg+xml" width="75" height="75" style="margin:0">
+        </object></td>
+        <td>
+          $
+          \left\{
+          \begin{array}{l}
+            \vec{A} = A_x \vec{i} + A_y \vec{j} + A_z \vec{k} \\[1ex]
+            \vec{B} = B_x \vec{i} + B_y \vec{j} + B_z \vec{k}
+          \end{array}
+          \right.
+          $
+        </td>
+    </tr>
+</table>
+</center>
+
+<p align="center">$\vec{A} \cdot \vec{B} = \lvert \vec{A} \rvert
+\lvert \vec{B} \rvert \cos \theta$</p>
+
+<p align="center">$\vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z$</p>
+
+<p>Propiedades del producto escalar:</p>
+
+<ul>
+    <li>$\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}$</li>
+    <li>$\vec{A} \cdot (\vec{B} + \vec{C}) = \vec{A} \cdot \vec{B} +
+    \vec{A} \cdot \vec{C}$</li>
+    <li>$(\alpha \vec{A}) \cdot \vec{B} = \vec{A} \cdot (\alpha \vec{B})
+    = \alpha (\vec{A} \cdot \vec{B}) \qquad \alpha =$ escalar</li>
+</ul>
+
+<p>$\ast$ Producto vectorial:</p>
+
+<p align="center"><object data="vectores_2.svg" type="image/svg+xml"
+width="200" height="200"></object></p>
+
+<p>El producto vectorial de dos vectores $\vec{A}$ y $\vec{B}$ es
+otro vector ($\vec{A} \times \vec{B}$) perpendicular al plano que
+determinan ambos vectores, con sentido el de avance de un tornillo
+que gire de $\vec{A}$ a $\vec{B}$ y con módulo:</p>
+
+<p align="center">$\lvert \vec{A} \times \vec{B} \rvert =
+\lvert \vec{A} \rvert \lvert \vec{B} \rvert \sin \theta \enspace$
+(Igual al área del paralelogramo con lados $\vec{A}$ y $\vec{B}$).</p>
+
+<p>Cálculo:</p>
+
+<p align="center">
+  $
+  \begin{align}
+    \vec{A} \times \vec{B} &amp;=
+    \begin{vmatrix}
+      \vec{i} &amp; \vec{j} &amp; \vec{k} \\
+      A_x &amp; A_y &amp; A_z \\
+      B_x &amp; B_y &amp; B_z
+    \end{vmatrix}
+    = \\[1ex]
+    &amp;= (A_y B_z - A_z B_y) \, \vec{i} + (A_z B_x - A_x B_z) \, \vec{j}
+    + (A_x B_y - A_y B_x) \, \vec{k}
+  \end{align}
+  $
+</p>
+
+<p>Propiedades:</p>
+<ul>
+    <li>$\vec{A} \times \vec{B} = - \vec{B} \times \vec{A}$</li>
+    <li>$(\alpha \vec{A}) \times \vec{B} = \alpha (\vec{A} \times \vec{B})
+    = \vec{A} \times (\alpha \vec{B}) \qquad \alpha =$ escalar.</li>
+    <li>$\vec{A} \times (\vec{B} + \vec{C}) = (\vec{A} \times \vec{B}) +
+    (\vec{A} \times \vec{C})$</li>
+		<li>$\vec{A} \times (\vec{B} \times \vec{C}) = \vec{B}\:\!(\vec{A} 
+		\cdot \vec{C}) - \vec{C}\:\!(\vec{A} \cdot \vec{B})$</li>
+</ul>
+
+<p>$\ast$ Producto mixto:</p>
+
+<center>
+<table>
+    <tr>
+        <td>$\vec{A} \cdot (\vec{B} \times \vec{C}) =
+        \begin{vmatrix}
+          A_x &amp; A_y &amp; A_z \\
+          B_x &amp; B_y &amp; B_z \\
+          C_x &amp; C_y &amp; C_z
+        \end{vmatrix}
+        $
+        </td>
+        <td style="padding-left:2em"><object data="vectores_3.svg"
+        type="image/svg+xml" width="100" height="100"></object></td>
+    </tr>
+</table>
+</center>
+
+<p>Es un número real cuyo valor absoluto es el volumen del
+paralepípedo con aristas $\vec{A}$, $\vec{B}$ y $\vec{C}$.</p>
+
+<p>Signo del producto mixto $\vec{A} \cdot (\vec{B} \times \vec{C})$:</p>
+
+<center>
+<table>
+    <tr>
+        <td style="padding-right:1em"><object data="vectores_4.svg"
+        type="image/svg+xml" width="200" height="200"></object></td>
+        <td style="padding-left:1em"><object data="vectores_5.svg"
+        type="image/svg+xml" width="200" height="200"></object></td>
+    </tr>
+    <tr>
+        <td align="center" style="padding-right:1em">positivo</td>
+        <td align="center" style="padding-left:1em">negativo</td>
+    </tr>
+</table>
+</center>
+
+<p>Propiedades:</p>
+
+<blockquote>
+    <p style="display:table-cell">$\vec{A} \cdot (\vec{B} \times \vec{C})
+    = \vec{C} \cdot (\vec{A} \times \vec{B}) = \vec{B} \cdot (\vec{C} \times
+    \vec{A}) \enspace \leftarrow {}$</p>
+    <p style="display:table-cell">(dos cambios $\Rightarrow$
+    mantiene orientación).</p>
+</blockquote>
+
+</div>
+
+<div id="foot">
+
+<a href="../mecanica.html">Temario</a>
+
+<ul>
+  <li>
+    <a
+    href="../movimiento_dos_tres_dimensiones/movimiento_dos_tres_dimensiones.html"
+    title="Anterior">&lt;</a>
+  </li>
+	<li>
+    <a href="../leyes_newton/leyes_newton.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
