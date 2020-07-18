@@ -101,6 +101,7 @@ a:hover {
     margin-left: 0.5em;
     padding: 2px;
     color: #222;
+    border-radius: 5px;
     }
     
 #title ul li a:hover {
@@ -123,6 +124,7 @@ a:hover {
     display: inline-block;
     padding: 0.1em;
     color: #222;
+    border-radius: 5px;
     }
     
 #foot a:hover {
