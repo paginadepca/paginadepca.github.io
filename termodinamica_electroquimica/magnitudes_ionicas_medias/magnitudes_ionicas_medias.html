@@ -1,0 +1,667 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Magnitudes iónicas medias">
+<meta name="keywords" content="magnitudes, iónicas, medias">
+<title>Magnitudes iónicas medias</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Magnitudes iónicas medias</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sea la disolución de un electrolito fuerte:</p>
+
+	<p style="text-align:center">
+		$\ce{A + \underbrace{M_{\nu_+}X_{\nu_-}}_{B} -&gt; \nu_+ M^{$z$_+} +
+		\nu_- X^{$z$_-}}$</p>
+	
+<p>Donde se tiene:</p>
+
+	<p style="margin-left:30px">
+		$\ce{A}$: $n_{\ce{A}}$ moles de disolvente.</p>
+		
+	<p style="margin-left:30px">
+		$\ce{B}$: $n_{\ce{B}}$ moles de soluto.</p>
+		
+<p>Estando presentes en la disolución las siguientes especies:</p>
+
+	<p style="text-align:center">
+		$\ce{A}, \ce{M^{$z$_+}}, \ce{X^{$z$_-}},
+		\underbrace{\ce{(MX)^{($z$_+) + ($z$_-)}}}_{{\rm P.I.}
+		\rlap{\, \equiv \, \text{par iónico}}}$</p>
+		
+<p>Por tanto, sean sus potenciales químicos y moles:</p>
+
+	<p style="margin-left:30px">
+		$\mu_{\ce{A}}, \mu_+ , \mu_-, \mu_{\rm P.I.}$</p>
+		
+	<p style="margin-left:30px">
+		$n_{\ce{A}}, n_+, n_-, n_{\rm P.I.}$</p>
+		
+<p>Siendo, por definición:</p>
+
+	<p style="display:table;margin-left:30px;margin-right:30px">
+		<span style="display:table-cell;white-space:nowrap">
+		$
+		\left.
+		\begin{array}{l}
+			\mu_+ = \left( \dfrac{\partial G}{\partial n_+}
+			\right)_{\! P,T,n_-,n_{\ce{A}},n_{\rm P.I.}} \\[1ex]
+			\mu_- = \left( \dfrac{\partial G}{\partial n_-}
+			\right)_{\! P,T,n_+,n_{\ce{A}},n_{\rm P.I.}}
+		\end{array}
+		\right\}
+		$ &ensp;
+		</span>
+		<span style="display:table-cell">
+			No se pueden averiguar. Experimentalmente, por el principio de 
+			electroneutralidad, no se pueden mantener fijos los moles del ion 
+			de un signo (positivo o negativo) mientras varían los moles del 
+			signo opuesto.</span>
+	</p>
+	
+<p>Lo que sí se puede saber:</p>
+
+	<p style="text-align:center">
+		$\mu_{\ce{B}} = \left( \dfrac{\partial G}{\partial n_{\ce{B}}}
+		\right)_{\! P,T,n_{\ce{A}}}$</p>
+		
+<p>El diferencial de $G$ para esta disolución es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dG &amp;= V \, dP - S \, dT + \sum \mu_x \, dn_x = \\[1ex]
+			&amp;= V \, dP - S \, dT + \mu_{\ce{A}} \, dn_{\ce{A}} + \mu_+ \,
+			dn_+ + \mu_- \, dn_- + \mu_{\rm P.I.} \, dn_{\rm P.I.}
+		\end{align}	
+		$
+	</p>
+	
+<p>Para dilucidar y evitar aquello que no se puede resolver de esta 
+igualdad, se parte de lo siguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\ce{
+			$
+			\begin{gathered}[t]
+				\ce{A} \vphantom{\ce{\nu_+ M^{$z$_+}}} \\[1ex]
+				n_{\ce{A}}
+			\end{gathered}
+			$
+			+
+			$
+			\begin{gathered}[t]
+				\ce{M_{\nu_+}X_{\nu_-}} \vphantom{\ce{\nu_+ M^{$z$_+}}} \\[1ex]
+				n_{\ce{B}}
+			\end{gathered}
+			$
+			-&gt;
+			$
+			\begin{gathered}[t]
+				\ce{\nu_+ M^{$z$_+}} \\[1ex]
+				\nu_+ n_{\ce{B}}
+			\end{gathered}
+			$
+			+
+			$
+			\begin{gathered}[t]
+				\ce{\nu_- X^{$z$_-}} \\[1ex]
+				\nu_- n_{\ce{B}}
+			\end{gathered}
+			$
+		}
+		$
+	</p>
+	
+<p>También:</p>
+	
+	<p style="text-align:center">
+		$
+		\ce{
+			$
+			\begin{gathered}[t]
+				\ce{M^{$z$_+}} \\[1ex]
+				n_{\rm P.I.}
+			\end{gathered}
+			$
+			+
+			$
+			\begin{gathered}[t]
+				\ce{X^{$z$_-}} \\[1ex]
+				n_{\rm P.I.}
+			\end{gathered}
+			$
+			-&gt;
+			$
+			\begin{gathered}[t]
+				\ce{(MX)^{($z$_+)+($z$_-)}} \\[1ex]
+				n_{\rm P.I.}
+			\end{gathered}
+			$
+		}
+		$
+	</p>
+	
+<p>Entonces pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			n_+ =
+			\nu_+ n_{\ce{B}} - n_{\rm P.I.} &amp; n_- = \nu_- n_{\ce{B}} - n_{\rm P.I.} \\[1ex]
+			dn_+ = \nu_+ \, dn_{\ce{B}} - dn_{\rm P.I.} \quad &amp; dn_- =
+			\nu_- \, dn_{\ce{B}} -	dn_{\rm P.I.}
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dG &amp;= V \, dP - S \, dT + \mu_{\ce{A}} \, dn_{\ce{A}} + \mu_+
+			( \nu_+	\, dn_{\ce{B}} - dn_{\rm P.I.} ) + \mu_- ( \nu_- \, dn_{\ce{B}} -
+			dn_{\rm P.I.} )	+ {} \\[1ex]
+			&amp;{\hphantom{= {}}} + \mu_{\rm P.I.} \, dn_{\rm P.I.} = \\[1ex]
+			&amp;= V \, dP - S \, dT + \mu_{\ce{A}} \, dn_{\ce{A}} + ( \nu_+
+			\mu_+ + \nu_- \mu_-) \, dn_{\ce{B}} + (\mu_{\rm P.I.} - \mu_+ - \mu_-) \,
+			dn_{\rm P.I.}
+		\end{align}
+		$
+	</p>
+	
+<p>Por la condición de equilibrio químico, para la reacción de formación
+de pares iónicos:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm P.I.} - \mu_+ - \mu_- = 0$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$dG = V \, dP - S \, dT + \mu_{\ce{A}} \, dn_{\ce{A}} + ( \nu_+
+		\mu_+ + \nu_- \mu_- ) \, dn_{\ce{B}}$</p>
+		
+<p>Así pues, si $P$, $T$ y $n_{\ce{A}}$ no cambian:</p>
+
+	<p style="text-align:center">
+		$dG = ( \nu_+ \mu_+ + \nu_- \mu_- ) \, dn_{\ce{B}}$ &emsp;
+		($P$, $T$ y $n_{\ce{A}}$ constantes).</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\mu_{\ce{B}} = \left( \dfrac{\partial G}{\partial n_{\ce{B}}}
+		\right)_{\! P,T,n_{\ce{A}}}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\mu_{\ce{B}} = \nu_+ \mu_+ + \nu_- \mu_-$</p>
+		
+<p>Siendo en la escala de molalidades:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_+ = \mu°_{\!\! \lower 2mu +} + RT \ln a_+ =
+			\mu°_{\!\! \lower 2mu +} + RT \ln ( \Gamma_+ \gamma_+ m_+) \\[1ex]
+			\mu_- = \mu°_{\!\! \lower 2mu -} + RT \ln a_- =
+			\mu°_{\!\! \lower 2mu -} + RT \ln ( \Gamma_- \gamma_- m_-)
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$\mu_{\ce{B}} = \mu°_{\!\! \lower 2mu {\ce{B}}} + RT \ln a_{\ce{B}}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu {\ce{B}}} + RT \ln a_{\ce{B}} =
+		\nu_+ (\mu°_{\!\! \lower 2mu +} + RT \ln a_+) +
+		\nu_- (\mu°_{\!\! \lower 2mu -} + RT \ln a_-)$</p>
+		
+<p>Con lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu°_{\!\! \lower 2mu {\ce{B}}} = \nu_+ \mu°_{\!\! \lower 2mu +} +
+			\nu_- \mu°_{\!\! \lower 2mu -} \\[1ex]
+			a_{\ce{B}} = a_+^{\nu_+} a_-^{\nu_-}
+		\end{array}
+		$
+	</p>
+	
+<p>Se define:</p>
+
+	<p style="text-align:center">
+		$a_{\pm}^\nu = a_+^{\nu_+} a_-^{\nu_-}$</p>
+		
+<p>Donde $\nu$ es el número total de moles de iones que se producen
+en la disociación de un mol de electrolito ($\nu = \nu_+ + \nu_-$) y
+$a_{\pm}$ es la actividad iónica media (la media geométrica). Así pues:</p>
+
+	<p style="text-align:center">
+		$a_{\pm} = a_{\ce{B}}^{1/\nu}$</p>
+		
+<p>Otras magnitudes iónicas medias:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\Gamma_{\pm} = (\Gamma_+^{\nu_+} \Gamma_-^{\nu_-})^{1/\nu} \\[1ex]
+			\gamma_{\pm} = (\gamma_+^{\nu_+} \gamma_-^{\nu_-})^{1/\nu} \\[1ex]
+			m_{\pm} = (m_+^{\nu_+} m_-^{\nu_-})^{1/\nu}
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$a_{\pm} = \Gamma_{\pm} \gamma_{\pm} m_{\pm}$</p>
+		
+<p>Así pues, para un electrolito fuerte simétrico, i.e. $\nu_+ = \nu_- 
+= 1$, sin pares iónicos:</p>
+
+	<p style="text-align:center">
+		$
+		a_{\ce{B}} = \Gamma_{\pm}^2 \gamma_{\pm}^2 m_{\pm}^2 \mspace{-32mu}
+		\underset{
+			\begin{subarray}{c}
+				\big\uparrow \\[1ex]
+				m_{\ce{B}} \, = \, m_+ \, = \, m_-
+			\end{subarray}}{=} \mspace{-32mu}
+		\Gamma_{\pm}^2 \gamma_{\pm}^2 m_{\ce{B}}^2
+		$
+	</p>
+	
+<p>En general (electrolito fuerte $\ce{B}$ en ausencia de pares 
+iónicos):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			m_{\pm} &amp;= (\nu_+^{\nu_+} m_{\ce{B}}^{\nu_+} \nu_-^{\nu_-}
+			m_{\ce{B}}^{\nu_-})^{1/\nu} = \\[1ex]
+			&amp;= (\nu_+^{\nu_+} \nu_-^{\nu_-} m_{\ce{B}}^\nu)^{1/\nu} = \\[1ex]
+			&amp;= (\nu_+^{\nu_+} \nu_-^{\nu_-})^{1/\nu} m_{\ce{B}} = \\[1ex]
+			&amp;= \nu_{\pm} m_{\ce{B}}
+		\end{align}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$\nu_{\pm} = (\nu_+^{\nu_+} \nu_-^{\nu_-})^{1/\nu}$</p>
+		
+<p>- Determinación de coeficientes de actividad:</p>
+
+<p>Si el disolvente sigue la ley de Raoult (comportamiento ideal):</p>
+
+	<p style="text-align:center">
+		$\ln a_{\ce{A}} = \ln (\Gamma_{\ce{A}} x_{\ce{A}})$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} = \ln x_{\ce{A}}$</p>
+		
+<p>Siendo que:</p>
+
+	<p style="text-align:center">
+		$\pu{1000 g}$ dte. $\Rightarrow m_{\ce{B}}$ (moles electrolito)</p>
+		
+<p>Electrolito fuerte, sin pares iónicos, entonces:</p>
+
+	<p style="text-align:center">
+		$x_{\ce{A}} = \dfrac{1000{∕}M_{\ce{A}}}{1000{∕}M_{\ce{A}} +
+		\nu m_{\ce{B}}} \Rightarrow \dfrac{1}{x_{\rm A}} = 1 +
+		\dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000}$</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$-\ln x_{\ce{A}} = \ln \dfrac{1}{x_{\ce{A}}} = \ln \biggl( 1 +
+		\underbrace{\dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000}}_{\ll \, 1}
+		\biggr) \mspace{-9mu} \underset{\begin{subarray}{c} \uparrow \\
+		\text{Taylor} \end{subarray}}{\simeq} \mspace{-9mu}
+		\dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000}$</p>
+		
+<p>Por consiguiente, en una disolución diluida ideal:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} = \ln x_{\ce{A}} = -
+		\dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000}$</p>
+		
+<p>Como se vio, al estudiar el descenso crioscópico:</p>
+
+	<p style="text-align:center">
+		$-\ln (\, f_{\ce{A}} x_{\ce{A}}) = a \Delta T_{\rm f} + b ( \Delta
+		T_{\rm f})^2 + c ( \Delta T_{\rm f})^3 + \dotsb$</p>
+		
+<p>Donde $f_{\ce{A}}$ es el coeficiente de actividad del disolvente.
+Cuando $f_{\ce{A}} = 1$, i.e. disolución diluida ideal:</p>
+
+	<p style="text-align:center">
+		$-\ln x_{\ce{A}} = \dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000} = a
+		\Delta T_{\rm f} + b ( \Delta	T_{\rm f})^2 + c ( \Delta T_{\rm f})^3
+		+ \dotsb$ &emsp; (DDI)</p>
+		
+<p>Para una disolución real se define:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} =
+		- \dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000} \phi$</p>
+		
+<p>Donde $\phi$ es el coeficiente osmótico práctico del disolvente.</p>
+
+<p>Entonces, para una disolución real:</p>
+
+	<p style="text-align:center">
+		$-\ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} = - \ln (\, f_{\ce{A}}
+		x_{\ce{A}}) = a	\Delta T_{\rm f} + b ( \Delta	T_{\rm f})^2 + c (
+		\Delta T_{\rm f})^3 + \dotsb = \dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000}
+		\phi$</p>
+		
+<p>Por tanto, del dato experimental de $\Delta T_{\rm f}$ puede calcularse
+$\phi$ y, a continuación, mediante la ecuación de Gibbs-Duhem hallarse
+$\gamma_{\pm}$ (en función de $\phi$). Esto es:</p>
+
+	<p style="text-align:center">
+		$\Delta T_{\rm f} \longrightarrow \phi \longrightarrow$ Gibbs-Duhem
+		$\longrightarrow \gamma_{\pm}$</p>
+		
+<p>De la ecuación de Gibbs-Duhem, para este caso:</p>
+
+	<p style="text-align:center">
+		$n_{\ce{A}} \, d \ln a_{\ce{A}} + n_{\ce{B}} \, d \ln a_{\ce{B}} =
+		0$ &emsp; ($P$ y $T$ constantes)</p>
+		
+<p>Para la disolución de un electrolito de molalidad $m_{\rm B}$:</p>
+
+		<p style="text-align:center">
+		$\dfrac{1000}{M_{\ce{B}}} \, d \ln a_{\ce{A}} + m_{\ce{B}} \,
+		d \ln a_{\ce{B}} = 0$</p>
+		
+<p>A continuación, teniendo en cuenta que es un electrolito fuerte y
+que no se tienen en cuenta la formación de pares iónicos:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\dfrac{1000}{M_{\ce{A}}} \, d \ln a_{\ce{A}} &amp;= - m_{\ce{B}}
+			\, d \ln a_{\ce{B}} = \\[1ex]
+			&amp;= -m_{\ce{B}} \, d \ln a_{\pm}^\nu = \\[1ex]
+			&amp;= - \nu m_{\ce{B}} \, d \ln a_{\pm} = \\[1ex]
+			&amp;= - \nu m_{\ce{B}} \, d \ln ( \Gamma_{\pm} \gamma_{\pm}
+			m_{\pm} ) = \\[1ex]
+			&amp;= -\nu m_{\ce{B}} \, d \ln (\Gamma_{\pm} \gamma_{\pm} \nu_{\pm}
+			m_{\ce{B}}) = \\[1ex]
+			&amp;= -\nu m_{\ce{B}} \, d \ln \gamma_{\pm} - \nu m_{\ce{B}} \,
+			d \ln m_{\ce{B}} \tag{1} \label{1}
+		\end{align}
+		$
+	</p>
+	
+<p>Ya que:</p>
+
+	<p style="text-align:center">
+		$d \ln \Gamma_{\pm} = 0$ &emsp; ($P, T$ ctes.)</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{gather}
+			\ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} =
+			- \dfrac{\nu m_{\ce{B}} M_{\ce{A}}}{1000} \phi \\[1ex]
+			\Downarrow \\[1ex]
+			d \ln \dfrac{a_{\ce{A}}}{\Gamma_{\ce{A}}} =
+			- \dfrac{\nu M_{\ce{A}}}{1000} \, d (m_{\ce{B}} \phi) \\[1ex]
+			\dfrac{1000}{M_{\ce{A}}} \, d \ln a_{\ce{A}} = -\nu m_{\ce{B}} \,
+			d\phi - \nu \phi \, dm_{\ce{B}}  \quad (P, T \text{ ctes.}) \tag{2}
+			\label{2}
+		\end{gather}
+		$
+	</p>
+	
+<p>Igualando $\eqref{1}$ y $\eqref{2}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			-\nu m_{\ce{B}} \, d \ln \gamma_{\pm} - \nu m_{\ce{B}} \,
+			d \ln m_{\ce{B}} = -\nu m_{\ce{B}} \,	d\phi - \nu \phi \,
+			dm_{\ce{B}} \\[1ex]
+			d \ln \gamma_{\pm} = d \phi + \phi
+			\underbrace{\dfrac{dm_{\ce{B}}}{m_{\ce{B}}}}_{d \ln m_{\ce{B}}}
+			- \, d \ln m_{\ce{B}} = d\phi + ( \phi - 1 ) \, d \ln m_{\ce{B}}
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando entre $\left\{ \begin{array}{l} m_{\ce{B}} = 0 \quad
+(\gamma_{\pm} = \phi = 1) \\ m_{\rm B} = m_{\rm B} \end{array} \right\}$,
+entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{
+			\int_1^{\gamma_{\pm}} d \ln \gamma_{\pm} = \int_1^{\phi} d\phi +
+			\int_0^{m_{\ce{B}}} (\phi - 1) \, d \ln m_{\ce{B}}
+		}
+		$ &emsp; ($P$ y $T$ ctes.)
+	</p>
+	
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$\ln \gamma_{\pm} = \phi - 1 + \displaystyle \int_0^{m_{\ce{B}}}
+		(\phi - 1) \, d \ln m_{\ce{B}}$ &emsp; ($P$ y $T$ ctes.)</p>
+		
+<p>O también:</p>
+
+	<p style="text-align:center">
+		$\ln \gamma_{\pm} = \phi - 1 + \displaystyle \int_0^{m_{\ce{B}}}
+		\dfrac{\phi - 1}{m_{\ce{B}}} \, d m_{\ce{B}}$ &emsp; ($P$ y $T$
+		ctes.)</p>
+		
+<p>Representando $(\phi - 1){∕}m_{\ce{B}}$ frente a $m_{\rm B}$ se 
+podría calcular el área bajo la curva, hallándose la integral que 
+aparece en el lado derecho de la igualdad.</p>
+
+<p>Para determinar, de forma teórica, el coeficiente de actividad de
+un ión $i$ (en disoluciones muy diluidas):</p>
+
+	<p style="text-align:center">
+		$\ln \gamma_i = -z_i^2 (2 \pi N_{\rm A} \rho_{\ce{A}})^{1/2} \left[
+		\dfrac{e^2}{4 \pi \varepsilon_0 \varepsilon k T} \right]^{3/2}
+		I^{1/2}$ &emsp; Ley de Debye-Hückel</p>
+		
+<p>Donde $N_{\rm A}$ es el número de Avogadro, $\rho_{\ce{A}}$ la
+densidad del disolvente, $e$ la carga del protón, $\varepsilon_0$ la
+permitividad del vacío, $\varepsilon$ la constante dieléctrica del
+disolvente, $k$ la constante de Boltzmann e $I$ la fuerza iónica que
+es:</p>
+
+	<p style="text-align:center">
+		$\boxed{I = \dfrac{1}{2} \displaystyle \sum m_i z_i^2}$</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$A = (2 \pi N_{\rm A} \rho_{\ce{A}})^{1/2} \left[
+		\dfrac{e^2}{4 \pi \varepsilon_0 \varepsilon k T} \right]^{3/2}$</p>
+		
+<p>Entonces, expresión más compacta:</p>
+
+	<p style="text-align:center">
+		$\boxed{\ln \gamma_i = -z_i^2 A I^{1/2}}$</p>
+		
+<p>Donde $A$ es pues una constante que depende del disolvente, la
+temperatura y, también, de la presión (por su efecto en densidad y
+constante dieléctrica).</p>
+
+<p>No es posible comparar directamente los valores de $\gamma_i$ 
+obtenidos con la expresión anterior con valores experimentales, ya que 
+no existen. Se hace necesario pues, para comprobar experimentalmente la 
+certeza de la teoría, obtener una expresión para $\gamma_{\pm}$. Esto 
+es, siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\gamma_{\pm} = (\gamma_+^{\nu_+} \gamma_-^{\nu_-})^{1/\nu} \\[1ex]
+			\ln \gamma_{\pm} =
+			\dfrac{\nu_+ \ln \gamma_+ + \nu_- \ln \gamma_-}{\nu}
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\ln \gamma_{\pm} &amp;=
+			\dfrac{-\nu_+ z_+ ^2 A I^{1/2} - \nu_- z_-^2 A I^{1/2}}{\nu} = \\[1ex]
+			&amp;= \dfrac{-(\nu_+ z_+^2 + \nu_- z_-^2) A I^{1/2}}{\nu}
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\[.5ex]
+					\llap{\nu_+ z_+ \,} = \rlap{\, - \nu_- z_-}
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= \dfrac{-(-\nu_- z_- z_+ - \nu_+ z_+ z_-) A I^{1/2}}{\nu} = \\[1ex]
+			&amp;= \dfrac{(\overbrace{\nu_+ + \nu_-}^\nu) z_+ z_- A I^{1/2}}{\nu}
+			= \\[1ex]
+			&amp;= - A |z_+ z_-| I^{1/2}
+		\end{align}
+		$
+	</p>
+	
+<p>Para el agua como disolvente, a $\pu{25 ºC}$ y $\pu{1 atm}$, y pasando
+a logaritmo decimal, la fórmula es:</p>
+
+	<p style="text-align:center">
+		$\log \gamma_{\pm} = -0{,}510 |z_+ z_-| I^{1/2}$</p>
+		
+<p>Pudiendo ser ahora evaluada experimentalmente. Esto es:</p>
+
+<center>
+	<object data="magnitudes_ionicas_medias_01.svg" type="image/svg+xml"
+	width="480" height="360"></object>
+</center>
+
+<p>Las líneas discontinuas representan la ley límite de 
+Debye-Hückel para un electrolito $z_+{:}z_-$, mientras que las curvas 
+continuas se basan en datos experimentales.</p>
+
+<p>Para una disolución de un único electrolito fuerte $\ce{B}$, que se 
+considera completamente disociado (sin pares iónicos), la fuerza 
+iónica:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			I &amp;= \dfrac{1}{2} (\nu_+ m_{\ce{B}} z_+^2 + \nu_- m_{\ce{B}}
+			z_-^2) 
+			\underset{
+				\begin{subarray}{c}
+				 \uparrow \\[.5ex]
+				 \llap{\nu_+ z_+ \,} = \rlap{\, - \nu_- z_-}
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= \dfrac{1}{2} (-\nu_- z_- z_+ - \nu_+ z_+ z_-) m_{\ce{B}}= \\[1ex]
+			&amp;= -\dfrac{1}{2} (\nu_+ + \nu_-) z_+ z_- m_{\ce{B}}= \\[1ex]
+			&amp;= \dfrac{1}{2} \nu | z_+ z_- | m_{\ce{B}}
+		\end{align}
+		$
+	</p>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../conductividad_leyes_kohlrausch/conductividad_leyes_kohlrausch.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../afinidad_constante_equilibrio_termodinamica/afinidad_constante_equilibrio_termodinamica.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

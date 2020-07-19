@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Potencial electroquímico">
+<meta name="keywords" content="potencial, electroquímico">
+<title>Potencial electroquímico</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Potencial electroquímico</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sean, separadas por una membrana permeable a los iones $\ce{K+}$, 
+agua pura y una disolución de $\ce{KCl}$, fases $\alpha$ y $\beta$ 
+respectivamente:</p>
+
+<center>
+	<object data="potencial_electroquimico_01.svg" type="image/svg+xml"
+	width="211" height="171"></object>
+</center>
+
+<p>Debido a que se produce un cierto paso de iones $\ce{K+}$, se 
+acumulan, en las inmediaciones de la membrana, a un lado cargas 
+positivas y al otro negativas.</p>
+
+<p>Se define la diferencia de potencial eléctrico como el menor trabajo 
+por unidad de carga que necesita realizar una fuerza externa para 
+mover, en un campo eléctrico, una carga infinitesimal de prueba desde 
+$a$ hasta $b$:</p>
+
+	<p style="text-align:center">
+		$\phi_b - \phi_a = \lim\limits_{Q_p \to 0} W_{a \to b}{∕}Q_p =
+		\dfrac{dW_{a \to b}}{dQ_p}$</p>
+		
+<p>La fuerza eléctrica es conservativa, por lo que el trabajo eléctrico
+no depende del camino.</p>
+		
+<p>Si se elige $a$ en el infinito y $\phi_a = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$\phi_b = \lim\limits_{Q_p \to 0} W_{\infty \to b}{∕}Q_p$</p>
+		
+<p>Al ser conservativo un campo eléctrico, el trabajo realizado por la
+fuerza externa sobre la carga de prueba al traerla desde el infinito
+hasta $b$ supone un cambio en su energía potencial ($V$), siendo que:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\Delta V_{\infty \to b} = V_b - \underbrace{V_\infty}_0 = V_b \\
+			\Delta V_{\infty \to b} = W_{\infty \to b} = \phi_b Q_p
+		\end{array} \,
+		\right\} \Rightarrow V_b = \phi_b Q_p
+		$
+	</p>
+	
+<p>En el infinito la energía potencial se ha considerado cero.</p>
+		
+<p>Al potencial eléctrico en el interior de una fase se le llama potencial
+de Galvani o potencial interno.</p>
+	
+<p>Así pues, entre las fases $α$ y $β$ existe una diferencia de 
+potencial, se tiene un potencial diferente a cada lado de la membrana, 
+ya que el trabajo mínimo necesario para traer una misma carga de prueba 
+infinitesimal desde el infinito a cada fase es distinto. Esto es:</p>
+
+	<p style="text-align:center">
+		$\underbrace{\phi_α - \phi_β}_{\neq \, 0} \enspace \leftarrow$
+		Diferencia de potencial de (o por) difusión.</p>
+		
+<p>Si, por ejemplo, se introduce una barra de zinc en agua:</p>
+
+	<p style="text-align:center">
+		<span style="display:inline-block;margin-right:2em;vertical-align:bottom">
+			<object data="potencial_electroquimico_02.svg" type="image/svg+xml"
+			width="126" height="136"></object>
+		</span>
+		<span style="vertical-align:bottom;position:relative;bottom:1em">
+			$
+			\begin{alignedat}{2}
+				&amp;1{:} &amp;\enspace &amp;\ce{Zn^2+{(metal)} -&gt;
+				Zn^2+{(disolución)}} \\[1ex]
+				&amp;2{:} &amp;&amp;\ce{Zn^2+{(disolución)} -&gt; Zn^2+{(metal)}}
+			\end{alignedat}
+			$
+		</span>
+	</p>
+	
+<p>Inicialmente, donde $v_1$ y $v_2$ son las velocidades respectivas de
+cada proceso:</p>
+
+	<p style="text-align:center">
+		$v_1 \gg v_2$</p>
+		
+<p>Para, a continuación, converger, $v_1$ disminuye y $v_2$ aumenta,
+llegando a la igualdad al alcanzar el equilibrio. En éste existe una
+diferencia de potencial entre ambas fases.</p>
+
+<p>Centrándose en una fase:</p>
+
+	<p style="margin-left:30px">
+		Fase $α$: $\{ i \}$ (iones o $\ce{e-}$), con $\phi_{α}$.</p>
+		
+<p>La energía interna de la fase también dependerá del potencial 
+eléctrico de la misma, de su efecto en la energía potencial (eléctrica) 
+de las especies cargadas presentes. Si no se tiene en cuenta:</p>
+
+	<p style="text-align:center">
+		$dU_{\rm quím}^α = T \, dS^α - P \, dV^α + \displaystyle \sum_i
+		\mu_i^α \, dn_i^α$</p>
+		
+<p>Si se tiene en cuenta, el diferencial de la energía interna 
+electroquímica es:</p>
+
+	<p style="text-align:center">
+		$d\tilde{U}{}^α = dU_{\rm quím}^α + dU_{\rm eléct}^α = dU_{\rm quím}^α
+		+ \phi^α \, dQ^α$</p>
+		
+<p>Para la energía de Gibbs se tiene:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm quím}^α = V^α \, dP - S^α \, dT + \displaystyle \sum_i
+		\mu_i^α \, dn_i^α$</p>
+		
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		d\tilde{G}{}^α 
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\
+				\llap{G \,} = \rlap{\, U + PV - TS}
+			\end{subarray}
+		}{=} d\tilde{U}{}^α + d(PV^α) - d(TS^α) =
+		\underbrace{
+			\strut \smash{dU_{\rm quím}^α + d(PV^α) - d(TS^α)}
+		}_{dG_{\rm quím}^α} \, + \mspace{-3mu}
+		\underbrace{\smash{\phi^α \, dQ^α} \strut}_{dG_{\rm eléct}^α}
+		$
+	</p>
+		
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$dQ^α = \displaystyle \sum_i z_i F dn_i^α$</p>
+		
+<p>Donde $z_i$ es la carga de $i$ y $F$ es la constante de Faraday.
+Así, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			d\tilde{G}{}^α &amp;= V^α \, dP - S^α \, dT + \sum_i \mu_i^α \,
+			dn_i^α + \sum_i z_i F \phi^α dn_i^α = \\[1ex]
+			&amp;= V^α \, dP - S^α \, dT + \sum_i (	\mu_i^α + z_i F \phi^α ) \,
+			dn_i^α = \\[1ex]
+			&amp;= V^α \, dP - S^α \, dT + \sum_i \tilde{\mu}_i^α \, dn_i^α
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo el potencial electroquímico:</p>
+
+	<p style="text-align:center">
+		$\tilde{\mu}_i^α = \mu_i^α + z_i F \phi^α$</p>
+		
+<p>El potencial electroquímico es el trabajo realizado a presión y 
+temperatura constantes para trasladar $\pu{1 mol}$ de especie $i$ 
+(con carga $z_i$) desde el infinito al seno de la fase.</p>
+
+<p>Por analogía, las condiciones de equilibrio:</p>
+
+	<p style="margin-left:30px">
+		- De fases:</p>
+		
+		<p style="margin-left:60px">
+			Que los potenciales electroquímicos de $i$ en cada fase sean
+			iguales. Esto es, entre dos fases $α$ y $β$:</p>
+			
+	<p style="text-align:center">
+		$\tilde{\mu}_i^α = \tilde{\mu}_i^β$</p>
+		
+	<p style="margin-left:30px">
+		- De reacción:</p>
+	
+	<p style="text-align:center">
+		$\displaystyle \sum_i \nu_i \tilde{\mu}_i = 0$</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../sistemas_electroquimicos/sistemas_electroquimicos.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../pilas_reversibles_ecuacion_nernst/pilas_reversibles_ecuacion_nernst.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

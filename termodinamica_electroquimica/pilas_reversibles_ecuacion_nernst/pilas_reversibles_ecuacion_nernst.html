@@ -1,0 +1,935 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Pilas reversibles: ecuación de Nernst">
+<meta name="keywords" content="pilas, reversibles, ecuación, Nernst">
+<title>Pilas reversibles: ecuación de Nernst</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Pilas reversibles: ecuación de Nernst</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Se define la fem o fuerza electromotriz de una pila como:</p>
+
+	<p style="text-align:center">
+		$E = \phi_{\rm D} - \phi_{\rm I}$</p>
+		
+<p>Donde $\phi_{\rm D}$ y $\phi_{\rm I}$ son los potenciales en los
+terminales derecho e izquierdo de la pila, respectivamente. Los 
+electrones se mueven hacia el potencial más alto, por lo que $E$ debe 
+ser positiva para que de forma espontánea fluyan los electrones de 
+izquierda a derecha a través de un circuito externo que conecte los 
+terminales.</p>
+
+<p>Usando como ejemplo la pila Daniell:</p>
+
+<center>
+	<object data="pilas_reversibles_ecuacion_nernst_01.svg" type="image/svg+xml"
+	width="211" height="244"></object>
+</center>
+
+<p>Donde una membrana porosa separa las disoluciones, pero permite el
+paso de los iones.</p>
+
+<p>La fem de esta pila:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			E^{\ce{Cu''{-}Cu'}} &amp;= \phi_{\rm D}^{\ce{Cu''}} -
+			\phi_{\rm I}^{\ce{Cu'}} = \\[1ex]
+			&amp;= (\phi_{\ce{Cu''}} - \phi_{\ce{CuSO4_{(aq)}}}) +
+			(
+			\underbrace{
+				\phi_{\ce{CuSO4_{(aq)}}} -	\phi_{\ce{ZnSO4_{(aq)}}}
+			}_{\text{potencial de difusión}}
+			) + {} \\[1ex]
+			&amp;\hphantom{= {}} + (\phi_{\ce{ZnSO4_{(aq)}}} - \phi_{\ce{Zn}})
+			+ (\phi_{\ce{Zn}} - \phi_{\ce{Cu'}})
+		\end{align}
+		$
+	</p>
+	
+<p>No hay diferencia de potencial entre el terminal de $\ce{Cu''}$ y el 
+electrodo de $\ce{Cu}$, ya que tienen la misma composición (misma 
+fase), por lo que se tratan como uno solo. El potencial de difusión, 
+que se da por la presencia de la membrana que separa las disoluciones, 
+se produce por la diferente velocidad inicial, antes de alcanzar un 
+estado estacionario (misma velocidad), con la que se difunden los 
+distintos iones, en este caso $\ce{Zn^2+}$ y $\ce{Cu^2+}$, entre las 
+disoluciones, produciéndose una separación de cargas y, por tanto, una 
+diferencia de potencial.</p>
+
+<p>Por convenio en el lado izquierdo se sitúa la oxidación y en el 
+derecho la reducción, representándose, por ejemplo, la pila Daniell de 
+la siguiente manera:</p>
+
+	<p style="text-align:center">
+		$
+		\underbrace{
+			\begin{gathered}[b]
+				\text{T} \\
+				\ce{Cu'}
+			\end{gathered}
+			|
+			\begin{gathered}[b]
+				\text{E} \\
+				\ce{Zn}
+			\end{gathered}
+			|
+			\begin{gathered}[b]
+				\text{S} \\
+				\ce{ZnSO4_{(aq)} (\pu{0,1 M})}
+			\end{gathered}
+		}_{
+		\begin{subarray}{c}
+			\text{ánodo} \\
+			\text{oxidación}
+		\end{subarray}	
+		}
+		\vdots
+		\underbrace{
+			\begin{gathered}[b]
+				\text{S$'$} \\
+				\ce{CuSO4_{(aq)} (\pu{0,01 M})}
+			\end{gathered}
+			|
+			\begin{gathered}[b]
+				\text{E$'$} \\
+				\ce{Cu''}
+			\end{gathered}
+		}_{
+			\begin{subarray}{c}
+				\text{cátodo} \\
+				\text{reducción}
+			\end{subarray}	
+		}
+		\hphantom{|}
+		\begin{gathered}[b]
+			\text{T$'$} \\
+			\phantom{\ce{Cu''}}
+		\end{gathered}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="display;table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				T, T′ &nbsp;</span>
+			<span style="display:table-cell">
+				 $\rightarrow$ &nbsp;</span>
+			<span style="display:table-cell">
+				Terminales.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+				E, E′ &nbsp;</span>
+			<span style="display:table-cell">
+				 $\rightarrow$ &nbsp;</span>
+			<span style="display:table-cell">
+				Electrodos.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				S, S′ &nbsp;</span>
+			<span style="display:table-cell">
+				 $\rightarrow$ &nbsp;</span>
+			<span style="display:table-cell">
+				Solutos.</span>
+		</span>
+	</p>
+	
+<p>Una línea vertical representa el límite entre dos fases, una linea
+vertical discontinua o de puntos es una membrana y una línea doble un
+puente salino.</p>
+	
+<p>Como T′ coincide con E′ en el caso de la pila Daniell, son la misma
+fase, no se pone.</p>
+
+<p>Dos posibles situaciones:</p>
+
+	<p style="margin-left:30px">
+		1. Se deja el circuito abierto (no circula corriente):</p>
+		
+		<p style="margin-left:60px">
+			- electrodo $\ce{Zn | ZnSO4_{(aq)}}$ (en la interfase):</p>
+			
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\ce{Zn^2+{}_{(Zn)} &lt;=&gt; Zn^2+_{(aq)}} \\[1ex]
+			\ce{Zn &lt;=&gt; Zn^2+{}_{(Zn)} + 2e^-{}_{(Zn)}} \\[1ex]
+			\hline
+			\ce{Zn &lt;=&gt; Zn^2+_{(aq)} + 2 e^-{}_{(Zn)}}
+		\end{array}
+		$
+	</p>
+	
+		<p style="margin-left:60px">
+			- electrodo $\ce{Cu | CuSO4_{(aq)}}$:</p>
+			
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\ce{Cu^2+_{(aq)} &lt;=&gt; Cu^2+{}_{(Cu)}} \\[1ex]
+			\ce{Cu^2+{}_{(Cu)} + 2e^-{}_{(Cu)} &lt;=&gt; Cu} \\[1ex]
+			\hline
+			\ce{Cu^2+_{(aq)} + 2e^-{}_{(Cu)} &lt;=&gt; Cu}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Reacción global:</p>
+		
+	<p style="text-align:center">
+		$\ce{Zn + Cu^2+_{(aq)} + 2e^-{}_{(Cu)} &lt;=&gt; Cu + Zn^2+_{(aq)} +
+		2e^-{}_{(Zn)}}$</p>
+		
+	<p style="margin-left:30px">
+		Estado en equilibrio, no circula corriente.</p>
+		
+	<p style="margin-left:30px">
+		2. Se cierra el circuito (circula corriente):</p>
+
+	<p style="margin-left:30px">
+		La reacción sería ahora:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\ce{Zn -&gt; Zn^2+_{(aq)} + 2e^-{}_{(Zn)}} \\[1ex]
+			\ce{2e^-{}_{(Zn)} -&gt; 2e^-{}_{(Cu)}} \\[1ex]
+			\ce{Cu^2+_{(aq)} + 2e^-{}_{(\ce{Cu})} -&gt; Cu} \\[1ex]
+			\hline
+			\ce{Zn + Cu^2+_{(aq)} -&gt; Cu + Zn^2+_{(aq)}}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Los electrones desaparecen de la reacción global. Cuando la pila 
+		tiene el circuito cerrado puede estar en equilibrio o no. Para 
+		estarlo el paso de corriente debería ser infinitesimal.</p>
+	
+<p>A continuación se estudia la reversibilidad de una pila Daniell, 
+para lo cual se conecta en oposición otra pila que se ajusta para 
+contrarrestar exactamente la fem de la pila Daniell de tal manera que 
+no circula corriente. Seguidamente, si se modifica la fem de la pila 
+externa ($E$) haciéndola un poco más pequeña o un poco más grande que 
+la de la pila Daniell ($E_{\text{Daniell}}$):</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;padding-right:2em">
+			<object data="pilas_reversibles_ecuacion_nernst_02.svg" type="image/svg+xml"
+			width="325" height="244"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			$E &lt; E_{\text{Daniell}}$
+			<span style="display:block;margin-top:1ex">
+				Pila produce electricidad.</span>
+		</span>
+	</p>
+	
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;padding-right:2em">
+			<object data="pilas_reversibles_ecuacion_nernst_03.svg" type="image/svg+xml"
+			width="325" height="244"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			$E &gt; E_{\text{Daniell}}$
+			<span style="display:block;margin-top:1ex">
+				Celda electrolítica, consume electricidad, circula la corriente
+				en sentido opuesto.</span>
+		</span>
+	</p>
+	
+<p>Como el proceso en un sentido no coincide con el inverso, condición 
+necesaria de reversibilidad, no puede considerarse que sea reversible. 
+Sustituyendo la membrana por un puente salino se minimiza esta 
+irreversibilidad, ya que la conducción eléctrica es realizada 
+principalmente por los iones del electrolito del puente salino. Un 
+puente salino es un tubo que, conteniendo en su interior una disolución 
+concentrada de una sal y cerrado en sus extremos por tapones porosos 
+que permiten el paso de iones, conecta las disoluciones de cada lado de 
+la pila entre sí.</p>
+
+<p>Electrodos reversibles (entendiendo aquí como electrodo a la semipila,
+i.e. incorporando también la disolución asociada):</p>
+
+<ol type="a">
+	<li>Electrodos metal-ion del metal:
+		<p style="display:table;margin-left:auto;margin-right:auto">
+			<span style="display:table-cell;padding-right:1em">
+				<object data="pilas_reversibles_ecuacion_nernst_04.svg" type="image/svg+xml"
+				width="126" height="121"></object>
+			</span>
+			<span style="display:table-cell;vertical-align:middle">
+				Reacción: &ensp; $\ce{M^{$z$_+} + $z$_+ \! e^- &lt;=&gt; M}$
+				<span style="display:block;margin-top:1ex;margin-bottom:1ex">
+					O$|$R: &ensp; $\ce{Cu^2+} {∣} \, \ce{Cu}$ &emsp; $\ce{Zn^2+}{|}
+					\, \ce{Zn}$ &emsp; $\ce{Cd^2+} {|} \, \ce{Cd}$
+				</span>
+				<span style="display:block">
+					(O $\equiv$ forma oxidada, R $\equiv$ forma reducida).
+				</span>
+			</span>
+		</p>
+	</li>
+	<li>Electrodos de amalgama:
+		<p style="text-align:center">		
+			Reacción: &ensp;
+			$
+			\begin{array}[t]{l}
+				\ce{M^{$z$_+} + $z$_+ \! e^- &lt;=&gt; M(Hg)} \\[1ex]
+				\ce{M^{$z$_+}} {|} \, \ce{M(Hg)}
+			\end{array}
+			$
+		</p>
+		<p>El metal se encuentra disuelto en mercurio.</p>
+	</li>
+</ol>
+
+<p>Son a y b electrodos de 1.ª especie, i.e. reversibles al catión
+(depende la constante de equilibrio del catión).</p>
+
+<ol type="a" start="3">
+	<li>Electrodos rédox (electrodos inertes):
+		<p style="text-align:center">
+			<object data="pilas_reversibles_ecuacion_nernst_05.svg" type="image/svg+xml"
+			width="126" height="126"
+			style="display:inline-block;vertical-align:middle;margin-right:1em">
+			</object>
+			Reacción: &ensp;
+			$
+			\begin{array}[t]{l}
+				\ce{Fe^3+ + e^-(Pt) &lt;=&gt; Fe^2+} \\[1ex]
+				\ce{Pt} \, {|} \, \ce{Fe^3+, Fe^2+}
+			\end{array}
+			$
+		</p>
+	</li>
+	<li>Electrodos metal-sal insoluble:
+		<p>
+			<object data="pilas_reversibles_ecuacion_nernst_06.svg" type="image/svg+xml"
+			width="126" height="135"
+			style="display:inline-block;vertical-align:middle;margin-right:1em">
+			</object>
+			Reacción: &ensp;
+			$
+			\begin{array}[t]{l}
+				\ce{Ag_{(s)} + Cl-_{(aq)} &lt;=&gt; AgCl_{(s)} + e^-} \\[1ex]
+				\ce{Ag} \, {|} \, \ce{AgCl_{(s)}} \, {|} \, \ce{Cl-_{(aq)}}
+			\end{array}
+			$
+		</p>
+		<p style="display:table;margin-top:2em">
+			<span style="display:table-cell;padding-right:1em;vertical-align:middle">
+				<object data="pilas_reversibles_ecuacion_nernst_07.svg" type="image/svg+xml"
+				width="240" height="128"></object>
+				<span style="display:block;text-align:center;margin-top:.5ex;width:125px">
+					SCE</span>
+			</span>
+			<span style="display:table-cell">
+				Reacción:
+				<span style="display:block;margin-top:1em;margin-bottom:1em">
+					$
+					\begin{array}{l}
+						\ce{2 Hg + 2 Cl-_{(aq)} &lt;=&gt; Hg2Cl2_{(s)} + 2 e^-(Pt)} \\[1ex]
+						\ce{Hg} \, {|} \, \ce{Hg2Cl2_{(s)}} \, {|} \, \ce{Cl-_{(aq)}}
+					\end{array}
+					$
+				</span>
+				SCE $\equiv$ electrodo de calomelanos saturado, (disolución
+				saturada de $\ce{KCl}$).
+			</span>
+		</p>
+		<p>Estos electrodos son de 2.ª especie, i.e. reversibles al anión
+		(la constante de equilibrio depende del anión).</p>
+	</li>
+	<li>Electrodos de gas:
+		<p style="text-align:center">
+			<object data="pilas_reversibles_ecuacion_nernst_08.svg" type="image/svg+xml"
+			width="201" height="166"
+			style="display:inline-block;vertical-align:middle;margin-right:1em">
+			</object>
+			Reacción: &ensp;
+			$
+			\begin{array}[t]{l}
+				\ce{H2_{(g)} &lt;=&gt; 2H+_{(aq)} + 2 e^-(Pt)} \\[1ex]
+				\ce{Pt} \, {|} \, \ce{H2_{(g)}} \, {|} \, \ce{H+_{(aq)}}
+			\end{array}
+			$
+		</p>
+	</li>
+	<li>Electrodos no metal-no gas:
+		<p style="text-align:center">
+			$\ce{Pt} \, {|} \, \ce{Br2_{(l)}} \, {|} \ce{Br-_{(aq)}}$</p>
+	</li>
+	<li>Electrodos de membrana selectivos de iones.</li>
+	<li>Eletrodos de metal-óxido insoluble:
+		<p style="text-align:center">
+			Reacción: &ensp;
+			$
+			\begin{array}[t]{l}
+				\ce{2 Sb_{(s)} + 6 OH-_{(aq)} &lt;=&gt; Sb2O3_{(s)} + 3 H2O +
+				6 e^-} \\[1ex]
+				\ce{Sb} \, {|} \, \ce{Sb2O3_{(s)}} \, {|} \, \ce{OH-_{(aq)}}
+			\end{array}
+			$
+		</p>
+	</li>
+</ol>
+
+<p>Para realizar el estudio termodinámico suponemos pilas reversibles,
+por lo que se tienen dos posibilidades:</p>
+
+	<p style="margin-left:30px">
+		- Una sola disolución iónica.</p>
+		
+	<p style="margin-left:30px;text-indent:-.5em;padding-left:.5em">
+		- Si hay dos disoluciones iónicas, se evita el potencial de unión 
+		líquida (la diferencia de potencial en la unión entre ambas 
+		disoluciones) con puente salino.</p>
+		
+<p>Sea una pila reversible, por tanto una única disolución, en circuito 
+abierto, con $P$ y $T$ ctes., tal que:</p>
+
+	<p style="text-align:center">
+		$(-) \, \ce{M} \, {|} \, \ce{A} \, {|} \!\!
+		\underbrace{\ce{B},\ce{C}}_{\text{disolución}} \!\! {|} \, \ce{D} \,
+		{|} \, \ce{M} \, (+)$</p>
+		
+<p>Donde $\ce{M}$, un metal, hace de terminales. Siendo, entonces:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em">
+				Ánodo:</span>
+			<span style="display:table-cell">
+				$\ce{a A &lt;=&gt; b B + n e \! (M(-))}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1ex">
+				Cátodo:</span>
+			<span style="display:table-cell">
+				$\ce{c C + n e \! (M(+)) &lt;=&gt; d D}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1ex">
+				Global:</span>
+			<span style="display:table-cell">
+				$\ce{a A + c C + n e \! (M(+)) &lt;=&gt; b B + d D + n e \! (M(-))}$
+			</span>
+		</span>
+	</p>
+	
+<p>Al ser circuito abierto aparecen los electrones ($\ce{e}$) en la
+reacción global.</p>
+
+<p>La condición de equilibrio electroquímico:</p>
+
+	<p style="text-align:center">
+		$- \mathcal{A} \llap{\tilde{\vphantom{\mathcal{A}}}} = \left(
+		\dfrac{\partial \tilde{G}}{\partial \xi} \right)_{\! P,T} =
+		\displaystyle \sum_i \nu_i \tilde{\mu}_i = 0$	&emsp; ($P$, $T$ ctes.)</p>
+		
+<p>Donde $\mathcal{A} \llap{\tilde{\vphantom{\mathcal{A}}}}$ es la
+afinidad electroquímica.</p>
+		
+<p>Siendo el potencial electroquímico:</p>
+
+	<p style="text-align:center">
+		$\tilde{\mu}_i = \mu_i + z_i F \phi_i$</p>
+		
+<p>En donde $\phi_i$ es el potencial interno (de la fase en que esté
+$i$).</p>
+
+<p>Así pues, para la pila reversible anteriormente planteada:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			(b \, \mu_{\ce{B}} + b \, z_{\ce{B}} F \phi_{\ce{B}}) + (d \, 
+			\mu_{\ce{D}} + d \, z_{\ce{D}} F \phi_{\ce{D}}) + (n \, 
+			\mu_{\ce{e \! (M(-))}} + n \, z_{\ce{e}} F \phi_{\ce{e \! 
+			(M(-))}}) - {} &amp; \\[1ex]
+			{} - (a \, \mu_{\ce{A}} + a \, z_{\ce{A}} F \phi_{\ce{A}}) - (c \,
+			\mu_{\ce{C}} + c \, z_{\ce{C}} F \phi_{\ce{C}}) - (n \,
+			\mu_{\ce{e \! (M(+))}} + n \, z_{\ce{e}} F \phi_{\ce{e \! (M(+))}})
+			&amp; = 0
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="margin-left:30px">
+		a) &ensp; $b \, \mu_{\ce{B}} + d \, \mu_{\ce{D}} - a \, \mu_{\ce{A}}
+		- c \, \mu_{\ce{C}} = \displaystyle \sum_i \nu_i 	\mu_i$</p>
+		
+	<p style="margin-left:30px;white-space:nowrap">
+		b) &ensp;
+		$\mu_{\ce{e \! (M(-))}} = \mu_{\ce{e \! (M(+))}}$ &emsp;
+		(Mismo metal, i.e. igual composición, a misma $P$ y $T$).</p>
+		
+	<p style="margin-left:30px">
+		c) &ensp; 
+		$
+		n \, z_{\ce{e}} F \phi_{\ce{e \! (M(-))}} - n \, z_{\ce{e}}
+		F \phi_{\ce{e \! (M(+))}}
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\
+				\llap{z_{\ce{e}} \,} = \rlap{\, -1}
+			\end{subarray}
+		}{=} n F
+		(
+		\underbrace{
+			\phi_{\ce{e \! (M(+))}} - \phi_{\ce{e \! (M(-))}}
+		}_{
+			\begin{subarray}{c}
+				\text{fem pila} \\
+				\text{(diferencia de potencial} \\
+				\text{entre los terminales)}
+			\end{subarray}
+		}
+		) = nFE
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle \sum_i \nu_i \mu_i + n F E +
+		\underbrace{
+			b \, z_{\ce{B}} F \phi_{\ce{B}} + d \, z_{\ce{D}} F \phi_{\ce{D}}
+			- a \, z_{\ce{A}} F \phi_{\ce{A}} - c \, z_{\ce{C}} F \phi_{\ce{C}}
+		}_{
+		\begin{subarray}{c}	
+			\hphantom{0 \,} = \, 0 \\
+			(\ast)
+		\end{subarray}
+		} = 0
+		$
+	</p>
+	
+<p style="display:table">
+	<span style="display:table-cell;white-space:nowrap">
+		($\ast$) ya que: &ensp;</span>
+	<span style="display:table-cell;vertical-align:top">
+		<span style="display:block;margin-bottom:1em">
+			a) Si $i$ interviene como especie neutra $\Rightarrow z_i = 0$.</span>
+		<span style="display:block;text-indent:-1.1em;padding-left:1.1em">
+			b) Si las especies comparten fase el potencial interno es el 
+			mismo, pues para estar en equilibrio (para que no haya un flujo de 
+			cargas, de corriente, dentro de ella) el potencial eléctrico 
+			ha de ser el mismo en toda la fase. Si este potencial interno
+			de la fase es $\phi$,	entonces:
+			
+			<span style="display:block;text-align:center;margin-top:1em;margin-bottom:1em">
+				$F \phi	\underbrace{\displaystyle \sum_i \nu_i z_i}_{{\hphantom{0
+				\,}}= \, 0 \rlap{\, \leftarrow \, \smash{\text{electroneutralidad}}}}
+				= 0$</span>
+			
+			El sumatorio incluye a las especies intervinientes que comparten
+			la fase.
+		</span>
+	</span>
+</p>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i \nu_i \mu_i + n F E = 0$ &emsp;
+		$
+		\leftarrow
+		\left\{
+			\begin{array}{l}
+				P,T \text{ ctes.} \\
+				\text{Pila reversible, circuito abierto.}
+			\end{array}
+		\right.
+		$
+	</p>
+	
+<p>Si hubiera una unión líquida entre ambos lados de la pila, i.e. dos 
+disoluciones distintas, la del lado izquierdo (i) y la del lado derecho 
+(d), separadas entre sí por una membrana porosa:</p>
+
+	<p style="text-align:center">
+		$(-) \, \ce{M} \, {|} \, \ce{A} \, {|} \, \ce{B_{(sol,i)}}
+		\vdots \, \ce{C_{(sol,d)}} \, {|} \, \ce{D} \, {|} \, \ce{M} 
+		\, (+)$</p>
+		
+<p>Debido a las diferentes velocidades de difusión de iones distintos 
+entre las disoluciones, tiene lugar una separación de cargas y, por 
+consiguiente, también, una cierta diferencia de potencial entre ambas 
+disoluciones, lo que, progresivamente, causa una igualación de las 
+velocidades, alcanzándose un estado estacionario, estable, donde la 
+separación de cargas y la diferencia de potencial son estables, en el 
+que ya no se produce un paso de corriente neto (entre ambas 
+disoluciones) estando el circuito abierto. Así pues, siendo
+$\phi_{(\rm sol,i)}$ y $\phi_{(\rm sol,d)}$ los potenciales internos de
+las disoluciones de las sempilas izquierda y derecha respectivamente,
+entonces:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i \nu_i \mu_i + n F E + F \phi_{(\rm sol,i)} 
+		\sum_j \nu_j z_j + F \phi_{(\rm sol,d)} \sum_k \nu_k z_k = 0$</p>
+		
+<p>Donde el sumatorio sobre $j$ corresponde a los iones participantes 
+en la reacción de oxidación, los cuales se encuentran disueltos en la 
+disolución de la semipila izquierda, y el sumatorio sobre $k$ 
+corresponde a los iones de la reacción de reducción, que están en la 
+disolución de la semipila derecha. Como la carga total no cambia
+durante una reacción química:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\displaystyle \Bigl( \sum_j \nu_j z_j \Bigr) - n = 0 \, \Rightarrow
+			\, \sum_j \nu_j z_j = n \\[1ex]
+			\displaystyle \Bigl( \sum_k \nu_k z_k \Bigr) + n = 0 \, \Rightarrow
+			\, \sum_k \nu_k z_k = - n
+		\end{array}
+		$
+	</p>
+	
+<p>Ya que, siendo además $z_{\ce{e}} = -1$, el coeficiente 
+estequiométrico del electrón es positivo en el ánodo (es un producto) y 
+negativo en el cátodo (es un reactivo).</p>
+
+<p>Por tanto, tras sustituir:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i \nu_i \mu_i + n F E - n F (\phi_{(\rm sol,d)} 
+		- \phi_{(\rm sol,i)}) = 0$</p>
+		
+<p>Siendo el potencial de unión líquida ($E_{\rm j}$):</p>
+
+	<p style="text-align:center">
+		$E_{\rm j} = \phi_{(\rm sol,d)} - \phi_{(\rm sol,i)}$</p>
+		
+<p>Entonces:</p>
+
+		<p style="text-align:center">
+			$\displaystyle \sum_i \nu_i \mu_i + n F E - n F E_{\rm j} = 0$ &emsp;
+			$
+			\leftarrow
+			\Biggl\{
+			\smash[t]{
+			\begin{array}{l}
+					\vphantom{\text{circuito abierto.}} \\
+					P,T \text{ ctes.} \\
+					\text{Pila con unión líquida,} \\
+					\text{circuito abierto.}
+			\end{array}
+			}
+			$
+		</p>
+		
+<p>Usando un puente salino, típicamente de $\ce{KCl}$, cuyos iones 
+tienen similar movilidad, para conectar ambas disoluciones, se minimiza 
+el potencial de unión líquida, tanto que puede despreciarse, con lo 
+que:</p>
+
+		<p style="text-align:center">
+			$\displaystyle \sum_i \nu_i \mu_i + n F E = 0$ &emsp;
+			$
+			\leftarrow
+			\Biggl\{
+			\smash[t]{
+			\begin{array}{l}
+					\vphantom{\text{circuito abierto.}} \\
+					P,T \text{ ctes.} \\
+					\text{Pila reversible, o con puente salino,} \\
+					\text{circuito abierto.}
+			\end{array}
+			}
+			$
+		</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \mu°_{\!\! \lower 2mu i} + RT \ln a_i$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle
+			\underbrace{\sum_i \nu_i \mu°_{\!\! \lower 2mu i}}_{\Delta G°} +
+			\sum_i \nu_i RT \ln a_i + nFE = 0 \\[1ex]
+			\Delta G° + RT \ln \displaystyle \prod a_i^{\nu_i} + nFE = 0 \\[1ex]
+			E = \underbrace{- \dfrac{\Delta G°}{nF}}_{E°} - \dfrac{RT}{nF} \ln
+			\displaystyle \prod a_i^{\nu_i} \\[1ex]
+			\boxed{E = E° - \dfrac{RT}{nF} \ln \displaystyle \prod a_i^{\nu_i}
+			\enspace \text{Ec. de Nernst}}
+		\end{array}
+		$
+	</p>
+	
+<p>Ecuación sólo válida en pilas reversibles (o con puente salino) en 
+circuito abierto, siendo $E°$ el potencial normal de la pila.</p>
+
+<p>Sea la pila:</p>
+
+	<p style="text-align:center">
+		$(-) \, \ce{Pt_I} \, {|} \, \ce{H2_{(g)}} \, {|} \, \ce{HCl_{(aq)}}
+		\, {|} \, \ce{AgCl_{(s)}} \, {|} \, {\ce{Ag_{(s)}}} \, {|} \,
+		\ce{Pt_{D}} \, (+)$</p>
+		
+<p>No hay separación entre disoluciones, no hay unión líquida, es una
+pila reversible. Para esta pila:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-bottom:1ex">
+				óxidación:</span>
+			<span style="display:table-cell">
+				$\ce{H2_{(g)} &lt;=&gt; 2H+_{(aq)} + 2e^-(Pt_I)}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em">
+				reducción:</span>
+			<span style="display:table-cell">
+			 $2 (\ce{AgCl_{(s)} + e^-(Pt_D) &lt;=&gt; Ag_{(s)} + Cl-_{(aq)}})$</span>
+		</span>
+	</p>
+	
+<p>Con la pila en circuito abierto, la reacción global:</p>
+
+	<p style="text-align:center">
+		$\ce{2AgCl_{(s)} + H2_{(g)} + 2e^-(Pt_D) &lt;=&gt; 2 Ag_{(s)} +
+		2H+_{(aq)} + 2 Cl-_{(aq)} + 2e^-(Pt_I)}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			E &amp;= E° - \dfrac{RT}{2F} \ln
+			\dfrac{
+				a_{\ce{Ag}}^2 a_{\ce{Cl-}}^2 a_{\ce{H+}}^2
+			}{
+				a_{\ce{AgCl}}^2 a_{\ce{H2}}
+			}
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\
+					\llap{E° \,} = \rlap{\, E°_{\mspace{-6mu} \lower 2mu \rm D} \,
+					- \, E°_{\mspace{-5mu} \lower 2mu \rm I}}
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= 
+			\Biggl(
+			\underbrace{
+				E°_{\!\! \lower 2mu \ce{AgCl/Ag}} \mspace{-36mu}
+				\overset{
+					\begin{subarray}{c}
+						\text{sentido reacción} \\
+						\text{de reducción} \\
+						\Big\downarrow
+					\end{subarray}
+				}{-} \mspace{-36mu} \dfrac{RT}{2F} \ln
+				\dfrac{a_{\ce{Ag}}^2 a_{\ce{Cl-}}^2}{a_{\ce{AgCl}}^2}
+			}_{E_{\rm D}}	\Biggr) - \Biggl(
+			\underbrace{
+				E°_{\!\! \lower 2mu \ce{H+/H2}} \mspace{-36mu}
+				\overset{
+					\begin{subarray}{c}
+						\text{sentido reacción} \\
+						\text{de reducción} \\
+						\Big\downarrow
+					\end{subarray}
+				}{-} \mspace{-36mu} \dfrac{RT}{2F} \ln
+				\dfrac{a_{\ce{H2_{(g)}}}}{a_{\ce{H+}}^2}
+			}_{E_{\rm I}} \Biggr) = E_{\rm D} - E_{\rm I}
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo $E_{\rm D}$, $E_{\rm I}$ y $E°_{\!\! \lower 2mu \rm D}$,
+$E°_{\!\! \lower 2mu \rm I}$ los potenciales de electrodo y potenciales
+normales de electrodo, respectivamente, de cada lado de la pila.</p>
+
+<p>Tipos de pilas:</p>
+
+	<p style="margin-left:30px">
+		- Pilas químicas: Las reacciones electroquímicas en cada electrodo
+		son distintas (reactivos y productos en la reacción global son
+		distintos). Pueden ser:</p>
+		
+	<ol style="margin-left:60px">
+		<li>Sin transporte: Ambas semipilas comparten misma disolución. Por
+		ejemplo:
+			<p style="text-align:center">
+				$\ce{Pt_{I}} \, {|} \, \ce{H2_{(g)}} \, {|} \, \ce{HCl_{(aq)}}
+				\, {|} \, \ce{AgCl_{(s)}} \, {|} \, \ce{Ag_{(s)}} \, {|} \,
+				\ce{Pt_{D}}$</p>
+			<p style="text-align:center">
+				$
+				E = E° - \dfrac{RT}{2F} \ln
+				\dfrac{
+					a_{\ce{Cl-}}^2 a_{\ce{H+}}^2 a_{\ce{Ag}}^2
+				}{
+					a_{\ce{H2}} a_{\ce{AgCl}}^2
+				}
+				$
+			</p>
+		</li>
+		<li>Con transporte: Disoluciones diferentes en las semipilas,
+		produciéndose un transporte de iones en la unión entre ambas. Por
+		ejemplo la pila Daniell (con membrana).
+			<p style="text-align:center">
+				$
+				E = \mspace{-28mu}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{potencial de} \\
+						\text{difusión o de} \\
+						\text{unión líquida}
+					\end{subarray}
+				}
+				{E_{\rm j}} \mspace{-28mu} + E° -
+				\dfrac{RT}{2F} \ln \dfrac{a_{\ce{Zn^2+}}}{a_{\ce{Cu^2+}}}$
+			</p>
+		</li>
+	</ol>
+	
+	<p style="margin-left:30px">
+		- Pilas de concentración: Las reacciones electroquímicas en cada
+		electrodo son las mismas (reactivo y producto en la reacción
+		global son los mismos, pero con distinta concentración). Las hay:</p>
+		
+	<ol style="margin-left:60px">
+		<li>Sin transporte:
+			<p style="text-align:center">
+				${} \circleddash \ce{Pt_{I}} \, {|} \, \ce{Cl2 ($P$_I)} \, 
+				{|} \, \ce{HCl_{(aq)}} \, {|} \, \ce{Cl2 ($P$_D)} \, {|} 
+				\ce{Pt_{D}} \oplus {}$</p>
+				
+		<p>Esto es:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{ll}
+					\text{ánodo:} &amp; \ce{2 Cl- &lt;=&gt; Cl2 \! ($P$_I) +
+					2e^-(Pt)} \\[1ex]
+					\text{cátodo:} &amp; \ce{Cl2 \! ($P$_D) + 2e^-(Pt) &lt;=&gt;
+					2 Cl-} \\[1ex]
+					\hline
+					\text{global:} &amp; \ce{Cl2 \! ($P$_D) &lt;=&gt; Cl2 \! ($P$_I)}
+				\end{array}
+				$
+			</p>
+			
+		<p>Siendo que $E°$ en una pila de concentración vale cero:</p>
+			
+			<p style="text-align:center">
+				$
+				E = - \dfrac{RT}{2F} \ln
+				\dfrac{a_{\ce{Cl2($P$_I)}}}{a_{\ce{Cl2($P$_D)}}} \mspace{-9mu}
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\pu{25 °C}
+					\end{subarray}
+				}{=} \mspace{-9mu} - \dfrac{0{,}0592}{2} \log
+				\dfrac{a_{\ce{Cl2($P$_I)}}}{a_{\ce{Cl2($P$_D)}}} \simeq
+				\dfrac{0{,}0592}{2} \log \dfrac{P_{\rm D}}{P_{\rm I}}
+				$
+			</p>
+		<li>Con transporte:
+			<p style="text-align:center">
+				$\ce{Ag} \, {|} \, \ce{AgNO3 ($c$_I)} \, \vdots \, \ce{AgNO3 ($c$_D)}
+				\, {|} \, \ce{Ag}$</p>
+				
+			<p style="text-align:center">
+				$E = E_{\rm D} - E_{\rm I} + E_{\rm j}$</p>
+		</li>
+	</ol>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../potencial_electroquimico/potencial_electroquimico.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../potenciales_normales_electrodo/potenciales_normales_electrodo.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

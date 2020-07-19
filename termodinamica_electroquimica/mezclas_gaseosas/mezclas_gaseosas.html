@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Mezclas gaseosas">
+<meta name="keywords" content="mezclas, gaseosas">
+<title>Mezclas gaseosas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Mezclas gaseosas</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Para una substancia pura:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m} = V_{\rm m} \, dP$ &emsp; ($T$ cte.)</p>
+		
+<p>Para el componente $i$ de una mezcla:</p>
+
+	<p style="text-align:center">
+		$d\mu_i = V_i \, dP$ &emsp; ($T$ y composición constantes).</p>
+		
+<p>Donde $V_i$, el volumen molar parcial de $i$, y $\mu_i$, el potencial
+químico de $i$, son:</p>
+
+	<p style="text-align:center">
+		$
+		V_i =
+		\left( \dfrac{\partial V}{\partial n_i} \right)_{\! T,P,n_{j \neq i}}
+		\qquad
+		\mu_i =
+		\left( \dfrac{\partial G}{\partial n_i} \right)_{\! T,P,n_{j \neq i}}
+		$
+	</p>
+	
+<p>Ya que $\mu_i$ es una función de estado, a temperatura constante y 
+sin cambios en las cantidades de los distintos componentes de la 
+mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			d \mu_i &amp;= \left( \dfrac{\partial \mu_i}{\partial P}
+			\right)_{\! T \rlap{,n_i,\dotsc}} dP = \\[1ex]
+			&amp;= \left(	\dfrac{\partial}{\partial P} \biggl(
+			\dfrac{\partial G}{\partial n_i} \right)_{\! T,n_{j \neq i}}
+			\biggr)_{\! T \rlap{,n_i,\dotsc}} dP = \biggl(
+			\dfrac{\partial}{\partial n_i}
+			\underbrace{
+				\left( \dfrac{\partial G}{\partial P} \right)_{\! T,n_i,\dotsc}
+			}_{
+				\begin{subarray}{c}
+					V \\[.5ex]
+					dG_{T,n_i \rlap{,\dotsc}} \, = \, V \mspace{2mu} dP_{T,n_i \rlap{,\dotsc}}
+				\end{subarray}				
+			} \biggr)_{\! T\rlap{,n_{j \neq i}}} dP = \\[1ex]
+			&amp;= \left( \dfrac{\partial V}{\partial n_i}
+			\right)_{\! T \rlap{,n_{j \neq i}}} dP = V_i \, dP
+		\end{align}
+		$
+	</p>
+	
+<p>- Mezcla de gases ideales:</p>
+
+<p>Según la ley de Amagat, el volumen de una mezcla compuesta de gases 
+ideales es igual a la suma de los volúmenes que ocuparían cada uno de 
+ellos por separado (i.e. solos), en las mismas condiciones de presión y 
+temperatura:</p>
+
+	<p style="text-align:center">
+		$V = (n_1 + n_2 + \dotsb) \dfrac{RT}{P}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$d \mu_i = V_i \, dP = \dfrac{RT}{P} \, dP = RT \, d \ln P$</p>
+		
+<p>Por definición, para cualquier mezcla de gases:</p>
+
+	<p style="text-align:center">
+		$P_i = y_i P$</p>
+	
+<p>Donde $y_i$ es la fracción molar de $i$ y $P_i$ su presión parcial.
+Así que, en una mezcla de gases ideales:</p>
+
+	<p style="text-align:center">
+		$P_i = \dfrac{n_i RT}{V}$</p>
+		
+<p>Que es la presión que ejercería el gas $i$ ocupando, a la misma
+temperatura que la mezcla, todo el volumen (i.e. en una mezcla
+de gases ideales, donde no existen interacciones moleculares, cada
+uno de ellos se comporta como si los otros no estuvieran presentes).</p>
+
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$\ln P_i = \ln (y_i P) = \ln y_i + \ln P$</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$d \ln P_i = \underbrace{\dfrac{d \ln P_i}{d \ln P}}_1 \, d \ln P =
+		d \ln P$</p>
+
+<p>Entonces, sustituyendo:</p>
+
+	<p style="text-align:center">
+		$d \mu_i = RT \, d \ln P_i$</p>
+		
+<p>Si $P°_{\!\! \lower 2 mu i} = \pu{1 atm}$, integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\mu_i = \mu°_{\!\! \lower 2mu i} +
+		RT \ln \dfrac{P_i}{P°_{\!\! \lower 2mu i}}
+		$
+	</p>
+	
+<p>Donde $\mu°_{\!\! \lower 2mu i}$ es el potencial químico de $i$ 
+cuando $P_i$ es $\pu{1 atm}$, i.e. el potencial químico del gas ideal 
+$i$ puro, (puede concebirse así ya que cada gas de la mezcla se comporta 
+de manera independiente de los otros, como si no existieran), a la 
+presión de $\pu{1 atm}$ y a la temperatura $T$ de interés (algo 
+hipotético).</p>
+
+<p>- Mezcla de gases reales:</p>
+
+<p>Aquí, por analogía, se define:</p>
+
+	<p style="text-align:center">
+		$d \mu_i = RT \, d \ln f_i$</p>
+		
+<p>Integrando desde $f_i^◽ = \pu{1 atm}$, entonces:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \mu_i^◽ + RT \ln \dfrac{f_i}{f_i^◽}$</p>
+		
+<p>Así pues, $\mu_i^◽$ es el potencial químico de $i$ cuando $f_i = 
+\pu{1 atm}$.</p>
+
+<p>En el estado de referencia, (i.e. $P \to 0$, $P_i^\ast$, $f_i^\ast$), 
+para las mezclas ideal y real:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{i,\rm ideal} =
+			\mu°_{\!\! \lower 2mu i} +
+			RT \ln \dfrac{P_i^\ast}{P°_{\!\! \lower 2mu i}} \\[1ex]
+			\mu_{i,\rm real} =
+			\mu_i^◽ + RT \ln \dfrac{f_i^\ast}{f_i^◽}
+		\end{array}
+		$
+	</p>
+	
+<p>En el estado de referencia $\mu_{i,\rm ideal} = \mu_{i,\rm real}$, ya
+que las presiones son muy bajas y la mezcla real se asemeja a la ideal.
+Igualando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu°_{\!\! \lower 2mu i} +
+			RT \ln \dfrac{P_i^\ast}{P°_{\!\! \lower 2mu i}}
+			= \mu_i^◽ + RT \ln \dfrac{f_i^\ast}{f_i^◽} \\[1ex]
+			\dfrac{\mu°_{\!\! \lower 2mu i} - \mu_i^◽}{RT} =
+			\ln \dfrac{f_i^\ast}{P_i^\ast} = k \\[1ex]
+			\dfrac{f_i^\ast}{P_i^\ast} = e^k = k' = 1
+		\end{array}
+		$
+	</p>
+	
+<p>Con tal elección, la unidad, para la constante $k'$, entonces:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu i} = \mu_i^◽$</p>
+		
+<p>Concluyéndose:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \mu°_{\!\! \lower 2mu i} +
+		RT \ln \dfrac{f_i}{f°_{\!\! \lower 2mu i}}$</p>
+		
+<p>El estado estándar o tipo, para el cual $f°_{\!\! \lower 2mu i} = 
+\pu{1 atm}$, hipotético, es el gas $i$ puro comportándose idealmente a 
+la presión de $\pu{1 atm}$ y a la temperatura $T$.</p>
+
+<p>Siendo el coeficiente de fugacidad para $i$:</p>
+
+	<p style="text-align:center">
+		$\dfrac{f_i}{P_i} = \gamma_{P,i}$</p>
+		
+<p>Entonces también:</p>
+
+	<p style="text-align:center">
+		$
+		\mu_i = \mu°_{\!\! \lower 2mu i} +
+		RT \ln \dfrac{\gamma_{P,i} P_i}{f°_{\!\! \lower 2mu i}}
+		$
+	</p>
+	
+<p>Recapitulando, para un gas $i$ en una mezcla de gases:</p>
+
+	<p style="text-align:center">
+		$d \mu_i = V_i \, dP = RT \, d \ln f_i$ &emsp; ($T$ y composición
+		ctes.)</p>
+		
+<p>Se define, a continuación:</p>
+
+	<p style="text-align:center">
+		$\alpha_i = V_{i,\rm ideal} - V_i = \dfrac{RT}{P} - V_i$</p>
+		
+<p>Donde $V_{i,\rm ideal}$ es el volumen molar parcial de $i$ si la 
+mezcla fuera de gases ideales.</p>
+		
+<p>Siendo, entonces:</p>
+
+	<p style="text-align:center">
+		$V_i = \dfrac{RT}{P} - \alpha_i$</p>
+		
+<p>Tras sustituir:</p>
+
+	<p style="text-align:center">
+		$d \ln f_i = d \ln P - \dfrac{\alpha_i}{RT} \, dP$</p>
+		
+<p>Integrando desde presión total virtualmente cero:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{f_i}{f_i^\ast} = \ln \dfrac{P}{P^\ast} - \dfrac{1}{RT}
+		\displaystyle \int_{P \, \simeq \, 0}^P \alpha_i \, dP$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			P_i^\ast = y_i P^\ast \\[1ex]
+			f_i^\ast = P_i^\ast \quad (P^\ast {\downarrow} {\downarrow}
+			\Rightarrow \text{ideal})
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln f_i = \ln y_i + \ln P +
+			\! \cancelto{0}{\ln \dfrac{f_i^\ast}{P_i^\ast}} \!\! -
+			\dfrac{1}{RT} \displaystyle \int_{P \, \simeq \, 0}^P \alpha_i
+			\, dP \\[1ex]
+			\boxed{
+				\ln f_i = \ln y_i + \ln P - \dfrac{1}{RT} \displaystyle 
+				\int_{P \, \simeq \, 0}^P \alpha_i \, dP
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Con suficientes datos experimentales para la mezcla de gases dada, 
+puede representarse $\alpha_i{∕}RT$ vs. $P$ y calcularse el área de la 
+integral gráficamente, hallándose la fugacidad de $i$.</p>
+
+<p>Un método alternativo, aproximado, se basa en considerar que, sin
+ser gases ideales, obedecen la ley de Amagat (el volumen total es
+la suma de los volumenes por separado), por lo que:</p>
+
+	<p style="text-align:center">
+		$V_i = V_{{\rm m},i}$</p>
+		
+<p>Siendo $V_{{\rm m},i}$ el volumen molar del gas puro $i$ a la $P$
+y $T$ de la mezcla. En tal caso, entonces:</p>
+
+	<p style="text-align:center">
+		$\alpha_i' = \dfrac{RT}{P} - V_{{\rm m},i}$</p>
+		
+<p>Con lo que:</p>
+
+	<p style="text-align:center">
+		$\ln f_i = \ln y_i + \ln P - \dfrac{1}{RT} \displaystyle 
+		\int_{P \, \simeq \, 0}^P \alpha_i' \, dP \tag{$\ast$} \label{*}$</p>
+		
+<p>Para un gas único puro (como se vio):</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m} = V_{\rm m} \, dP = RT \, d \ln f$</p>
+		
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$\alpha = V_{\rm m,ideal} - V_{\rm m} = \dfrac{RT}{P} - V_{\rm m}
+		\, \Rightarrow \, V_{\rm m} = \dfrac{RT}{P} - \alpha$</p>
+		
+<p>Sustituyendo e integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			RT \, d \ln f = \left( \dfrac{RT}{P} - \alpha \right) dP =
+			RT \, d \ln P - \alpha \, dP \\[1ex]
+			\Downarrow \\[1ex]
+			\ln f = \ln P - \dfrac{1}{RT} \displaystyle
+			\int_{P \, \simeq \, 0}^P \alpha \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Si este gas único puro es $i$, entonces:</p>
+
+	<p style="text-align:center">
+		$\alpha = \alpha_i'$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$\ln P - \dfrac{1}{RT} \displaystyle \int_{P \, \simeq \, 0}^P
+		\alpha_i' \, dP = \ln f_i'$</p>
+		
+<p>Donde $f_i'$ es la fugacidad del gas puro $i$ a la $P$ y $T$ de la
+mezcla. Así que, sustituyendo en $\eqref{*}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln f_i = \ln y_i + \ln f_i' \\[1ex]
+			\boxed{\, f_i = y_i f_i'}
+		\end{array}	
+		$
+		<span style="display:block;padding-top:1ex">
+			(Lewis-Randall)</span>
+	</p>
+	
+<p>Se conoce como regla de Lewis-Randall.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../estados_estandar_referencia_fugacidad_actividad/estados_estandar_referencia_fugacidad_actividad.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../mezclas_condensadas/mezclas_condensadas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

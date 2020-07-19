@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Estados estándar y de referencia, fugacidad y actividad">
+<meta name="keywords" content="estados, estándar, referencia, fugacidad, actividad">
+<title>Estados estándar y de referencia, fugacidad y actividad</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Estados estándar y de referencia, fugacidad y actividad</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Para una sustancia pura:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m} = V_{\rm m} \, dP - S_{\rm m} \, dT$</p>
+		
+<p>A temperatura constante:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m} = V_{\rm m} \, dP$ &emsp; ($T$ cte.)</p>
+		
+<p>Para un gas ideal:</p>
+
+	<p style="text-align:center">
+		$V_{\rm m} = \dfrac{RT}{P}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m,ideal} = \dfrac{RT}{P} \, dP$ &emsp; ($T$ cte., gas ideal)
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\dfrac{1}{P} \, dP = \dfrac{d \ln P}{dP} \, dP = d \ln P$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m,ideal} = RT \, d \ln P$ &emsp; ($T$ cte., gas ideal)</p>
+		
+<p>Según planteó Lewis, puede sustituirse esta ecuación por otra análoga,
+válida para cualquier gas, donde en vez de la $P$ aparece una función
+llamada fugacidad ($f$):</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m,real} = RT \, d \ln f$</p>
+	
+<p>La fugacidad es función de $P$ y $T$, y distinta para cada sustancia
+a la cual se aplique.</p>
+
+<p>Para un gas ideal (integrando):</p>
+
+	<p style="text-align:center">
+		$\Delta G_{\rm m,ideal} = G_{{\rm m,ideal},2} - G_{{\rm m,ideal},1} =
+		RT \ln \dfrac{P_2}{P_1}$</p>
+		
+<p>Si el estado 1 es el estado tipo o estándar ($P° = \pu{1 atm}$, la 
+temperatura de interés $T$), y el estado 2 es otro cualquiera (con misma 
+temperatura) cuya presión es $P$, entonces:</p>
+
+	<p style="text-align:center">
+		$G_{\rm m,ideal} = G°_{\!\! \rm m,ideal} + RT \ln \dfrac{P}{P°}$ &emsp;
+		(gas ideal, $T$ cte.)
+	</p>
+	
+<p>Para un gas real (integrando):</p>
+
+	<p style="text-align:center">
+		$\Delta G_{\rm m,real} = G_{{\rm m,real},2} - G_{{\rm m,real},1} =
+		RT \ln \dfrac{f_2}{f_1}$</p>
+		
+<p>Si el estado 1 del gas real es un estado en el cual $f_1^◽ = \pu{1 
+atm}$, $T$ de interés, y el estado 2 cualquiera de los que posean misma 
+temperatura, entonces:</p>
+
+	<p style="text-align:center">
+		$G_{\rm m,real} = G_{\rm m,real}^◽+ RT \ln \dfrac{f}{f^◽}$</p>
+		
+<p>Siendo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			G°_{\!\! \rm m,ideal} = G°_{\!\! \rm m,ideal} (T) \\[1ex]
+			G_{\rm m,real}^◽ = G_{\rm m,real}^◽ (T)
+		\end{array}
+		$
+	</p>
+
+<p>Ambas son como constantes de integración que dependen de $T$. Cuando
+$P = \pu{1 atm}$ y $f = \pu{1 atm}$, en ambos casos las energías de
+Gibbs coinciden con ellas.</p>
+
+<p>Cuando $P \to 0$ el comportamiento del gas real tiende al 
+comportamiento del gas ideal y, entonces, $G_{\rm m,real} \to G_{\rm 
+m,ideal}$. A esto se le llama estado de referencia del gas real ($P \to 
+0$, $T$ dada), siendo un estado que sí existe (es real), a diferencia 
+del estado tipo o estándar del gas ideal que es virtual o hipotético 
+(no existe el gas ideal a $P = \pu{1 atm}$). Las propiedades de tal 
+estado de referencia son $P^\ast$, $T$, $G^\ast$ y $f^\ast$. También, 
+en él, coinciden $G_{\rm m,real}^\ast$ y $G_{\rm m,ideal}^\ast$.</p>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			G_{\rm m,ideal}^\ast =
+			G°_{\!\! \rm m,ideal} +	RT \ln \dfrac{P^\ast}{P°} \\[1ex]
+			G_{\rm m,real}^\ast =
+			G_{\rm m,real}^◽ + RT \ln \dfrac{f^\ast}{f^◽}
+		\end{array}
+		$
+	</p>
+	
+<p>Igualando, teniendo en cuenta que $P° = f^◽ = \pu{1 atm}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G°_{\!\! \rm m,ideal} +	RT \ln \dfrac{P^\ast}{P°} =
+			G_{\rm m,real}^◽ + RT \ln \dfrac{f^\ast}{f^◽} \\[1ex]
+			\dfrac{G°_{\!\! \rm m,ideal} - G_{\rm m,real}^◽}{RT} =
+			\ln \dfrac{f^\ast}{P^\ast} = k
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $k$ es una constante. Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\dfrac{f^\ast}{P^\ast} = e^k = k'$</p>
+		
+<p>Si, valor arbitrario, $k' = 1$, entonces, en el estado de referencia
+del gas:</p>
+
+	<p style="text-align:center">
+		$\boxed{\, f^\ast = P^\ast}$</p>
+		
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{P \to 0} \dfrac{f}{P} = 1$</p>
+		
+<p>Además $k = \ln k' = 0$, por lo que:</p>
+
+	<p style="text-align:center">
+		$\boxed{G°_{\!\! \rm m,ideal} = G_{\rm m,real}^◽}$</p>
+		
+<p>Siendo, lo más importante, pues:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{G_{\rm m,real} = G°_{\!\! \rm m,ideal} + RT \ln \dfrac{f}{f°}}
+		$
+		&emsp; ($T$ cte, para cualquier gas)
+	</p>
+	
+<p>Así que el estado tipo o estándar de un gas real, para el cual $f° =
+\pu{1 atm}$, es un estado hipotético en el que el gas se comporta
+idealmente a $P° = \pu{1 atm}$ y a $T$ de interés.</p>
+
+<p>En una representación:</p>
+	
+<center>
+	<object data="estados_estandar_referencia_fugacidad_actividad_01.svg"
+	type="image/svg+xml" width="400" height="400"></object>
+</center>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{\rm AB}{\rm AC} = \dfrac{f}{P} = \gamma_P \\[1ex]
+			f = P \gamma_P
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $\gamma_P$, el coeficiente de fugacidad, da la medida de cuánto
+se separa el gas real de la idealidad.</p>
+
+<p>En el caso de sólidos o líquidos, fases condensadas (cd), de 
+sustancias puras, se usa una ecuación para su fugacidad igual que la de 
+un gas:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m,cd} = RT d \ln f_{\rm cd}$ &emsp; $\leftarrow$ sólido o
+		líquido</p>
+		
+<p>Con el estado de referencia el mismo que se estableció para el gas
+(i.e. $T$, $P \to 0$, gas), donde $f_{\rm cd}^\ast = P^\ast$.</p>
+
+<p>Cuando, de manera reversible, la fase condensada se evapora:</p>
+
+	<p style="text-align:center">
+		$0 = \Delta G_{\rm m} = G_{\rm m,vap} - G_{\rm m,cd}$ &emsp; ($T$ y 
+		$P$ ctes.)</p>
+		
+<p>Siendo que no depende del camino, sólo del estado inicial y final, 
+como suma de procesos infinitesimales es la integral:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			0 = \int_{P,\rm cd}^{P,\rm vap} dG_{\rm m} &amp;=
+			\int_{P,\rm cd}^{P \to 0} dG_{\rm cd} +
+			\int_{P \to 0}^{P,\rm vap} dG_{\rm vap} = \\[1ex]
+			&amp;= \int_{P,\rm cd}^{P \to 0} RT \, d \ln f_{\rm cd} +
+			\int_{P \to 0}^{P,\rm vap} RT \, d \ln f_{\rm vap} = \\[1ex]
+			&amp;= RT \ln \dfrac{P^\ast}{f_{\rm cd}} +
+			RT \ln \dfrac{f_{\rm vap}}{P^\ast} = \\[1ex]
+			&amp;= RT \ln \dfrac{f_{\rm vap}}{f_{\rm cd}}
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{f_{\rm vap}}{f_{\rm cd}} = 0 \Rightarrow
+		\dfrac{f_{\rm vap}}{f_{\rm cd}} = 1 \Rightarrow
+		f_{\rm vap} = f_{\rm cd}$</p>
+		
+<p>La fugacidad del líquido o sólido es igual a la del vapor que esté
+en equilibrio con él.</p>
+
+<p>La actividad ($a$) es una generalización del concepto de fugacidad, 
+éste aplicado a los gases, que incluye también a sólidos y líquidos. 
+Para una substancia pura:</p>
+
+	<p style="text-align:center">
+		$d \mu = dG_{\rm m} = V_{\rm m} \, dP = RT \, d \ln a$ &emsp; ($T =$
+		cte.)</p>
+		
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		G_{{\rm m},2}(P_2,T) - G_{{\rm m},1}(P_1,T) = RT \ln \dfrac{a_2}{a_1}
+		$
+	</p>
+	
+<p>Si el estado 1 es el estado estándar o tipo, para el cual $a° = 1$ 
+(la actividad es adimensional), siendo éste la sustancia pura a presión 
+de $\pu{1 atm}$ y a la temperatura de interés, con, además, para un gas 
+comportamiento ideal, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			G_{\rm m} &amp;= G°_{\!\! \rm m} + RT \ln \dfrac{a}{a°} = \\[1ex]
+			&amp;= G°_{\!\! \rm m} + RT \ln \dfrac{a}{1} = \\[1ex]
+			&amp;= G°_{\!\! \rm m} + RT \ln a
+		\end{align}
+		$
+	</p>
+		
+<p>En el caso de un gas fugacidad y actividad numéricamente coinciden, 
+ya que en el estado tipo o estándar del mismo tienen igual valor (1).</p>
+
+<p>En un sólido o un líquido también se usa para representar su 
+actividad:</p>
+
+	<p style="text-align:center">
+		$a = \Gamma$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dG_{\rm m} = V_{\rm m} \, dP =
+			RT \, d \ln a \quad (T \text{ cte.}) \\[1ex]
+			\Downarrow \\[1ex]
+			\left( \dfrac{\partial \ln a}{\partial P} \right)_{\! T} =
+			\dfrac{V_{\rm m}}{RT}
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando, desde el estado tipo a otro cualquiera:</p>
+
+	<p style="text-align:center">
+		$\ln a = \displaystyle \int_1^a d \ln a =
+		\int_1^P \dfrac{V_{\rm m}}{RT} \, dP$ &emsp; ($T$ cte.)</p>
+		
+<p>Donde el volumen molar:</p>
+
+	<p style="text-align:center">
+		$V_{\rm m} = V_{\rm m}(P,T)$</p>
+		
+<p>Siendo importante la dependencia del volumen con la presión para 
+gases, en el caso de sólidos y líquidos, en cambio, el volumen varía 
+poco con la presión:</p>
+
+	<p style="text-align:center">
+		$V_{\rm m}(P,T) \simeq V_{\rm m}(\pu{1 atm},T) = V°_{\!\! \rm m}$</p>
+		
+<p>Integrando para este caso (sólidos ó líquidos):</p>
+
+	<p style="text-align:center">
+		$\boxed{\ln \Gamma = \dfrac{V°_{\!\! \rm m}}{RT} (P - 1)}$</p>
+		
+<p>Lo que permite hallar cuánto vale la actividad de un líquido o sólido
+puros. A presiones moderadas $\Gamma \simeq 1$.</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G_{\rm m} = G°_{\!\! \rm m} + RT \ln a \\[1ex]
+			\dfrac{G_{\rm m}}{T} = \dfrac{G°_{\!\! \rm m}}{T} + R \ln a
+		\end{array}
+		$
+	</p>
+	
+<p>Derivando respecto a la temperatura:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial (G_{\rm m}{∕}T)}{\partial T} \right)_{\! P} =
+		\left( \dfrac{\partial (G°_{\!\! \rm m}{∕}T)}{\partial T} \right)_{\! P}
+		+ R \left( \dfrac{\partial \ln a}{\partial T} \right)_{\! P}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G = H - TS \Rightarrow \dfrac{G}{T} = \dfrac{H}{T} - S \\[1ex]
+			\Downarrow \\[1ex]
+			\begin{aligned}
+				\left( \dfrac{\partial (G{∕}T)}{\partial T} \right)_{\! P} &amp;=
+				-\dfrac{H}{T^2} +
+				\dfrac{1}{T} \left( \dfrac{\partial H}{\partial T} \right)_{\! P} -
+				\left( \dfrac{\partial S}{\partial T} \right)_{\! P} =\\[1ex]
+				&amp;= -\dfrac{H}{T^2} + \biggl[ \dfrac{1}{T} -
+				\underbrace{
+					\left( \dfrac{\partial S}{\partial H} \right)_{\! P}
+				}_{
+					\begin{subarray}{c}
+						1{∕}T \\[.5ex]
+						\Uparrow \\[.5ex]
+						\begin{aligned}
+							dS_P &amp;= \tfrac{q_P}{T} = \\
+							&amp;= \tfrac{dH_P}{T}
+						\end{aligned}
+					\end{subarray}
+				}
+				\biggr]
+				\underbrace{
+					\left( \dfrac{\partial H}{\partial T} \right)_{\! P}
+				}_{
+					\begin{subarray}{c}
+						C_P \\[.5ex]
+						\Uparrow \\[.5ex]
+						\begin{aligned}
+							C_P &amp;= \tfrac{q_P}{dT_P} = \\
+							&amp;= \tfrac{dH_P}{dT_P}
+						\end{aligned}
+					\end{subarray}
+				} = \\[1ex]
+				&amp;= -\dfrac{H}{T^2} + \left[ \dfrac{1}{T} - \dfrac{1}{T} \right]
+				C_P = \\[1ex]
+				&amp;= - \dfrac{H}{T^2}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Resultado que se alcanza también, como se vio, a partir de las 
+ecuaciones de Gibbs-Helmholtz.</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			-\dfrac{H_{\rm m}}{T^2} = -\dfrac{H°_{\!\! \rm m}}{T^2} +
+			R \left( \dfrac{\partial \ln a}{\partial T} \right)_{\! P} \\[1ex]
+			\left( \dfrac{\partial \ln a}{\partial T} \right)_{\! P} =
+			-\dfrac{\Delta H_{\rm m}}{RT^2}
+		\end{array}
+		$
+	</p>
+	
+<p>Volviendo a la fugacidad, si se tuviera, por ejemplo, la siguiente
+ecuación de estado (tipo Virial) para un gas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			PV_{\rm m} = RT + BP + CP^2 + DP^3 + EP^4 \\[1ex]
+			V_{\rm m} = \dfrac{RT}{P} + B + CP + DP^2 + EP^3
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dG_{\rm m} = V_{\rm m} \, dP = RT \, d \ln f
+			\quad (T = \text{ cte.}) \\[1ex]
+			\Downarrow \\[1ex]
+			d \ln f = \dfrac{V_{\rm m}}{RT} \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Reemplazando e integrando desde el estado de referencia (i.e. $P \to 
+0$, $P^\ast \! = f^\ast$):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int_{f^\ast}^f d \ln f=
+			\dfrac{1}{RT} \int_{P^\ast}^P \left( \dfrac{RT}{P} + B + CP + DP^2
+			+ EP^3 \right) dP \\[1ex]
+			\begin{split}
+				\ln f - \! \cancel{\ln f^\ast} \! &amp;= \ln P - \!
+				\cancel{\ln P^\ast} \! + \dfrac{1}{RT} \biggl[
+				B(P - \! \cancel{P^\ast}\!) + {} \\[1ex] &amp;\hphantom{= {}} +
+				\dfrac{C}{2}(P^2 - \! \cancel{{P^\ast}^2}\!) +
+				\dfrac{D}{3}(P^3 - \! \cancel{{P^\ast}^3}\!) +
+				\dfrac{E}{4}(P^4 - \! \cancel{{P^\ast}^4}\!) \biggr]
+			\end{split} \\[1ex]
+			\ln f = \ln P + \dfrac{1}{RT} \left[ BP + \dfrac{C}{2}P^2 +
+			\dfrac{D}{3}P^3 + \dfrac{E}{4}P^4 \right]
+		\end{array}
+		$
+	</p>
+	
+<p>Donde se ha tenido en cuenta que $P^\ast \! \simeq 0$, lo que permite 
+despreciar $P^\ast$ frente a $P$.</p>
+
+<p>También con el propósito de determinar o calcular la fugacidad de un 
+gas real, se define:</p>
+
+	<p style="text-align:center">
+		$\alpha = V_{\rm m,ideal} - V_{\rm m}$</p>
+		
+<p>Donde $V_{\rm m}$ es el volumen molar del gas real y $V_{\rm 
+m,ideal}$ el volumen molar del gas ideal a la misma presión y 
+temperatura. Por tanto:</p>
+
+	<p style="text-align:center">
+		$\alpha = \dfrac{RT}{P} - V_{\rm m}$</p>
+		
+<p>Pudiendo calcularse $\alpha$ a partir de una tabla de valores
+experimentales de $P$, $V$ y $T$. Además:</p>
+
+	<p style="text-align:center">
+		$V_{\rm m} = \dfrac{RT}{P} - \alpha$</p>
+		
+<p>Entonces, siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			dG_{\rm m} = RT \, d \ln f \\[1ex]
+			dG_{\rm m} = V_{\rm m} \, dP
+		\end{array}
+		\right\}
+		$
+		($T$ cte.)
+	</p>
+	
+<p>Igualando y sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			RT \, d \ln f = \left( \dfrac{RT}{P} - \alpha \right) dP \\[1ex]
+			RT \, d \ln f = RT \, d \ln P - \alpha \, dP \\[1ex]
+			d \ln f = d \ln P - \dfrac{\alpha}{RT} \, dP \\[1ex]
+			d \ln \dfrac{f}{P} = - \dfrac{\alpha}{RT} \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando desde una presión prácticamente cero:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int_{P \, \simeq \, 0}^{P'} d \ln \dfrac{f}{P} =
+			- \dfrac{1}{RT} \int_{P \, \simeq \, 0}^{P'} \alpha \, dP \\[1ex]
+			\ln \dfrac{f'}{P'} - \! \cancelto{0}{\ln \dfrac{f^\ast}{P^\ast}} \!
+			= - \dfrac{1}{RT} \displaystyle \int_{P \, \simeq \, 0}^{P'} \alpha
+			\, dP \\[1ex]
+			\ln f' = \ln P' - 
+			\underbrace{
+				\dfrac{1}{RT} \displaystyle \int_{P \, \simeq \, 0}^{P'} \alpha
+				\, dP
+			}_{\ast}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde el válor de $\ast$ puede hallarse gráficamente como el área
+bajo la curva en una representación de $\alpha{∕}(RT)$ frente a $P$. Esto
+es:</p>
+
+<center>
+	<object data="estados_estandar_referencia_fugacidad_actividad_02.svg"
+	type="image/svg+xml" width="400" height="300"></object>
+</center>
+
+<p>Si se reescribe la expresión de $\alpha$, puede relacionarse ésta con
+el factor de compresibilidad $Z$. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\alpha &amp;= \dfrac{RT}{P} - V_{\rm m} = \dfrac{RT}{P} \biggl( 1
+			- \underbrace{\dfrac{PV_{\rm m}}{RT}}_Z \biggr) = \\[1ex]
+			&amp; = \dfrac{RT}{P} (1- Z)
+		\end{align}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln f = \ln P - \displaystyle \int_0^P \dfrac{1-Z}{P} \, dP \\[1ex]
+			\ln \dfrac{f}{P} = \displaystyle \int_0^P \dfrac{Z-1}{P} \, dP
+		\end{array}
+		$
+	</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\pi = \dfrac{P}{P_{\rm c}} \Rightarrow P = \pi P_{\rm c}$</p>
+		
+<p>Donde $\pi$ es la presión reducida y $P_{\rm c}$ la presión crítica.
+Así pues, haciendo el cambio en la integral:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{align}
+				\ln \dfrac{f}{P} &amp;=
+				\int_0^\pi \dfrac{Z-1}{\pi P_{\rm c}} \, d(\pi P_{\rm c}) =
+				\int_0^\pi \dfrac{Z-1}{\pi P_{\rm c}} \, P_{\rm c} \, d \pi = \\[1ex]
+				&amp;= \int_0^\pi \dfrac{Z-1}{\pi} \, d \pi
+			\end{align} \\[1ex]
+			\gamma_P = \dfrac{f}{P} = \exp \left[ \displaystyle \int_0^\pi
+			\dfrac{Z-1}{\pi} \, d \pi \right]
+		\end{array}
+		$
+	</p>
+	
+<p>Por la ley de los estados correspondientes, $Z$ es una función de 
+presión y temperatura reducidas ($\pi$ y $\theta = T{∕}T_{\rm c}$) que 
+no cambia con el gas. Esto es, si dos gases comparten presión y 
+temperatura reducidas su valor de $Z$ coincide. Por tanto, a partir de 
+una gráfica generalizada de isotermas ($\theta$ constante) de $Z$ 
+frente a $\pi$ se consiguen los datos experimentales con los que 
+calcular, ya sea gráficamente o numéricamente, la integral de la última 
+expresión, cuyo resultado, a su vez, puede también representarse:</p>
+
+<center>
+	<object data="estados_estandar_referencia_fugacidad_actividad_03.svg"
+	type="image/svg+xml" width="400" height="300"></object>
+</center>
+
+<p>Este tipo de gráfica es una generalización, en realidad es sólo una 
+aproximación, que puede resultar buena para muchos gases, sobre todo si 
+son similares, que permite, conocidas $\pi$ y $\theta$, estimar 
+$\gamma_P$.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../ecuaciones_clapeyron_clausius_clapeyron/ecuaciones_clapeyron_clausius_clapeyron.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../mezclas_gaseosas/mezclas_gaseosas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4417" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:ns0="http://www.iki.fi/pav/software/textext/" viewBox="0 0 342.48539 476.26521" height="476.27" width="342.49" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <defs id="defs4419">
+  <marker id="marker4795" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4797" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="marker4789" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4791" stroke-linejoin="round" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" transform="matrix(-1.1,0,0,-1.1,-1.1,0)" stroke="#000" stroke-width=".625"/>
+  </marker>
+  <marker id="TriangleInL" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4392" d="m5.77 0-8.65 5v-10l8.65 5z" stroke-opacity=".94118" fill-rule="evenodd" fill-opacity=".94118" transform="scale(-.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="TriangleOutL" refY="0" refX="0" orient="auto" overflow="visible">
+   <path id="path4401" d="m5.77 0-8.65 5v-10l8.65 5z" stroke-opacity=".94118" fill-rule="evenodd" fill-opacity=".94118" transform="scale(.8)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata id="metadata4422">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-67.63 -46.862)">
+  <g id="g4187">
+   <rect id="rect4970" stroke-linejoin="round" stroke-opacity=".94118" height="150" width="50" stroke="#000" y="102.11" x="150" stroke-width=".5" fill="#ff0"/>
+   <text id="text4183" style="word-spacing:0px;letter-spacing:0px" font-size="16px" line-height="125%" y="181.23221" x="169.75999" font-family="&apos;STIX Two Text&apos;" xml:space="preserve" fill="#000000"><tspan id="tspan4185" y="181.23221" x="169.75999">×</tspan></text>
+  </g>
+  <g id="g4192" transform="matrix(0 1 -1 0 452.61 52.112)">
+   <rect id="rect4194" stroke-linejoin="round" stroke-opacity=".94118" height="150" width="50" stroke="#000" y="102.11" x="150" stroke-width=".5" fill="#ff0"/>
+   <text id="text4196" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="181.23221" x="169.75999" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4198" x="169.75999" y="181.23221">×</tspan></text>
+  </g>
+  <rect id="rect4202" stroke-linejoin="round" stroke-dasharray="1, 1" stroke-opacity=".4" fill-opacity=".4" transform="matrix(.94868 .31623 -.31623 .94868 0 0)" height="150" width="50" stroke="#000" y="25.929" x="219.46" stroke-width=".5" fill="#ff0"/>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4204" style="word-spacing:0px;letter-spacing:0px" fill-opacity=".4" transform="matrix(.94868 .31623 -.31623 .94868 0 0)" line-height="125%" y="105.04885" x="239.22169" xml:space="preserve"><tspan id="tspan4206" y="105.04885" x="239.22169">×</tspan></text>
+   <g>
+    <text id="text4223" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="112.86221" x="131.326"><tspan id="tspan4227" x="131.326" y="112.86221">A</tspan></text>
+    <text id="text4231" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="137.36218" x="247"><tspan id="tspan4233" x="247" y="137.36218">B</tspan></text>
+    <text id="text4235" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="232.37621" x="356"><tspan id="tspan4239" x="356" y="232.37621">C</tspan></text>
+    <text id="text4243" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="274.36218" x="399"><tspan id="tspan4245" x="399" y="274.36218"/></text>
+    <text id="text4247" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="69.362183" x="216"><tspan id="tspan4249" x="216" y="69.362183">× : cdm. (centro de masas)</tspan></text>
+   </g>
+  </g>
+  <path id="path4253" stroke-linejoin="round" marker-end="url(#TriangleOutL)" d="m399.5 502.36h-300v-200" stroke-opacity=".94118" marker-start="url(#TriangleInL)" stroke="#000" fill="none"/>
+  <g>
+   <circle id="path4539" cx="175" cy="402.36" r="3"/>
+   <circle id="circle4541" cy="342.36" cx="200" r="3"/>
+   <circle id="circle4543" cx="275.5" cy="452.36" r="3"/>
+  </g>
+  <path id="path4545" d="m175 402.36c12.572 0 5.6418-60 25-60s44.074 110 75.5 110" stroke="#000" stroke-width="1px" fill="none"/>
+  <g fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433">
+   <g id="content" xml:space="preserve" stroke-width="0" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 -188.03 1554.7)" ns0:text="$E_{\\text{p}}$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path4595" d="m155.27 713.63h-4.95v-0.16c0.62-0.06 0.77-0.14 0.77-0.41 0-0.11-0.06-0.46-0.11-0.64l-1.22-4.4c-0.17-0.57-0.25-0.64-0.81-0.74v-0.16h5.05l0.62 1.62-0.16 0.08c-0.47-0.64-0.73-0.9-1.16-1.1-0.37-0.17-1.04-0.27-1.79-0.27-0.56 0-0.8 0.1-0.8 0.34 0 0.11 0.11 0.58 0.36 1.45 0.13 0.44 0.22 0.77 0.32 1.15 0.35-0.02 0.66-0.03 0.77-0.03 0.39 0.01 0.67-0.05 0.78-0.15 0.05-0.05 0.07-0.14 0.07-0.31s-0.02-0.3-0.07-0.52l0.2-0.05 0.68 2.32-0.18 0.03c-0.38-0.84-0.47-0.9-1.38-0.94-0.11 0-0.43-0.01-0.78-0.02l0.66 2.32c0.06 0.22 0.16 0.26 0.72 0.26 1.57 0 1.92-0.13 1.92-0.73 0-0.13-0.01-0.28-0.02-0.45l0.2-0.02z"/><path id="path4597" d="m155.36 708.37h0.01 0.01 0.01l0.01 0.01h0.01 0.01 0.01 0.01 0.03 0.01 0.01 0.01 0.01 0.01 0.01c0.24 0 0.29-0.07 0.29-0.4v-3.26c0-0.37-0.08-0.44-0.49-0.49v-0.11h1.69v0.12c-0.53 0.01-0.62 0.09-0.62 0.53v1.09c0.25-0.23 0.42-0.3 0.71-0.3l0.02 0.22c-0.33 0-0.73 0.25-0.73 0.46v1.72c0 0.21 0.39 0.46 0.72 0.46 0.51 0 0.85-0.53 0.85-1.34 0-0.77-0.34-1.3-0.84-1.3l-0.02-0.22c0.82 0 1.46 0.78 1.46 1.79 0 0.87-0.48 1.49-1.16 1.49-0.39 0-0.7-0.18-1.01-0.55v0.53l-0.04 0.02c-0.37-0.15-0.62-0.24-1-0.36z"/></g>
+   <g id="g4697" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 123.26 1755.4)" ns0:text="$x$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path4699" stroke-width="0" d="m153.22 708.23-0.02-0.02-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01c-0.23-0.3-0.35-0.4-0.46-0.4-0.15 0-0.24 0.13-0.31 0.41-0.02 0.08-0.03 0.14-0.04 0.17-0.25 1.01-0.36 1.46-0.36 1.61 0.44 0.77 0.8 1.21 0.98 1.21 0.06 0 0.14-0.03 0.24-0.08 0.12-0.07 0.19-0.09 0.27-0.09 0.21 0 0.35 0.15 0.35 0.36s-0.17 0.37-0.41 0.37c-0.44 0-0.82-0.36-1.51-1.43l-0.11 0.55c-0.14 0.68-0.25 0.88-0.52 0.88-0.21 0-0.55-0.09-1.16-0.29l-0.11-0.04 0.04-0.15c0.38 0.09 0.47 0.11 0.56 0.11 0.25 0 0.31-0.09 0.45-0.69l0.28-1.23-0.81-1.16c-0.2-0.3-0.4-0.48-0.51-0.48-0.06 0-0.16 0.03-0.26 0.09-0.13 0.07-0.24 0.1-0.32 0.1-0.19 0-0.34-0.15-0.34-0.35 0-0.26 0.2-0.42 0.5-0.42 0.31 0 0.43 0.09 0.93 0.7 0.27 0.32 0.48 0.59 0.89 1.17l0.3-1.2c0.13-0.51 0.26-0.67 0.58-0.67 0.38 0 0.64 0.24 1.22 1.14z"/></g>
+   <g id="g4751" xml:space="preserve" ns0:pdfconverter="pstoedit" transform="matrix(1.75 0 0 -1.75 123.26 1503.4)" ns0:text="$x$" ns0:version="0.7.2" ns0:inkscapeversion="0.91" ns0:preamble="/usr/share/inkscape/extensions/default_packages.tex" ns0:scale="1.4" ns0:texconverter="pdflatex"><path id="path4753" d="m153.22 708.23-0.02-0.02-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.02-0.02-0.01-0.01-0.01-0.02-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01-0.01-0.01-0.01-0.01v-0.01l-0.01-0.01c-0.23-0.3-0.35-0.4-0.46-0.4-0.15 0-0.24 0.13-0.31 0.41-0.02 0.08-0.03 0.14-0.04 0.17-0.25 1.01-0.36 1.46-0.36 1.61 0.44 0.77 0.8 1.21 0.98 1.21 0.06 0 0.14-0.03 0.24-0.08 0.12-0.07 0.19-0.09 0.27-0.09 0.21 0 0.35 0.15 0.35 0.36s-0.17 0.37-0.41 0.37c-0.44 0-0.82-0.36-1.51-1.43l-0.11 0.55c-0.14 0.68-0.25 0.88-0.52 0.88-0.21 0-0.55-0.09-1.16-0.29l-0.11-0.04 0.04-0.15c0.38 0.09 0.47 0.11 0.56 0.11 0.25 0 0.31-0.09 0.45-0.69l0.28-1.23-0.81-1.16c-0.2-0.3-0.4-0.48-0.51-0.48-0.06 0-0.16 0.03-0.26 0.09-0.13 0.07-0.24 0.1-0.32 0.1-0.19 0-0.34-0.15-0.34-0.35 0-0.26 0.2-0.42 0.5-0.42 0.31 0 0.43 0.09 0.93 0.7 0.27 0.32 0.48 0.59 0.89 1.17l0.3-1.2c0.13-0.51 0.26-0.67 0.58-0.67 0.38 0 0.64 0.24 1.22 1.14z" stroke-width="0"/></g>
+  </g>
+  <g font-size="16px" font-family="&apos;STIX Two Text&apos;" fill="#000000">
+   <text id="text4759" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="407.86221" x="157.326" xml:space="preserve"><tspan id="tspan4761" y="407.86221" x="157.326">A</tspan></text>
+   <text id="text4767" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="337.36218" x="186" xml:space="preserve"><tspan id="tspan4769" y="337.36218" x="186">B</tspan></text>
+   <text id="text4771" style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="471.37622" x="270" xml:space="preserve"><tspan id="tspan4773" y="471.37622" x="270">C</tspan></text>
+   <text id="text4775" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="452.36218" x="128"><tspan id="tspan4777" x="128" y="452.36218">equilibrio</tspan><tspan id="tspan4779" x="128" y="472.36218">metaestable</tspan></text>
+   <text id="text4781" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="455.67221" x="325"><tspan id="tspan4783" x="325" y="455.67221">equilibrio</tspan><tspan id="tspan4785" x="325" y="475.67221">estable</tspan></text>
+  </g>
+  <path id="path4787" marker-end="url(#marker4789)" d="m155 435.36 16-24" stroke="#000" stroke-width="1px" fill="none"/>
+  <path id="path4793" marker-end="url(#marker4795)" d="m320 452.36h-35" stroke="#000" stroke-width="1px" fill="none"/>
+  <text id="text4803" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="16px" line-height="125%" y="341.53088" x="266.186" font-family="&apos;STIX Two Text&apos;" fill="#000000"><tspan id="tspan4805" x="266.186" y="341.53088"><tspan id="tspan4809" font-family="&apos;STIX Two Text&apos;" font-style="italic">x</tspan> : coordenada de</tspan><tspan id="tspan4807" x="266.186" y="361.53088">     posición del cdm.</tspan></text>
+  <path id="rect4967" stroke-linejoin="round" d="m399.5 251.86h-300v-200" stroke-opacity=".94118" stroke="#000" fill="none"/>
+ </g>
+</svg>

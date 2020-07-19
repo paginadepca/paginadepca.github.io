@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="126" height="120.5" version="1.1" viewBox="0 0 126 120.5" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.iki.fi/pav/software/textext/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-224.5 -432.52)">
+  <path d="m345 457.52v90h-115v-90" fill="none" stroke="#000" stroke-linejoin="round"/>
+  <rect x="230" y="472.52" width="115" height="75" fill="none" stroke="#000" stroke-linejoin="round"/>
+  <g>
+   <rect x="277" y="437.52" width="21" height="80" fill="#e6e6e6"/>
+   <g>
+    <text x="280.91501" y="452.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="280.91501" y="452.51965" font-size="15px">M</tspan></text>
+    <g id="content" transform="matrix(1.6 0 0 -1.6 80.43 1589.1)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.5" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="${\\rm X}^{z_{-}}$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.65 663.81h-2.37v-0.19c0.54-0.02 0.7-0.09 0.7-0.32 0-0.14-0.11-0.32-0.4-0.68l-1.13-1.37-0.42 0.58c-0.61 0.85-0.85 1.28-0.85 1.49 0 0.2 0.16 0.28 0.48 0.29l0.28 0.01v0.19h-3.01v-0.19c0.65-0.03 0.83-0.18 1.81-1.56l1.08-1.59-1.56-1.91c-0.89-1.06-0.94-1.1-1.45-1.14v-0.19h2.32v0.19c-0.57 0.04-0.75 0.12-0.75 0.35 0 0.15 0.15 0.4 0.52 0.86l1.18 1.47 0.95-1.39c0.33-0.49 0.51-0.83 0.51-0.98 0-0.18-0.16-0.28-0.5-0.29-0.04 0-0.15-0.01-0.27-0.02v-0.19h2.96v0.19c-0.53 0.06-0.68 0.16-1.11 0.74l-1.91 2.72 1.46 1.81c0.65 0.77 0.84 0.89 1.48 0.93z"/>
+<path d="m156.47 663 0.01 0.03 0.02 0.03 0.02 0.06 0.02 0.02 0.01 0.03 0.01 0.02 0.02 0.02 0.03 0.06 0.02 0.01 0.01 0.02 0.02 0.01 0.04 0.04 0.04 0.02h0.01l0.04 0.02h0.02l0.02 0.01h0.05l0.02 0.01h1.16l-2.17-2.59 0.06-0.06c0.12 0.09 0.21 0.13 0.33 0.13 0.16 0 0.39-0.09 0.72-0.3 0.35-0.21 0.59-0.3 0.79-0.3 0.34 0 0.65 0.25 0.65 0.53 0 0.14-0.09 0.25-0.24 0.25-0.14 0-0.24-0.09-0.24-0.22 0-0.06 0.02-0.13 0.06-0.21 0.02-0.04 0.04-0.08 0.04-0.1 0-0.06-0.08-0.11-0.19-0.11-0.17 0-0.26 0.06-0.49 0.35-0.31 0.4-0.44 0.49-0.85 0.58l2.03 2.39v0.08h-1.98l-0.22-0.8z"/>
+<polygon points="158.93 661.22 158.93 660.94 161.47 660.94 161.47 661.22"/>
+</g>
+    <g transform="matrix(1.6 0 0 -1.6 -2.128 1589.1)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.5" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="${\\rm M}^{z_+}$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.43 662.93v-4.5c0-0.83-0.12-0.96-0.9-1.01v-0.19h2.79v0.19c-0.73 0.05-0.87 0.19-0.87 0.9v4.41c0 0.7 0.13 0.83 0.87 0.89v0.19h-1.99l-2.2-5.02-2.3 5.02h-1.98v-0.19c0.82-0.05 0.95-0.17 0.95-0.89v-4.03c0-1.03-0.14-1.22-0.97-1.28v-0.19h2.35v0.19c-0.77 0.04-0.94 0.27-0.94 1.28v4l2.5-5.47h0.14z"/>
+<path d="m158.13 663 0.02 0.03 0.01 0.03 0.02 0.03 0.01 0.03 0.01 0.02 0.01 0.03 0.02 0.02 0.02 0.04 0.02 0.02 0.01 0.02 0.04 0.04 0.02 0.01 0.01 0.02 0.02 0.01 0.01 0.01 0.02 0.01h0.02l0.02 0.01 0.01 0.01h0.02l0.03 0.01h0.04l0.02 0.01h1.16l-2.17-2.59 0.07-0.06c0.11 0.09 0.2 0.13 0.32 0.13 0.17 0 0.4-0.09 0.73-0.3 0.35-0.21 0.58-0.3 0.78-0.3 0.35 0 0.66 0.25 0.66 0.53 0 0.14-0.1 0.25-0.25 0.25-0.14 0-0.24-0.09-0.24-0.22 0-0.06 0.03-0.13 0.07-0.21 0.02-0.04 0.03-0.08 0.03-0.1 0-0.06-0.07-0.11-0.19-0.11-0.17 0-0.26 0.06-0.49 0.35-0.3 0.4-0.44 0.49-0.84 0.58l2.03 2.39v0.08h-1.99l-0.22-0.8z"/>
+<polygon points="162 660.94 163.13 660.94 163.13 661.22 162 661.22 162 662.34 161.72 662.34 161.72 661.22 160.59 661.22 160.59 660.94 161.72 660.94 161.72 659.81 162 659.81"/>
+</g>
+   </g>
+  </g>
+ </g>
+</svg>

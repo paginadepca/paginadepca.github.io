@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="511.35" height="320.03" version="1.1" viewBox="0 0 511.35 320.03" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="marker5267" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1265" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mstart" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <circle id="gpPt5" r="1" stroke="currentColor" stroke-width=".222"/>
+  <use id="gpPt6" width="100%" height="100%" fill="currentColor" xlink:href="#gpPt5"/>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-195.16 -526.01)">
+  <g fill="none">
+   <g stroke="#808080" stroke-dasharray="2, 4">
+    <path d="m562.53 777.45h-340.67"/>
+    <path d="m394.97 687.85h-173.11"/>
+    <path d="m251 611.65h-29.143"/>
+   </g>
+   <path d="m329 681.65c-11.813-18.299-18.816-44.294-26-70h-38c-6.2484 0-9.3617 17.31-14 0l-11-55" stroke="#000" stroke-width="1px"/>
+   <g transform="translate(218.44 563.95)" color="#000000" stroke="currentColor">
+    <use transform="matrix(2.25,0,0,2.25,29,29.9)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+   </g>
+   <g transform="translate(222 563.95)" color="#000000" stroke="currentColor">
+    <use transform="matrix(2.25,0,0,2.25,29,47.7)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+   </g>
+  </g>
+  <g transform="translate(44.989)" fill="none">
+   <path d="m323.15 557.52 26.832 130.33c48.247 22.741 57.859 56.521 69.921 89.6h20c5.0141 12.091 10.454 20.905 15.099 28.071" stroke="#000" stroke-width="1px"/>
+   <g stroke="currentColor">
+    <g transform="translate(224.28 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,125.7,123.9)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+    <g transform="translate(294.2 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,125.7,213.5)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+    <g transform="translate(322.97 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,125.7,231.3)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+    <g transform="translate(206.41 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,125.7,37.1)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+   </g>
+  </g>
+  <g fill="none">
+   <path d="m517.25 557.52 45.279 219.93h71.474c4.6131 13.827 9.9728 25.415 16 35" stroke="#000" stroke-width="1px"/>
+   <g stroke="currentColor">
+    <g transform="translate(378.73 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,183.8,213.5)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+    <g transform="translate(457.08 563.95)" color="#000000">
+     <use transform="matrix(2.25,0,0,2.25,183.8,231.3)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+    </g>
+    <use transform="matrix(2.25 0 0 2.25 526.21 601.05)" width="100%" height="100%" color="#000000" xlink:href="#gpPt6"/>
+   </g>
+  </g>
+  <g fill="none" stroke="currentColor">
+   <g transform="translate(192.86 563.95)" color="#000000">
+    <path d="m29 213.5" stroke="#000"/>
+    <g transform="translate(22.7,217.8)" fill="#000" font-family="'Stix Two Text'" font-size="13px" stroke="none" text-anchor="end">
+     <text>
+      <tspan font-family="'Stix Two Text'" font-style="italic">T</tspan><tspan dy="3.9000001" font-family="'Stix Two Text'" font-size="10.4px">3</tspan><tspan dy="-3.9000001" font-size="13px"/>
+     </text>
+    </g>
+   </g>
+   <g transform="translate(192.86 563.95)" color="#000000">
+    <path d="m29 168.7" stroke="#000"/>
+    <g transform="translate(22.7,173)" fill="#000" font-family="'Stix Two Text'" font-size="13px" stroke="none" text-anchor="end">
+     <text>
+      <tspan font-family="'Stix Two Text'" font-style="italic">T</tspan><tspan dy="3.9000001" font-family="'Stix Two Text'" font-size="10.4px">2</tspan><tspan dy="-3.9000001" font-size="13px"/>
+     </text>
+    </g>
+   </g>
+   <g transform="translate(192.86 563.95)" color="#000000">
+    <path d="m29 123.9" stroke="#000"/>
+    <g transform="translate(22.7,128.2)" fill="#000" font-family="'Stix Two Text'" font-size="13px" stroke="none" text-anchor="end">
+     <text>
+      <tspan font-family="'Stix Two Text'" font-style="italic">T</tspan><tspan dy="3.9000001" font-family="'Stix Two Text'" font-size="10.4px">1</tspan><tspan dy="-3.9000001" font-size="13px"/>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(215.66 616.55)" color="#000000" font-family="'Stix Two Text'" font-size="15px" text-anchor="end">
+   <text>
+    <tspan font-family="'Stix Two Text'" font-style="italic">T</tspan><tspan font-family="'Stix Two Text'">*</tspan><tspan dx="-0.5em" dy="4.5" font-family="'Stix Two Text'" font-size="12px">B</tspan><tspan dy="-4.5" font-size="15px"/>
+   </text>
+  </g>
+  <g fill="none">
+   <g transform="translate(192.86 523.95)" color="#000000" stroke="currentColor">
+    <g transform="translate(14.4,25.8)" fill="#000" font-family="'Stix Two Text'" font-size="16px" stroke="none" text-anchor="middle">
+     <text>
+      <tspan font-family="'Stix Two Text'" font-style="italic">T</tspan>
+     </text>
+    </g>
+   </g>
+   <g stroke="#000">
+    <path d="m221.86 532.52v286.43h478.14" marker-end="url(#Arrow2Mend)" marker-start="url(#Arrow2Mstart)" stroke-width="1px"/>
+    <path d="m394.97 687.85c3.2492 33.252 6.4959 3.1622 12.595 6.6834" stroke-dasharray="2, 2"/>
+    <path d="m251 611.65h14" stroke-dasharray="2, 2"/>
+   </g>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" letter-spacing="0px" word-spacing="0px">
+   <g font-size="16px">
+    <text x="643.07001" y="837.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="643.07001" y="837.51965">tiempo</tspan></text>
+    <text x="235.84924" y="593.32074" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="235.84924" y="593.32074" font-size="13px">q</tspan></text>
+    <text x="366.5" y="600.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="366.5" y="600.51965" font-size="13px">c</tspan></text>
+    <text x="514.25" y="601.01965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="514.25" y="601.01965" font-size="13px">k</tspan></text>
+    <text x="237.834" y="621.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="237.834" y="621.51965" font-size="13px">m</tspan></text>
+    <text x="384" y="685.01965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="384" y="685.01965" font-size="13px">d</tspan></text>
+    <text x="457.25" y="790.97675" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="457.25" y="790.97675" font-size="13px">f</tspan></text>
+    <text x="485" y="805.31256" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="485" y="805.31256" font-size="13px">r</tspan></text>
+    <text x="556.25" y="789.26965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="556.25" y="789.26965" font-size="13px">i</tspan></text>
+    <text x="629.25" y="799.26965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="629.25" y="799.26965" font-size="13px">u</tspan></text>
+    <text x="248" y="582.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="248" y="582.51965">L<tspan dy="5" font-size="65%">B</tspan></tspan></text>
+    <text x="274" y="604.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="274" y="604.51965">S<tspan dy="5" font-size="65%">B</tspan><tspan dy="-5"> + L</tspan><tspan dy="5" font-size="65%">B</tspan></tspan></text>
+    <text x="318" y="647.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="318" y="647.51965">S<tspan dy="5" font-size="65%">B</tspan></tspan></text>
+   </g>
+   <g text-anchor="middle">
+    <text x="406.33484" y="633.83337" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="406.33484" y="633.83337">L<tspan dy="5" font-size="65%">(A+B)</tspan></tspan><tspan x="406.33484" y="653.83337" font-size="13px">(2)</tspan></text>
+    <text x="466.86151" y="708.51965" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="466.86151" y="708.51965">L<tspan dy="5" font-size="65%">(A+B)</tspan><tspan dy="-5"> + S</tspan><tspan dy="5" font-size="65%">B</tspan></tspan><tspan x="466.86151" y="728.51965" font-size="13px">(1)</tspan></text>
+    <text x="522.05585" y="794.51965" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="522.05585" y="794.51965">S<tspan dy="5" font-size="65%">A</tspan><tspan dy="-5"> + S</tspan><tspan dy="5" font-size="65%">B</tspan></tspan><tspan x="522.05585" y="814.51965" font-size="13px">(1)</tspan></text>
+    <text x="507.25787" y="750.51965" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="507.25787" y="750.51965" font-size="13px">(0)</tspan><tspan x="507.25787" y="770.51965">L + S<tspan dy="5" font-size="65%">A</tspan><tspan dy="-5"> + S</tspan><tspan dy="5" font-size="65%">B</tspan></tspan></text>
+    <text x="554.83484" y="633.83337" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="554.83484" y="633.83337">L<tspan dy="5" font-size="65%">(A+B)</tspan></tspan><tspan x="554.83484" y="653.83337" font-size="13px">(2)</tspan></text>
+    <text x="631.52112" y="633.83337" font-size="13px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="631.52112" y="633.83337">(mezcla de compo-</tspan><tspan x="631.52112" y="653.83337">sición eutéctica)</tspan></text>
+    <text x="609.25787" y="750.51965" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="609.25787" y="750.51965" font-size="13px">(0)</tspan><tspan x="609.25787" y="770.51965">L + S<tspan dy="5" font-size="65%">A</tspan><tspan dy="-5"> + S</tspan><tspan dy="5" font-size="65%">B</tspan></tspan></text>
+    <text x="671.05585" y="794.51965" font-size="16px" text-align="center" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="671.05585" y="794.51965">S<tspan dy="5" font-size="65%">A</tspan><tspan dy="-5"> + S</tspan><tspan dy="5" font-size="65%">B</tspan></tspan><tspan x="671.05585" y="814.51965" font-size="13px">(1)</tspan></text>
+   </g>
+   <text x="231.15793" y="652.51965" font-size="13px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="231.15793" y="652.51965">subenfriado</tspan></text>
+  </g>
+  <path d="m265 639.52-6.8-17" fill="none" marker-end="url(#marker1265)" stroke="#000" stroke-width="1px"/>
+  <text x="387.72192" y="737.51965" fill="#000000" font-family="'STIX Two Text'" font-size="13px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="387.72192" y="737.51965">subenfriado</tspan><tspan x="387.72192" y="753.76965">es posible</tspan></text>
+  <path d="m390 724.52 6-17" fill="none" marker-end="url(#marker5267)" stroke="#000" stroke-width="1px"/>
+ </g>
+</svg>

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js","[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Escala termodinámica de temperatura">
+<meta name="keywords" content="escala, termodinámica, temperatura">
+<title>Escala termodinámica de temperatura</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Escala termodinámica de temperatura</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Siendo, en una máquina térmica, la temperatura de los focos en una 
+escala arbitraria:</p>
+
+	<p style="text-align:center">
+		$\theta_2 &gt; \theta_1$</p>
+	
+<p>Para esta máquina térmica el rendimiento es:</p>
+
+	<p style="text-align:center">
+		$\eta = \dfrac{|W|}{|Q_2|} = \dfrac{|Q_2| - |Q_1|}{|Q_2|} = 1 -
+		\dfrac{|Q_1|}{|Q_2|}$</p>
+		
+<p>Para cualquier máquina de Carnot el valor del rendimiento entre los 
+mismos focos es igual, sea cual sea el sistema que realiza el ciclo. 
+Por tanto, en tal caso, siempre es función de la temperatura de los 
+focos, sólo depende de ellos. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			1 - \dfrac{|Q_1|}{|Q_2|} = \phi(\theta_2,\theta_1) \\[1ex]
+			\dfrac{|Q_1|}{|Q_2|} = -\phi(\theta_2,\theta_1) + 1 = f(\theta_2,
+			\theta_1)
+		\end{array}
+		$
+	</p>
+	
+<p>Donde la forma de la función $f$ depende de la escala de temperatura 
+y no de la substancia que opera en el ciclo.</p>
+
+<p>Se plantea:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<object data="escala_termodinamica_temperatura_01.svg" width="369"
+		height="350" type="image/svg+xml" style="display:table-cell"></object>
+		<span style="display:table-cell;vertical-align:top;padding-top:1em">
+			$\theta_2 &gt; \theta_3 &gt; \theta_1$
+		</span>
+	</p>
+	
+<p>Se ajustan, todas ellas son máquinas de Carnot, $\rm C$ y $\rm C_1$ 
+para que el calor extraído del foco caliente sea el mismo y, sobre el 
+foco calorífico de temperatura intermedia, el calor que absorva $\rm 
+C_2$ sea de igual magnitud (con signo opuesto) al que cede $\rm C_1$, 
+por lo que el calor que entregan al foco frío, respectivamente, $\rm C$ 
+y $\rm C_2$ sólo puede ser coincidente (de no ser así podría violarse el 
+segundo principio).</p>
+
+<p>También, para las dos máquinas que están combinadas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			{\rm C}_1{:}
+			\enspace &amp;\dfrac{|Q_3|}{|Q_2|} = f(\theta_2,\theta_3) \\[1ex]
+			{\rm C}_2{:}
+			\enspace &amp;\dfrac{|Q_1|}{|Q_3|} = f(\theta_3,\theta_1)
+		\end{align}
+		$
+	</p>
+	
+<p>Multiplicando ambas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			{\rm C}_1 \! \cdot {\rm C}_2 &amp;\Rightarrow \dfrac{|Q_3|}{|Q_2|}
+			\cdot \dfrac{|Q_1|}{|Q_3|} = f(\theta_2,\theta_3) \cdot
+			f(\theta_3,\theta_1) \\[1ex]
+			&amp;\Rightarrow \dfrac{|Q_1|}{|Q_2|} = f(\theta_2,\theta_3) \cdot
+			f(\theta_3,\theta_1)
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		f(\theta_2,\theta_1) = f(\theta_2,\theta_3) \cdot f(\theta_3,\theta_1)
+		$
+	</p>
+	
+<p>Cabe pensar, ya que las dimensiones han de ser iguales a las de esta
+última ecuación, que:</p>
+	
+	<p style="text-align:center">
+		$f(\theta_i,\theta_j) = g(\theta_i) \cdot h(\theta_j)$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			g(\theta_2) \cdot h(\theta_1) = g(\theta_2) \cdot h(\theta_3) \times
+			g(\theta_3) \cdot h(\theta_1) \\[1ex]
+			g(\theta_3) = \dfrac{1}{h(\theta_3)}
+		\end{array}
+		$</p>
+		
+<p>Así por tanto:</p>
+
+	<p style="text-align:center">
+		$g(\theta_i) = \dfrac{1}{h(\theta_i)}$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$f(\theta_2,\theta_1) = g(\theta_2) \cdot h(\theta_1) = 
+		\dfrac{h(\theta_1)}{h(\theta_2)}$</p>
+		
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{|Q_1|}{|Q_2|} = \dfrac{h(\theta_1)}{h(\theta_2)}}$</p>
+		
+<p>En 1848, Kelvin propuso:</p>
+
+	<p style="text-align:center">
+		$h(\theta) = aT$</p>
+		
+<p>Donde $T$ es la temperatura termodinámica o Kelvin, y $a$ una
+constante. Así pues:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{|Q_1|}{|Q_2|} = \dfrac{T_1}{T_2}}$ &emsp; Escala
+		Kelvin.</p>
+
+<p>Entonces, sea un valor para $a$ tal que en el punto triple 
+del agua:</p>
+
+	<p style="text-align:center">
+		$T_{\rm p.t.} = \pu{273,16 K}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\dfrac{|Q_{\rm p.t.}|}{|Q|} = \dfrac{273{,}16}{T}$ &emsp;&emsp;
+		<object data="escala_termodinamica_temperatura_02.svg" width="225"
+		height="104" type="image/svg+xml"
+		style="display:inline-block;vertical-align:middle"></object>
+	</p>
+	
+<p>Estableciéndose que:</p>
+
+	<p style="text-align:center">
+		$\boxed{T = 273{,}16 \dfrac{|Q|}{|Q_{\rm p.t.}|} \ \rm K}$</p>
+		
+<p>Buscando la comparación, la escala de temperatura del gas ideal:</p>
+
+	<p style="text-align:center">
+		$\theta = 273{,}16 \lim\limits_{P_{\rm p.t.} \to \, 0}
+		\dfrac{P}{P_{\rm p.t.}}$ &emsp; ($V =$ cte.)</p>
+		
+<p>En un ciclo de Carnot que opere con gas ideal:</p>
+
+	<p style="text-align:center">
+		$\eta = \dfrac{|W|}{|Q_2|} = \dfrac{\theta_2 - \theta_1}{\theta_2}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{|Q_2| - |Q_1|}{|Q_2|} =
+			\dfrac{\theta_2 - \theta_1}{\theta_2} \\[1ex]
+			\dfrac{|Q_1|}{|Q_2|} = \dfrac{\theta_1}{\theta_2}
+		\end{array}
+		$
+	</p>
+	
+<p>Lo que lleva a concluir que:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\theta_1}{\theta_2} = \dfrac{T_1}{T_2}$</p>
+		
+<p>En la dos escalas, del gas ideal y termodinámica, se asigna el mismo 
+valor de temperatura al punto triple del agua, lo que unifica ambas 
+escalas. Esto es, si p. ej. el foco frío tuviera tal temperatura ($\theta_1
+= T_1 = \pu{273,16 K}$):</p>
+
+	<p style="text-align:center">
+		$\theta_2 = T_2$</p>
+		
+<p>O simplemente:</p>
+
+	<p style="text-align:center">
+		$\boxed{\theta = T}$</p>
+		
+<p>Pudiendo usarse $T$ para ambas escalas.</p>
+
+<p>Si se plantea una máquina de Carnot tal que:</p>
+
+	<p style="text-align:center">
+		$T_1 = 273{,}16 \dfrac{|Q_1|}{|Q_{\rm p.t.}|} \ \rm K$ &emsp;&emsp;
+		<object data="escala_termodinamica_temperatura_03.svg" width="123"
+		height="225" type="image/svg+xml"
+		style="display:inline-block;vertical-align:middle"></object>
+	</p>
+	
+<p>Así que, si la cantidad de $Q_{\rm p.t.}$ no cambia, conforme $Q_1$ 
+disminuye también decrece $T_1$. Si, situación límite, $Q_1 = 0$ 
+entonces $T_1 = 0$ (cero absoluto), pero, en tal caso, se viola el 
+enunciado de Kelvin-Planck del segundo principio, por lo que el cero es 
+inalcanzable.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../ciclo_carnot/ciclo_carnot.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../entropia/entropia.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

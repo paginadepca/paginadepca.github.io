@@ -1,0 +1,1423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Magnitudes molares parciales">
+<meta name="keywords" content="magnitudes, molares, parciales">
+<title>Magnitudes molares parciales</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Magnitudes molares parciales</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Cuando la composición y cantidad del sistema pueden variar, no
+permanecen constantes, una magnitud termodinámica extensiva 
+cualquiera $X$, que depende del estado del sistema, puede representarse
+como una función tal que:</p>
+
+	<p style="text-align:center">
+		$X = X(P,T,n_1,n_2, \dotsc, n_c)$</p>
+		
+<p>Donde $c$ es el número de componentes del sistema y $n_i$ los 
+moles del componente $i$.</p>
+
+<p>Además, al ser función de estado:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dX &amp;= \left( \dfrac{\partial X}{\partial P} \right)_{\! T
+			\rlap{,n_1, \dotsc, n_c}} dP + \left( \dfrac{\partial X}{\partial T}
+			\right)_{\! P \rlap{,n_1, \dotsc, n_c}} dT + \left(
+			\dfrac{\partial X}{\partial n_1} \right)_{\! P \rlap{,T,n_2, \dotsc,
+			n_c}} dn_1 + \dotsb + \left( \dfrac{\partial X}{\partial n_c}
+			\right)_{\! P \rlap{,T,n_1, \dotsc, n_{c-1}}} = \\[1ex]
+			&amp;= \left( \dfrac{\partial X}{\partial P} \right)_{\! T, n_i} dP
+			+ \left( \dfrac{\partial X}{\partial T} \right)_{\! P, n_i} dT +
+			\sum_{i=1}^c \left( \dfrac{\partial X}{\partial n_i} \right)_{\! P
+			\rlap{,T, n_{j \neq i}}}	dn_i
+		\end{align}
+		$
+	</p>
+	
+<p style="text-indent:0">Donde el subíndice $n_i$ en las derivadas 
+parciales indica que para las mismas los moles de los distintos 
+componentes permanecen constantes, mientras que el subíndice $n_{j \neq 
+i}$ viene a decir que salvo $i$ todos los componentes mantienen su 
+número de moles.</p>
+	
+<p>Se define la magnitud molar parcial de $i$, $X_i$, como:</p>
+
+	<p style="text-align:center">
+		$
+		X_i = 
+		\left( \dfrac{\partial X}{\partial n_i} \right)_{\! P,T,n_{j \neq i}}
+		$
+	</p>
+	
+<p>Representa la variación que experimenta la propiedad macroscópica 
+extensiva $X$ cuando se añade, a $P$ y $T$ constantes, un mol de $i$ a 
+un sistema muy grande, tan grande como para considerar que su 
+composición no cambia, i.e. su composición global es constante.</p>
+
+<p>Por ejemplo, si se añade un mol de agua a una piscina entonces se 
+produce un aumento de volumen de $\pu{18 ml}$, mientras que si se 
+adiciona otro mol de agua, pero esta vez con la piscina llena de etanol, 
+el volumen crece $\pu{14 ml}$.</p>
+
+<p>Para, el primer caso del ejemplo anterior, una substancia pura:</p>
+
+<ul>
+	<li>
+		$X_i^\ast$, magnitud molar parcial de $i$ pura (a $P$ y $T$ dadas).
+	</li>
+	<li>
+		$X°_{\!\! \lower 2mu i}$, magnitud molar parcial de $i$ pura en el
+		estado tipo.
+	</li>
+</ul>
+
+<p>En estos, substancia pura, el sistema es ideal (todas las moléculas
+son iguales, sus interacciones son las mismas).</p>
+
+<p>Si se impone la condición de $P$, $T$ y composición constante:</p>
+
+	<p style="text-align:center">
+		$dX_{P,T,N} = X_1 \, dn_1 + X_2 \, dn_2 + \dotsb + X_c \, dn_c =
+		\displaystyle \sum_{i = 1}^c X_i \, dn_i$</p>
+		
+<p>Donde composición constante global se ha representado con el subíndice
+$N$.</p>
+
+<p>Manteniendo tales condiciones, para dos estados del sistema:</p>
+
+<p style="display:table;margin-left:30px">
+	<span style="display:table-row">
+		<span style="display:table-cell;padding-right:1em">- inicial:</span>
+		<span style="display:table-cell;padding-bottom:1em">
+			$n_1, n_2, \dotsc, n_c \quad N$</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell">- final:</span>
+		<span style="display:table-cell">
+			$k n_1, k n_2, \dotsc, k n_c \quad N$</span>
+	</span>
+</p>
+
+<p>Siendo $k$ una constante, la composición global no cambia. Esto es, 
+las proporciones de los componentes son las mismas en ambos sistemas 
+(aunque las extensiones no).</p>
+
+<p>Como $X$ es una magnitud extensiva, por tanto:</p>
+
+	<p style="margin-left:30px">- inicial $\, \rightarrow X$</p>
+
+	<p style="margin-left:30px">- final $\, \rightarrow kX$</p>
+	
+<p>Siendo que $X_i$ es una magnitud intensiva, por 
+tanto depende de la composición del sistema, pero no de su extensión, 
+la integral entre los dos estados anteriores:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{gather}
+			\int_{\rm inicial}^{\rm final} dX_{P,T,N} =
+			\int_{\rm inicial}^{\rm final} \sum_{i=1}^c X_i \, dn_i =
+			\sum_{i=1}^c \left( X_i \int_{\rm inicial}^{\rm final} dn_i \right) \\[1ex]
+			X_{\rm final} - X_{\rm inicial} = \sum_{i=1}^c X_i
+			(n_{i,\rm final} - n_{i,\rm inicial}) \\[1ex]
+			kX - X = \sum_{i=1}^c X_i (kn_i - n_i) \\[1ex]
+			\cancel{(k-1)} \! X = \sum_{i=1}^c X_i \! \cancel{(k-1)} \! n_i \\[1ex]
+			\boxed{X = \sum_{i=1}^c X_i n_i}
+		\end{gather}
+		$
+	</p>
+
+<p>Donde, insistiendo en ello, se ha tenido en cuenta que las 
+magnitudes molares parciales de todos los componentes son constantes a 
+composición constante.</p>
+
+<p>- Determinación de magnitudes molares parciales (en sistemas
+binarios):</p>
+
+<ol>
+	<li>Métodos directos:
+	
+	<p style="text-indent:0">Se basan directamente en la definición de
+	magnitud molar parcial:</p>
+	
+		<p style="text-align:center">
+			$
+			Z_i =
+			\left( \dfrac{\partial Z}{\partial n_i} \right)_{P,T,n_{j \neq i}}
+			$
+		</p>
+		
+	<p style="text-indent:0">Estos son:</p>	
+	
+		<ol style="list-style-type:lower-latin">
+			<li>Método gráfico:
+			
+			<p style="display:table;margin-left:auto;margin-right:auto">
+				<span style="display:table-cell">
+					<object data="magnitudes_molares_parciales_01.svg" width="300"
+					height="300" type="image/svg+xml"></object>
+				</span>
+				<span style="display:table-cell;vertical-align:middle">
+					Representación gráfica:
+					<span style="display:block;margin-left:30px;text-indent:-.6em;padding:1em 0 1em">
+						$\bullet$ Se traza $Z$ a partir de datos experimentales
+						($Z = f(n_i)$).</span>
+					<span style="display:block;margin-left:30px;text-indent:-.6em">
+						$\bullet$ Se dibuja tangente (pendiente $\equiv Z_i$) a la
+						composición deseada.</span>
+				</span>
+			</p>
+			
+			<p style="text-indent:0">Caso particular de sistema binario:</p>
+			
+				<p style="text-indent:0;margin-left:30px;display:table">
+					<span style="display:table-row">
+						<span style="display:table-cell">- soluto:</span>
+						<span style="display:table-cell">$n_2 = m$ &emsp; ($m \equiv$
+						molalidad, $n_2{∕}\pu{1000 g}$ disolvente).</span>
+					</span>
+					<span style="display:table-row">
+						<span style="display:table-cell">- disolvente: &ensp;</span>
+						<span style="display:table-cell">$n_1 = \dfrac{1000}{M_1}$
+						&emsp; ($M_1 \equiv$ peso molecular disolvente).</span>
+					</span>
+				</p>
+				
+			<p style="text-indent:0">Entonces, representación gráfica de
+			$Z = f(m)$ y mediante la pendiente se halla $Z_2$. Esto es:</p>
+			
+				<p style="text-align:center">
+					pendiente $\equiv Z_2 = \left( \dfrac{\partial Z}{\partial m}
+					\right)_{\! P,T,n_1}$</p>
+						
+			<p style="text-indent:0">A continuación, se calcula $Z_1$:</p>
+			
+				<p style="text-align:center">
+					$Z = \dfrac{1000}{M_1} Z_1 + m Z_2 \enspace \Rightarrow \enspace
+					Z_1 = \dfrac{Z - m Z_2}{1000{∕}M_1} \tag{1} \label{1}$</p>
+			</li>
+			<li>Método analítico:
+			
+			<p style="text-indent:0">Por motivos prácticos y de exactitud, es
+			más conveniente ajustar los datos experimentales a un polinomio:</p>
+			
+				<p style="text-align:center">
+					$Z = a + b m + c m^2 + \dotsb$ &emsp; $P$ y $T$ constantes,
+					sistema binario.</p>
+					
+			<p style="text-indent:0">Para calcular $Z_2$ se deriva $Z$ respecto
+			a $m$. Esto es:</p>
+			
+				<p style="text-align:center">
+					$Z_2 = \left( \dfrac{\partial Z}{\partial m} \right)_{\! P,T} =
+					b + 2c m + \dotsb$</p>
+					
+			<p style="text-indent:0"> Seguidamente, se encuentra $Z_1$ mediante
+			$\eqref{1}$.</p>					
+			</li>
+		</ol>
+	</li>
+	<li>Método de la intersección de la tangente o de la ordenada en el
+	origen:
+	
+	<p style="text-indent:0">Para una mezcla binaria, se representa, a 
+	$P$ y $T$ constantes, la magnitud molar $Z_{\rm m}$ frente a la fracción 
+	molar, y se traza la tangente a la composición de interés. Esto 
+	es:</p>
+	
+	<center>
+		<object data="magnitudes_molares_parciales_02.svg" width="450"
+		height="450" type="image/svg+xml"></object>
+	</center>
+	
+	<p style="text-indent:0">Donde:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				Z = (n_1 + n_2) Z_{\rm m} \\[1em]
+				x_2 = \dfrac{n_2}{n_1 + n_2} \qquad x_1 = 1 - x_2
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Siendo:</p>
+	
+		<p style="text-align:center;text-indent:0">
+			$
+			\begin{alignat}{2}
+				Z_2 = \left( \dfrac{\partial Z}{\partial n_2} \right)_{\! P,T,n_1}
+				&amp;= Z_{\rm m} + (n_1 + n_2) \left( \dfrac{\partial Z_{\rm m}}{\partial n_2}
+				\right)_{\! P,T,n_1} = &amp;&amp; \\[1ex]
+				&amp;= Z_{\rm m} + (n_1 + n_2) \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+				\right)_{\! P,T} \left( \dfrac{\partial x_2}{\partial n_2}
+				\right)_{\! P,T,n_1} = &amp;&amp; \\[1ex]
+				&amp;= Z_{\rm m} + (n_1 + n_2) \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+				\right)_{\! P,T} \left( \dfrac{1}{n_1+n_2} - \dfrac{n_2}{(n_1+n_2)^2}
+				\right) = &amp;&amp; \\[1ex]
+				&amp;= Z_{\rm m} + (1 - x_2) \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+				\right)_{\! P,T} &amp;&amp; \cssId{2}{(2)}
+			\end{alignat}
+			$
+		</p>
+		
+	<p style="text-indent:0">
+		Donde se ha hecho uso de la regla de la cadena.</p>
+		
+	<p style="text-indent:0">También, se encontraría de manera similar:</p>
+	
+		<p style="text-align:center">
+			$Z_1 = Z_{\rm m} - x_2 \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+			\right)_{\! P,T} \tag{3} \label{3}$</p>
+			
+	<p style="text-indent:0">Siendo, para la recta tangente:</p>
+	
+		<p style="text-align:center">
+			pendiente $\equiv \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+			\right)_{\! P,T}$ &emsp; (en $x_2'$)</p>
+			
+	<p style="text-indent:0">Observando la gráfica, por tanto:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				b = Z_{\rm m}' + (1 - x_2') \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+				\right)_{\! P,T} = Z_2' \\[1ex]
+				a = Z_{\rm m}' - x_2' \left( \dfrac{\partial Z_{\rm m}}{\partial x_2}
+				\right)_{\! P,T} = Z_1'
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Así que, las intersecciones de la tangente
+	a la curva experimental, para un valor determinado de la fracción molar,
+	con los límites de la gráfica, i.e. los componentes solos, son las
+	magnitudes molares parciales a esa composición.</p>
+	
+	<p style="text-indent:0">Para las magnitudes que no pueden medirse 
+	directamente, como $G$ o $H$, sino que se conocen de manera relativa, 
+	se plantea lo siguiente:</p>
+
+		<p style="text-align:center">
+			$n_1$ (puro, $T$, $P$) + $n_2$ (puro, $T$, $P$) &ensp;
+			$\longrightarrow$ &ensp; $n_1 + n_2$ (mezcla, $P$, $T$)</p>
+		
+	<p style="text-indent:0">Por tanto:</p>
+	
+		<p style="text-align:center">
+			$\Delta Z = Z - (n_1 Z_1^* + n_2 Z_2^*)$</p>
+			
+	<p style="text-indent:0">Si se divide por $n_1 + n_2$:</p>
+	
+		<p style="text-align:center">
+			$\Delta Z_{\rm m} = Z_{\rm m} - (x_1 Z_1^* + x_2 Z_2^*)$</p>
+			
+	<p style="text-indent:0">En esta última igualdad, la cantidad entre 
+	paréntesis representa la recta que uniría $Z_1^*$ y $Z_2^*$ en la 
+	gráfica anterior de $Z_{\rm m}$ vs. $x_2$. Esto es (siendo su pendiente
+	$Z_2^* - Z_1^*$):</p>
+	
+		<p style="text-align:center">
+			recta $(Z_1^* \to Z_2^*) \equiv
+			\begin{aligned}[t]
+				Z_1^* + x_2 (Z_2^* - Z_1^*) &amp;= Z_1^* + x_2 Z_2^* - (1 - x_1)
+				Z_1^* = \\[1ex]
+				&amp;= x_1 Z_1^* + x_2 Z_2^*
+			\end{aligned}
+			$
+		</p>
+		
+	<p style="text-indent:0">Por tanto, en la representación gráfica, 
+	$\Delta Z_{\rm m}$ es la diferencia, para una composición determinada, 
+	entre la curva de $Z_{\rm m}$ y esta recta.</p>
+	
+	<p style="text-indent:0">Derivando:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\left( \dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T}
+				= \left( \dfrac{\partial Z_{\rm m}}{\partial x_2} \right)_{\! P,T} +
+				Z_1^* - Z_2^* \\[1ex]
+				\left( \dfrac{\partial Z_{\rm m}}{\partial x_2} \right)_{\! P,T} =
+				\left( \dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T}
+				- Z_1^* + Z_2^*
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Sustituyendo en $\href{#2}{(2)}$:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				Z_2 = Z_{\rm m} + (1 - x_2) \left[ \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T} - Z_1^*
+				+ Z_2^* \right] \\[1ex]
+				Z_2 - Z_2^* = Z_{\rm m} - (x_1 Z_1^* + x_2 Z_2^*) + (1 - x_2) \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T} \\[1ex]
+				Z_2 - Z_2^* = \Delta Z_{\rm m} + (1 - x_2) \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T}
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Sustituyendo en $\eqref{3}$:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				Z_1 = Z_{\rm m} - x_2 \left[ \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T} - Z_1^*
+				+ Z_2^* \right] \\[1ex]
+				Z_1 - Z_1^* =	\Delta Z_{\rm m} - x_2 \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T}
+			\end{array}
+			$
+		</p>
+		
+	<p>En una gráfica de $\Delta Z_{\rm m}$ frente a la fracción molar, se traza
+	la tangente a la composición que interese:</p>
+	
+	<center>
+		<object data="magnitudes_molares_parciales_03.svg" width="350"
+		height="410" type="image/svg+xml"></object>
+	</center>
+	
+	<p>Mirando la gráfica, para $x_2'$:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				d = \Delta Z_{\rm m}' + (1 - x_2') \left( 
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T} =
+				Z_2' - Z_2^* \\[1ex]
+				c = \Delta Z_{\rm m}' - x_2' \left(
+				\dfrac{\partial \Delta Z_{\rm m}}{\partial x_2} \right)_{\! P,T} =
+				Z_1' - Z_1^*
+			\end{array}
+			$
+		</p>
+		
+	<p>Pudiendo aplicarse, aquí también, el método de las intersecciones.</p>
+	
+	</li>
+	<li>Método basado en las magnitudes molares aparentes:
+	
+	<p style="text-indent:0">Se define la magnitud molar aparente, $\phi_Z$,
+	como:</p>
+	
+		<p style="text-align:center">
+			$\phi_Z = \dfrac{Z - n_1 Z_1^*}{n_2}$</p>
+			
+	<p style="text-indent:0">Siendo un sistema de dos componentes, donde
+	al componente 2 se le considera el soluto y, por consiguiente, al 1 el
+	disolvente.</p>
+	
+	<p style="text-indent:0">De la definición:</p>
+	
+		<p style="text-align:center">
+			$Z = n_1 Z_1^* + n_2 \phi_Z$</p>
+			
+	<p style="text-indent:0">Por tanto:
+	
+		<p style="text-align:center">
+			$Z_2 = \left( \dfrac{\partial Z}{\partial n_2} \right)_{\! P,T,n_1}
+			= \phi_Z + n_2 \left( \dfrac{\partial \phi_Z}{\partial n_2}
+			\right)_{\! P,T,n_1}$</p>
+			
+	<p style="text-indent:0">Empleando la regla de la cadena:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{align}
+				Z_2 &amp;=
+				\phi_Z + n_2 \left( \dfrac{\partial \phi_Z}{\partial \ln n_2}
+				\right)_{\! P,T,n_1} \dfrac{d \ln n_2}{d n_2}	= \\[1ex]
+				&amp;= \phi_Z + \! \cancel{n_2} \! \left( 
+				\dfrac{\partial \phi_Z}{\partial \ln n_2}	\right)_{\! P,T,n_1}
+				\dfrac{1}{\cancel{n_2}} = \\[1ex]
+				&amp;= \phi_Z + \left( \dfrac{\partial \phi_Z}{\partial \ln n_2}
+				\right)_{\! P,T,n_1}
+			\end{align}
+			$
+		</p>
+		
+	<p style="text-indent:0">Si se fija la cantidad del disolvente, el
+	componente 1, en $\pu{1000 g}$, entonces $n_2 = m$ (la molalidad) y,
+	por tanto:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				Z_2 = \phi_Z + m \left( \dfrac{\partial \phi_Z}{\partial m}
+				\right)_{\! P,T} \\[1em]
+				Z_2 = \phi_Z + \left( \dfrac{\partial \phi_Z}{\partial \ln m}
+				\right)_{\! P,T}
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Gráficamente:</p>
+	
+	<center>
+		<object data="magnitudes_molares_parciales_04.svg" width="280"
+		height="300" type="image/svg+xml"></object>
+	</center>
+	
+	<p style="text-indent:0">Así pues, representando la curva 
+	experimental en función de $\ln m$, se obtiene $Z_2$, para una 
+	composición dada, al sumarle a la pendiente de la tangente el valor 
+	correspondiente de $\phi_Z$.</p>
+	
+	<p style="text-indent:0">Tanto en este método como el anterior, en 
+	vez de gráficamente, se puede intentar ajustar un polinomio a los 
+	datos experimentales y, a partir de él, resolver analíticamente las 
+	ecuaciones.</p>
+	</li>
+	<li>Método basado en la ecuación de Gibbs-Duhem generalizada:
+	
+	<p style="text-indent:0">Siendo (como se vio):</p>
+	
+		<p style="text-align:center">
+			$Z = \displaystyle \sum_{i=1}^c n_i Z_i$</p>
+			
+	<p style="text-indent:0">Por tanto, teniendo en cuenta que $d(uv) =
+	u \, dv + v \, du$, su diferencial:</p>
+		
+		<p style="text-align:center">
+			$dZ = \displaystyle \sum_{i=1}^c n_i \, dZ_i + \sum_{i=1}^c Z_i \,
+			dn_i$</p>
+			
+	<p style="text-indent:0">Siendo $Z$ función de estado que depende de 
+	$P$, $T$ y los moles de cada componente $i$, entonces (como se vio) 
+	también:</p>
+	
+		<p style="text-align:center">
+			$dZ = \left( \dfrac{\partial Z}{\partial T} \right)_{\! P,n_i} dT +
+			\left( \dfrac{\partial Z}{\partial P} \right)_{\! T,n_i} dP +
+			\displaystyle \sum_{i = 1}^c Z_i \, dn_i$</p>
+			
+	<p style="text-indent:0">Restando estas dos últimas expresiones:</p>
+	
+		<p style="text-align:center">
+			$\boxed{\displaystyle \sum_{i=1}^c n_i \, dZ_i - \left(
+			\dfrac{\partial Z}{\partial T} \right)_{\! P,n_i} dT - \left(
+			\dfrac{\partial Z}{\partial P} \right)_{\! T,n_i} dP = 0}$
+			<span style="display:block;margin-top:1ex">
+				Ecuación de Gibbs-Duhem generalizada.
+			</span>
+		</p>
+		
+	<p style="text-indent:0">
+		Por consiguiente, para un sistema de dos componentes a presión y
+		temperatura constantes:</p>
+		
+		<p style="text-align:center">
+			$\boxed{n_1 \, dZ_1 + n_2 \, dZ_2 = 0}$
+			<span style="display:block;margin-top:1ex">
+				Sistema binario, $P$ y $T$ ctes.</span>
+		</p>
+		
+	<p style="text-indent:0">Puede escribirse entonces:</p>
+	
+		<p style="text-align:center">
+			$dZ_1 = -\dfrac{n_2}{n_1} \, dZ_2$</p>
+			
+	<p style="text-indent:0">Integrando:</p>
+	
+		<p style="text-align:center">
+			$Z_1 - Z_1^* = - \displaystyle \int_0^{Z_2} \dfrac{n_2}{n_1} \,
+			dZ_2$</p>
+			
+	<p style="text-indent:0">Lo que permite determinar $Z_1$ a partir de
+	mediciones de $Z_2$.</p>
+	
+	<p style="text-indent:0">Si, por ejemplo, el componente 1 es el disolvente
+	y se conoce $Z_2$ en función de la molalidad:</p>
+	
+		<p style="text-align:center">
+			$Z_1 = Z_1^* - \displaystyle \int_0^m \dfrac{m M_1}{1000}
+			Z_2'(m) \, dm$</p>
+			
+	<p style="text-indent:0">Donde:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\dfrac{n_2}{n_1} =
+				\dfrac{m}{1000{∕}M_1} = \dfrac{m M_1}{1000} \\[1em]
+				dZ_2 = \dfrac{dZ_2}{dm} \, dm = Z_2'(m) \, dm
+			\end{array}
+			$
+		</p>
+	
+	</li>
+</ol>
+
+<p>$\ast$ Entalpías molares parciales:</p>
+
+<p>De acuerdo con la definición general:</p>
+
+	<p style="text-align:center">
+		$H_i = \left( \dfrac{\partial H}{\partial n_i}
+		\right)_{\! P,T,n_{j \neq i}}$</p>
+		
+<p>Si el sistema tiene sólo dos componentes:</p>
+
+	<p style="text-align:center">
+		$H_1 = \left( \dfrac{\partial H}{\partial n_1} \right)_{\! P,T,n_2}
+		\qquad H_2 = \left( \dfrac{\partial H}{\partial n_2}
+		\right)_{\! P,T,n_1}$</p>	
+
+<p>Siendo una disolución ($n_1 + n_2$) de molalidad $m$, 
+entonces su entalpía:</p>
+
+	<p style="text-align:center">
+		$H = H_m = n_1 H_1 + n_2 H_2$</p>
+		
+<p>El subíndice $m$, <u>en cursiva</u>, es la molalidad de la 
+disolución. Es el lugar donde se escribiría, de tener uno concreto, el 
+valor de molalidad correspondiente a la disolución. En general, es algo 
+meramente informativo, o distintivo, ya que, aunque la composición sea 
+la misma, la entalpía, como propiedad extensiva, es diferente según el 
+tamaño, volumen del sistema. Caso aparte es si se fija la cantidad de 
+uno de los componentes, para cada composición la entalpía tendría un 
+valor único.</p>
+		
+<p>Para sustancias puras:</p>
+
+<ul>
+	<li>En el estado tipo o estándar ($P = \pu{1 atm}, T$): &ensp;
+	$H°_{\!\! \lower 2mu 1}, H°_{\!\! \lower 2mu 2}$</li>
+	<li>No tipo o estándar ($P \neq \pu{1 atm}, T$): &ensp;
+	$H_1^*, H_2^*$</li>
+</ul>
+
+<p>- Calores de disolución y de dilución:</p>
+
+<p>Siendo un proceso, sin cambio de temperatura y presión, tal que:</p>
+
+	<p style="margin-left:30px">
+		$
+		\left.
+		\begin{array}{l}
+			n_1{:} \smash{\text{ disolvente puro}}, H°_{\!\! \lower 2mu 1}
+			\smash{\text{ ó }} H_1^* \\[1ex]
+			n_2{:} \smash{\text{ soluto puro}}, H°_{\!\! \lower 2mu 2}
+			\smash{\text{ ó }} H_2^*
+		\end{array}
+		\right\} \rightarrow
+		$ disolución ($n_1 + n_2$), molalidad $m$
+	</p>
+	
+<p>Se produce pues, con misma $P$ y $T$ al inicio que al final, la 
+mezcla de los componentes puros para dar lugar a una disolución. La
+variación de entalpía que tiene lugar es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H_m &amp;= H_{\begin{subarray}{l} \rm final \\ \rm (disolución)
+			\end{subarray}} \mspace{-9mu} - H_{\begin{subarray}{l} \rm inicial \\
+			\rm (comp. \: puros) \end{subarray}} \mspace{-9mu} = \\[1ex]
+			&amp;= (n_1 H_1 + n_2 H_2) - (n_1 H_1^* + n_2 H_2^*) = \\[1ex]
+			&amp;= n_1 (H_1 - H_1^*) + n_2 (H_2 - H_2^*)
+		\end{align}
+		$
+	</p>
+	
+<p>Si $P = \pu{1 atm}$, entonces en vez de $H_1^*$ y $H_2^*$ serían
+$H°_{\!\! \lower 2mu 1}$ y $H°_{\!\! \lower 2mu 2}$ respectivamente.</p>
+	
+<p>Se define el calor integral de disolución referido al disolvente:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm sol},1} = \dfrac{\Delta H_m}{n_1}$</p>
+		
+<p>El calor integral de disolución referido al soluto:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm sol},2} = \dfrac{\Delta H_m}{n_2}$</p>
+		
+<p>Ambos son magnitudes intensivas, se divide una magnitud extensiva
+por moles. El subíndice "sol" indica que es un proceso de disolución (o
+solución).</p>
+
+<p>En una representación:</p>
+
+<center>
+	<object data="magnitudes_molares_parciales_05.svg" type="image/svg+xml"
+	width="300" height="300"></object>
+</center>
+
+<p>Donde $\Delta H_{\rm sol}^\infty$ es el calor integral de disolución 
+a dilución infinita, característico de la pareja que forme la 
+disolución.</p>
+
+<p>Se define el calor parcial o diferencial de disolución como:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			Q_2 = \left( \dfrac{\partial \Delta H_m}{\partial n_2}
+			\right)_{\! P,T,n_1} &amp;= \left( \dfrac{\partial (H - n_1 H_1^*
+			- n_2 H_2^*)}{\partial n_2} \right)_{\! P,T,n_1} = \\[1ex]			
+			&amp;= \left( \dfrac{\partial H}{\partial n_2} \right)_{\! P,T,n_1}
+			- H_2^* = \\[1ex]
+			&amp;= H_2 - H_2^*
+		\end{align}
+		$</p>
+		
+<p>También el calor parcial o diferencial de dilución es:</p>
+
+	<p style="text-align:center">
+		$Q_1 = \left( \dfrac{\partial \Delta H_m}{\partial n_1}
+		\right)_{\! P,T,n_2} = H_1 - H_1^*$</p>
+		
+<p>Estas dos últimas magnitudes parciales representan el incremento de 
+entalpía de la disolución cuando se añade, a $P$ y $T$ ctes., $\pu{1 
+mol}$ del soluto (2) o del disolvente (1) a una cantidad muy grande de 
+disolución, de tal modo que su composición, concentración resta sin 
+cambio apreciable.</p>
+
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$n_1 = \infty \; \Rightarrow \; H_1 = H_1^* \; \Rightarrow \;
+		Q_1^\infty = 0$</p>
+
+<p>Donde $Q_1^\infty$ es el calor parcial de dilución a dilución
+infinita.</p>
+
+<p>Además también:</p>
+
+	<p style="text-align:center">
+		$\Delta H_m = n_1 Q_1 + n_2 Q_2$</p>
+		
+<p>Se considera ahora el caso de la dilución de una disolución ya 
+existente, i.e. adición a la misma de más disolvente:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-cell">
+			disolución inicial ($n_1 + n_2$), concentración $m$
+			<span style="display:block;padding-top:1ex;padding-bottom:1ex">
+				${\big\downarrow} \rlap{\, \Delta H_{m \to m'}}$
+			</span>
+			disolución final ($n_1' +	n_2$), $n_1' &gt; n_1$, concentración $m'$
+		</span>
+	</p>
+	
+<p>Para este proceso, se define el calor integral de dilución referido
+al disolvente:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm dil},1} = \dfrac{\Delta H_{m \to m'}}{n_1' - n_1}$</p>
+		
+<p>El calor integral de dilución referido al soluto:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm dil},2} = \dfrac{\Delta H_{m \to m'}}{n_2}$</p>
+		
+<p>Donde el subíndice "dil" informa que es un proceso de dilución.</p>
+	
+<p>Teniendo en cuenta que la entalpía es una función de estado, su 
+variación depende sólo de los estados inicial y final, no del camino, 
+puede plantearse lo siguiente:</p>
+
+<center>
+	<object data="magnitudes_molares_parciales_06.svg" type="image/svg+xml"
+	width="213" height="118"></object>
+</center>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta H_m + \Delta H_{m \to m'} = \Delta H_{m'} \\[1ex]
+			\Delta H_{m \to m'} = \Delta H_{m'} - \Delta H_m
+		\end{array}
+		$
+	</p>
+	
+<p>Así que, sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm dil},2} = \dfrac{\Delta H_{m'} - \Delta H_m}{n_2}$</p>
+		
+<p>Además también, si $n_1' = \infty$ entonces $\Delta H_{m \to 0}$, 
+que es el calor de dilución a dilución infinita, que dividido por 
+$n_2$, i.e. por mol de soluto, recibe el nombre de calor integral de 
+dilución a dilución infinita.</p>
+
+<p>Puede imaginarse pues:</p>
+
+<center>
+	<object data="magnitudes_molares_parciales_07.svg" type="image/svg+xml"
+	width="291" height="118"></object>
+</center>
+
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta H_{m \to m'} + \Delta H_{m' \to 0} = \Delta H_{m \to 0} \\[1ex]
+			\Delta H_{m \to m'} = \Delta H_{m \to 0} - \Delta H_{m' \to 0} 
+		\end{array}
+		$
+	</p>
+	
+<p>De nuevo, sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm dil},2} =
+		\dfrac{\Delta H_{m \to 0} - \Delta H_{m' \to 0}}{n_2}$</p>
+		
+<p>- Entalpías molares parciales relativas y aparentes relativas:</p>
+
+<p>Ya que no puede conocerse de manera absoluta la entalpía, sólo de
+manera relativa, si se toma como estado de referencia la disolución
+infinitamente diluida:</p>
+
+	<p style="margin-left:30px">
+		Referencia disolvente (1):</p>
+		
+		<p style="margin-left:60px">
+			Disolvente puro a una temperatura $T$ y, se supone, $P = \pu{1 atm}$.
+			Por tanto: $H°_{\!\! \lower 2mu 1}$.</p>
+			
+	<p style="margin-left:30px">
+		Referencia soluto (2):</p>
+		
+		<p style="margin-left:60px">
+			Soluto en una disolución infinitamente diluida, $T$ y $P =
+			\pu{1 atm}$. Entonces: $H_2^\infty$.</p>
+			
+<p>Se define la entalpía molar parcial relativa (al estado de referencia)
+del disolvente:</p>
+
+	<p style="text-align:center">
+		$L_1 = H_1 - H°_{\!\! \lower 2mu 1}$</p>
+		
+<p>La entalpía molar parcial relativa (al estado de referencia) del
+soluto:</p>
+
+	<p style="text-align:center">
+		$L_2 = H_2 - H_2^\infty$</p>
+		
+<p>Así pues, con lo ya visto anteriormente, además:</p>
+
+	<p style="text-align:center">
+		$L_1 = Q_1$</p>
+		
+<p>También, si a $L_2$ se le suma y resta $H°_{\!\! \lower 2mu 2}$:</p>
+
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			L_2 &amp;= (H_2 - H°_{\!\! \lower 2mu 2}) + (H°_{\!\! \lower 2mu 2} -
+			H_2^\infty) = \\[1ex] &amp;= (H_2 - H°_{\!\! \lower 2mu 2}) -
+			(H_2^\infty -	H°_{\!\! \lower 2mu 2}) = \\[1ex]
+			&amp;= Q_2 - Q_2^\infty
+		\end{align}
+		$
+	</p>
+	
+<p>Sustituyendo en la entalpía de una disolución de molalidad $m$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			H_m = n_1 H_1 + n_2 H_2 = n_1 (L_1 + H°_{\!\! \lower 2mu 1}) +
+			n_2 (L_1 + H_2^\infty) \\[1ex]
+			H_m - (n_1 H°_{\!\! \lower 2mu 1} + n_2 H_2^\infty) = n_1 L_1 +
+			n_2 L_2
+		\end{array}
+		$
+	</p>
+	
+<p>Si, ahora, se define la entalpia relativa de la disolución como:</p>
+
+		<p style="text-align:center">
+			$L = H_m - (n_1 H°_{\!\! \lower 2mu 1} + n_2 H_2^\infty)$</p>
+			
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$L = n_1L_1 + n_2 L_2$</p>
+		
+<p>Para una disolución ($n_1 + n_2$) de molalidad $m$, a la que se le
+supone $P = \pu{1 atm}$, la entalpía molar aparente del soluto es:</p>
+
+	<p style="text-align:center">
+		$\phi_H = \dfrac{H_m - n_1 H°_{\!\! \lower 2mu 1}}{n_2}$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$H_m = n_1 H°_{\!\! \lower 2mu 1} + n_2 \phi_H$</p>
+		
+<p>La entalpía de una disolución ($n_1 + n_2$) en el estado de referencia,
+i.e. dilución infinita ($n_1 \to \infty$ ó $n_2 \to 0$), puede pues
+expresarse de dos maneras:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			H^\infty = n_1 H_1^\infty + n_2 H_2^\infty \\[1ex]
+			H^\infty = n_1 H°_{\!\! \lower 2mu 1} + n_2 \phi_H^\infty
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $\phi_H^\infty$ es la entalpía molar aparente del soluto a dilución
+infinita. Como $H_1^\infty = H°_{\!\! \lower 2mu 1}$, entonces:</p>
+
+	<p style="text-align:center">
+		$\phi_H^\infty = H_2^\infty$</p>
+		
+<p>Partiendo de la definición de entalpía relativa de la disolución
+$(n_1 + n_2)$ de molalidad $m$, usando la definición de entalpía molar
+aparente del soluto y esta última igualdad encontrada, se haya:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			L &amp;= H_m - (n_1 H°_{\!\! \lower 2mu 1} + n_2 H_2^\infty) = \\[1ex]
+			&amp;= (n_1 H°_{\!\! \lower 2 mu 1} + n_2 \phi_H) - (n_1
+			H°_{\!\! \lower 2mu 1} + n_2 H_2^\infty) = \\[1ex]
+			&amp;= n_2 \phi_H - n_2 H_2^\infty = n_2 (\phi_H - H_2^\infty) = \\[1ex]
+			&amp;= n_2 ( \phi_H - \phi_H^\infty)
+		\end{align}
+		$
+	</p>
+	
+<p>Si la entalpía molar aparente relativa del soluto es:</p>
+
+	<p style="text-align:center">
+		$\phi_L = \phi_H - \phi_H^\infty$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$L = n_2 \phi_L$</p>
+
+<p>Centrándose en la dilución a dilución infinita, se supone que a 
+presión de una atmósfera, de una disolución de molalidad $m$:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-cell">
+			disolución ($n_1 + n_2$), concentración $m$
+			<span style="display:block;padding-top:1ex;padding-bottom:1ex">
+				$\llap{+(\infty_1 - n_1) \,} \big\downarrow \rlap{\, \Delta
+				H_{m \to 0}}$
+			</span>
+			disolución ($\infty_1 + n_2$), dilución $\infty$
+		</span>
+	</p>
+	
+<p>Para la cual:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H_{m \to 0} &amp;= (\infty_1 H_1^\infty + n_2 H_2^\infty) -
+			(n_1 H_1 + n_2 H_2) - (\infty_1 - n_1) H°_{\!\! \lower 2mu 1} = \\[1ex]
+			&amp;= \infty_1 (\! \cancelto{0}{H_1^\infty - H°_{\!\! \lower 2mu 1}}
+			\!\!\! ) - n_1 (H_1 - H°_{\!\! \lower 2mu 1}) - n_2 (H_2 - H_2^\infty)
+			= \\[1ex]
+			&amp;= - n_1 (H_1 - H°_{\!\! \lower 2mu 1}) - n_2 (H_2 - H_2^\infty)
+			= \\[1ex]
+			&amp;= -n_1 L_1 - n_2 L_2 = - L
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{m \to 0} = - L = - n_2 \phi_L$</p>
+		
+<p>A continuación, se plantea lo siguiente:</p>
+
+<center>
+	<object data="magnitudes_molares_parciales_08.svg" type="image/svg+xml"
+	width="244" height="112"></object>
+</center>
+
+<p>Así entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta H^\infty = \Delta H_m + \Delta H_{m \to 0} \\[1ex]
+			\Delta H_{m \to 0} = \Delta H^\infty - \Delta H_m
+		\end{array}
+		$
+	</p>
+	
+<p>Experimentalmente, en el laboratorio:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{lcccc}
+			n_2 + n_1 &amp; \rightarrow &amp; m &amp; \rightarrow &amp; \Delta
+			H_m \\[1ex]
+			n_2 + n_1 + (n_1' - n_1) &amp; \rightarrow &amp; m' &amp; \rightarrow
+			&amp; \Delta H_{m'} \\[1ex]
+			n_2 + n_1' + (n_2'' - n_1') &amp; \rightarrow &amp; m'' &amp;
+			\rightarrow &amp; \Delta H_{m''} \\[1ex]
+			\vdots &amp; &amp;\vdots &amp;&amp; \vdots
+		\end{array}
+		$
+	</p>
+	
+<p>Representándose gráficamente frente a $m^{1/2}$ y extrapolando a
+dilución infinita se obtiene $\Delta H^\infty$:</p>
+
+<center>
+	<object data="magnitudes_molares_parciales_09.svg" type="image/svg+xml"
+	width="360" height="300"></object>
+</center>
+
+<p>Donde $\Delta H_m$ se corresponde con la cantidad fija de $n_2$. 
+Esto es, si $n_2 = \pu{1 mol}$ entonces $\Delta H_m$ sería por mol de 
+soluto a la molalidad $m$.</p>
+
+<p>Escogiendo valores sucesivos de distinta molalidad $m$ pueden hallarse
+a través de la gráfica sus respectivos valores de $\Delta H_{m \to 0}$,
+pudiendo construirse otra tabla:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{lcc}
+			m &amp; \rightarrow &amp; \Delta H_{m \to 0} \\[1ex]
+			m' &amp; \rightarrow &amp; \Delta H_{m' \to 0} \\[1ex]
+			m'' &amp; \rightarrow &amp; \Delta H_{m'' \to 0} \\[1ex]
+			\vdots &amp; &amp; \vdots
+		\end{array} \,
+		\right\} \xrightarrow[L \, = \, -\Delta H_{m \to 0}]{}
+		\left\{ \,
+		\begin{array}{c}
+			L \\[1ex] L' \\[1ex] L'' \\[1ex] \vdots
+		\end{array} \,
+		\right\} \xrightarrow[\phi_L = \frac{\scriptstyle L}{\scriptstyle n_2}
+		=	\frac{\scriptstyle -\Delta H_{m \to 0}}{\scriptstyle n_2}]{}
+		\left\{
+		\begin{array}{c}
+			\phi_L \\[1ex] \phi_L' \\[1ex] \phi_L'' \\[1ex] \vdots
+		\end{array}
+		\right.		
+		$
+	</p>
+	
+<p>Habiéndose obtenido, finalmente, otras dos tablas más de valores con
+$L$ y $\phi_L$.</p>
+
+<p>Además si:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial L}{\partial n_2} \right)_{\! P,T,n_1} =
+		\left( \dfrac{\partial (n_2 \phi_L)}{\partial n_2} \right)_{\! P,T,n_1}
+		= \phi_L + n_2 \left( \dfrac{\partial \phi_L}{\partial n_2}
+		\right)_{\! P,T,n_1}$</p>
+		
+<p>Siendo también:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial L}{\partial n_2} \right)_{\! P,T,n_1} &amp;=
+			\left(
+			\dfrac{
+				\partial (H - (n_1 H°_{\!\! \lower 2mu 1} + n_2 H_2^\infty))
+			}{\partial n_2} \right)_{\! P,T,n_1} = \\[1ex]
+			&amp;= \left( \dfrac{\partial H}{\partial n_2} \right)_{\! P,T,n_1}
+			- H_2^\infty = \\[1ex]
+			&amp;= H_2 - H_2^\infty = L_2
+		\end{align}
+		$
+</p>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$L_2 = \phi_L + n_2 \left( \dfrac{\partial \phi_L}{\partial n_2}
+		\right)_{\! P,T,n_1}$</p>
+		
+<p>Si $n_2 = m$, y por consiguiente $n_1 = 1000{∕}M_1$, entonces:</p>
+
+	<p style="text-align:center">
+		$L_2 = \phi_L + m \left( \dfrac{\partial \phi_L}{\partial m}
+		\right)_{\! P,T}$</p>
+		
+	<p style="text-align:center">
+		$L_2 = \phi_L + \left( \dfrac{\partial \phi_L}{\partial \ln m}
+		\right)_{\! P,T}$</p>
+		
+<p>Así pues, representando $\phi_L$ frente a $m$ (o $\ln m$), y hallando
+la pendiente para una determinada molalidad, puede obtenerse $L_2$ y, 
+por tanto, también $L_1$. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			L = n_1 L_1 + n_2 L_2 \\[1ex]
+			L = n_2 \phi_L \\[1ex]
+		\end{array}
+		\right\} \Rightarrow
+		\begin{aligned}[t]
+				L_1 &amp;= \dfrac{n_2}{n_1} (\phi_L - L_2) = \\[1ex]
+				&amp;= \dfrac{m M_1}{1000} (\phi_L - L_2)
+		\end{aligned}
+		$
+	</p>
+	
+<p>Puede resultar más conveniente, caso de electrolitos, utilizar
+$m^{1/2}$ en la representación, por lo que (mediante la regla de la 
+cadena):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			L_2 &amp;= \phi_L + m \left( \dfrac{\partial \phi_L}{\partial m^{1/2}}
+			\right)_{\! P,T} \dfrac{dm^{1/2}}{dm} = \\[1ex]
+			&amp;= \phi_L + m \left( \dfrac{\partial \phi_L}{\partial m^{1/2}}
+			\right)_{\! P,T} \dfrac{1}{2m^{1/2}} = \\[1ex]
+			&amp;= \phi_L + \dfrac{m^{1/2}}{2} \left(
+			\dfrac{\partial \phi_L}{\partial m^{1/2}} \right)_{\! P,T}
+		\end{align}
+		$
+	</p>
+	
+<p>En un ejemplo de gráfica:</p>
+
+	<p style="text-align:center">
+		<object data="magnitudes_molares_parciales_10.svg" type="image/svg+xml"
+		width="300" height="300" style="display:inline-block;vertical-align:middle"></object>
+		$\quad \tan \alpha = \left( \dfrac{\partial \phi_L}{\partial m^{1/2}}
+		\right)_{\! P,T}$
+	</p>
+	
+<p>- Entalpía de mezcla de dos disoluciones:</p>
+
+<p>El caso que se contempla, se supone $P = \pu{1 atm}$, es el dos 
+disoluciones (A y B) que se juntan para dar una tercera (C):</p>
+
+	<p style="text-align:center">
+		$\ce{A + B -&gt; C}$</p>
+		
+	<p style="text-align:center">
+		$\ce{$n$_{1A}.$n$_{2A} + $n$_{1B}.$n$_{2B} -&gt; $n$_{1C}.$n$_{2C}}$</p>
+		
+<p>Se mezclan, pues, dos disoluciones con mismos componentes, pero 
+distinta composición. Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			n_{1 \rm C} = n_{1 \rm A} + n_{1 \rm B} \\[1ex]
+			n_{2 \rm C} = n_{2 \rm A} + n_{2 \rm B}
+		\end{array}
+		$
+	</p>
+	
+<p>El incremento de entalpía de esta mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\Delta H_{\rm mez} = (n_{1 \rm C} H_{1 \rm C} + n_{2 \rm C} H_{2 \rm C})
+		- (n_{1 \rm A} H_{1 \rm A} + n_{2 \rm A} H_{2 \rm A}) - (n_{1 \rm B}
+		H_{1 \rm B} + n_{2 \rm B} H_{2 \rm B})
+		$
+	</p>
+	
+<p>Ya que se compensan, sumando $(n_{1 \rm A} + n_{1 \rm B}) 
+H°_{\!\! \lower 2 mu 1}$ y $(n_{2 \rm A} + n_{2 \rm B}) H_2^\infty$ y 
+restando $n_{1 \rm C} H°_{\!\! \lower 2 mu 1}$ y $n_{2 \rm C} 
+H_2^\infty$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H_{\rm mez} &amp;= (n_{1 \rm C} H_{1 \rm C} + n_{2 \rm C}
+			H_{2 \rm C}) - n_{1 \rm C} H°_{\!\! \lower 2 mu 1} - n_{2 \rm C}
+			H_2^\infty - {} \\[1ex]
+			&amp;\hphantom{= {}} - (n_{1 \rm A} H_{1 \rm A} +
+			n_{2 \rm A} H_{2 \rm A}) - (n_{1 \rm B} H_{1 \rm B} + n_{2 \rm B}
+			H_{2 \rm B}) + {} \\[1ex]
+			&amp;\hphantom{= {}} + (n_{1 \rm A} + n_{1 \rm B})
+			H°_{\!\! \lower 2 mu 1} + (n_{2 \rm A} + n_{2 \rm B})	H_2^\infty = \\[1ex]
+			&amp;= n_{1 \rm C} (H_{1 \rm C} - H°_{\!\! \lower 2mu 1}) +
+			n_{2 \rm C} (H_{2 \rm C} - H_2^\infty) - {} \\[1ex]
+			&amp;\hphantom{= {}} - n_{1 \rm A} (H_{1 \rm A} -
+			H°_{\!\! \lower 2mu 1}) - n_{2 \rm A} (H_{2 \rm A} - H_2^\infty) -
+			{} \\[1ex]
+			&amp;\hphantom{= {}} - n_{1 \rm B} (H_{1 \rm B} -
+			H°_{\!\! \lower 2mu 1}) - n_{2 \rm B} (H_{2 \rm B} - H_2^\infty) = \\[1ex]
+			&amp;= n_{1 \rm C} L_{1 \rm C} + n_{2 \rm C} L_{2 \rm C} - n_{1 \rm A}
+			L_{1 \rm A} - n_{2 \rm A} L_{2 \rm A} - n_{1 \rm B} L_{1 \rm B} -
+			n_{2 \rm B} L_{2 \rm B} = \\[1ex]
+			&amp;= L_{\rm C} - L_{\rm A} - L_{\rm B}
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{\rm mez} = - \Delta H_{m_{\rm C} \to 0} + 
+		\Delta H_{m_{\rm A} \to 0} + \Delta H_{m_{\rm B} \to 0}$</p>
+		
+<p>En general, para cualquier proceso de disolución con dos componentes
+(disolución final $n_1 + n_2$):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H &amp;= H_{\rm final} - H_{\rm inicial} = \\[1ex] 
+			&amp;= n_1 H_1 + n_2 H_2 - \sum_{\rm inicial} (n_i H_i + n_j H_j)
+			= \\[1ex]
+			&amp;= n_1 (H_1 - H_1^\infty) + n_2 (H_2 - H_2^\infty) -
+			\sum_{\rm inicial} (n_i (H_i - H_1^\infty) + n_j (H_j - H_2^\infty))
+			= \\[1ex]
+			&amp;= L_{\rm final} - \sum_{\rm inicial} L_k = \Delta L
+		\end{align}
+		$
+	</p>
+	
+<p>Donde $n_1 = \sum n_i$ y $n_2 = \sum n_j$.</p>
+
+<p>$\ast$ Calores molares parciales:</p>
+
+<p>Siendo la capacidad calorífica a presión constante:</p>
+
+	<p style="text-align:center">
+		$C_P = \left( \dfrac{\partial H}{\partial T} \right)_{\! P,n_i}$</p>
+		
+<p>En una disolución de dos componentes, donde 1 es el disolvente y 2
+el soluto, el calor molar parcial (a $P$ constante) del disolvente:</p>
+
+	<p style="text-align:center">
+		$C_{P,1} = \left( \dfrac{\partial C_P}{\partial n_1}
+		\right)_{\! T,P,n_2} = \dfrac{\partial^2 H}{\partial T \partial n_1}$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$H_1 = \left( \dfrac{\partial H}{\partial n_1} \right)_{\! T,P,n_2}$
+	</p>
+	
+<p>Derivando con respecto a $T$:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial H_1}{\partial T} \right)_{\! P,n_i} =
+		\dfrac{\partial^2 H}{\partial n_1 \partial T}$</p>
+		
+<p>Ya que para una función de estado las derivadas cruzadas son iguales,
+entonces:</p>
+
+	<p style="text-align:center">
+		$C_{P,1} = \left( \dfrac{\partial H_1}{\partial T}
+		\right)_{\! P,n_i}$</p>
+		
+<p>Análogamente, el calor molar parcial del soluto:</p>
+
+	<p style="text-align:center">
+		$C_{P,2} = \left( \dfrac{\partial H_2}{\partial T}
+		\right)_{\! P,n_i}$</p>
+		
+<p>Siendo la entalpia molar relativa del disolvente:</p>
+
+	<p style="text-align:center">
+		$L_1 = H_1 - H°_{\!\! \lower 2mu 1}$</p>
+		
+<p>Derivando respecto a $T$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial L_1}{\partial T} \right)_{\! P,n_i} &amp;=
+			\left( \dfrac{\partial H_1}{\partial T} \right)_{\! P,n_i} -
+			\left( \dfrac{\partial H°_{\!\! \lower 2mu 1}}{\partial T}
+			\right)_{P,n_i} = \\[1ex]
+			&amp;= C_{P,1} - C°_{\!\! \lower 2mu {P,1}}
+		\end{align}
+		$
+	</p>
+	
+<p>Para el soluto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial L_2}{\partial T} \right)_{\! P,n_i} &amp;=
+			\left( \dfrac{\partial (H_2 - H_2^\infty)}{\partial T}
+			\right)_{\! P,n_i} = \\[1ex]
+			&amp;= \left( \dfrac{\partial H_2}{\partial T}
+			\right)_{\! P,n_i} - \left( \dfrac{\partial H_2^\infty}{\partial T}
+			\right)_{\! P,n_i} = \\[1ex]
+			&amp;= C_{P,2} - C_{P,2}^\infty
+		\end{align}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="margin-left:30px">
+		$C°_{\!\! \lower 2mu {P,1}}$:&nbsp; Calor molar parcial disolvente
+		puro.</p>
+		
+	<p style="margin-left:30px">
+		$C_{P,2}^\infty$:&nbsp; Calor molar parcial soluto en disolución a
+		dilución infinita.</p>
+		
+<p>El calor molar aparente del soluto:</p>
+
+	<p style="text-align:center">
+		$\phi_C = \dfrac{C_P - n_1 C°_{\!\! \lower 2mu {P,1}}}{n_2}$</p>
+		
+<p>Donde, para su cálculo, $C°_{\!\! \lower 2mu {P,1}}$ se conoce y 
+$C_P$ se haya experimentalmente.</p>
+
+<p>Mediante $\phi_C$ puede determinarse el calor molar del soluto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			C_{P,2} &amp;=
+			\left( \dfrac{\partial C_P}{\partial n_2} \right)_{\! P,T,n_1} = 
+			\left( \dfrac{ \partial (n_1 C°_{\!\! \lower 2mu {P,1}} + n_2 \phi_C)
+			}{\partial n_2}	\right)_{\! P,T,n_1} = \\[1ex]
+			&amp;= \phi_C + n_2 \left( \dfrac{\partial \phi_C}{\partial n_2}
+			\right)_{P,T,n_1}
+		\end{align}
+		$
+	</p>
+	
+<p>Si, como con anterioridad, $n_2 = m$, y $n_1 = 1000{∕}M_1$, entonces:</p>
+
+	<p style="text-align:center">
+		$C_{P,2} = \phi_C + m \left( \dfrac{\partial \phi_C}{\partial m}
+		\right)_{\! P,T}$</p>
+		
+<p>Así pues, representando $\phi_C$ frente a $m$ permite, para una 
+molalidad concreta, hallar la pendiente y, por tanto, también 
+$C_{P,2}$.</p>
+
+<p>Para disoluciones diluidas de un electrolito resulta más conveniente
+dibujar frente a $m^{1/2}$, por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			C_{P,2} &amp;=
+			\phi_C + m \left( \dfrac{\partial \phi_C}{\partial m^{1/2}}
+			\right)_{\! P,T} \dfrac{dm^{1/2}}{dm} =  \\[1ex]
+			&amp;= \phi_C + m \left( \dfrac{\partial \phi_C}{\partial m^{1/2}}
+			\right)_{\! P,T} \dfrac{1}{2m^{1/2}} = \\[1ex]
+			&amp;= \phi_C + \dfrac{m^{1/2}}{2} \left(
+			\dfrac{\partial \phi_C}{\partial m^{1/2}} \right)_{\! P,T}			
+		\end{align}
+		$
+	</p>
+	
+<p>Finalmente, para obtener $C_{P,1}$ se emplea la ecuación general 
+que relaciona la magnitud extensiva con las parciales para esa 
+disolución ($n_1 + n_2$):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			C_P = n_1 C_{P,1} + n_2 C_{P,2} \\[1ex]
+			C_{P,1} = \dfrac{C_P - n_2 C_{P,2}}{n_1}
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../aplicaciones/aplicaciones.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../potencial_quimico/potencial_quimico.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

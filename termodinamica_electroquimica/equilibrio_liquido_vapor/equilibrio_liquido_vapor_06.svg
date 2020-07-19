@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="197.51" height="260.16" version="1.1" viewBox="0 0 197.51 260.16" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <pattern id="pattern901" patternTransform="matrix(.28155 .28155 -.28155 .28155 -120 499.27)" xlink:href="#pattern1594"/>
+  <pattern id="pattern899" patternTransform="matrix(.28155 .28155 -.28155 .28155 -172 499.27)" xlink:href="#pattern2365"/>
+  <pattern id="pattern1603" patternTransform="matrix(.28155 .28155 -.28155 .28155 385 539.27)" xlink:href="#pattern1594"/>
+  <pattern id="pattern1601" patternTransform="matrix(.28155 .28155 -.28155 .28155 333 539.27)" xlink:href="#pattern2365"/>
+  <pattern id="pattern1610" patternTransform="matrix(.28155 .28155 -.28155 .28155 338 578.27)" xlink:href="#pattern1594"/>
+  <pattern id="pattern1608" patternTransform="matrix(.28155 .28155 -.28155 .28155 286 578.27)" xlink:href="#pattern2365"/>
+  <pattern id="pattern1594" patternTransform="matrix(.28155 .28155 -.28155 .28155 385 618.27)" xlink:href="#pattern2365"/>
+  <pattern id="pattern2365" patternTransform="matrix(.28155 .28155 -.28155 .28155 333 618.27)" xlink:href="#Strips1_8"/>
+  <pattern id="Strips1_8" width="9" height="1" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <rect y="-.5" width="1" height="2"/>
+  </pattern>
+  <pattern id="pattern2530" patternTransform="matrix(3.5355 0 0 3.5355 370 522.52)" xlink:href="#Polkadots-med"/>
+  <pattern id="Polkadots-med" width="10" height="10" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <circle cx="2.567" cy=".81" r=".15"/>
+   <circle cx="3.048" cy="2.33" r=".15"/>
+   <circle cx="4.418" cy="2.415" r=".15"/>
+   <circle cx="1.844" cy="3.029" r=".15"/>
+   <circle cx="6.08" cy="1.363" r=".15"/>
+   <circle cx="5.819" cy="4.413" r=".15"/>
+   <circle cx="4.305" cy="4.048" r=".15"/>
+   <circle cx="5.541" cy="3.045" r=".15"/>
+   <circle cx="4.785" cy="5.527" r=".15"/>
+   <circle cx="2.667" cy="5.184" r=".15"/>
+   <circle cx="7.965" cy="1.448" r=".15"/>
+   <circle cx="7.047" cy="5.049" r=".15"/>
+   <circle cx="4.34" cy=".895" r=".15"/>
+   <circle cx="7.125" cy=".34" r=".15"/>
+   <circle cx="9.553" cy="1.049" r=".15"/>
+   <circle cx="7.006" cy="2.689" r=".15"/>
+   <circle cx="8.909" cy="2.689" r=".15"/>
+   <circle cx="9.315" cy="4.407" r=".15"/>
+   <circle cx="7.82" cy="3.87" r=".15"/>
+   <circle cx="8.27" cy="5.948" r=".15"/>
+   <circle cx="7.973" cy="7.428" r=".15"/>
+   <circle cx="9.342" cy="8.072" r=".15"/>
+   <circle cx="8.206" cy="9.315" r=".15"/>
+   <circle cx="9.682" cy="9.475" r=".15"/>
+   <circle cx="9.688" cy="6.186" r=".15"/>
+   <circle cx="3.379" cy="6.296" r=".15"/>
+   <circle cx="2.871" cy="8.204" r=".15"/>
+   <circle cx="4.59" cy="8.719" r=".15"/>
+   <circle cx="3.181" cy="9.671" r=".15"/>
+   <circle cx="5.734" cy="7.315" r=".15"/>
+   <circle cx="6.707" cy="6.513" r=".15"/>
+   <circle cx="5.73" cy="9.67" r=".15"/>
+   <circle cx="6.535" cy="8.373" r=".15"/>
+   <circle cx="4.37" cy="7.154" r=".15"/>
+   <circle cx=".622" cy="7.25" r=".15"/>
+   <circle cx=".831" cy="5.679" r=".15"/>
+   <circle cx="1.257" cy="8.519" r=".15"/>
+   <circle cx="1.989" cy="6.877" r=".15"/>
+   <circle cx=".374" cy="3.181" r=".15"/>
+   <circle cx="1.166" cy="1.664" r=".15"/>
+   <circle cx="1.151" cy=".093" r=".15"/>
+   <circle cx="1.151" cy="10.093" r=".15"/>
+   <circle cx="1.302" cy="4.451" r=".15"/>
+   <circle cx="3.047" cy="3.763" r=".15"/>
+  </pattern>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-117.99 -472.52)">
+  <path d="m195 477.52v155c0 25.15 18.383 45.845 42.5 49.443v25.557h30v-25.557c24.117-3.5982 42.5-24.294 42.5-49.443v-155z" fill="url(#pattern2530)" opacity=".6"/>
+  <path d="m267.5 707.52v-25.557c24.117-3.5982 42.5-24.294 42.5-49.443v-155m-115 0v155c0 25.15 18.383 45.845 42.5 49.443v25.557" fill="none" stroke="#000" stroke-linejoin="round"/>
+  <g fill="#fff">
+   <rect x="195" y="613.52" width="63" height="8"/>
+   <rect x="276" y="613.52" width="34" height="8"/>
+   <rect x="195" y="573.52" width="16" height="8"/>
+   <rect x="229" y="573.52" width="81" height="8"/>
+   <rect x="195" y="534.52" width="83" height="8"/>
+   <rect x="296" y="534.52" width="14" height="8"/>
+  </g>
+  <g>
+   <g stroke="#000" stroke-linejoin="round">
+    <rect x="195" y="613.52" width="63" height="8" fill="url(#pattern2365)"/>
+    <rect x="276" y="613.52" width="34" height="8" fill="url(#pattern1594)"/>
+    <rect x="195" y="573.52" width="16" height="8" fill="url(#pattern1608)"/>
+    <rect x="229" y="573.52" width="81" height="8" fill="url(#pattern1610)"/>
+    <rect x="195" y="534.52" width="83" height="8" fill="url(#pattern1601)"/>
+    <rect x="296" y="534.52" width="14" height="8" fill="url(#pattern1603)"/>
+   </g>
+   <rect transform="scale(-1,1)" x="-310" y="494.52" width="63" height="8" fill="#fff"/>
+   <rect transform="scale(-1,1)" x="-229" y="494.52" width="34" height="8" fill="#fff"/>
+   <rect transform="scale(-1,1)" x="-310" y="494.52" width="63" height="8" fill="url(#pattern899)" stroke="#000" stroke-linejoin="round"/>
+   <rect transform="scale(-1,1)" x="-229" y="494.52" width="34" height="8" fill="url(#pattern901)" stroke="#000" stroke-linejoin="round"/>
+  </g>
+  <g fill="none" stroke="#000">
+   <path d="m229 568.52v5m-18 0v-5" stroke-linejoin="round"/>
+   <path d="m205 567.52c10.247-5.5482 20.228-5.1148 30 0" stroke-width="1.5"/>
+   <path d="m276 608.52v5m-18 0v-5" stroke-linejoin="round"/>
+   <path d="m252 607.52c10.247-5.5482 20.228-5.1148 30 0" stroke-width="1.5"/>
+   <path d="m296 529.52v5m-18 0v-5" stroke-linejoin="round"/>
+   <path d="m272 528.52c10.247-5.5482 20.228-5.1148 30 0" stroke-width="1.5"/>
+   <path d="m247 489.52v5m-18 0v-5" stroke-linejoin="round"/>
+   <path d="m223 488.52c10.247-5.5482 20.228-5.1148 30 0" stroke-width="1.5"/>
+  </g>
+  <text x="227.80301" y="727.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="227.80301" y="727.51965">caldera</tspan></text>
+  <text x="233.65126" y="653.88531" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="233.65126" y="653.88531">vapor</tspan></text>
+  <path d="m175 597.52c25-3 30 0 35.74 13" fill="none" marker-end="url(#Arrow2Mend)" stroke="#000" stroke-width="1px"/>
+  <text x="122.57" y="601.40765" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="122.57" y="601.40765">líquido</tspan></text>
+ </g>
+</svg>

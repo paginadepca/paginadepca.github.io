@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Entropía">
+<meta name="keywords" content="entropía">
+<title>Entropía</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Entropía</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sea AB un tramo de un ciclo reversible arbitrario:</p>
+
+<center>
+	<object data="entropia_01.svg" type="image/svg+xml" width="427"
+	height="272"></object>
+</center>
+
+<p>La isoterma debe ser tal que:</p>
+
+	<p style="text-align:center">
+		Área ACD = Área DBE</p>
+		
+<p>Áreas comprendidas entre las adiabáticas que atraviesan A y B, la 
+isoterma y el cambio de estado AB reversible.</p>
+
+<p>El requisito sobre la isoterma conlleva que:</p>
+
+	<p style="text-align:center">
+		$W_{\rm AB} = W_{\rm ACDEB}$</p>
+		
+<p>Dado que cuando el estado inicial y final coinciden $\Delta U$ es cero,
+entonces:</p>
+
+	<p style="text-align:center">
+		$\Delta U_{\rm ACDEBA} = W_{\rm ACDEBA} + Q_{\rm ACDEBA} = 0$</p>
+		
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$W_{\rm ACDEBA} = W_{\rm ACDEB} + W_{\rm BA} = W_{\rm ACDEB} -
+		W_{\rm AB} = 0$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$Q_{\rm ACDEBA} = 0$</p>
+		
+<p>Siendo así:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			Q_{\rm ACDEBA} = \underbrace{Q_{\rm AC}}_{\large 0}
+			+ Q_{\rm CE} + \underbrace{Q_{\rm EB}}_{\large 0} +
+			Q_{\rm BA}
+			\rlap{
+				\mathop{
+					\vphantom{\underbrace{Q_{\rm AC}}}
+				}\limits_{\displaystyle \leftarrow \smash{\text{Adiabáticos}}}
+			} = 0 \\[1ex]
+			\Downarrow \\[1ex]
+			Q_{\rm CE} = -Q_{\rm BA}
+		\end{array}
+		$
+	</p>
+	
+<p>Como es un proceso reversible:</p>
+
+	<p style="text-align:center">
+		$-Q_{\rm BA} = Q_{\rm AB}$</p>
+		
+<p>Concluyéndose que:</p>
+
+	<p style="text-align:center">
+		$\boxed{Q_{\rm CE} = Q_{\rm AB}}$</p>
+		
+<p>Por tanto, además, en lo que respecta a trabajo y calor:</p>
+
+	<p style="text-align:center">
+		$
+		\underset{\smash{\text{no isot.}}}{\rm AB} \! \equiv \!
+		\underset{\smash{\text{adiab.}}}{\rm AC} \! +
+		\underset{\smash{\text{isot.}}}{\rm CE} + \!
+		\underset{\smash{\text{adiab.}}}{\rm EB}
+		$
+	</p>
+	
+<p>Realizando esto de forma completa en un ciclo reversible cualquiera:</p>
+
+<center>
+	<object data="entropia_02.svg" type="image/svg+xml" width="427"
+	height="380"></object>
+</center>
+
+<p>Se han dibujado sobre el ciclo reversible una serie arbitraria de 
+adiabáticas, que nunca pueden cruzarse, y se han unido mediante 
+isotermas que cumplan la condición impuesta anteriormente.</p>
+
+<p>Las adiabáticas no se cruzan ya que en caso contrario podría plantearse
+un ciclo, en tres etapas reversibles, tal que:</p>
+
+<center>
+	<object data="entropia_03.svg" type="image/svg+xml" width="341"
+	height="321"></object>
+</center>
+
+<p>No es posible ya que sería un móvil perpetuo de segunda especie. 
+Esto es, el ciclo produciría trabajo sólo extrayendo calor de un foco, sin 
+entrega de calor a un foco frío, lo que violaría el segundo principio 
+(enunciado de Kelvin-Planck).</p>
+
+<p>Volviendo al ciclo reversible, para un ciclo de Carnot individual:</p>
+
+	<p style="text-align:center">
+		$\dfrac{Q_2}{T_2} + \dfrac{Q_1}{T_1} = 0$</p>
+		
+<p>Para todo el ciclo reversible:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i \dfrac{Q_i}{T_i} = 0$</p>
+		
+<p>Donde $Q_i$ sería el calor correspondiente a cada tramo en que se
+ha dividido el ciclo, y $T_i$ la respectiva isoterma.</p>
+
+<p>Si aumenta el número de tramos hasta hacerse tan pequeños como para 
+que el calor que se intercambia en cada uno de ellos sea infinitesimal 
+y, además, su temperatura coincida con la de la isoterma, entonces el 
+sumatorio anterior se convierte en una integral tal que:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \oint \dfrac{q_{\rm rev}}{T} = 0$</p>
+		
+<p>Esto se conoce como teorema de Clausius en ciclos reversibles.</p>
+
+<p>El caso es que $q_{\rm rev}$ no es diferencial exacta a no ser
+que $V$ ó $P$ sean constantes. En cambio sí lo es su división por $T$ (i.e.
+la integral cíclica de $q_{\rm rev} {∕} T$ es cero).</p>
+
+<p>Se plantea un ciclo reversible ABA donde los caminos de ida puedan
+ser distintos:</p>
+
+<center>
+	<object data="entropia_04.svg" type="image/svg+xml" width="405"
+	height="327"></object>
+</center>
+
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\displaystyle \oint \dfrac{q_{\rm rev}}{T} = \int_{\rm A,R_1}^{\rm B}
+			\dfrac{q_{\rm rev}}{T} + \int_{\rm B,R_2}^{\rm A}
+			\dfrac{q_{\rm rev}}{T} = 0 \\[1ex]
+			\displaystyle \oint \dfrac{q_{\rm rev}}{T} = \int_{\rm A,R_3}^{\rm B}
+			\dfrac{q_{\rm rev}}{T} + \int_{\rm B,R_2}^{\rm A}
+			\dfrac{q_{\rm rev}}{T} = 0 \\[1ex]
+			\displaystyle \oint \dfrac{q_{\rm rev}}{T} = \int_{\rm A,R_4}^{\rm B}
+			\dfrac{q_{\rm rev}}{T} + \int_{\rm B,R_2}^{\rm A}
+			\dfrac{q_{\rm rev}}{T} = 0 \\[1ex]
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle  \int_{\rm A,R_1}^{\rm B} \dfrac{q_{\rm rev}}{T} =
+		\int_{\rm A,R_3}^{\rm B} \dfrac{q_{\rm rev}}{T} =
+		\int_{\rm A,R_4}^{\rm B} \dfrac{q_{\rm rev}}{T} = \dotsb
+		$
+	</p>
+	
+<p>Esto es, la integral de una diferencial exacta no depende del 
+camino. Así se define:</p>
+
+	<p style="text-align:center">
+		$dS = \dfrac{q_{\rm rev}}{T}$</p>
+		
+<p>Donde $S$ es la entropía, que es pues, ya que su diferencial es 
+exacta, una propiedad termodinámica o función de estado del sistema. 
+Entonces:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \int_{\rm A}^{\rm B} \dfrac{q_{\rm rev}}{T} = 
+		\int_{\rm A}^{\rm B} dS = \Delta S = S_{\rm B} - S_{\rm A}$</p>
+		
+<p>Sólo $q{∕}T$ es diferencial exacta cuando el calor es reversible. En 
+caso de proceso irreversible:</p>
+
+	<p style="text-align:center">
+		$\Delta S_{\rm irrev_{A \to B}} = S_{\rm B} - S_{\rm A}$</p>
+		
+<p>Esto es así porque $\Delta S$ del sistema sólo depende del estado 
+inicial y final del sistema, sin importar el camino, ya que $S$ es 
+función de estado. Por tanto:</p>
+
+	<p style="text-align:center">
+		$\Delta S_{\rm irrev_{A \to B}} = \Delta S_{\rm rev_{A \to B}} =
+		S_{\rm B} - S_{\rm A}$</p>
+		
+<p>Así que para un proceso irreversible puede plantearse uno reversible
+para calcular el cambio de entropía del sistema.</p>
+
+<p>La entropía es una propiedad extensiva, lo que implica que es 
+aditiva. Esto es, el cambio de entropía en un sistema en equilibrio 
+dividido en $n$ partes, a las que de manera reversible, respectivamente, 
+se les aporta calor, es la suma del cambio de entropía de las 
+partes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dS &amp;= \dfrac{q_{\rm rev}}{T} =
+			\dfrac{q_1 + q_2 + \dotsb + q_n}{T} = \\[1ex]
+			&amp;= \dfrac{q_1}{T} +  \dfrac{q_2}{T} + \dotsb + \dfrac{q_n}{T}
+			= \\[1ex]
+			&amp;= dS_1 + dS_2 + \dotsb + dS_n
+		\end{align}
+		$
+	</p>
+	
+<p>- Cambio de entropía para el conjunto sistema-medio (universo):</p>
+
+	<p style="text-align:center">
+		$\boxed{\Delta S_{\rm univ} = \Delta S_{\rm sist} +
+		\Delta S_{\rm med}}$</p>
+
+	<p style="margin-left:30px">$\bullet$ En un ciclo reversible:</p>
+	
+	<p style="margin-left:30px">Para un ciclo de Carnot:</p>
+	
+<center>
+	<object data="entropia_05.svg" type="image/svg+xml" width="219"
+	height="137"></object>
+</center>
+
+	<p style="text-align:center;margin-top:2.85em">
+		$
+		\left.
+		\begin{array}{l}
+			\smash[t]{
+			\left.
+				\begin{array}{l}
+					\Delta S_{{\rm sist},T_2} = \dfrac{Q_2}{T_2} \\
+					\Delta S_{{\rm med},T_2} = \dfrac{-Q_2}{T_2}
+				\end{array} \,
+			\right\} \Delta S_{{\rm univ},T_2} = 0} \\[1ex]
+			\Delta S_{\rm sist,adiab. \, I} = \Delta S_{\rm med,adiab. \, I} =
+			\Delta S_{\rm univ,adiab. \, I} = 0 \\[1ex]
+			\left.
+				\begin{array}{l}
+					\Delta S_{{\rm sist},T_1} = \dfrac{Q_1}{T_1} \\
+					\Delta S_{{\rm med},T_1} = \dfrac{-Q_1}{T_1}
+				\end{array} \,
+			\right\} \Delta S_{{\rm univ},T_1} = 0 \\[1ex]
+			\Delta S_{\rm sist,adiab. \, II} = \Delta S_{\rm med,adiab. \, II} =
+			\Delta S_{\rm univ,adiab. \, II} = 0
+		\end{array} \,
+		\right\}
+		\Delta S_{\rm univ} = 0
+		$
+		&ensp;
+		<span style="display:inline-table">
+			<span style="display:table-cell;text-align:left">
+				Ciclo de
+				<span style="display:block">Carnot.</span>
+			</span>
+		</span>
+	</p>
+	
+	<p style="margin-left:30px">
+		Dado que cualquier ciclo reversible puede descomponerse como una suma
+		de ciclos de Carnot:</p>
+		
+	<p style="text-align:center">
+		$\Delta S_{\rm univ} = 0$ &emsp; Ciclo reversible.</p>
+		
+	<p style="margin-left:30px">$\bullet$ En un proceso reversible
+	(no cíclico):</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			q_{\rm sist} = -q_{\rm med} \\[1ex]
+			T_{\rm sist} = T_{\rm med} = T
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">El calor que reciben o entregan, entre 
+	sí, el sistema y el medio es el mismo cambiado de signo y, además, al 
+	ser un proceso reversible su diferencia de temperatura no puede ser 
+	más que infinitesimal.</p>
+	
+	<p style="margin-left:30px">Por tanto:</p>
+	
+	<p style="text-align:center">
+		$dS_{\rm univ} = dS_{\rm sist} + dS_{\rm med} =
+		\dfrac{q_{\rm sist}}{T_{\rm sist}} + \dfrac{q_{\rm med}}{T_{\rm med}}
+		= \dfrac{q_{\rm sist}}{T} - \dfrac{q_{\rm sist}}{T} = 0$</p>
+		
+	<p style="margin-left:30px">
+		Integrando:</p>
+		
+	<p style="text-align:center">
+		$\Delta S_{\rm univ} = 0$ &emsp; Proceso reversible.</p>
+		
+	<p style="margin-left:30px">
+		$\bullet$ En un sistema irreversible:</p>
+		
+	<p style="margin-left:30px">
+		Se plantea, bastaría con que alguna etapa de su ciclo lo fuera, una 
+		máquina térmica irreversible:</p>
+		
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;vertical-align:middle;padding-right:2em">
+			<object data="entropia_06.svg" type="image/svg+xml" width="180"
+			height="240"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			<span style="display:block;margin-bottom:1em">Siendo:</span>
+			$\qquad -W_{\rm irrev} = Q_{2,\rm irrev} + Q_{1,\rm irrev}$
+			<span style="display:block;margin-top:1em;margin-bottom:1em">
+				Por tanto:</span>
+			$\qquad \eta_{\rm irrev} = \dfrac{-W_{\rm irrev}}{Q_{2,\rm irrev}}
+			= \dfrac{Q_{2,\rm irrev} + Q_{1,\rm irrev}}{Q_{2,\rm irrev}}$
+			<span style="display:block;margin-top:1em;margin-bottom:1em">
+				Además:</span>
+			$\qquad \eta_{\rm irrev} &lt; \eta_{\rm rev} =
+			\dfrac{T_2 - T_1}{T_2}$
+		</span>
+	</p>
+	
+	<p style="margin-left:30px">
+		Entonces:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{Q_{2,\rm irrev} + Q_{1,\rm irrev}}{Q_{2,\rm irrev}} &lt;
+			\dfrac{T_2 - T_1}{T_2} \\[1ex]
+			\cancel{1} \! + \dfrac{Q_{1,\rm irrev}}{Q_{2,\rm irrev}} &lt;
+			\cancel{1} \! -	\dfrac{T_1}{T_2} \\[1ex]
+			\dfrac{Q_{2,\rm irrev}}{T_2} + \dfrac{Q_{1,\rm irrev}}{T_1} &lt; 0
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Basándose en esta última desigualdad, si un ciclo irreversible 
+		cualquiera se recorriera de manera cuasiestática de la suma de las 
+		porciones infinitesimales en las que se dividiría el ciclo 
+		resultaría:</p>
+		
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+		$\boxed{\displaystyle \oint \dfrac{q_{\rm irrev}}{T} &lt; 0}$ &emsp;
+		</span>
+		<span style="display:table-cell">Ciclo
+		irreversible.<br> (Desigualdad de Clausius).
+		</span>
+	</p>
+		
+	<p style="margin-left:30px">
+		Donde $T$ es la temperatura del foco (no del sistema).</p>
+		
+	<p style="margin-left:30px">
+		Ahora, se imagina un ciclo en el que, sin más concreción, en el 
+		camino de ida el proceso es irreversible y en el de vuelta 
+		reversible:</p>
+	
+<center>
+	<object data="entropia_07.svg" width="405" height="327"
+	type="image/svg+xml"></object>
+</center>
+
+	<p style="margin-left:30px">
+		Teniendo en cuenta la desigualdad de Clausius para un ciclo 
+		irreversible, ya que el ciclo lo es en una parte, e integrando el 
+		ciclo separando sus dos tramos distintos:</p>
+		
+	<p style="text-align:center">
+		$\displaystyle \oint \dfrac{q_{\rm irrev}}{T} = \int_{\rm A}^{\rm B}
+		\dfrac{q_{\rm irrev}}{T} + \int_{\rm B}^{\rm A} \underbrace{
+		\dfrac{q_{\rm rev}}{T}}_{dS} &lt; 0$</p>
+		
+	<p style="margin-left:30px">
+		Por tanto:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int_{\rm A}^{\rm B} \dfrac{q_{\rm irrev}}{T} +
+			\int_{\rm B}^{\rm A} dS &lt; 0 \\[1ex]
+			\displaystyle \int_{\rm A}^{\rm B} \dfrac{q_{\rm irrev}}{T} -
+			\int_{\rm A}^{\rm B} dS &lt; 0 \\[1ex]
+			\boxed{
+				\displaystyle \int_{\rm A}^{\rm B} \dfrac{q_{\rm irrev}}{T} &lt;
+				\int_{\rm A}^{\rm B} dS
+			}
+		\end{array}
+		$
+		<span style="display:block;margin-top:1ex">
+			Desigualdad de Clausius.</span>
+	</p>
+	
+	<p style="margin-left:30px">Integrando el lado derecho:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int_{\rm A}^{\rm B} \dfrac{q_{\rm irrev}}{T} &lt;
+			\Delta S_{\rm A \to B} = S_{\rm B} - S_{\rm A} \\[1ex]
+			(S_{\rm B} - S_{\rm A}) - \displaystyle \int_{\rm A}^{\rm B}
+			\dfrac{q_{\rm irrev}}{T} &gt; 0
+		\end{array}
+		$
+	</p>
+		
+	<p style="margin-left:30px">
+		Si el cambio de estado irreversible fuera infinitesimal y en un 
+		sistema aislado <span style="white-space:nowrap">($q_{\rm irrev}
+		= 0$)</span>:</p>
+	
+	<p style="text-align:center">
+		$\boxed{dS_{\rm sist. \, aislado} &gt; 0}$
+		<span style="display:block;margin-top:1ex">
+			Proceso irreversible, en un sistema cerrado y adiabático<br>(o, en
+			particular, aislado).
+		</span>
+	<p>
+
+	<p style="margin-left:30px">
+		Por tanto, en todos los procesos espontáneos que se producen en un 
+		sistema aislado la entropía aumenta, hasta alcanzar un valor máximo 
+		(equilibrio termodinámico) cuando el proceso cesa. La entropía es 
+		pues el criterio que indica cuando un proceso es espontáneo o 
+		no.</p>
+		
+	<p style="margin-left:30px">
+		Se considera que el foco calorífico permanece en equilibrio interno 
+		y que mantiene un volumen constante, por lo que el calor 
+		intercambiado por aquél es entonces función de estado, i.e. 
+		independiente de cómo sea el proceso (reversible o irreversible). 
+		Siendo esto así:</p>
+		
+	<p style="text-align:center">
+		$\Delta S_{\rm med} = \displaystyle \int_{\rm A}^{\rm B}
+		\dfrac{q_{\rm rev,med}}{T} = \int_{\rm A}^{\rm B} 
+		- \dfrac{q_{\rm irrev,sist}}{T}$</p>
+		
+	<p style="margin-left:30px">
+		Así que para un proceso irreversible:</p>
+		
+	<p style="text-align:center">
+		$\boxed{\Delta S_{\rm univ} = (S_{\rm B} - S_{\rm {A}}) - \displaystyle
+		\int_{\rm A}^{\rm B} \dfrac{q_{\rm irrev,sist}}{T} &gt; 0}$</p>
+		
+	<p style="margin-left:30px">
+		Enunciado de Clausius:</p>
+		
+	<p style="margin-left:60px">
+		<i>La energía del Universo es constante, mientras	que su entropía
+		tiende a aumentar, hacia un máximo.</i></p>
+		
+	<p style="margin-left:30px">
+		En particular, haciendo uso de la última ecuación, para un ciclo
+		irreversible:</p>
+		
+	<p style="text-align:center">
+		$\Delta S_{\rm univ} = - \displaystyle \oint \dfrac{q_{\rm irrev,sist}}{T}
+		&gt; 0$</p>
+		
+<p>- Procesos irreversibles y degradación de la energía:</p>
+
+<p>Se contempla el caso de dos máquinas térmicas, una reversible y otra
+irreversible:</p>
+
+<p style="display:table;margin-left:auto;margin-right:auto">
+	<span style="display:table-row">
+		<span style="display:table-cell;text-align:center">
+			<object data="entropia_08.svg" type="image/svg+xml" width="173"
+			height="240"></object>
+			<span style="display:block;margin-top:1ex;margin-left:-13px">
+				máquina de Carnot</span>
+			<span style="margin-left:-13px">(ciclo reversible)</span>
+		</span>
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;vertical-align:middle">
+			$
+			\begin{array}{l}
+				\Delta S_{\rm sist} = \dfrac{Q_2}{T_2} + \dfrac{Q_1}{T_1} = 0 \\[1ex]
+				\Delta S_{\rm med} = -\dfrac{Q_2}{T_2} - \dfrac{Q_1}{T_1} = 0 \\[1ex]
+				T_1 \Delta S_{\rm med} = -Q_2 \dfrac{T_1}{T_2} - Q_1 \quad (1) \\[1ex]
+				\Delta S_{\rm univ} = \Delta S_{\rm sist} + \Delta S_{\rm med} =
+				0 \quad (\text{ciclo reversible})
+			\end{array}
+			$
+		</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell;padding:1em 0"></span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell;text-align:center">
+			<object data="entropia_09.svg" type="image/svg+xml" width="180"
+			height="240"></object>
+			<span style="display:block;margin-top:1ex;margin-left:-20px">
+				(ciclo irreversible)</span>
+		</span>
+		<span style="display:table-cell">&emsp;&emsp;</span>
+		<span style="display:table-cell;vertical-align:middle">
+			$
+			\begin{array}{l}
+				\Delta S_{\rm sist}' = 0 \quad (\text{proceso cíclico}) \\[1ex]
+				\Delta S_{\rm med}' =
+				-\dfrac{Q_2}{T_2} - \dfrac{\smash[b]{Q_{1,\rm irrev}'}}{T_1} \\[1ex]
+				T_1 \Delta S_{\rm med}' = -Q_2 \dfrac{T_1}{T_2} - Q_{1,\rm irrev}'
+				\quad (2) \\[1ex]
+				\Delta S_{\rm univ}' = \! \cancelto{0}{\Delta S_{\rm sist}'} \! +
+				\Delta S_{\rm med}' &gt; 0 \quad (\text{ciclo irreversible})
+			\end{array}
+			$
+		</span>
+	</span>
+</p>
+
+<p>Haciendo la resta $(2) - (1)$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			T_1 \Delta S_{\rm med}' - \! \cancelto{0}{T_1 \Delta S_{\rm med}}
+			\! = \! \cancel{-Q_2 \dfrac{T_1}{T_1}} \! - Q_{1,\rm irrev}' + \!
+			\cancel{Q_2 \dfrac{T_1}{T_2}} \! + Q_1 \\[1ex]
+			T_1 \Delta S_{\rm med}' = Q_1 - Q_{1,\rm irrev}'
+		\end{array}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$T_1 \Delta S_{\rm med}' = T_1 \Delta S_{\rm univ}' &gt; 0$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			Q_1 - Q_{1,\rm irrev}' &gt; 0 \\[1ex]
+			Q_1 &gt; Q_{1,\rm irrev}'
+		\end{array}
+		$
+	</p>
+	
+<p>Así que $Q_{1,\rm irrev}'$ es más negativo que $Q_1$, por lo que el
+ciclo irreversible devuelve al medio una cantidad de calor en exceso,
+$Q_{\rm exc}$, respecto al ciclo reversible, en lo que se conoce como
+degradación de la energía. Esto es:</p>
+
+	<p style="text-align:center">
+		$Q_1 - Q_{1,\rm irrev}' = Q_{\rm exc}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$Q_{\rm exc} = T_1 \Delta S_{\rm med}'$</p>
+		
+<p>Además, teniendo en cuenta que la variación de energía interna al 
+completar un ciclo es cero, también:</p>
+
+	<p style="margin-left:30px">
+		$
+		\left.
+		\begin{alignedat}{2}
+			&amp;\text{Ciclo reversible:} &amp;&amp;-W_{\rm rev} = Q_2 + Q_1 \\
+			&amp;\text{Ciclo irreversible:} &amp;\enspace &amp;-W_{\rm irrev} =
+			Q_2 + Q_{1,\rm irrev}
+		\end{alignedat} \!
+		\right\}
+		$
+		y $\, Q_1 &gt; Q_{1,\rm irrev}' \, \Rightarrow \, W_{\rm irrev} &gt;
+		W_{\rm rev}$
+	</p>
+	
+<p>Por consiguiente, el trabajo reversible es más negativo que el
+irreversible.</p>
+
+<p>Así pues $Q_{\rm exc}$ es calor tomado del foco caliente en el ciclo
+irreversible que se hubiera aprovechado como trabajo de haber sido
+reversible.</p>
+
+<p>En un proceso irreversible infinitesimal (o elemental):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			q_{\rm irrev} = dU - w_{\rm irrev} \\[1ex]
+			dS_{\rm med} = \dfrac{q_{\rm rev,med}}{T} =
+			\dfrac{-q_{\rm irrev,sist}}{T} = \dfrac{-dU + w_{\rm irrev}}{T}
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dS_{\rm univ} = dS_{\rm sist} + dS_{\rm med} \\[1ex]
+			TdS_{\rm univ} = TdS_{\rm sist} - dU + w_{\rm irrev}
+		\end{array}
+		$
+	</p>
+
+<p>Si el proceso fuera, entre los dos mismos estados inicial y final,
+reversible:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dU = q_{\rm rev} + w_{\rm rev} = TdS_{\rm sist} + w_{\rm rev} \\[1ex]
+			w_{\rm rev} = dU - TdS_{\rm sist}
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$TdS_{\rm univ} = w_{\rm irrev} - (dU - TdS_{\rm sist}) =
+		w_{\rm irrev} - w_{\rm rev}$</p>
+		
+<p>Siendo, en un proceso irreversible:</p>
+
+	<p style="text-align:center">
+		$T dS_{\rm univ} &gt; 0$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$w_{\rm irrev} - w_{\rm rev} &gt; 0$</p>
+		
+<p>Así que, teniendo en cuenta esta desigualdad:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">Expansión:</span>
+			<span style="display:table-cell">$w &lt; 0 \, \Rightarrow \,
+			w_{\rm rev}$ es el máximo	aprovechable.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">Compresión:&ensp;</span>
+			<span style="display:table-cell">$w &gt; 0 \, \Rightarrow \,
+			w_{\rm irrev}$ es mayor (consume más).</span>
+		</span>
+	</p>
+	
+<p>- Diagrama entrópico:</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$q_{\rm rev} = T dS$</p>
+		
+<p>Entonces, su integral es el área bajo la curva en una representación
+de $T$ frente a $S$ (diagrama entrópico). Esto es:</p>
+
+ <p style="text-align:center">
+	 <object data="entropia_10.svg" type="image/svg+xml" width="241"
+	 height="211" style="display:inline-block;vertical-align:middle"></object>
+	 $Q_{\rm rev} = \displaystyle \int_1^2 T \, dS$
+	</p>
+	
+<p>Casos:</p>
+
+<ul>
+	<li>En un proceso isotérmico:
+		<p style="text-indent:0">
+			<object data="entropia_11.svg" type="image/svg+xml" width="180"
+			height="220" style="display:inline-block;vertical-align:middle">
+			</object>
+			$\quad Q_{\rm rev} = T(S_2 - S_1)$
+		</p>
+	</li>
+	<li>En un proceso adiabático:
+		<p style="text-indent:0">
+			<object data="entropia_12.svg" type="image/svg+xml" width="180"
+			height="220" style="display:inline-block;vertical-align:middle">
+			</object>
+			$
+			\quad
+			\left.
+				\begin{array}{r}
+					q_{\rm rev} = 0 \Rightarrow TdS = 0 \\
+					T \neq 0
+				\end{array}
+			\right\} \Rightarrow dS = 0
+			$
+		</p>
+	</li>
+	<li>También, procesos isobárico e isocórico:
+		<p style="text-indent:0">
+			<object data="entropia_13.svg" type="image/svg+xml" width="180"
+			height="220" style="display:inline-block;vertical-align:middle">
+			</object>
+			$
+			\quad
+			\left(\dfrac{\partial T}{\partial S}\right)_{\! V} = \dfrac{T}{C_V}
+			&gt; \dfrac{T}{C_P} =
+			\left(\dfrac{\partial T}{\partial S}\right)_{\! P}
+			$
+		</p>
+		
+		<p style="text-indent:0">
+			El sentido de esta última desigualdad es debido a que $C_P$ es 
+			mayor que $C_V$, ya que en el caso de presión constante se 
+			necesita más calor, que a volumen constante, para un mismo 
+			aumento de temperatura, porque parte de él va a realizar trabajo 
+			de expansión. La diferencia entre $C_P$ y $C_V$ es significativa 
+			en gases y puede llegar a despreciarse en fases condensadas.</p>
+			
+		<p style="text-indent:0">
+			Siendo a $P =$ cte.:</p>
+			
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					q_P = C_P \, dT_P \\[1ex]
+					dS_P = \dfrac{q_P}{T}
+				\end{array} \,
+				\right\} \Rightarrow dS_P = \dfrac{C_P}{T} \, dT_P
+				$
+			</p>
+				
+		<p style="text-indent:0">
+			Dividiendo por $dT_P$:</p>
+			
+			<p style="text-align:center">
+				$
+				\dfrac{dS_P}{dT_P} =
+				\left(\dfrac{\partial S}{\partial T}\right)_{\! P} = \dfrac{C_P}{T}
+				\, \Rightarrow \, \left(\dfrac{\partial T}{\partial S}\right)_{\! P}
+				= \dfrac{T}{C_P}
+				$
+			</p>
+			
+		<p style="text-indent:0">Hallándose el término derecho de la 
+		desigualdad anterior. De forma análoga, para $V =$ cte., se encontraría
+		el lado izquierdo. Esto es:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					q_V = C_V \, dT_V \, \Rightarrow \, dS_V = \dfrac{C_V}{T}
+					\, dT_V \, \Rightarrow\\[1ex]				
+					\underset{\times \frac{1}{dT_V}}{\Longrightarrow}
+					 \dfrac{dS_V}{dT_V} = 
+					 \left(\dfrac{\partial S}{\partial T}\right)_{\! V} =
+					\dfrac{C_V}{T} \, \Rightarrow \,
+					\left(\dfrac{\partial T}{\partial S}\right)_{\! V} 
+					= \dfrac{T}{C_V}
+				\end{array}
+				$
+			</p>
+	</li>
+	<li>Para el ciclo de Carnot:
+		<p style="text-indent:0">
+			<object data="entropia_14.svg" type="image/svg+xml" width="235"
+			height="220" style="display:inline-block;vertical-align:middle">
+			</object>
+			$
+			\begin{array}{ll}
+				\rm A \to B &amp;\displaystyle Q_2 =
+				\int_{\rm A}^{\rm B} T \, dS = T_2 (S_{\rm B} - S_{\rm A}) \\[1ex]
+				\rm B \to C &amp;Q = 0 \\[1ex]
+				\rm C \to D &amp;
+				\begin{aligned}[t]
+					Q_1 = \displaystyle \int_{\rm C}^{\rm D} T \, dS &amp;=
+					T_1 (S_{\rm D} - S_{\rm C}) = \\
+					&amp;= T_1 (S_{\rm A} - S_{\rm B})
+				\end{aligned} \\[1ex]
+				\rm D \to A &amp;Q = 0
+			\end{array}
+			$
+		</p>
+		
+		<p style="text-indent:0">
+			Siendo:</p>
+			
+			<p style="text-align:center">
+				$\Delta U_{\rm ciclo} = 0 \, \Rightarrow
+				\begin{aligned}[t]
+					-W = Q_2 + Q_1 &amp;=
+					T_2(S_{\rm B} - S_{\rm A}) - T_1(S_{\rm B} - S_{\rm A}) = \\[1ex]
+					&amp;=
+					(\!\underset{
+						\begin{subarray}{c}
+						 \underbrace{\displaystyle \hphantom{T_2 - T_1}} \\[.5ex]
+						 \Delta T
+						\end{subarray}
+					}{T_2 - T_1}\!)
+					(\!\underset{
+						\begin{subarray}{c}
+							\underbrace{
+								\displaystyle \hphantom{S_{\rm B} - S_{\rm A}}
+							} \\[.5ex]
+							\Delta S
+						\end{subarray}
+					}{S_{\rm B} - S_{\rm A}}\!)
+				\end{aligned}
+				$
+			</p>
+			
+	</li>
+</ul>
+
+<p>- Cálculo de variaciones de entropía en algunos procesos simples:</p>
+
+<ol>
+	<li>Cambio de fase reversible:
+		
+		<p style="text-indent:0"> Se produce, según sea la presión, a una 
+		determinada temperatura constante. Cuando $T$ es constante:</p>
+			
+			<p style="text-align:center">
+				$\Delta S = \displaystyle \int_i^f \dfrac{q_{\rm rev}}{T} =
+				\dfrac{1}{T} \int_i^f q_{\rm rev} = \dfrac{Q_{\rm rev}}{T}$</p>
+					
+		<p style="text-indent:0">La presión durante el cambio de fase 
+		también es constante, por lo que:</p>
+		
+			<p style="text-align:center">
+				$
+				Q_{\rm rev} =
+				\Delta H_{
+					\begin{subarray}{l} 
+						\rm cambio \\
+						\rm fase
+					\end{subarray}
+				}
+				\quad (Q_P = \Delta H)
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Por tanto:</p>
+			
+			<p style="text-align:center">
+				$\Delta S_{\rm cf} = \dfrac{1}{T_{\rm cf}}	\Delta H_{\rm cf}$</p>
+			
+		<p style="text-indent:0">
+			Donde cf $\equiv$ cambio fase.</p>
+	</li>
+	<li>En un gas ideal. Para éste:
+	
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					dU = n C_{{\rm m},V} \, dT \\[1ex]
+					P = \dfrac{nRT}{V}
+				\end{array}
+				$
+			</p>
+		
+		<p style="text-indent:0">
+			Además, si sólo se considera trabajo presión-volumen, en general:</p>
+			
+			<p style="text-align:center">
+				$q_{\rm rev} = dU - w_{\rm rev} = dU + P \, dV$</p>
+				
+		<p style="text-indent:0">
+			Por tanto, para un gas ideal:</p>
+			
+			<p style="text-align:center">
+				$dS = \dfrac{q_{\rm rev}}{T} = \dfrac{dU}{T} + \dfrac{P \, dV}{T}
+				= n C_{{\rm m},V} \dfrac{dT}{T} + nR \dfrac{dV}{V}$</p>
+				
+		<p style="text-indent:0">
+			Puede integrarse, considerando $C_{{\rm m},V}$ constante, de dos
+			maneras:</p>
+			
+		<ul>
+			<li>De forma definida:
+			
+					<p style="text-align:center">
+						$\Delta S = \displaystyle \int_1^2 n C_{{\rm m},V} \dfrac{dT}{T}
+						+ \int_1^2 n R \dfrac{dV}{V} = n C_{{\rm m},V} \ln \dfrac{T_2}{T_1}
+						+ n R \ln \dfrac{V_2}{V_1}$
+					</p>
+			</li>
+			<li>De forma indefinida:
+					
+					<p style="text-align:center">
+						$S = n C_{{\rm m},V} \ln T + n R \ln V + \mspace{-21mu}
+						\underset{
+							\begin{subarray}{c}
+								\uparrow \\
+								\text{constante de} \\
+								\smash[b]{\text{integración}}
+							\end{subarray}
+						}{n S_0} \mspace{-21mu} = n (C_{{\rm m},V} \ln T
+						+ R \ln V + S_0)$</p>
+			</li>
+		</ul>
+		
+		<p style="text-indent:0">
+			Si la que actúa como variable independiente es la presión:</p>
+			
+			<p style="text-align:center">
+				$V = \dfrac{nRT}{P}$</p>
+				
+		<p style="text-indent:0">Entonces, en tal caso, para la forma
+		definida:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\Delta S &amp;= n C_{{\rm m},V} \ln \dfrac{T_2}{T_1} + nR \ln
+					\dfrac{T_2{∕}P_2}{T_1{∕}P_1} = \\[1ex]
+					&amp;= n (\underbrace{C_{{\rm m},V} + R}_{\large C_{{\rm m},P}})
+					\ln \dfrac{T_2}{T_1} + nR \ln \dfrac{P_1}{P_2} = \\[1ex] 
+					&amp;= n C_{{\rm m},P} \ln \dfrac{T_2}{T_1} + nR \ln 
+					\dfrac{P_1}{P_2}
+				\end{align}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Donde se ha hecho uso de $C_{{\rm m},P} - C_{{\rm m},V} = R$ para un gas ideal.
+		</p>
+		
+		<p style="text-indent:0">
+			Para la forma indefinida:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{align}
+					S &amp;= n C_{{\rm m},V} \ln T + nR \ln \dfrac{nRT}{P} + nS_0 = \\[1ex]
+					&amp;= n (\underbrace{C_{{\rm m},V} + R}_{\large C_{{\rm m},P}}) \ln T - nR
+					\ln P + n(\underbrace{R \ln nR + S_0}_{\large S_0'}) = \\[1ex]
+					&amp;= n( C_{{\rm m},P} \ln T - R \ln P + S_0')
+				\end{align}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Si ambas variables independientes son presión y volumen:</p>
+			
+			<p style="text-align:center">
+				$T = \dfrac{PV}{nR}$</p>
+				
+		<p style="text-indent:0">
+			Entonces, en tal situación, tras, como antes, operar:</p>
+			
+			<p style="text-align:center">
+				$\Delta S = n C_{{\rm m},P} \ln \dfrac{V_2}{V_1} - n C_{{\rm m},V}
+				\ln \dfrac{P_1}{P_2}$</p>
+				
+		<p style="text-indent:0">
+			También:</p>
+			
+			<p style="text-align:center">
+				$S = n (C_{{\rm m},P} \ln V + C_{{\rm m},V} \ln P + S_0'')$</p>
+	</li>
+	<li>Mezcla de gases ideales:
+	
+		<center>
+			<object data="entropia_15.svg" width="371" height="121"
+			type="image/svg+xml" style="margin-top:1em"></object>
+		</center>
+	
+		<p style="text-indent:0">
+			Inicialmente, a la misma $P$ y $T$, una serie de gases ideales
+			en distintos compartimentos contiguos. A continuación, se quitan
+			las paredes separadoras por lo que:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					V = V_{\rm A} + V_{\rm B} + \dotsb + V_{\rm i} \\[1ex]
+					n = n_{\rm A} + n_{\rm B} + \dotsb + n_{\rm i}
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			La entropía inicial del sistema es la suma de las entropías de 
+			los gases en sus respectivos compartimentos. Esto es:</p>
+			
+			<p style="text-align:center">
+				$S_{\rm inicial} = \displaystyle \sum_i n_i (C_{{\rm m},V} \ln T + R
+				\ln V_i +	S_{0,i})$</p>
+				
+		<p style="text-indent:0">
+			Siendo:</p>
+			
+			<p style="text-align:center">
+				$y_i = \dfrac{n_i}{n} = \dfrac{V_i}{V} \Rightarrow V_i = y_i
+				V$ &ensp; Ley de Amagat.</p>
+					
+		<p style="text-indent:0">
+			Sustituyendo:</p>
+			
+			<p style="text-align:center">
+				$S_{\rm inicial} = \displaystyle \sum_i n_i (C_{{\rm m},V} \ln T +
+				R \ln y_i + R \ln V + S_{0,i})$</p>
+				
+		<p style="text-indent:0">
+			La entropía final, en que cada gas ocupa ahora todo el volumen
+			del sistema:</p>
+			
+			<p style="text-align:center">
+				$S_{\rm final} = \displaystyle \sum_i n_i (C_{{\rm m},V} \ln T + R
+				\ln V + S_{0,i})$</p>
+				
+		<p style="text-indent:0"> El incremento de entropía de la mezcla o, 
+		como se conoce, entropía de mezcla, es pues:</p>
+			
+			<p style="text-align:center">
+				$\Delta S_{\rm mezcla} = S_{\rm final} - S_{\rm inicial} =
+				- \displaystyle \sum_i n_i R \ln y_i = -R \sum_i n_i \ln y_i$</p>
+				
+		<p style="text-indent:0">Esto, para $n$ moles de mezcla. Para un mol:</p>
+		
+			<p style="text-align:center">
+				$\Delta S_{\rm m, mezcla} = \dfrac{\Delta S_{\rm mezcla}}{n} =
+				\dfrac{-R \sum\limits_i n_i \ln y_i}{n} = -R \displaystyle
+				\sum_i y_i \ln y_i$</p>
+				
+	</li>
+</ol>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../escala_termodinamica_temperatura/escala_termodinamica_temperatura.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../maquinas_termicas_focos_capacidad_calorifica_finita/maquinas_termicas_focos_capacidad_calorifica_finita.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

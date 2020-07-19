@@ -1,0 +1,860 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Mezclas condensadas">
+<meta name="keywords" content="mezclas, condensadas">
+<title>Mezclas condensadas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Mezclas condensadas</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p style="display:table">
+	<span style="display:table-cell;white-space:nowrap">
+		Mezcla (homogénea):&nbsp;</span>
+	<span style="display:table-cell">
+		Un sistema con más de un constituyente formando una sola fase: 
+		sólida, líquida o gaseosa. No existe ninguna diferencia en el 
+		tratamiento termodinámico que se da a cada uno de los 
+		constituyentes.</span>
+</p>
+
+<p style="display:table">
+	<span style="display:table-cell;white-space:nowrap">
+		Disolución:&nbsp;</span>
+	<span style="display:table-cell">
+		Un sistema con más de un constituyente formando una sola fase: sólida o 
+		líquida. El tratamiento termodinámico que se da a cada uno de los 
+		constituyentes es distinto. Se distingue entre el componente de
+		mayor proporción, disolvente, y los de menor proporción, solutos.</span>
+</p>
+
+<p>Como se verá, para el estudio de mezclas condensadas, sólidas o 
+líquidas, y disoluciones se deberán definir unos estados de referencia.</p>
+
+<p>Una mezcla condensada ideal es aquella que cumple la ley empírica de 
+Raoult para todo el intervalo de composiciones, i.e. para toda 
+composición, a cualquier presión y temperatura.</p>
+
+<p>- Ley de Raoult:</p>
+
+<p>Se supone una mezcla líquida binaria en equilibrio con una fase 
+gaseosa:</p>
+
+<center>
+	<object data="mezclas_condensadas_01.svg" type="image/svg+xml"
+	width="161" height="161"></object>
+</center>
+
+<p>Si se determina experimentalmente, a diferentes concentraciones, la 
+presión de vapor para cada uno de los componentes, i.e. sus presiones 
+parciales ($P_{\rm A}$ y $P_{\rm B}$), con la particularidad que sean 
+compuestos muy similares, se observa que:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				<object data="mezclas_condensadas_02.svg" type="image/svg+xml"
+				width="225" height="300"></object>
+			</span>
+			<span
+			style="display:table-cell;padding-left:1.5em;padding-right:1.5em;vertical-align:middle">
+				($T$ cte.)</span>
+			<span style="display:table-cell">
+				<object data="mezclas_condensadas_03.svg" type="image/svg+xml"
+				width="225" height="300"></object>
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;text-align:center">
+				$P_{\rm A} = x_{\rm A} P_{\rm A}^*$</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell;text-align:center">
+				$P_{\rm B} = x_{\rm B} P_{\rm B}^*$</span>
+		</span>
+	</p>
+	
+<p>Donde $x_{\rm A}$ y $x_{\rm B}$ son las fracciones molares de A y B
+en la fase líquida, y $P_{\rm A}^*$ y $P_{\rm B}^*$ son las presiones de
+vapor de los líquidos A y B puros.</p>
+
+<p>Teniendo en cuenta que por definición, para cualquier tipo de gases, 
+$P_i = y_i P$, donde $y_i$ es la fracción molar de $i$ en la fase 
+gaseosa:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i P_i = \sum_i y_i P = P \overbrace{\sum_i y_i}^1
+		= P$</p>
+		
+<p>Entonces (sin otros gases presentes en la fase vapor):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			P = P_{\rm A} + P_{\rm B} &amp;=
+			x_{\rm A} P_{\rm A}^* + x_{\rm B} P_{\rm B}^* = \\[1ex]
+			&amp;= x_{\rm A} P_{\rm A}^* + (1 - x_{\rm A}) P_{\rm B}^* = \\[1ex]
+			&amp;= P_{\rm B}^* + (P_{\rm A}^* - P_{\rm B}^*) x_{\rm A}
+		\end{align}
+		$
+	</p>
+	
+<p>Si se juntan las dos gráficas anteriores del siguiente modo (en
+una especie de diagrama de doble entrada):</p>
+
+<center>
+	<object data="mezclas_condensadas_04.svg" type="image/svg+xml"
+	width="233" height="320"></object>
+</center>
+
+<p>En conclusión:</p>
+
+	<p style="text-align:center">
+		${\boxed{P_i = x_i P_i^\ast}}$
+		<span style="display:block;margin-top:1ex">
+			Ley de Raoult.</span>
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$P_i \rightarrow {}$</span>
+		<span style="display:table-cell">
+			La presión parcial del componente $i$ en el vapor que está en 
+			equilibrio con la mezcla condensada, a la presión total de la 
+			mezcla y a la temperatura de la mezcla.</span>
+	</p>
+	
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$x_i \rightarrow {}$</span>
+		<span style="display:table-cell">
+			La fracción molar del componente $i$ en la mezcla condensada.</span>
+	</p>
+	
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$P_i^\ast \rightarrow {}$</span>
+		<span style="display:table-cell">
+			La presión de vapor del componente $i$ puro, medida a la presión 
+			total de la mezcla y a la temperatura de la mezcla.</span>
+	</p>
+	
+<p>La presión de vapor de $i$ depende, aunque poco, de la presión 
+total, por lo que en sentido estricto sería necesario mantenerla 
+constante, p.ej. mediante el ajuste de la cantidad de un tercer gas 
+insoluble presente en la fase vapor. Visto de otra manera, ya que la 
+presión ejercida sobre el líquido afecta a la presión de vapor, la 
+introducción de un gas extraño insoluble que modifique la presión total 
+también, por tanto, modificará la presión de vapor de $i$ ya sea tanto 
+en la mezcla como puro.</p>
+
+<p>El gas en equilibrio con la mezcla condensada se alejará del 
+comportamiento de gas ideal a presiones altas y, en tal caso, 
+entonces, en la ley, se sustituyen presiones por fugacidades:</p>
+
+	<p style="text-align:center">
+		$f_i = x_i f_i^*$</p>
+		
+<p>Experimentalmente, la ley de Raoult se cumple en algunas mezclas, 
+que son ideales en su comportamiento, pero habitualmente esto no 
+ocurre. A menudo ambos componentes presentan presiones parciales 
+desplazadas en el mismo sentido, ya sea por encima o por debajo, de las 
+calculadas por la ley de Raoult. Esto es:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$
+			\left.
+			\begin{array}{l}
+				P_{\rm A} &gt; x_{\rm A} P_{\rm A}^* \\[.5ex]
+				P_{\rm B} &gt; x_{\rm B} P_{\rm B}^*
+			\end{array}
+			\right\} \,
+			$
+		</span>
+		<span style="display:table-cell">
+			Sistema presenta desviación positiva con respecto a la ley de
+			Raoult.</span>
+	</p>
+	
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$
+			\left.
+			\begin{array}{l}
+				P_{\rm A} &lt; x_{\rm A} P_{\rm A}^* \\[.5ex]
+				P_{\rm B} &lt; x_{\rm B} P_{\rm B}^*
+			\end{array}
+			\right\} \,
+			$
+		</span>
+		<span style="display:table-cell">
+			Sistema con desviación negativa respecto a la ley de
+			Raoult.</span>
+	</p>
+	
+<p>Son ejemplo de esto:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;text-align:center;padding-right:1em">
+			<object data="mezclas_condensadas_05.svg" type="image/svg+xml"
+			width="233" height="300"></object>
+			<span style="display:block">
+				$\ce{CS2}$ (A) - Acetona (B)</span>
+		</span>
+		<span style="display:table-cell;text-align:center;padding-left:1em">
+			<object data="mezclas_condensadas_06.svg" type="image/svg+xml"
+			width="233" height="300"></object>
+			<span style="display:block">
+				$\ce{CHCl3}$ (A) - Acetona (B)</span>
+		</span>
+	</p>
+	
+<p>Como se observa en las gráficas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lim\limits_{x_{\rm A} \to 1} \dfrac{P_{\rm A}}{x_{\rm A}} =
+			P_{\rm A}^* \\[1ex]
+			\lim\limits_{x_{\rm B} \to 1} \dfrac{P_{\rm B}}{x_{\rm B}} =
+			P_{\rm B}^*
+		\end{array}
+		$
+	</p>
+	
+<p>Esto es, se cumple la ley de Raoult en el límite:</p>
+
+	<p style="text-align:center">
+		$P_i = x_i P_i^* \quad x_i \to 1$</p>
+		
+<p>Como puede apreciarse en las representaciones anteriores, la curva 
+de $i$ se acerca a la línea recta discontinua que representa a la ley 
+de Raoult, hasta hacerse tangencial a ésta, cuando $x_i$ se aproxima a 
+la unidad.</p>
+
+<p>$\ast$ Actividad de un componente en mezclas condensadas:</p>
+
+<p>- Mezcla ideal:</p>
+
+<p>Sea $i$ un componente de dicha mezcla, estando ésta en equilibrio 
+con su vapor (el cual se considera que no contiene componentes ajenos a 
+la mezcla):</p>
+
+	<p style="text-align:center">
+		Mezcla (líquida) $\ce{&lt;=&gt;}$ Vapor</p>
+		
+<p>La condición de equilibrio:</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (l)} = \mu_{i \rm (g)}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (g)} = \mu°_{\!\! \lower 2mu i \rm(g)} + RT \ln P_i$</p>
+		
+<p>Donde se ha omitido, por conveniencia, $P° = \pu{1 atm}$ como
+denominador en el argumento del logaritmo. También se ha considerado
+vapor ideal (si no $f_i$ en vez de $P_i$).</p>
+
+<p>Como la mezcla es ideal:</p>
+
+	<p style="text-align:center">
+		$P_i = P_i^* x_i$ &emsp; Ley de Raoult.</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_{i \rm (l)} = \mu_{i \rm (g)} &amp;=
+			\mu°_{\!\! \lower 2mu i \rm (g)} +	RT \ln (P_i^* x_i)	= \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu i \rm (g)} + RT \ln P_i^* +
+			RT \ln x_i \tag{$\ast$} \label{*}
+		\end{align}
+		$
+	</p>
+
+<p>En donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$\mu°_{\!\! \lower 2mu i \rm (g)}$ &ensp;</span>
+			<span style="display:table-cell">
+				Potencial químico en el estado tipo, i.e. gas ideal $i$	puro, a 
+				$T$ y $P = \pu{1 atm}$.
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$P_i$ &ensp;</span>
+			<span style="display:table-cell">
+				Presión parcial de $i$ en el vapor.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$P_i^*$ &ensp;</span>
+			<span style="display:table-cell">
+				Presión de vapor de $i$ puro.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$x_i$ &ensp;</span>
+			<span style="display:table-cell">
+				Fracción molar de $i$ en la mezcla condensada.</span>
+		</span>
+	</p>
+	
+<p>Cuando la mezcla ideal es sólo el líquido $i$ puro, por tanto $x_i =
+1$, entonces:</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (l)} = \mu_{i \rm (l)}^* (T,P_i^*)$ &emsp; ($i$ puro,
+		$P_i^*$, $T$)</p>
+
+<p>Que es, por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (l)}^* (T,P_i^*) = \mu°_{\!\! \lower 2mu i \rm (g)} +
+		RT \ln P_i^*$</p>
+		
+<p>Remplazando en $\eqref{*}$:</p>
+
+	<p style="text-align:center">
+		$\boxed{\mu_{i \rm (l)} = \mu_{i \rm (l)}^* (T,P_i^*) + RT \ln x_i}$
+	</p>
+		
+<p>Contemplando la situación más general, i.e. que pudiera haber en la 
+fase vapor algún gas inmiscible con la fase líquida, lo que afectaría a 
+la presión total (la aumentaría), entonces, para el líquido $i$ 
+puro:</p>
+
+<center>
+	<object data="mezclas_condensadas_07.svg" type="image/svg+xml"
+	width="161" height="161"></object>
+</center>
+
+<p>Sin $\ce{X_{(g)}}$ en la fase vapor, i.e. líquido $i$ puro en 
+equilibrio sólo con su propio vapor:</p>
+
+	<p style="text-align:center">
+		$\ce{$i$_{(l)} &lt;=&gt; $i$_{(g)}}$ &emsp; ($P_i^*,T$)</p>
+			
+<p>Entonces:</p>
+		
+	<p style="text-align:center">	
+		$\mu_{i \rm (l)}^* (P_i^*,T) = \mu_{i \rm (g)}^* (P_i^*,T)$</p>
+		
+<p>Con la presencia de $\ce{X_{(g)}}$ se produciría un incremento en la 
+presión sobre el líquido puro $i$, siendo el efecto de la presión total 
+$P$ sobre su potencial químico:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \mu_{i \rm (l)}^*}{\partial P} \right)_{\! T}
+		= V_{i \rm (l)}^* = V_{\rm m, \it i \rm (l)}
+		$
+	</p>
+	
+<p>Siendo que $V_{\rm m, \it i \rm (l)} {\downarrow} {\downarrow}$, 
+puede considerarse que el potencial químico del líquido $i$ puro cambia 
+poco con la presión (total), por lo que (si su incremento es moderado):</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (l)}^* (P_i^*,T) \simeq \mu_{i \rm (l)}^* (P,T)$
+		
+<p>Concluyéndose al fin:</p>
+
+	<p style="text-align:center">
+		$\boxed{\mu_{i \rm (l)} = \mu_{i \rm (l)}^* (P,T) + RT \ln x_i}
+		\tag{$\ast\ast$} \label{**}$</p>
+
+<p>En donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;white-space:nowrap">
+			$\mu_{i \rm (l)}^* (P,T)$ &ensp;</span>
+		<span style="display:table-cell">
+			Potencial químico en el estado tipo de $i$, i.e. líquido $i$ puro 
+			a $P$ y $T$ de la mezcla.</span>
+	</p>
+	
+<p>Cuando $P = \pu{1 atm}$, y se toma su estado tipo como referencia
+para todos los demás, entonces, siendo:</p>
+
+	<p style="text-align:center">
+		$d \mu_{i \rm (l)}^* = V_i^\ast \, dP = RT \, d \ln \Gamma_{i \rm 
+		(l)}$ &emsp; ($T$ cte.)</p>
+		
+<p>Integrando entre $P = \pu{1 atm}$ y $P$, se halla:</p>
+
+	<p style="text-align:center">
+		$\mu_{i \rm (l)}^* (P,T) = \mu°_{\!\! \lower 2mu {i \rm (l)}}(T) +
+		\displaystyle \int_1^P V_i^* \, dP = \mu°_{\!\! \lower 2mu {i \rm (l)}}
+		(T) + RT \ln \Gamma_{i \rm (l)}$</p>
+		
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$\Gamma_{i \rm (l)}$ &ensp;</span>
+		<span style="display:table-cell">
+			Actividad del líquido $i$ puro a $P$ y $T$ de la mezcla.</span>
+	</p>
+	
+<p>Sustituyendo en $\eqref{**}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{i \rm (l)} = \mu°_{\!\! \lower 2mu {i \rm (l)}}(T) + RT \ln
+			\Gamma_{i \rm (l)} + RT \ln x_i \\[1ex]
+			\boxed{
+				\mu_{i \rm (l)} = \mu°_{\!\! \lower 2mu {i \rm (l)}}(T) + RT \ln
+				(\Gamma_{i \rm (l)} x_i)
+			} \quad \rlap{\text{(Mezcla ideal)}} 
+		\end{array}
+		$
+	</p>
+	
+<p>En donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;white-space:nowrap">
+			$\mu°_{\!\! \lower 2mu {i \rm (l)}}(T)$ &ensp;</span>
+		<span style="display:table-cell">
+			Potencial químico en el estado tipo de $i$ en la mezcla, i.e. 
+			líquido puro $i$, por tanto $x_i = 1$, a $P = \pu{1 atm}$, con lo
+			que $\Gamma_{i \rm (l)} = 1$, y $T$ de la mezcla.</span>
+	</p>
+	
+<p>- Mezcla real:</p>
+
+<p>Para este caso, por analogía, se define:</p>
+
+	<p style="text-align:center">
+		$\boxed{\mu_{i \rm(l)} = \mu_{i \rm(l)}^◽ + RT \ln a_{i \rm (l)}}$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;white-space:nowrap">
+			$a_{i \rm (l)}$ &ensp;</span>
+		<span style="display:table-cell">
+			Actividad de $i$ en la mezcla (líquida), i.e. a la composición, 
+			$P$ y $T$ de la mezcla.</span>
+	</p>
+	
+<p>Se toma como estado de referencia $x_i \to 1$, a la $P$ y $T$ de la 
+mezcla. En el estado de referencia la mezcla cumple la ley de Raoult, 
+por tanto se comporta idealmente.</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_{i \rm (l),ideal} = \mu°_{\!\! \lower 2mu {i \rm (l)}} +
+			RT \ln (\Gamma_{i \rm (l)} x_i) \\[1ex]
+			\mu_{i \rm (l),real} = \mu_{i \rm(l)}^◽ + RT \ln a_{i \rm (l)}
+		\end{array}
+		$
+	<p>
+		
+<p>Entonces, en el estado de referencia:</p>
+
+	<p style="text-align:center">
+		$x_i \to 1 \Rightarrow \mu_{i \rm (l),ideal} =
+		\mu_{i \rm (l),real}$ &emsp; ($P$ y $T$ mezcla)</p>
+		
+<p>De donde se halla que:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{x_i \to 1} \exp \left[
+		\dfrac{
+			\mu°_{\!\! \lower 2mu {i \rm (l)}} - \mu_{i \rm (l)}^◽
+		}{RT} \right] =
+		\lim\limits_{x_i \to 1} \dfrac{a_{i \rm (l)}}{\Gamma_{i \rm (l)} x_i}
+		= k$ &emsp; ($P$ y $T$ mezcla)</p>
+		
+<p>Por convenio:</p>
+
+	<p style="text-align:center">
+		$k = 1$</p>
+		
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu {i \rm (l)}} = \mu_{i \rm (l)}^◽$</p>
+		
+<p>En consecuencia:</p>
+
+	<p style="text-align:center">
+		$\boxed{\mu_{i \rm(l)} = \mu°_{\!\! \lower 2mu {i \rm(l)}} +
+		RT \ln a_{i \rm (l)}}$ &emsp; (Mezcla real)</p>
+		
+<p>En donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell;white-space:nowrap">
+			$\mu°_{\!\! \lower 2mu {i \rm (l)}}$ &ensp;</span>
+		<span style="display:table-cell">
+			Potencial químico en el estado tipo de $i$ en la mezcla, i.e. 
+			líquido puro $i$ a $P = \pu{1 atm}$ y $T$ de la mezcla, en el
+			que $a_{i \rm (l)} = 1$.</span>
+	</p>
+	
+<p>El potencial químico de exceso del componente $i$, $\mu_i^{\rm E}$, 
+es la diferencia, para una composición, $P$ y $T$ dadas, entre el 
+potencial químico de $i$ en la mezcla real y el potencial químico de 
+$i$ si la mezcla se comportara idealmente:</p>
+
+	<p style="text-align:center">
+		$\mu_i^{\rm E} = \mu_{i \rm (l),real} - \mu_{i \rm (l),ideal} =
+		RT \ln \dfrac{a_{i \rm (l)}}{\Gamma_{i \rm (l)} x_i}$
+	</p>
+	
+<p>A continuación, se define el coeficiente de actividad:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{a_{i \rm (l)}}{\Gamma_{i \rm (l)} x_i} = f_i}$</p>
+			
+<p>(No confundir, aunque se use el mismo símbolo, con la fugacidad).</p>
+
+<p>Quedando pues:</p>
+
+	<p style="text-align:center">
+		$\boxed{\mu_{i \rm (l)} = \mu°_{\!\! \lower 2mu {i \rm (l)}} +
+		RT \ln (\Gamma_{i \rm (l)} \, f_i \, x_i)}$</p>
+		
+<p>Donde $f_i$ da la medida del alejamiento de la idealidad.</p>
+
+<p>En una mezcla, sea líquida o sólida, en el estado tipo, donde $a_i = 
+1$, componente $i$ puro ($x_i = 1$), $P = \pu{1 atm}$ ($\Gamma_i = 1$) 
+y $T$ de la mezcla, entonces:</p>
+
+	<p style="text-align:center">
+		$f_i = \dfrac{a_i}{\Gamma_i x_i} = 1$ &emsp; Estado tipo.</p>
+		
+<p>$\ast$ Determinación de actividades a partir de presiones de vapor:</p>
+
+<p>Ya sea el componente de una mezcla de líquidos o el disolvente de una 
+disolución, el estado tipo es el líquido puro a $P = \pu{1 atm}$ y $T$ 
+de la mezcla.</p>
+
+<p>Para establecer una relación entre las actividades del componente en 
+una mezcla (o disolvente en una disolución), a $P$ y $T$, y del 
+componente en el estado tipo (puro, $P = \pu{1 atm}$, $T$ mezcla), se 
+plantea lo siguiente:</p>
+
+<center>
+	<object data="mezclas_condensadas_08.svg" type="image/svg+xml"
+	width="469" height="288"></object>
+</center>
+
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$P_{\rm A}^*$ &ensp;</span>
+			<span style="display:table-cell">
+				Presión de vapor del líquido puro (de $\ce{A}$) a $P$ y $T$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$P_{\rm A}$ &ensp;</span>
+			<span style="display:table-cell">
+				Presión parcial de $\ce{A}$ en el vapor en equilibrio con la mezcla
+				líquida a $P$ y $T$.</span>
+		</span>
+	</p>
+
+<p>Ya que como función de estado no depende del camino, la diferencia 
+entre el potencial químico del componente $\ce{A}$ en la mezcla líquida 
+y el potencial químico en su estado tipo es:</p>
+
+	<p style="text-align:center">
+		$\Delta \mu_{\rm A}(1) = \Delta \mu_{\rm A}(2) + \Delta \mu_{\rm A}(3)
+		+ \Delta \mu_{\rm A}(4) + \Delta \mu_{\rm A}(5) \tag{$\ast{\ast}\ast$}
+		\label{***}$</p>
+			
+<p>Donde:</p>
+
+	<p style="margin-left:30px">
+		Etapa (3): Evaporación del líquido puro $\ce{A}$ a su $P_{\rm A}^*$
+		de equilibrio, por lo que:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{\rm A(l)}^* = \mu_{\rm A(g)}^* \\[1ex]
+			\Delta \mu_{\rm A}(3) = \mu_{\rm A(g)}^* - \mu_{\rm A(l)}^* = 0
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (5): Se disuelve $\ce{A}$, desde la mezcla gaseosa a la mezcla
+		líquida, a su $P_{\rm A}$ de equilibrio, con lo que:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{\rm A(l)} = \mu_{\rm A(g)} \\[1ex]
+			\Delta \mu_{\rm A}(5) = \mu_{\rm A(l)} - \mu_{\rm A(g)} = 0
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (1):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm A}(1) &amp;= \mu_{\rm A(l)} -
+			\mu°_{\!\! \lower 2mu {\rm A(l)}} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {\rm A(l)}} + RT \ln a_{\rm A(l)} -
+			\mu°_{\!\! \lower 2mu {\rm A(l)}} = \\[1ex]
+			&amp;= RT \ln a_{\rm A(l)}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (2):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm A}(2) &amp;= \mu_{\rm A(l)}^* -
+			\mu°_{\!\! \lower 2mu {\rm A(l)}} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {\rm A(l)}} + RT \ln a_{\rm A(l)}^* -
+			\mu°_{\!\! \lower 2mu {\rm A(l)}} = \\[1ex]
+			&amp;= RT \ln a_{\rm A(l)}^*
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (4):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm A}(4) &amp;= \mu_{\rm A(g)} - \mu_{\rm A(g)}^* = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {\rm A(g)}} + RT \ln a_{\rm A(g)} -
+			(\mu°_{\!\! \lower 2mu {\rm A(g)}} + RT \ln a_{\rm A(g)}^*) = \\[1ex]
+			&amp;= RT \ln \dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*}
+		\end{align}
+		$
+	</p>
+	
+<p>Sustituyendo en $\eqref{***}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			RT \ln a_{\rm A(l)} = RT \ln a_{\rm A(l)}^* +
+			RT \ln \dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*} \\[1ex]
+			a_{\rm A(l)} = a_{\rm A(l)}^* \dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*}
+		\end{array}
+		$
+	</p>
+	
+<p>Cambiando el símbolo de la actividad del líquido puro $\ce{A}$ a la
+$P$ y $T$ de la mezcla (o disolución):</p>
+
+	<p style="text-align:center">
+		$\boxed{a_{\rm A(l)} =
+		\Gamma_{\rm A(l)} \dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*}}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\ln a_{\rm A(l)}^* = \ln \Gamma_{\rm A(l)} = \dfrac{1}{RT}
+		\displaystyle \int_1^P V_{\rm A(l)}^* \, dP$ &emsp; ($T =$ cte.)</p>
+		
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-cell">
+			$V_{\rm A(l)}^*$ &ensp;</span>
+		<span style="display:table-cell">
+			Volumen molar del líquido puro $\ce{A}$ a $P$ y $T$ de la mezcla 
+			(o disolución).</span>
+	</p>
+	
+<p>Supuestos:</p>
+
+<ol type="a">
+	<li>Si $P$ no es muy elevada entonces $V_{\rm A(l)}^*$ constante,
+		siendo pues:
+		
+		<p style="text-align:center">
+			$\ln \Gamma_{\rm A(l)} = \dfrac{V_{\rm A(l)}^*}{RT} (P - 1)$</p>
+			
+	<p>Entonces:</p>
+			
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				P = \pu{1 atm} \Rightarrow \ln \Gamma_{\rm A(l)} = 0 \\[1ex]
+				\Gamma_{\rm A(l)} = 1 \quad  (T,P = \pu{1 atm})
+			\end{array}
+			$
+		</p>
+		
+	<p>Además pues:</p>
+		
+		<p style="text-align:center">
+			$a_{\rm A(l)} =	\dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*} \qquad
+			(T,P = \pu{1 atm})$</p>
+			
+	<p>Siendo así para la mezcla:</p>
+	
+		<p style="text-align:center">
+			$\mu_{\rm A(l)} = \mu°_{\!\! \lower 2mu {\rm A(l)}} + RT \ln
+			\dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*}$ &emsp; si $P \simeq
+			\pu{1 atm}$</p>
+			
+	<p>Puede considerarse $\Gamma_{\rm A(l)} \simeq 1$ hasta $P =
+	\pu{10 atm}$.</p>
+	</li>
+	<li>En función de la fugacidad:
+		
+		<p style="text-align:center">
+			$a_{\rm A(l)} = \Gamma_{\rm A(l)} \dfrac{f_{\rm A}}{f_{\rm A}^*}$</p>
+	</li>
+	<li>Si la mezcla es ideal, i.e. cumple Raoult ($f_{\rm A} =
+	f_{\rm A}^* x_{\rm A}$):
+		
+		<p style="text-align:center">
+			$a_{\rm A(l)} =
+			\Gamma_{\rm A(l)} \dfrac{f_{\rm A}^* x_A}{f_{\rm A}^*} =
+			\Gamma_{\rm A(l)} x_A$</p>
+		
+	<p>Que encaja con lo que se vio para mezcla ideal:</p>
+	
+		<p style="text-align:center">
+			$\mu_{\rm i(l)} =
+			\mu°_{\!\! \lower 2mu {\rm i(l)}} + RT \ln (\Gamma_{i \rm (l)} x_i)$
+		</p>
+	</li>
+	<li>Si la fase gaseosa tiene comportamiento de gas ideal (a $P$ 
+	moderadas, hasta $\pu{10 atm}$, es una buena aproximación, aunque 
+	también depende de la temperatura), fugacidades y presiones parciales
+	coinciden:
+		
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				a_{\rm A(l)} =
+				\Gamma_{\rm A(l)} \dfrac{P_{\rm A}}{P_{\rm A}^*} \\[1ex]
+				\boxed{a_{\rm A(l)} \simeq \dfrac{P_{\rm A}}{P_{\rm A}^*}}
+			\end{array}
+			$
+		</p>
+	
+	<p>También para el coeficiente de actividad (no confundir con
+	fugacidad):</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				f_{\rm A} = \dfrac{a_{\rm A(l)}}{\Gamma_{\rm A(l)} x_{\rm A}} =
+				\dfrac{
+					\Gamma_{\rm A(l)} (P_{\rm A}{∕}P_{\rm A}^*)
+				}{
+					\Gamma_{\rm A(l)} x_{\rm A}} \\[1ex]
+				\boxed{
+					f_{\rm A} = \dfrac{P_{\rm A}}{P_{\rm A}^* x_{\rm A}}
+				}
+			\end{array}
+			$
+		</p>
+	</li>
+</ol>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../mezclas_gaseosas/mezclas_gaseosas.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../disoluciones_no_electrolitos/disoluciones_no_electrolitos.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

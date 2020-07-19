@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Potenciales normales de electrodo">
+<meta name="keywords" content="potenciales, normales, electrodo">
+<title>Potenciales normales de electrodo</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Potenciales normales de electrodo</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Se toma como potencial de referencia, con valor 0, el del electrodo tipo (o normal)
+de hidrógeno:</p>
+
+	<p style="text-align:center">
+		$E°_{\!\! \lower 2mu \ce{H+/H2}} = 0$ &emsp; $\ce{Pt} \, {|} \,
+		\ce{H2_{(g)}} \, {|} \, \ce{H+_{(aq)} ($a$_{\ce{H+}} \! = 1)}$ &emsp;
+		($T$ y $P =	\pu{1 atm}$)</p>
+		
+<p>Se define el potencial normal de electrodo a $T$ como el potencial 
+normal $E°$ de una pila, a la temperatura $T$, formada por el electrodo 
+de hidrógeno a la izquierda (ánodo) y el electrodo en cuestión a la 
+derecha (cátodo). Esto es (por ejemplo):</p>
+
+	<p style="text-align:center">
+		$(-) \, \ce{Cu'} \, {|} \, {\ce{Pt}} \, {|} \, \ce{H2_{(g)}} \, {|}
+		\, \ce{H+_{(aq)}} \, {\|} \, \ce{Cu^2+_{(aq)}} \, {|} \, \ce{Cu} \,
+		(+)$</p>
+		
+	<p style="text-align:center">
+		$E°_{\!\! \lower 2mu \text{pila}} = E°_{\!\! \lower 2mu \rm D} -
+		E°_{\!\! \lower 2mu \rm I} = E°_{\!\! \lower 2mu \ce{Cu^2+/Cu}} - \!
+		\cancelto{0}{E°_{\!\! \lower 2mu \ce{H+/H2}}} \!\! =
+		E°_{\!\! \lower 2mu \ce{Cu^2+/Cu}}$</p>
+		
+<p>Si se plantea la pila:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{gathered}[t]
+			\ce{Cu'} \\
+			(-) \\
+			\text{ánodo}
+		\end{gathered} \mspace{-8mu} {|} \, \ce{Fe} \, {|} \, \ce{Fe^3+} \, {\|} \,
+		\ce{Cu^2+} \, {|} \mspace{-12mu}
+		\begin{gathered}[t]
+			\ce{Cu} \\
+			(+) \\
+			\text{cátodo}
+		\end{gathered}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{rl}
+			\text{ánodo:} &amp; \ce{1/3 Fe &lt;=&gt; 1/3 Fe^3+ + 1 e^-(Cu')} \\[1ex]
+			\text{cátodo:} &amp; \ce{1/2 Cu^2+ + 1 e^-(Cu) &lt;=&gt; 1/2 Cu} \\[1ex]
+			\hline
+			\text{Reac. global:} &amp;
+			\ce{
+				1/2 Cu^2+ + 1/3 Fe + 1 e^-(Cu) &lt;=&gt; 1/2 Cu + 1/3 Fe^3+ +
+				1e^-(Cu')
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Observándose que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{rl}
+			\text{Pila a:} &amp;
+			\begin{array}[t]{l}
+				\ce{1/2 Cu^2+ + 1 e^-(Cu) &lt;=&gt; 1/2 Cu} \quad (\text{cátodo)} \\[1ex]
+				\ce{1/2 H2_{(g)} &lt;=&gt; H+ + 1 e^-(Cu'')} \quad (\text{ánodo}) \\[1ex]
+				\hline
+				\mspace{-4mu}
+				\boxed{
+					\ce{
+						1/2 Cu^2+ + 1/2 H2_{(g)} + 1 e^-(Cu) &lt;=&gt; 1/2 Cu + H+ +
+						1e^-(Cu'')
+					}
+				}
+			\end{array} \\[1em]
+			\text{Pila b:} &amp;
+			\begin{array}[t]{l}
+				\ce{1/3 Fe^3+ + 1 e^-(Cu') &lt;=&gt; 1/3 Fe} \\[1ex]
+				\ce{1/2 H2_{(g)} &lt;=&gt; H+ + 1 e^-(Cu'')} \\[1ex]
+				\hline
+				\mspace{-4mu}
+				\llap{-\biggl( \,}
+				\boxed{
+					\ce{
+						1/3 Fe^3+ + 1/2 H2_{(g)} + 1 e^-(Cu') &lt;=&gt; 1/3 Fe + H+
+						+ 1 e^-(Cu'')
+					}
+				}
+				\rlap{\, \biggr)}
+			\end{array} \\[1em]
+			\hline
+			\text{Pila a} - \text{Pila b} \rlap{{}={}} &amp; \mspace{8mu}
+			\begin{array}{l}
+				\ce{
+						1/2 Cu^2+ + 1/3 Fe + 1 e^-(Cu) &lt;=&gt; 1/2 Cu + 1/3 Fe^3+
+						+ 1 e^-(Cu')
+				}
+			\end{array}
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			E &amp;= E° - \dfrac{RT}{F} \ln
+			\dfrac{
+				a_{\ce{Cu}}^{1/2} \, a_{\ce{Fe^3+}}^{1/3}
+			}{
+				a_{\ce{Cu^2+}}^{1/2} \, a_{\ce{Fe}}^{1/3}
+			} = \\[1ex]
+			&amp;= \Biggl( E°_{\ce{Cu^2+/Cu}} \underset{\Big\uparrow}{-}
+			\dfrac{RT}{F} \ln	\dfrac{a_{\ce{Cu}}^{1/2}}{a_{\ce{Cu^2+}}^{1/2}}
+			\Biggr) - \Biggl(	E°_{\ce{Fe^3+/Fe}} \underset{\Big\uparrow}{-}
+			\dfrac{RT}{F} \ln	\dfrac{a_{\ce{Fe}}^{1/3}}{a_{\ce{Fe^3+}}^{1/3}}
+			\Biggr) = \\
+			&amp;\hphantom{= \Bigg( E°_{\ce{Cu^2+/Cu}}}
+			\text{semirreacción $\quad$ de $\quad$ reducción} \\
+			&amp;= \Bigg( E°_{\ce{Cu^2+/Cu}} \overset{\Big\downarrow}{-}
+			\dfrac{RT}{2F} \ln \dfrac{a_{\ce{Cu}}}{a_{\ce{Cu^2+}}} \Biggr)
+			- \Biggl( E°_{\ce{Fe^3+/Fe}} \overset{\Big\downarrow}{-}
+			\dfrac{RT}{3F} \ln \dfrac{a_{\ce{Fe}}}{a_{\ce{Fe^3+}}} \Biggr)
+		\end{align}
+		$
+	</p>
+	
+<p>Son:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			E°_{\!\! \lower 2mu \text{pila a}} = E°_{\!\! \lower 2mu \ce{Cu^2+/Cu}}
+			= \pu{0,337 V} \\[1ex]
+			E°_{\!\! \lower 2mu \text{pila b}} = E°_{\!\! \lower 2mu \ce{Fe^3+/Fe}}
+			= \pu{-0,036 V}
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$E°_{\!\! \lower 2mu \text{pila}} = E°_{\!\! \lower 2mu \ce{Cu^2+/Cu}}
+		- E°_{\!\! \lower 2mu \ce{Fe^3+/Fe}} = E°_{\!\! \lower 2mu \rm D} -
+		E°_{\!\! \lower 2mu \rm I} = 0{,}337 - (-0{,}036) = \pu{0,373 V}$</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../pilas_reversibles_ecuacion_nernst/pilas_reversibles_ecuacion_nernst.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../aplicaciones_medida_fem_pila/aplicaciones_medida_fem_pila.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

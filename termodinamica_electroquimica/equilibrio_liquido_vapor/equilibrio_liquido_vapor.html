@@ -1,0 +1,483 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Equilibrio líquido-vapor">
+<meta name="keywords" content="equilibrio, líquido, vapor">
+<title>Equilibrio líquido-vapor</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Equilibrio líquido-vapor</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Para una disolución con dos componentes totamente miscibles e ideal,
+cumple la ley de Raoult, se tiene (para un temperatura dada):</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;text-align:center">
+			<object data="equilibrio_liquido_vapor_01.svg" type="image/svg+xml"
+			width="161" height="161"></object>
+			<span style="display:block;margin-top:1ex">
+				$
+				\begin{array}{c}
+					x_{\rm A} + x_{\rm B} = 1 \\[1ex]
+					y_{\rm A} + y_{\rm B} = 1
+				\end{array}
+				$
+			</span>
+		</span>
+		<span style="display:table-cell;vertical-align:middle;padding-left:2em">
+			$
+			\left.
+			\begin{array}{l}
+				P = P_{\rm A} + P_{\rm B} \\[1ex]
+				P_{\rm A} = x_{\rm A} P_{\rm A}^* \\[1ex]
+				P_{\rm B} = x_{\rm B} P_{\rm B}^*
+			\end{array}
+			\right\} \Rightarrow
+			\begin{array}[t]{l}
+				P = x_{\rm A} P_{\rm A}^* + x_{\rm B} P_{\rm B}^* \\[1ex]
+				P 
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{x_{\rm B} \,} = \rlap{\, 1 \mspace{1mu} - \mspace{2mu}
+						x_{\rm A}}
+					\end{subarray}
+				}{=} x_{\rm A} P_{\rm A}^* + (1 - x_{\rm A}) P_{\rm B}^* \\[1ex]
+				P = P_{\rm B}^* + (P_{\rm A}^* - P_{\rm B}^*) x_{\rm A}
+			\end{array}
+			$
+		</span>
+	</p>
+	
+<p>Así pues, la presión de vapor del líquido (fijada $T$) sólo depende 
+de $x_{\rm A}$. Si se representa en una gráfica $P$ frente a $x_{\rm A}$
+sale una recta, llamada recta del líquido. Esto es:</p>
+
+<center>
+	<object data="equilibrio_liquido_vapor_02.svg" type="image/svg+xml"
+	width="300" height="300"></object>
+</center>
+
+<p>Como se refleja en el gráfico, cabe pensar que a presiones 
+suficientemente altas sólo se tendrá, a cualquier composición, líquido 
+y, por el contrario, a suficientemente bajas sólo vapor.</p>
+
+<p>En el vapor (en equilibrio con el líquido):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			y_{\rm A} = \dfrac{P_{\rm A}}{P} \mspace{-13mu}
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\
+					\text{Raoult}
+				\end{subarray}
+			}{=} \mspace{-13mu} \dfrac{x_{\rm A} P_{\rm A}^*}{P} \\[1ex]
+			y_{\rm B} = \dfrac{P_{\rm B}}{P} = \dfrac{x_{\rm B} P_{\rm B}^*}{P}
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\dfrac{y_{\rm A}}{y_{\rm B}} =
+		\dfrac{x_{\rm A} P_{\rm A}^*}{x_{\rm B} P_{\rm B}^*}$</p>
+		
+<p>Se tiene, en este caso, que $\rm A$ es más volátil que $\rm B$, i.e.
+$P_{\rm A}^* &gt; P_{\rm B}^*$, por lo que:</p>
+
+	<p style="text-align:center">
+		$\dfrac{y_{\rm A}}{y_{\rm B}} &gt; \dfrac{x_{\rm A}}{x_{\rm B}}$</p>
+		
+<p>La fase vapor es más rica que la fase líquida en el componente más 
+volátil (consecuencia muy importante para la destilación).</p>
+
+<p>Además también:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{y_{\rm A}}{1 - y_{\rm A}} =
+			\dfrac{x_{\rm A} P_{\rm A}^*}{(1 - x_{\rm A}) P_{\rm B}^*} \\[1ex]
+			P_{\rm B}^* y_{\rm A} - x_{\rm A} y_{\rm A} P_{\rm B}^* = x_{\rm A}
+			P_{\rm A}^* - x_{\rm A} y_{\rm A} P_{\rm A}^* \\[1ex]
+			P_{\rm B}^* y_{\rm A} = x_{\rm A} (P_{\rm A}^* + y_{\rm A} (P_{\rm B}^*
+			- P_{\rm A}^*)) \\[1ex]
+			x_{\rm A} = \dfrac{P_{\rm B}^* y_{\rm A}}{P_{\rm A}^* + y_{\rm A}
+			(P_{\rm B}^* - P_{\rm A}^*)}
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			P &amp;= P_{\rm B}^* + (P_{\rm A}^* - P_{\rm B}^*) x_{\rm A} = \\[1ex]
+			&amp;= P_{\rm B}^* + (P_{\rm A}^* - P_{\rm B}^*)
+			\dfrac{P_{\rm B}^* y_{\rm A}}{P_{\rm A}^* + y_{\rm A} (P_{\rm B}^* -
+			P_{\rm A}^*)} = \\[1ex]
+			&amp;=
+			\dfrac{
+				P_{\rm A}^* P_{\rm B}^* - \! \cancel{y_{\rm A} (P_{\rm A}^* -
+				P_{\rm B}^*) P_{\rm B}^*} \! + \! \cancel{y_{\rm A} (P_{\rm A}^*
+				- P_{\rm B}^*) P_{\rm B}^*}
+			}{
+				P_{\rm A}^* + y_{\rm A} (P_{\rm B}^* - P_{\rm A}^*)
+			} \\[1ex]
+			P &amp;= \dfrac{P_{\rm A}^* P_{\rm B}^*}{P_{\rm A}^* + y_{\rm A}
+			(P_{\rm B}^* - P_{\rm A}^*)}
+		\end{align}
+		$
+	</p>
+	
+<p>Si se representa sobre el mismo diagrama anterior ahora $P$ frente
+a $y_{\rm A}$ se dibuja una curva, conocida como curva de vapor:</p>
+
+<center>
+	<object data="equilibrio_liquido_vapor_03.svg" type="image/svg+xml"
+	width="300" height="335"></object>
+</center>
+
+<p>En el punto <u>a</u> la presión del sistema es lo bastante elevada 
+como para que sólo exista líquido, siendo $x_{\rm A}'$ su fracción 
+molar de $\rm A$.</p>
+
+<p>Si, partiendo de <u>a</u>, se disminuye progresivamente la presión, 
+llega un momento que se forma la primera burbuja de vapor, que al ser 
+una cantidad pequeña (infinitesimal) puede despreciarse su efecto sobre 
+la composición del líquido, pudiendo considerarse la composición de 
+éste todavía la inicial, correspondiendo, ya que la presión de vapor 
+para una composición determinada de la fase líquida en equilibrio con 
+su vapor viene dada por la recta del líquido, con el punto <u>b</u>. 
+Como esto es válido para cualquier punto <u>a</u> inicial que quede por 
+encima de la recta del líquido, por encima de ésta sólo fase líquida. 
+La composición del vapor a la presión $P_{\rm b}$, la del punto 
+<u>b</u>, se obtiene de la curva de vapor, siendo $y_{\rm Ab}$.</p>
+
+<p>Al descender aún más la presión, aumenta la evaporación y cambian 
+las composiciones de ambas fases, ya que sólo resta un grado de 
+libertad (fijada la temperatura) por lo que presión del sistema y 
+composición de las fases son interdependientes, aunque la composición 
+global del sistema, punto <u>c</u>, no cambia (la fracción molar de A 
+en el sistema es la misma). Como la fase vapor se enriquece más del 
+componente más volatil, la fracción molar de A en el líquido $x_{\rm 
+Ac}$ ha disminuido, y también lo ha hecho $y_{\rm Ac}$, el disminuir, 
+en la fase vapor, ya que, al bajar la presión, cada nuevo vapor, como 
+la fase líquida, es cada vez menos rico en el componente más 
+volátil.</p>
+
+<p>Si se sigue bajando la presión del sistema se llega a la situación 
+en que ya sólo resta una pequeña gota de líquido (infinitesimal), de 
+tal modo que puede considerarse que la fracción molar de A en la fase 
+vapor es igual a la inicial, con lo que la presión de vapor a esta 
+composición del vapor es la que se corresponde con el punto <u>d</u> en 
+la curva de vapor. Por debajo de esta presión ya sólo hay vapor (punto 
+<u>e</u>). Como el mismo razonamiento que ha conducido hasta aquí 
+puede, empezando desde el principio, llevarse a cabo partiendo de 
+cualquier punto <u>a</u> por encima de la recta del líquido, entonces, 
+para todo punto por debajo de la curva de vapor únicamente existe 
+vapor.</p>
+
+<p>Se tiene tanto líquido como vapor para cualquier composición global 
+y presión del sistema cuyo punto en la gráfica esté en la región 
+comprendida entre la recta del líquido y la curva de vapor. Para 
+averiguar la proporción de líquido y vapor, de cada fase, en uno de 
+estos puntos, utilizando el punto <u>c</u> como ejemplo:</p>
+
+	<p style="text-align:center">
+		Punto <u>c</u>: &emsp;
+		<span style="display:inline-table;text-align:left">
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$x_{\rm A}'$ &ensp;
+				</span>
+				<span style="display:table-cell">
+					composición (de A) global mezcla
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$x_{\rm Ac}$ &ensp;
+				</span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					composición (de A) fase líquida
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$y_{\rm Ac}$ &ensp;
+				</span>
+				<span style="display:table-cell">
+					composición (de A) fase vapor
+				</span>
+			</span>
+		</span>
+		&emsp;
+		<span style="display:inline-table;text-align:left">
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$n_{\rm A}$ &ensp;
+				</span>
+				<span style="display:table-cell">
+					moles A mezcla
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$n_{\rm lc}$ &ensp;
+				</span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					moles ${\rm A}+{\rm B}$ líquido
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$n_{\rm vc}$ &ensp;
+				</span>
+				<span style="display:table-cell">
+					moles ${\rm A}+{\rm B}$ vapor
+				</span>
+			</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			n_{\rm A} = x_{\rm A}' (n_{\rm lc} + n_{\rm vc}) \\[1ex]
+			n_{\rm A} = x_{\rm Ac} n_{\rm lc} + y_{\rm Ac} n_{\rm vc}
+		\end{array}
+		\right\} \Rightarrow
+		\begin{array}[t]{c}
+			x_{\rm A}' (n_{\rm lc} +	n_{\rm vc}) = x_{\rm Ac} n_{\rm lc} +
+			y_{\rm Ac} n_{\rm vc} \\[1ex]
+			n_{\rm lc} (x_{\rm A}' - x_{\rm Ac}) = n_{\rm vc} (y_{\rm Ac} -
+			x_{\rm A}') \\[1ex]
+			\llap{\text{(Regla de la palanca)} \quad}
+			\begin{array}{c}
+				\boxed{
+					n_{\rm lc} \overline{\rm cf} = n_{\rm vc} \overline{\rm gc}
+				} \\[1ex]
+				\boxed{
+					\dfrac{n_{\rm lc}}{n_{\rm vc}} =
+					\dfrac{\overline{\rm gc}}{\overline{\rm cf}}
+				}
+			\end{array}
+		\end{array}
+		$
+	</p>
+	
+<p>La línea horizontal que une los puntos <u>f</u>, <u>c</u> y <u 
+style="text-decoration-skip-ink:none">g</u> se conoce como recta de 
+conexión.</p>
+
+<p>Si, en vez de la temperatura, es la presión del sistema la que se 
+mantiene fija (p.ej. a $\pu{1 atm}$), solo queda un grado de libertad 
+cuando ambas fases están presentes, por lo que, en tal situación, la 
+composición depende de la temperatura (y viceversa), siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_{\rm A} =
+			\dfrac{P - P_{\rm B}^*(T)}{P_{\rm A}^*(T) - P_{\rm B}^*(T)} \\[1ex]
+			y_{\rm A} = \dfrac{x_{\rm A} P_{\rm A}^*(T)}{P} =
+			\dfrac{P_{\rm A}^*(T)}{P}
+			\dfrac{P - P_{\rm B}^*(T)}{P_{\rm A}^*(T) - P_{\rm B}^*(T)}
+		\end{array}
+		$
+	</p>
+
+<p>Las presiones de vapor de los líquidos puros son función de la 
+temperatura, pueden, por ejemplo, calcularse con la ecuación de 
+Clausius-Clapeyron, y $P$ es la presión constante del sistema. 
+Representando ahora, usando estas ecuaciones, $T$ frente a 
+composición:</p>
+
+<center>
+	<object data="equilibrio_liquido_vapor_04.svg" type="image/svg+xml"
+	width="300" height="315"></object>
+</center>
+
+<p>Inicialmente, en el punto <u>a</u> la temperatura es lo bastante 
+baja como para que sólo haya líquido. Al aumentarla se alcanza la 
+temperatura de ebullición en el punto <u>b</u>, situado en la curva 
+líquido, en el cual la composición de la fase líquida sigue siendo la 
+del punto <u>a</u>, y la composición de la fase vapor en equilibrio 
+viene dada por el punto <u>c</u>, a la misma temperatura, en la curva 
+vapor. Si se sube algo más la temperatura, en el punto <u>q</u>, a la 
+composición global $x_{\rm A}'$, entre ambas curvas, donde existen 
+ambas fases, las composiciones de las fases líquida y vapor 
+corresponden, respectivamente, a los puntos <u>r</u> y <u>s</u>, unidos 
+por una línea horizontal que pasa por <u>q</u>, siendo aplicable aquí 
+también la regla de la palanca para obtener en qué proporción están 
+presentes las dos fases.</p>
+
+<p>Si el primer vapor que se forma, punto <u>c</u>, enriquecido del 
+componente más volátil, se separa y se vuelve a condensar, se obtiene 
+una mezcla líquida más rica que la inicial en el componente más 
+volátil. Si se lleva a ebullición esta nueva mezcla y se repite, otra 
+vez, el proceso de separación y condensación del primer vapor que 
+surje, se consigue otra mezcla líquida con aún mayor contenido del más 
+volátil. Haciendo esto sucesivamente se acabaría separando y obteniendo 
+puro el componente más volátil. También, en el sentido opuesto, el 
+líquido sin evaporar sería cada vez más rico en el menos volátil, así 
+que si se sometiera cíclicamente a lo mismo terminaría siendo puro. El 
+resultado de todo el proceso es la separación y purificación de los 
+componentes de la mezcla. Esta es la base de la destilación 
+fraccionada:</p>
+
+<center>
+	<object data="equilibrio_liquido_vapor_05.svg" type="image/svg+xml"
+	width="300" height="315" style="display:inline-block;vertical-align:middle">
+	</object>
+	<object data="equilibrio_liquido_vapor_06.svg" type="image/svg+xml"
+	width="198" height="260"
+	style="display:inline-block;vertical-align:middle;margin-left:1em"></object>
+</center>
+
+<p>En la caldera se encuentra la mezcla inicial ${\rm m}_1$, que 
+calentada a la temperatura de ${\rm l}_1$ está en equilibrio con su 
+vapor, de composición dada por ${\rm v}_1$, que asciende y llega al 
+primer plato, que tiene una temperatura inferior, condensando en la 
+mezcla ${\rm m}_2$, que está a la temperatura de ${\rm l}_2$ (en 
+ebullición), en equilibrio con el vapor a la composición de ${\rm 
+v}_2$, que asciende al siguiente plato... De nuevo, análogamente, 
+condensación-evaporación, que va repitiéndose, desplazándose en el 
+diagrama de fases hacia la derecha, al subir el vapor por la columna, 
+con lo que se acaba obteniendo un vapor puro en el componente más 
+volátil, que se extrae por la parte superior, siendo el residuo que 
+resta en la columna cada vez más rico en el componente menos 
+volátil.</p>
+
+<p>Cuando una mezcla real sólo es ligeramente no ideal las curvas en 
+los diagramas se parecen a las ideales. En cambio, cuando la desviación 
+de la idealidad es grande, la curva de la presión de vapor frente a la 
+composición del líquido puede presentar un máximo o un mínimo. En tal
+punto la curva de vapor, que queda por debajo, necesariamente toca la
+del líquido para que exista un valor de composición del vapor a esa
+presión. Esto es:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:.5em;border-right:1px solid gray">
+				<object data="equilibrio_liquido_vapor_09.svg" type="image/svg+xml"
+				width="300" height="290"></object>
+			</span>
+			<span style="display:table-cell;padding-left:.5em">
+				<object data="equilibrio_liquido_vapor_07.svg" type="image/svg+xml"
+				width="312" height="290"></object>
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:.5em;border-right:1px solid gray">
+				<object data="equilibrio_liquido_vapor_10.svg" type="image/svg+xml"
+				width="300" height="290"></object>
+			</span>
+			<span style="display:table-cell;padding-left:.5em">
+				<object data="equilibrio_liquido_vapor_08.svg" type="image/svg+xml"
+				width="312" height="290"></object>
+			</span>
+		</span>
+	</p>
+	
+<p>Una mezcla con un máximo en el diagrama presión frente a composición
+presentará un mínimo en el de temperatura frente a composición. De igual
+forma, un mínimo en el primero comporta un máximo en el segundo.</p>
+
+<p>En un máximo o mínimo $x_{\rm A} = y_{\rm A}$, por lo que en él al 
+evaporarse la mezcla líquida no cambia su composición y, por tanto, 
+tampoco su temperatura de ebullición, por lo que hierve a temperatura 
+constante. A una disolución así, que hierve a temperatura constante, se 
+le llama azeótropo.</p>
+
+<p>La destilación fraccionada de este tipo de mezclas, que tienen 
+azeótropo, no puede conducir a la separación de los componentes puros. 
+Esto es, se obtiene el azeótropo y un componente puro, el cual 
+dependerá del lado en que esté respecto del azeótropo la mezcla inicial
+en el diagrama.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../equilibrio_fases_sistemas_dos_componentes/equilibrio_fases_sistemas_dos_componentes.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../equilibrio_liquido_liquido/equilibrio_liquido_liquido.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Potencial químico">
+<meta name="keywords" content="potencial, químico">
+<title>Potencial químico</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Potencial químico</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>En un sistema homogéneo, es $G$, la energía de Gibbs, función de estado
+del sistema:</p>
+
+	<p style="text-align:center">
+		$G = G(P,T,n_1, \dotsc, n_c)$</p>
+		
+<p>Así que, como función de estado:</p>
+
+	<p style="text-align:center">
+		$dG = \left( \dfrac{\partial G}{\partial P} \right)_{\! T \rlap{,n_i}}
+		dP + \left( \dfrac{\partial G}{\partial T} \right)_{\! P \rlap{,n_i}}
+		dT + \left( \dfrac{\partial G}{\partial n_1}
+		\right)_{\! P\rlap{,T,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+		\dfrac{\partial G}{\partial n_c} \right)_{\! P\rlap{,T, n_{j \neq c}}}
+		dn_c$</p>
+		
+<p>Se define el potencial químico (o energía de Gibbs molar parcial):</p>
+
+	<p style="text-align:center">
+		$\mu_i = \left( \dfrac{\partial G}{\partial n_i}
+		\right)_{\! P,T,n_{j \neq i}}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$dG = \left( \dfrac{\partial G}{\partial P} \right)_{\! T \rlap{,n_i}}
+		dP + \left( \dfrac{\partial G}{\partial T} \right)_{\! P \rlap{,n_i}}
+		dT + \mu_1 \, dn_1 + \dotsb + \mu_c \, dn_c$</p>
+		
+<p>Para un sistema cerrado entonces:</p>
+
+	<p style="text-align:center">
+		$dG = \left( \dfrac{\partial G}{\partial P} \right)_{\! T \rlap{,n_i}}
+		dP + \left( \dfrac{\partial G}{\partial T} \right)_{\! P \rlap{,n_i}}
+		dT$ &emsp;&emsp; ($dn_i = 0$)</p>
+		
+<p>Por definición:</p>
+
+	<p style="text-align:center">
+		$G = H - TS$</p>
+		
+<p>De donde, en un sistema cerrado para un proceso infinitesimal 
+reversible con sólo trabajo <span 
+style="white-space:nowrap">presión-volumen</span>:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dG &amp;= dH - S \, dT - T \, dS = \\[1ex]
+			&amp;= d(U + PV) - S \, dT - T \, dS = \\[1ex]
+			&amp;= dU + V \, dP + P \, dV - S \, dT - T \, dS = \\[1ex]
+			&amp;= q + w + P \,	dV + V \, dP - S \, dT - T \, dS = \\[1ex]
+			&amp;= \cancel{T \, dS} \! - \! \cancel{P \, dV} \! + V \, dP + \!
+			\cancel{P \, dV} \! - S \, dT - \! \cancel{T \, dS} = \\[1ex]
+			&amp;= V \, dP - S \, dT
+		\end{align}
+		$
+	</p>
+	
+<p>Habiéndose hecho uso de:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			H = U + PV \\[1ex]
+			dU = q + w \\[1ex]
+			q = T \, dS \\[1ex]
+			w = -P \, dV
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, con las dos expresiones para $dG$, en un sistema en que 
+no se producen cambios en las cantidades de sus componenentes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\left.
+			\begin{array}{l}
+				dG_T = \left(\dfrac{\partial G}{\partial P}\right)_{\! T \rlap{,n_i}}
+				dP_T \\[1ex]
+				dG_T = V \, dP_T
+			\end{array}
+			\right\}
+			\Rightarrow \left( \dfrac{\partial G}{\partial P}
+			\right)_{\! T \rlap{,n_i}} =	V \\[1em]
+			\left.
+			\begin{array}{l}
+				dG_P = \left(\dfrac{\partial G}{\partial T}\right)_{\! P \rlap{,n_i}}
+				dT_P \\[1ex]
+				dG_P = - S \, dT_P
+			\end{array}
+			\right\}
+			\Rightarrow \left (\dfrac{\partial G}{\partial T}
+			\right)_{\! P \rlap{,n_i}} = -S
+		\end{array}
+		$
+	</p>
+	
+<p>Así que, para un sistema abierto ($dn_i \neq 0$):</p>
+
+	<p style="text-align:center">
+		$dG = V \, dP - S \, dT + \mu_1 \, dn_1 + \dotsb + \mu_c \, dn_c$</p>
+		
+<p>A presión y temperatura constantes:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = \mu_1 \, dn_1 + \dotsb + \mu_c \, dn_c = \displaystyle
+		\sum_{i = 1}^c \mu_i \, dn_i$</p>
+		
+<p>Para entender el significado del potencial químico puede imaginarse, 
+en equilibrio térmico y mecánico, un sistema cerrado con dos regiones 
+(A y B) con distinto potencial químico del componente $i$, del cual se 
+produce una tranferencia infinitesimal entre ambas. Esto es:</p>
+
+	<p style="text-align:center">
+		<object data="potencial_quimico_01.svg" type="image/svg+xml"
+		width="226" height="148" style="display:inline-block;vertical-align:middle">
+		</object>
+		$\quad
+		\begin{array}{c}
+			\mu_i^{\rm A} \neq \mu_i^{\rm B} \\[1ex]
+			dn_i &gt;0
+		\end{array}
+		$
+	</p>
+
+<p>La variación infinetisimal, a presión y temperatura constantes, de la
+energía de Gibbs en cada región:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dG^{\rm A} = \mu_i^{\rm A} \, (-dn_i) \\[1ex]
+			dG^{\rm B} = \mu_i^{\rm B} \, dn_i
+		\end{array}
+		$
+	</p>
+	
+<p>Ya que $G$ es una propiedad extensiva, para el conjunto del sistema:</p>
+
+	<p style="text-align:center">
+		$G = G^{\rm A} + G^{\rm B}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$dG = dG^{\rm A} + dG^{\rm B} = ( \mu_i^{\rm B} - \mu_i^{\rm A} ) \,
+		dn_i$</p>
+		
+<p>Como criterio, en un sistema cerrado:</p>
+
+	<p style="text-align:center">
+		$dG &lt; 0$ &emsp;Proceso espontáneo, $P$ y $T$ constantes.</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_i^{\rm B} - \mu_i^{\rm A} &lt; 0 \\[1ex]
+			\mu_i^{\rm A} &gt; \mu_i^{\rm B}
+		\end{array}	
+		$
+
+<p>El proceso espontáneo se produce desde el potencial químico mayor al
+menor, y continúa hasta que ambos se igualan ($dG = 0$, equilibrio).</p>
+
+<p>Existen definiciones alternativas del potencial químico. Por ejemplo,
+con respecto a la energía interna si:</p>
+
+	<p style="text-align:center">
+		$U = U(S,V,n_1, \dotsc, n_c)$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$dU = \left( \dfrac{\partial U}{\partial S} \right)_{\! V \rlap{,n_i}}
+		dS + \left( \dfrac{\partial U}{\partial V} \right)_{\! S \rlap{,n_i}}
+		dV + \left( \dfrac{\partial U}{\partial n_1}
+		\right)_{\! S \rlap{,V,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+		\dfrac{\partial U}{\partial n_c} \right)_{\! S \rlap{,V,n_{j \neq c}}}
+		dn_c$</p>
+		
+<p>Para un sistema cerrado con sólo trabajo de expansión-compresión:</p>
+
+	<p style="text-align:center">
+		$dU = T \, dS - P \, dV$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$dU = T \, dS - P \, dV + \left( \dfrac{\partial U}{\partial n_1}
+		\right)_{\! S \rlap{,V,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+		\dfrac{\partial U}{\partial n_c} \right)_{\! S \rlap{,V,n_{j \neq c}}}
+		dn_c$</p>
+		
+<p>Puede relacionarse $G$ y $U$. Siendo, por definición:</p>
+
+	<p style="text-align:center">
+		$G = H - TS = U + PV - TS$</p>
+		
+<p>Diferenciando:</p>
+
+	<p style="text-align:center">
+		$dG = dU + V \, dP + P \, dV - S \, dT - T \, dS$</p>
+		
+<p>A presión y temperatura constantes:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = dU + P \, dV - T \, dS$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = \left( \dfrac{\partial U}{\partial n_1}
+		\right)_{\! S \rlap{,V,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+		\dfrac{\partial U}{\partial n_c} \right)_{\! S \rlap{,V,n_{j \neq c}}}
+		dn_c$</p>
+		
+<p>Entonces resulta que:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			dG_{P,T} = \left( \dfrac{\partial G}{\partial n_1}
+			\right)_{\! P \rlap{,T,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+			\dfrac{\partial G}{\partial n_c}
+			\right)_{\! P \rlap{,T,n_{j \neq c}}} dn_c \\[1ex]
+			dG_{P,T} = \left( \dfrac{\partial U}{\partial n_1}
+			\right)_{\! S \rlap{,V,n_{j \neq 1}}} dn_1 + \dotsb + \left(
+			\dfrac{\partial U}{\partial n_c}
+			\right)_{\! S \rlap{,V,n_{j \neq c}}} dn_c
+		\end{array} \;
+		\right\}
+		$
+	</p>
+	
+<p>Si sólo varía la cantidad de un componente, mientras los demás no lo
+hacen, el cambio de $G$ dado por ambas expresiones debe ser el mismo. Así
+que las derivadas parciales resulta que coinciden:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \left( \dfrac{\partial G}{\partial n_i}
+		\right)_{\! P,T \rlap{,n_{j \neq i}}} = \left(
+		\dfrac{\partial U}{\partial n_i} \right)_{\! S,V,n_{j \neq i}}$</p>
+		
+<p>Al observar esta igualdad, cabe recordar que en una magnitud molar 
+parcial las variables que se mantienen fijas son $P$ y $T$, no 
+otras.</p>
+
+<p>También se hallarían de forma similar:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \left( \dfrac{\partial A}{\partial n_i}
+		\right)_{\! T,V \rlap{,n_{j \neq i}}} = \left(
+		\dfrac{\partial H}{\partial n_i} \right)_{\! S,P \rlap{,n_{j \neq i}}}
+		= -T \left( \dfrac{\partial S}{\partial n_i} \right)_{U,V,n_{j \neq i}}$
+	</p>
+
+<p>- La ecuación de Gibbs-Duhem:</p>
+
+<p>La energía de Gibbs de un sistema homogéneo de $c$ componentes es:</p>
+
+	<p style="text-align:center">
+		$G = n_1 \mu_1 + \dotsb + n_c \mu_c$</p>
+		
+<p>Una variación infinitesimal de la composición del sistema, teniendo
+en cuenta que los $\mu_i$ dependen de ella, provoca un cambio en la
+energía de Gibbs tal que:</p>
+
+	<p style="text-align:center">
+		$dG = \mu_1 \, dn_1 + n_1 \, d\mu_1 + \dotsb + \mu_c \, dn_c + n_c \,
+		d\mu_c$</p>
+		
+<p>Pero, bajo condiciones de presión y temperatura constantes, como se 
+vio más arriba:</p>
+
+	<p style="text-align:center">
+		$dG = \mu_1 \, dn_1 + \dotsb + \mu_c \, dn_c$</p>
+		
+<p>Como $G$ es una función de estado (su variación sólo depende del 
+estado inicial y final), las dos últimas expresiones deben ser iguales 
+para un cambio de estado entre los mismos estados infinitamente 
+próximos, por lo que:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\cancel{\mu_1 \, dn_1} \! + n_1 \, d\mu_1 + \dotsb + \!
+			\cancel{\mu_c \, dn_c} \! + n_c \, d\mu_c = \! \cancel{\mu_1 \, dn_1}
+			\! + \dotsb + \! \cancel{\mu_c \, dn_c} \\[1ex]
+			n_1 \, d\mu_1 + \dotsb + n_c \, d\mu_c = 0 \\[1ex]
+			\displaystyle \sum_{i = 1}^c n_i \, d\mu_i = 0 \rlap{\quad (P,T \text{ ctes.})}
+		\end{array}	
+		$
+	</p>
+	
+<p>Que es la ecuación de Gibbs-Duhem.</p>
+
+<p>En un sistema binario ($c = 2$):</p>
+
+	<p style="text-align:center">
+		$n_1 \, d\mu_1 + n_2 \, d\mu_2 = 0 \, \Rightarrow \, d\mu_2 =
+		- \dfrac{n_1}{n_2} \, d\mu_1$</p>
+		
+<p>- Relación de $\mu_i$ con $T$:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{2}
+			\mu_i &amp;= \left( \dfrac{\partial G}{\partial n_i}
+			\right)_{\! P,T,n_{j \neq i}} &amp;&amp;\, \Rightarrow \,
+			\dfrac{\partial^2 G}{\partial n_i \partial T} = \left(
+			\dfrac{\partial \mu_i}{\partial T} \right)_{\! P,n_i} \\[1ex]
+			-S &amp;= \left( \dfrac{\partial G}{\partial T} \right)_{\! P,n_i}
+			&amp;&amp;\, \Rightarrow \,
+			\dfrac{\partial^2 G}{\partial T \partial n_i} = - \left(
+			\dfrac{\partial S}{\partial n_i} \right)_{\! P,T \rlap{,n_{j \neq i}}}
+			= - S_i
+		\end{alignedat}
+		\right\}
+		\Rightarrow \left( \dfrac{\partial \mu_i}{\partial T}
+		\right)_{\! P,n_i} = - S_i
+		$
+	</p>
+
+<p>Ya que en una función de estado el orden de derivación no importa,
+las derivadas cruzadas son iguales.</p>
+
+<p>Por definición:</p>
+
+	<p style="text-align:center">
+		$G = H - TS$</p>
+		
+<p>De donde:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left( \dfrac{\partial G}{\partial n_i}
+			\right)_{\! P,T \rlap{,n_{j \neq i}}} = \left(
+			\dfrac{\partial H}{\partial n_i} \right)_{\! P,T \rlap{,n_{j \neq i}}}
+			- T \left( \dfrac{\partial S}{\partial n_i}
+			\right)_{\! P,T,n_{j \neq i}} \\[1ex]
+			\mu_i = H_i - T S_i = H_i + T \left( \dfrac{\partial \mu_i}{\partial T}
+			\right)_{\! P,n_i} \\[1ex]
+			H_i = \mu_i - T \left( \dfrac{\partial \mu_i}{\partial T}
+			\right)_{\! P,n_i}
+		\end{array}
+		$
+	</p>
+	
+<p>Dividiendo por $T^2$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{H_i}{T^2} = \dfrac{\mu_i}{T^2} - \dfrac{1}{T} \left(
+			\dfrac{\partial \mu_i}{\partial T} \right)_{\! P,n_i} \\[1ex]
+			\dfrac{H_i}{T^2} = - \mu_i \dfrac{d (1{∕}T)}{dT} - \dfrac{1}{T}
+			\left( \dfrac{\partial \mu_i}{\partial T} \right)_{\! P,n_i} \\[1ex]
+			- \dfrac{H_i}{T^2} = \left( \dfrac{\partial (\mu_i{∕}T)}{\partial T}
+			\right)_{\! P,n_i}
+		\end{array}
+		$
+	</p>	
+	
+<p>- Relación de $\mu_i$ con $P$:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{2}
+			&amp;\mu_i = \left( \dfrac{\partial G}{\partial n_i}
+			\right)_{\! P,T,n_{j \neq i}} &amp;&amp;\, \Rightarrow \,
+			\dfrac{\partial^2 G}{\partial n_i \partial P} = \left(
+			\dfrac{\partial \mu_i}{\partial P} \right)_{\! T,n_i} \\[1ex]
+			&amp;V = \left( \dfrac{\partial G}{\partial P} \right)_{\! T,n_i}
+			&amp;&amp;\, \Rightarrow \,
+			\dfrac{\partial^2 G}{\partial P \partial n_i} = \left(
+			\dfrac{\partial V}{\partial n_i} \right)_{\! P,T \rlap{,n_{j \neq i}}}
+			= V_i
+		\end{alignedat}
+		\right\} \Rightarrow \left( \dfrac{\partial \mu_i}{\partial P}
+		\right)_{\! T,n_i} = V_i
+		$
+	</p>
+	
+<p>$\ast$ Equilibrio material:</p>
+
+<p>En el equilibrio material, i.e. equilibrios de fases y/o químico, 
+las cantidades de las especies en todas las partes del sistema no 
+varían.</p>
+
+<p>En un sistema homogéneo (una única fase), en equilibrio térmico y
+mecánico, sólo trabajo de presión-volumen:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G = G(P,T,n_1, \dotsc,n_c) \\[1ex]
+			dG = -S \, dT + V \, dP + \displaystyle \sum_i \mu_i \, dn_i
+		\end{array}
+		$
+	</p>
+	
+<p>Si es heterogéneo (varias fases):</p>
+
+	<p style="text-align:center">
+		$G = \displaystyle \sum_\alpha G^\alpha$</p>
+		
+<p>Esto es, $G$ (la energía de Gibbs del sistema), como propiedad 
+extensiva, es la suma de las energías de Gibbs de cada fase, siendo 
+$G^\alpha$ la energía de Gibbs de la fase $\alpha$.</p>
+
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$dG = d(\displaystyle \sum_\alpha G^\alpha) = \sum_\alpha dG^\alpha$</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$dG^\alpha = -S^\alpha \, dT + V^\alpha \, dP + \displaystyle \sum_i
+		\mu_i^\alpha dn_i^\alpha$</p>
+		
+<p>Por tanto, con todas las fases en equilibrio térmico y mecánico:</p>
+
+	<p style="text-align:center">
+		$dG = \displaystyle - \sum_\alpha S^\alpha \, dT + \sum_\alpha V^\alpha
+		\, dP + \sum_\alpha \sum_i \mu_i^\alpha \, dn_i^\alpha$</p>
+		
+<p>Al ser propiedades extensivas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\displaystyle \sum_\alpha S^\alpha = S \\[1ex]
+			\displaystyle \sum_\alpha V^\alpha = V
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{ dG = -S \, dT + V \, dP + \displaystyle \sum_\alpha
+		\sum_i^{\vphantom{i}}	\mu_i^\alpha dn_i^\alpha}$</p>
+		
+<p>Ecuación para un sistema formado por varias fases, en equilibrio
+mecánico y térmico, con sólo trabajo $P$-$V$, y en el que se produce
+transferencia de materia.</p>
+
+<p>Siendo (a $P$ y $T$ ctes.):</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = \displaystyle \sum_\alpha \sum_i \mu_i^\alpha dn_i^\alpha$
+	</p>
+
+<p>Recordando como criterio de equilibrio y espontenidad en un sistema
+cerrado:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} \leq 0$</p>
+		
+<p>Por tanto, considerando el sistema de varias fases en su conjunto como
+cerrado:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:inline-table;vertical-align:middle;padding-right:1em">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-bottom:1em">
+					$\displaystyle \sum_\alpha \sum_i^{\vphantom{i}} \mu_i^\alpha \, dn_i^\alpha
+					&lt; 0$ &emsp;
+				</span>
+				<span style="display:table-cell">
+					Proceso espontáneo.
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$\displaystyle \sum_\alpha \sum_i \mu_i^\alpha \, dn_i^\alpha
+					= 0$ &emsp;
+				</span>
+				<span>
+					Equilibrio termodinámico.
+				</span>
+			</span>
+		</span>
+		<span style="display:inline-block;border:1px solid black;padding:3px">
+			$P$ y $T$ ctes.
+		</span>
+	</p>
+	
+<p>Si se relaciona $G$ con $A$ (la energía de Helmholtz):</p>
+
+	<p style="text-align:center">
+		$G = H - TS = U + PV - TS = A + PV$</p>
+		
+<p>Ya que $A = U - TS$.</p>
+		
+<p>Diferenciando:</p>
+
+	<p style="text-align:center">
+		$dG = dA + V \, dP + P \, dV$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dA &amp;= dG - V \, dP - P \, dV \\[1ex]
+			dA &amp;= -S \, dT + \! \cancel{V \, dP} \! + \sum_\alpha \sum_i
+			\mu_i^\alpha \, dn_i^\alpha - P \, dV - \! \cancel{V \, dP} \! \\[1ex]
+			\rlap{\boxed{\phantom{dA = -S \, dT - P \, dV + \sum_\alpha \sum_i^i
+			\mu_i^\alpha \, dn_i^\alpha} \;}}
+			\; dA &amp;= -S \, dT - P \, dV + \sum_\alpha \sum_i \mu_i^\alpha \,
+			dn_i^\alpha
+		\end{align}
+		$
+	</p>
+	
+<p>Así que (a $V$ y $T$ ctes.):</p>
+
+	<p style="text-align:center">
+		$dA_{V,T} = \displaystyle \sum_\alpha \sum_i \mu_i^\alpha \,
+		dn_i^\alpha$</p>
+		
+<p>En un sistema cerrado el criterio de equilibrio y espontaneidad:</p>
+
+	<p style="text-align:center">
+		$dA_{V,T} \leq 0$</p>
+		
+<p>Esto es, para un sistema cerrado que sólo intercambia trabajo $P$-$V$,
+en equilibrio mecánico y térmico:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:inline-table;vertical-align:middle;padding-right:1em">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-bottom:1em">
+					$\displaystyle \sum_\alpha \sum_i^{\vphantom{i}} \mu_i^\alpha \, dn_i^\alpha
+					&lt; 0$ &emsp;
+				</span>
+				<span style="display:table-cell">
+					Proceso espontáneo.
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$\displaystyle \sum_\alpha \sum_i \mu_i^\alpha \, dn_i^\alpha
+					= 0$ &emsp;
+				</span>
+				<span>
+					Equilibrio termodinámico.
+				</span>
+			</span>
+		</span>
+		<span style="display:inline-block;border:1px solid black;padding:3px">
+			$V$ y $T$ ctes.
+		</span>
+	</p>
+	
+<p>- Equilibrio de fases:</p>
+
+<center>
+	<object data="potencial_quimico_02.svg" type="image/svg+xml"
+	width="148" height="100"></object>
+</center>
+
+<p>Se supone un cambio de fases, entre una fase $\alpha$ y una fase 
+$\beta$, de una cantidad infinitesimal de un componente $j$ a $P$ y $T$ 
+constantes en un sistema cerrado.</p>
+
+<p>En caso de estar en equilibrio (proceso infinitamente próximo al 
+equilibrio):</p>
+
+	<p style="text-align:center">
+		$\mu_j^\alpha \, dn_j^\alpha + \mu_j^\beta \, dn_j^\beta = 0$</p>
+		
+<p>Como el sistema es cerrado el número total de moles de $j$ entre ambas
+fases es constante:</p>
+
+	<p style="text-align:center">
+		$n_j^\alpha + n_j^\beta =$ cte.</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dn_j^\alpha + dn_j^\beta = 0 \\[1ex]
+			dn_j^\alpha = -dn_j^\beta
+		\end{array}	
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_j^\alpha \, dn_j^\alpha - \mu_j^\beta \, dn_j^\alpha = 0 \\[1ex]
+			(\mu_j^\alpha - \mu_j^\beta) \, dn_j^\alpha = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Como $dn_j^\alpha \neq 0$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_j^\alpha - \mu_j^\beta = 0 \\[1ex]
+			\mu_j^\alpha = \mu_j^\beta
+		\end{array}
+		$
+	</p>
+	
+<p>Esta última igualdad es la condición de equilibrio de fases para
+un sistema cerrado que sólo intercambia trabajo presión-volumen.</p>
+
+<p>Si no se ha alcanzado el equilibrio material, para el proceso
+espontáneo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_j^\alpha \, dn_j^\alpha - \mu_j^\beta \, dn_j^\alpha &lt; 0 \\[1ex]
+			(\mu_j^\alpha - \mu_j^\beta) \, dn_j^\alpha &lt; 0
+		\end{array}
+		$
+	</p>
+	
+<p>La transferencia de $j$ entre las dos fases tiene dos sentidos
+posibles, que para cumplir la desigualdad anterior (producirse
+de manera espontánea):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\alpha \to \beta \; \Rightarrow \; dn_j^\alpha &lt; 0 \; \Rightarrow
+			\; \mu_j^\alpha &gt; \mu_j^\beta \\[1ex]
+			\beta \to \alpha \; \Rightarrow \; dn_j^\alpha &gt; 0 \; \Rightarrow
+			\; \mu_j^\alpha &lt; \mu_j^\beta
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, las condiciones de proceso espontáneo son:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\mu_j^\alpha &gt; \mu_j^\beta \; \Rightarrow \; \alpha \to \beta \\[1ex]
+			\mu_j^\alpha &lt; \mu_j^\beta \; \Rightarrow \; \beta \to \alpha
+		\end{array}
+		\right\}
+		$
+		Hasta que ambos potenciales químicos sean iguales.
+	</p>
+	
+<p>En general, si se traslada esto a un sistema con multiples fases y 
+componentes <span style="white-space:nowrap">($\sum_\alpha \sum_i 
+\mu_i^\alpha \, dn_i^\alpha \leq 0$)</span> se producirá una 
+transferencia espontánea de los componentes entre las distintas fases 
+hasta que el potencial químico de cada uno de ellos en todas ellas sea 
+el mismo, alcanzándose el equilibrio material (del mismo modo que 
+igualarían su temperatura, si inicialmente fuera distinta, en el 
+equilibrio térmico). Esto es:</p>
+
+	<p style="text-align:center">
+		$\mu_i^\alpha = \mu_i^\beta = \mu_i^\gamma = \dotsb = \mu_i$</p>
+		
+<p>En tal caso, se obtiene una nueva ecuación válida para un sistema de
+varias fases en equilibrio material:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\sum_\alpha \sum_i \mu_i^\alpha \, dn_i^\alpha &amp;= \sum_\alpha
+			\sum_i \mu_i \, dn_i^\alpha = \\[1ex]
+			&amp;= \mspace{14mu} \mu_1 \, dn_1^\alpha + \dotsb + \mu_c \,
+			dn_c^\alpha + {} \\[1ex]
+			&amp;\hphantom{={}} + \mu_1 \, dn_1^\beta + \dotsb + \mu_c \,
+			dn_c^\beta + {} \\[1ex]
+			&amp;\hphantom{={}} + \mu_1 \, dn_1^\gamma + \dotsb + \mu_c \,
+			dn_c^\gamma + {} \\[1ex]
+			&amp;\hphantom{={}} + \dotsb = \\[1ex]
+			&amp;= \sum_i \bigl( \mu_i \underbrace{\sum_\alpha dn_i^\alpha}_{dn_i}
+			\bigr) = \boxed{\sum_i^\vphantom{i} \mu_i \, dn_i = 0}
+		\end{align}	
+		$
+	</p>
+	
+<p>Ya que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			n_i = \displaystyle \sum_\alpha n_i^\alpha \\[1ex]
+			dn_i = \displaystyle \sum_\alpha dn_i^\alpha
+		\end{array}
+		$
+	</p>
+	
+<p>En un sistema cerrado, en equilibrio material:</p>
+
+	<p style="text-align:center">
+		$n_i =$ cte. $\Rightarrow dn_i = 0$</p>	
+		
+<p>- Equilibrio químico:</p>
+
+<p>Sea una reacción, en un sistema cerrado, tal que:</p>
+
+	<p style="text-align:center">
+		$\ce{aA + bB + \dotsb -&gt; lL + mM + \dotsb}$</p>
+		
+<p>Se define el avance de reacción ($\xi$) como el factor que 
+multiplicado por un coeficiente estequiométrico, cualquiera de ellos, 
+da el número de moles de la especie correspondiente que han reaccionado 
+en un momento determinado. Tiene unidades de mol.</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			n_{\ce{A}} = n_{\ce{A},0} - a \xi \\[1ex]
+			n_{\ce{B}} = n_{\ce{B},0} - b \xi \\[1ex]
+			\dots \\[1ex]
+			n_{\ce{L}} = n_{\ce{L},0} + l \xi \\[1ex]
+			n_{\ce{M}} = n_{\ce{M},0} + m \xi \\[1ex]
+			\dots
+		\end{array}
+		$
+	</p>
+	
+<p>En general:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			n_i = n_{i,0} + \nu_i \xi \\[1ex]
+			\Delta n_i = n_i - n_{i,0} = \nu_i \xi \\[1ex]
+			\xi = \dfrac{\Delta n_i}{\nu_i}
+		\end{array}
+		$</p>
+		
+<p>Donde $\nu_i$, el coeficiente estequiométrico de la especie $i$, es 
+negativo si $i$ es un reactivo y positivo si es un producto.</p>
+
+<p>Si, a $P$ y $T$ constantes, se produce un avance infinitesimal $d\xi$:</p>
+
+	<p style="text-align:center">
+		$dn_i = \nu_i \, d\xi$</p>
+		
+<p>Estando en el equilibrio cuando tiene lugar, de la condición de 
+equilibrio (proceso infinitamente próximo al equilibrio), empleando una 
+expresión válida, como se vio, aunque en la reacción haya distintas 
+fases:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \sum_i \mu_i \, dn_i = 0 \\[1ex]
+			\displaystyle \sum_i \mu_i \nu_i \, d\xi = 0 \\[1ex]
+			\displaystyle \bigl( \sum_i \nu_i \mu_i \bigr) d\xi = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Como $d\xi \neq 0$:</p>
+
+	<p style="text-align:center">
+		$\boxed{\displaystyle \sum_i^{\vphantom{i}} \nu_i \mu_i = 0}$</p>
+		
+<p>Que es, para un sistema cerrado, sólo trabajo $P$-$V$, la condición 
+de equilibrio químico, independientemente del camino que haya seguido 
+la reacción para llegar a él, ya que el estado de un sistema no depende 
+de su historia.</p>
+
+<p>Si la reacción, en una cantidad infinitesimal, tiene lugar en un 
+sistema homogéneo (una única fase) en equilibrio térmico y 
+mecánico:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dG_{P,T} = \displaystyle \sum_i \mu_i \, dn_i \\[1ex]
+			dG_{P,T} = \displaystyle \sum_i \mu_i \nu_i \, d\xi = \bigl( \sum_i
+			\mu_i \nu_i \bigr) d\xi 
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo, ya que $n_i$ es función lineal de $\xi$, en un sistema 
+reaccionante:</p>
+
+	<p style="text-align:center">
+		$G = G(P,T,\xi)$</p>
+
+<p>Diferenciando:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = \left(\dfrac{\partial G}{\partial \xi} \right)_{\! P,T}
+		d\xi$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial G}{\partial \xi} \right)_{\! P,T} =
+		\displaystyle \sum_i \nu_i \mu_i$</p>
+
+<p>Si $d\xi &gt; 0$, son, por tanto, condiciones de equilibrio y
+espontaneidad:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:cell">
+			$\left( \dfrac{\partial G}{\partial \xi} \right)_{\! P \rlap{,T}}
+			= 0 \, \Rightarrow \, dG_{P,T} = 0$ &emsp; Equilibrio.
+			<span style="display:block;margin-top:1em">
+				$\left( \dfrac{\partial G}{\partial \xi} \right)_{\! P \rlap{,T}}
+				&lt; 0 \, \Rightarrow \, dG_{P,T} &lt; 0$ &emsp; Reacción espontánea.
+			</span>
+		</span>
+	</p>
+	
+<p>En una (hipotética) representación:</p>
+
+<center>
+	<object data="potencial_quimico_03.svg" type="image/svg+xml"
+	width="300" height="360"></object>
+</center>
+
+<p>De usar $A$, (proceso a $V$ y $T$ constantes):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dA_{V,T} &amp;= \sum_i \mu_i \, dn_i = \\[1ex]
+			&amp;= \sum_i \mu_i \nu_i \, d\xi
+		\end{align}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$\left( \dfrac{\partial A}{\partial \xi} \right)_{\! V \rlap{,T}}
+			= 0$ &emsp; Equilibrio.
+			<span style="display:block;margin-top:1em">
+				$\left( \dfrac{\partial A}{\partial \xi} \right)_{\! V \rlap{,T}}
+				&lt; 0$ &emsp; Reacción espontánea.
+			</span>
+		</span>
+	</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../magnitudes_molares_parciales/magnitudes_molares_parciales.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../regla_fases/regla_fases.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="161" height="240" version="1.1" viewBox="0 0 161 240" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.iki.fi/pav/software/textext/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="marker1842" overflow="visible" orient="auto">
+   <path transform="scale(1.1) rotate(180) translate(1)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-99.5 -82.52)">
+  <text x="115" y="137.51968" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="115" y="137.51968"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="65%">2</tspan></tspan></text>
+  <path d="m255 87.52v60h-150v-60" fill="none" stroke="#000"/>
+  <g>
+   <path d="m180 225.52c12.697 0 23-10.303 23-23s-10.303-23-23-23-23 10.303-23 23 10.303 23 23 23zm0-1c-12.156 0-22-9.8442-22-22s9.8442-22 22-22 22 9.8442 22 22-9.8442 22-22 22z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m162.22 196.5-4.4265 12.037-4.4264-12.037c2.6134 1.9231 6.1889 1.912 8.8529 0z" fill-rule="evenodd"/>
+  </g>
+  <text x="115" y="282.51968" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="115" y="282.51968"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="65%">1</tspan></tspan></text>
+  <path d="m105 317.52v-60h150v60" fill="none" stroke="#000"/>
+  <g>
+   <path d="m179.5 147.52v27.02h1v-27.02z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m184.44 168-4.4195 12.018-4.4195-12.018c2.6093 1.92 6.1792 1.909 8.839 0z" fill-rule="evenodd"/>
+   <path d="m179.5 225.02v30.5h1v-30.5z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m184.44 245.5-4.4195 12.018-4.4195-12.018c2.6093 1.92 6.1792 1.909 8.839 0z" fill-rule="evenodd"/>
+   <path d="m202.5 202.02v1h32.5v-1z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m224.31 198.08 12.018 4.4195-12.018 4.4195c1.92-2.6093 1.909-6.1792 0-8.839z" fill-rule="evenodd"/>
+  </g>
+  <g>
+   <text x="239" y="207.72752" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="239" y="207.72752" font-family="'STIX Two Text'" font-style="italic">W<tspan baseline-shift="sub" font-family="'STIX Two Text'" font-size="65%" font-style="normal"/></tspan></text>
+   <g id="content" transform="matrix(1.6 0 0 -1.6 -50.32 1219.2)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$Q_2$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m151.74 657.08h0.07l0.07 0.01h0.07l0.06 0.01h0.07l0.12 0.02 0.05 0.01h0.06l0.06 0.01 0.1 0.02 0.11 0.02 0.09 0.03 0.2 0.06 0.09 0.03 0.09 0.04 0.1 0.04 0.1 0.05 0.05 0.02 0.05 0.03 0.05 0.02 0.05 0.03c1.47 0.83 2.48 2.44 2.48 4.01 0 1.34-0.96 2.31-2.28 2.31l-0.05-0.33c0.8 0 1.28-0.57 1.28-1.52 0-1.05-0.46-2.51-1.1-3.42-0.55-0.79-1.17-1.18-1.9-1.18-0.81 0-1.27 0.61-1.27 1.65 0 0.95 0.49 2.43 1.09 3.29 0.56 0.81 1.17 1.18 1.9 1.18l0.05 0.33c-0.8 0-1.7-0.41-2.5-1.12-1-0.94-1.59-2.14-1.59-3.3 0-0.81 0.3-1.49 0.84-1.91 0.26-0.21 0.48-0.3 0.91-0.4-0.9-0.8-0.99-0.88-1.76-1.41l0.1-0.15c0.38 0.21 0.76 0.3 1.15 0.3 0.19 0 0.48-0.06 0.92-0.18 0.61-0.16 1.15-0.26 1.52-0.26 0.55 0 1.25 0.25 1.75 0.65 0.24 0.18 0.37 0.32 0.63 0.68l-0.15 0.11c-0.56-0.58-0.96-0.77-1.68-0.77-0.26 0-0.47 0.04-1.23 0.22-0.52 0.13-0.99 0.22-1.05 0.21-0.04-0.01-0.06-0.01-0.06-0.01h-0.24z"/>
+<path d="m159.49 656.69-0.1 0.04c-0.25-0.4-0.35-0.46-0.66-0.46h-1.67l1.17 1.22c0.63 0.65 0.9 1.18 0.9 1.72 0 0.7-0.57 1.23-1.29 1.23-0.39 0-0.75-0.15-1.01-0.43-0.23-0.24-0.33-0.46-0.45-0.95l0.15-0.04c0.28 0.69 0.53 0.91 1.01 0.91 0.59 0 0.99-0.4 0.99-0.98 0-0.55-0.32-1.19-0.91-1.81l-1.25-1.32v-0.08h2.73z"/>
+</g>
+   <g transform="matrix(1.6 0 0 -1.6 -50.32 1296.7)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$Q_1$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m151.74 657.08h0.07l0.07 0.01h0.07l0.06 0.01h0.07l0.12 0.02 0.05 0.01h0.06l0.06 0.01 0.1 0.02 0.11 0.02 0.09 0.03 0.2 0.06 0.09 0.03 0.09 0.04 0.1 0.04 0.1 0.05 0.05 0.02 0.05 0.03 0.05 0.02 0.05 0.03c1.47 0.83 2.48 2.44 2.48 4.01 0 1.34-0.96 2.31-2.28 2.31l-0.05-0.33c0.8 0 1.28-0.57 1.28-1.52 0-1.05-0.46-2.51-1.1-3.42-0.55-0.79-1.17-1.18-1.9-1.18-0.81 0-1.27 0.61-1.27 1.65 0 0.95 0.49 2.43 1.09 3.29 0.56 0.81 1.17 1.18 1.9 1.18l0.05 0.33c-0.8 0-1.7-0.41-2.5-1.12-1-0.94-1.59-2.14-1.59-3.3 0-0.81 0.3-1.49 0.84-1.91 0.26-0.21 0.48-0.3 0.91-0.4-0.9-0.8-0.99-0.88-1.76-1.41l0.1-0.15c0.38 0.21 0.76 0.3 1.15 0.3 0.19 0 0.48-0.06 0.92-0.18 0.61-0.16 1.15-0.26 1.52-0.26 0.55 0 1.25 0.25 1.75 0.65 0.24 0.18 0.37 0.32 0.63 0.68l-0.15 0.11c-0.56-0.58-0.96-0.77-1.68-0.77-0.26 0-0.47 0.04-1.23 0.22-0.52 0.13-0.99 0.22-1.05 0.21-0.04-0.01-0.06-0.01-0.06-0.01h-0.24z"/>
+<path d="m158.2 660.44-1.26-0.63v-0.1c0.08 0.04 0.16 0.06 0.19 0.08 0.13 0.05 0.24 0.07 0.31 0.07 0.15 0 0.21-0.1 0.21-0.32v-3.15c0-0.23-0.05-0.39-0.16-0.45-0.11-0.07-0.21-0.09-0.5-0.1v-0.1h1.93v0.1c-0.55 0.01-0.66 0.08-0.66 0.42v4.17z"/>
+</g>
+   <text x="228.96216" y="137.51968" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="228.96216" y="137.51968"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="65%">1</tspan></tspan></text>
+  </g>
+  <path d="m143.61 133.88h70.927" fill="none" marker-end="url(#marker1842)" stroke="#000" stroke-width="1px"/>
+  <path d="m130 122.52c5-5 32.775-12 50-12s45 7 50 12" fill="none" stroke="#000" stroke-dasharray="2,4"/>
+  <text x="174.09599" y="106.51987" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="174.09599" y="106.51987" font-family="'STIX Two Text'" font-style="italic">T</tspan></text>
+ </g>
+</svg>

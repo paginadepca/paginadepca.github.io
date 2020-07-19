@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Máquinas térmicas con focos de capacidad calorífica finita">
+<meta name="keywords" content="máquinas, térmicas, focos, capacidad, calorífica, finita">
+<title>Máquinas térmicas con focos de capacidad calorífica finita</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Máquinas térmicas con focos de capacidad calorífica finita</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>A medida que se transfiere calor la temperatura del foco cambia.</p>
+
+<p>Si, por ejemplo, sólo afecta al foco caliente su temperatura 
+disminuye hasta la temperatura del foco frío, deteniéndose la máquina, 
+ya que entonces sólo se tiene un único foco y, de no detenerse, se 
+violaría el enunciado de Kelvin-Planck del segundo principio. Así pues, 
+en una máquina térmica reversible, para este caso:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;padding-right:2em">
+			<object data="maquinas_termicas_focos_capacidad_calorifica_finita_01.svg"
+			type="image/svg+xml" width="161" height="240"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:top;padding-top:2em">
+			Reversible.
+			<span style="display:block">Un foco variable.</span>
+		</span>
+	</p>
+	
+<p>Donde, si se consideran ciclos infinitesimales (o elementales), cada
+uno de ellos un ciclo de Carnot, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}[t]{c}
+			\eta = -\dfrac{w}{q_2} = \dfrac{T-T_1}{T} = 1-\dfrac{T_1}{T} \\[1ex]
+			w = -\left(1 - \dfrac{T_1}{T}\right)q_2
+		\end{array}
+		$
+		&emsp; (En cada ciclo elemental).
+	</p>
+	
+<p>Si $P$ en el foco es constante:</p>
+
+	<p style="text-align:center">
+		$q_2 = -n C_{{\rm m},P} \, dT$</p>
+		
+<p>Donde $C_{{\rm m},P}$ es el calor molar a presión constante del foco 
+caliente, y $n$ su número de moles.</p>
+
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$w = n C_{{\rm m},P} \, dT - n C_{{\rm m},P} T_1 \dfrac{dT}{T}$</p>
+
+<p>El trabajo total, hasta que se detiene la máquina, es la suma del 
+trabajo realizado por los sucesivos ciclos infinitesimales. Esto es su 
+integral:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= \displaystyle \int_{T_2}^{T_1} n C_{{\rm m},P} \, dT -
+			\int_{T_2}^{T_1} n C_{{\rm m},P} T_1 \dfrac{dT}{T} = \\[1ex]
+			&amp;= n C_{{\rm m},P} (T_1 - T_2) - n C_{{\rm m},P} T_1 \ln \dfrac{T_1}{T_2}
+		\end{align}
+		$
+	</p>
+	
+<p>Si son los dos focos, el foco caliente se enfría y el frío se calienta,
+en el momento que ambos tengan la misma temperatura la máquina se para.
+Esto es:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;padding-right:2em">
+			<object data="maquinas_termicas_focos_capacidad_calorifica_finita_02.svg"
+			type="image/svg+xml" width="161" height="242"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:top;padding-top:2em">
+			Reversible.
+			<span style="display:block">Dos focos variables.</span>
+		</span>
+	</p>
+	
+<p>Se cumple que:</p>
+
+	<p style="text-align:center">
+		$\dfrac{q_2}{T} + \dfrac{q_1}{T'} = 0$ &emsp; (En cada ciclo
+		elemental).</p>
+		
+<p>Donde $T$ es la temperatura del foco caliente y $T'$ la del foco
+frío.</p>
+
+<p>Si la presión es constante en ambos focos:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_2 = -n C_{{\rm m},P} \, dT \\[1ex]
+			q_1 = -n' C_{{\rm m},P}' \, dT'
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$-\dfrac{n C_{{\rm m},P} \, dT}{T} - \dfrac{n' C_{{\rm m},P}' \, dT'}{T'} = 0$</p>
+	
+<p>Su sumatorio para todos los consecutivos ciclos infinitesimales, 
+hasta que se iguala la temperatura, conduce a la integral:</p>
+
+	<p style="text-align:center">
+		$\displaystyle - \int_{T_2}^{T_f} \dfrac{n C_{{\rm m},P}\, dT}{T} -
+		\int_{T_1}^{T_f} \dfrac{n' C_{{\rm m},P}' \, dT'}{T'} = 0$</p>
+
+<p>Su integración permite calcular la temperatura final:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			n C_{{\rm m},P} \ln \dfrac{T_f}{T_2} + n' C_{{\rm m},P}' \ln \dfrac{T_f}{T_1} =
+			0 \\[1ex]
+			n C_{{\rm m},P} \ln \dfrac{T_f}{T_2} = -n' C_{{\rm m},P}' \ln \dfrac{T_f}{T_1} \\[1ex]
+			\ln \left(\dfrac{T_f}{T_2}\right)^{n C_{{\rm m},P}} =
+			\ln \left(\dfrac{T_1}{T_f}\right)^{n' C_{{\rm m},P}'} \\[1ex]
+			\left(\dfrac{T_f}{T_2}\right)^{n C_{{\rm m},P}} =
+			\left(\dfrac{T_1}{T_f}\right)^{n' C_{{\rm m},P}'} \\[1ex]
+			T_f^{n C_{{\rm m},P} + n' C_{{\rm m},P}'} = T_1^{n' C_{{\rm m},P}'} T_2^{n C_{{\rm m},P}}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde se considera que los calores molares son constantes entre 
+$T_1$ y $T_2$.</p>
+
+<p>Si ambos focos son idénticos, y bajo la misma presión, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			n = n' \\
+			C_{{\rm m},P} = C_{{\rm m},P}'
+		\end{array}
+		\right\} \Rightarrow
+		\begin{aligned}[t]
+			T_f^{2n C_{{\rm m},P}} &amp;= (T_1 T_2)^{n C_{{\rm m},P}} \\[1ex]
+			T_f^2 &amp;= T_1 T_2
+		\end{aligned}
+		$
+	</p>
+	
+<p>En cada ciclo infinitesimal la variación de energía interna
+es cero, siendo entonces:</p>
+
+	<p style="text-align:center">
+		$w = -(q_2 + q_1)$</p>
+	
+<p>Así pues, el trabajo total (hasta que se para la máquina):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W = -(Q_2 + Q_1) &amp;= \displaystyle \int_{T_2}^{T_f} n C_{{\rm m},P} \, dT
+			+ \int_{T_1}^{T_f} n' C_{{\rm m},P}' \, dT' = \\[1ex]
+			&amp;= n C_{{\rm m},P} (T_f - T_2) + n' C_{{\rm m},P}' (T_f - T_1)
+		\end{align}
+		$
+	</p>
+	
+<p>Si ambos focos son idénticos:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= 2n C_{{\rm m},P} T_f - n C_{{\rm m},P} (T_2 + T_1) = \\[1ex]
+			&amp;= 2n C_{{\rm m},P} (T_2 T_1)^{1/2} - n C_{{\rm m},P} (T_2 + T_1)
+		\end{align}
+		$
+	</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../entropia/entropia.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../condiciones_equilibrio/condiciones_equilibrio.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
