@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="262.01" height="131" version="1.1" viewBox="0 0 69.322 34.661" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="SemiCircleOut" overflow="visible" orient="auto">
+   <path transform="matrix(.6 0 0 .6 4.2753 .45807)" d="m-2.5-0.80914c0 2.76-2.24 5-5 5v-10c2.76 0 5 2.24 5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="DotL" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 5.92 .8)" d="m-2.5-1c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-24.87 -31.094)">
+  <rect x="26.458" y="37.708" width="66.146" height="26.458" fill="#0ff"/>
+  <path d="m92.604 32.417v31.75h-66.146v-31.75" fill="none" stroke="#000" stroke-width=".53"/>
+  <g fill="#fff">
+   <rect x="31.75" y="43" width="23.812" height="15.875" stroke="#000" stroke-width=".53"/>
+   <rect x="63.5" y="43" width="23.812" height="15.875" stroke="#000" stroke-width=".53"/>
+   <rect x="55.562" y="50.938" width="7.9375" height="2.6458" stroke="#fff" stroke-width=".5297"/>
+  </g>
+  <g fill="none" stroke="#000">
+   <path d="m55.562 50.938h7.9375" stroke-width=".52917"/>
+   <path d="m55.562 53.583h7.9375" stroke-width=".52917"/>
+   <path d="m29.104 41.677v-7.9375" marker-start="url(#DotL)" stroke-width=".26458px"/>
+   <path d="m59.531 54.906v-5.2917" marker-end="url(#SemiCircleOut)" stroke-width=".26458px"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" letter-spacing="0px" word-spacing="0px">
+   <g font-size="4.2333px" stroke-width=".26458">
+    <text x="42.415882" y="48.291668" font-style="italic" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="42.415882" y="48.291668" font-family="'STIX Two Text'" font-style="italic" stroke-width=".26458">n</tspan></text>
+    <g>
+     <text x="37.664726" y="56.229168" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="37.664726" y="56.229168" stroke-width=".26458"><tspan font-family="'STIX Two Text'" font-style="italic">P</tspan>, <tspan font-family="'STIX Two Text'" font-style="italic">V</tspan>, <tspan font-family="'STIX Two Text'" font-style="italic">T</tspan></tspan></text>
+     <text x="70.713997" y="48.291668" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="70.713997" y="48.291668" stroke-width=".26458"><tspan font-family="'STIX Two Text'" font-style="italic">P</tspan> = 0</tspan></text>
+     <text x="70.53775" y="56.229168" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="70.53775" y="56.229168" stroke-width=".26458">Vacío</tspan></text>
+    </g>
+   </g>
+   <text x="30.427067" y="36.385384" font-size="4.2333px" stroke-width=".26458" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="30.427067" y="36.385384" font-family="'STIX Two Text'" font-style="italic" stroke-width=".26458">T</tspan></text>
+  </g>
+ </g>
+</svg>

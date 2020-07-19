@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="128.21" height="96.156" version="1.1" viewBox="0 0 128.21 96.156" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+		@import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="marker1141" overflow="visible" orient="auto">
+   <path transform="matrix(-1.1,0,0,-1.1,-1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-1.1,0,0,-1.1,-1.1,0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-63.612 -102.02)">
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="100" y="122.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="100" y="122.51965" font-family="'STIX Two Text'" font-style="italic">P</tspan></text>
+   <text x="175" y="122.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="175" y="122.51965" font-family="'STIX Two Text'" font-style="italic">S</tspan></text>
+   <text x="100" y="172.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="100" y="172.51965" font-family="'STIX Two Text'" font-style="italic">T</tspan></text>
+   <text x="175" y="172.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="175" y="172.51965" font-family="'STIX Two Text'" font-style="italic">V</tspan></text>
+  </g>
+  <path d="m170 117.52v53h-55" fill="none" marker-end="url(#marker1141)" stroke="#000" stroke-width="1px"/>
+  <path d="m115 117.52v47h50" fill="none" marker-end="url(#Arrow2Lend)" stroke="#000" stroke-width="1px"/>
+  <text x="75" y="122.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="75" y="122.51965">1</tspan></text>
+  <circle cx="79" cy="117.41" r="9.888" fill="none" stroke="#000"/>
+  <text x="137.29199" y="192.51968" fill="#000000" font-family="'STIX Two Text'" font-size="16px" font-weight="bold" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="137.29199" y="192.51968">+</tspan></text>
+ </g>
+</svg>

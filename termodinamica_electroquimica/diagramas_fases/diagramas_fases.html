@@ -1,0 +1,580 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Diagramas de fases">
+<meta name="keywords" content="diagramas, fases">
+<title>Diagramas de fases</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Diagramas de fases</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Superficie $P$-$V_{\rm m}$-$T$ para un gas ideal:</p>
+
+<center>
+	<object data="diagramas_fases_01.svg" width="300" height="300"
+	type="image/svg+xml"></object>
+</center>
+
+<p>Obviamente, las sustancias reales no existen en toda condición como 
+fase gaseosa. Sólo lo hacen a (suficientemente) bajas presiones y altas 
+temperaturas. Esto, para un cantidad fija, por ejemplo un mol, de
+una sustancia pura, es:</p>
+
+<center>
+	<object data="diagramas_fases_02.svg" width="450" height="450"
+	type="image/svg+xml"></object>
+</center>
+
+<p>Siendo ésta una superficie $P$-$V$-$T$ típica de una sustancia que
+se contrae al congelarse (lo más habitual). Si se proyecta sobre los
+planos $P$-$T$ o $P$-$V$:</p>
+
+<center>
+	<object data="diagramas_fases_03.svg" width="450" height="450"
+	type="image/svg+xml"></object>
+</center>
+
+<center>
+	<object data="diagramas_fases_04.svg" width="450" height="450"
+	type="image/svg+xml"></object>
+</center>
+
+<p>Al primero de estos dos, la proyección sobre el plano $P$-$T$, se le 
+llama directamente, es el más común, diagrama de fases (en este caso de 
+un componente).</p>
+
+<p>Dos situaciones:</p>
+
+<center>
+	<object data="diagramas_fases_05.svg" width="400" height="300"
+	type="image/svg+xml"></object>
+</center>
+
+<p>Situación en que la curva F tiene pendiente positiva, caso por 
+ejemplo del $\ce{CO2}$. Se da cuando $\rho_{\rm sólido} &gt; \rho_{\rm 
+líquido}$. Esto es, se contrae cuando solidifica.</p>
+
+<center>
+	<object data="diagramas_fases_06.svg" width="400" height="300"
+	type="image/svg+xml"></object>
+</center>
+
+<p>Situación en que la curva F tiene pendiente negativa, caso por 
+ejemplo del $\ce{H2O}$, $\ce{Bi}$ o $\ce{Ge}$. Tiene lugar cuando 
+$\rho_{\rm sólido} &lt; \rho_{\rm líquido}$. Esto es, se dilata cuando 
+solidifica.</p>
+
+<p>$\ast$ Diagrama de fases de $\ce{H2O}$ (pura, sin aire) a presiones
+moderadas:</p>
+
+<center>
+	<object data="diagramas_fases_07.svg" type="image/svg+xml" width="600"
+	height="400"></object>
+</center>
+
+<p>Análisis, con aplicación de la regla de las fases, del diagrama:</p>
+
+	<p style="margin-left:30px">
+		- Áreas: S, L ó V.</p>
+		
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{aligned}
+			L &amp;= C + 2 - F = \\[1ex]
+			&amp;= 1 + 2 - 1 = 2
+		\end{aligned}
+		\right\} \Rightarrow P
+		$ y $T$.
+	</p>
+	
+	<p style="margin-left:30px">
+		- Curvas:</p>
+		
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;padding-right:.5em">
+			<span style="display:table-row">
+				<span style="display:table-cell">BT (sublimación) &emsp;</span>
+				<span style="display:table-cell">$\ce{S &lt;=&gt; V}$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					TA (evaporación) &emsp;</span>
+				<span style="display:table-cell">$\ce{L &lt;=&gt; V}$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">TC (fusión) &emsp;</span>
+				<span style="display:table-cell">$\ce{S &lt;=&gt; L}$</span>
+			</span>
+		</span>
+		<span style="display:table-cell;padding-left:1em;vertical-align:middle;border-left:1px solid black">
+			$\Rightarrow \{L = 1 + 2 - 2 \} \Rightarrow P$ ó $T$.
+		</span>
+	</p>
+		
+	<p style="margin-left:30px">
+		- Puntos (de intersección): T (punto triple).</p>
+		
+		<p style="text-align:center">
+			$\ce{S &lt;=&gt; L &lt;=&gt; V} \enspace \Rightarrow \enspace L =
+			1 + 2 - 3 = 0$</p>
+			
+	<p style="margin-left:30px">
+		También tiene lugar el equilibrio $\ce{S &lt;=&gt; V}$, pero no
+		es independiente de los otros dos (puede obtenerse como combinación
+		lineal, en este caso la suma, de ellos).</p>
+		
+	<p style="margin-left:30px">
+		-Equilibrio metaestable: MT.</p>
+		
+	<p style="text-align:center">
+		$\ce{L_{(subenfr.)} &lt;=&gt; V}$</p>
+		
+	<p style="margin-left:30px">
+		Se logra operando rápidamente. (Subenfriado y sobreenfriado son 
+		aquí, en este contexto, aunque parezcan contradictorios, términos 
+		equivalentes. Ambos se usan).</p>
+		
+	<p style="margin-left:30px">
+		- Procesos:</p>
+		
+	<p style="display:table;margin:3em auto">
+		<span style="display:table-cell;padding-right:1em">
+			<object data="diagramas_fases_08.svg" width="131" height="141"
+			type="image/svg+xml"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			$
+			D(P_{\rm D},T_{\rm D})
+			\left\{
+				\begin{array}{l}
+					T_{\rm D} \text{ cte.} \,
+					\smash[t]{
+					\left\{
+						\begin{array}{l}
+						{\uparrow} P \Rightarrow \text{DF (vapor)}, \\
+						\text{en F eq. } \ce{V &lt;=&gt; L}, \\
+						{\uparrow} P \Rightarrow \text{L (solo)}.
+						\end{array}
+					\right.
+					} \\[1em]
+					P_{\rm D} \text{ cte.} \,
+					\smash[b]{
+					\left\{
+						\begin{array}{l}
+							{\downarrow} T \Rightarrow \text{DE (vapor)}, \\
+							\text{en E eq. } \ce{V &lt;=&gt; L} \\
+							{\downarrow} T \Rightarrow \text{L (solo)}.
+						\end{array}
+					\right.
+					}
+				\end{array}
+			\right.
+			$
+		</span>
+	</p>
+	
+	<p style="margin-left:30px">Partiendo desde D' podría plantearse algo 
+	similar siendo esta vez vapor y sólido (en vez de vapor y líquido) 
+	los implicados.</p>
+	
+<p>Se define la humedad relativa como la relación en tanto por ciento
+entre la presión del vapor de agua en la atmósfera y la $P_{\rm v}$
+(saturación) a la temperatura $T$ de la misma en ese momento:</p>
+
+	<p style="text-align:center">
+		H. relativa $=
+		\dfrac{
+			P_{\ce{H2O}} \text{ en la atmósfera a $T$}
+		}{
+			P_{\rm v} \text{ (saturación) a $T$}
+		} \times 100$
+	</p>
+	
+<p>La $T_{\text{rocío}}$ (temperatura de rocío) es aquélla, para una 
+presión constante dada, a la que el vapor empieza a condensar.</p>
+
+<p>Para el $\ce{H2O}$ con aire:</p>
+
+	<p style="text-align:center">
+		$T°_{\!\! \lower 2mu \rm f} = \pu{273,15 K}$</p>
+		
+<p>Es el conocido como punto de hielo. El $\ce{N2}$ y $\ce{O2}$ disueltos
+en el agua rebajan la temperatura de fusión.</p>
+
+<p>$\ast$ Diagrama de fases de $\ce{CO2}$:</p>
+
+<center>
+	<object data="diagramas_fases_09.svg" type="image/svg+xml" width="600"
+	height="400"></object>
+</center>
+
+<p>En la fase sólida, en el punto D, que queda por debajo del punto 
+triple, un aumento de $T$ a $P$ cte. conduce a la fase vapor sin pasar 
+por líquido.</p>
+
+<p>La curva TB, i.e. la curva de fusión, tiene pendiente positiva, propio
+de substancias donde $\rho_{\rm sólido} &gt; \rho_{\rm líquido}$.</p>
+
+<p>Dedibo a que el punto triple queda por encima de la presión normal
+($\pu{1 atm}$):</p>
+
+	<p style="margin-left:30px">
+		- No hay $T°_{\!\! \lower 2mu \rm f}$ y $T°_{\!\! \lower 2mu \rm e}$.
+	</p>
+	
+	<p style="margin-left:30px">
+		- Sí temperatura normal de sublimación, $T°_{\!\! \lower 2mu {\rm sub}}
+		= \pu{-78 {°}C}$.</p>
+		
+<p>A una temperatura constante de $\pu{20 {°}C}$, intermedia entre 
+$T_{\rm p.t.} = \pu{-57 {°}C}$ y $T_{\rm c} = \pu{31 {°}C}$, al 
+comprimir, partiendo desde presión atmosférica (fase vapor), puede 
+alcanzarse el punto R, donde aparece la fase líquida, estableciéndose 
+el equilibrio entre líquido y vapor.</p>
+
+<p>En un cilindro de $\ce{CO2}$, donde en su interior hay líquido y gas 
+en equilibrio, a temperatura ambiente, aprox. $\pu{20 {°}C}$, la 
+presión de vapor es $\sim \pu{55 atm}$, siendo su $\mu_{\rm JT} \simeq 
+\pu{1 {°}C/ atm}$ (i.e. coeficiente de Joule-Thomson positivo). Por 
+tanto, al abrir la válvula, por efecto Joule-Thomson, en una expansión 
+estrangulada, se produce un enfriamiento, de tal modo que parte del gas 
+se convierte en nieve carbónica (se solidifica). Industrialmente, en un 
+proceso más complejo, esto se aprovecha para obtener lo que se llama 
+hielo seco ($\ce{CO2}$ sólido) cuya temperatura a presión ambiente es 
+$\sim \pu{-78 {°}C}$.</p>
+
+<p>$\ast$ Polimorfismo:</p>
+
+<p>Al hecho de que una sustancia exista en más de una forma cristalina 
+se le conoce como polimorfismo, siendo entonces tal sustancia 
+polimórfica, y cada una de sus formas cristalinas uno de sus 
+polimorfos, los cuales son distintas fases sólidas de la misma 
+sustancia (tienen propiedades físicas diferenciadas). En particular, si 
+se trata de un elemento a tal circunstancia también se le llama 
+alotropía, y, en tal caso, cada cristal distinto del elemento es uno de 
+sus alótropos.</p>
+
+<p>Pueden distinguirse:</p>
+
+<p>- Enantiotropía:</p>
+
+<p>En una sustancia, el cambio o transformación reversible, para una 
+presión determinada a una temperatura de transición ($T_{\rm t}$) 
+definida, entre dos formas cristalinas se conoce como 
+enantiotropía.</p>
+
+<p>Presentan tal comportamiento, por ejemplo, $\ce{S}$ o $\ce{Sn}$. En el
+caso del azufre, a presiones bajas, presenta dos alótropos o, siendo más
+concreto, enantiótropos:</p>
+
+<p style="display:table;margin-left:auto;margin-right:auto">
+	<span style="display:table-row">
+		<span style="display:table-cell">Rómbico</span>
+		<span style="display:table-cell">$α$</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell">Monoclínico &emsp;</span>
+		<span style="display:table-cell">$β$</span>
+	</span>
+</p>
+
+<p>El diagrama de fases del $\ce{S}$ a presiones moderadas:</p>
+
+<center>
+	<object data="diagramas_fases_10.svg" type="image/svg+xml" width="600"
+	height="400"></object>
+</center>
+
+<p>Entonces la transición es tal que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			T &gt; T_{\rm t} \, \Rightarrow \, β \\[1ex]
+			T &lt; T_{\rm t} \, \Rightarrow \, α
+		\end{array}
+		$
+	</p>
+	
+<p>Ampliando el diagrama de fases alrededor del punto O:</p>
+
+<center>
+	<object data="diagramas_fases_11.svg" type="image/svg+xml" width="600"
+	height="400"></object>
+</center>
+
+<p>En las curvas de las gráficas:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">FA &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; V}$ &emsp;&emsp;</span>
+			<span style="display:table-cell">$P_{\rm v}$ del sólido $α$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">AB</span>
+			<span style="display:table-cell">$\ce{β_{(s)} &lt;=&gt; V}$</span>
+			<span style="display:table-cell">$P_{\rm v}$ del sólido $β$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">BE</span>
+			<span style="display:table-cell">$\ce{L &lt;=&gt; V}$</span>
+			<span style="display:table-cell">$P_{\rm v}$ del líquido.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">AC</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; β_{(s)}}$</span>
+			<span style="display:table-cell">
+				Curva de transición. Pendiente ${\uparrow}{\uparrow}$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">OC</span>
+			<span style="display:table-cell">$\ce{α_{(s)} &lt;=&gt; L}$</span>
+			<span style="display:table-cell">
+				Curva de fusión de $α$, metaestable.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">BC</span>
+			<span style="display:table-cell">$\ce{β_{(s)} &lt;=&gt; L}$</span>
+			<span style="display:table-cell">
+				Curva de fusión de $β$. Pendiente ${\uparrow}{\uparrow}{\uparrow}$.
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">CD</span>
+			<span style="display:table-cell">$\ce{α_{(s)} &lt;=&gt; L}$</span>
+			<span style="display:table-cell">Curva de fusión de $α$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">AO</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; V}$ &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$P_{\rm v}$ del sólido $α$, metaestable.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">OB</span>
+			<span style="display:table-cell">$\ce{L &lt;=&gt; V}$</span>
+			<span style="display:table-cell">
+				$P_{\rm v}$ del líquido, metaestable.</span>
+		</span>
+	</p>
+	
+<p>En los puntos:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">A  &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$T°_{\!\! \lower 2mu \rm t}$</span>
+			<span style="display:table-cell"> Transición.</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; β_{(s)} &lt;=&gt; V}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">O</span>
+			<span style="display:table-cell">
+				$T°_{\!\! \lower 2mu {\rm f(α)}}$ &emsp;</span>
+			<span style="display:table-cell">
+				Fusión de $α$, metaestable. &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; L &lt;=&gt; V}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">B</span>
+			<span style="display:table-cell">
+				$T°_{\!\! \lower 2mu {\rm f(β)}}$</span>
+			<span style="display:table-cell">Fusión de $β$.</span>
+			<span style="display:table-cell">
+				$\ce{β_{(s)} &lt;=&gt; L &lt;=&gt; V}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">C</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; β_{(s)} &lt;=&gt;L}$</span>
+		</span>
+	</p>
+	
+<p>Dedibo a que cuando están en equilibrio sólo fases condensadas las 
+pendientes de las curvas son muy grandes, i.e. la temperatura de 
+equilibrio cambia poquísimo con la presión, puede considerarse que las 
+temperaturas en A, O y B son (prácticamente) las mismas que las que 
+pueden medirse con sólo las fases condensadas presentes, en los cambios 
+de fase, a presión normal.</p>
+
+<p>- Monotropía:</p>
+
+<p>Al cambio o transformación irreversible entre dos formas cristalinas,
+en la que una es estable y la otro metaestable en todo el rango de
+temperaturas hasta la fusión (no existe temperatura de transición), se
+conoce como monotropía. La transformación de una en otra sólo se produce
+en una dirección (i.e. de la metaestable a la estable).</p>
+
+<p>Muestran, por ejemplo, tal comportamiento $\ce{P}$, $\ce{SiO2}$, 
+$\ce{CaCO3}$ o $\ce{C}$.</p>
+
+<p>Esquemáticamente:</p>
+
+<center>
+	<object data="diagramas_fases_12.svg" type="image/svg+xml" width="342"
+	height="260"></object>
+</center>
+
+<p>Las líneas continuas implican equilibrio de fases estables, mientras 
+que las discontinuas de fases metaestables.</p>
+
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;text-align:right;padding-right:1em">
+				Estable:</span>
+			<span style="display:table-cell">$α$ &emsp;</span>
+			<span style="display:table-cell">($T &lt; T_1$)</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;text-align:right;padding-right:1em">
+				Metaestable:</span>
+			<span style="display:table-cell">$β$</span>
+			<span style="display:table-cell">($T \ll T_1$)</span>
+		</span>
+	</p>
+	
+<p>Algunas de las curvas del diagrama anterior:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">AB &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; V}$ &emsp;&emsp;</span>
+			<span style="display:table-cell">Sublimación de $α$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">BC</span>
+			<span style="display:table-cell">$\ce{L &lt;=&gt; V}$</span>
+			<span style="display:table-cell">Evaporación de $\ce{L}$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">DO</span>
+			<span style="display:table-cell">$\ce{β_{(s)} &lt;=&gt; V}$</span>
+			<span style="display:table-cell">
+				Sublimación de $β$, metaestable.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">BE</span>
+			<span style="display:table-cell">$\ce{α_{(s)} &lt;=&gt; L}$</span>
+			<span style="display:table-cell">
+				Pendiente alta $\Rightarrow T_1 \simeq T°_{\!\! \lower 2mu \rm f}$
+			</span>
+		</span>
+	</p>
+	
+<p>Puntos:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">B &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$\ce{α_{(s)} &lt;=&gt; L &lt;=&gt; V}$</span>
+			<span style="display:table-cell"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">O</span>
+			<span style="display:table-cell">
+				$\ce{β_{(s)} &lt;=&gt; L &lt;=&gt; V}$</span>
+			<span style="display:table-cell"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">F</span>
+			<span style="display:table-cell">
+				$\ce{β_{(s)} &lt;=&gt; α_{(s)} &lt;=&gt; V}$ &emsp;&emsp;</span>
+			<span style="display:table-cell">
+				$T$ y $P$ ${\uparrow} {\uparrow}$, transición (no realizable).
+			</span>
+		</span>
+	</p>
+	
+<p>La formación de $\ce{β_{(s)}}$ puede lograrse, por ejemplo, mediante 
+un enfriamiento rápido de $\ce{L}$.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../regla_fases/regla_fases.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../ecuaciones_clapeyron_clausius_clapeyron/ecuaciones_clapeyron_clausius_clapeyron.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

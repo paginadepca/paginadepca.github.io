@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ecuaciones termodinámicas de estado">
+<meta name="keywords" content="ecuaciones, termodinámicas, estado">
+<title>Ecuaciones termodinámicas de estado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Ecuaciones termodinámicas de estado</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$P \, dV = T \, dS - dU$</p>
+		
+<p>De donde, a temperatura constante:</p>
+
+	<p style="text-align:center">
+		$P = T \left( \dfrac{\partial S}{\partial V} \right)_{\! T} - \left(
+		\dfrac{\partial U}{\partial V} \right)_{\! T}$</p>
+		
+<p>Usando la ecuación de Maxwell adecuada:</p>
+
+<center>
+	<object data="ecuaciones_termodinamicas_estado_1.svg" width="97"
+	height="92" type="image/svg+xml"></object>
+</center>
+
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{P = T \left( \dfrac{\partial P}{\partial T} \right)_{\! V} -
+		\left( \dfrac{\partial U}{\partial V} \right)_{\! T} }$
+		<span style="display:block;margin-top:1ex">
+			1ª ecuación termodinámica de estado
+		</span>
+	</p>
+		
+<p>También:</p>
+
+	<p style="text-align:center">
+		$V \, dP = - T \, dS + dH$</p>
+		
+<p>Que a temperatura constante:</p>
+
+	<p style="text-align:center">
+		$V = - T \left( \dfrac{\partial S}{\partial P} \right)_{\! T} +
+		\left( \dfrac{\partial H}{\partial P} \right)_{\! T}$</p>
+		
+<p>La ecuación de Maxwell correspondiente:</p>
+
+<center>
+	<object data="ecuaciones_termodinamicas_estado_2.svg" width="97"
+	height="87" type="image/svg+xml"></object>
+</center>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\boxed{V = T \left( \dfrac{\partial V}{\partial T} \right)_{\! P} +
+		\left( \dfrac{\partial H}{\partial P} \right)_{\! T}}$
+		<span style="display:block;margin-top:1ex">
+			2ª ecuación termodinámica de estado
+		</span>
+	</p>
+	
+<p>Algunos usos:</p>
+
+<ol>
+	<li>Se supone un mol de gas ideal:
+	
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					PV = RT \\[1ex]
+					P = \dfrac{RT}{V}
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">Por consiguiente:</p>
+	
+			<p style="text-align:center">
+				$\left( \dfrac{\partial P}{\partial T} \right)_{\! V} =
+				\dfrac{R}{V}$</p>
+				
+		<p style="text-indent:0">Sustituyendo en la primera de las ecuaciones
+		termodinámicas:</p>
+				
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					\cancel{P} \! = \! \cancel{T \dfrac{R}{V}} \! -
+					\left( \dfrac{\partial U}{\partial V} \right)_{\! T} \\[1ex]
+					\left( \dfrac{\partial U}{\partial V} \right)_{\! T} = 0
+					\rlap{\quad \text{Gas ideal.}}
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Demostrándose ahora termodinámicamente, como consecuencia de la
+			segunda ley, lo que se había demostrado experimentalmente con el
+			experimento de Joule.</p>
+	</li>
+	<li>Si fuera un gas de Van der Waals: 
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					\left( P + \dfrac{a}{V^2} \right) (V - b) = RT \\[1ex]
+					P = \dfrac{RT}{V - b} - \dfrac{a}{V^2}
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">Así que:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial P}{\partial T} \right)_{\! V} =
+				\dfrac{R}{V - b}$</p>
+				
+		<p style="text-indent:0">Al sustituir en la primera ecuación
+		termodinámica:</p>
+		
+			<p style="text-align:center">
+				$P = \dfrac{TR}{V - b} - \left( \dfrac{\partial U}{\partial V}
+					\right)_{\! T}$</p>
+					
+		<p style="text-indent:0">Comparando:</p>
+		
+			<p style="text-align:center">
+				$
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\text{Presión } \rlap{\text{interna}}
+					\end{subarray}
+				}{\left( \dfrac{\partial U}{\partial V} \right)_{\! T}} =
+				\dfrac{a}{V^2}
+				$
+			</p>
+	</li>
+</ol>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../ecuaciones_maxwell/ecuaciones_maxwell.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../tercer_principio_termodinamica/tercer_principio_termodinamica.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

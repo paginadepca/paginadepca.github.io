@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="229.13" height="225.51" version="1.1" viewBox="0 0 229.13 225.51" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-425.87 -797.52)">
+  <g fill="none">
+   <path d="m450 802.52v200h200" stroke="#000" stroke-width="1px"/>
+   <path d="m495 952.52c50.764-28.473 94.006-71.989 130-130" stroke="#000" stroke-width="1px"/>
+   <g stroke="#999" stroke-dasharray="3, 3">
+    <path d="m550 1002.5v-89.276"/>
+    <path d="m570 1002.5v-108.47"/>
+    <path d="m550 913.24h-100"/>
+    <path d="m570 894.05h-120"/>
+   </g>
+  </g>
+  <circle cx="550" cy="913.24" r="2.7245" stroke="#000"/>
+  <circle cx="570" cy="894.05" r="2.7245" stroke="#000"/>
+  <g fill="#000000" font-family="'STIX Two Text'" letter-spacing="0px" word-spacing="0px">
+   <g font-size="16px">
+    <text x="435.70401" y="817.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="435.70401" y="817.51965" font-family="'STIX Two Text'" font-style="italic">P</tspan></text>
+    <text x="635" y="1018.0317" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="635" y="1018.0317" font-family="'STIX Two Text'" font-style="italic">T</tspan></text>
+    <text x="537" y="842.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="537" y="842.51965">α</tspan></text>
+    <text x="617" y="924.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="617" y="924.51965">β</tspan></text>
+   </g>
+   <text x="430.43918" y="908.18335" font-size="13px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="430.43918" y="908.18335">d<tspan font-family="'STIX Two Text'" font-size="13px" font-style="italic">P</tspan></tspan></text>
+   <text x="552.00458" y="1017.5197" font-size="16px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="552.00458" y="1017.5197" font-size="13px"><tspan>d</tspan><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

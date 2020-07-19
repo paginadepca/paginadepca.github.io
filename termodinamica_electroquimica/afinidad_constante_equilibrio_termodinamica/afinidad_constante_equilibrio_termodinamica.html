@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Afinidad y constante de equilibrio termodinámica">
+<meta name="keywords" content="afinidad, constante, equilibrio, termodinámica">
+<title>Afinidad y constante de equilibrio termodinámica</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Afinidad y constante de equilibrio termodinámica</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sea una reacción:</p>
+
+	<p style="text-align:center">
+		$\ce{aA + bB + \dotsb &lt;=&gt; lL + mM + \dotsb}$ &emsp; ($P$, $T$
+		ctes.)</p>
+		
+<p>Siendo (como ya se vio), en un momento determinado, para un reactivo 
+o producto $i$ de la reacción:</p>
+
+	<p style="text-align:center">
+		$n_i = n_{i,0} + \nu_i \xi \, \Rightarrow \, \xi = \dfrac{n_i - 
+		n_{i,0}}{\nu_i} = \dfrac{\Delta n_i}{\nu_i}$</p>
+		
+<p>Donde $\xi$ es el avance de la reacción. También:</p>
+		
+	<p style="text-align:center">
+		$\left( \dfrac{\partial G}{\partial \xi} \right)_{\! P,T} =
+		\displaystyle \sum \nu_i \mu_i \leq 0$ &emsp; Equilibrio o
+		espontaneidad.</p>
+		
+<p>Gráficamente:</p>
+
+<center>
+	<object data="afinidad_constante_equilibrio_termodinamica_01.svg"
+	type="image/svg+xml" width="300" height="360"></object>
+</center>
+
+<p>Se define la afinidad química, $\mathcal{A}$, como:</p>
+
+	<p style="text-align:center">
+		$-\mathcal{A} = \left( \dfrac{\partial G}{\partial \xi}
+		\right)_{\! P,T} = \displaystyle \sum \nu_i \mu_i$</p>
+		
+<p>En el equilibrio:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum \nu_i \mu_{i,\rm eq} = 0$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\mu_{i,\rm eq} = \mu°_{\!\! \lower 2mu i} + RT \ln a_{i,\rm eq}$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \sum \nu_i ( \mu°_{\!\! \lower 2mu i} + RT
+			\ln a_{i,\rm eq} ) = 0 \\[1ex]
+			\displaystyle \sum \nu_i \mu°_{\!\! \lower 2mu i} + RT \sum \nu_i
+			\ln a_{i,\rm eq} = 0 \\[1ex]
+		\end{array}
+		$
+	</p>
+	
+<p>De donde, reordenando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\sum \nu_i \mu°_{\!\! \lower 2mu i} &amp;= - RT \sum
+			\nu_i \ln a_{i,\rm eq} = \\[1ex]
+			&amp;= -RT \sum \ln a_{i,\rm eq}^{\nu_i} = \\[1ex]
+			&amp;= -RT \ln \bigl( \prod_{\substack{\uparrow \\
+			\llap{\text{produ}}\rlap{\text{ctorio}}}} a_{i,\rm eq}^{\nu_i}
+			\bigr)
+		\end{align}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$\Delta G° = \displaystyle \sum \nu_i \mu°_{\!\! \lower 2mu i}$</p>
+		
+<p>Siendo que $\Delta G°$ sólo depende de $T$, a una temperatura dada 
+es constante. Entonces:</p>
+
+	<p style="text-align:center">
+		$\Delta G° = -RT \ln \bigl( \displaystyle \prod a_{i,\rm eq}^{\nu_i}
+		\bigr)$</p>
+		
+<p>Se define:</p>
+
+	<p style="text-align:center">
+		$\boxed{K_a = \prod a_{i,\rm eq}^{\nu_i}}$ &emsp; Contante de equilibrio
+		termodinámica.</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\boxed{\Delta G° = - RT \ln K_a} \\[1ex]
+			\boxed{K_a = e^{-\tfrac{\Delta G°}{RT}}}
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="margin-left:30px">
+		$\Delta G° \ll 0 \, \Rightarrow \, K_a$ muy grande, desplazada la
+		reacción hacia la derecha.</p>
+		
+	<p style="margin-left:30px">
+		$\Delta G° \gg 0 \, \Rightarrow \, K_a$ muy pequeña, desplazada la
+		reacción hacia la izquierda.</p>
+		
+<p>A temperatura constante:</p>
+
+	<p style="text-align:center">
+		$\Delta G° = \Delta H° - T \Delta S°$</p>
+		
+<p>Habitualmente $\Delta H°$, en magnitud, es del orden de 1000 veces 
+mayor que $\Delta S°$, por lo que a $T$ suficientemente baja se tiene 
+que:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;vertical-align:middle">
+			$\Delta G° \approx \Delta H° \Bigg\langle \,$</span>
+		<span style="display:table-cell;vertical-align:middle">
+			$\Delta H°$ exotérmico ($&lt; 0$) $\Rightarrow \Delta G° &lt; 0$
+			<span style="display:block;margin-top:1ex">
+				$\Delta H°$ endotérmico ($&gt; 0$) $\Rightarrow \Delta G° &gt; 0$
+			</span>
+		</span>
+	</p>
+	
+<p>A temperatura ambiental:</p>
+
+	<p style="text-align:center">
+		$
+		| \Delta H° | &gt; | T \Delta S° | \Rightarrow
+		\left\{
+		\begin{array}{l}
+			\left.
+			\begin{array}{l}
+				\Delta H° &gt; 0, \Delta S° &gt; 0 \\[1ex]
+				\Delta H° &gt; 0, \Delta S° &lt; 0
+			\end{array}
+			\right\} \Rightarrow \Delta G° &gt; 0 \\[1ex]
+			\left.
+			\begin{array}{l}
+				\Delta H° &lt; 0, \Delta S° &gt; 0 \\[1ex]
+				\Delta H° &lt; 0, \Delta S° &lt; 0
+			\end{array}
+			\right\} \Rightarrow \Delta G° &lt; 0
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>A temperaturas elevadas $T \Delta S°$ domina y el signo de $\Delta G°$
+dependerá del signo de $\Delta S°$.</p>
+
+<p>Cuando la reacción aún no ha alcanzado el equilibrio:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \mu°_{\!\! \lower 2mu i} + RT \ln a_i$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			-\mathcal{A} = \left( \dfrac{\partial G}{\partial \xi}
+			\right)_{\! P,T} &amp;= \sum \nu_i \mu_i =\\[1ex]
+			&amp;= \sum \nu_i(\mu°_{\!\! \lower 2mu i} + RT \ln a_i) = \\[1ex]
+			&amp;= \sum \nu_i \mu°_{\!\! \lower 2mu i} + RT \ln \bigl(
+			\underbrace{ \prod a_i^{\nu_i}}_{J_a} \bigr) = \\[1ex]
+			&amp;= \Delta G° + RT \ln J_a
+		\end{align}
+		$
+	</p>
+	
+<p>Donde $J_a$ tiene la misma forma que $K_a$, pero no es una constante 
+de equilibrio. Como $\Delta G° = -RT \ln K_a$, entonces:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;text-align:center">
+			$
+			\boxed{
+				\left( \dfrac{\partial G}{\partial \xi} \right)_{\! P,T} = -RT
+				\ln K_a + RT \ln J_a
+			}
+			$
+			<span style="display:block;margin-top:1ex">
+				Isoterma de reacción.</span>
+		</span>
+		<span style="display:table-cell">
+			&emsp; (Van't Hoff, 1886)
+		</span>
+	</p>
+	
+<p>Así pues:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">En el equilibrio:</span>
+			<span style="display:table-cell">$K_a = J_a$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">En el proceso espontáneo: &ensp;</span>
+			<span style="display:table-cell;padding-top:1em;padding-bottom:1em">
+				$K_a &gt; J_a$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">En el proceso forzado:</span>
+			<span style="display:table-cell">$J_a &gt; K_a$</span>
+		</span>
+	</p>
+		
+	
+<p>Donde para la reacción expuesta al principio:</p>
+
+	<p style="text-align:center">
+		$
+		K_a =
+		\dfrac{
+			a_{\ce{L}, \rm eq}^l a_{\ce{M}, \rm eq}^m \dotsm
+		}{
+			a_{\ce{A}, \rm eq}^a a_{\ce{B}, \rm eq}^b \dotsm
+		}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		J_a =
+		\dfrac{
+			a_{\ce{L}}^l a_{\ce{M}}^m \dotsm
+		}{
+			a_{\ce{A}}^a a_{\ce{B}}^b \dotsm
+		}
+		$
+	</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../magnitudes_ionicas_medias/magnitudes_ionicas_medias.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../principio_le_chatelier/principio_le_chatelier.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

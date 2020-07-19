@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Calor y trabajo">
+<meta name="keywords" content="calor, trabajo">
+<title>Calor y trabajo</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Calor y trabajo</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Calor:</p>
+
+<p>Se supone:</p>
+
+<center>
+	<object data="calor_trabajo_1.svg" type="image/svg+xml" width="241"
+	height="330"></object>
+</center>
+
+	<p style="margin-left:30px;text-indent:-1em">
+		a) $T_{{\rm A}, i} = T_{{\rm B}, i}$</p>
+
+	<p style="margin-left:30px">
+		No ocurre nada al ponerse en contacto.</p>
+
+	<p style="margin-left:30px;text-indent:-1em">
+		b) $T_{{\rm A}, i} &gt; T_{{\rm B}, i}$</p>
+
+	<p style="margin-left:30px">
+		Aquí, sin embargo, al contrario del caso anterior, sí se producen
+		cambios. Esto es, A se enfría y B se calienta, hasta que ambos alcanzan
+		el equilibrio térmico, una misma temperatura para los dos.</p>
+		
+	<p style="margin-left:30px">Se observa experimentalmente, si no 
+	se producen ni cambios de fase ni reacciones químicas, la siguiente 
+	relación:</p>
+	
+	<p style="text-align:center">
+		$m_{\rm A} c_{\rm A}(T_{{\rm A},f} - T_{{\rm A},i}) = - m_{\rm B} 
+		c_{\rm B}(T_{{\rm B},f} - T_{{\rm B},i})$</p>
+		
+	<p style="margin-left:30px">Los coeficientes $c$ que aparecen en esta 
+	igualdad se conocen como calores específicos, de A y B. Puede tomarse 
+	como patrón uno de ellos, por ejemplo el A, darle el valor 1 a 
+	$c_{\rm A}$, y hallar $c_{\rm B}$ para diferentes cuerpos. 
+	Normalmente se toma como patrón el agua.</p>
+	
+	<p style="margin-left:30px">El producto que aparece en la igualdad es 
+	el calor, que es una energía en tránsito, que se transfiere de un 
+	cuerpo a otro:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			Q_{\rm A} = C_{\rm A}(T_{{\rm A},f} - T_{{\rm A},i}) \\[1ex]
+			Q_{\rm B} = C_{\rm B}(T_{{\rm B},f}- T_{{\rm B},i})
+		\end{array}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$Q_{\rm A} = -Q_{\rm B}$</p>
+		
+	<p style="margin-left:30px">
+		Donde $C_{\rm A} (= m_{\rm A} c_{\rm A})$ y $C_{\rm B} (= m_{\rm B} 
+		c_{\rm B})$ son las capacidades caloríficas, de A y B respectivamente.</p>
+		
+<p>- Trabajo:</p>
+
+<p>El trabajo en el cual el sistema pierde o gana volumen se conoce como
+trabajo presión-volumen o de expansión-compresión.</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;padding-right:1em">
+			<object data="calor_trabajo_2.svg" type="image/svg+xml" width="211"
+			height="171"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			Pistón
+			<span style="display:block;padding:1ex 0">$V = Al = A(b - x) = Ab - Ax$</span>
+			<span style="dispaly:block">$A \equiv$ Área del émbolo.</span>
+		</span>
+	</p>
+	
+<p>Se supone que no hay rozamiento y que se está en equilibrio mecánico,
+i.e. las fuerzas están todas equilibradas.</p>
+
+<p>Si se aumenta o disminuye de manera infinitesimal la fuerza que 
+ejerce el émbolo, éste se desplaza una distancia infinitesimal, siendo 
+que el sistema, cuasiestático, está en todo momento infinitesimalmente 
+próximo al equilibrio. Se tiene, entonces, un proceso reversible.</p>
+
+<p>Así pues, siendo $F_{\rm ext}$ la fuerza que hace el émbolo sobre el
+sistema, el trabajo realizado:</p>
+
+	<p style="text-align:center">
+		$w = F_{\rm ext} \, dx = P_{\rm ext} A \, dx = -P_{\rm ext} \, dV$</p>
+		
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		\begin{array}{l}
+			P_{\rm ext} = \dfrac{F_{\rm ext}}{A} \\[1ex]
+			dV = \dfrac{dV}{dx} \, dx = -A \, dx
+		\end{array}
+	</p>
+	
+<p>Compresión:<p>
+	
+	<p style="text-align:center">
+			$
+			\begin{array}[t]{l}
+				dx &gt; 0 \\[1ex]
+				dV &lt; 0 \\[1ex]
+				w &gt; 0
+			\end{array}
+			$
+	</p>
+	
+<p>Expansión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}[t]{l}
+			dx &lt; 0 \\[1ex]
+			dV &gt; 0 \\[1ex]
+			w &lt; 0
+		\end{array}
+		$
+	</p>
+	
+<p>Es un proceso reversible y elemental en el que:</p>
+
+	<p style="text-align:center">
+		$P_{\rm ext} = P_{\rm sist} \pm dP$</p>
+		
+<p>Donde $P_{\rm sist}$ es la presión que hace el sistema sobre el émbolo.
+</p>
+	
+<p>Por tanto, si este proceso, de esta manera, se produce sucesivamente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			W = - \displaystyle\int_{V_1}^{V_2} P_{\rm ext} \, dV = - 
+			\int_{V_1}^{V_2} (P_{\rm sist} \pm dP) \, dV = - \int_{V_1}^{V_2} 
+			P_{\rm sist} \, dV \pm \underset{\rm 
+			\llap{despre}\rlap{ciable}}{\cancel{dP dV}} \\[1ex]
+			W = - \displaystyle\int_{V_1}^{V_2} P_{\rm ext} \, dV =
+			- \displaystyle\int_{V_1}^{V_2} P_{\rm sist} \, dV
+		\end{array}
+		$
+	</p>
+	
+<p>Si el sistema es un gas a presiones bajas, y se presupone comportamiento
+ideal:</p>
+
+	<p style="text-align:center">
+		$P_{\rm sist} = \dfrac{RT}{V}$</p>
+		
+<p>En este caso, por tanto:</p>
+
+	<p style="text-align:center">
+		$W = - \displaystyle \int_{V_1}^{V_2} P_{\rm sist} \, dV =
+		- \int_{V_1}^{V_2} \dfrac{RT}{V} \, dV$</p>
+		
+<p>Si además las condiciones son isotérmicas:</p>
+
+	<p style="text-align:center">
+		$W = -RT \displaystyle \int_{V_1}^{V_2} \dfrac{dV}{V} = -RT \ln
+		\dfrac{V_2}{V_1} = -RT \ln \dfrac{P_1}{P_2}$</p>
+		
+<p>Se podría considerar que el gas no se comporta idealmente y emplear
+otra ecuación de estado, como por ejemplo la de van der Waals:</p>
+
+	<p style="text-align:center">
+		$P_{\rm sist} = \dfrac{RT}{V-b} - \dfrac{a}{V^2}$</p>
+		
+<p>A continuación, sustituir e integrar para hallar el trabajo.</p>
+
+<p>En un proceso reversible puede representarse la curva de $P$ frente 
+a $V$, siendo el área bajo la misma, entre los estados inicial y final, 
+el trabajo (dependiendo su signo de si es una expansión o compresión). 
+Gráficamente:</p>
+
+	<p style="text-align:center">
+		$W = - \displaystyle \int_i^f P \, dV$</p>
+		
+	<p style="display:table;margin-right:auto;margin-left:auto">
+		<span style="display:table-cell">
+			<object data="calor_trabajo_3.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Expansión
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &lt; 0$
+			</span>
+		</span>
+		<span style="display:table-cell;padding-left:1em;padding-right:1em">
+			<object data="calor_trabajo_4.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Compresión
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &gt; 0$
+			</span>
+		</span>
+		<span style="display:table-cell">
+			<object data="calor_trabajo_5.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Ciclo
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &gt; 0$
+			</span>
+		</span>
+	</p>
+	
+	<p style="display:table;margin-right:auto;margin-left:auto;margin-top:2em">
+		<span style="display:table-cell">
+			<object data="calor_trabajo_6.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Expansión
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &lt; 0$
+			</span>
+		</span>
+		<span style="display:table-cell;padding-left:1em;padding-right:1em">
+			<object data="calor_trabajo_7.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Compresión
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &gt; 0$
+			</span>
+		</span>
+		<span style="display:table-cell">
+			<object data="calor_trabajo_8.svg" type="image/svg+xml"
+			width="182" height="182"></object>
+			<span style="display:block;text-align:center">
+				Ciclo
+			</span>
+			<span style="display:block;text-align:center;padding-top:1ex">
+				$W &lt; 0$
+			</span>
+		</span>
+	</p>
+	
+<p>El trabajo no es función de estado, ya que depende del camino.</p>
+
+<p>$\ast$ Se supone ahora que el proceso es reversible isobárico 
+($P_{\rm ext} = P_{\rm sist} = P =$ cte.):</p>
+
+	<p style="text-align:center">
+		$W = - \displaystyle \int_{V_1}^{V_2} P_{\rm ext} \, dV =
+		-P \int_{V_1}^{V_2} dV = -P(V_2 - V_1)$</p>
+		
+<p>$\ast$ Caso de compresión reversible isotérmica de un sólido:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= - \int_{V_1}^{V_2} P_{\rm ext} \, dV = - \int_{V_1}^{V_2}
+			P \, dV = - \int_1^2 P \, \biggl[ 
+			\underbrace{\left(\dfrac{\partial V}{\partial P} \right)_{\! T} dP
+			+ \! \smash{\cancel{\left(\dfrac{\partial V}{\partial T}\right)_{\! P} 
+			\underbrace{dT}_0}}}_{\displaystyle dV} \biggr] = \\[1ex]
+			&amp;= - \int_{P_1}^{P_2} P \underbrace{\left( \dfrac{\partial V}{\partial P} 
+			\right)_{\! T}}_{\displaystyle -\kappa V} \, dP = \int_{P_1}^{P_2}
+			P \kappa V \, dP \approx \kappa V \int_{P_1}^{P_2} P \, dP = \\[1ex]
+			&amp;= \kappa V \dfrac{1}{2} (P_2^2 - P_1^2)
+		\end{align}
+		$
+	</p>
+	
+<p>Donde $\kappa$ es el coeficiente de compresibilidad isotérmica. A
+temperatura constante y siendo un sólido, puede hacerse la aproximación
+de considerar tanto $\kappa$ como $V$ constantes.</p>
+
+<p>$\ast$ En un proceso irreversible:</p>
+
+	<p style="text-align:center">
+		$P_{\rm ext} \neq P_{\rm sist}$</p>
+		
+<p>Puede calcularse el trabajo irreversible si la $P_{\rm ext} =$ cte., 
+típicamente un cambio brusco de presión a un nuevo valor constante, y 
+un nuevo volumen tras alcanzar el equilibrio. Esto es:</p>
+
+	<p style="text-align:center">
+		$W = - \displaystyle \int_1^2 P_{\rm ext} \, dV = - P_2 
+		\int_1^2 dV = - P_2 (V_2 - V_1)$</p>
+		
+<p>Si fuera una expansión contra el vacío, $P_{\rm ext} = 0$, entonces
+$W = 0$.</p>
+
+<p>$\ast$ Otros tipos, por ejemplo, de trabajo:</p>
+
+<ul>
+	<li>Estiramiento elástico (de un filamento): &ensp; $W = \tau \, dL$</li>
+	<li>Expansión superficial: &ensp; $W = \gamma \, dA$</li>
+	<li>Eléctrico: &ensp; $W = \mathcal{E} \, dQ_e$
+</ul>
+
+<p>El trabajo, sea del tipo que sea, es el producto de un factor intensivo
+por otro extensivo.</p>
+
+<p>Si se tienen en cuenta, en el primer principio, los diversos 
+trabajos en un proceso reversible:</p>
+
+	<p style="text-align:center">
+		$dU = q + w = q + (-P \, dV + \tau \, dL + \gamma \, dA + \mathcal{E}
+		\, dQ_e + \dotsb)$</p>
+		
+<p>La energía interna, que es una función de estado, puede expresarse 
+como función de dos variables independientes, siendo que el intercambio 
+de energía es en forma de calor y trabajo de presión-volumen, teniendo, 
+además, por tanto, diferencial exacta:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			U = U(T,V) \\[1ex]
+			dU = \left(\dfrac{\partial U}{\partial T}\right)_{\! V} dT +
+			\left(\dfrac{\partial U}{\partial V}\right)_{\! T} dV
+		\end{array}
+		$
+	</p>
+	
+<p>Es, en un proceso reversible:</p>
+
+	<p style="text-align:center">
+		$q = dU - w = dU + P \, dV$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$q = \left(\dfrac{\partial U}{\partial T}\right)_{\! V} dT +
+		\left[\left(\dfrac{\partial U}{\partial V}\right)_{\! T} + P \right]
+		dV$</p>	
+		
+<p>La relación de reciprocidad no se cumple, el calor no es una diferencial
+exacta, y, por tanto, el calor no es una función de estado. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			(1) \quad &amp;\left[\dfrac{\partial}{\partial V}
+			\left(\dfrac{\partial U}{\partial T}\right)_{\! V}\right]_T =
+			\left(\dfrac{\partial^2 U}{\partial T \partial V}\right) \\[1ex]
+			(2) \quad &amp;\left[ \dfrac{\partial}{\partial T}
+			\left[ \left(\dfrac{\partial U}{\partial V}\right)_{\! T} + P \right]
+			\right]_V = \left(\dfrac{\partial^2 U}{\partial V \partial T} \right)
+			+ \underbrace{
+				\left(\dfrac{\partial P}{\partial T}\right)_{\! V}
+				}_{\hphantom{0} \, \neq \, 0} \\[1ex]
+			&amp;(1) \neq (2)
+		\end{align}
+		$
+	</p>
+
+<p>También:</p>
+
+	<p style="text-align:center">
+		$w = -P \, dV + 0 \, dT$</p>
+		
+<p>Al añadir el último término, esta expresión tiene la apariencia de
+una diferencial exacta (aunque no lo es). La relación de reciprocidad
+aquí tampoco se cumple:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			(1) \quad &amp;-\left(\dfrac{\partial P}{\partial T}\right)_{\! V}
+			\neq 0 \\[1ex]
+			(2) \quad &amp;\left(\dfrac{\partial 0}{\partial V}\right)_{\! T}
+			= 0 \\[1ex]
+			&amp;(1) \neq (2)
+		\end{align}
+		$
+	</p>
+	
+<p>No es una diferencial exacta. Por tanto, al igual que el calor, el 
+trabajo no es una función de estado.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../energia_interna/energia_interna.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../entalpia/entalpia.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

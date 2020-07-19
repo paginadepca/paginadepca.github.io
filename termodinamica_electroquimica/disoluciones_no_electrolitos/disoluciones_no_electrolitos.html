@@ -1,0 +1,1435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Disoluciones de no electrolitos">
+<meta name="keywords" content="disoluciones, no, electrolitos">
+<title>Disoluciones de no electrolitos</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Disoluciones de no electrolitos</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sea una disolución donde A, el componente de mayor proporción, es el
+disolvente y B, un no electrolito, el soluto, el cual presenta una
+solubilidad limitada, además de no existir puro en el mismo estado que la
+disolución a la $P$ y $T$ de ésta, entonces:</p>
+
+<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+	<span style="display:table-cell">
+		<object data="disoluciones_no_electrolitos_01.svg" width="400"
+		height="400" type="image/svg+xml"></object>
+		<span style="display:block;padding-top:1ex;padding-bottom:1ex">
+			DR: Disolvente de Raoult.</span>
+		DDI: Disolución diluida ideal.
+	</span>
+</p>
+
+<p>Como se observa en la representación, en un cierto intervalo de 
+composiciones, cuando $x_{\rm A} \to 1$, para el disolvente:</p>
+
+	<p style="text-align:center">
+		$P_{\rm A} = P_{\rm A}^* x_{\rm A}$ &emsp; ($x_{\rm A} \to 1$)</p>
+		
+<p>En esta situación, en la que obedece la ley de Raoult, se le 
+denomina disolvente de Raoult (DR). En el mismo rango de composiciones, 
+cuando $x_{\rm B} \to 0$, para el soluto:</p>
+
+	<p style="text-align:center">
+		$P_{\rm B} = K_{{\rm H},x} x_{\rm B}$ &emsp; ($x_{\rm B} \to 0$)</p>
+		
+<p>Esta expresión es la ley de Henry, que es una ley experimental, 
+resultado del estudio de la disolución de gases en líquidos. Donde 
+$K_{{\rm H},x}$, la constante de Henry, es, pues, una constante 
+empírica.</p>
+
+<p>A esta disolución diluida, en la que el disolvente responde a
+la ley de Raoult y el soluto a la de Henry, se le llama disolución
+diluida ideal (DDI). Esto será más cierto cuanto más diluida sea la
+disolución, por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lim\limits_{x_{\rm A} \to 1} \dfrac{P_{\rm A}}{x_{\rm A}} =
+			P_{\rm A}^* \\[1ex]
+			\lim\limits_{x_{\rm B} \to 0} \dfrac{P_{\rm B}}{x_{\rm B}} =
+			K_{{\rm H},x}
+		\end{array}
+		$
+	</p>
+
+<p>Como se verá más adelante, esto servirá de base para establecer un 
+nuevo estado de referencia.</p>
+
+<p>En disoluciones diluidas puede ser más conveniente expresar la
+composición, en vez de con la fracción molar, mediante molalidad ($m$)
+o molaridad ($c$) del soluto. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				x_{\rm B} &amp;= \dfrac{n_{\rm B}}{n_{\rm A} + n_{\rm B}} =
+				\dfrac{m_{\rm B}}{1000{∕}M_{\rm A} + m_{\rm B}}  = \\[1ex]
+				&amp;= \dfrac{m_{\rm B} M_{\rm A}}{1000 + m_{\rm B} M_{\rm A}}
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				x_{\rm B} &amp;= \dfrac{n_{\rm B}}{n_{\rm A} + n_{\rm B}} =
+				\dfrac{
+					c_{\rm B}
+				}{
+					(\rho - c_{\rm B} M_{\rm B}){∕}M_{\rm A} + c_{\rm B}
+				} =  \\[1ex]
+				&amp;=
+				\dfrac{
+					c_{\rm B} M_{\rm A}
+				}{
+					c_{\rm B}(M_{\rm A} - M_{\rm B}) + \rho
+				}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $M_{\rm A}$ y $M_{\rm B}$ son los respectivos pesos 
+moleculares y $\rho$ la densidad de la disolución. Para la disolución 
+diluida ideal la concentración de soluto es muy baja, por lo que pueden
+hacerse aproximaciones:</p>
+
+	<p style="text-align:center">
+		DDI
+		$
+		\Rightarrow
+		\left\{
+		\begin{array}{l}
+			x_{\rm B} \simeq \dfrac{n_{\rm B}}{n_{\rm A}} \\[1ex]
+			x_{\rm B} \simeq \dfrac{m_{\rm B} M_{\rm A}}{1000} \\[1ex]
+			x_{\rm B} \simeq \dfrac{c_{\rm B} M_{\rm A}}{\rho_{\rm A}^*} =
+			c_{\rm B} V_{\rm A}^*
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>En la disolución diluida ideal la fracción molar del soluto 
+($x_{\rm B}$) es proporcional tanto a su molalidad ($m_{\rm B}$) como a 
+su molaridad ($c_{\rm B}$) y, por tanto, también lo es, por la ley de 
+Henry, su presión parcial. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				P_{\rm B} &amp;= K_{{\rm H},x} x_{\rm B} = \\[1ex]
+				&amp;= K_{{\rm H},x} \dfrac{m_{\rm B} M_{\rm A}}{1000} = \\[1ex]
+				&amp;= K_{{\rm H},x} c_{\rm B} V_{\rm A}^*
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Se definen:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			K_{{\rm H},m} = K_{{\rm H},x} \dfrac{M_{\rm A}}{1000} \\[1ex]
+			K_{{\rm H},c} = K_{{\rm H},x} V_{\rm A}^*
+		\end{array}
+		$
+	</p>
+	
+<p>Que son, respectivamente, las constantes de Henry en la escala de 
+molalidad y molaridad. Por consiguiente, en la disolución diluida 
+ideal:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$P_{\rm B} = K_{{\rm H},x} x_{\rm B}$ &emsp;</span>
+			<span style="display:table-cell">
+				Escala de fracción molar.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$P_{\rm B} = K_{{\rm H},m} m_{\rm B}$ &emsp;</span>
+			<span style="display:table-cell;padding-top:1em;padding-bottom:1em">
+				Escala de molalidad.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$P_{\rm B} = K_{{\rm H},c} c_{\rm B}$ &emsp;</span>
+			<span style="display:table-cell">
+				Escala de molaridad.</span>
+		</span>
+	</p>
+	
+<p>$\ast$ Actividad de los componentes en una disolución:</p>
+
+<p>&bull; Disolvente:</p>
+
+<p>Para el disolvente, que cumple Raoult cuando $x_{\rm A} \to 1$, se 
+hallaría en un desarrollo teórico análogo al que se hizo en mezclas, 
+con mismos estados tipo y de referencia:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A(sln)} = \mu°_{\!\! \lower 2mu {\rm A(l)}} +
+		RT \ln (\Gamma_{\rm A(l)} \, f_{\rm A} x_{\rm A})$</p>
+		
+<p>Recordando que $f_A$ es el coeficiente de actividad, no confundir con 
+fugacidad, de $\rm A$.</p>
+
+<p>El estado tipo, donde $a°_{\!\! \lower 2mu {\rm A,(l)}} = 1$, es: 
+$\ce{A}$ puro ($x_{\rm A} = 1$), $P = \pu{1 atm}$ ($\Gamma_{\rm A,(l)} 
+= 1$) y $T$ de la disolución (abreviada: sln).</p>
+
+<p>&bull; Soluto:</p>
+
+	<p style="margin-left:30px">
+		- Disolución diluida ideal (DDI):</p>
+		
+	<p style="margin-left:30px">
+		Sea la disolución diluida ideal en equilibrio con el vapor:</p>
+		
+	<p style="text-align:center">
+		DDI $\ce{&lt;=&gt;}$ vapor &emsp; ($T$, $P$, $x_{\rm B}$)</p>
+		
+	<p style="margin-left:30px">
+		La condición de equilibrio:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu_{\rm B(g)}$</p>
+		
+	<p style="margin-left:30px">
+		Si el vapor es una mezcla de gases ideales (si no fugacidad en
+		vez de presión parcial):</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(g)} = \mu°_{\!\! \lower 2mu {\rm B(g)}} +
+		RT \ln P_{\rm B}$</p>
+		
+	<p style="margin-left:30px">
+		Así que:</p>
+	
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {\rm B(g)}} +
+		RT \ln P_{\rm B}$</p>
+	
+	<p style="margin-left:30px">
+		En una disolución diluida ideal el soluto cumple Henry:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_{\rm B(sln)} &amp;= \mu°_{\!\! \lower 2mu {\rm B(g)}} +
+			RT \ln (K_{{\rm H},x} x_{\rm B}) = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {\rm B(g)}} + RT \ln K_{{\rm H},x} +
+			RT \ln x_{\rm B} \tag{$\ast$} \label{*}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Si virtualmente se extiende el comportamiento de disolución diluida
+		ideal hasta $x_{\rm B} = 1$, entonces para tal estado (ficticio):</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T)$ 
+		&emsp; (DDI, $\ce{B}$ puro, $P$, $T$)</p>
+		
+	<p style="margin-left:30px">
+		Siendo:</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T) = \mu°_{\rm B(g)} +
+		RT \ln K_{{\rm H},x}$</p>
+		
+	<p style="margin-left:30px">
+		Sustituyendo en $\eqref{*}$:</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T) +
+		RT \ln x_{\rm B} \tag{$\ast\ast$} \label{**}$</p>
+		
+	<p style="margin-left:30px">
+		Donde:</p>
+		
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell;white-space:nowrap">
+				$\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T)$ &ensp;</span>
+			<span style="display:table-cell">
+				Potencial químico del estado tipo: soluto en la DDI, cuando
+				$x_{\rm B} = 1$, a $T$ y $P$ de la disolución (es un estado
+				hipotético).</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		Interesa, para la disolución, habitual de trabajo, $P = \pu{1 
+		atm}$, y no una $P$ cualquiera. Siendo:</p>
+		
+	<p style="text-align:center">
+		$
+		d \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} =
+		V_{\rm B}^\infty \, dP = RT \, d \ln \Gamma_{\rm B(sln)}
+		$
+		&emsp; ($T$ cte.)
+	</p>
+	
+	<p style="margin-left:30px">
+		En donde:</p>
+	
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell;white-space:nowrap">
+				$V_{\rm B}^\infty$ &ensp;</span>
+			<span style="display:table-cell">
+				Volumen parcial del soluto en la disolución infinitamente
+				diluida a $P$ y $T$ de la mezcla (ficticiamente el soluto como
+				en la DDI).</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		Integrando desde $P° = \pu{1 atm}$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} -
+			\mu°_{\!\! \lower 2mu {\rm B(sln)}}(\pu{1atm},T) =
+			\displaystyle \int_1^P V_{\rm B}^\infty \, dP =
+			RT \ln \Gamma_{\rm B(sln)} \\[1ex]
+			\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} =
+			\mu°_{\!\! \lower 2mu {\rm B(sln)}}(\pu{1atm},T) +
+			\displaystyle \int_1^P V_{\rm B}^\infty \, dP = 
+			\mu°_{\!\! \lower 2mu {\rm B(sln)}}(\pu{1atm},T) +
+			RT \ln \Gamma_{\rm B(sln)}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Donde:</p>
+	
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell;white-space:nowrap">
+				$\Gamma_{\rm B(sln)}$ &ensp;</span>
+			<span style="display:table-cell">
+				Actividad del soluto en el estado tipo, i.e. soluto puro en la 
+				DDI a $P$ y $T$ de la disolución.
+			</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		Reemplazando en $\eqref{**}$:</p>
+		
+	<p style="text-align:center">
+		$
+		\boxed{
+			\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {\rm B(sln)}} +
+			RT \ln (\Gamma_{\rm B(sln)} x_{\rm B})
+		}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		En donde:</p>
+		
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell;white-space:nowrap">
+				$\mu°_{\!\! \lower 2mu {\rm B(sln)}}$ &ensp;</span>
+			<span style="display:table-cell">
+				Potencial químico del estado tipo a presión estándar: soluto en 
+				la DDI, cuando $x_{\rm B} = 1$ y $P = \pu{1 atm}$ ($\Gamma_{\rm 
+				B(sln)} = 1$) y $T$ de la disolución.</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		- Disolución real:</p>
+		
+	<p style="margin-left:30px">
+		Se define:</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu_{\rm B(sln)}^◽ + RT \ln a_{x,\rm B}$</p>
+		
+	<p style="margin-left:30px">Como estado de referencia se elige cuando 
+	$x_{\rm B} \to 0$ ($x_{\rm A} \to 1$). En tal estado, en la 
+	disolución real, el disolvente cumple Raoult y el soluto Henry, por lo
+	que se comporta como una disolución diluida ideal. Por consiguiente,
+	en el estado de referencia:</p>
+	
+		<p style="text-align:center">
+			$x_{\rm B} \to 0 \Rightarrow \mu_{\rm B(sln),ideal} =
+			\mu_{\rm B(sln),real}$ &emsp; ($P$, $T$ disolución)</p>
+			
+	<p style="margin-left:30px">Siendo:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_{\rm B(sln),ideal} = \mu°_{\!\! \lower 2mu {\rm B(sln)}} +
+			RT \ln (\Gamma_{x,\rm B} x_{\rm B}) \\[1ex]
+			\mu_{\rm B(sln),real} = \mu_{\rm B(sln)}^◽ + RT \ln a_{x,\rm B}
+		\end{array}
+		$
+	</p>
+		
+	<p style="margin-left:30px">
+		Entonces:</p>
+		
+	<p style="text-align:center">
+		$
+		\lim\limits_{\substack{x_{\rm B} \to 0 \\ x_{\rm A} \to 1}} \exp
+		\left[
+		\dfrac{
+			\mu°_{\!\! \lower 2mu {\rm B(sln)}} - \mu_{\rm B(sln)}^◽
+		}{RT}
+		\right]
+		= \lim\limits_{\substack{x_{\rm B} \to 0 \\ x_{\rm A} \to 1}}
+		\dfrac{a_{x,\rm B}}{\Gamma_{x,\rm B} x_{\rm B}} = k
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Por conveniencia:</p>
+		
+	<p style="text-align:center">
+		$k = 1$</p>
+		
+	<p style="margin-left:30px">
+		Siendo pues:</p>
+	
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu {\rm B(sln)}} = \mu_{\rm B(sln)}^◽$</p>
+		
+	<p style="margin-left:30px">
+		Consecuentemente:</p>
+		
+	<p style="text-align:center">
+		$
+		\boxed{
+			\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {\rm B(sln)}} +
+			RT \ln a_{x,\rm B}
+		}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		A esta igualdad se llegó empleando la ley de Henry en la escala de 
+		fracciones molares, pero se podrían haber usado las escalas de 
+		molalidad o molaridad, lo que mediante un desarrollo similar habría 
+		conducido a expresiones análogas. Esto es:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_{\rm B(sln)} &amp;= \mu°_{\!\! \lower 2mu {x,\rm B}} +
+			RT \ln a_{x,\rm B} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {m,\rm B}} +
+			RT \ln a_{m,\rm B} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {c,\rm B}} +
+			RT \ln a_{c,\rm B}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Siendo:</p>
+		
+		<p style="margin-left:60px;text-indent:-.5em">
+			· Estado tipo referido a fracciones molares:</p>
+			
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {x,\rm B}} \Rightarrow
+		a_{x,\rm B} = 1$</p>
+		
+		<p style="margin-left:60px">
+			Siendo una disolución diluida ideal hipotética con $P 
+			= \pu{1 atm}$, $T$ de la disolución y $x_{\rm B} = 1$. También:</p>
+			
+	<p style="text-align:center">
+		$V°_{\!\! \lower 2mu {\rm B}} = V_{\rm B}^\infty$ &emsp;
+		$H°_{\!\! \lower 2mu {\rm B}} = H_{\rm B}^\infty$ &emsp;
+		$C°_{\!\! \lower 2mu {P,\rm B}} = C_{P, \rm B}^\infty$</p>
+		
+		<p style="margin-left:60px">
+		 Que son magnitudes molares parciales correspondientes a la 
+		 disolución infinitamente diluida a $P = \pu{1 atm}$ y $T$.</p>
+		 
+		<p style="margin-left:60px;text-indent:-.5em">
+			· Estado tipo referido a molalidades:</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {m,\rm B}} \Rightarrow
+		a_{m,\rm B} = 1$</p>
+		
+		<p style="margin-left:60px">
+			Siendo una disolución diluida ideal hipotética con $P 
+			= \pu{1 atm}$, $T$ de la disolución y $m_{\rm B} = 1$. Además:</p>
+			
+	<p style="text-align:center">
+		$V°_{\!\! \lower 2mu {\rm B}} = V_{\rm B}^\infty$ &emsp;
+		$H°_{\!\! \lower 2mu {\rm B}} = H_{\rm B}^\infty$ &emsp;
+		$C°_{\!\! \lower 2mu {P,\rm B}} = C_{P, \rm B}^\infty$</p>
+		
+		<p style="margin-left:60px;text-indent:-.5em">
+			· Estado tipo referido a molaridades:</p>
+		
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)} = \mu°_{\!\! \lower 2mu {c,\rm B}} \Rightarrow
+		a_{c,\rm B} = 1$</p>
+		
+		<p style="margin-left:60px">
+			Siendo una disolución diluida ideal hipotética con $P 
+			= \pu{1 atm}$, $T$ de la disolución y $c_{\rm B} = 1$. Además:</p>
+			
+	<p style="text-align:center">
+		$V°_{\!\! \lower 2mu {\rm B}} = V_{\rm B}^\infty$ &emsp;
+		$H°_{\!\! \lower 2mu {\rm B}} = H_{\rm B}^\infty$ &emsp;
+		$C°_{\!\! \lower 2mu {P,\rm B}} = C_{P, \rm B}^\infty$</p>
+		
+	<p style="margin-left:30px">
+		Obviamente, al ser estados (hipotéticos) distintos:</p>
+		
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu {x,\rm B}} \neq \mu°_{\!\! \lower 2mu {m,\rm B}}
+		\neq \mu°_{\!\! \lower 2mu {c,\rm B}}$</p>
+		
+	<p style="margin-left:30px">
+		El potencial químico de exceso:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_{\rm B}^{\rm E} &amp;= \mu_{\rm B(sln),real} -
+			\mu_{\rm B(sln),ideal} = \\[1ex]
+			&amp;= \left[ \mu°_{\!\! \lower 2mu {x,\rm B}} + RT \ln a_{x,\rm B}
+			\right] - \left[ \mu°_{\!\! \lower 2mu {x,\rm B}} +
+			RT \ln (\Gamma_{x,\rm B} x_{\rm B}) \right] = \\[1ex]
+			&amp;= RT \ln \dfrac{a_{x,\rm B}}{\Gamma_{x,\rm B} x_{\rm B}}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Se define:</p>
+	
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell">
+				$\gamma_{x,\rm B} =
+				\dfrac{a_{x,\rm B}}{\Gamma_{x,\rm B} x_{\rm B}}$ &emsp;</span>
+			<span style="display:table-cell">
+				(Coeficiente de actividad en la escala de fracciones molares).
+			</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		Análogamente:</p>
+		
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell">
+				$\gamma_{m,\rm B} =
+				\dfrac{a_{m,\rm B}}{\Gamma_{m,\rm B} m_{\rm B}}$ &emsp;</span>
+			<span style="display:table-cell">
+				(Coeficiente de actividad en la escala de molalidad).
+			</span>
+		</p>
+		
+		<p style="display:table;margin-left:60px">
+			<span style="display:table-cell">
+				$\gamma_{c,\rm B} =
+				\dfrac{a_{c,\rm B}}{\Gamma_{c,\rm B} c_{\rm B}}$ &emsp;</span>
+			<span style="display:table-cell">
+				(Coeficiente de actividad en la escala de molaridad).
+			</span>
+		</p>
+		
+	<p style="margin-left:30px">
+		Como se vio (más arriba):</p>
+	
+	<p style="text-align:center">
+		$
+		\left(
+		\dfrac{
+			\partial \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}
+		}{
+			\partial P
+		}
+		\right)_{\! T} = V_{\rm B}^\infty
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Esta expresión, tal cual, es aplicable en los estados tipo basados 
+		en fracción molar y molalidad, pero no en molaridad, ya que aunque 
+		los moles de los componentes sean constantes no implica que lo sea 
+		la concentración (el volumen cambia con la presión). Esto es, en 
+		una disolución diluida ideal:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\underbrace{\left( \dfrac{\partial \mu_{\rm B(sln),ideal}}{\partial P}
+			\right)_{\! T,n_i}}_{\large V_{\rm B}^\infty}
+			&amp;= \left(
+			\dfrac{
+				\partial \mu_{x,\rm B(sln)}^{\scriptscriptstyle ⊠}
+			}{
+				\partial P} \right)_{\! T} + RT \cancelto{0}{\left(
+			\dfrac{\partial \ln x_{\rm B}}{\partial P} \right)_{\! T,n_i}}
+			= \\[1ex]
+			&amp;=
+			\left(
+			\dfrac{
+				\partial \mu_{m,\rm B(sln)}^{\scriptscriptstyle ⊠}
+			}{
+				\partial P} \right)_{\! T} + RT \cancelto{0}{\left(
+			\dfrac{\partial \ln m_{\rm B}}{\partial P} \right)_{\! T,n_i}}
+			= \\[1ex]
+			&amp;=
+			\left(
+			\dfrac{
+				\partial \mu_{c,\rm B(sln)}^{\scriptscriptstyle ⊠}
+			}{
+				\partial P} \right)_{\! T} + RT \left(
+			\dfrac{\partial \ln c_{\rm B}}{\partial P} \right)_{\! T,n_i}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Entonces:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left(
+			\dfrac{
+				\partial \mu_{c,\rm B(sln)}^{\scriptscriptstyle ⊠}
+			}{
+				\partial P} \right)_{\! T} &amp;= V_{\rm B}^\infty - RT \left(
+			\dfrac{\partial \ln c_{\rm B}}{\partial P} \right)_{\! T,n_i} = \\[1ex]
+			&amp;= V_{\rm B}^\infty - RT \left(
+				\dfrac{
+					\partial \ln ( n_{\rm B}{∕}V_{\rm (sln)}^\infty )
+					}{\partial P} \right)_{\! T,n_i} = \\[1ex]
+				&amp;= V_{\rm B}^\infty - RT \left(
+				\dfrac{
+					\partial (\ln n_{\rm B} - \ln V_{\rm (sln)}^\infty )
+				}{\partial P}	\right)_{\! T,n_i} = \\[1ex]
+				&amp;= V_{\rm B}^\infty + RT \left(
+				\dfrac{
+					\partial \ln V_{\rm (sln)}^\infty
+				}{\partial V_{\rm (sln)}^\infty} \right)_{\! T,n_i} \left(
+				\dfrac{\partial V_{\rm (sln)}^\infty}{\partial P}
+				\right)_{\! T,n_i} = \\[1ex]
+				&amp;= V_{\rm B}^\infty +
+				RT \underbrace{\dfrac{1}{V_{\rm (sln)}^\infty} \left(
+				\dfrac{\partial V_{\rm (sln)}^\infty}{\partial P}
+				\right)_{\! T,n_i}}_{\large -\kappa_{\rm (sln)}^\infty} = \\[1ex]
+				&amp;= V_{\rm B}^\infty - RT \kappa_{\rm (sln)}^\infty
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Donde $\kappa_{\rm (sln)}^\infty$ es el coeficiente de compresibilidad 
+		isotérmica de la disolución a dilución infinita, o simplemente 
+		$\kappa_{\rm A}^*$ (el coeficiente de compresibilidad isotérmica del 
+		disolvente puro).</p>
+	
+	<p style="margin-left:30px">
+		De todos modos, en fases condensadas, debido a que el coeficiente de 
+		compresibilidad isotérmica es muy pequeño, puede considerarse, 
+		salvo para cambios de presión grandes, el volumen constante (la 
+		concentración no cambia con la presión). Teniendo en cuenta esto al 
+		integrar:</p>
+	
+	<p style="text-align:center">
+		$\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T) -
+		\mu°_{\!\! \lower 2mu {\rm B(sln)}}(P°,T) = V_{\rm B}^\infty
+		\displaystyle \int_{P°}^P dP = V_{\rm B}^\infty (P - P°)$</p>
+		
+	<p style="margin-left:30px">
+		También:</p>
+		
+	<p style="text-align:center">
+		$d \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} =
+		RT \, d \ln \Gamma_{\rm B(sln)}$</p>
+		
+	<p style="margin-left:30px">
+		Integrando:</p>
+		
+	<p style="text-align:center">
+		$
+		\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}(P,T) -
+		\mu°_{\!\! \lower 2mu {\rm B(sln)}}(P°,T) = RT \displaystyle
+		\int_{1}^{\Gamma_{\rm B}} d \ln \Gamma_{\rm B(sln)} =
+		RT \ln \Gamma_{\rm B(sln)}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Si $P° = \pu{1 atm}$ y tras igualar:</p>
+		
+	<p style="text-align:center">
+		$\Gamma_{x,\rm B} = \Gamma_{m,\rm B} = \Gamma_{c,\rm B} =
+		\Gamma_{\rm B(sln)} =
+		\exp \left[ \dfrac{V_{\rm B}^\infty}{RT} (P - 1) \right]$</p>
+		
+<p>$\ast$ Determinación de la actividad del soluto a partir de
+presiones de vapor:</p>
+
+<p>Con tal de establecer tal relación, se evalúa la diferencia entre 
+los potenciales químicos del soluto $\ce{B}$ en la disolución y en el 
+estado tipo a presión estándar mediante el siguiente esquema:</p>
+
+<center>
+	<object data="disoluciones_no_electrolitos_02.svg" type="image/svg+xml"
+	width="495" height="318"></object>
+</center>
+
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell;white-space:nowrap">
+				$P_{\rm B}^*$ &ensp;</span>
+			<span style="display:table-cell">
+				Presión de vapor de $\ce{B}$ puro en la disolución diluida ideal
+				a la $P$ y $T$ de la disolución (hipotético).</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;white-space:nowrap">
+				$P_{\rm B}$ &ensp;</span>
+			<span style="display:table-cell;padding-top:1ex">
+				Presión parcial de $\ce{B}$ en el vapor en equilibrio con la
+				disolución a $P$ y $T$.</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\Delta \mu_{\rm B}(1) = \Delta \mu_{\rm B}(2) + \Delta \mu_{\rm B}(3)
+		+ \Delta \mu_{\rm B}(4) + \Delta \mu_{\rm B}(5) \tag{$\ast{\ast}\ast$}
+		\label{***}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="margin-left:30px">
+		Etapa (3): Evaporación del soluto puro $\ce{B}$ en la disolución
+		diluida ideal a su $P_{\rm B}^*$ de equilibrio (ficticio), así que:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} = \mu_{\rm B(g)}^* \\[1ex]
+			\Delta \mu_{\rm B}(3) =
+			\mu_{\rm B(g)}^* - \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠} = 0
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (5): Se disuelve $\ce{B}$, desde la mezcla gaseosa a la
+		disolución, a su $P_{\rm B}$ de equilibrio, con lo que:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu_{\rm B(sln)} = \mu_{\rm B(g)} \\[1ex]
+			\Delta \mu_{\rm B}(5) = \mu_{\rm B(sln)} - \mu_{\rm B(g)} = 0
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (1):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm B}(1) &amp;= \mu_{\rm B(sln)} -
+			\mu°_{\!\! \lower 2mu {x,\rm B}} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {x,\rm B}} + RT \ln a_{x,\rm B}
+			- \mu°_{\!\! \lower 2mu {x,\rm B}} = \\[1ex]
+			&amp;= RT \ln a_{x,\rm B}
+		\end{align}
+		$
+	</p>
+		
+	<p style="margin-left:30px">
+		Etapa (2):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm B}(2) &amp;= \mu_{\rm B(sln)}^{\scriptscriptstyle ⊠}
+			- \mu°_{\!\! \lower 2mu {x,\rm B}} = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {x,\rm B}} + RT \ln \Gamma_{x,\rm B}
+			- \mu°_{\!\! \lower 2mu {x,\rm B}} = \\[1ex]
+			&amp;= RT \ln \Gamma_{x,\rm B}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Etapa (4):</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta \mu_{\rm B}(4) &amp;= \mu_{\rm B(g)} - \mu_{\rm B(g)}^* = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu {\rm B(g)}} + RT \ln a_{\rm B(g)} -
+			( \mu°_{\!\! \lower 2mu {\rm B(g)}} + RT \ln a_{\rm B(g)}^* ) = \\[1ex]
+			&amp;= RT \ln \dfrac{a_{\rm B(g)}}{a_{\rm B(g)}^*}
+		\end{align}
+		$
+	</p>
+	
+<p>Reemplazando en $\eqref{***}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			RT \ln a_{x,\rm B} = RT \ln \Gamma_{x,\rm B} +
+			RT \ln \dfrac{a_{\rm B(g)}}{a_{\rm B(g)}^*}	\\[1ex]
+			\boxed{
+				a_{x,\rm B} = \Gamma_{x,\rm B} \dfrac{a_{\rm B(g)}}{a_{\rm B(g)}^*}
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Supuestos:</p>
+
+<ol type="a">
+	<li>Si:
+	
+		<p style="text-align:center">
+			$P = \pu{1 atm} \Rightarrow \ln \Gamma_{x,\rm B} = \displaystyle
+			\int_1^P \dfrac{V_{\rm B}^\infty}{RT} \, dP = 0$</p>
+		
+	<p>Entonces si:</p>
+	
+		<p style="text-align:center">
+			$
+			P \simeq \pu{1 atm} \Rightarrow \Gamma_{x,\rm B} \simeq 1 
+			\Rightarrow a_{x,\rm B} \simeq \dfrac{a_{\rm B(g)}}{a_{\rm B(g)}^*}
+			$
+		</p>
+	</li>
+	<li>Si la fase gaseosa se considera que es una mezcla de gases
+	ideales:
+	
+		<p style="text-align:center">
+			$
+			\begin{array}[b]{l}
+				a_{\rm B(g)} = P_{\rm B} \\[1ex]
+				a_{\rm B(g)}^* = P_{\rm B}^* = K_{{\rm H},x}
+			\end{array}
+			$ &emsp; (DDI, ley de Henry)
+		</p>
+		
+	<p>Por consiguiente:</p>
+	
+		<p style="text-align:center">
+			$
+			\boxed{
+				a_{x,\rm B} \simeq \dfrac{P_{\rm B}}{K_{{\rm H},x}}
+			}
+			$ &emsp; ($P \simeq \pu{1 atm}$, mezcla de gases ideales)
+		</p>
+
+	<p>Trabajando con el coeficiente de actividad:</p>
+		
+		<p style="text-align:center">
+			$
+			\gamma_{x,{\rm B}} = 
+			\dfrac{a_{x,\rm B}}{\Gamma_{x,\rm B} x_{\rm B}} =
+			\dfrac{
+				\cancel{\Gamma_{x,\rm B}} \! a_{\rm B(g)}
+			}{
+				a_{\rm B(g)}^* \! \cancel{\Gamma_{x,\rm B}} \! x_{\rm B}
+			} \mspace{-15mu}
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\
+					\text{mezcla} \\
+					\text{gaseosa} \\
+					\text{ideal}
+				\end{subarray}
+			}{=} \mspace{-15mu} \dfrac{P_{\rm B}}{P_{\rm B}^* x_{\rm B}} =
+			\dfrac{P_{\rm B}}{K_{{\rm H},x} x_{\rm B}}			
+			$
+		</p>		
+	</li>
+</ol>
+
+<p>$\ast$ Variación de la actividad y del coeficiente de actividad con 
+la presión:</p>
+
+<p>Para el disolvente (o componente en una mezcla):</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A(sln)} = \mu°_{\!\! \lower 2mu {\rm A(l)}} +
+		RT \ln a_{x,\rm A}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \mu_{\rm A(sln)}}{\partial P}
+		\right)_{\! T,n_{\rm A},n_{\rm B}} =
+		\cancelto{0}{
+			\left( \dfrac{\partial \mu°_{\!\! \lower 2mu {\rm A(l)}}}{\partial P}
+			\right)_{\! T,n_j}
+		} \! + RT \left( \dfrac{\partial \ln a_{x,\rm A}}{\partial P}
+		\right)_{\! T,n_j}
+		$
+	</p>
+	
+<p>(Donde, en las derivadas parciales, se ha usado el subíndice $n_j$, 
+en lugar del habitual $n_i$ empleado otras veces, para representar el 
+conjunto de los moles de cada componente, i.e. aquí $n_j \equiv 
+\{n_{\rm A},n_{\rm B}\}$, y no tener que escribirlos uno a uno para 
+reflejar su constancia).</p> 
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \mu_{\rm A(sln)}}{\partial P}
+		\right)_{\! T,n_j} = \dfrac{\partial}{\partial P} \left(
+		\dfrac{\partial G}{\partial n_{\rm A}} \right)_{\! T,P,n_{\rm B}} =
+		\dfrac{\partial}{\partial n_{\rm A}}
+		\underbrace{
+			\left( \dfrac{\partial G}{\partial P} \right)_{\! T,n_j}
+		}_{V} = \left( \dfrac{\partial V}{\partial n_{\rm A}}
+		\right)_{\! T,P,n_{\rm B}} = V_{\rm A}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \ln a_{x,\rm A}}{\partial P} \right)_{\! T,n_j}
+		= \dfrac{V_{\rm A}}{RT}
+		$
+	</p>
+	
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			a_{x,\rm A} = \Gamma_{\rm A(l)} \, f_{\rm A} x_{\rm A} \\[1ex]
+			\ln a_{x,\rm A} = \ln \Gamma_{\rm A(l)} + \ln f_{\rm A} +
+			\ln x_{\rm A} \\[1ex]
+			\ln f_{\rm A} = \ln a_{x,\rm A} - \ln \Gamma_{\rm A(l)} -
+			\ln x_{\rm A} \\[1ex]
+			\left( \dfrac{\partial \ln f_{\rm A}}{\partial P}
+			\right)_{\! T,n_j} =
+			\underbrace{
+				\left( \dfrac{\partial \ln a_{x,\rm A}}{\partial P}
+				\right)_{\! T,n_j}
+			}_{\tfrac{V_{\rm A}}{RT} \vphantom{\tfrac{V_{\rm A}^*}{RT}}} -
+			\underbrace{
+				\left( \dfrac{\partial \ln \Gamma_{\rm A(l)}}{\partial P}
+				\right)_{\! T,n_j}
+			}_{\tfrac{V_{\rm A}^*}{RT}} -
+			\cancelto{0}{
+				\left( \dfrac{\partial \ln x_{\rm A}}{\partial P}
+				\right)_{\! T,n_j}
+			} \\[1ex]
+			\boxed{
+				\left( \dfrac{\partial \ln f_{\rm A}}{\partial P}
+				\right)_{\! T,n_j} = \dfrac{V_{\rm A} - V_{\rm A}^*}{RT}
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $f_{\rm A}$ es el coeficiente de actividad y $V_{\rm A}^*$ el
+volumen molar de $\ce{A}$ puro.</p>
+	
+<p>De manera similar se encontraría para el soluto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left( \dfrac{\partial \ln a_{x,\rm B}}{\partial P}
+			\right)_{\! T,n_j} = \dfrac{V_{\rm B}}{RT} \\[1ex]
+			\boxed{
+				\left( \dfrac{\partial \ln \gamma_{x,\rm B}}{\partial P}
+				\right)_{\! T,n_j} = \dfrac{V_{\rm B} - V_{\rm B}^\infty}{RT}
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>$\ast$ Variación de la actividad con la temperatura:</p>
+
+<p>Dividiendo por $T$, para el disolvente (o componente de una mezcla):</p>
+
+	<p style="text-align:center">
+		$\dfrac{\mu_{\rm A(sln)}}{T} =
+		\dfrac{\mu°_{\!\! \lower 2mu {\rm A(l)}}}{T} + R \ln a_{x,\rm A}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial (\mu_{\rm A(sln)}{∕}T)}{\partial T}
+		\right)_{\! P,n_{\rm A},n_{\rm B}} = \left(
+		\dfrac{\partial (\mu°_{\!\! \lower 2mu {\rm A(l)}}{∕}T)}{\partial T}
+		\right)_{\! P,n_j} + R \left(
+		\dfrac{\partial \ln a_{x,\rm A}}{\partial T} \right)_{\! P,n_j}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial (\mu_{\rm A(sln)}{∕}T)}{\partial T}
+			\right)_{\! P,n_{\rm A},n_{\rm B}} &amp;= -\dfrac{1}{T^2}
+			\mu_{\rm A(sln)} + \dfrac{1}{T} \left(
+			\dfrac{\partial \mu_{\rm A(sln)}}{\partial T} \right)_{\! P,n_j}
+			= \\[1ex]
+			&amp;= -\dfrac{1}{T^2} \left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! T,P,n_{\rm B}} + \dfrac{1}{T} \dfrac{\partial}{\partial T}
+			\left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! T,P,n_{\rm B}} = \\[1ex]
+			&amp;= -\dfrac{1}{T^2} \left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! T,P,n_{\rm B}} +
+			\dfrac{1}{T} \dfrac{\partial}{\partial n_{\rm A}} \mspace{-9mu}
+			\underbrace{
+				\left(\dfrac{\partial G}{\partial T} \right)_{\! P,n_j}
+			}_{
+				\begin{subarray}{c}
+					-S \\[.5ex]
+					dG_{P,n_j} \, = \, -S \, dT_{P,n_j}
+				\end{subarray}
+			} \mspace{-9mu} = \\[1ex]
+			&amp;= -\dfrac{1}{T^2} \left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! T,P,n_{\rm B}} - \dfrac{1}{T} \left(
+			\dfrac{\partial S}{\partial n_{\rm A}} \right)_{\! T,P,n_{\rm B}}
+			= \\[1ex]
+			&amp;= -\dfrac{1}{T^2} \left[ \left(
+			\dfrac{\partial G}{\partial n_{\rm A}} \right)_{T,P,n_{\rm B}} +
+			T \left( \dfrac{\partial S}{\partial n_{\rm A}}
+			\right)_{\! T,P,n_{\rm B}} \right] = \\[1ex]
+			&amp;= -\dfrac{1}{T^2} \biggl( 
+			\dfrac{\partial (\overbrace{G + TS}^{H})}{\partial n_{\rm A}}
+			\biggr)_{\! T,P,n_{\rm B}} = -\dfrac{1}{T^2} \left(
+			\dfrac{\partial H}{\partial n_{\rm A}} \right)_{\! T,P,n_{\rm B}}
+			= \\[1ex]
+			&amp;= - \dfrac{H_{\rm A}}{T^2}
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \ln a_{x,\rm A}}{\partial T} \right)_{\! P,n_j}
+		= -\dfrac{H_{\rm A}}{RT^2} + \dfrac{H°_{\!\! \lower 2mu {\rm A}}}{RT^2}
+		= - \dfrac{H_{\rm A} - H°_{\!\! \lower 2mu {\rm A}}}{RT^2}
+		= - \dfrac{L_{\rm A}}{RT^2}
+		$
+	</p>
+	
+<p>Donde $L_{\rm A}$ es la entalpía molar parcial relativa del
+disolvente.</p>
+
+<p>De forma análoga, para el soluto:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial \ln a_{x,\rm B}}{\partial T} \right)_{\! P,n_j}
+		= -\dfrac{H_{\rm B}}{RT^2} + \dfrac{H_{\rm B}^\infty}{RT^2}
+		= - \dfrac{L_{\rm B}}{RT^2}
+		$
+	</p>
+	
+<p>Donde $L_{\rm B}$ es la entalpía molar parcial relativa del soluto.</p>
+
+<p>$\ast$ Funciones de mezcla y de exceso:</p>
+
+<p>Sea un proceso de mezclado, descrito de manera simple, tal que:</p>
+
+	<p style="text-align:center">
+		componentes puros $\ce{-&gt;}$ mezcla &emsp; ($P$ y $T$ ctes.)</p>
+		
+<p>Entonces, la energía de Gibbs de mezcla:</p>
+
+	<p style="text-align:center">
+		$\Delta G^{\rm M} = G_{\rm mezcla} - G_{\rm puros} = \displaystyle
+		\sum_i n_i \mu_i - \sum_i n_i \mu_i^* = \sum_i n_i (\mu_i - \mu_i^*)$
+	</p>
+		
+<p>Donde $\mu_i$ y $\mu_i^*$ son respectivamente los potenciales químicos
+de $i$ en la mezcla y puro.</p>
+
+<p>El potencial químico de $i$ en la mezcla, para una composición
+determinada, a $P$ y $T$:</p>
+
+	<p style="text-align:center">
+		$\mu_i = \mu°_{\!\! \lower 2mu i} + RT \ln a_i$</p>
+		
+<p>El potencial químico de $i$ puro a $P$ y $T$:</p>
+
+	<p style="text-align:center">
+		$\mu_i^* = \mu°_{\!\! \lower 2mu i}' + RT \ln \Gamma_i$</p>
+
+<p>Para mezclas, o disoluciones cuando todos sus componentes puros 
+tengan el mismo estado (líquido o sólido) que la disolución a la 
+presión y temperatura de ésta, se toma como estado tipo $i$ puro a $P= 
+\pu{1 atm}$ y $T$ (se aplica Raoult). Siendo éste el caso:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu i} = \mu°_{\!\! \lower 2mu i}{}'$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta G^{\rm M} &amp;= RT \sum_i n_i ( \ln a_i - \ln \Gamma_i )
+			= \\[1ex]
+			&amp;= RT \sum_i n_i \ln \dfrac{a_i}{\Gamma_i}
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$a_i = \Gamma_i \, f_i x_i$</p>
+		
+<p>Donde $f_i$ es el coeficiente de actividad de $i$. Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta G^{\rm M} = \displaystyle
+			RT \sum_i n_i \ln \dfrac{\Gamma_i \, f_i x_i}{\Gamma_i} \\[1ex]
+			\boxed{
+				\Delta G^{\rm M} = RT \sum_i n_i \ln (\, f_i x_i)
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Cuando la mezcla es ideal $f_i = 1$, por lo que:</p>
+
+	<p style="text-align:center">
+		$\Delta G^{\rm M}_{\rm id} = RT \displaystyle \sum_i n_i \ln x_i$</p>
+		
+<p>Se define la energía de Gibbs de exceso de una mezcla, la cual es una
+medida de la desviación de la idealidad, como:
+
+	<p style="text-align:center">
+		$
+		\boxed{
+			\Delta G^{\rm E} = \Delta G^{\rm M} - \Delta G^{\rm M}_{\rm id} =
+			RT \displaystyle \sum_i n_i \ln f_i
+		}
+		$
+	</p>
+	
+<p>La entropia de mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta S^{\rm M} &amp;= S_{\rm mezcla} - S_{\rm puros} = \\[1ex]
+			&amp;= - \left[ \left( \dfrac{\partial G_{\rm mezcla}}{\partial T}
+			\right)_{\! P,n_j} -
+			\left( \dfrac{\partial G_{\rm puros}}{\partial T} \right)_{\! P,n_j}
+			\right]	= \\[1ex]
+			&amp;= - 
+			\left( \dfrac{\partial (G_{\rm mezcla} - G_{\rm puros})}{\partial T}
+			\right)_{\! P,n_j} = \\[1ex]
+			&amp;= - \left( \dfrac{\partial \Delta G^{\rm M}}{\partial T}
+			\right)_{\! P,n_j}
+		\end{align}
+		$
+	</p>
+	
+<p>Derivando pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta S^{\rm M} &amp;= -RT \sum_i n_i \left(
+			\dfrac{\partial \ln f_i}{\partial T} \right)_{\! P,n_j} - R \sum_i
+			n_i \ln (\, f_i x_i) = \\[1ex]
+			&amp;= -RT \sum_i n_i \Biggl[ 
+			\underbrace{
+				\left( \dfrac{\partial \ln a_i}{\partial T} \right)_{\! P,n_j}
+			}_{-\tfrac{H_i}{RT^2} + \tfrac{H°_{\!\! \lower 2mu i}}{RT^2}} -
+			\underbrace{
+				\left( \dfrac{\partial \ln \Gamma_i}{\partial T} \right)_{\! P,n_j}
+			}_{-\tfrac{H_i^*}{RT^2} + \tfrac{H°_{\!\! \lower 2mu i}}{RT^2}}
+			\Biggr] - R \sum_i n_i \ln (\, f_i x_i) = \\[1ex]
+			&amp;= -RT \sum_i n_i \left( - \dfrac{H_i - H_i^*}{RT^2} \right)
+			- R \sum_i n_i \ln (\, f_i x_i) = \\[1ex]
+			&amp;= \sum_i n_i \dfrac{H_i - H_i^\ast}{T} - R \sum_i n_i
+			\ln (\, f_i x_i)
+		\end{align}	
+		$
+	</p>
+	
+<p>Para una mezcla ideal:</p>
+
+	<p style="text-align:center">
+		$\Delta S^{\rm M}_{\rm id} = - \left(
+		\dfrac{\partial \Delta G^{\rm M}_{\rm id}}{\partial T}
+		\right)_{\! P,n_j} = - R \displaystyle \sum_i n_i \ln x_i$</p>
+		
+<p>Cuando una mezcla es ideal $f_i = 1$, así que por comparación:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_i n_i \dfrac{H_i - H_i^\ast}{T} = 0 \Rightarrow
+			H_i = H_i^\ast$ &emsp; (mezcla ideal)</p>
+			
+<p>La entropia de exceso:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta S^{\rm E} &amp;= \Delta S^{\rm M} - \Delta S^{\rm M}_{\rm id}
+			= \\[1ex]
+			&amp;= \sum_i n_i \dfrac{H_i - H_i^*}{T} - \sum_i n_i R \ln f_i
+		\end{align}
+		$
+	</p>
+	
+<p>El volumen de mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta V^{\rm M} &amp;= V_{\rm mezcla} - V_{\rm puros} = \\[1ex]
+			&amp;= \left( \dfrac{\partial G_{\rm mezcla}}{\partial P}
+			\right)_{\! T,n_j} - \left(
+			\dfrac{\partial G_{\rm puros}}{\partial P} \right)_{\! T,n_j} = \\[1ex]
+			&amp;= \left(
+			\dfrac{\partial (G_{\rm mezcla} - G_{\rm puros})}{\partial P}
+			\right)_{\! T,n_j} = \\[1ex]
+			&amp;= \left( \dfrac{\partial \Delta G^{\rm M}}{\partial P}
+			\right)_{\! T,n_j}
+		\end{align}
+		$
+	</p>
+	
+<p>Haciendo entonces la derivada:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta V^{\rm M} &amp;= RT \sum_i n_i \left(
+			\dfrac{\partial \ln f_i}{\partial P} \right)_{\! T,n_j} = \\[1ex]
+			&amp;= RT \sum_i n_i \dfrac{V_i - V_i^*}{RT} = \\[1ex]
+			&amp;= \sum_i n_i (V_i - V_i^*)
+		\end{align}
+		$
+	</p>
+	
+<p>Como cabía esperar.</p>
+
+<p>Para el caso ideal:</p>
+
+	<p style="text-align:center">
+		$\Delta V^{\rm M}_{\rm id} = \left(
+		\dfrac{\partial \Delta G^{\rm M}_{\rm id}}{\partial P}
+		\right)_{\! T,n_j} = 0$</p>
+		
+<p>Por tanto el volumen de exceso:</p>
+
+	<p style="text-align:center">
+		$\Delta V^{\rm E} = \Delta V^{\rm M} - \Delta V^{\rm M}_{\rm id} =
+		\displaystyle \sum_i n_i (V_i - V_i^*)$</p>
+		
+<p>La entalpía de mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				\Delta H^{\rm M} &amp;= H_{\rm mezcla} - H_{\rm puros} = \\[1ex]
+				&amp;= G_{\rm mezcla} + T S_{\rm mezcla} - (G_{\rm puros} + T
+				S_{\rm puros}) = \\[1ex]
+				&amp;= G_{\rm mezcla} - T \left(
+				\dfrac{\partial G_{\rm mezcla}}{\partial T} \right)_{\! P,n_j} -
+				G_{\rm puros} + T \left(
+				\dfrac{\partial G_{\rm puros}}{\partial T} \right)_{\! P,n_j} = \\[1ex]
+				&amp;= (G_{\rm mezcla} - G_{\rm puros}) - T \left(
+				\dfrac{\partial (G_{\rm mezcla} - G_{\rm puros})}{\partial T}
+				\right)_{\! P,n_j} = \\[1ex]
+				&amp;= \Delta G^{\rm M} - T \left(
+				\dfrac{\partial \Delta G^{\rm M}}{\partial T} \right)_{\! P,n_j}
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				-\dfrac{\Delta H^{\rm M}}{T^2} &amp;= -\dfrac{\Delta G^{\rm M}}{T^2}
+				+ \dfrac{1}{T} \left( \dfrac{\partial \Delta G^{\rm M}}{\partial T}
+				\right)_{\! P,n_j} = \\[1ex]
+				&amp;= \Delta G^{\rm M} \left( \dfrac{\partial (1{∕}T)}{\partial T}
+				\right)_{\! P,n_j} + \dfrac{1}{T} \left(
+				\dfrac{\partial \Delta G^{\rm M}}{\partial T}	\right)_{\! P,n_j}
+				= \\[1ex]
+				&amp;= \left( \dfrac{\partial (\Delta G^{\rm M}{∕}T)}{\partial T}
+				\right)_{\! P,n_j}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H^{\rm M} &amp;= -RT^2 \sum_i n_i \left(
+			\dfrac{\partial \ln f_i}{\partial T} \right)_{\! P,n_j} = \\[1ex]
+			&amp;= -RT^2 \sum_i n_i \left( - \dfrac{H_i - H_i^*}{RT^2} \right)
+			= \\[1ex]
+			&amp;= \sum_i n_i (H_i - H_i^*)
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo el resultado esperado.</p>
+
+<p>Si la mezcla es ideal:</p>
+
+	<p style="text-align:center">
+		$\Delta H^{\rm M}_{\rm id} = -T^2 \left(
+		\dfrac{\partial (\Delta G^{\rm M}_{\rm id}{∕}T)}{\partial T}
+		\right)_{\! P,n_j} = 0$</p>
+		
+<p>Entonces, en una mezcla ideal, como ya se vio más arriba, $H_i = 
+H_i^*$ (a la misma $P$ y $T$).</p>
+
+<p>La entalpía de exceso:</p>
+
+	<p style="text-align:center">
+		$\Delta H^{\rm E} = \Delta H^{\rm M} -
+		\! \cancelto{0}{\Delta H^{\rm M}_{\rm id}} \! =	\Delta H^{\rm M}$</p>
+		
+<p>Le energía interna de mezcla:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta U^{\rm M} &amp;= U_{\rm mezcla} - U_{\rm puros} = \\[1ex]
+			&amp;= (H_{\rm mezcla} - PV_{\rm mezcla}) - (H_{\rm puros} -
+			PV_{\rm puros}) = \\[1ex]
+			&amp;= \Delta H^{\rm M} - P \Delta V^{\rm M}
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta U^{\rm M} &amp;= \sum_i n_i (H_i - H_i^*) - P \sum_i n_i (V_i - V_i^*) = \\[1ex]
+			&amp;= \sum_i n_i [(H_i - PV_i) - (H_i^* - PV_i^*)] = \\[1ex]
+			&amp;= \sum_i n_i (U_i - U_i^*)
+		\end{align}
+		$
+	<p>
+		
+<p>Lo que se esperaba.</p>
+
+<p>En una mezcla ideal:</p>
+
+	<p style="text-align:center">
+		$\Delta U^{\rm M}_{\rm id} = \underbrace{\Delta H^{\rm M}_{\rm id}}_0 -
+		P \underbrace{\Delta V^{\rm M}_{\rm id}}_0 = 0$</p>
+		
+<p>Así que la energía interna de exceso:</p>
+
+	<p style="text-align:center">
+		$\Delta U^{\rm E} = \Delta U^{\rm M} -
+		\! \cancelto{0}{\Delta U^{\rm M}_{\rm id}} \! = \Delta U^{\rm M}$</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../mezclas_condensadas/mezclas_condensadas.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../propiedades_coligativas/propiedades_coligativas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="267.45" height="291.83" version="1.1" viewBox="0 0 267.45 291.83" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <pattern id="pattern4163-553" patternTransform="matrix(0 1.0049 -1.0049 0 267.99 92.174)" xlink:href="#Strips1_4-709"/>
+  <pattern id="Strips1_4-709" width="5" height="1" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <rect y="-.5" width="1" height="2" fill="#ccc"/>
+  </pattern>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-228.15 -80.316)">
+  <path d="m320 172.77v160c-9e-5 5.5228 22.386 10 50 10s50-4.4772 50-10v-160a50 10 0 0 1-25 8.6602 50 10 0 0 1-50 0 50 10 0 0 1-25-8.6602z" fill="url(#pattern4163-553)"/>
+  <path d="m340 132.52a30 5 0 0 1 30-5 30 5 0 0 1 30 5" fill="none" stroke="#000"/>
+  <path d="m320 132.52a50 10 0 0 1 50-10 50 10 0 0 1 50 10" fill="none" stroke="#000"/>
+  <g fill="#fff">
+   <path d="m400 132.52v180h-60v-180" stroke="#000"/>
+   <ellipse cx="370" cy="312.52" rx="30" ry="5"/>
+   <ellipse cx="370" cy="312.52" rx="30" ry="5" stroke="#000"/>
+  </g>
+  <g fill="none" stroke="#000">
+   <path d="m320 172.52v-40" stroke-width="1px"/>
+   <path d="m420 172.52v-40" stroke-width="1px"/>
+   <path d="m400 256.52a30 5 0 0 1-15 4.3301 30 5 0 0 1-30 0 30 5 0 0 1-15-4.3301" stroke-dasharray="2, 2"/>
+   <ellipse cx="370" cy="251.52" rx="30" ry="5" stroke-dasharray="2, 2"/>
+  </g>
+  <g stroke="#000">
+   <path d="m340 267.52v5a30 5 0 0 0 30 5 30 5 0 0 0 30-5v-5h-30z"/>
+   <ellipse cx="370" cy="267.52" rx="30" ry="5" fill="#fff"/>
+   <rect x="365" y="111.52" width="10" height="156"/>
+  </g>
+  <g fill="none" stroke="#000">
+   <g>
+    <path d="m400 132.52a30 5 0 0 1-15 4.3301 30 5 0 0 1-30 0 30 5 0 0 1-15-4.3301"/>
+    <path d="m320 172.52v160c-9e-5 5.5228 22.386 10 50 10s50-4.4772 50-10v-160a50 10 0 0 1-25 8.6602 50 10 0 0 1-50 0 50 10 0 0 1-25-8.6602z"/>
+    <path d="m420 132.52a50 10 0 0 1-25 8.6603 50 10 0 0 1-50 0 50 10 0 0 1-25-8.6603"/>
+   </g>
+   <g stroke-width="1px">
+    <path d="m400 312.52h80"/>
+    <path d="m400 272.52h50"/>
+    <path d="m400 256.52h80"/>
+   </g>
+  </g>
+  <g>
+   <path d="m434.5 277.02v30.499h1v-30.499z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m439.44 300.5-4.4195 12.018-4.4195-12.018c2.6093 1.92 6.1792 1.909 8.839 0z" fill-rule="evenodd"/>
+   <path d="m430.56 284.54 4.4195-12.018 4.4195 12.018c-2.6093-1.92-6.1792-1.909-8.839 0z" fill-rule="evenodd"/>
+   <path d="m469.52 262.02v45.499h1v-45.499z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m474.45 300.5-4.4195 12.018-4.4195-12.018c2.6093 1.92 6.1792 1.909 8.839 0z" fill-rule="evenodd"/>
+   <path d="m465.58 268.54 4.4195-12.018 4.4195 12.018c-2.6093-1.92-6.1792-1.909-8.839 0z" fill-rule="evenodd"/>
+  </g>
+  <g>
+   <text x="440" y="296.13953" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="440" y="296.13953"><tspan font-family="'STIX Two Text'" font-style="italic">V</tspan><tspan dy="5" font-size="65%">a</tspan></tspan></text>
+   <text x="475" y="288.13406" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="475" y="288.13406"><tspan font-family="'STIX Two Text'" font-style="italic">V</tspan><tspan dy="5" font-size="65%">d</tspan></tspan></text>
+   <path d="m295 292.02v1h20v-1z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m307.98 288.08 12.018 4.4195-12.018 4.4195c1.92-2.6093 1.909-6.1792 0-8.839z" fill-rule="evenodd"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="355.06589" y="96.020119" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="355.06589" y="96.020119">C.A.</tspan></text>
+   <text x="359.09988" y="367.01981" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="359.09988" y="367.01981">d-a</tspan></text>
+   <text x="233.0975" y="293.81567" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="233.0975" y="293.81567">Aislador</tspan></text>
+  </g>
+ </g>
+</svg>

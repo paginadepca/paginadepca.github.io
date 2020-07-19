@@ -1,0 +1,1313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","enclose.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ecuaciones de estado de los gases">
+<meta name="keywords" content="ecuaciones, estado, gases">
+<title>Ecuaciones de estado de los gases</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Ecuaciones de estado de los gases</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Gas ideal:</p>
+
+<p>Se puede hablar de gas ideal extrapolando a una hipotética situación
+de $P = 0$. Todos lo gases en tal situación se comportan de una misma
+manera, pero esto es algo hipotético ya que es imposible. En tal situación
+límite:</p>
+
+	<p style="margin-left:30px">$\bullet$ Ley de Boyle:</p>
+
+		<p style="text-align:center">
+			$PV = k$ &emsp; ($m,T$: ctes.)</p>
+		
+		<p style="text-align:center">$k = k(m,T)$</p>
+		
+	<p style="margin-left:30px">$\bullet$ Ley de Charles:</p>
+	
+		<p style="text-align:center">
+			$V = k'T$ &emsp; ($m,P$: ctes.)</p>
+			
+		<p style="text-align:center">$k' \! = k'(m,P)$</p>
+		
+		<p style="text-align:center">$\left(\dfrac{V}{T} = k'\right)$</p>
+		
+	<p style="margin-left:30px">$\bullet$ Ley de Gay-Lussac:</p>
+	
+		<p style="text-align:center">
+			$P = k''T$ &emsp; ($m,V$: ctes.)</p>
+			
+		<p style="text-align:center">$k'' \! = k''(m,V)$</p>
+		
+		<p style="text-align:center">$\left(\dfrac{P}{T} = k''\right)$</p>
+		
+	<p style="margin-left:30px">$\bullet$ Hipótesis de Avogadro:</p>
+	
+	<p style="margin-left:30px;padding-left:.7em"><i>A la misma presión y 
+	temperatura, el mismo número de moles de gases distintos ocupan el 
+	mismo volumen.</i> Esto es:</p>
+	
+		<p style="text-align:center">
+			$V = k'''n$ &emsp; ($P,T$: ctes.)</p>
+
+		<p style="text-align:center">
+			$k''' \! = k'''(P,T)$</p>
+			
+		<p style="text-align:center">$\left(\dfrac{V}{n} = k'''\right)$</p>
+			
+	<p style="margin-left:30px">$\bullet$ Ecuación de Clapeyron-Mendeleiev:
+	</p>
+	
+		<p style="text-align:center">
+			$PV_{\rm m} = RT \qquad V_{\rm m} = \dfrac{V}{n}$</p>
+			
+		<p style="margin-left:30px;padding-left:.7em">La ecuación tiene que 
+		ser dimensionalmente correcta, determinando las unidades de la 
+		constante de proporcionalidad $R$ (constante universal de los 
+		gases).</p>
+		
+<p>La última ecuación puede hallarse como resultado de combinar las
+anteriores. Esto es:</p>
+
+	<p style="text-align:center;margin-top:3em;margin-bottom:3em">
+		$
+		\def\rarrow#1#2{
+			\stackrel{#1}{
+				\underset{#2}{
+					\Rule{0pt}{0.4em}{0pt}
+					\smash{
+						\xrightarrow[\hspace{8px}\hphantom{#2}\hspace{8px}]{\hspace{8px}\hphantom{#1}\hspace{8px}}
+					}
+				} 
+			}
+		}
+		P_0,V_0,T_0 \underset{\boxed{\scriptstyle 1}}
+		{\rarrow{\text{isotérmico}}{\text{(Boyle)}}}
+		\left\{
+		\begin{array}{l}	
+			P,V(P,T_0),T_0 \smash{\overset{\boxed{\scriptstyle 2}}
+			{{}\rarrow{\text{isobárico}}{\text{(Charles)}}{}}}
+			P,V,T \\[1ex]
+			\quad \smash{\text{ó}} \\[1ex]
+			P(V,T_0),V,T_0 \smash{\underset{\boxed{\scriptstyle 3}}
+			{{}\rarrow{\text{isocórico}}{\text{(Gay-Lussac)}}{}}}
+			P,V,T
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<center>
+	<object data="ecuaciones_estado_gases_1.svg" type="image/svg+xml"
+	width="350" height="350"></object>
+</center>
+	
+<p>Camino superior:</p>
+	
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\boxed{1} \quad V(P,T_0) = \dfrac{P_0 V_0}{P} \\[1ex]
+			\boxed{2} \quad V(P,T_0) = \dfrac{V T_0}{T}
+		\end{array}
+		\right\}
+		\Rightarrow \dfrac{PV}{T} = \dfrac{P_0 V_0}{T_0} = \text{cte.}
+		$
+	</p>
+	
+<p>Optando, con mismo resultado, por el inferior:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\boxed{1} \quad P(V,T_0) = \dfrac{P_0 V_0}{V} \\[1ex]
+			\boxed{3} \quad P(V,T_0) = \dfrac{P T_0}{T}
+		\end{array}
+		\right\}
+		\Rightarrow \dfrac{PV}{T} = \dfrac{P_0 V_0}{T_0} = \text{cte.}
+		$
+	</p>
+	
+<p>También habría sido indiferente si el cambio de temperatura, a 
+volumen o presión constante, se hubiera hecho primero, y luego el 
+cambio isotérmico de volumen o presión.</p>
+	
+<p>Teniendo en cuenta la última ecuación hallada, a continuación, para 
+acabar, se plantea lo siguiente:</p>
+
+	<p style="text-align:center">
+		$P_0,V_0,T_0,n_0 \rarrow{m \, = \, \text{cte.}}{m \, \propto \, n} 
+		P,V(P,T,n_0), T,n_0 \rarrow{\text{(Avogadro)}}{} P,V,T,n$</p>
+		
+<p>Donde no importa el orden, i.e. en vez del planteado podría haber sido
+primero el cambio de moles y luego de $P$ y $T$.</p>
+		
+<p>Entonces:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left.
+			\begin{array}{l}
+				V(P,T,n_0) = \dfrac{P_0 V_0 T}{P T_0} \\[1ex]
+				V(P,T,n_0) = \dfrac{V n_0}{n}
+			\end{array}
+			\right\}
+			&amp;\Rightarrow
+			\dfrac{PV}{nT} = \dfrac{P_0 V_0}{n_0 T_0} = R \enspace (\text{cte.})
+			\\[1ex]
+			&amp;\Rightarrow PV = nRT \\[1ex]
+			&amp;\Rightarrow PV_{\rm m} = RT
+		\end{align}
+		$
+	</p>
+
+<p>Puede estimarse el valor de $R$ teniendo en cuenta que, estrictamente,
+el comportamiento de gas ideal tiene lugar cuando la presión, hipotéticamente,
+es cero. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lim\limits_{P \to 0} PV_{\rm m} = RT \\[1ex]
+			\lim\limits_{P \to 0} \dfrac{PV_{\rm m}}{T} = R
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces puede, mediante experimentación, representarse, a temperatura
+constante, ya sea $PV_{\rm m}$ o $PV_{\rm m}{∕}T$ frente a $P$ y extrapolar
+a presión cero para encontrar cuánto vale $R$.</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_2.svg" type="image/svg+xml"
+	width="450" height="400"></object>
+</center>
+
+<p>Para una serie de gases a $T =$ cte.:</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_3.svg" type="image/svg+xml"
+	width="450" height="400"></object>
+</center>
+
+<p>Siendo así $R$, la constante universal de los gases:</p>
+
+	<p style="margin-left:30px">
+		$
+		\begin{align}
+			R = \dfrac{\lim\limits_{P \to 0} PV_{\rm m}}{T} =
+			\dfrac{\pu{22,414 atm l mol-1}}{\pu{273,15 K}} &amp;=
+			\pu{82,058e-3 atm l K-1 mol-1} = \\[1ex]
+			&amp;= \left\{
+				\begin{array}{l}
+					\pu{8,3145 J K-1 mol-1} \\[1ex]
+					\pu{1,987 cal K-1 mol-1} \\[1ex]
+					\pu{83,145e-3 bar l K-1 mol-1}
+				\end{array}
+			\right.
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">$\bullet$ Ley de Dalton:</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">Para una mezcla de 
+	gases (ideales):</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}[b]{l}
+			P = \sum P_i \\[1ex]
+			P_i = y_i P \quad
+		\end{array}
+		$
+		($y_i \equiv$ fracción molar de $i$).
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">Siendo aquí $P_i$, 
+	presión parcial de $i$, la presión que ejercería el gas $i$ si 
+	estuviera solo dentro del sistema. A altas presiones, en un gas real, 
+	se producen interacciones, $P$ no sería la suma de las presiones de 
+	los gases solos, ni la presión total multiplicada por la fracción 
+	molar de $i$ la presión de $i$ si estuviera solo.</p>
+
+	<p style="margin-left:30px">$\bullet$ Ley de Amagat:</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">En una mezcla compuesta
+	de gases (ideales):</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			V = \sum V_i \\[1ex]
+			V_i = y_i V
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">El volumen total $V$ es
+	la suma de los parciales, siendo el volumen parcial $V_i$ el volumen
+	que ocuparía el gas $i$ si estuviera solo.</p>
+	
+<p>- Gas real:</p>
+
+<p>Es un gas que, a diferencia del gas ideal, sí tiene existencia real. 
+Para los gases reales la ecuación de Clapeyron-Mendeleiev es sólo 
+aproximadamente válida para presiones bajas y temperaturas altas, ya no 
+se parece en nada a la realidad conforme aumenta la presión y la 
+temperatura disminuye.</p>
+
+<p>El factor de compresibilidad $Z$, es la relación entre el $V_{\rm m}$
+del gas real y su $V_{\rm m}$ si su comportamiento fuera ideal. Esto es:
+</p>
+
+	<p style="text-align:center">$Z = \dfrac{V_{\rm m,(\smash{\text{real}})}}
+	{V_{\rm m, (\smash{\text{ideal}})}}$</p>
+	
+<p>El $V_{\rm m,(\smash{\text{real}})}$ se halla experimentalmente y el
+$V_{\rm m,(\smash{\text{ideal}})}$ a través de la ecuación de
+Clapeyron-Mendeleiev:</p>
+
+	<p style="text-align:center">$Z = \dfrac{V_{\rm m,(\smash{\text{real}})}}
+	{RT\!{∕}P} = \dfrac{V_{\rm m} P}{RT}$</p>
+	
+<p>Para el gas ideal:</p>
+
+	<p style="text-align:center">$Z = 1$, para cualquier valor de $P$ y $T$.
+	</p>
+	
+<p>Para el gas real:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			Z \neq 1 \quad (\text{en general}) \\[1ex]
+			Z = f(P,T,\text{naturaleza del gas})
+		\end{array}
+		$
+	</p>
+	
+<p>El comportamiento de $Z$ frente a $P$:</p>
+
+	<p style="margin-left:30px">a) Baja presión:</p>
+	
+<center>
+	<object data="ecuaciones_estado_gases_4.svg" type="image/svg+xml"
+	width="480" height="320"></object>
+</center>
+
+	<p style="margin-left:30px">Conforme aumenta el punto de ebullición la
+	pendiente es más negativa.</p>
+	
+<center>
+	<object data="ecuaciones_estado_gases_5.svg" type="image/svg+xml"
+	width="400" height="300"></object>
+</center>
+
+	<p style="margin-left:30px">También, para un mismo gas al disminuir la
+	temperatura la pendiente se hace más negativa.</p>
+	
+	<p style="margin-left:30px">b) Alta presión:</p>
+	
+<center>
+	<object data="ecuaciones_estado_gases_6.svg" type="image/svg+xml"
+	width="420" height="420"></object>
+</center>
+
+	<p style="margin-left:30px">Se supera ampliamente $Z = 1$.</p>
+	
+<p>$\ast$ Diagramas de Amagat:<p>
+	
+<p>Son una representación del producto $PV_{\rm m}$ frente a $P$ a una 
+temperatura fija. Por ejemplo, siendo $T_{n+1} > T_n$, para un gas ideal:
+</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_7.svg" type="image/svg+xml"
+	width="360" height="350"></object>
+</center>
+
+<p>Siendo, por tanto, en el caso de una gas ideal:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial (PV_{\rm m}) }{\partial P}\right)_{\! T} = 0 
+		\Rightarrow PV_{\rm m} = k(T)$ &ensp; $\leftarrow$ Ley de Boyle.
+	</p>
+	
+<p>Para un gas real:</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_8.svg" type="image/svg+xml"
+	width="360" height="440"></object>
+</center>
+
+<p>En un punto Boyle, un mínimo:</p>
+
+	<p style="text-align:center">
+		Punto Boyle $\Rightarrow \left(\dfrac{\partial (PV_{\rm m})}
+		{\partial P}\right)_{\! T} = 0$
+	</p>
+	
+<p>Por tanto, existe un rango de presiones en torno a estos puntos, los 
+mínimos no son muy pronunciados, en los que $PV_{\rm m}$ puede 
+considerarse aproximadamente constante, como en la ley de Boyle. Cada 
+punto Boyle es único para cada isoterma, sólo hay uno. La línea que 
+une todos ellos se conoce como curva Boyle. La temperatura de la 
+isoterma del diagrama de Amagat cuyo punto Boyle se produce a $P = 
+0$, límite de gas ideal, es la temperatura Boyle ($T_{\rm B}$). Esto 
+es:</p>
+
+	<p style="text-align:center">
+		$T_{\rm B} \Rightarrow \lim\limits_{P \to 0} \left(
+		\dfrac{\partial (PV_{\rm m})}{\partial P} \right)_{\! T} = 0$
+	</p>
+	
+<p>En la temperatura Boyle el gas real, en tanto que la presión no sea 
+demasiado elevada, se comporta idealmente.</p>
+
+<p>En las isotermas del diagrama de Amagat por encima de la temperatura 
+Boyle el producto $PV_{\rm m}$ siempre aumenta. En las situadas por 
+debajo de la temperatura Boyle, $PV_{\rm m}$ primero desciende y 
+luego asciende, existiendo los puntos Boyle.</p>
+
+<p>$\ast$ Diagrama de Andrews:</p>
+
+<p>Diagrama de $P$ en función de $V_{\rm m}$ a temperatura constante.</p>
+
+<p>Si el gas fuera ideal, al representar $P$ frente a $V_{\rm m}$, 
+aparecerían para $T_1$, $T_2$, ... <span 
+style="white-space:nowrap">($T_n &lt; T_{n+1}$)</span> una serie de 
+isotermas en forma de hipérbolas. Pero en la realidad, para un gas 
+real, se observa:</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_9.svg" type="image/svg+xml"
+	width="360" height="540"></object>
+	<object data="ecuaciones_estado_gases_10.svg" type="image/svg+xml"
+	width="471" height="147" style="margin-top:1em"></object>
+</center>
+	
+<p>Esto es:</p>
+
+		<p style="margin-left:30px">$\enclose{circle}{\rm A}$ Estado inicial:
+		$T_1$, $P_{\rm A}$, $V_{\rm A}$. Se mantendrá la temperatura constante.
+		</p>
+		
+		<p style="margin-left:30px">$\enclose{circle}{\rm B}$ Aquí: $P_{\rm B}$, 
+		$V_{\rm B}$. Se disminuye el volumen, la presión aumenta. En este punto
+		aparece la primera gota de líquido.</p>
+		
+		<p style="margin-left:30px">$\enclose{circle}{\rm C}$ Al reducir el
+		volumen parte del gas condensa, de tal modo que la presión permanece
+		constante ($P_{{\rm v},1}$, presión de vapor para $T_1$).</p>
+		
+		<p style="margin-left:30px">$\enclose{circle}{\rm D}$ La cantidad 
+		de líquido es aún mayor. Mientras convivan ambas fases, líquido y 
+		gas, la presión no cambia, tampoco los volúmenes molares de ambas 
+		fases, no así la proporción de cada una, según cambia el volumen 
+		del sistema.</p>
+		
+		<p style="margin-left:30px">$\enclose{circle}{\rm E}$ En este punto
+		ya sólo resta la última burbuja de gas.</p>
+		
+		<p style="margin-left:30px">$\enclose{circle}{\rm F}$ Todo líquido.
+		Una pequeña reducción de volumen conlleva que la presión se dispare.
+		</p>
+		
+<p>Se puede repetir el procedimiento con otras temperaturas, pudiéndose 
+representar los puntos donde aparece la primera gota de líquido y resta 
+la última fracción de gas (los puntos B y E). En el máximo de esta 
+representación ambos puntos coinciden, llegándose a lo que se conoce 
+como el punto crítico, donde alcanzado el mismo todo el gas se vuelve 
+líquido, o al revés. La isoterma que contiene este punto crítico se 
+llama isoterma crítica. A temperaturas superiores a la isoterma 
+crítica, en isotermas situadas por encima, el gas ya no licúa al 
+aumentar la presión.</p>
+
+<p>Se llama vapor a un sistema gaseoso cuando éste puede licuar, a 
+temperatura constante, aumentando la presión, y si no se le llama gas. 
+Por tanto, en el diagrama de Andrews, de la isoterma crítica hacia 
+arriba se tiene gas y hacia abajo vapor.</p>
+
+<p>$\bullet$ Ecuación de Van der Waals:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$\left(P + \dfrac{a}{V_{\rm m}^2}\right) (V_{\rm m} - b ) = RT
+			\qquad$
+		</span>
+		<span style="display:table-cell">
+			Ecuación empírica y<br>fenomenológica.
+		</span>
+	</p>
+	
+<p>Tiene en cuenta el volumen que ocupan las moléculas, de ahí el 
+término $b$ que se resta al volumen. También considera que a volúmenes 
+muy pequeños se producen fuerzas atractivas entre las moléculas, 
+afectando a la presión de tal modo que ésta se ve disminuida. Siendo 
+esta disminución, lo que se suma a la presión, proporcional a $1 {∕} 
+V_{\rm m}^2$.</p>
+
+<p>Son específicas para cada gas las constantes $a$ y $b$, cuyas 
+unidades son:</p>
+
+	<p style="text-align:center">
+		$[a] = \dfrac{\pu{atm l2}}{\pu{mol2}} \qquad [b] = \dfrac{\pu{l}}
+		{\pu{mol}}$
+	</p>
+	
+<p>Teniendo en cuenta que $V_{\rm m} = V{∕}n$, entonces:</p>
+
+	<p style="text-align:center">
+		$\left(P + \dfrac{a}{V^2{∕}n^2}\right) \left(\dfrac{V}{n} - b\right)
+		= RT$</p>
+	
+	<p style="text-align:center">
+		$\left(P + \dfrac{n^2 a}{V^2}\right) (V - nb) = nRT$</p>
+		
+<p>Cuando aparece la $n$, el número de moles, en una ecuación de gases 
+el volumen que aparece en ella se trata del volumen total, propiedad 
+extensiva, en caso contrario se trataría del volumen molar. Así pues, a 
+partir de este punto, ya no se escribirá $V_{\rm m}$, sino simplemente 
+$V$, y se sobreentenderá por la propia ecuación, al no estar presente 
+$n$, que se trata del volumen molar.</p>
+	
+<p>Operando con la ecuación de Van der Waals:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$
+			\begin{array}[b]{l}
+				\left(P + \dfrac{a}{V^2}\right) (V - b) = RT \\[1ex]
+				PV - Pb + \dfrac{a}{V} - \dfrac{ab}{V^2} = RT \\[1ex]
+				PV^3 - (Pb + RT)V^2 + aV - ab = 0 \\[1ex]
+				\boxed{V^3 - \left(b + \dfrac{RT}{P}\right)\!V^2 + \dfrac{a}{P}V -
+				\dfrac{ab}{P} = 0}
+			\end{array}
+			\quad
+			$
+		</span>
+		<span style="display:table-cell">
+			Ecuación cúbica<br>en el volumen.
+		</span>
+	</p>
+	
+<p>Tiene tres soluciones, tres raíces, al menos una real. Representando
+gráficamente:</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_11.svg" type="image/svg+xml"
+	width="480" height="480"></object>
+</center>
+
+<p>Desde A hasta B la forma de la gráfica coincide con la del diagrama 
+de Andrews experimental de un gas real. A partir de B, hasta M, sigue 
+subiendo a través de una curva, cuyo significado físico es que se tiene 
+un vapor sobresaturado o sobreenfriado, en un equilibrio metaestable. A 
+continuación, cae hasta N, no teniendo este tramo significado físico, 
+sin realidad física, ya que una disminución de volumen implicaría una 
+caída de presión. Entre E y N la situación es la de un líquido 
+sobrecalentado, siendo también un equilibrio metaestable.</p>
+
+<p>Para las isotermas por debajo del punto crítico existe un intervalo
+de presiones, entre el máximo M y el mínimo N, con forma de S o bucle 
+en la gráfica, en el que para un mismo valor de presión corresponden 
+tres valores de volumen, serían tres soluciones reales de la ecuación 
+cúbica anterior.</p>
+
+<p>Para asemejarse a un gas real, la presión a la que convivirían las 
+fases líquida y gaseosa, $P_{\rm v}$, para un gas tipo van der Waals, 
+se encuentra como aquélla que se corresponde con la línea horizontal en 
+la que las dos áreas entre ella, una por encima y otra por debajo, y la 
+curva son iguales. O, planteado de otra manera, el área cubierta por la 
+línea horizontal, coincidente con $P_{\rm v}$, o por la curva de la 
+ecuación de van der Waals, entre las soluciones mayor y menor de la 
+ecuación cúbica, es la misma.</p>
+
+<p>Esta ecuación de Van der Waals se identifica más con la realidad que
+la ecuación del gas ideal, además explica bastante los motivos de la
+desviación del comportamiento ideal.</p>
+
+<p>Conforme aumenta la temperatura, el intervalo que contiene las tres 
+raíces E, O y B, para las distintas isotermas, representado por la 
+línea discontinua, se va estrechando. Hasta que las tres raíces 
+convergen en un mismo punto, el punto crítico.</p>
+
+<p>Matemáticamente, la ecuación cúbica puede expresarse como:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			(x-\alpha)(x-\beta)(x-\gamma) = 0 \\[1ex]
+			x = V
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo $\alpha$, $\beta$, $\gamma$ las tres raíces. En el punto
+crítico:</p>
+
+	<p style="text-align:center">
+		$\alpha = \beta = \gamma = V_{\rm c}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$(V-V_{\rm c})^3 = 0$</p>
+		
+<p>El teorema del binomio establece:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\displaystyle
+			(u+v)^n = \sum_{k=0}^n \binom{n}{k} u^{n-k} v^k =
+			\sum_{k=0}^n \dfrac{n!}{k!(n-k)!} u^{n-k}v^k \\[1em]
+			\displaystyle
+			(u-v)^n = (u+(-v))^n = \sum_{k=0}^n (-1)^k \dfrac{n!}{k!(n-k)!}
+			u^{n-k}v^k
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$(V-V_{\rm c})^3 = V^3 - 3V_{\rm c}V^2 + 3V_{\rm c}^2V - V_{\rm c}^3$
+	</p>
+	
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$V^3 - 3V_{\rm c}V^2 + 3V_{\rm c}^2V - V_{\rm c}^3 = 0$</p>
+		
+<p>En el punto crítico, se tiene para la ecuación de van der Waals:</p>
+
+	<p style="text-align:center">
+		$V^3 - \left(b+\dfrac{RT_{\rm c}}{P_{\rm c}}\right)V^2 +
+		\dfrac{a}{P_{\rm c}}V - \dfrac{ab}{P_{\rm c}} = 0$</p>
+		
+<p>Comparando las dos últimas expresiones:</p>
+
+	<p style="margin-left:30px">
+		a) $3V_{\rm c} = b + \dfrac{RT_{\rm c}}{P_{\rm c}}$</p>
+		
+	<p style="margin-left:30px">
+		b) $3V_{\rm c}^2 = \dfrac{a}{P_{\rm c}}$</p>
+	
+	<p style="margin-left:30px">
+		c) $V_{\rm c}^3 = \dfrac{ab}{P_{\rm c}}$</p>
+		
+<p>Pueden despejarse los parámetros críticos en función de las constantes
+de la ecuación de van der Waals:</p>
+
+	<p style="margin-left:30px">
+		1) $V_{\rm c} = 3b \enspace \leftarrow \dfrac{\text{b)}}{\text{c)}}$</p>
+		
+	<p style="margin-left:30px">
+		2) $P_{\rm c} = \dfrac{a}{27b^2} \enspace \leftarrow$ 1) dentro de b).
+	</p>
+	
+	<p style="margin-left:30px">
+		3) $T_{\rm c} = \dfrac{3V_{\rm c} - b}{R}P_{\rm c} = \dfrac{8a}{27Rb}
+		\enspace \leftarrow$ Despejando $T_{\rm c}$ en a), y sustituyendo
+		$V_{\rm c}$ y $P_{\rm c}$.</p>
+		
+<p>Al revés, las constantes expresadas en función de los parámetros
+críticos:</p>
+
+	<p style="margin-left:30px">
+		i) $b = \dfrac{RT_{\rm c}}{8P_{\rm c}} \enspace \leftarrow
+		\dfrac{\text{2)}}{\text{3)}}$</p>
+		
+	<p style="margin-left:30px">
+		ii) $a = \dfrac{27R^2T_{\rm c}^2}{64P_{\rm c}} \enspace \leftarrow$
+		i) en 2).</p>
+		
+	<p style="margin-left:30px">
+		iii) $R = \dfrac{8V_{\rm c}P_{\rm c}}{3T_{\rm c}} \enspace \leftarrow$
+		Sustituyendo $b$ en 1), y despejando $R$.</p>
+		
+<p>Como el punto crítico se determina experimentalmente, a partir de 
+los datos tabulados para distintos gases pueden calcularse las 
+constantes. El valor de $R$ hallado así difiere del establecido, por lo 
+que no se tiene en cuenta en la expresión y se usa el ordinario (aunque 
+el ajuste será peor, la ecuación coincidirá plenamente a muy bajas 
+presiones con la del gas ideal). Se emplean los valores críticos de 
+temperatura y presión, que son los más exactos, para calcular $a$ y 
+$b$. Además, debido a la inexactitud, la discrepancia con la realidad, 
+de la ecuación de van der Waals, cualesquiera de las otras parejas, 
+presion y volumen críticos o volumen y temperatura críticos, que se 
+usaran para obtener $a$ y $b$, conducirían a valores distintos.</p>
+
+<p>Pueden relacionarse los coeficientes de dilatación cúbica y 
+compresibilidad isotérmica, $\alpha$ y $\kappa$ respectivamente, con la 
+ecuación de van der Waals. Siendo:</p>
+
+	<p style="text-align:center">
+		$\beta = \left(\dfrac{\partial P}{\partial T}\right)_{\! V} =
+		\dfrac{\alpha}{\kappa}$</p>
+		
+<p>De la ecuación de Van der Waals:</p>
+
+	<p style="text-align:center">
+		$P = \dfrac{RT}{V-b}-\dfrac{a}{V^2} \enspace \Rightarrow \enspace 
+		\left(\dfrac{\partial P}{\partial T}\right)_{\! V} =  \dfrac{R}{V-b}$
+	</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\alpha}{\kappa} = \dfrac{R}{V-b}$</p>
+		
+<p>De donde:</p>
+
+	<p style="text-align:center">
+		$b = V - R \dfrac{\kappa}{\alpha}$</p>
+		
+<p>Sustituyendo en la ecuación de van der Waals se encuentra una relación
+para $a$. Esto es:</p>
+
+	<p style="text-align:center">
+		$P = \dfrac{\alpha}{\kappa} T - \dfrac{a}{V^2}$</p>
+		
+	<p style="text-align:center">
+		$a = V^2 \left(\dfrac{\alpha}{\kappa} T - P \right)$</p>
+		
+<p>- Magnitudes de estado reducidas y ley de los estados correspondientes:
+</p>
+		
+<p>Una ecuación de estado como la de van der Waals es una función que 
+relaciona seis magnitudes entre sí:</p>
+
+	<p style="text-align:center">
+		$f(P,V,T,a,b,R) = 0$</p>
+		
+<p>Así pues, conocidas cinco de ellas la sexta también se conoce. También
+puede escribirse en función de las magnitudes críticas, esto es:</p>
+
+	<p style="text-align:center">
+		$f(P,V,T,P_{\rm c},V_{\rm c},T_{\rm c}) = 0$</p>
+		
+<p>Se definen las magnitudes reducidas como:</p>
+
+	<p style="text-align:center">
+		$\pi = \dfrac{P}{P_{\rm c}} \qquad \phi = \dfrac{V}{V_{\rm c}} \qquad
+		\theta = \dfrac{T}{T_{\rm c}}$</p>
+
+<p>Si se toman como unidad de medida las magnitudes críticas, con lo 
+que los valores de presión, volumen y temperatura son relativos al 
+punto crítico:<p>
+	
+	<p style="text-align:center">
+		$f(\pi,\phi,\theta,1,1,1) = 0$
+		
+<p>Entonces, para la ecuación de van der Waals, y en general para cualquier
+ecuación de estado de dos constantes (tres contando $R$), resulta que:</p>
+
+	<p
+	style="text-align:center;display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			$f(\pi,\phi,\theta) = 0$
+		</span>
+		<span style="display:table-cell;padding-top:1ex">
+			Función de estado reducida.
+		</span>
+	</p>
+	
+<p>Aquí ya no están presentes magnitudes que son específicas de cada gas
+particular, como las constantes $a$ y $b$ o los parámetros críticos.</p>
+	
+<p>Ley de los estados correspondientes:</p>
+
+	<p style="margin-left:30px"><i>Si dos gases distintos tienen iguales 
+	dos magnitudes reducidas entonces la tercera también es la misma. 
+	Se dice, en tal caso, que están en estados correspondientes.</i></p>
+	
+<p>Esto es:</p>
+
+	<p
+	style="text-align:center;display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			$\pi = g(\phi,\theta)$
+		</span>
+		<span style="display:table-cell;padding-top:1ex">
+			Independientemente del gas.
+		</span>
+	</p>
+	
+<p>Introduciendo las magnitudes reducidas en la ecuación de van der Waals:
+</p>
+
+	<p style="text-align:center">
+		$\left( \pi P_{\rm c} + \dfrac{a}{\phi^2 V_{\rm c}^2} \right) (\phi
+		V_{\rm c} - b) = R \theta T_{\rm c}$</p>
+		
+<p>Aplicando, a continuación, las relaciones entre magnitudes críticas y
+constantes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left(\pi \dfrac{a}{27b^2} + \dfrac{a}{9b^2\phi^2}\right) (3\phi b
+			- b) = \cancel{R} \! \theta \dfrac{8a}{27\!\cancel{R}\!b} \\[1ex]
+			\cancel{\dfrac{a}{27b^2}}\!\left(\pi + \dfrac{3}{\phi^2}\right)
+			\!\cancel{b}\!(3\phi - 1) =	8 \theta \cancel{\dfrac{a}{27b}} \\[1ex]
+			\boxed{\left(\pi + \dfrac{3}{\phi^2}\right) (3\phi - 1) = 8 \theta}
+		\end{array}
+		$
+	</p>
+	
+<p>- Otras ecuaciones de estado de los gases:</p>
+
+<ul>
+	<li>
+		Ecuación de Berthelot:
+		<p style="text-align:center">
+			$\left(P + \dfrac{A}{TV^2}\right)(V-B) = RT$</p>
+		Tiene tres parámetros, estos son dos 
+		constantes $A$ y $B$ más $R$, que pueden relacionarse con los 
+		parámetros críticos, y escribirse la ecuación como función de 
+		$\pi$, $\phi$ y $\theta$ en forma reducida.
+	</li>
+	<li>
+		Ecuación de Dieterici:
+		<p style="text-align:center">
+			$P(V-b') e^{\frac{\large a'}{\large RTV}} = RT$</p>
+		Igual que la anterior puede obtenerse una ecuación reducida en función
+		de $\pi$, $\phi$ y $\theta$.
+	</li>
+	<li>
+		Ecuación de Callendar:
+		<p style="text-align:center">
+			$PV = RT + \left(b-\dfrac{a'}{RT^r}\right)P$</p>
+		Aquí, a diferencia de las anteriores, ya son cuatro los parámetros 
+		(tres constantes más $R$). 
+	</li>
+</ul>
+
+<p>Igualmente, estas expresiones anteriores, aunque mejoren la ecuación 
+de van der Waals, no son en términos absolutos exactas.</p>
+
+<ul>
+	<li>
+		Ecuaciones de Virial:
+		<p style="display:table;margin-left:auto;margin-right:auto;text-indent:0">
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$
+					\begin{array}{l}
+					PV = RT + \dfrac{B(T)}{V} + \dfrac{C(T)}{V^2} + \dfrac{D(T)}{V^3}
+					+ \dotsb
+					\end{array}
+					$
+				</span>
+				<span style="display:table-cell;text-align:center;padding-bottom:1em">
+					<span style="display:block">Kamerlingh-Onnes (1901)</span>
+					<span style="display:block">(Escuela holandesa)</span>
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$
+					\begin{array}[t]{c}
+						PV = RT + aP + bP^2 + cP^3 + dP^4 + \dotsb \\[1ex]
+						\begin{array}{l}
+							a = a_1 + a_2 T^{-1} + a_3 T^{-2} \\
+							b = b_1 + b_2 T^{-1} + b_3 T^{-2} \\
+							\smash[t]{\vdots}
+						\end{array}
+					\end{array}
+					$
+					&emsp;
+				</span>
+				<span style="display:table-cell">
+					<span style="display:table-row">Holborn y Otto (1924)</span>
+					<span style="display:table-row;text-align:center">(Escuela alemana)</span>
+				</span>
+			</span>
+		</p>
+		Tienen en cuenta fuerzas intermoleculares. En la escuela holandesa 
+		trabajaron con volúmenes y en la alemana con presiones, dando, ante 
+		un mismo problema, ecuaciones distintas, aunque pueden relacionarse 
+		los coeficientes. Estas ecuaciones buscan corregir la ecuación para 
+		el gas ideal, sumándole algo, una serie de potencias de $V^{-1}$ o 
+		$P$, siendo que en el límite de presión cero, o volumen infinito, 
+		tienden al gas ideal.
+	</li>
+	<li>
+		Ecuación de Beattie-Bridgeman (1927):
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				P = \dfrac{RT(1-C)}{V^2}(V+B)-\dfrac{A}{V^2} \\[1ex]
+				A = A_0 \left(1-\dfrac{a}{V}\right) \\
+				B = B_0 \left(1-\dfrac{b}{V}\right) \\
+				C = \dfrac{c}{VT^3}
+			\end{array}
+			$
+		</p>
+		Tiene seis constantes, contando $R$. Se ajusta muy bien para gases
+		derivados del petróleo.
+	</li>
+</ul>
+
+<p>En las ecuaciones de dos constantes más $R$, el factor
+de compresibilidad:</p>
+
+	<p style="text-align:center">
+		$Z = c \dfrac{\pi \phi}{\theta}$</p>
+		
+<p>Donde $c$ es una constante, que no varía con el gas.</p>
+
+<p>El factor de compresibilidad en función de los parámetros críticos
+y las magnitudes reducidas:</p>
+
+	<p style="text-align:center">
+		$Z = \dfrac{PV}{RT} = \dfrac{P_{\rm c} V_{\rm c}}{R T_{\rm c}}
+		\dfrac{\pi \phi}{\theta}$</p>
+		
+<p>Los parámetros críticos pueden sustituirse, por ejemplo, por las
+expresiones que los relacionan con las constantes de la ecuación de
+Van der Waals:</p>
+
+	<p style="text-align:center">
+		$Z_{\rm vdw} = \dfrac{\cancel{\dfrac{a}{27b^2}} \! 3 \! \cancel{b}}
+		{\cancel{R} \! \dfrac{8 \! \cancel{a}}{\cancel{27Rb}}} \dfrac{\pi \phi}
+		{\theta} = \dfrac{3}{8} \dfrac{\pi \phi}{\theta}$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">$c_{\rm vdw} = \dfrac{3}{8} = 0{,}375$</p>
+	
+<p>Para la ecuación de Berthelot pueden hallarse, de manera similar a 
+como se hizo con la ecuación de van der Waals, las relaciones entre los 
+parámetros críticos y las constantes. Esto es:</p>
+
+	<p style="text-align:center">
+		$V_{\rm c} = 3B \qquad P_{\rm c} = \dfrac{R}{12B} \sqrt{\dfrac{2A}{3RB}}
+		\qquad T_{\rm c} = \dfrac{2}{3} \sqrt{\dfrac{2A}{3RB}}$</p>
+		
+<p>Y también:</p>
+		
+	<p style="text-align:center">
+		$B = V_{\rm c}{∕}3 = \dfrac{RT_{\rm c}}{8P_{\rm c}} \qquad A = 3P_{\rm c}
+		V_{\rm c}^2 T_{\rm c} = \dfrac{27R^2 T_{\rm c}^3}{64P_{\rm c}} \qquad
+		R = \dfrac{8P_{\rm c} V_{\rm c}}{3T_{\rm c}}$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$Z_{\rm Berthelot} =
+		\dfrac{P_{\rm c} V_{\rm c}}{RT_{\rm c}} \dfrac{\pi \phi}{\theta} =
+		\dfrac{3}{8} \dfrac{\pi \phi}{\theta}$</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">$c_{\rm Berthelot} = \dfrac{3}{8} =
+	0{,}375$</p>
+	
+<p>Igual que la de van der Waals.</p>
+
+<p>La ecuación de Berthelot en su forma reducida:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left(\pi P_{\rm c} + \dfrac{A}{\theta \phi^2 T_{\rm c} V_{\rm c}^2}
+			\right) (\phi V_{\rm c} - B) = R \theta T_{\rm c} \\[1ex]
+			\left(\pi P_{\rm c} + \dfrac{3P_{\rm c} \! \cancel{V_{\rm c}^2 T_{\rm c}}}
+			{\theta \phi^2 \! \cancel{T_{\rm c} V_{\rm c}^2}}\right) \left(
+			\phi V_{\rm c} - \dfrac{V_{\rm c}}{3} \right) = R \theta T_{\rm c} \\[1ex]
+			P_{\rm c} \left(\pi + \dfrac{3}{\theta \phi^2}\right) \dfrac{V_{\rm c}}{3}
+			(3 \phi - 1) = R \theta T_{\rm c} \\[1ex]
+			\left(\pi + \dfrac{3}{\theta \phi^2}\right) (3 \phi - 1) =
+			\underbrace{\!\dfrac{3RT_{\rm c}}{P_{\rm c} V_{\rm c}}\!}_8 \, \theta \\[1ex]
+			\boxed{\left(\pi + \dfrac{3}{\theta \phi^2}\right)(3\phi - 1) =
+			8 \theta}
+		\end{array}
+		$
+	</p>
+	
+<p>Existe una versión de la ecuación de Berthelot, para bajas 
+presiones, en la que las constantes son experimentales, están 
+modificadas, para un mejor ajuste:</p>
+
+	<p style="text-align:center">
+		$R = \dfrac{32 P_{\rm c} V_{\rm c}}{9 T_{\rm c}} \qquad
+		B = V_{\rm c}{∕}4 = \dfrac{9R T_{\rm c}}{128 P_{\rm c}} \qquad
+		A = \dfrac{16P_{\rm c} V_{\rm c}^2 T_{\rm c}}{3} =
+		\dfrac{27 R^2 T_{\rm c}^3}{64 P_{\rm c}}$
+	</p>
+	
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$Z_{\rm Berthelot^*} =
+		\dfrac{P_{\rm c} V_{\rm c}}{R T_{\rm c}} \dfrac{\pi \phi}{\theta}
+		= \dfrac{9}{32} \dfrac{\pi \phi}{\theta}$</p>
+		
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$c_{\rm Berthelot^*} = \dfrac{9}{32} = 0{,}281$</p>
+		
+<p>La expresión en magnitudes reducidas de la ecuación modificada
+de Berthelot:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left(P + \dfrac{A}{TV^2}\right) (V-B) = RT \\[1ex]
+			\left(\pi P_{\rm c} + \dfrac{A}{\theta \phi^2 T_{\rm c} V_{\rm c}^2}
+			\right) (V_{\rm c} \phi - B) = R \theta T_{\rm c} \\[1ex]
+			\left(\pi P_{\rm c} + \dfrac{16P_{\rm c} \! \cancel{V_{\rm c}^2 T_{\rm c}}}
+			{3\theta \phi^2 \! \cancel{T_{\rm c} V_{\rm c}^2}}\right) \left(
+			V_{\rm c} \phi - \dfrac{V_{\rm c}}{4} \right) = R \theta T_{\rm c} \\[1ex]
+			P_{\rm c} \left(\pi + \dfrac{16}{3\theta \phi^2}\right) \dfrac{V_{\rm c}}{4}
+			(4\phi - 1) = R\theta T_{\rm c} \\[1ex]
+			\left(\pi + \dfrac{16}{3\theta \phi^2}\right)(4\phi - 1) =
+			4 \underbrace{\!\dfrac{RT_{\rm c}}{P_{\rm c} V_{\rm c}}\!}_{32{∕}9}
+			\theta \\[1ex]
+			\boxed{\left(\pi + \dfrac{16}{3\theta \phi^2}\right) (4\phi - 1) =
+			\dfrac{128}{9} \theta}
+		\end{array}
+		$
+	</p>
+	
+<p>Para encontrar las relaciones entre parámetros críticos y constantes 
+en la ecuación de Dieterici se hace uso del hecho que el punto crítico 
+en el diagrama de Andrews es un punto de inflexión. Esto es, en el 
+punto crítico:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial P}{\partial V}\right)_{\! T} = 0 \qquad
+		\left(\dfrac{\partial^2 P}{\partial V^2}\right)_{\! T} = 0$</p>
+		
+<p>De la ecuación de Dieterici:</p>
+
+	<p style="text-align:center">
+		$P = \dfrac{RT}{V-b'} e^{-C/V} \qquad C = \dfrac{a'}{RT}$</p>
+		
+<p>Las derivadas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				\left(\dfrac{\partial P}{\partial V}\right)_{\! T} &amp;=
+				-\dfrac{RT}{(V-b')^2}e^{-C/V} + \dfrac{RT}{V-b'}\dfrac{C}{V^2}
+				e^{-C/V} = \\[1ex]
+				&amp;= \dfrac{RT}{V-b'} e^{-C/V} \left(\dfrac{C}{V^2} - 
+				\dfrac{1}{V-b'} \right) = \\[1ex]
+				&amp;= P \left( \dfrac{C}{V^2} - \dfrac{1}{V-b'} \right)
+			\end{aligned}
+			\\[1em]
+			\begin{aligned}
+				\left(\dfrac{\partial^2 P}{\partial V^2}\right)_{\! T} &amp;=
+				\left(\dfrac{\partial P}{\partial V}\right)_{\! T} \left(
+				\dfrac{C}{V^2} - \dfrac{1}{V-b'}\right) + P \left(\dfrac{1}{(V-b')^2}
+				- \dfrac{2C}{V^3}\right)
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>En el punto crítico, ambas son iguales a cero, por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{2}
+			&amp;\dfrac{C_{\rm c}}{V_{\rm c}^2} - \dfrac{1}{V_{\rm c}-b'} = 0 
+			&amp;&amp;\Rightarrow \enspace \dfrac{C_{\rm c}}{V_{\rm c}^2} =
+			\dfrac{1}{V_{\rm c}-b'} \enspace (1) \\[1ex]
+			&amp;\dfrac{1}{(V_{\rm c}-b')^2} - \dfrac{2C_{\rm c}}{V_{\rm c}^3}
+			= 0 \enspace &amp;&amp;\Rightarrow \enspace \dfrac{1}{(V_{\rm c}-b')^2}
+			= \dfrac{2C_{\rm c}}{V_{\rm c}^3}
+		\end{alignedat} \,
+		\right\} \Rightarrow V_{\rm c} = 2b'
+		$
+	</p>
+	
+<p>Sustituyendo $V_{\rm c}$ por $2b'$ en (1):</p>
+
+	<p style="text-align:center">
+		$C_{\rm c} = 4b' \enspace \Rightarrow \enspace \dfrac{a'}{RT_{\rm c}}
+		= 4b' \enspace \Rightarrow	\enspace T_{\rm c} = \dfrac{a'}{4Rb'}$</p>
+		
+<p>Seguidamente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			P_{\rm c} &amp;= \dfrac{RT_{\rm c}}{V_{\rm c} - b'}
+			e^{-C_{\rm c}/V_{\rm c}} = \\[1ex]
+			&amp;= \dfrac{a'{∕}4b'}{2b' - b'} e^{-4\!\cancel{b'}\!/2\!\cancel{b'}}
+			= \\[1ex]
+			&amp;= \dfrac{a'}{4e^2 b'^2}
+		\end{align}
+		$
+	</p>
+	
+<p>Puede hallarse ahora la ecuación reducida de Dieterici:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\pi P_{\rm c} (\phi V_{\rm c} - b')
+			e^{\frac{\large a'}{\large R \theta T_{\rm c} \phi V_{\rm c}}} =
+			R \theta T_{\rm c} \\[1ex]
+			\pi V_{\rm c}\left(\phi - \dfrac{b'}{V_{\rm c}}\right)
+			e^{\frac{\large C_{\rm c}}{\large \theta \phi V_{\rm c}}} =
+			\dfrac{RT_{\rm c}}{P_{\rm c}} \theta \\[1ex]
+			\pi 2\!\cancel{b'}\! \left(\phi - \dfrac{\cancel{b'}}{2\!\cancel{b'}}
+			\right) e^{\frac{\large 4\!\cancel{b'}}{\large \theta \phi 2\!\cancel{b'}}}
+			= e^2 \!\cancel{b'}\!\theta \\[1ex]
+			\boxed{
+				\begin{array}{c}
+					\pi (2\phi - 1) e^{\frac{\large 2}{\large \theta \phi}} =
+					e^2 \theta \\[1ex]
+					\pi (2\phi -1) = e^{2 - 2{∕}(\theta \phi)} \theta
+				\end{array}
+			}
+		\end{array}
+		$
+	</p>
+
+<p>Además, operando con las expresiones encontradas para los 
+parámetros críticos, también, entonces, para las constantes que 
+aparecen en la ecuación de Dieterici:</p>
+
+		<p style="text-align:center">
+			$b' = \dfrac{V_{\rm c}}{2} = \dfrac{RT_{\rm c}}{e^2 P_{\rm c}}
+			\qquad a' = e^2 P_{\rm c} V_{\rm c}^2 = \dfrac{4R^2 T_{\rm c}^2}
+			{e^2 P_{\rm c}} \qquad R = \dfrac{e^2 P_{\rm c} V_{\rm c}}
+			{2 T_{\rm c}}$</p>
+			
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$Z_{\rm Dieterici} = \dfrac{P_{\rm c} V_{\rm c}}{RT_{\rm c}}
+		\dfrac{\pi \phi}{\theta} = \dfrac{2}{e^2} \dfrac{\pi \phi}{\theta}$</p>
+		
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$c_{\rm Dieterici} = \dfrac{2}{e^2} = 0{,}271$</p>
+		
+<p>Experimentalmente, el promedio de $P_{\rm c}V_{\rm c}{∕}(RT_{\rm c})$
+es de 0,272 para gases apolares.</p>
+
+<p>Si se aplica la ley de los estados correspondiente sobre el factor
+de compresibilidad:</p>
+
+	<p style="text-align:center">
+		$Z = \dfrac{PV}{RT} =
+		\dfrac{\pi \phi}{\theta} \dfrac{P_{\rm c} V_{\rm c}}{R T_{\rm c}} =
+		\dfrac{g(\phi,\theta) \phi}{\theta} \dfrac{P_{\rm c} V_{\rm c}}
+		{R T_{\rm c}} = f(\phi,\theta) \dfrac{P_{\rm c} V_{\rm c}}{R T_{\rm c}}
+		$</p>
+		
+<p>Donde $f(\phi,\theta)$ es una función que no depende del gas, es la
+misma para cualquier gas.</p>
+
+<p>Cuando $V$ tiende a infinito, y por consiguiente también $\phi \to 
+\infty$, entonces, comportamiento de gas ideal, $Z = 1$. Además, el 
+valor de $\lim_{\phi \to \infty} f(\phi,\theta)$ es el 
+mismo independientemente del gas. Por tanto:</p>
+
+	<p style="text-align:center">
+		$\dfrac{P_{\rm c} V_{\rm c}}{RT_{\rm c}} =
+		\dfrac{1}{\lim\limits_{\phi \to \infty} f(\phi,\theta)} = k$
+		&emsp; (Constante igual para todos los gases).</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$Z = k \cdot f(\phi,\theta) = F(\phi,\theta)$</p>
+		
+<p>Por tanto, si dos de los parámetros reducidos son comunes a varios
+gases también $Z$ lo es.</p>
+
+<center>
+	<object data="ecuaciones_estado_gases_12.svg" type="image/svg+xml"
+	width="490" height="315"></object>
+</center>
+
+<p>En realidad, la conclusión anterior, en la práctica, sólo resulta 
+ser una buena aproximación entres gases similares, ya que el valor de 
+$Z_{\rm c} = P_{\rm c} V_{\rm c}{∕}(R T_{\rm c})$ difiere para 
+distintos gases. Por tanto, la ley de estados correspondientes también, 
+aunque útil, es una aproximación experimental, siendo teóricamente 
+consistentes con ella las ecuaciones de estado de dos constantes (además
+de $R$). Esto es, por ejemplo, para un gas de van der Waals, siendo:</p>
+
+	<p style="text-align:center">
+		$\pi = \dfrac{8\theta}{3\phi - 1} - \dfrac{3}{\phi^2}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			Z_{\rm vdw} &amp;= \dfrac{3\phi}{8\theta} \pi = \\[1ex]
+			&amp;= \dfrac{3\phi}{8\theta} \left(\dfrac{8\theta}{3\phi - 1} -
+			\dfrac{3}{\phi^2}\right) = \\[1ex]
+			&amp;= \dfrac{3\phi}{3\phi - 1} - \dfrac{9}{8\phi\theta} = 
+			\dfrac{3\phi - 1 + 1}{3\phi - 1} - \dfrac{9}{8\phi\theta} = \\[1ex]
+			&amp;= 1 + \dfrac{1}{3\phi - 1} - \dfrac{9}{8\phi\theta}
+		\end{align}
+		$
+	</p>
+	
+<p>Ecuación que no distingue entre gases. Además, si $\phi \to \infty$ 
+entonces, como se espera, $Z_{\rm  vdw} = 1$.</p>
+
+<p>También puede hallarse una expresión que relacione $Z_{\rm vdw}$ con 
+presión reducida y temperatura reducida. Partiendo de:</p>
+
+	<p style="text-align:center">
+		$\phi = \dfrac{8Z_{\rm vdw}\theta}{3\pi}$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			Z_{\rm vdw} = 1 + \dfrac{1}{\cancel{3}\!\dfrac{8Z_{\rm vdw}\theta}
+			{\cancel{3}\!\pi} - 1} -
+			\dfrac{9}{8\dfrac{8Z_{\rm vdw}\theta}{3\pi}\theta} \\[1ex]
+			Z_{\rm vdw} = \dfrac{8Z_{\rm vdw}\theta}{8Z_{\rm vdw}\theta - \pi} -
+			\dfrac{27\pi}{64Z_{\rm vdw}\theta^2} \\[1ex]
+			Z_{\rm vdw} + \dfrac{27\pi}{64Z_{\rm vdw}\theta^2} =
+			\dfrac{1}{1 - \dfrac{\pi}{8Z_{\rm vdw}\theta}} \\[1ex]
+			\boxed{
+				\left(Z_{\rm vdw} + \dfrac{27\pi}{64Z_{\rm vdw}\theta^2}\right)
+				\left(1 - \dfrac{\pi}{8Z_{\rm vdw}\theta}\right) = 1
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>- Mezclas de gases reales:</p>
+
+<p>Las leyes de Dalton y de Amagat, para gases ideales, en mezclas de 
+gases reales no son válidas.</p>
+
+	<p style="margin-left:30px">$\bullet$ Regla de Bartlett (1928):</p>
+	
+	<p style="text-align:center">
+		$P = \sum y_i P_i$</p>
+		
+	<p style="margin-left:30px">Donde $P_i$ es la presión de un mol del 
+	gas $i$, componente de la mezcla, a la temperatura de la misma, 
+	suponiendo que estuviera solo, y ocupando un volumen igual al volumen 
+	molar de la mezcla, siendo $y_i$ su fracción molar.</p>
+	
+	<p style="margin-left:30px">$\bullet$ Regla de Amagat (1893):</p>
+	
+	<p style="text-align:center">
+		$V = \sum y_i V_i$</p>
+		
+	<p style="margin-left:30px">$V_i$ es el volumen que ocuparía un mol
+	del gas $i$, supuesto solo, a la temperatura y presión total de la
+	mezcla.</p>
+	
+	<p style="margin-left:30px">$\bullet$ Regla de Kay:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			P_{\rm c,m} = \sum y_i P_{{\rm c},i} \\[1em]
+			T_{\rm c,m} = \sum y_i T_{{\rm c},i}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">Son pseudo magnitudes críticas. 
+	Representan presiones y temperaturas críticas medias de la mezcla. 
+	Así se puede considerar a ésta como un gas único. ($P_{{\rm c},i}$ y 
+	$T_{{\rm c},i}$ son la presión y temperatura críticas del componente 
+	$i$).</p>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../propiedades_experimentales_relacionadas_derivadas_parciales/propiedades_experimentales_relacionadas_derivadas_parciales.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../primer_principio/primer_principio.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

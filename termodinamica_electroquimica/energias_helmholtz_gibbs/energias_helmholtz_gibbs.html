@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Energías de Helmholtz y de Gibbs">
+<meta name="keywords" content="energías, Helmholtz, Gibbs">
+<title>Energías de Helmholtz y de Gibbs</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Energías de Helmholtz y de Gibbs</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Siendo, como se vio anteriormente:</p>
+
+	<p style="text-align:center">
+		$dU = T dS - P \, dV$ &emsp;Proceso reversible.</p>
+		
+<p>Sumando y restando $S \, dT$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dU = T dS + S \, dT - S \, dT - P \, dV \\[1ex]
+			d(U - TS) = -S \, dT - P \, dV \\[1ex]
+			dA = - S \, dT - P \, dV
+		\end{array}
+		$
+	</p>
+	
+<p>En donde se ha definido una nueva función de estado:</p>
+
+	<p style="text-align:center">
+		$\boxed{A = U - TS}$
+		<span style="display:block;padding-top:1ex">
+			Función energía de Helmholtz<br>o función de trabajo.
+		</span>
+	</p>
+		
+<p>También:</p>
+
+	<p style="text-align:center">
+		$dU &lt; T dS - P_{\rm ext} \, dV$ &emsp;Proceso irreversible.
+
+<p>Donde aquí $T$ es también la temperatura del sistema en el caso en 
+que coincida con la del medio, i.e. ambos en equilibrio térmico durante 
+el proceso ($T$ $=$ $T_{\rm med}$ $=$ $T_{\rm sist}$). Se considera que esto es 
+así:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dU = d(A + TS) &lt; T dS - P_{\rm ext} \, dV \\[1ex]
+			dA + \! \cancel{T dS} \! + S \, dT &lt; \! \cancel{T dS} \! - P_{\rm ext} \, dV \\[1ex]
+			dA &lt; -S \, dT - P_{\rm ext} \, dV
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, combinando, dependiendo de si el proceso es reversible o
+irreversible:</p>
+
+	<p style="text-align:center">
+		$\boxed{dA \leq -S \, dT - P_{\rm ext} \, dV}$</p>
+		
+<p>Obteniéndose entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{dA_{V,T} \leq 0}$ &ensp; Criterio de equilibrio y proceso
+		espontáneo.</p>
+		
+<p>Como también se vio:</p>
+
+	<p style="text-align:center">
+		$dH = T dS + V \, dP$ &emsp; Proceso reversible.</p>
+		
+<p>De nuevo, sumando y restando $S \, dT$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dH = T dS + S \, dT - S \, dT + V \, dP \\[1ex]
+			d(H - TS) = -S \, dT + V \, dP \\[1ex]
+			dG = -S \, dT + V \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Definiéndose, aquí también, otra nueva función de estado:</p>
+
+	<p style="text-align:center">
+		$\boxed{G = H - TS}$
+		<span style="display:block;padding-top:1ex">
+			Función energía de Gibbs<br>o entalpía, o energía, libre de Gibbs.
+		</span>
+	</p>
+	
+<p>Asimismo, visto anteriormente, se cumple:</p>
+
+	<p style="text-align:center">
+		$dH &lt; T dS + V \, dP$ &emsp; Proceso irreversible.</p>
+	
+<p>Donde para deducir esta relación se consideró, durante el proceso, 
+equilibrio mecánico ($P = P_{\rm ext}$). Ahora, además, también se 
+plantea que existe equilibrio térmico (la temperatura del sistema 
+coincide con la del medio). En tal situación:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dH = d(G + TS) &lt; T dS + V \, dP \\[1ex]
+			dG + \! \cancel{T dS} \! + S \, dT &lt; \! \cancel{T dS} \!  + V \,
+			dP \\[1ex]
+			dG &lt; -S \, dT + V \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Así pues, según sea el proceso reversible o irreversible:</p>
+
+	<p style="text-align:center">
+		$\boxed{dG \leq - S \, dT + V \, dP}$</p>
+		
+<p>Llegándose a:</p>
+
+	<p style="text-align:center">
+		$\boxed{dG_{P,T} \leq 0}$ &ensp;Criterio de equilibrio o
+		proceso espontáneo.</p>
+
+<p>La relación, siendo $H = U + PV$, entre las dos nuevas funciones de 
+estado:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G = H - TS = (U + PV) - TS = (U - TS) + PV \\[1ex]
+			\boxed{G = A + PV}
+		\end{array}
+		$
+	</p>
+	
+<p>A continuación, se plantea que hay otros tipos de trabajos aparte 
+del de <span style="white-space:nowrap">presión-volumen</span> (o 
+expansión-compresión). Esto es, para el sistema, en un proceso 
+reversible:</p>
+
+	<p style="text-align:center">
+		$w_{\rm rev} = w_{\rm exp\smash{\text{-}}comp} + w_{\rm eléctrico} 
+		+ w_{\rm superficial} +	\dotsb = -P \, dV + w_{\rm útil,rev}$</p>
+		
+<p>Donde el trabajo útil es todo el trabajo que no es de 
+expansión-compresión.</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dU = q_{\rm rev} + w_{\rm rev} = T dS + w_{\rm rev} \\[1ex]
+			dU = T dS - P \, dV + w_{\rm útil,rev}
+		\end{array}
+		$
+	</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dA = d(U - TS) = dU - T dS - S \, dT = -S \, dT + w_{\rm rev} \\[1ex]
+			dA = - S \, dT - P \, dV + w_{\rm útil,rev}
+		\end{array}
+		$
+	</p>
+	
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{alignedat}{2}
+			&amp;dA_T = w_{\rm rev} &amp;\quad \Rightarrow \quad &amp;\Delta
+			A_T = W_{\rm rev} \\[1ex]
+			&amp;dA_{V,T} = w_{\rm útil,rev} &amp;\quad \Rightarrow \quad
+			&amp;\Delta A_{V,T} = W_{\rm útil,rev}
+		\end{alignedat}
+		$
+	</p>
+	
+<p>Así pues, la función energía de Helmholtz tiene los significados 
+físicos de ser:</p> 
+
+	<p style="margin-left:30px">
+		- El trabajo mínimo, el de inferior valor posible, cuando el
+		sistema cambia de estado a $T =$ cte.</p>
+
+	<p style="margin-left:30px">
+		- El trabajo útil más bajo, i.e. más negativo o menos positivo, que
+		hace el medio sobre el sistema a $V$ y $T$ constantes cuando se
+		produce el cambio de estado del sistema.</p>
+
+<p>También, continuando:</p>
+
+	<p style="text-align:center">
+		$dG = d(A + PV) = dA + P \, dV + V \, dP = -S \, dT + V \, dP +
+		w_{\rm útil,rev}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = w_{\rm útil,rev} \enspace \Rightarrow \enspace \Delta G_{P,T}
+		= W_{\rm rev,útil}$</p>
+		
+<p>Entonces, para cualquier proceso reversible que tenga lugar a 
+presión y temperatura constantes la variación de la energía de Gibbs es 
+igual al trabajo útil que el medio realiza sobre el sistema al 
+producirse el cambio de estado del mismo, siendo el menor valor 
+posible.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../condiciones_equilibrio/condiciones_equilibrio.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../calculo_variaciones_funciones_estado/calculo_variaciones_funciones_estado.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

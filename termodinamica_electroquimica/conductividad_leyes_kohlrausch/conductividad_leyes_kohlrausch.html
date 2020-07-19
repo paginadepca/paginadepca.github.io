@@ -1,0 +1,527 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Conductividad: leyes de Kohlrausch">
+<meta name="keywords" content="conductividad, leyes, Kohlrausch">
+<title>Conductividad: leyes de Kohlrausch</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Conductividad: leyes de Kohlrausch</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Supóngase el siguiente caso:</p>
+
+	<p style="display:table">
+		<span style="display:table-cell;text-align:center;vertical-align:middle">
+			<object data="conductividad_leyes_kohlrausch_01.svg"
+			type="image/svg+xml" width="370" height="238"></object>
+			<span style="display:block;margin-top:1ex">
+				Célula electrolítica</span>
+		</span>
+		<span style="display:table-cell;vertical-align:middle;padding-left:1em">
+			Cuando el catión llega al cátodo gana electrones (reduciéndose), 
+			mientras que el anión al llegar al ánodo	pierde electrones 
+			(oxidándose). Entonces, la disolución, que sigue siendo neutra, 
+			conduce la corriente mediante un flujo de iones, existiendo 
+			también un flujo de electrones en el circuito eléctrico. Siendo 
+			$e_0$ el valor absoluto de la carga del electrón.</span>
+	</p>
+
+<p>Puede decirse, pues, que hay dos tipos de conductores:</p>
+
+<ul>
+	<li>Electrónicos: Son metales o semiconductores. Los electrones
+	transportan la corriente.</li>
+	<li>Iónicos: Disoluciones electrolíticas o electrolitos fundidos. Los
+	iones transportan la corriente.</li>
+</ul>
+
+<p>En la célula electrolítica, en estado estacionario, la intensidad
+de la corriente será igual en la parte electrónica ($I_{\rm e}$) y la
+iónica ($I_{\rm i}$). Esto es:</p>
+
+	<p style="text-align:center">
+		$I_{\rm e} = I_{\rm i}$</p>
+		
+<p>A lo largo del tiempo:</p>
+
+	<p style="text-align:center">
+		$I_{\rm e} t = I_{\rm i} t \Rightarrow Q_{\rm e} = Q_{\rm i}$</p>
+		
+<p>Donde $Q_{\rm e}$ y $Q_{\rm i}$ son las cargas eléctricas que pasan, 
+respectivamente, por la parte electrónica e iónica en el tiempo $t$, 
+siendo iguales.</p>
+
+<p>Para $\pu{1 mol}$ de electrones, i.e. el número de Avogadro, se 
+tiene la siguiente carga:</p>
+
+	<p style="text-align:center">
+		$N_{\rm A} e_0 = F = \pu{96485 C mol-1}$</p>
+		
+<p>Donde $F$ es la constante de Faraday.</p>
+		
+<p>Sabiendo la carga del ión, i.e. para el ión $i$ es $z_i e_0$, pueden 
+calcularse los moles de ese ión que se reducen u oxidan:</p>
+
+	<p style="text-align:center">
+		$n_i = \dfrac{Q_{\rm e}}{z_i e_0} \dfrac{1}{N_{\rm A}} =
+		\dfrac{Q_{\rm e}}{z_i F}$ &emsp; Ley de Faraday (1834)</p>
+		
+<p>Si la carga fuera justo la de un faraday ($\pu{96485 C}$):</p>
+
+	<p style="text-align:center">
+		$n_i = \dfrac{1}{z_i}$</p>
+		
+<p>En función del tiempo:</p>
+
+	<p style="text-align:center">
+		$n_i = \dfrac{I_{\rm e} t}{z_i F}$</p>
+		
+<p>El cálculo de la masa del ión que se ha reducido u oxidado:</p>
+
+	<p style="text-align:center">
+		$m_i = n_i M_i = \dfrac{Q_{\rm e}}{z_i F} M_i$</p>
+		
+<p>La carga depende del tiempo y la intensidad, y sería igual a $I_{\rm 
+e} t$ si la intensidad fuera constante. Esto último puede ser 
+complicado de lograr, por lo que otra manera de hallar la carga es, 
+usando esta última igualdad, mediante la determinación experimental 
+de $m_i$.</p>
+
+<p>El flujo de iones ($J$) es el número de moles de iones que atraviesa 
+una superficie unidad, situada entre los electrodos, por unidad de 
+tiempo. Si el campo eléctrico es débil se demuestra que sigue una 
+función lineal tal que:</p>
+
+	<p style="text-align:center">
+		$J = BX$</p>
+		
+<p>Donde $B$ es una constante y $X$ la magnitud del campo eléctrico.</p>
+
+<p>Entonces, la densidad de corriente (el flujo de carga) para uno de
+los iones:</p>
+
+	<p style="text-align:center">
+		$j_i = z_i e_0 N_{\rm A} B_i X = z_i F B_i X$</p>
+		
+<p>La densidad de corriente total:</p>
+
+	<p style="text-align:center">
+		$j = \displaystyle \sum_i j_i =
+		X \underbrace{\sum z_i F B_i}_{\displaystyle \kappa} = \kappa X$</p>
+		
+<p>Donde $\kappa$ es la conductividad, que es característica de cada
+electrolito.</p>
+
+<p>También la densidad de corriente, por definición:</p>
+
+	<p style="text-align:center">
+		$j = \dfrac{I}{A}$</p>
+		
+<p>Donde $A$ es el área de los electrodos.</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$X = \dfrac{\Delta \psi}{l}$</p>
+		
+<p>Donde $\Delta \psi$ y $l$ son, respectivamente, la diferencia de 
+potencial y la distancia entre los electrodos.</p>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\dfrac{I}{A} = \kappa \dfrac{\Delta \psi}{l} \Rightarrow
+		\boxed{\Delta \psi = \dfrac{l}{\kappa A} I}$</p>
+		
+<p>La ley de Ohm dice:</p>
+
+	<p style="text-align:center">
+		$\Delta \psi = R I$</p>
+		
+<p>Donde $R$, la resistencia es:</p>
+
+	<p style="text-align:center">
+		$R = \rho \dfrac{l}{A}$</p>
+		
+<p>Donde $\rho$ es la resistividad. Por tanto:</p>
+
+	<p style="text-align:center">
+		$\Delta \psi = \rho \dfrac{l}{A} I$</p>
+		
+<p>Comparando con lo que se había visto para la disolución de electrolito
+en la célula electrolítica, ésta sigue la ley de Ohm, siendo que:</p>
+
+	<p style="text-align:center">
+		$\kappa = \dfrac{1}{\rho}$</p>
+		
+<p>Por tanto, para un electrolito su resistencia es:</p>
+
+	<p style="text-align:center">
+		$R = \dfrac{l}{\kappa A}$ &ensp; ($\Omega$)</p>
+		
+<p>La conductancia es su inverso:</p>
+
+	<p style="text-align:center">
+		$G = \dfrac{1}{R} = \kappa \dfrac{A}{l}$ &ensp; ($\Omega^{-1}$)</p>
+		
+<p>Siendo que $A{∕}l$ es una constante propia de cada célula, del área
+de sus electrodos y la distancia de separación entre los mismos. Esto
+es:</p>
+
+	<p style="text-align:center">
+		$\boxed{G = \kappa K_{\rm cel}}$</p>
+		
+<p>También, entonces, la conductividad:</p>
+
+	<p style="text-align:center">
+		$\boxed{\kappa = \dfrac{G}{K_{\rm cel}}}$ &ensp;
+		($\pu{\Omega^{-1}	m-1}$ ó $\pu{\Omega^{-1} cm-1}$)</p>
+		
+<p>Si resulta que el disolvente conduce, se tiene que tener en cuenta.
+En tal caso:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\kappa = \kappa_{\rm disolvente} + \kappa_{\rm soluto} \\[1ex]
+			\kappa_{\rm soluto} = \kappa - \kappa_{\rm disolvente}
+		\end{array}
+		$
+	</p>
+	
+<p>Dado que la conductividad será distinta para distintas 
+concentraciones de electrolito, puede escribirse que la concuctividad 
+es función de la concentración. Esto es:</p>
+
+	<p style="text-align:center">
+		$\kappa = f(c)$</p>
+		
+<p>Se define la conductividad molar como:</p>
+
+	<p style="text-align:center">
+		$\Lambda = \dfrac{\kappa}{c}$</p>
+		
+<p>Si la concentración está en unidades de $\pu{mol l-1}$:</p>
+
+	<p style="text-align:center">
+		$\Lambda = \dfrac{\kappa}{c} 1000$ &ensp;
+		($\pu{\Omega^{-1} cm2 mol-1}$)</p>
+		
+<p>Si se representa $\Lambda$ frente a $\sqrt{c}$ para un electrolito 
+fuerte, i.e. que se disocia completamente al disolverse, se tiene 
+que:</p>
+
+	<p style="display:table">
+		<span style="display:table-cell;vertical-align:middle;padding-right:1em">
+			<object data="conductividad_leyes_kohlrausch_02.svg" width="300"
+			height="225" type="image/svg+xml"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			Existe una región, para un electrolito fuerte, donde la relación
+			es de función lineal, pudiéndose extrapolar a dilución infinita:
+			<span style="display:block;margin-top:1em;white-space:nowrap">
+				$\Lambda = \Lambda^0 - A \sqrt{c}$ &ensp; (1ª Ley de Kohlrausch)
+			</span>
+		</span>
+	</p>
+	
+<p>Para un electrolito débil, sólo se disocia parcialmente, esta región 
+no existe, y no puede extrapolarse a dilución infinita.</p>
+
+<p>También Kohlrausch observó que la conductividad molar a dilución
+infinita es:</p>
+
+	<p style="text-align:center">
+		$\boxed{\Lambda^0 = \nu_+ \lambda_+^0 + \nu_- \lambda_-^0}$
+		&emsp; (2ª ley de Kohlrausch)</p>
+		
+<p>Donde $\lambda_+^0$ y $\lambda_-^0$ son las conductividades molares 
+iónicas a dilución infinita, del catión y del anión respectivamente. 
+Cada ion contribuye a la conductividad molar de la disolución con un 
+valor, que, en este caso, por ser a dilución infinita, al no haber 
+interacción entre los iones, es independiente de quién sea su 
+pareja.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\Lambda_{\ce{KCl}}^0 - \Lambda_{\ce{NaCl}}^0 = 149{,}86 -
+				126{,}45 = 23{,}41$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				($\pu{25 ºC}$)
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1em;padding-bottom:1em">
+				$\Lambda_{\ce{KNO3}}^0 - \Lambda_{\ce{NaNO3}}^0 = 144{,}96 -
+				121{,}55 = 23{,}41$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				($\pu{25 ºC}$)
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\Lambda_{\ce{KBr}}^0 - \Lambda_{\ce{NaBr}}^0 = 151{,}92 -
+				128{,}51 = 23{,}41$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				($\pu{25 ºC}$)
+			</span>
+		</span>
+	</p>
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Lambda_{\ce{HAc}}^0 &amp;= \lambda_{\ce{H+}}^0 +
+			\lambda_{\ce{Ac-}}^0 = \\[1ex]
+			&amp;= (\lambda_{\ce{H+}}^0 + \lambda_{\ce{Cl-}}^0) +
+			(\lambda_{\ce{Na+}}^0 + \lambda_{\ce{Ac-}}^0) -
+			(\lambda_{\ce{Na+}}^0 + \lambda_{\ce{Cl-}}^0) = \\[1ex]
+			&amp;= \Lambda_{\ce{HCl}}^0 + \Lambda_{\ce{NaAc}}^0 -
+			\Lambda_{\ce{NaCl}}^0
+		\end{align}
+		$
+	</p>
+
+</div>
+
+<hr>
+
+<p>Se define la conductividad molar de un ion $i$ como:</p>
+
+	<p style="text-align:center">
+		$\lambda_i = \dfrac{\kappa_i}{c_i}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\kappa_i = c_i \lambda_i$</p>
+		
+<p>Siendo, despreciando la conductividad del disolvente, la
+conductividad total la suma de la de cada uno de los iones:</p>
+
+	<p style="text-align:center">
+		$\kappa = \displaystyle \sum \kappa_i = \kappa_+ + \kappa_- =
+		c_+ \lambda_+ + c_- \lambda_-$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\Lambda = \dfrac{\kappa}{c} = \dfrac{1}{c} (c_+ \lambda_+ + c_-
+		\lambda_-)$</p>
+		
+<p>Para la disolución, $\ce{A}$ es el disolvente, de un electrolito
+fuerte:</p>
+
+	<p style="text-align:center">
+		$
+		\ce{
+			A +
+			$
+			\begin{gathered}[t]
+				\smash{\ce{M_{\nu_+}X_{\nu_-}}} \\[1ex]
+				1 \\[1ex]
+				c
+			\end{gathered}
+			$
+			-&gt;
+			$
+			\begin{gathered}[t]
+				\smash{\ce{\nu_+ M^{$z$_+}}} \\[1ex]
+				\nu_+ \\[1ex]
+				\underbrace{c \nu_+}_{c_+}
+			\end{gathered}
+			$
+			+
+			$
+			\begin{gathered}[t]
+				\smash{\ce{\nu_- X^{$z$_-}}} \\[1ex]
+				\nu_- \\[1ex]
+				\underbrace{c \nu_-}_{c_-}
+			\end{gathered}
+			$			
+		}
+		$
+	<p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			c_+ = c \nu_+ \Rightarrow \dfrac{c_+}{c} = \nu_+ \\[1ex]
+			c_- = c \nu_- \Rightarrow \dfrac{c_-}{c} = \nu_-
+		\end{array}
+		$
+	</p>
+	
+<p>Así entonces, si no se tienen en cuenta la formación de pares iónicos,
+para un electrolito fuerte:</p>
+
+	<p style="text-align:center">
+		$\boxed{\Lambda = \nu_+ \lambda_+ + \nu_- \lambda_-}$</p>
+		
+<p>Que a dilución infinita:</p>
+
+	<p style="text-align:center">
+		$\Lambda^0 = \nu_+ \lambda_+^0 + \nu_- \lambda_-^0$</p>
+		
+<p>Para, sin considerar tampoco la formación de pares iónicos, un 
+electrolito débil:</p>
+
+	<p style="text-align:center">
+		$\Lambda = \alpha (\nu_+ \lambda_+ + \nu_- \lambda_-)$</p>
+		
+<p>Donde $\alpha$ es el grado de disociación del electrolito en la
+disolución.</p>
+
+<p>Para electrolitos débiles se puede hacer la siguiente aproximación:</p>
+
+	<p style="text-align:center">
+		$\boxed{\alpha = \dfrac{\Lambda}{\Lambda^0}}$ &emsp; (Arrhenius,
+		1887)</p>
+		
+<p>Ya que $\alpha$ se aproxima a 1 a dilución infinita. Esto es, con 
+agua como disolvente, para un ácido débil, por lo que es un electrolito 
+débil, se tiene:</p>
+
+	<p style="text-align:center">
+		$\ce{HA &lt;=&gt; H+ + A-} \quad K_{\ce{HA}} =
+		\dfrac{[\ce{A-}][\ce{H+}]}{[\ce{HA}]}$</p>
+		
+<p>El grado de disociación de $\ce{HA}$ entonces:</p>
+
+	<p style="text-align:center">
+		$\alpha = \dfrac{[\ce{A-}]}{c_{\ce{HA}}} =
+		\dfrac{[\ce{A-}]}{[\ce{A-}]+[\ce{HA}]} =
+		\dfrac{1}{1 + [\ce{HA}]{∕}[\ce{A-}]} =
+		\dfrac{1}{1 + [\ce{H+}]{∕}K_{\ce{HA}}}$</p>
+		
+<p>A dilución infinita los $\ce{H+}$ presentes provendrán de la
+disociación del agua, por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			K_{\rm w} = [\ce{H+}][\ce{OH-}] \\[1ex]
+			[\ce{H+}] = [\ce{OH-}]
+		\end{array}
+		\right\}
+		\Rightarrow [\ce{H+}] = K_{\rm w}^{1/2}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\alpha = \dfrac{1}{1 + K_{\rm w}^{1/2}{∕}K_{\ce{HA}}}$</p>
+		
+<p>Entonces, si:</p>
+
+	<p style="text-align:center">
+		$K_{\rm w}^{1/2}{∕}K_{\ce{HA}} \ll 1 \Rightarrow \alpha \approx 1$</p>
+		
+<p>Cabe pensar que a mayor grado de disociación mayor sea la conducvidad
+molar, i.e. que haya pues una relación de proporcionalidad:</p>
+
+	<p style="text-align:center">
+		$\Lambda = C \alpha$</p>
+		
+<p>Donde $C$ es una constante. A dilución infinita, para un electrolito
+tipo ácido débil (o base débil):</p>
+
+	<p style="text-align:center">
+		$\alpha \approx 1 \Rightarrow \Lambda^0 \approx C$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\Lambda \approx \Lambda^0 \alpha \Rightarrow \alpha \approx
+		\dfrac{\Lambda}{\Lambda^0}$</p>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../disoluciones_electrolitos/disoluciones_electrolitos.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../magnitudes_ionicas_medias/magnitudes_ionicas_medias.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

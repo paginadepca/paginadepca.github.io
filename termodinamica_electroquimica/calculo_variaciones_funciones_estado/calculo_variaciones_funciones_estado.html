@@ -1,0 +1,623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Cálculo de variaciones de funciones de estado">
+<meta name="keywords" content="cálculo, variaciones, funciones, estado">
+<title>Cálculo de variaciones de funciones de estado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Cálculo de variaciones de funciones de estado</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Variación de $S$ con $T$:</p>
+
+<p>Ecuación general, que puede aplicarse siempre, para un proceso
+reversible con sólo trabajo de expansión-compresión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dS = \dfrac{q_{\rm rev}}{T} = \dfrac{dU - w_{\rm rev}}{T} =
+			\dfrac{dU + P \, dV}{T} \\[1ex]
+			\boxed{T dS = dU + P \, dV}
+		\end{array}
+		$
+	</p>
+	
+<p>Casos:</p>
+	
+<ul>
+	<li>$V =$ cte.
+	
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial T} \right)_{\! V}$ ?</p>
+			
+		<p style="text-indent:0">Aplicando la ecuación general:</p>
+		
+			<p style="text-align:center">
+				$T dS_V = dU_V$</p>
+				
+		<p style="text-indent:0">Entonces:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial U} \right)_{\! V} =
+				\dfrac{dS_V}{dU_V} = \dfrac{1}{T}$</p>
+				
+		<p style="text-indent:0">Siendo así:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial T} \right)_{\! V} =
+				\left( \dfrac{\partial S}{\partial U} \right)_{\! V} \left(
+				\dfrac{\partial U}{\partial T} \right)_{\! V} = \dfrac{1}{T}
+				C_V$</p>
+				
+		<p style="text-indent:0">Por tanto:</p>
+		
+			<p style="text-align:center">
+				$dS_V = \dfrac{C_V}{T} \, dT_V$</p>
+				
+		<p style="text-indent:0">Integrando:</p>
+		
+			<p style="text-align:center">
+				$\Delta S_V = \displaystyle \int_{T_1}^{T_2} \dfrac{C_V}{T} \,
+				dT_V = \int_{T_1}^{T_2} C_V \, d \ln T_V$</p>
+	</li>
+	<li>$P =$ cte.
+	
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial T} \right)_{\! P}$ ?</p>
+				
+		<p style="text-indent:0">
+			Siendo que $H = U + PV$, y empleando la ecuación general anterior:</p>
+				
+			<p style="text-align:center">
+				$\boxed{T dS = dH - V \, dP}$</p>
+				
+		<p style="text-indent:0">Que es una segunda ecuación general.</p>
+				
+		<p style="text-indent:0">Así pues:</p>
+		
+			<p style="text-align:center">
+				$T dS_P = dH_P$</p>
+				
+		<p style="text-indent:0">Por consiguiente:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial H} \right)_{\! P} =
+				\dfrac{dS_P}{dH_P} = \dfrac{1}{T}$</p>
+				
+		<p style="text-indent:0">Con lo que:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial S}{\partial T} \right)_{\! P} = \left(
+				\dfrac{\partial S}{\partial H} \right)_{\! P} \left(
+				\dfrac{\partial H}{\partial T} \right)_{\! P} = \dfrac{1}{T} C_P$
+			</p>
+			
+		<p style="text-indent:0">Siendo pues:</p>
+		
+			<p style="text-align:center">
+				$dS_P = \dfrac{C_P}{T} \, dT_P$</p>
+				
+		<p style="text-indent:0">Su integración:</p>
+		
+			<p style="text-align:center">
+				$\Delta S_P = \displaystyle \int_{T_1}^{T_2} \dfrac{C_P}{T} \,
+				dT_P = \int_{T_1}^{T_2} C_P \, d \ln T_P$</p>
+	</li>
+</ul>
+
+<p>- Variación de $S$ con $V$ a $T$ = cte.:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial S}{\partial V} \right)_{\! T}$ ?</p>
+			
+	<p style="margin-left:30px">
+		Reordenando la primera ecuación general:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			P \, dV_T = T dS_T - dU_T \\[1ex]
+			P = T \left( \dfrac{\partial S}{\partial V} \right)_{\! T} -
+			\left( \dfrac{\partial U}{\partial V} \right)_{\! T}
+		\end{array}
+		$
+	</p>
+		
+	<p style="margin-left:30px">Derivando respecto a $T$ a volumen
+	constante:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial P}{\partial T} \right)_{\! V} =
+		\left( \dfrac{\partial S}{\partial V} \right)_{\! T} +
+		T \left( \dfrac{\partial^2 S}{\partial V \partial T} \right) -
+		\left( \dfrac{\partial^2 U}{\partial V \partial T} \right)$</p>
+			
+	<p style="margin-left:30px">Siendo, del apartado anterior:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial S}{\partial T} \right)_{\! V} =
+		\left( \dfrac{\partial S}{\partial U} \right)_{\! V} \left(
+		\dfrac{\partial U}{\partial T} \right)_{\! V} = \dfrac{1}{T}
+		\left( \dfrac{\partial U}{\partial T} \right)_{\! V}$</p>
+			
+	<p style="margin-left:30px">Derivando, esto, respecto a $V$ a $T$
+	constante:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial^2 S}{\partial T \partial V} \right) =
+		\dfrac{1}{T} \left( \dfrac{\partial^2 U}{\partial T \partial V}
+		\right)$</p>
+			
+	<p style="margin-left:30px">Por tanto:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left( \dfrac{\partial P}{\partial T} \right)_{\! V} =
+			\left( \dfrac{\partial S}{\partial V} \right)_{\! T} + \!
+			\cancel{
+				\left( \dfrac{\partial^2 U}{\partial T \partial V} \right)
+			} \! - \! \cancel{
+				\left( \dfrac{\partial^2 U}{\partial V \partial T} \right)
+			} \\[1ex]
+			\left( \dfrac{\partial S}{\partial V} \right)_{\! T} = \left(
+			\dfrac{\partial P}{\partial T} \right)_{\! V}
+		\end{array}	
+		$
+	</p>
+			
+	<p style="margin-left:30px">Ya que en las funciones de estado, como lo 
+	son $S$ y $U$, las derivadas cruzadas son iguales.</p>
+	
+	<p style="margin-left:30px">Entonces, la integración:</p>
+	
+	<p style="text-align:center">
+		$\Delta S_T = \displaystyle \int_{V_1}^{V_2} \left(
+		\dfrac{\partial P}{\partial T} \right)_{\! V} \, dV_T$</p>
+		
+<p>- Variación de $S$ con $P$ a $T =$ cte.:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial S}{\partial P} \right)_{\! T}$ ?</p>
+		
+	<p style="margin-left:30px">Partiendo de la segunda ecuación general:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			V \, dP_T = dH_T - T dS_T \\[1ex]
+			V = \left( \dfrac{\partial H}{\partial P} \right)_{\! T} - T
+			\left( \dfrac{\partial S}{\partial P} \right)_{\! T}
+		\end{array}	
+		$
+	</p>
+	
+	<p style="margin-left:30px">Repitiendo procedimiento, derivando respecto
+	a $T$ a presión constante:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial V}{\partial T} \right)_{\! P} =
+		\left( \dfrac{\partial^2 H}{\partial P \partial T} \right) -
+		\left( \dfrac{\partial S}{\partial P} \right)_{\! T} - T
+		\left( \dfrac{\partial^2 S}{\partial P \partial T} \right)$</p>
+			
+	<p style="margin-left:30px">De sección situada más arriba:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial S}{\partial T} \right)_{\! P} =
+		\left( \dfrac{\partial S}{\partial H} \right)_{\! P} \left(
+		\dfrac{\partial H}{\partial T} \right)_{\! P} = \dfrac{1}{T}
+		\left( \dfrac{\partial H}{\partial T} \right)_{\! P}$</p>
+		
+	<p style="margin-left:30px">Se deriva respecto a $P$ a $T$ constante:</p>
+	
+	<p style="text-align:center">
+		$\left( \dfrac{\partial^2 S}{\partial T \partial P} \right) =
+		\dfrac{1}{T} \left( \dfrac{\partial^2 H}{\partial T \partial P}
+		\right)$</p>
+		
+	<p style="margin-left:30px">Sustituyendo:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\left( \dfrac{\partial V}{\partial T} \right)_{\! P} = \!
+				\cancel{
+					\left( \dfrac{\partial^2 H}{\partial P \partial T} \right)
+				} \! -
+				\left( \dfrac{\partial S}{\partial P} \right)_{\! T} - \!
+				\cancel{
+					\left( \dfrac{\partial^2 H}{\partial T \partial P} \right)
+				} \\[1ex]
+				\left( \dfrac{\partial S}{\partial P} \right)_{\! T} =
+				- \left( \dfrac{\partial V}{\partial T} \right)_{\! P}				
+			\end{array}
+			$
+		</p>
+		
+	<p style="margin-left:30px">La integral:</p>
+	
+		<p style="text-align:center">
+			$\Delta S_{T} = \displaystyle - \int_{P_1}^{P_2} \left(
+			\dfrac{\partial V}{\partial T} \right)_{\! P} \, dP_T$</p>
+			
+<p>- Relaciones adiabáticas, i.e. $S =$ cte.:</p>
+
+<ol style="list-style-type:lower-latin">
+	<li>De la segunda ecuación general:
+	
+			<p style="text-align:center">
+				$dH = T dS + V \, dP$</p>
+				
+		<p style="text-indent:0">
+			Si $P =$ cte., i.e. $dP = 0$:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					dH_P = T dS_P \\[1ex]
+					\left( \dfrac{\partial H}{\partial S} \right)_{\! P} = T
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Si $S =$ cte. (adiabático), i.e. $dS = 0$:
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					dH_S = V \, dP_S \\[1ex]
+					\left( \dfrac{\partial H}{\partial P} \right)_{\! S} = V
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Si se derivan, respectivamente, las dos relaciones anteriores 
+			respecto a la presión a entropía constante y respecto a la 
+			entropía a presión constante:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\left( \dfrac{\partial^2 H}{\partial S \partial P} \right) =
+					\left( \dfrac{\partial T}{\partial P} \right)_{\! S} \\[1ex]
+					\left( \dfrac{\partial^2 H}{\partial P \partial S} \right) =
+					\left( \dfrac{\partial V}{\partial S} \right)_{\! P}
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">Por tanto:</p>
+		
+			<p style="text-align:center">
+				$\left( \dfrac{\partial T}{\partial P} \right)_{\! S} = \left(
+				\dfrac{\partial V}{\partial S} \right)_{\! P}$</p>
+	</li>
+	<li>De la primera ecuación general:
+	
+			<p style="text-align:center">
+				$dU = T dS - P \, dV$</p>
+			
+		<p style="text-indent:0">
+			Si $V =$ cte., i.e. $dV = 0$:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					dU_V = T dS_V \\[1ex]
+					\left( \dfrac{\partial U}{\partial S} \right)_{\! V} = T
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Si adiabático ($S =$ cte.), i.e. $dS = 0$:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					dU_S = -P \, dV_S \\[1ex]
+					\left( \dfrac{\partial U}{\partial V} \right)_{\! S} = -P
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Derivando, respectivamente, las igualdades halladas bajo las dos
+			últimas condiciones respecto a $V$ a entropía constante y respecto
+			a $S$ a volumen constante:</p>
+			
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\left( \dfrac{\partial^2 U}{\partial S \partial V} \right) =
+					\left( \dfrac{\partial T}{\partial V} \right)_{\! S} \\[1ex]
+					\left( \dfrac{\partial^2 U}{\partial V \partial S} \right) =
+					- \left( \dfrac{\partial P}{\partial S} \right)_{\! V} 
+				\end{array}
+				$
+			</p>
+			
+		<p style="text-indent:0">
+			Por consiguiente:</p>
+			
+			<p style="text-align:center">
+				$\left( \dfrac{\partial T}{\partial V} \right)_{\! S} = - \left(
+				\dfrac{\partial P}{\partial S} \right)_{\! V}$</p>
+	</li>
+</ol>
+
+<p>- Variaciones de $A$ y $G$ respecto a diferentes magnitudes
+termodinámicas:</p>
+
+	<p style="margin-left:30px">
+		$\ast$ Siendo $A = U - TS$, y de la primera ecuación general:</p>
+		
+	<p style="text-align:center">
+		$\boxed{dA = -S \, dT - P \, dV}$</p>
+
+	<p style="margin-left:30px;padding-left:.7em">
+		Si $V =$ cte., i.e. $dV = 0$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dA_V = -S \, dT_V \\[1ex]
+			\left( \dfrac{\partial A}{\partial T} \right)_{\! V} = - S
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		Si $T =$ cte., i.e. $dT = 0$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dA_T = -P \, dV_T \\[1ex]
+			\left( \dfrac{\partial A}{\partial V} \right)_{\! T} = -P
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$\ast$ Como $G = H - TS$, mediante la segunda ecuación general:</p>
+		
+	<p style="text-align:center">
+		$\boxed{dG = -S \, dT + V \, dP}$</p>
+		
+	<p style="margin-left:30px;padding-left:.7em">
+		Si $P =$ cte., i.e. $dP = 0$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dG_P = -S \, dT_P \\[1ex]
+			\left( \dfrac{\partial G}{\partial T} \right)_{\! P} = -S
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		Si $T =$ cte., i.e. $dT = 0$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dG_T = V \, dP_T \\[1ex]
+			\left( \dfrac{\partial G}{\partial P} \right)_{\! T} = V
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;margin-bottom:2em">
+		$\ast$ Basándose en lo anterior:</p>
+		
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+		$
+		\left.
+		\begin{array}{l}
+			\smash[t]{
+				\left.
+					\begin{array}{l}
+						G = H - TS \\[1ex]
+						\left( \dfrac{\partial G}{\partial T} \right)_{\! P} = -S
+					\end{array} \,
+				\right\}
+			}
+			\Rightarrow G =	H + T \left( \dfrac{\partial G}{\partial T}
+			\right)_{\! P} \\[1em]
+			\smash[b]{
+				\left.
+					\begin{array}{l}
+						A = U - TS \\[1ex]
+						\left( \dfrac{\partial A}{\partial T} \right)_{\! V} = -S
+					\end{array} \,
+				\right\}
+			}
+			\Rightarrow A = U + T \left( \dfrac{\partial A}{\partial T}
+			\right)_{\! V}
+		\end{array} \,
+		\right\} \;
+		$
+		</span>
+		<span style="display:table-cell">
+			Ecuaciones de<br>Gibbs-Helmholtz.
+		</span>
+	</p>
+		
+	<p style="margin-left:30px;margin-top:2em;padding-left:.7em">
+		Dividiendo por $T^2$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{1}{T} \left( \dfrac{\partial G}{\partial T} \right)_{\! P}
+			- \dfrac{G}{T^2} = -\dfrac{H}{T^2} \\[1ex]
+			\dfrac{1}{T} \left( \dfrac{\partial G}{\partial T} \right)_{\! P}
+			+ G \left( \dfrac{\partial (1{∕}T)}{\partial T}
+			\right)_{\! P} = -\dfrac{H}{T^2} \\[1ex]
+			\left( \dfrac{\partial (G{∕}T)}{\partial T} \right)_{\! P} =
+			-\dfrac{H}{T^2}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		Análogamente, haciendo lo mismo:</p>
+		
+	<p style="text-align:center">
+		$\left( \dfrac{\partial (A{∕}T)}{\partial T} \right)_{\! V} =
+		-\dfrac{U}{T^2}$</p>
+		
+	<p style="margin-left:30px;padding-left:.7em">
+		Para un proceso isotérmico:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta G &amp;= G_2 - G_1 =
+			\left[ H_2 + T \left( \dfrac{\partial G_2}{\partial T} \right)_{\!P}
+			\right] - \left[ H_1 + T \left( \dfrac{\partial G_1}{\partial T}
+			\right)_{\! P} \right] = \\[1ex]
+			&amp;= (H_2 - H_1) + T \left( \dfrac{\partial (G_2 - G_1)}{\partial T}
+			\right)_{\! P} = \Delta H + T \left(
+			\dfrac{\partial \Delta G}{\partial T} \right)_{\! P}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		Similarmente se halla:</p>
+		
+	<p style="text-align:center">
+		$\Delta A = \Delta U + T \left( \dfrac{\partial \Delta A}{\partial T}
+		\right)_{\! V}$</p>
+		
+	<p style="margin-left:30px;padding-left:.7em">
+		También, reordenando y dividiendo por $T^2$:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{1}{T} \left( \dfrac{\partial \Delta G}{\partial T}
+			\right)_{\! P} - \dfrac{\Delta G}{T^2}= -\dfrac{\Delta H}{T^2} \\[1ex]
+			\dfrac{1}{T} \left( \dfrac{\partial \Delta G}{\partial T}
+			\right)_{\! P} + \Delta G \left( \dfrac{\partial (1{∕}T)}{\partial T}
+			\right)_{\! P} = - \dfrac{\Delta H}{T^2} \\[1ex]
+			\left( \dfrac{\partial (\Delta G{∕}T)}{\partial T} \right)_{\! P}
+			= -\dfrac{\Delta H}{T^2}
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		De igual modo:</p>
+		
+	<p style="text-align:center">
+		$\left( \dfrac{\partial (\Delta A{∕}T)}{\partial T} \right)_{\! V} =
+		-\dfrac{\Delta U}{T^2}$</p>
+		
+	<p style="margin-left:30px;padding-left:.7em">
+		Integrando:</p>
+		
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\dfrac{\Delta G}{T} =
+			\left( - \displaystyle \int \dfrac{\Delta H}{T^2} \, dT \right) +
+			I \\[1ex]
+			\dfrac{\Delta A}{T} =
+			\left( - \displaystyle \int \dfrac{\Delta U}{T^2} \, dT \right) +
+			I'
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px;padding-left:.7em">
+		Donde $I$ e $I'$ son constantes de integración.</p>
+		
+	<p style="margin-left:30px;padding-left:.7em">
+		Llegados a este punto, tras, por ejemplo, las últimas ecuaciones 
+		encontradas, cabe recordar que los resultados de los cálculos de 
+		variaciones, o incrementos, de funciones de estado son válidos 
+		independientemente de cómo sea el camino, de si es reversible o 
+		irreversible, por tanto de aplicación general, ya que sólo 
+		dependen de los estados de equilibrio final e inicial.</p>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../energias_helmholtz_gibbs/energias_helmholtz_gibbs.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../ecuaciones_maxwell/ecuaciones_maxwell.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

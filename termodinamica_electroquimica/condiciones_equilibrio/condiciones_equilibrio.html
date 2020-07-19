@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Condiciones de equilibrio">
+<meta name="keywords" content="condiciones, equilibrio">
+<title>Condiciones de equilibrio</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Condiciones de equilibrio</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Siendo, para un proceso infinitesimal:</p>
+
+	<p style="text-align:center">
+		$dS_{\rm univ} = dS_{\rm sist} + dS_{\rm med} \geq 0$</p>
+		
+<p>Es mayor que cero para un proceso irreversible y es igual a cero en
+uno reversible.</p>
+
+<p>En un proceso irreversible:</p>
+
+	<p style="text-align:center">
+		$dS_{\rm med} = \dfrac{q_{\rm rev,med}}{T} =
+		- \dfrac{q_{\rm irrev,sist}}{T}$</p>
+		
+<p>Para el medio el calor es función de estado, por lo que el calor en 
+un proceso reversible en él debería ser el mismo que el que 
+intercambia, adaptando el signo, con el sistema en el proceso 
+irreversible de éste. Además, aquí $T$ es la temperatura del medio (no 
+del sistema, salvo equilibrio térmico en que es la misma, p. ej. 
+proceso reversible).</p>
+		
+<p>Por tanto, en este caso:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dS_{\rm sist} &gt; - dS_{\rm med} =
+			\dfrac{q_{\rm irrev,sist}}{T} \\[1ex]
+			T dS_{\rm sist} &gt; q_{\rm irrev,sist}
+		\end{array}
+		$
+	</p>
+	
+<p>Para un proceso irreversible:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			q_{\rm irrev,sist} &amp;= dU - w_{\rm irrev,sist} = \\[1ex]
+			&amp;= dU + P_{\rm ext} \, dV
+		\end{align}
+		$
+	</p>
+	
+<p>Donde se considera que el trabajo es sólo de presión-volumen.</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}[b]{c}
+			T dS_{\rm sist} &gt; dU + P_{\rm ext} \, dV \\[1ex]
+			dU &lt; T dS_{\rm sist} - P_{\rm ext} \, dV
+		\end{array}
+		$&emsp;(Criterio de irreversibilidad).
+	</p>
+	
+<p>En un proceso reversible, donde la presión exterior y del sistema 
+coinciden (i.e. $P_{\rm ext} = P$):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			T dS_{\rm sist} = q_{\rm rev,sist} &amp;= dU-w_{\rm rev,sist} = \\[1ex]
+			&amp;= dU + P \, dV
+		\end{align}
+		$
+	</p>
+	
+<p>Reordenando:</p>
+
+	<p style="text-align:center">
+		$dU = T dS_{\rm sist} - PdV$ &emsp; (Criterio de reversibilidad).</p>
+		
+<p>Por tanto, teniendo en cuenta que un proceso espontáneo es 
+irreversible y que en un proceso reversible el sistema está 
+infinitamente próximo al equilibrio, puede deducirse que:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$dU_{S,V} \leq 0$
+		</span>
+		<span style="display:table-cell;padding-left:1em">
+			Criterio de espontaneidad o equilibrio<br>a entropía y volumen
+			constante.			
+		</span>
+	</p>
+	
+<p>En un proceso forzado (artificial) tendría un valor positivo.</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$dU = d(H - PV) = dH - P \, dV - V \, dP$</p>
+		
+<p>Sustituyendo, tras combinar los criterios de irreversibilidad y
+reversibilidad anteriores:</p>
+
+	<p style="text-align:center">
+		$dH - P \, dV - V \, dP \leq T dS_{\rm sist} - P_{\rm ext} \, dV$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$dH \leq T dS_{\rm sist} - P_{\rm ext} \, dV + P \, dV + V \,
+		dP$</p>
+
+<p>Si el proceso es tal que permite que exista equilibrio mecánico,
+$P = P_{\rm ext}$, entonces:</p>
+
+	<p style="text-align:center">
+		$dH \leq T dS_{\rm sist} + V \, dP$</p>
+		
+<p>De donde puede concluirse que:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$dH_{S,P} \leq 0$</span>
+		<span style="display:table-cell;padding-left:1em">
+			Criterio de espontaneidad o equilibrio<br>
+			a entropía y presión constante.
+		</span>
+	</p>
+	
+<p>Sería valor positivo en un proceso forzado.</p>
+
+<p>Si $dS \equiv dS_{\rm sist}$ y, tras dividir por $T$, a continuación,
+de ser necesario, se despeja:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dS \geq \dfrac{dU}{T} + \dfrac{P_{\rm ext} \, dV}{T} \\[1ex]
+			dS \geq \dfrac{dH}{T} - \dfrac{V \, dP}{T}
+		\end{array}
+		$
+	</p>
+	
+<p>De donde criterios de espontaneidad o equilibrio también son:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dS_{U,V} \geq 0 \\[1ex]
+			dS_{H,P} \geq 0
+		\end{array}
+		$
+	</p>
+	
+<p>Todos estos criterios (condiciones), desde un punto de vista 
+práctico, tienen el inconveniente que $U$, $H$ y $S$ sean funciones de 
+estado que no pueden medirse directamente.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../maquinas_termicas_focos_capacidad_calorifica_finita/maquinas_termicas_focos_capacidad_calorifica_finita.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../energias_helmholtz_gibbs/energias_helmholtz_gibbs.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

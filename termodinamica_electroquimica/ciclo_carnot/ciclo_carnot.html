@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ciclo de Carnot">
+<meta name="keywords" content="ciclo, Carnot">
+<title>Ciclo de Carnot</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Ciclo de Carnot</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Máquina térmica con rendimiento máximo:</p>
+
+	<p style="margin-left:30px">
+		Carnot (1824):</p>
+		
+	<p style="margin-left:30px">
+		Aquélla que opera según un ciclo de Carnot (máquina de Carnot), sin 
+		efectos disipativos, de manera reversible, por lo que, en tal caso, 
+		los valores en un sentido u otro de operación son iguales en 
+		magnitud, pero de signo opuesto. En un ciclo de Carnot se vuelve al 
+		estado inicial a través de dos compresiones-expansiones reversibles 
+		isotérmicas y adiabáticas.</p>
+		
+	<p style="margin-left:30px">
+		Teorema de Carnot:</p>
+		
+	<p style="margin-left:30px">
+		No hay ninguna máquina térmica que, operando en las mismas condiciones
+		(los mismo focos), tenga un rendimiento mayor que la máquina de Carnot.
+	</p>
+	
+<p>Si hipotéticamente existiera una máquina térmica irreversible (X) 
+con mayor rendimiento que una máquina de Carnot (C), funcionando ambas 
+entres los dos mismos focos, $\theta_2 &gt; \theta_1$ ($\theta \equiv$ 
+temperatura), y ajustadas de tal modo que produjeran el mismo trabajo 
+por ciclo:</p>
+
+	<p style="display:table;margin-left:30px">
+		<object data="ciclo_carnot_01.svg" width="316" height="240"
+		type="image/svg+xml"
+		style="display:table-cell;vertical-align:middle;padding-right:2em">
+		</object>
+		<span style="display:table-cell;vertical-align:middle">
+			<span style="display:block;margin-bottom:1em">
+				Siendo:</span>
+			
+			$\qquad
+			\begin{array}{l}
+				\eta_{\rm X} &gt; \eta_{\rm C} \, \Rightarrow \,
+				\dfrac{|W_{\rm X}|}{|Q_2|} &gt; \dfrac{|W_{\rm C}|}{|Q_2'|} \\[1ex]
+				|W_{\rm X}| = |W_{\rm C}|
+			\end{array}	
+			$
+			
+			<span style="display:block;margin-top:1em;margin-bottom:1em">
+				Por tanto:</span>
+				
+			 $\qquad |Q_2| &lt; |Q_2'|$
+		</span>
+	</p>
+	
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			|Q_2| = |Q_1| + |W_{\rm X}| \\[1ex]
+			|Q_2'| = |Q_1'| + |W_{\rm C}|
+		\end{array}
+		\right\}
+		\Rightarrow |Q_1'| &gt; |Q_1|
+		$
+	</p>
+	
+<p>La máquina de Carnot es reversible, pudiendo actuar como máquina
+frigorífica tal que:</p>
+
+	<p style="margin-left:30px">
+		<object data="ciclo_carnot_02.svg" width="316" height="240"
+		type="image/svg+xml"
+		style="display:inline-block;vertical-align:middle;padding-right:2em">
+		</object>
+		$
+		\left.
+		\begin{array}{l}
+			|Q_2''| = |Q_2'| \\[1ex]
+			|Q_1''| = |Q_1'|
+		\end{array}
+		\right\}
+		$
+		Reversible.
+	<p>
+		
+<p>Si se acoplara la máquina X a la máquina de Carnot, operando ésta 
+última de manera inversa (como frigorífica):</p>
+
+<object data="ciclo_carnot_03.svg" type="image/svg+xml" width="453"
+height="240" style="margin-left:30px"></object>
+
+<p>Donde, resultado de la combinación de ambas máquinas:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		$|Q_2| - |Q_2''| = |Q_2| - |Q_2'| &lt; 0 \quad$ Calor cedido ($-$).
+		<span style="display:block;margin-top:1em">
+			$|Q_1''| - |Q_1| = |Q_1'| - |Q_1|  &gt; 0 \quad$ Calor recibido
+			($+$).
+		</span>
+	</p>
+	
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			|Q_2| - |Q_2''| &amp;= \bigl[|Q_1| + \!\cancel{|W_{\rm X}|}\!\bigr]
+			- \bigl[|Q_1''| + \!\cancel{|W_{\rm C}|}\!\bigr]
+			= \\[1ex]
+			&amp;= |Q_1| - |Q_1''| = -\bigl(|Q_1''| - |Q_1|\bigr)
+		\end{align}
+		$
+	</p>
+
+<p>Por tanto, el trabajo sería cero y el calor recibido desde el foco frío 
+se transferiría al foco caliente. Esto violaría el segundo principio (según 
+la definción de Clausius), por lo que:</p>
+
+	<p style="text-align:center">
+		$\eta_{\rm C} \nless \eta_{\rm X} \Rightarrow \eta_{\rm C}
+		\geq \eta_{\rm X}$</p>
+		
+<p>Si se hiciera lo mismo, el mismo razonamiento, con dos máquinas 
+distintas de Carnot, p.ej. diferente substancia operante, combinándose, 
+donde una máquina $\rm C_{II}$ actuara de forma directa accionando a 
+otra máquina $\rm C_I$, que operaría de manera inversa, entonces debería
+cumplirse que:</p>
+
+	<p style="text-align:center">
+		$\eta_{\rm C_I} \geq \eta_{\rm C_{II}}$</p>
+		
+<p>Si a continuación se intercambiaran, al acoplarlas la I funcionara 
+ahora como térmica y la II como frigorífica, también:</p>
+
+	<p style="text-align:center">
+		$\eta_{\rm C_{II}} \geq \eta_{\rm C_I}$</p>
+		
+<p>Así pues, para que ambas conclusiones se cumplan, entonces:</p>
+
+	<p style="text-align:center">
+		$\eta_{\rm C_I} = \eta_{\rm C_{II}}$</p>
+		
+<p>Es decir, el rendimiento de cualquier máquina de Carnot, trabajando
+entre los dos mismos focos, es el mismo (independientemente de la substancia
+usada en el ciclo).</p>
+
+<p>- Ciclo de Carnot para un gas ideal:</p>
+
+<center>
+	<object data="ciclo_carnot_04.svg" type="image/svg+xml" width="400"
+	height="300"></object>
+</center>
+
+	<p style="margin-left:30px">
+		$\bullet$ a $\to$ b:</p>
+
+<center>
+	<object data="ciclo_carnot_05.svg" type="image/svg+xml" width="298"
+	height="316"></object>
+</center>
+
+<p>Cilindro con el gas en su interior envuelto por el foco caliente, 
+con temperatura $T_2$ (en la escala del gas ideal). Tiene lugar la 
+expansión isotérmica reversible desde $V_{\rm a}$ hasta $V_{\rm b}$, en 
+la que al ser un gas ideal ($U = U(T)$):</p>
+		
+	<p style="text-align:center">
+		$\Delta U_{\rm a \to b} = 0$</p>
+		
+<p>Por tanto:</p>
+		
+	<p style="text-align:center">
+		$Q_2 = Q_{\rm a \to b} = -W_{\rm a \to b}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$W_{\rm a \to b} = - \displaystyle \int_{V_{\rm a}}^{V_{\rm b}} P \,
+		dV = - \int_{V_{\rm a}}^{V_{\rm b}} \dfrac{RT_2}{V} \, dV =
+		- RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}}$</p>
+		
+<p>Sustituyendo:</p>
+		
+	<p style="text-align:center">
+		$Q_2 = RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}}$</p>
+		
+	<p style="margin-left:30px">
+		$\bullet$ b $\to$ c:</p>
+		
+<center>
+	<object data="ciclo_carnot_06.svg" type="image/svg+xml" width="267"
+	height="341"></object>
+</center>
+
+<p>Ahora el sistema se rodea de un material aislante térmico, por 
+consiguiente:</p>
+		
+	<p style="text-align:center">
+		$Q_{\rm b \to c} = 0$</p>
+		
+<p>El sistema se expande adiabáticamente de manera reversible, 
+enfriándose hasta alcanzar $T_1$ (la temperatura del foco frío). Así 
+pues, para un gas ideal, aquí:</p>
+		
+	<p style="text-align:center">
+		$W_{\rm b \to c} = \Delta U_{\rm b \to c} =
+		\displaystyle \int_{T_2}^{T_1} C_V \, dT = C_V (T_1 - T_2)$</p>
+		
+<p>Donde se ha considerado $C_V$ como constante en el intervalo de 
+temperaturas.</p>
+		
+	<p style="margin-left:30px">
+		$\bullet$ c $\to$ d:</p>
+		
+<center>
+	<object data="ciclo_carnot_07.svg" type="image/svg+xml" width="268"
+	height="308"></object>
+</center>
+
+<p>El gas se comprime isotérmicamente de forma reversible en contacto 
+con el foco frío a la temperatura $T_1$, deteniéndose al llegar a 
+$V_{\rm d}$, que está en la misma adiabática $P$ vs. $V$ que el estado 
+de partida del ciclo. En este tramo:</p>
+		
+	<p style="text-align:center">
+		$W_{\rm c \to d} = - RT_1 \ln \dfrac{V_{\rm d}}{V_{\rm c}}$</p>
+		
+	<p style="text-align:center">
+		$\Delta U_{\rm c \to d} = 0 \, \Rightarrow \, Q_1 = Q_{\rm c \to d} =
+		- W_{\rm c \to d} = RT_1 \ln \dfrac{V_{\rm d}}{V_{\rm c}}$</p>
+		
+	<p style="margin-left:30px">
+		$\bullet$ d $\to$ a:</p>
+		
+<center>
+	<object data="ciclo_carnot_08.svg" type="image/svg+xml" width="267"
+	height="292"></object>
+</center>
+
+<p>En la última etapa del ciclo, se vuelve al estado inicial, 
+calentándose hasta $T_2$, a través de una compresión adiabática 
+reversible. Esto implica entonces que:</p>
+		
+	<p style="text-align:center">
+		$Q_{\rm d \to a} = 0$</p>
+		
+	<p style="text-align:center">
+		$W_{\rm d \to a} = \Delta U_{\rm d \to a} = \displaystyle
+		\int_{T_1}^{T_2} C_V \, dT = C_V (T_2 - T_1)$</p>
+		
+<p>Así, pues, en total, el trabajo al completar un ciclo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= W_{\rm a \to b} + W_{\rm b \to c} + W_{\rm c \to d} +
+			W_{\rm d \to a} = \\[1ex]
+			&amp;= -RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}} +
+			\! \cancel{C_V (T_1 - T_2)} \! -
+			RT_1 \ln \dfrac{V_{\rm d}}{V_{\rm c}} + \! \cancel{C_V (T_2 - T_1)}
+			\! = \\[1ex]
+			&amp;= - \left( RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}} +
+			RT_1 \ln \dfrac{V_{\rm d}}{V_{\rm c}} \right)
+		\end{align}
+		$
+	</p>
+	
+<p>También, dadas las relaciones para un gas ideal que pueden 
+establecerce para los distintos procesos reversibles, isotérmicos o 
+adiabáticos, del ciclo, se cumple que:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{2}
+			&amp;\smash{\text{E.I.:}} &amp; P_{\rm a} V_{\rm a} &amp;= P_{\rm b}
+			V_{\rm b} \\[1ex]
+			&amp;\smash{\text{E.A.:}} &amp; P_{\rm b} V_{\rm b}^\gamma &amp;=
+			P_{\rm c} V_{\rm c}^\gamma \\[1ex]
+			&amp;\smash{\text{C.I.:}} &amp; P_{\rm c} V_{\rm c} &amp;= P_{\rm d}
+			V_{\rm d} \\[1ex]
+			&amp;\smash{\text{C.A.:}} \enspace &amp; P_{\rm d} V_{\rm d}^\gamma
+			&amp;= P_{\rm a} V_{\rm a}^\gamma
+		\end{alignedat}
+		\,
+		\right\}
+		\Rightarrow
+		\begin{array}[t]{c}
+			V_{\rm a} V_{\rm b}^\gamma V_{\rm c} V_{\rm d}^\gamma = V_{\rm b}
+			V_{\rm c}^\gamma V_{\rm d} V_{\rm a}^\gamma \\[1ex]
+			V_{\rm a}^{\gamma - 1} V_{\rm c}^{\gamma - 1} = V_{\rm b}^{\gamma -1}
+			V_{\rm d}^{\gamma - 1} \\[1ex]
+			\boxed{\dfrac{V_{\rm a}}{V_{\rm b}} = \dfrac{V_{\rm d}}{V_{\rm c}}}
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo esto, el trabajo queda entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= - \left( RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}} + RT_1
+			\ln \dfrac{V_{\rm a}}{V_{\rm b}} \right) = \\[1ex]
+			&amp;= - \left( RT_2 \ln \dfrac{V_{\rm b}}{V_{\rm a}} - RT_1 \ln
+			\dfrac{V_{\rm b}}{V_{\rm a}} \right) = \\[1ex]
+			&amp;= -R (T_2 - T_1) \ln \dfrac{V_{\rm b}}{V_{\rm a}}
+		\end{align}
+		$
+	</p>
+	
+<p>El rendimiento:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\eta &amp;= \dfrac{-W}{Q_2} =
+			\dfrac{
+				\cancel{R} \! (T_2 - T_1) \cancel{\ln \dfrac{V_{\rm b}}{V_{\rm a}}}
+			}{
+				\cancel{R} \! T_2 \cancel{\ln \dfrac{V_{\rm b}}{V_{\rm a}}}
+			} = \\[1ex]
+			&amp;= \dfrac{T_2 - T_1}{T_2}
+		\end{align}
+		$
+	</p>
+	
+<p>El rendimiento, por tanto, sólo depende de las temperaturas, en la 
+escala del gas ideal, del foco frío y caliente. Además al ser, como ya 
+se vio, el rendimiento de cualquier máquina de Carnot el mismo, esto 
+será así para cualquier substancia operante en un ciclo de Carnot.</p>
+
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$-W = Q_2 + Q_1 \, \Rightarrow \, \eta = \dfrac{Q_2 + Q_1}{Q_2}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\dfrac{Q_2 + Q_1}{Q_2} &amp;= \dfrac{T_2 - T_1}{T_2} \\[1ex]
+			\cancel{1} \! + \dfrac{Q_1}{Q_2} &amp;= \! \cancel{1} \! - \dfrac{T_1}{T_2} \\[1ex]
+			\dfrac{Q_1}{Q_2} &amp;= - \dfrac{T_1}{T_2} \\[1ex]
+			\dfrac{Q_2}{T_2} + \dfrac{Q_1}{T_1} &amp;= 0
+			\rlap{{} \, \Rightarrow \, \boxed{\sum\limits_i \dfrac{Q_i}{T_i}
+			=0}}
+		\end{align}
+		$
+	</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../segundo_principio_maquinas_termicas/segundo_principio_maquinas_termicas.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../escala_termodinamica_temperatura/escala_termodinamica_temperatura.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

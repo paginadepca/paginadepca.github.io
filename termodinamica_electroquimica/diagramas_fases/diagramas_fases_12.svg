@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="342.09" height="260.44" version="1.1" viewBox="0 0 342.09 260.44" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="Arrow1Lstart" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-129.86 -715.28)">
+  <path d="m304 865.52v82" fill="#ccc" stroke="#999" stroke-dasharray="3, 3"/>
+  <path d="m465 947.52h-310v-220" fill="none" marker-end="url(#Arrow1Lend)" marker-start="url(#Arrow1Lstart)" stroke="#000" stroke-width="1px"/>
+  <circle cx="304" cy="865.52" r="3"/>
+  <circle cx="336" cy="827.52" r="3"/>
+  <path d="m194 919.52c36.962-9.9457 83.635-33.238 110-54" fill="none" stroke="#000" stroke-width="1px"/>
+  <path d="m304 865.52c20.298-15.984 24.724-23.814 32-38" fill="none" stroke="#000" stroke-dasharray="4, 4"/>
+  <circle cx="233" cy="879.52" r="3"/>
+  <g fill="none" stroke="#000">
+   <path d="m183 894.52c15.232-2.3536 50-15 50-15 36.84-11.88 70.373-26.703 103-52" stroke-dasharray="4, 4"/>
+   <path d="m441 813.52c-46.669 28.284-102.35 42.808-137 52" stroke-width="1px"/>
+   <path d="m304 865.52s-56.151 12.586-71 14" stroke-dasharray="4, 4"/>
+   <path d="m336 827.52 5-90" stroke-dasharray="4, 4"/>
+   <path d="m325 734.52-21 131" stroke-width="1px"/>
+   <path d="m233 879.52 44-130" stroke-dasharray="4, 4"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="135" y="752.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="135" y="752.51965" font-family="'STIX Two Text'" font-style="italic">P</tspan></text>
+   <text x="298" y="967.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="298" y="967.51965"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="65%">1</tspan><tspan dy="-5"> </tspan><tspan font-family="'STIX Two Math'">≃</tspan> <tspan font-family="'STIX Two Text'" font-style="italic">T</tspan>°<tspan dx="-5.5" dy="5" font-size="65%">f</tspan></tspan></text>
+   <text x="439" y="967.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="439" y="967.51965" font-family="'STIX Two Text'" font-style="italic">T</tspan></text>
+   <text x="181" y="926.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="181" y="926.51965" font-size="13px">A</tspan></text>
+   <text x="307.5" y="877.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="307.5" y="877.51965" font-size="13px">B</tspan></text>
+   <text x="443.58578" y="815.01965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="443.58578" y="815.01965" font-size="13px">C</tspan></text>
+   <text x="168" y="900.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="168" y="900.51965" font-size="13px">D</tspan></text>
+   <text x="220.26776" y="876.31256" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="220.26776" y="876.31256" font-size="13px">O</tspan></text>
+   <text x="341.25" y="829.01965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="341.25" y="829.01965" font-size="13px">F</tspan></text>
+   <text x="322" y="730.78741" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="322" y="730.78741" font-size="13px">E</tspan></text>
+   <text x="187" y="841.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="187" y="841.51965">β<tspan dy="5" font-size="65%">(s)</tspan></tspan></text>
+   <text x="199" y="903.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="199" y="903.51965">α<tspan dy="5" font-size="65%">(s)</tspan></tspan></text>
+   <text x="382" y="897.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="382" y="897.51965">V</tspan></text>
+   <text x="380" y="786.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="380" y="786.51965">L</tspan></text>
+  </g>
+ </g>
+</svg>

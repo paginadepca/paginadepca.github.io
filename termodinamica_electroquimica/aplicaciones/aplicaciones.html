@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js","enclose.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Aplicaciones">
+<meta name="keywords" content="aplicaciones">
+<title>Aplicaciones</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Aplicaciones</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Siendo:</p>
+
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{1mu} 1 \mspace{1mu}} \ P = T \left(
+		\dfrac{\partial P}{\partial T} \right)_{\! V} - \left(
+		\dfrac{\partial U}{\partial V} \right)_{\! T}$</p>
+		
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{1mu} 2 \mspace{1mu}} \ V = T \left(
+		\dfrac{\partial V}{\partial T} \right)_{\! P} + \left(
+		\dfrac{\partial H}{\partial P} \right)_{\! T}$</p>
+		
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{1mu} 3 \mspace{1mu}} \ C_P - C_V = \left[
+		P + \left( \dfrac{\partial U}{\partial V} \right)_{\! T} \right]
+		\left( \dfrac{\partial V}{\partial T} \right)_{\! P}$</p>
+		
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{1mu} 4 \mspace{1mu}} \ C_P - C_V = \left[
+		V - \left( \dfrac{\partial H}{\partial P} \right)_{\! T} \right]
+		\left( \dfrac{\partial P}{\partial T} \right)_{\! V}$</p>
+		
+<p>Basándose en estas ecuaciones:</p>
+
+<ol>
+	<li>Diferencia entre capacidades caloríficas:
+	
+	<p style="text-indent:0">Introduciendo $\enclose{circle}{\mspace{1mu}
+	1 \mspace{1mu}}$ en $\enclose{circle}{\mspace{1mu} 3 \mspace{1mu}}$:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{gather}
+				C_P - C_V =
+				\left[ \left( T \left( \dfrac{\partial P}{\partial T} \right)_{\! V}
+				- \! \cancel{\left( \dfrac{\partial U}{\partial V} \right)_{\! T}}
+				\! \right) + \! \cancel{ \left( \dfrac{\partial U}{\partial V}
+				\right)_{\! T}} \right] \left( \dfrac{\partial V}{\partial T}
+				\right)_{\! P} \\[1ex]
+				\boxed{
+					C_P - C_V = T \left( \dfrac{\partial P}{\partial T} \right)_{\! V}
+					\left( \dfrac{\partial V}{\partial T} \right)_{\! P}
+				} \tag{$\ast$} \label{*}
+			\end{gather}
+			$
+		</p>
+		
+	<p style="text-indent:0">Expresión, ésta última, válida para 
+	cualquier sistema homogéneo.</p>
+	</li>
+	<li>Diferencia, alternativa a la anterior, entre capacidades caloríficas:
+	
+	<p style="text-indent:0">Para un sistema simple:</p>
+	
+		<p style="text-align:center">
+			$V = V(T,P)$</p>
+			
+	<p style="text-indent:0">Entonces:</p>
+	
+		<p style="text-align:center">
+			$dV = \left( \dfrac{\partial V}{\partial T} \right)_{\! P} dT +
+			\left( \dfrac{\partial V}{\partial P} \right)_{\! T} dP$</p>
+			
+	<p style="text-indent:0">Si $V =$ cte, i.e. $dV = 0$:</p>
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial V}{\partial T} \right)_{\! P} dT_V =
+			- \left( \dfrac{\partial V}{\partial P} \right)_{\! T} dP_V$</p>
+			
+	<p style="text-indent:0">Por tanto:</p>
+	
+		<p style="text-align:center">
+			$
+			\left( \dfrac{\partial P}{\partial T} \right)_{\! V} = -
+			\dfrac{
+				\left( \dfrac{\partial V}{\partial T} \right)_{\! P}
+			}{
+				\left( \dfrac{\partial V}{\partial P} \right)_{\! T}
+			}
+			$
+		</p>
+		
+	<p style="text-indent:0">Se sustituye en $\eqref{*}$:</p>
+	
+		<p style="text-align:center">
+			$
+			C_P - C_V = - T
+			\dfrac{
+				\left( \dfrac{\partial V}{\partial T} \right)_{\! P}^2
+			}{
+				\left( \dfrac{\partial V}{\partial P} \right)_{\! T}
+			}
+			$
+		</p>
+		
+	<p style="text-indent:0">Esta expresión se ha usado en gases.</p>
+		
+	<p style="text-indent:0">Siendo, respectivamente, el coeficiente
+	de dilatación cúbica y el coeficiente de compresibilidad isotérmica:</p>
+		
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				\alpha = \dfrac{1}{V} \left( \dfrac{\partial V}{\partial T}
+				\right)_{\! P} \\[1ex]
+				\kappa = - \dfrac{1}{V} \left( \dfrac{\partial V}{\partial P}
+				\right)_{\! T}
+			\end{array}
+			$
+		</p>
+		
+	<p style="text-indent:0">Entonces:</p>
+	
+		<p style="text-align:center">
+			$C_P - C_V =
+			\dfrac{\alpha^2 T V^{\!\cancel{2}\!}}{\kappa \! \cancel{V}} =
+			\dfrac{\alpha^2 T V}{\kappa}$</p>
+			
+	<p style="text-indent:0">Usada, esta ecuación, con fases condensadas, 
+	en especial sólidos.</p>
+	</li>
+	<li>El coeficiente de Joule-Thomson:
+	
+		<p style="text-align:center">
+			$\mu_{JT} = - \dfrac{1}{C_P} \left( \dfrac{\partial H}{\partial P}
+			\right)_{\! T}$</p>
+			
+	<p style="text-indent:0">
+		Usando $\enclose{circle}{\mspace{1mu} 2 \mspace{1mu}}$:</p>
+
+		<p style="text-align:center">
+			$
+			\mu_{JT} =
+			\dfrac{1}{C_P} \left[ T \left( \dfrac{\partial V}{\partial T}
+			\right)_{\! P} - V \right]
+			$
+		</p>
+	</li>
+	<li>Variación de $C_P$ con la presión:
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial C_P}{\partial P} \right)_{\! T}$ ?</p>
+			
+	<p style="text-indent:0">Siendo:</p>
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial S}{\partial T} \right)_{\! P} =
+			\dfrac{C_P}{T}$</p>
+			
+	<p style="text-indent:0">Derivando respecto a $P$ a $T$ constante:</p>
+			
+		<p style="text-align:center">
+			$\dfrac{\partial^2 S}{\partial T \partial P} = \dfrac{1}{T} \left(
+			\dfrac{\partial C_P}{\partial P} \right)_{\! T}$</p>
+	
+	<p style="text-indent:0">A partir de las ecuaciones de Maxwell:</p>
+	
+	<center>
+		<object data="aplicaciones_1.svg" type="image/svg+xml" width="97"
+		height="87"></object>
+	</center>
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial S}{\partial P} \right)_{\! T} = - \left(
+			\dfrac{\partial V}{\partial T} \right)_{\! P}$</p>
+		
+	<p style="text-indent:0">Derivando respecto a $T$ a $P$ constante:</p>
+	
+		<p style="text-align:center">
+			$\dfrac{\partial^2 S}{\partial P \partial T} = - \left(
+			\dfrac{\partial^2 V}{\partial T^2} \right)_{\! P}$</p>
+			
+	<p style="text-indent:0">Por tanto, igualando:</p>
+	
+		<p style="text-align:center">
+			$\left(\dfrac{\partial C_P}{\partial P} \right)_{\! T} = - T \left(
+			\dfrac{\partial^2 V}{\partial T^2} \right)_{\! P}$</p>
+			
+	<p style="text-indent:0">Integrando pues:</p>
+	
+		<p style="text-align:center">
+			$\displaystyle \int_{P_1}^{P_2} dC_P = - T \int_{P_1}^{P_2} \left(
+			\dfrac{\partial^2 V}{\partial T^2} \right)_{\! P} dP$</p>
+	</li>
+	<li>Variación de $C_V$ con el volumen:
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial C_V}{\partial V} \right)_{\! T}$ ?</p>
+			
+	<p style="text-indent:0">Siendo:</p>
+		
+		<p style="text-align:center">
+			$\left( \dfrac{\partial S}{\partial T} \right)_{\! V} =
+			\dfrac{C_V}{T}$</p>
+			
+	<p style="text-indent:0">Derivando, a $T$ constante, respecto a $V$:</p>
+	
+		<p style="text-align:center">
+			$\dfrac{\partial^2 S}{\partial T \partial V} = \dfrac{1}{T} \left(
+			\dfrac{\partial C_V}{\partial V} \right)_{\! T}$</p>
+			
+	<p style="text-indent:0">Ecuaciones de Maxwell:</p>
+	
+	<center>
+		<object data="aplicaciones_2.svg" type="image/svg+xml" width="97"
+		height="92"></object>
+	</center>
+	
+		<p style="text-align:center">
+			$\left( \dfrac{\partial S}{\partial V} \right)_{\! T} = \left(
+			\dfrac{\partial P}{\partial T} \right)_{\! V}$</p>
+	
+	<p style="text-indent:0">Derivando, a $V$ constante, respecto a $T$:</p>
+	
+		<p style="text-align:center">
+			$\dfrac{\partial^2 S}{\partial V \partial T} = \left(
+			\dfrac{\partial^2 P}{\partial T^2} \right)_{\! V}$</p>
+			
+	<p style="text-indent:0">Igualando:</p>
+		
+		<p style="text-align:center">
+			$\left( \dfrac{\partial C_V}{\partial V} \right)_{\! T} = T \left(
+			\dfrac{\partial^2 P}{\partial T^2} \right)_{\! V}$</p>
+		
+	</li>
+</ol>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../tercer_principio_termodinamica/tercer_principio_termodinamica.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../magnitudes_molares_parciales/magnitudes_molares_parciales.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

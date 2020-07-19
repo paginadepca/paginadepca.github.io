@@ -1,0 +1,880 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ecuaciones de Clapeyron y de Clausius-Clapeyron">
+<meta name="keywords" content="ecuaciones, Clapeyron, Clausius-Clapeyron">
+<title>Ecuaciones de Clapeyron y de Clausius-Clapeyron</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Ecuaciones de Clapeyron y de Clausius-Clapeyron</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Compuesto puro en equilibrio entre dos fases:</p>
+
+	<p style="text-align:center">
+		$\ce{{Fase} α &lt;=&gt; {Fase} β}$</p>
+		
+<p>En un hipotético diagrama de fases:</p>
+
+	<p style="text-align:center">
+		<object data="ecuaciones_clapeyron_clausius_clapeyron_01.svg"
+		type="image/svg+xml" width="229" height="226"
+		style="display:inline-block;vertical-align:middle"></object>
+		&emsp; $\dfrac{dP}{dT}$ ?
+	</p>
+	
+<p>La condición de equilibrio para un sistema con multiples fases y
+componentes:</p>
+
+	<p style="text-align:center">
+		$dG_{P,T} = \displaystyle \sum_\alpha \sum_i \mu_i^\alpha \, dn_i^\alpha
+		= 0$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\mu_i^\alpha = \left( \dfrac{\partial G^\alpha}{\partial n_i^\alpha}
+		\right)_{\! P,T,n_{j \neq i}^\alpha}$</p>
+		
+<p>Para el caso que se plantea, sistema de un solo componente (sustancia
+pura $i$) que sólo intercambia trabajo $P$-$V$ y calor, la condición
+de equilibrio entre dos fases:</p>
+
+	<p style="text-align:center">
+		$\mu_i^α = \mu_i^β$</p>
+		
+<p>Para un sistema de un sólo componente:</p>
+
+	<p style="text-align:center">
+		$\mu_i^\alpha = G_i^\alpha = G_{\rm m}^\alpha$</p>
+		
+<p>Ya que la energía de Gibbs de la fase $\alpha$ ($G^\alpha$) varía 
+por mol de $i$ añadido, a $P$ y $T$ constantes, una cantidad 
+$G_{\rm m}^\alpha$ (la energía de Gibbs molar de la fase $\alpha$).</p>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$G_{\rm m}^α = G_{\rm m}^β$</p>
+		
+<p>También esto, la igualdad entre las energias de Gibbs molares, es 
+así, obviamente, para otro estado infinitamente próximo en la curva de 
+equilibrio, entre ambas fases, del diagrama de fases:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			G_{\rm m}^α + dG_{\rm m}^α = G_{\rm m}^β + dG_{\rm m}^β \\[1ex]
+			\boxed{dG_{\rm m}^α = dG_{\rm m}^β}
+		\end{array}
+		$
+
+<p>Para un sistema cerrado:</p>
+
+	<p style="text-align:center">
+		$dG = -S \, dT + V \, dP$</p>
+		
+<p>Si el sistema es monofásico de un sólo componente y se divide, 
+entonces, la expresión anterior por el número de moles del mismo:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m} = -S_{\rm m} \, dT + V_{\rm m} \, dP$ &emsp; (Monofásico,
+		un componente).</p>
+
+<p>Que puede aplicarse también a sistemas abiertos ya que $G_{\rm m}$ 
+es una propiedad intensiva, que no depende de la extensión del sistema, 
+por lo que no le afecta que el sistema cambie su tamaño. Así 
+entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dG_{\rm m}^α = -S_{\rm m}^α \, dT + V_{\rm m}^α \, dP \\[1ex]
+			dG_{\rm m}^β = -S_{\rm m}^β \, dT + V_{\rm m}^β \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Igualando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			-S_{\rm m}^α \, dT + V_{\rm m}^α \, dP = -S_{\rm m}^β \, dT +
+			V_{\rm m}^β \, dP \\[1ex]
+			(V_{\rm m}^β - V_{\rm m}^α) \, dP = (S_{\rm m}^β - S_{\rm m}^α) \,
+			dT \\[1ex]
+			dP = \dfrac{S_{\rm m}^β - S_{\rm m}^α}{V_{\rm m}^β - V_{\rm m}^α}
+			\, dT
+		\end{array}
+		$
+	</p>
+	
+<p>A un sistema de dos fases y un componente le corresponde un grado de
+libertad, por lo que $P = P(T)$, la curva en el diagrama de fases
+anteriormente representado, siendo entonces el diferencial de $P$:</p>
+
+	<p style="text-align:center">
+		$dP = \dfrac{dP}{dT} \, dT$</p>
+		
+<p>Comparando, por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\dfrac{dP}{dT} =
+		\dfrac{S_{\rm m}^β - S_{\rm m}^α}{V_{\rm m}^β - V_{\rm m}^α} =
+		\dfrac{\Delta S_{\rm m,(α \to β)}}{\Delta V_{\rm m,(α \to β)}}
+		$
+	</p>
+	
+<p>Sabiendo que para un cambio de fase (reversible, presión y temperatura
+constantes):</p>
+
+	<p style="text-align:center">
+		$
+		\Delta S_{\rm m,(α \to β)} =
+		\dfrac{\Delta H_{\rm m,(α \to β)}}{T_{(α \to β)}}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{\dfrac{dP}{dT} = \dfrac{\Delta H_{\rm m}}{T \Delta V_{\rm m}}}
+		$
+		&emsp; (Clapeyron, 1834)
+	</p>
+	
+<p>Para su cálculo, la pendiente de la curva de equilibrio, da lo mismo 
+el sentido que se tome para el cambio de fase, quién sea $α$ o $β$, ya 
+que la única consecuencia es la inversión de los signos tanto de 
+numerador como denominador del término derecho de la igualdad, lo que 
+no tiene efecto en el resultado.</p>
+
+<p>Casos:</p>
+
+<p>- Equilibrio sólido-líquido:</p>
+
+	<p style="text-align:center">
+		$\ce{α_{(s)} &lt;=&gt; β_{(l)}}$</p>
+		
+<p>La ecuación de Clapeyron puede escribirse de tal manera que refleje 
+también cómo varía el punto de fusión con la presión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{dT}{dP} \dfrac{dP}{dT} = \dfrac{dT}{dT} = 1 \\[1ex]
+			\dfrac{dT}{dP} = \left(\dfrac{dP}{dT}\right)^{\! -1} =
+			\dfrac{T \Delta V_{\rm m}}{\Delta H_{\rm m}}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde se ha usado la regla de la cadena, teniendo en cuenta que, un 
+único grado de libertad, $T = T(P)$ ó $P = P(T)$.</p>
+
+<p>Para este caso (fusión):</p>
+
+	<p style="text-align:center">
+		$
+		\dfrac{dT}{dP} =
+		\dfrac{T \Delta V_{\rm m,fus}}{\Delta H_{\rm m,fus}} =
+		\dfrac{T (V_{\rm m,l} - V_{\rm m,s})}{\Delta H_{\rm m,fus}}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$V_{\rm m,l} &gt; V_{\rm m,s}$ &emsp;</span>
+			<span style="display:table-cell;padding-bottom:1ex">
+				Pendiente (curva de fusión) $&gt; 0$.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$V_{\rm m,s} &gt; V_{\rm m,l}$</span>
+			<span style="display:table-cell">
+				Pendiente (curva de fusión) $&lt; 0$.</span>
+		</span>
+	</p>
+	
+<p>Aquí, un equilibrio entre fases condensadas, las cuales cambian poco 
+sus propiedades con la presión, puede considerarse $dT{∕}dP$ constante, 
+si el intervalo de temperaturas no es demasiado grande. Esto es:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\Delta T}{\Delta P} \simeq \dfrac{dT}{dP} =
+		\dfrac{T \Delta V_{\rm m,fus}}{\Delta H_{\rm m,fus}}$</p>
+		
+<p>- Equilibrios líquido-vapor y sólido-vapor:</p>
+
+	<p style="text-align:center">
+		$\ce{α_{(l)} &lt;=&gt; β_{(v)}}$
+		<span style="display:block;padding-top:1ex">evaporación o ebullición</span>
+	</p>
+	
+	<p style="text-align:center">
+		$\ce{α_{(s)} &lt;=&gt; β_{(v)}}$
+		<span style="display:block;padding-top:1ex">sublimación</span>
+	</p>
+	
+<p>Centrándose en el primero:</p>
+
+	<p style="text-align:center">
+		$
+		\dfrac{dP}{dT} = \dfrac{\Delta H_{\rm m,vap}}{T \Delta V_{\rm m}} =
+		\dfrac{\Delta H_{\rm m,vap}}{T (V_{\rm m,v} - V_{\rm m,l})}
+		$
+	</p>
+	
+<p>Si:</p>
+
+<ol>
+	<li>
+		Lejos (muy por debajo) del límite de presión crítica:
+		<p style="text-align:center">$V_{\rm m,v} \gg V_{\rm m,l}$</p>
+	</li>
+	<li>
+		El vapor se comporta idealmente:
+		<p style="text-align:center">$V_{\rm m,v} = \dfrac{RT}{P}$</p>
+	</li>
+</ol>
+
+<p>Con estas aproximaciones, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{dP}{dT} = \dfrac{\Delta H_{\rm m,vap}}{T V_{\rm m,v}} =
+			\dfrac{P \Delta H_{\rm m,vap}}{RT^2} \\[1ex]
+			\dfrac{1}{P} \dfrac{dP}{dT} = \dfrac{\Delta H_{\rm m,vap}}{RT^2}
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$\dfrac{1}{P} \dfrac{dP}{dT} = \dfrac{d \ln P}{dP} \dfrac{dP}{dT} =
+		\dfrac{d \ln P}{dT}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{d \ln P}{dT} = \dfrac{\Delta H_{\rm m,vap}}{RT^2}}$
+		<span style="display:block;padding-top:1ex">(Clausius, 1850)</span>
+	</p>
+		
+<p>Para la sublimación la expresión que se hallaría sería análoga, lo 
+distinto, obviamente, es que los valores que se tomarían, para 
+introducir en la misma, serían los correspondientes a ésta.</p>
+
+<p>A continuación:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			d \ln P = \dfrac{d \ln P}{dT} \, dT \\[1ex]
+			\Downarrow \\[1ex]
+			d \ln P = \dfrac{\Delta H_{\rm m,vap}}{RT^2} \, dT
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle \int_{P_1}^{P_2} d \ln P =
+		\int_{T_1}^{T_2} \dfrac{\Delta H_{\rm m,vap}}{RT^2} \, dT
+		$
+	</p>
+	
+<p>Si $\Delta H_{\rm m,vap} \! =$ cte.:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln \dfrac{P_2}{P_1} = - \dfrac{\Delta H_{\rm m,vap}}{R}
+			\left( \dfrac{1}{T_2} - \dfrac{1}{T_1} \right) \\[1ex]
+			\boxed{
+				\ln \dfrac{P_2}{P_1} = \dfrac{\Delta H_{\rm m,vap}}{R}
+				\left( \dfrac{T_2 - T_1}{T_1 T_2} \right)
+			}
+		\end{array}
+		$
+		<span style="display:block;padding-top:1ex">
+			(Ecuación de Clausius-Clapeyron)
+		</span>
+	</p>
+	
+<p>Si se lleva a cabo la integral indefinida (con $\Delta H_{\rm m,vap}
+\! =$ cte):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int d \ln P =
+			\int \dfrac{\Delta H_{\rm m,vap}}{RT^2} \, dT \\[1ex]
+			\ln P = - \dfrac{\Delta H_{\rm m,vap}}{RT} + \text{cte}{}'
+		\end{array}
+		$
+	</p>
+	
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln P = -\dfrac{a}{T} + c \\[1ex]
+			\boxed{\ln P = c - \dfrac{a}{T}}
+		\end{array}
+		$
+	</p>
+	
+<p>Pudiéndose representar $\ln P$ frente a $1{∕}T$, teóricamente una 
+recta que nos devolvería los valores de las constantes $a$ y $c$. Esto 
+sólo es aplicable, como una buena aproximación, a un intervalo limitado 
+de temperaturas, debido a que $\Delta H_{\rm m,vap}$ sí varía algo.</p>
+
+<p>Si $\Delta H_{\rm m,vap} \! \neq$ cte., por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		d(\Delta H_{\rm vap}) =
+		\left( \dfrac{\partial (\Delta H_{\rm vap})}{\partial T} \right)_{\! P}
+		\, dT + \left( \dfrac{\partial (\Delta H_{\rm vap})}{\partial P}
+		\right)_{\! T} \, dP
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial (\Delta H_{\rm vap})}{\partial T}
+			\right)_{\! P} &amp;=
+			\left( \dfrac{\partial (H_{\rm v} - H_{\rm l})}{\partial T}
+			\right)_{\! P} = \left( \dfrac{\partial H_{\rm v}}{\partial T}
+			\right)_{\! P} - \left( \dfrac{\partial H_{\rm l}}{\partial T}
+			\right)_{\! P} = \\[1ex]
+			&amp;= C_{P,\rm v} - C_{P,\rm l} = \Delta C_P
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		d(\Delta H_{\rm vap}) = \Delta C_P \, dT +
+		\left( \dfrac{\partial (\Delta H_{\rm vap})}{\partial P} \right)_{\! T}
+		\, dP
+		\tag{$\ast$} \label{*}
+		$
+	</p>
+	
+<p>Según la definición:</p>
+
+	<p style="text-align:center">
+		$H = U + PV$</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dH &amp;= dU + P \, dV + V \, dP = \\[1ex]
+			&amp;= q + V \, dP = \\[1ex]
+			&amp;= T \, dS + V \, dP
+		\end{align}
+		$
+	</p>
+	
+<p>A temperatura constante:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dH_T &amp;= T \, dS_T + V \, dP_T = \\[1ex]
+			&amp;= \left[ T \dfrac{dS_T}{dP_T} + V \right] dP_T = \\[1ex]
+			&amp;= \left[ T \left( \dfrac{\partial S}{\partial P} \right)_{\! T}
+			+ V \right] dP_T
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo, como función de estado:</p>
+
+	<p style="text-align:center">
+		$dH_T = \left( \dfrac{\partial H}{\partial P} \right)_{\! T} \, dP_T$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial H}{\partial P} \right)_{\! T} =
+		T \left( \dfrac{\partial S}{\partial P} \right)_{\! T} + V$</p>
+		
+<p>Haciendo uso de la siguiente ecuación de Maxwell:</p>
+
+<center>
+	<object data="ecuaciones_clapeyron_clausius_clapeyron_02.svg"
+	type="image/svg+xml" width="97" height="87"></object>
+</center>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial S}{\partial P} \right)_{\! T} = 
+		- \left( \dfrac{\partial V}{\partial T} \right)_{\! P}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial H}{\partial P} \right)_{\! T} =
+		-T \left( \dfrac{\partial V}{\partial T} \right)_{\! P} + V$</p>
+		
+<p>Que, como ya se vio, es la segunda ecuación termodinámica de estado.</p>
+
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial (\Delta H)_{\rm vap}}{\partial P}
+			\right)_{\! T} &amp;=
+			\left( \dfrac{\partial (H_{\rm v}-H_{\rm l})}{\partial P}
+			\right)_{\! T} =  \\[1ex]
+			&amp;= \left( \dfrac{\partial H_{\rm v}}{\partial P} \right)_{\! T}
+			- \left( \dfrac{\partial H_{\rm l}}{\partial P} \right)_{\! T} = \\[1ex]
+			&amp;= (\underbrace{V_{\rm v} - V_{\rm l}}_{\Delta V}) - T \left[
+			\left( \dfrac{\partial V_{\rm v}}{\partial T} \right)_{\! P} -
+			\left( \dfrac{\partial V_{\rm l}}{\partial T} \right)_{\! P}
+			\right] = \\[1ex]
+			&amp;= \Delta V - T \left( \dfrac{\partial (\Delta V)}{ \partial T}
+			\right)_{\! P}
+		\end{align}
+		$
+	</p>
+	
+<p>Sustituyendo en $\eqref{*}$:</p>
+
+	<p style="text-align:center">
+		$d(\Delta H_{\rm vap}) = \Delta C_P \, dT + \left[ \Delta V - T
+		\left( \dfrac{\partial (\Delta V)}{\partial T} \right)_{\! P}
+		\right] dP$</p>
+		
+<p>Para $\pu{1 mol}$:</p>
+
+	<p style="text-align:center">
+		$d(\Delta H_{\rm m,vap}) = \Delta C_{{\rm m},P} \, dT + \left[
+		\Delta V_{\rm m} -
+		T \left( \dfrac{\partial (\Delta V_{\rm m})}{\partial T} \right)_{\! P}
+		\right] dP$</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{cl}
+			\Delta V_{\rm m} = V_{\rm m,v} - V_{\rm m,l} \simeq V_{\rm m, v},
+			&amp; P \ll P_{\rm c} \\[1ex]
+			V_{\rm m,v}  = \dfrac{RT}{P}, &amp; P \, {\downarrow}{\downarrow}
+		\end{array}
+		\right\} \Rightarrow \Delta V_{\rm m} = \dfrac{RT}{P}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial (\Delta V_{\rm m})}{\partial T} \right) =
+		\dfrac{R}{P} = \dfrac{\Delta V_{\rm m}}{T}$</p>
+		
+<p>Así que al sustituir:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			d(\Delta H_{\rm m,vap}) = \Delta C_{{\rm m},P} \, dT + \underbrace{\left[
+			\Delta V_{\rm m} - T \dfrac{\Delta V_{\rm m}}{T}
+			\right]}_0 \, dP \\[1ex]
+			d(\Delta H_{\rm m,vap}) = \Delta C_{{\rm m},P} \, dT \quad
+			(\text{para $P$ bajas})
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle
+			\int_{\Delta H_{{\rm m,vap}(T_1)}}^{\Delta H_{{\rm m,vap}(T_2)}}
+			d(\Delta H_{\rm m,vap}) =	\int_{T_1}^{T_2} \Delta C_{{\rm m},P} \,
+			dT \\[1ex]
+			\Delta H_{{\rm m,vap}(T_2)} = \Delta H_{{\rm m,vap}(T_1)} +
+			\displaystyle \int_{T_1}^{T_2} \Delta C_{{\rm m},P} \, dT
+		\end{array}
+		$
+	</p>
+
+<p>O bien (escrito de otra manera):</p>
+
+	<p style="text-align:center">
+		$\Delta H_{{\rm m,vap}(T)} = \Delta H_{{\rm m,vap}(T_0)} +
+		\displaystyle \int_{T_0}^{T} \Delta C_{{\rm m},P} \, dT$</p>
+		
+<p>Sustituyendo, a continuación, en la ecuación de Clausius de más
+arriba:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{d \ln P}{dT} =
+			\dfrac{1}{RT^2} \left[ \Delta H_{{\rm m,vap}(T_0)} + \displaystyle
+			\int_{T_0}^{T} \Delta C_{{\rm m},P} \, dT \right] \\[1ex]
+			d \ln P = \dfrac{\Delta H_{{\rm m,vap}(T_0)}}{RT^2} \, dT + \left[
+			\displaystyle \int_{T_0}^{T} \Delta C_{{\rm m},P} \, dT \right]
+			\dfrac{dT}{RT^2}
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando (de forma indefinida):</p>
+
+	<p style="text-align:center">
+		$\ln P = - \dfrac{\Delta H_{{\rm m,vap}(T_0)}}{RT} + \displaystyle
+		\int \left[ \int_{T_0}^{T} \Delta C_{{\rm m},P} \, dT \right]
+		\dfrac{dT}{RT^2} +$ cte</p>
+		
+<p>Se resuelve integrando por partes, que se basa en:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			d(a \cdot b) = a \, db + b \, da \\[1ex]
+			a \cdot b = \int d(a \cdot b) = \int a \, db + \int b \, da \\[1ex]
+			\int a \, db = a \cdot b - \int b \, da
+		\end{array}
+		$
+	</p>
+	
+<p>Donde aquí:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{alignat}{2}
+			&amp;a = \dfrac{1}{R} \left[ \displaystyle \int_{T_0}^{T}
+			\Delta C_{{\rm m},P} \, dT \right] &amp;\,&amp;\Rightarrow da =
+			\dfrac{da}{dT} \, dT = \dfrac{1}{R} \Delta C_{{\rm m},P} \, dT \\[1ex]
+			&amp;db = \dfrac{dT}{T^2} &amp;&amp;\Rightarrow b = -\dfrac{1}{T}
+		\end{alignat}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\ln P &amp;=
+			\underbrace{
+				- \dfrac{\Delta H_{{\rm m,vap}(T_0)}}{RT} - \dfrac{1}{RT}
+				\int_{T_0}^T \Delta C_{{\rm m},P} \, dT
+			}_{-\Delta H_{{\rm m,vap}(T)}{∕}(RT)}
+			+ \int \dfrac{\Delta C_{{\rm m},P}}{RT} \, dT + \text{cte} = \\[1ex]
+			&amp;= - \dfrac{\Delta H_{{\rm m,vap}(T)}}{RT} +
+			\int \dfrac{\Delta C_{{\rm m},P}}{RT} \, dT + \text{cte}
+		\end{align}
+		$
+	</p>
+	
+<p>Si $\Delta C_{{\rm m},P}$ se considera independiente de $T$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H_{{\rm m,vap}(T)} &amp;= \Delta H_{{\rm m,vap}(T_0)} +
+			\Delta C_{{\rm m},P} \displaystyle \int_{T_0}^T \, dT = \\[1ex]
+			&amp;= \Delta H_{{\rm m,vap}(T_0)} + \Delta C_{{\rm m},P} (T - T_0)
+		\end{align}
+		$
+	</p>
+	
+<p>Introduciendo esto en la ecuación de Clausius expuesta más arriba:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\dfrac{d \ln P}{dT} &amp;=
+			\dfrac{
+				\Delta H_{{\rm m,vap}(T_0)} + \Delta C_{{\rm m},P} (T - T_0)
+			}{RT^2} = \\[1ex]
+			&amp;=
+			\dfrac{\Delta H_{{\rm m,vap}(T_0)} - \Delta C_{{\rm m},P} T_0}{RT^2}
+			+ \dfrac{\Delta C_{{\rm m},P}}{RT}
+		\end{align}
+		$
+	</p>
+	
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\ln P =
+		-\dfrac{\Delta H_{{\rm m,vap}(T_0)} - \Delta C_{{\rm m},P} T_0}{RT} +
+		\dfrac{\Delta C_{{\rm m},P}}{R} \ln T + \text{cte}
+		$
+	</p>
+	
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln P = -\dfrac{a}{T} + b \ln T + c \\[1ex]
+			\boxed{\ln P = c - \dfrac{a}{T} + b \ln T}
+		\end{array}
+		$
+	</p>
+	
+<p>Ecuaciones, entre otras, de base empírica, propuestas:</p>
+
+	<p style="margin-left:30px">
+		$\boxed{\ln P = \dfrac{a}{T} + b \ln T + c}$ &emsp; (Kirchhoff, 1858)
+	</p>
+	
+	<p style="margin-left:30px">
+		$\boxed{\ln P = \dfrac{a}{T} + b + cT + dT^2 + \dotsb}$ &emsp;
+		(Serie de potencias).
+	</p>
+	
+<p>Para usar estas expresiones, no teniendo que usar la aproximación de gas
+ideal, con la ecuación de Clapeyron, se hace el cálculo:</p>
+
+	<p style="text-align:center">
+		$\dfrac{dP}{dT} = \dfrac{P}{P} \dfrac{dP}{dT} = P \dfrac{d \ln P}{dP}
+		\dfrac{dP}{dT} = P \dfrac{d \ln P}{dT}$</p>
+		
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$
+		P \dfrac{d \ln P}{dT} = \dfrac{\Delta H_{\rm m,vap}}{T \Delta V_{\rm m}}
+		$
+	</p>
+	
+<p>Conociendo $V_{\rm m,v}$ y $V_{\rm m,l}$ para una determinada
+temperatura, puede entonces hallarse $\Delta H_{\rm m,vap}$ (a esa
+temperatura).</p>
+
+<p>- Efecto de la presencia de un gas inerte en la presión de vapor:</p>
+
+<p>Se plantea un líquido puro en equilibrio con su vapor en presencia
+de un gas externo inerte, insoluble en la fase líquida:</p>
+
+	<p style="text-align:center">
+		<object data="ecuaciones_clapeyron_clausius_clapeyron_03.svg"
+		type="image/svg+xml" width="161" height="161"
+		style="display:inline-block;vertical-align:middle"></object>
+		&emsp; ($T \! =$ cte.)
+	</p>
+	
+<p>Inicialmente, con el sistema en equilibrio:</p>
+
+	<p style="text-align:center">
+		$P = p_{\rm g.ex.} \! + p$</p>
+		
+<p>A continuación se plantea una variación infinitesimal, manteniendo 
+el equilibrio, en la presión del gas inerte, lo que causaría cambios 
+infinitesimales en la presión total ejercida sobre el líquido y su 
+presión de vapor. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			P \to P + dP \\[1ex]
+			p \to p + dp
+		\end{array}
+		$
+	</p>
+	
+<p>Se considera que la fase gaseosa es una mezcla de gases ideales. En 
+tal caso, al no existir interacción con las moléculas del gas inerte 
+(ni entre ninguna), puede tratarse el potencial químico del vapor como 
+si estuviera solo (i.e. puro). Con esta premisa, por la condición de 
+equilibrio:</p>
+
+	<p style="text-align:center">
+		$dG_{\rm m,l} = dG_{\rm m,v}$</p>
+		
+<p>A temperatura constante:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dG_{\rm m,l} = V_{\rm m,l} \, dP \\[1ex]
+			dG_{\rm m,v} = V_{\rm m,v} \, dp
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$V_{\rm m,v} \, dp = V_{\rm m,l} \, dP$</p>
+		
+<p>De donde:</p>
+
+	<p style="text-align:center">
+		$\dfrac{dp}{dP} = \dfrac{V_{\rm m,l}}{V_{\rm m,v}}$</p>
+		
+<p>Habiéndose considerado gas ideal:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{dp}{dP} = \dfrac{p V_{\rm m,l}}{RT} \\[1ex]
+			\dfrac{1}{p} \dfrac{dp}{dP} = \dfrac{V_{\rm m,l}}{RT}
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{d \ln p}{dP} = \dfrac{V_{\rm m,l}}{RT}}$ &emsp;
+		($T =$ cte.)</p>
+		
+<p>Lo que permite evaluar la variación de la presión de vapor como
+consecuencia de la presencia de una presión externa. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			d \ln p = \dfrac{V_{\rm m,l}}{RT} \, dP \\[1ex]
+			\Downarrow \\[1ex]
+			\ln \dfrac{p_2}{p_1} = \dfrac{V_{\rm m,l}}{RT} \Delta P
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$p_2 = p_1 + (p_2 - p_1) = p_1 + \Delta p$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln \dfrac{p_1 + \Delta p}{p_1} =
+			\dfrac{V_{\rm m,l}}{RT} \Delta P \\[1ex]
+			\ln \left( 1 + \dfrac{\Delta p}{p_1} \right) =
+			\dfrac{V_{\rm m,l}}{RT} \Delta P
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo (desarrollo en serie de Taylor):</p>
+
+	<p style="text-align:center">
+		$\ln (1+x) \simeq x$, cuando $x \ll 1$.</p>
+		
+<p>Por tanto, si el incremento es pequeño (en un líquido el efecto de 
+la presión externa (total) sobre la presión de vapor es escaso):</p>
+
+	<p style="text-align:center">
+		$
+		\Delta p \ll p_1 \Rightarrow \dfrac{\Delta p}{p_1} =
+		\dfrac{V_{\rm m,l}}{RT} \Delta P
+		$
+	</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../diagramas_fases/diagramas_fases.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../estados_estandar_referencia_fugacidad_actividad/estados_estandar_referencia_fugacidad_actividad.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

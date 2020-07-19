@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js","[mhchem]/mhchem.js","enclose.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Capacidades caloríficas">
+<meta name="keywords" content="capacidades, caloríficas">
+<title>Capacidades caloríficas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Capacidades caloríficas</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<p>Cuando en un sistema homogéneo se produce una transferencia de calor 
+$Q$, que provoca un cambio $\Delta T$ en su temperatura, su capacidad 
+calorífica media $\bar{C}$ es:</p>
+
+	<p style="text-align:center">
+		$\bar{C} = \dfrac{Q}{\Delta T}$<p>
+			
+<p>Es una magnitud extensiva, ya que resulta de la división de una 
+extensiva, el calor, por una intensiva. La capacidad calorífica varía 
+con la temperatura, por lo que conviene que el incremento de 
+temperatura sea pequeño. Esto es, en el caso límite, para cualquier
+temperatura:</p>
+
+	<p style="text-align:center">
+		$C = \lim\limits_{\Delta T \to 0} \left( \dfrac{Q}{\Delta T} \right)
+		= \dfrac{q}{dT}$</p>
+		
+<p>Son, en cambios, magnitudes intensivas:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$c = \dfrac{C}{m}$
+			</span>
+			<span style="display:table-cell">
+				Calor específico.
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$C_{\rm m} = \dfrac{C}{n}$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				Calor molar.
+			</span>
+		</span>
+	</p>
+	
+<p>Si, en un sistema homogéneo cuyo estado queda definido por dos de 
+las magnitudes de estado $P$, $V$ o $T$, i.e. intercambia energía en 
+forma de calor y trabajo presión-volumen, el $V =$ cte.:</p>
+
+	<p style="text-align:center">
+		$q_V = dU_V$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$C_V = \dfrac{q_V}{dT_V} = \dfrac{dU_V}{dT_V} = \left(
+		\dfrac{\partial U}{\partial T} \right)_{\! V}$</p>
+		
+<p>Donde $C_V$ es la capacidad calorífica a volumen constante.</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$q = \left( \dfrac{\partial U}{\partial T} \right)_{\! V} dT +
+		\left[ \left( \dfrac{\partial U}{\partial V} \right)_{\! T} + P
+		\right] dV$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$q = C_V \, dT + \left[ \left( \dfrac{\partial U}{\partial V} 
+		\right)_{\! T} + P \right] dV$</p>
+		
+<p>Si $P =$ cte.:</p>
+
+	<p style="text-align:center">
+		$q_P = C_V \, dT_P + \left[ \left(\dfrac{\partial U}{\partial V}
+		\right)_{\! T} + P \right] dV_P$
+	
+<p>Siendo, donde $C_P$ es la capacidad calorífica a presión constante:</p>
+
+	<p style="text-align:center">
+		$C_P = \dfrac{q_P}{dT_P} \Rightarrow q_P = C_P \, dT_P$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			C_P \, dT_P = C_V \, dT_P +
+			\left[ \left( \dfrac{\partial U}{\partial V} \right)_{\! T} + P
+			\right] dV_P \\[1ex]
+			C_P = C_V +	\left[ \left(	\dfrac{\partial U}{\partial V}
+			\right)_{\! T}  + P	\right] \!
+			\left( \dfrac{\partial V}{\partial T} \right)_{\! P} \\[1ex]
+			C_P - C_V =
+			\underset{
+				\begin{subarray}{c}
+					\text{el producto, trabajo interno por} \\
+					\text{unidad de temperatura}
+				\end{subarray}
+			}{
+				\biggl[ \underset{\uparrow}{\left( \dfrac{\partial U}{\partial V}
+				\right)_{\! T}}  +
+				\overset{
+					\mspace{-27mu}
+					\begin{subarray}{c}
+						\text{trabajo externo} \\
+						\text{por unidad} \\
+						\text{de temperatura}
+					\end{subarray}
+				}{
+					\overset{\downarrow}{P \vphantom{\bigg(}} \biggr]
+					\overset{\downarrow}{
+					\underset{\uparrow}{\left(\dfrac{\partial V}{\partial T}
+					\right)_{\! P}}}}}
+		\end{array}
+		$
+	</p>
+	
+<p>Al primer término de la suma entre corchetes se le conoce a menudo 
+como presión interna, tiene dimensiones de presión:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial U}{\partial V} \right)_{\! T} \equiv \left[
+		\dfrac{\pu{J}}{\pu{m3}} \right] = \left[ \dfrac{\pu{N m}}{\pu{m3}}
+		\right] = \left[ \dfrac{\pu{N}}{\pu{m2}} \right]
+		$
+	</p>
+	
+<p>Si $H = H(P,T)$:</p>
+
+	<p style="text-align:center">
+		$dH= \left( \dfrac{\partial H}{\partial T} \right)_{\! P} dT +
+		\left( \dfrac{\partial H}{\partial P} \right)_{\! T} dP$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$q = dH - V \, dP$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$q = \left( \dfrac{\partial H}{\partial T} \right)_{\! P} dT +
+		\left[ \left( \dfrac{\partial H}{\partial P} \right)_{\! T} - V
+		\right] dP$</p>
+		
+<p>Si $P =$ cte. ($dP = 0$):</p>
+
+	<p style="text-align:center">
+		$q_P = \left( \dfrac{\partial H}{\partial T} \right)_{\! P} dT_P$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$C_P = \left( \dfrac{\partial H}{\partial T} \right)_{\! P}$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$q = C_P \, dT + \left[ \left( \dfrac{\partial H}{\partial P} 
+		\right)_{\! T} - V \right] dP$</p>
+		
+<p>Si $V =$ cte.:</p>
+
+	<p style="text-align:center">
+		$q_V = C_P \, dT_V + \left[ \left( \dfrac{\partial H}{\partial P}
+		\right)_{\! T} - V \right] dP_V$</p>
+		
+<p>Es:</p>
+
+	<p style="text-align:center">
+		$q_V = C_V \, dT_V$</p>
+		
+<p>Reemplazando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			C_V \, dT_V =	C_P \, dT_V +
+			\left[ \left( \dfrac{\partial H}{\partial P} \right)_{\! T}
+			- V \right] dP_V \\[1ex]
+			C_V = C_P +
+			\left[ \left( \dfrac{\partial H}{\partial P} \right)_{\! T} - V
+			\right] \left( \dfrac{\partial P}{\partial T} \right)_{\! V} \\[1ex]
+			C_P - C_V = \left[ V - \left( \dfrac{\partial H}{\partial P}
+			\right)_{\! T} \right] \left( \dfrac{\partial P}{\partial T}
+			\right)_{\! V}
+		\end{array}
+		$
+	</p>
+	
+<p>$\ast$ Para un gas ideal:</p>
+
+<ol>
+	<li>$PV = nRT$</li>
+	<li>$U = U(T)$
+		<p style="text-indent:0">Como:</p>
+		<p style="text-align:center">
+			$dU = \left(\dfrac{\partial U}{\partial T}\right)_{\! V} dT + \left(
+			\dfrac{\partial U}{\partial V}\right)_{\! T} dV$</p>
+		<p style="text-indent:0">
+			Entonces, si $U$ sólo cambia con $T$ para un gas ideal:</p>
+		<p style="text-align:center">
+			$\left( \dfrac{\partial U}{\partial V} \right)_{\! T} = 0$ &emsp;
+			Ley de Joule</p>
+		<p style="text-indent:0">Además, siendo:</p>
+		<p style="text-align:center">
+			$\left(\dfrac{\partial U}{\partial T}\right)_{\! V} = C_V$</p>
+		<p style="text-indent:0">Por tanto, para un gas ideal:</p>
+		<p style="text-align:center">
+			$dU = C_V \, dT \Rightarrow C_V = \dfrac{dU}{dT}$</p>		
+		<p style="text-indent:0">Y como $U$, para un gas ideal, es función de
+		$T$, entonces:</p>
+		<p style="text-align:center">
+			$C_V = C_V(T)$</p>
+		<p style="text-indent:0">Aunque a menudo $C_V$ puede, con poco 
+		error, si la temperatura no cambia mucho, considerarse 
+		constante:</p>
+		<p style="text-align:center">
+			$C_V \approx$ cte.</p>
+	</li>
+</ol>
+
+<p>- Experimento de Joule:</p>
+
+<center>
+	<object data="capacidades_calorificas_1.svg" type="image/svg+xml"
+	width="262" height="131"></object>
+</center>
+
+<p>Dos contenederos, con paredes fijas que permiten el paso de calor, 
+comunicados mediante un tubo con válvula de paso, sumergidos en un baño 
+de agua. Uno contiene gas, el otro está vacío.</p>
+
+<p>Antes de iniciar el experimento, o proceso, la temperatura es la 
+misma en todo el dispositivo. Se abre la llave de la válvula y el gas 
+se expande hacia el contenedor sin contenido. Como es una expansión 
+contra el vacío $W = 0$. Cuando finaliza el experimento, cuando la 
+presión es la misma en ambos contenedores, la temperatura del baño no 
+ha variado, y por tanto la del sistema tampoco, por lo que $Q = 0$. Así 
+pues:</p>
+
+	<p style="text-align:center">
+		$\Delta U = Q + W = 0$</p>
+		
+<p>Como, en este proceso, la energía interna no varía:</p>
+
+	<p style="text-align:center">
+		$dU = \left(\dfrac{\partial U}{\partial T}\right)_{\! V}
+		\cancelto{\;\! 0}{dT} \! + \left(\dfrac{\partial U}{\partial V}\right)_{\! T}
+		\underbrace{dV}_{\hphantom{0} \, \neq \, 0} = 0$
+	</p>
+	
+<p>Por tanto, según este experimento:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial U}{\partial V}\right)_{\! T} = 0$</p>
+		
+<p>Siendo que:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial U}{\partial P}\right)_{\! T} = \underbrace{\left(
+		\dfrac{\partial U}{\partial V} \right)_{\! T}}_{0} \underbrace{\left(
+		\dfrac{\partial V}{\partial P} \right)_{\! T}}_{\hphantom{0} \, \neq \, 0}$
+	</p>
+	
+<p>Así que también aquí:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial U}{\partial P}\right)_{\! T}= 0$</p>
+		
+<p>Además puede concluirse directamente del experimento que:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm J} = \left( \dfrac{\partial T}{\partial V} \right)_{\! U} = 0$</p>
+		
+<p>Donde $\mu_{\rm J}$ es el coeficiente de Joule.</p>
+
+<p>Aplicando la relación cíclica:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left( \dfrac{\partial U}{\partial V} \right)_{\! T} \left(
+			\dfrac{\partial T}{\partial U} \right)_{\! V} \left(
+			\dfrac{\partial V}{\partial T} \right)_{\! U} = -1 \\[1ex]
+			\left( \dfrac{\partial U}{\partial V} \right)_{\! T} =
+			- \dfrac{1}{
+				\left( \dfrac{\partial T}{\partial U} \right)_{\! V}
+				\left( \dfrac{\partial V}{\partial T} \right)_{\! U}
+			} = - \left( \dfrac{\partial U}{\partial T} \right)_{\! V}
+			\left( \dfrac{\partial T}{\partial V} \right)_{\! U} = -C_V \mu_{\rm J}
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, como $C_V \neq 0$, para que $U$ no dependa de $V$ 
+entonces $\mu_{\rm J} = 0$, i.e. no debería producirse un cambio de temperatura 
+con el volumen si la energía interna no varía.</p>
+
+<p>En realidad, en el experimento de Joule, sí que se producía un 
+cambio de temperatura del gas, y una transferencia de calor por tanto, 
+pero no suficiente para que, debido a la muy alta capacidad calorífica 
+del agua respecto a la del gas, fuera observable. Un resultado así, 
+como el que obtuvo Joule en teoría, sólo tiene sentido si no actúan 
+fuerzas entre las moléculas, lo que implica que no hay cambio en su 
+energía cinética (y por tanto en su temperatura) cuando se separan al 
+expandirse, que es el caso de un gas ideal.</p>
+
+<p>Así pues, para un gas ideal, aunque la presión y el volumen cambien, si
+la energía interna no lo hace tampoco la temperatura. De esto, puede
+inferirse:</p>
+
+	<p style="text-align:center">
+		$U = U(T)$ &emsp; Gas ideal.</p>
+		
+<p>Así pues, para un gas ideal:</p>
+
+	<p style="text-align:center">
+		$dU = \dfrac{dU}{dT} dT = \dfrac{dU_V}{dT_V} dT = \left(
+		\dfrac{\partial U}{\partial T} \right)_{\! V} dT = C_V dT$</p>
+		
+<p>Si se integra, teniendo en cuenta que tanto la energía interna como
+la temperatura son funciones de estado, y considerando $C_V$ constante:</p>
+
+	<p style="text-align:center">
+		$\Delta U = U_2 - U_1 = C_V (T_2 - T_1)$</p>
+		
+<p>Siendo que $H = U + PV$, entonces, para un gas ideal:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\left( \dfrac{\partial H}{\partial V} \right)_{\! T} = \!
+			\cancelto{\:\! 0}{\left( \dfrac{\partial U}{\partial V} \right)_{\! T}}
+			\! +	\! \underset{
+				\begin{subarray}{c}
+				dT \, = \, 0 \, \Rightarrow \, PV \, = \, \text{cte.} \\
+				\text{Ley de Boyle}
+				\end{subarray}
+			}{
+				\cancelto{\:\! 0}{\left( \dfrac{\partial (PV)}{\partial V}
+				\right)_{\! T}}
+			} \! = 0 \\[1ex]
+			\left( \dfrac{\partial H}{\partial P} \right)_{\! T} = 
+			\underbrace{
+				\left( \dfrac{\partial H}{\partial V} \right)_{\! T}
+				}_{\hphantom{0} \, = \, 0}
+			\left( \dfrac{\partial V}{\partial P} \right)_{\! T} = 0
+		\end{array}
+		$
+	</p>
+	
+<p>En conclusión, para un gas ideal:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			C_P - C_V &amp;= \biggl[ \underbrace{
+				\left( \dfrac{\partial U}{\partial V} \right)_{\! T}
+			}_{\hphantom{0} \, = \, 0} + P \biggr] \left(
+			\dfrac{\partial V}{\partial T} \right)_{\! P} = \\[1ex]
+			&amp;= P \left( \dfrac{\partial V}{\partial T} \right)_{\! P}
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			PV = nRT &amp;\Rightarrow V = \dfrac{nRT}{P} \\[1ex]
+			&amp;\Rightarrow \left(\dfrac{\partial V}{\partial T}\right)_{\! P}
+			= \dfrac{nR}{P}
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto, sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			C_P - C_V = \cancel{P} \dfrac{nR}{\cancel{P}} \\[1ex]
+			\boxed{C_P - C_V = nR} \rlap{\quad \text{Mayer}}\\[1ex]
+			\boxed{C_{{\rm m},P} - C_{{\rm m},V} = R}
+		\end{array}
+		$
+	</p>
+	
+<p>- Experimento de Joule-Thomson:</p>
+
+<center>
+	<object data="capacidades_calorificas_2.svg" type="image/svg+xml"
+	width="388" height="211"></object>
+</center>
+
+<p>El gas fluye de manera continua, atravesando lentamente el tapón 
+poroso, desde el lado con presión más alta al de más baja. Cuando se 
+observan que las variables a un lado y al otro permanecen constantes se 
+realiza la medida experimental.</p>
+
+<p>Siendo $P_1 &gt; P_2$, pueden imaginarse dos émbolos donde el émbolo 
+$\enclose{circle}{\:\!1\:\!}$ se desplaza hacia la derecha, e igual, 
+simultáneamente, el $\enclose{circle}{\:\!2\:\!}$, traspasando, por 
+ejemplo, un mol de un lado al otro.</p>
+
+<p>El trabajo realizado:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			W &amp;= - \int_{V_1}^0 P_1 \, dV - \int_0^{V_2} P_2 \, dV = \\[1ex]
+			&amp;= -P_1 \int_{V_1}^0 dV - P_2 \int_0^{V_2} dV = -P_1 (0 - V_1) -
+			P_2 (V_2 - 0) = \\[1ex]
+			&amp;= P_1 V_1 - P_2 V_2
+		\end{align}
+		$
+	</p>
+	
+<p>Las paredes son adiabáticas, por lo que:</p>
+
+	<p style="text-align:center">
+		$Q = 0$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta U = U_2 - U_1 = Q + W = P_1 V_1 - P_2 V_2 \\[1ex]
+			U_1 + P_1 V_1 = U_2 + P_2 V_2 \\[1ex]
+			H_1 = H_2 \Rightarrow \Delta H = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Las entalpías inicial y final son iguales.</p>
+
+<p>Manteniendo constantes los valores de entrada $P_1$ y $T_1$, pueden 
+hacerse mediciones con distintos tapones porosos, con distinta 
+porosidad, lo que conduce a diferentes valores de presión y temperatura 
+de salida, obteniéndose un conjunto de estados de equilibrio con igual 
+entalpía. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			P_1, T_1, H_1 \\[1ex]
+			P_2, T_2, H_2 \\[1ex]
+			P_3, T_3, H_3 \\[1ex]
+			P_4, T_4, H_4 \\[1ex]
+			\text{etc.} \\[1ex]
+			H_1 = H_2 = H_3 = H_4 = \dotsb
+		\end{array}
+		$
+	</p>
+	
+<p>Gráficamente, siendo cada uno de ellos un punto:</p>
+
+<center>
+	<object data="capacidades_calorificas_3.svg" type="image/svg+xml"
+	width="225" height="200"></object>
+</center>
+
+<p>A partir de estos puntos se dibuja la curva isoentálpica, pudiéndose
+interpolar, donde:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm JT} = \left( \dfrac{\partial T}{\partial P} \right)_{\! H}$</p>
+		
+<p>Que es el coeficiente de Joule-Thomson, el cual es la pendiente de la
+curva isoentálpica, y que depende de la temperatura y la presión.</p>
+
+<p>Haciendo uso de la relación cíclica:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial T}{\partial P}\right)_{\! H} \left(
+		\dfrac{\partial H}{\partial T}\right)_{\! P} \left(
+		\dfrac{\partial P}{\partial H}\right)_{\! T} = -1$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\mu_{\rm JT} = \left( \dfrac{\partial T}{\partial P} \right)_{\! H} =
+		- \dfrac{1}{
+			\left(\dfrac{\partial H}{\partial T}\right)_{\! P} \left(
+			\dfrac{\partial P}{\partial H} \right)_{\! T}
+		} = - \dfrac{1}{C_P} \left(\dfrac{\partial H}{\partial P}\right)_{\! T}
+		$
+	</p>
+	
+<p>Como:</p>
+
+	<p style="text-align:center">
+		$H = U + PV$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm JT} = - \dfrac{1}{C_P} \left[\left(\dfrac{\partial U}{\partial P}
+		\right)_{\! T} + \left(\dfrac{\partial (PV)}{\partial P}\right)_{\! T}
+		\right]$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial U}{\partial P} \right)_{\! T} = \left(
+		\dfrac{\partial U}{\partial V} \right)_{\! T} \left(
+		\dfrac{\partial V}{\partial P} \right)_{\! T}$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$\boxed{ \mu_{\rm JT} = - \dfrac{1}{C_P} \left[ \left(
+		\dfrac{\partial U}{\partial V} \right)_{\! T} \left(
+		\dfrac{\partial V}{\partial P} \right)_{\! T} + \left(
+		\dfrac{\partial (PV)}{\partial P} \right)_{\! T} \right] }$</p>
+		
+<p>En particular, para un gas ideal:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\left( \dfrac{\partial U}{\partial V} \right)_{\! T} = 0 \\[1ex]
+			\left( \dfrac{\partial (PV)}{\partial P} \right)_{\! T} = 0
+		\end{array} \,
+		\right\}
+		\Rightarrow \mu_{\rm JT} = 0 \enspace
+		$ (Gas ideal).
+	</p>
+	
+<p>Para un gas real, estudio de signos:</p>
+
+	<p style="text-align:center">
+		$
+		\mu_{\rm JT} = 
+		\mathop{
+			\vphantom{
+				\underbrace{
+					\underset{
+						\begin{subarray}{c}
+							\downarrow \\
+							(+)
+						\end{subarray}
+					}{
+						\left(\dfrac{\partial U}{\partial V}\right)_{\! T}
+					}
+					\underset{
+						\begin{subarray}{c}
+						\downarrow \\
+						(-)
+						\end{subarray}
+					}{
+						\left(\dfrac{\partial V}{\partial P}\right)_{\! T}
+					}
+				}
+			}
+			\underbrace{
+				- \underset{
+					\begin{subarray}{c}
+						\downarrow \\
+						(+)
+					\end{subarray}
+				}{
+					\dfrac{1}{C_P}
+					\vphantom{\left(\dfrac{\partial U}{\partial V}\right)_{\! T}}
+				}
+			}
+		}\limits_{\, (-)} \biggl[ 
+		\underset{
+			\quad
+			\begin{subarray}{c}
+				\underbrace{\mspace{180mu}} \\[.5ex]
+				(-) \, \rm{ó} \, (+) \rlap{\, \leftarrow \smash{\text{ Dependiendo de }}
+				(\ast\ast)}
+			\end{subarray}
+		}{
+		\underbrace{
+			\underset{
+				\begin{subarray}{c}
+					\downarrow \\
+					(+)
+				\end{subarray}
+			}{
+				\overset{
+					(\ast) \strut
+				}{
+					\left(\dfrac{\partial U}{\partial V}\right)_{\! T}
+				}
+			}
+			\underset{
+				\begin{subarray}{c}
+					\downarrow \\
+					(-)
+				\end{subarray}
+			}{
+				\left(\dfrac{\partial V}{\partial P}\right)_{\! T}
+			}
+		}_{(-)} + \underset{
+			\begin{subarray}{c}
+				\downarrow \\
+				(-) \, \rm{ó} \, (+)
+			\end{subarray}
+		}{
+			\overset{
+				(\ast\ast) \strut
+			}{
+				\left(\dfrac{\partial(PV)}{\partial P}\right)_{\! T}
+			}
+		}}
+		\biggr]
+		$
+	</p>
+	
+<p>En general, la presión interna $(\ast)$ es positiva, esto es así 
+cuando las interacciones atractivas dominan, y aumenta con la presión. 
+El volumen disminuye con la presión, y conforme aumenta esta última su 
+variación tiende a cero. El término $(\ast\ast)$ depende de la presión 
+y la temperatura, como se observa en un diagrama de Amagat de un gas 
+real. Normalmente a presiones bajas, a temperaturas ordinarias, este 
+último término es negativo, excepto para hidrógeno y helio, y a altas 
+positivo. Luego, se observa experimentalmente, a presiones moderadas el 
+$\mu_{\rm JT}$ es positivo y, cuando lo son lo suficientemente, pasando por 
+cero, a elevadas negativo, tal como refleja la curva isoentálpica 
+dibujada anteriormente.</p>
+
+<p>La temperatura en la que se produce el cambio de signo del 
+coeficiente de Joule-Thomson, i.e. cuando $\mu_{\rm JT} = 0$, máximo de la 
+respectiva curva isoentálpica, se conoce como temperatura de inversión 
+de Joule-Thomson. La linea que pasa por los máximos, de todas las 
+isoentálpicas que lo tengan, es la curva de inversión. Esto es:</p>
+
+<center>
+	<object data="capacidades_calorificas_4.svg" type="image/svg+xml"
+	width="280" height="420"></object>
+</center>
+
+<p>Por tanto, en una expansión estrangulada, lo que es el experimento
+de <span style="white-space:nowrap">Joule-Thomson</span>, a las 
+presiones y temperaturas de la zona coloreada en el gráfico, donde 
+$\mu_{\rm JT} &gt; 0$, al expandirse el gas se enfría. En cambio, fuera 
+de esa zona, cuando $\mu_{\rm JT} &lt; 0$, se calienta.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../entalpia/entalpia.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../procesos/procesos.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

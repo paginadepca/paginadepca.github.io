@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Entalpía">
+<meta name="keywords" content="entalpía">
+<title>Entalpía</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Entalpía</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Para un sistema simple, que puede intercambiar calor y trabajo 
+presión-volumen con el medio, en un proceso reversible:</p>
+
+	<p style="text-align:center">
+		$q = dU - w = dU + P \, dV$</p>
+
+<p>- Si el $V =$ cte. $\Rightarrow dV = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$q_V = dU_V + \! \cancelto{\, 0}{P \, dV} \! \enspace \Rightarrow 
+		\enspace q_V = dU_V$</p>
+		
+<p>Así pues, si se realiza un proceso en el cual se mantiene el volumen
+constante, el calor coincide con la variación de energía interna, y, por
+tanto, en este caso el calor es función de estado. Esto es:</p>
+
+	<p style="text-align:center">
+		$Q_V = \Delta U_V$</p>
+		
+<p>- Si $P =$ cte. $\Rightarrow dP = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_P = dU_P + P \, dV_P \\[1ex]
+			q_P = d(U + PV)_P
+		\end{array}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$d(U + PV)_P = dU_P + \underbrace{V \, dP}_0 + P \, dV_P = dU_P + P \,
+		dV_P$</p>
+		
+<p>Se define la entalpía, $H$, como:</p>
+
+	<p style="text-align:center">
+		$\boxed{H = U + PV}$</p>
+		
+<p>El producto $PV$, como $U$, tiene dimensiones de energía, es el 
+producto de dos variables de estado, una intensiva y la otra extensiva 
+(como en el caso de las distintas formas de trabajo). Como $U$, $P$ y 
+$V$ son funciones de estado entonces $H$ también lo es.</p>
+
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$q_P = dH_P$</p>
+		
+<p>En este caso, presión constante, el calor también es función de estado.</p>
+
+<p>Diferenciando, puede comprobarse que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dH = \overbrace{dU + P \, dV}^{\large q} + V \, dP \\[1ex]
+			q = dH - V \, dP \\[1ex]
+			q_P = dH_P \Rightarrow Q_P = \Delta H_P
+		\end{array}
+		$
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:
+
+<p>Trabajo de tipo eléctrico:</p>
+
+	<p style="text-align:center">
+		$w = \mathcal{E} \, dQ_e$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q = dU - w = dU - \mathcal{E} \, dQ_e \\[1ex]
+			q = dU - \mathcal{E} \, dQ_e - Q_e \, d\mathcal{E} + Q_e \,
+			d\mathcal{E} \\[1ex]
+			q = d(\underbrace{U - \mathcal{E} Q_e}_{\large H_e}) + Q_e
+			\, d\mathcal{E} \\[1ex]
+			q_{\mathcal{E}} = dH_{e,\mathcal{E}}
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p>Se puede dar el caso en que estén presentes varios tipos de trabajo:</p>
+
+	<p style="text-align:center">
+		$q = dU + P \, dV + X \, dY$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q = dU + P \, dV + V \, dP - V \, dP + X \, dY
+			\\[1ex]
+			q = dH - V \, dP + X \, dY \\[1ex]
+			q_P \neq dH_P
+		\end{array}
+		$
+	</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../calor_trabajo/calor_trabajo.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../capacidades_calorificas/capacidades_calorificas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Aplicaciones de la medida de fem de una pila">
+<meta name="keywords" content="aplicaciones, medida, fem, pila">
+<title>Aplicaciones de la medida de fem de una pila</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Aplicaciones de la medida de fem de una pila</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+	<p style="margin-left:30px">
+		A) Determinación $\gamma_{\pm}$.</p>
+		
+	<p style="margin-left:30px">
+		B) Determinación de magnitudes termodinámicas.</p>
+		
+<p>- Caso A:</p>
+
+<p>La pila formada por un solo electrolito, un electrodo reversible al
+catión y un electrodo reversible al anión. Por ejemplo, para hallar
+$\gamma_{\pm}$ de una disolución de $\ce{HCl}$:</p>
+
+	<p style="text-align:center">
+		$\ce{Pt} \, {|} \, \ce{H2_{(g)} (\,$f$ = \pu{1 atm})} \, {|} \, 
+		\ce{HCl_{(aq)}} \, {|} \, \ce{HgCl2} \, {|} \, \ce{Hg} \, {|} \, 
+		\ce{Pt}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\ce{1/2 H2 &lt;=&gt; H+ + 1 e^-(Pt_I)} \\[1ex]
+			\ce{1/2 Hg2Cl2 + 1 e^-(Pt_D) &lt;=&gt; Hg + Cl-} \\[1ex]
+			\hline
+			\ce{1/2 H2 + 1/2 Hg2Cl2 + 1 e^-(Pt_D) &lt;=&gt; H+ + Hg + Cl- +
+			1 e^-(Pt_I)} 
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			E &amp;= E° - \dfrac{RT}{F} \ln
+			\dfrac{
+				a_{\ce{Hg}} \, a_{\ce{H+}} \, a_{\ce{Cl-}}
+			}{
+				a_{\ce{H2}}^{1/2} \, a_{\ce{Hg2Cl2}}^{1/2}
+			} = E° - \dfrac{RT}{F} \ln a_{\ce{H+}} a_{\ce{Cl-}} = \\[1ex]
+			&amp;= E° - \dfrac{RT}{F} \ln [(m_+ \gamma_+)(m_- \gamma_-)]
+		\end{align}
+		$
+	</p>
+	
+<p>Si no se considera la formación de pares iónicos ($m = m_+ \! = m_-$):</p>
+
+	<p style="text-align:center">
+		$E = E° - \dfrac{RT}{F} \ln (m^2 \gamma_{\pm}^2)$</p>
+		
+<p>Si, usando por ejemplo potenciales normales de electrodo tabulados 
+para su cálculo, se conoce $E°$, midiendo la fem de la pila $E$, para 
+una concentración dada $m$, puede hallarse $\gamma_{\pm}$.</p>
+
+<p>Si no se conoce $E°$ puede obtenerse experimentalmente. Esto es,
+reescribiendo la anterior ecuación:</p>
+
+	<p style="text-align:center">
+		$E + \dfrac{2RT}{F} \ln m = E° - \dfrac{2RT}{F} \ln \gamma_{\pm}$</p>
+		
+<p>Representando, a partir de datos experimentales, el lado izquierdo 
+de la igualdad frente a $\sqrt{m}$, para disoluciones muy diluidas $\ln 
+\gamma_{\pm}$ es proporcional a $\sqrt{m}$ (ley de Debye-Hückel), y 
+extrapolando a dilución infinita, $m \to 0 \Rightarrow \gamma_{\pm} \to 
+1 \Rightarrow \ln \gamma_{\pm} \to 0$, se encontraría $E°$.</p>
+
+<p>- Caso B:</p>
+
+<p>Cuando se alcanza el equilibrio químico una pila se agota, la 
+corriente deja de circular siendo $E = 0$. En tal caso:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			nFE = 0 &amp;= \underbrace{-\Delta G°}_{nFE°} \mspace{-4mu} - RT 
+			\ln \mspace{-2mu} \underbrace{\prod_i a_{i,\rm eq}^{\nu_i}}_{K_a} 
+			= \\[1ex] &amp;= nFE° - RT \ln K_a \, \Rightarrow \ln K_a = 
+			\dfrac{nF}{RT} E°			
+		\end{align}	
+		$
+	</p>
+	
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta S° &amp;= \sum_i \nu_i S°_{\!\! \lower 2mu i} = \\[1ex]
+			&amp;= \sum_i \nu_i \left( \dfrac{\partial}{\partial n_i} S°
+			\right)_{\! T,n_{j \neq i}} \!
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\
+					dG° \rlap{\, = \, -S° \mspace{2mu} dT \enspace
+					(\text{sist. cerrado}, \, G° \, = \, G°(T))}
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= - \sum_i \nu_i \left( \dfrac{\partial}{\partial n_i}
+			\dfrac{dG°}{dT}	\right)_{\! T,n_{j \neq i}} = \\[1ex]
+			&amp;= - \sum_i \nu_i \dfrac{d}{dT} 
+			\underbrace{
+				\left( \dfrac{\partial G°}{\partial n_i}
+				\right)_{\! T,n_{j \neq i}}
+			}_{\mu°_{\mspace{-5mu} \lower 2mu i}} = \\[1ex]
+			&amp;= - \sum_i \nu_i \dfrac{d\mu°_{\!\! \lower 2mu i}}{dT}	= \\[1ex]
+			&amp;= - \dfrac{d}{dT} \sum_i \nu_i	\mu°_{\!\! \lower 2mu i}
+			= - \dfrac{d \Delta G°}{dT}
+		\end{align}
+		$
+	</p>
+	
+<p>Como $\Delta G° = -nFE°$, tras sustituir:</p>
+
+	<p style="text-align:center">
+		$\Delta S° = nF \dfrac{dE°}{dT}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\Delta G° = \Delta H° - T \Delta S° \, \Rightarrow \, \Delta H° =
+		\Delta G° + T \Delta S°$</p>
+		
+<p>Por tanto, reemplazando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H° &amp;= -nFE° + nFT \dfrac{dE°}{dT} = \\[1ex]
+			&amp;= nF \left( T \dfrac{dE°}{dT} - E° \right)
+		\end{align}
+		$
+	</p>
+	
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta C°_{\!\! \lower 2mu P} &amp;= \sum_i \nu_i
+			C°_{\!\! \lower 2mu {P,i}} = \\[1ex]
+			&amp;= \sum_i \nu_i \left( \dfrac{\partial}{\partial n_i}
+			C°_{\!\! \lower 2mu P} \right)_{\! T,n_{j \neq i}} \!
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\[.5ex]
+					dH° \rlap{\, = \, C°_{\!\! \lower 2mu P} \, dT}
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= \sum_i \nu_i \left( \dfrac{\partial}{\partial n_i}
+			\dfrac{dH°}{dT} \right)_{\! T,n_{j \neq i}} = \\[1ex]
+			&amp;= \sum_i \nu_i \dfrac{d}{dT}
+			\underbrace{
+				\left( \dfrac{\partial H°}{\partial n_i}
+				\right)_{\! T,n_{j \neq i}}
+			}_{H°_{\mspace{-5mu} \lower 2mu i}} = \\[1ex]
+			&amp;= \sum_i \nu_i \dfrac{dH°_{\!\! \lower 2mu i}}{dT} = \\[1ex]
+			&amp;= \dfrac{d}{dT} \sum_i \nu_i H°_{\!\! \lower 2mu i} =
+			\dfrac{d \Delta H°}{dT}
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto, derivando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta C°_{\!\! \lower 2mu P} &amp;= nF \biggl( 
+			\cancel{\dfrac{dE°}{dT}} \! + T	\dfrac{d^2 E°}{dT^2} - \!
+			\cancel{\dfrac{dE°}{dT}} \biggr) = \\[1ex]
+			&amp;= nFT \dfrac{d^2 E°}{dT^2}
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo también:</p>
+
+	<p style="text-align:center">
+		$\Delta C°_{\!\! \lower 2mu P} = T
+		\underbrace{nF \dfrac{d^2 E°}{dT^2}}_{\tfrac{d \Delta S°}{dT}} =
+		T \dfrac{d \Delta S°}{dT}$</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../potenciales_normales_electrodo/potenciales_normales_electrodo.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../equilibrio_fases_sistemas_dos_componentes/equilibrio_fases_sistemas_dos_componentes.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

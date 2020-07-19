@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="181.97" height="181.59" version="1.1" viewBox="0 0 181.97 181.59" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <marker id="Arrow2Mstart" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <pattern id="pattern2707-224" patternTransform="matrix(.32009 .32009 -.32009 .32009 250 147.52)" xlink:href="#Strips1_10-836"/>
+  <pattern id="Strips1_10-836" width="11" height="1" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <rect y="-.5" width="1" height="2" fill="#999"/>
+  </pattern>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-74.856 -66.005)">
+  <path d="m130 107.52v115" fill="none" stroke="#999" stroke-dasharray="3.00472426, 3.00472426" stroke-width="1.0016"/>
+  <path d="m210 182.52v40" fill="none" stroke="#999" stroke-dasharray="3.00472426, 3.00472426" stroke-width="1.0016"/>
+  <path d="m130 107.52s22.703 40.347 40 55c11.374 9.6356 40 20 40 20v40h-80z" fill="url(#pattern2707-224)"/>
+  <path d="m100 72.52v150h150" fill="none" marker-end="url(#Arrow2Mend)" marker-start="url(#Arrow2Mstart)" stroke="#000" stroke-width="1.0016"/>
+  <g>
+   <path d="m130.44 107.27-0.8711 0.49218s5.6831 10.101 13.531 22.035c7.8482 11.934 17.841 25.698 26.58 33.102 5.7777 4.8945 15.791 9.8863 24.387 13.689s15.768 6.3984 15.768 6.3984l0.33984-0.9414s-7.1401-2.5851-15.701-6.373c-8.5611-3.788-18.548-8.798-24.145-13.539-8.558-7.2497-18.565-20.984-26.393-32.887s-13.496-21.977-13.496-21.977z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <g fill-rule="evenodd" stroke="#000">
+    <path d="m208.15 181.85c0.37643-1.0397 1.5258-1.578 2.5654-1.2015 1.0397 0.37643 1.578 1.5258 1.2015 2.5654-0.37643 1.0397-1.5258 1.578-2.5654 1.2015s-1.578-1.5258-1.2015-2.5654z" stroke-width=".40063pt"/>
+    <path d="m172.45 170.08-6.3236-11.158 12.046 4.4032c-3.1566 0.75103-5.4592 3.4864-5.7223 6.7549z" stroke-linejoin="round" stroke-width=".68858"/>
+    <path d="m129.04 105.81c0.96365-0.54224 2.1858-0.20022 2.7281 0.76344 0.54224 0.96365 0.20022 2.1858-0.76343 2.7281-0.96366 0.54224-2.1858 0.20022-2.7281-0.76344-0.54224-0.96365-0.20022-2.1858 0.76344-2.7281z" stroke-width=".40063pt"/>
+   </g>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="80" y="82.519653" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="80" y="82.519653" font-family="'STIX Two Text'" font-style="italic">P</tspan></text>
+   <text x="240" y="242.51965" font-style="italic" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="240" y="242.51965">V</tspan></text>
+   <text x="120" y="102.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="120" y="102.51965">1</tspan></text>
+   <text x="215" y="187.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="215" y="187.51965">2</tspan></text>
+  </g>
+ </g>
+</svg>

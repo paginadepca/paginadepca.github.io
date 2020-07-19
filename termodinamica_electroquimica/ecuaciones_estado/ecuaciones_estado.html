@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ecuaciones de estado">
+<meta name="keywords" content="Ecuaciones, estado">
+<title>Ecuaciones de estado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Ecuaciones de estado</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+	<p>Existen relaciones algebraicas entre las variables o funciones de
+	estado de un sistema termodinámico. Su relación mediante una ecuación
+	matemática recibe el nombre de ecuación de estado.</p>
+	
+	<p>Si $X_i$ representa una función de estado intensiva del sistema,
+	entonces existe una ecuación de la forma:</p>
+	
+	<center>
+		<p>$X_{n+1} = f(X_1,X_2, \dotsc, X_n)$</p>
+	</center>
+	
+	<p>En general, con $n=2$ es suficiente para que un sistema homogéneo de
+	composición constante quede definido.</p>
+	
+	<p>Existe un número mínimo de variables de estado que caracterizan, 
+	determinan el sistema. Más en concreto, lo que se conoce como el 
+	principio de estado establece que para un sistema homogéneo de masa y 
+	composición constantes el número mínimo de variables independientes 
+	que deben conocerse viene dado por el número de formas distintas en 
+	que la energía se puede intercambiar entre el medio y el sistema.</p>
+	
+	<p>Por ejemplo, si se considera un gas, tal que sea un fluido 
+	homogéneo de masa y composición constantes, tal que no aparecen 
+	efectos superficiales, sin efectos disipativos, y que no está 
+	sometido a ningún campo, al que se le permite que pueda intercambiar 
+	calor con el medio y pueda realizar un trabajo de presión-volumen 
+	(interacción mediante compresión mecánica), entonces, según el 
+	principio de estado, el número de variables independientes pueden ser 
+	dos. Por ejemplo $P$, $T$ o $V$, $T$ o $P$, $V$. A este tipo de 
+	sistema, que puede caracterizarse sólo con dos variables, se le 
+	conoce como sistema simple. Así pues, en este caso:</p>
+	
+	<center>
+		$
+		\begin{array}{l}
+			V = g(P,T) \\[1ex]
+			P = h(V,T) \\[1ex]
+			T = k(P,V)
+		\end{array}
+		\quad \Rightarrow \quad
+		f(P,V,T) = 0
+		$
+	</center>
+	
+	<p>Las magnitudes físicas pueden ser:</p>
+	
+	<ul>
+		<li>Variables de estado: las que se controlan experimentalmente, i.e.
+		P, T ó V.
+		<center>
+			<p>$n = 2 \Rightarrow (x,y)$</p>
+		</center>
+		</li>
+		<li>Funciones de estado: Dependen de las variables de estado escogidas
+		para caracterizar el sistema.
+		<center>
+			<p>$z = z(x,y)$</p>
+		</center>
+		</li>
+	</ul>
+	
+	<p>Por tanto la ecuación de estado es la forma explícita matemática
+	de la función de estado.</p>
+	
+	<p>Las ecuaciones de estado se hallan experimentalmente o bien mediante
+	termodinámica estadística.</p>
+	
+	<p>Siendo:</p>
+	
+		<p style="margin-left:30px">
+			Estado 1: $\enspace P_1$, $V_1$, $T_1$</p>
+			
+		<p style="margin-left:30px">
+			Estado 2: $\enspace P_2$, $V_2$, $T_2$</p>
+			
+	<p>Dependiendo de la ecuación de estado, $f(P,V,T) = 0$, se tendrá en
+	una representación una superficie u otra:</p>
+	
+	<center>
+		<object data="ecuaciones_estado_1.svg" type="image/svg+xml"
+		width="300" height="300"></object>
+	</center>
+	
+	<p>Si $X$ es una variable de estado del sistema:</p>
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				\Delta X = X_f - X_i \\[1ex]
+				\Delta V = V_2 - V_1 \\[1ex]
+				\Delta P = P_2 - P_1 \\[1ex]
+				\Delta T = T_2 - T_1
+			\end{array}
+			$
+		</p>
+		
+	<p>Si la distancia que separa dos estados es infinitamente pequeña los
+	cambios en las variables de estado serán diferenciales, $dX$, siendo:</p>
+	
+		<p style="text-align:center">
+			$\Delta X = X_f - X_i = \displaystyle \int_i^f dX$
+		</p>
+		
+	<p>Si se va del estado inicial al final con una de las variables
+	contante, el proceso, dependiendo de cuál sea aquélla, se llama:</p>
+	
+		<p style="margin-left:30px">
+			$P =$ cte. &ensp; isobárico
+		</p>
+		
+		<p style="margin-left:30px">
+			$V =$ cte. &ensp; isocórico
+		</p>
+		
+		<p style="margin-left:30px">
+			$T =$ cte. &ensp; isotérmico
+		</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../funciones_estado/funciones_estado.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../proceso_reversible/proceso_reversible.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

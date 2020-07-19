@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="471" height="146.68" version="1.1" viewBox="0 0 471 146.68" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+	 @import url('../estilo.css');
+ </style>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.5 -162.02)">
+  <g fill="#faa">
+   <rect x="450" y="250.52" width="60" height="32"/>
+   <rect x="370" y="247.52" width="60" height="35"/>
+   <rect x="290" y="262.52" width="60" height="20"/>
+  </g>
+  <rect x="290" y="232.52" width="60" height="30" fill="#f2f2f2"/>
+  <rect x="210" y="272.52" width="60" height="10" fill="#faa"/>
+  <rect x="210" y="222.52" width="60" height="50" fill="#f2f2f2"/>
+  <rect x="50" y="202.52" width="60" height="80" fill="#f2f2f2" stroke="#000"/>
+  <g fill="none" stroke="#000">
+   <path d="m110 182.52v100h-60v-100"/>
+   <path d="m190 182.52v100h-60v-100"/>
+   <path d="m270 182.52v100h-60v-100"/>
+   <path d="m350 182.52v100h-60v-100"/>
+   <path d="m430 182.52v100h-60v-100"/>
+   <path d="m510 182.52v100h-60v-100"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="60.577988" y="231.89571" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="60.577988" y="231.89571">1 mol</tspan></text>
+   <text x="57.024223" y="258.23407" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="57.024223" y="258.23407"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="80.526497" y="258.23407" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="80.526497" y="258.23407">gas</tspan></text>
+  </g>
+  <g>
+   <rect x="50" y="192.52" width="60" height="10" fill="none" stroke="#000"/>
+   <rect x="75" y="167.52" width="10" height="25" fill="none" stroke="#000"/>
+   <text x="74.263977" y="303.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="74.263977" y="303.51965">A</tspan></text>
+   <rect x="130" y="212.52" width="60" height="70" fill="#f2f2f2" stroke="#000"/>
+   <text x="133.02423" y="276.2341" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="133.02423" y="276.2341"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="150.25772" y="249.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="150.25772" y="249.51965">gas</tspan></text>
+  </g>
+  <g transform="matrix(3.7795 0 0 3.7795 -50 120)" fill="none" stroke="#000" stroke-width=".26458">
+   <rect x="47.625" y="21.833" width="15.875" height="2.6458"/>
+   <rect x="54.24" y="15.219" width="2.6458" height="6.6146"/>
+  </g>
+  <text x="150.89761" y="231.89571" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="150.89761" y="231.89571"><tspan font-family="'STIX Two Text'" font-style="italic">P</tspan><tspan dy="5" font-size="10.4px">v,1</tspan></tspan></text>
+  <text x="155.04799" y="303.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="155.04799" y="303.51965">B</tspan></text>
+  <circle cx="177.5" cy="279.52" r="2.5" fill="#faa"/>
+  <g transform="matrix(3.7795 0 0 3.7795 30 130)" fill="none" stroke="#000" stroke-width=".26458">
+   <rect x="47.625" y="21.833" width="15.875" height="2.6458"/>
+   <rect x="54.24" y="15.219" width="2.6458" height="6.6146"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="234.54398" y="303.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="234.54398" y="303.51965">C</tspan></text>
+   <text x="213.02422" y="276.2341" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="213.02422" y="276.2341"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="230.25771" y="257.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="230.25771" y="257.51965">gas</tspan></text>
+   <text x="230.89758" y="239.89572" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="230.89758" y="239.89572"><tspan font-family="'STIX Two Text'" font-style="italic">P</tspan><tspan dy="5" font-size="10.4px">v,1</tspan></tspan></text>
+  </g>
+  <g transform="matrix(3.7795 0 0 3.7795 110 140)" fill="none" stroke="#000" stroke-width=".26458">
+   <rect x="47.625" y="21.833" width="15.875" height="2.6458"/>
+   <rect x="54.24" y="15.219" width="2.6458" height="6.6146"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="293.02423" y="276.2341" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="293.02423" y="276.2341"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="324.01746" y="251.63567" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="324.01746" y="251.63567">gas</tspan></text>
+   <text x="294.95724" y="251.63567" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="294.95724" y="251.63567"><tspan font-family="'STIX Two Text'" font-style="italic">P</tspan><tspan dy="5" font-size="10.4px">v,1</tspan></tspan></text>
+   <text x="317.60938" y="276.2341" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="317.60938" y="276.2341">liq.</tspan></text>
+  </g>
+  <g transform="matrix(3.7795 0 0 3.7795 190 155)" fill="none" stroke="#000" stroke-width=".26458">
+   <rect x="47.625" y="21.833" width="15.875" height="2.6458"/>
+   <rect x="54.24" y="15.219" width="2.6458" height="6.6146"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="373.02423" y="276.2341" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="373.02423" y="276.2341"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="389.77353" y="268.90765" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="389.77353" y="268.90765">liq.</tspan></text>
+   <text x="314.28" y="303.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="314.28" y="303.51965">D</tspan></text>
+  </g>
+  <circle cx="419.04" cy="250.52" r="2.5" fill="#f2f2f2"/>
+  <text x="394.92804" y="303.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="394.92804" y="303.51965">E</tspan></text>
+  <g transform="matrix(3.7795 0 0 3.7795 270 158)" fill="none" stroke="#000" stroke-width=".26458">
+   <rect x="47.625" y="21.833" width="15.875" height="2.6458"/>
+   <rect x="54.24" y="15.219" width="2.6458" height="6.6146"/>
+  </g>
+  <g fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px">
+   <text x="453.02423" y="276.2341" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="453.02423" y="276.2341"><tspan font-family="'STIX Two Text'" font-style="italic">T</tspan><tspan dy="5" font-size="10.4px">1</tspan></tspan></text>
+   <text x="469.7735" y="268.90765" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="469.7735" y="268.90765">liq.</tspan></text>
+   <text x="475.12003" y="303.51965" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="475.12003" y="303.51965">F</tspan></text>
+  </g>
+ </g>
+</svg>

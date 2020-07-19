@@ -1,0 +1,690 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","enclose.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Aplicación a sistemas homogéneos y heterogéneos">
+<meta name="keywords" content="aplicación, sistemas, homogéneos, heterogéneos">
+<title>Aplicación a sistemas homogéneos y heterogéneos</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Aplicación a sistemas homogéneos y heterogéneos</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Caso de una reacción entre gases con productos también gases (mezcla
+de gases, una única fase, sistema homogéneo):</p>
+
+	<p style="text-align:center">
+		$\ce{a A + b B + \dotsb &lt;=&gt; l L + m M + \dotsb}$ &emsp; ($P$,
+		$T$ ctes.)</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$K_a = \displaystyle \prod_i a_{i,\rm eq}^{\nu_i}$</p>
+		
+<p>Si se elige el mismo estado tipo para actividad y fugacidad ambas
+coinciden, por lo que:</p>
+
+	<p style="text-align:center">
+		$K_a = K_f =
+		\dfrac{
+			(f_{\ce{L},\rm eq} {∕} f°_{\!\! \lower 2mu \ce{L}})^l \cdot
+			(f_{\ce{M},\rm eq} {∕} f°_{\!\! \lower 2mu \ce{M}})^m \dotsm
+		}{
+			(f_{\ce{A},\rm eq} {∕} f°_{\!\! \lower 2mu \ce{A}})^a \cdot
+			(f_{\ce{B},\rm eq} {∕} f°_{\!\! \lower 2mu \ce{B}})^b \dotsm
+		} = \displaystyle \prod_i \left(
+		\dfrac{f_{i,\rm eq}}{f°_{\!\! \lower 2mu i}} \right)^{\! \nu_i}
+		$
+	</p>
+	
+<p>Debido a que tiene unidades (de presión), se divide cada fugacidad
+por la fugacidad en el estado tipo (cuyo valor es $\pu{1 atm}$).</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$f_{i,\rm eq} = \gamma_{i,\rm eq} P_{i,\rm eq}$</p>
+		
+<p>Donde $\gamma_{i,\rm eq}$ y $P_{i,\rm eq}$ son, respectivamente, el
+coeficiente de fugacidad y la presión parcial de $i$ en el equilibrio.</p>
+
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_a = K_f &amp;=
+			\dfrac{
+				(P_{\ce{L},\rm eq} {∕} P°_{\!\! \lower 2mu \ce{L}})^l \cdot
+				(P_{\ce{M},\rm eq} {∕} P°_{\!\! \lower 2mu \ce{M}})^m \dotsm
+			}{
+				(P_{\ce{A},\rm eq} {∕} P°_{\!\! \lower 2mu \ce{A}})^a \cdot
+				(P_{\ce{B},\rm eq} {∕} P°_{\!\! \lower 2mu \ce{B}})^b \dotsm
+			} \cdot
+			\dfrac{
+				\gamma_{L,\rm eq}^l \cdot \gamma_{M,\rm eq}^m \dotsm
+			}{
+				\gamma_{A,\rm eq}^a \cdot \gamma_{B,\rm eq}^b \dotsm
+			}	= \\[1ex]
+			&amp;= \prod_i \left( \dfrac{P_{i,\rm eq}}{P°_{\!\! \lower 2mu i}}
+			\right)^{\! \nu_i} \cdot \prod_i \gamma_{i,\rm eq}^{\nu_i} =
+			K_P K_\gamma
+		\end{align}
+		$
+	</p>
+	
+<p>Cuando la mezcla de gases se comporta idealmente, a presión muy baja,
+resulta que $K_\gamma = 1$ y, por consiguiente, aunque sólo en este caso,
+coincide que $K_f = K_P$.</p>
+
+<p>Tomando la expresión (la cual es válida para cualquier mezcla
+de gases) de la ley de Dalton, también:</p>
+
+	<p style="text-align:center">
+		$P_i = y_i P$</p>
+		
+<p>En donde $y_i$ es la fracción molar de $i$ y $P$ la presión total.</p>
+
+<p>Reemplazando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_a = K_f &amp;= K_\gamma \prod_i \left(
+			\dfrac{y_{i,\rm eq} P}{P°} \right)^{\! \nu_i} = \\[1ex]
+			&amp;= K_\gamma \bigl(\prod_i y_{i,\rm eq}^{\nu_i} \bigr) \left(
+			\dfrac{P}{P°} \right)^{\! \sum \nu_i} = \\[1ex]
+			&amp;= K_\gamma K_y \left( \dfrac{P}{P°} \right)^{\! \sum \nu_i}
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces, para comportamiento ideal:</p>
+
+	<p style="text-align:center">
+		$K_a = K_f = K_y \left( \dfrac{P}{P°} \right)^{\! \sum \nu_i}$</p>
+		
+<p>Si se hace en función de la concentración, en el estado tipo:</p>
+
+	<p style="text-align:center">
+		$c°_{\!\! \lower 2mu i} = \pu{1 mol/dm3}$</p>
+		
+<p>Al ser un estado tipo distinto también lo son las actividades, por
+lo que se tiene:</p>
+
+	<p style="text-align:center">
+		$K_{a_c} = \displaystyle \prod_i a_{c,i,\rm eq}^{\nu_i}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$a_{c,i} = \gamma_{c,i} \dfrac{c_i}{c°_{\!\! \lower 2mu i}}$</p>
+		
+<p>Donde $\gamma_{c,i}$ es el coeficiente de actividad correspondiente.</p>
+
+<p>Entonces, puede expresarse esta constante de equilibrio como:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_{a_c} &amp;=
+			\dfrac{
+				a_{c,\ce{L},\rm eq}^l \cdot a_{c,\ce{M},\rm eq}^m \dotsm
+			}{
+				a_{c,\ce{A},\rm eq}^a \cdot a_{c,\ce{B},\rm eq}^b \dotsm
+			} = \\[1ex]
+			&amp;=
+			\dfrac{
+				(c_{\ce{L},\rm eq} {∕} c°_{\!\! \lower 2mu \ce{L}})^l \cdot
+				(c_{\ce{M},\rm eq} {∕} c°_{\!\! \lower 2mu \ce{M}})^m
+			}{
+				(c_{\ce{A},\rm eq} {∕} c°_{\!\! \lower 2mu \ce{A}})^a \cdot
+				(c_{\ce{B},\rm eq} {∕} c°_{\!\! \lower 2mu \ce{B}})^b
+			} \cdot
+			\dfrac{
+				\gamma_{c,\ce{L}}^l \cdot \gamma_{c,\ce{M}}^m \dotsm
+			}{
+				\gamma_{c,\ce{A}}^a \cdot \gamma_{c,\ce{B}}^b \dotsm
+			} = \\[1ex]
+			&amp; = K_c K_{\gamma_c}
+		\end{align}
+		$
+	</p>
+	
+<p>Para gases ideales:</p>
+
+	<p style="text-align:center">
+		$P_i V = n_i RT \Rightarrow P_i = \underbrace{\dfrac{n_i}{V}}_{c_i}
+		RT \Rightarrow c_i = \dfrac{P_i}{RT}$</p>
+		
+<p>Si el comportamiento es de gases ideales, donde $K_{\gamma_c} = 1$,
+entonces:</p>
+
+	<p style="text-align:center">
+		$
+		K_{a_c} = K_c = \displaystyle
+		\prod_i \left( \dfrac{P_{i,\rm eq}}{c°_{\!\! \lower 2mu i}RT}
+		\right)^{\! \nu_i} =
+		\dfrac{
+			(P°)^{\sum \nu_i}
+			\prod\limits_i (P_{i,\rm eq}{∕}P°_{\!\! \lower 2mu i})^{\nu_i}
+		}{(c°RT)^{\sum \nu_i}} = K_P \left( \dfrac{P°}{c°RT}
+		\right)^{\! \sum \nu_i}
+		$
+	</p>
+	
+<p>Coincidiendo pues, en una reacción que es una mezcla de gases
+ideales:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			K_\gamma = K_{\gamma_c} = 1 \\[1ex]
+			\sum \nu_i = 0
+		\end{array}
+		\right\} \Rightarrow \boxed{K_f = K_P = K_y = K_c}
+		$
+	</p>
+	
+<p>- Caso de una reacción en disolución (sistema homogéneo, una sola
+fase):</p>
+
+	<p style="text-align:center">
+		$\ce{a A({dte.}) + b B + \dotsb &lt;=&gt; l L + m M + \dotsb}$ &emsp;
+		($P$, $T$ ctes.)
+	</p>
+	
+<p>Donde $\ce{A}$ es el disolvente.</p>
+
+<p>Si tanto disolvente como los solutos pueden cumplir la ley de Raoult 
+(cuando su fracción molar tiende a uno) se estaría, pues, ante una 
+mezcla condensada (componentes completamente miscibles cuyos estados
+tipo es puros a $\pu{1 atm}$ y $T$), siendo la constante de equilibrio:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_{a_x} &amp;= \prod_i a_{x,i,\rm eq}^{\nu_i}
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\[.5ex]
+					\llap{a_{x,i} \,} = \rlap{\, \Gamma_{i \rm (l)} \, f_i
+					\mspace{2mu} x_i}
+				\end{subarray}
+			}{=} \prod_i ( \Gamma_{i \rm (l)} \, f_{i, \rm eq} \, x_{i, \rm eq}
+			)^{\nu_i}	= \prod_i \Gamma_{i \rm (l)}^{\nu_i} \prod_i
+			f_{i, \rm eq}^{\nu_i} \prod_i x_{i, \rm eq}^{\nu_i} = \\[1ex]
+			&amp;= K_{\Gamma} K_f K_x
+		\end{align} 
+		$
+	</p>
+	
+<p>Donde, a $P$ y $T$, son $\Gamma_{i \rm (l)}$, $f_i$ y $x_i$,
+respectivamente, la actividad del líquido $i$ puro, el coeficiente de
+actividad de $i$ y la fracción molar de $i$ en la disolución.</p>
+	
+<p>A presiones bajas (inferiores a $\pu{10 atm}$) se tiene que 
+$K_{\Gamma} = 1$. Siendo esto así si además $K_f = 1$ (mezcla ideal), 
+entonces:</p>
+
+	<p style="text-align:center">
+		$K_{a_x} = K_x$</p>
+		
+<p>En el caso de que los solutos no puedan cumplir Raoult, pero sí
+Henry (cuando su fracción molar tiende a cero y la del disolvente a uno),
+entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle
+		K_{a_x} = a_{x,\ce{A},\rm eq}^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}}
+		a_{x,i,\rm eq}^{\nu_i} = ( \Gamma_{\ce{A} \rm (l)} \, f_{\ce{A},\rm eq}
+		\, x_{\ce{A},\rm eq} )^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}} (
+		\Gamma_{x,i} \, \gamma_{x,i,\rm eq} \, x_{i,\rm eq} )^{\nu_i}
+		$
+	</p>
+	
+<p>Hay que recalcar, que en este caso, los estados tipo de soluto y 
+disolvente son distintos, ya que reciben diferente tratamiento 
+termodinámico. Además:</p>
+
+	<p style="text-align:center">
+		$\ln \Gamma_{\ce{A} \rm (l)} = \displaystyle \int_1^P
+		\dfrac{V_{\ce{A} \rm (l)}^*}{RT} \, dP =
+		\dfrac{V_{\ce{A} \rm (l)}^* }{RT} (P-1)$, mientras que $\ln \Gamma_{x,i}
+		= \displaystyle \int_1^P \dfrac{V_{i}^\infty}{RT} \, dP$</p>
+		
+<p>Si se utiliza la escala de molalidades:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle
+		K_{a_m} = a_{x,\ce{A},\rm eq}^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}}
+		a_{m,i,\rm eq}^{\nu_i} = ( \Gamma_{\ce{A} \rm (l)} \, f_{\ce{A},\rm eq}
+		\, x_{\ce{A},\rm eq} )^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}} (
+		\Gamma_{m,i} \, \gamma_{m,i,\rm eq} \, m_{i,\rm eq} {∕}
+		m°_{\!\! \lower 2mu i})^{\nu_i}
+		$
+	</p>
+	
+<p>En la escala de concentraciones:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle
+		K_{a_c} = a_{x,\ce{A},\rm eq}^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}}
+		a_{c,i,\rm eq}^{\nu_i} = ( \Gamma_{\ce{A} \rm (l)} \, f_{\ce{A},\rm eq}
+		\, x_{\ce{A},\rm eq} )^{\nu_{\ce{A}}} \prod_{i \neq \ce{A}} (
+		\Gamma_{c,i} \, \gamma_{c,i,\rm eq} \, c_{i,\rm eq} {∕}
+		c°_{\!\! \lower 2mu i})^{\nu_i}
+		$
+	</p>
+	
+<p>Se divide, respectivamente, por $m°_{\!\! \lower 2mu i}$ $(= \pu{1 
+m})$ y $c°_{\!\! \lower 2mu i}$ $(= \pu{1 M})$ ya que coeficientes de 
+actividad, actividades y, por consiguiente, constantes de equilibrio 
+termodinámicas son adimensionales (no tienen unidades).</p>
+
+<p>Si se tienen presiones bajas las $\Gamma$ valen 1, y pueden quitarse.
+También, en el caso de que el disolvente no participe en la reacción la
+constante de equilibrio sólo vendría dada por los solutos. Si esto es
+así, a presiones (suficientemente) bajas:</p>
+
+	<p style="text-align:center">
+		$K_{a_x} = \displaystyle \prod_{i \neq \ce{A}} (\gamma_{x,i,\rm eq}
+		\, x_{i,\rm eq})^{\nu_i} = K_{\gamma_x} K_x$</p>
+		
+<p>Si, además, la reacción se realiza a concentraciones muy bajas,
+comportamiento de disolución diluida ideal, los coeficientes de actividad
+son 1 y, por tanto, las constantes de los coeficientes de actividad
+también lo son, siendo entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			K_{a_x} = K_x = \displaystyle \prod_{i \neq \ce{A}}
+			x_{i,\rm eq}^{\nu_i} \\[1ex]
+			K_{a_m} = K_m = \displaystyle \prod_{i \neq \ce{A}} (m_{i,\rm eq}
+			{∕}	m°_{\!\! \lower 2mu i})^{\nu_i} \\[1ex]
+			K_{a_c} =	K_c = \displaystyle \prod_{i \neq \ce{A}}	(c_{i,\rm eq}
+			{∕}	c°_{\!\! \lower 2mu i})^{\nu_i}
+		\end{array}
+		$
+	</p>
+	
+<p>Las tres constantes son distintas, porque los estados tipo son
+distintos. Así que siempre se ha de dar la escala en que se trabaja.</p>
+
+<p>- Caso en el que la reacción se produce con varias fases presentes,
+teniéndose, pues, una reacción heterogénea:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell;white-space:nowrap">
+				1 &emsp;</span>
+			<span style="display:table-cell;white-space:nowrap">
+				$\ce{CaCO3_{(s)} &lt;=&gt; CaO_{(s)} + CO2_{(g)}}$ &emsp;</span>
+			<span style="display:table-cell">
+				$
+				\begin{aligned}[t]
+					L &amp;= C - F + 2 = \\
+					&amp;= 2 - 3 + 2 = 1
+				\end{aligned}
+				$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				Se fija una variable <span style="white-space:nowrap">($P$ ó
+				$T$)</span> hasta llegar al equilibrio.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;white-space:nowrap">
+				2 &emsp;</span>
+			<span style="display:table-cell;white-space:nowrap">
+				$
+				\begin{array}[t]{l}
+					\ce{NH4Cl_{(s)} &lt;=&gt; NH3_{(g)} + HCl_{(g)}} \\[1ex]
+					\ce{C_{(s)} + O2_{(g)} &lt;=&gt; CO2_{(g)}}
+				\end{array}
+				$ &emsp;
+			</span>
+			<span style="display:table-cell;white-space:nowrap">
+				$L = 2 - 2 + 2 = 2$ &emsp;</span>
+			<span style="display:table-cell;padding-top:1em">
+				Fijándose dos variables ($P$ y $T$) se logrará el equilibrio.</span>
+		</span>
+	</p>
+	
+<p>Se ha hecho uso de la regla de las fases. Siendo:</p>
+
+	<p style="margin-left:30px">
+		Tipo 1: Varias fases, por cada fase una sustancia pura. Por ejemplo:</p>
+		
+	<p style="text-align:center">
+		$\ce{\nu_A A_{(\alpha)} &lt;=&gt; \nu_L L_{(\beta)} +
+		\nu_M M_{(g)}}$</p>
+	
+	<p style="margin-left:30px">
+		Donde $\alpha$ y $\beta$ son fases sólidas o líquidas puras.</p>
+		
+	<p style="margin-left:30px">
+		Tipo 2: Varias fases, una fase tiene más de 1 componente ($L \ge 2$).
+		Por ejemplo:
+	</p>
+	
+	<p style="text-align:center">
+		$\ce{\nu_A A_{(\alpha)} + \nu_B B_{(\beta)} &lt;=&gt; \nu_L
+		L_{(\alpha)} + \nu_M M_{(g)}}$</p>
+		
+	<p style="margin-left:30px">
+		Donde:</p>
+		
+		<p style="margin-left:60px">
+			$\alpha{:} \Bigg\{$
+			<span style="display:inline-block;vertical-align:middle">
+				<span style="display:block;margin-bottom:1ex">
+					fase sólida: mezcla $\ce{A}$ y $\ce{L}$</span>
+				<span style="display:block">
+					fase líquida: disolución con $\ce{A}$ disovente y $\ce{L}$
+					soluto</span>
+			</span>
+		</p>
+		
+		<p style="margin-left:60px">
+			$\beta$: fase sólida o líquida de $\ce{B}$ puro.</p>
+			
+<p>Constantes para cada tipo:</p>
+		
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{2mu} 1 \mspace{2mu}}$</p>
+		
+	<p style="text-align:center">
+		$
+		K_a = \displaystyle \prod_i a_{i,\rm eq}^{\nu_i} =
+		\dfrac{
+			a_{\ce{L_{(\beta)}},\rm eq}^{\nu_{\ce{L}}} \cdot
+			a_{\ce{M_{(g)}},\rm eq}^{\nu_{\ce{M}}}
+		}{
+			a_{\ce{A_{(\alpha)}},\rm eq}^{\nu_{\ce{A}}}
+		}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Siendo:</p>
+		
+	<p style="text-align:center">
+		$
+		\ln
+		\dfrac{
+			a_{\ce{L_{(\beta)}},\rm eq}^{\nu_{\ce{L}}}
+		}{
+			a_{\ce{A_{(\alpha)},\rm eq}}^{\nu_{\ce{A}}}
+		}
+		\underset{
+			\begin{subarray}{c}
+				\Big\uparrow \\
+				\llap{\ln \Gamma \,} =
+				\rlap{\, {\textstyle \int}_1^P \tfrac{V_{\rm m}}{RT} \,	dP} 
+			\end{subarray}
+		}{=}
+		\displaystyle \int_1^P
+		\dfrac{
+			\nu_\ce{L} V°_{\!\! \lower 2mu \ce{L}} - \nu_\ce{A}
+			V°_{\!\! \lower 2mu \ce{A}}
+		}{
+			RT
+		} \, dP =
+		\underbrace{
+		\dfrac{
+			\nu_\ce{L} V°_{\!\! \lower 2mu \ce{L}} - \nu_\ce{A}
+			V°_{\!\! \lower 2mu \ce{A}}
+		}{
+			RT
+		}}_{{\downarrow}{\downarrow}{\downarrow}} (P - 1) \mspace{-33mu}
+		\underset{
+			\begin{subarray}{c}
+				\Big\uparrow \\
+				\text{presiones bajas}
+			\end{subarray}
+		}{\simeq} \mspace{-33mu} 0
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Por consiguiente:</p>
+		
+	<p style="text-align:center">
+		$
+		\dfrac{
+			a_{\ce{L_{(\beta)}},\rm eq}^{\nu_{\ce{L}}}
+		}{
+			a_{\ce{A_{(\alpha)},\rm eq}}^{\nu_{\ce{A}}}
+		} = 1
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Entonces, empleando fugacidades:</p>
+		
+	<p style="text-align:center">
+		$K_a = \left( \dfrac{f_{\ce{M},\rm eq}}{f°_{\!\! \lower 2mu \ce{M}}}
+		\right)^{\! \nu_{\ce{M}}}$</p>
+		
+	<p style="margin-left:30px">
+		$\enclose{circle}{\mspace{2mu} 2 \mspace{2mu}}$ Si se considera
+		que $\alpha$ es una fase líquida:</p>
+		
+	<p style="text-align:center">
+		$
+		K_a =
+		\dfrac{
+			a_{\ce{L_{(\alpha)}},\rm eq}^{\nu_{\ce{L}}} \cdot
+			a_{\ce{M_{(g)}},\rm eq}^{\nu_{\ce{M}}}
+		}{
+			a_{\ce{A_{(\alpha)}},\rm eq}^{\nu_{\ce{A}}} \cdot
+			a_{\ce{B_{(\beta)}},\rm eq}^{\nu_{\ce{B}}}
+		} =
+		\dfrac{
+			(\Gamma_{x,\ce{L}} \, \gamma_{x,\ce{L_{(\alpha)}},\rm eq} \,
+			x_{\ce{L_{(\alpha)}},\rm eq})^{\nu_{\ce{L}}} \cdot \left(
+			\dfrac{f_{\ce{M},\rm eq}}{f°_{\!\! \lower 2mu \ce{M}}}
+			\right)^{\! \nu_{\ce{M}}}
+		}{
+			(\Gamma_{\ce{A}\rm (l)} \!
+			\underbrace{
+				f_{\ce{A_{(\alpha)}},\rm eq}
+			}_{
+				\begin{subarray}{c}
+					\uparrow \\
+					\text{coef. de} \\
+					\text{actividad}
+				\end{subarray}
+			} \!
+			x_{\ce{A_{(\alpha)}},\rm eq})^{\nu_{\ce{A}}} \cdot
+			\Gamma_{\ce{B}(\beta)}^{\nu_{\ce{B}}}
+		}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Si $P = \pu{1 atm}$ o (suficientemente) pequeña $\Rightarrow \Gamma
+		= 1$. Si se comporta idealmente la disolución $\Rightarrow 
+		\gamma_{x,\ce{L_{(\alpha)}},\rm eq} = f_{\ce{A_{(\alpha)}},\rm eq}
+		= 1$. Si las presiones son bajas (gas ideal) $\Rightarrow
+		f_{\ce{M},\rm eq} {∕} f°_{\!\! \lower 2mu \ce{M}} = P_{\ce{M},\rm eq}
+		{∕} P°_{\!\! \lower 2mu \ce{M}}$.</p>
+		
+<p>En un equilibrio de precipitación:</p>
+
+	<p style="text-align:center">
+		sal $\ce{&lt;=&gt;}$ disolución saturada &emsp; ($P$, p.ej.
+		$\pu{1 atm}$, y $T$)</p>
+		
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$\ce{M_{\nu_+}X_{\nu_-}_{(s)} &lt;=&gt; \nu_+ M^{$z$_+}_{(aq)} +
+		\nu_- X^{$z$_-}_{(aq)}}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		K_a =
+		\dfrac{
+			a_{+,\rm eq}^{\nu_+} \cdot a_{-,\rm eq}^{\nu_-}
+		}{
+			\Gamma_{\ce{M_{\nu_+}X_{\nu_-}_{(s)}}}
+		}
+		$
+	</p>
+	
+<p>Si $P = \pu{1 atm}$ entonces $\Gamma_{\ce{M_{\nu_+}X_{\nu_-}_{(s)}}}
+= 1$ (o aproximadamente 1 si la presión no es muy alta) y, en tal caso:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_a = K_{\rm ps} &amp;= a_{+,\rm eq}^{\nu_+} \cdot
+			a_{-,\rm eq}^{\nu_-} = \\[1ex]
+			&amp;= \left( \gamma_{+,\rm eq}
+			\dfrac{m_{+,\rm eq}}{m°_{\!\! \lower 2mu +}} \right)^{\! \nu_+}
+			\left( \gamma_{-,\rm eq}
+			\dfrac{m_{-,\rm eq}}{m°_{\!\! \lower 2mu -}} \right)^{\! \nu_-}
+			\mspace{-27mu}
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\[.5ex]
+					\gamma_\pm^\nu \, = \,  \gamma_+^{\nu_+} \gamma_-^{\nu_-} \\[.5ex]
+					\nu \, = \, \nu_+ + \, \nu_-
+				\end{subarray}
+			}{=} \\[1ex]
+			&amp;= \gamma_\pm^\nu \left(
+			\dfrac{m_{+,\rm eq}}{m°_{\!\! \lower 2mu +}} \right)^{\! \nu_+}
+			\left( \dfrac{m_{-,\rm eq}}{m°_{\!\! \lower 2mu -}}
+			\right)^{\! \nu_-}
+		\end{align}
+		$
+	</p>
+	
+<p>Donde, a la presión de $\pu{1 atm}$, se ha tenido en cuenta que
+$\Gamma_+ = \Gamma_- = 1$. Siendo también $m°_{\!\! \lower 2mu +} =
+m°_{\!\! \lower 2mu -} = \pu{1 mol // kg {dte{.}}}$. Además, se conoce
+así, la constante $K_{\rm ps}$ es el producto de solubilidad.</p>
+
+<p>También, en vez de molalidad, se puede hacer con la concentración:</p>
+
+	<p style="text-align:center">
+		$
+		K_{\rm ps} = \gamma_\pm^\nu \left(
+			\dfrac{c_{+,\rm eq}}{c°_{\!\! \lower 2mu +}} \right)^{\! \nu_+}
+			\left( \dfrac{c_{-,\rm eq}}{c°_{\!\! \lower 2mu -}}
+			\right)^{\! \nu_-}
+		$
+	</p>
+	
+<p>Para calcular $K_{\rm ps}$:</p>
+
+<ol>
+	<li>A partir de la f.e.m. de una pila.</li>
+	<li>A partir de la solubilidad de una solución. Siendo, en la
+	disolución:
+	
+		<p style="text-align:center">
+			$\dfrac{S \text{ moles de soluto}}{\pu{1 kg} \text{ de disolvente}}$
+		</p>
+		
+	Donde $S$ es la solubilidad. Si no se tienen en cuenta la formación
+	de pares iónicos, entonces:
+	
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				m_+ = \nu_+ S \\[1ex]
+				m_- = \nu_- S
+			\end{array}
+			$
+		</p>
+	
+	Para calcular $\gamma_\pm^\nu$ puede hacerse a partir de la ley límite
+	de Debye-Hückel.
+	</li>
+</ol>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../principio_le_chatelier/principio_le_chatelier.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../sistemas_electroquimicos/sistemas_electroquimicos.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
