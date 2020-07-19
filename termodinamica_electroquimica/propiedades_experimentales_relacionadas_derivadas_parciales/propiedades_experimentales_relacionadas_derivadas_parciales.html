@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Propiedades experimentales relacionadas con derivadas parciales">
+<meta name="keywords" content="propiedades, experimentales, relacionadas, derivadas, parciales">
+<title>Propiedades experimentales relacionadas con derivadas parciales</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Propiedades experimentales relacionadas con derivadas parciales</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>- Coeficiente de dilatación cúbica ($\alpha$): La variación relativa 
+del volumen con la temperatura en un proceso a presión constante.</p>
+
+	<p style="text-align:center">
+		$\alpha = \dfrac{1}{V} \left(\dfrac{\partial V}{\partial T}\right)_{\! P}
+		= \dfrac{1}{V_{\rm m}} \left(\dfrac{\partial V_{\rm m}}{\partial T}
+		\right)_{\! P}$</p>
+		
+	<p style="text-align:center">
+		$\left(\dfrac{\partial V}{\partial T}\right)_{\! P} = \alpha V$</p>
+		
+Donde $V_{\rm m} = V{∕}n$, volumen molar. 
+		
+<p>- Coeficiente de compresibilidad isotérmica ($\kappa$): La variación 
+relativa del volumen con la presión a temperatura constante.</p>
+
+	<p style="text-align:center">
+		$\kappa = -\dfrac{1}{V} \left(\dfrac{\partial V}{\partial P}\right)_{\! T}
+		= -\dfrac{1}{V_{\rm m}} \left(\dfrac{\partial V_{\rm m}}{\partial P}
+		\right)_{\! T}$</p>
+		
+	<p style="text-align:center">
+		$\left(\dfrac{\partial V}{\partial P}\right)_{\! T} = -\kappa V$</p>
+		
+<p>Usando estos dos coeficientes, entonces:</p>
+
+	<p style="text-align:center">
+		$dV = \left(\dfrac{\partial V}{\partial T}\right)_{\! P} dT +
+		\left(\dfrac{\partial V}{\partial P}\right)_{\! T} dP = \alpha V \,
+		dT - \kappa V \, dP$</p>
+		
+<p>Si se integra entre dos estados:</p>
+
+	<p style="text-align:center">
+		$\ln \dfrac{V_2}{V_1} = \displaystyle \int_{V_1}^{V_2} \dfrac{dV}{V}
+		= \int_{T_1}^{T_2} \alpha \, dT - \int_{P_1}^{P_2} \kappa \, dP$</p>
+		
+<p>En el caso de líquidos y sólidos, si los cambios de presión y 
+temperatura no son demasiado grandes, ambos coeficientes pueden 
+considerarse constantes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\ln \dfrac{V_2}{V_1} &amp;= \ln \left(\dfrac{V_1 + \Delta V}{V_1}
+			\right) = \\[1ex]
+			&amp;= \ln \left(1 + \dfrac{\Delta V}{V_1}\right) = \alpha (T_2 -
+			T_1) - \kappa (P_2 - P_1)
+		\end{align}
+		$
+	</p>
+	
+<p>Para sistemas condensados, sólidos y líquidos, el volumen varía muy poco,
+no es demasiado importante su cambio. Por tanto:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\Delta V}{V_1} \ll 1$</p>
+		
+<p>Siendo el siguiente desarrollo en serie de Taylor:</p>
+
+	<p style="text-align:center">
+		$\ln(1+x) \approx x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4}
+		+ \dotsb$</p>
+		
+<p>Válido para $x$ pequeñas. Donde si:</p>
+
+	<p style="text-align:center">
+		$x \ll 1 \Rightarrow \ln(1+x) \approx x - \! \cancel{\dfrac{x^2}{2} +
+		\dfrac{x^3}{3} - \dfrac{x^4}{4} + \dotsb} \! \approx x$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\ln \left(1 + \dfrac{\Delta V}{V_1} \right) \approx \dfrac{\Delta V}{V_1}$
+	</p>
+	
+<p>Así, con las condiciones establecidas, pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\dfrac{\Delta V}{V_1} = \alpha (T_2 - T_1) - \kappa (P_2 - P_1) \\[1ex]
+			V_2 - V_1 = V_1 \bigl( \alpha (T_2 - T_1) - \kappa (P_2 - P_1) \bigr)
+			\\[1ex]
+			V_2 = V_1 \bigl( 1 + \alpha (T_2 - T_1) - \kappa (P_2 - P_1) \bigr)
+		\end{array}
+		$
+	</p>
+	
+<p>- Coeficiente de presión térmica isocórica ($\beta$): Variación de la
+presión con la temperatura a volumen constante. Es más difícil de hallar
+experimentalmente que los anteriores.</p>
+
+	<p style="text-align:center">
+		$\beta = \left(\dfrac{\partial P}{\partial T}\right)_{\! V} =
+		\dfrac{\alpha}{\kappa}$</p>
+		
+<p>Demostración:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\left(\dfrac{\partial P}{\partial T}\right)_{\! V} \left(
+			\dfrac{\partial V}{\partial P}\right)_{\! T} \left(\dfrac{\partial T}
+			{\partial V}\right)_{\! P} = -1 \\[1ex]
+			\left(\dfrac{\partial P}{\partial T}\right)_{\! V} = \dfrac{-1}
+			{\left(\dfrac{\partial V}{\partial P}\right)_{\! T} \left(
+			\dfrac{\partial T}{\partial V}\right)_{\! P}} = -
+			\dfrac{\left(\dfrac{\partial V}{\partial T}\right)_{\! P}}
+			{\left(\dfrac{\partial V}{\partial P}\right)_{\! T}} =
+			\dfrac{\alpha \! \cancel{V}}{\kappa \! \cancel{V}} =
+			\dfrac{\alpha}{\kappa}
+		\end{array}
+		$
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Para un gas:</p>
+	
+	<p style="margin-left:30px">
+		$\alpha = \dfrac{nR}{PV} \qquad \kappa = \dfrac{1}{P} + \dfrac{a}{V}$
+	</p>
+	
+<p>Donde $n$, $a$ y $R$ son constantes. Siendo:</p>
+
+	<p style="text-align:center">
+		$dV = \left(\dfrac{\partial V}{\partial T}\right)_{\! P} dT + \left(
+		\dfrac{\partial V}{\partial P} \right)_{\! T} dP = \alpha V \, dT -
+		\kappa V \, dP$</p>
+		
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dV &amp;= \dfrac{nR}{P \! \cancel{V}} \! \cancel{V} dT - \left(
+			\dfrac{1}{P} + \dfrac{a}{V} \right) V \, dP = \\[1ex]
+			&amp;= \dfrac{nR}{P} \, dT - \left(\dfrac{V}{P} + a \right) \, dP
+		\end{align}
+		$
+	</p>
+	
+<p>Se separa la temperatura:</p>
+
+	<p style="text-align:center">
+		$dT = \left( \dfrac{V}{nR} + \dfrac{aP}{nR} \right) dP + \dfrac{P}{nR}
+		\, dV$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$dT = \left(\dfrac{\partial T}{\partial P}\right)_{\! V} dP + \left(
+		\dfrac{\partial T}{\partial V} \right)_{\! P} dV$</p>
+		
+<p>Comparando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\left(\dfrac{\partial T}{\partial P}\right)_{\! V} =
+			\dfrac{V}{nR} + \dfrac{aP}{nR} \\[1ex]
+			\left(\dfrac{\partial T}{\partial V}\right)_{\! P} = \dfrac{P}{nR}
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando para la primera:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \int dT_{V} = \int \left( \dfrac{V}{nR} + \dfrac{aP}{nR}
+			\right) dP_{V} \\[1ex]
+			T = \dfrac{PV}{nR} + \dfrac{aP^2}{2nR} + k(V)
+		\end{array}
+		$
+	</p>
+	
+<p>Derivando ésta respecto a $V$ a $P$ constante:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial T}{\partial V}\right)_{\! P} = \dfrac{P}{nR} +
+		k'(V)$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$k'(V) = 0 \Rightarrow k(V) =$ cte.</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$PV = nRT - \dfrac{aP^2}{2} + {}$cte.</p>
+	
+</div>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../termometros/termometros.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../ecuaciones_estado_gases/ecuaciones_estado_gases.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Propiedades matemáticas de las funciones de estado">
+<meta name="keywords" content="Propiedades, matemáticas, funciones, estado">
+<title>Propiedades matemáticas de las funciones de estado</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Propiedades matemáticas de las funciones de estado</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Se supone un sistema simple en equilibrio termodinámico tal que:</p>
+
+	<p style="text-align:center">
+		$z = f(x,y)$</p>
+
+<p>De un estado inicial a otro final:</p>
+
+	<p style="text-align:center">
+		$\Delta z = z_{\rm f} - z_{\rm i} = f(x_{\rm f},y_{\rm f}) -
+		f(x_{\rm i},y_{\rm i})$</p>
+		
+<p>Si se supone un proceso elemental de un estado inicial a otro final
+infinitamente próximo:</p>
+
+	<p style="text-align:center">
+		$dz = f(x+dx,y+dy) - f(x,y)$</p>
+		
+<p>Haciendo un desarrollo en serie de Taylor:</p>
+
+	<p style="text-align:center">
+		$f(x+dx,y+dy) = f(x,y) + f'_x \, dx + f'_y \, dy + \!\! \cancel{\dfrac{1}{2!}
+		\, f''_{xx} \mspace{2mu} (dx)^2 + \dotsb}$</p>
+		
+<p>Donde es suficiente no ir más allá, debido a la proximidad infinitesimal
+de ambos estados, de los términos de primer orden. Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			dz &amp;= \! \cancel{f(x,y)} \! + f'_x \, dx + f'_y \, dy - \! \cancel{f(x,y)}
+			\! = \\[1ex]
+			&amp;= \left( \dfrac{\partial z}{\partial x} \right)_{\! y} dx +
+			\left( \dfrac{\partial z}{\partial y} \right)_{\! x} dy
+		\end{align}
+		$
+	</p>
+	
+<hr>
+	
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+	<p style="margin-left:30px">
+		$V = f(P,T)$
+	</p>
+	
+	<p style="margin-left:30px">
+		$dV =  \left( \dfrac{\partial V}{\partial P} \right)_{\! T} dP +
+		\left( \dfrac{\partial V}{\partial T} \right)_{\! P} dT = M(P,T) \, dP +
+		N(P,T) \, dT$
+	</p>
+	
+	<p style="margin-left:30px">
+		$dV = f(P,T,dP,dT)$</p>
+
+</div>
+
+<hr>
+
+<p>- Si $z=f(x,y)$, función de estado, entonces:</p>
+
+<ol>
+	<li>
+		<span style="display:block;text-align:center;margin-bottom:1em">
+			$dz(x,y,dx,dy) = \left(\dfrac{\partial z}{\partial x}\right)_{\! y} 
+			dx + \left(\dfrac{\partial z}{\partial y}\right)_{\! x} dy = M(x,y) 
+			\, dx + N(x,y) \, dy$</span>
+		A esta diferencial se la conoce como diferencial exacta o diferencial
+		total.
+	</li>
+	<li>
+		<span style="display:block;text-align:center;margin-bottom:1em">
+			$\displaystyle \int_1^2 dz(x,y,dx,dy) = \Delta z$</span>
+		Tiene un valor único. No depende del camino, sólo del estado final
+		e inicial.
+	</li>
+	<li>
+		<span style="display:block;text-align:center;margin-bottom:1em">
+			$\displaystyle \oint dz = 0$</span>
+		Integral cíclica, estados final e inicial son el mismo.
+	</li>
+	<li>
+		<span style="display:block;text-align:center;margin-bottom:1em">
+			$\left(\dfrac{\partial M(x,y)}{\partial y}\right)_{\! x} =
+			\left(\dfrac{\partial N(x,y)}{\partial x}\right)_{\! y}$</span>
+		Conocida como relación de reciprocidad, es condición necesaria y
+		suficiente para demostrar que una diferencial es exacta.
+		<p style="text-indent:0">Demostración:</p>
+		<p style="text-align:center">
+			$M(x,y) = \left( \dfrac{\partial z}{\partial x} \right)_{\! y} \qquad
+			N(x,y) = \left( \dfrac{\partial z}{\partial y} \right)_{\! x}$</p>
+		<p style="text-align:center">
+			$\left(\dfrac{\partial M(x,y)}{\partial y}\right)_{\! x} =
+			\dfrac{\partial^2 z}{\partial x \partial y} \stackrel{(\ast)}{=}
+			\dfrac{\partial^2 z}{\partial y \partial x} =
+			\left(\dfrac{\partial N(x,y)}{\partial x}\right)_{\! y}$</p>
+		<p style="text-indent:0">$(\ast)$ Según el teorema de Schwarz de 
+		las derivadas cruzadas, ambas son iguales.</p>
+	</li>
+</ol>
+
+<p>- Si:</p>
+
+	<p style="text-align:center">$f(P,V,T)=0 \qquad P = g(V,T) \qquad
+	V = h(P,T) \qquad T = k(P,V)$</p>
+	
+<p>Son variables de estado. Por tanto:</p>
+
+<p>$dP = \left(\dfrac{\partial P}{\partial V}\right)_{\! T} dV +
+\left(\dfrac{\partial P}{\partial T}\right)_{\! V} dT \tag{1} \label{1}$
+</p>
+
+<p>$dV = \left(\dfrac{\partial V}{\partial P}\right)_{\! T} dP +
+\left(\dfrac{\partial V}{\partial T}\right)_{\! P} dT \tag{2} \label{2}$
+</p>
+
+<p style="text-align:center">$dT = \left(\dfrac{\partial T}{\partial P}
+\right)_{\! V} dP + \left(\dfrac{\partial T}{\partial V}\right)_{\! P} dV$
+</p>
+
+<p>Las derivadas parciales pueden relacionarse entre sí. Aislando $dP$ en
+$\eqref{2}$:</p>
+
+<p>$dP = \dfrac{1}{\left(\dfrac{\partial V}{\partial P}\right)_{\! T}} \,
+dV - \dfrac{\left(\dfrac{\partial V}{\partial T}\right)_{\! P}}{\left(
+\dfrac{\partial V}{\partial P}\right)_{\! T}} \, dT \tag{3} \label{3}$</p>
+
+<p>Si se comparan $\eqref{3}$ y $\eqref{1}$:</p>
+
+	<p style="margin-left:30px">1.ª relación:</p>
+	
+	<p style="text-align:center">
+		$\left(\dfrac{\partial P}{\partial V}\right)_{\! T} \left(\dfrac{
+		\partial V}{\partial P}\right)_{\! T} = 1$</p>
+		
+	<p style="margin-left:30px">2.ª relación:</p>
+	
+	<p style="text-align:center">
+		$\left(\dfrac{\partial P}{\partial T}\right)_{\! V} = - \underbrace{
+		\left(\dfrac{\partial P}{\partial V} \right)_{\! T}}_{\text{de 1.ª rel.}}
+		\left(\dfrac{\partial V}{\partial T}\right)_{\! P}$</p>
+		
+	<p style="text-align:center">
+		$\left(\dfrac{\partial P}{\partial T}\right)_{\! V} \left(
+		\dfrac{\partial V}{\partial P}\right)_{\! T} \left(\dfrac{\partial T}
+		{\partial V}\right)_{\! P} = -1$</p>
+		
+	<p style="margin-left:30px">Esta última ecuación recibe el nombre, entre
+	otros, de relación cíclica.</p>
+	
+<p>- Si $X$ es una función de estado:</p>
+
+	<p style="text-align:center">
+		$X = f(P,T) \qquad X = g(V,T) \qquad V = h(P,T)$</p>
+		
+<p>Siendo, entonces:</p>
+
+	<p style="text-align:center">
+		$dX = \left(\dfrac{\partial X}{\partial P}\right)_{\! T} dP + \left(
+		\dfrac{\partial X}{\partial T}\right)_{\! P} dT \tag{4} \label{4}$</p>
+		
+	<p style="text-align:center">
+		$dX = \left(\dfrac{\partial X}{\partial V}\right)_{\! T} dV + \left(
+		\dfrac{\partial X}{\partial T}\right)_{\! V} dT \tag{5} \label{5}$</p>
+		
+	<p style="text-align:center">
+		$dV = \left(\dfrac{\partial V}{\partial P}\right)_{\! T} dP + \left(
+		\dfrac{\partial V}{\partial T}\right)_{\! P} dT \tag{6} \label{6}$</p>
+		
+<p>Se sustituye $\eqref{6}$ en $\eqref{5}$:</p>
+
+	<p style="text-align:center">
+		$dX = \left(\dfrac{\partial X}{\partial V}\right)_{\!T} \left[ \left(
+		\dfrac{\partial V}{\partial P}\right)_{\! T} dP + \left(\dfrac{\partial V}
+		{\partial T}\right)_{\! P} dT \right] + \left(\dfrac{\partial X}{\partial T}
+		\right)_{\! V} dT$</p>
+		
+<p>Operando:</p>
+
+	<p style="text-align:center">
+		$dX = \left[ \left(\dfrac{\partial X}{\partial V}\right)_{\! T} \left(
+		\dfrac{\partial V}{\partial P}\right)_{\! T} \right] dP + \left[ \left(
+		\dfrac{\partial X}{\partial V} \right)_{\! T} \left(\dfrac{\partial V}
+		{\partial T}\right)_{\! P} + \left(\dfrac{\partial X}{\partial T}
+		\right)_{\! V} \right] dT \tag{7} \label{7}$</p>
+		
+<p>Ahora, igualando $\eqref{4}$ y $\eqref{7}$:</p>
+
+	<p style="margin-left:30px">3.ª relación:</p>
+	
+	<p style="text-align:center">
+		$\left(\dfrac{\partial X}{\partial P}\right)_{\! T} = \left(
+		\dfrac{\partial X}{\partial V}\right)_{\! T} \left(\dfrac{\partial V}
+		{\partial P}\right)_{\! T}$</p>
+		
+	<p style="margin-left:30px">4.ª relación:</p>
+	
+	<p style="text-align:center">
+		$\left(\dfrac{\partial X}{\partial T}\right)_{\! P} = \left(
+		\dfrac{\partial X}{\partial V}\right)_{\! T} \left(\dfrac{\partial V}
+		{\partial T}\right)_{\! P} + \left(\dfrac{\partial X}{\partial T}
+		\right)_{\! V}$</p>
+		
+<p>También, más general, estas dos últimas relaciones pueden hallarse 
+haciendo uso de la regla de la cadena. Esto es, siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x = x(u,y) \\[1ex]
+			z = z(x,y)
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{aligned}
+			\left(\dfrac{\partial z}{\partial u}\right)_{\! y} &amp;= \left(
+			\dfrac{\partial z}{\partial x} \right)_{\! y} \left(\dfrac{\partial x}
+			{\partial u} \right)_{\! y} + \left(\dfrac{\partial z}{\partial y}
+			\right)_{\! x} \underbrace{\left(\dfrac{\partial y}{\partial u}
+			\right)_{\! y}}_{0} = \\[1ex]
+			&amp;= \left(\dfrac{\partial z}{\partial x}\right)_{\! y} \left(
+			\dfrac{\partial x}{\partial u}\right)_{\! y}
+		\end{aligned}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{aligned}
+			\left(\dfrac{\partial z}{\partial y}\right)_{\! u} &amp;= \left(
+			\dfrac{\partial z}{\partial x} \right)_{\! y} \left(\dfrac{\partial x}
+			{\partial y}\right)_{\! u} + \left(\dfrac{\partial z}{\partial y}
+			\right)_{\! x} \underbrace{\left(\dfrac{\partial y}{\partial y}
+			\right)_{\! u}}_1 = \\[1ex]
+			&amp;= \left( \dfrac{\partial z}{\partial x} \right)_{\! y} \left(
+			\dfrac{\partial x}{\partial y}\right)_{\! u} + \left(\dfrac{\partial z}
+			{\partial y}\right)_{\! x}
+		\end{aligned}
+		$
+	</p>
+
+<p>Donde haciendo las sustituciones $z \equiv X$, $x \equiv V$, $y \equiv
+T$, $u \equiv P$ se obtendrían las relaciones 3.ª y 4.ª.</p>
+
+<p>- Si $A$ y $B$ son funciones de estado:</p>
+
+	<p style="text-align:center">$A = f(x,y) \qquad B = g(x,y)$</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$dA = \left(\dfrac{\partial A}{\partial x}\right)_{\! y} dx + \left(
+		\dfrac{\partial A}{\partial y} \right)_{\! x} dy$</p>
+		
+	<p style="text-align:center">
+		$dB = \left(\dfrac{\partial B}{\partial x}\right)_{\! y} dx + \left(
+		\dfrac{\partial B}{\partial y} \right)_{\! x} dy$</p>
+		
+<p>Además se supone un proceso en que se mantiene $y$ constante, por lo
+que $dy = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$dA_y = \left(\dfrac{\partial A}{\partial x}\right)_{\! y} dx_y \qquad
+		dB_y = \left(\dfrac{\partial B}{\partial x}\right)_{\! y} dx_y$</p>
+		
+<p>Dividiendo y empleando la 1.ª relación:</p>
+
+	<p style="text-align:center">
+		$\dfrac{dA_y}{dB_y} = \dfrac{\left(\dfrac{\partial A}{\partial x}
+		\right)_{\! y} \cancel{dx_y}}{\left(\dfrac{\partial B}{\partial x}
+		\right)_{\! y} \cancel{dx_y}} = \left(\dfrac{\partial A}{\partial x}
+		\right)_{\! y} \left(\dfrac{\partial x}{\partial B}\right)_{\! y}$</p>
+		
+<p>De donde aplicando la 3.ª relación:</p>
+
+	<p style="margin-left:30px">5.ª relación:</p>
+
+	<p style="text-align:center">
+		$\dfrac{dA_y}{dB_y} = \left(\dfrac{\partial A}{\partial B}\right)_{\! y}
+		\qquad$ ($y=$ cte.)</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../proceso_reversible/proceso_reversible.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../principio_cero/principio_cero.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="330.5" height="236.11" version="1.1" viewBox="0 0 330.5 236.11" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.iki.fi/pav/software/textext/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <defs>
+  <pattern id="pattern2589-443" patternTransform="matrix(3.6452 0 0 3.6452 10 0)" xlink:href="#Polkadots-med-630"/>
+  <pattern id="Polkadots-med-630" width="10" height="10" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <circle cx="2.567" cy=".81" r=".15" fill="#f00"/>
+   <circle cx="3.048" cy="2.33" r=".15" fill="#f00"/>
+   <circle cx="4.418" cy="2.415" r=".15" fill="#f00"/>
+   <circle cx="1.844" cy="3.029" r=".15" fill="#f00"/>
+   <circle cx="6.08" cy="1.363" r=".15" fill="#f00"/>
+   <circle cx="5.819" cy="4.413" r=".15" fill="#f00"/>
+   <circle cx="4.305" cy="4.048" r=".15" fill="#f00"/>
+   <circle cx="5.541" cy="3.045" r=".15" fill="#f00"/>
+   <circle cx="4.785" cy="5.527" r=".15" fill="#f00"/>
+   <circle cx="2.667" cy="5.184" r=".15" fill="#f00"/>
+   <circle cx="7.965" cy="1.448" r=".15" fill="#f00"/>
+   <circle cx="7.047" cy="5.049" r=".15" fill="#f00"/>
+   <circle cx="4.34" cy=".895" r=".15" fill="#f00"/>
+   <circle cx="7.125" cy=".34" r=".15" fill="#f00"/>
+   <circle cx="9.553" cy="1.049" r=".15" fill="#f00"/>
+   <circle cx="7.006" cy="2.689" r=".15" fill="#f00"/>
+   <circle cx="8.909" cy="2.689" r=".15" fill="#f00"/>
+   <circle cx="9.315" cy="4.407" r=".15" fill="#f00"/>
+   <circle cx="7.82" cy="3.87" r=".15" fill="#f00"/>
+   <circle cx="8.27" cy="5.948" r=".15" fill="#f00"/>
+   <circle cx="7.973" cy="7.428" r=".15" fill="#f00"/>
+   <circle cx="9.342" cy="8.072" r=".15" fill="#f00"/>
+   <circle cx="8.206" cy="9.315" r=".15" fill="#f00"/>
+   <circle cx="9.682" cy="9.475" r=".15" fill="#f00"/>
+   <circle cx="9.688" cy="6.186" r=".15" fill="#f00"/>
+   <circle cx="3.379" cy="6.296" r=".15" fill="#f00"/>
+   <circle cx="2.871" cy="8.204" r=".15" fill="#f00"/>
+   <circle cx="4.59" cy="8.719" r=".15" fill="#f00"/>
+   <circle cx="3.181" cy="9.671" r=".15" fill="#f00"/>
+   <circle cx="5.734" cy="7.315" r=".15" fill="#f00"/>
+   <circle cx="6.707" cy="6.513" r=".15" fill="#f00"/>
+   <circle cx="5.73" cy="9.67" r=".15" fill="#f00"/>
+   <circle cx="6.535" cy="8.373" r=".15" fill="#f00"/>
+   <circle cx="4.37" cy="7.154" r=".15" fill="#f00"/>
+   <circle cx=".622" cy="7.25" r=".15" fill="#f00"/>
+   <circle cx=".831" cy="5.679" r=".15" fill="#f00"/>
+   <circle cx="1.257" cy="8.519" r=".15" fill="#f00"/>
+   <circle cx="1.989" cy="6.877" r=".15" fill="#f00"/>
+   <circle cx=".374" cy="3.181" r=".15" fill="#f00"/>
+   <circle cx="1.166" cy="1.664" r=".15" fill="#f00"/>
+   <circle cx="1.151" cy=".093" r=".15" fill="#f00"/>
+   <circle cx="1.151" cy="10.093" r=".15" fill="#f00"/>
+   <circle cx="1.302" cy="4.451" r=".15" fill="#f00"/>
+   <circle cx="3.047" cy="3.763" r=".15" fill="#f00"/>
+  </pattern>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-44.5 -17.52)">
+  <rect x="150" y="92.52" width="60" height="80" fill="#d5fff6"/>
+  <rect x="160" y="102.52" width="40" height="70" fill="#fff"/>
+  <rect x="50" y="152.52" width="120" height="50" fill="#d5fff6"/>
+  <path d="m170 122.52v80h-120v-80" fill="none" stroke="#000"/>
+  <text x="60" y="172.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="60" y="172.51965">Disolvente</tspan><tspan x="60" y="192.51965">puro A</tspan></text>
+  <g stroke="#000">
+   <path d="m330 172.52v30h-130v-30" fill="#d5fff6"/>
+   <path d="m160 172.52v-70h40v70" fill="none"/>
+   <path d="m150 172.52v-80h60v80" fill="none"/>
+  </g>
+  <rect x="320" y="32.52" width="10" height="140" fill="#d5fff6"/>
+  <rect x="260" y="172.52" width="10" height="30" fill="#808080"/>
+  <rect x="270" y="32.52" width="60" height="170" fill="url(#pattern2589-443)"/>
+  <rect x="270" y="32.52" width="50" height="140" fill="#fff"/>
+  <path d="m210 172.52h110" fill="none" stroke="#000" stroke-width="1px"/>
+  <path d="m320 172.52v-150" fill="none" stroke="#000" stroke-width="1px"/>
+  <text x="272.33109" y="191.68965" fill="#000000" font-family="'STIX Two Text'" font-size="12px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="272.33109" y="191.68965">Disolución</tspan></text>
+  <path d="m330 172.52v-150" fill="none" stroke="#000" stroke-width="1px"/>
+  <text x="206.13266" y="191.68965" fill="#000000" font-family="'STIX Two Text'" font-size="12px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="206.13266" y="191.68965">Dte. puro</tspan></text>
+  <path d="m170 152.52h200" fill="none" stroke="#000" stroke-dasharray="4, 4"/>
+  <path d="m330 32.52h40" fill="none" stroke="#000" stroke-dasharray="4, 4"/>
+  <text x="343.92001" y="97.775635" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="343.92001" y="97.775635">Π</tspan></text>
+  <g>
+   <path d="m349.5 37.52v45h1v-45z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m345.56 44.538 4.4195-12.018 4.4195 12.018c-2.6093-1.92-6.1792-1.909-8.839 0z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".6875"/>
+  </g>
+  <g>
+   <path d="m349.5 102.52v45h1v-45z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m354.44 140.5-4.4195 12.018-4.4195-12.018c2.6093 1.92 6.1792 1.909 8.839 0z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".6875"/>
+  </g>
+  <path transform="translate(44.5 17.52)" d="m220.5 185-2.4102 6.5547c0.57931-0.41578 1.2375-0.65768 1.9102-0.74219v9.1875h1v-9.1914c0.67729 0.081 1.3364 0.32385 1.9102 0.7461l-2.4102-6.5547z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+  <g fill="#000000" font-family="'STIX Two Text'" letter-spacing="0px" word-spacing="0px">
+   <text x="264.92514" y="230.99165" font-size="12px" text-align="center" text-anchor="middle" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="264.92514" y="230.99165">membrana</tspan><tspan x="264.92514" y="245.99165">semipermeable</tspan></text>
+   <text x="87.544624" y="104.54366" font-size="16px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="87.544624" y="104.54366">(I)</tspan></text>
+   <text x="283.66226" y="104.54366" font-size="16px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="283.66226" y="104.54366">(D)</tspan></text>
+  </g>
+  <g id="content" transform="matrix(1.6 0 0 -1.6 -176.7 1193)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$P_0$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m150.42 663.56h0.05l0.1-0.02h0.04l0.16-0.04h0.03l0.12-0.04 0.04-0.02 0.02-0.02 0.06-0.03 0.01-0.02 0.04-0.04v-0.02l0.02-0.04v-0.01l0.01-0.02v-0.09c0-0.14-0.03-0.35-0.16-0.8l-1.18-4.22c-0.18-0.6-0.25-0.66-0.82-0.74v-0.16h2.44v0.16c-0.62 0.09-0.67 0.12-0.67 0.46 0 0.12 0.02 0.22 0.12 0.58l0.52 1.91 0.09 0.34 0.71 2.47c0.06 0.2 0.18 0.27 0.46 0.27 0.39 0 0.77-0.1 0.97-0.24 0.26-0.17 0.37-0.47 0.37-0.94 0-0.64-0.23-1.1-0.67-1.36-0.31-0.17-0.7-0.25-1.32-0.25-0.17 0-0.25 0.01-0.52 0.05l-0.09-0.34c0.25-0.06 0.51-0.07 0.92-0.07 0.82 0 1.49 0.16 1.92 0.47 0.5 0.37 0.78 0.92 0.78 1.5 0 0.96-0.74 1.48-2.1 1.48h-2.47z"/>
+<path d="m156.82 660.44h-0.14l-0.03-0.01h-0.03l-0.04-0.01h-0.03l-0.03-0.01h-0.03l-0.27-0.09-0.02-0.02-0.03-0.01-0.03-0.02-0.02-0.01-0.06-0.04-0.02-0.02-0.03-0.02-0.02-0.01-0.03-0.02-0.02-0.03-0.03-0.02-0.02-0.02c-0.41-0.39-0.67-1.19-0.67-2 0-0.76 0.23-1.57 0.56-1.96 0.26-0.31 0.61-0.48 1.02-0.48v0.18c-0.6 0-0.91 0.75-0.91 2.2 0 1.47 0.31 2.24 0.91 2.24 0.59 0 0.91-0.79 0.91-2.24s-0.31-2.2-0.91-2.2v-0.18c0.35 0 0.65 0.12 0.91 0.37 0.4 0.38 0.67 1.18 0.67 2.03 0 1.42-0.64 2.4-1.56 2.4z"/>
+</g>
+ </g>
+</svg>

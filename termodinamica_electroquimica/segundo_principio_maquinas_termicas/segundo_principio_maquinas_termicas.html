@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Segundo principio y máquinas térmicas">
+<meta name="keywords" content="segundo, principio, máquinas, térmicas">
+<title>Segundo principio y máquinas térmicas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Segundo principio y máquinas térmicas</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Hay procesos directos, que teniendo inverso, que son posibles según
+el primer principio, i.e. no lo contradicen, no ocurren.</p>
+
+<p>$\ast$ Proceso espontáneo:</p>
+
+	<p style="margin-left:30px">
+		Aquél que, partiendo de unas condiciones iniciales, se produce de 
+		manera natural, sin necesidad de intervención exterior, y avanza 
+		hasta alcanzar el equilibrio.</p>
+		
+	<p style="margin-left:30px">
+		Todos los procesos espontáneos son irreversibles.</p>
+		
+<p>El segundo principio dice si un proceso es posible de manera 
+espontánea o no. Para ello se utilizará la entropía ($S$), que es una 
+función de estado la cual tendría un valor al principio, por ejemplo de 
+una reacción, y otro al final. Este cambio de entropía permitirá 
+discernir si el proceso es espontáneo o no. Esto es, en un proceso 
+espontáneo:</p>
+
+	<p style="text-align:center">
+		$\Delta S > 0$ &emsp; (Sistema aislado).</p>
+
+<p>- Transformación de trabajo en calor y a la inversa, indefinidamente
+y de forma constante:</p>
+
+<ol>
+	<li>$W \to Q$
+	
+	<p style="text-indent:0">Por ejemplo, por efecto de la fricción entre 
+	dos cuerpos, sobre los cuales se realiza un trabajo (contra la 
+	fricción).</p>
+	
+	<p style="text-indent:0">Se supone que el sistema son dos piedras y 
+	el medio una piscina (una gran masa de agua), inicialmente ambos a la 
+	misma temperatura. Al friccionar aquéllas, se produce un aumento de 
+	su temperatura, lo cual conlleva una cesión de calor hacia el agua, 
+	en busca del equilibrio térmico. Debido a su tamaño, el medio no 
+	altera de manera apreciable su temperatura, y así al final del 
+	proceso tampoco las piedras. Por lo que el estado del sistema no 
+	cambia, es un mero intermediario, y se produce la conversión completa 
+	de trabajo en calor. Es un proceso que, además, puede alargarse 
+	indefinidamente.</p>
+	</li>
+	<li>$Q \to W$
+	
+	<p style="text-indent:0">Si se plantea una expansión isotérmica de un
+	gas ideal, donde $\Delta U = 0$, entonces, según el primer principio:</p>
+	
+		<p style="text-align:center">
+			$W = -Q$</p>
+			
+	<p style="text-indent:0">Pero es algo que no puede prolongarse
+	indefinidamente, ya que $P$ y $V$ varían, i.e. llegará un momento que
+	la presión no podrá disminuir más o el volumen aumentar más.</p>
+	
+	<p style="text-indent:0">Por tanto, aquí se hace necesario plantear
+	un ciclo, para restablecer el sistema a la situación inicial, y empezar
+	de nuevo (indefinidamente).</p>	
+	</li>
+</ol>
+
+<p>- Máquina térmica:</p>
+
+	<p style="display:table;margin-left:30px">
+		<object data="segundo_principio_maquinas_termicas_1.svg" width="161"
+		height="240" type="image/svg+xml"
+		style="display:table-cell;vertical-align:middle;padding-right:2em">
+		</object>
+		<span style="display:table-cell;vertical-align:middle">
+			Opera, el sistema, en un ciclo entre dos focos, extrayendo calor 
+			del caliente, cediendo calor al frío y trabajo al medio, siendo 
+			que un foco es capaz de recibir y dar calor sin variar su 
+			temperatura. Es:
+			<span style="display:block;margin-top:1em;margin-bottom:1em;text-align:center">
+				$\eta = \dfrac{-W}{Q_2}$ &emsp; Rendimiento.
+			</span>
+			Se coloca un signo negativo delante de $W$ para que el rendimiento
+			tenga valor positivo.
+		</span>
+	</p>
+	
+<p>También se puede trabajar con valores absolutos:</p>
+
+	<p style="text-align:center">
+		$\eta = \dfrac{|W|}{|Q_2|}$</p>
+		
+<p>Como es un ciclo:</p>
+
+	<p style="text-align:center">
+		$0 = \Delta U_{\rm ciclo} = Q_{\rm ciclo} + W_{\rm ciclo}$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$-\underbrace{W_{\rm ciclo}}_{\large W} = Q_{\rm ciclo} =
+		Q_2 + Q_1$</p>
+		
+<p>O:</p>
+
+	<p style="text-align:center">
+		$|W| = |Q_2| - |Q_1|$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\eta = \dfrac{Q_2 + Q_1}{Q_2} = 1 + \dfrac{Q_1}{Q_2}$</p>
+		
+<p>Lo que implica que $\eta &lt; 1$ para cualquier máquina térmica, ya
+que según su operativa descrita:</p>
+
+	<p style="text-align:center;margin-top:3em">
+		$
+		\left.
+		\begin{aligned}
+		\smash[t]{
+			\left.
+			\begin{array}{l}
+				|W| + |Q_1| = |Q_2| \\[1ex]
+				|W| \neq 0 \\[1ex]
+				|W| \neq |Q_2|
+			\end{array} \,
+			\right\}
+		}
+			\Rightarrow 0 &lt; |Q_1| &amp;&lt; |Q_2| \\[1ex]
+			Q_2 &amp;&gt; 0 \\[1ex]
+			Q_1 &amp;&lt; 0
+		\end{aligned} \,
+		\right\}
+		\begin{array}[t]{l}
+			\Rightarrow 0 &lt; \dfrac{|Q_1|}{|Q_2|} &lt; 1 \\[1ex]
+			\Rightarrow 0 &gt; \dfrac{-|Q_1|}{|Q_2|} &gt; -1 \\[1ex]
+			\Rightarrow 0 &gt; \dfrac{Q_1}{Q_2} &gt; -1
+		\end{array}
+		$
+	</p>
+	
+<p>- Máquina frigorífica:</p>
+
+	<p style="display:table;margin-left:30px">
+		<object data="segundo_principio_maquinas_termicas_2.svg" width="161"
+		height="240" type="image/svg+xml" 
+		style="display:table-cell;padding-right:2em"></object>
+		<span style="display:table-cell;vertical-align:middle">
+			Donde:
+			<span style="display:block;margin-top:1em">
+				$e = \dfrac{Q_1}{W}$ &emsp; Eficacia.
+			</span>
+		</span>
+	</p>
+	
+<p>- Enunciados, basándose en máquinas térmicas, del segundo principio 
+de la termodinámica:</p>
+
+<ol>
+	<li>Kelvin-Planck:
+	
+	<p style="text-indent:0">Es imposible construir una máquina térmica 
+	cuyos ciclos sean tales que coja calor del foco caliente, produzca 
+	trabajo y no ceda calor al foco frío, i.e. todo el calor lo 
+	transforma en trabajo.</p>
+	
+		<p style="text-align:center">
+			<object data="segundo_principio_maquinas_termicas_3.svg" width="167"
+			height="240" type="image/svg+xml"
+			style="display:inline;vertical-align:middle"></object>
+			&emsp; Móvil perpetuo de segunda especie.
+		</p>
+	</li>
+	<li>Clausius:
+	
+	<p style="text-indent:0">Es imposible que una máquina traspase calor
+	desde el foco frío al caliente sin suministrarle trabajo.</p>
+	
+		<p style="text-align:center">
+			<object data="segundo_principio_maquinas_termicas_4.svg" width="186"
+			height="240" style="display:inline;vertical-align:middle"
+			type="image/svg+xml"></object>
+			&emsp;&emsp; $|Q_1| = |Q_2|$
+		</p>
+	</li>
+</ol>
+
+<p>Ambos enunciados son equivalentes. Esto es, si existiera una maquina
+del tipo Kelvin-Planck podría construirse una máquina del tipo Clausius:
+</p>
+
+<center>
+	<object data="segundo_principio_maquinas_termicas_5.svg" width="311"
+	height="265" type="image/svg+xml"></object>
+</center>
+
+<p>Al acoplar una máquina que incumple el enunciado de Kelvin-Planck a
+una máquina frigorífica, el resultado global es que se viola el enunciado
+de Clausius.</p>
+
+<p>Y, viceversa, si se tuviera una máquina frigorífica que incumpliera 
+el de Clausius y se acoplara a una máquina térmica, el resultado global 
+es que con la máquina resultante también se incumpliría el de 
+Kelvin-Planck:</p>
+
+<center>
+	<object data="segundo_principio_maquinas_termicas_6.svg" width="322"
+	height="265" type="image/svg+xml"></object>
+</center>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../termoquimica/termoquimica.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../ciclo_carnot/ciclo_carnot.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

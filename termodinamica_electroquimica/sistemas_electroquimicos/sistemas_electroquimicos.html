@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Sistemas electroquímicos">
+<meta name="keywords" content="sistemas, electroquímicos">
+<title>Sistemas electroquímicos</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Sistemas electroquímicos</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>La electroquímica se basa en las reacciones rédox, donde, para dar
+lugar al producto de la reacción, un reactivo cede electrones y otro
+los acepta. Esto es, son, por ejemplo, reacciones rédox:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\ce{2H2 + O2 -&gt; 2H2O}$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				El $\ce{H}$ pierde electrones, se oxida.
+				<span style="display:block;margin-top:1ex">
+					El $\ce{O}$ gana electrones, se reduce.</span>
+			</span>
+		</span>
+	</p>
+	
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\ce{Fe^2+ + Ce(IV) -&gt; Fe^3+ + Ce(III)}$ &emsp;
+			</span>
+			<span style="display:table-cell">
+				El $\ce{Fe^2+}$ se oxida, es el reductor.
+				<span style="display:block;margin-top:1ex">
+					El $\ce{Ce(IV)}$ se reduce, es el oxidante.</span>
+			</span>
+		</span>
+	</p>
+	
+<p>Ambas son reacciones químicas, pero hay que diferenciar entre las 
+reacciones químicas al uso, en las que, para llevarse a cabo, se 
+produce el contacto físico entre reactivos, y electroquímicas, donde 
+éste no existe, la oxidación y reducción se producen por separado, en 
+dos lugares distintos de un circuito por el cual discurren los 
+electrones. Esto es, por ejemplo, en lo que sería una pila:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell;vertical-align:middle;padding-right:2em">
+			<object data="sistemas_electroquimicos_01.svg" type="image/svg+xml"
+			width="281" height="276"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			Reacción electroquímica:
+			<span style="display:block;margin-top:1em;margin-left:30px">
+				$
+				\begin{array}{l}
+					\ce{Fe^2+ + Pt -&gt; Fe^3+ + 1e^-(Pt)} \\[1ex]
+					\ce{Ce(IV) + 1e^-(Pt) -&gt; Ce(III) + Pt}
+				\end{array}
+				$
+			</span>
+		</span>
+	</p>
+	
+<p>Podría ser también, con agua como disolvente:</p>
+
+	<p style="margin-left:30px;display:table">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				ánodo:</span>
+			<span style="display:table-cell">
+				$\ce{H2 + 2 H2O + Pt -&gt; 2 H3O+ + 2e^-(Pt)}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1em">
+				cátodo: &emsp;</span>
+			<span style="display:table-cell">
+				$\ce{1/2 O2 + 2 H3O+ +2e^-(Pt) -&gt; 3H2O + Pt}$</span>
+		</span>
+	</p>
+	
+<p>Componentes (como mínimo) de un sistema electroquímico:</p>
+
+<ul>
+	<li>un ánodo y un cátodo (son los conductores electrónicos, conducción
+	eléctrica mediante electrones, correspondientes, respectivamente, a la
+	oxidación y la reducción).</li>
+	<li>un conductor iónico (conducción eléctrica mediante iones).</li>
+	<li>una fuente o un consumidor de electrones, de corriente.</li>
+	<li>dos interfases donde se produce la reacción.</li>
+</ul>
+
+<p>Esquemáticamente:</p>
+
+<center>
+	<object data="sistemas_electroquimicos_02.svg" type="image/svg+xml"
+	width="361" height="232"></object>
+</center>
+
+<p>Los sistemas electroquimicos pueden ser productores de sustancias, 
+llamados aparatos de electrólisis, en donde se convierte energía 
+eléctrica en química, o productores de electricidad, las pilas o 
+baterías, donde se convierte energía química en eléctrica.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../aplicacion_sistemas_homogeneos_heterogeneos/aplicacion_sistemas_homogeneos_heterogeneos.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../potencial_electroquimico/potencial_electroquimico.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

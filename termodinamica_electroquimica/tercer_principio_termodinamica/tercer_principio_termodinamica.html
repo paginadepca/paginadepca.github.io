@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Tercer principio de la termodinámica">
+<meta name="keywords" content="tercer, principio, termodinámica">
+<title>Tercer principio de la termodinámica</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Tercer principio de la termodinámica</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>El incremento de entropía entre dos estados de una substancia, sin 
+cambio de fase, a distinta temperatura e igual presión:</p>
+
+	<p style="text-align:center">
+		$\Delta S = S(T_2,P) - S(T_1,P) = \displaystyle \int_{T_1}^{T_2} 
+		\dfrac{C_P}{T} \, dT = \int_{T_1}^{T_2} C_P \, d \ln T$</p>
+		
+<p>Si $T_1 = \pu{0 K}$ y $T_2 = T$:</p>
+
+	<p style="text-align:center">
+		$S(T,P) - S(0,P) = \displaystyle \int_0^T \dfrac{C_P}{T} \, dT =
+		\int_0^T C_P \, d \ln T$</p>
+		
+<p>De donde se concluye, ya que $C_P &gt; 0$, que la entropía aumenta
+con la temperatura, siendo su menor valor posible a $T = 0$.</p>
+		
+<p>Enunciado de Plack del tercer principio de la termodinámica:</p>
+
+	<p style="margin-left:30px">
+		A la temperatura de $\pu{0 K}$ la entropía de una sustancia
+		cristalina ideal es cero. Esto es:</p>
+		
+	<p style="text-align:center">
+		$\boxed{S_0 = 0}$</p>
+		
+<p>Entonces, la que se conoce como entropía calorimétrica:</p>
+
+	<p style="text-align:center">
+		$S_T = S(T,P) - \! \cancelto{0}{S(0,P)} = \displaystyle \int_0^T
+		\dfrac{C_P}{T} \, dT = \int_0^T	C_P \, d \ln T$</p>
+		
+<p>Para que la integral no diverja, i.e. $S_T$ tiene un valor finito:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{T \to 0} C_P = 0$</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../ecuaciones_termodinamicas_estado/ecuaciones_termodinamicas_estado.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../aplicaciones/aplicaciones.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

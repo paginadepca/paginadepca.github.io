@@ -1,0 +1,689 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Termoquímica">
+<meta name="keywords" content="termoquímica">
+<title>Termoquímica</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Termoquímica</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>La termoquímica se ocupa de aquellos cambios térmicos asociados con las
+reacciones químicas.</p>
+
+<p>$\ast$ Calor de reacción:</p>
+
+	<p style="margin-left:30px">
+		Calor que se intercambia entre el sistema y el medio cuando tiene 
+		lugar la transformación de reactivos a productos, manteniéndose fijas 
+		unas determinadas condiciones iniciales, i.e. $T$ y $P$ ó $V$ 
+		constantes.</p>
+
+<p>Cuando la reacción se produzca a $P =$ cte. el calor de reacción
+será una magnitud de estado:</p>
+
+	<p style="text-align:center">
+		$Q_P = \Delta H$</p>
+		
+<p>También lo será, en el caso que sea $V =$ cte.:</p>
+
+	<p style="text-align:center">
+		$Q_V = \Delta U$</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$\ce{\nu_A A + \nu_B B + \dotsb -&gt; \nu_L L + \nu_M M + \dotsb}
+		\qquad (T,P)$
+	</p>
+	
+<p>Como $P =$ cte.:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			Q_P &amp;= \Delta H = \nu_{\ce{L}} H_{\ce{L}} + \nu_{\ce{M}} H_{\ce{M}}
+			+ \dotsb - \nu_{\ce{A}} H_{\ce{A}} - \nu_{\ce{B}} H_{\ce{B}} -
+			\dotsb = \\[1ex]
+			&amp;= \sum \nu_{\rm prod} H_{\rm prod} -	\sum \nu_{\rm react}
+			H_{\rm react} =	\sum_j \nu_j H_j
+		\end{align}
+		$
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$j \rightarrow$ producto
+			</span>
+			<span style="display:table-cell">
+				${} \Rightarrow \nu_j$
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$j \rightarrow$ reactivo
+			</span>
+			<span style="display:table-cell">
+				${} \Rightarrow - \nu_j$
+			</span>
+		</span>
+	</p>
+	
+<p>Siendo $H_j$ la entalpía molar de $j$.</p>
+	
+</div>
+
+<hr>
+
+<p>Siempre se ha de indicar en la reacción el estado de agregación de
+cada reactivo y producto.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$
+		\ce{CH4_{(g)} + 2 O2_{(g)} -&gt; CO2_{(g)} + 2 H2O_{(l)}} \quad
+		\Delta H_{\pu{298 K},\pu{1 atm}} = \pu{-212,8 kcal}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{\pu{298 K},\pu{1 atm}} =
+		\Delta H\mspace{-12mu}\overset{\substack{\smash[b]{\pu{1atm}} \\
+		\downarrow}}{°}_{\mspace{-21mu} \underset{\substack{\uparrow \\
+		T}}{\lower 2mu 298}} = 2H°_{\!\! \lower 2mu {298,(\ce{H2O,l})}} +
+		H°_{\!\! \lower 2mu {298,(\ce{CO2,g})}} -
+		H°_{\!\! \lower 2mu {298,(\ce{CH4,g})}} -
+		2H°_{\!\! \lower 2mu {298,(\ce{O2,g})}}$
+	</p>
+	
+<p>Se supone que la reacción se produce de forma completa y que la pureza
+de las substancias es del $\pu{100 \%}$.</p>
+
+</div>
+
+<hr>
+
+<p>Si el $V =$ cte.:</p>
+
+	<p style="text-align:center">
+		$Q_V = \Delta U_{\rm reac} = \displaystyle \sum_j \nu_j U_j$</p>
+
+<p>El primer principio de la termodinámica dice:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta U = Q + W \\[1ex]
+			Q = \Delta U - W
+		\end{array}
+		$
+	</p>
+	
+<p>Casos:</p>
+
+<ul>
+	<li style="display:table-row">
+		<span style="display:table-cell;padding-bottom:1ex;text-indent:0">
+			Proceso a $P =$ cte.:
+		</span>
+		<span style="display:table-cell;text-indent:0">
+			$Q_P = \Delta U_P + P \Delta V$
+		</span>
+	</li>
+	<li style="display:table-row">
+		<span style="display:table-cell;text-indent:0">
+			Proceso a $V =$ cte.: &emsp;
+		</span>
+		<span style="display:table-cell;text-indent:0">
+			$Q_V = \Delta U_V$
+		</span>
+	</li>
+</ul>
+	
+<p>Siendo:</p>
+
+<ul>
+	<li style="display:table-row">
+		<span style="display:table-cell;text-indent:0">
+			Para un gas ideal:
+		</span>
+		<span style="display:table-cell;text-indent:0">
+			$\Delta U_P = \Delta U_V$, ya que $U = f(T)$.
+		</span>
+	</li>
+	<li style="display:table-row">
+		<span style="display:table-cell;text-indent:0;padding: 1ex 0">
+			Para un gas real:
+		</span>
+		<span style="display:table-cell;text-indent:0">
+			$\Delta U_P \neq \Delta U_V$, aunque a $P$ moderada $\Delta U_P
+			\simeq \Delta U_V$.
+		</span>
+	</li>
+	<li style="display:table-row">
+		<span style="display:table-cell;text-indent:0;white-space:nowrap">
+			Para sólidos y líquidos: &emsp;
+		</span>
+		<span style="display:table-cell;text-indent:0">
+			$\Delta U_P \simeq \Delta U_V$, $U = f(T)$ ya que $\Delta V
+			\simeq 0$ $\Rightarrow \! Q_P \simeq Q_V$.
+		</span>
+	</li>
+</ul>
+
+<p>Entonces aproximadamente, exacta si gas ideal, para gases a presiones
+bajas:</p>
+
+	<p style="text-align:center">
+		$Q_P \simeq Q_V + P \Delta V$</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center"> $\Delta V = V_{\rm prod} - V_{\rm 
+	react} \simeq \dfrac{n_{\rm prod} RT}{P} - \dfrac{n_{\rm react} RT}{P} = 
+	\dfrac{\Delta n RT}{P}$</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$Q_P \simeq Q_V + \Delta n RT$ &emsp; ($\sim$ gas ideal)</p>
+		
+<p>$\ast$ Ley de Lavoisier-Laplace (1780):</p>
+
+	<p style="margin-left:30px">
+		El calor de una reacción química directa es igual, pero de signo
+		opuesto, al de la reacción inversa. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ce{A -&gt; B} \\[1ex]
+			\Delta H_{\rm reac} = \Delta H_{\ce{A} \to \ce{B}} = H_{\ce{B}} -
+			H_{\ce{A}}
+		\end{array}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ce{B -&gt; A} \\[1ex]
+			\Delta H_{\ce{B} \to \ce{A}} = H_{\ce{A}} -	H_{\ce{B}} = - \Delta
+			H_{\rm reac}
+		\end{array}
+		$
+	</p>
+	
+<p>$\ast$ Ley de Hess (1840):</p>
+
+	<p style="margin-left:30px"> Una reacción global puede expresarse 
+	como una suma, resta, multiplicación o división de otras 
+	reacciones.</p>
+	
+<p>La entalpía, o calor, molar de reacción estará condicionada en su
+valor por la presión (o volumen), la temperatura y el estado de
+agregación.</p>
+
+<p>Esto se ha de tener en cuenta a la hora de tabular las entalpías
+de reacción. Por tanto, se han de tener ciertos estados tipo o estándar
+como referencia. Esto es, en el caso de sólidos o líquidos han de ser puros
+y, además, en su forma más estable a la presión de $\pu{1 atm}$ y a la
+temperatura de interés, y para los gases también han de ser puros, a la presión
+de $\pu{1 atm}$, a la $T$ de interés y, además, comportamiento ideal.</p>
+
+<p>El calor, o entalpía, de reacción tipo o estándar, suele escribirse:</p>
+
+	<p style="text-align:center">
+		$\Delta H°_{\!\! \rm reac}$</p>
+		
+<p>Siendo, y reflejándose así, como subíndice, obviamente sólo una de
+ellas, temperaturas típicas:</p>
+
+	<p style="text-align:center">
+		$\Delta H°_{\!\!\! \lower 6mu {\substack{298 \\ 273}}}$</p>
+		
+<p>Los cambios de entalpía, $\Delta H$, pueden hallarse, pero los
+valores absolutos de las entalpías, $H_j$, no.</p>
+
+<p>$\bullet$ Calor o entalpía de formación:</p>
+
+	<p style="margin-left:30px">
+		El calor de reacción necesario para obtener $\pu{1 mol}$ de substancia
+		a partir de sus elementos en el estado tipo o estándar.</p>
+		
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$\ce{C_{(s)} + 2 H2_{(g)} -&gt; CH4_{(g)}}$</p>
+		
+	<p style="text-align:center">
+		$\Delta H°_{\!\! \lower 2mu {f,\ce{CH4_{(g)}}}} =
+		H°_{\!\! \lower 2mu {\ce{CH4_{(g)}}}} -
+		H°_{\!\! \lower 2mu {\ce{C_{(s)}}}} -
+		2 H°_{\!\! \lower 2mu {\ce{H2_{(g)}}}}$</p>
+	
+</div>
+
+<hr>
+
+<p>Si por convenio a las entalpías de los elementos en el estado tipo
+se les da un valor de cero entonces:</p>
+
+	<p style="text-align:center">
+		$\Delta H°_{\!\! \lower 2mu {f,\ce{CH4_{(g)}}}} = H°_{\!\! \lower
+		2mu {\ce{CH4_{(g)}}}}$</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$\ce{CH4_{(g)} + 2 O2_{(g)} -&gt; CO2_{(g)} + 2 H2O_{(l)}}$</p>
+		
+	<p style="text-align:center">
+		$\Delta H°_{\!\! \lower 2mu T} =
+		\Delta H°_{\!\! \lower 2mu {f,\ce{CO2_{(g)}}}} +
+		2 \Delta H°_{\!\! \lower 2mu {f,\ce{H2O_{(l)}}}} -
+		\Delta H°_{\!\! \lower 2mu {f,\ce{CH4_{(g)}}}}$</p>
+	
+</div>
+
+<hr>
+
+<p>La entalpía de formación de un elemento es, por definición, no hay
+cambio, cero.</p>
+
+<p>$\bullet$ Calor de combustión:</p>
+
+	<p style="margin-left:30px">
+		El calor de reacción cuando $\pu{1 mol}$ de una substancia 
+		reacciona con oxígeno, normalmente para dar $\ce{CO2}$ y $\ce{H2O}$, 
+		conocida como reacción de combustión, en el estado tipo.</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+		<p style="text-align:center">
+			$\ce{2C_{(s)} + 3H2_{(g)} -&gt; C2H6{(g)}} \quad
+			\Delta H°_{\!\! \lower 2mu f} =$ ?</p>
+			
+		<p style="text-align:center">
+			$
+			\begin{alignat}{2}
+				{-}1 &amp;\left(\ce{C2H6_{(g)} + 7/2 O2_{(g)} -&gt; 2CO2_{(g)}
+				+ 3H2O_{(l)}}\right) &amp;\quad &amp;\Delta H°_{\!\! \lower 2mu 1}
+				= \pu{-1560 kJ/mol} \\[1ex]
+				2 &amp;\left(\ce{C_{(s)} + O2_{(g)} -&gt; CO2_{(g)}}\right)
+				&amp;\quad &amp;\Delta H°_{\!\! \lower 2mu 2} = \pu{-393,5 kJ/mol}
+				\\[1ex]
+				3 &amp;\left(\ce{H2_{(g)} + 1/2 O2_{(g)} -&gt; H2O_{(l)}}\right)
+				&amp;\quad &amp;\Delta H°_{\!\! \lower 2mu 3} = \pu{-286 kJ/mol}
+			\end{alignat}
+			$
+		</p>
+		
+		<p style="text-align:center">
+			$\Delta H°_{\!\! \lower 2mu f} = 2 \Delta H°_{\!\! \lower 2mu 2} +
+			3 \Delta H°_{\!\! \lower 2mu 3} - \Delta H°_{\!\! \lower 2mu 1} =
+			\pu{-85 kJ/mol}$</p>
+	
+</div>
+
+<hr>
+
+<p>$\bullet$ Calor integral de disolución:</p>
+
+	<p style="margin-left:30px">
+		El calor que se absorve o entrega, normalmente igual al $\Delta H$,
+		cuando se disuelve un mol de una substancia en $\pu{1000 g}$ de un
+		disolvente.</p>
+		
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<object data="termoquimica_1.svg" type="image/svg+xml" width="240"
+		height="180" style="display:table-cell"></object>
+		<span style="display:table-cell;vertical-align:middle">
+				$S \equiv$ Saturacion.
+			<span style="display:block;padding-top:1ex">
+				$m = \dfrac{\smash[b]{\text{moles soluto}}}{\pu{1000 g}
+				\smash[t]{\text{ disolvente}}}$ &ensp; (No varía con $P$ ó
+				$T$).
+			</span>
+		</span>
+	</p>
+	
+<p>Entonces, el calor integral de disolución:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\Delta H}{m}$</p>
+			
+<p>El calor integral de dilución:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{m_1 \to m_2} = \Delta H_{m_2} - \Delta H_{m_1}$</p>
+		
+<p>Típicamente, para un electrolito fuerte:</p>
+
+<center>
+	<object data="termoquimica_2.svg" type="image/svg+xml" width="320"
+	height="240"></object>
+</center>
+
+<p>Donde $\Delta H^\infty$ es el calor integral de disolución a dilución
+infinita.</p>
+
+<p>El calor molar parcial o diferencial de disolución:</p>
+
+	<p style="text-align:center">
+		$\left(\dfrac{\partial \Delta H}{\partial n_2}\right)_{\! P,T,n_1}$</p>
+		
+<p>Donde $n_1$ y $n_2$ son los moles de disolvente y soluto respectivamente.
+</p>
+
+<p>- Dependencia con la temperatura del calor de reacción:</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\Delta H° = \displaystyle \sum \nu_{\rm prod} H°_{\!\! \rm prod} -
+		\sum \nu_{\rm react} H°_{\!\! \rm react}$</p>
+		
+<p>Derivando respecto a $T$:</p>
+
+	<p style="text-align:center">
+		$\dfrac{d \Delta H°}{dT} = \displaystyle \sum \nu_{\rm prod}
+		\dfrac{dH°_{\!\! \rm prod}}{dT} - \sum \nu_{\rm react}
+		\dfrac{dH°_{\!\! \rm react}}{dT}$</p>
+		
+<p>Como la presión es constante, de $\pu{1 atm}$:</p>
+
+	<p style="text-align:center">
+		$C°_{\!\! \lower 2mu {{\rm m},P,\mspace{2mu} j}} =
+		\dfrac{dH°_{\!\! j}}{dT}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{d \Delta H°}{dT} = \displaystyle \sum \nu_{\rm prod} C°_{\!\! \lower 2mu 
+			{{\rm m},P,\rm prod}} - \sum \nu_{\rm react} C°_{\!\! \lower 2mu {{\rm m},P,\rm
+			react}} = \Delta C°_{\!\! \lower 2mu P} \\[1ex]
+			d \Delta H° = \Delta C°_{\!\! \lower 2mu P} \, dT
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle
+			\int_{\Delta H°_{\!\! \lower 2mu {T_1}}}^{\Delta H°_{\!\! \lower
+			2mu {T_2}}} d\Delta H° = \int_{T_1}^{T_2} \Delta C°_{\!\! \lower 2mu P} \,
+			dT \\[1ex]
+			\boxed{
+				\Delta H°_{\!\! \lower 2mu {T_2}} = \Delta H°_{\!\! \lower 2mu
+				{T_1}} + \displaystyle \int_{T_1}^{T_2} \Delta C°_{\!\! \lower
+				2mu P} \, dT
+			} \\
+			\text{Kirchhoff}
+		\end{array}
+		$
+	</p>
+	
+<p>Si $\Delta C°_{\!\! \lower 2mu P}$ es constante:</p>
+
+	<p style="text-align:center">
+		$\Delta H°_{\!\! \lower 2mu {T_2}} = \Delta H°_{\!\! \lower 2mu {T_1}}
+		+ \Delta C°_{\!\! \lower 2mu P} (T_2 - T_1)$</p>
+		
+<p>Pero es más corriente que dependa de la temperatura. Esto es, en
+general:</p>
+
+	<p style="text-align:center">
+		$C°_{\!\! \lower 2mu {{\rm m},P,\mspace{2mu} j}} = \alpha_j + \beta_j T
+		+ \gamma_j T^2 + \dotsb$</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$\ce{aA + bB +cC + \dotsb -&gt; lL + mM + nN + \dotsb}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\Delta \alpha = (l \alpha_L + m \alpha_M + n \alpha_N + \dotsb) -
+			(a \alpha_A + b \alpha_B + c \alpha_C + \dotsb) \\[1ex]
+			\Delta \beta = (l \beta_L + m \beta_M + n \beta_N + \dotsb) -
+			(a \beta_A + b \beta_B + c \beta_C + \dotsb) \\[1ex]
+			\Delta \gamma = (l \gamma_L + m \gamma_M + n \gamma_N + \dotsb) -
+			(a \gamma_A + b \gamma_B + c \gamma_C + \dotsb) \\[1ex]
+			\cdots
+		\end{array}
+		$
+	</p>
+	
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$\Delta C°_{\!\! \lower 2mu P} = \Delta \alpha + \Delta \beta T +
+		\Delta \gamma T^2 + \dotsb$</p>
+		
+<p>Normalmente, con los tres primeros términos de la serie es suficiente,
+cubriendo un amplio intervalo de temperaturas con poco error. Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H°_{\!\! \lower 2mu {T_2}} &amp;= \Delta H°_{\!\! \lower
+			2mu {T_1}} + \int_{T_1}^{T_2} (\Delta \alpha + \Delta \beta T +
+			\Delta \gamma T^2) \, dT = \\[1ex]
+			&amp;= \Delta H°_{\!\! \lower 2mu {T_1}} + \Delta \alpha (T_2 - T_1)
+			+ \Delta \beta \left( \dfrac{T_2^2}{2} - \dfrac{T_1^2}{2} \right)
+			+ \Delta \gamma \left( \dfrac{T_2^3}{3} - \dfrac{T_1^3}{3} \right)
+			
+		\end{align}
+		$
+	</p>
+	
+<p>- Temperatura máxima de llama y presión máxima de explosión:</p>
+
+	<p style="text-align:center">
+		$\ce{C_{(s)} + O2_{(g)} -&gt; CO2_{(g)}}$</p>
+		
+<p>Una reacción como ésta, en general una reacción de combustión, es 
+exotérmica (calor de reacción negativa). Siendo la presión constante, 
+se supone proceso adiabático, aunque sea en un sistema abierto, ya que 
+es tan rápido que no da tiempo a que el calor se transfiera al medio, 
+aumentando la temperatura del sistema (los productos resultantes de la 
+reacción) pudiendo dar lugar a una llama. Esto es:</p>
+
+	<p style="text-align:center">
+		$\Delta H = Q_P = 0$ &emsp; ($P =$ cte.)</p>
+		
+	<p style="text-align:center">
+		$\ce{{Reactivos} ($T$1) -&gt; {Productos} ($T$2)}$</p>
+		
+<p>Como la entalpía es función de estado, no depende del camino, puede
+plantearse (hipotéticamente), para la combustión, que:</p>
+
+	<p style="text-align:center">
+		$\ce{
+			{Reactivos} ($T$_1)
+			\xrightarrow[\smash{\Delta H_{\rm reac}}]{\smash{\text{reacción}}}
+			{Productos} ($T$_1)
+			\xrightarrow[\smash{\Delta H_{\rm calent}}]{\smash{\text{calent.
+			prod.}}}
+			{Productos} ($T$_2)
+		}
+		$
+	</p>
+	
+<p>Lo que se observa como un proceso único, se ha descompuesto en dos. 
+Por tanto:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta H = \Delta H_{\rm reac} + \Delta H_{\rm calent} = 0 \\[1ex]
+			-\Delta H_{\rm reac} = \Delta H_{\rm calent}
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\Delta H_{\rm calent} = \displaystyle \int_{T_1}^{T_2} \sum
+		(n C_{{\rm m},P})_{\rm prod} \, dT$</p>
+		
+<p>Por lo que:</p>
+
+	<p style="text-align:center">
+		$-\Delta H_{\rm reac} = \displaystyle \int_{T_1}^{T_2} \sum
+		(n C_{{\rm m},P})_{\rm prod} \, dT$</p>
+	
+<p>Así, entonces, con esta última ecuación, conocidas la temperatura 
+inicial, la reacción, i.e. su estequiometría y su entalpía de reacción, 
+y las calores molares de los productos, puede calcularse $T_2$, 
+conocida como temperatura máxima de llama.</p>
+
+<p>En la realidad, el valor de la temperatura de la llama será algo 
+menor que el calculado, ya que lo planteado es una idealización y sí se 
+intercambia algo de calor con el medio. Mejorando la combustión puede 
+acercarse, sin alcanzarlo, la temperatura real de la llama al valor 
+máximo de $T_2$ calculado.</p>
+
+<p>Si en vez de la presión fuera constante el volumen:</p>
+
+	<p style="text-align:center">
+		$\Delta U = Q_V = 0$ &emsp; ($V =$ cte.)</p>
+		
+<p>Siguiendo un método análogo al anterior, entonces:</p>
+
+	<p style="text-align:center">
+		$-\Delta U_{\rm reac} = \Delta U_{\rm calent} = \displaystyle
+		\int_{T_1}^{T_2} \sum (n C_{{\rm m},V})_{\rm prod} \, dT$</p>
+		
+<p>De donde se calcularía $T_2$, aquí la temperatura máxima de explosión.</p>
+
+<p>Relaciones vistas, donde se considera gas ideal, que podrían ser útiles
+aquí:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			C_{{\rm m},P} - C_{{\rm m},V} = R \\[1ex]
+			\Delta H_{\rm reac} = \Delta U_{\rm reac} + \Delta nRT
+		\end{array}
+		$
+	</p>
+	
+<p>Por último, con la temperatura máxima de explosión y, como dato 
+adicional necesario, conocido el volumen, aunque es una estimación:</p>
+
+	<p style="text-align:center">
+		$P_2 = \dfrac{nRT_2}{V}$ &emsp; Presión máxima de explosión.</p>		
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../procesos/procesos.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../segundo_principio_maquinas_termicas/segundo_principio_maquinas_termicas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

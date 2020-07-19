@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Proceso reversible">
+<meta name="keywords" content="Proceso, reversible">
+<title>Proceso reversible</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Proceso reversible</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>El proceso para pasar de un estado de equilibrio a otro puede ser:</p>
+
+<ul>
+	<li>Irreversible: Es un proceso natural, espontáneo. Los estados
+	intermedios no están en equilibrio.</li>
+	
+	<li>Reversible: Sucesión de estados de equilibrio, el sistema está 
+	siempre infinitesimalmente próximo al equilibrio, que puede, por tanto,
+	representarse en un diagrama de estados. Un cambio infinitesimal puede
+	invertir el sentido del proceso.</li>
+</ul>
+
+<p>Un diagrama de estados es una representación gráfica de las relaciones
+entre magnitudes de estado:</p>
+
+<center>
+	<object data="proceso_reversible_1.svg" type="image/svg+xml"
+	width="235" height="236"></object>
+</center>
+
+<p>Cada punto $\color{red}{\ast}$ es un estado de equilibrio del sistema.
+El proceso reversible (R) se representa con una línea continua ya que cada
+estado intermedio está definido por las variables del sistema ($X,Y$). En
+cambio, el proceso irreversible (I) es una línea discontinua porque cada
+estado intermedio está fuera del equilibrio y no tiene unos valores únicos
+de las variables ($X,Y$) dentro del sistema (varían según la parte del
+sistema que se considere).</p>
+
+<p>Si el proceso se lleva a cabo de tal modo que las variables de estado
+del sistema no tienen un valor bien definido a lo largo del mismo, proceso
+irreversible, entonces no puede emplearse la ecuación de estado del sistema,
+ya que sólo es válida para estados de equilibrio. En cambio, en un proceso
+reversible sí es aplicable la ecuación de estado, describiendo los estados
+atravesados por el sistema.</p>
+
+<p>Para sistemas simples, $n = 2$, entonces:</p>
+
+	<p style="text-align:center">
+		$Z = Z(X,Y)$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			1 \rightarrow Z_1 = Z(X_1,Y_1) \\[1ex]
+			2 \rightarrow Z_2 = Z(X_2,Y_2)
+		\end{array}
+		$
+	</p>
+	
+<p>Un proceso reversible es una idealización, que nunca puede 
+alcanzarse completamente en el laboratorio, pero, a pesar de ello, para 
+poder determinar las magnitudes de estado se emplean dispositivos y 
+técnicas experimentales que permiten aproximarse con un grado de 
+precisión asumible.</p>
+
+<p>Para llevar a cabo un estudio lo que se hace es una variación
+infinitesimal:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			X \rightarrow X + dX \\[1ex]
+			Y \rightarrow Y + dY
+		\end{array}
+		\right\}
+		\Rightarrow
+		Z(X,Y) \rightarrow Z(X+dX,Y+dY) \rightarrow Z + \delta Z
+		$
+	</p>
+	
+<p>Donde $\delta$, minúscula de $\Delta$, representa aquí una variación,
+cambio, incremento infinitesimal.</p>
+
+<p>Después, una sucesión de estos pequeños cambios conduce a una variación
+de la función de estado:</p>
+
+	<p style="text-align:center">
+		$\Delta Z = \displaystyle \int_1^2 \delta Z = Z_2 - Z_1$
+	<p>
+		
+<p>Es requisito de las funciones de estado que el incremento sólo dependa
+del punto final e inicial, no del camino.</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../ecuaciones_estado/ecuaciones_estado.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../propiedades_matematicas_funciones_estado/propiedades_matematicas_funciones_estado.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

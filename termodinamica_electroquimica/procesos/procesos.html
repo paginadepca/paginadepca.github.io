@@ -1,0 +1,517 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Procesos">
+<meta name="keywords" content="procesos">
+<title>Procesos</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Procesos</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Proceso termodinámico:<p>
+	
+	<p style="margin-left:30px">En un proceso un sistema pasa de un 
+	estado	inicial a otro final. En termodinámica, ambos están en 
+	equilibrio. Para que un proceso se produza se necesita una causa 
+	perturbadora, pasando del estado inicial al final a través de 
+	diferentes estados intermedios, que no tienen por qué estar en 
+	equilibrio, siendo esto en la realidad lo más normal.</p>
+	
+<p>Proceso ideal o cuasiestático:</p>
+
+	<p style="margin-left:30px">El sistema se encuentra en cada momento
+	en un estado infinitamente próximo al estado de equilibrio termodinámico.
+	Es decir, todos los estados intermedios en estas condiciones van
+	a poder ser definidos con variables de estado. Es una idealización no
+	reproducible experimentalmente, pero puede aproximarse bastante (aunque
+	teóricamente es un proceso infinitamente lento).</p>
+	
+<p>Proceso reversible:</p>
+
+	<p style="margin-left:30px">El sistema a lo largo de todas las etapas 
+	intermedias está infinitamente próximo al equilibrio y, además, en 
+	cualquier momento puede invertirse el sentido del proceso. Es un 
+	proceso cuasiestático, todo proceso reversible ha de serlo (no así al 
+	revés), que aprovecha la energía transferida en el proceso directo 
+	para el inverso. No puede para ello haber efectos disipativos (ni 
+	rozamientos, ni choques inelásticos, ni viscosidad, ...) que 
+	produzcan pérdidas. Todos aquellos procesos que no cumplan estas 
+	condiciones son irreversibles (prácticamente todos, por no decir 
+	todos). Un proceso reversible es un proceso irreal, una situación 
+	límite de la realidad.</p>
+	
+<p style="display:table;margin-left:auto;margin-right:auto">
+	<span style="display:table-cell;text-align:center;padding-right:2em">
+		<object data="procesos_1.svg" type="image/svg+xml" width="235"
+		height="236"></object>
+		<span style="display:block;padding-top:1ex">
+			Proceso reversible
+		</span>
+	</span>
+	<span style="display:table-cell;text-align:center">
+		<object data="procesos_2.svg" type="image/svg+xml" width="235"
+		height="236"></object>
+		<span style="display:block;padding-top:1ex">
+			Proceso irreversible
+		</span>
+	</span>
+</p>
+	
+<p>Para procesos reversibles:</p>
+
+		<p style="text-align:center">
+			$q + w = dU = \left(\dfrac{\partial U}{\partial V}\right)_{\! T}
+			dV + \left(\dfrac{\partial U}{\partial T}\right)_{\! V} dT =
+			\left(\dfrac{\partial U}{\partial V}\right)_{\! T} dV +
+			C_V \, dT$</p>
+			
+<p>Casos:</p>
+
+<ol>
+	<li>Proceso isotérmico reversible:
+		<p style="text-align:center">
+			$T =$ cte. $\Rightarrow dT = 0$</p>
+		<p style="text-indent:0">En un gas ideal:</p>
+		<p style="text-align:center">
+			$\left(\dfrac{\partial U}{\partial V}\right)_{\! T} = 0$</p>
+		<p style="text-indent:0">Entonces, para un gas ideal:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				q + w = 0 \\[1ex]
+				q = -w = -(-P_{\rm ext} \, dV) = P \, dV = \dfrac{nRT}{V} \, dV
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Integrando:</p>
+		<p style="text-align:center">
+			$Q = -W = \displaystyle nRT \int_{V_1}^{V_2} \dfrac{dV}{V} =
+			nRT \ln \dfrac{V_2}{V_1} = nRT \ln \dfrac{P_1}{P_2}$</p>
+		<p style="text-indent:0">Donde se ha recurrido a la ley de Boyle.</p>
+	</li>
+	<li>Proceso adiabático reversible:
+		<p style="text-align:center">
+			$q = 0$</p>
+		<p style="text-indent:0">Para un gas ideal, por lo tanto:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				-P \, dV = w = C_V \, dT \\[1ex]
+				- \dfrac{\cancel{n} \! RT}{V} \, dV = \! \cancel{n} C_{{\rm m},V} \,
+				dT
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">
+			Hay que separar variables para poder integrar:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\displaystyle \int_{T_1}^{T_2} \dfrac{C_{{\rm m},V}}{T} \, dT = 
+				\int_{V_1}^{V_2} -\dfrac{R}{V} \, dV \\[1ex]
+				C_{{\rm m},V} \ln \dfrac{T_2}{T_1} = R \ln \dfrac{V_1}{V_2}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Donde se ha considerado constante a $C_{{\rm m},V}$.
+		Operando más:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\ln \dfrac{T_2}{T_1} =
+				\dfrac{R}{C_{{\rm m},V}} \ln \dfrac{V_1}{V_2} \\[1ex]
+				\ln \dfrac{T_2}{T_1} =
+				\ln \left( \dfrac{V_1}{V_2} \right)^{\tfrac{R}{C_{{\rm m},V}}} \\[1ex]
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Por tanto:</p>
+		<p style="text-align:center">
+			$\dfrac{T_2}{T_1} =
+			\left( \dfrac{V_1}{V_2} \right)^{\tfrac{R}{C_{{\rm m},V}}}$</p>
+		<p style="text-indent:0">Si:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				C_{{\rm m},P} - C_{{\rm m},V} = R \\[1ex]
+				\gamma = \dfrac{C_P}{C_V} =
+			 \dfrac{\cancel{n} C_{{\rm m},P}}{\cancel{n} C_{{\rm m},V}} =
+			 \dfrac{C_{{\rm m},P}}{C_{{\rm m},V}}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">
+			Siendo $\gamma$ la razón de la capacidad calorífica, entonces:</p>
+		<p style="text-align:center">
+			$\dfrac{T_2}{T_1} =
+			\left(\dfrac{V_1}{V_2}\right)^{\tfrac{C_{{\rm m},P}\,-\,C_{{\rm m},V}}{C_{{\rm m},V}}}
+			= \left( \dfrac{V_1}{V_2} \right)^{\gamma - 1}$
+		</p>
+		<p style="text-indent:0">Para un gas ideal:</p>
+		<p style="text-align:center">
+			$V = \dfrac{nRT}{P}$</p>
+		<p style="text-indent:0">Así pues:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\dfrac{T_2}{T_1} = \left( \dfrac{\dfrac{\cancel{nR} \! T_1}{P_1}
+				}{\dfrac{\cancel{nR} \! T_2}{P_2}} \right)^{\, \gamma -1} =
+				\left(\dfrac{T_1 P_2}{T_2 P_1}\right)^{\gamma - 1} \\[1ex]
+				\dfrac{T_2}{T_1} \left(\dfrac{T_2}{T_1}\right)^{\gamma - 1} =
+				\left( \dfrac{P_2}{P_1} \right)^{\gamma - 1} \\[1ex]
+				\left( \dfrac{T_2}{T_1} \right)^\gamma = \left( \dfrac{P_2}{P_1}
+				\right)^{\gamma - 1} \\[1ex]
+				\dfrac{T_2}{T_1} =
+				\left( \dfrac{P_2}{P_1} \right)^{\tfrac{\gamma - 1}{\gamma}}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Con lo que:</p>
+		<p style="text-align:center">
+			$\dfrac{T_2}{T_1} = \left(\dfrac{V_1}{V_2}\right)^{\gamma - 1} =
+			\left(\dfrac{P_2}{P_1}\right)^{\tfrac{\gamma - 1}{\gamma}}$</p>
+			
+		<p style="text-indent:0">Por consiguiente:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\dfrac{P_2}{P_1} = \left(\dfrac{V_1}{V_2}\right)^\gamma \\[1ex]
+				P_1 V_1^\gamma = P_2 V_2^\gamma
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Así ya, en conclusión, para un gas ideal
+		en un proceso adiabático reversible:</p>
+		<p style="text-align:center">
+			$\boxed{PV^\gamma = \text{cte.}}$</p>
+		<p style="text-indent:0">Para un gas ideal, experimentalmente, i.e. bajas presiones, 
+		monoatómico, en un amplio intervalo de temperaturas:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				C_{{\rm m},P} = \dfrac{5}{2} R \qquad  C_{{\rm m},V} = \dfrac{3}{2} R \\[1ex]
+				\gamma = \dfrac{5}{3}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Para un gas ideal diatómico:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				C_{{\rm m},P} = \dfrac{7}{2} R \qquad C_{{\rm m},V} =  \dfrac{5}{2} R \\[1ex]
+				\gamma = \dfrac{7}{5}
+			\end{array}
+			$
+		</p>
+	</li>
+	<li>Proceso politrópico reversible:
+		<p style="text-align:center">
+			$C =$ cte.</p>
+		<p style="text-indent:0">Esto es, durante un proceso politrópico la
+			capacidad calorífica es	constante.</p>
+		<p style="text-indent:0">Siendo:</p>
+		<p style="text-align:center">
+			$q = C \, dT \Rightarrow C = \dfrac{q}{dT}$</p>
+		<p style="text-indent:0">Casos particulares:</p>
+		<p style="display:table;margin-left:auto;margin-right:auto;text-indent:0">
+			<span style="display:table-row">
+				<span style="display:table-cell">isotérmico &emsp;</span>
+				<span style="display:table-cell">$C = \pm \infty$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-top:1ex">adiabático</span>
+				<span>$C = 0$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell;padding:1ex 0">isocórico</span>
+				<span>$C = C_V$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">isobárico</span>
+				<span>$C = C_P$</span>
+			</span>
+		</p>
+		<p style="text-indent:0">Es:</p>
+		<p style="text-align:center">
+			$
+			\begin{align}
+				dU &amp;= q + w = \\[1ex]
+				&amp;= C \, dT - P \, dV = \\[1ex]
+				&amp;= n C_{\rm m} \, dT - P \, dV
+			\end{align}
+			$
+		</p>
+		<p style="text-indent:0">Para un gas ideal:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				dU = C_{V} \, dT = n C_{{\rm m},V} \, dT \\[1ex]
+				P = \dfrac{nRT}{V}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Por tanto:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\cancel{n} \! C_{{\rm m},V} \, dT = \cancel{n} \! C_{\rm m} \, dT -
+				\dfrac{\cancel{n} \! RT}{V} \, dV \\[1ex]
+				(C_{{\rm m},V} - C_{\rm m}) \dfrac{dT}{T} = -R \dfrac{dV}{V}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Integrando:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				(C_{{\rm m},V} - C_{\rm m}) \ln \dfrac{T_2}{T_1} = R \ln \dfrac{V_1}{V_2} \\[1ex]
+				\ln \dfrac{T_2}{T_1} = \ln \left( \dfrac{V_1}{V_2}
+				\right)^{\tfrac{R}{C_{{\rm m},V} \, - \, C_{\rm m}}} \\[1ex]
+				\dfrac{T_2}{T_1} =
+				\left( \dfrac{V_1}{V_2}	\right)^{\tfrac{R}{C_{{\rm m},V} \, - \, C_{\rm m}}}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">También es:</p>
+		<p style="text-align:center">
+			$
+			\begin{align}
+				dH &amp;= q + V \, dP = \\[1ex]
+				&amp;= C \, dT + V \, dP = \\[1ex]
+				&amp;= n C_{\rm m} \, dT + V \, dP
+			\end{align}
+			$
+		</p>
+		<p style="text-indent:0">En un gas ideal:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				dH = C_P \, dT = n C_{{\rm m},P} \, dT \\[1ex]
+				V = \dfrac{nRT}{P}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Entonces:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\cancel{n} C_{{\rm m},P} \, dT = \cancel{n} C_{\rm m} \, dT +
+				\dfrac{\cancel{n} \! RT}{P} \, dP \\[1ex]
+				(C_{{\rm m},P} - C_{\rm m}) \dfrac{dT}{T} = R \dfrac{dP}{P}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Al integrar:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				(C_{{\rm m},P} - C_{\rm m}) \ln \dfrac{T_2}{T_1} = R \ln \dfrac{P_2}{P_1} \\[1ex]
+				\ln \dfrac{T_2}{T_1} = \ln \left( \dfrac{P_2}{P_1}
+				\right)^{\tfrac{R}{C_{{\rm m},P} \, - \, C_{\rm m}}} \\[1ex]
+				\dfrac{T_2}{T_1} = \left( \dfrac{P_2}{P_1}
+				\right)^{\tfrac{R}{C_{{\rm m},P} \, - \, C_{\rm m}}}				
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Siendo pues:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				\left(\dfrac{V_1}{V_2}\right)^{\tfrac{R}{C_{{\rm m},V}\,-\,C_{\rm m}}} =
+				\left(\dfrac{P_2}{P_1}\right)^{\tfrac{R}{C_{{\rm m},P}\,-\,C_{\rm m}}} \\[1ex]
+				\left( \dfrac{V_1}{V_2}
+				\right)^{\tfrac{C_{{\rm m},P}\,-\,C_{\rm m}}{C_{{\rm m},V}\,-\,C_{\rm m}}} =
+				\dfrac{P_2}{P_1} \\[1ex]
+				P_1 V_1^{\tfrac{C_{{\rm m},P}\,-\,C_{\rm m}}{C_{{\rm m},V}\,-\,C_{\rm m}}} =
+				P_2 V_2^{\tfrac{C_{{\rm m},P}\,-\,C_{\rm m}}{C_{{\rm m},V}\,-\,C_{\rm m}}}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Si:</p>
+		<p style="text-align:center">
+			$m = \dfrac{C_{{\rm m},P} - C_{\rm m}}{C_{{\rm m},V} - C_{\rm m}} \quad \leftarrow$
+			Coeficiente politrópico.</p>
+		<p style="text-indent:0">Entonces:</p>
+		<p style="text-align:center">
+			$PV^m =$ cte.</p>
+		<p style="text-indent:0">Casos particulares de proceso politrópico:</p>
+		<p style="display:table;margin-left:auto;margin-right:auto;text-indent:0">
+			<span style="display:table-row">
+				<span style="display:table-cell">isotérmico &emsp;</span>
+				<span style="display:table-cell">$C_{\rm m} = \pm \infty$</span>
+				<span style="display:table-cell">$PV^1 =$ cte.</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell;padding:1ex 0">adiabático</span>
+				<span style="display:table-cell">$C_{\rm m} = 0$</span>
+				<span style="display:table-cell">$PV^\gamma =$ cte.</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-bottom:1ex">isocórico</span>
+				<span style="display:table-cell">$C_{\rm m} = C_{{\rm m},V}$ &emsp;</span>
+				<span style="display:table-cell">$PV^\infty =$ cte.</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">isobárico</span>
+				<span style="display:table-cell">$C_{\rm m} = C_{{\rm m},P}$ &emsp;</span>
+				<span style="display:table-cell">$PV^0 =$ cte.</span>
+			</span>
+		</p>
+	</li>
+</ol>
+
+<hr>
+
+<p>Apéndice:</p>
+
+	<p style="text-align:center">
+		<object data="procesos_3.svg" type="image/svg+xml" width="240"
+		height="300"
+		style="display:inline-block;vertical-align:middle;margin-right:1em">
+		</object>
+		Gas ideal.
+	</p>
+
+<p>Siendo, para un gas ideal, según sea el proceso:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">isotérmico: &emsp;</span>
+			<span style="display:table-cell">$T_1 = T_2$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">adiabático:</span>
+			<span style="display:table-cell;padding-top:1ex">
+				$\dfrac{T_2}{T_1} =
+				\left(\dfrac{V_1}{V_2}\right)^{\tfrac{R}{C_{{\rm m},V}}}$</span>
+		</span>
+	</p>
+	
+<p>La temperatura final en el proceso adiabático es inversamente
+proporcional al volumen final ($C_{{\rm m},V} &gt; 0$ siempre).</p>	
+
+<p>Por tanto, tal como se representan, en las expansiones reversibles 
+de un gas ideal que aparecen en el gráfico anterior:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			P_1, V_1 \xrightarrow[\hphantom{\text{adiab.}}]{\smash{\text{isot.}}}
+			V_2 \qquad T_2 = T_1 \Rightarrow P_{{\rm isot.},\,f} = nRT_1{∕}V_2 \\[1ex]
+			P_1, V_1 \xrightarrow{\smash{\text{adiab.}}} V_2 \qquad T_2 &lt; T_1
+			\Rightarrow P_{{\rm adiab.},\,f} &lt; P_{{\rm isot.},\,f}
+		\end{array}
+		$
+	</p>
+	
+<hr>
+	
+<ol start="4">
+	<li>Proceso irreversible (tal que):
+		<p style="text-align:center">
+			$(P_1,V_1) \xrightarrow[Q\,=\,0]{P_{\rm ext}\,=\,\smash{\text{cte.}}}
+			(P_2,V_2)$</p>
+		<p style="text-indent:0">Es una expansión brusca a presión externa 
+		constante y en condiciones adiabáticas. Acaba cuando la presión 
+		exterior y la interna son iguales.</p>
+		<p style="text-indent:0">Como es aplicable siempre:</p>
+		<p style="text-align:center">
+			$\Delta U = \cancelto{\mspace{1mu}0}{Q\,}\!\! + W = W$</p>
+		<p style="text-indent:0">Si el gas es ideal:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{l}
+				\Delta U = n C_{{\rm m},V} (T_2 - T_1) \\[1ex]
+				\begin{aligned}
+					W &amp;= -P_{\rm ext} (V_2 - V_1) = \\[1ex]
+					&amp;= -P_{\rm ext} \left(\dfrac{nRT_2}{P_2} - \dfrac{nRT_1}{P_1}
+					\right)
+				\end{aligned}
+			\end{array}
+			$
+		</p>
+		<p style="text-indent:0">Igualando:</p>
+		<p style="text-align:center">
+			$
+			\begin{array}{c}
+				n C_{{\rm m},V} (T_2 - T_1) = -P_{\rm ext} \left(\dfrac{nRT_2}{P_2}
+				- \dfrac{nRT_1}{P_1}\right) \\[1ex]
+				-C_{{\rm m},V} (T_2 - T_1) = RT_2 - \dfrac{R T_1 P_2}{P_1}
+			\end{array}
+			$
+		</p>
+	</li>
+</ol>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../capacidades_calorificas/capacidades_calorificas.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../termoquimica/termoquimica.html" title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="382.82" height="339.4" version="1.1" viewBox="0 0 382.82 339.4" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.iki.fi/pav/software/textext/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-272.18 -364.33)">
+  <g fill="none" stroke="#000">
+   <path d="m650 652.52h-330v-280"/>
+   <g>
+    <path d="m340 612.52c35.643-14.794 72.463-32.571 94-67 51.964-11.529 115.92-75.2 157-145" stroke-width="1.5"/>
+    <path d="m434 545.52-47.159-176" stroke-width="1.5"/>
+    <path d="m416.15 567.55-50.65-189.03" stroke-width=".5"/>
+   </g>
+  </g>
+  <text transform="rotate(-42)" x="14.541111" y="709.48541" fill="#000000" font-family="'STIX Two Text'" font-size="13px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="14.541111" y="709.48541">disolvente</tspan></text>
+  <path d="m416.15 567.55c64.65-6.9465 136.5-74.893 187.85-158.03" fill="none" stroke="#000" stroke-width=".5"/>
+  <path d="m320 427.52h330" fill="none" stroke="#f00" stroke-width="1px"/>
+  <text transform="rotate(-32)" x="89.202156" y="711.46436" fill="#000000" font-family="'STIX Two Text'" font-size="13px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="89.202156" y="711.46436">disolución</tspan></text>
+  <g fill="none" stroke="#000" stroke-dasharray="3, 3">
+   <path d="m378.63 427.52v225"/>
+   <path d="m402.38 427.52v225"/>
+   <path d="m573.76 427.52v225"/>
+   <path d="m592.4 427.52v225"/>
+  </g>
+  <text x="276" y="432.55164" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="276" y="432.55164">1 atm</tspan></text>
+  <text x="304.34299" y="383.51965" fill="#000000" font-family="'STIX Two Text'" font-size="16px" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="304.34299" y="383.51965" font-family="'STIX Two Text'" font-style="italic">P</tspan></text>
+  <g fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433">
+   <g id="content" transform="matrix(1.6 0 0 -1.6 156.17 1719.8)" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$T_{\\rm f}^\\circ$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.02 663.72h-5.3l-0.42-1.53 0.18-0.04c0.53 1.07 0.85 1.24 2.37 1.22l-1.43-5.24c-0.16-0.53-0.4-0.69-1.06-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.72 0 1.04-0.24 1.04-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m158.47 662.64v0.07l-0.01 0.06-0.01 0.07-0.02 0.12-0.06 0.18-0.06 0.12-0.06 0.1-0.12 0.15-0.13 0.13-0.05 0.04-0.05 0.03-0.06 0.04-0.05 0.03-0.06 0.02-0.05 0.03-0.12 0.04-0.07 0.02-0.06 0.02-0.06 0.01-0.07 0.01h-0.13v-0.33c0.52 0 0.96-0.43 0.96-0.96 0-0.54-0.44-0.96-0.96-0.96-0.55 0-0.97 0.42-0.97 0.96 0 0.53 0.42 0.96 0.97 0.96v0.33c-0.74 0-1.31-0.58-1.31-1.29 0-0.72 0.57-1.29 1.31-1.29 0.72 0 1.3 0.57 1.3 1.29z"/>
+<path d="m156.82 656.99h-0.86v0.81c0 0.4 0.13 0.62 0.4 0.62 0.15 0 0.24-0.07 0.37-0.28 0.11-0.18 0.2-0.25 0.31-0.25 0.17 0 0.3 0.13 0.3 0.29 0 0.25-0.31 0.43-0.73 0.43-0.43 0-0.8-0.19-0.99-0.51-0.18-0.3-0.23-0.55-0.24-1.11h-0.57v-0.22h0.57v-2.19c0-0.5-0.08-0.59-0.58-0.61v-0.11h1.82v0.11c-0.58 0.02-0.65 0.09-0.65 0.61v2.19h0.85z"/>
+</g>
+   <g transform="matrix(1.6 0 0 -1.6 133.32 1719.8)" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$T_{\\rm f}^{}$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.02 663.72h-5.3l-0.42-1.53 0.18-0.04c0.53 1.07 0.85 1.24 2.37 1.22l-1.43-5.24c-0.16-0.53-0.4-0.69-1.06-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.72 0 1.04-0.24 1.04-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m156.82 656.99h-0.86v0.81c0 0.4 0.13 0.62 0.4 0.62 0.15 0 0.24-0.07 0.37-0.28 0.11-0.18 0.2-0.25 0.31-0.25 0.17 0 0.3 0.13 0.3 0.29 0 0.25-0.31 0.43-0.73 0.43-0.43 0-0.8-0.19-0.99-0.51-0.18-0.3-0.23-0.55-0.24-1.11h-0.57v-0.22h0.57v-2.19c0-0.5-0.08-0.59-0.58-0.61v-0.11h1.82v0.11c-0.58 0.02-0.65 0.09-0.65 0.61v2.19h0.85z"/>
+</g>
+   <g transform="matrix(1.6 0 0 -1.6 327.55 1719.8)" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$T_{\\rm b}^\\circ$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.02 663.72h-5.3l-0.42-1.53 0.18-0.04c0.53 1.07 0.85 1.24 2.37 1.22l-1.43-5.24c-0.16-0.53-0.4-0.69-1.06-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.72 0 1.04-0.24 1.04-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m158.47 662.64v0.07l-0.01 0.06-0.01 0.07-0.02 0.12-0.06 0.18-0.06 0.12-0.06 0.1-0.12 0.15-0.13 0.13-0.05 0.04-0.05 0.03-0.06 0.04-0.05 0.03-0.06 0.02-0.05 0.03-0.12 0.04-0.07 0.02-0.06 0.02-0.06 0.01-0.07 0.01h-0.13v-0.33c0.52 0 0.96-0.43 0.96-0.96 0-0.54-0.44-0.96-0.96-0.96-0.55 0-0.97 0.42-0.97 0.96 0 0.53 0.42 0.96 0.97 0.96v0.33c-0.74 0-1.31-0.58-1.31-1.29 0-0.72 0.57-1.29 1.31-1.29 0.72 0 1.3 0.57 1.3 1.29z"/>
+<path d="m155.73 658.6-0.03 0.01c-0.3-0.1-0.49-0.16-0.82-0.25l-0.2-0.06v-0.11c0.04 0.01 0.07 0.01 0.12 0.01 0.28 0 0.34-0.06 0.34-0.36v-3.6c0-0.22 0.6-0.45 1.16-0.45l0.11 0.22c-0.37 0-0.68 0.16-0.68 0.34v1.75c0 0.27 0.33 0.52 0.69 0.52 0.55 0 0.9-0.54 0.9-1.39 0-0.77-0.34-1.22-0.91-1.22l-0.11-0.22c0.92 0 1.63 0.77 1.63 1.76 0 0.86-0.53 1.51-1.23 1.51-0.43 0-0.83-0.25-0.97-0.59z"/>
+</g>
+   <g transform="matrix(1.6 0 0 -1.6 346.62 1719.5)" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$T_{\\rm b}^{}$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.02 663.72h-5.3l-0.42-1.53 0.18-0.04c0.53 1.07 0.85 1.24 2.37 1.22l-1.43-5.24c-0.16-0.53-0.4-0.69-1.06-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.72 0 1.04-0.24 1.04-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m155.73 658.6-0.03 0.01c-0.3-0.1-0.49-0.16-0.82-0.25l-0.2-0.06v-0.11c0.04 0.01 0.07 0.01 0.12 0.01 0.28 0 0.34-0.06 0.34-0.36v-3.6c0-0.22 0.6-0.45 1.16-0.45l0.11 0.22c-0.37 0-0.68 0.16-0.68 0.34v1.75c0 0.27 0.33 0.52 0.69 0.52 0.55 0 0.9-0.54 0.9-1.39 0-0.77-0.34-1.22-0.91-1.22l-0.11-0.22c0.92 0 1.63 0.77 1.63 1.76 0 0.86-0.53 1.51-1.23 1.51-0.43 0-0.83-0.25-0.97-0.59z"/>
+</g>
+   <g transform="matrix(1.6 0 0 -1.6 396.97 1719.5)" fill="none" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$T$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m155.02 663.72h-5.3l-0.42-1.53 0.18-0.04c0.53 1.07 0.85 1.24 2.37 1.22l-1.43-5.24c-0.16-0.53-0.4-0.69-1.06-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.72 0 1.04-0.24 1.04-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z" fill="#000" stroke-width="0"/>
+</g>
+  </g>
+  <g transform="translate(0 57.74)">
+   <path d="m381 621.27v1h19v-1z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m385.19 624.19-6.5555-2.4106 6.5555-2.4106c-1.0473 1.4232-1.0413 3.3705 0 4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+   <path d="m395.83 619.35 6.5555 2.4106-6.5555 2.4106c1.0473-1.4232 1.0413-3.3705 0-4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+  </g>
+  <g transform="matrix(1.6 0 0 -1.6 140.35 1747.9)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$\\Delta T_{\\rm f}$" ns0:version="0.10.0" xml:space="preserve">
+<polygon points="151.91 663.96 148.95 657.23 149.61 657.65 151.74 662.48 153.71 657.65 149.61 657.65 148.95 657.23 154.88 657.23 152.08 663.96"/>
+<path d="m161.43 663.72h-5.31l-0.41-1.53 0.18-0.04c0.52 1.07 0.84 1.24 2.37 1.22l-1.44-5.24c-0.16-0.53-0.4-0.69-1.05-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.71 0 1.03-0.24 1.03-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m163.23 658.87h-0.86v0.81c0 0.4 0.13 0.62 0.39 0.62 0.15 0 0.25-0.07 0.38-0.28 0.11-0.18 0.19-0.25 0.31-0.25 0.16 0 0.29 0.13 0.29 0.29 0 0.25-0.3 0.43-0.72 0.43-0.44 0-0.81-0.19-0.99-0.51-0.18-0.3-0.24-0.55-0.24-1.11h-0.58v-0.22h0.58v-2.19c0-0.5-0.08-0.59-0.58-0.62v-0.1h1.81v0.1c-0.57 0.03-0.65 0.1-0.65 0.62v2.19h0.86z"/>
+</g>
+  <g transform="translate(195.13 57.74)">
+   <path d="m381 621.27v1h13.867v-1z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m385.19 624.19-6.5555-2.4106 6.5555-2.4106c-1.0473 1.4232-1.0413 3.3705 0 4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+   <path d="m390.71 619.35 6.5555 2.4106-6.5555 2.4106c1.0473-1.4232 1.0413-3.3705 0-4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+  </g>
+  <g transform="matrix(1.6 0 0 -1.6 332.45 1747.8)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$\\Delta T_{\\rm b}$" ns0:version="0.10.0" xml:space="preserve">
+<polygon points="148.95 657.23 149.61 657.65 151.74 662.48 153.71 657.65 149.61 657.65 148.95 657.23 154.88 657.23 152.08 663.96 151.91 663.96"/>
+<path d="m161.43 663.72h-5.31l-0.41-1.53 0.18-0.04c0.52 1.07 0.84 1.24 2.37 1.22l-1.44-5.24c-0.16-0.53-0.4-0.69-1.05-0.74v-0.16h2.89v0.16c-0.17 0.01-0.32 0.03-0.38 0.03-0.4 0.03-0.52 0.12-0.52 0.42 0 0.13 0.03 0.25 0.12 0.59l1.39 4.94h0.55c0.71 0 1.03-0.24 1.03-0.8 0-0.13-0.01-0.28-0.03-0.45l0.17-0.02z"/>
+<path d="m162.14 660.48-0.04 0.01c-0.29-0.1-0.48-0.16-0.81-0.25l-0.2-0.06v-0.11c0.04 0.01 0.07 0.01 0.12 0.01 0.28 0 0.34-0.06 0.34-0.36v-3.6c0-0.22 0.59-0.45 1.15-0.45l0.11 0.22c-0.36 0-0.67 0.16-0.67 0.34v1.75c0 0.27 0.32 0.52 0.69 0.52 0.54 0 0.89-0.54 0.89-1.39 0-0.77-0.33-1.22-0.91-1.22l-0.11-0.22c0.92 0 1.64 0.77 1.64 1.76 0 0.86-0.53 1.51-1.23 1.51-0.43 0-0.83-0.25-0.97-0.59z"/>
+</g>
+  <g transform="rotate(-90 409.06 420.84)">
+   <path d="m379.38 621.27v1h20.617v-1z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+   <path d="m382.93 624.19-6.5555-2.4106 6.5555-2.4106c-1.0473 1.4232-1.0413 3.3705 0 4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+   <path d="m395.83 619.35 6.5555 2.4106-6.5555 2.4106c1.0473-1.4232 1.0413-3.3705 0-4.8213z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".375"/>
+  </g>
+  <path d="m610 453.53h-36.236" fill="none" stroke="#000" stroke-dasharray="3, 3"/>
+  <g transform="matrix(1.6 0 0 -1.6 376.68 1497.5)" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" stroke-width="0" inkscapeversion="0.92.4" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$\\Delta P$" ns0:version="0.10.0" xml:space="preserve">
+<polygon points="149.61 657.65 148.95 657.23 154.88 657.23 152.08 663.96 151.91 663.96 148.95 657.23 149.61 657.65 151.74 662.48 153.71 657.65"/>
+<path d="m156.82 663.56h0.06l0.04-0.01 0.05-0.01h0.05l0.12-0.03 0.03-0.01h0.04l0.09-0.03 0.02-0.01 0.03-0.01 0.02-0.01 0.02-0.02 0.04-0.02 0.04-0.04 0.01-0.02 0.01-0.01 0.02-0.04v-0.02l0.01-0.01v-0.02l0.01-0.03v-0.06c0-0.14-0.04-0.35-0.17-0.8l-1.18-4.22c-0.17-0.6-0.25-0.66-0.81-0.74v-0.16h2.44v0.16c-0.63 0.09-0.68 0.12-0.68 0.46 0 0.12 0.02 0.22 0.12 0.58l0.53 1.91 0.09 0.34 0.71 2.47c0.06 0.2 0.18 0.27 0.46 0.27 0.39 0 0.76-0.1 0.96-0.24 0.26-0.17 0.37-0.47 0.37-0.94 0-0.64-0.23-1.1-0.66-1.36-0.31-0.17-0.7-0.25-1.32-0.25-0.17 0-0.25 0.01-0.52 0.05l-0.09-0.34c0.25-0.06 0.51-0.07 0.92-0.07 0.81 0 1.48 0.16 1.91 0.47 0.5 0.37 0.79 0.92 0.79 1.5 0 0.96-0.75 1.48-2.1 1.48h-2.48z"/>
+</g>
+ </g>
+</svg>

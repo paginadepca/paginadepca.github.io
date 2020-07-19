@@ -1,0 +1,573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Regla de las fases">
+<meta name="keywords" content="regla, fases">
+<title>Regla de las fases</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Regla de las fases</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>
+	<span style="display:table-cell;white-space:nowrap">- Fase:&nbsp;</span>
+	<span style="display:table-cell">
+		Toda aquella parte del sistema que sea homogénea , (i.e. uniforme en 
+		propiedades intensivas). Puede diferenciarse, distinguirse 
+		físicamente. Puede estar fragmentada.
+	</span>
+</p>
+
+<p>En general, en el caso de sólidos se tienen tantas fases como 
+substancias sólidas. Aunque, una sola fase en caso de cristal mixto 
+(solución solida), que requiere unas condiciones especiales.</p>
+
+<p>En el caso de líquidos se aplica el criterio de miscibilidad. Esto 
+es, si los líquidos son totalmente miscibles una sola fase y si no es 
+así, inmiscibles o parcialmente miscibles, tantas fases como 
+líquidos.</p>
+
+<p>Para los gases siempre una fase.</p>
+
+<p>Cuando se contabilicen:</p>
+
+	<p style="margin-left:30px">
+		nº fases $\equiv F$</p>
+
+<p>
+	<span style="display:table-cell;white-space:nowrap">
+		- Componente:&nbsp;</span>
+	<span style="display:table-cell">
+		Es el número mínimo de especies con las que se puede describir cada 
+		una de las fases del sistema. Por tanto, componente no es lo mismo
+		que especie (pueden no coincidir en número).
+	</span>
+</p>
+
+<p>Dos situaciones:</p>
+
+	<p style="margin-left:30px">
+		$\bullet$ Sistemas no reactivos:</p>
+		
+	<p style="text-align:center">
+		nº componentes = nº especies</p>
+		
+	<p style="margin-left:30px">
+		$\bullet$ Sistemas reactivos:</p>
+	
+	<p style="text-align:center">
+		nº componentes = nº especies − nº ec. equilibrio − nº ec. restrictivas</p>
+		
+	<p style="margin-left:30px">
+		Donde las ecuaciones (ec.) de equilibrio son reacciones químicas de 
+		equilibrio y las ecuaciones restrictivas son ecuaciones de balance 
+		de materia, debidas a las condiciones iniciales de preparación del 
+		sistema, y de balance de cargas, debidas a la condición de 
+		electroneutralidad de una fase con iones.</p>
+		
+	<p style="margin-left:30px">
+		Si:</p>
+		
+		<p style="margin-left:60px">
+			nº componentes $\equiv C$</p>
+		
+		<p style="margin-left:60px">
+			nº especies $\equiv s$</p>
+			
+		<p style="margin-left:60px">
+			nº ecuaciones equilibrio $\equiv R$</p>
+			
+		<p style="margin-left:60px">
+			nº ecuaciones restrictivas $\equiv r$</p>
+			
+	<p style="margin-left:30px">
+		Entonces:</p>
+		
+	<p style="text-align:center">
+		$C = s - R - r$</p>
+		
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplos:</p>
+
+<ol>
+	<li>
+			<p style="text-align:center">
+				$\ce{PCl5_{(g)} &lt;=&gt; PCl3_{(g)} + Cl2_{(g)}}$</p>
+			
+		<p>Esto es:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					F &amp;= 1 \\[1ex]
+					\left.
+					\begin{array}{l}
+						s = 3 \\
+						R = 1
+					\end{array}
+					\right\} \Rightarrow C &amp;= 3 - 1 = 2
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>
+			<p style="text-align:center">
+				$\ce{H2O_{(s)} &lt;=&gt; H2O_{(l)} &lt;=&gt; H2O_{(g)}}$</p>
+			
+		<p>Aquí:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					F &amp;= 3 \\[1ex]
+					\left.
+					\begin{array}{l}
+						s = 3 \\
+						R = 2
+					\end{array}
+					\right\} \Rightarrow C &amp;= 3 - 2 = 1
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>
+			<p style="text-align:center">
+				$\ce{NH4Cl_{(s)} &lt;=&gt; HCl_{(g)} + NH3_{(g)}}$</p>
+				
+		<p>Si el sistema es resultado de calentar $\ce{NH4Cl}$ (inicialmente
+		solo), entonces en la fase gaseosa:</p>
+			
+			<p style="text-align:center">
+				$n_\ce{HCl} = n_\ce{NH3} \, \Rightarrow \, y_\ce{HCl} = y_\ce{NH3}$
+				&emsp; (Ecuación restrictiva).</p>
+				
+		<p>Esto es, fracciones molares iguales de $\ce{HCl}$ y $\ce{NH3}$ en la 
+		fase gaseosa.</p>
+		
+		<p>Entonces:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					F &amp;= 2 \\[1ex]
+					\left.
+					\begin{array}{l}
+						s = 3 \\
+						R = 1 \\
+						r = 1
+					\end{array}
+					\right\} \Rightarrow C &amp;= 3 - 1 - 1 = 1
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>
+			<p style="text-align:center">
+				$\ce{CaCO3_{(s)} &lt;=&gt; CaO_{(s)} + CO2_{(g)}}$</p>
+
+		<p>En este caso:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					F &amp;= 3 \\[1ex]
+					\left.
+					\begin{array}{l}
+						s = 3 \\
+						R = 1
+					\end{array}
+					\right\}
+					\Rightarrow C &amp;= 3 - 1 = 2
+				\end{align}
+				$
+			</p>
+			
+		<p>Atendiendo a la definición, si se escogen, por ejemplo, $\ce{CaO}$
+		y $\ce{CO2}$ como componentes pueden describirse cada una de las fases
+		como:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\ce{CaO + CO2 = CaCO3} \\[1ex]
+					\ce{CaO + 0 CO2 = CaO} \\[1ex]
+					\ce{0 CaO + CO2 = CO2}
+				\end{array}
+				$
+			</p>
+	</li>
+</ol>
+
+</div>
+
+<hr>
+
+<p>- Condición de equilibrio:</p>
+
+<p>Se plantea un sistema cerrado sin reacción química con múltiples fases (a, b,
+c, $\dotsc, F$) 
+y componentes (1, 2, $\dotsc, C$), en el que estos últimos se suponen presentes en 
+todas las fases:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{cc}
+			\rm a &amp; \underline{1,2, \dotsc, C} \\[1ex]
+			\rm b &amp; \underline{1,2, \dotsc, C} \\[1ex]
+			\rm c &amp; \underline{1,2, \dotsc, C} \\[1ex]
+			\vdots &amp; \\[1ex]
+			F &amp; \underline{1,2, \dotsc, C}	
+		\end{array}
+		$
+	</p>
+	
+<p>Con el sistema en equilibrio:</p>
+
+	<p style="text-align:center">
+		$dG_{T,P} = \displaystyle \sum_\alpha^F \sum_i^C \mu_i^\alpha \,
+		dn_i^\alpha = 0$</p>
+		
+<p>Entonces, a $P$ y $T$ constantes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{alignat}{4}
+			&amp; &amp;\mu_1^{\rm a} \, dn_1^{\rm a} + {}&amp; &amp;
+			\mu_1^{\rm b} \, dn_1^{\rm b} +	\dotsb + {}&amp; &amp; \mu_1^F \,
+			dn_1^F &amp;+ {} \\[1ex]
+			&amp;{} + {} &amp;\mu_2^{\rm a} \, dn_2^{\rm a} + {}&amp; &amp;
+			\mu_2^{\rm b} \, dn_2^{\rm b} + \dotsb + {}&amp; &amp; \mu_2^F \,
+			dn_2^F &amp;+ {} \\[1ex]
+			&amp;{} + {} &amp;\cdots&amp; &amp;\cdots&amp; &amp; &amp;+ {} \\[1ex]
+			&amp;{} + {} &amp; \mu_C^{\rm a} \, dn_C^{\rm a} + {} &amp; &amp;
+			\mu_C^{\rm b} \, dn_C^{\rm b} + \dotsb + {}&amp; &amp; \mu_C^F \,
+			dn_C^F &amp;= 0
+		\end{alignat}
+		$
+	</p>
+	
+<p>Siendo $\sum_\alpha dn_i^\alpha = 0$, ya que lo que suman por un lado
+unas fases lo pierden otras por otro, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			dn_1^{\rm a} + dn_1^{\rm b} + \dotsb + dn_1^F = 0 \\[1ex]
+			dn_2^{\rm a} + dn_2^{\rm b} + \dotsb + dn_2^F = 0 \\[1ex]
+			\cdots \\[1ex]
+			dn_C^{\rm a} + dn_C^{\rm b} + \dotsb + dn_C^F = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente, teniendo en cuenta esto último, la condición de
+equilibrio se cumple si:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_1^{\rm a} = \mu_1^{\rm b} = \dotsb = \mu_1^F \\[1ex]
+			\mu_2^{\rm a} = \mu_2^{\rm b} = \dotsb = \mu_2^F \\[1ex]
+			\cdots \\[1ex]
+			\mu_C^{\rm a} = \mu_C^{\rm b} = \dotsb = \mu_C^F \\[1ex]
+		\end{array}
+		$
+	</p>
+	
+<p>
+	<span style="display:table-cell;white-space:nowrap">
+		- Grado de libertad:&nbsp;</span>
+	<span style="display:table-cell">
+		El número mínimo de variables (intensivas) que se necesitan fijar 
+		para definir un sistema en equilibrio.
+	</span>
+</p>
+
+<p>Siguiendo con el sistema no reactivo en equilibrio y en el que todos 
+los componentes están presentes en todas las fases, para describir la 
+composición de una fase se necesitan conocer $C-1$ fracciones molares, 
+ya que la que falta puede calcularse de:</p>
+
+	<p style="text-align:center">
+		$x_1 + x_2 + \dotsb + x_C = 1$</p>
+		
+<p>Para toda la serie de fases (que constituyen el conjunto del 
+sistema), entonces, el número de fracciones molares necesarias:</p>
+
+	<p style="text-align:center">
+		$F(C-1)$</p>
+		
+<p>El número de formas de intercambiar energía, también fija un número 
+equivalente de magnitudes de estado:</p>
+
+	<p style="text-align:center">
+		nº magnitudes de estado fijas = nº de formas de intercambiar energía</p>
+		
+<p>Así pues, siendo que el sistema sólo intercambia trabajo $P$-$V$ y 
+calor, se requiere fijar también, por ejemplo, $P$ y $T$ (en el 
+equilibrio presión y temperatura uniformes). Esto añade, ya para completar 
+(no se tiene en cuenta la extensión ya que no influye en el 
+equilibrio), otras dos variables más a la descripción del sistema:</p>
+
+	<p style="text-align:center">
+		$F(C-1) + 2$</p>
+		
+<p>Por cada ecuación independiente que relacione algunas de estas 
+variables entre sí se tendrá una variable dependiente. Para el 
+potencial químico, que es función de $P$, $T$ y la composición de la 
+fase (las fracciones molares), las ecuaciones por componente, debidas a 
+la igualdad entre potenciales químicos por la condición de equilibrio, 
+son:</p>
+
+	<p style="text-align:center">
+		$F - 1$</p>
+		
+<p>Para todos los componentes las ecuaciones serán pues:</p>
+
+	<p style="text-align:center">
+		$C(F-1)$</p>
+		
+<p>Restando esto, que equivale a la cantidad de variables dependientes, 
+a la totalidad de las variables que describen el sistema se obtiene el 
+número de variables independientes. Al fijar estas últimas, por tanto, 
+quedan determinadas el resto de variables (y definido pues el sistema), 
+por lo que su número son los grados de libertad ($L$). Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			L = [F(C-1) + 2] - [C(F-1)] \\[1ex]
+			\boxed{L = C - F + 2}
+		\end{array}
+		$
+		<span style="display:block;margin-top:1ex">
+			(Gibbs, 1875)
+		</span>
+	</p>
+	
+<p>Esta es la regla de las fases para un sistema que intercambia energía
+sólo en forma de calor y trabajo $P$-$V$.</p>
+
+<p>Si, al contrario de la suposición hecha, un componente no estuviera
+presente en una fase esto conllevaría una variable menos, pero también
+una ecuación menos por lo que el resultado seguiría siendo el mismo.</p>
+
+<p>Si en el sistema sí se produjeran reacciones químicas, por cada
+reacción química independiente la condición de equilibrio químico
+implicaría una ecuación tal que $\sum_i \nu_i \mu_i = 0$ y, por tanto,
+una variable dependiente más (o independiente menos). A lo que podrían
+añadirse otras ecuaciones, balances de masas o cargas, resultado de
+restricciones adicionales, que disminuirían aún más las variables
+independientes. Esto, como se vio, ya se tiene en cuenta a la hora de
+cifrar el número de componentes ($C$) para un sistema reactivo.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<ol>
+	<li>
+			<p style="text-align:center">
+				$\ce{H2O_{(s)} &lt;=&gt; H2O_{(l)} &lt;=&gt; H2O_{(g)}}$</p>
+				
+		<p>Es pues:</p>
+		
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					F = 3 \\
+					C = 1
+				\end{array}
+				\right\}
+				\Rightarrow L = 1 - 3 + 2 = 0
+				$
+			</p>
+			
+		<p>Por tanto sólo tiene lugar a una $P$ y $T$ únicas.</p>
+	</li>
+	<li>
+			<p style="text-align:center">
+				$\ce{CaCO3_{(s)} &lt;=&gt; CaO_{(s)} + CO2_{(g)}}$</p>
+				
+		<p>Así que:</p>
+		
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					F = 3 \\
+					C = 2
+				\end{array}
+				\right\}
+				\Rightarrow L = 2 - 3 + 2 = 1
+				$
+			</p>
+		
+		<p>Puede fijarse la $T$ o la $P$, y la otra dejar que se ajuste
+		libremente.</p>
+	</li>
+	<li>A una $P$ dada, $\ce{NO3-_{(aq)}}$, $\ce{Na+_{(aq)}}$,
+	$\ce{NO2-_{(aq)}}$, $\ce{H2O_{(l)}}$, $\ce{H+_{(aq)}}$, $\ce{OH-_{(aq)}}$,
+	$\ce{NaNO2_{(s)}}$.
+	
+		<p>Reacciones de equilibrio:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\ce{H2O_{(l)} &lt;=&gt; H+_{(aq)} + OH-_{(aq)}}\\[1ex]
+					\ce{NO2-_{(aq)} + Na+_{(aq)} &lt;=&gt; NaNO2_{(s)}}
+				\end{array}
+				$
+			</p>
+			
+		<p>Ecuaciones restrictivas:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\ce{[H+] = [OH-]} \\[1ex]
+					\ce{[NO3-] + [NO2-] + [OH-] = [Na+] + [H+]}
+				\end{array}
+				$
+			</p>
+			
+		<p>Por consiguiente:</p>
+		
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					F = 2 \\
+					C = 7 - 4 = 3
+				\end{array}
+				\right\}
+				\Rightarrow L = 3 - 2 + 2 = 3
+				$
+			</p>
+		
+		<p>Como la presión, como se dijo en el enunciado, ya está
+		establecida:</p>
+		
+			<p style="text-align:center">
+				$L = 3 - 1 = 2$</p>
+				
+		<p>Entonces, para la presión dada y una temperatura, sólo hay que 
+		fijar la concentración de una especie (para definir el sistema).</p>		
+	</li>
+	<li>$\ce{CH3-COOH_{(aq)}}$, $\ce{CH3-COO-_{(aq)}}$, $\ce{H2O_{(l)}}$,
+	$\ce{H+_{(aq)}}$, $\ce{OH-_{(aq)}}$.
+		
+		<p>Reacciones:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\ce{HAc_{(aq)} &lt;=&gt; Ac-_{(aq)} + H+_{(aq)}} \\[1ex]
+					\ce{H2O_{(l)} &lt;=&gt; H+_{(aq)} + OH-_{(aq)}}
+				\end{array}
+				$
+			</p>
+		
+		<p>Balances de cargas y de masas (protónico) coinciden:</p>
+		
+			<p style="text-align:center">
+				$\ce{[H+] = [OH-] + [Ac-]}$</p>
+				
+		<p>En conclusión:</p>
+		
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					F = 1 \\
+					C = 5 - 3 = 2
+				\end{array}
+				\right\}
+				\Rightarrow L = 2 - 1 + 2 = 3
+				$
+			</p>
+	</li>
+</ol>
+	
+</div>
+		
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../potencial_quimico/potencial_quimico.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../diagramas_fases/diagramas_fases.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

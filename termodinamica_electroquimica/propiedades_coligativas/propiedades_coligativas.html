@@ -1,0 +1,1392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Propiedades coligativas">
+<meta name="keywords" content="propiedades, coligativas">
+<title>Propiedades coligativas</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Propiedades coligativas</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Las propiedades coligativas, i.e. que van unidas, relacionadas entre 
+sí, son:</p>
+
+<p>- Descenso de la presión de vapor:</p>
+
+<p>Se plantea una mezcla líquida, donde $\ce{A}$ es el disolvente y
+$\ce{B}$ el soluto, en equilibrio con su vapor:</p>
+
+<center>
+	<object data="propiedades_coligativas_01.svg" type="image/svg+xml"
+	width="161" height="161"></object>
+</center>
+
+<p>Entonces, la presión de vapor de la disolución:</p>
+
+	<p style="text-align:center">
+		$P = P_{\rm A} + P_{\rm B}$</p>
+		
+<p>Si el soluto es muy poco volátil:</p>
+
+	<p style="text-align:center">
+		$P \simeq P_{\rm A}$</p>
+		
+<p>Si además el disolvente obedece la ley de Raoult, i.e. disolución 
+muy diluida, y la presión es suficientemente baja como para considerar 
+el vapor ideal:</p>
+
+	<p style="text-align:center">
+		$P = P_{\rm A}^* x_{\rm A}$</p>
+		
+<p>De donde se concluye que al añadir el soluto al disolvente puro se
+produce un descenso en la presión de vapor. Lo mismo sucede con el
+potencial químico del disolvente:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A(sln)} - \mu_{\rm A(l)}^* = RT \ln x_{\rm A} \lt 0$</p>
+		
+<p>Su potencial químico es pues una medida de la tendencia de $\ce{A}$ a
+escapar de la disolución (hacia la fase gaseosa).</p>
+
+<p>El descenso que se produce en la presión de vapor es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\Delta P = P_{\rm A}^* - P = P_{\rm A}^* - P_{\rm A}^* x_{\rm A} =
+			P_{\rm A}^* (1 - x_{\rm A}) \\[1ex]
+			\boxed{
+				\dfrac{\Delta P}{P_{\rm A}^*} = 1 - x_{\rm A} = x_{\rm B}
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>Así pues, en una disolución diluida ideal y vapor ideal, el descenso 
+de la presión de vapor sólo depende de la concentración de soluto. Esta 
+característica, la dependencia únicamente de la concentración del 
+soluto (sin importar su identidad), es lo que define a una propiedad 
+coligativa.</p>
+
+<p>Existen también, además de las coligativas, las magnitudes aditivas, 
+condicionadas por el número y tipo de átomos presentes (p. ej. el peso 
+molecular) y las constitutivas, marcadas por la disposición de los 
+átomos en el espacio (p. ej. la rotación del plano de polarización de la 
+luz). Hay propiedades que pueden ser, en mayor o menor medida, tanto 
+aditivas como constitutivas (p. ej. el volumen molecular).<p>
+
+<p>En una disolución real:</p>
+
+	<p style="text-align:center">
+		$
+		a_{x,\rm A} = \Gamma_{\rm A(l)} \dfrac{a_{\rm A(g)}}{a_{\rm A(g)}^*}
+		$
+	</p>
+	
+<p>También:</p>
+
+	<p style="text-align:center">
+		$a_{x,\rm A} = \Gamma_{\rm A(l)} \, f_{\rm A} x_{\rm A}$</p>
+		
+<p>Donde $f_{\rm A}$ es el coeficiente de actividad (no confundir con
+la fugacidad).</p>
+
+<p>Igualando:</p>
+
+	<p style="text-align:center">
+		$a_{\rm A(g)} = a_{\rm A(g)}^* \, f_{\rm A} x_{\rm A}$</p>
+		
+<p>Si las presiones son bajas como para considerarse gas ideal:</p>
+
+	<p style="text-align:center">
+		$P_{\rm A} = P_{\rm A}^* \, f_{\rm A} x_{\rm A}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			P = P_{\rm A}^* \, f_{\rm A} x_{\rm A} \\[1ex]
+			\dfrac{P}{P_{\rm A}^*} = f_{\rm A} x_{\rm A} \\[1ex]
+			1 - \dfrac{P}{P_{\rm A}^*} = 1 - f_{\rm A} x_{\rm A} \\[1ex]
+			\dfrac{P_{\rm A}^* - P_{\rm A}}{P_{\rm A}^*} =
+			1 - f_{\rm A} x_{\rm A}
+		\end{array}	
+		$
+	</p>
+	
+<p>Pudiéndose así, con mediciones de presiones de vapor, calcular su
+coeficiente de actividad.</p>
+
+<p>- Descenso del punto de solidificación:</p>
+
+<p>a) Estudio experimental:</p>
+
+<p>Experimentalmente lo más frecuente es que sólo congela el disolvente 
+puro, i.e. el soluto es insoluble en el disolvente sólido. 
+Esquemáticamente, en un diagrama de fases:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			<object data="propiedades_coligativas_02.svg" type="image/svg+xml"
+			width="383" height="339"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle;padding-left:1em">
+			Punto fusión normal:
+			<span style="display:block;margin-top:1em;margin-bottom:1em">
+				&emsp; sol. $\ce{&lt;=&gt;}$ liq. &ensp; $P = \pu{1 atm}$</span>
+			Punto ebullición normal:
+			<span style="display:block;margin-top:1em;margin-bottom:1em">
+				&emsp; liq. $\ce{&lt;=&gt;}$ vap. &ensp; $P = \pu{1 atm}$</span>
+			También:
+			<span style="display:block;margin-top:1em;text-align:center">
+				$\Delta T_{\rm f} &gt; \Delta T_{\rm b}$</span>
+		</span>
+	</p>
+	
+<p>Al producirse la disminución de la presión de vapor al adicionar el
+soluto, tiene lugar un descenso en la temperatura del punto de
+solidificación y un aumento en el de ebullición.</p>
+
+<p>b) Estudio termodinámico:</p>
+	
+<p>Se estudia el descenso del punto de solidificación del disolvente 
+$\ce{A}$ por adición del soluto $\ce{B}$ (descenso crioscópico).</p>
+
+<p>Se considera que a $P = \pu{1 atm}$ y $T_{\rm f}$ se separa $\ce{A}$
+sólido puro de la disolución, siendo el equilibrio:</p>
+
+	<p style="text-align:center">
+		$\ce{A_{(s)} &lt;=&gt; A_{(sln)}($x$_A)}$ &emsp; ($P = \pu{1 atm}$, 
+		$T_{\rm f}$)</p>
+		
+<p>El criterio de equilibrio:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu \rm {A(s)}}(T_{\rm f}) =
+		\mu_{\rm A(sln)}(P = \pu{1 atm}, T_{\rm f},x_{\rm A})$</p>
+		
+<p>El estado tipo del disolvente en la disolución es el disolvente 
+líquido puro a $P = \pu{1 atm}$ y $T$ de la disolución, siendo 
+entonces:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A(sln)}(P = \pu{1 atm}, T_{\rm f}, x_{\rm A}) = 
+		\mu°_{\!\! \lower 2mu {x,\rm A}}(T_{\rm f}) +
+		RT_{\rm f} \ln (\, f_{\rm A} x_{\rm A})$</p>
+		
+<p>Donde se ha tenido en cuenta que $\Gamma_{\rm A(l)} = 1$ cuando $P =
+\pu{1 atm}$.</p>
+
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\mu°_{\!\! \lower 2mu \rm {A(s)}}(T_{\rm f}) =
+		\mu°_{\!\! \lower 2mu {x,\rm A}}(T_{\rm f})	+
+		RT_{\rm f} \ln (\, f_{\rm A} x_{\rm A})$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu°_{\!\! \lower 2mu {\rm A(s)}}(T_{\rm f}) -
+			\mu°_{\!\! \lower 2mu {x,\rm A}}(T_{\rm f})	&amp;= \\[1ex]
+			= G°_{\!\! \lower 2mu {\rm A(s)}}(T_{\rm f}) -
+			G°_{\!\! \lower 2mu {\rm A(l)}}(T_{\rm f}) &amp;= \\[1ex]
+			= - \Delta G°_{\!\! \lower 2mu \rm {f,A}}(T_{\rm f}) &amp;=
+			RT_{\rm f} \ln (\, f_{\rm A} x_{\rm A})
+		\end{align}
+		$
+	</p>
+	
+<p>Donde $\Delta G°_{\!\! \lower 2mu \rm {f,A}}(T_{\rm f})$ es la
+variación de la energía de Gibbs en la fusión de $\pu{1 mol}$ de
+disolvente (puro) a $P = \pu{1 atm}$ y $T_{\rm f}$.</p>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\Delta G°_{\!\! \lower 2mu \rm {f,A}}(T_{\rm f}) = \Delta
+		H°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f}) - T_{\rm f} \Delta
+		S°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f})$</p>
+		
+<p>En consecuencia:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{
+			-RT_{\rm f} \ln (\, f_{\rm A} x_{\rm A}) =
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f}) -
+			T_{\rm f} \Delta S°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f})
+		}
+		$
+	</p>
+	
+<p>$\ast$ Cálculo de $\Delta H°_{\!\! \lower 2mu {\rm f,A}}$ y $\Delta 
+S°_{\!\! \lower 2mu {\rm f,A}}$ a $T_{\rm f}$:</p>
+
+<p>Como se observa experimentalmente $T_{\rm f} &lt; T°_{\!\! \lower 
+2mu \rm f}$, por lo que $\ce{A}$ líquido puro a $P = \pu{1 atm}$ y 
+$T_{\rm f}$ es un estado metaestable. Así pues, es, en tal situacion, 
+un líquido subenfriado que espontáneamente evoluciona a sólido.</p>
+
+<p>Procediendo de manera irreversible, lejos del equilibrio, podría 
+pasarse de $\ce{A}$ sólido, estado con $P = \pu{1 atm}$ y $T_{\rm f}$, 
+a $\ce{A}$ líquido, a la mismo presión y temperatura inicial, el cual 
+ante la mínima perturbación, como estado metaestable, volvería de 
+manera espontánea al sólido inicial. Como no importa el camino para ir 
+de un estado al otro, puede idearse uno reversible que permita el 
+cálculo de $\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f})$ y $\Delta 
+S°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f})$. Esto es:</p>
+
+<center>
+	<object data="propiedades_coligativas_03.svg" type="image/svg+xml"
+	width="383" height="108"></object>
+</center>
+
+<p>Etapas:</p>
+
+	<p style="margin-left:30px">
+		I) Calentamiento reversible de $\pu{1 mol}$ de $\ce{A}$ sólido puro
+		de $T_{\rm f}$ a $T°_{\!\! \lower 2mu \rm f}$:</p>
+		
+		<p style="margin-left:60px">
+			$\Delta H_{\rm I} = \displaystyle
+			\int_{T_{\rm f}}^{T°_{\!\! \lower 2mu \rm f}} C_{P,\ce{A{(s)}}} \,
+			dT$</p>
+		
+		<p style="margin-left:60px">
+			$\Delta S_{\rm I} = \displaystyle
+			\int_{T_{\rm f}}^{T°_{\!\! \lower 2mu \rm f}}
+			\dfrac{C_{P,\ce{A{(s)}}}}{T} \, dT$</p>
+			
+	<p style="margin-left:30px">
+		II) Fusión reversible del sólido $\ce{A}$ puro a
+		$T°_{\!\! \lower 2mu \rm f}$:</p>
+		
+		<p style="margin-left:60px">
+			$\Delta H_{\rm II} =
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})$</p>
+			
+		<p style="margin-left:60px">
+			$
+			\Delta S_{\rm II} =
+			\dfrac{
+				\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			}{T°_{\!\! \lower 2mu \rm f}}
+			$
+		</p>
+		
+	<p style="margin-left:30px">
+		III) Enfriamiento reversible de $\pu{1 mol}$ de $\ce{A}$ líquido 
+		puro de $T°_{\!\! \lower 2mu \rm f}$ a $T_{\rm f}$:</p>
+		
+		<p style="margin-left:60px">
+			$\Delta H_{\rm III} = \displaystyle
+			\int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}} C_{P,\ce{A{(l)}}} \,
+			dT$</p>
+			
+		<p style="margin-left:60px">
+			$\Delta S_{\rm III} = \displaystyle
+			\int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}}
+			\dfrac{C_{P,\ce{A{(l)}}}}{T} \, dT$</p>
+			
+<p>En el proceso global, para la entalpía:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta H°_{\!\! \lower 2mu \rm {f,A}}(T_{\rm f}) &amp;=
+			\Delta H_{\rm I} + \Delta H_{\rm II} + \Delta H_{\rm III} = \\[1ex]
+			&amp;=
+			\int_{T_{\rm f}}^{T°_{\!\! \lower 2mu \rm f}} C_{P,\ce{A{(s)}}} \, dT
+			+ \Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			+ \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}} C_{P,\ce{A{(l)}}} \,
+			dT = \\[1ex]
+			&amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			+ \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}}
+			(C_{P,\ce{A{(l)}}} - C_{P,\ce{A{(s)}}}) \, dT = \\[1ex]
+			&amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			+ \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}} \Delta_{\rm f}
+			C_{P,\ce{A}} \, dT
+		\end{align}
+		$
+	<p>
+		
+<p>Para la entropía:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\Delta S°_{\!\! \lower 2mu {\rm f,A}}(T_{\rm f}) &amp;=
+			\Delta S_{\rm I} + \Delta S_{\rm II} + \Delta S_{\rm III} = \\[1ex]
+			&amp;=
+			\dfrac{
+				\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			}{
+				T°_{\!\! \lower 2mu \rm f}
+			} + \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}}
+			\dfrac{\Delta_{\rm f} C_{P,\ce{A}}}{T} \, dT
+		\end{align}	
+		$
+	</p>
+	
+<p>En consecuencia:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{split}
+		-R T_{\rm f} \ln (\, f_{\rm A} x_{\rm A}) &amp;=
+		 \Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		+ \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}} \Delta_{\rm f}
+		C_{P,\ce{A}} \, dT - {} \\[1ex] &amp;\hphantom{= {}} - T_{\rm f}
+		\dfrac{
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		}{
+			T°_{\!\! \lower 2mu \rm f}
+		} - T_{\rm f} \int_{T°_{\!\! \lower 2mu \rm f}}^{T_{\rm f}}
+		\dfrac{\Delta_{\rm f} C_{P,\ce{A}}}{T} \, dT
+		\end{split}
+		$
+	</p>
+	
+<p>Si se considera $\Delta_{\rm f} C_{P,\ce{A}}$ independiente de $T$
+(cuando $\Delta T_{\rm f}$ es pequeña), integrando:</p>
+
+	<p style="text-align:center">
+		$
+		-RT_{\rm f} \ln (\, f_{\rm A} x_{\rm A}) =
+		\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		\left( 1 - \dfrac{T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right) +
+		\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[ (T_{\rm f} -
+		T°_{\!\! \lower 2mu \rm f}) - T_{\rm f} \ln
+		\dfrac{T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right]
+		$
+	</p>
+	
+<p>Dividiendo por $T_{\rm f}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			-R \ln (\, f_{\rm A} x_{\rm A}) &amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			\left( \dfrac{1}{T_{\rm f}} - \dfrac{1}{T°_{\!\! \lower 2mu \rm f}}
+			\right) + \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+			\dfrac{T_{\rm f} - T°_{\!\! \lower 2mu \rm f}}{T_{\rm f}} - \ln
+			\dfrac{T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right] = \\[1ex]
+			&amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			\left(
+			\dfrac{
+				T°_{\!\! \lower 2mu \rm f} - T_{\rm f}
+			}{
+				T_{\rm f} T°_{\!\! \lower 2mu \rm f}
+			}
+			\right) - \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+			\dfrac{T°_{\!\! \lower 2mu \rm f} - T_{\rm f}}{T_{\rm f}} + \ln
+			\dfrac{T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right]
+			= \\[1ex]
+			&amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			\dfrac{\Delta T_{\rm f}}{T_{\rm f} T°_{\!\! \lower 2mu \rm f}}
+			- \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+			\dfrac{\Delta T_{\rm f}}{T_{\rm f}} +
+			\ln \dfrac{T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right]
+		\end{align}
+		$
+	</p>
+	
+<p>A $P = \pu{1 atm}$, $\Delta T_{\rm f} = T°_{\!\! \lower 2mu \rm f}
+- T_{\rm f}$, que es la disminución del punto normal de fusión (o de
+solificación o congelación).</p>
+
+<p>Siendo $T_{\rm f} = T°_{\!\! \lower 2mu \rm f} - \Delta T_{\rm f}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			-R \ln (\, f_{\rm A} x_{\rm A}) &amp;=
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			\dfrac{
+				\Delta T_{\rm f}
+			}{
+				T°_{\!\! \lower 2mu \rm f}(T°_{\!\! \lower 2mu \rm f} -
+				\Delta T_{\rm f})
+			} - \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+			\dfrac{
+				\Delta T_{\rm f}
+			}{
+				T°_{\!\! \lower 2mu \rm f} - \Delta T_{\rm f}
+			} + \ln
+			\dfrac{
+				T°_{\!\! \lower 2mu \rm f} - \Delta T_{\rm f}
+			}{
+				T°_{\!\! \lower 2mu \rm f}
+			} \right] = \\[1ex]
+			&amp;=
+			\begin{aligned}[t]
+				&amp;\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+					\Delta T_{\rm f}
+				}{
+					T°_{\!\! \lower 2mu \rm f}^2
+				}
+				\dfrac{
+					1
+				}{
+					(T°_{\!\! \lower 2mu \rm f} - \Delta T_{\rm f}){∕}
+					T°_{\!\! \lower 2mu \rm f}
+				} - {} \\[1ex]
+				&amp;- \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\dfrac{
+					1
+				}{
+					(T°_{\!\! \lower 2mu \rm f} - \Delta T_{\rm f}){∕}
+					T°_{\!\! \lower 2mu \rm f}
+				} + \ln \left( 1 -
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)
+				\right] = \\[1ex]
+			\end{aligned} \\[1ex]
+			&amp;=
+			\begin{aligned}[t]
+				&amp;\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+					\Delta T_{\rm f}
+				}{
+					T°_{\!\! \lower 2mu \rm f}^2
+				}
+				\left( 1 - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\right)^{\! -1} - {} \\[1ex]
+				&amp;-\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\left( 1 - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\right)^{\! -1} + \ln \left( 1 -
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)
+				\right]
+			\end{aligned}
+		\end{align} 
+		$
+	</p>
+	
+<p>Siendo que el desarrollo en series de Taylor, con $|x| &lt; 1$, de:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			(1+x)^{-1} = 1 - x + x^2 - x^3 + \dotsb \\[1ex]
+			\ln(1+x) = x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dotsb
+		\end{array}
+		$
+	</p>
+	
+<p>Dado que $T°_{\!\! \lower 2mu \rm f} \gg \Delta T_{\rm f}$, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\left( 1 - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+			\right)^{\! -1} =
+			1 + \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} +
+			\left( \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+			\right)^{\! 2} + \left(
+			\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 3}
+			+ \dotsb \\[1ex]
+			\ln \left( 1 - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+			\right) = - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+			- \dfrac{1}{2} \left(
+			\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 2}
+			- \dfrac{1}{3} \left(
+			\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 3}
+			- \dotsb
+		\end{array}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			-R \ln (\, f_{\rm A} x_{\rm A}) &amp;=
+			\begin{aligned}[t]
+				&amp;\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+					\Delta T_{\rm f}
+				}{
+					T°_{\!\! \lower 2mu \rm f}^2
+				} \left[ 1 + \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				+ \left( \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\right)^{\! 2} + \dotsb  \right] - {} \\[1ex]
+				&amp;-\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}} \left[
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \left(
+				1 + \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				+ \left( \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\right)^{\! 2} + \dotsb \right) - {} \right. \\[1ex]
+				&amp;\left.			
+				{} - \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				- \dfrac{1}{2} \left(
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 2}
+				- \dfrac{1}{3} \left(
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 3}
+				- \dotsb \right]
+			\end{aligned}
+		\end{align}
+		$
+	</p>
+
+<p>De donde, operando, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			-\ln (\, f_{\rm A} x_{\rm A}) &amp;=
+			\begin{aligned}[t]
+				&amp;\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+					\Delta T_{\rm f}
+				}{
+					RT°_{\!\! \lower 2mu \rm f}^2
+				} \left[ 1 + \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				+ \left( \dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}}
+				\right)^{\! 2} + \dotsb  \right] - {} \\[1ex]
+				&amp;
+				-\dfrac{\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}}}{R}
+				\left[ \dfrac{1}{2} \left(
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 2}
+				+ \dfrac{2}{3} \left(
+				\dfrac{\Delta T_{\rm f}}{T°_{\!\! \lower 2mu \rm f}} \right)^{\! 3}
+				+ \dotsb \right] = {}
+			\end{aligned} \\[1ex]
+			&amp;=
+			\begin{aligned}[t]
+				&amp;\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+				}{
+					RT°_{\!\! \lower 2mu \rm f}^2
+				} \Delta T_{\rm f} + \dfrac{1}{RT°_{\!\! \lower 2mu \rm f}^2} \left[
+				\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+				}{
+					T°_{\!\! \lower 2mu \rm f}
+				} -	\dfrac{\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}}}{2}
+				\right] (\Delta T_{\rm f})^2 + {} \\[1ex]
+				&amp;+ \dfrac{1}{RT°_{\!\! \lower 2mu \rm f}^3} \left[
+				\dfrac{
+					\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+				}{
+					T°_{\!\! \lower 2mu \rm f}
+				} - \dfrac{2 \Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}}}{3}
+				\right] (\Delta T_{\rm f})^3 + \dotsb
+			\end{aligned}
+		\end{align}
+		$
+	</p>
+	
+<p>Que en forma simplificada:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{
+			-\ln(\, f_{\rm A} x_{\rm A}) = a \Delta T_{\rm f} + b ( \Delta
+			T_{\rm f})^2 + c ( \Delta T_{\rm f})^3 + \dotsb
+		}
+		$
+	</p>
+	
+<p>Supuestos (para llegar a esta expresión):</p>
+
+<ul>
+	<li>Sólo congela disolvente puro.</li>
+	<li>$\Delta T_{\rm f} \ll T°_{\!\! \lower 2mu \rm f}$, por lo que
+	$\Delta_{\rm f} C_{P,\ce{A}} \! =$ cte. (independiente de $T$).</li>
+	<li>Desarrollo en serie de Taylor.</li>
+</ul>
+
+<p>Así pues, de la medida experimental de $\Delta T_{\rm f}$ (descenso
+crioscópico) puede
+obtenerse $f_{\rm A}$ (si se conocen $\Delta
+H°_{\!\! \lower 2mu \rm {f,A}}(T°_{\!\! \lower 2mu \rm f})$ y
+$\Delta_{\rm f} C°_{\!\! \lower 2mu {P,\ce{A}}}$).</p>
+
+<p>Las propiedades coligativas, como en este caso, sirven para hallar
+el valor de $f_{\rm A}$. Así que también se puede plantear lo mismo con
+el aumento de la temperatura de ebullición (ascenso ebulloscópico), otra
+propiedad coligativa, cambiando fusión por evaporación.</p>
+
+<p>Aproximación, válida para disoluciones muy diluidas, de disolución 
+diluida ideal, donde $f_{\rm A} = 1$, y para la que $\Delta T_{\rm f} 
+{\downarrow} {\downarrow}$, de tal modo que pueden despreciarse los 
+terminos de grado superior en la expresión anterior:</p>
+
+	<p style="text-align:center">
+		$
+		-\ln x_{\rm A} =
+		\dfrac{
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		}{
+			RT°_{\!\! \lower 2mu \rm f}^2
+		} \Delta T_{\rm f}
+		$
+	</p>
+	
+<p>En una disolución diluidad ideal:</p>
+
+	<p style="text-align:center">
+		$-\ln x_{\rm A} = -\ln(1-x_{\rm B}) \simeq x_{\rm B}$</p>
+		
+<p>Donde se ha hecho uso de nuevo del desarrollo en serie de Taylor, y
+dado que $x_{\rm B} \ll 1$ pueden despreciarse los términos de mayor
+grado.</p>
+
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		x_{\rm B} =
+		\dfrac{
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		}{
+			RT°_{\!\! \lower 2mu \rm f}^2
+		} \Delta T_{\rm f}
+		$
+	</p>
+	
+<p>Para una disolución diluida de molalidad $m$:</p>
+
+	<p style="text-align:center">
+		$x_{\rm B} = \dfrac{n_{\rm B}}{n_{\rm A} + n_{\rm B}} \simeq
+		\dfrac{n_{\rm B}}{n_{\rm A}} = \dfrac{m}{1000{∕}M_{\rm A}} =
+		\dfrac{M_{\rm A}}{1000} m$</p>
+		
+<p>Por tanto, igualando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\dfrac{
+				\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			}{
+				RT°_{\!\! \lower 2mu \rm f}^2
+			} \Delta T_{\rm f} = \dfrac{M_{\rm A}}{1000} m \\[1ex]
+			\Delta T_{\rm f} =
+			\dfrac{
+				RT°_{\!\! \lower 2mu \rm f}^2 M_{\rm A}
+			}{
+				1000
+				\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+			} m \\[1ex]
+			\boxed{\Delta T_{\rm f} = K_{\rm f} m}
+		\end{array}
+		$
+		<span style="display:block;margin-top:1ex">
+			(disolución diluida ideal)</span>
+	</p>
+	
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$
+		K_{\rm f} =
+		\dfrac{
+			RT°_{\!\! \lower 2mu \rm f}^2 M_{\rm A}
+		}{
+			1000
+			\Delta H°_{\!\! \lower 2mu {\rm f,A}}(T°_{\!\! \lower 2mu \rm f})
+		}
+		$
+	</p>
+	
+<p>Siendo que  $K_{\rm f}$, conocida como la constante crioscópica 
+molal del disolvente, representa el descenso del punto de solidificación
+del disolvente en una disolución 1 molal de soluto, a $P = \pu{1 atm}$,
+si a dicha concentración la disolución se comportara como una disolución
+diluida ideal.</p>
+
+<p>- Presión osmótica:</p>
+
+<p>Estudio termodinámico:</p>
+
+	<p style="display:table;margin-left:30px;margin-right:auto">
+		<span style="display:table-cell;padding-right:1em">
+			<object data="propiedades_coligativas_04.svg" type="image/svg+xml"
+			width="330" height="236"></object>
+		</span>
+		<span style="display:table-cell;vertical-align:middle">
+			La membrana es rígida, semipermeable (deja pasar el disolvente pero
+			no el soluto), y térmicamente conductora.
+		</span>
+	</p>
+	
+<p>$\ast$ Inicialmente:</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				(I): &ensp;</span>
+			<span style="display:table-cell">
+				$\ce{A_{(l)} &lt;=&gt; A_{(g)}}$ &emsp; ($P_0,T$)</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex">
+				(D): &ensp;</span>
+			<span style="display:table-cell">
+				Disolución de un soluto no volátil, enrasado a la misma altura
+				y misma $T$ que el disolvente puro.</span>
+		</span>
+	</p>
+	
+<p>Se verifica:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			P_{\rm I} = P_{\rm D} = P_0 \\[1ex]
+			T_{\rm I} = T_{\rm D} = T
+		\end{array}
+		\right\}
+		$
+	</p>
+	
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_{\rm A,I} = \mu_{\rm A}^*(P_0,T) \\[1ex]
+			\mu_{\rm A,D} = \mu°_{\!\! \lower 2mu \rm A} + RT \ln
+			(\Gamma_{\rm A} \, f_{\rm A} x_{\rm A})
+		\end{array}
+		$
+	</p>
+	
+<p>En general, para una disolución estable de dos componentes (donde
+$\ce{A}$ es el disolvente):</p>
+
+	<p style="text-align:center">
+		$G_1 = G(P,T,n_{\rm A},n_{\rm B})$</p>
+		
+<p>Si se dividiera esta disolución de la siguiente manera:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			G_2 = G(P,T,n_{\rm A}{∕}2 + \delta n_{\rm A}, n_{\rm B}{∕}2) \\[1ex]
+			G_3 = G(P,T,n_{\rm A}{∕}2 - \delta n_{\rm A}, n_{\rm B}{∕}2)
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo $\delta n_{\rm A}$ una variación, incremento infinitesimal de 
+moles de $\ce{A}$.</p>
+
+<p>Como la disolución original es estable, no se separa de manera 
+espontánea en dos fases (dos disoluciones de distinta composición), por 
+el criterio de espontaneidad, debe ser:</p>
+
+	<p style="text-align:center">
+		$\delta G_{1 \to 2,3} = (G_2 + G_3) - G_1 &gt; 0$</p>
+		
+<p>Haciendo uso del desarrollo en serie de Taylor (quedándose en el 
+término de segundo orden, dado que la variación es infinitesimal):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				G_2 &amp;= G(P,T,n_{\rm A}{∕}2 + \delta n_{\rm A}, n_{\rm B}{∕}2)
+				= \\[1ex]
+				&amp;= G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2) + \left(
+				\dfrac{\partial G}{\partial n_{\rm A}} \right)_{\! P,T,n_{\rm B}}
+				(\! \cancel{n_{\rm A}{∕}2} \! + \delta n_{\rm A} - \!
+				\cancel{n_{\rm A}{∕}2} \!) + {} \\[1ex]
+				&amp;\hphantom{={}} + \dfrac{1}{2} \left(
+				\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+				(\! \cancel{n_{\rm A}{∕}2} \! + \delta n_{\rm A} - \!
+				\cancel{n_{\rm A}{∕}2} \!)^2 = \\[1ex]
+				&amp;= G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2) + \left(
+				\dfrac{\partial G}{\partial n_{\rm A}} \right)_{\! P,T,n_{\rm B}}
+				\delta n_{\rm A} + \dfrac{1}{2} \left(
+				\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+				(\delta n_{\rm A})^2
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				G_3 &amp;= G(P,T,n_{\rm A}{∕}2 - \delta n_{\rm A}, n_{\rm B}{∕}2)
+				= \\[1ex]
+				&amp;= G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2) + \left(
+				\dfrac{\partial G}{\partial n_{\rm A}} \right)_{\! P,T,n_{\rm B}}
+				(\! \cancel{n_{\rm A}{∕}2} \! - \delta n_{\rm A} - \!
+				\cancel{n_{\rm A}{∕}2} \!) + {} \\[1ex]
+				&amp;\hphantom{={}} + \dfrac{1}{2} \left(
+				\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+				(\! \cancel{n_{\rm A}{∕}2} \! - \delta n_{\rm A} - \!
+				\cancel{n_{\rm A}{∕}2} \!)^2 = \\[1ex]
+				&amp;= G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2) - \left(
+				\dfrac{\partial G}{\partial n_{\rm A}} \right)_{\! P,T,n_{\rm B}}
+				\delta n_{\rm A} + \dfrac{1}{2} \left(
+				\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+				(\delta n_{\rm A})^2
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\delta G_{1 \to 2,3} &amp;= (G_2 + G_3) - G_1 = \\[1ex]
+			&amp;= \! \cancel{G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2)} \! + \!
+			\cancel{\left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! P,T,n_{\rm B}} \delta n_{\rm A}} \! + \dfrac{1}{2} \left(
+			\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+			(\delta n_{\rm A})^2 + {} \\[1ex]
+			&amp;\hphantom{={}} + \! \cancel{G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2)}
+			\! - \! \cancel{\left( \dfrac{\partial G}{\partial n_{\rm A}}
+			\right)_{\! P,T,n_{\rm B}} \delta n_{\rm A}} \! + \dfrac{1}{2} \left(
+			\dfrac{\partial^2 G}{\partial n_{\rm A}^2} \right)_{\! P,T,n_{\rm B}}
+			(\delta n_{\rm A})^2 - {} \\[1ex]
+			&amp;\hphantom{={}} - \! \cancel{G(P,T,n_{\rm A},n_{\rm B})} \!
+			= \\[1ex]
+			&amp;= \left( \dfrac{\partial^2 G}{\partial n_{\rm A}^2}
+			\right)_{\! P,T,n_{\rm B}} (\delta n_{\rm A})^2	&gt; 0
+		\end{align}
+		$
+	</p>
+	
+<p>Donde se ha tenido en cuenta que $G$ es una magnitud extensiva, por lo
+que:</p>
+
+	<p style="text-align:center">
+		$G(P,T,n_{\rm A},n_{\rm B}) = G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2)
+		+ G(P,T,n_{\rm A}{∕}2, n_{\rm B}{∕}2)$</p>
+		
+<p>Como $(\delta n_{\rm A})^2 &gt; 0$, por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\left( \dfrac{\partial^2 G}{\partial n_{\rm A}^2}
+		\right)_{\! P,T,n_{\rm B}} = \biggl( \dfrac{\partial}{\partial n_{\rm A}}
+		\underbrace{\left( \dfrac{\partial G}{\partial n_{\rm A}}
+		\right)_{\! P,T,n_{\rm B}}}_{\mu_{\rm A}} \biggr)_{\! P,T,n_{\rm B}}
+		= \left( \dfrac{\partial \mu_{\rm A}}{\partial n_{\rm A}}
+		\right)_{\! P,T,n_{\rm B}} &gt; 0
+		$
+	</p>
+	
+<p>Entonces, teniéndose en cuenta que el potencial químico es una 
+propiedad intensiva, i.e. que es función de la composición (no de la 
+extensión), se hace uso de la regla de la cadena:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\left( \dfrac{\partial \mu_{\rm A}}{\partial n_{\rm A}}
+			\right)_{\! P,T,n_{\rm B}} &amp;=
+			\left( \dfrac{\partial \mu_{\rm A}}{\partial x_{\rm A}}
+			\right)_{\! P,T} \left( \dfrac{\partial x_{\rm A}}{\partial n_{\rm A}}
+			\right)_{\! P,T,n_{\rm B}} 
+			\underset{
+				\begin{subarray}{c}
+					\big\uparrow \\
+					\llap{x_{\rm A} \,} = 
+					\rlap{\, \tfrac{n_{\rm A}}{n_{\rm A} + n_{\rm B}}}
+				\end{subarray}
+				}{=} \\[1ex]
+			&amp;= \left( \dfrac{\partial \mu_{\rm A}}{\partial x_{\rm A}}
+			\right)_{\! P,T} \left( \dfrac{1}{n_{\rm A} + n_{\rm B}} -
+			\dfrac{n_{\rm A}}{(n_{\rm A} + n_{\rm B})^2} \right) = \\[1ex]
+			&amp;=
+			\underbrace{\dfrac{n_{\rm B}}{(n_{\rm A} + n_{\rm B})^2}}_{&gt; \, 0}
+			\left( \dfrac{\partial \mu_{\rm A}}{\partial x_{\rm A}}
+			\right)_{\! P,T} &gt; 0
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\left( \dfrac{\partial \mu_{\rm A}}{\partial x_{\rm A}}
+		\right)_{\! P,T} &gt; 0$</p>
+		
+<p>Así pues, el potencial químico de $\ce{A}$, el disolvente, aumenta
+con su fracción molar ($x_{\rm A}$). Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A,I} &gt; \mu_{\rm A,D}$ &emsp; ($x_{\rm A} &lt; 1 \equiv$ 
+		fracción molar puro).</p>
+		
+<p>Consecuencias de esto:</p>
+
+<ul>
+	<li>No equilibrio.</li>
+	<li>El disolvente ($\ce{A}$) fluye espontáneamente de I a D (desde
+	el potencial químico mayor al menor).</li>
+	<li>Aumenta $P$ sobre el lado derecho (debido al ascenso de la disolución
+	por el tubo).</li>
+	<li>Aumenta $\mu_{\rm A,D}$ (porque $\left(
+	\dfrac{\partial \mu_{\rm A}}{\partial P} \right)_{\! T \rlap{,n_i}} =
+	V_{\rm A}	&gt; 0$, puede afirmarse que $V_{\rm A} &gt;0$ ya que el 
+	volumen de la disolución crece con la entrada de disolvente, siendo 
+	entonces que $\mu_{\rm A}$ aumenta con $P$, y también porque	$x_{\rm 
+	A}$ sube).	
+	</li>
+</ul>
+
+<p>Para impedir, detener la dilución, el paso de disolvente hacia la 
+derecha, se dispone un émbolo, en el tubo sobre la disolución, elevando 
+$P$, y por tanto también $\mu_{\rm A,D}$, hasta alcanzar el equilibrio 
+(la igualdad entre los potenciales químicos de $\ce{A}$ a un lado y 
+otro de la membrana).</p>
+
+<p>$\ast$ Equilibrio:</p>
+
+<p>Cuando se alcanza el equilibrio, situación del esquema dibujado
+anteriormente, el potencial químico del disolvente a un lado y al otro
+de la membrana es el mismo. Esto es:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A}^*(T,P_0) = \mu_{\rm A}(T,P,x_{\rm A})$</p>
+		
+<p>La presión en el compartimento derecho:</p>
+
+	<p style="text-align:center">
+		$P = P_0 + \Pi$</p>
+		
+<p>Donde $\Pi$ es la presión osmótica, proporcional a la altura de la
+disolución en el tubo, que es la presión adicional que se necesita aplicar
+sobre la disolución para que se detenga el paso de disolvente. Así
+entonces:</p>
+
+	<p style="text-align:center">
+		$\Pi = P - P_0$</p>
+		
+<p>En el lado del disolvente puro:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A}^* = \mu°_{\!\! \lower 2mu \rm A}(T) + RT \ln
+		\Gamma_{\rm A}(P_0,T)	= \mu°_{\!\! \lower 2mu \rm A}(T) +
+		\displaystyle \int_1^{P_0} V_{\rm A}^* \, dP$</p>
+		
+<p>Donde $V_{\rm A}^*$ es el volumen molar del disolvente puro a $T$.</p>
+		
+<p>En el lado de la disolución:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_{\rm A} &amp;= \mu°_{\!\! \lower 2mu \rm A}(T) + RT \ln
+			(\Gamma_{\rm A} \, f_{\rm A} x_{\rm A}) = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu \rm A}(T) + RT \ln \Gamma_{\rm A}(P,T)
+			+	RT \ln (\, f_{\rm A} x_{\rm A}) = \\[1ex]
+			&amp;= \mu°_{\!\! \lower 2mu \rm A}(T) + \int_1^P V_{\rm A}^* \,
+			dP + RT \ln (\, f_{\rm A} x_{\rm A})
+		\end{align}
+		$
+	</p>
+	
+<p>El estado tipo del disolvente tanto en la disolución como puro es el
+mismo, i.e. disolvente líquido puro a $P = \pu{1 atm}$ y $T$ de la
+disolución.</p>
+
+<p>Así entonces, por el criterio de equilibrio:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu°_{\!\! \lower 2mu \rm A} + \displaystyle \int_1^{P_0} V_{\rm A}^*
+			\, dP = \mu°_{\!\! \lower 2mu \rm A} + \int_1^P V_{\rm A}^* \,dP
+			+ RT \ln (\, f_{\rm A} x_{\rm A}) \\[1ex]
+			-RT \ln (\, f_{\rm A} x_{\rm A}) = \displaystyle \int_1^P V_{\rm A}^*
+			\, dP - \int_1^{P_0} V_{\rm A}^* \, dP \\[1ex]
+			-RT \ln (\, f_{\rm A} x_{\rm A}) = \displaystyle \int_1^P V_{\rm A}^*
+			\, dP + \int_{P_0}^1 V_{\rm A}^* \, dP \\[1ex]
+			-RT \ln (\, f_{\rm A} x_{\rm A}) = \displaystyle \int_{P_0}^P
+			V_{\rm A}^* \, dP \\[1ex]
+			- \ln (\, f_{\rm A} x_{\rm A}) = \dfrac{1}{RT} \displaystyle
+			\int_{P_0}^P V_{\rm A}^* \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Es necesaria una expresión de $V_{\rm A}^*$ en función de la presión.
+Siendo el coeficiente de compresibilidad de $\ce{A}$:</p>
+
+	<p style="text-align:center">
+		$\kappa_{\rm A} = - \dfrac{1}{V_{\rm A}^*} \left(
+		\dfrac{\partial V_{\rm A}^*}{\partial P} \right)_{\! T}$</p>
+		
+<p>A $T =$ cte.:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			dV_{\rm A}^* = \left( \dfrac{\partial V_{\rm A}^*}{\partial P}
+			\right)_{\! T} \, dP = -\kappa_{\rm A} V_{\rm A}^* \, dP \\[1ex]
+			\dfrac{1}{V_{\rm A}^*} \, dV_{\rm A}^* = -\kappa_{\rm A} \, dP \\[1ex]
+			\dfrac{d \ln V_{\rm A}^*}{dV_{\rm A}^*} \, dV_{\rm A}^* =
+			-\kappa_{\rm A} \, dP \\[1ex]
+			d \ln V_{\rm A}^* = -\kappa_{\rm A} \, dP
+		\end{array}
+		$
+	</p>
+	
+<p>Si se considera $\kappa_{\rm A}$ independiente de $P$, integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\ln \dfrac{V_{\rm A}^*}{V°_{\!\! \lower 2mu \rm A}} =
+			-\kappa_{\rm A} \displaystyle \int_{\pu{1 atm}}^{P} dP \\[1ex]
+			\ln \dfrac{V_{\rm A}^*}{V°_{\!\! \lower 2mu \rm A}} =
+			- \kappa_{\rm A} (P - 1)  \\[1ex]
+			V_{\rm A}^* = V°_{\!\! \lower 2mu \rm A} e^{-\kappa_{\rm A} (P -1)}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $V°_{\!\! \lower 2mu \rm A}$ es el volumen molar del disolvente
+puro a $P = \pu{1 atm}$ y a $T$ de la disolución.</p>
+
+<p>Sustituyendo e integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+		 -\ln (\, f_{\rm A} x_{\rm A}) = \dfrac{1}{RT} \displaystyle
+		 \int_{P_0}^P V°_{\!\! \lower 2mu \rm A} e^{-\kappa_{\rm A} (P -1)}
+		 \, dP \\[1ex]
+		 -\ln (\, f_{\rm A} x_{\rm A}) = 
+		 -\dfrac{V°_{\!\! \lower 2mu \rm A}}{\kappa_{\rm A} RT} \left[
+		 e^{-\kappa_{\rm A} (P -1)} \right]_{P_0}^P \\[1ex]
+		 \ln (\, f_{\rm A} x_{\rm A}) =
+		 \dfrac{V°_{\!\! \lower 2mu \rm A}}{\kappa_{\rm A} RT} \left[
+		 e^{-\kappa_{\rm A} (P -1)} - e^{-\kappa_{\rm A} (P_0 -1)} \right]
+		\end{array}
+		$
+	</p>
+	
+<p>En líquidos $\kappa_{\rm A} \approx \pu{e-6 atm-1}$, y por tanto 
+$|\kappa_{\rm A} (P - 1)| \ll 1$ y $|\kappa_{\rm A} (P_0 - 1)| \lll 1$ 
+(ya que $P &gt; P_0$). Esto permite un desarrollo en serie de Taylor 
+tal que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			e^{-\kappa_{\rm A} (P - 1)} - e^{-\kappa_{\rm A} (P_0 - 1)} &amp;=
+			1 - \kappa_{\rm A} (P - 1) + \dfrac{\kappa_{\rm A}^2 (P - 1)^2}{2}
+			-	1 + \kappa_{\rm A} (P_0 - 1) = \\[1ex]
+			&amp;= -\kappa_{\rm A}(P-P_0) + \dfrac{\kappa_{\rm A}^2 (P-1)^2}{2}
+		\end{align}
+		$
+	</p>
+	
+<p>Donde en la primera exponencial se ha llegado hasta el término
+de orden dos y en la segunda exponencial hasta el de orden uno.</p>
+
+<p>Tras sustituir, por tanto:</p>
+
+	<p style="text-align:center">
+		$\ln (\, f_{\rm A} x_{\rm A}) =
+		\dfrac{V°_{\!\! \lower 2mu \rm A}}{\kappa_{\rm A} RT} \left[
+		-\kappa_{\rm A}(P-P_0) + \dfrac{\kappa_{\rm A}^2 (P-1)^2}{2} \right]$
+	</p>
+	
+<p>Como $\Pi = P - P_0$, entonces:</p>
+
+	<p style="text-align:center">
+		$\ln (\, f_{\rm A} x_{\rm A}) =
+		-\dfrac{V°_{\!\! \lower 2mu \rm A}}{RT} \Pi +
+		\dfrac{V°_{\!\! \lower 2mu \rm A}}{2RT} \kappa_{\rm A} (P-1)^2$</p>		
+		
+<p>Despejando:</p>
+
+	<p style="text-align:center">
+		$
+		\boxed{
+			\Pi = - \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} \ln
+			(\, f_{\rm A} x_{\rm A}) + \dfrac{\kappa_{\rm A}}{2} (P - 1)^2
+		}
+		$
+	</p>
+	
+<p>Así pues, de la medida experimental de $\Pi$, para una $T$, $P$ y 
+composición concretas, puede hallarse $f_{\rm A}$. A partir de éste, 
+puede determinarse, a continuación, el coeficiente de actividad del 
+soluto ($\gamma_{\rm B}$) mediante Gibbs-Duhem. Esto es, a $P$ y $T$ 
+constantes:</p>
+
+	<p style="text-align:center">
+		$n_{\rm A} \, d \mu_{\rm A} + n_{\rm B} \, d \mu_{\rm B} = 0$
+		&emsp; (Gibbs-Duhem)</p>
+		
+<p>Dividiendo por $n_{\rm A} + n_{\rm B}$:</p>
+
+	<p style="text-align:center">
+		$x_{\rm A} \, d \mu_{\rm A} + x_{\rm B} \, d \mu_{\rm B} = 0
+		\tag{$\ast$} \label{*}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu_{\rm A} = \mu°_{\!\! \lower 2mu \rm A} + RT \ln (\Gamma_{\rm A}
+			\, f_{\rm A} x_{\rm A}) \\[1ex]
+			\mu_{\rm B} = \mu°_{\!\! \lower 2mu \rm B} + RT \ln (\Gamma_{\rm B}
+			\gamma_{\rm B} x_{\rm B})
+		\end{array}
+		$
+	</p>
+	
+<p>Donde el estado tipo de $\ce{B}$ es el soluto puro en la disolución
+diluida ideal a la presión de $\pu{1 atm}$ y $T$ de la disolución.
+Diferenciando a $P$ y $T$ constantes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ĺ}
+			\begin{aligned}
+				d \mu_{\rm A} &amp;= RT \, d \ln f_{\rm A} + RT \, d \ln x_{\rm A}
+				= \\[1ex]
+				&amp;= RT \, d \ln f_{\rm A} + \dfrac{RT}{x_{\rm A}} \,	dx_{\rm A}
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				d \mu_{\rm B} &amp;= RT \, d \ln \gamma_{\rm B} + RT \,
+				d \ln x_{\rm B} = \\[1ex]
+				&amp;= RT \, d \ln \gamma_{\rm B} + \dfrac{RT}{x_{\rm B}} \,
+				dx_{\rm B} = \\[1ex]
+				&amp;= RT \, d \ln \gamma_{\rm B} + \dfrac{RT}{x_{\rm B}} \,
+				d (1 - x_{\rm A}) = \\[1ex]
+				&amp;= RT \, d \ln \gamma_{\rm B} - \dfrac{RT}{x_{\rm B}} \,
+				dx_{\rm A}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Susituyendo en $\eqref{*}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			x_{\rm A} \left[ RT \, d \ln f_{\rm A} + \dfrac{RT}{x_{\rm A}} \,
+			dx_{\rm A} \right] + x_{\rm B} \left[ RT \, d \ln \gamma_{\rm B} -
+			\dfrac{RT}{x_{\rm B}} \, dx_{\rm A} \right] = 0 \\[1ex]
+			x_{\rm A} \, d \ln f_{\rm A} + x_{\rm B} \, d \ln \gamma_{\rm B} =
+			0 \\[1ex]
+			d \ln \gamma_{\rm B} = - \dfrac{x_{\rm A}}{x_{\rm B}} \,
+			d \ln f_{\rm A}
+		\end{array}
+		$
+	</p>
+	
+<p>Integrando:</p>
+
+	<p style="text-align:center">
+		$
+		\ln \gamma_{\rm B} = - \displaystyle \int_{0}^{x_{\rm B}}
+		\dfrac{x_{\rm A}}{x_{\rm B}} \, d \ln f_{\rm A}
+		$
+	</p>
+	
+<p>Ya que en la disolución a dilución infinita, i.e. $x_{\rm B} \to 0$ 
+(estado de referencia), $\lim\limits_{x_{\rm B} \to 0} \gamma_{\rm B} = 
+1$ (y, por tanto, $\lim\limits_{x_{\rm B} \to 0} \ln \gamma_{\rm B} = 0$).
+</p>
+
+<p>Haciendo aproximaciones, si el disolvente se supone incomprensible 
+entre $P$ y $P_0$, por lo que $\kappa_{\rm A} = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$\Pi = - \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} \ln (\, f_{\rm A}
+		x_{\rm A})$</p>
+		
+<p>Siendo $a_{\rm A} = \Gamma_{\rm A} \, f_{\rm A} x_{\rm A}$, es pues
+también:</p>
+
+	<p style="text-align:center">
+		$\Pi = - \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} \ln
+		\dfrac{a_{\rm A}}{\Gamma_{\rm A}}$</p>
+		
+<p>En otra aproximación, si se considera la disolución diluida ideal
+($\, f_{\rm A} = 1$ ó $a_{\rm A} = \Gamma_{\rm A} x_{\rm A}$):</p>
+
+	<p style="text-align:center">
+		$\Pi = -\dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} \ln x_{\rm A}$</p>
+
+<p>Aplicable a disoluciones muy diluidas, donde $x_{\rm B} \ll 1$,
+siendo entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\ln x_{\rm A} = \ln (1 - x_{\rm B}) \mspace{-12mu}
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\
+				\text{Taylor}
+			\end{subarray}
+		}{\simeq} \mspace{-12mu} -x_{\rm B}
+		$
+	</p>
+	
+<p>Sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\Pi \simeq \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} x_{\rm B}$</p>
+		
+<p>Además también, aplicando la misma premisa (disolución muy diluida):</p>
+
+	<p style="text-align:center">
+		$x_{\rm B} = \dfrac{n_{\rm B}}{n_{\rm A} + \! \cancel{n_{\rm B}}}
+		\simeq \dfrac{n_{\rm B}}{n_{\rm A}}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\Pi \simeq \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}}
+		\dfrac{n_{\rm B}}{n_{\rm A}} = \dfrac{RT}{V_{\rm A}'} n_{\rm B}$</p>
+		
+<p>Donde $V_{\rm A}'$ es el volumen total del disolvente a $P =
+\pu{1 atm}$ y $T$ de la disolución, siendo:</p>
+
+	<p style="text-align:center">
+		$V_{\rm A}' = n_{\rm A} V°_{\!\! \lower 2mu \rm A}$</p>
+		
+<p>Si $V$ es el volumen total de la disolución, de nuevo, por
+ser la disolución muy diluida:</p>
+
+	<p style="text-align:center">
+		$V \simeq V_{\rm A}'$</p>
+		
+<p>Quedando al final:</p>
+
+	<p style="text-align:center">
+		$\boxed{\Pi \simeq \dfrac{n_{\rm B}}{V} RT = c_{\rm B} RT}$ &emsp;
+		Ecuación de Van't Hoff ($c_{\rm B} {\downarrow} {\downarrow}$).</p>
+		
+<p>Obviamente, $c_{\rm B}$ es la concentración molar de $\ce{B}$.</p>
+
+<p>Siendo que disminuye con la dilución el término:</p>
+
+	<p style="text-align:center">
+		$\dfrac{V°_{\!\! \lower 2mu \rm A}}{2RT} \kappa_{\rm A} (P - 1)^2$</p>
+		
+<p>Se vuelve despreciable cuando $\Pi &lt; \pu{10 atm}$, con lo que en 
+tal caso:</p>
+
+	<p style="text-align:center">
+		$\Pi = - \dfrac{RT}{V°_{\!\! \lower 2mu \rm A}} \ln (\, f_{\rm A}
+		x_{\rm A})$</p>
+		
+<p>Ecuación a partir de la cual puede determinarse experimentalmente
+$f_{\rm A}$.</p>
+
+<p>$\bullet$ Caso particular en el cual la presión ($P'$) de la 
+disolución es tal que:</p>
+
+	<p style="text-align:center">
+		$P' &gt; P$ &emsp; ($P = \Pi + P_0$)</p>
+		
+<p>Entonces, en tal situación:</p>
+
+	<p style="text-align:center">
+		$\mu_{\rm A(sln)} &gt; \mu_{\rm A}^*$</p>
+		
+<p>El flujo de disolvente a través de la membrana se produce en el
+sentido de disolución a disolvente puro. Esto se conoce como ósmosis
+inversa. Esquemáticamente:</p>
+
+<center>
+	<object data="propiedades_coligativas_05.svg" type="image/svg+xml"
+	width="516" height="246"></object>
+</center>
+
+<p>Como reseña final, la ósmosis es de importancia fundamental en
+multitud de procesos biológicos.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../disoluciones_no_electrolitos/disoluciones_no_electrolitos.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../disoluciones_electrolitos/disoluciones_electrolitos.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

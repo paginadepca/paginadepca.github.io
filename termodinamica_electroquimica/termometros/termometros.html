@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Termómetros">
+<meta name="keywords" content="termómetros">
+<title>Termómetros</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Termómetros</h3>
+
+<ul>
+	<li><a href="../termodinamica_electroquimica.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Hay que asignar un valor numérico a la temperatura de cada isoterma
+(y sus correspondientes), para ello se hace necesario una escala de
+temperaturas.</p>
+
+<p>- Escala de temperaturas:</p>
+
+<ol>
+	<li>Se elige como patrón un sistema homogéneo, de masa y composición
+	constantes, donde no intervenga nada externo y que sólo pueda
+	intercambiar calor y trabajo presión-volumen, ya que así, según el
+	principio de estado, sólo se necesitan dos variables. Este sistema
+	será el termómetro.</li>
+	<li>Se construyen dos termómetros exactamente iguales. Se determinan
+	las isotermas correspondientes del uno al otro.
+	<object data="termometros_1.svg" type="image/svg+xml" width="300"
+	height="300" style="margin-left:auto;margin-right:auto"></object>
+	Donde $\theta$, (temperatura), es función de las dos variables:
+	<p style="text-align:center">$\theta = \theta(x,y)$</p>
+	Siendo un valor constante, $\theta_i$, para cada isoterma.
+	</li>
+	<li>Se fija una de las variables para que sea más sencillo, p. ej. $P
+	= \pu{1 atm}$. La que cambie será la variable termométrica.</li>
+	<li>Como $y =$ cte., entonces $\theta$ depende de $x$ solamente:
+	<p style="text-align:center">$\theta = \theta(x)$</p>
+	Se escoge un termómetro tal que la función sea lineal:
+	<p style="text-align:center">$\theta(x) = kx$</p>
+	Siendo entonces:
+	<p style="text-align:center">$\dfrac{\theta_2}{\theta_1} =
+	\dfrac{\cancel{k} \! x_2}{\cancel{k} \! x_1} \Rightarrow \dfrac{\theta_2}
+	{\theta_1} = \dfrac{x_2}{x_1}$</li>
+	<li>Se crea una escala basada en un punto fijo, esto es el punto
+	triple del agua (p.t.):
+	<p style="text-align:center">$\ce{H2O_{(s)} &lt;=&gt; H2O_{(l)} &lt;=&gt;
+	H2O_{(g)}}$</p>
+	<p style="text-align:center">$\theta(x_{\rm p.t.}) = 273{,}16$</p>
+	Por tanto:
+	<p style="text-align:center">$\dfrac{\theta(x)}{\theta(x_{\rm p.t.})} =
+	\dfrac{x}{x_{\rm p.t.}} \Rightarrow \theta(x) = 273{,}16
+	\dfrac{x}{x_{\rm p.t.}}$</p>
+	Por ejemplo, para un termómetro de mercurio la variable termométrica
+	es la longitud ($L$) de la columna:
+	<p style="text-align:center">$\theta(L) = 273{,}16 \dfrac{L}{L_{\rm p.t.}}$
+	</p>
+	</li>
+</ol>
+
+<p>- Sobre las substancias elegidas como termómetro:</p>
+
+<ul>
+	<li>No pueden tener isotermas que se crucen.</li>
+	<li>Cada una tiene su propia escala.</li>
+</ul>
+
+- Ejemplos de termómetros:
+
+<ul>
+	<li>Termómetro de mercurio, $x = L$ (longitud).</li>
+	<li>Termopar, $x = \Delta \varphi$. ($\varphi \equiv$ potencial eléctrico).
+	</li>
+	<li>Termómetro de gas, $x = P$.</li>
+</ul>
+
+<p>$\ast$ Termómetro de gas:</p>
+
+<center>
+	<object data="termometros_2.svg" type="image/svg+xml" width="205"
+	height="282"></object>
+</center>
+
+<p>Se supone que se introduce una cierta cantidad de un gas, p. ej. 
+$\ce{O2}$, en el bulbo, o bomba de gas, de volumen constante, tal que 
+al situarlo en el sistema del punto triple la presión en la columna 
+sería: $P_{\rm p.t.} \! = \pu{1000 mmHg}$. A continuación se mediría en 
+otro sistema, por ejemplo en el punto de vapor ($\ce{H2O_{(l)} 
+&lt;=&gt; H2O_{(g)}}$, $P = \pu{1 atm}$), de nuevo la presión: $P_1$. 
+El cálculo de su temperatura daría:</p>
+
+	<p style="text-align:center">$\theta_1 = 273{,}16 \dfrac{P_1}{P_{\rm p.t.}}
+	= 273{,}16 \dfrac{P_1}{1000} = 373{,}87$</p>
+	
+<p>Seguidamente se retiraría parte del gas hasta una presión, ahora menor, 
+en el punto triple de, por ejemplo, $\pu{500 mmHg}$. También se haría 
+otra medición en el punto de vapor: $P_2$. Se calcularía su 
+temperatura:</p>
+
+	<p style="text-align:center">$\theta_2 = 273{,}16 \dfrac{P_2}{500} =
+	373{,}51$</p>
+	
+<p>Si se disminuyera aún más la cantidad de gas, hasta $P_{\rm p.t.} \! = 
+\pu{250 mmHg}$, entonces:</p>
+
+	<p style="text-align:center">$\theta_3 = 273{,}16 \dfrac{P_3}{250} =
+	373{,}33$</p>
+	
+<p>La temperatura cambia según la cantidad de gas. También lo hace si
+el gas es distinto:</p>
+
+<center>
+	<object data="termometros_3.svg" type="image/svg+xml" width="480"
+	height="300"></object>
+</center>
+
+<p>Así pues, a medida que la presión disminuye, independientemente del
+gas, el valor de $\theta$, en el punto de vapor (p.v.), tiende a $373{,}15$.
+Esto es:</p>
+
+	<p style="text-align:center">
+		$\theta_{\rm p.v.} = 273{,}16 \lim\limits_{P_{\rm p.t.} \to \, 0} \dfrac{P_{\rm 
+		p.v.}}{P_{\rm p.t.}} = 373{,}15$</p>
+		
+<p>Siendo, ya en general, la escala:</p>
+
+	<p style="text-align:center"> $\theta = 273{,}16 \lim\limits_{P_{\rm 
+	p.t.} \to \, 0} \dfrac{P}{P_{\rm p.t.}}$</p>
+
+<p>Cuando la presión se acerca a cero, el gas tiene comportamiento de 
+gas ideal. Así, entonces, en la escala de temperaturas del gas ideal, 
+i.e. cuando la presión tiende a cero, la temperatura ya no depende del 
+gas en particular. No es una escala, la del gas ideal, absoluta, no es 
+independiente de la substancia de medida, ya que se circunscribe sólo 
+al empleo de gases como termómetro.</p>
+
+<p>- Escala de grados centígrados:</p>
+
+<p>Se basa en dos puntos fijos (a $\pu{1 atm}$):</p>
+
+	<div style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:inline-table;text-align:center;margin-right:2em">
+			<span style="display:table-row">punto de hielo: $\pu{0 ºC}$</span>
+			<span style="display:table-row">$\ce{H2O_{(s)} &lt;=&gt; H2O_{(l)}}$
+			</span>
+		</span>
+		<span style="display:inline-table;text-align:center">
+			<span style="display:table-row">punto de vapor: $\pu{100 ºC}$</span>
+			<span style="display:table-row">$\ce{H2O_{(l)} &lt;=&gt; H2O_{(g)}}$
+			</span>
+		</span>
+	</div>
+	
+<p>Los grados de las escalas de grados centigrados y del gas ideal tienen
+la misma magnitud, siendo que el cero en ambas escalas no coincide:</p>
+
+	<p style="text-align:center">$\theta = 273{,}15 + t$ &ensp; (K)</p>
+	
+<p>Donde $t$ es el valor de la temperatura en grados centígrados, y K 
+(kelvin) la unidad de temperatura empleada en la escala del gas ideal. 
+El punto triple del agua, por tanto, en la escala Celsius se sitúa en 
+los $\pu{0,01 ºC}$.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../termodinamica_electroquimica.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../concepto_temperatura/concepto_temperatura.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../propiedades_experimentales_relacionadas_derivadas_parciales/propiedades_experimentales_relacionadas_derivadas_parciales.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
