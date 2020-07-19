@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIX Two Text"),
+         local("STIXTwoText"),
+         url("fonts/STIX2Text-Regular.woff2"),
+         url("fonts/STIX2Text-Regular.woff");
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIX Two Text Bold"),
+         local("STIXTwoText-Bold"),
+         url("fonts/STIX2Text-Bold.woff2"),
+         url("fonts/STIX2Text-Bold.woff");
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIX Two Text Italic"),
+         local("STIXTwoText-Italic"),
+         url("fonts/STIX2Text-Italic.woff2"),
+         url("fonts/STIX2Text-Italic.woff");
+    font-style: italic;
+    }
+
+@font-face {
+    font-family: "STIX Two Text";
+    src: local("STIX Two Text Bold Italic"),
+         local("STIXTwoText-BoldItalic"),
+         url("fonts/STIX2Text-BoldItalic.woff2"),
+         url("fonts/STIX2Text-BoldItalic.woff");
+    font-weight: bold;
+    font-style: italic;
+    }
+    
+@font-face {
+    font-family: "STIX Two Math";
+    src: local("STIX Two Math"),
+         local("STIXTwoMath"),
+         url("fonts/STIX2Math.woff2"),
+         url("fonts/STIX2Math.woff");
+    unicode-range: U+21CC, U+21D2-21D3, U+2192, U+2203, U+2208, U+2215, U+221E, U+223C, U+2243, U+2261, U+2264, U+226A-226B, U+2295-2296, U+229D;
+    }
+
+body {
+    background-color: #D3D3D3;
+    border: 3px solid gray;
+    margin: 25px auto;
+    width: 734px;
+    text-align: left;
+    color: #222;
+    line-height: 130%;
+    font-size: 19px;
+    font-family: "STIX Two Text", "Times New Roman", Times, serif;
+    -webkit-text-size-adjust: none;
+    }
+    
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: red;
+    }
+
+#title {
+    padding: 1.75em 2em;
+    background-color: #FF9999;
+    border-bottom: 2px solid gray;
+    position: relative;
+    }
+
+#title h3 {
+    padding: 0;
+    margin: 0;
+    }
+    
+#title ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 2em;
+    bottom: 0;
+    }
+    
+#title ul li {
+    display: inline;
+    }
+    
+#title ul li a {
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 2px;
+    color: #222;
+    border-radius: 5px;
+    }
+    
+#title ul li a:hover {
+    text-decoration: underline;
+    background-color: #FFCCCC;
+    } 
+    
+#content {
+    background-color: #fff;
+    padding: 0.5em 2em;
+    }
+        
+#foot { 
+    border-top: 2px solid gray;
+    padding: 0.5em 1.9em;
+    background-color: #FF9999;
+    position: relative;
+    }
+    
+#foot a {
+    display: inline-block;
+    padding: 0.1em;
+    color: #222;
+    border-radius: 5px;
+    }
+    
+#foot a:hover {
+    text-decoration: underline;
+    background-color: #FFCCCC;
+    }
+    
+#foot ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 2em;
+    bottom: 0.5em;
+    }
+    
+#foot ul li {
+    display: inline;
+    }
+    
+#foot ul li a {
+    margin-left: 0.5em;
+    }
+    
+#foot ul li a:hover {
+    text-decoration: none;
+    }
+    
+blockquote {
+    margin-left:30px;
+    margin-right: 0;
+    }
+    
+table.tabla {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    }
+
+th, td.tabla {
+    border: 1px solid silver;
+    padding: 1ex 5px;
+    }
+    
+th.tabla {
+    border-bottom: 2px solid blue;
+    font-weight: normal;
+    background-color: #ffffe0;
+    }
+    
+object {
+    display: block;
+    margin: 0em;
+    }
+
+ol {
+		margin-left: 30px;
+		list-style-position: inside;
+		padding-left: 1em;
+		text-indent: -1em;
+		}
+    
+ol li {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		}
+		
+ol p {
+		text-indent: 0;
+}
+		
+#ejemplo {
+		background-color: #FFCCCC;
+		padding: 5px;
+		}
+		
+#ejemplo p:first-child {
+		margin-top: 0;
+		}
+
+#ejemplo p:last-child {
+		margin-bottom: 0;
+		}
+
+hr {
+		margin: 1em auto;
+		}
+
+#content ul {
+		margin-left: 30px;
+		list-style-position: inside;
+		padding-left: .7em;
+		text-indent: -.7em;
+		list-style: none;
+		}
+		
+#content ul li {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		}
+		
+#content ul li::before {
+		content: "• ";
+		}
