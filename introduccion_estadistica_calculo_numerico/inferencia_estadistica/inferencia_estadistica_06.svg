@@ -1,0 +1,53 @@
+<?xml version="1.0" ?><svg height="38.84846mm" version="1.0" viewBox="0 0 126 147" width="33.29868mm" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @import url('../estilo.css');
+  </style>
+  <g font-size="12pt" stroke-linecap="round" transform="translate(-72,-93)">
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="152.93" x2="152.93" y1="137.75" y2="117.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="152.93" x2="175.87" y1="137.75" y2="151.00"/>
+      <line x1="152.80" x2="170.00" y1="144.60" y2="154.54"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="107.07" x2="130.00" y1="137.75" y2="151.00"/>
+      <line x1="106.93" x2="124.13" y1="144.60" y2="154.54"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="152.93" x2="152.93" y1="190.70" y2="209.00"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="130.00" x2="152.93" y1="151.00" y2="137.75"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="84.13" x2="107.07" y1="177.45" y2="190.70"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="175.87" x2="175.87" y1="151.00" y2="177.45"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="130.00" x2="152.93" y1="177.45" y2="190.70"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="130.00" x2="130.00" y1="151.00" y2="177.45"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="84.13" x2="84.13" y1="151.00" y2="177.45"/>
+      <line x1="90.13" x2="90.13" y1="154.31" y2="174.14"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="130.00" x2="107.07" y1="177.45" y2="190.70"/>
+      <line x1="124.13" x2="106.93" y1="173.91" y2="183.85"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="175.87" x2="152.93" y1="177.45" y2="190.70"/>
+      <line x1="170.00" x2="152.80" y1="173.91" y2="183.85"/>
+    </g>
+    <g stroke="#000000" stroke-width="1.0">
+      <line x1="84.13" x2="107.07" y1="151.00" y2="137.75"/>
+    </g>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="149.30" y="221.19">SO<tspan dy="6" font-size="75%">3</tspan><tspan dy="-6">H</tspan></text>
+    <text fill="#000000" font-family="STIX Two Text" font-size="12pt" x="147.30" y="115.26">NH<tspan dy="6" font-size="75%">2</tspan></text>
+  </g>
+</svg>

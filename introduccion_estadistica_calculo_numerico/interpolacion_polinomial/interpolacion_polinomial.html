@@ -1,0 +1,940 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+			extensions: ["[mhchem]/mhchem.js"]
+		},
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Interpolación polinomial">
+<meta name="keywords" content="interpolación, polinomial">
+<title>Interpolación polinomial</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Interpolación polinomial</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p><b>1.</b> Introducción:</p>
+	
+	<p style="display:table;margin-left:30px">
+		<object data="interpolacion_polinomial_01.svg" type="image/svg+xml"
+		width="300" height="225" style="display:table-cell;vertical-align:middle">
+		</object>
+		<span style="display:table-cell;vertical-align:middle">
+			Interpolar es hallar el valor de $y$ para $x'$, estando ésta entre
+			dos valores, $x_1$ y $x_2$, para los que se conoce su valor de $y$.
+			<span style="display:block;margin-top:1em">
+				Extrapolar es hallar $y$ para $x''$, estando ésta fuera del
+				intervalo de $x_1$ a $x_2$.</span>
+		</span>
+	</p>
+	
+<p>Se puede interpolar linealmente, i.e. una recta entre $(x_1,y_1)$ y
+$(x_2,y_2)$. Por tanto, se supone un polinomio de primer grado.</p>
+
+<p>La interpolación polinomial no se restringe a una recta, sino que
+también utiliza curvas, i.e. polinomios de grado $n &gt; 1$.</p>
+
+<p>Aplicaciones de la interpolación polinómica:</p>
+
+<ol>
+	<li>Calcular con polinomios, a partir de ellos.</li>
+	<li>Gráficos.</li>
+</ol>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Se pretende hallar el punto de congelación de una mezcla de 
+glicerina + agua, al $\pu{45 \%}$ en peso de la primera, siendo:</p>
+
+<center>
+<table class="tabla ejemplo" style="text-align:center">
+	<tr>
+		<th>$x$</th>
+		<th>$y$</th>
+	</tr>
+	<tr>
+		<td>$\pu{30 \%}$</td>
+		<td>$\pu{-9,5 ºC}$</td>
+	</tr>
+	<tr>
+		<td>$\pu{40 \%}$</td>
+		<td>$\pu{-15,4 ºC}$</td>
+	</tr>
+	<tr>
+		<td>$\pu{50 \%}$</td>
+		<td>$\pu{-21,9 ºC}$</td>
+	</tr>
+</table>
+</center>
+
+	<p style="text-align:center">
+		$x \equiv$ % en peso de glicerina,
+		<span style="display:block">
+			$y \equiv$ punto de congelación.
+		</span>
+	</p>
+	
+<p>Se interpola, para dar una estimación del punto de congelación de la
+mezcla con $x = \pu{45 \%}$, linealmente y también con un polinomio de
+segundo grado. Esto es:</p>
+
+	<p style="display:table;margin-left:30px;margin-right:10px">
+		<object data="interpolacion_polinomial_02.svg" type="image/svg+xml"
+		width="300" height="225" class="ejemplo"
+		style="display:table-cell;vertical-align:middle">
+		</object>
+		<span style="display:table-cell;vertical-align:middle;padding-left:2em">
+			1.º Interpolación lineal:
+			<span style="display:block;text-align:center;margin-top:1em">
+				$y = ax + b$</span>
+			<span style="display:block;margin-top:1em">
+				Un segmento de línea recta entre dos puntos. Para hallar la
+				ecuación de la recta sólo hay que resolver un sistema de dos
+				ecuaciones y dos incognitas:</span>
+		</span>
+	</p>
+	
+<p style="text-align:center">
+	$
+	\smash[t]{
+	\begin{aligned}
+		\vphantom{-6{,}5 = 10 a} \\[.5ex]
+		-15{,}4 &amp;= 40a + b \\[.5ex]
+		-21{,}9 &amp;= 50a + b \\[.5ex]
+		\hline
+		-6{,}5 &amp;= 10 a
+	\end{aligned}
+	}
+	\biggr\} \Rightarrow
+	\begin{array}[t]{l}
+		a = -0{,}65 \\[.5ex]
+		b = -40a - 15{,}4 = 10{,}6
+	\end{array}
+	$
+</p>
+
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$y(45) \approx -0{,}65 \cdot 45 + 10{,}6 = \pu{-18,6 ºC}$</p>
+
+<p>2.º Interpolación cuadrática:</p>
+
+	<p style="text-align:center">
+		$y = ax^2 + bx + c$ &emsp; Ecuación de una parábola.</p>
+		
+<p>Se unen los tres punto por un arco de parábola. Para hallar la
+ecuación de la parábola hay que resolver un sistema de tres ecuaciones
+y tres incognitas:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{aligned}
+			-9{,}5 &amp;= 30^2 a + 30 b + c \\[.5ex]
+			-15{,}4 &amp;= 40^2 a + 40 b + c \\[.5ex]
+			-21{,}9 &amp;= 50^2 a + 50 b + c
+		\end{aligned}
+		\,
+		\right\} \Rightarrow
+		\begin{array}[t]{l}
+			a = -0{,}003 \\[1ex]
+			b = -0{,}38 \\[1ex]
+			c = 4{,}6
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$y(45) \approx -0{,}003 \cdot 45^2 - 0{,}38 \cdot 45 + 4{,}6 =
+		\pu{-18,6 ºC}$</p>
+		
+<p>Así que, sucesivamente, para cada nuevo punto, se añadiría una nueva 
+ecuación, siendo ahora de un grado y una incógnita (coeficiente) más, 
+al sistema de ecuaciones, por lo que para cualquier número de puntos se 
+puede tener un polinomio que pase por ellos.</p>
+
+</div>
+
+<hr>
+
+<div id="teorema">
+
+<p>Dados los puntos distintos:</p>
+
+	<p style="text-align:center">
+		$(x_0,y_0), (x_1,y_1), \dotsc, (x_n,y_n)$</p>
+		
+<p>Existe un polinomio $P(x)$, conocido como polinomio interpolador, tal
+que la curva $y = P(x)$ pasa por todos los puntos.</p>
+
+</div>
+
+<p><b>2.</b> Cálculo del polinomio interpolador:</p>
+
+<p>Dos métodos para calcular directamente el polinomio interpolador:</p>
+
+<p><b>&bull;</b> Método de Lagrange:</p>
+
+<p>Para este método, el polinomio interpolador es:</p>
+
+	<p style="text-align:center">
+		$P(x) = y_0 l_0(x) + y_1 l_1(x) + \dotsb + y_n l_n(x)$</p>
+		
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$
+		l_k(x) =
+		\dfrac{
+			(x - x_0) \dotsm (x - x_{k-1}) (x - x_{k+1}) \dotsm (x - x_n)
+		}{
+			(x_k - x_0) \dotsm (x_k - x_{k-1}) (x_k - x_{k+1}) \dotsm (x_k - x_n)
+		}\,, \quad k = 0,1,\dotsc,n
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			l_k(x_k) = 1 \\[1ex]
+			l_k(x_j) \! \mathrel{\smash{\underset{j \, \neq \, k}{=}}} \! 0
+		\end{array}
+		\right\} \Rightarrow P(x_k) = y_k
+		$
+	</p>
+	
+<p>Por tanto, esto es, el polinomio, es lo que se buscaba, pasa por los
+puntos.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>De nuevo, los datos son:</p>
+
+<center>
+<table class="tabla ejemplo" style="text-align:center">
+	<tr>
+		<th>$x$</th>
+		<th>$y$</th>
+	</tr>
+	<tr>
+		<td>$\pu{30 \%}$</td>
+		<td>$\pu{-9,5 ºC}$</td>
+	</tr>
+	<tr>
+		<td>$\pu{40 \%}$</td>
+		<td>$\pu{-15,4 ºC}$</td>
+	</tr>
+	<tr>
+		<td>$\pu{50 \%}$</td>
+		<td>$\pu{-21,9 ºC}$</td>
+	</tr>
+</table>
+</center>
+
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			l_0(x) = \dfrac{(x-40)(x-50)}{(30-40)(30-50)} = \dfrac{1}{200}
+			(x^2 - 90x + 2000) \\[1ex]
+			l_1(x) = \dfrac{(x-30)(x-50)}{(40-30)(40-50)} = \dfrac{-1}{100}
+			(x^2 - 80x + 1500) \\[1ex]
+			l_2(x) = \dfrac{(x-30)(x-40)}{(50-30)(50-40)} = \dfrac{1}{200}
+			(x^2 - 70x + 1200)
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo el polinomio interpolador:</p>
+
+	<p style="text-align:center">
+		$P(x) = -9{,}5 l_0(x) - 15{,}4 l_1(x) - 21{,}9 l_2(x)$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$y(45) \approx P(45) = -9{,}5 l_0(45) - 15{,}4 l_1(45) -
+		21{,}9 l_2(45) = \pu{-18,6 ºC}$</p>
+	
+</div>
+
+<hr>
+
+<p><b>&bull;</b> Método de las diferencias divididas de Newton:</p>
+
+<p>El polinomio interpolador es de la forma:</p>
+
+	<p style="text-align:center">
+		$P(x) = c_0 + c_1 (x - x_0) + c_2 (x - x_0) (x - x_1) + \dotsb +
+		c_n (x - x_0) \dotsm (x - x_{n-1})$</p>
+		
+<p>Siendo así:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			y_0 = P(x_0) = c_0 \\[1ex]
+			y_1 = P(x_1) = c_0 + c_1(x_1 - x_0) \\[1ex]
+			y_2 = P(x_2) = c_0 + c_1(x_2 - x_0) + c_2 (x_2 -x_0) (x_2 - x_1) \\
+			\vdots
+		\end{array}	
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			c_0 = y_0 \\[1ex]
+			c_1 = \dfrac{y_1 - c_0}{x_1 - x_0} = \dfrac{y_1 - y_0}{x_1 - x_0} \\[1ex]
+			\begin{aligned}
+				c_2 &amp;=
+				\dfrac{y_2 - c_0 - c_1(x_2 - x_0)}{(x_2 - x_0) (x_2 - x_1)} = \\[1ex]
+				&amp;= \dfrac{y_2 - y_0}{(x_2 - x_0)(x_2 - x_1)} -
+				\dfrac{y_1 - y_0}{(x_2 - x_1) (x_1 - x_0)} = \\[1ex]
+				&amp;= \dfrac{y_2 - y_1}{(x_2 - x_0)(x_2 - x_1)} +
+				\dfrac{y_1 - y_0}{(x_2 - x_0)(x_2 - x_1)} -
+				\dfrac{y_1 - y_0}{(x_2 - x_1) (x_1 - x_0)} = \\[1ex]
+				&amp;= \dfrac{y_2 - y_1}{(x_2 - x_0)(x_2 - x_1)} +
+				\dfrac{y_1 - y_0}{x_2 - x_1} \left( \dfrac{1}{x_2 - x_0} -
+				\dfrac{1}{x_1 - x_0} \right) = \\[1ex]
+				&amp;= \dfrac{y_2 - y_1}{(x_2 - x_0)(x_2 - x_1)} +
+				\dfrac{y_1 - y_0}{x_2 - x_1}
+				\dfrac{x_1 - x_2}{(x_2 - x_0) (x_1 - x_0)} = \\[1ex]
+				&amp;= \dfrac{y_2 - y_1}{(x_2 - x_0)(x_2 - x_1)} -
+				\dfrac{y_1 - y_0}{(x_2 - x_0) (x_1 - x_0)} = \\[1ex]
+				&amp;=
+				\dfrac{
+					\dfrac{y_2 - y_1}{x_2 - x_1} - \dfrac{y_1 - y_0}{x_1 - x_0}
+				}{x_2 - x_0}
+			\end{aligned} \\
+			\vdots
+		\end{array}
+		$
+	</p>
+	
+<p>Se definen las diferencias divididas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			f[x_i] = y_i \,, \quad (i = 0,1, \dotsc, n) \\[1ex]
+			f[x_i, x_{i+1}, \dotsc, x_{i+j}, x_{i+j+1}] =
+			\dfrac{
+				f[x_{i+1}, \dotsc, x_{i+j+1}] - f[x_i, \dotsc, x_{i+j}]
+			}{x_{i+j+1} - x_i} \,, \\
+			(i= 0,1, \dotsc, n-j-1) \quad (\,j = 0, 1, \dotsc,	n-1)
+		\end{array}
+		$
+	</p>
+	
+<p>Por ejemplo para $n = 2$, mediante una tabla o esquema, las 
+diferencias divididas:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-row">
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell">$j = 0$</span>
+			<span style="display:table-cell">$j = 1$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				\begin{array}{l|l}
+					x_0 &amp; f[x_0] = y_0 = c_0 \\[1ex]
+					x_1 &amp; f[x_1] = y_1 \\[1ex]
+					x_2 &amp; f[x_2] = y_2
+				\end{array}
+			</span>
+			<span style="display:table-cell;padding-left:.5ex;padding-right:.5ex">
+			\begin{array}{l}
+				f[x_0,x_1] = \frac{f[x_1] \, - \, f[x_0]}{x_1 \, - \, x_0} = c_1 \\[1ex]
+				f[x_1,x_2] = \frac{f[x_2] \, - \, f[x_1]}{x_2 \, - \, x_1}
+			\end{array}
+			</span>
+			<span style="display:table-cell">
+			\begin{array}{l}
+				f[x_0,x_1,x_2] =
+				\frac{f[x_1,x_2] \, - \, f[x_0,x_1]}{x_2 \, - \, x_0} = c_2
+			\end{array}
+			</span>
+		</span>
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>También, otra vez, repitiendo los mismos datos:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-row">
+			<span style="display:table-cell;border-bottom:1px solid black">
+				$x$</span>
+			<span style="display:table-cell;border-bottom:1px solid black;padding-bottom:.25ex">
+				$y$</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:.25ex;padding-right:.5ex">
+				$
+				\begin{array}{c}
+					30 \\[1ex]
+					40 \\[1ex]
+					50
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell;padding-left:.5ex;border-left:1px solid black">
+				$
+				\begin{array}{c}
+					-9{,}5 \\[1ex]
+					-15{,}4 \\[1ex]
+					-21{,}9
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell;padding-left:1ex;padding-right:1ex">
+				$
+				\begin{array}{l}
+					\frac{-15{,}4 - (-9{,}5)}{40 - 30} = -0{,}59 \\[1ex]
+					\frac{-21{,}9 - (-15{,}4)}{50 - 40} = -0{,}65
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell">
+				$\frac{-0{,}65 - (-0{,}59)}{50 - 30} = -0{,}003$
+			</span>
+		</span>
+	</p>
+	
+<p>Siendo, por tanto, el polinomio interpolador:</p>
+
+	<p style="text-align:center">
+		$P(x) = -9{,}5 - 0{,}59 (x-30) - 0{,}003 (x-30)(x-40)$</p>
+	
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			y(45) \approx P(45) &amp;= -9{,}5 - 0{,}59 (45-30) - 0{,}003
+			(45-30)(45-40) = \\[1ex]
+			&amp;= \pu{-18,6 ºC}
+		\end{align}
+		$
+	</p>
+	
+<p>Si se incorpora a los datos un punto más, se sigue a partir de la
+tabla anterior, añadiendo lo que falta. Esto es:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-row">
+			<span style="display:table-cell;border-bottom:1px solid black">
+				$x$</span>
+			<span style="display:table-cell;border-bottom:1px solid black;padding-bottom:.25ex">
+				$y$</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:.25ex;padding-right:.25ex">
+				$
+				\begin{array}{c}
+					30 \\[1ex]
+					40 \\[1ex]
+					50 \\[1ex]
+					60
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell;padding-left:.25ex;border-left:1px solid black">
+				$
+				\begin{array}{c}
+					-9{,}5 \\[1ex]
+					-15{,}4 \\[1ex]
+					-21{,}9 \\[1ex]
+					-33{,}6
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell;padding-left:.5ex;padding-right:.5ex">
+				$
+				\begin{array}{l}
+					\frac{-15{,}4 - (-9{,}5)}{40 - 30} = -0{,}59 \\[1ex]
+					\frac{-21{,}9 - (-15{,}4)}{50 - 40} = -0{,}65 \\[1ex]
+					\frac{-33{,}6 - (-21{,}9)}{60 - 50} = -1{,}17
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell">
+				$
+				\begin{array}{l}
+					\frac{-0{,}65 - (-0{,}59)}{50 - 30} = -0{,}003 \\[1ex]
+					\frac{-1{,}17 - (-0{,}65)}{60 - 40} = -0{,}026
+				\end{array}
+				$
+			</span>
+			<span style="display:table-cell;padding-left:.5ex">
+				$\frac{-0{,}026 - (-0{,}003)}{60 - 30} = -0{,}00077$
+			</span>
+		</span>
+	</p>
+	
+<p>Ahora, por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+		P(x) &amp;= -9{,}5 - 0{,}59 (x-30) - 0{,}003 (x-30)(x-40) - {} \\[1ex]
+			&amp;\hphantom{={}} - 0{,}00077 (x-30)(x-40)(x-50)
+		\end{align}
+		$
+	</p>
+	
+<p>Con lo que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			y(45) \approx P(45) &amp;= -9{,}5 - 0{,}59 (45-30) - 0{,}003
+			(45-30)(45-40) - {} \\[1ex]
+			&amp;\hphantom{={}} - 0{,}00077 (45-30)(45-40)(45-50) =
+			\pu{-18,3 ºC}
+		\end{align}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>La densidad ($\,\rho$ en $\pu{kg/m3}$) del Na en función de $T$ (en
+$\pu{ºC}$):</p>
+	
+<center>
+<table class="tabla ejemplo" style="text-align:center">
+	<tr>
+		<th>$i$</th>
+		<th>$T$</th>
+		<th>$\rho$</th>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>94</td>
+		<td>929</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>205</td>
+		<td>902</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>371</td>
+		<td>860</td>
+	</tr>
+</table>
+</center>
+
+<p>Encontrar la densidad para $T = \pu{251 ºC}$.</p>
+
+<p>1) Método de Lagrange:</p>
+
+	<p style="text-align:center">
+		$\rho(T) = \rho_0 l_0(T) + \rho_1 l_1(T) + \rho_2 l_2(T)$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			l_0(T) = \dfrac{(T-205)(T-371)}{(94-205)(94-371)} =	\dfrac{1}{30747}
+			(T-205)(T-371) \\[1ex]
+			l_1(T) = \dfrac{(T-94)(T-371)}{(205-94)(205-371)} = -\dfrac{1}{18426}
+			(T-94)(T-371) \\[1ex]
+			l_2(T) = \dfrac{(T-94)(T-205)}{(371-94)(371-205)} = \dfrac{1}{45982}
+			(T-94)(T-205)
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\rho(T) &amp;= \dfrac{929}{30747} (T-205)(T-371) - \dfrac{902}{18426}
+			(T-94)(T-371) + {} \\[1ex]
+			&amp;\hphantom{= {}} + \dfrac{860}{45982} (T-94)(T-205)
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\rho(251) = \pu{891 ºC}$</p>
+		
+<p>2) Con el método de las diferencias divididas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c|c}
+			94 &amp; 929 \\[1ex]
+			205 &amp; 902 \\[1ex]
+			371 &amp; 860
+		\end{array}
+		\enspace
+		\begin{array}{c}
+			-0{,}243 \\[1ex]
+			-0{,}253
+		\end{array}
+		\enspace
+		-3{,}61 \cdot 10^{-5}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\rho(T) = 929 - 0{,}243 (T-94) - 3{,}61 \cdot 10^{-5} (T-94)(T-205)$
+	</p>
+	
+<p>Los signos de las primeras diferencias divididas (cuando $j = 0$)
+dependen de si la función es de carácter creciente o decreciente, crece
+o decrece, entre los dos puntos considerados.</p>
+
+<p>Los coeficientes hallados con las diferencias divididas son cada vez
+más pequeños debido a que multiplican a polinomios de mayor grado.</p>
+
+<p>Cuanto más pequeño es el término de segundo grado más se parece la
+parábola a una recta.</p>
+
+<p>El signo del coeficiente del término de segundo grado dice si la
+parábola es convexa ($+$) o concava ($-$), al hacer la segunda derivada.</p>
+
+<p>Siendo, haciendo el cálculo, como se pedía:</p>
+
+	<p style="text-align:center">
+		$\rho(251) = \pu{891 ºC}$</p>
+		
+<p>Mismo resultado, independientemente de cómo se obtenga un único
+polinomio interpolador.</p>
+	
+</div>
+
+<hr>
+
+<p><b>3.</b> Interpolación por splines:</p>
+
+<p>Un polinomio interpolador de grado alto siempre produce situaciones
+que no tienen sentido físico. Para resolver esto, una alternativa es una
+spline cuadrática, que es una curva construida a partir de arcos de
+parábola.</p>
+
+	<p style="display:table;margin-left:30px">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				<object data="interpolacion_polinomial_03.svg" type="image/svg+xml"
+				width="300" height="240"></object>
+			</span>
+			<span style="display:table-cell;vertical-align:middle">
+				La tangente en el punto de contacto es común a ambas curvas. La
+				derivada de ambas en ese punto ha de ser común.</span>
+		</span>
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Repitiendo datos:</p>
+
+<center>
+<table class="tabla ejemplo" style="text-align:center">
+	<tr>
+		<th>$i$</th>
+		<th>$x$</th>
+		<th>$y$</th>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>$\pu{30 \%}$</td>
+		<td>$\pu{-9,5 ºC}$</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>$\pu{40 \%}$</td>
+		<td>$\pu{-15,4 ºC}$</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>$\pu{50 \%}$</td>
+		<td>$\pu{-21,9 ºC}$</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>$\pu{60 \%}$</td>
+		<td>$\pu{-33,6 ºC}$</td>
+	</tr>
+</table>
+</center>
+
+<p>Para una spline cuadrática, en cada intervalo consecutivo, partiendo 
+del valor inferior de $x$, i.e. $x_0$, un polinomio de segundo grado:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_0(x) = a_0 x^2 + b_0 x + c_0 \\[1ex]
+			q_1(x) = a_1 x^2 + b_1 x + c_1 \\[1ex]
+			q_2(x) = a_2 x^2 + b_2 x + c_2
+		\end{array}
+		$
+	</p>
+	
+<p>Ya que es condición que en los puntos de contacto coincidan, se 
+calculan sus derivadas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_0'(x) = 2a_0 x + b_0 \\[1ex]
+			q_1'(x) = 2a_1 x + b_1 \\[1ex]
+			q_2'(x) = 2a_2 x + b_2
+		\end{array}
+		$
+	</p>
+	
+<p>Teniéndose entonces, del planteamiento que se ha hecho, las 
+siguientes relaciones:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_0(x_0) = y_0 \\[1ex]
+			q_0(x_1) = y_1 \\[1ex]
+			q_1(x_1) = y_1 \\[1ex]
+			q_1(x_2) = y_2 \\[1ex]
+			q_2(x_2) = y_2 \\[1ex]
+			q_2(x_3) = y_3 \\[1ex]
+			q_0'(x_1) - q_1'(x_1) = 0 \\[1ex]
+			q_1'(x_2) - q_2'(x_2) = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Son ocho ecuaciones para nueve incognitas, por lo que se necesita 
+una condición más para determinar todos los coeficientes. Se consigue 
+fijando el valor de la derivada en el primer punto. Entonces, 
+utilizando derivación numérica, como se verá en el próximo tema, la 
+novena ecuación:</p>
+
+	<p style="text-align:center">
+		$q_0'(30) = -0{,}53$</p>
+		
+<p>Siendo pues el sistema de ecuaciones:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			60 a_0 + b_0 &amp;= -0{,}53\\[1ex]
+			900 a_0 + 30 b_0 + c_0 &amp;= -9{,}5 \\[1ex]
+			1600 a_0 + 40 b_0 + c_0 &amp;= -15{,}4 \\[1ex]
+			80 a_0 + b_0 - 80 a_1 - b_1 &amp;= 0 \\[1ex]
+			1600 a_1 + 40 b_1 + c_1 &amp;= -15{,}4 \\[1ex]
+			2500 a_1 + 50 b_1 + c_1 &amp;= -21{,}9 \\[1ex]
+			100 a_1 + b_1 - 100 a_2 - b_2 &amp; = 0 \\[1ex]
+			2500 a_2 + 50 b_2 + c_2 &amp;= -21{,}9 \\[1ex]
+			3600 a_2 + 60 b_2 + c_2 &amp;= -33{,}6 \\[1ex]
+		\end{align}
+		$
+	</p>
+	
+<p>Matricialmente:</p>
+
+	<p style="text-align:center">
+		$M a = y$</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			60 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+			\\[1ex]
+			900 &amp; 30 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp;
+			0 \\[1ex]
+			1600 &amp; 40 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp;
+			0 \\[1ex]
+			80 &amp; 1 &amp; 0 &amp; -80 &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp;
+			0 \\[1ex]
+			0 &amp; 0 &amp; 0 &amp; 1600 &amp; 40 &amp; 1 &amp; 0 &amp; 0 &amp;
+			0 \\[1ex]
+			0 &amp; 0 &amp; 0 &amp; 2500 &amp; 50 &amp; 1 &amp; 0 &amp; 0 &amp;
+			0 \\[1ex]
+			0 &amp; 0 &amp; 0 &amp; 100 &amp; 1 &amp; 0 &amp; -100 &amp; -1 &amp;
+			0 \\[1ex]
+			0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2500 &amp; 50 &amp;
+			1 \\[1ex]
+			0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3600 &amp; 60 &amp;
+			1
+		\end{pmatrix}
+		\,
+		\begin{pmatrix}
+		 a_0 \\[1ex]
+		 b_0 \\[1ex]
+		 c_0 \\[1ex]
+		 a_1 \\[1ex]
+		 b_1 \\[1ex]
+		 c_1 \\[1ex]
+		 a_2 \\[1ex]
+		 b_2 \\[1ex]
+		 c_2 \\[1ex]
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+		 -0{,}53 \\[1ex]
+		 -9{,}5 \\[1ex]
+		 -15{,}4 \\[1ex]
+		 0 \\[1ex]
+		 -15{,}4 \\[1ex]
+		 -21{,}9 \\[1ex]
+		 0 \\[1ex]
+		 -21{,}9 \\[1ex]
+		 -33{,}6 \\[1ex]
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Cuya solución:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{lll}
+			a_0 = -0{,}006 &amp;\quad b_0 = -0{,}17 &amp;\quad c_0 = 1 \\[1ex]
+			a_1 = 0 &amp;\quad b_1 = -0{,}65 &amp;\quad c_1 = 10{,}6 \\[1ex]
+			a_2 = -0{,}052 &amp;\quad b_2 = 4{,}55 &amp;\quad c_2 = -119{,}4
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente, los polinomios de segundo grado para cada 
+intervalo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			q_0(x) = -0{,}006 x^2 - 0{,}17 x + 1 \\[1ex]
+			q_1(x) = -0{,}65 x + 10{,}6 \\[1ex]
+			q_2(x) = -0{,}052 x^2 + 4{,}55 x - 119{,}4
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$y(45) \approx q_1(45) = \pu{-18,6 ºC}$</p>
+	
+</div>
+
+<hr>
+
+<p>Son más utilizados los splines cúbicos, donde los polinomios son
+de tercer grado.</p>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../errores/errores.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../derivacion_integracion_numericas/derivacion_integracion_numericas.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

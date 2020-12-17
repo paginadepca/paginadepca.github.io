@@ -1,0 +1,3054 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    }, 
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Inferencia estadística">
+<meta name="keywords" content="inferencia, estadística">
+<title>Inferencia estadística</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Inferencia estadística</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>La inferencia estadística consiste en realizar generalizaciones sobre
+un conjunto, llegar a conclusiones sobre sus características, a partir
+de la información obtenida de una muestra, i.e. porción o subconjunto,
+aleatoria del mismo.</p>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Analizar los siguientes resultados para 50 registros, en escala de 
+pH, de lluvia ácida:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<caption>pH de lluvia ácida</caption>
+		<tr>
+			<td>3,58</td>
+			<td>4,05</td>
+			<td>4,27</td>
+			<td>4,35</td>
+			<td>4,45</td>
+			<td>4,51</td>
+			<td>4,58</td>
+			<td>4,62</td>
+			<td>4,70</td>
+			<td>5,07</td>
+		</tr>
+		<tr>
+			<td>3,80</td>
+			<td>4,12</td>
+			<td>4,28</td>
+			<td>4,35</td>
+			<td>4,50</td>
+			<td>4,52</td>
+			<td>4,60</td>
+			<td>4,65</td>
+			<td>4,72</td>
+			<td>5,20</td>
+		</tr>
+		<tr>
+			<td>4,01</td>
+			<td>4,18</td>
+			<td>4,30</td>
+			<td>4,41</td>
+			<td>4,50</td>
+			<td>4,52</td>
+			<td>4,61</td>
+			<td>4,70</td>
+			<td>4,78</td>
+			<td>5,26</td>
+		</tr>
+		<tr>
+			<td>4,01</td>
+			<td>4,20</td>
+			<td>4,32</td>
+			<td>4,42</td>
+			<td>4,50</td>
+			<td>4,52</td>
+			<td>4,61</td>
+			<td>4,70</td>
+			<td>4,78</td>
+			<td>5,41</td>
+		</tr>
+		<tr>
+			<td>4,05</td>
+			<td>4,21</td>
+			<td>4,33</td>
+			<td>4,45</td>
+			<td>4,50</td>
+			<td>4,57</td>
+			<td>4,62</td>
+			<td>4,70</td>
+			<td>4,80</td>
+			<td>5,48</td>
+		</tr>
+	</table>
+</center>
+
+<p>Aquí, en comparación, el tratamiento es el siguiente:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;border-collapse:collapse">
+		<span style="display:table-column-group">
+			<span style="display:table-column;border-right:1px solid black"></span>
+			<span style="display:table-column"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;text-align:center;padding-right:1em">
+				<u>Modelos</u></span>
+			<span style="display:table-cell;text-align:center;padding-left:1em">
+				<u>Valores experimentales</u></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1em">
+				Variable aleatoria continua: &nbsp; $X\,.$</span>
+			<span style="display:table-cell;padding-left:1em;padding-top:1em">
+				Serie datos: &nbsp; $x_1, x_2, \dotsc, x_n\,.$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1em">
+				Función de densidad: &nbsp; $f(x)\,.$</span>
+			<span style="display:table-cell;padding-left:1em;padding-top:1em">
+				Histograma: &ensp;
+				<object data="inferencia_estadistica_01.svg" type="image/svg+xml"
+				style="display:inline-block;vertical-align:middle" class="ejemplo"
+				width="90" height="61"></object>
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1em">
+				Media: &nbsp; $\mu = \displaystyle \int_{-\infty}^{+\infty} x \, f(x) \,
+				dx\,.$</span>
+			<span style="display:table-cell;padding-left:1em;padding-top:1em">
+				Media: &nbsp; $\overline{x} = \dfrac{x_1 + \dotsb + x_n}{n}\,.$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1em">
+				Desviación típica:</span>
+			<span style="display:table-cell;padding-left:1em;padding-top:1em">
+				Desviación típica:</span>
+		</span>			
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;padding-top:1em;padding-left:1em">
+				$\small{\sigma = \left( \displaystyle \int_{-\infty}^{+\infty}
+				(x-\mu)^2 f(x) \, dx \right)^{\! 1/2}}$</span>
+			<span style="display:table-cell;padding-left:2em;padding-top:1em">
+				$s = \left(
+				\dfrac{
+					(x_1 - \overline{x})^2 + \dotsb + (x_n - \overline{x})^2
+				}{n-1} \right)^{\! 1/2}$</span>
+		</span>
+	</p>
+	
+<p>Introduciendo los datos en la calculadora, o en una hoja de cálculo,
+se obtiene:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\overline{x} = 4{,}507 \\[1ex]
+			s = 0{,}368
+		\end{array}
+		$
+	</p>
+	
+<p>Representando el histograma, se tiene una distribución acampanada:</p>
+
+<center>
+	<object data="inferencia_estadistica_02.svg" type="image/svg+xml"
+	width="240" height="180" class="ejemplo"></object>
+</center>
+
+<p>Así pues, se interpreta admitiendo una distribución normal.</p>
+
+<p>Sabiendo que:</p>
+
+	<p style="text-align:center">
+		$\mu - 2 \sigma &lt; X &lt; \mu + 2 \sigma \enspace \sim \pu{95 \%}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\overline{x} \pm 2s$ aproximación de $\mu \pm 2 \sigma$</p>
+		
+<p>Haciendo el cálculo:</p>
+
+	<p style="text-align:center">
+		$\overline{x} \pm 2s = 4{,}507 \pm 2 \times 0{,}368 = 4{,}507 \pm
+		0{,}736$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$3{,}771 &lt; {\rm pH} &lt; 5{,}243 \enspace \sim \pu{95 \%}$</p>
+		
+</div>
+
+<hr>
+
+<p><u>Distribución de la media:</u></p>
+
+<p>Propiedades:</p>
+
+<ol>
+	<li>$\mu_{X+Y} = \mu_X + \mu_Y$
+	
+		<p>Análogamente a lo visto para una única variable $X$, para una 
+		variable aleatoria continua $(X,Y)$ existe una función de densidad 
+		(de probabilidad) $f(x,y)$ tal que:</p>
+		
+			<ol><li>&ensp;${\rm Prob}\mspace{1mu}(x_1 &lt; X &lt; x_2, y_1 &lt;
+				Y &lt; y_2) = \displaystyle \int_{y_1}^{y_2} \! \int_{x_1}^{x_2}
+				f(x,y) \, dx \,dy$</li>
+				<li>&ensp;$f(x,y) \geq 0$</li>
+				<li>&ensp;$\displaystyle \int_{-\infty}^{+\infty} \!
+				\int_{-\infty}^{+\infty} f(x,y) \, dx \, dy = 1$</li>
+			</ol>
+			
+		<p>Esto es, $f(x,y)$ es una superficie sobre el plano $xy$, nunca 
+		por debajo de él, en la que el volumen comprendido entre ambos, 
+		superficie y plano, es 1. Siendo, en particular, la probabilidad de 
+		que $X$ e $Y$ tomen unos valores de un área determinada del plano 
+		$xy$, el volumen situado entre esta área y la superficie 
+		$f(x,y)$.</p>
+		
+		<p>La función de distribución:</p>
+		
+			<p style="text-align:center">
+				$F(x,y) = {\rm Prob}\mspace{1mu}(X &lt; x, Y &lt; y) = 
+				\displaystyle \int_{-\infty}^{y} \int_{-\infty}^x f(u,v) \, 
+				du \, dv$</p>
+				
+		<p>Así entonces pues:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\mu_{X+Y} &amp;= \int_{-\infty}^{+\infty} \!
+					\int_{-\infty}^{+\infty} (x + y) \, f(x,y) \, dx \, dy = \\[1ex]
+					&amp;=
+					\underbrace{
+						\int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty} x \,
+						f(x,y) \, dx \, dy
+					}_{\mu_X} +
+					\underbrace{
+						\int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty} y \,
+						f(x,y) \, dx \, dy
+					}_{\mu_Y}	= \\[1ex]
+					&amp;= \mu_X + \mu_Y
+				\end{align}
+				$
+			</p>
+			
+		<p>Cuando $X$ e $Y$ son independientes:</p>
+		
+			<p style="text-align:center">
+				$f(x,y) = f_X(x) \, f_Y(y)$</p>
+				
+		<p>Donde $f_X(x)$ y $f_Y(y)$ son, respectivamente, las densidades de
+		probabilidad de $X$ e $Y$. Entonces, para el producto de $XY$:</p>
+		
+			<p style="text-align:center">
+				$\mu_{XY} = \mu_X \mu_Y,$ &ensp; $X$ e $Y$ independientes.</p>
+				
+		<p>Esto es así ya que:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\mu_{XY} &amp;= \int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty}
+					xy \, f(x,y) \, dx \, dy
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\llap{\text{si}}\ \rlap{X, Y} \\
+							\llap{\text{indepe}}\rlap{\text{ndientes,}} \\[.5ex]
+							\llap{f(x,y) \, =} \rlap{\, f_X(x) \, f_Y(y)}
+						\end{subarray}
+					}{=} \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty}
+					xy \, f_X(x) \, f_Y(y) \, dx \, dy = \\[1ex]
+					&amp;=
+					\underbrace{\int_{-\infty}^{+\infty} x \, f_X(x) \, dx}_{\mu_X}
+					\underbrace{\int_{-\infty}^{+\infty} y \, f_Y(y) \, dy}_{\mu_Y}
+					= \\[1ex]
+					&amp;= \mu_X \mu_Y
+				\end{align}
+				$
+			</p>
+			
+		<p>También, para $X,Y$ independientes:</p>
+		
+			<p style="text-align:center">
+				$\sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2\,$, &ensp; $X,Y$
+				independientes.</p>
+				
+		<p>Esto es así porque:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\sigma_{X+Y}^2 &amp;= \int_{-\infty}^{+\infty} \!
+					\int_{-\infty}^{+\infty}(x + y - \mu_{X+Y})^2 f(x,y) \, dx \,
+					dy = \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty}
+					(x-\mu_X + y-\mu_Y)^2 f(x,y) \, dx \, dy = \\[1ex]
+					&amp;= 
+					\underbrace{
+						\int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty}
+					(x - \mu_X)^2 f(x,y) \, dx \, dy
+					}_{\sigma_X^2} + {} \\[1ex]
+					&amp;\hphantom{={}} + 2 
+					\underbrace{
+						\int_{-\infty}^{+\infty} \!
+						\int_{-\infty}^{+\infty} (x-\mu_X)(y-\mu_Y) \, f(x,y) \, dx \,
+						dy
+					}_{\mu_{\rlap{\normalsize(X-\mu_X)(Y-\mu_Y)}}} + {} \\[1ex]
+					&amp;\hphantom{={}} + 
+					\underbrace{
+						\int_{-\infty}^{+\infty} \!
+						\int_{-\infty}^{+\infty} (y - \mu_Y)^2 f(x,y) \, dx \, dy
+					}_{\sigma_Y^2} = \\[1ex]
+					&amp;= \sigma_X^2 + \sigma_Y^2 + 2 \mu_{(X-\mu_X)(Y-\mu_Y)}
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\
+							\llap{\text{Si}}\ \rlap{X,Y} \\
+							\llap{\text{indepe}}\rlap{\text{ndientes.}}
+						\end{subarray}
+					}{=} \sigma_X^2 + \sigma_Y^2 + 2 \underbrace{\mu_{X-\mu_X}}_0
+					\underbrace{\mu_{Y-\mu_Y}}_0 = \\[1ex]
+					&amp;= \sigma_X^2 + \sigma_Y^2
+				\end{align}
+				$
+			</p>
+			
+		<p>Donde se ha tenido en cuenta que:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\mu_{X - \mu_X} &amp;= \int_{-\infty}^{+\infty} \!
+					\int_{-\infty}^{+\infty} (x - \mu_{X}) \, f(x,y) \, dx \, dy
+					= \\[1ex]
+					&amp;= 
+					\underbrace{
+						\int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty} x \,
+						f(x,y) \, dx \, dy
+					}_{\mu_X} - \mu_X 
+					\underbrace{
+						\int_{-\infty}^{+\infty} \!	\int_{-\infty}^{+\infty} f(x,y)
+					\, dx \, dy}_1 = \\[1ex]
+					&amp;= \mu_X - \mu_X = 0
+				\end{align}
+				$
+			</p>
+			
+		<p>Igual para $Y$.</p>
+		
+		<p>Estos resultados pueden extenderse a un número mayor de 
+		variables. Esto es:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{l}
+					\mu_{X_1 + \, \dotsb \, + \, X_n} = \mu_{X_1} \! + \dotsb +
+					\mu_{X_n} \\[1ex]
+					\left.
+					\begin{array}{l}
+						\mu_{X_1 \dotsm X_n} = \mu_{X_1} \! \dotsm \mu_{X_n} \\[1ex]
+						\sigma_{X_1 + \, \dotsb \, + \, X_n}^2 = \sigma_{X_1}^2 +
+						\dotsb + \sigma_{X_n}^2
+					\end{array}
+					\right\} X_1, \dotsc X_n \text{ independientes}
+				\end{array}
+				$
+			</p>
+	</li>
+	<li>Para:
+	
+			<p style="text-align:center">
+				$
+				\left.
+				\begin{array}{l}
+					X,Y \smash{\text{ independientes}\,,} \\[1ex]
+					X \sim N(\mu_X, \sigma_X)\,, \\[1ex]
+					Y \sim N(\mu_Y, \sigma_Y)
+				\end{array}
+				\right\}
+				\Rightarrow X+Y \sim N(\mu_X + \mu_Y,(\sigma_X^2 + \sigma_Y^2)^{1/2})
+				$
+			</p>
+		
+		<p>Con la intención de demostrar esto, la función generadora de 
+		momentos para una variable aleatoria continua $X$ se define como:</p>
+		
+			<p style="text-align:center">
+				$M_X(t) = \displaystyle \int_{-\infty}^{+\infty} e^{tx} f(x) \,
+				dx\,, \enspace t \in \mathbb{R}$</p>
+				
+		<p>Donde $f(x)$ es la función de densidad de probabilidad de $X$. Es
+		pues $M_X(t)$ el cálculo de la media de $e^{tX}$.</p>
+		
+		<p>Si $X \sim N(\mu,\sigma)$, entonces:</p>
+		
+		<p style="text-align:center">
+			$
+			\begin{align}
+				M_X(t) &amp;= \int_{-\infty}^{+\infty} e^{tx}
+				\dfrac{1}{\sqrt{2\pi}\sigma} \exp \left(
+				-\dfrac{(x-\mu)^2}{2\sigma^2} \right) \, dx = \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \left( - \dfrac{(x-\mu)^2 - 2\sigma^2 tx}{2\sigma^2} \right)
+				\, dx	= \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \left( - \dfrac{x^2 - 2x\mu + \mu^2 - 2\sigma^2 tx}{2\sigma^2}
+				\right) \, dx = \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \left( - \dfrac{x^2 - 2x(\mu + \sigma^2 t) + \mu^2}{2\sigma^2}
+				\right) \, dx = \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \biggl( -
+				\dfrac{
+					x^2 - 2x(\mu + \sigma^2 t) + (\mu + \sigma^2 t)^2
+				}{2\sigma^2} + {} \\[1ex]
+				&amp;\hphantom{= \int_{-\infty}^{+\infty}
+				\dfrac{1}{\sqrt{2\pi}\sigma} \exp \biggl(} + \dfrac{(\mu +
+				\sigma^2 t)^2 - \mu^2}{2\sigma^2}	\biggr) \, dx = \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \biggl( - \dfrac{(x-(\mu+\sigma^2 t))^2}{2\sigma^2} + \\[1ex]
+				&amp;\hphantom{= \int_{-\infty}^{+\infty}
+				\dfrac{1}{\sqrt{2\pi}\sigma} \exp \biggl(} + {}
+				\dfrac{\mu^2 + 2\mu \sigma^2 t + \sigma^4 t^2 - \mu^2}{2\sigma^2}
+				\biggr) \, dx = \\[1ex]
+				&amp;= \int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}\sigma}
+				\exp \left( - \dfrac{(x-(\mu+\sigma^2 t))^2}{2\sigma^2} + \mu t +
+				\dfrac{\sigma^2 t^2}{2} \right) \, dx = \\[1ex]
+				&amp;= \exp \left( \mu t + \dfrac{\sigma^2 t^2}{2} \right)
+				\int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi} \sigma} \exp \left(
+				- \dfrac{(x-(\mu + \sigma^2 t))^2}{2\sigma^2} \right) \, dx = \\[1ex]
+				&amp;
+				\underset{
+					\begin{subarray}{c}
+						\big\uparrow \\
+						\llap{u \,} =
+						\rlap{\, \tfrac{x\,-\,(\mu+\sigma^2 t)}{\sigma}} \\[.5ex]
+						\llap{du \,} = \rlap{\, \tfrac{dx}{\sigma}}
+					\end{subarray}
+				}{=} \exp \left( \mu t + \dfrac{\sigma^2 t^2}{2} \right)
+				\underbrace{
+					\int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}} \exp
+					\left( - \dfrac{u^2}{2} \right) \, du
+				}_{
+					\begin{subarray}{c}
+						1 \\[.5ex]
+						\sim \, N(0,1)
+					\end{subarray}
+				} = \\[1ex]
+				&amp;= \exp \left( \mu t + \dfrac{\sigma^2 t^2}{2} \right)
+			\end{align}
+			$
+		</p>
+		
+		<p>Para la suma, $X + Y$, de dos variables aleatorias continuas
+		independientes:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					M_{X+Y}(t) &amp;= \int_{-\infty}^{+\infty} \!
+					\int_{-\infty}^{+\infty} e^{t(x+y)} f(x,y) \, dx \, dy
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\[.5ex]
+							\llap{X},\rlap{Y} \\
+							\llap{\text{indepe}}\rlap{\text{ndientes.}} \\[.5ex]
+							\llap{(f(x,y) \, =} \rlap{\, f_X(x) \, f_Y(y))}
+						\end{subarray}
+					}{=} \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} \! \int_{-\infty}^{+\infty}
+					e^{tx} e^{ty} f(x) \, f(y) \,	dx \, dy = \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} e^{ty} f(y) \left[
+					\int_{-\infty}^{+\infty} e^{tx} f(x) \, dx \right] dy = \\[1ex]
+					&amp;= 
+					\underbrace{\int_{-\infty}^{+\infty} e^{tx} f(x) \, dx}_{M_X(t)}
+					\underbrace{\int_{-\infty}^{+\infty} e^{ty} f(y) \, dy}_{M_Y(t)}
+					= \\[1ex]
+					&amp;= M_X(t) M_Y(t)
+				\end{align}
+				$
+			</p>
+		
+		<p>Si $X$ e $Y$ son dos variables aleatorias continuas independientes
+		con, además, distribución normal:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					M_{X+Y}(t) &amp;= M_X(t) M_Y(t) = \\[1ex]
+					&amp;= \exp \left( \mu_X t + \dfrac{\sigma_X^2 t^2}{2} \right)
+					\exp \left( \mu_Y t + \dfrac{\sigma_Y^2 t^2}{2} \right) = \\[1ex]
+					&amp;= \exp \left( (\mu_X + \mu_Y)t + 
+					\dfrac{(\sigma_X^2 + \sigma_Y^2)t^2}{2} \right)					
+				\end{align}
+				$
+			</p>
+			
+		<p>Que es la función generadora de momentos de una distribución 
+		normal con media $\mu_X + \mu_Y$ y varianza $\sigma_X^2 + 
+		\sigma_Y^2$. Así que, ya que sólo cuando la distribución de 
+		probabilidad es la misma se tienen funciones generadoras de 
+		momentos iguales, por tanto:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					X + Y \sim N(\mu_X + \mu_Y, (\sigma_X^2 + \sigma_Y^2)^{1/2})
+					\,, \\[1ex]
+					\left\{
+					\begin{array}{l}
+						X,Y \text{ independientes}\,, \\[1ex]
+						X \sim N(\mu_X,\sigma_X)\,, \\[1ex]
+						Y \sim N(\mu_Y,\sigma_Y)\,.
+					\end{array}
+					\right.
+				\end{array}
+				$
+			</p>
+			
+		<p>En general:</p>
+		
+			<p style="text-align:center">
+				$\displaystyle \sum_{i=1}^n X_i \sim N\left(\sum_{i=1}^n \mu_i,
+				\sqrt{\sum_{i=1}^n \sigma_i^2} \right)$</p>
+				
+		<p>Donde $X_1, \dotsc, X_n$ son variables aleatorias independientes
+		que presentan distribución normal, con media $\mu_i$ y desviación
+		típica $\sigma_i$ respectivamente.</p>
+	</li>
+	<li>Para $X_1, X_2, \dotsc, X_n$ variables aleatorias independientes 
+	con distribución, cada una de ellas, $N \sim (\mu,\sigma)\,,$ como 
+	por ejemplo los resultados de repetir $n$ veces un mismo experimento, 
+	se tiene:
+	
+			<p style="text-align:center">
+				$\overline{X} = \dfrac{X_1 + X_2 + \dotsb + X_n}{n} \sim N \left(
+				\mu, \dfrac{\sigma}{\sqrt{n}} \right)$</p>
+			
+		<p>Esto es, si, a partir de estas variables independientes normales
+		$X_1, \dotsc, X_n$, se define:</p>
+		
+			<p style="text-align:center">
+				$Y_i = \dfrac{X_i}{n} \,, \enspace i = 1, 2, \dotsc, n$</p>
+				
+		<p>Entonces:</p>
+		
+			<p style="text-align:center">
+				$Y_i \sim N \left( \dfrac{\mu}{n}, \dfrac{\sigma}{n} \right)$</p>
+				
+		<p>Por tanto:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\overline{X} = \sum_{i=1}^n \dfrac{X_i}{n} = \sum_{i=1}^n Y_i
+					&amp;\sim N \left( \sum_{i=1}^n \dfrac{\mu}{n},
+					\sqrt{\sum_{i=1}^n \left( \dfrac{\sigma}{n} \right)^2} \right)
+					= \\[1ex]
+					&amp;= N \left( n \dfrac{\mu}{n}, \sqrt{n \dfrac{\sigma^2}{n^2}}
+					\right) = \\[1ex]
+					&amp;= N \left( \mu, \dfrac{\sigma}{\sqrt{n}} \right)
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>Aunque $X_1, X_2, \dotsc, X_n$ no tengan distribución normal, si 
+	$n$ es grande ($\geq 30$) la distribución de $\overline{X}$ se puede 
+	aproximar por la normal. (Teorema central del límite).</li>
+</ol>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se tiene un kilogramo patrón que se pesa miles de veces con,
+respectivamente, media y desviación típica:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\mu = \pu{1 kg} + \pu{512 \mu g} \\[1ex]
+			\sigma = \pu{50 \mu g}
+		\end{array}
+		$
+	</p>
+	
+<p>Son $\mu$ y $\sigma$, se consideran así, porque las mediciones son 
+miles.</p>
+	
+<p>Entonces, para cada pesada, se define la variable:</p>
+
+	<p style="text-align:center">
+		$X =$ resultado de pesar el patrón ${} - \pu{1 kg}$</p>
+		
+<p>Para la que se asume una distribución normal:</p>
+
+	<p style="text-align:center">
+		$X \sim N(\underbrace{512}_{\mu_0 \rlap{\, = \, \mu \, - \, 1}},
+		\overbrace{50}^\sigma)$</p>
+		
+<p>Se hace limpieza del patrón y, tras la misma, se pesa 100 veces
+obteniéndose una media de $\pu{508 \mu g}$ por encima del kilogramo.
+Esto es:</p>
+
+	<p style="text-align:center">
+		<span style="vertical-align:top;margin-right:1em">Experimento:</span>
+		$
+		\left.
+		\begin{array}{l}
+			n = 100 \\[1ex]
+			\overline{x} = 508
+		\end{array}
+		\right\} \Rightarrow
+		$
+		Ahora, tras limpieza, $¿\mu_0 \neq 512?$
+	</p>
+	
+<p>Para la media:</p>
+
+	<p style="text-align:center">
+		$\overline{X} \sim N \left( \mu_0, \dfrac{\sigma}{\sqrt{n}} \right)$</p>
+		
+<p>Por tanto, intervalo de confianza para $\mu_0$:</p>
+
+	<p style="text-align:center">
+		$\overline{X} = \mu_0 \pm 2 \dfrac{\sigma}{\sqrt{n}} \Rightarrow
+		\mu_0 = \overline{X} \mp 2 \dfrac{\sigma}{\sqrt{n}}$ &ensp; ($\sim
+		\pu{95 \%}$ confianza)</p>
+		
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$\mu_0 = 508 \pm 2 \dfrac{50}{\sqrt{100}} = \pu{508 \pm 10 \mu g}$</p>
+		
+<p>No puede afirmarse, con un $\pu 95 \%$ de confianza, que patrón sea
+más ligero.</p>
+
+</div>
+
+<hr>
+
+<p><u>Aplicaciones:</u></p>
+
+<p>Si en un método analítico se sustituye la determinación individual por
+la media de $n$ resultados, independientes, la imprecisión se reduce en
+un factor $\sqrt{n}$.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Para calibrar un viscosímetro Brookfield se realizan 10 mediciones
+sobre un aceite patrón con valor de referencia $\pu{50 mps}$ (milipoise),
+obteniéndose los siguientes resultados:</p>
+
+<center>
+	<table class="tabla ejemplo" style="display:inline-table;margin-right:1em;text-align:center">
+		<tr>
+			<th>Medida</th>
+			<th>Resultado</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>51,3</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>50,3</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>51,7</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>51,5</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>50,9</td>
+		</tr>
+	</table>
+	<table class="tabla ejemplo" style="display:inline-table;text-align:center">
+		<tr>
+			<th>Medida</th>
+			<th>Resultado</th>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>50,9</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>51,8</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>50,7</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>50,9</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>51,1</td>
+		</tr>
+	</table>
+</center>
+
+<p>Admitiendo que los datos tienen una distribución Gaussiana:</p>
+
+<center>
+	<object data="inferencia_estadistica_03.svg" type="image/svg+xml"
+	width="459" height="298" class="ejemplo"></object>
+</center>
+
+<p>El error aleatorio está relacionado con la precisión. Entonces:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:.5ex">
+				Valor observado&nbsp;</span>
+			<span style="display:table-cell">
+				= Valor patrón +&nbsp;</span>
+			<span style="display:table-cell">
+				error =</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell">
+				= Valor patrón +&nbsp;</span>
+			<span style="display:table-cell">
+				error sistemático</span>
+			<span style="display:table-cell">
+				&nbsp;+&nbsp;</span>
+			<span style="display:table-cell">
+				error aleatorio</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell;text-align:center">
+				$\uparrow$</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell;text-align:center">
+				$\uparrow$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell;text-align:center">
+				distinto de un<br>
+				equipo a otro,<br>
+				y que cambia en<br>
+				el tiempo
+			</span>
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell;text-align:center">
+				fluctuaciones<br>
+				alrededor de<br>
+				la media
+			</span>
+		</span>
+	</p>
+	
+<p>A partir de los datos experimentales, se obtiene una estimación de
+$\mu$ y $\sigma$. El problema en sí:</p>
+
+	<p style="margin-left:30px">
+		$X$: variable aleatoria con distribución $N (\mu, \sigma)$.</p>
+		
+	<p style="margin-left:30px;display:table">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\overline{X}$:&nbsp;</span>
+			<span style="display:table-cell">
+				media de $n$ observaciones independientes de $X$,</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell"></span>
+			<span style="display:table-cell">
+				variable aleatoria con distribución $N \left(	\mu,
+				\dfrac{\sigma}{\sqrt{n}} \right)$.</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\mu + \overbrace{1{,}96}^{\sim 2} \dfrac{\sigma}{\sqrt{n}} &gt;
+			\overline{x} &gt; \mu - 1{,}96 \dfrac{\sigma}{\sqrt{n}} \rlap{\quad
+			\pu{95 \%}} \\[1ex]
+			\big\downarrow \rlap{\, \times \ (-1)} \\[1ex]
+			-\mu - 1{,}96 \dfrac{\sigma}{\sqrt{n}} &lt; -\overline{x} &lt; -\mu
+			+ 1{,}96 \dfrac{\sigma}{\sqrt{n}} \rlap{\quad \pu{95 \%}} \\[1ex]
+			\big\downarrow \rlap{\, + \ (\mu + \overline{x})} \\[1ex]
+			\overline{x} - 1{,}96 \dfrac{\sigma}{\sqrt{n}} &lt; \mu &lt;
+			\overline{x} + 1{,}96 \dfrac{\sigma}{\sqrt{n}} \rlap{\quad
+			\pu{95 \%}}
+		\end{array}
+		$
+	</p>
+	
+<p>Si se hace la aproximación $\sigma \simeq s$:</p>
+
+	<p style="text-align:center">
+		$\mu \simeq \overline{x} \pm 1{,}96 \dfrac{s}{\sqrt{n}} \quad
+		\pu{95 \%}$</p>
+
+<p>Haciendo el cálculo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\overline{x} = 51{,}11 \\[1ex]
+			s = 0{,}47
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\mu \simeq 51{,}11 \pm 1{,}96 \dfrac{0{,}47}{\sqrt{10}} = 51{,}11
+		\pm 0{,}29$</p>
+		
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\mu =$ valor patrón $+$ error sistemático</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+				$\Downarrow$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				error sistemático = $\mu$ $-$ valor patrón</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		error sistemático $= \mu - 50 \simeq 1{,}11 \pm 0{,}29 \quad
+		\pu{95 \%}$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$0{,}82 &lt;$ error sistemático $&lt; 1{,}40 \quad \pu{95 \%}$</p>
+		
+<p>Esto es, con los resultados obtenidos, existe un error sistemático
+comprendido entre $0{,}82$ y $1{,}40$ con un $\pu{95 \%}$ de confianza.</p>
+
+<p>En realidad, no se ha tenido $\sigma$ sino $s$, que es una buena
+aproximación de $\sigma$ cuando $n$ es grande, pero, en caso de no
+ser así ($n &lt; 30$), hay que corregir con un factor llamado $t$.</p>
+	
+</div>
+
+<hr>
+
+<p><span style="border-bottom:1px solid black">Distribución $t$ de Student:</span></p>
+
+<p>Su función de densidad es:</p>
+
+	<p style="text-align:center">
+		$f(t) = \text{cte.} \times \left( 1 + \dfrac{t^2}{\nu}
+		\right)^{-\tfrac{\nu+1}{2}}$</p>
+		
+<p>La cte. depende de $\nu$:</p>
+
+	<p style="text-align:center">
+		cte. $= \left\{
+		\begin{array}{l}
+			\dfrac{(\nu - 1)!}{\sqrt{\nu} 2^{\nu-1} [(\nu{∕}2 - 1)!]^2},
+			\enspace \text{si $\nu$ par} \\[1ex]
+			\dfrac{2^{\nu-1} [(\nu{∕}2-1{∕}2)!]^2}{\sqrt{\nu} \pi (\nu - 1)!},
+			\enspace \text{si $\nu$ impar}
+		\end{array}
+		\right.
+		$
+	</p>
+
+<p>Siendo $\nu$ el número de grados de libertad:</p>
+
+	<p style="text-align:center">
+		$\nu = n - 1$</p>
+		
+<p>Donde $n$ es el tamaño de la muestra.</p>
+
+<p>Cuando $\nu \to \infty$ la distribución $t$ de Student tiende a 
+coincidir con la distribución $N(0,1)$. Se abrevia como $t(\nu)$.</p>
+
+<center>
+	<object data="inferencia_estadistica_04.svg" type="image/svg+xml"
+	width="240" height="180"></object>
+</center>
+
+<p>Cuando $n &lt; 30$ se usa la distribución de $t$ para hallar los
+intervalos de confianza, tomándose el valor de $t$ en vez de $z$. Esto
+es:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\overline{x} - \mu}{s{∕}\!\sqrt{n}} \sim t(n-1)$</p>
+		
+<p>Los valores de $t$ más frecuentemente usados están tabulados, p. ej. 
+según el área bajo la distribución de $t$ que queda a su izquierda, 
+para los distintos grados de libertad.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Volviendo al ejemplo anterior, como hay 10 datos se tienen 9 grados
+de libertad, siendo:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>9</b></td>
+			<td>3,25</td>
+			<td>2,82</td>
+			<td>2,26</td>
+			<td>1,83</td>
+			<td>1,38</td>
+			<td>0,883</td>
+			<td>0,703</td>
+			<td>0,543</td>
+			<td>0,261</td>
+			<td>0,129</td>
+	</table>
+</center>
+
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		${\rm Prob} \mspace{1mu} (t &lt; t_p) = p$</p>
+
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto;text-align:center">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex;text-align:left">
+				Nivel de confianza (probabilidad de ser así):</span>
+			<span style="display:table-cell;padding-left:2em;padding-right:2em">
+				$1-\alpha$</span>
+			<span style="display:table-cell">
+				$100(1-\alpha) \ \%$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;text-align:left">
+				Nivel de significación (probabilidad de no ser así):</span>
+			<span style="display:table-cell;padding-left:2em;padding-right:2em">
+				$\alpha$</span>
+			<span style="display:table-cell">
+				$100\alpha \ \%$</span>
+		</span>
+	</p>
+	
+<p>Como la distribución de $t$ es simétrica:</p>
+
+	<p style="text-align:center">
+		$1 - \alpha = {\rm Prob} \! \left( t_{\tfrac{\alpha}{2}} &lt; t &lt;
+		t_{1-\tfrac{\alpha}{2}} \right) = {\rm Prob} \! \left(
+		-t_{1-\tfrac{\alpha}{2}} &lt; t &lt; t_{1-\tfrac{\alpha}{2}} \right)$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\hphantom{-}2{,}26 &gt; t &gt; -2{,}26 \rlap{\quad \pu{95 \%}} \\[1ex]
+			\Bigg\downarrow \rlap{\, t =
+			\dfrac{\overline{x}-\mu}{s{∕}\!\sqrt{n}}} \\[1ex]
+			\hphantom{-}2{,}26 &gt; \dfrac{\overline{x}-\mu}{s{∕}\!\sqrt{n}}
+			&gt; -2{,}26 \rlap{\quad \pu{95 \%}} \\[1ex]
+			\big\downarrow \rlap{\, \times \ s{∕}\!\sqrt{n}} \\[1ex]
+			\hphantom{-}2{,}26 \dfrac{s}{\sqrt{n}} &gt; \overline{x} - \mu &gt;
+			-2{,}26 \dfrac{s}{\sqrt{n}} \rlap{\quad \pu{95 \%}} \\[1ex]
+			\big\downarrow  \rlap{\, - \ \overline{x}} \\[1ex]
+			-\overline{x} + 2{,}26 \dfrac{s}{\sqrt{n}} &gt; -\mu &gt;
+			-\overline{x} - 2{,}26 \dfrac{s}{\sqrt{n}} \rlap{\quad \pu{95 \%}} \\[1ex]
+			\big\downarrow \rlap{\, \times \ (-1)} \\[1ex]
+			\overline{x} - 2{,}26 \dfrac{s}{\sqrt{n}} &lt; \mu &lt; \overline{x}
+			+ 2{,}26 \dfrac{s}{\sqrt{n}} \rlap{\quad \pu{95 \%}}
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, para un $\pu{95 \%}$ de confianza se tiene:</p>
+
+	<p style="text-align:center">
+		$\mu = \overline{x} \pm 2{,}26 \dfrac{s}{\sqrt{n}}$</p>
+		
+<p>Siendo aquí, en este ejemplo, el intervalo de confianza del $\pu{95 \%}$
+para la media:</p>
+
+	<p style="text-align:center">
+		$\mu = 51{,}11 \pm 2{,}26 \dfrac{0{,}47}{\sqrt{10}} = 51{,}11 \pm
+		0{,}34$</p>
+		
+<p>Como el valor patrón no cae dentro del intervalo de $\mu$, existe un
+error sistemático.</p>
+		
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Determinación complexométrica de contenido de $\ce{Zn}$ de una
+muestra, en la que se obtienen los siguientes datos:</p>
+
+	<p style="text-align:center">
+		$\pu{9,97 \%}, \pu{10,02 \%}, \pu{10,00 \%}, \pu{10,04 \%},
+		\pu{9,98 \%}, \pu{10,08 \%}$</p>
+		
+<p>¿Contenido $&gt; \pu{10 \%}$?</p>
+		
+<p>Si se admite que para los datos:</p>
+
+	<p style="text-align:center">
+		$X \sim N(\mu, \sigma)$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\overline{X} \sim N \left(\mu,\dfrac{\sigma}{\sqrt{n}} \right)$</p>
+		
+<p>Haciendo los cálculos:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\overline{x} = 10{,}015 \\[1ex]
+			s = 0{,}041 \\[1ex]
+			n = 6
+		\end{array}
+		\right\} \overset{\displaystyle ?}{\Longrightarrow} \mu &gt; 10
+		$
+	</p>
+	
+<p>En lo que se conoce como test $t$, la hipótesis, en este caso $\mu &gt;
+\mu_0$, no se acepta si:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$t = \dfrac{\overline{x} - \mu_0}{s{∕}\sqrt{n}} &lt;
+		t_{1-\alpha}(n-1)$</p>
+		
+<p>El valor de $t$ tabulado para $\alpha = \pu{5 \%}$ y 5 grados de
+libertad:</p>
+
+	<p style="text-align:center">
+		$t_{0{,}95}(5) = 2{,}02$</p>
+		
+<p>Aquí $\mu_0 = 10$, así que sustituyendo:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$t = \dfrac{10{,}015 - 10}{0{,}041{∕}\sqrt{6}} = 0{,}896 &lt; 2{,}02
+		= t_{0{,}95}(5)$</p>
+		
+<p>Por tanto, el valor de $t$ no es significativo respecto al de la
+tabla con $\alpha = 0{,}05$. No es suficientemente grande para sacar
+conclusiones, i.e. para poder decir que la media ($\mu$) es superior
+a 10.</p>
+
+<p>Otros test $t$ posibles:</p>
+
+	<p style="margin-left:30px">
+		&bull; $\mu \nless \mu_0$&ensp; si &ensp;$t =
+		\dfrac{\overline{x} - \mu_0}{s{∕}\sqrt{n}} &gt; t_{\alpha}(n-1) =
+		-t_{1-\alpha}(n-1)$</p>
+		
+	<p style="margin-left:30px">
+		&bull; $\mu = \mu_0$&ensp; si &ensp;$t_{\tfrac{\alpha}{2}}(n-1) &lt;
+		\dfrac{\overline{x}-\mu_0}{s{∕}\sqrt{n}} &lt;
+		t_{1 - \tfrac{\alpha}{2}}(n-1)$</p>
+	
+</div>
+
+<hr>
+
+<p>Siendo la varianza (de la muestra):</p>
+
+	<p style="text-align:center">
+		$s^2 =
+		\dfrac{(X_1 - \overline{X})^2 + \dotsb + (X_n - \overline{X})^2}{n-1}$
+	</p>
+
+<p>Si $X_1, \dotsc, X_n$ son variables aleatorias independientes de
+idéntica distribución con media $\mu$ y varianza $\sigma^2$, entonces
+$s^2$ es también una variable aleatoria con $\mu_{s^2} = 
+\sigma^2$, como se verá, y desviación típica cero cuando $n \to \infty$,
+ya que $\sigma_{s^2}^2 = [\mu_{(X-\mu)^4} \mspace{2mu} {-}\mspace{1mu}$
+$\sigma^4(n-3){∕}(n-1)]{∕}n$.</p>
+
+<p>Resulta que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			S = \sum_{i=1}^n (X_i - \overline{X})^2 &amp;= \sum_{i=1}^n
+			((X_i - \mu) - (\overline{X} - \mu))^2 = \\[1ex]
+			&amp;= \sum_{i=1}^n (X_i - \mu)^2 - \sum_{i=1}^n 2
+			(X_i - \mu)(\overline{X} - \mu) + \sum_{i=1}^n (\overline{X} - \mu)^2
+			= \\[1ex]
+			&amp;= \sum_{i=1}^n (X_i - \mu)^2 - 2(\overline{X} - \mu)
+			\left( \sum_{i=1}^n X_i - \sum_{i=1}^n \mu \right) + n (\overline{X}
+			- \mu)^2 = \\[1ex]
+			&amp;= \sum_{i=1}^n (X_i - \mu)^2 - 2(\overline{X} - \mu) (n
+			\overline{X} - n \mu) + n(\overline{X} - \mu)^2 = \\[1ex]
+			&amp;= \sum_{i=1}^n (X_i - \mu)^2 - 2n(\overline{X} - \mu)^2 + n
+			(\overline{X} - \mu)^2 = \\[1ex]
+			&amp;= \sum_{i=1}^n (X_i - \mu)^2 - n(\overline{X} - \mu)^2
+		\end{align}
+		$
+	</p>
+
+<p>Entonces, tratando cada diferencia al cuadrado de ésta como si fuera 
+una variable aleatoria:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\mu_S &amp;= \sum_{i=1}^n \!
+			\underbrace{
+				\mu_{(X_i - \mu)^2}
+			}_{
+				\sigma_{X_i}^2 \rlap{\mspace{2mu} = \, \sigma^2}
+			} - n \!
+			\underbrace{
+				\mu_{(\overline{X} - \mu)^2}
+			}_{
+				\sigma_{\overline{X}}^2 \rlap{\, = \, \sigma^2\mspace{-2mu}{∕}n}
+			} = \\[1ex]
+			&amp;= \sum_{i=1}^n \sigma^2 - n \dfrac{\sigma^2}{n} = n \sigma^2
+			- \sigma^2 = \\[1ex]
+			&amp;= \sigma^2 (n-1)
+		\end{align}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\mu_{s^2} = \mu_{S{∕}(n-1)} = \dfrac{1}{n-1} \mu_S = \dfrac{1}{n-1}
+		\sigma^2 (n-1) = \sigma^2$</p>
+		
+<p>Para comparar desviaciones típicas se divide:</p>
+
+	<p style="text-align:center">
+		$F = \dfrac{s_1^2}{s_2^2}$ &ensp; (ó $F_{\rm ratio}$)</p>
+		
+<p>Este cociente es también una variable aleatoria, cuya distribución 
+de probabilidad, siendo $\sigma_1^2 = \sigma_2^2$, es la que se conoce 
+como distribución $F$, que depende del número de observaciones de 
+numerador ($n_1$) y denominador ($n_2$) respectivamente.</p>
+
+<center>
+	<object data="inferencia_estadistica_05.svg" type="image/svg+xml"
+	width="240" height="180"
+	style="display:inline-block;vertical-align:middle"></object>
+	Distribución $F$.
+</center>
+
+<p>Se trata de contrastar si la discrepancia de $F$ calculada respecto 
+de 1, que es el valor que cabría esperar si $\sigma_1^2 = \sigma_2^2$, 
+es demasiado grande como para atribuirse a causas aleatorias.</p>
+
+<p>Para ello, se compara el valor de $F$ calculado con el valor de $F$
+recogido en tablas, según el área que queda a su derecha, para los
+respectivos grados de libertad de numerador ($\nu_1$) y denominador
+($\nu_2$).</p>
+
+<p>El cálculo de $F$ se ha de realizar de tal manera que $F &gt; 1$.
+Esto es, situando en el numerador la varianza (muestral) mayor de las dos 
+obtenidas. Si $s_1^2 &gt; s_2^2$, entonces:</p>
+
+	<p style="display:table;margin-left:60px;margin-right:60px">
+		<span style="display:table-cell">
+			$F = \dfrac{s_1^2}{s_2^2} &lt;
+			\underbrace{
+				F_{\alpha{∕}2} (\nu_1,\nu_2)
+			}_{
+				\begin{subarray}{c}
+					\text{tablas,} \\
+					\text{(subíndice área} \\
+					\text{a su derecha)}
+				\end{subarray}	
+			}
+			\Rightarrow {}$</span>
+		<span style="display:table-cell">
+			No se puede decir que las precisiones de 1 y 2 son diferentes con
+			una confianza de $100(1-\alpha) \ \%$. Se divide $\alpha$ entre
+			los dos extremos de la distribución.</span>
+	</p>
+	
+<p>Si se intercambian numerador y denominador, el cociente pasaría a
+ser menor de 1, puede observarse que:</p>	
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			{\rm Prob} \! \left( \dfrac{s_1^2}{s_2^2} &gt; F_{\alpha{∕}2} (\nu_1,
+			\nu_2) \right) = \dfrac{\alpha}{2} \\[1ex]
+			{\rm Prob} \! \left( \left(\dfrac{s_1^2}{s_2^2}\right)^{\! -1} &lt;
+			(F_{\alpha{∕}2} (\nu_1,\nu_2))^{-1} \right) = \dfrac{\alpha}{2} \\[1ex]
+			{\rm Prob} \! \left( \dfrac{s_2^2}{s_1^2} &lt;
+			\dfrac{1}{F_{\alpha{∕}2} (\nu_1,\nu_2)} \right) = \dfrac{\alpha}{2}
+		\end{array}
+		$
+	</p>
+	
+<p>Como también:</p>
+
+	<p style="text-align:center">
+		${\rm Prob} \! \left( \dfrac{s_2^2}{s_1^2} &lt; F_{1-\tfrac{\alpha}{2}}
+		(\nu_2,\nu_1) \right) = \dfrac{\alpha}{2}$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$F_{1-\tfrac{\alpha}{2}} (\nu_2,\nu_1) = \dfrac{1}{F_{\alpha{∕}2}
+		(\nu_1,\nu_2)}$</p>
+		
+<p>Además, en lo que se refiere al cociente de las varianzas halladas,
+también:</p>
+
+	<p style="text-align:center">
+		$\dfrac{s_1^2}{s_2^2} &gt; F_{\alpha{∕}2} (\nu_1,\nu_2)
+		\Leftrightarrow \dfrac{s_2^2}{s_1^2} &lt; \dfrac{1}{F_{\alpha{∕}2}
+		(\nu_1,\nu_2)} =	F_{1-\tfrac{\alpha}{2}} (\nu_2,\nu_1)$</p>
+		
+<p>Por tanto con comparar una de las dos es suficiente, por convenio la
+primera.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se valora una disolución de $\ce{KMnO4}$ mediante dos procedimientos
+distintos, usando, como patrones primarios, en uno $\ce{KI}$ y en el otro
+$\ce{As2O3}$, obteniéndose los siguientes valores de molaridad:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>con $\ce{KI}$</th>
+			<th>con $\ce{As2O3}$</th>
+		</tr>
+		<tr>
+			<td>0,44109</td>
+			<td>0,44118</td>
+		</tr>
+		<tr>
+			<td>0,44125</td>
+			<td>0,44124</td>
+		</tr>
+		<tr>
+			<td>0,44107</td>
+			<td>0,44127</td>
+		</tr>
+		<tr>
+			<td>0,44119</td>
+			<td>0,44127</td>
+		</tr>
+		<tr>
+			<td>0,44112</td>
+			<td>0,44122</td>
+		</tr>
+		<tr>
+			<td>0,44128</td>
+			<td></td>
+		</tr>
+	</table>
+</center>
+
+<p>Entonces, tomando las dos últimas cifras, que son las que cambian:</p>
+
+	<p style="text-align:center">
+		<span style="display:inline-table;text-align:left;margin-right:2em">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-right:1ex">
+					1.<sup>er</sup> método:</span>
+				<span style="display:table-cell">
+					$\overline{x}_1 = 16{,}67$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell"></span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					$s_1^2 = 75{,}47$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell"></span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					$n_1 = 6$</span>
+			</span>
+		</span>
+		<span style="display:inline-table;text-align:left">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-right:1ex">
+					2.º método:</span>
+				<span style="display:table-cell">
+					$\overline{x}_2 = 23{,}60$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell"></span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					$s_2^2 = 14{,}30$</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell"></span>
+				<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+					$n_2 = 5$</span>
+			</span>
+		</span>
+	</p>
+	
+<p>¿$\sigma_1 \neq \sigma_2$?</p>
+
+	<p style="text-align:center">
+		$F = \dfrac{s_1^2}{s_2^2} = \dfrac{75{,}47}{14{,}30} = 5{,}28$</p>
+		
+<p>Tabla para $\alpha{∕}2 = 0{,}05$:</p>
+
+<center>
+	<span style="display:inline-block;padding:1ex 0px;border:1px solid #FFFFCC">
+		$\boldsymbol{\nu_2}\vphantom{\text{7,71}}$</span>
+	<table class="tabla ejemplo" style="display:inline-table;vertical-align:bottom">
+		<caption style="padding-bottom:5px">$\boldsymbol{\nu_1}$</caption>
+		<tr>
+			<th style="border:none"></th>
+			<th><b>1</b></th>
+			<th><b>2</b></th>
+			<th><b>3</b></th>
+			<th><b>4</b></th>
+			<th><b>5</b></th>
+			<th><b>6</b></th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>4</b></td>
+			<td>7,71</td>
+			<td>6,94</td>
+			<td>6,59</td>
+			<td>6,39</td>
+			<td>6,26</td>
+			<td>6,16</td>
+		</tr>
+	</table>
+</center>
+
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$F = 5{,}28 &lt; 6{,}26 = F_{0{,}05}(5,4)$</p>
+		
+<p>Concluyéndose que no se puede afirmar, con el $\pu{90 \%}$ de
+confianza, que las precisiones de ambos métodos son distintas.</p>
+	
+</div>
+
+<hr>
+
+<p>Para comparar exactitudes se resta:</p>
+
+	<p style="text-align:center">
+		$\overline{X}_1 - \overline{X}_2$</p>
+		
+<p>Asumiendo distribuciones normales, y en disposición de considerar 
+$\sigma_1 = \sigma_2 = \sigma$, algo necesario cuando las muestras son 
+pequeñas (cuando son grandes pueden aproximarse directamente $\sigma_1$ 
+y $\sigma_2$ con $s_1$ y $s_2$ respectivamente), entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			X_1 \sim N(\mu,\sigma) \enspace \Rightarrow \enspace \overline{X}_1
+			\sim N \left( \mu,\dfrac{\sigma}{\sqrt{n_1}} \right) \\[1ex]
+			X_2 \sim N(\mu,\sigma) \enspace \Rightarrow \enspace \overline{X}_2
+			\sim N \left( \mu,\dfrac{\sigma}{\sqrt{n_2}} \right)
+		\end{array}
+		$
+	</p>
+
+<p>De manera análoga a como se demostró para la suma:</p>
+
+	<p style="text-align:center">
+		$
+		\overline{X}_1 - \overline{X}_2 \sim N \Biggl( \mu_1 - \mu_2,
+		\underbrace{
+			\sqrt{\dfrac{\sigma^2}{n_1} + \dfrac{\sigma^2}{n_2}}
+		}_{
+			\sigma \sqrt{\tfrac{1}{n_1} + \tfrac{1}{n_2}}
+		} \Biggr)
+		$
+	</p>
+	
+<p>Que puede transformarse a una distribución normal reducida:</p>
+
+	<p style="text-align:center">
+		$
+		\dfrac{
+			\overline{X}_1 - \overline{X}_2 - (\mu_1 - \mu_2)
+		}{
+			\sigma \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}
+		}
+		\sim N(0,1) \enspace \Rightarrow \enspace
+		\underset{
+			\displaystyle \text{(test $t$)}
+		}{
+			\dfrac{
+				\overline{X}_1 - \overline{X}_2 - (\mu_1 - \mu_2)
+			}{
+				s \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}
+			}
+			\sim t (
+			\underbrace{
+				n_1 + n_2 - 2
+			}_{
+				\begin{subarray}{c}
+					\text{grados} \\
+					\text{de libertad}
+				\end{subarray}	
+			}
+			)
+		}
+		$
+	</p>
+	
+<p>Donde $s^2$, con la que se estima $\sigma^2$, es la media ponderada de
+$s_1^2$ y $s_2^2$:</p>
+
+	<p style="text-align:center">
+		$s^2 = \dfrac{n_1 - 1}{n_1 + n_2 - 2} s_1^2 +
+		\dfrac{n_2 - 1}{n_1 + n_2 - 2} s_2^2$</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Continuando con el ejemplo anterior, como se vio no se tiene evidencia
+de que sean distintas las desviaciones típicas, por lo que se puede
+tomar, lo que facilita las cosas, un mismo valor para ambas.</p>
+
+<p>¿$\mu_1 \neq \mu_2$?</p>
+
+	<p style="text-align:center">
+		$s^2 = \dfrac{5}{9} 75{,}47 + \dfrac{4}{9} 14{,}30 = 48{,}28
+		\Rightarrow s = 6{,}95$</p>
+		
+<p>Si $\mu_1 - \mu_2 = 0$, no hay diferencia, que es lo que se quiere
+comprobar:</p>
+
+	<p style="text-align:center">
+		$
+		t =
+		\dfrac{
+			|\overline{x}_1 - \overline{x}_2|
+		}{
+			s \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}
+		} =
+		\dfrac{23{,}60 - 16{,}67}{6{,}95 \sqrt{\dfrac{1}{6} + \dfrac{1}{5}}}
+		= 1{,}65 &lt; 2{,}26 = t_{0{,}975}(9)
+		$
+	</p>
+	
+<p>Consultando la tabla de la distribución $t$, no se puede afirmar, con
+un $\pu{95 \%}$ de confianza, que sean distintas medias.</p>
+
+<p>Así pues, ni se puede decir que ambos métodos tengan precisión 
+distinta, ni que los valores de molaridad obtenidos, comparten media, 
+para la disolución de $\ce{KMnO4}$ sean significativamente 
+distintos.</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se calibra a 20 grados un termómetro, especificándose que el sesgo 
+(error medio) debe ser inferior a medio grado. La calibración se lleva 
+a cabo sumergiendo en un baño termostático el termométro a calibrar y 
+otro patrón. Se mide la temperatura 5 veces, esperando cinco minutos 
+entre lecturas. Los resultados que se obtienen:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>Termómetro</th>
+			<th>Lectura 1</th>
+			<th>Lectura 2</th>
+			<th>Lectura 3</th>
+			<th>Lectura 4</th>
+			<th>Lectura 5</th>
+		</tr>
+		<tr>
+			<td style="text-align:left">Patrón</td>
+			<td>19,9</td>
+			<td>20,0</td>
+			<td>19,8</td>
+			<td>19,9</td>
+			<td>19,9</td>
+		</tr>
+		<tr>
+			<td style="text-align:left">Calibrado</td>
+			<td>20,5</td>
+			<td>20,2</td>
+			<td>20,3</td>
+			<td>20,2</td>
+			<td>20,3</td>
+		</tr>
+	</table>
+</center>
+
+<p>No se pueden considerar que las mediciones realizadas en ambos
+termómetros para cada lectura sean independientes, se hacen a la vez
+bajo las mismas condiciones, pero sí entre las diferentes lecturas, a
+intervalos de cinco minutos, en condiciones independientes. Por tanto,
+es como si se tuvieran 5 experimentos independientes.</p>
+
+<p>Se va a considerar, pues, una variable $D = T_{\rm C} - T_{\rm P}$,
+diferencia entre ambos termómetros, teniéndose 5 observaciones
+independientes.</p>
+
+<p>Datos:</p>
+
+	<p style="text-align:center">
+		0,6 &ensp; 0,2 &ensp; 0,5 &ensp; 0,3 &ensp; 0,4</p>
+		
+<p>Cálculos:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\overline{D} = 0{,}40 \\[1ex]
+			s_D = 0{,}16 \\[1ex]
+			n = 5
+		\end{array}
+		$
+	</p>
+		
+<p>Si la diferencia media, error medio, es inferior a medio grado se
+puede dar la conformidad al termómetro. Esto es:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex;padding-right:1em">
+				$|\mu_D| &gt; 0{,}5$</span>
+			<span style="display:table-cell">
+				No conforme.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$|\mu_D| &lt; 0{,}5$</span>
+			<span style="display:table-cell">
+				Conforme.</span>
+		</span>
+	</p>
+	
+<p>El intervalo de confianza:</p>
+
+	<p style="text-align:center">
+		$\mu_D = \overline{D} \pm t_{1-\tfrac{\alpha}{2}}
+		\dfrac{s_D}{\sqrt{n}} \quad (1-\alpha)100 \ \%$</p>
+		
+<p>Siendo:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>4</b></td>
+			<td>4,60</td>
+			<td>3,75</td>
+			<td>2,78</td>
+			<td>2,13</td>
+			<td>1,53</td>
+			<td>0,941</td>
+			<td>0,741</td>
+			<td>0,569</td>
+			<td>0,271</td>
+			<td>0,134</td>
+	</table>
+</center>
+
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\mu_D = 0{,}40 \pm 2{,}78 \dfrac{0{,}16}{\sqrt{5}} = 0{,}40 \pm
+		0{,}20 \quad \pu{95 \%}$</p>
+		
+<p>Intervalo que contiene el 0,5.</p>
+
+<p>Así pues, con un $\pu{95 \%}$ de confianza, no se puede dar
+conformidad, i.e. $|\mu_D| &lt; 0{,}5$, ni tampoco no conformidad, i.e.
+$|\mu_D| &gt; 0{,}5$, al termómetro.</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se mide el contenido de plastificante de las muestras de un material 
+antes y después de ser sometidas a calentamiento dentro de una estufa. 
+Siendo entonces:</p>
+
+	<p style="margin-left:30px">
+		$X_1 =$ contenido de plastificante antes de calentar,
+		$N(\mu_1,\sigma_1)$.</p>
+		
+	<p style="margin-left:30px">
+		$X_2 =$ contenido de plastificante después de calentar,
+		$N(\mu_2,\sigma_2)$.</p>
+		
+<p>Los resultados obtenidos en la medición, para cinco muestras que no 
+han pasado por la estufa y otras cinco que sí lo han hecho, son:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<caption>Contenido de plastificante</caption>
+		<tr>
+			<th>Antes</th>
+			<th>Después</th>
+		</tr>
+		<tr>
+			<td>17,5</td>
+			<td>17,2</td>
+		</tr>
+		<tr>
+			<td>17,8</td>
+			<td>17,0</td>
+		</tr>
+		<tr>
+			<td>17,4</td>
+			<td>17,4</td>
+		</tr>
+		<tr>
+			<td>17,5</td>
+			<td>17,0</td>
+		</tr>
+		<tr>
+			<td>17,7</td>
+			<td>17,3</td>
+		</tr>
+	</table>
+</center>	
+
+<p>Se proponen dos planteamientos:</p>
+
+	<p style="margin-left:30px;text-indent:-1em;padding-left:1em">
+		a) Tal como expone el enunciado, las muestras de antes y después son
+		distintas.</p>
+		
+	<p style="margin-left:30px;text-indent:-1em;padding-left:1em">
+		b) Suponer que las muestras de antes y las utilizadas después son 
+		las mismas (en el mismo orden).</p>
+		
+<p>Esto es:</p>
+
+	<p style="margin-left:30px;text-indent:-1em;padding-left:1em">
+		a) 10 observaciones (5 de $X_1$ y 5 de $X_2$) independientes.</p>
+		
+	<p style="margin-left:30px;text-indent:-1em;padding-left:1em">
+		b) 5 pares independientes (las dos observaciones de un mismo par no
+		son independientes, lo que sale antes modifica las expectativas de
+		después).</p>
+		
+<p>Los procedimientos serán:</p>
+
+	<p style="margin-left:30px">
+		<span style="vertical-align:top">a)</span> 
+		$
+		\left.
+		\begin{array}{l}
+			\text{1.º Test $F$} \\
+			\text{2.º Test $t$}
+		\end{array}
+		\,
+		\right\}
+		$,
+		se trabaja con los 10 datos.
+	</p>
+	
+	<p style="margin-left:30px">
+		b) Test $t\,,$ sólo con las diferencias.</p>
+		
+<p>Así pues, ya poniéndose en ello:</p>
+
+<p>a) ¿Puede deducirse que $\mu_1 \neq \mu_2$?</p>
+
+<p>Datos, tras introducir los resultados en la calculadora:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			\overline{x}_1 = 17{,}58 &amp;\quad \overline{x}_2 = 17{,}18 \\[1ex]
+			s_1^2 = 0{,}027 &amp;\quad s_2^2 = 0{,}032 \\[1ex]
+			n_1 = 5 &amp;\quad n_2 = 5
+		\end{array}
+		$
+	</p>
+	
+<p>1.<sup>er</sup> paso. Test $F$, la varianza más grande dividida por
+la más pequeña:</p>
+
+	<p style="text-align:center">
+		$F = \dfrac{s_2^2}{s_1^2} = \dfrac{0{,}032}{0{,}027} = 1{,}185$</p>
+		
+<p>Ahora hay que compararlo con el valor de la tabla:</p>
+
+	<p style="text-align:center">
+		$F_{0{,}05}(4,4) = 6{,}39$</p>
+		
+<p>Por tanto, valor calculado de $F$ no significativo. Se puede suponer
+$\sigma_1 = \sigma_2$.</p>
+
+<p>2.º paso. Test $t$.</p>
+
+<p>Porque $X_1$ y $X_2$ son independientes con misma varianza $\sigma^2$,
+ésta se estima mediante la media ponderada, $s^2$, de $s_1^2$ y $s_2^2$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			s^2 &amp;= \dfrac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{(n_1-1) + (n_2-1)} =
+			\dfrac{4s_1^2 + 4s_2^2}{8} = \dfrac{s_1^2 + s_2^2}{2} = \\[1ex]
+			&amp;= \dfrac{0{,}027 + 0{,}032}{2} = 0{,}0295
+		\end{align}
+		$
+	</p>
+	
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$s = \sqrt{0{,}0295} = 0,172$</p>
+		
+<p>Si $\mu_1 - \mu_2 = 0$, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		t =
+		\dfrac{
+			\overline{x}_1 - \overline{x}_2
+		}{
+			s \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}
+		} = \dfrac{17{,}58 - 17{,}18}{0{,}172 \sqrt{\dfrac{2}{5}}} = 3{,}677
+		$
+	</p>
+	
+<p>Se compara con:</p>
+
+	<p style="text-align:center">
+		$
+		t_{
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\[.25ex]
+					\llap{1 \,} - \rlap{\, \tfrac{\alpha}{2}}
+				\end{subarray}
+			}{0{,}975}
+		}
+		\overset{
+			\begin{subarray}{c}
+				\llap{n_1 \, + \,} n_2 \rlap{\, - \, 2} \\[.25ex]
+				\downarrow
+			\end{subarray}
+		}{\strut (8)} = 2{,}31
+		$
+	</p>
+	
+<p>Por tanto, el valor de la $t$ calculada es significativo (es mayor 
+que el recogido en la tabla). Esto es, la diferencia entre las dos 
+medias, $\mu_1$ y $\mu_2$, es significativa.</p>
+
+<p>b) Se considera una variable:</p>
+
+	<p style="margin-left:30px;display:table">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$d = {}$</span>
+			<span style="display:table-cell">
+				diferencia, i.e. contenido antes $-$ contenido después (sobre
+				la misma muestra).</span>
+		</span>
+	</p>
+	
+<p>Se considera que:</p>
+
+	<p style="text-align:center">
+		$d \sim N(\mu_d, \sigma_d)$</p>
+		
+<p>¿Puede deducirse que $\mu_d \neq 0$?</p>
+
+<p>Datos de $d$:</p>
+
+	<p style="text-align:center">
+		0,3 &ensp; 0,8 &ensp; 0,0 &ensp; 0,5 &ensp; 0,4</p>
+		
+	<p style="text-align:center">
+		$\overline{d} = 0{,}4 \quad s_d = 0{,}292 \quad n = 5$</p>
+		
+<p>Test $t$:</p>
+
+	<p style="text-align:center">
+		$
+		t =
+		\dfrac{
+			\overset{
+				\llap{\text{lo que }} \rlap{\text{se quiere comparar}}
+			}{
+				\overset{\downarrow}{\overline{d}} -
+				\overset{\downarrow}{0 \vphantom{\overline{d}}}
+			}
+		}{s_d {∕} \sqrt{n}} =	\dfrac{0{,}4}{0{,}292{∕}\sqrt{5}} = 3{,}063
+		$
+	</p>
+	
+<p>Siendo (se consulta una tabla de $t$, con $\alpha = 0{,}05$ y 4 
+grados de libertad):</p>
+
+	<p style="text-align:center">
+		$t_{0{,}975}(4) = 2{,}78$</p>
+		
+<p>Por tanto, el valor de $t$ calculado es signficativo, es mayor que 
+el recogido en la tabla, y sí puede deducirse que $\mu_d \neq 0$, 
+siendo el contenido de plastificante distinto.</p> 
+	
+</div>
+
+<hr>
+
+<p><u>Regresión lineal</u>:</p>
+
+<p>Si se disponen de las siguientes parejas de datos:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{cc}
+			\boldsymbol{x} &amp; \boldsymbol{y} \\[1ex]
+			\hline x_1 &amp; y_1 \\[1ex]
+			x_2 &amp; y_2 \\[1ex]
+			x_3 &amp; y_3 \\[1ex]
+			\vdots &amp; \vdots \\[1ex]
+			x_n &amp; y_n
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		$x =$ variable control,
+		<span style="display:block">
+			$y =$ respuesta.</span>
+	</p>
+	
+<p>Se asume como modelo:</p>
+
+	<p style="text-align:center">
+		$y = a + bx + e$</p>
+		
+<p>Donde $e =$ error aleatorio, tal que:</p>
+
+	<p style="text-align:center">
+		$e \sim N(0,\sigma)$</p>
+		
+<p>Entonces:</p>
+
+<ol>
+	<li>Valores estimados de $a$, $b$ y $\sigma$, mediante las fórmulas:
+	
+		<p>Pendiente (slope):</p>
+		
+			<p style="text-align:center">
+				$\hat{b} = \dfrac{S_{xy}}{S_{xx}}$</p>
+		
+		<p>Término constante (intercept):</p>
+		
+			<p style="text-align:center">
+				$\hat{a} = \overline{y} - \hat{b} \overline{x}$</p>
+	
+		<p>El "sombrerito" $\hat{\phantom{a}}$ indica que son estimaciones.
+		La notación es:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{array}{c}
+					\overline{x} = \dfrac{x_1 + \dotsb + x_n}{n} \\[1ex]
+					\overline{y} = \dfrac{y_1 + \dotsb + y_n}{n} \\[1ex]
+					S_{xx} = (x_1 - \overline{x})^2 + \dotsb + (x_n - \overline{x})^2
+					= \sum x_i^2 - \dfrac{(\sum x_i)^2}{n} \\[1ex]
+					S_{xy} = (x_1 - \overline{x})(y_1 - \overline{y}) + \dotsb +
+					(x_n - \overline{x})(y_n - \overline{y}) = \sum x_i y_i -
+					\dfrac{(\sum x_i) (\sum y_i)}{n}
+				\end{array}
+				$
+			</p>
+			
+		<p>Varianza residual:</p>
+		
+			<p style="text-align:center">
+				$s^2 =
+				\dfrac{(y_1 - \hat{a} - \hat{b}x_1)^2 + \dotsb + (y_n - \hat{a}
+				- \hat{b}x_n)^2}{n-2},$
+				&emsp; ($n-2$ grados de libertad).
+			</p>
+			
+		<p>Podría simbolizarse alternativamente como $\hat{\sigma}{}^2$. Su
+		cálculo es también:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					s^2 &amp;=
+					\dfrac{
+						(y_1 - (\overline{y} - \hat{b}\overline{x}) - \hat{b}x_1)^2
+						+	\dotsb + (y_n - (\overline{y} - \hat{b}\overline{x}) -
+						\hat{b}x_n)^2
+					}{n-2} = \\[1ex]
+					&amp;=
+					\dfrac{
+						((y_1 - \overline{y}) - \hat{b}(x_1 - \overline{x}))^2 +
+						\dotsb + ((y_n - \overline{y}) - \hat{b}(x_n -
+						\overline{x}))^2
+					}{n-2} = \\[1ex]
+					&amp;=
+					\dfrac{
+						\overbrace{
+							(y_1 - \overline{y})^2 + \dotsb + (y_n - \overline{y})^2
+						}^{S_{yy}}
+					}{n-2} - {} \\[1ex]
+					&amp;\hphantom{= {}} - 2 \hat{b}
+					\dfrac{
+						\overbrace{
+							(x_1-\overline{x})(y_1 - \overline{y}) + \dotsb +
+							(x_n - \overline{x})(y_n - \overline{y})
+						}^{S_{xy}}
+					}{n-2} + {} \\[1ex]
+					&amp;\hphantom{={}} + \hat{b}{}^2
+					\dfrac{
+						\overbrace{
+							(x_1 - \overline{x})^2 + \dotsb + (x_n - \overline{x})^2
+						}^{S_{xx}}
+					}{n - 2} = \\[1ex]
+					&amp;= \dfrac{S_{yy} - 2\hat{b}S_{xy} + \hat{b}{}^2 S_{xx}}{n-2}
+					\underset{
+						\begin{subarray}{c}
+						\uparrow \\
+						\llap{\hat{b} \,} = \rlap{\tfrac{S_{xy}}{S_{xx}}}
+						\end{subarray}
+					}{=} \dfrac{S_{yy}-2S_{xy}^2{∕}S_{xx} + S_{xy}^2{∕}S_{xx}}{n-2}
+					= \\[1ex]
+					&amp;= \dfrac{S_{yy} - S_{xy}^2{∕}S_{xx}}{n-2} \hphantom{=} 
+					\left( = \dfrac{S_{yy} - \hat{b} S_{xy}}{n-2} =
+					\dfrac{S_{yy} - \hat{b}{}^2 S_{xx}}{n-2} \right)
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>Intervalos de confianza para los coeficientes $a$ y $b$, usando la
+	distribución $t$ de Student, con las fórmulas:
+	
+		<p>Varianza del término constante:</p>
+		
+			<p style="text-align:center">
+				$s_{\hat{a}}^2 = s^2 \left( \dfrac{1}{n} +
+				\dfrac{\overline{x}^2}{S_{xx}} \right)$</p>
+				
+		<p>Varianza de la pendiente:</p>
+		
+			<p style="text-align:center">
+				$s_{\hat{b}}^2 = \dfrac{s^2}{S_{xx}}$</p>
+	</li>
+	<li>Estimación del error del método:
+		
+		<p>Varianza de la predicción de $x$, i.e. $\hat{x}$, a partir de $y$:</p>
+		
+		<ul>
+			<li>una lectura:
+				
+					<p style="text-align:center">
+						$s_{\hat{x}}^2 = \dfrac{s^2}{\hat{b}{}^2} \left( 1 +
+						\dfrac{1}{n} + \dfrac{(y-\overline{y})^2}{\hat{b}{}^2 S_{xx}}
+						\right)$</p>
+					
+				<p>Alternativamente:</p>
+				
+					<p style="text-align:center">
+						$
+						\begin{align}
+							s_{\hat{x}}^2 &amp;= \dfrac{s^2}{\hat{b}{}^2} \left( 1 +
+							\dfrac{1}{n} + \dfrac{(y-\overline{y})^2}{\hat{b}{}^2 S_{xx}}
+							\right) 
+							\underset{
+								\begin{subarray}{c}
+									\uparrow \\
+									\llap{\overline{y} \,} =
+									\rlap{\, \hat{a} \, + \, \hat{b} \overline{x}}
+								\end{subarray}
+							}{=} \\[1ex]
+							&amp;= \dfrac{s^2}{\hat{b}{}^2} \left( 1 + \dfrac{1}{n} +
+							\dfrac{
+								(y - \hat{a} - \hat{b} \overline{x})^2
+							}{\hat{b}{}^2 S_{xx}} \right) = \\[1ex]
+							&amp;= \dfrac{s^2}{\hat{b}{}^2} \Biggl( 1 + \dfrac{1}{n} +
+							\dfrac{1}{S_{xx}} \biggl(
+							\dfrac{y - \hat{a} - \hat{b} \overline{x}}{\hat{b}}
+							\biggr)^{\! 2} \Biggr) = \\[1ex]
+							&amp;= \dfrac{s^2}{\hat{b}{}^2} \Biggl( 1 + \dfrac{1}{n} +
+							\dfrac{1}{S_{xx}} \biggl(
+							\underbrace{\dfrac{y-\hat{a}}{\hat{b}}}_{\hat{x}} -
+							\overline{x} \biggr)^{\! 2} \Biggr) = \\[1ex]
+							&amp;= \dfrac{s^2}{\hat{b}{}^2} \left( 1 + \dfrac{1}{n} +
+							\dfrac{(\hat{x} - \overline{x})^2}{S_{xx}} \right)
+						\end{align}
+						$
+					</p>
+			</li>
+			<li>$m$ lecturas, i.e. una por cada una de $m$ preparaciones:
+			
+					<p style="text-align:center">
+						$s_{\hat{x}}^2 = \dfrac{s^2}{\hat{b}{}^2} \left( \dfrac{1}{m}
+						+ \dfrac{1}{n} + \dfrac{(y-\overline{y})^2}{\hat{b}{}^2S_{xx}}
+						\right)$</p>
+					
+				<p>Donde aquí $y$ es la media de las $m$ lecturas.</p>
+				
+				<p>Alternativamente:</p>
+				
+					<p style="text-align:center">
+						$s_{\hat{x}}^2 = \dfrac{s^2}{\hat{b}{}^2} \left( \dfrac{1}{m}
+						+ \dfrac{1}{n} + \dfrac{(\hat{x}-\overline{x})^2}{S_{xx}}
+						\right)$</p>
+		</ul>
+	</li>
+</ol>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Para la determinación espetrofotométrica de glucosa en sangre, se
+preparan muestras de suero con distintas concentraciones conocidas
+de glucosa, obteniéndose la siguiente tabla de absorbancias:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<caption>Calibración</caption>
+			<tr>
+				<th>Concentración<br>(mg/dl)</th>
+				<th>Absorbancia</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0,050</td>
+			</tr>
+			<tr>
+				<td>50</td>
+				<td>0,189</td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td>0,326</td>
+			</tr>
+			<tr>
+				<td>150</td>
+				<td>0,467</td>
+			</tr>
+			<tr>
+				<td>200</td>
+				<td>0,605</td>
+			</tr>
+			<tr>
+				<td>400</td>
+				<td>1,156</td>
+			</tr>
+			<tr>
+				<td>600</td>
+				<td>1,704</td>
+			</tr>
+	</table>
+</center>
+
+<p>Para hacer la calibración, a partir de unas concentraciones conocidas
+(disoluciones o muestras patrón) se obtendrá una recta (de calibración),
+según el método de los mínimos cuadrados. Introduciendo los datos de la
+tabla en la calculadora científica:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				Constante:</span>
+			<span style="display:table-cell">
+				 0,05163 (0,051626631)</span>
+		</span>		
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1ex;padding-bottom:1ex">
+				Pendiente:</span>
+			<span style="display:table-cell">
+				0,00276 (0,002757075)</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1ex">
+				Correlación:</span>
+			<span style="display:table-cell">
+				0,999996</span>
+		</span>
+	</p>
+	
+<p>Para una misma concentración, debido al error aleatorio, cada 
+repitición de la medición tendría respuestas distintas. Esto es, si se 
+repitiera de nuevo el experimento de calibración entero podrían tenerse 
+rectas diferentes. Por lo que hay que tener en cuenta las imprecisiones, 
+discrepancias, que se pueden tener entre estas diversas rectas, a la 
+hora de hallar una concentración desconocida. Si esto fuera demasiado 
+grande, sería un método de experimentación no válido.</p>
+
+<p>Entonces, la ecuación es:</p>
+
+		<p style="text-align:center">
+			$y_i = a + b x_i + e_i \qquad i = 1, 2, \dotsc, n$</p>
+			
+<p>Donde $a$ y $b$ son constantes (desconocidas), y $e_i$ representa el 
+error aleatorio. Se considera:</p>
+
+	<p style="text-align:center">
+		$e_i \sim N(0,\sigma)\,,$ independientes.</p>
+		
+<p>Como la media del error es cero, la media de las lecturas cae sobre 
+la recta. La desviación típica es la misma, $\sigma$, para todas las 
+concentraciones (aproximación). Esto es, se asume que los errores entre 
+lecturas son independientes y con idéntica distribución $N(0,\sigma)$.</p>
+
+<p>Los residuos son los errores de ajuste a la recta de regresión (que
+es una estimación):</p>
+
+	<p style="text-align:center">
+		Residuo $= y_i - \hat{a} - \hat{b} x_i$</p>
+		
+<p>En formato tabla:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+			<tr>
+				<th>Concentración<br>(mg/dl)</th>
+				<th>Absorbancia</th>
+				<th>Residuo</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0,050</td>
+				<td>-0,00163</td>
+			</tr>
+			<tr>
+				<td>50</td>
+				<td>0,189</td>
+				<td>-0,00048</td>
+			</tr>
+			<tr>
+				<td>100</td>
+				<td>0,326</td>
+				<td>-0,00133</td>
+			</tr>
+			<tr>
+				<td>150</td>
+				<td>0,467</td>
+				<td>0,00181</td>
+			</tr>
+			<tr>
+				<td>200</td>
+				<td>0,605</td>
+				<td>0,00196</td>
+			</tr>
+			<tr>
+				<td>400</td>
+				<td>1,156</td>
+				<td>0,00154</td>
+			</tr>
+			<tr>
+				<td>600</td>
+				<td>1,704</td>
+				<td>-0,00187</td>
+			</tr>
+	</table>
+</center>
+
+<p>Según el método de los mínimos cuadrados, por el que se obtienen las 
+fórmulas para calcular $\hat{a}$ y $\hat{b}$ escritas más arriba, los 
+residuos han de sumar todos cero, siendo la suma de sus cuadrados la 
+mínima.</p>
+
+<p>La estimación de $\sigma$ se obtiene a partir de (varianza residual):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			s^2 &amp;=
+			\dfrac{\sum\limits_{i=1}^n (y_i - \hat{a} - \hat{b} x_i)^2}{n-2}
+			= \\[1ex]
+			&amp;=
+			\dfrac{
+				(-0{,}00163)^2 + (-0{,}00048)^2 + (-0{,}00133)^2 + (0{,}00181)^2
+			}{5} + {} \\[1ex]
+			&amp;\hphantom{= {}} +
+			\dfrac{(0{,}00196)^2 + (0{,}00154)^2 + (-0{,}00187)^2}{5} =
+			\pu{3,53e-6}
+		\end{align}
+		$
+	</p>
+	
+<p>Para poder calcular la varianza de los estimadores de $a$ y $b$ se 
+necesita conocer el valor de $S_{xx}$. Para ello, es otra manera de 
+hacerlo, puede usarse el valor de la desviación típica para los datos 
+de $x$ que da la calculadora (p. ej. en el modelo CASIO <i>fx-3900Pv</i>
+la tecla $x\sigma_{n-1}$). Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			s_x = \left( \dfrac{S_{xx}}{n-1} \right)^{1/2} \\[1ex]
+			S_{xx} = s_x^2 (n-1) = (213{,}5304)^2 (6) = 273571
+		\end{array}
+		$
+	</p>
+	
+<p>También hará falta el valor de $\overline{x}$, que lo da directamente
+la propia calculadora:</p>
+
+	<p style="text-align:center">
+		$\overline{x} = 214{,}2857$</p>
+	
+<p>La varianza de los estimadores de $a$ y $b$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			s_{\hat{a}}^2 = \dfrac{s^2}{n} \left( 1 +
+			\dfrac{n \overline{x}^2}{S_{xx}} \right) = \dfrac{\pu{3,53e-6}}{7}
+			\left( 1 + \dfrac{7 (214{,}2857)^2}{273571} \right) =
+			\pu{1,10e-6} \\[1ex]
+			s_{\hat{b}}^2 = \dfrac{s^2}{S_{xx}} = \dfrac{\pu{3,53e-6}}{273571}
+			= \pu{1,29e-11}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces lo más correcto es dar los valores experimentales de $a$ y
+$b$, su estimación, más un intervalo de confianza. Esto se hace con
+la distribución $t$ de Student. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\hphantom{-}t_{1-\tfrac{\alpha}{2}}(n-2) &gt;
+			\dfrac{\hat{a} - a}{s_{\hat{a}}} &gt;
+			-t_{1-\tfrac{\alpha}{2}}(n-2) \\[1ex]
+			\Downarrow \\[1ex]
+			\hat{a} - t_{1-\tfrac{\alpha}{2}}(n-2) s_{\hat{a}} &lt; a &lt;
+			\hat{a} + t_{1-\tfrac{\alpha}{2}}(n-2) s_{\hat{a}}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $(n-2)$ son el número de grados de libertad de la suma de los
+cuadrados de los residuos en el cálculo de la varianza residual.</p>
+	
+<p>Para cinco grados de libertad:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>5</b></td>
+			<td>4,03</td>
+			<td>3,36</td>
+			<td>2,57</td>
+			<td>2,02</td>
+			<td>1,48</td>
+			<td>0,920</td>
+			<td>0,727</td>
+			<td>0,559</td>
+			<td>0,267</td>
+			<td>0,132</td>
+	</table>
+</center>
+
+<p>Entonces, para un nivel de confianza del $\pu{95 \%}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			0{,}05163 - 2{,}57 (\pu{1,10e-6})^{1/2} &lt; a &lt; 0{,}05163 +
+			2{,}57 (\pu{1,10e-6})^{1/2} \\[1ex]
+			0{,}05163 - 0{,}00270 &lt; a &lt; 0{,}05163 + 0{,}00270
+		\end{array}
+		$
+	</p>
+	
+<p>Se escribe:</p>
+
+	<p style="text-align:center">
+		$a = 0{,}05163 \pm 0{,}00270$</p>
+		
+<p>Intervalo que no contiene el cero, por lo cual se puede decir 
+que $a$ es distinto de cero. Esto se suele resumir diciendo que $a$ es 
+significativo (en caso contrario se diría que no es signficativo).</p>
+
+<p>Análogamente:</p>
+
+	<p style="text-align:center">
+		$b = 0{,}00276 \pm 2{,}57 (\pu{1,29e-11})^{1/2} = 0{,}00276 \pm
+		\pu{9,23e-6}$</p>
+		
+<p>Teniendo ya hecha la calibración:</p>
+
+	<p style="text-align:center">
+		$y = \hat{a} + \hat{b}x$</p>
+		
+<p>Entonces, de la lectura de absorbancia de una disolución de 
+concentración desconocida:</p>
+
+	<p style="text-align:center">
+		$
+		\overset{
+			\begin{subarray}{c}
+				\llap{\text{absor}}\text{b}\rlap{\text{ancia}} \\
+				\downarrow
+			\end{subarray}
+		}{\mathstrut y} \longrightarrow 
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\
+				\llap{\text{concen}}\rlap{\text{tración}}
+			\end{subarray}
+		}{\hat{x}} = \dfrac{y-\hat{a}}{\hat{b}}
+		$
+	</p>
+	
+<p>Esto se conoce como regresión inversa (o predicción inversa). Por
+ejemplo:</p>
+
+	<p style="text-align:center">
+		Absorbancia $= 0{,}147 \ \Rightarrow \ $ Concentración $=
+		\dfrac{0{,}147 - 0{,}05163}{0{,}00276} = 34{,}55$</p>
+		
+<p>Este valor es una estimación, con una cierta incertidumbre. Por ello,
+aunque siendo aproximada, se usa la siguiente fórmula:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			s_{\hat{x}}^2 &amp;= \dfrac{s^2}{\hat{b}{}^2} \left( 1 + \dfrac{1}{n}
+			+ \dfrac{(\hat{x}-\overline{x})^2}{S_{xx}} \right) = \\[1ex]
+			&amp;= \dfrac{\pu{3,53e-6}}{(0{,}00276)^2} \left( 1 + \dfrac{1}{7}
+			+ \dfrac{(34{,}55 - 214{,}2857)^2}{273571} \right) = \\[1ex]
+			&amp;= 0{,}584
+		\end{align}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\hat{x} \pm 2{,}57 s_{\hat{x}} = 34{,}55 \pm 2{,}57 (0{,}584)^{1/2}
+		= \pu{34,55 \pm 1,96 mg/dl}$</p>
+		
+<p>Siendo éste un intervalo de confianza aproximado.</p>
+
+<p>Se define el coeficiente de varianza, o coeficiente de variación,
+($CV$) como la desviación típica expresada en % del valor medido. Esto
+es:</p>
+
+	<p style="text-align:center">
+		$CV = \dfrac{s_{\hat{x}}}{\hat{x}} 100$</p>
+		
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$CV = \dfrac{\sqrt{0{,}584}}{34{,}55} 100 = \pu{2,21 \%}$</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se lleva a cabo un experimento de calibración de un método HPLC de 
+análisis de benzodiazepinas. Se obtiene la recta de calibración para el 
+diazepam inyectando 5 disoluciones, que van desde 8 a $\pu{12 mg/ml}$, 
+repitiendo el análisis de cada una 3 veces. Los resultados se presentan 
+en la siguiente tabla:</p>
+
+<center>
+<table class="tabla ejemplo" style="text-align:center">
+	<caption>Calibración de un método HPLC para el diazepam</caption>
+	<tr>
+		<th>Concentración</th>
+		<th colspan="3">Áreas</th>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td>90101</td>
+		<td>89975</td>
+		<td>90213</td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>82606</td>
+		<td>82351</td>
+		<td>82518</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>75074</td>
+		<td>74870</td>
+		<td>75201</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>67199</td>
+		<td>67221</td>
+		<td>67305</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>60793</td>
+		<td>60541</td>
+		<td>60237</td>
+	</tr>
+</table>	
+</center>
+
+<p>Se introducen las 15 parejas de datos en la calculadora, obteniéndose
+$\hat{a}$, $\hat{b}$ y la correlación:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\hat{a} = 685 \\[1ex]
+			\hat{b} = 7439{,}53(3333) \\[1ex]
+			r = 0{,}9997
+		\end{array}
+		$
+	</p>
+	
+<p>Para hallar los límites de confianza de $a$ se necesita la varianza
+residual:</p>
+
+	<p style="text-align:center">
+		$s^2 = \dfrac{S_{yy} - \hat{b}{}^2 S_{xx}}{n-2}$</p>
+		
+<p>La calculadora CASIO <i>fx-3900Pv</i> da los valores de las 
+desviaciones típicas de $x$ e $y$, respectivamente teclas $x\sigma_{n-1}$
+e $y\sigma_{n-1}$, siendo entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			S_{xx} = s_x^2 (n-1) = (1{,}463850109)^2 (14) = 30 \\[1ex]
+			S_{yy} = s_y^2 (n-1) = (10894{,}06817)^2 (14) = 1661530098
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$s^2 = \dfrac{1661530098 - (7439{,}533333)^2 (30)}{13}=86954{,}74615$</p>
+		
+<p>También hace falta:</p>
+
+	<p style="text-align:center">
+		$\overline{x} = 10$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$s_{\hat{a}}^2 = s^2 \left( \dfrac{1}{n} +
+		\dfrac{\overline{x}^2}{S_{xx}} \right) = 86954{,}74615 \left(
+		\dfrac{1}{15} + \dfrac{(10)^2}{30} \right) = 295646{,}1369$</p>
+		
+<p>Siendo para 13 grados de libertad:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>13</b></td>
+			<td>3,01</td>
+			<td>2,65</td>
+			<td>2,16</td>
+			<td>1,77</td>
+			<td>1,35</td>
+			<td>0,870</td>
+			<td>0,694</td>
+			<td>0,538</td>
+			<td>0,259</td>
+			<td>0,128</td>
+	</table>
+</center>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$a = \hat{a} \pm t_{0{,}975}(13) s_{\hat{a}} = 685 \pm 2{,}16 
+		(295646{,}1369)^{1/2} = 685 \pm 1174,5$</p>
+		
+<p>No se puede decir que sea, con un $\pu{95 \%}$ de confianza, 
+distinto de cero. Por consiguiente, el término constante no es 
+significativo.</p>
+
+<p>Es pues razonable plantear como modelo una recta que pase por el
+origen. Esto es:</p>
+
+	<p style="text-align:center">
+		$y = bx$</p>
+		
+<p>Siendo, en este caso, la estimación de $b$ por el método de mínimos
+cuadrados:</p>
+
+	<p style="text-align:center">
+		$\hat{b} = \dfrac{\sum x_i y_i}{\sum x_i^2}$</p>
+		
+<p>Valores de numerador y denominador los da la calculadora directamente,
+por lo que sustituyendo:</p>
+
+	<p style="text-align:center">
+		$\hat{b} = \dfrac{11485236}{1530} = 7506{,}69(0196)$</p>
+		
+<p>Aquí la fórmula de la varianza residual:</p>
+
+	<p style="text-align:center">
+		$s^2 =
+		\dfrac{(y_1 - \hat{b}x_1)^2 + \dotsb + (y_n - \hat{b}x_n)^2}{n-1},$
+		&ensp; ($n-1$ grados de libertad).</p>
+		
+<p>Para su cálculo también:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			s^2 &amp;=
+			\dfrac{(y_1 - \hat{b}x_1)^2 + \dotsb + (y_n - \hat{b}x_n)^2}{n-1}
+			= \\[1ex]
+			&amp;=
+			\dfrac{
+				\overbrace{(y_1^2 + \dotsb + y_n^2)}^{\sum y_i^2} - 2\hat{b}
+				\overbrace{(x_1 y_1 + \dotsb + x_n y_n)}^{\sum x_i y_i} +
+				\hat{b}{}^2 \overbrace{(x_1^2 + \dotsb + x_n^2)}^{\sum x_i^2}
+			}{n-1} = \\[1ex]
+			&amp;= \!
+			\dfrac{
+				\sum y_i^2 - 2 \hat{b} \sum x_i y_i + \hat{b}{}^2 \sum x_i^2
+			}{n-1}
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\
+					\llap{\hat{b} \,} = \rlap{\, \tfrac{\sum x_i y_i}{\sum x_i^2}}
+				\end{subarray}
+			}{=}
+			\dfrac{
+				\sum y_i^2 - 2 ( \sum x_i y_i)^2 {∕} \sum x_i^2 + ( \sum x_i y_i)^2
+				{∕} \sum x_i^2
+			}{n-1} \! = \\[1ex]
+			&amp;= \dfrac{\sum y_i^2 - (\sum x_i y_i)^2 {∕} \sum x_i^2}{n-1}
+			\hphantom{=} \left( = \dfrac{\sum y_i^2 - \hat{b} \sum x_i y_i}{n-1}
+			= \dfrac{\sum y_i^2 - \hat{b}{}^2 \sum x_i^2}{n-1} \right)
+		\end{align}
+		$
+	</p>
+	
+<p>Usando la calculadora:</p>
+
+	<p style="text-align:center">
+		$s^2 =
+		\dfrac{8{,}62173769 \cdot 10^{10} - (11485236)^2{∕}1530}{14}
+		= 90601{,}64286$</p>
+	
+<p>Para calcular la varianza de la predicción de $x$, i.e. $\hat{x}$, a 
+partir de una $y$ dada, cuando la recta se hace pasar por el 
+origen, se utiliza:</p>
+
+	<p style="text-align:center">
+		$s_{\hat{x}}^2 = \dfrac{s^2}{\hat{b}{}^2} \left( 1 +
+		\dfrac{(y{∕}\hat{b})^2}{\sum x_i^2} \right) = \dfrac{s^2}{\hat{b}{}^2}
+		\left( 1 + \dfrac{\hat{x}{}^2}{\sum x_i^2} \right)$</p>
+		
+<p>En este ejemplo, para la predicción de una concentración cercana a
+$\pu{10 mg/ml}$ su varianza es aproximadamente:</p>
+
+	<p style="text-align:center">
+		$s_{\pu{10 mg/ml}}^2 = \dfrac{90601{,}64286}{(7506{,}690196)^2}
+		\left( 1 + \dfrac{10^2}{1530} \right) = 1{,}7129 \cdot 10^{-3}$</p>
+		
+<p>Por consiguiente, el coeficiente de variación:</p>
+
+	<p style="text-align:center">
+		$CV = \dfrac{s_{\pu{10 mg/ml}}}{\pu{10 mg/ml}} 100 = \pu{0,414 \%}$</p>
+		
+<p>También puede establecerse un intervalo de confianza. Para establecer
+sus límites hace falta:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>14</b></td>
+			<td>2,98</td>
+			<td>2,62</td>
+			<td>2,14</td>
+			<td>1,76</td>
+			<td>1,34</td>
+			<td>0,868</td>
+			<td>0,692</td>
+			<td>0,537</td>
+			<td>0,258</td>
+			<td>0,128</td>
+	</table>
+</center>
+
+<p>Entonces, con un $\pu{95 \%}$ de confianza:</p>
+
+	<p style="text-align:center">
+		$10 \pm t_{0{,}975}(14) s_{\pu{10 mg/ml}} = 10 \pm 2{,}14 (1{,}7129
+		\cdot 10^{-3})^{1/2} = \pu{10 \pm 0,0886 mg/ml}$</p>
+		
+<p>En comparación, para el modelo con término constante:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{align}
+				s_{\hat{x}}^2 &amp;= \dfrac{s^2}{\hat{b}{}^2} \left( 1 +
+				\dfrac{1}{n} + \dfrac{(\hat{x} - \overline{x})^2}{S_{xx}} \right)
+				\underset{
+					\begin{subarray}{c}
+						\uparrow \\
+						\llap{\hat{x} \,} = \rlap{\, \pu{10 mg/ml}}
+					\end{subarray}
+				}{=} \\[1ex]
+				&amp;= \dfrac{86954{,}74615}{(7439{,}533333)^2} \left( 1 +
+				\dfrac{1}{15} + \dfrac{(10 - 10)^2}{30} \right) = \\[1ex]
+				&amp;= 1{,}6758 \cdot 10^{-3}
+			\end{align} \\[1em]
+			CV = (1{,}6758 \cdot 10^{-3})^{1/2} (10) = \pu{0,409 \%} \\[1em]
+			x = 10 \pm 2{,}16 (1{,}6758 \cdot 10^{-3})^{1/2} =
+			\pu{10 \pm 0,0884 mg/ml}
+		\end{array}	
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>En la calibración de un método HPLC para mediciones de ácido
+naftiónico se usan tres concentraciones distintas, obteniéndose:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<caption>Resultados experimentales</caption>
+		<tr>
+			<th>Concentración ($x$)</th>
+			<th>Área ($y$)</th>
+		</tr>
+		<tr>
+			<td>0,10</td>
+			<td>14,175</td>
+		</tr>
+		<tr>
+			<td>0,15</td>
+			<td>21,368</td>
+		</tr>
+		<tr>
+			<td>0,25</td>
+			<td>35,186</td>
+		</tr>
+	</table>
+</center>
+
+<p style="text-align:center">
+	<object data="inferencia_estadistica_06.svg" type="image/svg+xml"
+	width="126" height="147" class="ejemplo"
+	style="display:inline-block;vertical-align:middle;margin-right:1em">
+	</object>
+	Ácido naftiónico.
+</p>
+
+<p>Con la calculadora, recta de calibración:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\hat{a} = 0{,}275857(148) \\[1ex]
+			\hat{b} = 139{,}803 \ (139{,}8028572)
+		\end{array}
+		$
+	</p>
+	
+<p>La adecuación de la recta se observa con la correlación, cuanto más
+cercano a 1 sea su valor mejor:</p>
+
+	<p style="text-align:center">
+		$r = 0{,}999949$</p>
+		
+<p>Puede sustituirse el modelo $y = a + bx$ por uno más sencillo como $y
+= bx$. En principio, aquí, $\hat{a}$ es un valor muy pequeño para las
+áreas que se tienen en la tabla.</p>
+
+<p>Incorporando el cálculo de los residuos a la tabla:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>Concentración ($x$)</th>
+			<th>Área ($y$)</th>
+			<th>Residuos</th>
+		</tr>
+		<tr>
+			<td>0,10</td>
+			<td>14,175</td>
+			<td>-0,081143</td>
+		</tr>
+		<tr>
+			<td>0,15</td>
+			<td>21,368</td>
+			<td>0,121714</td>
+		</tr>
+		<tr>
+			<td>0,25</td>
+			<td>35,186</td>
+			<td>-0,040571</td>
+		</tr>
+	</table>
+</center>
+
+<p>La varianza residual (un único grado de libertad):</p>
+
+	<p style="text-align:center">
+		$s^2 = (-0{,}081143)^2 + (0{,}121714)^2 + (-0{,}040571)^2 =
+		0{,}023044$</p>
+		
+<p>Con la que puede calcularse la varianza del término constante, cuya
+fórmula es:</p>
+
+	<p style="text-align:center">
+		$s_{\hat{a}}^2 = s^2 \left( \dfrac{1}{n} +
+		\dfrac{\overline{x}{}^2}{S_{xx}} \right)$</p>
+		
+<p>Se necesitan conocer también (mediante la calculadora):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\overline{x} = 0{,}166667 \\[1ex]
+			S_{xx} = s_{x}^2 (n-1) = (0{,}076376)^2 (2) = 0{,}011667
+		\end{array}
+		$
+	<p>
+		
+<p>Por tanto:</p>
+		
+		<p style="text-align:center">
+			$s_{\hat{a}}^2 = 0{,}023044 \left( \dfrac{1}{3} +
+			\dfrac{(0{,}166667)^2}{0{,}011667} \right) = 0{,}062547$</p>
+			
+<p>Así pues, intervalo de confianza de $a$:</p>
+
+	<p style="text-align:center">
+		$\hat{a} \pm t_{0{,}975}(1) s_{\hat{a}}$</p>
+		
+<p>Ya que 1 son los grados de libertad de la varianza residual. Si:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{\nu}$</th>
+			<th>$\boldsymbol{t_{0{,}995}}$</th>
+			<th>$\boldsymbol{t_{0{,}99}}$</th>
+			<th>$\boldsymbol{t_{0{,}975}}$</th>
+			<th>$\boldsymbol{t_{0{,}95}}$</th>
+			<th>$\boldsymbol{t_{0{,}90}}$</th>
+			<th>$\boldsymbol{t_{0{,}80}}$</th>
+			<th>$\boldsymbol{t_{0{,}75}}$</th>
+			<th>$\boldsymbol{t_{0{,}70}}$</th>
+			<th>$\boldsymbol{t_{0{,}60}}$</th>
+			<th>$\boldsymbol{t_{0{,}55}}$</th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>1</b></td>
+			<td>63,66</td>
+			<td>31,82</td>
+			<td>12,71</td>
+			<td>6,31</td>
+			<td>3,08</td>
+			<td>1,376</td>
+			<td>1,000</td>
+			<td>0,727</td>
+			<td>0,325</td>
+			<td>0,158</td>
+	</table>
+</center>
+
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$a = 0{,}275857 \pm 12{,}71 (0{,}062547)^{1/2} = 0{,}275857 \pm
+		3{,}178695$</p>
+		
+<p>En conclusión, ya que el intervalo contiene el cero, valor de $a$
+no significativo. Así que, sin término constante, para el modelo $y = bx$
+se tiene que:</p>
+
+	<p style="text-align:center">
+		$\hat{b} = \dfrac{\sum x_i y_i}{\sum x_i^2} =
+		\dfrac{13{,}4192}{0{,}095} = 141{,}254737$</p>
+	
+<p>El cálculo de los residuos:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>Concentración ($x$)</th>
+			<th>Área ($y$)</th>
+			<th>Residuos</th>
+		</tr>
+		<tr>
+			<td>0,10</td>
+			<td>14,175</td>
+			<td>0,049526</td>
+		</tr>
+		<tr>
+			<td>0,15</td>
+			<td>21,368</td>
+			<td>0,179789</td>
+		</tr>
+		<tr>
+			<td>0,25</td>
+			<td>35,186</td>
+			<td>-0,127684</td>
+		</tr>
+	</table>
+</center>
+
+<p>La varianza residual (aquí con dos grados de libertad):<p>
+	
+	<p style="text-align:center">
+		$s^2 = \dfrac{(0{,}049526)^2 + (0{,}179789)^2 + (-0{,}127684)^2}{2} =
+		0{,}025540$</p>
+		
+<p>La variabilidad de la respuesta del equipo se debe al error aleatorio
+$e$. Esto es, para el primer modelo:</p>
+
+	<p style="text-align:center">
+		$y = a + bx + e$</p>
+		
+<p>Donde se considera que:</p>
+
+	<p style="text-align:center">
+		$e \sim N(0,\sigma)$</p>
+		
+<p>La estimación de $\sigma$ es:</p>
+
+	<p style="text-align:center">
+		$s^2 = 0{,}023044 \Rightarrow s = 0{,}151803$</p>
+		
+<p>De manera análoga, para el modelo en el que la recta pasa por el
+origen:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			y = bx + e\,, \\[1ex]
+			e \sim N(0,\sigma)\,, \\[1ex]
+			s^2 = 0{,}025540 \Rightarrow s = 0{,}159812\,.
+		\end{array}
+		$
+	</p>
+
+</div>
+
+<hr>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../variables_aleatorias/variables_aleatorias.html"
+		title="Anterior">&lt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

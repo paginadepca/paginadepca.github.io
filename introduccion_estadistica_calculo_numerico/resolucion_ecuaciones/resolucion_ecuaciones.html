@@ -1,0 +1,1346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+			extensions: ["cancel.js","[mhchem]/mhchem.js"]
+		},
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Resolución de ecuaciones">
+<meta name="keywords" content="resolución, ecuaciones">
+<title>Resolución de ecuaciones</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Resolución de ecuaciones</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Sea, por ejemplo, la ecuación no lineal:</p>
+
+	<p style="text-align:center">
+		$x = e^{-x}$
+		<object data="resolucion_ecuaciones_01.svg" type="image/svg+xml"
+		width="200" height="200"
+		style="display:inline-block;vertical-align:middle;margin-left:2em">
+		</object>
+	</p>
+	
+<p>La representación gráfica permite saber que la ecuación tiene 
+solución, pudiéndose establecer un intervalo dentro del cual se 
+encuentra ésta (o incluso, directamente, estimarla).</p>
+
+<p>Si se escribe:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			x - e^{-x} = 0 \\[1ex]
+			f(x) = x - e^{-x}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces un valor de $x$ que haga $f(x) = 0$ resuelve la ecuación
+planteada.</p>
+
+<p>Así que el problema de dada una función $f$ hallar $x$ tal que $f(x) 
+= 0$ es el que se presenta cuando se quieren resolver ecuaciones. En 
+general, no es resoluble explícitamente, i.e. de forma analítica 
+mediante métodos algebraicos, por lo que se hacen necesarios métodos de 
+resolución aproximados.</p>
+
+<p>Algunos métodos:</p>
+
+<p>1) Método de la bisección:</p>
+
+<div id="teorema" text="(de Bolzano)">
+	
+<p>Sea $f:[a,b] \to \mathbb{R}$ continua y $f(a)$, $f(b)$ con distinto 
+signo, entonces $\mathrel{\exists} x$, $a &lt; x &lt;b$, tal que $f(x) 
+= 0$.<p>
+	
+</div>
+
+<p>Siendo, siguiendo con la misma función que se tomó como ejemplo,
+que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			f(0) = -1 &lt; 0 \\[1ex]
+			f(1) = 1 - e^{-1} &gt; 0
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, la solución, $x$ que hace $f(x)$ cero, está dentro del 
+intervalo (0,1).</p>
+
+<p>A continuación se calcularía el valor de la función en el medio del
+intervalo. Esto es:</p>
+
+	<p style="text-align:center">
+		$f(0{,}5) = \text{? } \Biggl\{$
+		<span style="display:inline-table;vertical-align:middle">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-bottom:1ex">
+					Si $f(0{,}5) &gt; 0 \Rightarrow$ Solución entre $0$ y $0{,}5$.
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					Si $f(0{,}5) &lt; 0 \Rightarrow$ Solución entre $0{,}5$ y $1$.
+			</span>
+		</span>
+	</p>
+	
+<p>Se genera, con el nuevo punto, otro intervalo, de la mitad de 
+tamaño, de tal manera que se mantenga el signo opuesto para la función 
+en los extremos.</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$f(0{,}5) = -0{,}1065$</p>
+		
+<p>Por tanto la solución $x$ es tal que $0{,}5 &lt; x &lt; 1$.
+
+<p>Se repite el procedimiento sucesivamente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			f(0{,}750) = 0{,}2776 \Rightarrow 0{,}5 &lt; x &lt; 0{,}75 \\[1ex]
+			f(0{,}625) = 0{,}0897 \Rightarrow 0{,}5 &lt; x &lt; 0{,}625 \\[1ex]
+			f(0{,}5625) = -0{,}0073 \Rightarrow 0{,}5625 &lt; x &lt; 0{,}625 \\[1ex]
+			f(0{,}59375) = 0{,}0415 \Rightarrow 0{,}5625 &lt; x &lt; 0{,}59375 \\[1ex]
+			f(0{,}578125) = 0{,}0172 \Rightarrow 0{,}5625 &lt; x &lt; 0{,}578125 \\[1ex]
+			f(0{,}5703125) = 0{,}0050 \Rightarrow 0{,}5625 &lt; x &lt; 0{,}5703125 \\
+			\vdots
+		\end{array}
+		$
+	</p>
+
+<p>En cada nueva iteración el punto medio es una mejor aproximación a 
+la solución, ya que ésta se encuentra dentro del intervalo que cada vez 
+se hace más pequeño. Si se escoge el punto medio como solución 
+aproximada, la distancia (el error) entre él y la solución como máximo 
+puede ser la mitad del tamaño del intervalo. También puede darse el 
+caso que el punto medio en una de las iteraciones haga la función cero, 
+siendo la solución.</p>
+
+<p>2) Método de Newton-Raphson:</p>
+
+<p>Sean $f(x)$ una función doblemente derivable, $x_n$ una aproximación 
+de una raíz $\alpha$ de dicha función, i.e. $f(\alpha) = 0$, y el 
+desarrollo en serie de Taylor en torno a $x_n$ tal que:</p>
+
+	<p style="text-align:center">
+		$f(x) = f(x_n) + f'(x_n)(x-x_n) + \dfrac{f''(\xi(x))}{2}(x-x_n)^2
+		\quad \xi(x) \in (x,x_n)$</p>
+
+<p>Si $\alpha = x_n + h$, entonces:</p>
+
+	<p style="text-align:center">
+		$0 = f(\alpha) = f(x_n + h) = f(x_n) + f'(x_n)h +
+		\dfrac{f''(\xi(x_n+h))}{2} h^2$</p>
+		
+<p>Si se supone que $h$ es muy pequeño puede despreciarse el último 
+término:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			0 \approx f(x_n) + f'(x_n) h \\[1ex]
+			h \approx h_n = -\dfrac{f(x_n)}{f'(x_n)}
+		\end{array}
+		$
+	</p>
+	
+<p>Esto da lugar a otra aproximación mejor de la solución:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\alpha \approx x_n + h_n = x_n - \dfrac{f(x_n)}{f'(x_n)} \\[1ex]
+			x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}
+		\end{array}
+		$
+	</p>
+		
+<p>Así pues, puede construirse la sucesión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 \\[1ex]
+			x_1 = x_0 - \dfrac{f(x_0)}{f'(x_0)} \\[1ex]
+			x_2 = x_1 - \dfrac{f(x_1)}{f'(x_1)} \\
+			\vdots \\
+			x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}
+		\end{array}
+		$
+	<p>
+		
+<p>Siendo que:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{n \to \infty} x_n = \alpha$</p>
+		
+<p>Usando, por ejemplo, de nuevo, la función anterior:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			f(x) = x - e^{-x} \\[1ex]
+			f'(x) = 1 + e^{-x}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = 0{,}55 \\[1ex]
+			x_1 = 0{,}55 - \dfrac{f(0{,}55)}{f'(0{,}55)} = 0{,}567090 \\[1ex]
+			x_2 = 0{,}567090 - \dfrac{f(0{,}567090)}{f'(0{,}567090)} = 0{,}567143
+		\end{array}
+		$
+	</p>
+	
+<p>Este método converge más rápidamente.</p>
+
+<p>Es importante que el valor inicial sea muy cercano a la raíz, para 
+hacer más propicio que el método converja, podría no hacerlo, hacia 
+ella.</p>
+
+<p>Para soluciones múltiples, como por ejemplo:</p>
+
+	<p style="text-align:center">
+		$f(x) = x^2 - 2x + 1 = (x-1)^2$</p>
+		
+<p>Donde:</p>
+
+	<p style="text-align:center">
+		$x = 1$, cero doble.</p>
+		
+<div id="definicion">
+		
+<p>Si $\,f$ tiene un cero doble en $x = \alpha\,,$ resulta:</p>
+
+	<p style="text-align:center">
+		$f(\alpha) = 0\,, \, f'(\alpha) = 0\,, \,f''(\alpha) \neq 0$</p>
+		
+<p>En general, si $f$ posee un cero múltiple con multiplicidad $m$
+(el número de ceros) en $x = \alpha\,,$ entonces:</p>
+
+	<p style="text-align:center">
+		$f(\alpha) = 0\,, \, f'(\alpha) = 0\,, \, \dotsc \,, \,
+		f^{(m-1)}(\alpha) = 0\,, \, f^{(m)}(\alpha)	\neq 0$</p>
+		
+</div>
+
+<p>La convergencia en una solución o cero múltiple ($m \geq 2$) es 
+mucho más lenta que en una solución o cero simple ($m = 1$).</p>
+
+<p>El desarrollo en serie de Taylor de $f(x)$ en el entorno de la
+raíz $\alpha$, de multiplicidad $m &gt; 1$ conocida, es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			f(x) = (x - \alpha)^m \underbrace{\dfrac{f^{(m)}(\xi(x))}{m!}}_{h(x)}
+			\,, \quad	\xi(x) \in (x,\alpha)	\\[1ex]
+			f(x) = (x - \alpha)^m h(x)
+		\end{array}
+		$
+	</p>
+	
+<p>Sea:</p>
+
+	<p style="text-align:center">
+		$g(x) = f(x)^{1{∕}m} = (x-\alpha) h(x)^{1{∕}m}$</p>
+		
+<p>Siendo pues $\alpha$ raíz simple de $g(x)$, si se aplica el método
+de Newton-Raphson sobre $g(x)$ la convergencia es más rápida:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			x_{n+1} = x_n - \dfrac{g(x_n)}{g'(x_n)} \\[1ex]
+			x_{n+1} = x_n -
+			\dfrac{f(x_n)^{1{∕}m}}{\dfrac{1}{m}\,f(x_n)^{1{∕}m-1}\,f'(x_n)} \\[1ex]
+			\boxed{x_{n+1} = x_n - m	\dfrac{f(x_n)}{f'(x_n)}}
+		\end{array}
+		$
+		<span style="display:block;margin-top:1ex">
+			Fórmula de Newton para soluciones múltiples.</span>
+	</p>
+	
+<hr>
+	
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$f(x) = x^2 e^{2x} - 2x e^x + 1 = 0$</p>
+		
+<p>La solución debe ser la misma que para $x = e^{-x}$, (i.e.
+0,567143), aunque con multiplicidad doble, ya que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			x^2 e^{2x} - 2xe^x + 1 = 0 \\[1ex]
+			e^{2x} (x^2 - 2xe^{-x} + e^{-2x}) = 0 \\[1ex]
+			e^{2x} (x - e^{-x})^2 = 0 \\[1ex]
+		\end{array}
+		$
+	</p>
+		
+<p>La derivada:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			f'(x) &amp;= 2x^2 e^{2x}+ 2xe^{2x} - 2xe^x - 2e^x = \\[1ex]
+			&amp;= 2e^{2x} (x^2 + x - xe^{-x} - e^{-x}) = \\[1ex]
+			&amp;= 2e^{2x} (x - e^{-x})(x+1)
+		\end{align}
+		$
+	</p>
+		
+<p>Siendo la fórmula de Newton-Raphson sin modificar:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}$</p>
+		
+<p>Usándola:
+
+<center>
+	<table class="tabla ejemplo" style="display:inline-table">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0,55</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,558693</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,562948</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,565053</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,566100</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>0,566622</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,566883</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>0,567013</td>
+		</tr>
+	</table><table class="tabla ejemplo" style="display:inline-table;margin-left:2em">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>0,567078</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>0,567111</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>0,567127</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>0,567135</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>0,567139</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>0,567141</td>
+		</tr>
+		<tr>	
+			<td>14</td>
+			<td>0,567142</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>0,567143</td>
+		</tr>
+	</table>
+</center>
+
+<p>Al estar elevado $(x - e^{-x})$ al cuadrado, pasar de solución
+simple a doble, la convergencia es más lenta.</p>
+
+<p>El método de Newton-Raphson para solución doble:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_{n} - 2 \dfrac{f(x_n)}{f'(x_n)}$</p>
+		
+<p>Empleándola:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0,55</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,567387</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,567143</td>
+		</tr>
+	</table>
+</center>
+
+<p>La convergencia es mucho más rápida.</p>
+	
+</div>
+
+<hr>
+
+<p>En una función que está elevada al cuadrado, por tanto raíz doble, 
+nunca se tendrán valores negativos, siempre es positiva o cero, y, por 
+tanto, el método de la bisección no puede utilizarse. Esto es, por 
+ejemplo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;vertical-align:middle">
+				$y = xe^x - 1$
+			</span>
+			<span style="display:table-cell">
+				<object data="resolucion_ecuaciones_06.svg" type="image/svg+xml"
+				width="200" height="150"></object>
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-right:1em;vertical-align:top">
+				<span style="display:block;margin-top:64px">
+					$y = (xe^x - 1)^2$
+				</span>
+			</span>
+			<span style="display:table-cell">
+				<object data="resolucion_ecuaciones_07.svg" type="image/svg+xml"
+				width="200" height="100"></object>
+			</span>
+		</span>
+	</p>
+
+<p>3) Método de la secante:</p>
+
+<p>Cuando en el método de Newton-Raphson la derivada es difícil
+de evaluar puede aproximarse. Esto es:</p>
+
+	<p style="text-align:center">
+		$f'(x_n) \approx \dfrac{f(x_n) - f(x_{n-1})}{x_n - x_{n-1}}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)} \approx x_n - f(x_n)
+		\dfrac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}$</p>
+		
+<p>Se necesitan pues dos estimaciones iniciales distintas.</p>
+
+<p>Por ejemplo, repitiendo con la misma función, $f(x) = x - e^{-x}$, que
+antes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = 0{,}55 \\[1ex]
+			x_1 = 0{,}575 \\[1ex]
+			x_2 = 0{,}575 - f(0{,}575)
+			\dfrac{0{,}575 - 0{,}55}{f(0{,}575) - f(0{,}55)} = 0{,}567168 \\[1ex]
+			x_3 = 0{,}567168 - f(0{,}567168)
+			\dfrac{0{,}567168 - 0{,}575}{f(0{,}567168) - f(0{,}575)} =
+			0{,}567143
+		\end{array}
+		$
+	</p>
+	
+<p>4) Método iterativo simple:</p>
+
+<p>Cada termino de la sucesión, que busca la solución, proviene del
+anterior. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 \\[1ex]
+			x_1 = \varphi(x_0) \\
+			\vdots \\
+			x_n = \varphi(x_{n-1}) \\
+			\vdots \\
+			\alpha
+		\end{array}
+		$
+	</p>
+	
+<p>Donde, siendo $\alpha$ la solución:</p>
+
+	<p style="text-align:center">
+		$\varphi(\alpha) = \alpha$ &ensp; Punto fijo.</p>
+		
+<p>Convergencia cuando existe:</p>
+
+	<p style="text-align:center">
+		$\alpha = \lim\limits_{n \to \infty} x_n$</p>
+		
+<p>Los errores:</p>
+
+	<p style="text-align:center">
+		$\varepsilon_n = x_n - \alpha\,, \quad n = 0,1,\dotsc$</p>
+		
+<p>Cuanto más rápido desaparezca el error, más rápida es la convergencia.</p>
+
+<p>El punto fijo puede que no exista para una función, y para otra
+aun existiendo tener que hacer un gran número de sucesiones para llegar
+a él, o incluso no poder seguir la sucesión.</p>
+
+<p>Por ejemplo, siguiendo con la misma función ya empleada:</p>
+
+	<p style="text-align:center">
+		$f(x) = x - e^{-x} = 0 \Rightarrow \Biggl\{$
+		<span style="display:inline-table;text-align:left;vertical-align:middle">
+			<span style="display:table-row">
+				<span style="display:table-cell;padding-bottom:1ex">
+					$x = e^{-x} \Rightarrow$ ¿Punto fijo de $g(x) = e^{-x}$?
+				</span>
+			</span>
+			<span style="display:table-row">
+				<span style="display:table-cell">
+					$x = -\ln x \Rightarrow$ ¿Punto fijo de $h(x) = -\ln x\,$?
+				</span>
+			</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+<center>
+	<table class="tabla" style="display:inline-table">
+		<caption style="padding-bottom:1ex">$x_{n+1} = g(x_n)$</caption>
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0,55</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,576950</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,561609</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,570291</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,565361</td>
+		</tr>
+		<tr>
+			<td>$\vdots$$\vphantom{\text{5}}$</td>
+			<td>$\vdots$$\vphantom{\text{0,895393}}$</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>0,567142</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>0,567144</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>0,567143</td>
+		</tr>
+	</table>
+	&emsp;
+	<table class="tabla" style="display:inline-table">
+		<caption style="padding-bottom:1ex">$x_{n+1} = h(x_n)$</caption>
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0,55</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,597837</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,514437</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,664682</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,408447</td>
+		</tr>
+		<tr>
+			<td>$\vphantom{\vdots}$$\text{5}$</td>
+			<td>$\vphantom{\vdots}$$\text{0,895393}$</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,110493</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>2,202803</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>-0,789731</td>
+		</tr>
+	</table>
+</center>
+
+<p>A pesar de ser equivalentes, en el método iterativo simple una
+converge y la otra no.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$f(x) = e^x - x - 2$</p>
+		
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$
+		f'(x) = e^x - 1 \, \left\{
+		\begin{array}{l}
+			&gt; 0 \text{ si } x &gt; 0 \enspace \text{(Creciente).} \\[1ex]
+			&lt; 0 \text{ si } x &lt; 0 \enspace \text{(Decreciente).} \\[1ex]
+			= 0 \text{ si } x = 0 \enspace \text{(Mínimo).}
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>Representando:</p>
+
+<center>
+	<object data="resolucion_ecuaciones_02.svg" type="image/svg+xml"
+	width="250" height="250" style="border:1px solid black;background:white">
+	</object>
+</center>
+
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lim\limits_{x \to +\infty} f(x) = +\infty \\[1ex]
+			\lim\limits_{x \to -\infty} f(x) = +\infty
+		\end{array}
+		$
+	</p>
+	
+<p>Centrándose en la solución más pequeña de las dos, por bisección:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			f(-1) = e^{-1} - 1 &lt; 0 &amp; \\[1ex]
+			f(-2) = e^{-2} &gt; 0 &amp; -2 &lt; \alpha_1 &lt; -1 \\[1ex]
+			f(-1{,}5) = -0{,}277 &amp; -2 &lt; \alpha_1 &lt; -1{,}5 \\[1ex]
+			f(-1{,}75) = -0{,}076 &amp; -2 &lt; \alpha_1 &lt; -1{,}75
+		\end{array}
+		$
+	</p>
+	
+<p>Una vez localizada más o menos la solución por el método de la
+bisección, hay que proceder con el método de Newton o el método de la
+secante. Esto es:</p>
+
+<p>- Newton:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = \dfrac{-2 - 1{,}75}{2} = -1{,}875 \\[1ex]
+			x_1 = -1{,}875 - \dfrac{f(-1{,}875)}{f'(-1{,}875)} = -1{,}84151 \\[1ex]
+			x_2 = -1{,}84151 - \dfrac{f(-1{,}84151)}{f'(-1{,}84151)} = -1{,}84141
+		\end{array}
+		$
+	</p>
+	
+<p>- Secante:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = -1{,}875 \\[1ex]
+			x_1 = -1{,}75 \\[1ex]
+			x_2 = -1{,}75 - f(-1{,}75)
+			\dfrac{-1{,}75 - (-1{,}875)}{f(-1{,}75) - f(-1{,}875)} =
+			-1{,}84111 \\[1ex]
+			x_3 = -1{,}84111 - f(-1{,}84111)
+			\dfrac{-1{,}84111 - (-1{,}75)}{f(-1{,}84111) - f(-1{,}75)} =
+			-1{,}84141
+		\end{array}
+		$
+	</p>
+	
+<p>Tambíen aquí, el punto fijo:</p>
+
+	<p style="text-align:center">
+		$x = e^x - 2 \Rightarrow g(x) = e^x - 2$</p>
+		
+<p>En el método iterativo simple:</p>
+
+	<p style="text-align:center">
+		$x_n = g(x_{n-1})$</p>
+		
+<p>¿Estimación inicial $x_0$?</p>
+
+<p>Según sea el valor inicial, puede suceder que los valores salgan
+divergentes. Esto es, sucesión:</p>
+
+	<p style="text-align:center">
+		$x_0, x_1, x_2, \dotsc, x_n \to +\infty$</p>
+		
+<p>Dibujando:</p>
+
+<center>
+	<object data="resolucion_ecuaciones_03.svg" type="image/svg+xml"
+	width="400" height="300" style="border:1px solid black;background:white"></object>
+</center>
+
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$e^x - 2 = x \, \Rightarrow \,$ Intersección
+		$
+		\left\{
+		\begin{array}{l}
+			y = x \\[1ex]
+			y = e^x - 2
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lim\limits_{x \to +\infty} e^x - 2 = +\infty \\[1ex]
+			\lim\limits_{x \to -\infty} e^x - 2 = -2
+		\end{array}
+		$
+	</p>
+		
+<p>Observando la gráfica, según donde esté situado el valor inicial, la
+tendencia de los valores al iterar:</p>
+
+<center>
+	<object data="resolucion_ecuaciones_04.svg" type="image/svg+xml"
+	width="250" height="100" style="border:1px solid black;background:white">
+	</object>
+</center>
+
+<p>Esto quiere decir que la solución más pequeña se hallará siempre que
+$x_0 &lt; \alpha_2$, pero $\alpha_2$ no se hallará nunca.</p>
+
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = -1{,}875 \\[1ex]
+			x_1 = g(-1{,}875) = -1{,}84665 \\[1ex]
+			x_2 = g(-1{,}84665) = -1{,}84224 \\[1ex]
+			x_3 = g(-1{,}84224) = -1{,}84154 \\[1ex]
+			x_4 = g(-1{,}84154) = -1{,}84143 \\[1ex]
+			x_5 = g(-1{,}84143) = -1{,}84141
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<div id="teorema">
+	
+<p>Si $g(x)$ es una función continua en el intervalo $[a,b]$, tal que
+$g(x) \in [a,b] \mathrel{\forall}$ $x \in [a,b]$, y derivable en $(a,b)$, tal que
+$|g'(x)| \leq k &lt; 1 \mathrel{\forall}$ $x \in (a,b)$, entonces existe un único
+punto fijo de $g$ en $[a,b]$, hacia el cual converge la sucesión:</p>
+
+	<p style="text-align:center">
+		$
+		\left\{
+		\begin{array}{l}
+			x_0 \in [a,b] \\[1ex]
+			x_{n+1} = g(x_n)\,, \enspace n \geq 0
+		\end{array}
+		\right.	
+		$
+	</p>
+
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$g(x) = e^x - 2$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$g'(x) = e^x &lt; 1$, si $x &lt; 0$</p>
+		
+<p>También:</p>
+
+	<p style="text-align:center">
+		$g(x) \leq 0$, si $x \leq 0$</p>
+		
+<p>Por lo que $g$, según el teorema anterior, con valor igual o 
+inferior a cero sólo tiene un único punto fijo, convergiendo en él, 
+empleando cualquier valor inicial que también sea igual o menor de 
+cero, el metodo iterativo.</p>
+	
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+<p>Sea una mezcla equimolecular de mónoxido de carbono y oxígeno que
+reaccionan alcanzando el equilibrio, a una temperatura de $\pu{300 K}$ y
+$\pu{5 atm}$ de presión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{cccccc}
+			\ce{
+				&amp;CO &amp;\mspace{-18mu}+ &amp;\mspace{-18mu}1/2 O2
+				&amp;\mspace{-18mu}&lt;=&gt; &amp;\mspace{-12mu}CO2
+			} \\[1ex]
+			n_{i,0} &amp;a &amp;\mspace{-18mu} &amp;\mspace{-18mu}a
+			&amp;\mspace{-18mu}	&amp;\mspace{-12mu}\text{-} \\[1ex]
+			n_{i,\rm eq} &amp;a-\xi &amp;\mspace{-18mu}
+			&amp;\mspace{-18mu}a-\frac{1}{2}\xi &amp;\mspace{-18mu}
+			&amp;\mspace{-12mu}\xi
+		\end{array}
+		$
+	</p>
+	
+<p>Si se define:</p>
+
+	<p style="text-align:center">
+		$\dfrac{n_{\ce{CO},\rm eq}}{n_{\ce{CO},0}} = \dfrac{a-\xi}{a} =
+		x\,,\,$ fracción de $\ce{CO}$ que queda.</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			n_{\ce{CO},\rm eq} = a - \xi = ax \\[1ex]
+			n_{\ce{O2},\rm eq} = a - \dfrac{1}{2} (a - ax) =
+			\dfrac{a}{2}(1 + x) \\[1ex]
+			n_{\ce{CO2},\rm eq} = a - ax = a(1-x)
+		\end{array}
+		$
+	</p>
+	
+<p>Por lo que la reacción también puede escribirse como:</p>
+
+	<p style="text-align:center">
+		$\ce{CO + O2 -&gt; x CO + 1/2 $(1+x)$ O2 + $(1\mathrel{-}x)$ CO2}\,,
+		\quad 0 &lt; x &lt; 1$</p>
+		
+<p>La fracción molar de cada especie:</p>
+
+	<p style="text-align:center">
+		$y_i = \dfrac{n_i}{\displaystyle \sum_i n_i}$</p>
+		
+<p>Aquí, en el equilibrio:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\sum_i n_i &amp;= n_{\ce{CO},\rm eq} + n_{\ce{O2},\rm eq}
+			+ n_{\ce{CO2},\rm eq} = \\[1ex]
+			&amp;= ax + \dfrac{a}{2}(1+x) + a(1-x) = \\[1ex]
+			&amp;= \dfrac{a}{2} (3+x)
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			y_{\ce{CO}} = \dfrac{\cancel{a}\!x}{\dfrac{\cancel{a}}{2}(3+x)} =
+			\dfrac{2x}{3+x} \\[1ex]
+			y_{\ce{O2}} =
+			\dfrac{\cancel{\dfrac{a}{2}}\!(1+x)}{\cancel{\dfrac{a}{2}}\!(3+x)}
+			= \dfrac{1+x}{3+x} \\[1ex]
+			y_{\ce{CO2}} = \dfrac{\cancel{a}\!(1-x)}{\dfrac{\cancel{a}}{2}(3+x)}
+			= \dfrac{2(1-x)}{3+x}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces, la constante de equilibrio:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			K_P &amp;= \dfrac{P_{\ce{CO2}}}{P_{\ce{CO}} \cdot P_{\ce{O2}}^{1/2}}
+			\mspace{-12mu}
+			\overset{
+				\begin{subarray}{c}
+					\text{Dalton} \\
+					\downarrow
+				\end{subarray}
+			}{=}
+			\mspace{-12 mu}
+			\dfrac{
+				y_{\ce{CO2}} \mspace{-1mu} \cancel{P}
+			}{
+				y_{\ce{CO}} \mspace{-2mu} \cancel{P} \! \cdot	y_{\ce{O_2}}^{1/2}
+				P^{1/2}
+			} = \\[1ex]
+			&amp;=
+			\dfrac{
+				\cancel{2}\!(1-x) {∕} \!\cancel{(3+x)}
+			}{
+				\cancel{2}\!x {∕} \!\cancel{(3+x)}\!\! \cdot ((1+x) {∕} (3+x))^{1/2}
+				P^{1/2}
+			} = \\[1ex]
+			&amp;= \dfrac{(1-x)(3+x)^{1/2}}{x(1+x)^{1/2} P^{1/2}}
+		\end{align}
+		$
+	</p>
+	
+<p>Lo que permite obtener una ecuación con la que calcular $x$, si se 
+conoce $K_P$ para unas condiciones de presión y temperatura 
+determinadas.</p>
+	
+<p>Siendo $K_P = 3{,}06$ a $\pu{300 K}$ y $\pu{5 atm}$, se tiene pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			3{,}06 = \dfrac{(1-x)(3+x)^{1/2}}{x(1+x)^{1/2} 5^{1/2}} \\[1ex]
+			6{,}84237 = \dfrac{(1-x)(3+x)^{1/2}}{x(1+x)^{1/2}}
+		\end{array}
+		$
+	</p>
+	
+<p>Que equivale:</p>
+
+	<p style="text-align:center">
+		$f(x) = 6{,}84237 x(1+x)^{1/2} - (1-x)(3+x)^{1/2} = 0$</p>
+		
+<p>Su representación gráfica:</p>
+
+<center>
+	<object data="resolucion_ecuaciones_05.svg" type="image/svg+xml"
+	width="300" height="225" style="border:1px solid black;background:white">
+	</object>
+</center>
+
+<p>Haciendo:</p>
+
+<p>a) Newton-Raphson:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}$</p>
+		
+<p>Se necesita la primera derivada:</p>
+
+	<p style="text-align:center">
+		$f'(x) = 6{,}84237 ((1+x)^{1/2} + \dfrac{x}{2}(1+x)^{-1/2}) +
+		(3+x)^{1/2} - \dfrac{1}{2} (1-x)(3+x)^{-1/2}$</p>
+		
+<p>Escogiendo $x_0 = 0\,$:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,209040</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,193049</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,192962</td>
+		</tr>
+	</table>
+</center>
+
+<p>b) Secante:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_n - f(x_n) \dfrac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}$</p>
+		
+<p>Eligiendo $x_0 = 0$ y $x_1 = 1\,$:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		<tr>
+		<tr>
+			<td>2</td>
+			<td>0,151819</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,184755</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,193081</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>0,192961</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,192962</td>
+		</tr>
+	</table>
+</center>
+
+<p>c) Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			(a-b) = 0 \\[1ex]
+			(a-b)(a+b) = 0 \\[1ex]
+			a^2 - b^2 = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, otra ecuación equivalente para hallar la solución:</p>
+
+	<p style="text-align:center">
+		$g(x) = 46{,}818 x^2 (1+x) - (1-x)^2 (3+x) = 0$</p>
+		
+<p>Si se aplica en el método de Newton-Raphson:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = x_n - \dfrac{g(x_n)}{g'(x_n)}$</p>
+
+<p>La derivada:</p>
+
+	<p style="text-align:center">
+		$g'(x) = 46{,}818(2x(1+x) + x^2) + 2(1-x)(3+x) - (1-x)^2$</p>
+		
+<p>Entonces:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,6</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,358908</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,236327</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,197142</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>0,193007</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,192962</td>
+		</tr>
+	</table>
+</center>
+
+<p>Converge más lentamente que antes.</p>
+
+<p>d) Punto fijo:</p>
+
+	<p style="text-align:center">
+		$h(x) = 0{,}146148 \dfrac{(1-x)(3+x)^{1/2}}{(1+x)^{1/2}} = x$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$x_{n+1} = h(x_n)$</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center;display:inline-table">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,253136</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,175868</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,197944</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,191520</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>0,193379</td>
+		</tr>
+		<tr>
+	</table><table class="tabla ejemplo" style="text-align:center;display:inline-table;margin-left:2em">
+		<tr>
+			<th>$n$</th>
+			<th>$x_n$</th>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,192841</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>0,192996</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>0,192952</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>0,192964</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>0,192961</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>0,192962</td>
+		</tr>
+	</table>
+</center>
+
+</div>
+
+<hr>
+
+<p>- Orden de convergencia:</p>
+
+<p>Sea la sucesión:</p>
+
+	<p style="text-align:center">
+		$x_0, x_1, x_2, \dotsc, x_n, \dotsc$, con límite $\alpha$.</p>
+		
+<p>Siendo el error:</p>
+
+	<p style="text-align:center">
+		$\varepsilon_n = x_n - \alpha$</p>
+		
+<p>De existir, con $p$ y $C$ constantes positivas, el siguiente límite:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{n \to \infty}
+		\dfrac{|\varepsilon_{n+1}|}{|\varepsilon_n|^p} = C \neq 0,\infty$</p>
+		
+<p>Entonces, si $n$ es grande $|\varepsilon_{n+1}|$ es aproximadamente 
+proporcional a $|\varepsilon_n|^p$, donde $p$, conocido como el orden 
+de convergencia, es una medida de la rapidez, velocidad con que el 
+valor de $x$ se acerca, converge a $\alpha$, i.e. de cuantos pasos 
+(iteraciones) se han de hacer para que $\varepsilon_n$ sea menor que una 
+cierta cantidad.</p>
+
+<p>Casos:</p>
+
+<ul>
+	<li>Si $p = 1$ y $n$ grande $\Rightarrow$ $|\varepsilon_{n+1}|$ 
+	aproximadamente proporcional a $|\varepsilon_n|$ $\Rightarrow$ 
+	convergencia lineal.</li>
+	<li>Si $p = 2$ y $n$ grande $\Rightarrow$ $|\varepsilon_{n+1}|$
+	aproximadamente proporcional a $|\varepsilon_n|^2$ $\Rightarrow$
+	convergencia cuadrática (más rápida).</li>
+</ul>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../derivacion_integracion_numericas/derivacion_integracion_numericas.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a
+		href="../resolucion_sistemas_ecuaciones_lineales/resolucion_sistemas_ecuaciones_lineales.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

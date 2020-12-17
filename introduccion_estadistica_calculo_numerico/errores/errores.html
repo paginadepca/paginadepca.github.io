@@ -1,0 +1,1351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+			extensions: ["enclose.js","cancel.js","[mhchem]/mhchem.js"]
+		},
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Errores">
+<meta name="keywords" content="errores">
+<title>Errores</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Errores</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p><b>1.</b> Introducción:</p>
+	
+<p>El cálculo numérico es una serie de técnicas para obtener cálculos 
+aproximados. Los resultados son obtenidos de manera aproximada en la 
+solución de un problema, con un pequeño error.</p>
+
+<p>Si se expresa la siguiente sucesión de dos maneras distintas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_0 = 0{,}01 \\[1ex]
+			\begin{aligned}
+				x_{n+1} &amp;= x_n + 3x_n (1-x_n) = \\[1ex]
+				&amp;= 4x_n - 3x_n^2\,, \quad n \geq 0.
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Haciendo el cálculo, de las dos formas, con la calculadora CASIO
+<i>fx-3900Pv</i> se obtiene:</p>
+
+<center>
+<table class="tabla">
+	<tr>
+		<th>$n$</th>
+		<th>$x_n + 3x_n(1-x_n)$</th>
+		<th>$4x_n - 3x_n^2$</th>
+	</tr>
+	<tr>
+		<td align="center">1
+		<td>0,0397
+		<td>0,0397
+	</tr>
+	<tr>
+		<td align="center">2
+		<td>0,15407173
+		<td>0,15407173
+	</tr>
+	<tr>
+		<td align="center">3
+		<td>0,545072626
+		<td>0,545072626
+	</tr>
+	<tr>
+		<td align="center">4
+		<td>1,288978001
+		<td>1,288978001
+	</tr>
+	<tr>
+		<td align="center">5
+		<td>0,1715191425
+		<td>0,1715191425
+	</tr>
+	<tr>
+		<td align="center">6
+		<td>0,5978201213
+		<td>0,5978201213
+	</tr>
+	<tr>
+		<td align="center">7
+		<td>1,319113793
+		<td>1,319113793
+	</tr>
+	<tr>
+		<td align="center">8
+		<td>0,05627157<span style="color:red">62</span>
+		<td>0,05627157<span style="color:red">58</span>
+	</tr>
+	<tr>
+		<td align="center">9
+		<td>0,21558683<span style="color:red">39</span>
+		<td>0,21558683<span style="color:red">25</span>
+	</tr>
+	<tr>
+		<td align="center">10
+		<td>0,72291428<span style="color:red">68</span>
+		<td>0,72291428<span style="color:red">29</span>
+	</tr>
+	<tr>
+		<td align="center">25
+		<td>1,315<span style="color:red">693915</span>
+		<td>1,315<span style="color:red">726657</span>
+	<tr>
+</table>
+</center>
+
+<p>Esto se debe a que esta calculadora trabaja con 10 dígitos como 
+máximo, redondeando en el último, teniendo consecuencias distintas 
+según se haga el cálculo (el error de redondeo se propaga de manera 
+diferente).</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+<p>Manteniendo todo el rato dos cifras decimales:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			(0{,}56 \times 0{,}65) \times 0{,}54 = 0{,}36 \times 0{,}54 =
+			0{,}19 \\[1ex]
+			0{,}56 \times (0{,}65 \times 0{,}54) = 0{,}56 \times 0{,}35 =
+			0{,}20
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p><b>2.</b> Representación de números:</p>
+
+<p><b>&bull;</b> Representación de un número en una cierta base $b\,$:</p>
+
+<p>La representación decimal de un número permite escribir los números
+con 10 signos: 0, 1, 2, ..., 9. Según el lugar donde se pongan se
+traducirá en una cosa u otra, i.e. por ejemplo:</p>
+
+	<p style="text-align:center">
+		$35{,}14_{(10} = 3 \cdot 10 + 5 + \dfrac{1}{10} + \dfrac{4}{100}$</p>
+		
+<p>El subíndice indica la base, para sistema decimal base 10.</p>
+
+<p>Si se suponen un número natural $b \geq 2$ y $x$ un número positivo
+cualquiera, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			x = a_n b^n + a_{n-1} b^{n-1} + \dotsb + a_1 b + a_0 +
+			\dfrac{a_{-1}}{b} + \dfrac{a_{-2}}{b^2} + \dotsb \\[1ex]
+			a_i \in \mathbb{N}, \enspace 0 \leq a_i &lt; b
+		\end{array}	
+		$
+	</p>
+	
+<p>Siendo escribir $x$ en base $b$:</p>
+
+	<p style="text-align:center">
+		$x = a_n a_{n-1} \!\dots a_1 a_0{,} a_{-1} a_{-2} \!\dots_{(b}$</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="margin-left:30px">
+		$35$, base $10$ ${} \rightarrow 3 \cdot 10 + 5$</p>
+		
+	<p style="margin-left:30px">
+		$1022$, base $3$ ${} \rightarrow 1 \cdot 3^3 + 0 \cdot 3^2 + 2 \cdot
+		3 + 2 = 35$</p>
+		
+	<p style="margin-left:30px">
+		$100011$, base $2$ ${} \rightarrow 1 \cdot 2^5 + 1 \cdot 2 + 1 =
+		35$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$35_{(10} = 1022_{(3} = 100011_{(2}$</p>
+	
+</div>
+
+<hr>
+
+<p>Para hacerlo a la inversa (del ejemplo), i.e. pasar un número 
+(entero, en base 10) a la base $b$, se divide el número por $b$ y, a 
+continuación, se repite lo mismo con los sucesivos cocientes mientras 
+no sean más pequeños que la base. Por ejemplo, para transformar 35 a 
+base 3:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{alignat}{3}
+			35 &amp;\:\: \enclose{left,bottom}{3 \;} &amp;&amp; &amp;&amp; \\[-.5ex]
+			05 &amp;\:\:\, 11 &amp;&amp;\: \enclose{left,bottom}{3 \;}
+			&amp;&amp; \\[-.5ex]
+			\hphantom{0} \color{red}{2} 
+			\llap{\underparen{\hphantom{2}}\mspace{-4mu}}	&amp;\:\:\, \hphantom{1}
+			\color{red}{2} \llap{\underparen{\hphantom{2}}\mspace{-4mu}}
+			&amp;&amp;\:\, 3 &amp;&amp;\: \enclose{left,bottom}{3 \;} \\[-.5ex]
+			&amp; &amp;&amp;\:\, \color{red}{0} \llap{\underparen{\hphantom{0}}\mspace{-4mu}}
+			&amp;&amp;\:\, \color{red}{1}
+		\end{alignat}
+		$
+	</p>
+	
+<p>Tomando el último cociente y los restos de las divisiones:</p>
+
+	<p style="text-align:center">
+		$35_{(10} = 1022_{(3}$</p>
+		
+<p>Encontrar para la parte decimal de un número su representación en una
+base determinada implica hallar los $a_{-i}$. Esto es, por ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\dfrac{1}{3} &amp;= 0{,}3333{\dots}_{(10} = \dfrac{3}{10} +
+			\dfrac{3}{10^2} +\dfrac{3}{10^3} + \dotsb \\[1ex]
+			&amp;= 0{,}1_{(3} = \dfrac{1}{3}
+		\end{align}
+		$
+	</p>
+	
+<p>Así que, por ejemplo, para pasar la parte decimal de 35,14 a base 3
+el planteamiento es:</p>
+
+	<p style="text-align:center">
+		$0{,}14 = \dfrac{a_{-1}}{3} + \dfrac{a_{-2}}{3^2} + \dfrac{a_{-3}}{3^3}
+		+ \dotsb$</p>
+		
+<p>Multiplicando por 3:</p>
+
+	<p style="text-align:center">
+		$0{,}42 = a_{-1} + \dfrac{a_{-2}}{3} + \dfrac{a_{-3}}{3^2} + \dotsb$
+	</p>
+	
+<p>Igualando las partes enteras de cada lado, por tanto:</p>
+
+	<p style="text-align:center">
+		$\boxed{a_{-1} = 0}$</p>
+		
+<p>Multiplicando de nuevo por 3:</p>
+
+	<p style="text-align:center">
+		$1{,}26 = a_{-2} + \dfrac{a_{-3}}{3} + \dfrac{a_{-4}}{3^2} + \dotsb$
+	</p>
+	
+<p>Siendo, se igualan como antes las partes enteras de ambos lados,
+entonces:</p>
+
+	<p style="text-align:center">
+		$\boxed{a_{-2} = 1}$</p>
+		
+<p>Restando $a_{-2}$ y a continuación multiplicando por 3 otra vez:</p>
+
+	<p style="text-align:center">
+		$0{,}78 = a_{-3} + \dfrac{a_{-4}}{3} + \dfrac{a_{-5}}{3^2} + \dotsb$
+	</p>
+	
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$\boxed{a_{-3} = 0}$</p>
+		
+<p>Aunque podría seguirse, repitiendo sucesivamente el mismo proceso,
+llegados a aquí:</p>
+
+	<p style="text-align:center">
+		$0{,}14_{(10} = 0{,}010{\dots}_{(3}$</p>
+		
+<p>Siendo por consiguiente:</p>
+
+	<p style="text-align:center">
+		$35{,}14_{(10} = 1022{,}010{\dots}_{(3}$</p>
+		
+<p><b>&bull;</b> Representación de un número en coma flotante:</p>
+
+<p>Los ordenadores y calculadoras sólo disponen de un número finito, 
+una capacidad finita, de dígitos para representar un número real 
+cualquiera. Disponiendo sólo de una capacidad de $t$ dígitos como 
+máximo, el número quedará almacenado por lo que se conoce como 
+representación en coma flotante:</p>
+
+	<p style="text-align:center">
+		$0{,}\alpha_1 \alpha_2 \dotsm \alpha_t \times 10^q$</p>
+		
+<p>Donde $\alpha_i \in \mathbb{N}$, $0 \leq \alpha_i &lt; 10$, 
+$\alpha_1 \neq 0$, $q \in \mathbb{Z}$ y $t$ los dígitos 
+significativos.</p>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			25 = 0{,}25 \cdot 10^2 \\[1ex]
+			0{,}021 = 0{,}21 \cdot 10^{-1}
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p>Puede tenerse un número con una cifra elevada de dígitos, puede 
+que infinitos, como por ejemplo:</p>
+
+	<p style="text-align:center">
+		$\pi = 3{,}141592{\dots}$</p>
+		
+<p>Si se escribe el número $\pi$ en coma flotante con $t = 3$:</p>
+
+	<p style="text-align:center">
+		$0{,}314 \times 10$</p>
+		
+<p>Si $t = 5$:</p>
+
+	<p style="text-align:center">
+		$0{,}31415 \times 10$ &emsp; ó &emsp; $0{,}31416 \times 10$</p>
+		
+<p>Las dos son aproximaciones de coma flotante de $\pi$. A la primera
+se le dice de corte, se suprimen los dígitos a partir de $\alpha_t$, y
+a la segunda de redondeo, se elige el dígito de $\alpha_t$ para que
+la diferencia con el número real sea mínima.</p>
+
+<p><b>3.</b> Problemas numéricos:</p>
+
+<p><b>&bull;</b> Cancelación de términos:</p>
+
+<p>Para, por ejemplo, la ecuación de segundo grado $ax^2 + bx + c = 0$
+se tienen las soluciones:</p>
+
+	<p style="text-align:center">
+		$x_1,x_2 = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$</p>
+		
+<p>Si $4ac \ll b^2$ entonces $b$ y $\sqrt{b^2 - 4ac}$ serán cantidades
+similares. Para un caso práctico así:</p>
+
+	<p style="text-align:center">
+		$x^2 - 18x + 1 = 0$</p>
+		
+	<p style="text-align:center">
+		$x_1,x_2 = \dfrac{18 \pm \sqrt{18^2 - 4}}{2} = 9 \pm \sqrt{80}$</p>
+
+<p>En este caso, al ser números parecidos al restar se pierden cifras 
+significativas (cancelación). Esto es, si se tiene calculada $\sqrt{80}$
+con 5 cifras significativas (con redondeo en la última):</p>
+
+	<p style="text-align:center">
+		$\sqrt{80} = 8{,}9443$</p>
+		
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_1 = 9 + 8{,}9443 = 17{,}9443 \\[1ex]
+			x_2 = 9 - 8{,}9443 = 0,0557
+		\end{array}
+		$
+	</p>
+	
+<p>En la primera solución seis cifras significativas, se ha producido 
+un aumento, mientras que para la segunda solución tres cifras 
+significativas debido al efecto de cancelación.</p>
+
+<p>Como estimación, en general, si se considera que la última cifra 
+significativa no es segura en una unidad, el error relativo:</p>
+
+	<p style="margin-left:30px">
+		6 cifras significativas $\Rightarrow$ error $&lt; 0{,}001 \%$, 
+		($1{∕}100000 \times 100$).</p>
+		
+	<p style="margin-left:30px">
+		3 cifras significativas $\Rightarrow$ error $&lt; 1 \%$, 
+		($1{∕}100\times 100$).</p>
+		
+<p>Por tanto interesa no perder cifras significativas. Para lograrlo
+se usan maneras alternativas de cálculo. Esto es, en este caso:</p>
+		
+	<p style="text-align:center">
+		$x_1 + x_2 = -\dfrac{b}{a}$ &ensp; ó &ensp; $x_1 \cdot x_2 =
+		\dfrac{c}{a}$ .</p>
+		
+<p>Así pues (usando la segunda):</p>
+
+	<p style="text-align:center">
+		$x_2 = \dfrac{c}{a x_1} 
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\[.5ex]
+				\llap{c \,} = \rlap{\, 1} \\[.5ex]
+				\llap{a \,} = \rlap{\, 1}
+			\end{subarray}
+		}{=} \dfrac{1}{x_1} =
+		\dfrac{1}{0{,}179443 \cdot 10^2} = 0{,}557280 \cdot 10^{-1}$</p>
+		
+<p>Donde se han escrito para el resultado el mismo número de cifras 
+significativas que el denominador, seis con la última incierta. Si se 
+tiene en cuenta, para hacer el cálculo anterior, el error de redondeo 
+al usar cinco cifras en $\sqrt{80}$, que es (como máximo) $\pm 1{∕}2 
+\cdot 10^{-4}$, entonces:<p>
+	
+	<p style="text-align:center">
+		$
+		\begin{align}
+			x_2 &amp;= \dfrac{1}{0{,}179443 \cdot 10^2 \pm \dfrac{1}{2} \cdot
+			10^{-4}} = \\[1ex]
+			&amp;= \dfrac{1}{0{,}179443 \cdot 10^2} \, \left[ \dfrac{1}{1 \pm
+			\dfrac{1}{2 \cdot 0{,}179443 \cdot 10^2} \cdot 10^{-4}} \right]
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\
+					\text{Taylor} \\
+					(1 \, + \, x)^{-1} \rlap{\, = \, 1 \, - \, x \, + \, x^2 \, -
+					\, \dotsb}
+				\end{subarray}
+			}{\simeq} \\[1ex]
+			&amp;\simeq \dfrac{1}{0{,}179443 \cdot 10^2} \left( 1 \mp
+			\dfrac{1}{2 \cdot 0{,}179443} \cdot 10^{-6} \right) = \\[1ex]
+			&amp;= \dfrac{1}{0{,}179443 \cdot 10^2} \mp 0{,}15528 \cdot 10^{-6}
+		\end{align}
+		$
+	</p>
+	
+<p>Por tanto, según esto, las primeras cinco cifras calculadas para 
+$x_2$ son ciertas, no les afecta el error. Así que usar el mismo número 
+de cifras significativas que el denominador fue correcto.</p>
+
+<p><b>&bull;</b> Estabilidad e inestabilidad numéricas:</p>
+
+<p>Se dice que un algoritmo, una secuencia de operaciones, es 
+numéricamente estable cuando los errores en la representación de los 
+números y los cometidos en las operaciones no afectan demasiado al 
+resultado final.</p>
+
+<p>Por ejemplo, caso de inestabilidad numérica debida a errores de
+redondeo en el cálculo de las integrales de:</p>
+
+	<p style="text-align:center">
+		$E_n = \displaystyle \int_0^1 x^n e^{x-1} \, dx \,, \quad n = 1,2,
+		\dotsc$</p>
+		
+<p>Para $n = 0$ sería:</p>
+
+	<p style="text-align:center">
+		$E_0 = \displaystyle \int_0^1 e^{x-1} \, dx = \left[ e^{x-1}
+		\right]_0^1 = 1 - e^{-1}$</p>
+		
+<p>Integrando por partes:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			d(uv) = u \,dv + v \, du \\[1ex]
+			\Downarrow \\[1ex]
+			u \, dv = d(uv) - v \, du \\[1ex]
+			\Downarrow \\[1ex]
+			\displaystyle \int u \, dv = uv - \int v \, du
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{lcl}
+			u = x^n &amp; \Rightarrow &amp; du = n x^{n-1} \, dx \\[1ex]
+			dv = e^{x-1} \, dx &amp; \Rightarrow &amp; v = e^{x-1}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$E_n = \displaystyle \int_0^1 x^n e^{x-1} \, dx = 
+		\underbrace{\left[ x^n e^{x-1} \right]_0^1}_1 - n
+		\underbrace{\int_0^1 x^{n-1} e^{x-1} \, dx}_{E_{n-1}} =
+		1 - n E_{n-1}$</p>
+		
+<p>Para $n = 1$:</p>
+
+	<p style="text-align:center">
+		$E_1 = 1 - E_0 = 1 - (1 - e^{-1}) = e^{-1}$</p>
+		
+<p>A partir de ésta, a continuación, se calculan las integrales 
+que le siguen, una tras otra, empleando el resultado de la anterior, 
+redondeando a seis cifras decimales:</p>
+
+<center>
+	<table style="display:inline-table" class="tabla">
+		<tr>
+			<th>$n$</th>
+			<th>$E_n$</th>
+		</tr>
+		<tr>
+			<td>1
+			<td>0,367879
+		</tr>
+		<tr>
+			<td>2
+			<td>0,264242
+		</tr>
+		<tr>
+			<td>3
+			<td>0,207274
+		</tr>
+		<tr>
+			<td>4
+			<td>0,170904
+		</tr>
+		<tr>
+			<td>5
+			<td>0,145480
+		</tr>
+		<tr>
+			<td>6
+			<td>0,127120
+		</tr>
+		<tr>
+			<td>7
+			<td>0,110160
+		</tr>
+		<tr>
+			<td>8
+			<td>0,118720
+		</tr>
+		<tr>
+			<td>9
+			<td>-0,068480
+		</tr>
+	</table><table
+	style="display:inline-table;vertical-align:bottom;border-color:#fff" class="tabla">
+		<tr>
+			<td style="border:none">$\rlap{{\leftarrow} &lt; 0 \,, \text{error de contradicción.}}$
+		</tr>
+	</table>
+</center>
+
+<p>Como $x^n e^{x-1}$, con $n = 1, 2, \dotsc$, es cero o positiva en 
+el intervalo $[0{:}1]$, su integral, el área bajo su curva, ha de ser 
+positiva.</p>
+
+<center>
+	<object data="errores_01.svg" type="image/svg+xml" width="225"
+	height="225" style="display:inline-block;vertical-align:middle"></object>
+	&emsp; $0 &lt; E_n &lt; 1$
+</center>
+
+<p>Esto se debe a que el error que se propaga en $E_{n+1}$ es $-(n+1)$ 
+veces el error cometido en $E_n$. Esto es, el error de redondeo 
+cometido en $E_1$, aproximadamente $4{,}412 \cdot 10^{-7}$, se multiplica
+por $-2$ en $E_2$, el error en $E_2$ se multiplica por $-3$ al calcular
+$E_3$, etc. Así entonces, el error en $E_9$ es el error en $E_1$
+multiplicado por $(-2)(-3) \dotsm (-9) = 9!\,$. Siendo, entonces:</p>
+
+	<p style="text-align:center">
+		$E_9 = -0{,}068480 + 4{,}412 \cdot 10^{-7} \cdot 9! =
+		0{,}09162$</p>
+		
+<p>Si se reescribe el algoritmo, de manera que en vez de hacer el
+cálculo de las integrales de forma ascendente se hiciera de manera
+descendente:</p>
+
+	<p style="text-align:center">
+		$E_{n-1} = \dfrac{1 - E_n}{n} \,, \quad n = \dotsc, 3,2$</p>
+		
+<p>Aquí el error se progaga de tal manera que en $E_{n-1}$ es $-1{∕}n$ 
+veces el error en $E_n$, así pues, en valor absoluto, se hace más 
+pequeño. Ahora, sólo hace falta un valor de partida, para ello si se 
+tiene en cuenta que:</p>
+
+	<p style="text-align:center">
+		$E_n = \displaystyle \int_0^1 x^n e^{x-1} \, dx &lt; \int_0^1
+		x^n \, dx = \left[ \dfrac{x^{n+1}}{n+1} \right]_0^1 = \dfrac{1}{n+1}$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\lim\limits_{n \to \infty} E_n &lt; \lim\limits_{n \to \infty}
+		\dfrac{1}{n+1} = 0$</p>
+		
+<p>Cabe pensar pues, que para $n$ elevado podría considerarse $E_n$ 
+próximo a cero. Esto es, si se aproxima $E_{20}$ como cero, el error 
+que se cometería sería menor de $1{∕}21$.	Entonces, usando $E_{20} 
+\simeq 0$ como valor de partida, al calcular $E_{19}$ el error sería, 
+en valor absoluto, más pequeño que $\frac{1}{20 \cdot 21}\,$. Al llegar 
+a $E_{15}$ el error sería inferior, en valor absoluto, a $\frac{1}{2 
+1\cdot 20 \cdot 19 \cdot 18 \cdot 17 \cdot 16} =$ $2{,}56 \cdot 
+10^{-8}$, que es menos que el error de redondeo. Haciendo los 
+cálculos:</p>
+
+<center>
+	<table class="tabla" style="display:inline-table">
+		<tr>
+			<th>$n$
+			<th>$E_n$
+		</tr>
+		<tr>
+			<td>20
+			<td>0
+		</tr>
+		<tr>
+			<td>19
+			<td>0,0500000
+		</tr>
+		<tr>
+			<td>18
+			<td>0,0500000
+		</tr>
+		<tr>
+			<td>17
+			<td>0,0527778
+		</tr>
+	</table><table class="tabla" style="display:inline-table;margin-left:2em;margin-right:2em">
+		<tr>
+			<th>$n$
+			<th>$E_n$
+		</tr>
+		<tr>
+			<td>16
+			<td>0,0557190
+		</tr>
+		<tr>
+			<td>15
+			<td>0,0590176
+		</tr>
+		<tr>
+			<td>14
+			<td>0,0627322
+		</tr>
+		<tr>
+			<td>13
+			<td>0,0669477
+		</tr>
+	</table><table class="tabla" style="display:inline-table">
+		<tr>
+			<th>$n$
+			<th>$E_n$
+		</tr>
+		<tr>
+			<td>12
+			<td>0,0717733
+		</tr>
+		<tr>
+			<td>11
+			<td>0,0773522
+		</tr>
+		<tr>
+			<td>10
+			<td>0,0838771
+		</tr>
+		<tr>
+			<td>9
+			<td>0,0916123
+		</tr>
+	</table>
+</center>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$I_k = \displaystyle \int_0^1 x^k \sin(\pi x) \, dx\,, \quad k = 2,
+		4, 6, 8, 10, \dotsc$</p>
+		
+<p>Para $k = 0$:</p>
+
+	<p style="text-align:center">
+		$I_0 = \displaystyle \int_0^1 \sin(\pi x) \, dx =	\left[
+		-\dfrac{\cos(\pi x)}{\pi} \right]_0^1 =
+		\dfrac{\cos(0) - \cos(\pi)}{\pi} = \dfrac{2}{\pi}$</p>
+		
+<p>Integrando por partes, si:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{lcl}
+			u_1 = x^k &amp; \Rightarrow &amp; du_1 = k x^{k-1} \, dx \\[1ex]
+			dv_1 = \sin(\pi x) \, dx &amp; \Rightarrow &amp; v_1 =
+			\dfrac{-\cos(\pi x)}{\pi} \\[1ex]
+			u_2 = x^{k-1} &amp; \Rightarrow &amp; du_2 = (k-1) x^{k-2} \, dx \\[1ex]
+			dv_2 = \cos(\pi x) \, dx &amp; \Rightarrow &amp; v_2 =
+			\dfrac{\sin(\pi x)}{\pi}
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			I_k &amp;= \int_0^1 x^k \sin(\pi x) \, dx = \\[1ex]
+			&amp;= \left[ -	\dfrac{x^k \cos(\pi x)}{\pi} \right]_{x=0}^{x=1} +
+			\dfrac{k}{\pi} \int_0^1 x^{k-1} \cos(\pi x) \, dx = \\[1ex]
+			&amp;= \dfrac{1}{\pi} + \dfrac{k}{\pi} \left( \left[ \dfrac{x^{k-1}
+			\sin(\pi x)}{\pi} \right]_{x=0}^{x=1} - \dfrac{k-1}{\pi} \int_0^1
+			x^{k-2} \sin(\pi x) \, dx \right) = \\[1ex]
+			&amp;= \dfrac{1}{\pi} - \dfrac{k(k-1)}{\pi^2} I_{k-2}
+		\end{align}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		<object data="errores_03.svg" type="image/svg+xml" width="225"
+		height="225" style="display:inline-block" class="ejemplo"></object>
+		&emsp;
+		<object data="errores_04.svg" type="image/svg+xml" width="225"
+		height="225" style="display:inline-block" class="ejemplo"></object>
+	</p>
+	
+<p>Multiplicando ambas:</p>
+
+<center>
+	<object data="errores_05.svg" type="image/svg+xml" width="225"
+	height="225" class="ejemplo"></object>
+</center>
+
+<p>En general, $0 &lt; I_k &lt; 1,$ ya que el área queda contenida 
+dentro del cuadrado de área 1.</p>
+
+<p>Usando todos los digitos de la calculadora:</p>
+
+<center>
+	<table class="tabla ejemplo" style="display:inline-table">
+		<tr>
+			<th>$k$</th>
+			<th>$I_k$</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0,6366197724</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,1893037485</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>0,08814412784</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>0,05038386527</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>0,03243252571</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>0,02256071578</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>0,01657393387</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>0,01267899748</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>0,009993638490</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>0,008464298300</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>-0,00758294835</td>
+		</tr>
+	</table><table
+	style="display:inline-table;vertical-align:bottom;border-color:#fff" class="tabla">
+		<tr>
+			<td style="border:none">$\rlap{{\leftarrow} &lt; 0 \text{ !!}}$</td>
+		</tr>
+	</table>
+</center>
+
+<p>Esto se debe al error de redondeo, al número limitado de dígitos. 
+Esto es, el error de redondeo cometido en $I_k$ se ve en $I_{k+2}$, en 
+el segundo término, multiplicado por $-k(k-1)$, y así sucesivamente.</p>
+
+<p>Reescribiendo:</p>
+
+	<p style="text-align:center">
+		$I_{k-2} = -\left( I_k - \dfrac{1}{\pi} \right) \dfrac{\pi^2}{k(k-1)}
+		= \dfrac{\pi - \pi^2 I_k}{k(k-1)}$</p>
+		
+<p>En cambio aquí el error cometido en $I_k$ se divide por $-k(k-1)$ al
+calcular $I_{k-2}$. Para tomar un valor de partida, se tiene en cuenta:</p>
+
+	<p style="text-align:center">
+		$I_k = \displaystyle \int_0^1 x^k \sin(\pi x) \, dx &lt; \int_0^1
+		x^k \, dx = \left[ \dfrac{x^{k+1}}{k+1} \right]_0^1 = \dfrac{1}{k+1}$</p>
+		
+<p>Por tanto, cuanto mayor es $k$ más próximo a cero es $I_k$. Así pues,
+si se parte de $I_{40} = 0$, donde el error sería inferior a $1{∕}41$,
+entonces:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$k$</th>
+			<th>$I_k$</th>
+		</tr>
+		<tr>
+			<td>40</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>38</td>
+			<td>0,002013841445</td>
+		</tr>
+		<tr>
+			<td>36</td>
+			<td>0,002220282244</td>
+		</tr>
+		<tr>
+			<td>34</td>
+			<td>0,002475935989</td>
+		</tr>
+		<tr>
+			<td>32</td>
+			<td>0,002778214033</td>
+		</tr>
+		<tr>
+			<td>30</td>
+			<td>0,003139287077</td>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td>0,003575412795</td>
+		</tr>
+		<tr>
+			<td>26</td>
+			<td>0,004108868709</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>0,004770830376</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>0,005605989937</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>0,006680224568</td>
+		</tr>
+	</table>
+</center>
+
+<p>Utilizando en la calculadora CASIO <i>fx-3900Pv</i> su capacidad de 
+realizar integrales, mediante un método de lo que se conoce como 
+integración numérica, algo que se verá en uno de los temas posteriores 
+a éste, se obtiene:</p>
+
+	<p style="text-align:center">
+		$I_{20} = \displaystyle \int_0^1 x^{20} \sin (\pi x) \, dx =
+		0{,}00668022$</p>
+	
+</div>
+
+<hr>
+
+<p><b>&bull;</b> Propagación del error:</p>
+
+<p>Sea, para resolver un problema:</p>
+
+	<p style="text-align:center">
+		$x \to F(x)$</p>
+		
+<p>Si $\Delta x$ es el error en la determinción de $x$, entonces:</p>
+
+	<p style="text-align:center">
+		$x + \Delta x \to F(x + \Delta x)$</p>
+		
+<p>La diferencia entre $F(x)$ y $F(x+\Delta x)$ es el error en la
+función $F$, respuesta del problema.</p>
+
+<p>Aplicando la fórmula de Taylor:</p>
+
+	<p style="text-align:center">
+		$F(x+\Delta x) \simeq F(x) +
+		\underbrace{
+			F'(x) \Delta x
+		}_{
+			\begin{subarray}{c}
+				\text{término} \\
+				\text{lineal}
+			\end{subarray}
+		} + \! 
+		\underbrace{
+			\cancel{\dfrac{F''(x)}{2} (\Delta x)^2}
+		}_{
+			\begin{subarray}{c}
+				\text{término} \\
+				\text{cuadrático}
+			\end{subarray}
+		} \! + \dotsb$</p>
+		
+<p>Se supone que $\Delta x$ es pequeño, pues en este caso se trata
+de un pequeño error. Esto es:</p>
+
+	<p style="text-align:center">
+		$(\Delta x)^2 \ll \Delta x$</p>
+		
+<p>Así entonces, despreciando los términos cuadrático y siguientes, en 
+lo que se conoce como aproximación lineal, el error es aproximadamente 
+igual en el cálculo de $F$ a:</p>
+
+	<p style="text-align:center">
+		$F(x + \Delta x) - F(x) \simeq F'(x) \cdot \Delta x$</p>
+		
+<p>Gráficamente:</p>
+
+<center>
+	<object data="errores_02.svg" type="image/svg+xml" width="400"
+	height="300"></object>
+</center>
+
+<p>El error en $F$ en el punto 1 es menos importante que en el punto 2
+ya que la derivada en el primero es más pequeña que en el segundo. Si
+la derivada es grande, un pequeño error en $x$ puede dar lugar a un gran
+cambio en el resultado que se obtiene para $F$.</p>
+
+<p>Si son dos las variables independientes:</p>
+
+	<p style="text-align:center">
+		$x,y \to F(x,y)$</p>
+		
+<p>Si la $x$ y la $y$ se determinan con un cierto error:</p>
+
+	<p style="text-align:center">
+		$F(x+\Delta x,y+\Delta y) \simeq F(x,y) +
+		\dfrac{\partial F(x,y)}{\partial x} \Delta x +
+		\dfrac{\partial F(x,y)}{\partial y} \Delta y$</p>
+		
+<p>El error depende de cómo repercuten la $x$ y la $y$ en la fórmula de
+la función.</p>
+
+<p>En general, para una función que depende de varias variables 
+$F(x_1,x_2,\dotsc,x_n)$, si los argumentos, las variables 
+independientes, se conocen con un cierto error, $\Delta x_1$, $\Delta 
+x_2, \dotsc$, $\Delta x_n$, el error, en valor absoluto, que se comete, 
+aproximadamente, en el cálculo de la función:</p>
+
+	<p style="text-align:center">
+		$
+		\lvert F(x_1 + \Delta x_1, x_2 + \Delta x_2, \dotsc, x_n + \Delta
+		x_n) - F(x_1,x_2, \dotsc, x_n) \rvert \displaystyle \simeq \left\lvert
+		\sum_{i=1}^n \dfrac{\partial F}{\partial x_i} \Delta x_i \right\rvert
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \left\lvert \sum_{i=1}^n
+		\dfrac{\partial F}{\partial x_i} \Delta x_i \right\rvert \leq
+		\sum_{i=1}^n \left\lvert \dfrac{\partial F}{\partial x_i}
+		\right\rvert \cdot \lvert \Delta x_i \rvert$</p>
+		
+<p>Lo que permite pues calcular una cota para el error. Se conoce como
+fórmula de propagación de los errores.</p>
+		
+<hr>
+		
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+<p>Hallar una cota para el error en el cálculo del volumen de una 
+esfera de diámetro $d = \pu{3,70 cm} \pm \pu{0,05 cm}$ y $\pi \simeq 
+3{,}14$.</p>
+
+<p>Siendo la fórmula del volumen de la esfera:</p>
+
+	<p style="text-align:center">
+		$V = \dfrac{4}{3} \pi r^3 = \dfrac{4}{3} \pi \left( \dfrac{d}{2}
+		\right )^{\! 3} = \dfrac{1}{6} \pi d^3$</p>
+		
+<p>Donde el radio $r$ es igual a $d{∕}2$.</p>
+
+<p>Dos causas para el error: el valor de $\pi$ y el error al medir
+el valor del diámetro de la esfera.</p>
+	
+<p>Usando, para calcular una cota, la fórmula de propagación de los
+errores:</p>
+
+	<p style="text-align:center">
+		$\lvert \Delta F \rvert ⪍ \left\lvert \dfrac{\partial F}{\partial x}
+		\right\rvert \lvert \Delta x \rvert + \left\lvert
+		\dfrac{\partial F}{\partial y} \right\rvert \lvert \Delta y \rvert$</p>
+		
+<p>Si $F(x,y) = V(\pi,d)$, entonces:</p>
+
+	<p style="text-align:center">
+		$\lvert \Delta V \rvert ⪍ \left\lvert \dfrac{\partial V}{\partial \pi}
+		\right\rvert \lvert \Delta \pi \rvert +	\left\lvert
+		\dfrac{\partial V}{\partial d} \right\rvert \lvert \Delta d \rvert$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\dfrac{\partial V}{\partial \pi} = \dfrac{d^3}{6} =
+			\dfrac{(3{,}70)^3}{6} = 8{,}44 \\[1ex]
+			\dfrac{\partial V}{\partial d} = \dfrac{\pi}{2} d^2 =
+			\dfrac{3{,}14}{2} (3{,}70)^2 = 21{,}5
+		\end{array}
+		$
+	</p>
+	
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\lvert \Delta \pi \rvert = |3{,}1416 - 3{,}14| = 0{,}0016 \\[1ex]
+			\lvert \Delta d \rvert = 0{,}05
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$\lvert \Delta V \rvert ⪍ 8{,}44 \cdot 0{,}0016 + 21{,}5 \cdot 0{,}05
+		= \pu{1,09 cm3}$</p>
+		
+<p>Entonces, se escribe:</p>
+
+	<p style="text-align:center">
+		$V = \dfrac{1}{6} \pi d^3 \pm \lvert \Delta V \rvert = \dfrac{1}{6}
+		3{,}14 \cdot (3{,}70)^3 \pm 1{,}09 = \pu{26,51 cm3} \pm \pu{1,09 cm3}$
+	</p>
+		
+</div>
+
+<hr>
+
+<div id="ejemplo">
+
+<p>Ejemplo:</p>
+
+<p>Calcular $a = \left(7 - 4 \sqrt{3}\right)^4$, usando $\sqrt{3} = 
+1{,}73205$, mediante la más adecuada (desde un punto de vista 
+numérico) de las siguientes fórmulas equivalentes:</p>
+
+	<p style="margin-left:30px">
+		$
+		\begin{align}
+			\left(7 - 4 \sqrt{3} \right)^4 &amp;=
+			\dfrac{
+				\left[
+				 \left( 7 - 4 \sqrt{3} \right) \left( 7 + 4 \sqrt{3} \right)
+				\right]^{\mspace{1mu} 4}
+			}{\left( 7 + 4 \sqrt{3} \right)^4} =
+			\dfrac{(49 - 16 \cdot 3)^4}{\left( 7 + 4 \sqrt{3} \right )^4} = \\[1ex]
+			&amp;= \dfrac{1}{\left( 7 + 4 \sqrt{3} \right)^4}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$
+		\begin{align}
+			\dfrac{1}{\left( 7 + 4 \sqrt{3} \right)^4} &amp;=
+			\dfrac{1}{\left( \left( 7 + 4 \sqrt{3} \right)^2 \right)^2} =
+			\dfrac{1}{\left( 49 + 56 \sqrt{3} + 48 \right)^2} = \\[1ex]
+			&amp;= \dfrac{1}{\left( 97 + 56 \sqrt{3} \right)^2}
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$
+		\begin{align}
+			\dfrac{1}{\left( 97 + 56 \sqrt{3} \right)^2} &amp;=
+			\dfrac{
+				\left( 97 - 56 \sqrt{3} \right)^2
+			}{
+				\left[
+					\left( 97 + 56 \sqrt{3} \right) \left( 97 - 56 \sqrt{3} \right)
+				\right]^{\, 2}
+			} = \dfrac{\left( 97 - 56 \sqrt{3} \right)^2}{97^2 - 56^2 \cdot 3}
+			= \\[1ex]
+			&amp;= \left( 97 - 56 \sqrt{3} \right)^2
+		\end{align}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$\left( 97 - 56 \sqrt{3} \right)^2 = 97^2 - 2 \cdot 97 \cdot 56 \cdot
+		\sqrt{3} + 56^2 \cdot 3 = 18817 - 10864 \sqrt{3}$</p>
+		
+	<p style="margin-left:30px">
+		$
+		\begin{align}
+			18817 - 10864 \sqrt{3} &amp;=
+			\dfrac{
+				\left( 18817 - 10864 \sqrt{3} \right)
+				\left( 18817 + 10864 \sqrt{3} \right)
+			}{18817 + 10864 \sqrt{3}} = \\[1ex]
+			&amp;=
+			\dfrac{18817^{
+				\mspace{1mu} 2} - 10864^2 \cdot 3
+			}{18817 + 10864 \sqrt{3}} = \dfrac{1}{18817 + 10864 \sqrt{3}}
+		\end{align}		
+		$
+	</p>
+	
+<p>Si $x = \sqrt{3} \,$ :</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			f_1(x) = (7 - 4x)^4 \\[1ex]
+			f_2(x) = \dfrac{1}{(7 + 4x)^4} \\[1ex]
+			f_3(x) = \dfrac{1}{(97 + 56x)^2} \\[1ex]
+			f_4(x) = (97 - 56x)^2 \\[1ex]
+			f_5(x) = 18817 -10864 x \\[1ex]
+			f_6(x) = \dfrac{1}{18817 + 10864 x}
+		\end{array}	
+		$
+	</p>
+	
+<p>Siendo $a = f_i \! \left(\sqrt{3}\right)$, $i= 1, \dotsc, 6$.</p>
+
+<p>Aplicando la fórmula de propagación del error para una única variable:</p>
+
+	<p style="text-align:center">
+		$| \Delta f_i(x) | ⪍ |\, f_i'(x)| \cdot | \Delta x |$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			| \Delta f_1(x) | ⪍ \left\lvert - 16 (7 - 4 x)^3 \right\rvert \cdot
+			| \Delta x | ⪍ 0{,}00592 \cdot | \Delta x | \\[1ex]
+			| \Delta f_2(x) | ⪍ \left\lvert -\dfrac{16}{(7 + 4x)^5} \right\rvert
+			\cdot | \Delta x | = 3{,}05243 \cdot 10^{-5} \cdot | \Delta x | \\[1ex]
+			| \Delta f_3(x) | ⪍ \left| - \dfrac{112}{(97 + 56x)^3} \right|
+			\cdot | \Delta x | = 1{,}53408 \cdot 10^{-5} \cdot |\Delta x| \\[1ex]
+			| \Delta f_4(x) | ⪍ |{-112} (97 - 56x) | \cdot | \Delta x | = 0{,}58
+			\cdot | \Delta x | \\[1ex]
+			| \Delta f_5(x) | ⪍ |{-10864} | \cdot | \Delta x | = 10864 \cdot
+			| \Delta x | \\[1ex]
+			| \Delta f_6(x) | ⪍ \left|- \dfrac{10864}{(18817 + 10864 x)^2} \right|
+			\cdot | \Delta x | = 7{,}67060 \cdot 10^{-6} \cdot | \Delta x |			
+		\end{array}
+		$
+	</p>
+	
+<p>La mejor es la última ya que es la que tiene un valor absoluto de la
+primera derivada más pequeño, lo que implica un menor error, y la peor
+la penúltima por todo lo contrario. Calculando ambas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			f_6 \! \left( \sqrt{3} \right) = \dfrac{1}{18817 + 10864 \sqrt{3}}
+			= 2{,}65717 \cdot 10^{-5} \\[1em]
+			f_5 \! \left( \sqrt{3} \right) = 18817 - 10864 \sqrt{3} = 0{,}0088
+		\end{array}	
+		$
+	</p>
+	
+<p>Si se calcula la cota del error para cada una, se considera que el 
+error de redondeo de $\sqrt{3} = 1{,}73205$ es $|\Delta x| = 0{,}5 
+\cdot 10^{-5}$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			| \Delta f_6 \! \left( \sqrt{3} \right) | ⪍  7{,}67060 \cdot 10^{-6}
+			\cdot 0{,}5 \cdot 10^{-5} = 3{,}8353 \cdot 10^{-11} \\[1ex]
+			| \Delta f_5 \! \left( \sqrt{3} \right) | ⪍ 10864 \cdot 0{,}5
+			\cdot 10^{-5} = 0{,}05432
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto, en los cálculos de $a$ realizados con la mejor y peor 
+fórmulas, para la primera las seis cifras escritas son seguras, hasta 
+el decimo decimal, mientras que en la segunda ninguna lo es.</p>
+
+<p>Como puede observarse más arriba, del cálculo de las primeras 
+derivadas para todas las fórmulas, el error es mayor en las restas.</p>
+
+</div>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}[b]{l}
+			x = 1 \\[1ex]
+			y = 0{,}9
+		\end{array}
+		$ &emsp; error: $\Delta y = 0{,}05$ (ó $\pu{5,6 \%}$). 
+	</p>
+	
+<p>Cálculo sin error de:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x + y = 1{,}9 \\[1ex]
+			x - y = 0{,}1
+		\end{array}
+		$
+	</p>
+	
+<p>Con el error:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$x + (y + \Delta y) = 1{,}95$</span>
+			<span style="display:table-cell">
+				${} \rightarrow$
+				error relativo:
+				$
+				\begin{aligned}[t]
+					\dfrac{1{,}95 - 1{,}9}{1{,}9} \cdot 100 &amp;=
+					\dfrac{0{,}05}{1{,}9} \cdot 100 = \\[1ex]
+					&amp;= \pu{2,6 \%}
+				\end{aligned}	
+				$
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$x - (y + \Delta y) = 0{,}05$</span>
+			<span style="display:table-cell;padding-top:1ex">
+				${} \rightarrow$
+				error relativo:
+				$
+				\begin{aligned}[t]
+					\dfrac{0{,}05 - 0{,}1}{0{,}1} \cdot 100 &amp;=
+					\dfrac{-0{,}05}{0{,}1} \cdot 100 = \\[1ex]
+					&amp;= \pu{-50 \%}
+				\end{aligned}
+				$
+			</span>
+		</span>
+	</p>
+	
+<p>El error es siempre relativo.</p>
+	
+</div>
+
+<hr>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../interpolacion_polinomial/interpolacion_polinomial.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

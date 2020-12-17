@@ -1,0 +1,799 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["enclose.js","cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Aproximación">
+<meta name="keywords" content="aproximación">
+<title>Aproximación</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Aproximación</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p>Disponiendo de parejas de datos de dos variables $x$ e $y$, de la 
+observación de los datos o por motivos teóricos, se supone que existe 
+entre ambas un cierto tipo de relación funcional. Siendo la variable 
+independiente $x$ y la variable dependiente $y$, los datos de esta 
+última, de forma aleatoria, se ven afectados tanto por errores como por 
+otras variables. Por este motivo no tiene sentido usar la 
+interpolación, pero sí es posible aproximar.</p>
+
+<p><b>1.</b> Regresión lineal simple:</p>
+
+<p>Datos:</p>
+
+	<p style="text-align:center">
+		$(x_1,y_1), \dotsc, (x_n,y_n)$</p>
+		
+<p>Se quiere hallar la recta $y = a+bx$ que mejor se ajuste a los
+datos, donde $a$ es la ordenada en el origen ("intercept") y
+$b$ la pendiente ("slope").</p>
+
+<p>La diferencia entre un $y_i$ y el valor que daría la recta:</p>
+
+	<p style="text-align:center">
+		$e_i = y_i - a - bx_i\,,$ &ensp; residuo.</p>
+		
+<p>Hay tantos residuos como puntos. Cuando la suma de sus cuadrados sea 
+la mínima se produce el mejor ajuste:</p>
+
+	<p style="text-align:center">
+		$S(a,b) = \displaystyle \sum_{i=1}^n e_i^2 = \sum_{i=1}^n
+		(y_i - a - bx_i)^2$</p>
+		
+	<p style="text-align:center">
+		$S(a,b)$ mínimo $\Rightarrow$ Mejor aproximación.		
+		
+<p>Esto, en lo que se conoce como el método de los mínimos cuadrados,
+determina $a$ y $b$. En el mínimo las derivadas respecto de $a$ y $b$
+son cero:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{alignedat}{2}
+			&amp;
+			\vphantom{\sum_{i=1}^n -2(y_i - a - bx_i) = 0}
+			\dfrac{\partial S(a,b)}{\partial a} = 0 &amp;&amp;\Rightarrow \\[1ex]
+			\vphantom{\sum_{i=1}^n 2(y_i - a - bx_i)(-x_i) = 0}
+			&amp;\dfrac{\partial S(a,b)}{\partial b} = 0 &amp;&amp;\Rightarrow
+		\end{alignedat}
+		\underbrace{
+			\boxed{
+				\!
+				\begin{aligned}
+					&amp;\sum_{i=1}^n -2(y_i - a - bx_i) = 0 \\[1ex]
+					&amp;\sum_{i=1}^n 2(y_i - a - bx_i)(-x_i) = 0
+				\end{aligned}
+			}
+		}_{
+				\text{ecuaciones normales}
+			}
+		\quad \enspace
+		\begin{aligned}
+			&amp;
+			\vphantom{\sum_{i=1}^n -2(y_i - a - bx_i) = 0}
+			\cssId{1}{\enclose{circle}{\mspace{1mu}1\mspace{1mu}}} \\[1ex]
+			\vphantom{\sum_{i=1}^n 2(y_i - a - bx_i)(-x_i) = 0}
+			&amp;\cssId{2}{\enclose{circle}{\mspace{1mu}2\mspace{1mu}}}
+		\end{aligned}
+		$
+	</p>
+	
+<p>$\enclose{circle}{\mspace{1mu}1\mspace{1mu}}$</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \sum_{i=1}^n \!\cancel{-2}\!(y_i - a - bx_i) = 0 \\[1ex]
+			\displaystyle \sum_{i=1}^n y_i = \sum_{i=1}^n (a + bx_i) =
+			na + b \sum_{i=1}^n x_i \\[1ex]
+			\dfrac{1}{n} \displaystyle \sum_{i=1}^n y_i = a + \dfrac{b}{n}
+			\sum_{i=1}^n x_i \\[1ex]
+			\overline{y} = a + b \overline{x} \Rightarrow a = \overline{y} -
+			b \overline{x}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $\overline{x}$ e $\overline{y}$ son, respectivamente, las medias
+de las variables $x$ e $y$. Esto es:</p>
+
+	<p style="text-align:center">
+		$\overline{x} = \dfrac{\sum\limits_{i=1}^n x_i}{n}\,, \enspace
+		\overline{y} = \dfrac{\sum\limits_{i=1}^n y_i}{n}$</p>
+		
+<p>Por tanto, por el punto medio $(\overline{x},\overline{y})$ siempre
+pasará la recta.</p>
+
+<p>$\enclose{circle}{\mspace{1mu}2\mspace{1mu}}$</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \sum_{i=1}^n \!\cancel{2}\!(y_i - a - bx_i)
+			(\!\cancel{-}\!x_i) = 0 \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y} + b\overline{x} -
+			bx_i) x_i = 0 \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y}) x_i =
+			b \sum_{i=1}^n (x_i - \overline{x}) x_i \\[1ex]
+			\displaystyle \sum_{i=1}^n y_i x_i - \overline{y} \sum_{i=1}^n x_i
+			= b \left[ \sum_{i=1}^n x_i^2 - \overline{x} \sum_{i=1}^n x_i
+			\right] \\[1ex]
+			\displaystyle \sum_{i=1}^n y_i x_i - 2 \overline{y} \sum_{i=1}^n x_i
+			+ \overline{y} \sum_{i=1}^{n} x_i = b \left[
+			\sum_{i=1}^n x_i^2 - 2 \overline{x} \sum_{i=1}^n x_i + \overline{x}
+			\sum_{i=1}^n x_i \right] \\[1ex]
+			\displaystyle \sum_{i=1}^n y_i x_i - \dfrac{1}{n} \sum_{i=1}^n y_i
+			\sum_{i=1}^n x_i - \dfrac{1}{n} \sum_{i=1}^n x_i \sum_{i=1}^n y_i +
+			n \overline{y} \mspace{1mu} \overline{x} = b \left[ \sum_{i=1}^n x_i^2
+			- 2	\overline{x} \sum_{i=1}^n x_i + n \overline{x}^2 \right] \\[1ex]
+			\displaystyle \sum_{i=1}^n y_i x_i - \overline{y} \sum_{i=1}^n x_i -
+			\overline{x} \sum_{i=1}^n y_i + \sum_{i=1}^n \overline{y} \mspace{1mu}
+			\overline{x} = b \left[ \sum_{i=1}^n x_i^2 - 2 \overline{x}
+			\sum_{i=1}^n x_i + \sum_{i=1}^n \overline{x}^2 \right]	\\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i x_i - \overline{y} x_i - y_i
+			\overline{x} + \overline{y} \mspace{1mu} \overline{x}) = b
+			\sum_{i=1}^n (x_i^2 - 2 \overline{x} x_i + \overline{x}^2) \\[1ex]
+			\displaystyle \sum_{i=1}^n (x_i - \overline{x})(y_i - \overline{y})
+			= b \sum_{i=1}^n (x_i - \overline{x})^2 \\[1ex]
+			b =
+			\dfrac{
+				\sum\limits_{i=1}^n (x_i - \overline{x})(y_i - \overline{y})
+			}{
+				\sum\limits_{i=1}^n (x_i - \overline{x})^2
+			} = \dfrac{S_{xy}}{S_{xx}}
+		\end{array}
+		$
+	</p>
+	
+<p>Donde $S_{xx}$ es la suma de los cuadrados de las desviaciones 
+respecto a la media de los valores de $x$, mientras que $S_{xy}$ es la 
+suma de los productos cruzados de las desviaciones respecto a las 
+medias de los valores de $x$ e $y$. Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			S_{xx} = \displaystyle \sum_{i=1}^n (x_i - \overline{x})^2 \\[1ex]
+			S_{yy} = \displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 \\[1ex]
+			S_{xy} = \displaystyle \sum_{i=1}^n (x_i - \overline{x})(y_i -
+			\overline{y})
+		\end{array}
+		$
+	</p>
+	
+<p>También, con la recta obtenida se cumple que:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_{i=1}^n e_i = \sum_{i=1}^n (y_i - a - bx_i)
+		\underset{\href{#1}{\enclose{circle}{\mspace{1mu}1\mspace{1mu}}}}{=}
+		0$
+		<object data="aproximacion_01.svg" type="image/svg+xml" width="200"
+		height="150"
+		style="display:inline-block;vertical-align:middle;margin-left:2em">
+		</object>
+	</p>
+	
+<p>Se define la correlación como:</p>
+
+	<p style="text-align:center">
+		$
+		\rho, R \text{ ó } r =
+		\dfrac{
+			\displaystyle \sum_{i=1}^n (x_i - \overline{x}) (y_i - \overline{y})
+		}{
+			\displaystyle \left( \sum_{i=1}^n (x_i - \overline{x})^2 \sum_{i=1}^n
+			(y_i - \overline{y})^2 \right)^{\! 1/2}
+		} = \dfrac{S_{xy}}{(S_{xx} S_{yy})^{1/2}}
+		\overset{
+			\begin{subarray}{c}
+				\llap{S_{xy} \,} = \rlap{\, bS_{xx}} \\
+				\big\downarrow
+			\end{subarray}	
+		}{=} b \left( \dfrac{S_{xx}}{S_{yy}} \right)^{\! 1/2}
+		$
+	</p>
+	
+<p>Tiene el signo de la pendiente. Entonces, siendo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			y_i = a + bx_i + e_i \\[1ex]
+			y_i = \overline{y} - b\overline{x} + bx_i + e_i \\[1ex]
+			y_i - \overline{y} = b (x_i - \overline{x}) + e_i \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 =
+			\sum_{i=1}^n (b(x_i - \overline{x}) + e_i)^2 \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 =
+			b^2 \sum_{i=1}^n (x_i - \overline{x})^2 + 2b \sum_{i=1}^n (x_i -
+			\overline{x})e_i + \sum_{i=1}^n e_i^2 \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 =
+			b^2 \sum_{i=1}^n (x_i - \overline{x})^2 + 2b  \Biggl[ 
+			\underbrace{
+				\sum_{i=1}^n x_i e_i
+			}_{
+				\begin{subarray}{c}
+					0 \\
+					\href{#2}{{\enclose{circle}{\mspace{1mu}2\mspace{1mu}}}}
+				\end{subarray}
+			}
+			- \overline{x} \underbrace{\sum_{i=1}^n e_i}_0 \Biggr] +
+			\sum_{i=1}^n e_i^2 \\[1ex]
+			\displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 =
+			b^2 \sum_{i=1}^n (x_i - \overline{x})^2 + \sum_{i=1}^n e_i^2
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$S_{yy} = b^2 S_{xx} + \displaystyle \sum_{i=1}^n e_i^2 \geq b^2
+		S_{xx}$</p>
+		
+<p>Ya que $\sum\limits_{i=1}^n e_i^2$ es positivo, salvo si todos los 
+puntos estuvieran sobre la recta, que entonces sería cero.</p>
+
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$r^2 = b^2 \dfrac{S_{xx}}{S_{yy}} \leq b^2 \dfrac{S_{xx}}{b^2 S_{xx}}
+		= 1$</p>
+		
+<p>Por lo que siempre:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			0 \leq r^2 \leq 1 \\[1ex]
+			0 \leq |r| \leq 1
+		\end{array}
+		$
+	</p>
+	
+<p>Cuanto más cercano a 1 mejor el ajuste de los puntos a la recta. 
+Aunque $0$ ó $1$ son imposibles en la realidad, no se dan en la 
+práctica.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$i$</th>
+			<th>$x_i$</th>
+			<th>$y_i$</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0,10</td>
+			<td>14,175</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,15</td>
+			<td>21,368</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>0,25</td>
+			<td>35,186</td>
+		</tr>
+	</table>
+</center>
+
+	<p style="text-align:center">
+		$x =$ concentración
+		<span style="display:block">
+			$y =$ cromatógrafo</span>
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$
+				\begin{align}
+					S_{xx} &amp;= \sum_{i=1}^n (x_i - \overline{x})^2	= \\[1ex]
+					&amp;= \sum_{i=1}^n (x_i^2 - 2x_i \overline{x} + \overline{x}^2)
+					= \\[1ex]
+					&amp;= \sum_{i=1}^n x_i^2 - 2 \overline{x} \sum_{x=1}^n x_i +
+					\overline{x}^2 \sum_{i=1}^n 1 = \\[1ex]
+					&amp;= \sum_{i=1}^n x_i^2 - \dfrac{2}{n} \left( \sum_{1=1}^n x_i
+					\right)^{\! 2} + \dfrac{n}{n^2} \left( \sum_{i=1}^n x_i
+					\right)^{\! 2} = \\[1ex]
+					&amp;= \sum_{i=1}^n x_i^2 - \dfrac{1}{n} \left(	\sum_{i=1}^n x_i
+					\right)^{\! 2}
+				\end{align}
+				$
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1em;padding-bottom:1em">
+				$S_{yy} = \displaystyle \sum_{i=1}^n (y_i - \overline{y})^2 =
+				\dotsb = \sum_{i=1}^n y_i^2 - \dfrac{1}{n} \left( \sum_{i=1}^n y_i
+				\right)^{\! 2}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$
+				\begin{align}
+					S_{xy} &amp;= \sum_{i=1}^n (x_i - \overline{x}) (y_i -
+					\overline{y}) = \\[1ex]
+					&amp;= \sum_{i=1}^n x_i y_i - \overline{y} \sum_{i=1}^n x_i -
+					\overline{x} \sum_{i=1}^n y_i + \overline{x} \overline{y}
+					\sum_{i=1}^n 1 = \\[1ex]
+					&amp;= \sum_{i=1}^n x_i y_i - \dfrac{2}{n} \sum_{i=1}^n x_i
+					\sum_{i=1}^n y_i + \dfrac{n}{n^2} \sum_{i=1}^n x_i \sum_{i=1}^n
+					y_i = \\[1ex]
+					&amp;= \sum_{i=1}^n x_i y_i - \dfrac{1}{n} \sum_{i=1}^n x_i
+					\sum_{i=1}^n y_i
+				\end{align}
+				$
+			</span>
+		</span>
+	</p>
+	
+<p>Realización de los cálculos:</p>
+
+	<p style="margin-left:30px">
+		$
+		\begin{array}{llll}
+			n = 3 &amp;\quad \displaystyle \sum_{i=1}^n x_i = 0{,}5 &amp;\quad
+			\overline{x} = 0{,}166667 &amp; \\[1ex]
+			&amp;\quad \displaystyle \sum_{i=1}^n y_i = 70{,}729 &amp;\quad
+			\overline{y} = 23,5763 &amp; \\[1ex]
+			&amp;\quad \displaystyle \sum_{i=1}^n x_i^2 = 0{,}095 &amp;\quad
+			\displaystyle \sum_{i=1}^n y_i^2 = 1895{,}5766 &amp;\quad
+			\displaystyle	\sum_{i=1}^n x_i y_i = 13{,}4192
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$
+		\begin{array}{l}
+			S_{xx} = 0{,}095 - \dfrac{(0{,}5)^2}{3} = 0{,}0116667 \\[1ex]
+			S_{yy} = 1895{,}5766 - \dfrac{(70{,}729)^2}{3} = 228{,}0461 \\[1ex]
+			S_{xy} = 13{,}4192 - \dfrac{(0{,}5)(70{,}729)}{3} = 1{,}63103
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		$
+		\begin{array}{l}
+			b = \dfrac{1{,}63103}{0{,}0116667} = 139{,}802 \\[1ex]
+			a = 23{,}5763 - (139{,}802)(0{,}166667) = 0{,}276 \\[1ex]
+			r = \dfrac{1{,}63103}{((0{,}0116667)(228{,}0461))^{1/2}} = 1{,}000
+		\end{array}
+		$
+	</p>
+	
+<p>Siempre valores de $r$ muy próximos a uno, ya que la regresión va a tener
+un uso predictivo. Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$y = 0{,}276 + 139{,}802x$</p>
+	
+<p>También:</p>
+
+<center>
+	<table class="tabla ejemplo"
+	style="display:inline-table;vertical-align:middle;margin-right:2em">
+		<tr>
+			<th>$i$</th>
+			<th>$e_i$</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>-0,081</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>0,122</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>-0,041</td>
+		</tr>
+	</table>
+	$
+	\begin{array}{c}
+		e_i = y_i - a - bx_i \\[1ex]
+		\displaystyle \sum_{i=1}^n e_i = 0
+	\end{array}
+	$
+</center>
+	
+</div>
+
+<hr>
+
+<p>Se pretende una regresión lineal simple sin término independiente, 
+para la cual se disponen de los datos:</p>
+
+	<p style="text-align:center">
+		$(x_1,y_1), \dotsc, (x_n,y_n)$</p>
+		
+<p>El problema que se plantea es hallar $y = bx$ tal que el ajuste a
+los datos sea el mejor posible. Para ello:</p>
+
+	<p style="text-align:center">
+		$S(b) = \displaystyle \sum_{i=1}^n (y_i - bx_i)^2\,,$ mínimo.</p>
+		
+<p>Donde en el mismo (en el mínimo):</p>
+
+	<p style="text-align:center">
+		$S'(b) = 0$</p>
+		
+<p>Por tanto, esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\displaystyle \sum_{i=1}^n \! \cancel{2}\!(y_i - bx_i)
+			(\!\cancel{-}\!x_i) = 0 \\[1ex]
+			\displaystyle \sum_{i=1}^n x_i y_i - b \sum_{i=1}^n
+			x_i^2 = 0 \\[1ex]
+			b = \dfrac{\sum\limits_{i=1}^n x_i y_i}{\sum\limits_{i=1}^n x_i^2}
+		\end{array}
+		$
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+<p>En procesos adiabáticos de gases:</p>
+
+	<p style="text-align:center">
+		$PV^\gamma = C$</p>
+		
+<p>Donde $C$ es constante a lo largo del proceso.</p>
+
+<p>Experimentalmente, en un proceso adiabático de un gas:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$P$ (atm)</th>
+			<th>$V$ (litros)</th>
+		</tr>
+		<tr>
+			<td>1,62</td>
+			<td>0,5</td>
+		</tr>
+		<tr>
+			<td>1,00</td>
+			<td>1,0</td>
+		</tr>
+		<tr>
+			<td>0,75</td>
+			<td>1,5</td>
+		</tr>
+		<tr>
+			<td>0,62</td>
+			<td>2,0</td>
+		</tr>
+		<tr>
+			<td>0,52</td>
+			<td>2,5</td>
+		</tr>
+		<tr>
+			<td>0,46</td>
+			<td>3,0</td>
+		</tr>
+	</table>
+</center>
+
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			PV^\gamma = C \\[1ex]
+			\ln P + \gamma \ln V = \ln C \\[1ex]
+			\ln V = \dfrac{\ln C}{\gamma} - \dfrac{1}{\gamma} \ln P
+		\end{array}
+		$
+	</p>
+	
+<p>Si $y = a + bx$, entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			y = \ln V\,, &amp;x = \ln P \\[1ex]
+			a = \dfrac{\ln C}{\gamma}\,, &amp; b = -\dfrac{1}{\gamma}
+		\end{array}
+		$
+	</p>
+	
+<p>Así que:</p>
+
+<center>
+	<table class="tabla ejemplo" style="text-align:center">
+		<tr>
+			<th>$\ln P$</th>
+			<th>$\ln V$</th>
+		</tr>
+		<tr>
+			<td>0,4824</td>
+			<td>−0,6931</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>−0,2877</td>
+			<td>0,4055</td>
+		</tr>
+		<tr>
+			<td>−0,4780</td>
+			<td>0,6931</td>
+		</tr>
+		<tr>
+			<td>−0,6539</td>
+			<td>0,9163</td>
+		</tr>
+		<tr>
+			<td>−0,7765</td>
+			<td>1,0986</td>
+		</tr>
+	</table>
+</center>
+
+<p>Haciendo el cálculo de la regresión:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			b = -\dfrac{1}{\gamma} = -1{,}422 \Rightarrow \gamma = 0{,}703 \\[1ex]
+			a = \dfrac{\ln C}{\gamma} = -0{,}002829 \Rightarrow C = 0{,}998 \\[1ex]
+			r = -1{,}000
+		\end{array}
+		$
+	</p>
+	
+<p>También, alternativamente:</p>
+
+	<p style="text-align:center">
+		$\ln P = \ln C - \gamma \ln V$</p>
+		
+<p>De nuevo, si $y = a + bx$, aquí:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			y = \ln P\,, &amp;x = \ln V \\[1ex]
+			a = \ln C\,, &amp; b = -\gamma
+		\end{array}
+		$
+	</p>
+	
+<p>El cálculo de la regresión da:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			b = -\gamma = -0{,}703 \Rightarrow \gamma = 0{,}703 \\[1ex]
+			a = \ln C = -0{,}002042 \Rightarrow C = 0{,}998 \\[1ex]
+			r = -1{,}000
+		\end{array}
+		$
+	</p>
+
+</div>
+
+<hr>
+
+<p>Dos maneras de plantear la regresión:</p>
+
+<p style="text-align:center">
+	<object data="aproximacion_02.svg" type="image/svg+xml" width="200"
+	height="150"
+	style="display:inline-block;vertical-align:middle;margin-right:2em">
+	</object>
+	$
+	\begin{array}{l}
+		y = a + bx \Rightarrow \displaystyle \sum_{i=1}^n (y_i - a - bx_i)^2
+		\,, \text{ mínimo.} \\[1ex]
+		x = \alpha + \beta y \Rightarrow \displaystyle \sum_{i=1}^n (x_i -
+		\alpha - \beta y_i)^2	\,, \text{ mínimo.}
+	\end{array}
+	$
+</p>
+
+<p>Para el segundo planteamiento, intercambiando $x$ e $y$ en las
+ecuaciones obtenidas anteriormente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\alpha = \overline{x} - \beta \overline{y} \\[1ex]
+			\beta = \dfrac{S_{xy}}{S_{yy}}
+		\end{array}
+		$
+	</p>
+	
+<p>Ambas rectas se cruzan en el punto medio $(\overline{x},\overline{y})$.
+</p>
+
+<p>Además:</p>
+
+	<p style="text-align:center">
+		$b \beta = \dfrac{S_{xy}^2}{S_{xx} S_{yy}} = r^2$</p>
+		
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$r^2 \to 1 \Rightarrow \beta \simeq \dfrac{1}{b}$</p>
+		
+<p>Siendo que, en tal caso, las dos rectas de regresión se solaparían. 
+De suceder:</p>
+
+	<p style="text-align:center">
+		$\alpha \simeq \overline{x} - \dfrac{1}{b} \overline{y} =
+		\dfrac{-a}{b}$</p>
+		
+<p><b>2.</b> Regresión no lineal:</p>
+
+<p>Por ejemplo, si:</p>
+
+	<p style="text-align:center">
+		$y = ax^b$</p>
+		
+<p>Disponiendo de los datos:</p>
+
+	<p style="text-align:center">
+		$(x_1,y_1), \dotsc, (x_n,y_n)$</p>
+		
+<p>Hay que hallar $a$ y $b$ de modo que:</p>
+
+	<p style="text-align:center">
+		$S(a,b) = \displaystyle \sum_{i=1}^n (y_i - ax_i^b)^2 \,,$ mínimo.</p>
+		
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			\dfrac{\partial S(a,b)}{\partial a} = \displaystyle \sum_{i=1}^n
+			2(y_i - ax_i^b) (-x_i^b) = 0 \\[1ex]
+			\dfrac{\partial S(a,b)}{\partial b} = \displaystyle \sum_{i=1}^n
+			2(y_i - ax_i^b) (-ax_i^b \ln x_i) = 0
+		\end{array}
+		\right\}
+		$
+	</p>
+	
+<p>Es un sistema de ecuaciones no lineales. Requiere de métodos
+iterativos para resolver.</p>
+
+<p>Para hacerlo más sencillo, tomando logaritmos:</p>
+
+	<p style="text-align:center">
+		$\ln y = \ln a + b \ln x$</p>
+		
+<p>Con lo que el problema ahora consiste en encontrar $a$ y $b$ tal 
+que:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_{i=1}^n (\ln y_i - \ln a - b \ln x_i)^2 \,,$
+		mínimo.</p>
+		
+<p>Si:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			Y = \ln y \,, &amp; X = \ln x \\[1ex]
+			A = \ln a \,, &amp; B = b
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\displaystyle \sum_{i=1}^n (Y_i - A - B X_i)^2 \,,$
+		mínimo.</p>
+		
+<p>Que se resuelve como una regresión lineal. Calculándose del resultado
+de la misma, deshaciendo el cambio, $a$ y $b$.</p>
+
+<p>Otros casos, de lo que se conoce como linealización:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{ll}
+			y = ae^{bx} &amp;{} \Rightarrow \quad \ln y = \ln a + bx \\[1ex]
+			y = \dfrac{1}{a + bx} &amp;{} \Rightarrow \quad \dfrac{1}{y} =
+			a + bx \\[1ex]
+			y = \dfrac{x}{a + bx} &amp;{} \Rightarrow \quad \dfrac{1}{y}
+			= b + a \dfrac{1}{x}
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../resolucion_sistemas_ecuaciones_lineales/resolucion_sistemas_ecuaciones_lineales.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../variables_aleatorias/variables_aleatorias.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

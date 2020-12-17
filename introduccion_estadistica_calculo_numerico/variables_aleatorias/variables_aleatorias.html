@@ -1,0 +1,944 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["[mhchem]/mhchem.js"]
+    }, 
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Variables aleatorias">
+<meta name="keywords" content="variables, aleatorias">
+<title>Variables aleatorias</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Variables aleatorias</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p><b>1.</b> Variable aleatoria:</p>
+
+<p>A una variable aleatoria, $X$, se le asigna un determinado valor 
+numérico según sea el resultado de un experimento aleatorio.</p>
+
+<p>Las variables aleatorias pueden ser:</p>
+
+<ul>
+	<li>Discretas: Resultado de tirar un dado, por ejemplo.</li>
+	<li>Continuas: Resultado de un análisis de laboratorio, por ejemplo.</li>
+</ul>
+
+<p>Una variable aleatoria discreta toma sólo unos ciertos valores
+aislados, mientras que una variable aleatoria continua puede tomar
+cualquier valor de un intervalo (i.e. entre dos valores).</p>
+
+<p>En realidad todo es discreto, pero es más fácil considerar continuas 
+las cosas.</p>
+
+<p><b>2.</b> Función de densidad:</p>
+
+<p>Para una variable aleatoria continua existe una función $f(x)$,
+conocida como función de densidad (de probabilidad), tal que:</p>
+
+<ol>
+	<li>&ensp;$
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\
+					\llap{\text{Proba}}\text{b}\rlap{\text{ilidad}}
+				\end{subarray}
+			}{{\rm Prob}}\mspace{1mu}(x_1 &lt; X &lt; x_2) = \displaystyle
+			\int_{x_1}^{x_2} f(x) \, dx
+			$
+		<object data="variables_aleatorias_01.svg" width="260" height="133"
+		type="image/svg+xml"
+		style="margin-left:auto;margin-right:auto;margin-top:1em"></object>
+	</li>
+	<li>&ensp;$f(x) \geq 0$</li>
+	<li>&ensp;$\displaystyle \int_{-\infty}^{+\infty} f(x) \, dx = 1$</li>
+</ol>
+
+<p><b>3.</b> Función de distribución:</p>
+
+<p>La función de distribución, $F(x)$, se define como:</p>
+
+	<p style="text-align:center">
+		$F(x) = {\rm Prob}(X \leq x) = \displaystyle \int_{-\infty}^x f(u) \,
+		du$</p>
+		
+<p><b>4.</b> Distribuciones típicas:</p>
+
+<p>Describen cómo se distribuye la probabilidad total, que es igual a 1,
+sobre los valores de $X$ posibles.</p>
+
+<ol type="a">
+	<li>Uniforme:
+	
+			<p style="text-align:center">
+				$f(x) = \dfrac{1}{b-a}\,,$ &ensp; si $a &lt; x &lt; b$</p>
+			
+		<p>Una recta horizontal:</p>
+		
+		<object data="variables_aleatorias_02.svg" width="240" height="150"
+		type="image/svg+xml" style="margin-left:auto;margin-right:auto"></object>
+		
+		<p>Siendo:</p>
+		
+			<p style="text-align:center">
+				${\rm Prob}(x_1 &lt; X &lt; x_2) = \dfrac{x_2 - x_1}{b-a}$</p>
+				
+		<p>Se cumple:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\int_{-\infty}^{+\infty} f(x) \, dx &amp;= \int_{a}^b
+					\dfrac{1}{b-a} \, dx = \\[1ex]
+					&amp;= \dfrac{1}{b-a} [x]_a^b = \dfrac{b-a}{b-a} = 1
+				\end{align}
+				$
+			</p>
+	</li>
+	<li>Normal:
+		
+			<p style="text-align:center">
+				$f(x) = \dfrac{1}{\sqrt{2\pi} \sigma} \exp \left(
+				- \dfrac{(x-\mu)^2}{2\sigma^2} \right)$</p>
+			
+		<p>Una curva de campana:</p>
+		
+		<object data="variables_aleatorias_03.svg" width="240" height="150"
+		type="image/svg+xml" style="margin-left:auto;margin-right:auto"></object>
+		
+		<p>Siendo:</p>
+		
+		<ul>
+			<li>$\lim\limits_{x \, \to \, \pm \infty} f(x) = 0$</li>
+			<li>Máximo: &ensp; $x = \mu$</li>
+			<li>Inflexiones: &ensp;
+			$
+			\begin{aligned}[t]
+				x &amp;= \mu + \sigma\,, \\[1ex]
+				&amp;= \mu - \sigma
+			\end{aligned}
+			$
+			</li>
+			<li>Simétrica.</li>
+		</ul>
+		
+		<p>Si:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					\int_{-\infty}^{+\infty} f(u) \, du &amp;=
+					\int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi} \sigma}
+					e^{-\tfrac{(u-\mu)^2}{2\sigma^2}} \, du
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\[.5ex]
+							\llap{y \,} = \rlap{\, \tfrac{u-\mu}{\sigma},} \\[.5ex]
+							\llap{dy \,} = \rlap{\, \tfrac{du}{\sigma}}
+						\end{subarray}
+					}{=} \\[1ex]
+					&amp;= \dfrac{1}{\sqrt{2\pi}}
+					\underbrace{
+						\int_{-\infty}^{+\infty} e^{-\tfrac{y^2}{2}} \, dy
+					}_{A} =  \dfrac{1}{\sqrt{2\pi}} \, A
+				\end{align}
+				$
+			</p>
+			
+		<p>Entonces:</p>
+		
+			<p style="text-align:center">
+				$
+				\begin{align}
+					A^2 &amp;= \int_{-\infty}^{+\infty} e^{-\tfrac{x^2}{2}} \, dx
+					\int_{-\infty}^{+\infty} e^{-\tfrac{y^2}{2}} \, dy \mspace{-30mu}
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\[.5ex]
+							x,\,y \\
+							\text{independientes}
+						\end{subarray}
+					}{=} \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} e^{-\tfrac{y^2}{2}} 
+					\left( \int_{-\infty}^{+\infty}	e^{-\tfrac{x^2}{2}} \, dx
+					\right) \, dy = \\[1ex]
+					&amp;= \int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty}
+					e^{-\tfrac{x^2+y^2}{2}} \, dx \, dy
+				\end{align}
+				$
+			</p>
+			
+		<p>Esta integral doble es el volumen bajo la supeficie
+		$e^{-(x^2+y^2){∕}2}$:</p>
+		
+		<object data="variables_aleatorias_06.svg" type="image/svg+xml"
+		width="240" height="240" style="margin-left:auto;margin-right:auto">
+		</object>
+		
+		<p>Forma acampanada, simétrica con respecto al eje vertical. Así 
+		que, si $r$ es la distancia entre el origen y un punto del plano 
+		$xy$, esto es $r^2 = x^2 + y^2$, siendo $S$ la superficie de dicho 
+		plano, entonces, también el volumen $A^2$ es:</p>
+		
+			<p style="text-align:center">
+				$A^2 = \displaystyle \int_S e^{-r^2{∕}2} \, dS$</p>
+				
+		<p>Donde:</p>
+		
+			<p style="text-align:center">
+				<object data="variables_aleatorias_07.svg" type="image/svg+xml"
+				width="240" height="240"
+				style="display:inline-block;vertical-align:middle;margin-right:1em"></object>
+				$dS = 2\pi r \, dr$</p>
+				
+		<p>Por tanto:</p>
+		
+			<p style="text-align:center">
+				$A^2 = \displaystyle \int_0^\infty 2\pi r e^{-r^2{∕}2} \, dr
+				= 2\pi [-e^{-r^2{∕}2}]_0^\infty = 2\pi (e^0 - e^{-\infty}) =
+				2\pi$</p>
+				
+		<p>Demostrándose:</p>
+		
+			<p style="text-align:center">
+				$\displaystyle \int_{-\infty}^{+\infty} f(u) \, du =
+				\dfrac{1}{\sqrt{2\pi}} \, A = \dfrac{1}{\sqrt{2\pi}} \sqrt{2\pi} =
+				1$</p>
+				
+	</li>
+	<li>Exponencial:
+		
+			<p style="text-align:center">
+				$
+				\begin{alignat}{2} 
+					f(x) &amp;= \lambda e^{-\lambda x} &amp;\quad &amp;\text{si }
+					x \geq 0 \,, \\[1ex]
+					&amp;= 0 &amp;&amp;\text{si } x &lt; 0
+				\end{alignat}
+				$
+			</p>	
+			
+		<p>Una curva decreciente:</p>
+		
+		<object data="variables_aleatorias_04.svg" width="240" height="140"
+		type="image/svg+xml" style="margin-left:auto;margin-right:auto"></object>
+		
+		<p>Valores positivos que son más probables a medida que se acercan
+		al cero.</p>
+		
+		<p>Se comprueba:</p>
+		
+			<p style="text-align:center">
+				$\displaystyle \int_{-\infty}^{+\infty} f(x) \, dx = 
+				\int_{0}^{+\infty} \lambda e^{-\lambda x} \, dx =
+				[-e^{-\lambda x}]_0^{+\infty} = e^0 - e^{-\infty} = 1$</p>
+	</li>
+</ol>
+
+<p><b>5.</b> Media y varianza:</p>
+
+<p>a) Media:</p>
+
+<p>Se define la media, $\mu$ (también  $m$ ó $\overline{x}$), de una
+distribución continua como:</p>
+
+	<p style="text-align:center">
+		$\mu = \displaystyle \int_{-\infty}^{+\infty} x \, f(x) \, dx$</p>
+		
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<ol>
+		<li>Distribución uniforme:
+		
+				<p style="text-align:center;margin-top:1em">
+					<object data="variables_aleatorias_05.svg" type="image/svg+xml"
+					width="250" height="165" class="ejemplo"
+					style="display:inline-block;vertical-align:middle;margin-right:1em">
+					</object>
+					$
+					\begin{aligned}
+						\mu &amp;= \displaystyle \int_a^b x \dfrac{1}{b-a} \, dx = \\[1ex]
+						&amp;= \dfrac{1}{b-a} \left[ \dfrac{x^2}{2} \right]_a^b =
+						\dfrac{1}{b-a} \dfrac{b^2 - a^2}{2} = \\[1ex]
+						&amp;= \dfrac{1}{b-a} \dfrac{(b+a)(b-a)}{2} = \dfrac{b+a}{2}
+					\end{aligned}
+					$
+				</p>
+		</li>
+		<li>Distribución normal:
+		
+				<p style="text-align:center;margin-top:1em">
+					<object data="variables_aleatorias_08.svg" type="image/svg+xml"
+					width="150" height="150" class="ejemplo"
+					style="display:inline-block;vertical-align:middle;margin-right:1em">
+					</object>
+					$
+					\displaystyle \int_{-\infty}^{+\infty} x
+					\dfrac{1}{\sqrt{2\pi} \sigma} e^{-\tfrac{(x-\mu)^2}{2\sigma^2}}
+					\, dx
+					\underset{
+						\begin{subarray}{c}
+							\uparrow \\[.5ex]
+							\llap{z \,} = \rlap{\, \tfrac{x-\mu}{\sigma}} \\[.5ex]
+							\llap{dz \,} = \rlap{\, \tfrac{dx}{\sigma}}
+						\end{subarray}
+					}{=} \quad
+					$
+				</p>
+				
+				<p style="text-align:center">
+					$
+					\begin{array}{l}
+						= \displaystyle \int_{-\infty}^{+\infty}
+						\dfrac{z\sigma + \mu}{\sqrt{2\pi}} e^{-\tfrac{z^2}{2}} \,
+						dz = \\[1ex]
+						= \dfrac{\sigma}{\sqrt{2\pi}} \displaystyle
+						\int_{-\infty}^{+\infty} z e^{-\tfrac{z^2}{2}} \, dz + \mu
+						\mspace{-9mu}
+						\underbrace{
+							\int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}}
+							e^{-\tfrac{z^2}{2}} \, dz
+						}_{
+							\begin{subarray}{c}
+								1 \\
+								(\text{dist. normal con } \mu \, = \, 0,\, \sigma \, = \,
+								1)
+							\end{subarray}
+						} \mspace{-9mu} = \\[1ex]
+						= \dfrac{\sigma}{\sqrt{2\pi}} 
+						\underbrace{
+							\left[ -e^{-\tfrac{z^2}{2}} \right]_{-\infty}^{+\infty}
+						}_{0} + \mu = \mu
+					\end{array}
+					$
+				</p>
+		</li>
+		<li>Distribución exponencial:
+		
+				<p style="display:table;margin-left:30px;margin-right:30px;margin-top:1em">
+					<span style="display:table-row">
+						<span style="display:table-cell;vertical-align:middle">
+							<object data="variables_aleatorias_09.svg" class="ejemplo"
+							width="180" height="115" type="image/svg+xml"
+							style="margin-right:1em"></object>
+						</span>
+						<span style="display:table-cell;vertical-align:middle">
+							No hay simetría y, a diferencia de las anteriores, no se 
+							puede situar $\mu$ a simple vista sobre la gráfica.</span>
+					</span>
+				</p>
+			
+				<p style="text-align:center">
+					$
+					\begin{align}
+						\mu &amp;= \int_0^{+\infty} x \lambda e^{-\lambda x} \, dx
+						= -\lambda \int_0^{+\infty}
+						\dfrac{\partial}{\partial \lambda} (e^{-\lambda x}) \, dx
+						= \\[1ex]
+						&amp;\underset{(*)}{=} -\lambda \dfrac{d}{d\lambda} \left(
+						\int_0^{+\infty} e^{-\lambda x} \, dx \right) = -\lambda
+						\dfrac{d}{d\lambda} \left[ -\dfrac{1}{\lambda} e^{-\lambda x}
+						\right]_0^{+\infty} = \\[1ex]
+						&amp;= -\lambda \dfrac{d}{d\lambda} \left( \dfrac{1}{\lambda}
+						e^0 - \dfrac{1}{\lambda} e^{-\infty} \right) = -\lambda
+						\dfrac{d}{d\lambda} \left( \dfrac{1}{\lambda} \right) =
+						-\lambda \left( -\dfrac{1}{\lambda^2} \right) =
+						\dfrac{1}{\lambda}
+					\end{align}
+					$
+				</p>
+				
+			<p>(*) Regla de Leibniz de derivación bajo el signo integral.</p>
+		</li>
+	</ol>
+	
+</div>
+
+<hr>
+
+<p>b) Varianza:</p>
+
+<p>El promedio de los cuadrados de las desviaciones de la variable
+aleatoria respecto a la media. Para una variable aleatoria continua
+la varianza, $\sigma^2$, es:</p>
+
+	<p style="text-align:center">
+		$\sigma^2 = \displaystyle \int_{-\infty}^{+\infty} (x-\mu)^2 \, f(x)
+		\, dx$</p>
+		
+<p>Es una medida de la dispersión de la distribución.</p>
+		
+<p>Para la distribución normal, integrando por partes:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle \int_{-\infty}^{+\infty}
+		\dfrac{(x-\mu)^2}{\sqrt{2}\sigma} e^{-\tfrac{(x-\mu)^2}{2\sigma^2}}
+		\, dx
+		\underset{
+			\begin{subarray}{c}
+				\big\uparrow \\[.5ex]
+				\llap{z \,} = \rlap{\, \tfrac{x-\mu}{\sigma}} \\[.5ex]
+				\llap{dz \,} = \rlap{\, \tfrac{dx}{\sigma}}
+			\end{subarray}
+		}{=}
+		\int_{-\infty}^{+\infty} \dfrac{z^2 \sigma^2}{\sqrt{2\pi}}
+		e^{-\tfrac{z^2}{2}} \, dz
+		$
+	</p>
+	
+<p>Entonces, teniéndose en cuenta que:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			d(uv) = u \, dv + v \, du \\[1ex]
+			\Downarrow \\[1ex]
+			u \, dv = d(uv) - v \, du \\[1ex]
+			\Downarrow \\[1ex]
+			\displaystyle \int u \, dv = uv - \int v \, du
+		\end{array}
+		$
+	</p>
+	
+<p>Si:</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{lcl}
+			u = z &amp; \Rightarrow &amp; du = dz \\[1ex]
+			dv = z e^{-\tfrac{z^2}{2}} \, dz &amp; \Rightarrow &amp; v =
+			-e^{-\tfrac{z^2}{2}}
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\displaystyle
+		\dfrac{\sigma^2}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} z^2
+		e^{-\tfrac{z^2}{2}}	\, dz = \dfrac{\sigma^2}{\sqrt{2\pi}}
+		\underbrace{
+			\left[ -z e^{-\tfrac{z^2}{2}} \right]_{-\infty}^{+\infty}
+		}_{
+			\begin{subarray}{c}
+				0 \\[.25ex]
+				\text{Regla de} \\
+				\text{L'Hôpital}
+			\end{subarray}
+		} + \sigma^2 
+		\underbrace{
+			\int_{-\infty}^{+\infty} \dfrac{1}{\sqrt{2\pi}}
+			e^{-\tfrac{z^2}{2}} \, dz
+		}_{
+			\begin{subarray}{c}
+				1 \\
+				(\text{dist. normal con } \mu = 0,\, \sigma = 1)
+			\end{subarray}
+		} = \sigma^2
+		$
+	</p>
+	
+<p>En la distribución normal significaría una mayor o menor amplitud de 
+la campana:</p>
+
+<center>
+<object data="variables_aleatorias_10.svg" type="image/svg+xml"
+width="240" height="150"></object>
+</center>
+
+<p>Para la distribución uniforme:</p>
+
+	<p style="text-align:center">
+		<object data="variables_aleatorias_11.svg" type="image/svg+xml"
+		width="240" height="150"
+		style="display:inline-block;vertical-align:middle"></object>
+		$
+		\sigma^2 = \displaystyle \int_a^b \left(x - \dfrac{b+a}{2} \right)^2
+		\dfrac{1}{b-a} \, dx
+		\underset{
+			\begin{subarray}{c}
+				\uparrow \\
+				\llap{z \,} = \rlap{\, x - \tfrac{b+a}{2}} \\[.5ex]
+				\llap{dz \,} = \rlap{\, dx}
+			\end{subarray}
+		}{=}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			= \dfrac{1}{b-a} \displaystyle \int_{z(a)}^{z(b)} z^2 dz =
+			\dfrac{1}{b-a} \left[ \dfrac{z^3}{3} \right]_{z(a)}^{z(b)}
+			\underset{
+				\big\uparrow \\
+				\llap{z(a) \,} = \rlap{\, \tfrac{a-b}{2}} \\[.5ex]
+				\llap{z(b) \,} = \rlap{\, \tfrac{b-a}{2}}
+			}{=} \\[1ex]
+			= \dfrac{1}{b-a} \dfrac{(b-a)^3 - (a-b)^3}{3(2^3)} = \\[1ex]
+			=	\dfrac{1}{b-a} \dfrac{(b-a)^3 - (-1)^3 (b-a)^3}{24} = \\[1ex]
+			= \dfrac{1}{b-a} \dfrac{2(b-a)^3}{24} = \dfrac{(b-a)^2}{12}			
+		\end{array}
+		$
+	</p>
+	
+<p>Para la distribución exponencial:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{align}
+			\int_0^\infty \left( x - \dfrac{1}{\lambda} \right)^2 \lambda
+			e^{-\lambda x} \, dx &amp;= \int_0^\infty \left( x^2 -
+			\dfrac{2x}{\lambda} + \dfrac{1}{\lambda^2} \right)
+			\lambda e^{-\lambda x} \, dx = \\[1ex]
+			&amp;= \lambda \int_0^\infty x^2 e^{- \lambda x} \, dx -
+			\dfrac{2}{\lambda}
+			\underbrace{
+				\int_0^\infty x \lambda e^{-\lambda x} \, dx
+			}_{\tfrac{1}{\lambda}} + \dfrac{1}{\lambda^2}
+			\underbrace{
+				\int_0^\infty	\lambda e^{-\lambda x} \, dx
+			}_{1} = \\[1ex]
+			&amp;= -\lambda \int_0^\infty \dfrac{\partial}{\partial \lambda}
+			( x e^{-\lambda x} ) \, dx - \dfrac{2}{\lambda^2} +
+			\dfrac{1}{\lambda^2} = \\[1ex]
+			&amp;
+			\underset{
+				\begin{subarray}{c}
+					\uparrow \\
+					\llap{\text{Re}}\text{g}\rlap{\text{la}} \\
+					\text{de} \\
+					\llap{\text{Lei}}\text{b}\rlap{\text{niz}}
+				\end{subarray}
+			}{=} - \lambda \dfrac{d}{d\lambda} \biggl( \dfrac{1}{\lambda}
+			\underbrace{
+				\int_0^\infty x \lambda e^{-\lambda x} \, dx
+			}_{\tfrac{1}{\lambda}} \biggr) - \dfrac{1}{\lambda^2} = \\[1ex]
+			&amp;= -\lambda \dfrac{d}{d\lambda} \left( \dfrac{1}{\lambda^2}
+			\right) - \dfrac{1}{\lambda^2} = -\lambda \dfrac{-2}{\lambda^3} 
+			- \dfrac{1}{\lambda^2} = \dfrac{2}{\lambda^2} -
+			\dfrac{1}{\lambda^2} = \\[1ex]
+			&amp;= \dfrac{1}{\lambda^2}
+		\end{align}
+		$
+	</p>
+	
+<p>También, se denomina:</p>
+
+	<p style="text-align:center">
+		$\sqrt{\sigma^2} = \sigma \leftarrow$ Desviación típica o estándar.</p>
+		
+<p><b>6.</b> Distribución normal:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\underbrace{X \sim N(\mu,\sigma)}_{\uparrow}$</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\hphantom{X \sim {}} X$, variable aleatoria, tiene distribución normal con parámetros
+				$\mu$ y $\sigma$.</span>
+		</span>
+	</p>
+	
+<p>Si $X$ es una variable aleatoria con media $\mu$ y desviación típica
+$\sigma$:</p>
+
+		<p style="margin-left:60px">
+			$\llap{\Rightarrow {}} X+a$ es una variable aleatoria con media
+			$\mu + a$ y desviación típica $\sigma$.</p>
+			
+		<p style="margin-left:0px;text-align:center">
+			$
+			\begin{array}{l}
+				\begin{aligned}
+					\int_{-\infty}^{+\infty} (x+a) \, f(x) \, dx &amp;=
+					\underbrace{\int_{-\infty}^{+\infty} x \, f(x) \, dx}_\mu +
+					a \underbrace{\int_{-\infty}^{+\infty} f(x) \, dx}_1 = \\[1ex]
+					&amp;= \mu + a
+				\end{aligned} \\[1em]
+				\begin{aligned}
+					\int_{-\infty}^{+\infty} (x+a - (\mu+a))^2 \, f(x) \, dx &amp;=
+					\int_{-\infty}^{+\infty} (x-\mu)^2 \, f(x) \ dx = \\[1ex]
+					&amp;= \sigma^2
+				\end{aligned}
+			\end{array}
+			$
+		</p>
+		
+		<p style="margin-left:60px">
+			$\llap{\Rightarrow {}} \alpha X$, con $\alpha &gt;0$, es una
+			variable aleatoria con media $\alpha \mu$ y desviación típica
+			$\alpha \sigma$.</p>
+			
+		<p style="margin-left:60p;text-align:center">
+			$
+			\begin{array}{l}
+				\displaystyle \int_{-\infty}^{+\infty} \alpha x \, f(x) \, dx	=
+				\alpha \underbrace{\int_{-\infty}^{+\infty} x \, f(x) \, dx}_{\mu}
+				= \alpha \mu \\[1em]
+				\displaystyle \int_{-\infty}^{+\infty} (\alpha x - \alpha \mu)^2
+				\, f(x) \, dx = \alpha^2
+				\underbrace{
+					\int_{-\infty}^{+\infty} (x - \mu)^2 \, f(x) \, dx
+				}_{\sigma ^2}	= \alpha^2 \sigma^2
+			\end{array}
+			$
+		</p>
+		
+<p>Donde se ha tenido en cuenta que la probabilidad para una variable
+derivada de $X$, i.e. función de $X$, es la misma que $X$.</p>
+
+<p>Se define:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-cell">
+			$Z = \dfrac{X - \mu}{\sigma} \,,$ &nbsp;</span>
+		<span style="table-cell;text-align:left">
+			variable reducida,
+			<span style="display:block">
+			estandarizada ó</span>
+			normalizada.
+		</span>
+	</p>
+	
+<p>Para la variable $Z$, por tanto, se tiene $\mu = 0$ y $\sigma = 1$. En
+consecuencia, puede transformarse cualquier problema de distribución
+normal, por medio de $Z$, a uno con $\mu = 0$ y $\sigma = 1$:</p>
+
+	<p style="text-align:center">
+		$X \sim N(\mu,\sigma) \, \to \, Z \sim N(0,1)$</p>
+		
+<p>Siendo:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$\phi(z) = \dfrac{1}{\sqrt{2\pi}} e^{-\tfrac{z^2}{2}}\,,$</span>
+			<span style="display:table-cell">
+				función de densidad normal<br>reducida.</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1em;padding-right:1em">
+				$\mathit\Phi(z) = {\rm Prob}(Z &lt; z) = \displaystyle
+				\int_{-\infty}^{z} \dfrac{1}{\sqrt{2\pi}} e^{-\tfrac{z^2}{2}} \,
+				dz\,,$</span>
+			<span style="display:table-cell">
+				función de distribución normal<br>reducida.
+			</span>
+		</span>
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		${\rm Prob}\mspace{1mu}(X &lt; x) = {\rm Prob} \biggl(
+		\underbrace{\dfrac{X - \mu}{\sigma}}_Z &lt; \dfrac{x-\mu}{\sigma}
+		\biggr) = {\rm Prob} \! \left( Z &lt; \dfrac{x-\mu}{\sigma} \right)
+		= \mathit\Phi \! \left( \dfrac{x-\mu}{\sigma} \right)$</p>
+		
+<p>En sentido inverso:</p>
+
+	<p style="text-align:center">
+		$\mathit\Phi(z) = {\rm Prob}\mspace{1mu}(Z &lt; z) = {\rm Prob}
+		\mspace{1mu} ( \underbrace{\mu + Z\sigma}_X &lt; \mu + z\sigma ) =
+		{\rm Prob}\mspace{1mu}( X &lt; \mu + z\sigma )$</p>
+		
+<p>Existen tablas que siempre dan la probabilidad desde $z = a$, con $a 
+\geq 0$, hasta $-\infty$. Para saber la probabilidad del complementario,
+i.e. $z = a$ hasta $+\infty$, sólo hay que restar a $1$, ya que ambas 
+probabilidades juntas, el área total bajo la curva, es $1$.</p>
+
+<p>La probabilidad de $z &lt; -a$ es igual, por simetría, a la de $z = 
+a$ hasta $+\infty$. La probabilidad de la parte central entre los 
+valores $-a$ y $a$, i.e. ${\rm Prob} \mspace{1mu} (|z| &lt; a)$, es el 
+área comprendida entre ambos valores.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		${\rm Prob}\mspace{1mu}(0{,}54 &lt; z &lt; 1{,}67) = 0{,}95254 -
+		0{,}70540 = 0{,}24714$</p>
+		
+<center>
+	<table class="tabla ejemplo">
+		<tr>
+			<th>$\boldsymbol{z}$</th>
+			<th><b>0,00</b></th>
+			<th><b>0,01</b></th>
+			<th><b>0,02</b></th>
+			<th><b>0,03</b></th>
+			<th><b>0,04</b></th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>0,5</b></td>
+			<td>0,69146</td>
+			<td>0,69497</td>
+			<td>0,69847</td>
+			<td>0,70194</td>
+			<td>0,70540</td>
+		</tr>
+		<tr>
+			<td style="background:none"><b>1,6</b></td>
+			<td>0,94520</td>
+			<td>0,94630</td>
+			<td>0,94738</td>
+			<td>0,94845</td>
+			<td>0,94950</td>
+		</tr>
+	</table>
+</center>
+
+<center>
+	<table class="tabla ejemplo" style="margin-top:1em;margin-bottom:1em">
+		<tr>
+			<th>$\boldsymbol{z}$</th>
+			<th><b>0,05</b></th>
+			<th><b>0,06</b></th>
+			<th><b>0,07</b></th>
+			<th><b>0,08</b></th>
+			<th><b>0,09</b></th>
+		</tr>
+		<tr>
+			<td style="background:none"><b>0,5</b></td>
+			<td>0,70884</td>
+			<td>0,71226</td>
+			<td>0,71566</td>
+			<td>0,71904</td>
+			<td>0,72240</td>
+		</tr>
+		<tr>
+			<td style="background:none"><b>1,6</b></td>
+			<td>0,95053</td>
+			<td>0,95154</td>
+			<td>0,95254</td>
+			<td>0,95352</td>
+			<td>0,95449</td>
+		</tr>
+	</table>
+</center>
+
+<center>
+	<object data="variables_aleatorias_12.svg" type="image/svg+xml"
+	width="240" height="150" class="ejemplo"></object>
+</center>
+	
+</div>
+
+<hr>
+
+<p>Un ejemplo de afrontar la integración:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			z = 1{,}5 \\[1ex]
+			\begin{aligned}
+				{\rm Prob}\mspace{1mu}(Z &lt; 1{,}5) &amp;= \int_{-\infty}^{1{,}5}
+				\dfrac{1}{\sqrt{2\pi}} \exp \left( -\dfrac{z^2}{2} \right) \, dz
+				= \\[1ex]
+				&amp;= 
+				\underbrace{
+					\int_{-\infty}^0 \dfrac{1}{\sqrt{2\pi}} \exp \left(
+					-\dfrac{z^2}{2} \right) \, dz
+				}_{0{,}5 \vphantom{\text{integración numérica}}} +
+				\underbrace{
+					\int_0^{1{,}5} \dfrac{1}{\sqrt{2\pi}} \exp \left(
+					-\dfrac{z^2}{2} \right) \, dz
+				}_{
+					\begin{subarray}{c}
+						\text{integración numérica} \\
+						(\text{CASIO $\textit{fx-3900Pv}$})
+					\end{subarray}
+				}	= \\[1ex]
+				&amp;= 0{,}5 + 0{,}43319 = 0{,}93319
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<center>
+	<object data="variables_aleatorias_13.svg" type="image/svg+xml"
+	width="240" height="150"></object>
+</center>
+	
+<p>De esta manera se han construido las tablas del último ejemplo. 
+Normalmente algo innecesario, ya que se encuentran publicadas.</p>
+
+<p>Generalizando:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				{\rm Prob}\mspace{1mu}(\mu - 2 \sigma &lt; X &lt; \mu + 2 \sigma)
+				&amp;= {\rm Prob} \left( -2 &lt; \dfrac{X - \mu}{\sigma} &lt; 2
+				\right) = \\[1ex]
+				&amp;= {\rm Prob}\mspace{1mu}(-2 &lt; Z &lt; 2) = \\[1ex]
+				&amp;= {\rm Prob}\mspace{1mu}(Z &lt; 2) - {\rm Prob}\mspace{1mu}
+				(Z &lt; -2) = \\[1ex]
+				&amp;= {\rm Prob}\mspace{1mu}(Z &lt; 2) - (1 -
+				{\rm Prob}\mspace{1mu}(Z &lt; 2)) = \\[1ex]
+				&amp;= 2 \times {\rm Prob}\mspace{1mu}(Z &lt; 2) - 1 = 2 \times
+				0{,}97725 - 1 = \\[1ex]
+				&amp;= 0{,}9545 = \pu{95,45 \%}
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				{\rm Prob}\mspace{1mu}(\mu - \sigma &lt; X &lt; \mu + \sigma)
+				&amp;= {\rm Prob}\mspace{1mu}(-1 &lt; Z &lt; 1) = \\[1ex]
+				&amp;= {\rm Prob}\mspace{1mu}(Z &lt; 1) - {\rm Prob}\mspace{1mu}
+				(Z &lt; -1) = \\[1ex]
+				&amp;= 2 \times {\rm Prob}\mspace{1mu}(Z &lt; 1) - 1 = 2 \times
+				0{,}84134 - 1 = \\[1ex]
+				&amp;= 0{,}6827 = \pu{68,27 \%}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<center>
+	<object data="variables_aleatorias_14.svg" type="image/svg+xml"
+	width="320" height="200"></object>
+</center>
+
+<p>Para un químico es de interés cuantificar la precisión de un método 
+de análisis.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se suministra:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				sosa &ensp; $\pu{50 \pm 1 \%} \leftarrow {}$</span>
+			<span style="display:table-cell">
+				Porcentaje masa/volumen,
+				<span style="display:block">
+					(g soluto/$\pu{100 ml}$ solución).</span>
+			</span>
+		</span>
+	</p>
+	
+<p>En su admisión, para determinar su pureza, se lleva a cabo un método
+de análisis para el cual:</p>
+
+	<p style="text-align:center">
+		$\sigma = 0{,}21$</p>
+		
+<p>Esto es, en $\pm \, \pu{0,42 \%}$ en torno de la media, que sin 
+errores sistemáticos sería el valor real de la concentración, estarán 
+comprendidos el $\pu{95 \%}$ de los valores que se obtengan.</p>
+
+<p>Entonces, en dos análisis de la muestra, si:</p>
+
+	<p style="margin-left:30px;display:table">
+		<span style="display:table-row;display:table-cell">
+			<span style="display:table-cell">
+				$\pu{48,17 \%} \leftarrow {}$</span>
+			<span style="display:table-cell">
+				No sería bueno tenerlo en cuenta, ya que estaría fuera de los
+				valores probables. Posible error de análisis.</span>
+		</span>
+	</p>
+	
+	<p style="margin-left:30px;display:table">
+		<span style="display:table-row;display:table-cell">
+			<span style="display:table-cell">
+				$\pu{48,79 \%} \leftarrow {}$</span>
+			<span style="display:table-cell">
+				Estaría dentro de los valores que son muy probables.</span>
+		</span>
+	</p>
+	
+</div>
+
+<hr>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a href="../aproximacion/aproximacion.html" title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../inferencia_estadistica/inferencia_estadistica.html"
+		title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>

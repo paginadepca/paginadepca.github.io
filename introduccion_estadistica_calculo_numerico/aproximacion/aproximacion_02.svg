@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="150" version="1.1" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.iki.fi/pav/software/textext/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnuplot</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title>Gnuplot</title>
+ <desc>Produced by GNUPLOT 5.2 patchlevel 2</desc>
+ <g id="gnuplot_canvas">
+  <rect width="200" height="150" fill="none"/>
+  <defs>
+   <circle id="gpPt5" r="1" stroke="currentColor" stroke-width=".222"/>
+   <use id="gpPt6" fill="currentColor" xlink:href="#gpPt5"/>
+  </defs>
+  <g fill="none" stroke="currentColor">
+   <g color="black">
+    <path d="m16.6 18.1v112.1h158.4m0-112.1m-158.4 0" stroke="#000"/>
+   </g>
+   <g color="black">
+    <g transform="translate(8.3,23.4)" fill="#000" font-family="Stix Two Text" font-size="16" stroke="none" text-anchor="middle">
+     <text>
+      <tspan font-family="Stix Two Text" font-style="italic">y</tspan>
+     </text>
+    </g>
+   </g>
+   <g color="black">
+    <g transform="translate(175 142.6)" fill="#000" font-family="Stix Two Text" font-size="16" stroke="none" text-anchor="middle">
+     <text>
+      <tspan font-family="Stix Two Text" font-style="italic">x</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="gnuplot_plot_1a">
+   <title>y(x)</title>
+   <g color="black" fill="none">
+    <path d="m31 117.9 2.6-1.6 1.3-0.9 2.6-1.6 1.4-0.8 1.3-0.9 3.9-2.4 1.3-0.9 3.9-2.4 1.3-0.9 1.3-0.8 1.4-0.8 1.3-0.8 1.3-0.9 3.9-2.4 1.3-0.9 2.6-1.6 1.3-0.9 1.3-0.8 1.4-0.8 1.3-0.8 1.3-0.9 3.9-2.4 1.3-0.9 3.9-2.4 1.3-0.9 1.4-0.8 2.6-1.6 1.3-0.9 2.6-1.6 1.3-0.9 3.9-2.4 1.3-0.9 1.4-0.8 2.6-1.6 1.3-0.9 3.9-2.4 1.3-0.9 3.9-2.4 1.4-0.9 3.9-2.4 1.3-0.9 2.6-1.6 1.3-0.9 3.9-2.4 1.4-0.9 3.9-2.4 1.3-0.9 3.9-2.4 1.3-0.9 2.6-1.6 1.4-0.8 1.3-0.9 3.9-2.4 1.3-0.9 2.6-1.6 1.3-0.9 2.6-1.6 1.4-0.8 1.3-0.9 3.9-2.4 1.3-0.9" stroke="#9400d3"/>
+    <g transform="translate(160.6 41)" fill="#000" font-family="Stix Two Text" font-size="15">
+     <text font-family="Stix Two Text" xml:space="preserve"><tspan xml:space="preserve"> </tspan><tspan font-style="italic" xml:space="preserve">y</tspan><tspan xml:space="preserve">(</tspan><tspan font-style="italic" xml:space="preserve">x</tspan><tspan xml:space="preserve">)</tspan></text>
+    </g>
+   </g>
+  </g>
+  <g fill="none" stroke="currentColor">
+   <g color="black">
+    <path d="m16.6 18.1v112.1h158.4m0-112.1m-158.4 0" stroke="#000"/>
+   </g>
+   <g color="black">
+    <g transform="translate(49.9,92.2)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g color="black">
+    <use transform="translate(45.4,92.8) scale(2.25)" color="black" xlink:href="#gpPt6"/>
+   </g>
+   <g color="black">
+    <g transform="translate(71.5,110.9)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g color="black">
+    <use transform="translate(67 111.5) scale(2.25)" color="black" xlink:href="#gpPt6"/>
+   </g>
+   <g color="black">
+    <g transform="translate(100.3,92.2)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g color="black">
+    <use transform="translate(95.8,92.8) scale(2.25)" color="black" xlink:href="#gpPt6"/>
+   </g>
+   <g color="black">
+    <g transform="translate(114.7,54.9)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g color="black">
+    <use transform="translate(110.2,55.5) scale(2.25)" color="black" xlink:href="#gpPt6"/>
+   </g>
+   <g color="black">
+    <g transform="translate(143.5,45.5)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g color="black">
+    <use transform="translate(139 46.1) scale(2.25)" color="black" xlink:href="#gpPt6"/>
+   </g>
+   <g color="black">
+    <g transform="translate(8.3,23.4)" fill="#000" font-family="Stix Two Text" font-size="16" stroke="none" text-anchor="middle">
+     <text>
+      <tspan font-family="Stix Two Text" font-style="italic">y</tspan>
+     </text>
+    </g>
+   </g>
+   <g color="black">
+    <g transform="translate(175 142.6)" fill="#000" font-family="Stix Two Text" font-size="16" stroke="none" text-anchor="middle">
+     <text>
+      <tspan font-family="Stix Two Text" font-style="italic">x</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="gnuplot_plot_1b">
+   <title>x(y)</title>
+   <g color="black" fill="none">
+    <path d="m36 130.2 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 2.4-2.2 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.3-1.1 1.2-1.1 1.3-1.2 1.2-1.1 1.3-1.1 1.2-1.2 1.2-1.1" stroke="#009e73"/>
+    <g transform="translate(159.2 23)" fill="#000" font-family="Stix Two Text" font-size="15">
+     <text font-family="Stix Two Text" xml:space="preserve"><tspan xml:space="preserve"> </tspan><tspan font-style="italic" xml:space="preserve">x</tspan><tspan xml:space="preserve">(</tspan><tspan font-style="italic" xml:space="preserve">y</tspan><tspan xml:space="preserve">)</tspan></text>
+    </g>
+   </g>
+  </g>
+  <g fill="none" stroke="currentColor">
+   <g color="black" stroke-width="2">
+    <g transform="translate(96 79.2)" fill="#000" font-family="Arial" font-size="12" stroke="none">
+     <text/>
+    </g>
+   </g>
+   <g>
+    <g color="black">
+     <use transform="translate(91.5 79.8) scale(2.7)" color="black" xlink:href="#gpPt5"/>
+    </g>
+    <g color="black">
+     <path d="m45.4 108.8v-16m21.6 2.4v16.3m28.8-34.5v15.8m14.4-24.9v-12.4m28.8-5.7v-3.7" stroke="#000"/>
+    </g>
+    <g color="black">
+     <path d="m45.4 92.8h31.7" stroke="#000" stroke-dasharray="1.0,2.0"/>
+    </g>
+    <g color="black">
+     <path d="m67 111.5h-10.4" stroke="#000" stroke-dasharray="1.0,2.0"/>
+    </g>
+    <g color="black">
+     <path d="m95.8 92.8h-18.7" stroke="#000" stroke-dasharray="1.0,2.0"/>
+    </g>
+    <g color="black">
+     <path d="m110.2 55.5h8" stroke="#000" stroke-dasharray="1.0,2.0"/>
+    </g>
+    <g color="black">
+     <path d="m139 46.1h-10.6" stroke="#000" stroke-dasharray="1.0,2.0"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g id="content" transform="matrix(1.6 0 0 -1.6 -181.09 1125.9)" fill="none" fill-rule="evenodd" stroke="#000" stroke-miterlimit="10.433" ns0:alignment="middle center" ns0:jacobian_sqrt="1.6" ns0:pdfconverter="pstoedit" ns0:preamble="/home/antonio/.config/inkscape/extensions/textext/default_packages.tex" ns0:scale="1.2" ns0:texconverter="pdflatex" ns0:text="$(\\overline{x},\\overline{y})$" ns0:version="0.10.0" xml:space="preserve">
+<path d="m151.65 663.95-0.06-0.04-0.07-0.05-0.24-0.16-0.05-0.04-0.06-0.03-0.05-0.04-0.04-0.04-0.05-0.03-0.05-0.04-0.04-0.03-0.05-0.04-0.08-0.06-0.08-0.07-0.28-0.28-0.07-0.08-0.06-0.08-0.07-0.08c-0.71-0.87-1.06-1.86-1.06-3.02 0-1.26 0.37-2.24 1.25-3.25 0.41-0.48 0.66-0.7 1.18-1.01l0.12 0.16c-0.79 0.62-1.07 0.97-1.34 1.71-0.24 0.67-0.35 1.43-0.35 2.42 0 1.04 0.13 1.86 0.4 2.47 0.28 0.62 0.58 0.98 1.29 1.55z" fill="#000" stroke-width="0"/>
+<line x1="152.03" x2="156.98" y1="663.59" y2="663.59" stroke-width=".558"/>
+<path d="m156.54 658.34-0.05-0.05-0.01-0.02-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.01-0.01-0.01-0.02-0.02-0.01-0.01-0.02-0.02-0.02v-0.01l-0.03-0.03v-0.01l-0.01-0.01c-0.23-0.3-0.35-0.4-0.46-0.4-0.15 0-0.24 0.13-0.31 0.41-0.02 0.08-0.03 0.14-0.04 0.17-0.25 1-0.36 1.46-0.36 1.61 0.44 0.76 0.8 1.2 0.98 1.2 0.06 0 0.14-0.03 0.24-0.08 0.12-0.07 0.19-0.09 0.27-0.09 0.21 0 0.35 0.15 0.35 0.36s-0.17 0.37-0.41 0.37c-0.44 0-0.82-0.36-1.51-1.42l-0.11 0.54c-0.14 0.68-0.25 0.88-0.52 0.88-0.22 0-0.56-0.09-1.16-0.29l-0.11-0.04 0.04-0.15c0.38 0.09 0.47 0.11 0.55 0.11 0.25 0 0.31-0.09 0.45-0.69l0.29-1.22-0.82-1.16c-0.19-0.3-0.39-0.48-0.5-0.48-0.06 0-0.16 0.03-0.26 0.09-0.13 0.07-0.24 0.1-0.32 0.1-0.19 0-0.34-0.15-0.34-0.35 0-0.26 0.2-0.41 0.5-0.41 0.31 0 0.43 0.09 0.92 0.69 0.27 0.32 0.48 0.59 0.9 1.16l0.3-1.19c0.13-0.51 0.26-0.66 0.58-0.66 0.38 0 0.64 0.23 1.22 1.13z" fill="#000" stroke-width="0"/>
+<path d="m158.93 657.29v0.04l-0.01 0.04v0.11l-0.01 0.03v0.03l-0.02 0.06v0.03l-0.03 0.09-0.01 0.02-0.01 0.03-0.01 0.02-0.01 0.03-0.01 0.02-0.03 0.04-0.02 0.04-0.03 0.04-0.12 0.12-0.03 0.02-0.04 0.03-0.03 0.02-0.04 0.01-0.03 0.02-0.03 0.01-0.04 0.01-0.12 0.04h-0.06l-0.03 0.01h-0.04c-0.25 0-0.58-0.15-0.58-0.58 0-0.39 0.36-0.5 0.62-0.5 0.07 0 0.12 0.01 0.15 0.03 0.04 0.01 0.07 0.02 0.09 0.02 0.07 0 0.14-0.06 0.14-0.14 0-0.19-0.16-0.64-0.82-1.06l0.09-0.19c0.3 0.1 1.12 0.76 1.12 1.46z" fill="#000" stroke-width="0"/>
+<line x1="161.13" x2="165.55" y1="663.59" y2="663.59" stroke-width=".558"/>
+<path d="m161.28 661.21h0.03l0.01 0.01h0.03l0.01 0.01h0.05l0.02 0.01h0.07l0.01 0.01h0.08c0.57 0 0.72-0.25 1.18-1.96 0.17-0.64 0.41-1.81 0.41-1.98 0-0.15-0.06-0.31-0.21-0.49-0.31-0.41-0.51-0.67-0.62-0.79-0.21-0.22-0.33-0.3-0.46-0.3-0.06 0-0.13 0.04-0.24 0.11-0.15 0.12-0.26 0.17-0.37 0.17-0.22 0-0.39-0.17-0.39-0.38 0-0.25 0.22-0.44 0.51-0.44 0.64 0 1.95 1.49 3.02 3.46 0.68 1.22 0.96 1.93 0.96 2.42 0 0.3-0.25 0.55-0.55 0.55-0.23 0-0.39-0.15-0.39-0.37 0-0.15 0.08-0.26 0.28-0.39 0.19-0.11 0.26-0.2 0.26-0.34 0-0.39-0.37-1.17-1.22-2.57l-0.19 1.15c-0.15 0.88-0.71 2.52-0.86 2.52h-0.04c-0.01-0.01-0.05-0.01-0.09-0.01-0.09-0.01-0.45-0.07-0.98-0.17-0.05-0.01-0.18-0.04-0.32-0.06z" fill="#000" stroke-width="0"/>
+<path d="m165.93 655.48 0.14 0.08 0.06 0.05 0.12 0.08 0.06 0.03 0.15 0.12 0.05 0.03 0.05 0.04 0.05 0.03 0.04 0.04 0.04 0.03 0.09 0.07 0.07 0.07 0.08 0.07 0.21 0.21 0.06 0.08 0.14 0.16c0.71 0.86 1.06 1.86 1.06 3.02 0 1.27-0.37 2.23-1.25 3.25-0.41 0.47-0.67 0.69-1.19 1.01l-0.11-0.16c0.79-0.63 1.06-0.97 1.34-1.72 0.24-0.66 0.35-1.42 0.35-2.41 0-1.03-0.13-1.86-0.4-2.46-0.28-0.63-0.58-0.99-1.29-1.56z" fill="#000" stroke-width="0"/>
+</g>
+</svg>

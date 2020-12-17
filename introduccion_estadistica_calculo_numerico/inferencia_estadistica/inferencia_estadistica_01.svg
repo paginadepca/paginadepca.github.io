@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="90.5" height="60.75" version="1.1" viewBox="0 0 90.5 60.75" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <style type="text/css">
+  @import url('../estilo.css');
+ </style> 
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-94.75 -117.27)" stroke="#000">
+  <path d="m100 172.52h80" fill="none" stroke-width="1px"/>
+  <g fill="#b3b3b3" stroke-linejoin="round" stroke-width=".5">
+   <rect x="100" y="142.52" width="20" height="30"/>
+   <rect x="120" y="122.52" width="20" height="50"/>
+   <rect x="140" y="152.52" width="20" height="20"/>
+   <rect x="160" y="162.52" width="20" height="10"/>
+  </g>
+ </g>
+</svg>

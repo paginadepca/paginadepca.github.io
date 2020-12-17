@@ -1,0 +1,1779 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="es">
+
+<head>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showMathMenu: false,
+    "HTML-CSS": {
+      availableFonts: ["STIX"],
+      preferredFont: "STIX",
+      webFont: "STIX-Web",
+      matchFontHeight: false,
+      mtextFontInherit: true
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ]
+    },
+    TeX: {
+      extensions: ["cancel.js"]
+    },
+    "fast-preview": {
+      disabled: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Resolución de sistemas de ecuaciones lineales">
+<meta name="keywords" content="resolución, sistemas, ecuaciones, lineales">
+<title>Resolución de sistemas de ecuaciones lineales</title>
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-102174465-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+</head>
+
+<body>
+
+<div id="title">
+
+<h3>Resolución de sistemas de ecuaciones lineales</h3>
+
+<ul>
+	<li><a href="../introduccion_estadistica_calculo_numerico.html">Temario</a></li>
+	<li><a href="../../index.htm">Inicio</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+	
+<p><b>1.</b> Introducción:</p>
+
+<p>Un sistema de $n$ ecuaciones lineales con $n$ incógnitas puede
+escribirse:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{array}{l}
+			a_{11} x_1 + a_{12} x_2 + \dotsb + a_{1n} x_n = b_1 \\[1ex]
+			a_{21} x_1 + a_{22} x_2 + \dotsb + a_{2n} x_n = b_2 \\
+			\hphantom{a_{11} x_1 + a_{12} x_2 + \dotsb + a_{1n} x_n} \mspace{2mu}
+			\mathrel{\vdots} \\
+			a_{n1} x_1 + a_{n2} x_2 + \dotsb + a_{nn} x_n = b_n
+		\end{array} \,
+		\right\}
+		$
+	</p>
+	
+<p>Se supone que las ecuaciones son linealmente independientes.</p>
+
+<p>Dos formas de resolver:</p>
+
+	<ul>
+		<li>Método directo: número finito de pasos, al final de los cuales
+		se tiene la solución.
+			<p style="margin-left:30px;display:table">
+				<span style="display:table-row">
+					<span style="display:table-cell;white-space:nowrap">
+						1) Gauss:&nbsp;</span>
+					<span style="display:table-cell">Combinar linealmente 
+					ecuaciones entre sí para obtener un sistema equivalente más 
+					sencillo.</span>
+				</span>
+			</p>
+			<p style="margin-left:30px;display:table">
+				<span style="display:table-row">
+					<span style="display:table-cell;white-space:nowrap">
+						2) Cramer:&nbsp;</span>
+					<span style="display:table-cell">
+						Da las soluciones directamente. Se emplean determinantes:
+						<span style="display:block;margin-left:auto;margin-right:auto;margin-top:1em">
+							$x_i = 
+							\dfrac{
+								\begin{vmatrix}
+									a_{11} &amp;\dots &amp;a_{1,i-1} &amp;b_1 &amp;a_{1,i+1}
+									&amp;\dots &amp;a_{1n} \\
+									\vdots &amp; &amp;\vdots &amp;\vdots &amp;\vdots
+									&amp; &amp;\vdots \\[1ex]
+									a_{n1} &amp;\dots &amp;a_{n,i-1} &amp;b_n &amp;a_{n,i+1}
+									&amp;\dots &amp;a_{nn}
+								\end{vmatrix}
+							}{
+								\begin{vmatrix}
+									a_{11} &amp;\dots &amp;a_{1n} \\
+									\vdots &amp; &amp;\vdots \\
+									a_{n1} &amp;\dots &amp;a_{nn}
+								\end{vmatrix}
+							}
+							$
+						</span>
+					</span>
+				</span>
+			</p>
+		</li>
+		<li>Método iterativo: número infinito	de pasos que van dando
+		aproximaciones cada vez más cercanas a la solución.</li>
+	</ul>
+	
+<p><b>2.</b> Método de Gauss:</p>
+
+<p>Por ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\left.
+			\begin{alignedat}{3}
+				2x &amp;+{} &amp;4y &amp;+{} &amp;z &amp;= 1 \\[1ex]
+				8x &amp;-{} &amp;y &amp;+{} &amp;3z &amp;= 0 \\[1ex]
+				2x &amp;+{} &amp;5y &amp; &amp;&amp;= 0
+			\end{alignedat}			
+			\right\}
+			\underset{F_1 \cdot (-3) + F_2}{\implies}
+			\left.
+			\begin{alignedat}{4}
+				2x &amp;+{} &amp;4y &amp;+{} &amp;z &amp;={} &amp;1&amp; \\[1ex]
+				2x &amp;-{} &amp;13y &amp; &amp;&amp;={} &amp;-3&amp; \\[1ex]
+				2x &amp;+{} &amp;5y &amp; &amp;&amp;={} &amp;0&amp;
+			\end{alignedat}
+			\right\}
+			\underset{F_2 \cdot \left(\frac{5}{13}\right)+F_3}{\implies} \\[1em]
+			\left.
+			\begin{alignedat}{4}
+				2x &amp;+{} &amp;4y &amp;+{} &amp;z &amp;={} &amp;1&amp; \\[1ex]
+				2x &amp;-{} &amp;13y &amp; &amp;&amp;={} &amp;-3&amp; \\[1ex]
+				\frac{36}{13}x &amp; &amp;&amp; &amp;&amp;={}
+				&amp;-\frac{15}{13}&amp;
+			\end{alignedat}
+			\right\} \Rightarrow
+			\begin{array}{l}
+				x = -\frac{5}{12} \\[1ex]
+				y = \frac{1}{6} \\[1ex]
+				z = \frac{7}{6}
+			\end{array}
+		\end{array}
+		$
+	</p>
+	
+<p>De cara a formalizar el método, lo más idóneo es escribir el sistema
+de manera matricial:</p>
+
+	<p style="text-align:center">
+		$Ax = b$</p>
+		
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell">
+			$
+			A =
+			\begin{pmatrix}
+				a_{11} &amp;\dots &amp; a_{1n} \\
+				\vdots &amp; &amp;\vdots \\
+				a_{n1} &amp;\dots &amp;a_{nn}
+			\end{pmatrix}
+			$ &emsp;
+			Matriz de coeficientes.
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-top:1em;padding-bottom:1em">
+				$
+				x =
+				\begin{pmatrix}
+				 x_1 \\
+				 \vdots \\
+				 x_n
+				\end{pmatrix}
+				$ &emsp;
+				Vector de incógnitas.
+			</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$
+				b =
+				\begin{pmatrix}
+					b_1 \\
+					\vdots \\
+					b_n
+				\end{pmatrix}
+				$ &emsp;
+				Vector término independiente.
+			</span>
+		</span>
+	</p>
+	
+<p>Si se juntan $A$ y $b$ se tiene la matriz ampliada, que ya no es
+cuadrada:</p>
+
+	<p style="text-align:center">
+		$
+		\underbrace{
+		(
+		\begin{array}[t]{cc}
+			\mspace{-5mu} \underbrace{A}_{n \times n} \mspace{-5mu} &amp;
+			\mspace{-5mu} \underbrace{b}_{n \times 1} \mspace{-5mu}
+		\end{array}
+		)
+		}_{n \times (n+1)}
+		$
+	</p>
+	
+<p>El método de Gauss consiste en encontrar en $A$ un triángulo de 
+ceros por encima o debajo de una diagonal que pase por el centro de la 
+matriz. Se usará el triángulo por debajo de la diagonal principal, la 
+formada por los $a_{ii}$, i.e. de la esquina superior izquierda a la 
+esquina inferior derecha. Esto es, en el ejemplo planteado, sobre
+la matriz ampliada:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{r}
+			\begin{pmatrix}
+				2 &amp; 4 &amp; 1 &amp; 1 \\
+				8 &amp; -1 &amp; 3 &amp; 0 \\
+				2 &amp; 5 &amp; 0 &amp; 0
+			\end{pmatrix}
+			\xrightarrow[
+				\begin{array}{c}
+					{\rm F}_1 \cdot (-4) + {\rm F}_2 \\
+					-{\rm F}_1 + {\rm F}_3
+				\end{array}
+			]{}
+			\begin{pmatrix}
+				2 &amp; 4 &amp; 1 &amp; 1 \\
+				0 &amp; -17 &amp; -1 &amp; -4 \\
+				0 &amp; 1 &amp; -1 &amp; -1
+			\end{pmatrix}
+			\rlap{\rightarrow{}} \\[1em]
+			\xrightarrow[
+				{\rm F}_2 \left( \frac{1}{17} \right) + {\rm F}_3
+			]{} 
+			\begin{pmatrix}
+				2 &amp; 4 &amp; 1 &amp; 1 \\
+				0 &amp; -17 &amp; -1 &amp; -4 \\
+				0 &amp; 0 &amp; \frac{-18}{17} &amp; \frac{-21}{17}
+			\end{pmatrix}
+		\end{array}
+		$
+	</p>
+	
+<p>Así pues, en el método de Gauss:</p>
+
+<ol>
+	<li>$n-1$ pasos para transformar la matriz de coeficientes en una
+	matriz triangular.</li>
+	<li>Resolver.</li>
+</ol>
+
+<p>Siendo así:</p>
+
+<p style="display:table;margin-left:30px">
+	<span style="display:table-row">
+		<span style="display:table-cell;white-space:nowrap">
+			1.<sup>er</sup> paso:&nbsp;</span>
+		<span style="display:table-cell">
+			Multiplicar 1.<sup>a</sup> fila por un factor
+			$\left(-\dfrac{a_{21}}{a_{11}}\right)$ y sumarlo a la 2.ª fila.</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			Multiplicar 1.ª fila por un factor
+			$\left(-\dfrac{a_{31}}{a_{11}}\right)$ y sumarlo a la 3.ª fila.</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			$\vdots$</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			Multiplicar 1.ª fila por un factor 
+			$\left(-\dfrac{a_{n1}}{a_{11}}\right)$ y sumarlo a la enésima 
+			fila.</span>
+	</span>
+</p>
+
+<p style="display:table;margin-left:30px">
+	<span style="display:table-row">
+		<span style="display:table-cell;white-space:nowrap">
+			2.º paso:&nbsp;</span>
+		<span style="display:table-cell">
+			Multiplicar 2.ª fila por un factor
+			$\left(-\dfrac{a_{32}}{a_{22}}\right)$ y sumarlo a la 3.ª	fila.</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			Multiplicar 2.ª fila por un factor
+			$\left(-\dfrac{a_{42}}{a_{22}}\right)$ y sumarlo a la 4.ª	fila.</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			$\vdots$</span>
+	</span>
+	<span style="display:table-row">
+		<span style="display:table-cell"></span>
+		<span style="display:table-cell;padding-top:1em">
+			Multiplicar 2.ª fila por un factor 
+			$\left(-\dfrac{a_{n2}}{a_{22}}\right)$ y sumarlo a la 
+			enésima fila.</span>
+	</span>
+</p>
+
+	<p style="margin-left:30px">
+		&emsp; $\vdots$</p>
+		
+<p style="display:table;margin-left:30px">
+	<span style="display:table-row">
+		<span style="display:table-cell;white-space:nowrap">
+			$(n-1)$.º paso:&nbsp;</span>
+		<span style="display:table-cell">
+			Multiplicar $(n-1)$.ª fila por un factor
+			$\left(-\dfrac{a_{n,(n-1)}}{a_{(n-1),(n-1)}}\right)$ y sumarlo a
+			la enésima fila.</span>
+	</span>
+</p>
+
+<p>El pivote es el número sobre el que se apoyan todos los pasos. Estos 
+pivotes son, respectivamente, los números de la diagonal.</p>
+
+<p>Si en uno de los pasos el pivote es cero se reordenan las filas de tal
+manera que desaparezca.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{5}
+			x_1 &amp;-{} &amp; x_2 &amp;+{} &amp; 2x_3 &amp;-{} &amp; x_4
+			&amp;={} &amp; -8 &amp; \\[1ex]
+			2x_1 &amp;-{} &amp;2x_2 &amp;+{} &amp; 3x_3 &amp;-{} &amp; 3x_4
+			&amp;={} &amp; -20 &amp; \\[1ex]
+			x_1 &amp;+{} &amp; x_2 &amp;+{} &amp; x_3 &amp; &amp;&amp;={}
+			&amp; -2 &amp; \\[1ex]
+			x_1 &amp;-{} &amp; x_2 &amp;+{} &amp; 4x_3 &amp;+{} &amp; 3x_4
+			&amp;={} &amp; 4 &amp;
+		\end{alignedat}
+		\right\}
+		$
+	</p>
+	
+<p>Aplicando el método de Gauss sobre la matriz ampliada:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; -1 &amp; 2 &amp; -1 &amp; -8 \\
+			2 &amp; -2 &amp; 3 &amp; -3 &amp; -20 \\
+			1 &amp; 1 &amp; 1 &amp; 0 &amp; -2 \\
+			1 &amp; -1 &amp; 4 &amp; 3 &amp; 4
+		\end{pmatrix}
+		\xrightarrow[
+			\begin{array}{c}
+				-2 {\rm F}_1 + {\rm F}_2 \\
+				- {\rm F}_1 + {\rm F}_3 \\
+				- {\rm F}_1 + {\rm F}_4
+			\end{array}
+		]{}
+		\begin{pmatrix}
+			1 &amp; -1 &amp; 2 &amp; -1 &amp; -8 \\
+			0 &amp; 0 &amp; -1 &amp; -1 &amp; -4 \\
+			0 &amp; 2 &amp; -1 &amp; 1 &amp; 6 \\
+			0 &amp; 0 &amp; 2 &amp; 4 &amp; 12
+		\end{pmatrix}
+		\rightarrow \\[8ex]
+		\xrightarrow[{\rm F}_2 \leftrightarrow {\rm F}_3]{}
+		\begin{pmatrix}
+			1 &amp; -1 &amp; 2 &amp; -1 &amp; -8 \\
+			0 &amp; 2 &amp; -1 &amp; 1 &amp; 6 \\
+			0 &amp; 0 &amp; -1 &amp; -1 &amp; -4 \\
+			0 &amp; 0 &amp; 2 &amp; 4 &amp; 12
+		\end{pmatrix}
+		\xrightarrow[2{\rm F}_3 + {\rm F}_4]{}
+		\begin{pmatrix}
+			1 &amp; -1 &amp; 2 &amp; -1 &amp; -8 \\
+			0 &amp; 2 &amp; -1 &amp; 1 &amp; 6 \\
+			0 &amp; 0 &amp; -1 &amp; -1 &amp; -4 \\
+			0 &amp; 0 &amp; 0 &amp; 2 &amp; 4
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{5}
+			x_1 &amp;-{} &amp; x_2 &amp;+{} &amp; 2x_3 &amp;-{} &amp;x_4 &amp;={}
+			&amp; -8 &amp; \\[1ex]
+			&amp; &amp; 2x_2 &amp;-{} &amp; x_3 &amp;+{} &amp; x_4 &amp;={}
+			&amp; 6 &amp; \\[1ex]
+			&amp; &amp; &amp; &amp; -x_3 &amp;-{} &amp; x_4 &amp;={} &amp; -4
+			&amp; \\[1ex]
+			&amp; &amp; &amp; &amp; &amp; &amp; 2x_4 &amp;= &amp; 4 &amp;
+		\end{alignedat}
+		\right\} \Rightarrow
+		\begin{aligned}
+			&amp;x_1 = -8 + x_4 - 2x_3 + x_2 = -7 \\[1ex]
+			&amp;x_2 = (6 - x_4 + x_3){∕}2 = 3 \\[1ex]
+			&amp;x_3 = 4 - x_4 = 2 \\[1ex]
+			&amp;x_4 = 2 
+		\end{aligned}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p>En el método de Gauss con pivote máximo, se escoge como pivote el de
+valor absoluto máximo, reordenando para ello las filas que quedan. Esto
+es, sobre el ejemplo visto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			2 &amp; 4 &amp; 1 &amp; 1 \\
+			8 &amp; -1 &amp; 3 &amp; 0 \\
+			2 &amp; 5 &amp; 0 &amp; 0
+		\end{pmatrix}
+		\xrightarrow[{\rm F}_1 \leftrightarrow {\rm F}_2]{}
+		\begin{pmatrix}
+			8 &amp; -1 &amp; 3 &amp; 0 \\
+			2 &amp; 4 &amp; 1 &amp; 1 \\
+			2 &amp; 5 &amp; 0 &amp; 0
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Sea:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			0 &amp; 1 \\
+			2 &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			x_1 \\
+			x_2
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 \\
+			0
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_2 = 1 \\
+			x_1 = -\dfrac{1}{2}
+		\end{array}
+		$
+	</p>
+	
+<p>Se perturba el coeficiente con valor 0 sustituyéndolo por un número
+pequeño:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			-10^{-5} &amp; 1 \\
+			2 &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			x_1 \\
+			x_2
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 \\
+			0
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Sin el método de Gauss, mediante álgebra, la solución exacta:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_1 = -0{,}4999975 \\[1ex]
+			x_2 = 0{,}999995
+		\end{array}
+		$
+	</p>
+	
+<p>Al igual que un pequeño cambio en el sistema inicial comporta una 
+solución diferente, el redondeo, un valor ligeramente distinto al 
+exacto en cada cálculo del método de Gauss, conduce a una solución que 
+no es la exacta. Esto es, aplicando el método de Gauss con, como 
+máximo, 4 cifras significativas, expresando, como una máquina, los 
+números en coma flotante:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			-0{,}1 \cdot 10^{-4} &amp; 0{,}1 \cdot 10^1 &amp; 0{,1} \cdot 10^1 \\
+			0{,}2 \cdot 10^1 &amp; 0{,}1 \cdot 10^1 &amp; 0
+		\end{pmatrix}
+		\rightarrow
+		\begin{pmatrix}
+			-0{,}1 \cdot 10^{-4} &amp; 0{,}1 \cdot 10^1 &amp; 0{,1} \cdot 10^1 \\
+			0 &amp; 0{,}2 \cdot 10^6 &amp; 0{,}2 \cdot 10^6
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		Factor: $\dfrac{0{,}2 \cdot 10^1}{0{,}1 \cdot 10^{-4}} = 0{,}2 \cdot
+		10^6$</p>
+		
+	<p style="text-align:center">
+		$0{,}1 \cdot 10^1 + (0{,}1 \cdot 10^1) (0{,}2 \cdot 10^6) = 0{,}2
+		\cdot 10^6$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{aligned}
+			-0{,}1 \cdot 10^{-4} x_1 + 0{,}1 \cdot 10^1 x_2 &amp;= 0{,}1 \cdot
+			10^1 \\[1ex]
+			0{,}2 \cdot 10^6 x_2 &amp;= 0{,}2 \cdot 10^6
+		\end{aligned}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			x_2 = 1 \\[1ex]
+			x_1 = 0
+		\end{array}
+		$
+	</p>
+	
+<p>Esta "solución" no cumple con la segunda ecuación del sistema.</p>
+
+<p>A la hora de resolver, en las divisiones, con un pivote muy pequeño 
+actuando de denominador, el error puede ser muy grande. La imprecisión 
+del numerador, el error que se comete en éste, aunque sea pequeño, se 
+multiplica por mucho.</p>
+
+<p>Además, también, el efecto del redondeo, su propagación, es mayor si 
+algún pivote es muy pequeño, ya que entonces es grande el factor por el 
+que se multiplican los coeficientes en el correspondiente paso del 
+método de Gauss, multiplicándose los errores de redondeo que ya posean 
+los coeficientes.</p>
+
+<p>Si se aplica el método de Gauss con pivote máximo, se intercambian las
+filas:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			0{,}2 \cdot 10^1 &amp; 0{,}1 \cdot 10^1 &amp; 0 \\
+			-0{,}1 \cdot 10^{-4} &amp; 0{,}1 \cdot 10^1 &amp; 0{,1} \cdot 10^1
+		\end{pmatrix}
+		\rightarrow
+		\begin{pmatrix}
+			0{,}2 \cdot 10^1 &amp; 0{,}1 \cdot 10^1 &amp; 0 \\
+			0 &amp; 0{,}1 \cdot 10^1 &amp; 0{,1} \cdot 10^1
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		Factor: $\dfrac{0{,}1 \cdot 10^{-4}}{0{,}2 \cdot 10^1} = 0{,}5 \cdot
+		10^{-5}$</p>
+		
+	<p style="text-align:center">
+		$0{,}1 \cdot 10^1 + (0{,}1 \cdot 10^1) (0{,}5 \cdot 10^{-5}) = 0{,}1
+		\cdot 10^1$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center;margin-bottom:1.75em">
+		$
+		\left.
+		\begin{aligned}
+			0{,}2 \cdot 10^1 x_1 + 0{,}1 \cdot 10^1 x_2 &amp;= 0 \\[1ex]
+			0{,}1 \cdot 10^1 x_2 &amp;= 0{,}1 \cdot 10^1
+		\end{aligned}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			x_2 = 1 \\[2ex]
+			x_1 = - \smash{\dfrac{0{,}1 \cdot 10^1}{0{,}2 \cdot 10^1}} = -0{,}5
+		\end{array}
+		$
+	</p>
+	
+<p>Que ya es una buena aproximación.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{2}
+			0{,}003000x_1 &amp;+{} &amp; 59{,}14x_2 &amp;= 59{,}17 \\[1ex]
+			5{,}291x_1 &amp;-{} &amp; 6{,}130x_2 &amp;= 46{,}78
+		\end{alignedat}
+		\right\}
+		$
+	</p>
+	
+<p>Fijándose en primera ecuación, validándose para la segunda, la 
+solución exacta es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			x_2 = 1 \\[1ex]
+			x_1 = 10
+		\end{array}
+		$
+	</p>
+	
+<p>A continuación, haciendo los cálculos con 4 cifras significativas y
+redondeo:</p>
+	
+<p>1ª variante del método de Gauss (sin escoger el pivote máximo):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			0{,}003 &amp; 59{,}14 &amp; 59{,}17 \\
+			5{,}291 &amp; -6{,}130 &amp; 46{,}78
+		\end{pmatrix}
+		\rightarrow
+		\begin{pmatrix}
+			0{,}003 &amp; 59{,}14 &amp; 59{,}17 \\
+			0 &amp; -104300 &amp; -104400
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		Factor: $-\dfrac{5{,}291}{0{,}003} = -1764$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			-6{,}130 + (-1764)(59{,}14) = -6{,}130 - 104300 = -104300 \\[1ex]
+			46{,}78 + (-1764)(59{,}17) = 46{,}78 - 104400 = -104400
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+	
+	<p style="text-align:center;margin-bottom:4.75em">
+		$
+		\left.
+		\begin{alignedat}{2}
+			0{,}003x_1 + 59{,}14x_2 &amp;={} &amp; 59{,}17 &amp; \\[1ex]
+			-104300x_2 &amp;={} &amp; -104400 &amp;
+		\end{alignedat}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			x_2 = \dfrac{-104400}{-104300} = 1{,}001 \\[1ex]
+			\vphantom{x_1 = \dfrac{59{,}17 - 59{,}14 \cdot 1{,}001}{0{,}003} =}
+			\smash{
+			\begin{aligned}[t]
+				x_1 &amp;= \dfrac{59{,}17 - 59{,}14 \cdot 1{,}001}{0{,}003} = \\[1ex]
+				&amp;= 19720 - (19710)(1{,}001) = \\[1ex]
+				&amp;= 19720 - 19730	= -10{,}00
+			\end{aligned}
+			}
+		\end{array}
+		$
+	</p>
+	
+<p>El pequeño error que se comete en el valor de $x_2$, se magnifica 
+cuando se pretende calcular la solución para $x_1$, al dividir por un 
+pivote muy pequeño, arruinando el resultado.</p>
+
+<p>2ª variante del método de Gauss (con pivote máximo):</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			5{,}291 &amp; -6{,}130 &amp; 46{,}78 \\
+			0{,}003 &amp; 59{,}14 &amp; 59{,}17
+		\end{pmatrix}
+		\rightarrow
+		\begin{pmatrix}
+			5{,}291 &amp; -6{,}130 &amp; 46{,}78 \\
+			0 &amp; 59{,}14 &amp; 59{,}14
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="text-align:center">
+		Factor: $- \dfrac{0{,}003}{5{,}291} = -0{,}0005670$
+	</p>
+	
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			59{,}14 + (-0{,}0005670)(-6{,}130) = 59{,}14 + 0{,}003476 =
+			59{,}14 \\[1ex]
+			59{,}17 + (-0{,}0005670)(46{,}78) = 59{,}17 - 0{,}02652 = 59{,}14
+		\end{array}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center;margin-bottom:1ex">
+		$
+		\left.
+		\begin{aligned}
+			5{,}291x_1 - 6{,}130x_2 &amp;= 46{,}78 \\[1ex]
+			59{,}14x_2 &amp;= 59{,}14
+		\end{aligned}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			x_2 = 1 \\[2ex]
+			x_1 = \smash{\dfrac{46{,}78 + 6{,}130}{5{,}291}} = 10
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p><b>3.</b> Descomposición $LU$:</p>
+
+<p>Consiste en factorizar una matriz expresándola como producto de dos
+matrices triangulares:</p>
+
+	<p style="text-align:center">
+		$A = LU$</p>
+		
+<p>Donde:</p>
+
+	<p style="display:table;margin-left:auto;margin-right:auto">
+		<span style="display:table-row">
+			<span style="display:table-cell;padding-bottom:1ex">
+				$L =$ Triangular inferior ("Lower").</span>
+		</span>
+		<span style="display:table-row">
+			<span style="display:table-cell">
+				$U =$ Triangular superior ("Upper").</span>
+		</span>
+	</p>
+	
+<p>- Método de Doolitle:</p>
+
+<p>Requiere que la diagonal principal de $L$ esté formada por unos. Por 
+ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			a_{11} &amp; a_{12} &amp; a_{13} \\
+			a_{21} &amp; a_{22} &amp; a_{23} \\
+			a_{31} &amp; a_{32} &amp; a_{33}
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			l_{21} &amp; 1 &amp; 0 \\
+			l_{31} &amp; l_{32} &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			u_{11} &amp; u_{12} &amp; u_{13} \\
+			0 &amp; u_{22} &amp; u_{23} \\
+			0 &amp; 0 &amp; u_{33}
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>&bull; Paso 1:</p>
+
+<p>Se iguala con la primera fila de la matriz producto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			a_{11} = u_{11} \\[1ex]
+			a_{12} = u_{12} \\[1ex]
+			a_{13} = u_{13} 
+		\end{array}
+		$
+	</p>
+	
+<p>A continuación también con la primera columna:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			a_{21} = l_{21} u_{11} \Rightarrow l_{21} =
+			\dfrac{a_{21}}{u_{11}} \\[1ex]
+			a_{31} = l_{31} u_{11} \Rightarrow l_{31} = \dfrac{a_{31}}{u_{11}}
+		\end{array}
+		$
+	</p>
+	
+<p>&bull; Paso 2:</p>
+
+<p>Se iguala la segunda fila:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			a_{22} = l_{21}u_{12} + u_{22} \Rightarrow u_{22} = a_{22} -
+			l_{21}u_{12} \\[1ex]
+			a_{23} = l_{21}u_{13} + u_{23} \Rightarrow u_{23} = a_{23} -
+			l_{21}u_{13}
+		\end{array}
+		$
+	</p>
+	
+<p>Ahora la segunda columna:</p>
+
+	<p style="text-align:center">
+		$a_{32} = l_{31}u_{12} + l_{32} u_{22} \Rightarrow l_{32} =
+		\dfrac{1}{u_{22}} (a_{32} - l_{31}u_{12})$</p>
+		
+<p>&bull; Paso 3:</p>
+
+<p>En la tercera fila:</p>
+
+	<p style="text-align:center">
+		$a_{33} = l_{31}u_{13} + l_{32}u_{23} + u_{33} \Rightarrow
+		u_{33} = a_{33} - l_{31}u_{13} - l_{32}u_{23}$</p>
+		
+<p>Teniéndose ya completadas las dos matrices triangulares.</p>
+
+<p>En general, para una matriz $A$ de dimensión $n \times n$:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			u_{ij} = a_{ij} - \displaystyle \sum_{k=1}^{i-1} l_{ik} u_{kj}
+			\quad i \leq j \\
+			l_{ii} = 1 \\
+			l_{ij} = \dfrac{1}{u_{jj}} \left( a_{ij} - \displaystyle
+			\sum_{k=1}^{j-1} l_{ik} u_{kj} \right) \quad i &gt; j
+		\end{array} 
+		$
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			2 &amp; 5 &amp; 2 \\
+			3 &amp; 1 &amp; 5
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			l_{21} &amp; 1 &amp; 0 \\
+			l_{31} &amp; l_{32} &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			u_{11} &amp; u_{12} &amp; u_{13} \\
+			0 &amp; u_{22} &amp; u_{23} \\
+			0 &amp; 0 &amp; u_{33}
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>&bull; Paso 1:</p>
+
+<p>Primera fila:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			1 = u_{11} \\[1ex]
+			2 = u_{12} \\[1ex]
+			3 = u_{13} 
+		\end{array}
+		$
+	</p>
+	
+<p>Primera columna:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			2 = l_{21} u_{11} \Rightarrow l_{21} = 2 \\[1ex]
+			3 = l_{31} u_{11} \Rightarrow l_{31} = 3
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			2 &amp; 5 &amp; 2 \\
+			3 &amp; 1 &amp; 5
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			2 &amp; 1 &amp; 0 \\
+			3 &amp; l_{32} &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			0 &amp; u_{22} &amp; u_{23} \\
+			0 &amp; 0 &amp; u_{33}
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>&bull; Paso 2:</p>
+
+<p>Segunda fila:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			5 = 2 \cdot 2 + u_{22} \Rightarrow u_{22} = 1 \\[1ex]
+			2 = 2 \cdot 3 + u_{23} \Rightarrow u_{23} = -4
+		\end{array}
+		$
+	</p>
+	
+<p>Segunda columna:</p>
+
+	<p style="text-align:center">
+		$1= 3 \cdot 2 + l_{32} \cdot u_{22} \Rightarrow l_{32} = -5$</p>
+		
+<p>Siendo entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			2 &amp; 5 &amp; 2 \\
+			3 &amp; 1 &amp; 5
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			2 &amp; 1 &amp; 0 \\
+			3 &amp; -5 &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			0 &amp; 1 &amp; -4 \\
+			0 &amp; 0 &amp; u_{33}
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>&bull; Paso tres:</p>
+
+<p>Tercera fila:</p>
+
+	<p style="text-align:center">
+		$5 = 3 \cdot 3 + (-5) \cdot (-4) + u_{33} \Rightarrow u_{33} = -24$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			2 &amp; 5 &amp; 2 \\
+			3 &amp; 1 &amp; 5
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			2 &amp; 1 &amp; 0 \\
+			3 &amp; -5 &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			0 &amp; 1 &amp; -4 \\
+			0 &amp; 0 &amp; -24
+		\end{pmatrix}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p>En un sistema lineal:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			A x = b \\[1ex]
+			L \mspace{-2mu} \underbrace{Ux}_y \mspace{-2mu} = b \Rightarrow Ly
+			= b
+		\end{array}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="margin-left:30px">
+		1.<sup>er</sup> paso: Hallar $y$ tal que $Ly = b\,$.</p>
+		
+	<p style="margin-left:30px">
+		2.º paso: Hallar $x$ tal que $Ux = y\,$.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+	<p style="text-align:center">
+		$
+		\left.
+		\begin{alignedat}{3}
+			x_1 &amp;+{} &amp; 2x_2 &amp;+{} &amp; 3x_3 &amp;= 14 \\[1ex]
+			2x_1 &amp;+{} &amp; 5x_2 &amp;+{} &amp; 2x_3 &amp;= 18 \\[1ex]
+			3x_1 &amp;+{} &amp; x_2 &amp;+{} &amp; 5x_3 &amp;= 20
+		\end{alignedat}
+		\right\}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			2 &amp; 5 &amp; 2 \\
+			3 &amp; 1 &amp; 5
+		\end{pmatrix}
+		\begin{pmatrix}
+			x_1 \\
+			x_2 \\
+			x_3 \\
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			14 \\
+			18 \\
+			20
+		\end{pmatrix}
+		$
+	</p>		
+	
+<p>Usando, para resolver el sistema, el método de Doolittle, como se vio
+en el anterior ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		\underset{A}{
+			\begin{pmatrix}
+				1 &amp; 2 &amp; 3 \\
+				2 &amp; 5 &amp; 2 \\
+				3 &amp; 1 &amp; 5
+			\end{pmatrix}
+		}
+		=
+		\underset{L}{
+			\begin{pmatrix}
+				1 &amp; 0 &amp; 0 \\
+				2 &amp; 1 &amp; 0 \\
+				3 &amp; -5 &amp; 1
+			\end{pmatrix}
+		}
+		\,
+		\underset{U}{
+			\begin{pmatrix}
+				1 &amp; 2 &amp; 3 \\
+				0 &amp; 1 &amp; -4 \\
+				0 &amp; 0 &amp; -24
+			\end{pmatrix}
+		}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="margin-left:30px">
+		1.<sup>er</sup> paso:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 0 &amp; 0 \\
+			2 &amp; 1 &amp; 0 \\
+			3 &amp; -5 &amp; 1
+		\end{pmatrix}
+		\begin{pmatrix}
+			y_1 \\
+			y_2 \\
+			y_3
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			14 \\
+			18 \\
+			20
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Así pues:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$
+		\left.
+		\begin{alignedat}{3}
+			y_1 &amp;\hphantom{+{}} &amp;&amp; &amp;&amp;= 14 \\[1ex]
+			2y_1 &amp;+{} &amp; y_2 &amp;\hphantom{{+}{}} &amp;&amp;= 18 \\[1ex]
+			3y_1 &amp;-{} &amp; 5y_2 &amp;+{} &amp; y_3 &amp;= 20
+		\end{alignedat}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			y_1 = 14 \\[1ex]
+			y_2 = 18 - 2y_1 = -10 \\[1ex]
+			y_3 = 20 - 3y_1 + 5y_2 = -72
+		\end{array}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		2º paso:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$
+		\begin{pmatrix}
+			1 &amp; 2 &amp; 3 \\
+			0 &amp; 1 &amp; -4 \\
+			0 &amp; 0 &amp; -24
+		\end{pmatrix}
+		\begin{pmatrix}
+			x_1 \\
+			x_2 \\
+			x_3
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			14 \\
+			-10 \\
+			-72
+		\end{pmatrix}
+		$
+	</p>
+	
+	<p style="margin-left:30px">
+		Por tanto:</p>
+		
+	<p style="margin-left:30px;text-align:center">
+		$
+		\left.
+		\begin{alignedat}{3}
+			x_1 + 2x_2 &amp;+{} &amp; 3x_3 &amp;={} &amp; 14 &amp; \\[1ex]
+			x_2 &amp;-{} &amp; 4x_3 &amp;={} &amp; -10 &amp; \\[1ex]
+			&amp;-{} &amp;24x_3 &amp;={} &amp; -72 &amp;
+		\end{alignedat}
+		\right\}
+		\Rightarrow
+		\begin{array}{l}
+			x_3 = 3 \\[1ex]
+			x_2 = -10 + 4x_3 = 2 \\[1ex]
+			x_1 = 14 - 2x_2 - 3x_3 = 1
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p><b>4.</b> Norma y condición de una matriz:</p>
+
+<p>1) Norma de un vector, que es una medida de su magnitud, siendo 
+éste:</p>
+
+	<p style="text-align:center">
+		$
+		x =
+		\begin{pmatrix}
+			x_1 \\
+			\vdots \\
+			x_n
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Se denota por $\|x\|$.</p>
+
+<p>Propiedades:</p>
+
+	<p style="margin-left:30px">a) $\|x\| \geq 0\,.$</p>
+	
+	<p style="margin-left:30px">b) $\|x\| = 0$ sólo si $x = 0\,.$</p>
+	
+	<p style="margin-left:30px">c) $\|\alpha x\| = |\alpha| \|x\|\,,$
+	$\alpha$ es un escalar.</p>
+	
+	<p style="margin-left:30px">d) $\|x+y\| \leq \|x\| + \|y\|\,,$
+	desigualdad triangular.</p>
+	
+<p>Se define:</p>
+
+	<p style="text-align:center">
+		$\|x\|_2 = (x_1^2 + x_2^2 + \dotsb + x_n^2)^{1/2}\,,$ &ensp; norma
+		euclídea.</p>
+		
+<p>Alternativas:</p>
+
+<ol>
+	<li>$\|x\|_1 = |x_1| + |x_2| + \dotsb + |x_n|$</li>
+	<li>$\|x\|_\infty = \max (|x_1|, |x_2|, \dotsc, |x_n|)\,,$ &ensp; norma
+	del máximo.</li>
+</ol>
+
+<p>Todas ellas cumplen las propiedades.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		x =
+		\begin{pmatrix}
+			1 \\
+			2
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\|x\|_2 = \sqrt{5} \\[1ex]
+			\|x\|_1 = 3 \\[1ex]
+			\|x\|_\infty = 2
+		\end{array}
+		$
+	</p>
+	
+</div>
+
+<hr>
+
+<p>2) Norma de una matriz, siendo ésta:</p>
+
+	<p style="text-align:center">
+		$
+		A =
+		\begin{pmatrix}
+			a_{11} &amp; \dots &amp; a_{1n} \\
+			\vdots &amp; &amp; \vdots \\
+			a_{n1} &amp; \dots &amp; a_{nn}
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Se define:</p>
+	
+	<p style="text-align:center">
+		$
+		\|A\| = \max\limits_{\|x\| = 1} \|Ax\| \Rightarrow
+		\left\{
+		\begin{array}{l}
+			\|A\|_2 \\[1ex]
+			\|A\|_1 \\[1ex]
+			\|A\|_\infty
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>Que es la cantidad máxima que un vector de longitud (norma) 1, de 
+todos los posibles, se magnifica al ser multiplicado por $A$.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+	<p style="text-align:center">
+		$
+		A =
+		\begin{pmatrix}
+			1{∕}3 &amp; 1{∕}4 \\
+			1{∕}4 &amp; 1{∕}5
+		\end{pmatrix}
+		\qquad \|A\|_\infty \text{ ?}
+		$
+	</p>
+	
+<p>Siendo así:</p>
+
+	<p style="text-align:center">
+		$
+		A x =
+		\begin{pmatrix}
+			1{∕}3 &amp; 1{∕}4 \\
+			1{∕}4 &amp; 1{∕}5
+		\end{pmatrix}
+		\begin{pmatrix}
+			x_1 \\
+			x_2
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+			\frac{1}{3} x_1 + \frac{1}{4} x_2 \\
+			\frac{1}{4} x_1 + \frac{1}{5} x_2
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Se quiere hallar:</p>
+
+	<p style="text-align:center">
+		$\|A\|_{\infty} = \max\limits_{\|x\|_\infty = 1} \|Ax\|_\infty$</p>
+		
+<p>Teniendo en cuenta que:</p>
+
+	<p style="text-align:center">
+		$
+		\|x\|_{\infty} = 1 \Rightarrow
+		\left\{
+		\begin{array}{l}
+			|x_1| \leq 1, |x_2| = 1 \\
+			\enspace \text{ó} \\
+			|x_2| \leq 1, |x_1| = 1
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<p>Así que con:</p>
+
+	<p style="text-align:center">
+		$
+		x =
+		\begin{pmatrix}
+			1 \\
+			1
+		\end{pmatrix}
+		$
+		ó
+		$
+		\begin{pmatrix}
+			-1 \\
+			-1
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\|A\|_{\infty} = \max\limits_{\|x\|_\infty = 1} \|Ax\|_\infty =
+		\dfrac{1}{3} + \dfrac{1}{4} = \dfrac{7}{12}$</p>
+	
+</div>
+
+<hr>
+
+<p>Propiedades:</p>
+
+	<p style="margin-left:30px">
+		a) $\|A\| \geq 0\,.$</p>
+		
+	<p style="margin-left:30px">
+		b) $\|A\| = 0$ sólo si $A = 0\,.$</p>
+		
+	<p style="margin-left:30px">
+		c) $\|\alpha A\| = |\alpha| \|A\|\,,$ $\alpha$ es un escalar.</p>
+		
+	<p style="margin-left:30px">
+		d) $\|A + B\| \leq \|A\|+\|B\|\,.$</p>
+		
+	<p style="margin-left:30px">
+		e) $\|Ax\| \leq \|A\|\|x\|\,.$</p>
+		
+	<p style="margin-left:30px">
+		g) $\|A B\| \leq \|A\| \|B\|\,.$</p>
+		
+<p>3) Número de condición de una matriz, el cual se define como:</p>
+
+	<p style="text-align:center">
+		$
+		\kappa(A) = \|A\| \|A^{-1}\| \Rightarrow
+		\left\{
+		\begin{array}{l}
+			\kappa_{\infty}(A) \\[1ex]
+			\kappa_2(A) \\[1ex]
+			\kappa_1(A)
+		\end{array}
+		\right.
+		$
+	</p>
+	
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+	
+<p>Hallar $\kappa_\infty(A)$ de la matriz del ejemplo anterior:</p>
+
+	<p style="text-align:center">
+		$
+		A =
+		\begin{pmatrix}
+			1{∕}3 &amp; 1{∕}4 \\
+			1{∕}4 &amp; 1{∕}5
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Se calcula $A^{-1}$, obteniéndose:</p>
+
+	<p style="text-align:center">
+		$
+		A^{-1} =
+		\begin{pmatrix}
+			48 &amp; -60 \\
+			-60 &amp; 80
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$
+		A^{-1} x =
+		\begin{pmatrix}
+			48x_1 - 60x_2 \\
+			-60x_1 + 80x_2
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$\|A^{-1}\|_\infty = \max\limits_{\|x\|_\infty = 1} \|A^{-1}x\|_\infty
+		= 140\,,$	con
+		$
+		x =
+		\begin{pmatrix}
+			-1 \\
+			1
+		\end{pmatrix}
+		$
+		ó
+		$
+		\begin{pmatrix}
+			1 \\
+			-1
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\kappa_\infty(A) = \|A\|_\infty \|A^{-1}\|_\infty = \dfrac{7}{12} 140
+		= 81{,}7$</p>
+	
+</div>
+
+<hr>
+
+<p>Para un sistema lineal $Ax = b$:</p>
+
+	<p style="text-align:center">
+		Error $\Delta b \Rightarrow$ Error $\Delta x$</p>
+		
+<p>Esto es:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			A(x + \Delta x) = b + \Delta b \\[1ex]
+			\cancel{Ax} \! + A \Delta x = \! \cancel{b} \! + \Delta b \\[1ex]
+			A \Delta x = \Delta b \\[1ex]
+			\Delta x = A^{-1} \Delta b
+		\end{array}	
+		$
+	</p>
+		
+<p>Siendo el error de forma relativa (o error relativo):</p>
+
+	<p style="text-align:center">
+		$\dfrac{\|\Delta x\|}{\|x\|} \,; \dfrac{\|\Delta b\|}{\|b\|}$</p>
+		
+<p>Para averiguar su importancia, se empieza por:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\|\Delta x\| = \|A^{-1} \Delta b\| \leq \|A^{-1}\| \|\Delta b\| \\[1ex]
+			\dfrac{\|\Delta x\|}{\|x\|} \leq \dfrac{\|A^{-1}\| \|\Delta b\|}{\|x\|}
+		\end{array}
+		$
+	</p>
+	
+<p>También:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{c}
+			\|b\| = \|Ax\| \leq \|A\| \|x\| \\[1ex]
+			\dfrac{1}{\|x\|} \leq \dfrac{\|A\|}{\|b\|}
+		\end{array}
+		$
+	</p>
+	
+<p>Así que:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\|\Delta x\|}{\|x\|} \leq \dfrac{\|A^{-1}\|
+		\|\Delta b\|}{\|x\|} \leq \underbrace{\|A\| \|A^{-1}\|}_{\kappa(A)}
+		\dfrac{\|\Delta b\|}{\|b\|}$</p>
+		
+<p>Por tanto:</p>
+
+	<p style="text-align:center">
+		$\boxed{\dfrac{\|\Delta x\|}{\|x\|} \leq \kappa(A)
+		\dfrac{\|\Delta b\|}{\|b\|}}$</p>
+		
+<p>Siendo:</p>
+
+	<p style="text-align:center">
+		$\kappa(A) = \|A\|\|A^{-1}\| \geq \|AA^{-1}\| = \|I\|$
+		
+<p>Donde $I$ es la matriz identidad, para la cual:</p>
+
+	<p style="text-align:center">
+		$\|I\| = \max\limits_{\|x\| = 1} \|Ix\| = \max\limits_{\|x\| = 1}
+		\|x\| = 1$</p>
+		
+<p>Así pues:</p>
+
+	<p style="text-align:center">
+		$\kappa(A) \geq 1$</p>
+		
+<p>Cuando su valor es grande se dice que es un problema mal
+condicionado.</p>
+
+<hr>
+
+<div id="ejemplo">
+	
+<p>Ejemplo:</p>
+
+<p>Se tiene el sistema $Ax = b$ tal que:</p>
+
+	<p style="text-align:center">
+		$
+		A =
+		\begin{pmatrix}
+			1{∕}3 &amp; 1{∕}4 \\
+			1{∕}4 &amp; 1{∕}5
+		\end{pmatrix}
+		\qquad
+		b =
+		\begin{pmatrix}
+			7{∕}12 \\
+			0{,}45
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Cuya solución exacta es:</p>
+
+	<p style="text-align:center">
+		$
+		x =
+		\begin{pmatrix}
+			1 \\
+			1
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Para un vector término independiente ligeramente distinto:</p>
+
+	<p style="text-align:center">
+		$
+		\overline{b} =
+		\begin{pmatrix}
+			0{,}583 \\
+			0{,}45
+		\end{pmatrix}
+		\Rightarrow
+		\overline{x} =
+		\begin{pmatrix}
+			0{,}984 \\
+			1{,}020
+		\end{pmatrix}
+		$
+	</p>
+	
+<p>Entonces:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\begin{aligned}
+				\Delta b &amp;= \overline{b} - b =
+				\begin{pmatrix}
+					0{,}583 \\
+					0{,}45
+				\end{pmatrix}
+				-
+				\begin{pmatrix}
+					7{∕}12 \\
+					0{,}45
+				\end{pmatrix}
+				= \\[1ex]
+				&amp;=
+				\begin{pmatrix}
+					0{,}583 - 0{,}5833333\ldots \\
+					0
+				\end{pmatrix} =
+				\begin{pmatrix}
+					-10^{-3}{∕}3 \\
+					0
+				\end{pmatrix}
+			\end{aligned} \\[1em]
+			\begin{aligned}
+				\Delta x &amp;= \overline{x} - x =
+				\begin{pmatrix}
+					0{,}984 \\
+					1{,}020
+				\end{pmatrix}
+				-
+				\begin{pmatrix}
+					1 \\
+					1
+				\end{pmatrix}
+				=
+				\begin{pmatrix}
+					-0{,}016 \\
+					0{,}020
+				\end{pmatrix}
+			\end{aligned}
+		\end{array}
+		$
+	</p>
+	
+<p>Siendo pues:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\|\Delta b\|_\infty = 10^{-3}{∕}3 \\[1ex]
+			\|\Delta x\|_\infty = 0{,}020
+		\end{array}
+		$
+	</p>
+	
+<p>Por consiguiente:</p>
+
+	<p style="text-align:center">
+		$
+		\begin{array}{l}
+			\dfrac{\|\Delta x\|_\infty}{\|x\|_\infty} = 0{,}020 \\[1ex]
+			\dfrac{\|\Delta b\|_\infty}{\|b\|_\infty} =
+			\dfrac{4}{7} \cdot 10^{-3}
+		\end{array}
+		$
+	</p>
+	
+<p>Según la fórmula que se vio:</p>
+
+	<p style="text-align:center">
+		$\dfrac{\|\Delta x\|_\infty}{\|x\|_\infty} \leq \kappa_\infty (A)
+		\dfrac{\|\Delta b\|_\infty}{\|b\|_\infty} = 81{,}7 \cdot \dfrac{4}{7}
+		\cdot 10^{-3} = 0{,}047$</p>
+		
+<p>Donde se ha usado para el número de condición el valor que se halló
+en el ejemplo previo.</p>
+
+</div>
+
+<hr>
+
+</div>
+
+<div id="foot">
+	
+<a href="../introduccion_estadistica_calculo_numerico.html">Temario</a>
+
+<ul>
+	<li>
+		<a
+		href="../resolucion_ecuaciones/resolucion_ecuaciones.html"
+		title="Anterior">&lt;</a>
+	</li>
+	<li>
+		<a href="../aproximacion/aproximacion.html"	title="Siguiente">&gt;</a>
+	</li>
+</ul>
+
+</div>
+
+</body>
+</html>
